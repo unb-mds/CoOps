@@ -1,0 +1,230 @@
+name: Validate Pipeline (manual)
+
+# Manual end-to-end check for a branch before its PR is marked "Ready for review".
+# Runs the test suite, then a capped Bronze -> Silver -> Gold -> Aggregate -> Registry
+# run against a real organization. Nothing is committed or pushed: the generated
+# data/ is uploaded as an artifact, so it is safe to run on a PR branch.
+#
+#   gh workflow run validate-pipeline.yaml --repo unb-mds/CoOps --ref <branch> \
+#     -f org=unb-mds -f max_repos=3
+#
+# See docs/TESTING_PULL_REQUESTS.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      org:
+        description: 'Organization to extract (blank = COOPS_ORG repo variable, else the repository owner)'
+        required: false
+        type: string
+        default: ''
+      max_repos:
+        description: 'Cap on repositories (blank = no cap)'
+        required: false
+        type: string
+        default: '3'
+      max_issues:
+        description: 'Cap on issues per repo (blank = no cap)'
+        required: false
+        type: string
+        default: '20'
+      max_prs:
+        description: 'Cap on pull requests per repo (blank = no cap)'
+        required: false
+        type: string
+        default: '20'
+      max_commits_per_repo:
+        description: 'Cap on commits per repo (blank = no cap)'
+        required: false
+        type: string
+        default: '50'
+      since:
+        description: 'Only extract commits since this ISO-8601 timestamp (blank = full history)'
+        required: false
+        type: string
+        default: ''
+      skip_structure:
+        description: 'Skip repository structure extraction (faster)'
+        required: false
+        type: boolean
+        default: true
+      run_ai:
+        description: 'Also run the AI analysis (needs the GEMINI_API_KEY secret)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-pipeline-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tests:
+    name: Test suite
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'poetry'
+
+      - name: Install dependencies
+        run: poetry install --no-interaction --extras dev
+
+      - name: Run tests
+        run: poetry run pytest --cov-report=term
+
+  pipeline:
+    name: Pipeline against a real organization
+    needs: tests
+    runs-on: ubuntu-latest
+    env:
+      # A PAT in COOPS_GITHUB_TOKEN sees private members/repos; the default
+      # token is enough for public organization data.
+      GITHUB_TOKEN: ${{ secrets.COOPS_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'poetry'
+
+      - name: Install dependencies
+        run: poetry install --no-interaction
+
+      - name: Resolve target organization
+        env:
+          INPUT_ORG: ${{ inputs.org }}
+          COOPS_ORG: ${{ vars.COOPS_ORG }}
+          OWNER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ORG="${INPUT_ORG:-${COOPS_ORG:-$OWNER}}"
+          TYPE=$(gh api "users/$ORG" --jq .type)
+          if [ "$TYPE" != "Organization" ]; then
+            echo "::error::$ORG is not an organization (type: $TYPE). Pass -f org=<organization>."
+            exit 1
+          fi
+          echo "GITHUB_ORG=$ORG" >> "$GITHUB_ENV"
+          echo "Target organization: $ORG"
+
+      - name: Bronze - extract
+        env:
+          MAX_REPOS: ${{ inputs.max_repos }}
+          MAX_ISSUES: ${{ inputs.max_issues }}
+          MAX_PRS: ${{ inputs.max_prs }}
+          MAX_COMMITS_PER_REPO: ${{ inputs.max_commits_per_repo }}
+          SINCE: ${{ inputs.since }}
+          SKIP_STRUCTURE: ${{ inputs.skip_structure }}
+        run: |
+          ARGS=(--cache --commits-method graphql)
+          [ -n "$MAX_REPOS" ] && ARGS+=(--max-repos "$MAX_REPOS")
+          [ -n "$MAX_ISSUES" ] && ARGS+=(--max-issues "$MAX_ISSUES")
+          [ -n "$MAX_PRS" ] && ARGS+=(--max-prs "$MAX_PRS")
+          [ -n "$MAX_COMMITS_PER_REPO" ] && ARGS+=(--max-commits-per-repo "$MAX_COMMITS_PER_REPO")
+          [ -n "$SINCE" ] && ARGS+=(--since "$SINCE")
+          [ "$SKIP_STRUCTURE" = "true" ] && ARGS+=(--skip-structure)
+          poetry run coops-bronze "${ARGS[@]}"
+
+      - name: Silver - process
+        run: poetry run coops-silver
+
+      - name: Gold - process
+        run: poetry run coops-gold
+
+      - name: Gold - aggregate KPIs
+        run: poetry run coops-aggregate
+
+      - name: Registry
+        run: poetry run coops-registry
+
+      - name: AI analysis
+        if: inputs.run_ai
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::error::run_ai was requested but the GEMINI_API_KEY secret is not set in ${{ github.repository }}."
+            exit 1
+          fi
+          # Mirrors gold-process.yaml: only GEMINI_API_KEY is exported.
+          env -u GITHUB_TOKEN -u GITHUB_ORG poetry run python -m coops.ai_analysis.generate_members_ai
+
+      - name: Check outputs
+        env:
+          RUN_AI: ${{ inputs.run_ai }}
+        run: |
+          poetry run python - <<'EOF'
+          import json, os, sys
+
+          required = [
+              "bronze/repositories_filtered.json", "bronze/issues_all.json",
+              "bronze/prs_all.json", "bronze/commits_all.json",
+              "bronze/issue_events_all.json", "bronze/members_basic.json",
+              "silver/contribution_metrics.json", "silver/collaboration_edges.json",
+              "silver/temporal_events.json", "silver/temporal_statistics.json",
+              "silver/network_statistics.json",
+              "gold/executive_dashboard.json", "gold/timeline_last_7_days.json",
+              "gold/timeline_last_12_months.json",
+              "master_registry.json", "data_catalog.json",
+          ]
+          if os.environ.get("RUN_AI") == "true":
+              required.append("silver/ai/members_ai.json")
+
+          def size(data):
+              if isinstance(data, list):
+                  return len([d for d in data if not (isinstance(d, dict) and "_metadata" in d)])
+              return "object"
+
+          rows, failed = [], False
+          for rel in required:
+              path = os.path.join("data", rel)
+              try:
+                  with open(path) as f:
+                      rows.append((rel, "ok", size(json.load(f))))
+              except (OSError, ValueError) as exc:
+                  rows.append((rel, f"FAILED: {exc.__class__.__name__}", "-"))
+                  failed = True
+
+          with open("data/bronze/repositories_filtered.json") as f:
+              if not size(json.load(f)):
+                  rows.append(("bronze/repositories_filtered.json", "FAILED: no repositories extracted", 0))
+                  failed = True
+
+          summary = [
+              f"### Pipeline validation: `{os.environ['GITHUB_ORG']}`",
+              "",
+              "| File | Status | Records |",
+              "|---|---|---|",
+              *[f"| `{r}` | {s} | {n} |" for r, s, n in rows],
+          ]
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n".join(summary) + "\n")
+          print("\n".join(summary))
+          sys.exit(1 if failed else 0)
+          EOF
+
+      - name: Upload generated data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-data-${{ github.run_id }}
+          path: data/
+          retention-days: 7
+          if-no-files-found: ignore
