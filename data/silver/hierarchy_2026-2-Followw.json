@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-21T11:30:15.902481",
+  "extracted_at": "2026-09-22T10:39:51.246687",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -169,7 +169,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 41,
+        "size": 36,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -183,7 +183,7 @@
         "name": "settings.json",
         "type": "file",
         "language": "JSON",
-        "size": 90,
+        "size": 64,
         "extension": ".json",
         "path": ".vscode/settings.json"
       },
@@ -243,7 +243,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3617,
+        "size": 4883,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
       },
@@ -325,7 +325,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 2972,
+        "size": 3067,
         "extension": ".py",
         "path": "apps/api/api/db/models.py"
       },
@@ -355,7 +355,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 362,
+        "size": 826,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -378,6 +378,56 @@
         "size": 1757,
         "extension": ".py",
         "path": "apps/api/api/modules/auth/main.py"
+      },
+      {
+        "name": "classrooms",
+        "type": "directory",
+        "path": "apps/api/api/modules/classrooms",
+        "children": []
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 533,
+        "extension": ".py",
+        "path": "apps/api/api/modules/classrooms/main.py"
+      },
+      {
+        "name": "me",
+        "type": "directory",
+        "path": "apps/api/api/modules/me",
+        "children": []
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 504,
+        "extension": ".py",
+        "path": "apps/api/api/modules/me/main.py"
+      },
+      {
+        "name": "repositories",
+        "type": "directory",
+        "path": "apps/api/api/repositories",
+        "children": []
+      },
+      {
+        "name": "classroom.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1244,
+        "extension": ".py",
+        "path": "apps/api/api/repositories/classroom.py"
+      },
+      {
+        "name": "user.py",
+        "type": "file",
+        "language": "Python",
+        "size": 721,
+        "extension": ".py",
+        "path": "apps/api/api/repositories/user.py"
       },
       {
         "name": "utils",
@@ -405,7 +455,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 823,
+        "size": 866,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
       },
@@ -419,7 +469,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 6053,
+        "size": 6576,
         "extension": ".py",
         "path": "apps/api/tests/conftest.py"
       },
@@ -432,6 +482,22 @@
         "path": "apps/api/tests/test_auth.py"
       },
       {
+        "name": "test_classroom_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3932,
+        "extension": ".py",
+        "path": "apps/api/tests/test_classroom_repository.py"
+      },
+      {
+        "name": "test_classrooms.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8182,
+        "extension": ".py",
+        "path": "apps/api/tests/test_classrooms.py"
+      },
+      {
         "name": "test_dependencies_sigaa.py",
         "type": "file",
         "language": "Python",
@@ -440,12 +506,44 @@
         "path": "apps/api/tests/test_dependencies_sigaa.py"
       },
       {
+        "name": "test_main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 840,
+        "extension": ".py",
+        "path": "apps/api/tests/test_main.py"
+      },
+      {
+        "name": "test_me.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6602,
+        "extension": ".py",
+        "path": "apps/api/tests/test_me.py"
+      },
+      {
         "name": "test_session.py",
         "type": "file",
         "language": "Python",
         "size": 4139,
         "extension": ".py",
         "path": "apps/api/tests/test_session.py"
+      },
+      {
+        "name": "test_user_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2250,
+        "extension": ".py",
+        "path": "apps/api/tests/test_user_repository.py"
+      },
+      {
+        "name": "vercel.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 152,
+        "extension": ".json",
+        "path": "apps/api/vercel.json"
       },
       {
         "name": "compose.yml",
@@ -465,7 +563,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 16106,
+        "size": 17096,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -479,15 +577,23 @@
         "name": "sprint-01.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2093,
+        "size": 2080,
         "extension": ".md",
         "path": "docs/sprints/sprint-01.md"
+      },
+      {
+        "name": "sprint-02.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2197,
+        "extension": ".md",
+        "path": "docs/sprints/sprint-02.md"
       },
       {
         "name": "template.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1891,
+        "size": 1658,
         "extension": ".md",
         "path": "docs/sprints/template.md"
       },
@@ -507,7 +613,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6569,
+        "size": 8409,
         "extension": ".md",
         "path": "packages/sigaa-client/AGENTS.md"
       },
@@ -523,7 +629,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5362,
+        "size": 7092,
         "extension": ".md",
         "path": "packages/sigaa-client/README.md"
       },
@@ -531,7 +637,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 704,
+        "size": 777,
         "extension": ".toml",
         "path": "packages/sigaa-client/pyproject.toml"
       },
@@ -545,7 +651,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 806,
+        "size": 1254,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/__init__.py"
       },
@@ -553,7 +659,7 @@
         "name": "client.py",
         "type": "file",
         "language": "Python",
-        "size": 2475,
+        "size": 2570,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/client.py"
       },
@@ -561,7 +667,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 736,
+        "size": 781,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/config.py"
       },
@@ -577,7 +683,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 3131,
+        "size": 5954,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/models.py"
       },
@@ -599,7 +705,7 @@
         "name": "classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 12139,
+        "size": 26887,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/classrooms.py"
       },
@@ -607,9 +713,17 @@
         "name": "profile.py",
         "type": "file",
         "language": "Python",
-        "size": 3198,
+        "size": 3510,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/profile.py"
+      },
+      {
+        "name": "restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5059,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/private/restaurant.py"
       },
       {
         "name": "session.py",
@@ -667,7 +781,7 @@
         "name": "jsf.py",
         "type": "file",
         "language": "Python",
-        "size": 3335,
+        "size": 3824,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/utils/jsf.py"
       },
@@ -675,15 +789,37 @@
         "name": "parsing.py",
         "type": "file",
         "language": "Python",
-        "size": 1270,
+        "size": 1546,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/utils/parsing.py"
+      },
+      {
+        "name": "pdf.py",
+        "type": "file",
+        "language": "Python",
+        "size": 870,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/utils/pdf.py"
       },
       {
         "name": "tests",
         "type": "directory",
         "path": "packages/sigaa-client/tests",
         "children": []
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "packages/sigaa-client/tests/fixtures",
+        "children": []
+      },
+      {
+        "name": "carteirinha.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 1938,
+        "extension": ".pdf",
+        "path": "packages/sigaa-client/tests/fixtures/carteirinha.pdf"
       },
       {
         "name": "test_auth.py",
@@ -697,9 +833,17 @@
         "name": "test_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 4739,
+        "size": 14870,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_classrooms.py"
+      },
+      {
+        "name": "test_profile.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2472,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/test_profile.py"
       },
       {
         "name": "test_public_classrooms.py",
@@ -710,10 +854,18 @@
         "path": "packages/sigaa-client/tests/test_public_classrooms.py"
       },
       {
+        "name": "test_restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5690,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/test_restaurant.py"
+      },
+      {
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 610,
+        "size": 844,
         "extension": ".toml",
         "path": "pyproject.toml"
       },
@@ -729,14 +881,14 @@
         "name": "uv.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 223980,
+        "size": 243273,
         "extension": ".lock",
         "path": "uv.lock"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-21T11:31:07.903984",
+    "extracted_at": "2026-09-22T10:40:55.162144",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
