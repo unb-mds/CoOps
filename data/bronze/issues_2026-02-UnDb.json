@@ -1,7 +1,7 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-21T10:27:52.991992",
+      "extracted_at": "2026-09-22T09:42:07.977901",
       "file_path": "data/bronze/issues_2026-02-UnDb.json",
       "record_count": 48
     }
@@ -776,11 +776,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -934,11 +934,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -1094,11 +1094,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -1219,7 +1219,7 @@
         "archived_by": null
       }
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignees": [
       {
@@ -1274,18 +1274,18 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
-    "comments": 0,
+    "comments": 1,
     "created_at": "2026-09-05T17:48:04Z",
-    "updated_at": "2026-09-17T20:15:01Z",
-    "closed_at": null,
+    "updated_at": "2026-09-21T22:11:12Z",
+    "closed_at": "2026-09-21T22:11:12Z",
     "assignee": {
       "login": "nicolaszanin06",
       "id": 213249676,
@@ -1323,8 +1323,28 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "### 📚 Descrição e objetivo\n\nPermitir cadastro pela interface e API solicitando apenas nome, e-mail `@aluno.unb.br` e senha, conforme RF01 e o modelo validado em #47.\n\n### ✅ Critérios de aceite\n\n- [ ] Formulário solicita nome, e-mail e senha, sem matrícula, CPF ou histórico acadêmico.\n- [ ] Endereços fora do domínio `@aluno.unb.br` são rejeitados.\n- [ ] API registra o usuário com e-mail inicialmente não confirmado e a interface informa o resultado do cadastro.\n- [ ] O sistema envia link para confirmar a posse do endereço institucional.\n- [ ] Usuário sem e-mail confirmado não pode registrar avaliação; as consultas continuam públicas.\n- [ ] Validação de entrada e comportamento em caso de e-mail já cadastrado seguem o contrato documentado.\n- [ ] Há evidência do fluxo válido e das rejeições previstas no contrato.\n\n### 📝 Tarefas\n\n- [ ] Detalhar o contrato de cadastro conforme a decisão #47 e a persistência validada.\n- [ ] Implementar API e persistência.\n- [ ] Implementar formulário usando a estrutura #29 e padrão #31.\n- [ ] Integrar o envio e a confirmação por link.\n- [ ] Verificar integração real entre interface e API.\n\n### 📎 Dependências e limites\n\nA decisão de elegibilidade e confirmação foi resolvida em #47. A implementação ainda depende de #29, #31, da persistência já aprovada e da definição do provedor de e-mail e da validade do link de confirmação. Não escolher silenciosamente provedor, algoritmo de credenciais ou ORM. Sessão é acompanhada em #49.\n\n### 👤 Planejamento\n\nEpic #14. Release 1. Responsável, prioridade e sprint: a definir na planning.",
-    "closed_by": null,
+    "body": "### 📚 Descrição e objetivo\n\nPermitir cadastro pela interface e API solicitando apenas nome, e-mail `@aluno.unb.br` e senha, conforme RF01 e o modelo validado em #47.\n\n### ✅ Critérios de aceite\n\n- [x] Formulário solicita nome, e-mail e senha, sem matrícula, CPF ou histórico acadêmico.\n- [x] Endereços fora do domínio `@aluno.unb.br` são rejeitados.\n- [x] API registra o usuário com e-mail inicialmente não confirmado e a interface informa o resultado do cadastro.\n- [x] O sistema gera e envia o link de confirmação pelo adaptador configurado.\n- [x] O estado `email_confirmado` é persistido e disponibilizado para impedir avaliações antes da confirmação; a aplicação dessa proteção no endpoint permanece rastreada em #39/#49.\n- [x] Validação de entrada e comportamento em caso de e-mail já cadastrado seguem o contrato documentado.\n- [x] Há testes do fluxo válido, domínio inválido, duplicidade, envio, confirmação, expiração e adulteração do token.\n\n### 📝 Tarefas\n\n- [x] Detalhar o contrato de cadastro conforme a decisão #47.\n- [x] Implementar API e persistência.\n- [x] Implementar formulário usando a estrutura #29 e padrão #31.\n- [x] Integrar o envio e a confirmação por link.\n- [x] Verificar a integração entre interface, API e confirmação.\n\n### ✅ Evidências de conclusão\n\n- PR #107 aprovada e integrada em `develop`.\n- Checks de backend, frontend, documentação e política Gitflow aprovados.\n- Cadastro, confirmação e rejeições previstas cobertos em `backend/tests/test_auth.py`.\n\n### 📎 Handoffs preservados\n\n- Sessão, login, cookie e logout: #49.\n- Proteção do registro de avaliações por sessão e e-mail confirmado: #39/#49.\n\n### 👤 Planejamento\n\nEpic #14. Release 1.\n",
+    "closed_by": {
+      "login": "nicolaszanin06",
+      "id": 213249676,
+      "node_id": "U_kgDODLXujA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/213249676?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nicolaszanin06",
+      "html_url": "https://github.com/nicolaszanin06",
+      "followers_url": "https://api.github.com/users/nicolaszanin06/followers",
+      "following_url": "https://api.github.com/users/nicolaszanin06/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nicolaszanin06/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nicolaszanin06/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nicolaszanin06/subscriptions",
+      "organizations_url": "https://api.github.com/users/nicolaszanin06/orgs",
+      "repos_url": "https://api.github.com/users/nicolaszanin06/repos",
+      "events_url": "https://api.github.com/users/nicolaszanin06/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nicolaszanin06/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/48/reactions",
       "total_count": 0,
@@ -1339,7 +1359,7 @@
     },
     "timeline_url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/48/timeline",
     "performed_via_github_app": null,
-    "state_reason": null,
+    "state_reason": "completed",
     "pinned_comment": null,
     "repo_name": "2026-02-UnDb"
   },
@@ -1676,11 +1696,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -1887,11 +1907,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2098,11 +2118,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2309,11 +2329,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2829,11 +2849,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -3294,7 +3314,7 @@
     },
     "comments": 1,
     "created_at": "2026-09-01T13:59:43Z",
-    "updated_at": "2026-09-20T18:47:44Z",
+    "updated_at": "2026-09-21T22:10:42Z",
     "closed_at": null,
     "assignee": {
       "login": "TiagoVieira-596",
@@ -3333,7 +3353,7 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "## 📚 Descrição\nTeste de ponta a ponta: subir todo o ambiente (`docker compose up`) do zero, numa máquina limpa, validando que qualquer membro do time consegue rodar o projeto sem passos manuais extras.\n\n## 🎯 Objetivo\nConfirmar que a Epic de Docker está de fato pronta antes de fechá-la.\n\n## ✅ Requisitos (Critérios de Aceite)\n- [ ] Ambiente sobe do zero só com `docker compose up --build`\n- [ ] Nenhum passo manual extra necessário além de copiar `.env.example`\n- [ ] Testado por pelo menos 2 membros diferentes do time\n\n## 📌 Prioridade\n- [ ] **Baixa**\n- [ ] **Média**\n- [x] **Alta**\n- [ ] **Urgente**\n\n## 📝 Checklist de Tarefas\n- [ ] Testar em máquina limpa (ou clone novo do repo)\n- [ ] Documentar qualquer passo faltante no README\n- [ ] Confirmar com 2º membro do time\n\n## 👤 Responsável\n\n\n## 📎 Anexo\nDepende de: todas as issues anteriores desta Epic\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)",
+    "body": "## 📚 Descrição\n\nTeste de ponta a ponta do ambiente completo em clone novo, confirmando que diferentes membros conseguem executar o projeto sem passos manuais além da configuração documentada.\n\n## 🎯 Objetivo\n\nConfirmar que a Epic de Docker está pronta antes de encerrá-la.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [x] Ambiente sobe do zero com Docker Compose e build.\n- [x] Nenhum passo manual extra foi necessário além de copiar `.env.example`.\n- [ ] Execução confirmada por pelo menos dois membros diferentes.\n\n## 📝 Checklist de Tarefas\n\n- [x] Primeira validação em clone novo concluída por Gabriel.\n- [x] Verificar e documentar passos faltantes; nenhum passo faltante foi identificado.\n- [x] Registrar evidência da primeira execução na PR #113.\n- [ ] Mesclar a evidência da PR #113.\n- [ ] Confirmar o ambiente com um segundo membro e registrar a evidência.\n\n## 📌 Estado atual\n\nA primeira validação independente foi concluída no commit `372ede1`, cobrindo PostgreSQL, backend, frontend, migração, CORS, persistência e ausência de segredos nas imagens. A issue permanece aberta até a segunda validação independente.\n\n## 📎 Evidência\n\nPR #113 e comentário de validação nesta issue.\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)\n",
     "closed_by": null,
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/37/reactions",
@@ -5356,11 +5376,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -5558,17 +5578,17 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 7,
-      "closed_issues": 4,
+      "open_issues": 6,
+      "closed_issues": 5,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-18T21:17:25Z",
+      "updated_at": "2026-09-21T22:11:12Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
     "comments": 0,
     "created_at": "2026-09-01T13:12:16Z",
-    "updated_at": "2026-09-20T15:13:38Z",
+    "updated_at": "2026-09-21T22:10:44Z",
     "closed_at": null,
     "assignee": {
       "login": "ailoiol",
@@ -5607,7 +5627,7 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "### 📚 Descrição e objetivo\n\nDefinir e implementar a operação recorrente da importação e o registro do resultado de cada execução, cobrindo RF18–RF19.\n\n### ✅ Critérios de aceite\n\n- [ ] Periodicidade e mecanismo de execução estão definidos pelo time e documentados.\n- [ ] Atualização é executável conforme a periodicidade escolhida; execução manual eventual, sem rotina definida, não basta para atender RF18.\n- [x] Cada execução registra sucesso ou falha de forma consultável (RF19).\n- [x] Instruções descrevem como executar e verificar o resultado da atualização.\n- [x] Foi demonstrada uma execução da rotina e verificado seu registro de resultado.\n\n### 📝 Tarefas\n\n- [ ] Apresentar opções de operação recorrente ao time.\n- [ ] Registrar a decisão sem fixar frequência ou ferramenta antes da validação.\n- [x] Conectar a rotina à importação #25.\n- [ ] Verificar os registros de sucesso e falha.\n\n### 📎 Dependências e pendências\n\n#25. Periodicidade, mecanismo de disparo e local de armazenamento dos registros precisam ser definidos. O planejamento da operação pode avançar antes da integração; a verificação depende dela.\n\n### 📌 Prioridade e responsável\n\nPrioridade: Baixa (preservada; revisar na planning considerando RF18–RF19). Responsável: a definir em Assignees.",
+    "body": "### 📚 Descrição e objetivo\n\nDefinir e implementar a operação recorrente da importação e o registro do resultado de cada execução, cobrindo RF18–RF19.\n\n### ✅ Critérios de aceite\n\n- [ ] Periodicidade está definida pelo time e integrada à documentação oficial.\n- [x] O mecanismo recorrente via cron e o comando agendado estão implementados.\n- [x] Cada execução registra sucesso ou falha de forma consultável (RF19).\n- [x] Instruções descrevem como executar e verificar o resultado da atualização.\n- [x] Foi demonstrada uma execução da rotina e verificado seu registro.\n\n### 📝 Tarefas\n\n- [x] Implementar o comando separado e o mecanismo de cron (PR #110).\n- [x] Conectar a rotina à importação #25.\n- [x] Implementar e verificar registros de sucesso e falha (PR #110).\n- [ ] Integrar a decisão aprovada de periodicidade e fuso (PR #111).\n- [ ] Reconciliar ou encerrar a alternativa divergente da PR #112.\n\n### 📌 Estado atual\n\n- A PR #110 foi aprovada e integrada em `develop`, entregando comando agendado, cron configurável e histórico consultável.\n- A PR #111 documenta a política de execução diária durante matrícula e semanal no restante do semestre, no fuso `America/Sao_Paulo`; permanece aberta e aguardando revisão.\n- A PR #112 permanece aberta com uma alternativa divergente, diária e fixa, que precisa ser reconciliada antes do encerramento.\n\nA issue permanece aberta até que exista uma única decisão operacional integrada em `develop`.\n\n### 📎 Dependência\n\n#25 concluída.\n\n### 📌 Prioridade e responsável\n\nPrioridade: Baixa. Responsável: a definir em Assignees.\n",
     "closed_by": null,
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/26/reactions",
@@ -7871,7 +7891,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2026-08-31T20:20:18Z",
-    "updated_at": "2026-09-14T01:56:23Z",
+    "updated_at": "2026-09-21T22:10:41Z",
     "closed_at": null,
     "assignee": {
       "login": "nicolaszanin06",
@@ -7922,8 +7942,8 @@
     "active_lock_reason": null,
     "sub_issues_summary": {
       "total": 12,
-      "completed": 7,
-      "percent_completed": 58
+      "completed": 8,
+      "percent_completed": 66
     },
     "issue_dependencies_summary": {
       "blocked_by": 0,
@@ -7931,7 +7951,7 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "### 📚 Descrição\n\nImplementar o núcleo de consulta, comparação e registro de avaliações de professores por disciplina, conforme os requisitos da Release 1. Cada avaliação contém Didática, Dificuldade, Chamada, Material e Recomenda a matéria.\n\n### 🎯 Objetivo\n\nPermitir que visitantes consultem resultados agregados e comparem professores de uma disciplina, e que estudantes autenticados registrem avaliações estruturadas.\n\n### ✅ Critérios de aceite — Release 1\n\n- [ ] Avaliação contém os cinco critérios da seção 6 dos requisitos, sem texto livre (RF14).\n- [ ] Registro exige estudante autenticado (RF02, RF14).\n- [ ] Cada usuário mantém uma avaliação por professor/disciplina; novo envio válido substitui a anterior (RF03).\n- [ ] Consulta de resultados é acessível sem cadastro (RF04).\n- [ ] Resultados são agregados por professor e disciplina, conforme a natureza de cada critério (RF08, RF15).\n- [ ] Resultados informam a quantidade de avaliações e distinguem ausência de dados de avaliação negativa (RF09–RF10).\n- [ ] Critérios factuais apresentam estado conflitante conforme regra a ser detalhada pelo time (RF11).\n- [ ] Busca permite encontrar professor por nome e disciplina por nome ou código, inclusive de outros departamentos (RF05–RF07).\n- [ ] Comparação exibe professores da mesma disciplina lado a lado e permite ordenar pelo percentual de recomendação (RF12–RF13).\n- [ ] Dificuldade e Chamada têm apresentação neutra; não há índice composto dos cinco critérios.\n\n### 📝 Tarefas relacionadas\n\n- [ ] #38 — Modelo dos cinco critérios.\n- [ ] #39 — Registro de avaliação pela API.\n- [ ] #40 — Consulta agregada.\n- [ ] #42 — Formulário de avaliação.\n- [ ] #43 — Detalhe do professor.\n- [ ] #44 — Busca por professor.\n- [ ] #45 — Busca por disciplina.\n- [ ] #51 — Comparação e ordenação (RF12–RF13).\n- [x] #47 — Validar modelo de identificação, cadastro e sessão.\n- [ ] #48 — Cadastro enxuto (RF01).\n- [ ] #49 — Autenticação e sessão (RF02/RF04).\n- [ ] #50 — Bloqueio de avaliação duplicada (RF03).\n\n### 📎 Dependências e decisões pendentes\n\n- Dados de professores, disciplinas e turmas: #12.\n- Estrutura de frontend: #29; padrão visual: #31.\n- Modelo de cadastro e sessão aprovado em #47. Implementação depende de #48/#49 e das decisões de envio/validade do link.\n- Agregação e exibição: regras aprovadas pelo PO, registradas em requisitos/specs e nas #38/#40/#51.\n\nA verificação de que o aluno cursou a disciplina está fora do escopo da Release 1, conforme seções 11 e 12. A #41 registra a proposta anterior; não é dependência desta entrega.\n\n### Release 2 — acompanhamento separado\n\nComentários em texto livre, denúncia e moderação (RF20–RF22) permanecem planejados para a Release 2 e não bloqueiam o aceite da Release 1. Criar e vincular as respectivas tarefas no planejamento dessa release.\n\n### 📌 Prioridade e responsável\n\nPrioridade: Alta (preservada).\nResponsável pelo acompanhamento: Nicolas, conforme descrição atual. Manter os assignees existentes até a distribuição do time.",
+    "body": "### 📚 Descrição\n\nImplementar o núcleo de consulta, comparação e registro de avaliações de professores por disciplina para a Release 1.\n\n### 🎯 Objetivo\n\nPermitir consulta pública de resultados agregados e comparação, além do registro de avaliações estruturadas por estudantes autenticados.\n\n### ✅ Critérios de aceite — Release 1\n\n- [x] Modelo contém os cinco critérios, sem texto livre (#38).\n- [ ] Registro exige estudante autenticado (#39/#49).\n- [ ] Cada usuário mantém uma avaliação por professor/disciplina, com substituição (#39/#50).\n- [x] Consulta de resultados é acessível sem cadastro (#40/#43).\n- [x] Resultados são agregados por professor e disciplina (#40/#43).\n- [x] Resultados informam quantidade e distinguem ausência de dados (#40/#43).\n- [x] Critérios factuais apresentam estado conflitante conforme regra aprovada (#40).\n- [x] Busca encontra professor por nome e disciplina por nome ou código (#44/#45).\n- [x] Comparação lado a lado e ordenação por recomendação foram entregues (#51).\n- [x] Dificuldade e Chamada têm apresentação neutra, sem índice composto (#40/#43/#51).\n\n### 📝 Tarefas relacionadas\n\n- [x] #38 — Modelo dos cinco critérios.\n- [ ] #39 — Registro de avaliação pela API.\n- [x] #40 — Consulta agregada.\n- [ ] #42 — Formulário de avaliação.\n- [x] #43 — Detalhe do professor.\n- [x] #44 — Busca por professor.\n- [x] #45 — Busca por disciplina.\n- [x] #51 — Comparação e ordenação.\n- [x] #47 — Validar modelo de identificação, cadastro e sessão.\n- [x] #48 — Cadastro enxuto.\n- [ ] #49 — Autenticação e sessão.\n- [ ] #50 — Avaliação única com substituição.\n\n### 📎 Dependências e estado atual\n\n- Dados institucionais: #12.\n- Cadastro concluído em #48; autenticação e sessão permanecem em #49.\n- O fluxo de escrita permanece pendente em #39, #42 e #50.\n- A verificação de disciplina cursada está fora da Release 1; #41 registra a proposta anterior.\n\n### Release 2\n\nComentários em texto livre, denúncia e moderação permanecem fora deste escopo.\n\n### 📌 Prioridade e responsável\n\nPrioridade: Alta. Responsável pelo acompanhamento: Nicolas.\n",
     "closed_by": null,
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/14/reactions",
@@ -8029,7 +8049,7 @@
         "archived_by": null
       }
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignees": [
       {
@@ -8055,10 +8075,10 @@
       }
     ],
     "milestone": null,
-    "comments": 0,
+    "comments": 1,
     "created_at": "2026-08-31T20:18:34Z",
-    "updated_at": "2026-09-14T01:56:18Z",
-    "closed_at": null,
+    "updated_at": "2026-09-21T22:11:10Z",
+    "closed_at": "2026-09-21T22:11:10Z",
     "assignee": {
       "login": "ViniGvdo",
       "id": 198657137,
@@ -8117,8 +8137,28 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "## 📚 Descrição\nEpic que cobre a definição da stack de frontend e a construção das telas da aplicação, consumindo a API REST exposta pelo backend em FastAPI. Usa Next.js + Tailwind aprovados na #28 e a estruturação inicial do projeto frontend, respeitando a exigência da professora Carla Rocha de separação clara entre front e back.\n\n## 🎯 Objetivo\nTer uma interface funcional e desacoplada do backend, que consuma a API via `fetch()` (ou equivalente), permitindo que o time evolua a interface de forma independente do desenvolvimento do backend.\n\n## 📋 Conteúdos\n- Stack aprovada: Next.js + Tailwind CSS\n- Estrutura de consumo de API REST via `fetch()`\n- Organização de pastas/componentes do frontend\n- Padrões de UI/UX básicos para o produto (professor/disciplina/avaliação)\n- Containerização do frontend (decisão pendente na Epic de Docker)\n\n## ✅ Requisitos (Critérios de Aceite)\n- [x] Stack de frontend decidida e documentada pelo time (#28)\n- [ ] Estrutura inicial do projeto frontend criada e versionada\n- [ ] Frontend consegue consumir pelo menos um endpoint real do backend FastAPI\n- [ ] Separação clara entre frontend e backend mantida (sem lógica de negócio no frontend)\n\n## 📌 Prioridade\n- [ ] **Baixa:** Não impacta o fluxo principal.\n- [x] **Média:** Necessária para a continuidade do projeto.\n- [ ] **Alta:** Impacto direto na entrega da sprint.\n- [ ] **Urgente:** Bloqueia o time ou produção.\n\n## 📝 Checklist de Tarefas\n- [x] Registrar stack aprovada (#28; ADR 02)\n- [ ] Criar estrutura inicial do projeto frontend\n- [ ] Implementar tela de exemplo consumindo um endpoint real\n- [ ] Definir padrão visual básico (cores, tipografia, layout)\n- [ ] #36 — Definir execução e containerização do frontend (consolida a antiga #32)\n\n## 👤 Responsável\nVinicius — acompanhamento frontend; #36 permanece sob Docker com participação de frontend. #32 foi cancelada por consolidação e não integra o progresso ativo.\n\n## 📎 Anexo\n—\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)",
-    "closed_by": null,
+    "body": "## 📚 Descrição\n\nEpic da definição da stack e construção da base do frontend desacoplado do backend. A stack aprovada é Next.js + Tailwind CSS, com consumo da API REST do FastAPI.\n\n## 🎯 Objetivo\n\nManter uma interface funcional e independente do backend, consumindo contratos HTTP reais sem incorporar lógica de negócio do servidor.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [x] Stack de frontend decidida e documentada pelo time (#28; ADR 02).\n- [x] Estrutura inicial do projeto frontend criada e versionada (#29; PR #95).\n- [x] Frontend consome endpoints reais do backend FastAPI (#30, atendida pelas telas de busca; PRs #96 e #99).\n- [x] Separação clara entre frontend e backend mantida, com consumo por serviços HTTP.\n\n## 📝 Checklist de Tarefas\n\n- [x] Registrar stack aprovada (#28; ADR 02).\n- [x] Criar estrutura inicial do projeto frontend (#29).\n- [x] Implementar fluxo consumindo endpoint real (#30, atendida pelas telas definitivas).\n- [x] Definir padrão visual básico (#31; PRs #97 e #103).\n- [x] Definir execução e containerização do frontend (#36; PR #104).\n\n## ✅ Evidências de conclusão\n\n- Estrutura Next.js/Tailwind integrada em `develop`.\n- Telas de professores e disciplinas consomem a API real, exibem os dados retornados e tratam falhas de requisição.\n- Execução local e containerização do frontend foram definidas e validadas.\n- As issues filhas #28, #29, #30, #31 e #36 estão concluídas.\n\n## 👤 Responsável\n\nVinicius — acompanhamento frontend.\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)\n",
+    "closed_by": {
+      "login": "nicolaszanin06",
+      "id": 213249676,
+      "node_id": "U_kgDODLXujA",
+      "avatar_url": "https://avatars.githubusercontent.com/u/213249676?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nicolaszanin06",
+      "html_url": "https://github.com/nicolaszanin06",
+      "followers_url": "https://api.github.com/users/nicolaszanin06/followers",
+      "following_url": "https://api.github.com/users/nicolaszanin06/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nicolaszanin06/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nicolaszanin06/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nicolaszanin06/subscriptions",
+      "organizations_url": "https://api.github.com/users/nicolaszanin06/orgs",
+      "repos_url": "https://api.github.com/users/nicolaszanin06/repos",
+      "events_url": "https://api.github.com/users/nicolaszanin06/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nicolaszanin06/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/13/reactions",
       "total_count": 0,
@@ -8133,7 +8173,7 @@
     },
     "timeline_url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/13/timeline",
     "performed_via_github_app": null,
-    "state_reason": null,
+    "state_reason": "completed",
     "pinned_comment": null,
     "repo_name": "2026-02-UnDb"
   },
@@ -8285,7 +8325,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2026-08-31T20:16:15Z",
-    "updated_at": "2026-09-17T03:03:16Z",
+    "updated_at": "2026-09-21T22:10:44Z",
     "closed_at": null,
     "assignee": {
       "login": "ailoiol",
@@ -8345,7 +8385,7 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "### 📚 Descrição\n\nObter e organizar dados públicos de professores, disciplinas e turmas da UnB para apoiar buscas, consultas e comparação no produto. A importação deve cobrir todos os departamentos, manter os dados atualizados periodicamente e registrar sucesso ou falha de cada execução (RF16–RF19).\n\n### 🎯 Objetivo\n\nDisponibilizar dados institucionais que permitam consultar disciplinas e professores inclusive fora dos cursos de interesse imediato da equipe.\n\n### ✅ Critérios de aceite\n\n- [ ] Importação obtém professores, disciplinas e turmas de páginas públicas do SIGAA, sem login no sistema institucional (RF16).\n- [ ] Dados extraídos são armazenados com os relacionamentos necessários ao produto.\n- [ ] Importação contempla todos os departamentos; cobertura e eventuais lacunas são registradas, sem considerar amostra de teste como cobertura total (RF17).\n- [ ] Atualização periódica está definida, documentada e implementada (RF18).\n- [ ] Cada execução registra sucesso ou falha (RF19).\n- [ ] Tratamento de erros de coleta é verificado conforme #27.\n\n### 📝 Tarefas relacionadas\n\n- [x] #22 — Mapear fontes públicas e cobertura.\n- [x] #23 — Validar viabilidade da extração.\n- [x] #24 — Definir modelo de professores, disciplinas e turmas.\n- [ ] #25 — Integrar importação e disponibilização dos dados.\n- [ ] #26 — Implementar atualização periódica e registro de execução.\n- [ ] #27 — Validar extração, cobertura e falhas.\n\n### 📎 Dependências e pendências\n\nA POC #23 demonstrou HTTP para 108 ofertas do CIC/2026.2; isso não comprova cobertura completa nem integração persistida. Validar a proposta de arquitetura antes de adotar seu mecanismo de persistência e execução. A resiliência por departamento do RNF07 permanece proposta, sujeita à validação do time.\n\nDados de matrícula ou histórico individual não fazem parte desta entrega e não são dependência para comprovar que alguém cursou uma disciplina.\n\n### 📌 Prioridade e responsável\n\nPrioridade: Média. Responsável pelo acompanhamento: a definir em Assignees.",
+    "body": "### 📚 Descrição\n\nObter e organizar dados públicos de professores, disciplinas e turmas da UnB para buscas, consultas e comparação. A importação deve cobrir todos os departamentos, manter os dados atualizados periodicamente e registrar o resultado de cada execução (RF16–RF19).\n\n### 🎯 Objetivo\n\nDisponibilizar dados institucionais consultáveis inclusive fora dos cursos de interesse imediato da equipe.\n\n### ✅ Critérios de aceite\n\n- [x] Importação obtém professores, disciplinas e turmas de páginas públicas do SIGAA sem login (RF16; #25).\n- [x] Dados extraídos são armazenados com os relacionamentos necessários ao produto (#24/#25).\n- [ ] Importação contempla todos os departamentos, com cobertura e lacunas documentadas (RF17; #27).\n- [ ] Atualização periódica está definida, documentada e integrada (RF18; #26).\n- [x] Cada execução pode registrar sucesso ou falha (RF19; PR #110).\n- [ ] Tratamento de casos reais, cobertura e falhas está verificado conforme #27.\n\n### 📝 Tarefas relacionadas\n\n- [x] #22 — Mapear fontes públicas e cobertura.\n- [x] #23 — Validar viabilidade da extração.\n- [x] #24 — Definir modelo de professores, disciplinas e turmas.\n- [x] #25 — Integrar importação e disponibilização dos dados.\n- [ ] #26 — Concluir decisão operacional da atualização periódica.\n- [ ] #27 — Validar casos reais, cobertura e falhas.\n\n### 📌 Estado atual\n\nA integração persistida e o registro de execução estão disponíveis em `develop`. A epic permanece aberta até a conclusão da periodicidade em #26 e da validação/cobertura em #27.\n\nDados de matrícula ou histórico individual não fazem parte desta entrega.\n\n### 📌 Prioridade e responsável\n\nPrioridade: Média. Responsável pelo acompanhamento: a definir em Assignees.\n",
     "closed_by": null,
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/12/reactions",
@@ -8471,7 +8511,7 @@
     "milestone": null,
     "comments": 0,
     "created_at": "2026-08-31T20:13:45Z",
-    "updated_at": "2026-09-14T01:56:08Z",
+    "updated_at": "2026-09-21T22:10:45Z",
     "closed_at": null,
     "assignee": {
       "login": "nicolaszanin06",
@@ -8531,7 +8571,7 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "## 📚 Descrição\nEpic que cobre toda a infraestrutura de containerização do projeto via Docker — Dockerfile do backend (FastAPI), configuração do banco de dados (PostgreSQL) e orquestração via Docker Compose, seguindo o padrão definido na skill `skills/technology/docker/SKILL.md`.\n\n## 🎯 Objetivo\nPermitir que qualquer membro do time suba o ambiente completo de desenvolvimento (backend + banco) com um único comando, eliminando o problema de \"na minha máquina funciona\" e preparando o projeto para um eventual deploy futuro.\n\n## 📋 Conteúdos\n- Dockerfile para serviços Python (base `python:3.12-slim`, entrypoint `uvicorn`)\n- Convenções de `.dockerignore`\n- `docker-compose.yml` (backend + PostgreSQL)\n- Gerenciamento de variáveis de ambiente (`.env` + `python-decouple`, sem segredos commitados)\n- Containerização do frontend (decisão pendente)\n\n## ✅ Requisitos (Critérios de Aceite)\n- [ ] Skill de Docker revisada, aprovada e mergeada (status \"proposed\" → \"defined\")\n- [ ] `docker compose up` sobe backend + banco de dados sem erro\n- [ ] Dockerfile do backend segue as convenções definidas na skill\n- [ ] Nenhum segredo/API key commitado — tudo via `.env`\n- [ ] Decisão sobre containerização do frontend tomada e documentada\n\n## 📌 Prioridade\n- [ ] **Baixa:** Não impacta o fluxo principal.\n- [ ] **Média:** Necessária para a continuidade do projeto.\n- [x] **Alta:** Impacto direto na entrega da sprint.\n- [ ] **Urgente:** Bloqueia o time ou produção.\n\n## 📝 Checklist de Tarefas\n- [x] Abrir PR da skill de Docker (PR #3)\n- [ ] Revisão e merge da skill pelo time\n- [x] Criar Dockerfile do backend (#33)\n- [ ] Criar `docker-compose.yml` (backend + PostgreSQL)\n- [x] Configurar `.env` de exemplo (`.env.example`) sem valores reais (#35)\n- [ ] #36 — Definir execução e containerização do frontend (acompanhamento compartilhado com #13)\n- [ ] Testar subida completa do ambiente do zero (`docker compose up`)\n\n## 👤 Responsável\nNicolas — acompanhamento. Dockerfile e .env.example concluídos; skill Docker segue proposta e não foi promovida por esta revisão.\n\n## 📎 Anexo\n`skills/technology/docker/SKILL.md`\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)",
+    "body": "## 📚 Descrição\n\nEpic da infraestrutura de containerização do projeto via Docker: backend FastAPI, PostgreSQL, Docker Compose e frontend.\n\n## 🎯 Objetivo\n\nPermitir que qualquer membro do time suba o ambiente completo de desenvolvimento de forma reproduzível, sem segredos versionados.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [ ] Skill de Docker revisada, aprovada e promovida de `proposed` para `defined`.\n- [x] Docker Compose sobe backend e banco de dados sem erro (#34; PRs #93 e #105).\n- [x] Dockerfile do backend entregue (#33).\n- [x] Configuração usa `.env`/`.env.example`, sem segredos versionados (#35).\n- [x] Execução e containerização do frontend decididas e documentadas (#36; PR #104).\n- [ ] Ambiente completo validado por dois membros diferentes (#37).\n\n## 📝 Checklist de Tarefas\n\n- [x] Abrir PR da skill de Docker (PR #3).\n- [ ] Revisar e promover a skill pelo processo de aprovação humana.\n- [x] Criar Dockerfile do backend (#33).\n- [x] Criar Docker Compose para backend e PostgreSQL (#34).\n- [x] Configurar `.env.example` sem valores reais (#35).\n- [x] Definir execução e containerização do frontend (#36).\n- [ ] Concluir teste do ambiente completo com dois membros (#37; primeira validação registrada na PR #113).\n\n## 📌 Estado atual\n\nA infraestrutura foi integrada e os checks automatizados estão aprovados. A epic permanece aberta porque a skill Docker ainda está `proposed` e a #37 exige uma segunda validação independente.\n\n## 👤 Responsável\n\nNicolas — acompanhamento.\n\n## 📎 Anexo\n\n`skills/technology/docker/SKILL.md`\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)\n",
     "closed_by": null,
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/11/reactions",
