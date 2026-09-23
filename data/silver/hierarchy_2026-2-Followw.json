@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-22T10:39:51.246687",
+  "extracted_at": "2026-09-23T10:49:27.847582",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -114,14 +114,6 @@
         "path": ".claude/skills"
       },
       {
-        "name": ".env.example",
-        "type": "file",
-        "language": "Unknown",
-        "size": 114,
-        "extension": ".example",
-        "path": ".env.example"
-      },
-      {
         "name": ".github",
         "type": "directory",
         "path": ".github",
@@ -169,7 +161,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 36,
+        "size": 60,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -191,7 +183,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2215,
+        "size": 2212,
         "extension": ".md",
         "path": "AGENTS.md"
       },
@@ -232,6 +224,14 @@
         "children": []
       },
       {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 359,
+        "extension": ".example",
+        "path": "apps/api/.env.example"
+      },
+      {
         "name": ".python-version",
         "type": "file",
         "language": "Unknown",
@@ -243,7 +243,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4883,
+        "size": 8520,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
       },
@@ -279,7 +279,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 415,
+        "size": 637,
         "extension": ".py",
         "path": "apps/api/api/core/config.py"
       },
@@ -309,7 +309,7 @@
         "name": "enums.py",
         "type": "file",
         "language": "Python",
-        "size": 400,
+        "size": 832,
         "extension": ".py",
         "path": "apps/api/api/db/enums.py"
       },
@@ -317,7 +317,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 643,
+        "size": 1005,
         "extension": ".py",
         "path": "apps/api/api/db/main.py"
       },
@@ -325,7 +325,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 3067,
+        "size": 5239,
         "extension": ".py",
         "path": "apps/api/api/db/models.py"
       },
@@ -336,10 +336,26 @@
         "children": []
       },
       {
+        "name": "qstash.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4314,
+        "extension": ".py",
+        "path": "apps/api/api/dependencies/qstash.py"
+      },
+      {
+        "name": "refresh.py",
+        "type": "file",
+        "language": "Python",
+        "size": 205,
+        "extension": ".py",
+        "path": "apps/api/api/dependencies/refresh.py"
+      },
+      {
         "name": "sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 1595,
+        "size": 3881,
         "extension": ".py",
         "path": "apps/api/api/dependencies/sigaa.py"
       },
@@ -352,10 +368,18 @@
         "path": "apps/api/api/dependencies/sigaa_public.py"
       },
       {
+        "name": "sync.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1316,
+        "extension": ".py",
+        "path": "apps/api/api/dependencies/sync.py"
+      },
+      {
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 826,
+        "size": 945,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -375,7 +399,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1757,
+        "size": 2059,
         "extension": ".py",
         "path": "apps/api/api/modules/auth/main.py"
       },
@@ -389,9 +413,23 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 533,
+        "size": 1908,
         "extension": ".py",
         "path": "apps/api/api/modules/classrooms/main.py"
+      },
+      {
+        "name": "jobs",
+        "type": "directory",
+        "path": "apps/api/api/modules/jobs",
+        "children": []
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 372,
+        "extension": ".py",
+        "path": "apps/api/api/modules/jobs/main.py"
       },
       {
         "name": "me",
@@ -403,7 +441,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 504,
+        "size": 604,
         "extension": ".py",
         "path": "apps/api/api/modules/me/main.py"
       },
@@ -417,7 +455,7 @@
         "name": "classroom.py",
         "type": "file",
         "language": "Python",
-        "size": 1244,
+        "size": 12252,
         "extension": ".py",
         "path": "apps/api/api/repositories/classroom.py"
       },
@@ -425,9 +463,39 @@
         "name": "user.py",
         "type": "file",
         "language": "Python",
-        "size": 721,
+        "size": 1688,
         "extension": ".py",
         "path": "apps/api/api/repositories/user.py"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "apps/api/api/services",
+        "children": []
+      },
+      {
+        "name": "classroom.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6567,
+        "extension": ".py",
+        "path": "apps/api/api/services/classroom.py"
+      },
+      {
+        "name": "profile.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1538,
+        "extension": ".py",
+        "path": "apps/api/api/services/profile.py"
+      },
+      {
+        "name": "sync.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10743,
+        "extension": ".py",
+        "path": "apps/api/api/services/sync.py"
       },
       {
         "name": "utils",
@@ -447,7 +515,7 @@
         "name": "session.py",
         "type": "file",
         "language": "Python",
-        "size": 2369,
+        "size": 3106,
         "extension": ".py",
         "path": "apps/api/api/utils/session.py"
       },
@@ -455,7 +523,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 866,
+        "size": 940,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
       },
@@ -469,7 +537,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 6576,
+        "size": 12507,
         "extension": ".py",
         "path": "apps/api/tests/conftest.py"
       },
@@ -485,7 +553,7 @@
         "name": "test_classroom_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 3932,
+        "size": 14864,
         "extension": ".py",
         "path": "apps/api/tests/test_classroom_repository.py"
       },
@@ -493,7 +561,7 @@
         "name": "test_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 8182,
+        "size": 18718,
         "extension": ".py",
         "path": "apps/api/tests/test_classrooms.py"
       },
@@ -501,9 +569,17 @@
         "name": "test_dependencies_sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 4881,
+        "size": 6544,
         "extension": ".py",
         "path": "apps/api/tests/test_dependencies_sigaa.py"
+      },
+      {
+        "name": "test_jobs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5012,
+        "extension": ".py",
+        "path": "apps/api/tests/test_jobs.py"
       },
       {
         "name": "test_main.py",
@@ -517,7 +593,7 @@
         "name": "test_me.py",
         "type": "file",
         "language": "Python",
-        "size": 6602,
+        "size": 6776,
         "extension": ".py",
         "path": "apps/api/tests/test_me.py"
       },
@@ -530,10 +606,18 @@
         "path": "apps/api/tests/test_session.py"
       },
       {
+        "name": "test_sync.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13348,
+        "extension": ".py",
+        "path": "apps/api/tests/test_sync.py"
+      },
+      {
         "name": "test_user_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2250,
+        "size": 3464,
         "extension": ".py",
         "path": "apps/api/tests/test_user_repository.py"
       },
@@ -544,6 +628,200 @@
         "size": 152,
         "extension": ".json",
         "path": "apps/api/vercel.json"
+      },
+      {
+        "name": "web",
+        "type": "directory",
+        "path": "apps/web",
+        "children": []
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 62,
+        "extension": ".example",
+        "path": "apps/web/.env.example"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 32,
+        "extension": ".gitignore",
+        "path": "apps/web/.gitignore"
+      },
+      {
+        "name": ".oxfmtrc.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 683,
+        "extension": ".json",
+        "path": "apps/web/.oxfmtrc.json"
+      },
+      {
+        "name": ".oxlintrc.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 772,
+        "extension": ".json",
+        "path": "apps/web/.oxlintrc.json"
+      },
+      {
+        "name": ".vscode",
+        "type": "directory",
+        "path": "apps/web/.vscode",
+        "children": []
+      },
+      {
+        "name": "extensions.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 46,
+        "extension": ".json",
+        "path": "apps/web/.vscode/extensions.json"
+      },
+      {
+        "name": "settings.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 488,
+        "extension": ".json",
+        "path": "apps/web/.vscode/settings.json"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5884,
+        "extension": ".md",
+        "path": "apps/web/README.md"
+      },
+      {
+        "name": "bun.lock",
+        "type": "file",
+        "language": "Lock File",
+        "size": 96953,
+        "extension": ".lock",
+        "path": "apps/web/bun.lock"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1601,
+        "extension": ".json",
+        "path": "apps/web/package.json"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "apps/web/src",
+        "children": []
+      },
+      {
+        "name": "integrations",
+        "type": "directory",
+        "path": "apps/web/src/integrations",
+        "children": []
+      },
+      {
+        "name": "posthog",
+        "type": "directory",
+        "path": "apps/web/src/integrations/posthog",
+        "children": []
+      },
+      {
+        "name": "provider.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 705,
+        "extension": ".tsx",
+        "path": "apps/web/src/integrations/posthog/provider.tsx"
+      },
+      {
+        "name": "tanstack-query",
+        "type": "directory",
+        "path": "apps/web/src/integrations/tanstack-query",
+        "children": []
+      },
+      {
+        "name": "devtools.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 163,
+        "extension": ".tsx",
+        "path": "apps/web/src/integrations/tanstack-query/devtools.tsx"
+      },
+      {
+        "name": "root-provider.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 222,
+        "extension": ".tsx",
+        "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx"
+      },
+      {
+        "name": "routeTree.gen.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1741,
+        "extension": ".ts",
+        "path": "apps/web/src/routeTree.gen.ts"
+      },
+      {
+        "name": "router.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 763,
+        "extension": ".tsx",
+        "path": "apps/web/src/router.tsx"
+      },
+      {
+        "name": "routes",
+        "type": "directory",
+        "path": "apps/web/src/routes",
+        "children": []
+      },
+      {
+        "name": "__root.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1925,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/__root.tsx"
+      },
+      {
+        "name": "index.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 424,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/index.tsx"
+      },
+      {
+        "name": "styles.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 127,
+        "extension": ".css",
+        "path": "apps/web/src/styles.css"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 743,
+        "extension": ".json",
+        "path": "apps/web/tsconfig.json"
+      },
+      {
+        "name": "vite.config.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 808,
+        "extension": ".ts",
+        "path": "apps/web/vite.config.ts"
       },
       {
         "name": "compose.yml",
@@ -563,7 +841,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 17096,
+        "size": 17465,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -613,7 +891,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8409,
+        "size": 8631,
         "extension": ".md",
         "path": "packages/sigaa-client/AGENTS.md"
       },
@@ -629,7 +907,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7092,
+        "size": 7064,
         "extension": ".md",
         "path": "packages/sigaa-client/README.md"
       },
@@ -667,7 +945,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 781,
+        "size": 807,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/config.py"
       },
@@ -683,7 +961,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 5954,
+        "size": 6042,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/models.py"
       },
@@ -705,7 +983,7 @@
         "name": "classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 26887,
+        "size": 27225,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/classrooms.py"
       },
@@ -833,7 +1111,7 @@
         "name": "test_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 14870,
+        "size": 18528,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_classrooms.py"
       },
@@ -865,7 +1143,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 844,
+        "size": 857,
         "extension": ".toml",
         "path": "pyproject.toml"
       },
@@ -881,14 +1159,14 @@
         "name": "uv.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 243273,
+        "size": 274434,
         "extension": ".lock",
         "path": "uv.lock"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-22T10:40:55.162144",
+    "extracted_at": "2026-09-23T10:50:32.317442",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }

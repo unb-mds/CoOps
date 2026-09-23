@@ -2,44 +2,86 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-22T10:39:51.246687",
+  "analyzed_at": "2026-09-23T10:49:27.847582",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 85,
-  "total_bytes": 479311,
+  "total_files": 113,
+  "total_bytes": 727224,
   "languages": [
     {
       "language": "Lock File",
-      "file_count": 1,
-      "total_bytes": 243273,
-      "percentage": 50.75,
+      "file_count": 2,
+      "total_bytes": 371387,
+      "percentage": 51.07,
       "files": [
         {
           "path": "uv.lock",
           "name": "uv.lock",
-          "size": 243273,
+          "size": 274434,
+          "extension": ".lock"
+        },
+        {
+          "path": "apps/web/bun.lock",
+          "name": "bun.lock",
+          "size": 96953,
           "extension": ".lock"
         }
       ]
     },
     {
       "language": "Python",
-      "file_count": 48,
-      "total_bytes": 165131,
-      "percentage": 34.45,
+      "file_count": 57,
+      "total_bytes": 263188,
+      "percentage": 36.19,
       "files": [
         {
           "path": "packages/sigaa-client/sigaa_client/private/classrooms.py",
           "name": "classrooms.py",
-          "size": 26887,
+          "size": 27225,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_classrooms.py",
+          "name": "test_classrooms.py",
+          "size": 18718,
           "extension": ".py"
         },
         {
           "path": "packages/sigaa-client/tests/test_classrooms.py",
           "name": "test_classrooms.py",
-          "size": 14870,
+          "size": 18528,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_classroom_repository.py",
+          "name": "test_classroom_repository.py",
+          "size": 14864,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_sync.py",
+          "name": "test_sync.py",
+          "size": 13348,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/conftest.py",
+          "name": "conftest.py",
+          "size": 12507,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/api/repositories/classroom.py",
+          "name": "classroom.py",
+          "size": 12252,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/api/services/sync.py",
+          "name": "sync.py",
+          "size": 10743,
           "extension": ".py"
         },
         {
@@ -53,67 +95,37 @@
           "name": "classrooms.py",
           "size": 8387,
           "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_classrooms.py",
-          "name": "test_classrooms.py",
-          "size": 8182,
-          "extension": ".py"
-        },
-        {
-          "path": "packages/sigaa-client/sigaa_client/private/session.py",
-          "name": "session.py",
-          "size": 7027,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_me.py",
-          "name": "test_me.py",
-          "size": 6602,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/conftest.py",
-          "name": "conftest.py",
-          "size": 6576,
-          "extension": ".py"
-        },
-        {
-          "path": "packages/sigaa-client/tests/test_auth.py",
-          "name": "test_auth.py",
-          "size": 6269,
-          "extension": ".py"
-        },
-        {
-          "path": "packages/sigaa-client/sigaa_client/models.py",
-          "name": "models.py",
-          "size": 5954,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "Markdown",
-      "file_count": 20,
-      "total_bytes": 63773,
-      "percentage": 13.31,
+      "file_count": 21,
+      "total_bytes": 73854,
+      "percentage": 10.16,
       "files": [
         {
           "path": "docs/requisitos.md",
           "name": "requisitos.md",
-          "size": 17096,
+          "size": 17465,
           "extension": ".md"
         },
         {
           "path": "packages/sigaa-client/AGENTS.md",
           "name": "AGENTS.md",
-          "size": 8409,
+          "size": 8631,
+          "extension": ".md"
+        },
+        {
+          "path": "apps/api/AGENTS.md",
+          "name": "AGENTS.md",
+          "size": 8520,
           "extension": ".md"
         },
         {
           "path": "packages/sigaa-client/README.md",
           "name": "README.md",
-          "size": 7092,
+          "size": 7064,
           "extension": ".md"
         },
         {
@@ -123,9 +135,9 @@
           "extension": ".md"
         },
         {
-          "path": "apps/api/AGENTS.md",
-          "name": "AGENTS.md",
-          "size": 4883,
+          "path": "apps/web/README.md",
+          "name": "README.md",
+          "size": 5884,
           "extension": ".md"
         },
         {
@@ -151,85 +163,105 @@
           "name": "DEEPENING.md",
           "size": 2553,
           "extension": ".md"
-        },
-        {
-          "path": "AGENTS.md",
-          "name": "AGENTS.md",
-          "size": 2215,
-          "extension": ".md"
         }
       ]
     },
     {
-      "language": "TOML",
-      "file_count": 3,
-      "total_bytes": 2487,
-      "percentage": 0.52,
+      "language": "TypeScript",
+      "file_count": 8,
+      "total_bytes": 6751,
+      "percentage": 0.93,
       "files": [
         {
-          "path": "apps/api/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 866,
-          "extension": ".toml"
+          "path": "apps/web/src/routes/__root.tsx",
+          "name": "__root.tsx",
+          "size": 1925,
+          "extension": ".tsx"
         },
         {
-          "path": "pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 844,
-          "extension": ".toml"
+          "path": "apps/web/src/routeTree.gen.ts",
+          "name": "routeTree.gen.ts",
+          "size": 1741,
+          "extension": ".ts"
         },
         {
-          "path": "packages/sigaa-client/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 777,
-          "extension": ".toml"
-        }
-      ]
-    },
-    {
-      "language": "PDF",
-      "file_count": 1,
-      "total_bytes": 1938,
-      "percentage": 0.4,
-      "files": [
-        {
-          "path": "packages/sigaa-client/tests/fixtures/carteirinha.pdf",
-          "name": "carteirinha.pdf",
-          "size": 1938,
-          "extension": ".pdf"
-        }
-      ]
-    },
-    {
-      "language": "No Extension",
-      "file_count": 2,
-      "total_bytes": 1085,
-      "percentage": 0.23,
-      "files": [
-        {
-          "path": "LICENSE",
-          "name": "LICENSE",
-          "size": 1068,
-          "extension": ""
+          "path": "apps/web/vite.config.ts",
+          "name": "vite.config.ts",
+          "size": 808,
+          "extension": ".ts"
         },
         {
-          "path": ".claude/skills",
-          "name": "skills",
-          "size": 17,
-          "extension": ""
+          "path": "apps/web/src/router.tsx",
+          "name": "router.tsx",
+          "size": 763,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/integrations/posthog/provider.tsx",
+          "name": "provider.tsx",
+          "size": 705,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/routes/index.tsx",
+          "name": "index.tsx",
+          "size": 424,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx",
+          "name": "root-provider.tsx",
+          "size": 222,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/integrations/tanstack-query/devtools.tsx",
+          "name": "devtools.tsx",
+          "size": 163,
+          "extension": ".tsx"
         }
       ]
     },
     {
       "language": "JSON",
-      "file_count": 4,
-      "total_bytes": 868,
-      "percentage": 0.18,
+      "file_count": 10,
+      "total_bytes": 5201,
+      "percentage": 0.72,
       "files": [
+        {
+          "path": "apps/web/package.json",
+          "name": "package.json",
+          "size": 1601,
+          "extension": ".json"
+        },
+        {
+          "path": "apps/web/.oxlintrc.json",
+          "name": ".oxlintrc.json",
+          "size": 772,
+          "extension": ".json"
+        },
+        {
+          "path": "apps/web/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 743,
+          "extension": ".json"
+        },
+        {
+          "path": "apps/web/.oxfmtrc.json",
+          "name": ".oxfmtrc.json",
+          "size": 683,
+          "extension": ".json"
+        },
         {
           "path": "skills-lock.json",
           "name": "skills-lock.json",
           "size": 529,
+          "extension": ".json"
+        },
+        {
+          "path": "apps/web/.vscode/settings.json",
+          "name": "settings.json",
+          "size": 488,
           "extension": ".json"
         },
         {
@@ -249,6 +281,72 @@
           "name": "settings.json",
           "size": 64,
           "extension": ".json"
+        },
+        {
+          "path": "apps/web/.vscode/extensions.json",
+          "name": "extensions.json",
+          "size": 46,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "TOML",
+      "file_count": 3,
+      "total_bytes": 2574,
+      "percentage": 0.35,
+      "files": [
+        {
+          "path": "apps/api/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 940,
+          "extension": ".toml"
+        },
+        {
+          "path": "pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 857,
+          "extension": ".toml"
+        },
+        {
+          "path": "packages/sigaa-client/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 777,
+          "extension": ".toml"
+        }
+      ]
+    },
+    {
+      "language": "PDF",
+      "file_count": 1,
+      "total_bytes": 1938,
+      "percentage": 0.27,
+      "files": [
+        {
+          "path": "packages/sigaa-client/tests/fixtures/carteirinha.pdf",
+          "name": "carteirinha.pdf",
+          "size": 1938,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    {
+      "language": "No Extension",
+      "file_count": 2,
+      "total_bytes": 1085,
+      "percentage": 0.15,
+      "files": [
+        {
+          "path": "LICENSE",
+          "name": "LICENSE",
+          "size": 1068,
+          "extension": ""
+        },
+        {
+          "path": ".claude/skills",
+          "name": "skills",
+          "size": 17,
+          "extension": ""
         }
       ]
     },
@@ -256,7 +354,7 @@
       "language": "YAML",
       "file_count": 3,
       "total_bytes": 601,
-      "percentage": 0.13,
+      "percentage": 0.08,
       "files": [
         {
           "path": "compose.yml",
@@ -280,14 +378,20 @@
     },
     {
       "language": "Unknown",
-      "file_count": 2,
-      "total_bytes": 119,
-      "percentage": 0.02,
+      "file_count": 3,
+      "total_bytes": 426,
+      "percentage": 0.06,
       "files": [
         {
-          "path": ".env.example",
+          "path": "apps/api/.env.example",
           "name": ".env.example",
-          "size": 114,
+          "size": 359,
+          "extension": ".example"
+        },
+        {
+          "path": "apps/web/.env.example",
+          "name": ".env.example",
+          "size": 62,
           "extension": ".example"
         },
         {
@@ -299,22 +403,42 @@
       ]
     },
     {
-      "language": "Git Ignore",
+      "language": "CSS",
       "file_count": 1,
-      "total_bytes": 36,
+      "total_bytes": 127,
+      "percentage": 0.02,
+      "files": [
+        {
+          "path": "apps/web/src/styles.css",
+          "name": "styles.css",
+          "size": 127,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "Git Ignore",
+      "file_count": 2,
+      "total_bytes": 92,
       "percentage": 0.01,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 36,
+          "size": 60,
+          "extension": ".gitignore"
+        },
+        {
+          "path": "apps/web/.gitignore",
+          "name": ".gitignore",
+          "size": 32,
           "extension": ".gitignore"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-22T10:40:55.161316",
+    "extracted_at": "2026-09-23T10:50:32.316838",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }
