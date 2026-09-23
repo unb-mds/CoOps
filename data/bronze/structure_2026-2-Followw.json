@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Followw",
   "branch": "main",
-  "sha": "12871271fecb6c2d1208bb6b8fcd3e9caffe94c7",
+  "sha": "bfd01446eb65f6411126eaa65fb406caec0e6e97",
   "tree": [
     {
       "name": ".agents",
@@ -141,16 +141,6 @@
       "is_binary": false
     },
     {
-      "name": ".env.example",
-      "path": ".env.example",
-      "type": "file",
-      "sha": "4a9a32e4d901aa975d9a77c08ca68486522fce0c",
-      "mode": "100644",
-      "extension": ".example",
-      "size": 114,
-      "is_binary": false
-    },
-    {
       "name": ".github",
       "path": ".github",
       "type": "directory",
@@ -210,10 +200,10 @@
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "0b1f0023d7f3c08d25eaa2296fd88efd343cb710",
+      "sha": "6cd9851645d1c9239fbeb5c92d0d495c4dc6028b",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 36,
+      "size": 60,
       "is_binary": false
     },
     {
@@ -238,10 +228,10 @@
       "name": "AGENTS.md",
       "path": "AGENTS.md",
       "type": "file",
-      "sha": "299edfbb638cbefb6c52176451e80ade5152bb5c",
+      "sha": "bad5e60af7656be030b8cfce2fce734ae89ef2d8",
       "mode": "100644",
       "extension": ".md",
-      "size": 2215,
+      "size": 2212,
       "is_binary": false
     },
     {
@@ -278,7 +268,7 @@
       "name": "apps",
       "path": "apps",
       "type": "directory",
-      "sha": "ab745271f45543dd0fe9fc6c8aed9d40a98c3cf6",
+      "sha": "a1315ded1f478e2e07730a115149642c0ccecd0c",
       "mode": "040000",
       "children": []
     },
@@ -286,9 +276,19 @@
       "name": "api",
       "path": "apps/api",
       "type": "directory",
-      "sha": "2107ebd355ded979f27aa98d582e411e2cbefa35",
+      "sha": "03f418b3a2b63c7e5a8744898778cc60c0c086ed",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": ".env.example",
+      "path": "apps/api/.env.example",
+      "type": "file",
+      "sha": "51e35f3fa382af9925bf683ae8b64debe013beaa",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 359,
+      "is_binary": false
     },
     {
       "name": ".python-version",
@@ -304,10 +304,10 @@
       "name": "AGENTS.md",
       "path": "apps/api/AGENTS.md",
       "type": "file",
-      "sha": "fc9f401c2f4f4b2fdbd05770fa2101190d0da080",
+      "sha": "895f22f75fd14bd3ac57109ca674880248383e5f",
       "mode": "100644",
       "extension": ".md",
-      "size": 4883,
+      "size": 8520,
       "is_binary": false
     },
     {
@@ -324,7 +324,7 @@
       "name": "api",
       "path": "apps/api/api",
       "type": "directory",
-      "sha": "4defad41be5c0038efb6e3d14d89683b71e8ecbb",
+      "sha": "0db913abc4c93bbcbd907a5cc14ae9707bf4d018",
       "mode": "040000",
       "children": []
     },
@@ -342,7 +342,7 @@
       "name": "core",
       "path": "apps/api/api/core",
       "type": "directory",
-      "sha": "f72833fe7cf42497d7d4df26427b0a0d8b934ded",
+      "sha": "12ca43a51311bdd06dc3eb3a05de5b87b79016c6",
       "mode": "040000",
       "children": []
     },
@@ -350,17 +350,17 @@
       "name": "config.py",
       "path": "apps/api/api/core/config.py",
       "type": "file",
-      "sha": "afe2b09b1ddc19fa650056744d01c2b7a327089b",
+      "sha": "82e5067946e74f895a4224584e7a7ea50f38c93f",
       "mode": "100644",
       "extension": ".py",
-      "size": 415,
+      "size": 637,
       "is_binary": false
     },
     {
       "name": "db",
       "path": "apps/api/api/db",
       "type": "directory",
-      "sha": "a0363a03abfdd63c55480250c41c280e86cd1c19",
+      "sha": "f308abfbad29b474985e3ca1e4086d3dfd65859a",
       "mode": "040000",
       "children": []
     },
@@ -388,48 +388,68 @@
       "name": "enums.py",
       "path": "apps/api/api/db/enums.py",
       "type": "file",
-      "sha": "6f22b082fde65f974ba7e23b72850460cb311e1b",
+      "sha": "51335b054edc437973c4e2e8f7ac8cabd9c41aae",
       "mode": "100644",
       "extension": ".py",
-      "size": 400,
+      "size": 832,
       "is_binary": false
     },
     {
       "name": "main.py",
       "path": "apps/api/api/db/main.py",
       "type": "file",
-      "sha": "f61bd78e6476614bc8d1a045371e51f8298f4702",
+      "sha": "d034ba46addb30a8e18998cc0d6b68f001d8e15a",
       "mode": "100644",
       "extension": ".py",
-      "size": 643,
+      "size": 1005,
       "is_binary": false
     },
     {
       "name": "models.py",
       "path": "apps/api/api/db/models.py",
       "type": "file",
-      "sha": "0a043401c7c8753834ec649fc8d102503200d609",
+      "sha": "658f49a74a3ad2d5dd72a3ff3ef8574f7237d1bf",
       "mode": "100644",
       "extension": ".py",
-      "size": 3067,
+      "size": 5239,
       "is_binary": false
     },
     {
       "name": "dependencies",
       "path": "apps/api/api/dependencies",
       "type": "directory",
-      "sha": "b94c514752796bbd08ba786970e31accdf9ef42d",
+      "sha": "7486c0b4fa93fdfef295e6315546b6a73566f140",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "qstash.py",
+      "path": "apps/api/api/dependencies/qstash.py",
+      "type": "file",
+      "sha": "1e01d5578c3f4e1d11f7fb692767a24112a86d1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4314,
+      "is_binary": false
+    },
+    {
+      "name": "refresh.py",
+      "path": "apps/api/api/dependencies/refresh.py",
+      "type": "file",
+      "sha": "da5656b92a419cf32a860d1fc19ad17786221188",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 205,
+      "is_binary": false
     },
     {
       "name": "sigaa.py",
       "path": "apps/api/api/dependencies/sigaa.py",
       "type": "file",
-      "sha": "69711cdfb0c0c4f0fb95929901bc34ef9ce159dc",
+      "sha": "6ff9403d63472bcf60bff28bc8800409edfddd22",
       "mode": "100644",
       "extension": ".py",
-      "size": 1595,
+      "size": 3881,
       "is_binary": false
     },
     {
@@ -443,20 +463,30 @@
       "is_binary": false
     },
     {
+      "name": "sync.py",
+      "path": "apps/api/api/dependencies/sync.py",
+      "type": "file",
+      "sha": "a383e723db27d7fa9fbf8f3075101c33f7fb5db0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1316,
+      "is_binary": false
+    },
+    {
       "name": "main.py",
       "path": "apps/api/api/main.py",
       "type": "file",
-      "sha": "f82dfa5339b7bfb9ef503739f1b42405981a4c22",
+      "sha": "c8de1877a78df20184eacdf8b3fb2a3fc75429cd",
       "mode": "100644",
       "extension": ".py",
-      "size": 826,
+      "size": 945,
       "is_binary": false
     },
     {
       "name": "modules",
       "path": "apps/api/api/modules",
       "type": "directory",
-      "sha": "deb52f8e34b8e39a8e52269a000bbda5bbbef052",
+      "sha": "671c4bd7a70eb145e8bf635957d0a5c33e9cea91",
       "mode": "040000",
       "children": []
     },
@@ -464,7 +494,7 @@
       "name": "auth",
       "path": "apps/api/api/modules/auth",
       "type": "directory",
-      "sha": "7225ce360187d85a133c96e6908e1412e81a37b6",
+      "sha": "ab1daa41dd389beab93e30ede3823005efad4e5e",
       "mode": "040000",
       "children": []
     },
@@ -472,17 +502,17 @@
       "name": "main.py",
       "path": "apps/api/api/modules/auth/main.py",
       "type": "file",
-      "sha": "f8e460e1fded89b325d903d049e4a272878333c4",
+      "sha": "1c17176206849ec437bceede3c29f4568e738857",
       "mode": "100644",
       "extension": ".py",
-      "size": 1757,
+      "size": 2059,
       "is_binary": false
     },
     {
       "name": "classrooms",
       "path": "apps/api/api/modules/classrooms",
       "type": "directory",
-      "sha": "49d997195d53a3cc1699e898bce8dc9aedfa119d",
+      "sha": "d84413727266bc2384d507420191d8a826b4c1ab",
       "mode": "040000",
       "children": []
     },
@@ -490,17 +520,35 @@
       "name": "main.py",
       "path": "apps/api/api/modules/classrooms/main.py",
       "type": "file",
-      "sha": "0e181781be22bdfdfea0ee327291b398de5f0791",
+      "sha": "2682fb53326e03e6d47ab4d618842ac69245eae0",
       "mode": "100644",
       "extension": ".py",
-      "size": 533,
+      "size": 1908,
+      "is_binary": false
+    },
+    {
+      "name": "jobs",
+      "path": "apps/api/api/modules/jobs",
+      "type": "directory",
+      "sha": "ea76d9da4727280a6e18c9b8f691cce7635f9bc6",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "main.py",
+      "path": "apps/api/api/modules/jobs/main.py",
+      "type": "file",
+      "sha": "cab6429c8c24c7eb7928b5cea6fe88a16f5bdb72",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 372,
       "is_binary": false
     },
     {
       "name": "me",
       "path": "apps/api/api/modules/me",
       "type": "directory",
-      "sha": "bafead53403d8907b61c64a1d23b0a0313d29e20",
+      "sha": "5771163569f4ac81ccc2467e148810f90bec37b3",
       "mode": "040000",
       "children": []
     },
@@ -508,17 +556,17 @@
       "name": "main.py",
       "path": "apps/api/api/modules/me/main.py",
       "type": "file",
-      "sha": "480933e6999ad213c9939c68cba3d48d126d05b2",
+      "sha": "7c2c033b434827b70f3e5590728ab22174742307",
       "mode": "100644",
       "extension": ".py",
-      "size": 504,
+      "size": 604,
       "is_binary": false
     },
     {
       "name": "repositories",
       "path": "apps/api/api/repositories",
       "type": "directory",
-      "sha": "832941113331eb0c8c3e2d00b0ec18893325d5ae",
+      "sha": "c4c6f8d7f11d695827135ec316410324079c60de",
       "mode": "040000",
       "children": []
     },
@@ -526,27 +574,65 @@
       "name": "classroom.py",
       "path": "apps/api/api/repositories/classroom.py",
       "type": "file",
-      "sha": "c1483a3e7332117d7ba0ca6bf09027a45931bf65",
+      "sha": "034c43fcc17f07518eb03c71ec787050c8da4cb5",
       "mode": "100644",
       "extension": ".py",
-      "size": 1244,
+      "size": 12252,
       "is_binary": false
     },
     {
       "name": "user.py",
       "path": "apps/api/api/repositories/user.py",
       "type": "file",
-      "sha": "c9f5be5ab4ae2847717c8573faa9ac8ae62f188e",
+      "sha": "626d8c8024ff5409c816e902765c34349b0c4296",
       "mode": "100644",
       "extension": ".py",
-      "size": 721,
+      "size": 1688,
+      "is_binary": false
+    },
+    {
+      "name": "services",
+      "path": "apps/api/api/services",
+      "type": "directory",
+      "sha": "86f4950a45e190f5de076a3e4dbefcd8d862f6aa",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "classroom.py",
+      "path": "apps/api/api/services/classroom.py",
+      "type": "file",
+      "sha": "a0e1ad9ff97c4722dadcf7803b0effb1e78a002d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6567,
+      "is_binary": false
+    },
+    {
+      "name": "profile.py",
+      "path": "apps/api/api/services/profile.py",
+      "type": "file",
+      "sha": "8e08ffc469e1aa439fbf4d9517ab7d46e54ac835",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1538,
+      "is_binary": false
+    },
+    {
+      "name": "sync.py",
+      "path": "apps/api/api/services/sync.py",
+      "type": "file",
+      "sha": "a1082be0c1e9565cb3c0b79d3badb611ac66cf3c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10743,
       "is_binary": false
     },
     {
       "name": "utils",
       "path": "apps/api/api/utils",
       "type": "directory",
-      "sha": "29cf725514fb450605b3eae6da1dc54e460a8050",
+      "sha": "5d88ab868db8690d0ceddca55be2d2d01887bc42",
       "mode": "040000",
       "children": []
     },
@@ -564,27 +650,27 @@
       "name": "session.py",
       "path": "apps/api/api/utils/session.py",
       "type": "file",
-      "sha": "22e178262b0bf8b2c5dca901b6b9a2df2b7d364d",
+      "sha": "4e0fd7db7c27711d7da1209343c1eb15fb8f64a7",
       "mode": "100644",
       "extension": ".py",
-      "size": 2369,
+      "size": 3106,
       "is_binary": false
     },
     {
       "name": "pyproject.toml",
       "path": "apps/api/pyproject.toml",
       "type": "file",
-      "sha": "47d81ad1934e5fdca1b46ffbf1f3dfd0082a007d",
+      "sha": "6d7f02530d9c4a69105b0fb629966e2db1eff91d",
       "mode": "100644",
       "extension": ".toml",
-      "size": 866,
+      "size": 940,
       "is_binary": false
     },
     {
       "name": "tests",
       "path": "apps/api/tests",
       "type": "directory",
-      "sha": "7da075c1307e2a0ea6cb023cac00437203eff090",
+      "sha": "82dc12bf97b80fb043e64e5196d7c416fcc1f8a5",
       "mode": "040000",
       "children": []
     },
@@ -592,10 +678,10 @@
       "name": "conftest.py",
       "path": "apps/api/tests/conftest.py",
       "type": "file",
-      "sha": "09b48637d562374a72082fb77c17c92026bed151",
+      "sha": "21b2f6acd8b1f0e58183022b1720e410d4f1b58b",
       "mode": "100644",
       "extension": ".py",
-      "size": 6576,
+      "size": 12507,
       "is_binary": false
     },
     {
@@ -612,30 +698,40 @@
       "name": "test_classroom_repository.py",
       "path": "apps/api/tests/test_classroom_repository.py",
       "type": "file",
-      "sha": "440b820634a18e04d07423a7fe4119736ec7d7c4",
+      "sha": "c943c20a7c03dd14ca09ee9d5bd02f43ea3329de",
       "mode": "100644",
       "extension": ".py",
-      "size": 3932,
+      "size": 14864,
       "is_binary": false
     },
     {
       "name": "test_classrooms.py",
       "path": "apps/api/tests/test_classrooms.py",
       "type": "file",
-      "sha": "bc29118a7ba3102ac241e61fc75939e794c2bd4d",
+      "sha": "af93fb1912d01b38c5cebfd02ebc7854596cf8c9",
       "mode": "100644",
       "extension": ".py",
-      "size": 8182,
+      "size": 18718,
       "is_binary": false
     },
     {
       "name": "test_dependencies_sigaa.py",
       "path": "apps/api/tests/test_dependencies_sigaa.py",
       "type": "file",
-      "sha": "3d858b746ff8ce8ad78a8e720d8d16d1d7346eda",
+      "sha": "915aef82a8ed369d422dc9cd7859b5246bef0f37",
       "mode": "100644",
       "extension": ".py",
-      "size": 4881,
+      "size": 6544,
+      "is_binary": false
+    },
+    {
+      "name": "test_jobs.py",
+      "path": "apps/api/tests/test_jobs.py",
+      "type": "file",
+      "sha": "d07958f5bf9822f38fd9505b6b260f514ed6d5f9",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5012,
       "is_binary": false
     },
     {
@@ -652,10 +748,10 @@
       "name": "test_me.py",
       "path": "apps/api/tests/test_me.py",
       "type": "file",
-      "sha": "7b94c9ac30a525d4c6fbef08e916e704b1cf8d45",
+      "sha": "f02c8f8ace9fadaa647ad63798411c2fe42924ad",
       "mode": "100644",
       "extension": ".py",
-      "size": 6602,
+      "size": 6776,
       "is_binary": false
     },
     {
@@ -669,13 +765,23 @@
       "is_binary": false
     },
     {
+      "name": "test_sync.py",
+      "path": "apps/api/tests/test_sync.py",
+      "type": "file",
+      "sha": "429e447f5ab1d71748155aa75e2cdb4b85118bcf",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 13348,
+      "is_binary": false
+    },
+    {
       "name": "test_user_repository.py",
       "path": "apps/api/tests/test_user_repository.py",
       "type": "file",
-      "sha": "41f58413642ce81dd54926447d0edaa2b4212be0",
+      "sha": "612441086d39b7fbe181a53fb910fedd717745a6",
       "mode": "100644",
       "extension": ".py",
-      "size": 2250,
+      "size": 3464,
       "is_binary": false
     },
     {
@@ -686,6 +792,252 @@
       "mode": "100644",
       "extension": ".json",
       "size": 152,
+      "is_binary": false
+    },
+    {
+      "name": "web",
+      "path": "apps/web",
+      "type": "directory",
+      "sha": "5ceea0e426d610bf50b952a3f95ae51d534d2dca",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".env.example",
+      "path": "apps/web/.env.example",
+      "type": "file",
+      "sha": "a6fe08a844b76d650bc59cabc6ef3bcbbae996be",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 62,
+      "is_binary": false
+    },
+    {
+      "name": ".gitignore",
+      "path": "apps/web/.gitignore",
+      "type": "file",
+      "sha": "f474687f18a9466281e061c68e62180f3503b802",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 32,
+      "is_binary": false
+    },
+    {
+      "name": ".oxfmtrc.json",
+      "path": "apps/web/.oxfmtrc.json",
+      "type": "file",
+      "sha": "b40c01ce9b9de3dc0bccb1384240685a6db1a869",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 683,
+      "is_binary": false
+    },
+    {
+      "name": ".oxlintrc.json",
+      "path": "apps/web/.oxlintrc.json",
+      "type": "file",
+      "sha": "498ce4b3b61d751ba82bf6a671d1162e1d3b35e0",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 772,
+      "is_binary": false
+    },
+    {
+      "name": ".vscode",
+      "path": "apps/web/.vscode",
+      "type": "directory",
+      "sha": "322cf782ae081d3c0937d936d222bfd258c54e65",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "extensions.json",
+      "path": "apps/web/.vscode/extensions.json",
+      "type": "file",
+      "sha": "9d5eb3d7f66c6edc4bf302c3a92b4f00d3592f90",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 46,
+      "is_binary": false
+    },
+    {
+      "name": "settings.json",
+      "path": "apps/web/.vscode/settings.json",
+      "type": "file",
+      "sha": "c80d07a9332f9fa94b91ccbd263b579eba0c1cf9",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 488,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "apps/web/README.md",
+      "type": "file",
+      "sha": "0e8c7b1293f35a3edd21c532ce839468b28ac9ce",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5884,
+      "is_binary": false
+    },
+    {
+      "name": "bun.lock",
+      "path": "apps/web/bun.lock",
+      "type": "file",
+      "sha": "0d9fc06f7be10cb8ee8ac2a8130c0149f0af810e",
+      "mode": "100644",
+      "extension": ".lock",
+      "size": 96953,
+      "is_binary": false
+    },
+    {
+      "name": "package.json",
+      "path": "apps/web/package.json",
+      "type": "file",
+      "sha": "3887b459f1e44df555a6c6694a1731c58973b7bb",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1601,
+      "is_binary": false
+    },
+    {
+      "name": "src",
+      "path": "apps/web/src",
+      "type": "directory",
+      "sha": "194ba6a3db9bb0e5b9e06d031413f81a0556633d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "integrations",
+      "path": "apps/web/src/integrations",
+      "type": "directory",
+      "sha": "7daeb6b0b268bfdb8e3f4ff0d14278d4e822aad5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "posthog",
+      "path": "apps/web/src/integrations/posthog",
+      "type": "directory",
+      "sha": "0e40c2222f901a742fbcd6888e2d5046e1a2fb84",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "provider.tsx",
+      "path": "apps/web/src/integrations/posthog/provider.tsx",
+      "type": "file",
+      "sha": "09a6d9eb84574d40cb6a78a0724b7317f96e6fa2",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 705,
+      "is_binary": false
+    },
+    {
+      "name": "tanstack-query",
+      "path": "apps/web/src/integrations/tanstack-query",
+      "type": "directory",
+      "sha": "8408a9422a7a718de60d66b24b2bf2c7af879660",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "devtools.tsx",
+      "path": "apps/web/src/integrations/tanstack-query/devtools.tsx",
+      "type": "file",
+      "sha": "1a80210aeead3a7c60681f6f29a61647d16197cc",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 163,
+      "is_binary": false
+    },
+    {
+      "name": "root-provider.tsx",
+      "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx",
+      "type": "file",
+      "sha": "bf751df19fbb4486ce7ad788e8c53d34244e1548",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 222,
+      "is_binary": false
+    },
+    {
+      "name": "routeTree.gen.ts",
+      "path": "apps/web/src/routeTree.gen.ts",
+      "type": "file",
+      "sha": "dceedffdc12c32138e81bb63787cac7ae5d97fcd",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1741,
+      "is_binary": false
+    },
+    {
+      "name": "router.tsx",
+      "path": "apps/web/src/router.tsx",
+      "type": "file",
+      "sha": "59f40b56a8dc806a419537e1ae5dd05b3b3e3cbb",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 763,
+      "is_binary": false
+    },
+    {
+      "name": "routes",
+      "path": "apps/web/src/routes",
+      "type": "directory",
+      "sha": "5bcb96b63898259a96157966202eb6502de6316a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__root.tsx",
+      "path": "apps/web/src/routes/__root.tsx",
+      "type": "file",
+      "sha": "0cf4da61a957915986ab88bb9cecc3f264d29f74",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 1925,
+      "is_binary": false
+    },
+    {
+      "name": "index.tsx",
+      "path": "apps/web/src/routes/index.tsx",
+      "type": "file",
+      "sha": "df577d8a678426014ea4f18be5d8dc76eddd15f8",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 424,
+      "is_binary": false
+    },
+    {
+      "name": "styles.css",
+      "path": "apps/web/src/styles.css",
+      "type": "file",
+      "sha": "827c8cdf246df1bf6a5695d17feca8291523d6fc",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 127,
+      "is_binary": false
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "apps/web/tsconfig.json",
+      "type": "file",
+      "sha": "20cf1d14e2a1b1a7c2611bc569fbf6cc759d74be",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 743,
+      "is_binary": false
+    },
+    {
+      "name": "vite.config.ts",
+      "path": "apps/web/vite.config.ts",
+      "type": "file",
+      "sha": "9057eec8483619f871fdc432e3e13680322f5a9c",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 808,
       "is_binary": false
     },
     {
@@ -702,7 +1054,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "2064af6ccee1742074dafa804761fd7f930a65ca",
+      "sha": "c298383b455852b87dddc877138687a7e3cfe8d5",
       "mode": "040000",
       "children": []
     },
@@ -710,10 +1062,10 @@
       "name": "requisitos.md",
       "path": "docs/requisitos.md",
       "type": "file",
-      "sha": "8ff875eb8c8e2c71f747112c0f2019a927e6f5c7",
+      "sha": "ee3ea14b9123376a10aa5047c05c41e5c550ff12",
       "mode": "100644",
       "extension": ".md",
-      "size": 17096,
+      "size": 17465,
       "is_binary": false
     },
     {
@@ -758,7 +1110,7 @@
       "name": "packages",
       "path": "packages",
       "type": "directory",
-      "sha": "6337ae4da56b381bad6466b5a265c135957720a4",
+      "sha": "4d2be9e8ff367186f122037187e215618b4bf073",
       "mode": "040000",
       "children": []
     },
@@ -766,7 +1118,7 @@
       "name": "sigaa-client",
       "path": "packages/sigaa-client",
       "type": "directory",
-      "sha": "bd3c42657ac4303bf01779394320f178f9aa4779",
+      "sha": "f15a2d972ae023cd413ef9cdaf1284483d09a33b",
       "mode": "040000",
       "children": []
     },
@@ -774,10 +1126,10 @@
       "name": "AGENTS.md",
       "path": "packages/sigaa-client/AGENTS.md",
       "type": "file",
-      "sha": "7c9f5926fc396454af0a616d18558fc833cfae11",
+      "sha": "1e0e67a15d9ea0a544a56789ddb88925971a8189",
       "mode": "100644",
       "extension": ".md",
-      "size": 8409,
+      "size": 8631,
       "is_binary": false
     },
     {
@@ -794,10 +1146,10 @@
       "name": "README.md",
       "path": "packages/sigaa-client/README.md",
       "type": "file",
-      "sha": "67f57d041694a5736715b7e120d0ba48befd1797",
+      "sha": "41e3dd30d2bb9b2b17cfce1dfbc876cb66e9260b",
       "mode": "100644",
       "extension": ".md",
-      "size": 7092,
+      "size": 7064,
       "is_binary": false
     },
     {
@@ -814,7 +1166,7 @@
       "name": "sigaa_client",
       "path": "packages/sigaa-client/sigaa_client",
       "type": "directory",
-      "sha": "7dbedc2195cce7836510a06b835c9b4a9fe4d732",
+      "sha": "9da52cd35709cb6021cb2c7be2a9c97165f2721f",
       "mode": "040000",
       "children": []
     },
@@ -842,10 +1194,10 @@
       "name": "config.py",
       "path": "packages/sigaa-client/sigaa_client/config.py",
       "type": "file",
-      "sha": "a74f20eab540018bd0f80ffe77de1266591ab84c",
+      "sha": "39f5b1fe4a202468b6165d4756f40de6f73872b5",
       "mode": "100644",
       "extension": ".py",
-      "size": 781,
+      "size": 807,
       "is_binary": false
     },
     {
@@ -862,17 +1214,17 @@
       "name": "models.py",
       "path": "packages/sigaa-client/sigaa_client/models.py",
       "type": "file",
-      "sha": "4093f1f35e6d0f9a6b5e430161e24c5628130f78",
+      "sha": "e29b1f3678f85793958f89a4efc2b983897c377a",
       "mode": "100644",
       "extension": ".py",
-      "size": 5954,
+      "size": 6042,
       "is_binary": false
     },
     {
       "name": "private",
       "path": "packages/sigaa-client/sigaa_client/private",
       "type": "directory",
-      "sha": "a12d7e74579fc4ebe0adc5da1a87f457527b4fe4",
+      "sha": "ce3bae67b50a98eb68d0a1e4d901b1de9c306475",
       "mode": "040000",
       "children": []
     },
@@ -890,10 +1242,10 @@
       "name": "classrooms.py",
       "path": "packages/sigaa-client/sigaa_client/private/classrooms.py",
       "type": "file",
-      "sha": "5203d672bd830dac8582099ee93364c47b8bd5a0",
+      "sha": "0f4def965c48179906e90f08e089b1fd86cff409",
       "mode": "100644",
       "extension": ".py",
-      "size": 26887,
+      "size": 27225,
       "is_binary": false
     },
     {
@@ -1016,7 +1368,7 @@
       "name": "tests",
       "path": "packages/sigaa-client/tests",
       "type": "directory",
-      "sha": "41caeb2cfea0dde8681c1c70c4d0687d1f16197c",
+      "sha": "6c7bbcfd6e318ae9da875a6444e53998ef9b60db",
       "mode": "040000",
       "children": []
     },
@@ -1052,10 +1404,10 @@
       "name": "test_classrooms.py",
       "path": "packages/sigaa-client/tests/test_classrooms.py",
       "type": "file",
-      "sha": "459687398219fe82552f7d60d0edd3f2692b10e2",
+      "sha": "884c695cacec90353c98fa45018a23bc83bd2831",
       "mode": "100644",
       "extension": ".py",
-      "size": 14870,
+      "size": 18528,
       "is_binary": false
     },
     {
@@ -1092,10 +1444,10 @@
       "name": "pyproject.toml",
       "path": "pyproject.toml",
       "type": "file",
-      "sha": "89baa9de323a24520d9ab8f930d0d629475e6afe",
+      "sha": "617857959359533d1cf6d216d221cabc38496117",
       "mode": "100644",
       "extension": ".toml",
-      "size": 844,
+      "size": 857,
       "is_binary": false
     },
     {
@@ -1112,27 +1464,27 @@
       "name": "uv.lock",
       "path": "uv.lock",
       "type": "file",
-      "sha": "0852fa40c3c07d89f1dcc1c2a492f86879c5b3a2",
+      "sha": "e62fdbdb9338a1a5d4d1b788f7985d5c9db0ef18",
       "mode": "100644",
       "extension": ".lock",
-      "size": 243273,
+      "size": 274434,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-22T10:39:51.246687",
+  "extracted_at": "2026-09-23T10:49:27.847582",
   "method": "rest",
-  "total_items": 118,
+  "total_items": 155,
   "repository_metadata": {
     "id": 1338350948,
     "full_name": "unb-mds/2026-2-Followw",
     "description": "O Followw é uma nova forma de usar o SIGAA UnB.",
     "created_at": "2026-08-18T11:57:01Z",
-    "updated_at": "2026-09-22T03:31:21Z",
+    "updated_at": "2026-09-23T05:37:52Z",
     "language": "Python",
-    "size": 317,
+    "size": 355,
     "stars": 5,
     "forks": 0,
-    "open_issues": 8
+    "open_issues": 12
   }
 }
