@@ -2,24 +2,50 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-24T10:53:05.543160",
+  "analyzed_at": "2026-09-24T22:51:00.543746",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 113,
-  "total_bytes": 727224,
+  "total_files": 130,
+  "total_bytes": 1789479,
   "languages": [
+    {
+      "language": "PDF",
+      "file_count": 3,
+      "total_bytes": 976517,
+      "percentage": 54.57,
+      "files": [
+        {
+          "path": "packages/unb-browser/tests/fixtures/cardapio-darcy.pdf",
+          "name": "cardapio-darcy.pdf",
+          "size": 504923,
+          "extension": ".pdf"
+        },
+        {
+          "path": "packages/unb-browser/tests/fixtures/cardapio-fazenda.pdf",
+          "name": "cardapio-fazenda.pdf",
+          "size": 469656,
+          "extension": ".pdf"
+        },
+        {
+          "path": "packages/sigaa-client/tests/fixtures/carteirinha.pdf",
+          "name": "carteirinha.pdf",
+          "size": 1938,
+          "extension": ".pdf"
+        }
+      ]
+    },
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 371387,
-      "percentage": 51.07,
+      "total_bytes": 410551,
+      "percentage": 22.94,
       "files": [
         {
           "path": "uv.lock",
           "name": "uv.lock",
-          "size": 274434,
+          "size": 313598,
           "extension": ".lock"
         },
         {
@@ -32,9 +58,9 @@
     },
     {
       "language": "Python",
-      "file_count": 57,
-      "total_bytes": 263188,
-      "percentage": 36.19,
+      "file_count": 69,
+      "total_bytes": 285718,
+      "percentage": 15.97,
       "files": [
         {
           "path": "packages/sigaa-client/sigaa_client/private/classrooms.py",
@@ -101,13 +127,19 @@
     {
       "language": "Markdown",
       "file_count": 21,
-      "total_bytes": 73854,
-      "percentage": 10.16,
+      "total_bytes": 97697,
+      "percentage": 5.46,
       "files": [
         {
           "path": "docs/requisitos.md",
           "name": "requisitos.md",
           "size": 17465,
+          "extension": ".md"
+        },
+        {
+          "path": ".agents/skills/scalar-docs/SKILL.md",
+          "name": "SKILL.md",
+          "size": 14046,
           "extension": ".md"
         },
         {
@@ -141,27 +173,21 @@
           "extension": ".md"
         },
         {
+          "path": "packages/unb-browser/AGENTS.md",
+          "name": "AGENTS.md",
+          "size": 4963,
+          "extension": ".md"
+        },
+        {
+          "path": "packages/unb-browser/README.md",
+          "name": "README.md",
+          "size": 4849,
+          "extension": ".md"
+        },
+        {
           "path": ".agents/skills/to-spec/SKILL.md",
           "name": "SKILL.md",
           "size": 3043,
-          "extension": ".md"
-        },
-        {
-          "path": ".agents/skills/codebase-design/DESIGN-IT-TWICE.md",
-          "name": "DESIGN-IT-TWICE.md",
-          "size": 2664,
-          "extension": ".md"
-        },
-        {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 2558,
-          "extension": ".md"
-        },
-        {
-          "path": ".agents/skills/codebase-design/DEEPENING.md",
-          "name": "DEEPENING.md",
-          "size": 2553,
           "extension": ".md"
         }
       ]
@@ -170,7 +196,7 @@
       "language": "TypeScript",
       "file_count": 8,
       "total_bytes": 6751,
-      "percentage": 0.93,
+      "percentage": 0.38,
       "files": [
         {
           "path": "apps/web/src/routes/__root.tsx",
@@ -224,9 +250,9 @@
     },
     {
       "language": "JSON",
-      "file_count": 10,
-      "total_bytes": 5201,
-      "percentage": 0.72,
+      "file_count": 11,
+      "total_bytes": 5897,
+      "percentage": 0.33,
       "files": [
         {
           "path": "apps/web/package.json",
@@ -238,6 +264,12 @@
           "path": "apps/web/.oxlintrc.json",
           "name": ".oxlintrc.json",
           "size": 772,
+          "extension": ".json"
+        },
+        {
+          "path": "skills-lock.json",
+          "name": "skills-lock.json",
+          "size": 767,
           "extension": ".json"
         },
         {
@@ -253,15 +285,15 @@
           "extension": ".json"
         },
         {
-          "path": "skills-lock.json",
-          "name": "skills-lock.json",
-          "size": 529,
-          "extension": ".json"
-        },
-        {
           "path": "apps/web/.vscode/settings.json",
           "name": "settings.json",
           "size": 488,
+          "extension": ".json"
+        },
+        {
+          "path": "scalar.config.json",
+          "name": "scalar.config.json",
+          "size": 458,
           "extension": ".json"
         },
         {
@@ -281,81 +313,53 @@
           "name": "settings.json",
           "size": 64,
           "extension": ".json"
-        },
-        {
-          "path": "apps/web/.vscode/extensions.json",
-          "name": "extensions.json",
-          "size": 46,
-          "extension": ".json"
         }
       ]
     },
     {
       "language": "TOML",
-      "file_count": 3,
-      "total_bytes": 2574,
-      "percentage": 0.35,
+      "file_count": 4,
+      "total_bytes": 3157,
+      "percentage": 0.18,
       "files": [
-        {
-          "path": "apps/api/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 940,
-          "extension": ".toml"
-        },
         {
           "path": "pyproject.toml",
           "name": "pyproject.toml",
-          "size": 857,
+          "size": 967,
+          "extension": ".toml"
+        },
+        {
+          "path": "apps/api/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 848,
           "extension": ".toml"
         },
         {
           "path": "packages/sigaa-client/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 777,
+          "size": 685,
+          "extension": ".toml"
+        },
+        {
+          "path": "packages/unb-browser/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 657,
           "extension": ".toml"
         }
       ]
     },
     {
-      "language": "PDF",
-      "file_count": 1,
-      "total_bytes": 1938,
-      "percentage": 0.27,
-      "files": [
-        {
-          "path": "packages/sigaa-client/tests/fixtures/carteirinha.pdf",
-          "name": "carteirinha.pdf",
-          "size": 1938,
-          "extension": ".pdf"
-        }
-      ]
-    },
-    {
-      "language": "No Extension",
-      "file_count": 2,
-      "total_bytes": 1085,
-      "percentage": 0.15,
-      "files": [
-        {
-          "path": "LICENSE",
-          "name": "LICENSE",
-          "size": 1068,
-          "extension": ""
-        },
-        {
-          "path": ".claude/skills",
-          "name": "skills",
-          "size": 17,
-          "extension": ""
-        }
-      ]
-    },
-    {
       "language": "YAML",
-      "file_count": 3,
-      "total_bytes": 601,
+      "file_count": 4,
+      "total_bytes": 1462,
       "percentage": 0.08,
       "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "name": "ci.yml",
+          "size": 861,
+          "extension": ".yml"
+        },
         {
           "path": "compose.yml",
           "name": "compose.yml",
@@ -377,10 +381,30 @@
       ]
     },
     {
+      "language": "No Extension",
+      "file_count": 2,
+      "total_bytes": 1085,
+      "percentage": 0.06,
+      "files": [
+        {
+          "path": "LICENSE",
+          "name": "LICENSE",
+          "size": 1068,
+          "extension": ""
+        },
+        {
+          "path": ".claude/skills",
+          "name": "skills",
+          "size": 17,
+          "extension": ""
+        }
+      ]
+    },
+    {
       "language": "Unknown",
       "file_count": 3,
       "total_bytes": 426,
-      "percentage": 0.06,
+      "percentage": 0.02,
       "files": [
         {
           "path": "apps/api/.env.example",
@@ -403,29 +427,15 @@
       ]
     },
     {
-      "language": "CSS",
-      "file_count": 1,
-      "total_bytes": 127,
-      "percentage": 0.02,
-      "files": [
-        {
-          "path": "apps/web/src/styles.css",
-          "name": "styles.css",
-          "size": 127,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
       "language": "Git Ignore",
       "file_count": 2,
-      "total_bytes": 92,
+      "total_bytes": 91,
       "percentage": 0.01,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 60,
+          "size": 59,
           "extension": ".gitignore"
         },
         {
@@ -435,10 +445,24 @@
           "extension": ".gitignore"
         }
       ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 1,
+      "total_bytes": 127,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "apps/web/src/styles.css",
+          "name": "styles.css",
+          "size": 127,
+          "extension": ".css"
+        }
+      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-24T10:54:09.220600",
+    "extracted_at": "2026-09-24T22:51:55.217011",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }

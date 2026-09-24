@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-24T10:53:05.543160",
+  "extracted_at": "2026-09-24T22:51:00.543746",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -62,6 +62,20 @@
         "size": 102,
         "extension": ".yaml",
         "path": ".agents/skills/codebase-design/agents/openai.yaml"
+      },
+      {
+        "name": "scalar-docs",
+        "type": "directory",
+        "path": ".agents/skills/scalar-docs",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14046,
+        "extension": ".md",
+        "path": ".agents/skills/scalar-docs/SKILL.md"
       },
       {
         "name": "to-spec",
@@ -158,10 +172,24 @@
         "path": ".github/PULL_REQUEST_TEMPLATE.md"
       },
       {
+        "name": "workflows",
+        "type": "directory",
+        "path": ".github/workflows",
+        "children": []
+      },
+      {
+        "name": "ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 861,
+        "extension": ".yml",
+        "path": ".github/workflows/ci.yml"
+      },
+      {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 60,
+        "size": 59,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -183,17 +211,9 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2212,
+        "size": 2224,
         "extension": ".md",
         "path": "AGENTS.md"
-      },
-      {
-        "name": "CLAUDE.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 9,
-        "extension": ".md",
-        "path": "CLAUDE.md"
       },
       {
         "name": "LICENSE",
@@ -246,14 +266,6 @@
         "size": 8520,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
-      },
-      {
-        "name": "CLAUDE.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 9,
-        "extension": ".md",
-        "path": "apps/api/CLAUDE.md"
       },
       {
         "name": "api",
@@ -379,7 +391,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 945,
+        "size": 2604,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -523,7 +535,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 940,
+        "size": 848,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
       },
@@ -585,7 +597,7 @@
         "name": "test_main.py",
         "type": "file",
         "language": "Python",
-        "size": 840,
+        "size": 1129,
         "extension": ".py",
         "path": "apps/api/tests/test_main.py"
       },
@@ -896,14 +908,6 @@
         "path": "packages/sigaa-client/AGENTS.md"
       },
       {
-        "name": "CLAUDE.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 9,
-        "extension": ".md",
-        "path": "packages/sigaa-client/CLAUDE.md"
-      },
-      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
@@ -915,7 +919,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 777,
+        "size": 685,
         "extension": ".toml",
         "path": "packages/sigaa-client/pyproject.toml"
       },
@@ -1140,18 +1144,198 @@
         "path": "packages/sigaa-client/tests/test_restaurant.py"
       },
       {
+        "name": "unb-browser",
+        "type": "directory",
+        "path": "packages/unb-browser",
+        "children": []
+      },
+      {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4963,
+        "extension": ".md",
+        "path": "packages/unb-browser/AGENTS.md"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4849,
+        "extension": ".md",
+        "path": "packages/unb-browser/README.md"
+      },
+      {
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 857,
+        "size": 657,
+        "extension": ".toml",
+        "path": "packages/unb-browser/pyproject.toml"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "packages/unb-browser/tests",
+        "children": []
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "packages/unb-browser/tests/fixtures",
+        "children": []
+      },
+      {
+        "name": "cardapio-darcy.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 504923,
+        "extension": ".pdf",
+        "path": "packages/unb-browser/tests/fixtures/cardapio-darcy.pdf"
+      },
+      {
+        "name": "cardapio-fazenda.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 469656,
+        "extension": ".pdf",
+        "path": "packages/unb-browser/tests/fixtures/cardapio-fazenda.pdf"
+      },
+      {
+        "name": "test_restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7226,
+        "extension": ".py",
+        "path": "packages/unb-browser/tests/test_restaurant.py"
+      },
+      {
+        "name": "unb_browser",
+        "type": "directory",
+        "path": "packages/unb-browser/unb_browser",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 307,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/__init__.py"
+      },
+      {
+        "name": "browser.py",
+        "type": "file",
+        "language": "Python",
+        "size": 821,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/browser.py"
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 210,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/config.py"
+      },
+      {
+        "name": "exceptions.py",
+        "type": "file",
+        "language": "Python",
+        "size": 211,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/exceptions.py"
+      },
+      {
+        "name": "restaurant",
+        "type": "directory",
+        "path": "packages/unb-browser/unb_browser/restaurant",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 182,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/restaurant/__init__.py"
+      },
+      {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1426,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/restaurant/models.py"
+      },
+      {
+        "name": "pdf.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7250,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/restaurant/pdf.py"
+      },
+      {
+        "name": "resource.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2067,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/restaurant/resource.py"
+      },
+      {
+        "name": "utils",
+        "type": "directory",
+        "path": "packages/unb-browser/unb_browser/utils",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/utils/__init__.py"
+      },
+      {
+        "name": "http.py",
+        "type": "file",
+        "language": "Python",
+        "size": 453,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/utils/http.py"
+      },
+      {
+        "name": "parsing.py",
+        "type": "file",
+        "language": "Python",
+        "size": 429,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/utils/parsing.py"
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 967,
         "extension": ".toml",
         "path": "pyproject.toml"
+      },
+      {
+        "name": "scalar.config.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 458,
+        "extension": ".json",
+        "path": "scalar.config.json"
       },
       {
         "name": "skills-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 529,
+        "size": 767,
         "extension": ".json",
         "path": "skills-lock.json"
       },
@@ -1159,14 +1343,14 @@
         "name": "uv.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 274434,
+        "size": 313598,
         "extension": ".lock",
         "path": "uv.lock"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-24T10:54:09.221632",
+    "extracted_at": "2026-09-24T22:51:55.218155",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
