@@ -1,7 +1,7 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-23T09:47:20.626139",
+      "extracted_at": "2026-09-24T09:48:31.829710",
       "file_path": "data/bronze/issues_2026-02-UnDb.json",
       "record_count": 50
     }
@@ -51,7 +51,7 @@
         "archived_by": null
       }
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignees": [
       {
@@ -106,18 +106,18 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
     "comments": 0,
     "created_at": "2026-09-23T00:41:52Z",
-    "updated_at": "2026-09-23T00:49:44Z",
-    "closed_at": null,
+    "updated_at": "2026-09-24T05:29:20Z",
+    "closed_at": "2026-09-24T05:29:20Z",
     "assignee": {
       "login": "ViniGvdo",
       "id": 198657137,
@@ -154,8 +154,28 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "## 📚 Descrição\n\nPropor a criação/adaptação de uma **Skill Geradora de Páginas Frontend** para uso futuro pelo Codex, mantendo portabilidade entre agentes e aderência aos padrões do UnDb. Pesquisar soluções similares no ecossistema Codex e na internet antes de criar uma do zero; registrar fontes, compatibilidade e justificativa de reaproveitamento.\n\nUtilizar a “skill criadora de skills” canônica do projeto, `skills/governance/skill-authoring/SKILL.md`, seu template e checklist, em conjunto com `project-governance`.\n\n**Base da análise:** arquivos consultados diretamente na branch remota `develop` em 22/09/2026: documentação, páginas do App Router, layout, estilos globais e configurações. Stack observada: Next.js 16.3.5, React 19.2.8, TypeScript 5, Tailwind CSS 4 e ESLint 9. Revalidar versões e fontes a cada uso.\n\n## 🎯 Objetivo\n\nReduzir o tempo de preparação de telas e evitar dívida técnica causada por divergências de arquitetura, estilo e tipagem no código gerado por IA. A entrega desta Issue é uma proposta documentada de skill reutilizável, no estado `proposed`, pronta para revisão. Homologação executável, aprovação para uso oficial e promoção para `defined` ficam fora deste escopo e serão tratadas posteriormente. A página descartável não será uma funcionalidade do produto.\n\nOs critérios técnicos abaixo devem estar expressos nas instruções da proposta; não exigem implementar novas telas nem demonstrar execução de todos os fluxos nesta Issue.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [ ] Documentar a pesquisa prévia de skills/prompts similares no ecossistema Codex e na internet, com fontes, limitações e justificativa para adaptar ou criar.\n- [ ] Aplicar `skill-authoring`, template e checklist. Manter a fonte canônica em `skills/technology/gerador-paginas-next-tailwind/SKILL.md`, com nome em kebab-case, metadados portáveis e referências necessárias, sem duplicar regras em configurações exclusivas de agente.\n- [ ] Exigir leitura contextual de `docs/`, especialmente requisitos e arquitetura, de `frontend/README.md`, instruções de agentes, rotas relacionadas e configurações vigentes: `package.json`/lockfile, `tsconfig.json`, `eslint.config.mjs`, `postcss.config.mjs` e `src/app/globals.css`. Não presumir `.eslintrc` ou configuração Tailwind 3. Consultar os guias da versão instalada antes de gerar código Next.js.\n- [ ] Gerar componentes funcionais em TypeScript estrito, sem `any`, seguindo `frontend/src/app/**/page.tsx`, alias `@/*` e parâmetros assíncronos das rotas dinâmicas. Separar Server Components de componentes interativos com `\"use client\"`, sem Client Components assíncronos.\n- [ ] Reutilizar serviços, tipos e hooks existentes; preservar o FastAPI como responsável por contratos, negócio e persistência. Não inventar endpoints, acessar o banco diretamente ou alterar a estratégia de execução para gerar uma tela.\n- [ ] Estilizar o novo código exclusivamente com utilitários Tailwind, sem estilos inline, CSS Modules ou CSS-in-JS. Preservar Tailwind 4 com `@tailwindcss/postcss` e os tokens `background`, `foreground` e `accent`.\n- [ ] Herdar fontes Geist e header do layout raiz; seguir tipografia, espaçamentos e contêineres documentados: `max-w-2xl` para buscas/detalhes e `max-w-5xl` para comparação. Manter um `h1`, rótulos acessíveis e foco visível.\n- [ ] Respeitar temas claro/escuro por `prefers-color-scheme` e `color-scheme`, sem introduzir seletor/provider de tema. Usar composição mobile-first e variantes existentes, como `sm:grid-cols-2`. Tratar **320, 768 e 1280 px como larguras de verificação**, não como três breakpoints personalizados.\n- [ ] Preservar requisitos pertinentes à tela: consulta pública, estados de carregamento/vazio/erro, contagem e insuficiência de avaliações e apresentação neutra de Dificuldade/Chamada. Dados fictícios não autorizam coleta de dados reais nem novos requisitos de produto.\n- [ ] Permitir teste descartável explicitamente autorizado, como perfil fictício, somente na resposta ou em arquivos temporários. Não adicionar o exemplo ao staging/commit/PR nem integrá-lo ao produto; remover os arquivos temporários após a avaliação autorizada.\n- [ ] Documentar a distinção entre revisão estrutural de código na resposta e execução real. Descrever, para uma futura homologação executável, `npm run lint`, `npm run build` e inspeção nos dois temas e nas três larguras, incluindo teclado e ausência de rolagem horizontal. A execução dessas verificações sobre uma página não é requisito de conclusão desta Issue. Registrar os limites do exemplo estrutural; não declarar validação visual que não ocorreu.\n- [ ] Preparar o código para testes com props tipadas e separação entre apresentação, serviços e efeitos. Não inventar script `test` ou introduzir framework de testes: a configuração consultada ainda não possui suíte automatizada de UI.\n- [ ] Entregar e manter a skill como `proposed`. A conclusão desta Issue e a eventual integração da proposta não representam homologação ou aprovação para uso oficial. Promoção para `defined` depende de aprovação humana explícita em etapa futura, fora do escopo desta Issue.\n\n## 📌 Prioridade\n\nA definir pelo time no planejamento.\n\n- [ ] **Baixa:** Não impacta o fluxo principal.\n- [x] **Média:** Necessária para a continuidade do projeto.\n- [ ] **Alta:** Impacto direto na entrega da sprint.\n- [ ] **Urgente:** Bloqueia o time ou produção.\n\n## 📝 Checklist de Tarefas\n\n- [ ] Consolidar a pesquisa de soluções similares e justificar adaptação/criação.\n- [ ] Aplicar a skill criadora do projeto com o contexto atualizado de `develop`.\n- [ ] Revisar a proposta quanto a arquitetura, estilo, tipagem, governança e ambiguidades.\n- [ ] Validar estrutura, metadados e referências.\n- [ ] Documentar um exemplo estrutural descartável, que pode ser apresentado somente na conversa, com suas limitações e sem versionar a página gerada; não exigir execução em navegador nesta etapa.\n- [ ] Consolidar a proposta como `proposed`, com instruções de uso, limites e procedimento previsto para homologação futura. A homologação não é condição para concluir esta Issue.\n\n## 👤 Responsável\n\nResponsável pela proposição: conforme Assignees da Issue. A homologação por outro integrante será tratada em etapa futura, fora deste escopo.\n\n## 📎 Anexo\n\nFontes consultadas na branch remota `develop`:\n\n- [Template de tarefa](https://github.com/unb-mds/2026-02-UnDb/blob/develop/.github/ISSUE_TEMPLATE/tarefa.md).\n- [Frontend: execução e padrão visual](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/README.md).\n- [Arquitetura](https://github.com/unb-mds/2026-02-UnDb/blob/develop/docs/arquitetura.md) e [requisitos](https://github.com/unb-mds/2026-02-UnDb/blob/develop/docs/requisitos.md).\n- [Dependências e comandos](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/package.json), [TypeScript](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/tsconfig.json) e [ESLint](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/eslint.config.mjs).\n- [PostCSS](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/postcss.config.mjs), [tokens e temas](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/globals.css) e [layout](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/layout.tsx).\n- [Página inicial](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/page.tsx), [busca no cliente](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/professores/page.tsx) e [detalhe no servidor](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/professores/%5Bid%5D/page.tsx).\n- [Skill Authoring](https://github.com/unb-mds/2026-02-UnDb/blob/develop/skills/governance/skill-authoring/SKILL.md) e [Project Governance](https://github.com/unb-mds/2026-02-UnDb/blob/develop/skills/governance/project-governance/SKILL.md).\n\n**Trabalho preparatório:** proposta local `0.1.0/proposed` no commit `316f000`, branch `chore/skill-gerador-paginas-next-tailwind`, sem push/PR realizado nesta sequência de trabalho. Um exemplo descartável foi apresentado somente na conversa, sem lint/build/navegador. São insumos para revisão, não evidência de integração em `develop` ou homologação concluída.\n\n**Limite documental:** a tabela de pendências dos requisitos ainda menciona a execução do frontend como indefinida, enquanto o ADR 08 registra aprovação do servidor Next.js/standalone. Esta Issue não decide infraestrutura nova nem promove outros RNFs/ADRs; exige preservar a configuração existente e explicitar conflitos relevantes.\n\n---\n\n> Template adaptado de https://github.com/unb-mds/2026.1-ContraDito\n",
-    "closed_by": null,
+    "body": "## 📚 Descrição\n\nPropor a criação/adaptação de uma **Skill Geradora de Páginas Frontend** para uso futuro pelo Codex, mantendo portabilidade entre agentes e aderência aos padrões do UnDb. Pesquisar soluções similares no ecossistema Codex e na internet antes de criar uma do zero; registrar fontes, compatibilidade e justificativa de reaproveitamento.\n\nUtilizar a “skill criadora de skills” canônica do projeto, `skills/governance/skill-authoring/SKILL.md`, seu template e checklist, em conjunto com `project-governance`.\n\n**Base da análise:** arquivos consultados diretamente na branch remota `develop` em 22/09/2026: documentação, páginas do App Router, layout, estilos globais e configurações. Stack observada: Next.js 16.3.5, React 19.2.8, TypeScript 5, Tailwind CSS 4 e ESLint 9. Revalidar versões e fontes a cada uso.\n\n## 🎯 Objetivo\n\nReduzir o tempo de preparação de telas e evitar dívida técnica causada por divergências de arquitetura, estilo e tipagem no código gerado por IA. A entrega desta Issue é uma proposta documentada de skill reutilizável, no estado `proposed`, pronta para revisão. Homologação executável, aprovação para uso oficial e promoção para `defined` ficam fora deste escopo e serão tratadas posteriormente. A página descartável não será uma funcionalidade do produto.\n\nOs critérios técnicos abaixo devem estar expressos nas instruções da proposta; não exigem implementar novas telas nem demonstrar execução de todos os fluxos nesta Issue.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [x] Documentar a pesquisa prévia de skills/prompts similares no ecossistema Codex e na internet, com fontes, limitações e justificativa para adaptar ou criar.\n- [ ] Aplicar `skill-authoring`, template e checklist. Manter a fonte canônica em `skills/technology/gerador-paginas-next-tailwind/SKILL.md`, com nome em kebab-case, metadados portáveis e referências necessárias, sem duplicar regras em configurações exclusivas de agente.\n- [x] Exigir leitura contextual de `docs/`, especialmente requisitos e arquitetura, de `frontend/README.md`, instruções de agentes, rotas relacionadas e configurações vigentes: `package.json`/lockfile, `tsconfig.json`, `eslint.config.mjs`, `postcss.config.mjs` e `src/app/globals.css`. Não presumir `.eslintrc` ou configuração Tailwind 3. Consultar os guias da versão instalada antes de gerar código Next.js.\n- [x] Gerar componentes funcionais em TypeScript estrito, sem `any`, seguindo `frontend/src/app/**/page.tsx`, alias `@/*` e parâmetros assíncronos das rotas dinâmicas. Separar Server Components de componentes interativos com `\"use client\"`, sem Client Components assíncronos.\n- [x] Reutilizar serviços, tipos e hooks existentes; preservar o FastAPI como responsável por contratos, negócio e persistência. Não inventar endpoints, acessar o banco diretamente ou alterar a estratégia de execução para gerar uma tela.\n- [x] Estilizar o novo código exclusivamente com utilitários Tailwind, sem estilos inline, CSS Modules ou CSS-in-JS. Preservar Tailwind 4 com `@tailwindcss/postcss` e os tokens `background`, `foreground` e `accent`.\n- [x] Herdar fontes Geist e header do layout raiz; seguir tipografia, espaçamentos e contêineres documentados: `max-w-2xl` para buscas/detalhes e `max-w-5xl` para comparação. Manter um `h1`, rótulos acessíveis e foco visível.\n- [x] Respeitar temas claro/escuro por `prefers-color-scheme` e `color-scheme`, sem introduzir seletor/provider de tema. Usar composição mobile-first e variantes existentes, como `sm:grid-cols-2`. Tratar **320, 768 e 1280 px como larguras de verificação**, não como três breakpoints personalizados.\n- [x] Preservar requisitos pertinentes à tela: consulta pública, estados de carregamento/vazio/erro, contagem e insuficiência de avaliações e apresentação neutra de Dificuldade/Chamada. Dados fictícios não autorizam coleta de dados reais nem novos requisitos de produto.\n- [x] Permitir teste descartável explicitamente autorizado, como perfil fictício, somente na resposta ou em arquivos temporários. Não adicionar o exemplo ao staging/commit/PR nem integrá-lo ao produto; remover os arquivos temporários após a avaliação autorizada.\n- [x] Documentar a distinção entre revisão estrutural de código na resposta e execução real. Descrever, para uma futura homologação executável, `npm run lint`, `npm run build` e inspeção nos dois temas e nas três larguras, incluindo teclado e ausência de rolagem horizontal. A execução dessas verificações sobre uma página não é requisito de conclusão desta Issue. Registrar os limites do exemplo estrutural; não declarar validação visual que não ocorreu.\n- [x] Preparar o código para testes com props tipadas e separação entre apresentação, serviços e efeitos. Não inventar script `test` ou introduzir framework de testes: a configuração consultada ainda não possui suíte automatizada de UI.\n- [x] Entregar e manter a skill como `proposed`. A conclusão desta Issue e a eventual integração da proposta não representam homologação ou aprovação para uso oficial. Promoção para `defined` depende de aprovação humana explícita em etapa futura, fora do escopo desta Issue.\n\n## 📌 Prioridade\n\nA definir pelo time no planejamento.\n\n- [ ] **Baixa:** Não impacta o fluxo principal.\n- [x] **Média:** Necessária para a continuidade do projeto.\n- [ ] **Alta:** Impacto direto na entrega da sprint.\n- [ ] **Urgente:** Bloqueia o time ou produção.\n\n## 📝 Checklist de Tarefas\n\n- [x] Consolidar a pesquisa de soluções similares e justificar adaptação/criação.\n- [x] Aplicar a skill criadora do projeto com o contexto atualizado de `develop`.\n- [x] Revisar a proposta quanto a arquitetura, estilo, tipagem, governança e ambiguidades.\n- [x] Validar estrutura, metadados e referências.\n- [x] Documentar um exemplo estrutural descartável, que pode ser apresentado somente na conversa, com suas limitações e sem versionar a página gerada; não exigir execução em navegador nesta etapa.\n- [x] Consolidar a proposta como `proposed`, com instruções de uso, limites e procedimento previsto para homologação futura. A homologação não é condição para concluir esta Issue.\n\n## 👤 Responsável\n\nResponsável pela proposição: conforme Assignees da Issue. A homologação por outro integrante será tratada em etapa futura, fora deste escopo.\n\n## 📎 Anexo\n\nFontes consultadas na branch remota `develop`:\n\n- [Template de tarefa](https://github.com/unb-mds/2026-02-UnDb/blob/develop/.github/ISSUE_TEMPLATE/tarefa.md).\n- [Frontend: execução e padrão visual](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/README.md).\n- [Arquitetura](https://github.com/unb-mds/2026-02-UnDb/blob/develop/docs/arquitetura.md) e [requisitos](https://github.com/unb-mds/2026-02-UnDb/blob/develop/docs/requisitos.md).\n- [Dependências e comandos](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/package.json), [TypeScript](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/tsconfig.json) e [ESLint](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/eslint.config.mjs).\n- [PostCSS](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/postcss.config.mjs), [tokens e temas](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/globals.css) e [layout](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/layout.tsx).\n- [Página inicial](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/page.tsx), [busca no cliente](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/professores/page.tsx) e [detalhe no servidor](https://github.com/unb-mds/2026-02-UnDb/blob/develop/frontend/src/app/professores/%5Bid%5D/page.tsx).\n- [Skill Authoring](https://github.com/unb-mds/2026-02-UnDb/blob/develop/skills/governance/skill-authoring/SKILL.md) e [Project Governance](https://github.com/unb-mds/2026-02-UnDb/blob/develop/skills/governance/project-governance/SKILL.md).\n\n**Trabalho preparatório:** proposta local `0.1.0/proposed` no commit `316f000`, branch `chore/skill-gerador-paginas-next-tailwind`, sem push/PR realizado nesta sequência de trabalho. Um exemplo descartável foi apresentado somente na conversa, sem lint/build/navegador. São insumos para revisão, não evidência de integração em `develop` ou homologação concluída.\n\n**Limite documental:** a tabela de pendências dos requisitos ainda menciona a execução do frontend como indefinida, enquanto o ADR 08 registra aprovação do servidor Next.js/standalone. Esta Issue não decide infraestrutura nova nem promove outros RNFs/ADRs; exige preservar a configuração existente e explicitar conflitos relevantes.\n\n---\n\n> Template adaptado de https://github.com/unb-mds/2026.1-ContraDito\n",
+    "closed_by": {
+      "login": "ViniGvdo",
+      "id": 198657137,
+      "node_id": "U_kgDOC9dEcQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/198657137?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ViniGvdo",
+      "html_url": "https://github.com/ViniGvdo",
+      "followers_url": "https://api.github.com/users/ViniGvdo/followers",
+      "following_url": "https://api.github.com/users/ViniGvdo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ViniGvdo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ViniGvdo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ViniGvdo/subscriptions",
+      "organizations_url": "https://api.github.com/users/ViniGvdo/orgs",
+      "repos_url": "https://api.github.com/users/ViniGvdo/repos",
+      "events_url": "https://api.github.com/users/ViniGvdo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ViniGvdo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/120/reactions",
       "total_count": 0,
@@ -200,7 +220,7 @@
       "external_url": "https://www.chatgpt.com",
       "html_url": "https://github.com/apps/chatgpt-codex-connector",
       "created_at": "2025-02-14T01:37:05Z",
-      "updated_at": "2026-04-20T16:37:15Z",
+      "updated_at": "2026-09-23T18:52:59Z",
       "permissions": {
         "actions": "write",
         "checks": "read",
@@ -227,7 +247,7 @@
         "sub_issues"
       ]
     },
-    "state_reason": null,
+    "state_reason": "completed",
     "pinned_comment": null,
     "repo_name": "2026-02-UnDb"
   },
@@ -364,11 +384,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -985,7 +1005,7 @@
       "external_url": "https://www.chatgpt.com",
       "html_url": "https://github.com/apps/chatgpt-codex-connector",
       "created_at": "2025-02-14T01:37:05Z",
-      "updated_at": "2026-04-20T16:37:15Z",
+      "updated_at": "2026-09-23T18:52:59Z",
       "permissions": {
         "actions": "write",
         "checks": "read",
@@ -1202,11 +1222,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -1360,11 +1380,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -1520,11 +1540,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -1720,11 +1740,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2142,11 +2162,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2353,11 +2373,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2564,11 +2584,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -2775,11 +2795,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -3063,13 +3083,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 0,
     "created_at": "2026-09-01T14:15:18Z",
@@ -3295,11 +3315,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -3497,13 +3517,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 0,
     "created_at": "2026-09-01T14:14:40Z",
@@ -3653,7 +3673,7 @@
         "archived_by": null
       }
     ],
-    "state": "open",
+    "state": "closed",
     "locked": false,
     "assignees": [
       {
@@ -3750,18 +3770,18 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 3,
     "created_at": "2026-09-01T13:59:43Z",
-    "updated_at": "2026-09-22T19:23:03Z",
-    "closed_at": null,
+    "updated_at": "2026-09-23T18:13:44Z",
+    "closed_at": "2026-09-23T18:13:21Z",
     "assignee": {
       "login": "TiagoVieira-596",
       "id": 158865980,
@@ -3799,8 +3819,28 @@
       "blocking": 0,
       "total_blocking": 0
     },
-    "body": "## 📚 Descrição\n\nTeste de ponta a ponta do ambiente completo em clone novo, confirmando que diferentes membros conseguem executar o projeto sem passos manuais além da configuração documentada.\n\n## 🎯 Objetivo\n\nConfirmar que a Epic de Docker está pronta antes de encerrá-la.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [x] Ambiente sobe do zero com Docker Compose e build.\n- [x] Nenhum passo manual extra foi necessário além de copiar `.env.example`.\n- [ ] Execução confirmada por pelo menos dois membros diferentes.\n\n## 📝 Checklist de Tarefas\n\n- [x] Primeira validação em clone novo concluída por Gabriel.\n- [x] Verificar e documentar passos faltantes; nenhum passo faltante foi identificado.\n- [x] Registrar evidência da primeira execução na PR #113.\n- [ ] Mesclar a evidência da PR #113.\n- [ ] Confirmar o ambiente com um segundo membro e registrar a evidência.\n\n## 📌 Estado atual\n\nA primeira validação independente foi concluída no commit `372ede1`, cobrindo PostgreSQL, backend, frontend, migração, CORS, persistência e ausência de segredos nas imagens. A issue permanece aberta até a segunda validação independente.\n\n## 📎 Evidência\n\nPR #113 e comentário de validação nesta issue.\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)\n",
-    "closed_by": null,
+    "body": "## 📚 Descrição\n\nTeste de ponta a ponta do ambiente completo em clone novo, confirmando que diferentes membros conseguem executar o projeto sem passos manuais além da configuração documentada.\n\n## 🎯 Objetivo\n\nConfirmar que a Epic de Docker está pronta antes de encerrá-la.\n\n## ✅ Requisitos (Critérios de Aceite)\n\n- [x] Ambiente sobe do zero com Docker Compose e build.\n- [x] Nenhum passo manual extra foi necessário além de copiar `.env.example`.\n- [x] Execução confirmada por pelo menos dois membros diferentes.\n\n## 📝 Checklist de Tarefas\n\n- [x] Primeira validação em clone novo concluída por Gabriel.\n- [x] Verificar e documentar passos faltantes; nenhum passo faltante foi identificado.\n- [x] Registrar evidência da primeira execução na PR #113.\n- [x] Mesclar a evidência da PR #113.\n- [x] Confirmar o ambiente com um segundo membro e registrar a evidência.\n\n## 📌 Estado atual\n\nA primeira validação independente foi concluída no commit `372ede1`, cobrindo PostgreSQL, backend, frontend, migração, CORS, persistência e ausência de segredos nas imagens. A issue permanece aberta até a segunda validação independente.\n\n## 📎 Evidência\n\nPR #113 e comentário de validação nesta issue.\n\n---\n> Template adaptado de (https://github.com/unb-mds/2026.1-ContraDito)\n",
+    "closed_by": {
+      "login": "ailoiol",
+      "id": 225410979,
+      "node_id": "U_kgDODW9_ow",
+      "avatar_url": "https://avatars.githubusercontent.com/u/225410979?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ailoiol",
+      "html_url": "https://github.com/ailoiol",
+      "followers_url": "https://api.github.com/users/ailoiol/followers",
+      "following_url": "https://api.github.com/users/ailoiol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ailoiol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ailoiol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ailoiol/subscriptions",
+      "organizations_url": "https://api.github.com/users/ailoiol/orgs",
+      "repos_url": "https://api.github.com/users/ailoiol/repos",
+      "events_url": "https://api.github.com/users/ailoiol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ailoiol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
     "reactions": {
       "url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/37/reactions",
       "total_count": 0,
@@ -3815,7 +3855,7 @@
     },
     "timeline_url": "https://api.github.com/repos/unb-mds/2026-02-UnDb/issues/37/timeline",
     "performed_via_github_app": null,
-    "state_reason": null,
+    "state_reason": "completed",
     "pinned_comment": null,
     "repo_name": "2026-02-UnDb"
   },
@@ -3973,13 +4013,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 1,
     "created_at": "2026-09-01T13:59:29Z",
@@ -4437,13 +4477,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 1,
     "created_at": "2026-09-01T13:58:50Z",
@@ -4967,13 +5007,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 0,
     "created_at": "2026-09-01T13:32:21Z",
@@ -5178,13 +5218,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 1,
     "created_at": "2026-09-01T13:32:06Z",
@@ -5389,13 +5429,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 1,
     "created_at": "2026-09-01T13:31:49Z",
@@ -5822,11 +5862,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -6024,11 +6064,11 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 6,
-      "closed_issues": 7,
+      "open_issues": 5,
+      "closed_issues": 8,
       "state": "open",
       "created_at": "2026-09-05T20:19:25Z",
-      "updated_at": "2026-09-23T00:43:08Z",
+      "updated_at": "2026-09-24T05:29:20Z",
       "due_on": "2026-09-25T00:00:00Z",
       "closed_at": null
     },
@@ -6277,13 +6317,13 @@
         "user_view_type": "public",
         "site_admin": false
       },
-      "open_issues": 1,
-      "closed_issues": 8,
-      "state": "open",
+      "open_issues": 0,
+      "closed_issues": 9,
+      "state": "closed",
       "created_at": "2026-09-05T20:18:14Z",
-      "updated_at": "2026-09-20T13:19:07Z",
+      "updated_at": "2026-09-23T18:13:59Z",
       "due_on": "2026-09-18T00:00:00Z",
-      "closed_at": null
+      "closed_at": "2026-09-23T18:13:59Z"
     },
     "comments": 0,
     "created_at": "2026-09-01T13:11:57Z",
@@ -9028,8 +9068,8 @@
     "active_lock_reason": null,
     "sub_issues_summary": {
       "total": 5,
-      "completed": 4,
-      "percent_completed": 80
+      "completed": 5,
+      "percent_completed": 100
     },
     "issue_dependencies_summary": {
       "blocked_by": 0,
