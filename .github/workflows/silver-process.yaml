@@ -18,8 +18,9 @@ jobs:
       silver-completed: ${{ steps.processing.outputs.completed }}
 
     steps:
+      # Not skipped under act: act implements actions/checkout as the copy that
+      # populates the workspace, so skipping it leaves the container empty.
       - name: Checkout repository
-        if: ${{ !env.ACT }}
         uses: actions/checkout@v4
         with:
           # Fetch full history to ensure we have all data files

@@ -55,8 +55,9 @@ jobs:
       bronze-completed: ${{ steps.extraction.outputs.completed }}
 
     steps:
+      # Not skipped under act: act implements actions/checkout as the copy that
+      # populates the workspace, so skipping it leaves the container empty.
       - name: Checkout repository
-        if: ${{ !env.ACT }}
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -101,6 +102,16 @@ jobs:
           mkdir -p data/bronze data/silver data/gold
           mkdir -p cache
           echo "[INFO] Created data layer directories"
+
+      # The raw response corpus in `cache/` is deliberately NOT uploaded to
+      # GitHub Actions cache. It holds unmodified GitHub API response bodies
+      # (emails, full /users profiles), and this is a public repository, so
+      # `actions/cache` would expose the corpus to any pull-request author via
+      # the base-branch scope — the corpus must never leave the machine
+      # (issue #107). A durable cross-run cache belongs on infrastructure we
+      # control: a self-hosted runner, or the Mongo raw layer (issue #113).
+      # ETag revalidation still pays off wherever a cache already exists
+      # (local runs, self-hosted runners with a persistent filesystem).
 
       - name: Extract Bronze layer data
         id: extraction

@@ -7,24 +7,48 @@
 // Use local data in development if VITE_USE_LOCAL_DATA is true
 const USE_LOCAL_DATA = import.meta.env.VITE_USE_LOCAL_DATA === 'true';
 
-// GitHub organization and repository from environment variables
-const GITHUB_ORG = import.meta.env.VITE_GITHUB_ORG || 'DW-Corp';
+// GitHub repository from environment variables. The organization is deliberately
+// NOT defaulted: an unset VITE_GITHUB_ORG must fail closed (see
+// DataUnconfiguredError) instead of silently reading a third party's data.
 const GITHUB_REPO = import.meta.env.VITE_GITHUB_REPO || 'CoOps';
 
-// GitHub raw content URL for the data files
-// This fetches directly from the main branch of the repository
-const GITHUB_RAW_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_ORG}/${GITHUB_REPO}/main/data`;
+/**
+ * Thrown by {@link fetchData} when the dashboard is not configured to read from
+ * any GitHub organization (`VITE_GITHUB_ORG` is unset and remote mode is used).
+ *
+ * Sibling of {@link DataNotFoundError}, but a different condition: a missing
+ * file means the pipeline has not produced it yet; this means there is no URL
+ * to fetch from at all, so no request is attempted and the UI shows a
+ * "configure VITE_GITHUB_ORG" state instead of fabricating a plausible answer.
+ */
+export class DataUnconfiguredError extends Error {
+  constructor() {
+    super(
+      'VITE_GITHUB_ORG is not set. Configure it to point at the GitHub organization whose data this dashboard should read.'
+    );
+    this.name = 'DataUnconfiguredError';
+  }
+}
+
+export function isDataUnconfiguredError(error: unknown): error is DataUnconfiguredError {
+  return error instanceof DataUnconfiguredError;
+}
 
 /**
  * Get the base URL for data fetching
  * - Local mode: /data (expects data in public/data during development)
  * - Remote mode: Fetches from GitHub raw content URL
+ * @throws {DataUnconfiguredError} when remote mode is used without VITE_GITHUB_ORG
  */
 export function getDataBasePath(): string {
   if (USE_LOCAL_DATA) {
     return '/data';
   }
-  return GITHUB_RAW_BASE_URL;
+  const org = import.meta.env.VITE_GITHUB_ORG;
+  if (!org) {
+    throw new DataUnconfiguredError();
+  }
+  return `https://raw.githubusercontent.com/${org}/${GITHUB_REPO}/main/data`;
 }
 
 /**

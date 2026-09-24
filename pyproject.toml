@@ -17,6 +17,7 @@ dependencies = [
     "google-generativeai>=0.8.0",
     "pydantic>=2.13.5,<3",
     "pydantic-settings>=2.15.0,<3",
+    "pymongo>=4.6,<5",
 ]
 
 # Installed by default with `uv sync`; not published as a package extra.
@@ -26,6 +27,7 @@ dev = [
     "pytest-cov>=5.0.0",
     "pytest-mock>=3.14.0",
     "freezegun>=1.5.0",
+    "mypy>=2.3.1",
 ]
 
 [project.scripts]
@@ -34,6 +36,7 @@ coops-silver = "coops.etl.silver_process:main"
 coops-gold = "coops.etl.gold_process:main"
 coops-aggregate = "coops.etl.gold_aggregate:main"
 coops-registry = "coops.etl.registry_manager:main"
+coops-corpus = "coops.raw_capture.cli:main"
 
 # uv_build finds the package in src/coops from the project name.
 [build-system]
@@ -62,6 +65,51 @@ omit = [
     "*cleanup_event_data.py",
     "src/coops/ai_analysis/*",
 ]
+
+# Static half of the port contract (issue #91): a Protocol is checked at
+# compile time, not at runtime — `isinstance` on a @runtime_checkable
+# Protocol only verifies that method *names* exist — so an adapter that
+# drifts from a port (missing `tenant` parameter, renamed argument, wrong
+# return type) needs a type checker to be caught. Contract tests (#55)
+# remain the runtime guarantee; this is the compile-time half.
+[tool.mypy]
+strict = true
+# requires-python floor: the CI matrix runs 3.10 and 3.11, so check against
+# the oldest semantics any supported interpreter may execute.
+python_version = "3.10"
+# Resolve `coops` imports against this source tree, not the installed dist
+# (which has no py.typed marker) — otherwise any file checked outside src/
+# (a scratch adapter, a future tests/ run) sees the ports as Any and the
+# protocol check silently does nothing.
+mypy_path = "src"
+# Scoped to the Phase 1 port/adapter boundary only: a strict run over the
+# pre-ports layers starts at 348 errors today and would drown the signal
+# (the follow-up widens these as Phases 2 and 3 move code behind ports).
+files = [
+    "src/coops/domain",
+    "src/coops/github",
+    "src/coops/storage",
+]
+# The same pre-ports packages, spelled out so an explicit `uv run mypy src/`
+# (or an IDE run over the tree) fails on nothing this issue does not migrate.
+# `files` above already keeps a bare `uv run mypy` scoped; this is the belt
+# to its braces. `storage` left out of the alternation since #41: the file
+# adapter is strict-clean, and an adapter drifting from `StoragePort` must
+# not pass unnoticed.
+exclude = "src/coops/(bronze|silver|gold|utils|etl|ai_analysis|infrastructure|raw_capture)/"
+
+# `raw.py`'s `import pymongo` follows into the standalone `bson` package,
+# whose `binary.py` imports numpy under TYPE_CHECKING — and numpy's bundled
+# stubs use `type` statements that cannot parse under the
+# `python_version = "3.10"` floor above (they need >= 3.12). That aborts the
+# whole run ("errors prevented further checking"), so `bson` — the one leaf
+# that pulls numpy in — is skipped. Nothing in the checked packages
+# (domain, github, storage) touches bson directly, and pymongo's own
+# annotations (collections, replace_one, find_one) stay fully typed; only
+# bson-typed spots degrade to Any. Revisit when the floor moves to 3.12.
+[[tool.mypy.overrides]]
+module = ["bson", "bson.*"]
+follow_imports = "skip"
 
 [tool.coverage.report]
 exclude_lines = [

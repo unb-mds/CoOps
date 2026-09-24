@@ -83,6 +83,7 @@ describe('HeatmapPage Component', () => {
 
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.stubEnv('VITE_GITHUB_ORG', 'test-org');
     
     // Mock successful fetch responses
     (global.fetch as any).mockImplementation((url: string) => {
@@ -105,6 +106,7 @@ describe('HeatmapPage Component', () => {
   });
 
   afterEach(() => {
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
   });
 

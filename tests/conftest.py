@@ -63,6 +63,26 @@ def fake_io(monkeypatch, tmp_path):
     monkeypatch.setattr("coops.silver.members_statistics.load_json_data", _fake_load, raising=False)
     monkeypatch.setattr("coops.silver.members_statistics.save_json_data", _fake_save, raising=False)
 
+    # Silver reads Bronze through the shared per-repository loader (#170).
+    # The storage keeps the "<family>_all.json" keys the tests populate: the
+    # key names the family's records, it is not a path the code reads.
+    def _fake_load_family(family: str):
+        return storage.get(f"data/bronze/{family}_all.json") or []
+
+    monkeypatch.setattr("coops.silver.members_statistics.load_family", _fake_load_family, raising=False)
+    monkeypatch.setattr("coops.silver.contribution_metrics.load_family", _fake_load_family, raising=False)
+    monkeypatch.setattr("coops.silver.collaboration_networks.load_family", _fake_load_family, raising=False)
+    monkeypatch.setattr("coops.silver.temporal_analysis.load_family", _fake_load_family, raising=False)
+
+    # The Bronze writers remove the retired "<family>_all.json" aggregates
+    # where they used to write them (#170). Route that through the fake too,
+    # so a test exercising a writer stays inside the in-memory storage.
+    def _fake_remove_aggregate(bronze_dir, family):
+        return storage.pop(f"{bronze_dir}/{family}_all.json", None)
+
+    monkeypatch.setattr("coops.bronze.issues.remove_aggregate", _fake_remove_aggregate, raising=False)
+    monkeypatch.setattr("coops.bronze.commits.remove_aggregate", _fake_remove_aggregate, raising=False)
+
     # Patch file_language_analysis module
     monkeypatch.setattr("coops.silver.file_language_analysis.load_json_data", _fake_load, raising=False)
     monkeypatch.setattr("coops.silver.file_language_analysis.save_json_data", _fake_save, raising=False)

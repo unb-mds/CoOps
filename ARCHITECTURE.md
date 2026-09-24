@@ -76,10 +76,15 @@ The pipeline automatically runs:
 ### Bronze Layer (Raw Data)
 - `repositories_filtered.json` - Active organization repositories
 - `members_detailed.json` - Organization member profiles
-- `issues_all.json` - All issues across repositories
-- `prs_all.json` - All pull requests
-- `commits_all.json` - All commits with metadata
-- `issue_events_all.json` - Issue/PR events and comments
+- `issues_<repo>.json`, `prs_<repo>.json`, `commits_<repo>.json`,
+  `issue_events_<repo>.json` - one file per repository
+
+The four `*_all.json` aggregates that used to sit beside these were removed in
+#170. They repeated the per-repository files byte for byte — 159.8 MiB, 41% of
+the Bronze tree — and `commits_all.json` had reached 80.6% of GitHub's 100 MiB
+hard push limit, which in fork-and-forget mode stops the pipeline outright.
+Read a family with `coops.bronze.files.bronze_records`, which enumerates the
+per-repository files and excludes derived copies.
 
 ### Silver Layer (Analytics)
 - `members_analytics.json` - Member maturity scores and classifications

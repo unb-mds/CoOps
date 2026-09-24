@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import type { ReactNode } from 'react';
 import Organization from './Organization';
-import { DataNotFoundError, fetchData } from '../services/dataSource';
+import { DataNotFoundError, DataUnconfiguredError, fetchData } from '../services/dataSource';
 
 vi.mock('../services/dataSource', async () => {
   const actual = await vi.importActual<typeof import('../services/dataSource')>(
@@ -148,6 +148,17 @@ describe('Organization page', () => {
     expect(status).toHaveTextContent("This data hasn't been generated yet");
     expect(status).toHaveTextContent('data/silver/contribution_metrics.json');
     expect(screen.queryByRole('alert')).not.toBeInTheDocument();
+    expect(screen.queryByTestId('pie-chart')).not.toBeInTheDocument();
+    expect(errorSpy).not.toHaveBeenCalled();
+  });
+
+  test('shows the configure-me state when the data source has no VITE_GITHUB_ORG', async () => {
+    const errorSpy = vi.spyOn(console, 'error').mockImplementation(() => {});
+    mockedFetchData.mockRejectedValue(new DataUnconfiguredError());
+    renderPage();
+    const status = await screen.findByTestId('data-not-configured');
+    expect(status).toHaveTextContent('VITE_GITHUB_ORG is not configured');
+    expect(screen.queryByTestId('data-not-generated')).not.toBeInTheDocument();
     expect(screen.queryByTestId('pie-chart')).not.toBeInTheDocument();
     expect(errorSpy).not.toHaveBeenCalled();
   });

@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { fetchData, isDataNotFoundError } from '../services/dataSource';
-import DataNotGenerated from './DataNotGenerated';
+import { fetchData, isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
+import DataNotGenerated, { DataNotConfigured } from './DataNotGenerated';
 
 /**
  * Interface for a member's AI analysis
  */
 export interface MemberAnalysis {
+  /** Stable identity: unique per person, unlike `name`, which several people can share */
+  id: string;
   name: string;
   repos: string[];
   commits_analysis: string;
@@ -96,6 +98,8 @@ export function AISummary({
   const [error, setError] = useState<string | null>(null);
   // Set when the pipeline data file doesn't exist yet (404 from the data source)
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  // Set when the data source is not configured (no VITE_GITHUB_ORG)
+  const [notConfigured, setNotConfigured] = useState(false);
   
   // State for filters
   const [searchName, setSearchName] = useState('');
@@ -119,6 +123,7 @@ export function AISummary({
       setIsLoading(true);
       setError(null);
       setMissingDataPath(null);
+      setNotConfigured(false);
 
       try {
           let data: Record<string, unknown>;
@@ -140,7 +145,11 @@ export function AISummary({
           const membersObject = data.members || data;
           const members = Object.values(membersObject)
             .filter((m): m is MemberAnalysis =>
-              m != null && typeof m === 'object' && typeof (m as MemberAnalysis).name === 'string'
+              m != null &&
+              typeof m === 'object' &&
+              typeof (m as MemberAnalysis).id === 'string' &&
+              (m as MemberAnalysis).id.length > 0 &&
+              typeof (m as MemberAnalysis).name === 'string'
             );
           
           // Validate and ensure repos is always an array
@@ -163,6 +172,9 @@ export function AISummary({
         if (isDataNotFoundError(err)) {
           setMissingDataPath(err.path);
           setError('FILE_NOT_FOUND');
+        } else if (isDataUnconfiguredError(err)) {
+          setNotConfigured(true);
+          setError(null);
         } else {
           console.error('Error loading AI analysis data:', err);
           const errorMessage = err instanceof Error ? err.message : 'Failed to load data';
@@ -243,10 +255,10 @@ export function AISummary({
   // Handle member selection (toggle)
   const handleSelectMember = (member: MemberAnalysis) => {
     setSelectedMembers(prev => {
-      const isAlreadySelected = prev.some(m => m.name === member.name);
+      const isAlreadySelected = prev.some(m => m.id === member.id);
       if (isAlreadySelected) {
         // Remove member if already selected
-        return prev.filter(m => m.name !== member.name);
+        return prev.filter(m => m.id !== member.id);
       } else {
         // Add member to selection
         return [...prev, member];
@@ -256,8 +268,8 @@ export function AISummary({
   };
   
   // Remove a specific member from selection
-  const handleRemoveMember = (memberName: string) => {
-    setSelectedMembers(prev => prev.filter(m => m.name !== memberName));
+  const handleRemoveMember = (memberId: string) => {
+    setSelectedMembers(prev => prev.filter(m => m.id !== memberId));
   };
 
   // Clear all filters
@@ -537,32 +549,32 @@ export function AISummary({
             {!isLoading && !error && filteredMembers.length > 0 && (
               <ul className="divide-y" style={{ borderColor: '#444444' }}>
                 {filteredMembers.map((member) => (
-                  <li key={member.name}>
+                  <li key={member.id}>
                     <button
                       onClick={() => handleSelectMember(member)}
                       className="w-full px-4 py-3 text-left transition-colors flex items-center gap-2"
                       style={{
                         backgroundColor:
-                          selectedMembers.some(m => m.name === member.name) ? 'rgba(59, 130, 246, 0.2)' : 'transparent',
+                          selectedMembers.some(m => m.id === member.id) ? 'rgba(59, 130, 246, 0.2)' : 'transparent',
                       }}
                       onMouseEnter={(e) => {
-                        if (!selectedMembers.some(m => m.name === member.name)) {
+                        if (!selectedMembers.some(m => m.id === member.id)) {
                           e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)';
                         }
                       }}
                       onMouseLeave={(e) => {
-                        if (!selectedMembers.some(m => m.name === member.name)) {
+                        if (!selectedMembers.some(m => m.id === member.id)) {
                           e.currentTarget.style.backgroundColor = 'transparent';
                         }
                       }}
                     >
                       <div className="flex-shrink-0">
                         <div className={`w-5 h-5 rounded border-2 flex items-center justify-center transition-colors ${
-                          selectedMembers.some(m => m.name === member.name)
+                          selectedMembers.some(m => m.id === member.id)
                             ? 'bg-blue-500 border-blue-500'
                             : 'border-slate-500'
                         }`}>
-                          {selectedMembers.some(m => m.name === member.name) && (
+                          {selectedMembers.some(m => m.id === member.id) && (
                             <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
@@ -608,6 +620,9 @@ export function AISummary({
         <DataNotGenerated path={missingDataPath} className="mt-4" hint={AI_NOT_GENERATED_HINT} />
       )}
 
+      {/* Data source not configured: shown without opening the dropdown */}
+      {notConfigured && <DataNotConfigured className="mt-4" />}
+
       {/* Selected Members Analysis Display - Horizontal Layout */}
       {selectedMembers.length > 0 && (
         <div className="mt-4">
@@ -628,7 +643,7 @@ export function AISummary({
           <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory h-[300px]" style={{ scrollbarWidth: 'thin' }}>
             {selectedMembers.map((member) => (
               <div
-                key={member.name}
+                key={member.id}
                 className="flex-shrink-0 w-96 p-4 rounded-lg border snap-start h-[300px] overflow-y-auto"
                 style={{
                   backgroundColor: '#222222',
@@ -641,7 +656,7 @@ export function AISummary({
                     {member.name}
                   </h3>
                   <button
-                    onClick={() => handleRemoveMember(member.name)}
+                    onClick={() => handleRemoveMember(member.id)}
                     className="text-slate-400 hover:text-white transition-colors flex-shrink-0"
                     title="Remove"
                   >

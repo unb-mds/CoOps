@@ -20,14 +20,14 @@ def test_process_collaboration_networks_basic(monkeypatch, fake_io):
         {"repo_name": "repo2", "actor": {"login": "alice"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits
-        if path.endswith("issue_events_all.json"):
+        if family == "issue_events":
             return events
         return []
 
@@ -35,7 +35,7 @@ def test_process_collaboration_networks_basic(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -56,14 +56,14 @@ def test_process_collaboration_networks_basic(monkeypatch, fake_io):
 
 def test_process_collaboration_networks_empty_data(monkeypatch, fake_io):
     """Testa processamento com dados vazios"""
-    def fake_load(path: str):
+    def fake_load(family: str):
         return []
 
     def fake_save(data, path, timestamp=True):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -84,8 +84,8 @@ def test_process_collaboration_networks_metadata_removal(monkeypatch, fake_io):
         {"repo_name": "repo1", "user": {"login": "alice"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -93,7 +93,7 @@ def test_process_collaboration_networks_metadata_removal(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -109,8 +109,8 @@ def test_process_collaboration_networks_metadata_with_multiple_users(monkeypatch
         {"repo_name": "repo1", "user": {"login": "bob"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -118,7 +118,7 @@ def test_process_collaboration_networks_metadata_with_multiple_users(monkeypatch
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -141,8 +141,8 @@ def test_process_collaboration_networks_issue_assignee(monkeypatch, fake_io):
         },
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -150,7 +150,7 @@ def test_process_collaboration_networks_issue_assignee(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -180,8 +180,8 @@ def test_process_collaboration_networks_commit_author_priority(monkeypatch, fake
         },
     ]
 
-    def fake_load(path: str):
-        if path.endswith("commits_all.json"):
+    def fake_load(family: str):
+        if family == "commits":
             return commits
         return []
 
@@ -189,7 +189,7 @@ def test_process_collaboration_networks_commit_author_priority(monkeypatch, fake
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -216,8 +216,8 @@ def test_process_collaboration_networks_event_actor(monkeypatch, fake_io):
         {"repo_name": "repo1", "actor": {"login": "bob"}}
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issue_events_all.json"):
+    def fake_load(family: str):
+        if family == "issue_events":
             return events
         return []
 
@@ -225,7 +225,7 @@ def test_process_collaboration_networks_event_actor(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -249,8 +249,8 @@ def test_process_collaboration_networks_multiple_repos(monkeypatch, fake_io):
         {"repo_name": "repo3", "user": {"login": "alice"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -258,7 +258,7 @@ def test_process_collaboration_networks_multiple_repos(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -285,8 +285,8 @@ def test_process_collaboration_networks_user_metrics(monkeypatch, fake_io):
         {"repo_name": "repo1", "user": {"login": "charlie"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -294,7 +294,7 @@ def test_process_collaboration_networks_user_metrics(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -314,8 +314,8 @@ def test_process_collaboration_networks_repo_analysis(monkeypatch, fake_io):
         {"repo_name": "repo1", "user": {"login": "charlie"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -323,7 +323,7 @@ def test_process_collaboration_networks_repo_analysis(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -347,8 +347,8 @@ def test_process_collaboration_networks_network_stats(monkeypatch, fake_io):
         {"repo_name": "repo2", "user": {"login": "dave"}},  # Adiciona colaborador para charlie
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -356,7 +356,7 @@ def test_process_collaboration_networks_network_stats(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -375,8 +375,8 @@ def test_process_collaboration_networks_edge_sorting(monkeypatch, fake_io):
         {"repo_name": "repo1", "user": {"login": "alice"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -384,7 +384,7 @@ def test_process_collaboration_networks_edge_sorting(monkeypatch, fake_io):
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -403,8 +403,8 @@ def test_process_collaboration_networks_no_self_collaboration(monkeypatch, fake_
         {"repo_name": "repo1", "user": {"login": "alice"}},  # Duplicado
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -412,7 +412,7 @@ def test_process_collaboration_networks_no_self_collaboration(monkeypatch, fake_
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -432,8 +432,8 @@ def test_process_collaboration_networks_cross_repo_sorting(monkeypatch, fake_io)
         {"repo_name": "repo2", "user": {"login": "bob"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -441,7 +441,7 @@ def test_process_collaboration_networks_cross_repo_sorting(monkeypatch, fake_io)
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -463,8 +463,8 @@ def test_process_collaboration_networks_user_metrics_sorting(monkeypatch, fake_i
         {"repo_name": "repo1", "user": {"login": "dave"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -472,7 +472,7 @@ def test_process_collaboration_networks_user_metrics_sorting(monkeypatch, fake_i
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()
@@ -493,8 +493,8 @@ def test_process_collaboration_networks_repo_analysis_sorting(monkeypatch, fake_
         {"repo_name": "repo2", "user": {"login": "eve"}},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -502,7 +502,7 @@ def test_process_collaboration_networks_repo_analysis_sorting(monkeypatch, fake_
         fake_io[path] = data
         return path
 
-    monkeypatch.setattr(collab, "load_json_data", fake_load)
+    monkeypatch.setattr(collab, "load_family", fake_load)
     monkeypatch.setattr(collab, "save_json_data", fake_save)
 
     files = collab.process_collaboration_networks()

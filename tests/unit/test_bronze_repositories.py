@@ -9,6 +9,89 @@ from unittest.mock import patch, MagicMock
 from coops.bronze.repositories import extract_repositories
 
 
+class TestRepoFilter:
+    """repo_filter (--repo) restricts the run to exactly the named repos."""
+
+    @staticmethod
+    def _client_and_config(repos, skip=()):
+        mock_client = MagicMock()
+        mock_config = MagicMock()
+        mock_config.org_name = "test-org"
+        mock_config.should_skip_repo.side_effect = lambda repo: repo.get("name") in skip
+        mock_client.get_paginated.return_value = repos
+        mock_client.get_with_cache.return_value = {"detail": True}
+        return mock_client, mock_config
+
+    def test_selects_only_the_named_repos(self):
+        """The filtered file and the detail fetches cover only the named
+        repositories, so the downstream steps (which enumerate
+        repositories_filtered.json) follow."""
+        repos = [
+            {"name": "repo1", "full_name": "test-org/repo1"},
+            {"name": "repo2", "full_name": "test-org/repo2"},
+        ]
+        mock_client, mock_config = self._client_and_config(repos)
+
+        with patch('coops.bronze.repositories.save_json_data', return_value="file.json") as mock_save:
+            extract_repositories(mock_client, mock_config, repo_filter=["test-org/repo2"])
+
+        filtered_call = [
+            c for c in mock_save.call_args_list
+            if "repositories_filtered.json" in str(c)
+        ][0]
+        assert filtered_call[0][0] == [{"name": "repo2", "full_name": "test-org/repo2"}]
+        # Detail fetch for the selected repo only.
+        assert mock_client.get_with_cache.call_count == 1
+        assert "test-org/repo2" in mock_client.get_with_cache.call_args[0][0]
+
+    def test_missing_name_fails_loudly_before_any_write(self):
+        """A name outside the filtered set fails the run naming the repo,
+        instead of running on an empty set and reporting success."""
+        repos = [{"name": "repo1", "full_name": "test-org/repo1"}]
+        mock_client, mock_config = self._client_and_config(repos)
+
+        with patch('coops.bronze.repositories.save_json_data') as mock_save:
+            with pytest.raises(ValueError) as exc_info:
+                extract_repositories(mock_client, mock_config, repo_filter=["test-org/nope"])
+
+        assert "test-org/nope" in str(exc_info.value)
+        # Nothing was written before the failure.
+        mock_save.assert_not_called()
+
+    def test_cannot_resurrect_blacklisted_repo(self):
+        """The filter is applied after the blacklist/fork filter, so naming an
+        excluded repo fails rather than resurrecting it."""
+        repos = [
+            {"name": "good", "full_name": "test-org/good"},
+            {"name": "bad", "full_name": "test-org/bad"},
+        ]
+        mock_client, mock_config = self._client_and_config(repos, skip={"bad"})
+
+        with patch('coops.bronze.repositories.save_json_data') as mock_save:
+            with pytest.raises(ValueError) as exc_info:
+                extract_repositories(
+                    mock_client, mock_config,
+                    repo_filter=["test-org/good", "test-org/bad"],
+                )
+
+        assert "test-org/bad" in str(exc_info.value)
+        mock_save.assert_not_called()
+
+    def test_repo_names_match_case_insensitively(self):
+        """GitHub names are case-insensitive; the selection must be too."""
+        repos = [{"name": "Repo1", "full_name": "test-org/Repo1"}]
+        mock_client, mock_config = self._client_and_config(repos)
+
+        with patch('coops.bronze.repositories.save_json_data', return_value="file.json") as mock_save:
+            extract_repositories(mock_client, mock_config, repo_filter=["test-org/repo1"])
+
+        filtered_call = [
+            c for c in mock_save.call_args_list
+            if "repositories_filtered.json" in str(c)
+        ][0]
+        assert filtered_call[0][0] == [{"name": "Repo1", "full_name": "test-org/Repo1"}]
+
+
 class TestExtractRepositories:
     """Testes para extract_repositories"""
     

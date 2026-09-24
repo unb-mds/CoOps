@@ -14,6 +14,7 @@ def extract_repositories(
     config: OrganizationConfig,
     use_cache: bool = True,
     max_repos: Optional[int] = None,
+    repo_filter: Optional[List[str]] = None,
 ) -> List[str]:
     """Extract organization repositories to bronze layer.
 
@@ -22,6 +23,15 @@ def extract_repositories(
     local tests). Since blacklist/fork filtering happens after the raw fetch,
     the result may include fewer than max_repos repos if early entries get
     filtered out.
+
+    repo_filter restricts the run to exactly the named ``owner/name``
+    repositories. It is applied after the blacklist/fork filter, so naming an
+    excluded repository cannot resurrect it, and a name that is not in the
+    filtered set raises instead of running on an empty set and reporting
+    success. The restricted list is what downstream steps read
+    (issues/commits/structures enumerate ``repositories_filtered.json``), so
+    the whole run follows. Comparison is case-insensitive because GitHub
+    repository names are.
     """
 
     repos_url = f"https://api.github.com/orgs/{config.org_name}/repos"
@@ -39,6 +49,23 @@ def extract_repositories(
             filtered_repos.append(repo)
         else:
             print(f"Skipping repository: {repo.get('name', 'unknown')} (blacklisted/fork)")
+
+    # Restrict to the named repositories, before anything is written: a name
+    # absent from the filtered set (unknown, blacklisted or a fork) fails the
+    # run here rather than extracting nothing and looking successful.
+    if repo_filter:
+        wanted = {name.lower() for name in repo_filter}
+        available = {repo.get('full_name', '').lower() for repo in filtered_repos}
+        missing = sorted(wanted - available)
+        if missing:
+            raise ValueError(
+                "--repo: not in the filtered repository set "
+                f"(unknown, blacklisted or fork): {', '.join(missing)}"
+            )
+        filtered_repos = [
+            repo for repo in filtered_repos
+            if repo.get('full_name', '').lower() in wanted
+        ]
 
     if max_repos is not None:
         filtered_repos = filtered_repos[:max_repos]

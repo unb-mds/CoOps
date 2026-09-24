@@ -23,7 +23,7 @@ const repoB: LanguageAnalysis = {
 };
 
 const dataUrl = (path: string) =>
-  `https://raw.githubusercontent.com/${import.meta.env.VITE_GITHUB_ORG || 'DW-Corp'}/${
+  `https://raw.githubusercontent.com/${import.meta.env.VITE_GITHUB_ORG}/${
     import.meta.env.VITE_GITHUB_REPO || 'CoOps'
   }/main/data/${path}`;
 
@@ -52,12 +52,14 @@ describe('VisualizationUtils', () => {
   beforeEach(() => {
     fetchMock.mockReset();
     vi.stubGlobal('fetch', fetchMock);
+    vi.stubEnv('VITE_GITHUB_ORG', 'acme-org');
     vi.spyOn(console, 'error').mockImplementation(() => {});
     vi.spyOn(console, 'warn').mockImplementation(() => {});
   });
 
   afterEach(() => {
     vi.unstubAllGlobals();
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
   });
 

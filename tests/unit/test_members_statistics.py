@@ -10,14 +10,14 @@ def _make_helpers(monkeypatch, *, commits=None, issues=None, prs=None, events=No
     prs = prs or []
     events = events or []
 
-    def fake_load(path):
-        if "commits_all" in path:
+    def fake_load(family):
+        if family == "commits":
             return commits
-        if "issues_all" in path:
+        if family == "issues":
             return issues
-        if "prs_all" in path:
+        if family == "prs":
             return prs
-        if "issue_events_all" in path:
+        if family == "issue_events":
             return events
         return []
 
@@ -27,7 +27,7 @@ def _make_helpers(monkeypatch, *, commits=None, issues=None, prs=None, events=No
         saved[path] = data
         return path
 
-    monkeypatch.setattr(ms, "load_json_data", fake_load)
+    monkeypatch.setattr(ms, "load_family", fake_load)
     monkeypatch.setattr(ms, "save_json_data", fake_save)
     return saved
 
@@ -157,27 +157,167 @@ class TestBotFiltering:
 
 
 # ---------------------------------------------------------------------------
-# Unknown user handling
+# Unattributed records (issues #154, #155)
 # ---------------------------------------------------------------------------
 
-class TestUnknownUser:
-    def test_unknown_commit_author_skipped(self, monkeypatch):
-        """Commits where no identifier can be resolved → 'unknown' → skipped."""
+class TestUnattributedRecords:
+    """A record no identity channel attributes to anyone is carried in an
+    explicit unattributed bucket — never a member named 'unknown'
+    (temporal_analysis's old phantom) and never a silent drop
+    (members_statistics' old `'unknown'` exclusion, which lost 3.7% of one
+    corpus's commits)."""
+
+    def test_commit_with_every_channel_null_is_carried_not_dropped(self, monkeypatch):
+        """The #154 shape: login, name, email and author_email_hash all
+        null — one marked bucket row, no member row, nothing lost."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {
+                "commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                      "login": None, "name": None,
+                                      "author_email_hash": None}},
+                "repo_name": "r1",
+            },
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        bucket = stats[0]
+        assert bucket["unattributed"] is True
+        assert bucket["id"] is None
+        assert bucket["name"] is None
+        assert bucket["total_commits"] == 1
+        assert bucket["total_events"] == 1
+
+    def test_commit_with_author_object_entirely_absent_is_carried(self, monkeypatch):
+        """The scrubbed-corpus shape (#154): no author object at all —
+        the measured 2,076 records carry every channel null."""
         saved = _make_helpers(monkeypatch, commits=[
             {
                 "commit": {"author": {"date": "2024-01-01T00:00:00Z"}},
                 "repo_name": "r1",
-            }
+            },
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        assert stats[0]["unattributed"] is True
+        assert stats[0]["total_commits"] == 1
+
+    def test_null_actor_event_is_carried_not_dropped(self, monkeypatch):
+        """The #155 shape: `"actor": null` — GitHub's answer for a
+        deleted account. Carried in the bucket, no phantom member."""
+        saved = _make_helpers(monkeypatch, events=[
+            {
+                "actor": None,
+                "created_at": "2024-01-01T00:00:00Z",
+                "event": "assigned",
+                "repo_name": "r1",
+            },
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        bucket = stats[0]
+        assert bucket["unattributed"] is True
+        assert bucket["id"] is None
+        assert bucket["total_events"] == 1
+        # The bucket row carries no member identity a consumer could
+        # mistake for a person — no login, no name, no averages.
+        assert bucket["name"] is None
+        assert "avg_weekly_activity" not in bucket
+        assert "activity_period" not in bucket
+
+    def test_issue_with_null_user_is_carried(self, monkeypatch):
+        saved = _make_helpers(monkeypatch, issues=[
+            {"user": None, "created_at": "2024-01-01T00:00:00Z", "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        assert stats[0]["unattributed"] is True
+
+    def test_no_bucket_row_when_nothing_is_unattributed(self, monkeypatch):
+        """A corpus without unattributed records keeps byte-identical
+        output: the bucket row appears only when there is something in
+        it, so existing consumers see no new shape."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z", "login": "alice"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        assert "unattributed" not in stats[0]
+        assert stats[0]["id"] == "alice"
+
+    def test_real_member_never_classified_as_unattributed(self, monkeypatch):
+        """The magic-name hazard the fix removes: a login literally
+        spelled 'unknown' is a real member — attributed, unmarked, never
+        bucketed. The marker is a field, not a name."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "login": "unknown"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        assert stats[0]["id"] == "unknown"
+        assert "unattributed" not in stats[0]
+
+    def test_bucket_never_counted_as_a_member(self, monkeypatch):
+        """Member totals count only members: alice keeps her own commit,
+        the bucket keeps the unattributed one, and no member row absorbs
+        it."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z", "login": "alice"}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-02T00:00:00Z"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        members = [s for s in stats if not s.get("unattributed")]
+        buckets = [s for s in stats if s.get("unattributed")]
+        assert len(members) == 1
+        assert len(buckets) == 1
+        assert members[0]["id"] == "alice"
+        assert members[0]["total_commits"] == 1
+        assert buckets[0]["total_commits"] == 1
+
+    def test_a_dateless_record_is_neither_member_nor_bucket(self, monkeypatch):
+        """No parseable date, no identity channels: no event at all —
+        the date gate precedes the bucket in this module too, which is
+        what keeps Bronze `_metadata` entries out of the output."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"login": None, "name": None,
+                                   "author_email_hash": None}},
+             "repo_name": "r1"},
+            {"_metadata": {"extracted_at": "2024-01-01T00:00:00Z"}},
         ])
         ms.process_members_statistics()
         assert saved["data/silver/members_statistics.json"] == []
 
-    def test_unknown_issue_user_skipped(self, monkeypatch):
-        saved = _make_helpers(monkeypatch, issues=[
-            {"user": {}, "created_at": "2024-01-01T00:00:00Z", "repo_name": "r1"}
+    def test_two_unattributed_records_do_not_become_a_member(self, monkeypatch):
+        """Two unattributed commits are not one contributor with two
+        commits: they are each nobody-we-can-name (#154). The only thing
+        counting them is the marked bucket, which carries no identity —
+        no unmarked row may hold their events."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z"}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-02-01T00:00:00Z"}},
+             "repo_name": "r2"},
         ])
         ms.process_members_statistics()
-        assert saved["data/silver/members_statistics.json"] == []
+        stats = saved["data/silver/members_statistics.json"]
+        # No member rows at all — the two records belong to nobody.
+        assert [s for s in stats if not s.get("unattributed")] == []
+        buckets = [s for s in stats if s.get("unattributed")]
+        assert len(buckets) == 1
+        assert buckets[0]["total_commits"] == 2
+        assert buckets[0]["total_events"] == 2
+        assert buckets[0]["id"] is None
 
 
 # ---------------------------------------------------------------------------
@@ -357,3 +497,314 @@ class TestMetadataStripping:
         stats = saved["data/silver/members_statistics.json"]
         assert len(stats) == 1
         assert stats[0]["name"] == "alice"
+
+
+# ---------------------------------------------------------------------------
+# Identity fallback: author_email_hash (issue #125)
+# ---------------------------------------------------------------------------
+
+class TestIdentityHash:
+    def test_unlinked_author_hash_resolves_to_unique_identity(self, monkeypatch):
+        """An unlinked commit author carrying author_email_hash resolves to a
+        stable, unique identity through Silver — it is not dropped as
+        'unknown'."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {
+                "commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                      "author_email_hash": h}},
+                "repo_name": "r1",
+            }
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 1
+        assert stats[0]["name"] != "unknown"
+        assert stats[0]["name"] == f"Unknown contributor ({h[:8]})"
+
+    def test_two_unlinked_authors_do_not_collapse(self, monkeypatch):
+        """Two distinct unlinked authors must not collapse to one display
+        value — the hash prefix keeps each row distinct."""
+        h1 = "a1b2c3d4" + "0" * 56
+        h2 = "e5f6a7b8" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h1}}, "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-02T00:00:00Z",
+                                   "author_email_hash": h2}}, "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        names = [s["name"] for s in stats]
+        assert len(stats) == 2
+        assert len(set(names)) == 2
+        assert set(names) == {
+            f"Unknown contributor ({h1[:8]})",
+            f"Unknown contributor ({h2[:8]})",
+        }
+
+
+# ---------------------------------------------------------------------------
+# display_name contract (issue #125)
+# ---------------------------------------------------------------------------
+
+class TestDisplayName:
+    def test_hash_renders_first_8_hex_chars(self):
+        h = "a1b2c3d4" + "0" * 56
+        assert ms.display_name(h) == "Unknown contributor (a1b2c3d4)"
+
+    def test_login_passes_through_unchanged(self):
+        assert ms.display_name("alice") == "alice"
+
+    def test_never_empty_and_unique(self):
+        h1 = "a1b2c3d4" + "0" * 56
+        h2 = "e5f6a7b8" + "0" * 56
+        assert ms.display_name(h1)
+        assert ms.display_name("alice")
+        assert ms.display_name(h1) != ms.display_name(h2)
+
+
+# ---------------------------------------------------------------------------
+# Identity key field (issue #151, step 1)
+# ---------------------------------------------------------------------------
+
+class TestIdentityId:
+    """`id` is the stable identity key, distinct from the display `name`.
+
+    Step 1 emits `id` alongside the existing `name` while leaving `name`
+    untouched, so every record carries a unique, stable key independent of
+    its (possibly legibility-improved-later) label.
+    """
+
+    def test_every_record_has_non_empty_id(self, monkeypatch):
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z", "login": "alice"}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-02T00:00:00Z",
+                                   "author_email_hash": "a1b2c3d4" + "0" * 56}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-03T00:00:00Z", "name": "Charlie"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 3
+        for record in stats:
+            assert record.get("id")
+
+    def test_id_equals_chain_when_login_present(self, monkeypatch):
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z", "login": "alice"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == "alice"
+
+    def test_id_equals_chain_when_hash_present(self, monkeypatch):
+        h = "a1b2c3d4" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == h
+
+    def test_id_equals_chain_when_only_name_present(self, monkeypatch):
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z", "name": "Charlie"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == "Charlie"
+
+    def test_shared_name_distinct_ids_do_not_collapse(self, monkeypatch):
+        """Two identities sharing one name string stay two records with distinct
+        ids — the hash keeps them apart even though the display name matches."""
+        h1 = "a1b2c3d4" + "0" * 56
+        h2 = "e5f6a7b8" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h1,
+                                   "name": "CI/CD Bot"}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-02T00:00:00Z",
+                                   "author_email_hash": h2,
+                                   "name": "CI/CD Bot"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        ids = [s["id"] for s in stats]
+        assert len(stats) == 2
+        assert len(set(ids)) == 2
+        assert set(ids) == {h1, h2}
+
+
+# ---------------------------------------------------------------------------
+# Display label chain: login -> real name -> Unknown contributor (#151, step 3)
+# ---------------------------------------------------------------------------
+
+class TestDisplayLabel:
+    """`name` becomes a legible label while `id` keeps the identity.
+
+    Every test asserts both fields on the same record: the label chain
+    (login -> real name -> Unknown contributor) applies to `name` only, and
+    the identity chain (login -> author_email_hash -> name) must not move.
+    """
+
+    def test_login_identity_displays_login_even_with_real_name(self, monkeypatch):
+        """A login wins over the real name observed alongside it — the label
+        chain ranks login first, exactly like the identity chain."""
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "login": "alice",
+                                   "name": "Alice Testperson"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == "alice"
+        assert stats[0]["name"] == "alice"
+
+    def test_hash_with_real_name_displays_name_and_keys_on_hash(self, monkeypatch):
+        """The bug this step fixes: a hash identity with a name recoverable
+        from Bronze used to render 'Unknown contributor (…)'. The name must
+        display, and the id must stay the hash — one field doing two jobs
+        was the original defect."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h,
+                                   "name": "Bela Testperson"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == h
+        assert stats[0]["name"] == "Bela Testperson"
+
+    def test_hash_without_name_displays_unknown_contributor(self, monkeypatch):
+        """No name observed anywhere: the honest fallback, built from the
+        hash so distinct people never share a label."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == h
+        assert stats[0]["name"] == "Unknown contributor (a1b2c3d4)"
+
+    def test_two_identities_one_display_name_stay_two_records(self, monkeypatch):
+        """A label may repeat; the identity must not. Two people whose name
+        is 'CI/CD Bot' stay two records with distinct ids and the SAME
+        name — the count is the assertion."""
+        h1 = "a1b2c3d4" + "0" * 56
+        h2 = "e5f6a7b8" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h1,
+                                   "name": "CI/CD Bot"}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-02T00:00:00Z",
+                                   "author_email_hash": h2,
+                                   "name": "CI/CD Bot"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert len(stats) == 2
+        assert {s["id"] for s in stats} == {h1, h2}
+        assert [s["name"] for s in stats] == ["CI/CD Bot", "CI/CD Bot"]
+
+    def test_spaced_spelling_beats_more_frequent_unspaced(self, monkeypatch):
+        """Space beats frequency: 1 occurrence of 'Renato Britto Araujo'
+        wins over 172 of 'RenatoBrittoAraujo' (the spellings and counts are
+        the measured corpus case from #151). Decided at aggregation, so the
+        winner needs every event seen first."""
+        h = "a1b2c3d4" + "0" * 56
+        commits = [
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h,
+                                   "name": "Renato Britto Araujo"}},
+             "repo_name": "r1"},
+        ]
+        commits += [
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h,
+                                   "name": "RenatoBrittoAraujo"}},
+             "repo_name": "r1"}
+            for _ in range(172)
+        ]
+        saved = _make_helpers(monkeypatch, commits=commits)
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["id"] == h
+        assert stats[0]["name"] == "Renato Britto Araujo"
+
+    def test_equal_frequency_spaced_spellings_break_lexicographically(self, monkeypatch):
+        """Two space-containing spellings at equal frequency: the winner is
+        the lexicographically smaller one. The later spelling is inserted
+        FIRST, so only the tie-break — not dict order — can pick
+        'Alpha Testname'."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _make_helpers(monkeypatch, commits=[
+            {"commit": {"author": {"date": "2024-01-01T00:00:00Z",
+                                   "author_email_hash": h,
+                                   "name": "Beta Testname"}},
+             "repo_name": "r1"},
+            {"commit": {"author": {"date": "2024-01-02T00:00:00Z",
+                                   "author_email_hash": h,
+                                   "name": "Alpha Testname"}},
+             "repo_name": "r1"},
+        ])
+        ms.process_members_statistics()
+        stats = saved["data/silver/members_statistics.json"]
+        assert stats[0]["name"] == "Alpha Testname"
+
+
+class TestDisplayNameLabelChain:
+    """Unit contract of display_name(identifier, name_counts)."""
+
+    def test_hash_with_observed_name_renders_the_name(self):
+        h = "a1b2c3d4" + "0" * 56
+        assert ms.display_name(h, {"Bela Testperson": 4}) == "Bela Testperson"
+
+    def test_hash_without_observed_name_renders_unknown(self):
+        h = "a1b2c3d4" + "0" * 56
+        assert ms.display_name(h) == "Unknown contributor (a1b2c3d4)"
+        assert ms.display_name(h, {}) == "Unknown contributor (a1b2c3d4)"
+
+    def test_login_ignores_observed_names(self):
+        assert ms.display_name("alice", {"Alice Testperson": 9}) == "alice"
+
+
+class TestChooseDisplaySpelling:
+    """The deterministic spelling rule, each step pinned on its own."""
+
+    def test_empty_observation_returns_none(self):
+        assert ms.choose_display_spelling({}) is None
+
+    def test_space_beats_frequency(self):
+        counts = {"RenatoBrittoAraujo": 172, "Renato Britto Araujo": 1}
+        assert ms.choose_display_spelling(counts) == "Renato Britto Araujo"
+
+    def test_frequency_decides_when_no_spelling_has_a_space(self):
+        counts = {"analytics-bot": 100, "analytics": 258}
+        assert ms.choose_display_spelling(counts) == "analytics"
+
+    def test_frequency_decides_among_spaced_spellings(self):
+        counts = {"Hugo Testname": 194, "Hugo Other Testname": 19}
+        assert ms.choose_display_spelling(counts) == "Hugo Testname"
+
+    def test_tie_breaks_lexicographically_regardless_of_insertion_order(self):
+        counts = {}
+        counts["Zed Testname"] = 3
+        counts["Ada Testname"] = 3
+        assert ms.choose_display_spelling(counts) == "Ada Testname"

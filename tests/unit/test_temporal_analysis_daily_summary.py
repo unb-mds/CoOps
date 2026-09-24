@@ -57,14 +57,14 @@ def test_temporal_analysis_commit_user_identification(monkeypatch):
     ]
     issue_events_data: List[Dict[str, Any]] = []
 
-    def fake_load_json_data(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load_json_data(family: str):
+        if family == "issues":
             return issues_data
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs_data
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits_data
-        if path.endswith("issue_events_all.json"):
+        if family == "issue_events":
             return issue_events_data
         return []
 
@@ -75,7 +75,7 @@ def test_temporal_analysis_commit_user_identification(monkeypatch):
         return path
 
     # 3) Monkeypatch nas funções usadas dentro do módulo
-    monkeypatch.setattr(temporal, "load_json_data", fake_load_json_data)
+    monkeypatch.setattr(temporal, "load_family", fake_load_json_data)
     monkeypatch.setattr(temporal, "save_json_data", fake_save_json_data)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
 
@@ -97,7 +97,7 @@ def test_temporal_analysis_commit_user_identification(monkeypatch):
 
 def test_temporal_analysis_empty_data(monkeypatch):
     """Testa processamento com dados vazios"""
-    def fake_load(path):
+    def fake_load(family):
         return []
     
     saved = {}
@@ -105,7 +105,7 @@ def test_temporal_analysis_empty_data(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -142,8 +142,8 @@ def test_temporal_analysis_issues_processing(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("issues_all.json"):
+    def fake_load(family):
+        if family == "issues":
             return issues_data
         return []
     
@@ -152,7 +152,7 @@ def test_temporal_analysis_issues_processing(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -187,8 +187,8 @@ def test_temporal_analysis_prs_processing(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("prs_all.json"):
+    def fake_load(family):
+        if family == "prs":
             return prs_data
         return []
     
@@ -197,7 +197,7 @@ def test_temporal_analysis_prs_processing(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -227,8 +227,8 @@ def test_temporal_analysis_issue_events_processing(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("issue_events_all.json"):
+    def fake_load(family):
+        if family == "issue_events":
             return issue_events_data
         return []
     
@@ -237,7 +237,7 @@ def test_temporal_analysis_issue_events_processing(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -277,8 +277,8 @@ def test_temporal_analysis_daily_activity_summary(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("commits_all.json"):
+    def fake_load(family):
+        if family == "commits":
             return commits_data
         return []
     
@@ -287,7 +287,7 @@ def test_temporal_analysis_daily_activity_summary(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -330,8 +330,8 @@ def test_temporal_analysis_activity_heatmap(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("commits_all.json"):
+    def fake_load(family):
+        if family == "commits":
             return commits_data
         return []
     
@@ -340,7 +340,7 @@ def test_temporal_analysis_activity_heatmap(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -377,10 +377,10 @@ def test_temporal_analysis_cycle_times(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("issues_all.json"):
+    def fake_load(family):
+        if family == "issues":
             return issues_data
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs_data
         return []
     
@@ -389,7 +389,7 @@ def test_temporal_analysis_cycle_times(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -441,10 +441,10 @@ def test_temporal_analysis_temporal_statistics(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("issues_all.json"):
+    def fake_load(family):
+        if family == "issues":
             return issues_data
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits_data
         return []
     
@@ -453,7 +453,7 @@ def test_temporal_analysis_temporal_statistics(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -493,8 +493,8 @@ def test_temporal_analysis_metadata_removal(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("issues_all.json"):
+    def fake_load(family):
+        if family == "issues":
             return issues_data
         return []
     
@@ -503,7 +503,7 @@ def test_temporal_analysis_metadata_removal(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -527,8 +527,8 @@ def test_temporal_analysis_user_fallback_to_name(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("issues_all.json"):
+    def fake_load(family):
+        if family == "issues":
             return issues_data
         return []
     
@@ -537,7 +537,7 @@ def test_temporal_analysis_user_fallback_to_name(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -565,8 +565,8 @@ def test_temporal_analysis_commit_with_additions_deletions(monkeypatch):
         },
     ]
     
-    def fake_load(path):
-        if path.endswith("commits_all.json"):
+    def fake_load(family):
+        if family == "commits":
             return commits_data
         return []
     
@@ -575,7 +575,7 @@ def test_temporal_analysis_commit_with_additions_deletions(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(temporal, "load_json_data", fake_load)
+    monkeypatch.setattr(temporal, "load_family", fake_load)
     monkeypatch.setattr(temporal, "save_json_data", fake_save)
     monkeypatch.setattr(temporal, "parse_github_date", _iso)
     
@@ -587,3 +587,253 @@ def test_temporal_analysis_commit_with_additions_deletions(monkeypatch):
     assert events[0]["additions"] == 100
     assert events[0]["deletions"] == 50
     assert events[0]["total_changes"] == 150
+
+
+def test_temporal_analysis_author_id_equals_chain(monkeypatch):
+    """Daily-summary authors carry an `id` equal to the identity chain output
+    for each branch: login, then author_email_hash, then name."""
+    h = "a1b2c3d4" + "0" * 56
+    commits_data = [
+        {
+            "repo_name": "repo1",
+            "commit": {
+                "author": {"date": "2024-01-01T10:00:00Z", "login": "alice"}
+            },
+        },
+        {
+            "repo_name": "repo1",
+            "commit": {
+                "author": {"date": "2024-01-01T11:00:00Z", "author_email_hash": h}
+            },
+        },
+        {
+            "repo_name": "repo1",
+            "commit": {
+                "author": {"date": "2024-01-01T12:00:00Z", "name": "Charlie"}
+            },
+        },
+    ]
+
+    def fake_load(family):
+        if family == "commits":
+            return commits_data
+        return []
+
+    saved = {}
+
+    def fake_save(data, path, timestamp=True):
+        saved[path] = data
+        return path
+
+    monkeypatch.setattr(temporal, "load_family", fake_load)
+    monkeypatch.setattr(temporal, "save_json_data", fake_save)
+    monkeypatch.setattr(temporal, "parse_github_date", _iso)
+
+    temporal.process_temporal_analysis()
+
+    daily = saved["data/silver/daily_activity_summary.json"]
+    authors = daily[0]["authors"]
+    assert {a["id"] for a in authors} == {"alice", h, "Charlie"}
+    for a in authors:
+        assert a["id"]
+    # `id` is the raw identity; `name` is the display label (issue #151,
+    # step 3), so the two differ exactly where the label improves on the
+    # identity: a hash with no observed name renders as
+    # "Unknown contributor (<hash8>)" instead of the digest.
+    labels = {a["id"]: a["name"] for a in authors}
+    assert labels["alice"] == "alice"
+    assert labels[h] == f"Unknown contributor ({h[:8]})"
+    assert labels["Charlie"] == "Charlie"
+
+
+def test_temporal_analysis_shared_name_distinct_ids(monkeypatch):
+    """Two identities sharing one name string produce two authors with distinct
+    ids — the hash keeps them apart even though the name matches."""
+    h1 = "a1b2c3d4" + "0" * 56
+    h2 = "e5f6a7b8" + "0" * 56
+    commits_data = [
+        {
+            "repo_name": "repo1",
+            "commit": {
+                "author": {
+                    "date": "2024-01-01T10:00:00Z",
+                    "author_email_hash": h1,
+                    "name": "CI/CD Bot",
+                }
+            },
+        },
+        {
+            "repo_name": "repo1",
+            "commit": {
+                "author": {
+                    "date": "2024-01-01T11:00:00Z",
+                    "author_email_hash": h2,
+                    "name": "CI/CD Bot",
+                }
+            },
+        },
+    ]
+
+    def fake_load(family):
+        if family == "commits":
+            return commits_data
+        return []
+
+    saved = {}
+
+    def fake_save(data, path, timestamp=True):
+        saved[path] = data
+        return path
+
+    monkeypatch.setattr(temporal, "load_family", fake_load)
+    monkeypatch.setattr(temporal, "save_json_data", fake_save)
+    monkeypatch.setattr(temporal, "parse_github_date", _iso)
+
+    temporal.process_temporal_analysis()
+
+    daily = saved["data/silver/daily_activity_summary.json"]
+    authors = daily[0]["authors"]
+    assert len(authors) == 2
+    assert {a["id"] for a in authors} == {h1, h2}
+
+
+# ---------------------------------------------------------------------------
+# Display label chain (issue #151, step 3)
+# ---------------------------------------------------------------------------
+
+def _run_temporal(monkeypatch, *, issues=None, prs=None, commits=None, events=None):
+    """Run process_temporal_analysis over in-memory bronze fixtures."""
+    bronze = {
+        "issues_all.json": issues or [],
+        "prs_all.json": prs or [],
+        "commits_all.json": commits or [],
+        "issue_events_all.json": events or [],
+    }
+
+    def fake_load(family):
+        for name, rows in bronze.items():
+            if name == f"{family}_all.json":
+                return rows
+        return []
+
+    saved = {}
+
+    def fake_save(data, path, timestamp=True):
+        saved[path] = data
+        return path
+
+    monkeypatch.setattr(temporal, "load_family", fake_load)
+    monkeypatch.setattr(temporal, "save_json_data", fake_save)
+    monkeypatch.setattr(temporal, "parse_github_date", _iso)
+    temporal.process_temporal_analysis()
+    return saved
+
+
+class TestAuthorDisplayLabel:
+    """Daily-summary author `name` is the same label members_statistics
+    renders — login -> real name -> Unknown contributor — while `id` keeps
+    the raw identity. The two files are read side by side, so they must
+    produce the same label for the same identity.
+    """
+
+    def test_login_author_displays_login_even_with_real_name(self, monkeypatch):
+        h = "a1b2c3d4" + "0" * 56
+        saved = _run_temporal(monkeypatch, commits=[
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "login": "alice", "name": "Alice Testperson"}}},
+            # A different identity, so the summary has more than one author.
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T11:00:00Z", "author_email_hash": h}}},
+        ])
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        by_id = {a["id"]: a for a in authors}
+        assert by_id["alice"]["name"] == "alice"
+
+    def test_hash_author_with_name_displays_name_and_keys_on_hash(self, monkeypatch):
+        """The temporal half of the bug: a hash identity with a real name
+        must render the name in `name` while `id` stays the hash."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _run_temporal(monkeypatch, commits=[
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "author_email_hash": h, "name": "Bela Testperson"}}},
+        ])
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        assert len(authors) == 1
+        assert authors[0]["id"] == h
+        assert authors[0]["name"] == "Bela Testperson"
+
+    def test_hash_author_without_name_displays_unknown_contributor(self, monkeypatch):
+        h = "a1b2c3d4" + "0" * 56
+        saved = _run_temporal(monkeypatch, commits=[
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z", "author_email_hash": h}}},
+        ])
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        assert authors[0]["id"] == h
+        assert authors[0]["name"] == "Unknown contributor (a1b2c3d4)"
+
+    def test_two_hash_authors_sharing_one_name_stay_two_authors(self, monkeypatch):
+        h1 = "a1b2c3d4" + "0" * 56
+        h2 = "e5f6a7b8" + "0" * 56
+        saved = _run_temporal(monkeypatch, commits=[
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "author_email_hash": h1, "name": "CI/CD Bot"}}},
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T11:00:00Z",
+                "author_email_hash": h2, "name": "CI/CD Bot"}}},
+        ])
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        assert len(authors) == 2
+        assert {a["id"] for a in authors} == {h1, h2}
+        assert [a["name"] for a in authors] == ["CI/CD Bot", "CI/CD Bot"]
+
+    def test_spaced_spelling_beats_more_frequent_unspaced(self, monkeypatch):
+        h = "a1b2c3d4" + "0" * 56
+        commits = [
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "author_email_hash": h, "name": "Renato Britto Araujo"}}},
+        ]
+        commits += [
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "author_email_hash": h, "name": "RenatoBrittoAraujo"}}}
+            for _ in range(172)
+        ]
+        saved = _run_temporal(monkeypatch, commits=commits)
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        assert authors[0]["id"] == h
+        assert authors[0]["name"] == "Renato Britto Araujo"
+
+    def test_equal_frequency_spaced_spellings_break_lexicographically(self, monkeypatch):
+        """The lexicographically LATER spelling arrives first, so only the
+        tie-break can pick 'Alpha Testname' — insertion order cannot."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _run_temporal(monkeypatch, commits=[
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "author_email_hash": h, "name": "Beta Testname"}}},
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-02T10:00:00Z",
+                "author_email_hash": h, "name": "Alpha Testname"}}},
+        ])
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        assert authors[0]["name"] == "Alpha Testname"
+
+    def test_temporal_events_user_stays_raw_identity_when_label_differs(self, monkeypatch):
+        """`user` is the join key Gold indexes repositories by, not a
+        display field: it must keep carrying the identity even where the
+        label shown beside it improves."""
+        h = "a1b2c3d4" + "0" * 56
+        saved = _run_temporal(monkeypatch, commits=[
+            {"repo_name": "r1", "commit": {"author": {
+                "date": "2024-01-01T10:00:00Z",
+                "author_email_hash": h, "name": "Bela Testperson"}}},
+        ])
+        events = saved["data/silver/temporal_events.json"]
+        assert [e["user"] for e in events] == [h]
+        authors = saved["data/silver/daily_activity_summary.json"][0]["authors"]
+        assert authors[0]["name"] == "Bela Testperson"

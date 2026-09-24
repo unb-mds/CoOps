@@ -35,9 +35,12 @@ class TestExtractIssues:
             with patch('coops.bronze.issues.save_json_data', return_value="file.json") as mock_save:
                 result = extract_issues(mock_client, mock_config)
                 
-                # Deve salvar 4 arquivos: issues_repo1, issues_all, prs_all, issue_events_all
-                assert len(result) >= 3
-                assert mock_save.call_count >= 3
+                # Deve salvar 2 arquivos: issues_repo1 e issue_events_repo1.
+                # Os agregados _all não são mais escritos (#170).
+                assert len(result) == 2
+                assert mock_save.call_count == 2
+                calls = [call_[0][1] for call_ in mock_save.call_args_list]
+                assert not any("_all.json" in c for c in calls)
     
     def test_extract_issues_separates_prs_from_issues(self):
         """Testa que separa PRs de issues"""
@@ -139,8 +142,12 @@ class TestExtractIssues:
             with patch('coops.bronze.issues.save_json_data', return_value="file.json") as mock_save:
                 result = extract_issues(mock_client, mock_config)
                 
-                # Deve salvar pelo menos arquivos agregados (all)
-                assert len(result) >= 3
+                # Sem issues e sem events: só o arquivo de events por repo
+                # (salvo sempre); os agregados _all não são mais escritos (#170)
+                assert len(result) == 1
+                calls = [call_[0][1] for call_ in mock_save.call_args_list]
+                assert any("issue_events_repo1" in c for c in calls)
+                assert not any("_all.json" in c for c in calls)
     
     def test_extract_issues_saves_per_repo_files(self):
         """Testa que salva arquivos individuais por repositório"""
@@ -171,23 +178,64 @@ class TestExtractIssues:
                 assert any("issue_events_repo1" in c for c in calls)
                 assert any("issue_events_repo2" in c for c in calls)
     
-    def test_extract_issues_saves_aggregated_files(self):
-        """Testa que sempre salva arquivos agregados (all)"""
+    def test_extract_issues_retires_stale_aggregates(self, tmp_path, monkeypatch):
+        """Uma execução sobre um bronze existente remove os agregados _all antigos.
+
+        Não basta parar de escrever (#170): a regeneração roda sobre um
+        ``data/bronze/`` existente, e um agregado velho ao lado de arquivos
+        por repositório atuais parece atual — pior do que manter ou remover.
+        A remoção acontece no pipeline, onde a escrita acontecia.
+        """
+        monkeypatch.chdir(tmp_path)
+        bronze = tmp_path / "data" / "bronze"
+        bronze.mkdir(parents=True)
+        for name in ("issues_all.json", "prs_all.json", "issue_events_all.json"):
+            (bronze / name).write_text('[{"stale": true}]', encoding="utf-8")
+
         mock_client = MagicMock()
         mock_config = MagicMock()
-        
-        mock_repos = [{"name": "repo1", "full_name": "test-org/repo1"}]
         mock_client.get_paginated.return_value = []
-        
-        with patch('coops.bronze.issues.load_json_data', return_value=mock_repos):
+
+        with patch('coops.bronze.issues.load_json_data',
+                   return_value=[{"name": "repo1", "full_name": "test-org/repo1"}]):
             with patch('coops.bronze.issues.save_json_data', return_value="file.json") as mock_save:
-                result = extract_issues(mock_client, mock_config)
-                
-                calls = [call[0][1] for call in mock_save.call_args_list]
-                assert any("issues_all.json" in c for c in calls)
-                assert any("prs_all.json" in c for c in calls)
-                assert any("issue_events_all.json" in c for c in calls)
-    
+                extract_issues(mock_client, mock_config)
+
+                for name in ("issues_all.json", "prs_all.json", "issue_events_all.json"):
+                    assert not (bronze / name).exists(), f"{name} deveria ser removido"
+                calls = [call_[0][1] for call_ in mock_save.call_args_list]
+                assert not any("_all.json" in c for c in calls)
+
+    def test_extract_issues_removal_spares_silver(self, tmp_path, monkeypatch):
+        """A regra de remoção não pode alcançar data/silver.
+
+        ``language_analysis_all.json`` é um artefato Silver buscado pelo
+        dashboard: compartilha o sufixo ``_all`` e nada mais. O corpus não
+        exercita isso, então o fixture aqui é inventado de propósito.
+        """
+        monkeypatch.chdir(tmp_path)
+        bronze = tmp_path / "data" / "bronze"
+        bronze.mkdir(parents=True)
+        for name in ("issues_all.json", "prs_all.json", "issue_events_all.json"):
+            (bronze / name).write_text('[{"stale": true}]', encoding="utf-8")
+        silver = tmp_path / "data" / "silver"
+        silver.mkdir(parents=True)
+        silver_file = silver / "language_analysis_all.json"
+        payload = '[{"language": "Python", "bytes": 120}]'
+        silver_file.write_text(payload, encoding="utf-8")
+
+        mock_client = MagicMock()
+        mock_config = MagicMock()
+        mock_client.get_paginated.return_value = []
+
+        with patch('coops.bronze.issues.load_json_data',
+                   return_value=[{"name": "repo1", "full_name": "test-org/repo1"}]):
+            with patch('coops.bronze.issues.save_json_data', return_value="file.json"):
+                extract_issues(mock_client, mock_config)
+
+                assert silver_file.exists()
+                assert silver_file.read_text(encoding="utf-8") == payload
+
     def test_extract_issues_uses_cache_flag(self):
         """Testa que respeita flag use_cache"""
         mock_client = MagicMock()
@@ -406,11 +454,12 @@ class TestExtractIssues:
             with patch('coops.bronze.issues.save_json_data', return_value="file.json") as mock_save:
                 extract_issues(mock_client, mock_config)
                 
-                # Deve salvar: issues_repo1, issues_all, prs_all, issue_events_all
+                # Deve salvar: issues_repo1, issue_events_repo1 (sem agregados _all, #170)
                 # NÃO deve salvar prs_repo1
                 calls = [call[0][1] for call in mock_save.call_args_list]
                 assert any("issues_repo1" in c for c in calls)
                 assert not any("prs_repo1" in c for c in calls)
+                assert not any("_all.json" in c for c in calls)
 
 
 class TestExtractIssuesCaps:

@@ -40,8 +40,13 @@ def main():
     if isinstance(contribution_metrics, list) and len(contribution_metrics) > 0 and '_metadata' in contribution_metrics[0]:
         contribution_metrics = contribution_metrics[1:]
 
+    # One timestamp for both artifacts, from a single clock reading: the
+    # dashboard and the tiers are produced by the same run, so comparing
+    # their freshness is only meaningful if they cannot disagree.
+    generated_at = datetime.now().isoformat()
+
     executive_kpis = {
-        'generated_at': datetime.now().isoformat(),
+        'generated_at': generated_at,
         'organization_health': {
             # Members whose profile couldn't be fetched still count as members.
             'total_members': max(len(members_detailed), len(members_analytics)),
@@ -74,6 +79,7 @@ def main():
             top_25_threshold = contrib_values[min(len(contrib_values) - 1, int(len(contrib_values) * 0.25))]
 
             performance_tiers = {
+                'generated_at': generated_at,
                 'top_performers': [c for c in contribution_metrics if c['total_contributions'] >= top_10_threshold],
                 'regular_contributors': [c for c in contribution_metrics if top_25_threshold <= c['total_contributions'] < top_10_threshold],
                 'occasional_contributors': [c for c in contribution_metrics if 0 < c['total_contributions'] < top_25_threshold],

@@ -93,6 +93,7 @@ describe('CollaborationPage Component', () => {
 
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.stubEnv('VITE_GITHUB_ORG', 'test-org');
     
     // Mock do Utils.fetchAndProcessActivityData
     (Utils.fetchAndProcessActivityData as any).mockResolvedValue(mockProcessedData);
@@ -116,6 +117,7 @@ describe('CollaborationPage Component', () => {
   });
 
   afterEach(() => {
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
   });
 

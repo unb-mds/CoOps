@@ -1,6 +1,7 @@
 """Tests for coops/bronze/repository_structure.py — extract_repository_structure."""
 
 from unittest.mock import MagicMock
+import pytest
 import coops.bronze.repository_structure as rs
 
 
@@ -59,6 +60,25 @@ class TestMetadataHandling:
         }
         result = rs.extract_repository_structure(client, config)
         assert len(result) == 1
+
+
+# ---------------------------------------------------------------------------
+# Offline replay misses
+# ---------------------------------------------------------------------------
+
+class TestOfflineCacheMiss:
+    def test_offline_miss_stops_the_run(self, monkeypatch):
+        """A cache miss in offline mode must propagate: the per-repo except
+        would otherwise count the repository as failed, continue the run and
+        report a plausible-looking partial replay (#199)."""
+        repos = [{"name": "r1", "full_name": "org/r1", "default_branch": "main"}]
+        client, config, saved = _setup(monkeypatch, filtered_repos=repos)
+        client.get_repository_tree.side_effect = rs.OfflineCacheMiss(
+            "https://api.github.com/repos/org/r1/branches/main"
+        )
+
+        with pytest.raises(rs.OfflineCacheMiss):
+            rs.extract_repository_structure(client, config)
 
 
 # ---------------------------------------------------------------------------

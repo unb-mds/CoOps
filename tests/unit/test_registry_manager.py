@@ -9,6 +9,7 @@ from coops.etl.registry_manager import (
     scan_data_directory,
     categorize_bronze_files,
     generate_data_catalog,
+    create_data_lineage,
     create_master_registry
 )
 
@@ -221,8 +222,23 @@ class TestGenerateDataCatalog:
             entities = catalog_data['bronze_layer']['entities']
             
             assert 'repositories_raw.json' in entities
-            assert 'issues_all.json' in entities
-            assert 'commits_all.json' in entities
+            assert 'commits_<repo>.json' in entities
+            # Os agregados _all foram aposentados (#170): o catálogo não pode
+            # anunciar como publicados arquivos que o pipeline não escreve —
+            # e remove na regeneração.
+            assert not [name for name in entities if name.endswith('_all.json')]
+    
+    def test_lineage_reads_per_repository_files(self):
+        """Testa que a linhagem declara os arquivos por repositório, não os _all"""
+        lineage = create_data_lineage()
+        
+        for processor in ('contribution_metrics', 'collaboration_networks', 'temporal_analysis'):
+            inputs = lineage['bronze_to_silver'][processor]['inputs']
+            assert 'data/bronze/commits_<repo>.json' in inputs
+            assert 'data/bronze/issues_<repo>.json' in inputs
+            # A linhagem não pode apontar para os agregados aposentados (#170):
+            # seria um contrato com arquivos que não existem mais.
+            assert not [path for path in inputs if path.endswith('_all.json')]
     
     def test_includes_usage_patterns(self):
         """Testa que inclui padrões de uso"""

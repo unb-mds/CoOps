@@ -5,8 +5,8 @@ import { CollaborationEdge, HeatmapDataPoint } from '../types';
 import { useMemo } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
 import { Utils } from './Utils';
-import { fetchData, filterMetadata, isDataNotFoundError } from '../services/dataSource';
-import DataNotGenerated from '../components/DataNotGenerated';
+import { fetchData, filterMetadata, isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
+import DataNotGenerated, { DataNotConfigured } from '../components/DataNotGenerated';
 import type { ProcessedActivityResponse, RepoActivitySummary } from './Utils';
 
 
@@ -22,6 +22,7 @@ export default function CollaborationPage() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  const [notConfigured, setNotConfigured] = useState(false);
   const [ mainData, setMainData ] = useState<ProcessedActivityResponse | null>(null);
   const [searchParams] = useSearchParams();
   const location = useLocation();
@@ -37,6 +38,7 @@ export default function CollaborationPage() {
         setLoading(true);
         setError(null);
         setMissingDataPath(null);
+        setNotConfigured(false);
 
         const [collaborationData, heatmapData, processedMainData] = await Promise.all([
           fetchData<CollaborationEdge[]>('silver/collaboration_edges.json'),
@@ -53,6 +55,8 @@ export default function CollaborationPage() {
       } catch (err) {
         if (isDataNotFoundError(err)) {
           setMissingDataPath(err.path);
+        } else if (isDataUnconfiguredError(err)) {
+          setNotConfigured(true);
         } else {
           setError(err instanceof Error ? err.message : 'An unknown error occurred');
         }
@@ -106,6 +110,7 @@ export default function CollaborationPage() {
         <div className="text-center text-white/70 mt-80" >Loading data...</div>
       )}
       {missingDataPath && !loading && <DataNotGenerated path={missingDataPath} className="mt-30" />}
+      {notConfigured && !loading && <DataNotConfigured className="mt-30" />}
       {error && (
         <div className="bg-red-900/50 border border-red-700 text-red-300 px-4 py-3 rounded relative text-center" role="alert">
           <strong className="font-bold">Error loading data: </strong>
@@ -114,7 +119,7 @@ export default function CollaborationPage() {
       )}
 
       {/* Success State (Data Loaded) */}
-      {pageData && mainData && selectedRepo && !loading && !error && (
+      {pageData && mainData && selectedRepo && !loading && !error && !notConfigured && (
         <div className="h-fit mt-30">
           <h1 className="text-3xl font-bold text-white mb-2">Collaboration Map</h1>
           <p className="text-slate-400 text-sm mb-4">Represents the collaboration connections between users based on their contributions to shared repositories.</p>

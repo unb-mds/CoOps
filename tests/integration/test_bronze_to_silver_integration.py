@@ -6,7 +6,6 @@ Tests the complete flow from raw GitHub API data to processed analytics.
 
 import pytest
 from datetime import datetime
-from freezegun import freeze_time
 from coops.silver.member_analytics import process_member_analytics
 from coops.silver.contribution_metrics import process_contribution_metrics
 from coops.silver.collaboration_networks import process_collaboration_networks
@@ -50,7 +49,14 @@ class TestBronzeToSilverIntegration:
             }
         ]
         
-        fake_io["data/bronze/members_detailed.json"] = members_data
+        # O sidecar que o save_json_data escreve: extracted_at é o instante
+        # de captura contra o qual as idades são medidas (#188).
+        fake_io["data/bronze/members_detailed.json"] = [
+            {"_metadata": {"extracted_at": "2025-06-01T00:00:00",
+                           "file_path": "data/bronze/members_detailed.json",
+                           "record_count": len(members_data)}},
+            *members_data,
+        ]
         return members_data
 
     @pytest.fixture
@@ -159,13 +165,12 @@ class TestBronzeToSilverIntegration:
         fake_io["data/bronze/issues_detailed.json"] = issues_data
         return issues_data
 
-    @freeze_time("2025-06-01")
     def test_member_analytics_transformation(self, bronze_members_data, fake_io):
         """Test that member analytics correctly transforms bronze data to silver
 
-        Time is frozen so the age-based ``new`` vs ``established`` assertions
-        stay valid regardless of when the suite runs (fixture ``created_at``
-        dates are hard-coded).
+        Ages are measured against the corpus capture time in the fixture's
+        ``_metadata.extracted_at`` (2025-06-01), so the age-based assertions
+        hold regardless of when the suite runs (#188).
         """
         # Execute transformation
         generated_files = process_member_analytics()
@@ -354,8 +359,12 @@ class TestBronzeToSilverIntegration:
 
     def test_handles_malformed_bronze_data(self, fake_io):
         """Test that silver processors handle malformed data"""
-        # Create malformed data (missing required fields)
+        # Create malformed data (member missing required fields); the
+        # corpus itself still carries its capture-time sidecar (#188).
         fake_io["data/bronze/members_detailed.json"] = [
+            {"_metadata": {"extracted_at": "2025-06-01T00:00:00",
+                           "file_path": "data/bronze/members_detailed.json",
+                           "record_count": 1}},
             {"login": "incomplete_user"}  # Missing many fields
         ]
         

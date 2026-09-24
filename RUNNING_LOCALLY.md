@@ -15,8 +15,16 @@ sudo apt install gh
 
 ### 2. Install act
 ```bash
-curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
+gh extension install nektos/gh-act
+gh act --version      # expect 0.2.89 or newer
 ```
+
+> Install it as the `gh` extension, not with
+> `curl .../install.sh | sudo bash`. Releases before 0.2.86 are affected by
+> CVE-2026-34041 and CVE-2026-34042; if you already have an old
+> `/usr/local/bin/act`, remove it (`sudo rm /usr/local/bin/act`). Keep the
+> extension current with `gh extension upgrade nektos/gh-act`. Commands below
+> written as `act ...` work the same as `gh act ...`.
 
 ### 3. Install uv and the dependencies
 ```bash
@@ -113,7 +121,7 @@ act workflow_dispatch -W .github/workflows/gold-process.yaml --secret-file .secr
 
 > ℹ️ The pipeline chain is `bronze-extract.yaml` → `silver-process.yaml` → `gold-process.yaml` (timelines, optional AI analysis via `GEMINI_API_KEY`) → `gold-aggregate.yaml` (executive KPIs and performance tiers). When the chain succeeds on `main`, `deploy-pages.yaml` publishes the dashboard.
 
-> ⚠️ **Silver and Gold require `--bind` (they won't run without it)**: unlike `bronze-extract.yaml`, the "Pull latest data files" steps of `silver-process.yaml` and `gold-process.yaml` run `git branch --show-current` / `git pull` **without** the `if: ${{ !env.ACT }}` guard that Checkout has. Since Checkout is skipped under `act`/`gh act` (same reason explained below), if you forget `--bind` the container has no git repository mounted at all and the command fails with `fatal: not a git repository (or any parent up to mount point ...)`. Always include `--bind` (and `--container-options` to avoid `root:root`-owned generated files) for these two workflows.
+> ⚠️ **Silver and Gold require `--bind` (they won't produce anything without it)**: they consume the data the previous layer wrote, and their "Commit and push" steps are skipped under `act` (`if: ... && !env.ACT`), so nothing carries the data between layers. Without `--bind`, `act` gives each job a fresh copy of your checkout and the chained Silver job fails at `Verify Bronze data exists`. With `--bind` the layers share the real `data/` directory and the whole chain runs. Always include `--bind` (and `--container-options "--user $(id -u):$(id -g)"` to avoid `root:root`-owned generated files) for these workflows.
 
 ### Quick test (few commits, ideal for local debugging)
 
@@ -139,7 +147,9 @@ gh act workflow_dispatch \
 
 This is the standard command for quick local extraction tests. It requires the `gh-act` extension (`gh extension install nektos/gh-act`) as an alternative to `act` installed via script (step 2 above) — both work, `gh act` just reuses the authentication already configured in `gh`.
 
-> ⚠️ **Careful with `--bind`**: it mounts the real repository inside the container, and the container runs as `root` — any file created/modified (in `cache/`, `data/`, etc.) ends up owned by `root:root` on the host. The "Checkout repository" step of `bronze-extract.yaml` already has `if: ${{ !env.ACT }}` (same pattern as `silver-process.yaml`/`gold-process.yaml`), so under `act`/`gh act` it's skipped — `actions/checkout@v4` would otherwise run `git clean -ffdx` by default before running, which would delete even files ignored by `.gitignore` (like `.secrets`) directly in your real repo. This already protects tracked files/`.secrets`, but doesn't prevent the `root:root` ownership on generated files — for that, add `--container-options "--user $(id -u):$(id -g)"` to the command (runs the container with your UID/GID; if your `act` ignores that flag, use `sudo chown -R $(whoami):$(whoami) .` as a fallback). Even so, prefer committing or `git stash -u` before running locally, as an extra safety net.
+> ⚠️ **Careful with `--bind`**: it mounts the real repository inside the container, and the container runs as `root` — any file created/modified (in `cache/`, `data/`, etc.) ends up owned by `root:root` on the host, and `data/` is tracked, so your checkout is left dirty with files you can't delete without `sudo`. Add `--container-options "--user $(id -u):$(id -g)"` to the command (runs the container with your UID/GID; if your `act` ignores that flag, use `sudo chown -R "$(id -u):$(id -g)" data cache .venv` as a fallback). Prefer committing or setting your work aside before running locally, as an extra safety net.
+>
+> Your working tree is **not** at risk from `actions/checkout@v4`'s `git clean -ffdx`: `act` never executes that action, it substitutes its own workspace-population step (a `docker cp` without `--bind`, a no-op with it). That is also why the checkout steps must **not** carry `if: ${{ !env.ACT }}` — skipping them leaves the container with an empty workspace and `uv sync` fails with `No pyproject.toml found`. See [docs/local-actions.md](docs/local-actions.md).
 
 > ⚠️ With `--bind`, the workflows' `uv sync --locked` step also runs against your checkout and rewrites `.venv` for the container's Python. Afterwards, `uv run` on your machine rebuilds it (a few seconds). If it is owned by `root`, remove it first: `sudo rm -rf .venv`.
 
@@ -175,7 +185,7 @@ uv run coops-registry
 After a successful run, you'll have (all under `data/`, at the project root):
 
 **Bronze layer (raw data)** — `data/bronze/`:
-`repositories_filtered.json`, `members_detailed.json`, `issues_all.json`, `prs_all.json`, `commits_all.json`, `issue_events_all.json`
+`repositories_filtered.json`, `members_basic.json`, `members_detailed.json`, and one file per repository: `issues_<repo>.json`, `prs_<repo>.json`, `commits_<repo>.json`, `issue_events_<repo>.json`, `repo_<repo>.json`, `structure_<repo>.json`
 
 **Silver layer (processed analytics)** — `data/silver/`:
 `members_analytics.json`, `contribution_metrics.json`, `collaboration_edges.json`, `temporal_events.json`, `activity_heatmap.json`, `cycle_times.json`, `language_analysis_all.json`
@@ -325,9 +335,17 @@ To go back to testing against real GitHub data (no local data), just set
    - **Fix**: `uv sync`
    - **uv not installed**: `curl -LsSf https://astral.sh/uv/install.sh | sh` (see https://docs.astral.sh/uv/getting-started/installation/)
 
-7. **❌ `fatal: not a git repository (or any parent up to mount point ...)` when running Silver/Gold**
-   - **Cause**: ran `silver-process.yaml` or `gold-process.yaml` without `--bind`. Checkout is skipped under `act` (`if: ${{ !env.ACT }}`), and without `--bind` there's no git repository left in the container for the next step ("Pull latest data files") to run `git branch`/`git pull`
-   - **Fix**: always include `--bind` (and `--container-options "--user $(id -u):$(id -g)"`) when running these two workflows via `act`/`gh act`, as in the "Individual layers" example above
+7. **❌ `Verify Bronze/Silver data exists` fails when running Silver/Gold**
+   - **Cause**: ran the layer without `--bind`. `act` gives each job a fresh copy of your checkout, and the "Commit and push" steps that would carry the data forward are skipped under `act`
+   - **Fix**: always include `--bind` (and `--container-options "--user $(id -u):$(id -g)"`) when running these workflows via `act`/`gh act`, as in the "Individual layers" example above
+
+10. **❌ `fatal: not a git repository: (null)`**
+   - **Cause**: you are running `act` from a **git worktree**. A worktree's `.git` is a file pointing at the main checkout, and that path does not exist inside the container, so every `git` call in a step dies
+   - **Fix**: run `act` from a normal clone
+
+11. **❌ `ReferenceError: File is not defined` in `astral-sh/setup-uv`**
+   - **Cause**: stale runner image. `setup-uv@v10` declares `runs.using: node24`, and an old `catthehacker/ubuntu:act-latest` only carries Node 16/18/20
+   - **Fix**: `docker pull catthehacker/ubuntu:act-latest`
 
 ### Common issues (frontend):
 

@@ -6,6 +6,7 @@ Testes adicionais para aumentar cobertura do github_api.py
 import pytest
 import json
 import os
+import re
 from unittest.mock import Mock, patch, MagicMock, mock_open
 from coops.utils.github_api import GitHubAPIClient, save_json_data, load_json_data
 
@@ -145,6 +146,46 @@ class TestCommitDetailsFunctions:
             assert result[0]["oid"] == "abc123"
             assert result[0]["additions"] == 10
             assert result[0]["deletions"] == 5
+
+    def test_fetch_rest_commit_details_parallel_carries_recoverable_fields(self, tmp_path):
+        """The REST fallback inside graphql_commit_history must keep the full
+        message body, committer and parents, not just the headline and stats."""
+        client = GitHubAPIClient(token="test", cache_dir=str(tmp_path))
+
+        commits = [
+            {
+                "sha": "abc123",
+                "author": {"login": "user1"},
+                "commit": {
+                    "message": "feat: subject\n\nBody line.",
+                    "author": {"date": "2024-01-01T00:00:00Z"},
+                    "committer": {"name": "Committer", "email": "c@test.com", "date": "2024-01-01T00:00:01Z"},
+                },
+                "parents": [
+                    {"sha": "parent1"},
+                    {"sha": "parent2"},
+                ],
+            }
+        ]
+
+        with patch.object(client, '_fetch_with_thread_id') as mock_fetch:
+            mock_fetch.return_value = {
+                "data": {"sha": "abc123", "stats": {"additions": 10, "deletions": 5}},
+                "thread_id": 1,
+                "headers": {"X-RateLimit-Remaining": "100"},
+            }
+
+            result = client._fetch_rest_commit_details_parallel(
+                commits, "owner", "repo", True, max_workers=1
+            )
+
+        assert len(result) == 1
+        node = result[0]
+        assert node["message"] == "feat: subject\n\nBody line."
+        assert node["committer"]["name"] == "Committer"
+        assert node["committer"]["email"] == "c@test.com"
+        assert node["committer"]["date"] == "2024-01-01T00:00:01Z"
+        assert node["parents"] == {"nodes": [{"oid": "parent1"}, {"oid": "parent2"}]}
 
     def test_fetch_parallel_empty_list(self, tmp_path):
         """Testa busca paralela com lista vazia"""
@@ -342,6 +383,27 @@ class TestGraphQLCommitHistory:
             )
             
             assert result == []
+
+    def test_graphql_commit_history_selects_recoverable_fields(self, tmp_path):
+        """The GraphQL query must request the fields the raw tier cannot recover
+        later: the full message body, the committer, and the parent shas."""
+        client = GitHubAPIClient(token="test", cache_dir=str(tmp_path))
+        captured_queries = []
+
+        def mock_graphql(query, variables=None, use_cache=True, timeout=4):
+            captured_queries.append(query)
+            return {"data": {"repository": {"defaultBranchRef": None}}}
+
+        with patch.object(client, 'graphql', side_effect=mock_graphql):
+            client.graphql_commit_history("owner", "repo", page_size=10)
+
+        assert captured_queries
+        query = captured_queries[0]
+        # `\bmessage\b` so the full-body `message` field is selected, not only
+        # `messageHeadline` (which shares the prefix).
+        assert re.search(r"\bmessage\b", query)
+        assert "committer { name email date user { login databaseId } }" in query
+        assert "parents(first: 100) { nodes { oid } }" in query
 
 
 class TestLogRateLimit:

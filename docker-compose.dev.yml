@@ -1,0 +1,35 @@
+# Local MongoDB for development — see docs/development.md.
+#
+# The image is pinned to an exact version (no floating `latest`/`7.0` tag) so
+# the integration suite's testcontainers setup can reuse the exact same image.
+# Keep the two in sync when you bump this.
+#
+# The host port is `${MONGO_PORT:-27018}` — never the default 27017 — so this
+# service does not collide with a MongoDB a developer already runs locally.
+#
+# The port is bound to 127.0.0.1 explicitly, never 0.0.0.0. Docker's short
+# `HOST:CONTAINER` syntax publishes on every interface, which would put an
+# unauthenticated MongoDB (auth is empty by default) on the local network.
+# Loopback-only is the safe default; there is no opt-in for LAN exposure.
+
+name: coops-dev
+
+services:
+  mongo:
+    image: mongo:7.0.14
+    container_name: coops-mongo-dev
+    ports:
+      - "127.0.0.1:${MONGO_PORT:-27018}:27017"
+    environment:
+      # Leave both empty to run without authentication (the local-dev default).
+      # This is only safe because the port above binds to loopback. Set them via
+      # `.env` to enable root auth; then use the same credentials in MONGO_URI.
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME:-}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD:-}
+    volumes:
+      # Named volume: data survives `docker compose down`. `docker compose down
+      # -v` (or `make mongo-reset`) deletes it to start fresh.
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

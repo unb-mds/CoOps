@@ -6,8 +6,8 @@ import { VisualizationTabs } from '../components/VisualizationTabs';
 import { LanguageLegend } from '../components/LanguageLegend';
 import { RepoStructureAnalysis } from '../components/RepoStructureAnalysis';
 import DashboardLayout from '../components/DashboardLayout';
-import DataNotGenerated from '../components/DataNotGenerated';
-import { isDataNotFoundError } from '../services/dataSource';
+import DataNotGenerated, { DataNotConfigured } from '../components/DataNotGenerated';
+import { isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
 import { VisualizationUtils, type LanguageAnalysis } from './VisualizationUtils';
 
 export default function VisualizationPage() {
@@ -20,6 +20,8 @@ export default function VisualizationPage() {
   const [noData, setNoData] = useState(false);
   // ...or the analysis file itself not generated yet (404)
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  // ...or the data source is not configured (no VITE_GITHUB_ORG)
+  const [notConfigured, setNotConfigured] = useState(false);
   
   // Pega o repositório selecionado da URL (vem da toolbar)
   const repoParam = searchParams.get('repo');
@@ -39,6 +41,7 @@ export default function VisualizationPage() {
         setError(null);
         setNoData(false);
         setMissingDataPath(null);
+        setNotConfigured(false);
         setLanguageData(null);
 
         const data = await VisualizationUtils.fetchLanguageData(repoParam);
@@ -54,6 +57,8 @@ export default function VisualizationPage() {
         if (!cancelled) {
           if (isDataNotFoundError(err)) {
             setMissingDataPath(err.path);
+          } else if (isDataUnconfiguredError(err)) {
+            setNotConfigured(true);
           } else {
             setError(err instanceof Error ? err.message : 'Unknown error');
           }
@@ -154,6 +159,8 @@ export default function VisualizationPage() {
             )}
 
             {!loading && missingDataPath && <DataNotGenerated path={missingDataPath} />}
+
+            {!loading && notConfigured && <DataNotConfigured />}
             
             {!loading && !error && languageData && (
               <div className="flex justify-center w-full">

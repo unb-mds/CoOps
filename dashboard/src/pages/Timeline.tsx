@@ -5,8 +5,8 @@ import CalendarHeatmap from '../components/CalendarHeatmap';
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { TimelineExtraction, TimelineData } from './TimelineExtraction';
-import DataNotGenerated from '../components/DataNotGenerated';
-import { isDataNotFoundError } from '../services/dataSource';
+import DataNotGenerated, { DataNotConfigured } from '../components/DataNotGenerated';
+import { isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
 
 /**
  * Timeline Component
@@ -127,6 +127,7 @@ export default function Timeline() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  const [notConfigured, setNotConfigured] = useState(false);
   const [selectedMembers, setSelectedMembers] = useState<string[]>([]);
 
   const selectedRepo = searchParams.get('repo');
@@ -141,6 +142,7 @@ export default function Timeline() {
       setIsLoading(true);
       setError(null);
       setMissingDataPath(null);
+      setNotConfigured(false);
       try {
         const timeFilter = selectedTime === 'Last 7 days' ? 'last_7_days' : 'last_12_months';
         const repoFilter = selectedRepo || undefined;
@@ -231,6 +233,8 @@ export default function Timeline() {
       } catch (error) {
         if (isDataNotFoundError(error)) {
           setMissingDataPath(error.path);
+        } else if (isDataUnconfiguredError(error)) {
+          setNotConfigured(true);
         } else {
           console.error('Error fetching timeline data:', error);
           setError(error instanceof Error ? error.message : String(error));
@@ -319,6 +323,8 @@ export default function Timeline() {
               >
                 {isLoading ? (
                   <div className="text-center text-slate-400 py-8">Loading data...</div>
+                ) : notConfigured ? (
+                  <DataNotConfigured />
                 ) : missingDataPath ? (
                   <DataNotGenerated path={missingDataPath} />
                 ) : error ? (

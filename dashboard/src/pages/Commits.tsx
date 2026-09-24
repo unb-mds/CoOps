@@ -6,8 +6,8 @@ import DashboardLayout from '../components/DashboardLayout';
 import BaseFilters from '../components/BaseFilters';
 import { Histogram, PieChart, CommitMetricsChart } from '../components/Graphs';
 import { Utils } from './Utils';
-import DataNotGenerated from '../components/DataNotGenerated';
-import { isDataNotFoundError } from '../services/dataSource';
+import DataNotGenerated, { DataNotConfigured } from '../components/DataNotGenerated';
+import { isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
 
 /**
  * CommitsPage Component
@@ -25,6 +25,7 @@ export default function CommitsPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  const [notConfigured, setNotConfigured] = useState(false);
   const [searchParams] = useSearchParams();
   const [selectedMembers, setSelectedMembers] = useState<string[]>([]);
   const [selectedTime, setSelectedTime] = useState<string>('Last 24 hours');
@@ -46,6 +47,8 @@ export default function CommitsPage() {
         if (!cancelled) {
           if (isDataNotFoundError(err)) {
             setMissingDataPath(err.path);
+          } else if (isDataUnconfiguredError(err)) {
+            setNotConfigured(true);
           } else {
             setError(err instanceof Error ? err.message : String(err));
           }
@@ -97,6 +100,14 @@ export default function CommitsPage() {
       selectedTime,
     });
   }, [selectedRepo, filteredActivities, selectedTime]);
+
+  if (notConfigured) {
+    return (
+      <DashboardLayout currentSubPage="commits" currentPage="repos" data={data} currentRepo="No repository selected">
+        <DataNotConfigured />
+      </DashboardLayout>
+    );
+  }
 
   if (missingDataPath) {
     return (

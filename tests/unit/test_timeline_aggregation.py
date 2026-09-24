@@ -172,3 +172,143 @@ def test_timeline_author_without_repos(monkeypatch):
     files = timeline.process_timeline_aggregation()
     last7 = saved["data/gold/timeline_last_7_days.json"]
     assert last7[0]["authors"][0]["repositories"] == []
+
+
+def test_timeline_carries_author_id(monkeypatch):
+    """The author `id` from Silver flows through both Gold aggregations
+    untouched, alongside the existing name-based output."""
+    daily = [{
+        "date": "2024-06-05",
+        "total_events": 1, "issues_created": 0, "issues_closed": 0,
+        "prs_created": 0, "prs_closed": 0, "commits": 1, "comments": 0,
+        "unique_users": 1, "unique_repos": 1,
+        "authors": [{
+            "id": "user-42",
+            "name": "alice",
+            "commits": 1, "issues_created": 0, "issues_closed": 0,
+            "prs_created": 0, "prs_closed": 0, "comments": 0,
+        }],
+    }]
+    events = [{"user": "alice", "repo": "repoA"}]
+
+    def fake_load(path):
+        if path.endswith("daily_activity_summary.json"):
+            return daily
+        if path.endswith("temporal_events.json"):
+            return events
+        return []
+
+    saved = {}
+
+    def fake_save(data, path, timestamp=True):
+        saved[path] = data
+        return path
+
+    monkeypatch.setattr(timeline, "load_json_data", fake_load)
+    monkeypatch.setattr(timeline, "save_json_data", fake_save)
+
+    timeline.process_timeline_aggregation()
+
+    last7 = saved["data/gold/timeline_last_7_days.json"]
+    assert last7[0]["authors"][0]["id"] == "user-42"
+    assert last7[0]["authors"][0]["name"] == "alice"
+    assert last7[0]["authors"][0]["repositories"] == ["repoA"]
+
+    months = saved["data/gold/timeline_last_12_months.json"]
+    assert months[0]["authors"][0]["id"] == "user-42"
+    assert months[0]["authors"][0]["name"] == "alice"
+
+
+def test_timeline_monthly_same_name_distinct_ids_stay_split(monkeypatch):
+    """Two authors sharing a display name but holding different ids
+    aggregate into TWO entries, not one merged entry (issue #151)."""
+    daily = [{
+        "date": "2024-06-05",
+        "total_events": 2, "issues_created": 0, "issues_closed": 0,
+        "prs_created": 0, "prs_closed": 0, "commits": 2, "comments": 0,
+        "unique_users": 2, "unique_repos": 1,
+        "authors": [
+            {"id": "hash-1", "name": "Lucas Gomes", "commits": 3,
+             "issues_created": 0, "issues_closed": 0, "prs_created": 0,
+             "prs_closed": 0, "comments": 0},
+            {"id": "hash-2", "name": "Lucas Gomes", "commits": 5,
+             "issues_created": 0, "issues_closed": 0, "prs_created": 0,
+             "prs_closed": 0, "comments": 0},
+        ],
+    }]
+
+    def fake_load(path):
+        if path.endswith("daily_activity_summary.json"):
+            return daily
+        return []
+
+    saved = {}
+
+    def fake_save(data, path, timestamp=True):
+        saved[path] = data
+        return path
+
+    monkeypatch.setattr(timeline, "load_json_data", fake_load)
+    monkeypatch.setattr(timeline, "save_json_data", fake_save)
+
+    timeline.process_timeline_aggregation()
+
+    months = saved["data/gold/timeline_last_12_months.json"]
+    authors = months[0]["authors"]
+    assert len(authors) == 2, (
+        f"same-name authors must stay split, got {len(authors)} entry"
+    )
+    assert {a["id"] for a in authors} == {"hash-1", "hash-2"}
+    by_id = {a["id"]: a for a in authors}
+    assert by_id["hash-1"]["commits"] == 3
+    assert by_id["hash-2"]["commits"] == 5
+    assert all(a["name"] == "Lucas Gomes" for a in authors)
+
+
+def test_timeline_monthly_legacy_authors_aggregate_by_name(monkeypatch):
+    """Transitional behaviour for records predating the `id` field: for
+    those, `name` WAS the identity value, so two author rows with the same
+    name and no `id` aggregate into ONE entry with their counts summed.
+    This reproduces exactly what those pre-`id` records already meant.
+    Once every record carries an `id`, this path stops being reachable
+    and the test can be retired."""
+    daily = [{
+        "date": "2024-06-05",
+        "total_events": 2, "issues_created": 0, "issues_closed": 0,
+        "prs_created": 0, "prs_closed": 0, "commits": 7, "comments": 0,
+        "unique_users": 2, "unique_repos": 1,
+        "authors": [
+            {"name": "CI/CD Bot", "commits": 2,
+             "issues_created": 0, "issues_closed": 0, "prs_created": 0,
+             "prs_closed": 0, "comments": 0},
+            {"name": "CI/CD Bot", "commits": 5,
+             "issues_created": 0, "issues_closed": 0, "prs_created": 0,
+             "prs_closed": 0, "comments": 0},
+        ],
+    }]
+
+    def fake_load(path):
+        if path.endswith("daily_activity_summary.json"):
+            return daily
+        return []
+
+    saved = {}
+
+    def fake_save(data, path, timestamp=True):
+        saved[path] = data
+        return path
+
+    monkeypatch.setattr(timeline, "load_json_data", fake_load)
+    monkeypatch.setattr(timeline, "save_json_data", fake_save)
+
+    timeline.process_timeline_aggregation()
+
+    months = saved["data/gold/timeline_last_12_months.json"]
+    authors = months[0]["authors"]
+    assert len(authors) == 1, (
+        f"legacy same-name authors must merge, got {len(authors)} entries"
+    )
+    assert authors[0]["commits"] == 7, (
+        f"merged entry must sum commits (2 + 5), got {authors[0]['commits']}"
+    )
+    assert authors[0]["name"] == "CI/CD Bot"

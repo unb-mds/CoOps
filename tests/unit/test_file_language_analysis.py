@@ -1,6 +1,5 @@
 """Tests for coops/silver/file_language_analysis.py."""
 
-import glob as glob_module
 
 import coops.silver.file_language_analysis as fla
 
@@ -270,7 +269,7 @@ class TestCalculateLanguageStats:
 
 class TestProcessFileLanguageAnalysis:
     def test_no_structure_files(self, monkeypatch):
-        monkeypatch.setattr(glob_module, "glob", lambda pattern: [])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: [])
         result = fla.process_file_language_analysis()
         assert result == []
 
@@ -293,7 +292,7 @@ class TestProcessFileLanguageAnalysis:
             saved[path] = data
             return path
 
-        monkeypatch.setattr(glob_module, "glob", lambda p: ["data/bronze/structure_myrepo.json"])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: ["data/bronze/structure_myrepo.json"])
         monkeypatch.setattr(fla, "load_json_data", fake_load)
         monkeypatch.setattr(fla, "save_json_data", fake_save)
 
@@ -310,7 +309,7 @@ class TestProcessFileLanguageAnalysis:
         }
         saved = {}
 
-        monkeypatch.setattr(glob_module, "glob", lambda p: ["data/bronze/structure_r.json"])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: ["data/bronze/structure_r.json"])
         monkeypatch.setattr(fla, "load_json_data", lambda p: structure)
         monkeypatch.setattr(fla, "save_json_data", lambda d, p, **kw: (saved.update({p: d}), p)[1])
 
@@ -324,7 +323,7 @@ class TestProcessFileLanguageAnalysis:
         }
         saved = {}
 
-        monkeypatch.setattr(glob_module, "glob", lambda p: ["data/bronze/structure_r.json"])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: ["data/bronze/structure_r.json"])
         monkeypatch.setattr(fla, "load_json_data", lambda p: structure)
         monkeypatch.setattr(fla, "save_json_data", lambda d, p, **kw: (saved.update({p: d}), p)[1])
 
@@ -334,7 +333,7 @@ class TestProcessFileLanguageAnalysis:
     def test_invalid_structure_skipped(self, monkeypatch):
         """Repos with no 'tree' key are skipped."""
         saved = {}
-        monkeypatch.setattr(glob_module, "glob", lambda p: ["data/bronze/structure_bad.json"])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: ["data/bronze/structure_bad.json"])
         monkeypatch.setattr(fla, "load_json_data", lambda p: {"no_tree": True})
         monkeypatch.setattr(fla, "save_json_data", lambda d, p, **kw: (saved.update({p: d}), p)[1])
 
@@ -343,7 +342,7 @@ class TestProcessFileLanguageAnalysis:
         assert files == []
 
     def test_none_structure_skipped(self, monkeypatch):
-        monkeypatch.setattr(glob_module, "glob", lambda p: ["data/bronze/structure_x.json"])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: ["data/bronze/structure_x.json"])
         monkeypatch.setattr(fla, "load_json_data", lambda p: None)
         monkeypatch.setattr(fla, "save_json_data", lambda d, p, **kw: p)
 
@@ -358,9 +357,9 @@ class TestProcessFileLanguageAnalysis:
             }
 
         saved = {}
-        monkeypatch.setattr(glob_module, "glob",
-                            lambda p: ["data/bronze/structure_r1.json",
-                                       "data/bronze/structure_r2.json"])
+        monkeypatch.setattr(fla, "bronze_files",
+                            lambda directory, family: ["data/bronze/structure_r1.json",
+                                                       "data/bronze/structure_r2.json"])
         monkeypatch.setattr(fla, "load_json_data", fake_load)
         monkeypatch.setattr(fla, "save_json_data", lambda d, p, **kw: (saved.update({p: d}), p)[1])
 
@@ -374,7 +373,7 @@ class TestProcessFileLanguageAnalysis:
             "owner": "org", "branch": "main", "extracted_at": "2024-01-01",
         }
         saved = {}
-        monkeypatch.setattr(glob_module, "glob", lambda p: ["data/bronze/structure_r.json"])
+        monkeypatch.setattr(fla, "bronze_files", lambda directory, family: ["data/bronze/structure_r.json"])
         monkeypatch.setattr(fla, "load_json_data", lambda p: structure)
         monkeypatch.setattr(fla, "save_json_data", lambda d, p, **kw: (saved.update({p: d}), p)[1])
 

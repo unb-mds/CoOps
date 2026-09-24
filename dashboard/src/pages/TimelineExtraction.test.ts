@@ -162,7 +162,7 @@ describe('TimelineExtraction Class', () => {
 
     test('throws error when fetchData fails with not found', async () => {
       (fetchData as any).mockRejectedValue(
-        new Error('Failed to fetch https://raw.githubusercontent.com/DW-Corp/CoOps/main/data/gold/timeline_last_7_days.json: Not Found')
+        new Error('Failed to fetch https://raw.githubusercontent.com/example-org/CoOps/main/data/gold/timeline_last_7_days.json: Not Found')
       );
 
       await expect(
@@ -172,7 +172,7 @@ describe('TimelineExtraction Class', () => {
 
     test('throws error when fetchData fails with server error', async () => {
       (fetchData as any).mockRejectedValue(
-        new Error('Failed to fetch https://raw.githubusercontent.com/DW-Corp/CoOps/main/data/gold/timeline_last_7_days.json: Internal Server Error')
+        new Error('Failed to fetch https://raw.githubusercontent.com/example-org/CoOps/main/data/gold/timeline_last_7_days.json: Internal Server Error')
       );
 
       await expect(

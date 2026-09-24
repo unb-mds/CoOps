@@ -1,0 +1,17 @@
+# Defaults for running this repository's workflows locally with `act`.
+# See docs/local-actions.md. One flag per line; act reads this file
+# automatically when run from the repository root.
+
+# Runner images. The "medium" catthehacker images carry the act tool cache
+# with Node 20 and Node 24; Node 24 is required by astral-sh/setup-uv@v10.
+-P ubuntu-latest=catthehacker/ubuntu:act-latest
+-P ubuntu-24.04=catthehacker/ubuntu:act-24.04
+-P ubuntu-22.04=catthehacker/ubuntu:act-22.04
+
+# actions/upload-artifact@v4 needs a local artifact server; uploads land in
+# .act/artifacts/ (gitignored).
+--artifact-server-path .act/artifacts
+
+# No workflow here builds images, so the runner does not get the host Docker
+# socket.
+--container-daemon-socket -

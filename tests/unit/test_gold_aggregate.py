@@ -1,6 +1,7 @@
 """Unit tests for coops.etl.gold_aggregate."""
 
 import json
+import re
 import sys
 from unittest.mock import patch
 
@@ -79,4 +80,22 @@ def test_performance_tiers_from_contribution_metrics(tmp_path):
     assert kpis["organization_health"]["active_contributors"] == 4
     assert [c["user"] for c in kpis["top_contributors"]] == ["u0", "u1", "u2", "u3", "u4"]
     assert [c["user"] for c in tiers["non_contributors"]] == ["u4"]
-    assert sum(len(v) for v in tiers.values()) == 5
+    # generated_at is a scalar, not a tier list.
+    assert sum(len(v) for v in tiers.values() if isinstance(v, list)) == 5
+
+
+def test_performance_tiers_generated_at(tmp_path):
+    """performance_tiers.json carries generated_at, in the same format and
+    from the same clock reading as the dashboard written by the same run —
+    one timestamp, so the two artifacts cannot disagree about freshness."""
+    write(tmp_path, "silver/contribution_metrics.json", [META] + [
+        {"user": f"u{i}", "total_contributions": c, "has_contributed": c > 0}
+        for i, c in enumerate([100, 50, 10, 5, 0])
+    ])
+
+    kpis = run(tmp_path)
+    tiers = json.loads((tmp_path / "data" / "gold" / "performance_tiers.json").read_text())
+
+    assert tiers["generated_at"] == kpis["generated_at"]
+    # Same isoformat shape the dashboard uses: YYYY-MM-DDTHH:MM:SS[.ffffff].
+    assert re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}", tiers["generated_at"])

@@ -30,10 +30,16 @@ Closes #
 <!-- How did you verify this? Commands you ran, files you inspected, manual
 checks you performed. -->
 
-- [ ] `pytest` passes locally
-- [ ] `cd dashboard && npm run test:coverage` passes locally
-- [ ] New tests added (or existing tests cover the change)
-- [ ] `CHANGELOG.md` updated under `[Unreleased]` if user-visible
+See [docs/definition-of-done.md](docs/definition-of-done.md) — a reviewer will check against it.
+
+- [ ] `pytest` passes locally — paste the counts (`N passed, M skipped`), not "passes"
+- [ ] `cd dashboard && npm run test:coverage` passes locally — counts too
+- [ ] `ruff` / `npm run lint` / `npm run format:check` / `tsc -b` all clean
+- [ ] Tests added for the behaviour this PR changes
+- [ ] Each new test was shown to fail without the fix — say which named test
+- [ ] Integration test added, or a reason it isn't possible here
+- [ ] `CHANGELOG.md` updated under `[Unreleased]` if user-visible (incl. data-shape changes)
+- [ ] No new personal data reaches published output (grep the output, not the code)
 
 ## Organization validation
 

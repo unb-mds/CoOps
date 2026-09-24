@@ -2,7 +2,7 @@ import coops.silver.contribution_metrics as contrib
 
 def test_process_contribution_metrics_empty(monkeypatch):
     """Testa processamento com dados vazios"""
-    def fake_load(path: str):
+    def fake_load(family: str):
         return []
 
     saved = {}
@@ -10,7 +10,7 @@ def test_process_contribution_metrics_empty(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -28,14 +28,14 @@ def test_process_contribution_metrics_repository_data(monkeypatch):
     commits = [{"repo_name": "r2"}]
     events = [{"repo_name": "r1", "event": "commented"}, {"repo_name": "r2", "event": "commented"}]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits
-        if path.endswith("issue_events_all.json"):
+        if family == "issue_events":
             return events
         return []
 
@@ -44,7 +44,7 @@ def test_process_contribution_metrics_repository_data(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -70,8 +70,8 @@ def test_process_contribution_metrics_metadata_removal(monkeypatch):
         {"repo_name": "r1"},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -80,7 +80,7 @@ def test_process_contribution_metrics_metadata_removal(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -100,8 +100,8 @@ def test_process_contribution_metrics_repository_sorting(monkeypatch):
         {"repo_name": "r2"},
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -110,7 +110,7 @@ def test_process_contribution_metrics_repository_sorting(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -129,8 +129,8 @@ def test_process_contribution_metrics_unknown_repo(monkeypatch):
         {"user": {"login": "alice"}},  # Sem repo_name
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -139,7 +139,7 @@ def test_process_contribution_metrics_unknown_repo(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -159,8 +159,8 @@ def test_process_contribution_metrics_comment_events(monkeypatch):
         {"repo_name": "r1", "event": "labeled"},  # Não é comentário
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issue_events_all.json"):
+    def fake_load(family: str):
+        if family == "issue_events":
             return events
         return []
 
@@ -169,7 +169,7 @@ def test_process_contribution_metrics_comment_events(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -186,12 +186,12 @@ def test_process_contribution_metrics_multiple_repos(monkeypatch):
     prs = [{"repo_name": "repo1"}, {"repo_name": "repo2"}]
     commits = [{"repo_name": "repo1"}]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits
         return []
 
@@ -200,7 +200,7 @@ def test_process_contribution_metrics_multiple_repos(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -228,14 +228,14 @@ def test_process_contribution_metrics_total_activity_calculation(monkeypatch):
         {"repo_name": "r1", "event": "issue_comment"}
     ]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits
-        if path.endswith("issue_events_all.json"):
+        if family == "issue_events":
             return events
         return []
 
@@ -244,7 +244,7 @@ def test_process_contribution_metrics_total_activity_calculation(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()
@@ -263,8 +263,8 @@ def test_process_contribution_metrics_with_issues_only(monkeypatch):
     """Test that contribution_metrics populates users from issues"""
     issues = [{"repo_name": "r1", "user": {"login": "alice"}}]
 
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
 
@@ -273,7 +273,7 @@ def test_process_contribution_metrics_with_issues_only(monkeypatch):
         saved[path] = data
         return path
 
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
 
     files = contrib.process_contribution_metrics()

@@ -8,7 +8,7 @@ from coops.infrastructure.config import Settings, get_settings
 ENV_VARS = (
     "GITHUB_TOKEN", "COOPS_GITHUB_TOKEN", "GITHUB_ORG", "COOPS_ORG",
     "GEMINI_API_KEY", "GOOGLE_API_KEY", "GEMINI_MODEL", "COOPS_STORAGE",
-    "MONGO_URI", "TENANT_MODE", "GITHUB_API_URL",
+    "MONGO_URI", "RAW_MAX_AGE_SECONDS", "TENANT_MODE", "GITHUB_API_URL",
 )
 
 
@@ -30,6 +30,7 @@ def test_loads_without_any_configuration():
     assert settings.gemini_api_key is None
     assert settings.gemini_model == "gemini-3.5-flash-lite"
     assert settings.coops_storage == "data"
+    assert settings.raw_max_age_seconds == 3600
     assert settings.tenant_mode == "single"
 
 
@@ -107,6 +108,11 @@ def test_get_settings_is_cached(monkeypatch):
     assert get_settings() is first
     get_settings.cache_clear()
     assert get_settings().github_org == "second"
+
+
+def test_reads_raw_max_age_seconds(monkeypatch):
+    monkeypatch.setenv("RAW_MAX_AGE_SECONDS", "900")
+    assert Settings().raw_max_age_seconds == 900
 
 
 def test_version_comes_from_package_metadata():

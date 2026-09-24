@@ -6,17 +6,18 @@ Analyzes collaboration patterns and creates network metrics
 
 from collections import defaultdict
 from typing import List, Dict, Any, Set
-from coops.utils.github_api import save_json_data, load_json_data
-from coops.utils.data_helpers import strip_metadata
+from coops.utils.github_api import save_json_data
+from coops.silver.bronze_input import load_family
 
 def process_collaboration_networks() -> List[str]:
     """Process collaboration data into network metrics"""
 
-    # Load bronze data
-    issues_data = strip_metadata(load_json_data("data/bronze/issues_all.json") or [])
-    prs_data = strip_metadata(load_json_data("data/bronze/prs_all.json") or [])
-    commits_data = strip_metadata(load_json_data("data/bronze/commits_all.json") or [])
-    issue_events_data = strip_metadata(load_json_data("data/bronze/issue_events_all.json") or [])
+    # Load bronze data: per-repository files, not the _all aggregates
+    # (redundant concatenations of exactly these records — issue #170).
+    issues_data = load_family("issues")
+    prs_data = load_family("prs")
+    commits_data = load_family("commits")
+    issue_events_data = load_family("issue_events")
 
     # Track collaborations by repository
     repo_collaborators = defaultdict(set)
@@ -72,7 +73,7 @@ def process_collaboration_networks() -> List[str]:
     user_collaborations = defaultdict(set)
 
     for repo, contributors in repo_collaborators.items():
-        contributors_list = list(contributors)
+        contributors_list = sorted(contributors)
 
         # Create edges between all contributors in the same repo
         for i, user1 in enumerate(contributors_list):
@@ -114,7 +115,7 @@ def process_collaboration_networks() -> List[str]:
         user_metrics.append({
             'user': user,
             'collaborator_count': len(collaborators),
-            'collaborators': list(collaborators),
+            'collaborators': sorted(collaborators),
             'repositories_contributed': len([repo for repo, contributors in repo_collaborators.items() if user in contributors])
         })
 
@@ -129,7 +130,7 @@ def process_collaboration_networks() -> List[str]:
     # Create repository collaboration analysis
     repo_analysis = []
     for repo, contributors in repo_collaborators.items():
-        contributors_list = list(contributors)
+        contributors_list = sorted(contributors)
 
         # Calculate potential and actual collaborations
         potential_collaborations = len(contributors_list) * (len(contributors_list) - 1) // 2

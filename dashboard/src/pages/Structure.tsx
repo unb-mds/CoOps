@@ -2,9 +2,9 @@ import { useEffect, useState, useMemo } from 'react';
 import DashboardLayout from '../components/DashboardLayout';
 import BaseFilters from '../components/BaseFilters';
 import Loading from '../components/Loading';
-import DataNotGenerated, { DataLoadError } from '../components/DataNotGenerated';
+import DataNotGenerated, { DataLoadError, DataNotConfigured } from '../components/DataNotGenerated';
 import { BarChart } from '../components/charts';
-import { fetchData, filterMetadata, isDataNotFoundError } from '../services/dataSource';
+import { fetchData, filterMetadata, isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
 import { Utils } from './Utils';
 
 interface TemporalEvent {
@@ -29,6 +29,7 @@ export default function Structure() {
   const [activityData, setActivityData] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  const [notConfigured, setNotConfigured] = useState(false);
 
   useEffect(() => {
     async function loadData() {
@@ -44,6 +45,8 @@ export default function Structure() {
       } catch (error) {
         if (isDataNotFoundError(error)) {
           setMissingDataPath(error.path);
+        } else if (isDataUnconfiguredError(error)) {
+          setNotConfigured(true);
         } else {
           console.error('Failed to load structure data:', error);
           setError(error instanceof Error ? error.message : String(error));
@@ -157,7 +160,7 @@ export default function Structure() {
     );
   }
 
-  if (missingDataPath || error) {
+  if (notConfigured || missingDataPath || error) {
     return (
       <DashboardLayout
         currentPage="repos"
@@ -166,7 +169,9 @@ export default function Structure() {
         currentRepo="All Repositories"
         data={activityData}
       >
-        {missingDataPath ? (
+        {notConfigured ? (
+          <DataNotConfigured />
+        ) : missingDataPath ? (
           <DataNotGenerated path={missingDataPath} />
         ) : (
           <DataLoadError message={error ?? ''} />

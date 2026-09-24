@@ -1,12 +1,25 @@
 import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
 import {
   DataNotFoundError,
+  DataUnconfiguredError,
   fetchAvailableRepoNames,
   fetchData,
   filterMetadata,
   getDataBasePath,
   isDataNotFoundError,
+  isDataUnconfiguredError,
 } from './dataSource';
+
+// Remote mode is the default in the test environment (VITE_USE_LOCAL_DATA is
+// unset), so give every test a configured organization unless it opts out with
+// vi.unstubAllEnvs() to exercise the fail-closed path.
+beforeEach(() => {
+  vi.stubEnv('VITE_GITHUB_ORG', 'test-org');
+});
+
+afterEach(() => {
+  vi.unstubAllEnvs();
+});
 
 describe('dataSource service', () => {
   describe('filterMetadata', () => {
@@ -138,6 +151,56 @@ describe('dataSource service', () => {
 
       await expect(fetchData('silver/file.json')).rejects.toThrow('Network down');
       expect(console.error).toHaveBeenCalled();
+    });
+  });
+
+  describe('configuration guard (VITE_GITHUB_ORG)', () => {
+    afterEach(() => {
+      vi.unstubAllGlobals();
+      vi.restoreAllMocks();
+    });
+
+    test('fails closed without VITE_GITHUB_ORG: no fetch, DataUnconfiguredError', async () => {
+      vi.unstubAllEnvs();
+      const fetchMock = vi.fn();
+      vi.stubGlobal('fetch', fetchMock);
+
+      const error = await fetchData('silver/file.json').catch((e: unknown) => e);
+
+      expect(error).toBeInstanceOf(DataUnconfiguredError);
+      expect(isDataUnconfiguredError(error)).toBe(true);
+      expect((error as DataUnconfiguredError).name).toBe('DataUnconfiguredError');
+      expect(fetchMock).not.toHaveBeenCalled();
+    });
+
+    test('getDataBasePath throws DataUnconfiguredError without VITE_GITHUB_ORG', () => {
+      vi.unstubAllEnvs();
+
+      expect(() => getDataBasePath()).toThrow(DataUnconfiguredError);
+    });
+
+    test('isDataUnconfiguredError rejeita valores que não são DataUnconfiguredError', () => {
+      expect(isDataUnconfiguredError(new DataNotFoundError('silver/x.json', 'https://x/data'))).toBe(false);
+      expect(isDataUnconfiguredError(new Error('VITE_GITHUB_ORG is not set'))).toBe(false);
+      expect(isDataUnconfiguredError(null)).toBe(false);
+    });
+
+    test('targets the configured organization URL', async () => {
+      vi.stubEnv('VITE_GITHUB_ORG', 'acme-org');
+      const fetchMock = vi.fn().mockResolvedValue({ ok: true, status: 200, json: async () => [] });
+      vi.stubGlobal('fetch', fetchMock);
+
+      await fetchData('silver/file.json');
+
+      expect(fetchMock).toHaveBeenCalledWith(
+        'https://raw.githubusercontent.com/acme-org/CoOps/main/data/silver/file.json'
+      );
+    });
+
+    test('getDataBasePath returns the configured organization URL', () => {
+      vi.stubEnv('VITE_GITHUB_ORG', 'acme-org');
+
+      expect(getDataBasePath()).toBe('https://raw.githubusercontent.com/acme-org/CoOps/main/data');
     });
   });
 });

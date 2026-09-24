@@ -14,7 +14,7 @@ class Settings(BaseSettings):
 
     Env vars: GITHUB_TOKEN (or COOPS_GITHUB_TOKEN), GITHUB_ORG (or COOPS_ORG),
     GEMINI_API_KEY (or GOOGLE_API_KEY), GEMINI_MODEL, GITHUB_API_URL,
-    COOPS_STORAGE, MONGO_URI, TENANT_MODE.
+    COOPS_STORAGE, MONGO_URI, RAW_MAX_AGE_SECONDS, TENANT_MODE.
 
     GitHub rejects Actions secrets and variables whose names start with
     GITHUB_, so the COOPS_ names can be mapped 1:1 from `secrets`/`vars`.
@@ -45,6 +45,10 @@ class Settings(BaseSettings):
     github_api_url: str = "https://api.github.com"
     coops_storage: str = "data"
     mongo_uri: str | None = None
+    # How long a raw-layer document stays "fresh" before Bronze re-fetches the
+    # API instead of reading it. None/0 would disable the raw read short-circuit
+    # entirely; a positive value is what makes re-processing free (#113).
+    raw_max_age_seconds: int = 3600
     tenant_mode: Literal["single", "multi"] = "single"
 
     model_config = SettingsConfigDict(

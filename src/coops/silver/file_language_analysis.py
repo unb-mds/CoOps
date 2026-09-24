@@ -3,9 +3,9 @@
 from collections import defaultdict
 from typing import List, Dict, Any
 from pathlib import Path
+from coops.bronze.files import bronze_files, repo_of
 from coops.utils.github_api import save_json_data, load_json_data
 import os
-import glob
 import json
 
 def detect_language_by_extension(extension: str) -> str:
@@ -310,17 +310,17 @@ def process_file_language_analysis(
     """
     
     # Encontrar todos os arquivos de estrutura
-    structure_files = glob.glob("data/bronze/structure_*.json")
-    
+    structure_files = bronze_files("data/bronze", "structure")
+
     if not structure_files:
         print("No structure files found in bronze layer")
         return []
-    
+
     generated_files = []
     all_repo_analyses = []
-    
+
     for structure_file in structure_files:
-        repo_name = Path(structure_file).stem.replace('structure_', '')
+        repo_name = repo_of(structure_file, "structure")
         print(f"Analyzing languages for: {repo_name}")
         
         structure_data = load_json_data(structure_file)

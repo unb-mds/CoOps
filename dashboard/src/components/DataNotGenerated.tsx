@@ -33,6 +33,43 @@ interface DataNotGeneratedProps {
   hint?: ReactNode;
 }
 
+interface DataNotConfiguredProps {
+  className?: string;
+}
+
+/**
+ * DataNotConfigured Component
+ *
+ * Sibling of {@link DataNotGenerated} shown when the dashboard has no
+ * `VITE_GITHUB_ORG` configured (see `DataUnconfiguredError`). Unlike a missing
+ * file, this is a misconfiguration: nothing can be fetched until the variable
+ * is set, so it is presented as an actionable configuration state rather than
+ * as data that is "on its way".
+ */
+export function DataNotConfigured({ className = '' }: DataNotConfiguredProps) {
+  return (
+    <div
+      role="status"
+      data-testid="data-not-configured"
+      className={`border rounded-lg p-6 text-center ${className}`}
+      style={{ backgroundColor: '#2a2414', borderColor: '#4a3f1f' }}
+    >
+      <h3 className="text-lg font-bold text-white mb-2">
+        VITE_GITHUB_ORG is not configured
+      </h3>
+      <p className="text-slate-300 text-sm mb-2">
+        This dashboard does not know which GitHub organization to read from. Set the{' '}
+        <code className="px-1 rounded bg-slate-800 text-slate-100">VITE_GITHUB_ORG</code>{' '}
+        environment variable to your organization name before building.
+      </p>
+      <p className="text-slate-400 text-sm">
+        The GitHub Pages workflow sets it automatically from the repository owner, so a fork
+        deployed there reads its own data. Local and manual builds must set it explicitly.
+      </p>
+    </div>
+  );
+}
+
 export default function DataNotGenerated({ path, className = '', hint }: DataNotGeneratedProps) {
   const file = `data/${path}`;
 

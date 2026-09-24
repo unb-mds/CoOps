@@ -339,10 +339,19 @@ class TestLoadBronzeData:
         assert len(result["carol"]["repo3"]["issues"]) == 1
 
     def test_skips_with_stats_and_all_files(self, tmp_path):
+        """#156: the fixture now uses the filename the pipeline actually wrote.
+
+        This previously asserted that ``commits_with_stats_repo.json`` is
+        skipped. That file is a repository named ``with_stats_repo``; the real
+        derived artifact is ``commits_<repo>_with_stats.json`` (142 of them in
+        4507f9a, beside their originals). The old substring guard happened to
+        catch both, so the test passed while describing the wrong shape — and it
+        would have kept passing had the real one never been handled at all.
+        """
         bronze = tmp_path / "bronze"
         bronze.mkdir()
         data = [{"author": {"login": "x"}, "message": "m"}]
-        (bronze / "commits_with_stats_repo.json").write_text(json.dumps(data))
+        (bronze / "commits_myrepo_with_stats.json").write_text(json.dumps(data))
         (bronze / "commits_all.json").write_text(json.dumps(data))
         (bronze / "prs_all.json").write_text(json.dumps(data))
         (bronze / "issues_all.json").write_text(json.dumps(data))
@@ -353,16 +362,39 @@ class TestLoadBronzeData:
         # All of the above should be skipped
         assert result == {}
 
-    def test_skips_issue_events_files(self, tmp_path):
+    def test_includes_a_repo_whose_name_contains_a_guard_token(self, tmp_path):
+        """#156: guards against duplicates must not delete originals.
+
+        Both of these names tripped a substring guard that was meant for
+        something else: ``commits_with_stats_repo.json`` is a repository called
+        ``with_stats_repo``, and ``issues_issue_events_repo.json`` one called
+        ``issue_events_repo``. Neither is a duplicate of anything, and dropping
+        them loses a repository's data outright. Replaces the old
+        ``test_skips_issue_events_files``, which asserted the opposite.
+
+        Real ``issue_events_<repo>.json`` files are still never picked up by the
+        issues family: ``issues_*.json`` cannot match them, since the prefixes
+        diverge at character six.
+        """
         bronze = tmp_path / "bronze"
         bronze.mkdir()
-        data = [{"user": {"login": "x"}, "title": "t"}]
-        (bronze / "issues_issue_events_repo.json").write_text(json.dumps(data))
+        (bronze / "commits_with_stats_repo.json").write_text(
+            json.dumps([{"author": {"login": "x"}, "message": "m"}])
+        )
+        (bronze / "issues_issue_events_repo.json").write_text(
+            json.dumps([{"user": {"login": "y"}, "title": "t"}])
+        )
+        # the genuine events family, which must NOT be read as issues
+        (bronze / "issue_events_repo1.json").write_text(
+            json.dumps([{"user": {"login": "z"}, "title": "t"}])
+        )
 
         with patch.object(gm, "strip_metadata", side_effect=lambda d: d):
             result = gm.load_bronze_data(str(bronze))
 
-        assert result == {}
+        assert set(result) == {"x", "y"}, "z would mean issue_events was read as issues"
+        assert "with_stats_repo" in result["x"]
+        assert "issue_events_repo" in result["y"]
 
     def test_metadata_stripping(self, tmp_path):
         bronze = tmp_path / "bronze"

@@ -5,8 +5,8 @@ import { HeatmapDataPoint } from '../types';
 import { useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Utils } from './Utils';
-import { fetchData, filterMetadata, isDataNotFoundError } from '../services/dataSource';
-import DataNotGenerated from '../components/DataNotGenerated';
+import { fetchData, filterMetadata, isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
+import DataNotGenerated, { DataNotConfigured } from '../components/DataNotGenerated';
 import type { ProcessedActivityResponse, RepoActivitySummary } from './Utils';
 
 
@@ -21,6 +21,7 @@ export default function HeatmapPage() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  const [notConfigured, setNotConfigured] = useState(false);
   const [ mainData, setMainData ] = useState<ProcessedActivityResponse | null>(null);
   const [searchParams] = useSearchParams();
   const [showLegend, setShowLegend] = useState<boolean>(false);
@@ -32,6 +33,7 @@ export default function HeatmapPage() {
         setLoading(true);
         setError(null);
         setMissingDataPath(null);
+        setNotConfigured(false);
 
         // Fetch the two files in parallel
         const [heatmapRawData, processedMainData] = await Promise.all([
@@ -45,6 +47,8 @@ export default function HeatmapPage() {
       } catch (err) {
         if (isDataNotFoundError(err)) {
           setMissingDataPath(err.path);
+        } else if (isDataUnconfiguredError(err)) {
+          setNotConfigured(true);
         } else {
           setError(err instanceof Error ? err.message : 'An unknown error occurred');
         }
@@ -92,6 +96,7 @@ export default function HeatmapPage() {
         <div className="text-center text-white/70 mt-80" >Loading data...</div>
       )}
       {missingDataPath && !loading && <DataNotGenerated path={missingDataPath} className="mt-30" />}
+      {notConfigured && !loading && <DataNotConfigured className="mt-30" />}
       {error && (
         <div className="bg-red-900/50 border border-red-700 text-red-300 px-4 py-3 rounded relative text-center" role="alert">
           <strong className="font-bold">Error loading data: </strong>
@@ -100,7 +105,7 @@ export default function HeatmapPage() {
       )}
 
       {/* --- Success State (Data Loaded) --- */}
-      {heatmapData && mainData && selectedRepo && !loading && !error && (
+      {heatmapData && mainData && selectedRepo && !loading && !error && !notConfigured && (
         <div className="h-fit mt-30">
           <h1 className="text-3xl font-bold text-white mb-2">Organization Activity Heatmap Analysis</h1>
           <p className="text-slate-400 text-sm mb-4">General information and key collaboration metrics.</p>

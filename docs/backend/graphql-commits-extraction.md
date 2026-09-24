@@ -119,6 +119,13 @@ uv run coops-bronze --commits-method rest --cache
 | `is_merge` | Se é um merge commit |
 | `parent_count` | Número de commits pais |
 
+> **Privacidade (emails).** Os dados de commit são commitados em um branch
+> público, então o email bruto do autor **não** é persistido. Autores vinculados
+> a uma conta do GitHub mantêm `login` + `id` (numérico); autores não vinculados
+> recebem `author_email_hash` (SHA-256 do email com espaços removidos e em
+> minúsculas) no lugar do endereço. Trata-se de pseudonimização, não de
+> anonimização.
+
 ## Arquivos Gerados
 
 A extração GraphQL gera os seguintes arquivos:
@@ -150,12 +157,12 @@ query($owner: String!, $name: String!, $branch: String!, $maxCommits: Int!, $cur
               author {
                 name
                 email
-                user { login }
+                user { login databaseId }
               }
               committer {
                 name
                 email
-                user { login }
+                user { login databaseId }
               }
               additions
               deletions

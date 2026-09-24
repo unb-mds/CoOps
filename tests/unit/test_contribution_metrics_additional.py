@@ -53,14 +53,14 @@ def test_metadata_removal_from_all_data_types(monkeypatch):
     commits = [{"_metadata": {"ts": "2024"}}, {"repo_name": "r1"}]
     events = [{"_metadata": {"ts": "2024"}}, {"repo_name": "r1", "event": "commented"}]
     
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues.copy()
-        if path.endswith("prs_all.json"):
+        if family == "prs":
             return prs.copy()
-        if path.endswith("commits_all.json"):
+        if family == "commits":
             return commits.copy()
-        if path.endswith("issue_events_all.json"):
+        if family == "issue_events":
             return events.copy()
         return []
     
@@ -69,7 +69,7 @@ def test_metadata_removal_from_all_data_types(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
     
     files = contrib.process_contribution_metrics()
@@ -88,8 +88,8 @@ def test_repository_metrics_all_fields_present(monkeypatch):
     """Testa que todos os campos esperados estão presentes nas métricas de repo"""
     issues = [{"repo_name": "test-repo"}]
     
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
     
@@ -98,7 +98,7 @@ def test_repository_metrics_all_fields_present(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
     
     files = contrib.process_contribution_metrics()
@@ -126,15 +126,15 @@ def test_contribution_metrics_output_message(monkeypatch, capsys):
     """Testa que exibe mensagem de processamento"""
     issues = [{"repo_name": "r1"}, {"repo_name": "r2"}]
     
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
     
     def fake_save(data, path, timestamp=True):
         return path
     
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
     
     contrib.process_contribution_metrics()
@@ -155,8 +155,8 @@ def test_multiple_event_types_for_comments(monkeypatch):
         {"repo_name": "r1", "event": "assigned"},
     ]
     
-    def fake_load(path: str):
-        if path.endswith("issue_events_all.json"):
+    def fake_load(family: str):
+        if family == "issue_events":
             return events
         return []
     
@@ -165,7 +165,7 @@ def test_multiple_event_types_for_comments(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
     
     files = contrib.process_contribution_metrics()
@@ -186,8 +186,8 @@ def test_repo_sorting_with_equal_activity(monkeypatch):
         {"repo_name": "repo_c"}
     ]
     
-    def fake_load(path: str):
-        if path.endswith("issues_all.json"):
+    def fake_load(family: str):
+        if family == "issues":
             return issues
         return []
     
@@ -196,7 +196,7 @@ def test_repo_sorting_with_equal_activity(monkeypatch):
         saved[path] = data
         return path
     
-    monkeypatch.setattr(contrib, "load_json_data", fake_load)
+    monkeypatch.setattr(contrib, "load_family", fake_load)
     monkeypatch.setattr(contrib, "save_json_data", fake_save)
     
     files = contrib.process_contribution_metrics()

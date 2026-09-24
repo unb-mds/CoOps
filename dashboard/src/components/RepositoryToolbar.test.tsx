@@ -1,4 +1,4 @@
-import { describe, test, expect, vi, beforeEach } from 'vitest';
+import { describe, test, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import RepositoryToolbar from './RepositoryToolbar';
@@ -74,10 +74,15 @@ describe('RepositoryToolbar Component', () => {
 
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.stubEnv('VITE_GITHUB_ORG', 'test-org');
     (global.fetch as any).mockResolvedValue({
       ok: true,
       json: async () => mockAvailableRepoNames,
     });
+  });
+
+  afterEach(() => {
+    vi.unstubAllEnvs();
   });
 
   // ========== RENDERIZAÇÃO BÁSICA ==========

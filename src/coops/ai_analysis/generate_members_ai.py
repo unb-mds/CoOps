@@ -10,6 +10,7 @@ from typing import List, Dict, Any
 from pathlib import Path
 import google.generativeai as genai
 
+from coops.bronze.files import bronze_repos
 from coops.infrastructure import get_settings
 from coops.utils.data_helpers import strip_metadata
 
@@ -40,12 +41,7 @@ def load_bronze_data(bronze_dir: str = "data/bronze") -> Dict[str, Dict[str, Dic
     log.info(f"Carregando dados de {bronze_dir}")
     
     # Carregar todos os arquivos de commits
-    for commits_file in bronze_path.glob("commits_*.json"):
-        if "_with_stats" in commits_file.name or commits_file.name == "commits_all.json":
-            continue
-        
-        repo_name = commits_file.name.replace("commits_", "").replace(".json", "")
-        
+    for repo_name, commits_file in bronze_repos(bronze_path, "commits"):
         try:
             with open(commits_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
@@ -74,12 +70,7 @@ def load_bronze_data(bronze_dir: str = "data/bronze") -> Dict[str, Dict[str, Dic
             log.warning(f"Erro ao carregar {commits_file}: {e}")
     
     # Carregar todos os arquivos de PRs
-    for prs_file in bronze_path.glob("prs_*.json"):
-        if prs_file.name == "prs_all.json":
-            continue
-        
-        repo_name = prs_file.name.replace("prs_", "").replace(".json", "")
-        
+    for repo_name, prs_file in bronze_repos(bronze_path, "prs"):
         try:
             with open(prs_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)
@@ -108,12 +99,7 @@ def load_bronze_data(bronze_dir: str = "data/bronze") -> Dict[str, Dict[str, Dic
             log.warning(f"Erro ao carregar {prs_file}: {e}")
     
     # Carregar todos os arquivos de Issues
-    for issues_file in bronze_path.glob("issues_*.json"):
-        if issues_file.name == "issues_all.json" or "issue_events" in issues_file.name:
-            continue
-        
-        repo_name = issues_file.name.replace("issues_", "").replace(".json", "")
-        
+    for repo_name, issues_file in bronze_repos(bronze_path, "issues"):
         try:
             with open(issues_file, 'r', encoding='utf-8') as f:
                 data = json.load(f)

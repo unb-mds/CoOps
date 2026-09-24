@@ -10,6 +10,18 @@ from datetime import datetime
 from typing import Dict, List, Any
 from coops.utils.github_api import load_json_data, save_json_data
 
+#: The Bronze inputs the record-based Silver processors read: the
+#: per-repository files enumerated by ``coops.silver.bronze_input``. The
+#: ``<family>_all.json`` aggregates that used to be listed here were retired
+#: (#170) — the registry must not advertise files the pipeline no longer
+#: writes, and these processors no longer read them.
+PER_REPOSITORY_BRONZE_INPUTS = [
+    'data/bronze/issues_<repo>.json',
+    'data/bronze/prs_<repo>.json',
+    'data/bronze/commits_<repo>.json',
+    'data/bronze/issue_events_<repo>.json'
+]
+
 def create_master_registry() -> str:
     """Create master registry that maps all data files across layers"""
     
@@ -135,12 +147,7 @@ def create_data_lineage() -> Dict[str, Any]:
                 ]
             },
             'contribution_metrics': {
-                'inputs': [
-                    'data/bronze/issues_all.json',
-                    'data/bronze/prs_all.json',
-                    'data/bronze/commits_all.json',
-                    'data/bronze/issue_events_all.json'
-                ],
+                'inputs': list(PER_REPOSITORY_BRONZE_INPUTS),
                 'outputs': [
                     'data/silver/contribution_metrics.json',
                     'data/silver/repository_metrics.json',
@@ -148,12 +155,7 @@ def create_data_lineage() -> Dict[str, Any]:
                 ]
             },
             'collaboration_networks': {
-                'inputs': [
-                    'data/bronze/issues_all.json',
-                    'data/bronze/prs_all.json',
-                    'data/bronze/commits_all.json',
-                    'data/bronze/issue_events_all.json'
-                ],
+                'inputs': list(PER_REPOSITORY_BRONZE_INPUTS),
                 'outputs': [
                     'data/silver/collaboration_edges.json',
                     'data/silver/user_collaboration_metrics.json',
@@ -163,12 +165,7 @@ def create_data_lineage() -> Dict[str, Any]:
                 ]
             },
             'temporal_analysis': {
-                'inputs': [
-                    'data/bronze/issues_all.json',
-                    'data/bronze/prs_all.json', 
-                    'data/bronze/commits_all.json',
-                    'data/bronze/issue_events_all.json'
-                ],
+                'inputs': list(PER_REPOSITORY_BRONZE_INPUTS),
                 'outputs': [
                     'data/silver/temporal_events.json',
                     'data/silver/daily_activity_summary.json',
@@ -213,10 +210,10 @@ def generate_data_catalog() -> str:
                 'repositories_detailed.json': 'Detailed repository information with additional metadata',
                 'members_basic.json': 'Basic organization member information',
                 'members_detailed.json': 'Detailed member profiles with statistics',
-                'issues_all.json': 'All issues across repositories',
-                'prs_all.json': 'All pull requests across repositories',
-                'commits_all.json': 'All commits across repositories',
-                'issue_events_all.json': 'All issue-related events (comments, labels, etc.)'
+                'issues_<repo>.json': 'Issues for each repository, one file per repository',
+                'prs_<repo>.json': 'Pull requests for each repository, one file per repository',
+                'commits_<repo>.json': 'Commits for each repository, one file per repository',
+                'issue_events_<repo>.json': 'Issue and PR events for each repository, one file per repository'
             }
         },
         'silver_layer': {

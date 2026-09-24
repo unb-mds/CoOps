@@ -5,8 +5,16 @@ name: Validate Pipeline (manual)
 # run against a real organization. Nothing is committed or pushed: the generated
 # data/ is uploaded as an artifact, so it is safe to run on a PR branch.
 #
-#   gh workflow run validate-pipeline.yaml --repo unb-mds/CoOps --ref <branch> \
-#     -f org=unb-mds -f max_repos=3
+# Normally run locally, with act (see docs/local-actions.md):
+#
+#   gh act workflow_dispatch -W .github/workflows/validate-pipeline.yaml \
+#     --secret COOPS_GITHUB_TOKEN="$(gh auth token)" --var COOPS_ORG=<org> \
+#     --input max_repos=2 --input max_commits_per_repo=10
+#
+# On a fork, if one is available:
+#
+#   gh workflow run validate-pipeline.yaml --repo <org>/CoOps --ref <branch> \
+#     -f org=<org> -f max_repos=3
 #
 # See docs/TESTING_PULL_REQUESTS.md.
 
@@ -108,7 +116,15 @@ jobs:
           GH_TOKEN: ${{ secrets.COOPS_GITHUB_TOKEN || github.token }}
         run: |
           ORG="${INPUT_ORG:-${COOPS_ORG:-$OWNER}}"
-          if ! TYPE=$(gh api "users/$ORG" --jq .type); then
+          # curl, not `gh api`: GitHub-hosted runners ship the gh CLI, the act
+          # runner images used for local runs (docs/local-actions.md) do not.
+          BODY=$(mktemp)
+          STATUS=$(curl -sS -o "$BODY" -w '%{http_code}' \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/users/$ORG") || STATUS=000
+          if [ "$STATUS" != "200" ] || ! TYPE=$(jq -re .type "$BODY"); then
             echo "::error::Could not look up $ORG. If COOPS_GITHUB_TOKEN is set, it may have expired: renew it or delete the secret."
             exit 1
           fi
@@ -173,11 +189,23 @@ jobs:
           uv run python - <<'EOF'
           import glob, json, os, sys
 
-          # Every file the dashboard reads (dashboard/src) must be produced.
+          # Every file the pipeline must produce. NOT "every file the dashboard
+          # reads" — that was the previous wording and it is false for 12 of the
+          # 23 entries here: measured against dashboard/src (54 production files,
+          # excluding the 49 test files), 11 of these are fetched by the
+          # dashboard and 12 are not. The unfetched ones are still required —
+          # they are pipeline outputs and this job is right to check they exist —
+          # but a reader who believed the old comment could delete them on the
+          # strength of it.
+          #
+          # The four bronze `_all` aggregates are gone from this list because
+          # #170 stops producing them: they duplicated the per-repository files
+          # byte for byte and commits_all.json had reached 80.6% of GitHub's
+          # 100 MiB hard push limit. That is the one case here where the list
+          # was wrong rather than merely mislabelled.
           required = [
-              "bronze/repositories_filtered.json", "bronze/issues_all.json",
-              "bronze/prs_all.json", "bronze/commits_all.json",
-              "bronze/issue_events_all.json", "bronze/members_basic.json",
+              "bronze/repositories_filtered.json",
+              "bronze/members_basic.json",
               "silver/contribution_metrics.json", "silver/collaboration_edges.json",
               "silver/temporal_events.json", "silver/temporal_statistics.json",
               "silver/network_statistics.json",

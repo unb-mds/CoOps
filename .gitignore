@@ -1,6 +1,10 @@
 # Arquivo de secrets para uso local
 .secrets
 .env
+
+# act (docs/local-actions.md): artifact server output and its var file
+.act/
+.vars
 **/__pycache__/
 dashboard/dist/
 dashboard/node_modules/
@@ -10,6 +14,17 @@ dashboard/**.tsbuildinfo
 bin/
 
 cache/
+# Per-repository extraction watermarks (issue #110): machine state that lets a
+# Bronze run fetch only what changed. Not API data and not published output.
+watermarks.json
+# The managed raw corpus (corpus-raw/) is PRIVATE — it holds unmodified API
+# bodies with personal data and must never be committed. corpus-fixtures/ is
+# its sanitized, shareable twin; it is still generated output, so neither is
+# tracked here. Snapshots (scripts/data-snapshot.sh) live OUTSIDE the worktree
+# in $COOPS_SNAPSHOT_DIR (default: ~/.local/share/coops/snapshots), shared
+# across worktrees, so nothing under the repo needs ignoring for them.
+corpus-raw/
+corpus-fixtures/
 # Ignorar arquivos de log
 
 *.log

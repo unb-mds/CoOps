@@ -6,12 +6,25 @@ Tests the full Bronze -> Silver -> Gold data flow.
 
 import pytest
 from datetime import datetime, timedelta
-from freezegun import freeze_time
 from coops.silver.member_analytics import process_member_analytics
 from coops.silver.contribution_metrics import process_contribution_metrics
 from coops.silver.collaboration_networks import process_collaboration_networks
 from coops.silver.temporal_analysis import process_temporal_analysis
 from coops.gold.timeline_aggregation import process_timeline_aggregation
+
+
+def _with_sidecar(members, extracted_at="2025-06-01T00:00:00"):
+    """Bronze members file as save_json_data writes it: sidecar first.
+
+    extracted_at is the capture instant account ages are measured
+    against (#188).
+    """
+    return [
+        {"_metadata": {"extracted_at": extracted_at,
+                       "file_path": "data/bronze/members_detailed.json",
+                       "record_count": len(members)}},
+        *members,
+    ]
 
 
 class TestCompleteETLPipeline:
@@ -185,7 +198,7 @@ class TestCompleteETLPipeline:
         ]
         
         # Populate fake_io with bronze data using correct file names
-        fake_io["data/bronze/members_detailed.json"] = members_data
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar(members_data)
         fake_io["data/bronze/commits_all.json"] = commits_data
         fake_io["data/bronze/issues_all.json"] = issues_data
         fake_io["data/bronze/prs_all.json"] = []
@@ -258,13 +271,12 @@ class TestCompleteETLPipeline:
             assert day["total_events"] >= 0
             assert len(day.get("authors", [])) >= 0
 
-    @freeze_time("2025-06-01")
     def test_member_maturity_classification(self, complete_bronze_dataset, fake_io):
         """Test that member maturity is correctly classified throughout pipeline
 
-        Time is frozen so the age-based ``new`` vs ``established`` assertions
-        stay valid regardless of when the suite runs (fixture ``created_at``
-        dates are hard-coded).
+        Ages are measured against the corpus capture time in the fixture's
+        ``_metadata.extracted_at`` (2025-06-01), so the age-based assertions
+        hold regardless of when the suite runs (#188).
         """
         # Execute member analytics
         process_member_analytics()
@@ -366,7 +378,7 @@ class TestCompleteETLPipeline:
             }
         ]
         
-        fake_io["data/bronze/members_detailed.json"] = initial_members
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar(initial_members)
         fake_io["data/bronze/commits_detailed.json"] = []
         fake_io["data/bronze/issues_detailed.json"] = []
         
@@ -389,7 +401,7 @@ class TestCompleteETLPipeline:
             }
         ]
         
-        fake_io["data/bronze/members_detailed.json"] = updated_members
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar(updated_members)
         
         # Second run
         process_member_analytics()
@@ -399,7 +411,7 @@ class TestCompleteETLPipeline:
     def test_error_propagation_handling(self, fake_io):
         """Test that errors in one layer don't crash the entire pipeline"""
         # Set up valid bronze data
-        fake_io["data/bronze/members_detailed.json"] = [
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar([
             {
                 "login": "test_user",
                 "id": 123,
@@ -410,7 +422,7 @@ class TestCompleteETLPipeline:
                 "created_at": "2023-01-01T00:00:00Z",
                 "updated_at": "2024-01-01T00:00:00Z"
             }
-        ]
+        ])
         fake_io["data/bronze/commits_detailed.json"] = []
         fake_io["data/bronze/issues_detailed.json"] = []
         

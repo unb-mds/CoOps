@@ -18,8 +18,9 @@ jobs:
       gold-completed: ${{ steps.processing.outputs.completed }}
 
     steps:
+      # Not skipped under act: act implements actions/checkout as the copy that
+      # populates the workspace, so skipping it leaves the container empty.
       - name: Checkout repository
-        if: ${{ !env.ACT }}
         uses: actions/checkout@v4
         with:
           # Fetch full history to ensure we have all data files
@@ -233,6 +234,10 @@ jobs:
           path: data/silver/ai/
 
       - name: Commit and push results
+        # Guarded like the Gold commit step above: act runs this workflow with a
+        # real checkout and a real origin, so without this an `act` run would
+        # push to the actual repository.
+        if: ${{ !env.ACT }}
         run: |
           git add data/silver/ai/members_ai.json
 

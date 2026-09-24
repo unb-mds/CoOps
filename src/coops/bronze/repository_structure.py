@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import os
 import logging
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
-from coops.utils.github_api import GitHubAPIClient, OrganizationConfig, save_json_data, load_json_data
+from coops.utils.github_api import GitHubAPIClient, OrganizationConfig, save_json_data, load_json_data, OfflineCacheMiss
+from coops.bronze.watermarks import WatermarkStore
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -12,7 +12,8 @@ logger = logging.getLogger(__name__)
 def extract_repository_structure(
     client: GitHubAPIClient, 
     config: OrganizationConfig, 
-    use_cache: bool = True
+    use_cache: bool = True,
+    watermarks: Optional[WatermarkStore] = None,
 ) -> List[str]:
     """
     Extrai estrutura de arquivos de todos os repositórios filtrados.
@@ -71,6 +72,28 @@ def extract_repository_structure(
         logger.info(f"   Owner: {owner}")
         logger.info(f"   Branch: {default_branch}")
         
+        wm = watermarks.get(full_name) if watermarks is not None else None
+        prior_sha = (wm.head_shas or {}).get(default_branch) if wm else None
+
+        # Incremental extraction (issue #110): a tree only changes when its
+        # branch head moves, so when the head sha is unchanged we reuse the
+        # previous run's structure file instead of re-fetching the (expensive)
+        # tree. The branch-head probe is a single cached request.
+        if prior_sha:
+            branch_data = client.get_with_cache(
+                f"https://api.github.com/repos/{owner}/{name_only}/branches/{default_branch}",
+                use_cache=use_cache,
+            )
+            head_sha = (branch_data or {}).get('commit', {}).get('sha')
+            prior_path = f"data/bronze/structure_{repo_name}.json"
+            if head_sha and head_sha == prior_sha and load_json_data(prior_path) is not None:
+                logger.info(f"   ♻️  Head unchanged ({head_sha[:8]}); reusing {prior_path}")
+                generated_files.append(prior_path)
+                successful += 1
+                if watermarks is not None:
+                    watermarks.update(full_name)
+                continue
+
         try:
             # 🚀 TRY REST FIRST (100x faster)
             logger.info(f"   Method: REST API (recursive=1)")
@@ -127,11 +150,23 @@ def extract_repository_structure(
             
             generated_files.append(output_file)
             successful += 1
+
+            # Record the branch head sha so the next run can skip an unchanged tree.
+            if watermarks is not None and structure.get('sha'):
+                head_shas = dict((wm.head_shas or {}) if wm else {})
+                head_shas[default_branch] = structure['sha']
+                watermarks.update(full_name, head_shas=head_shas)
+            elif watermarks is not None:
+                watermarks.update(full_name)
             
             method = structure.get('method', 'unknown')
             logger.info(f"   ✅ Saved: {output_file}")
             logger.info(f"   📊 Files: {total_items} (method: {method})")
             
+        except OfflineCacheMiss:
+            # An offline replay miss must stop the run, not count this
+            # repository as "failed" and continue (#199).
+            raise
         except Exception as e:
             logger.error(f"   ❌ Error extracting {repo_name}: {str(e)}")
             failed += 1

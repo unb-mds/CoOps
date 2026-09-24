@@ -97,28 +97,46 @@ Para simular GitHub Actions localmente e conectar o frontend aos dados gerados (
 ---
 ## Fluxo de Branches
 
-- `main`: sempre estável.
+- `main`: sempre estável, e recebe **poucos merges verificados** — não um fluxo contínuo.
+- `phase/<épico>-<slug>`: branch de integração de um épico. É **daqui** que sai
+  o trabalho de uma issue, e é esta branch que abre PR para `main` quando o
+  épico está consolidado e testado por inteiro.
 - Branches de feature seguem o padrão:
 
 ```
 main (produção)
-  ├── feat/minha-feature       (novas funcionalidades)
-  ├── fix/nome-do-bug          (correções)
-  ├── docs/nome-da-doc         (documentação)
-  ├── refactor/nome-refactor   (melhoria interna sem mudar comportamento externo)
-  ├── chore/automação-configs  (automação, configs, deps)
-  └── hotfix/correção-urgente  (correções urgentes em produção)
+  └── phase/107-raw-capture          (branch de integração do épico)
+        ├── feat/minha-feature       (novas funcionalidades)
+        ├── fix/nome-do-bug          (correções)
+        ├── refactor/nome-refactor   (melhoria interna sem mudar comportamento externo)
+        └── test/nome-do-teste       (testes)
+```
+
+**Exceção:** um PR de ferramental ou documentação pode ir direto para `main`
+quando o diff **não toca nada em `src/`, `data/` ou `dashboard/`** — definições
+de agente, CI, docs, scripts. Qualquer coisa que toque esses diretórios disputa
+com a branch de fase e precisa passar por ela.
+
+**Antes de começar, sincronize a branch de fase com `main`.** Uma branch de fase
+de vida longa acumula divergência silenciosamente: as regras de teste, o
+`definition-of-done.md` e as instruções dos agentes vivem em `main`, e quem sai
+de uma fase desatualizada trabalha com a versão antiga delas sem nenhum aviso.
+
+```bash
+git checkout phase/<épico>-<slug>
+git merge origin/main          # normalmente só docs; resolva antes de ramificar
 ```
 
 ### Workflow Padrão
 
-1. **Atualizar main:**
+1. **Atualizar a branch de fase:**
    ```bash
-   git checkout main
-   git pull origin main
+   git fetch origin
+   git checkout phase/107-raw-capture
+   git merge origin/main
    ```
 
-2. **Criar branch da feature:**
+2. **Criar branch da feature a partir da fase:**
    ```bash
    git checkout -b feat/issue-42-dashboard-metricas
    ```
@@ -136,11 +154,25 @@ main (produção)
 
 5. **Abrir Pull Request como draft** no GitHub
 
-6. **Validar na organização** (`unb-mds/CoOps`) com o workflow *Validate Pipeline (manual)* e marcar o PR como *Ready for review*. Passo a passo em [docs/TESTING_PULL_REQUESTS.md](docs/TESTING_PULL_REQUESTS.md).
+6. **Validar localmente com `gh act`** e marcar o PR como *Ready for review*.
+   A validação por *dispatch* na organização foi aposentada: os workflows rodam
+   na máquina de quem desenvolve, sem precisar de acesso de escrita a nenhum
+   fork. Passo a passo em [docs/local-actions.md](docs/local-actions.md) e
+   [docs/TESTING_PULL_REQUESTS.md](docs/TESTING_PULL_REQUESTS.md).
 
-7. **Code Review** e aprovação
+   > Use a extensão `gh act`, não o binário `/usr/local/bin/act`, que é uma
+   > build antiga com CVE-2026-34041 e CVE-2026-34042.
 
-8. **Merge** para `main` (via Squash and Merge)
+7. **Code Review** e aprovação — por quem **não** escreveu nem despachou a
+   mudança. A aprovação vale para **um commit**: se a cabeça da branch mudar
+   depois dela, a aprovação caduca e o PR precisa ser revisto de novo.
+
+8. **Merge** para a **branch de fase** (via Squash and Merge). O merge para
+   `main` acontece uma vez, quando a fase inteira está pronta.
+
+   > O corpo do PR de fase→`main` precisa **repetir a lista de `Closes #N`**.
+   > Um `Closes` que dispara contra uma branch de fase é ignorado pelo GitHub e
+   > a palavra-chave é gasta — as issues não fecham sozinhas no merge final.
 
 ---
 ## Commits (Conventional Commits)

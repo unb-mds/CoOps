@@ -7,21 +7,74 @@ Transforms raw member data into analytics-ready metrics
 import pandas as pd
 import numpy as np
 from datetime import datetime
-from typing import List
+from typing import Any, List, Optional
 from coops.utils.github_api import save_json_data, load_json_data, parse_github_date
 
-def calculate_maturity_score(member_data: dict) -> float:
-    """Calculate member maturity score based on various factors"""
+def _parse_capture_time(metadata: Any) -> datetime:
+    """Parse the Bronze sidecar's ``extracted_at`` into a naive datetime.
 
-    # Parse account creation date
+    The capture instant is when the corpus was extracted; it is recorded
+    by ``save_json_data`` as ``_metadata.extracted_at`` in every non-empty
+    Bronze list. When it is missing or unparseable this raises
+    ``ValueError`` rather than guessing, because there is no honest
+    fallback: substituting ``datetime.now()`` reintroduces the wall-clock
+    drift of #188 for exactly the corpora nobody tests, and a fixed
+    absent value (age 0 for every member) would silently publish a
+    corpus-wide lie — every member "new", every score as if the accounts
+    had been created at capture. A corpus with members but no usable
+    capture time is corrupt (hand-edited, written with
+    ``timestamp=False``, or truncated), and corrupt input should stop the
+    run instead of feeding the dashboard. An empty corpus never reaches
+    this function: with no members there is nothing to age.
+    """
+    if not isinstance(metadata, dict):
+        raise ValueError(
+            "members corpus has no usable _metadata sidecar with extracted_at; "
+            "account ages have no capture instant to be measured against (#188)"
+        )
+    raw = metadata.get('extracted_at')
+    if not isinstance(raw, str) or not raw:
+        raise ValueError(
+            f"_metadata.extracted_at is missing or not a string: {raw!r} (#188)"
+        )
+    try:
+        parsed = datetime.fromisoformat(raw.replace('Z', '+00:00'))
+    except ValueError:
+        raise ValueError(
+            f"_metadata.extracted_at is not a parseable timestamp: {raw!r} (#188)"
+        ) from None
+    # created_at is parsed below as a naive wall-clock reading; drop any
+    # offset so the subtraction compares like with like.
+    if parsed.tzinfo is not None:
+        parsed = parsed.replace(tzinfo=None)
+    return parsed
+
+def _account_age_days(member_data: dict, as_of: datetime) -> int:
+    """Whole days between the member's ``created_at`` and ``as_of``.
+
+    ``as_of`` is the corpus capture time, so the value is the member's
+    *age at capture*: fixed by the corpus, not by the day the Silver step
+    happens to run (#188). A member with a missing or unparseable
+    ``created_at`` keeps the row-level absent value 0 — one member's
+    provenance is missing, which is not a reason to fail the whole corpus.
+    """
     if member_data.get('created_at'):
         try:
             created_date = datetime.strptime(member_data['created_at'], '%Y-%m-%dT%H:%M:%SZ')
-            account_age_days = (datetime.now() - created_date).days
+            return (as_of - created_date).days
         except (ValueError, TypeError):
-            account_age_days = 0
-    else:
-        account_age_days = 0
+            return 0
+    return 0
+
+def calculate_maturity_score(member_data: dict, as_of: datetime) -> float:
+    """Calculate member maturity score based on various factors.
+
+    Deterministic in the corpus: ages are measured against ``as_of`` (the
+    capture time), never against the wall clock, so the same corpus scores
+    the same on any day (#188).
+    """
+
+    account_age_days = _account_age_days(member_data, as_of)
 
     # Extract metrics
     public_repos = member_data.get('public_repos', 0)
@@ -34,18 +87,10 @@ def calculate_maturity_score(member_data: dict) -> float:
 
     return age_component + repos_component + followers_component
 
-def classify_member_status(member_data: dict) -> str:
-    """Classify member as new or established"""
+def classify_member_status(member_data: dict, as_of: datetime) -> str:
+    """Classify member as new or established, as of the capture time (#188)"""
 
-    # Parse account creation date
-    if member_data.get('created_at'):
-        try:
-            created_date = datetime.strptime(member_data['created_at'], '%Y-%m-%dT%H:%M:%SZ')
-            account_age_days = (datetime.now() - created_date).days
-        except (ValueError, TypeError):
-            account_age_days = 0
-    else:
-        account_age_days = 0
+    account_age_days = _account_age_days(member_data, as_of)
 
     public_repos = member_data.get('public_repos', 0)
     followers = member_data.get('followers', 0)
@@ -57,7 +102,18 @@ def classify_member_status(member_data: dict) -> str:
         return 'established'
 
 def process_member_analytics() -> List[str]:
-    """Process member data into analytics format"""
+    """Process member data into analytics format
+
+    Ages, and everything derived from them (``account_age_days``,
+    ``maturity_score``, ``status``), are *ages at capture*: measured
+    against the extraction timestamp in the Bronze sidecar
+    (``_metadata.extracted_at``), never against the wall clock, so
+    ``members_analytics.json`` is byte-stable for a given corpus (#188).
+    A corpus that carries members but no usable ``extracted_at`` raises
+    ``ValueError`` — see ``_parse_capture_time`` for why nothing is
+    guessed. A corpus with no members writes the empty artifacts as
+    before; it needs no capture time.
+    """
 
     # Load bronze member data. members_analytics.json is always written (an
     # empty list when there are no members), so the dashboard can tell "no
@@ -66,8 +122,11 @@ def process_member_analytics() -> List[str]:
     if not members_data:
         print("No member data found in bronze layer")
 
-    # Skip metadata entry if present
+    # Skip the metadata entry if present, keeping the capture instant it
+    # records: it is the reference every account age is measured against.
+    capture_time: Optional[datetime] = None
     if isinstance(members_data, list) and len(members_data) > 0 and '_metadata' in members_data[0]:
+        capture_time = _parse_capture_time(members_data[0].get('_metadata'))
         members_data = members_data[1:]
 
     # Maturity and status need the member's profile; members whose profile
@@ -79,28 +138,33 @@ def process_member_analytics() -> List[str]:
 
     processed_members = []
 
-    for member in members_data:
-        maturity_score = calculate_maturity_score(member)
-        status = classify_member_status(member)
-
-        # Create processed member record
-        processed_member = {
-            'login': member.get('login'),
-            'id': member.get('id'),
-            'name': member.get('name'),
-            'public_repos': member.get('public_repos', 0),
-            'followers': member.get('followers', 0),
-            'following': member.get('following', 0),
-            'created_at': member.get('created_at'),
-            'updated_at': member.get('updated_at'),
-            'maturity_score': maturity_score,
-            'status': status,
-            'account_age_days': (
-                (datetime.now() - datetime.strptime(member['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days
-                if member.get('created_at') else 0
+    if members_data:
+        if capture_time is None:
+            raise ValueError(
+                "data/bronze/members_detailed.json carries members but no "
+                "_metadata sidecar with extracted_at, so account ages have "
+                "no capture instant to be measured against (#188); refusing "
+                "to measure them against the wall clock"
             )
-        }
-        processed_members.append(processed_member)
+        for member in members_data:
+            maturity_score = calculate_maturity_score(member, capture_time)
+            status = classify_member_status(member, capture_time)
+
+            # Create processed member record
+            processed_member = {
+                'login': member.get('login'),
+                'id': member.get('id'),
+                'name': member.get('name'),
+                'public_repos': member.get('public_repos', 0),
+                'followers': member.get('followers', 0),
+                'following': member.get('following', 0),
+                'created_at': member.get('created_at'),
+                'updated_at': member.get('updated_at'),
+                'maturity_score': maturity_score,
+                'status': status,
+                'account_age_days': _account_age_days(member, capture_time)
+            }
+            processed_members.append(processed_member)
 
     generated_files = []
 

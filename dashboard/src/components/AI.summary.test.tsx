@@ -25,6 +25,7 @@ const mockMembersResponse: Record<string, unknown> = {
   _metadata: { generatedAt: '2024-01-01', version: '1.0' },
   members: {
     alice: {
+      id: 'alice',
       name: 'Alice',
       repos: ['repo-alpha', 'repo-beta'],
       commits_analysis: 'Alice commits summary',
@@ -32,6 +33,7 @@ const mockMembersResponse: Record<string, unknown> = {
       issues_analysis: 'Alice issues summary',
     },
     bob: {
+      id: 'bob',
       name: 'Bob',
       repos: ['repo-beta'],
       commits_analysis: 'Bob commits summary',
@@ -39,6 +41,7 @@ const mockMembersResponse: Record<string, unknown> = {
       issues_analysis: 'Bob issues summary',
     },
     charlie: {
+      id: 'charlie',
       name: 'Charlie',
       repos: ['repo-alpha', 'Repo-Beta'],
       commits_analysis: 'Charlie commits summary',
@@ -172,7 +175,8 @@ describe('AISummary Component', () => {
   });
 
   test('reads the members_ai.json shape produced by the pipeline', async () => {
-    // Trimmed, anonymized sample of the real silver/ai/members_ai.json
+    // Trimmed, anonymized sample of the real silver/ai/members_ai.json,
+    // plus the `id` the dashboard requires since the identity/display split
     mockFetchData.mockResolvedValue({
       _metadata: {
         total_members: 2,
@@ -182,6 +186,7 @@ describe('AISummary Component', () => {
       },
       members: {
         'member-a': {
+          id: 'member-a',
           name: 'member-a',
           repos: ['2026-2-Squad-X'],
           commits_analysis:
@@ -190,6 +195,7 @@ describe('AISummary Component', () => {
           issues_analysis: 'O membro não registrou nenhuma issue (Total de issues: 0).',
         },
         'member-b': {
+          id: 'member-b',
           name: 'member-b',
           repos: ['2026-2-Squad-X', '2025-1-Squad-Y'],
           commits_analysis: 'Commits de member-b',
@@ -668,6 +674,7 @@ describe('AISummary Component', () => {
     const singleMemberData: Record<string, unknown> = {
       members: {
         alice: {
+          id: 'alice',
           name: 'Alice',
           repos: ['only-repo'],
           commits_analysis: 'x',
@@ -721,6 +728,187 @@ describe('AISummary Component', () => {
 
     await waitFor(() => {
       expect(mockFetchData).toHaveBeenCalledWith('silver/ai/members_ai.json');
+    });
+  });
+
+  // 12. Identity is `id`, not the display name (issue #151): several people
+  // share one name string, and none of them may merge into the other.
+  describe('identity keyed on id, not the display name', () => {
+    const sameNameDifferentId: Record<string, unknown> = {
+      members: {
+        'lucas-a': {
+          id: 'lucas-a',
+          name: 'Lucas Gomes',
+          repos: ['repo-one'],
+          commits_analysis: 'Commits de lucas-a',
+          prs_analysis: 'PRs de lucas-a',
+          issues_analysis: 'Issues de lucas-a',
+        },
+        'lucas-b': {
+          id: 'lucas-b',
+          name: 'Lucas Gomes',
+          repos: ['repo-two'],
+          commits_analysis: 'Commits de lucas-b',
+          prs_analysis: 'PRs de lucas-b',
+          issues_analysis: 'Issues de lucas-b',
+        },
+      },
+    };
+
+    test('renders two members sharing one display name as two rows', async () => {
+      mockFetchData.mockResolvedValue(sameNameDifferentId);
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+
+      expect(await screen.findAllByText('Lucas Gomes')).toHaveLength(2);
+      expect(screen.getByText('2 members found')).toBeInTheDocument();
+    });
+
+    test('selecting one same-named member selects only that member', async () => {
+      mockFetchData.mockResolvedValue(sameNameDifferentId);
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+      const rows = (await screen.findAllByText('Lucas Gomes')).map(
+        heading => heading.closest('button')!
+      );
+      expect(rows).toHaveLength(2);
+
+      fireEvent.click(rows[0]);
+
+      expect(screen.getByText('Selected Analyses (1)')).toBeInTheDocument();
+      expect(screen.getByText('Commits de lucas-a')).toBeInTheDocument();
+      expect(screen.queryByText('Commits de lucas-b')).not.toBeInTheDocument();
+
+      // The second click must ADD the other person, not toggle the shared name off
+      fireEvent.click(rows[1]);
+
+      expect(screen.getByText('Selected Analyses (2)')).toBeInTheDocument();
+      expect(screen.getByText('Commits de lucas-a')).toBeInTheDocument();
+      expect(screen.getByText('Commits de lucas-b')).toBeInTheDocument();
+    });
+
+    test('the selection highlight marks only the selected same-named row', async () => {
+      mockFetchData.mockResolvedValue(sameNameDifferentId);
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+      const rows = (await screen.findAllByText('Lucas Gomes')).map(
+        heading => heading.closest('button')!
+      );
+
+      fireEvent.click(rows[0]);
+
+      expect(rows[0]).toHaveStyle({ backgroundColor: 'rgba(59, 130, 246, 0.2)' });
+      expect(rows[1]).not.toHaveStyle({ backgroundColor: 'rgba(59, 130, 246, 0.2)' });
+    });
+
+    test('removing one selected card keeps its same-named sibling', async () => {
+      mockFetchData.mockResolvedValue(sameNameDifferentId);
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+      const rows = (await screen.findAllByText('Lucas Gomes')).map(
+        heading => heading.closest('button')!
+      );
+      fireEvent.click(rows[0]);
+      fireEvent.click(rows[1]);
+      expect(screen.getByText('Selected Analyses (2)')).toBeInTheDocument();
+
+      const removeButtons = screen.getAllByTitle('Remove');
+      expect(removeButtons).toHaveLength(2);
+      fireEvent.click(removeButtons[0]);
+
+      expect(screen.getByText('Selected Analyses (1)')).toBeInTheDocument();
+      expect(screen.getByText('Commits de lucas-b')).toBeInTheDocument();
+      expect(screen.queryByText('Commits de lucas-a')).not.toBeInTheDocument();
+    });
+
+    test('does not render duplicate React keys when two members share a name', async () => {
+      mockFetchData.mockResolvedValue(sameNameDifferentId);
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+
+      expect(await screen.findAllByText('Lucas Gomes')).toHaveLength(2);
+
+      const duplicateKeyWarnings = consoleErrorSpy.mock.calls
+        .map(call => String(call[0]))
+        .filter(message => message.includes('same key'));
+      expect(duplicateKeyWarnings).toEqual([]);
+    });
+
+    test('the type guard rejects members without an id', async () => {
+      mockFetchData.mockResolvedValue({
+        members: {
+          ok: {
+            id: 'ok-1',
+            name: 'Has Id',
+            repos: [],
+            commits_analysis: 'ok commits',
+            prs_analysis: 'ok prs',
+            issues_analysis: 'ok issues',
+          },
+          noid: {
+            name: 'No Id',
+            repos: [],
+            commits_analysis: 'x',
+            prs_analysis: 'y',
+            issues_analysis: 'z',
+          },
+          emptyid: {
+            id: '',
+            name: 'Empty Id',
+            repos: [],
+            commits_analysis: 'x',
+            prs_analysis: 'y',
+            issues_analysis: 'z',
+          },
+        },
+      });
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+
+      expect(await screen.findByText('Has Id')).toBeInTheDocument();
+      expect(screen.getByText('1 member found')).toBeInTheDocument();
+      expect(screen.queryByText('No Id')).not.toBeInTheDocument();
+      expect(screen.queryByText('Empty Id')).not.toBeInTheDocument();
+    });
+
+    test('search still filters on the display name, not the id', async () => {
+      mockFetchData.mockResolvedValue(sameNameDifferentId);
+
+      renderWithRouter(<AISummary />);
+
+      fireEvent.click(screen.getByText('AI Analysis').closest('button')!);
+      await screen.findAllByText('Lucas Gomes');
+
+      const searchInput = screen.getByPlaceholderText('Type a name...');
+
+      // Both same-named members match the shared display name
+      fireEvent.change(searchInput, { target: { value: 'lucas' } });
+      await waitFor(() => {
+        expect(screen.getByText('2 members found')).toBeInTheDocument();
+      });
+
+      fireEvent.change(searchInput, { target: { value: 'gomes' } });
+      await waitFor(() => {
+        expect(screen.getByText('2 members found')).toBeInTheDocument();
+      });
+
+      // The id must not be what is searched
+      fireEvent.change(searchInput, { target: { value: 'lucas-a' } });
+      await waitFor(() => {
+        expect(screen.getByText('No members found')).toBeInTheDocument();
+      });
     });
   });
 });

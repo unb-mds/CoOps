@@ -38,6 +38,7 @@ describe('AIAnalysis page', () => {
       _metadata: { total_members: 1 },
       members: {
         'member-a': {
+          id: 'member-a',
           name: 'member-a',
           repos: ['repo-x'],
           commits_analysis: 'c',

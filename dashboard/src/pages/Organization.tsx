@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import DashboardLayout from '../components/DashboardLayout';
 import Loading from '../components/Loading';
-import DataNotGenerated, { DataLoadError } from '../components/DataNotGenerated';
+import DataNotGenerated, { DataLoadError, DataNotConfigured } from '../components/DataNotGenerated';
 import { PieChart, ScatterPlot, Histogram } from '../components/charts';
-import { fetchData, filterMetadata, isDataNotFoundError } from '../services/dataSource';
+import { fetchData, filterMetadata, isDataNotFoundError, isDataUnconfiguredError } from '../services/dataSource';
 
 interface MemberAnalytics {
   login: string;
@@ -34,6 +34,7 @@ export default function Organization() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [missingDataPath, setMissingDataPath] = useState<string | null>(null);
+  const [notConfigured, setNotConfigured] = useState(false);
 
   useEffect(() => {
     async function loadData() {
@@ -49,6 +50,8 @@ export default function Organization() {
       } catch (error) {
         if (isDataNotFoundError(error)) {
           setMissingDataPath(error.path);
+        } else if (isDataUnconfiguredError(error)) {
+          setNotConfigured(true);
         } else {
           console.error('Failed to load organization data:', error);
           setError(error instanceof Error ? error.message : String(error));
@@ -94,10 +97,12 @@ export default function Organization() {
     );
   }
 
-  if (missingDataPath || error) {
+  if (notConfigured || missingDataPath || error) {
     return (
       <DashboardLayout currentPage="organization" currentSubPage="" onRepo={false}>
-        {missingDataPath ? (
+        {notConfigured ? (
+          <DataNotConfigured />
+        ) : missingDataPath ? (
           <DataNotGenerated path={missingDataPath} />
         ) : (
           <DataLoadError message={error ?? ''} />

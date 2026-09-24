@@ -12,13 +12,27 @@ from coops.silver.temporal_analysis import process_temporal_analysis
 from coops.gold.timeline_aggregation import process_timeline_aggregation
 
 
+def _with_sidecar(members):
+    """Bronze members file as save_json_data writes it: sidecar first.
+
+    extracted_at is the capture instant account ages are measured
+    against (#188).
+    """
+    return [
+        {"_metadata": {"extracted_at": "2025-01-01T00:00:00",
+                       "file_path": "data/bronze/members_detailed.json",
+                       "record_count": len(members)}},
+        *members,
+    ]
+
+
 class TestProcessScriptsIntegration:
     """Test suite for main process scripts integration"""
 
     @pytest.fixture
     def minimal_bronze_data(self, fake_io):
         """Create minimal bronze data for process scripts"""
-        fake_io["data/bronze/members_detailed.json"] = [
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar([
             {
                 "login": "process_test_user",
                 "id": 9999,
@@ -29,7 +43,7 @@ class TestProcessScriptsIntegration:
                 "created_at": "2023-01-01T00:00:00Z",
                 "updated_at": "2024-01-01T00:00:00Z"
             }
-        ]
+        ])
         
         fake_io["data/bronze/commits_all.json"] = [
             {
@@ -178,7 +192,7 @@ class TestDataFlowBetweenProcesses:
     def test_data_flows_from_bronze_to_silver(self, fake_io):
         """Test that data flows correctly from bronze to silver"""
         # Setup bronze data
-        fake_io["data/bronze/members_detailed.json"] = [
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar([
             {
                 "login": "flow_test_user",
                 "id": 8888,
@@ -189,7 +203,7 @@ class TestDataFlowBetweenProcesses:
                 "created_at": "2022-01-01T00:00:00Z",
                 "updated_at": "2024-01-01T00:00:00Z"
             }
-        ]
+        ])
         
         # Process to silver
         process_member_analytics()
@@ -244,7 +258,7 @@ class TestDataFlowBetweenProcesses:
     def test_bronze_updates_trigger_silver_updates(self, fake_io):
         """Test that updating bronze data triggers silver re-processing"""
         # Initial bronze data
-        fake_io["data/bronze/members_detailed.json"] = [
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar([
             {
                 "login": "initial_user",
                 "id": 7777,
@@ -255,7 +269,7 @@ class TestDataFlowBetweenProcesses:
                 "created_at": "2023-01-01T00:00:00Z",
                 "updated_at": "2024-01-01T00:00:00Z"
             }
-        ]
+        ])
         
         # First processing
         process_member_analytics()
@@ -263,7 +277,7 @@ class TestDataFlowBetweenProcesses:
         assert len(first_result) == 1
         
         # Update bronze with new user
-        fake_io["data/bronze/members_detailed.json"] = [
+        fake_io["data/bronze/members_detailed.json"] = _with_sidecar([
             {
                 "login": "initial_user",
                 "id": 7777,
@@ -284,7 +298,7 @@ class TestDataFlowBetweenProcesses:
                 "created_at": "2023-06-01T00:00:00Z",
                 "updated_at": "2024-01-01T00:00:00Z"
             }
-        ]
+        ])
         
         # Re-process
         process_member_analytics()
