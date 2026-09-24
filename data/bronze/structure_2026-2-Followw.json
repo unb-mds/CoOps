@@ -2,13 +2,13 @@
   "owner": "unb-mds",
   "repository": "2026-2-Followw",
   "branch": "main",
-  "sha": "bfd01446eb65f6411126eaa65fb406caec0e6e97",
+  "sha": "13060d3b24f5b47997015ad4b797b7148441e4bc",
   "tree": [
     {
       "name": ".agents",
       "path": ".agents",
       "type": "directory",
-      "sha": "0f7b8f3d0cca1f88c0f8b3a768f18130898ab7ca",
+      "sha": "b20e79840f91fa629de256a11af50291307e61dc",
       "mode": "040000",
       "children": []
     },
@@ -16,7 +16,7 @@
       "name": "skills",
       "path": ".agents/skills",
       "type": "directory",
-      "sha": "3a8957d3bc7a673e4f305d74992fab03c8b2445f",
+      "sha": "ecd9f2f24f74a8df1b360560ab483472d7c0d4fb",
       "mode": "040000",
       "children": []
     },
@@ -74,6 +74,24 @@
       "mode": "100644",
       "extension": ".yaml",
       "size": 102,
+      "is_binary": false
+    },
+    {
+      "name": "scalar-docs",
+      "path": ".agents/skills/scalar-docs",
+      "type": "directory",
+      "sha": "212bf221914903ba191512cfd5aabf7ea5e74275",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".agents/skills/scalar-docs/SKILL.md",
+      "type": "file",
+      "sha": "253c4dc5c31afbedfca7c998e8ffb6a4bea0e2be",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 14046,
       "is_binary": false
     },
     {
@@ -144,7 +162,7 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "e1a5fcd64b579af8d8ff32706d5176633f1243b6",
+      "sha": "4d7e6912d138bb173d0a53dc3afe6b551aa7fc80",
       "mode": "040000",
       "children": []
     },
@@ -197,13 +215,31 @@
       "is_binary": false
     },
     {
+      "name": "workflows",
+      "path": ".github/workflows",
+      "type": "directory",
+      "sha": "a2ac2cf44f318d1f1ef0101b5428d887737c5f3c",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "ci.yml",
+      "path": ".github/workflows/ci.yml",
+      "type": "file",
+      "sha": "2941c38b23425323e13cc7f30e9f3ac874191d23",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 861,
+      "is_binary": false
+    },
+    {
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "6cd9851645d1c9239fbeb5c92d0d495c4dc6028b",
+      "sha": "ee58ebbf967d35e9ae51849a8cdc2192da9f8ee2",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 60,
+      "size": 59,
       "is_binary": false
     },
     {
@@ -228,20 +264,10 @@
       "name": "AGENTS.md",
       "path": "AGENTS.md",
       "type": "file",
-      "sha": "bad5e60af7656be030b8cfce2fce734ae89ef2d8",
+      "sha": "a7cde8e849d24137002c8c3d7129e09afbf32c93",
       "mode": "100644",
       "extension": ".md",
-      "size": 2212,
-      "is_binary": false
-    },
-    {
-      "name": "CLAUDE.md",
-      "path": "CLAUDE.md",
-      "type": "file",
-      "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
-      "mode": "120000",
-      "extension": ".md",
-      "size": 9,
+      "size": 2224,
       "is_binary": false
     },
     {
@@ -268,7 +294,7 @@
       "name": "apps",
       "path": "apps",
       "type": "directory",
-      "sha": "a1315ded1f478e2e07730a115149642c0ccecd0c",
+      "sha": "5c18b973a848b87b486d0905066d8265d6eb334c",
       "mode": "040000",
       "children": []
     },
@@ -276,7 +302,7 @@
       "name": "api",
       "path": "apps/api",
       "type": "directory",
-      "sha": "03f418b3a2b63c7e5a8744898778cc60c0c086ed",
+      "sha": "9526ca6b15279c31d9f45a53362f5c5407605a55",
       "mode": "040000",
       "children": []
     },
@@ -311,20 +337,10 @@
       "is_binary": false
     },
     {
-      "name": "CLAUDE.md",
-      "path": "apps/api/CLAUDE.md",
-      "type": "file",
-      "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
-      "mode": "120000",
-      "extension": ".md",
-      "size": 9,
-      "is_binary": false
-    },
-    {
       "name": "api",
       "path": "apps/api/api",
       "type": "directory",
-      "sha": "0db913abc4c93bbcbd907a5cc14ae9707bf4d018",
+      "sha": "5ac05158b84f1d22ef0fe355e5c9d5c3e1a9d41e",
       "mode": "040000",
       "children": []
     },
@@ -476,10 +492,10 @@
       "name": "main.py",
       "path": "apps/api/api/main.py",
       "type": "file",
-      "sha": "c8de1877a78df20184eacdf8b3fb2a3fc75429cd",
+      "sha": "88f1dd242b891dfa4e718753fd9edf41673b0d17",
       "mode": "100644",
       "extension": ".py",
-      "size": 945,
+      "size": 2604,
       "is_binary": false
     },
     {
@@ -660,17 +676,17 @@
       "name": "pyproject.toml",
       "path": "apps/api/pyproject.toml",
       "type": "file",
-      "sha": "6d7f02530d9c4a69105b0fb629966e2db1eff91d",
+      "sha": "f183add24eefe11b09643c6d51f9bd53f4feeffe",
       "mode": "100644",
       "extension": ".toml",
-      "size": 940,
+      "size": 848,
       "is_binary": false
     },
     {
       "name": "tests",
       "path": "apps/api/tests",
       "type": "directory",
-      "sha": "82dc12bf97b80fb043e64e5196d7c416fcc1f8a5",
+      "sha": "9b4845bc8ec7bd8c1f0270c6511f92475edd1f83",
       "mode": "040000",
       "children": []
     },
@@ -738,10 +754,10 @@
       "name": "test_main.py",
       "path": "apps/api/tests/test_main.py",
       "type": "file",
-      "sha": "2e3b26e79ecab0522d3005738f8d5ebf8e1a0475",
+      "sha": "2c7e3f784c619084ecfccc7886cceb50bac25c0e",
       "mode": "100644",
       "extension": ".py",
-      "size": 840,
+      "size": 1129,
       "is_binary": false
     },
     {
@@ -1110,7 +1126,7 @@
       "name": "packages",
       "path": "packages",
       "type": "directory",
-      "sha": "4d2be9e8ff367186f122037187e215618b4bf073",
+      "sha": "7026d752f7afd24dc199678582c0d3d951c270de",
       "mode": "040000",
       "children": []
     },
@@ -1118,7 +1134,7 @@
       "name": "sigaa-client",
       "path": "packages/sigaa-client",
       "type": "directory",
-      "sha": "f15a2d972ae023cd413ef9cdaf1284483d09a33b",
+      "sha": "e6ca70d80f55b12a4c758aa2a44846d07bec2bc0",
       "mode": "040000",
       "children": []
     },
@@ -1130,16 +1146,6 @@
       "mode": "100644",
       "extension": ".md",
       "size": 8631,
-      "is_binary": false
-    },
-    {
-      "name": "CLAUDE.md",
-      "path": "packages/sigaa-client/CLAUDE.md",
-      "type": "file",
-      "sha": "47dc3e3d863cfb5727b87d785d09abf9743c0a72",
-      "mode": "120000",
-      "extension": ".md",
-      "size": 9,
       "is_binary": false
     },
     {
@@ -1156,10 +1162,10 @@
       "name": "pyproject.toml",
       "path": "packages/sigaa-client/pyproject.toml",
       "type": "file",
-      "sha": "c5542fd917fc325e78343bff2c7ae33c38035b45",
+      "sha": "edfbace37e20947ac2db6b15ab3ed560f053547c",
       "mode": "100644",
       "extension": ".toml",
-      "size": 777,
+      "size": 685,
       "is_binary": false
     },
     {
@@ -1441,50 +1447,278 @@
       "is_binary": false
     },
     {
+      "name": "unb-browser",
+      "path": "packages/unb-browser",
+      "type": "directory",
+      "sha": "0a0587b921233a93cbda52b8889540afd1c7b328",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AGENTS.md",
+      "path": "packages/unb-browser/AGENTS.md",
+      "type": "file",
+      "sha": "16b8c5928a1e9d6734f62f3d396e156bbaf0564a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4963,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "packages/unb-browser/README.md",
+      "type": "file",
+      "sha": "d94df26729d061e258086233562fe68e8880a1ce",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4849,
+      "is_binary": false
+    },
+    {
+      "name": "pyproject.toml",
+      "path": "packages/unb-browser/pyproject.toml",
+      "type": "file",
+      "sha": "6c4c4f945c44aab82667102fa487d23f8bd6fa68",
+      "mode": "100644",
+      "extension": ".toml",
+      "size": 657,
+      "is_binary": false
+    },
+    {
+      "name": "tests",
+      "path": "packages/unb-browser/tests",
+      "type": "directory",
+      "sha": "4e384dbd8f1f72ffa14f6c1730bbb6ef477b76a1",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "fixtures",
+      "path": "packages/unb-browser/tests/fixtures",
+      "type": "directory",
+      "sha": "cc5121d907970bbaa7289ac9820e7a496d3e46e4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "cardapio-darcy.pdf",
+      "path": "packages/unb-browser/tests/fixtures/cardapio-darcy.pdf",
+      "type": "file",
+      "sha": "dfd6e154f521fd096686098b79181ef8f8bb03b2",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 504923,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio-fazenda.pdf",
+      "path": "packages/unb-browser/tests/fixtures/cardapio-fazenda.pdf",
+      "type": "file",
+      "sha": "faec6487d1ab4e6bc2baa43a156cf6bd3cdc4787",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 469656,
+      "is_binary": false
+    },
+    {
+      "name": "test_restaurant.py",
+      "path": "packages/unb-browser/tests/test_restaurant.py",
+      "type": "file",
+      "sha": "f3134e9f001a833964d7f2a47a749aa9af3cdc82",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7226,
+      "is_binary": false
+    },
+    {
+      "name": "unb_browser",
+      "path": "packages/unb-browser/unb_browser",
+      "type": "directory",
+      "sha": "00554b38fff34d32d47ae31f0e508f7a9d3768fd",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/unb-browser/unb_browser/__init__.py",
+      "type": "file",
+      "sha": "5577524fb32cfb2901973df428bfb3d792eb247b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 307,
+      "is_binary": false
+    },
+    {
+      "name": "browser.py",
+      "path": "packages/unb-browser/unb_browser/browser.py",
+      "type": "file",
+      "sha": "993a8cd9ab1bee2d493481d177228b56cb5d4073",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 821,
+      "is_binary": false
+    },
+    {
+      "name": "config.py",
+      "path": "packages/unb-browser/unb_browser/config.py",
+      "type": "file",
+      "sha": "98651ef9f03c1e6c92a5f6ba8a61046c79c2e534",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 210,
+      "is_binary": false
+    },
+    {
+      "name": "exceptions.py",
+      "path": "packages/unb-browser/unb_browser/exceptions.py",
+      "type": "file",
+      "sha": "ae79f9e3da38f7ddcac51e8faf466ef5af7b5a93",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 211,
+      "is_binary": false
+    },
+    {
+      "name": "restaurant",
+      "path": "packages/unb-browser/unb_browser/restaurant",
+      "type": "directory",
+      "sha": "f366d469cc0d051f1bd10d13247167b7db18f679",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/unb-browser/unb_browser/restaurant/__init__.py",
+      "type": "file",
+      "sha": "495cc43c122096913e54d1da4006e56ff1771c32",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 182,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "packages/unb-browser/unb_browser/restaurant/models.py",
+      "type": "file",
+      "sha": "dc68a3cdaa8ab5a9f1d49046b948c3a5313e4dad",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1426,
+      "is_binary": false
+    },
+    {
+      "name": "pdf.py",
+      "path": "packages/unb-browser/unb_browser/restaurant/pdf.py",
+      "type": "file",
+      "sha": "6d3c959f43fbd906447fc87febff65e52840a12a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7250,
+      "is_binary": false
+    },
+    {
+      "name": "resource.py",
+      "path": "packages/unb-browser/unb_browser/restaurant/resource.py",
+      "type": "file",
+      "sha": "26eb21dbe8d1bef1495f2c1cd32ec052e06d00e4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2067,
+      "is_binary": false
+    },
+    {
+      "name": "utils",
+      "path": "packages/unb-browser/unb_browser/utils",
+      "type": "directory",
+      "sha": "8024b3f4475946ff8e57af5bd093ed9f19822a1e",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/unb-browser/unb_browser/utils/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "http.py",
+      "path": "packages/unb-browser/unb_browser/utils/http.py",
+      "type": "file",
+      "sha": "367892882243a59bbe164465e31b963622eecb8b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 453,
+      "is_binary": false
+    },
+    {
+      "name": "parsing.py",
+      "path": "packages/unb-browser/unb_browser/utils/parsing.py",
+      "type": "file",
+      "sha": "1f5525856b7ed0accd3deaf77c6a1ff7b54f8fb1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 429,
+      "is_binary": false
+    },
+    {
       "name": "pyproject.toml",
       "path": "pyproject.toml",
       "type": "file",
-      "sha": "617857959359533d1cf6d216d221cabc38496117",
+      "sha": "82db555be01b3aea55be37af178a18ff905afd96",
       "mode": "100644",
       "extension": ".toml",
-      "size": 857,
+      "size": 967,
+      "is_binary": false
+    },
+    {
+      "name": "scalar.config.json",
+      "path": "scalar.config.json",
+      "type": "file",
+      "sha": "ba697fd9aa4ddb5dd310e7ebabc41e4c54ff5b3b",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 458,
       "is_binary": false
     },
     {
       "name": "skills-lock.json",
       "path": "skills-lock.json",
       "type": "file",
-      "sha": "f0ca6de46df343c541028f15d01491492ba075ab",
+      "sha": "8c829753fbb6ed197ba23b15d24b9845a513e283",
       "mode": "100644",
       "extension": ".json",
-      "size": 529,
+      "size": 767,
       "is_binary": false
     },
     {
       "name": "uv.lock",
       "path": "uv.lock",
       "type": "file",
-      "sha": "e62fdbdb9338a1a5d4d1b788f7985d5c9db0ef18",
+      "sha": "136f46284ac6b50e0e1aca545a13614b7e350da5",
       "mode": "100644",
       "extension": ".lock",
-      "size": 274434,
+      "size": 313598,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-24T10:53:05.543160",
+  "extracted_at": "2026-09-24T22:51:00.543746",
   "method": "rest",
-  "total_items": 155,
+  "total_items": 180,
   "repository_metadata": {
     "id": 1338350948,
     "full_name": "unb-mds/2026-2-Followw",
     "description": "O Followw é uma nova forma de usar o SIGAA UnB.",
     "created_at": "2026-08-18T11:57:01Z",
-    "updated_at": "2026-09-23T05:37:52Z",
+    "updated_at": "2026-09-24T21:11:22Z",
     "language": "Python",
-    "size": 362,
+    "size": 947,
     "stars": 5,
     "forks": 0,
-    "open_issues": 12
+    "open_issues": 9
   }
 }

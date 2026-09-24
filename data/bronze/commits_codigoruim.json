@@ -1,7 +1,7 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-24T10:47:56.428459",
+      "extracted_at": "2026-09-24T22:47:08.008420",
       "file_path": "data/bronze/commits_codigoruim.json",
       "record_count": 2
     }
@@ -11,13 +11,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Carla Rocha",
         "date": "2026-08-12T16:14:28Z",
-        "login": "RochaCarla"
+        "login": "RochaCarla",
+        "id": 5897389,
+        "author_email_hash": "688f4c1151d43fb41aaa51ae158dec701c1b6bbcc4b7e36f0bbb2d46a303cc70"
       },
-      "message": "Habilita o GitHub Pages pelo próprio workflow"
+      "committer": {
+        "name": "Carla Rocha",
+        "date": "2026-08-12T16:14:28Z"
+      },
+      "message": "Habilita o GitHub Pages pelo próprio workflow\n\nA primeira execução falhou em actions/configure-pages porque o Pages ainda\nnão estava habilitado no repositório. O parâmetro enablement: true faz a\naction ligá-lo pela API usando a permissão pages: write já concedida ao\nworkflow, evitando a configuração manual em Settings.\n\nCo-Authored-By: Claude Opus 5 (1M context) <[email removed]>"
     },
+    "parents": [
+      "3d4ed5659a32f2a736caa4d52bc17f2d5a8bf8c7"
+    ],
     "additions": 10,
     "deletions": 3,
     "total_changes": 13,
@@ -28,13 +36,19 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Carla Rocha",
         "date": "2026-08-12T16:06:49Z",
-        "login": "RochaCarla"
+        "login": "RochaCarla",
+        "id": 5897389,
+        "author_email_hash": "688f4c1151d43fb41aaa51ae158dec701c1b6bbcc4b7e36f0bbb2d46a303cc70"
       },
-      "message": "Visualizador STL em WebGL"
+      "committer": {
+        "name": "Carla Rocha",
+        "date": "2026-08-12T16:06:49Z"
+      },
+      "message": "Visualizador STL em WebGL\n\nAplicação estática que abre arquivos STL no navegador e renderiza o modelo 3D\ncom three.js. Nenhum arquivo sai da máquina do usuário: a leitura acontece via\nFileReader e a renderização, via WebGL.\n\n- Parser próprio de STL binário e ASCII, com detecção de formato por tamanho\n  declarado e a extensão de cor por face do VisCAM/SolidView (COLOR=).\n- Três modos de interação: orbitar a câmera, arrastar o modelo pelo espaço e\n  girá-lo em torno do próprio centro; o raycast decide se o arrasto pertence\n  ao modelo ou à câmera.\n- Estatísticas da malha: triângulos, vértices, dimensões, volume (soma de\n  tetraedros com sinal) e área de superfície.\n- Wireframe, sombreamento suave, cor do material, grade adaptativa, eixos,\n  caixa envolvente, sombra projetada e conversão Z-up para Y-up.\n- Arrastar e soltar, atalhos de teclado, exportar PNG, tela cheia, layout\n  responsivo e carregamento por URL via ?model=.\n\nSem etapa de build: o repositório é o próprio site, com caminhos relativos\npara funcionar em subdiretório do GitHub Pages.\n\nCo-Authored-By: Claude Opus 5 (1M context) <[email removed]>"
     },
+    "parents": [],
     "additions": 1586,
     "deletions": 0,
     "total_changes": 1586,

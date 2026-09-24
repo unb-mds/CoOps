@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T11:06:37.558246",
+  "generated_at": "2026-09-24T22:51:05.917691",
   "bronze_layer": {
     "description": "Raw data extracted directly from GitHub API",
     "entities": {
@@ -8,10 +8,10 @@
       "repositories_detailed.json": "Detailed repository information with additional metadata",
       "members_basic.json": "Basic organization member information",
       "members_detailed.json": "Detailed member profiles with statistics",
-      "issues_all.json": "All issues across repositories",
-      "prs_all.json": "All pull requests across repositories",
-      "commits_all.json": "All commits across repositories",
-      "issue_events_all.json": "All issue-related events (comments, labels, etc.)"
+      "issues_<repo>.json": "Issues for each repository, one file per repository",
+      "prs_<repo>.json": "Pull requests for each repository, one file per repository",
+      "commits_<repo>.json": "Commits for each repository, one file per repository",
+      "issue_events_<repo>.json": "Issue and PR events for each repository, one file per repository"
     }
   },
   "silver_layer": {

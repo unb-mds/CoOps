@@ -1,7 +1,7 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-24T10:47:55.854867",
+      "extracted_at": "2026-09-24T22:47:07.582274",
       "file_path": "data/bronze/commits_2026-1-P.R.I.S.M.A.json",
       "record_count": 205
     }
@@ -11,13 +11,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-07-01T05:43:23Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "UI/UX: Refatora fluxo completo de Autenticação (Login, Cadastro e Res…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-07-01T05:43:23Z"
+      },
+      "message": "UI/UX: Refatora fluxo completo de Autenticação (Login, Cadastro e Reset) (#112)\n\n* refactor(home): remove DashboardView\nRemove a classe DashboardView do arquivo views.py, pois a funcionalidade de dashboard foi descontinuada do projeto visando simplificar a aplicação.\n\n* refactor(config): atualiza rotas principais e redirect de login\nAltera a rota principal do site no urls.py (utilizando RedirectView) para redirecionar automaticamente para '/processos/'. Também atualiza o LOGIN_REDIRECT_URL no settings.py para encaminhar o usuário diretamente à listagem após o login.\n\n* refactor(ui): remove interface e template do dashboard\nExclui o template dashboard.html que não tem mais utilidade na base de código e remove o respectivo link de acesso no menu de navegação lateral (sidebar.html).\n\n* test(e2e): remove arquivo de testes do dashboard\nDeleta o arquivo de teste E2E test_dashboard.py, garantindo que a suíte de testes permaneça limpa já que a página, a rota e a lógica do dashboard não existem mais.\n\n* chore(tests): adiciona configuracoes de banco SQLite para testes locais\n\nCria arquivo de settings exclusivo para testes apontando para banco de dados SQLite local, melhorando a configuracao do ambiente local.\n\n* fix(home): altera calculo de media em AlertasView para compatibilidade com SQLite\n\nSubstitui a utilizacao de ExtractDay no banco de dados por um calculo de media em Python iterando pela lista de processos, visto que o SQLite nao oferece suporte nativo a extracao em DurationField.\n\n* test(e2e): adiciona rotina de login no test_sanity\n\nAtualiza o teste de sanity para criar e autenticar um usuario antes de acessar a rota principal, visto que a mesma foi alterada para um redirect exigindo autenticacao.\n\n* feat(auth): refatora frontend do fluxo de autenticacao\n\nCria template base_auth.html com o design system do projeto em Tailwind e aplica a identidade visual nas paginas de login, cadastro e recuperacao de senha, trazendo um visual moderno com glassmorfismo e consistencia de UX.\n\n* chore(config): atualiza fuso horario e idioma para PT-BR\n\nAjusta as configuracoes padroes do Django para usar o idioma pt-br e o fuso horario America/Sao_Paulo, melhorando a formatacao de datas e mensagens globais.\n\n* refactor(ui): limpa blocos nao utilizados da sidebar e header\n\nRemove bloco com informacoes estaticas e indicativo de usuario na sidebar, e icones de configuracoes inativos no header.\n\n* feat(usuario): torna botao de logout funcional e limpa interface\n\nRemove links inativos da aba de configuracoes, altera card para exibir o ultimo acesso dinamico do usuario e adiciona logica real de POST para o botao de logout, melhorando a UX e a seguranca."
     },
+    "parents": [
+      "5f656933a5d9521cad758df3f62ac592e1531957"
+    ],
     "additions": 288,
     "deletions": 127,
     "total_changes": 415,
@@ -28,13 +36,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-07-01T05:34:34Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Refatoração: Remoção do Dashboard e Fix de Testes Locais (#111)"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-07-01T05:34:34Z"
+      },
+      "message": "Refatoração: Remoção do Dashboard e Fix de Testes Locais (#111)\n\n* refactor(home): remove DashboardView\nRemove a classe DashboardView do arquivo views.py, pois a funcionalidade de dashboard foi descontinuada do projeto visando simplificar a aplicação.\n\n* refactor(config): atualiza rotas principais e redirect de login\nAltera a rota principal do site no urls.py (utilizando RedirectView) para redirecionar automaticamente para '/processos/'. Também atualiza o LOGIN_REDIRECT_URL no settings.py para encaminhar o usuário diretamente à listagem após o login.\n\n* refactor(ui): remove interface e template do dashboard\nExclui o template dashboard.html que não tem mais utilidade na base de código e remove o respectivo link de acesso no menu de navegação lateral (sidebar.html).\n\n* test(e2e): remove arquivo de testes do dashboard\nDeleta o arquivo de teste E2E test_dashboard.py, garantindo que a suíte de testes permaneça limpa já que a página, a rota e a lógica do dashboard não existem mais.\n\n* chore(tests): adiciona configuracoes de banco SQLite para testes locais\n\nCria arquivo de settings exclusivo para testes apontando para banco de dados SQLite local, melhorando a configuracao do ambiente local.\n\n* fix(home): altera calculo de media em AlertasView para compatibilidade com SQLite\n\nSubstitui a utilizacao de ExtractDay no banco de dados por um calculo de media em Python iterando pela lista de processos, visto que o SQLite nao oferece suporte nativo a extracao em DurationField.\n\n* test(e2e): adiciona rotina de login no test_sanity\n\nAtualiza o teste de sanity para criar e autenticar um usuario antes de acessar a rota principal, visto que a mesma foi alterada para um redirect exigindo autenticacao."
     },
+    "parents": [
+      "efc109f0a0eea789aab31cffb42c36227629c1d6"
+    ],
     "additions": 36,
     "deletions": 159,
     "total_changes": 195,
@@ -45,13 +61,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-07-01T05:24:33Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
       },
-      "message": "Merge pull request #100 from unb-mds/docs/atualiza-readme-release-notes"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-07-01T05:24:33Z"
+      },
+      "message": "Merge pull request #100 from unb-mds/docs/atualiza-readme-release-notes\n\ndocs: atualiza README e Release Notes para v0.2.0"
     },
+    "parents": [
+      "4326161d8fe25f18b5e5078205998cf4210bab82",
+      "a99b5bd4c0c94eb55eb0a93a5630ca578d1d23a6"
+    ],
     "additions": 217,
     "deletions": 42,
     "total_changes": 259,
@@ -62,13 +87,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-07-01T05:24:05Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-07-01T05:24:05Z"
       },
       "message": "Merge branch 'main' into docs/atualiza-readme-release-notes"
     },
+    "parents": [
+      "83db1daeec7d8ab8c9360a6a701e557d6c73bdfe",
+      "4326161d8fe25f18b5e5078205998cf4210bab82"
+    ],
     "additions": 58,
     "deletions": 15,
     "total_changes": 73,
@@ -79,13 +113,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-07-01T03:52:50Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat: Adiciona compatibilidade da migração pós conflito que ocorreu n…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-07-01T03:52:50Z"
+      },
+      "message": "feat: Adiciona compatibilidade da migração pós conflito que ocorreu na adição do django-jazmin"
     },
+    "parents": [
+      "f97c02166bacb87a0df66373294229f668bfacb2"
+    ],
     "additions": 19,
     "deletions": 0,
     "total_changes": 19,
@@ -96,13 +138,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-07-01T03:34:46Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "chore(docker): adiciona .dockerignore e docker-entrypoint.sh; atualiz…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-07-01T03:34:46Z"
+      },
+      "message": "chore(docker): adiciona .dockerignore e docker-entrypoint.sh; atualizar dockerfile, compose.yml e README.md"
     },
+    "parents": [
+      "97cf43ddc3338c4ac739027667354743cc1b13c4"
+    ],
     "additions": 41,
     "deletions": 15,
     "total_changes": 56,
@@ -113,13 +163,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-07-01T01:51:51Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
       },
-      "message": "docs: atualiza README e Release Notes para v0.2.0"
+      "committer": {
+        "name": "Caua",
+        "date": "2026-07-01T01:51:51Z"
+      },
+      "message": "docs: atualiza README e Release Notes para v0.2.0\n\n- Atualiza README com novas funcionalidades, estrutura e instruções\n- Adiciona Release Notes da Release 2 (v0.2.0)\n- Documenta entregas de backend, frontend, práticas ágeis e documentação"
     },
+    "parents": [
+      "97cf43ddc3338c4ac739027667354743cc1b13c4"
+    ],
     "additions": 217,
     "deletions": 40,
     "total_changes": 257,
@@ -130,13 +188,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T23:10:29Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #67 from unb-mds/Melhorar-Django-Admin-para-visual…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-21T23:10:29Z"
+      },
+      "message": "Merge pull request #67 from unb-mds/Melhorar-Django-Admin-para-visualizacao-limpa-e-organizada-dos-processos-legislativos-#54\n\nMelhorar django admin para visualizacao limpa e organizada dos processos legislativos #54"
     },
+    "parents": [
+      "ce2914d4c1cb92c95a2ea557c6bd6ca3930f97cf",
+      "e09de2240cb29308018cc2145c07202962311c43"
+    ],
     "additions": 1815,
     "deletions": 73,
     "total_changes": 1888,
@@ -147,13 +214,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T23:08:14Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T23:08:14Z"
       },
       "message": "chore: resolve conflitos de merge entre PR e main"
     },
+    "parents": [
+      "e5a5731841cc63170d8222902f3498738e9bb7c0",
+      "ce2914d4c1cb92c95a2ea557c6bd6ca3930f97cf"
+    ],
     "additions": 2099,
     "deletions": 2139,
     "total_changes": 4238,
@@ -164,13 +240,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T22:47:51Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #85 from unb-mds/feature/issue-83-refatorar-propos…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-21T22:47:51Z"
+      },
+      "message": "Merge pull request #85 from unb-mds/feature/issue-83-refatorar-proposicoes-favoritos\n\nfeat(ui): Separar Buscador de Processos Legislativos do Tracking de Favoritos"
     },
+    "parents": [
+      "6e86b44f2eea4d689bbd3289cf0192c9ea2d99e7",
+      "50cc3ad79850f4ef47f205270658c146d7876c2b"
+    ],
     "additions": 488,
     "deletions": 275,
     "total_changes": 763,
@@ -181,13 +266,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T22:47:36Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #82 from unb-mds/feature/issue-10-detalhes-proposicao"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-21T22:47:36Z"
+      },
+      "message": "Merge pull request #82 from unb-mds/feature/issue-10-detalhes-proposicao\n\nDetox UI & Detalhes da Proposição (Issue #10)"
     },
+    "parents": [
+      "9255acd423248c5adad41b56ebeabfc742d43dc6",
+      "97a926c1ca34b7289e78d7f2c9b55963da6fb631"
+    ],
     "additions": 189,
     "deletions": 1133,
     "total_changes": 1322,
@@ -198,13 +292,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Theo",
         "date": "2026-06-21T21:50:11Z",
-        "login": "otheomls"
+        "login": "otheomls",
+        "id": 276396387,
+        "author_email_hash": "d9ecb56a8ad60b8b2f8bfa70a3c0cc8110056a67354ff4531e87c12b55592939"
       },
-      "message": "Merge pull request #81 from unb-mds/feature/issue-21-previsao-eta"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-21T21:50:11Z"
+      },
+      "message": "Merge pull request #81 from unb-mds/feature/issue-21-previsao-eta\n\nfeat(processos): Previsão ETA (Tempo de Conclusão)"
     },
+    "parents": [
+      "dfc0308fd0bf4e245c162b3e7e319a7a3ab16177",
+      "0bf594d91733f6d656b26f756e4f7361bb1d13e0"
+    ],
     "additions": 1660,
     "deletions": 736,
     "total_changes": 2396,
@@ -215,13 +318,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T19:25:33Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "test(e2e): atualizar testes para novas rotas e validar botão de favor…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T19:25:33Z"
+      },
+      "message": "test(e2e): atualizar testes para novas rotas e validar botão de favoritar em detalhes\n\n- test_timeline.py: adiciona steps para testar o botão Acompanhar na tela de detalhes\n  (toggle desfavoritar e favoritar novamente via click no #btnAcompanhar)\n- test_favoritos.py: ajusta fluxo para novas URLs /processos/ e /favoritos/"
     },
+    "parents": [
+      "06081c24abd281e20bb2aefdb72f6336b2850462"
+    ],
     "additions": 17,
     "deletions": 8,
     "total_changes": 25,
@@ -232,13 +343,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T19:25:15Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "refactor(ui): remover barra de pesquisa global inativa e atualizar si…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T19:25:15Z"
+      },
+      "message": "refactor(ui): remover barra de pesquisa global inativa e atualizar sidebar\n\n- Remove input de pesquisa global do header que não tinha funcionalidade\n- Sidebar e navbar atualizados para refletir nova nomenclatura 'Processos Legislativos'"
     },
+    "parents": [
+      "246a4c83d388d5dc2a81092b3cb46080fb5e17f6"
+    ],
     "additions": 4,
     "deletions": 15,
     "total_changes": 19,
@@ -249,13 +368,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T19:24:57Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "fix(detalhes): corrigir e implementar botão Acompanhar Favorito na te…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T19:24:57Z"
+      },
+      "message": "fix(detalhes): corrigir e implementar botão Acompanhar Favorito na tela de detalhes\n\n- Botão era apenas decorativo, sem onclick nem lógica JS\n- Adiciona toggleFavoritoDetalhes() com fetch assíncrono ao endpoint toggle-favorito\n- Resolve bug de querySelector('i') que falha após Lucide substituir <i> por <svg>\n- ProcessoDetailView passa is_favorito no contexto para renderizar estado inicial correto\n- ToggleFavoritoView refatorado para funcionar com qualquer TermoMonitorado do usuário\n- Adiciona {% csrf_token %} no template para autenticar requisições POST"
     },
+    "parents": [
+      "0966c4098e19fc492ef28819d6ce844758ed68bf"
+    ],
     "additions": 163,
     "deletions": 31,
     "total_changes": 194,
@@ -266,13 +393,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T19:24:35Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(favoritos): especializar página de favoritos como central de tra…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T19:24:35Z"
+      },
+      "message": "feat(favoritos): especializar página de favoritos como central de tracking com KPIs\n\n- Adiciona indicadores no topo: Total, Em Tramitação, Aprovadas, Com Alertas\n- Tabs de filtragem por status (todas, tramitação normal, estagnadas, urgência)\n- Tabela com colunas de SLA e dias na comissão atual\n- FavoritosView calcula metadados dinamicamente via anotações ORM (Max, Count)"
     },
+    "parents": [
+      "3ae2adb586a1a9a5fa75a60c90cdb076868a4473"
+    ],
     "additions": 125,
     "deletions": 50,
     "total_changes": 175,
@@ -283,13 +418,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T19:23:26Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(processos): migrar /proposicoes/ para /processos/ e criar buscad…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T19:23:26Z"
+      },
+      "message": "feat(processos): migrar /proposicoes/ para /processos/ e criar buscador global com django-filter\n\n- Remove proposicoes.html, substituída por processos.html\n- Implementa ProcessoFilter com busca por ementa, número, tipo e status\n- Adiciona campo de pesquisa livre (q) com Q() OR na view\n- Rotas /processos/, /processos/<pk>/, /processos/buscar/ e /processos/toggle-favorito/ configuradas em urls.py\n- Catálogo paginado com filtros dinâmicos na sidebar"
     },
+    "parents": [
+      "ddc975f68f1a6cc81fb9619dfed27f388368c9da"
+    ],
     "additions": 163,
     "deletions": 171,
     "total_changes": 334,
@@ -300,13 +443,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T19:23:10Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(deps): adicionar django-filter como dependência e configurar em …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T19:23:10Z"
+      },
+      "message": "feat(deps): adicionar django-filter como dependência e configurar em INSTALLED_APPS"
     },
+    "parents": [
+      "97a926c1ca34b7289e78d7f2c9b55963da6fb631"
+    ],
     "additions": 16,
     "deletions": 0,
     "total_changes": 16,
@@ -317,13 +468,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T18:17:02Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(ui): detox da interface e implementacao da pagina de detalhes da…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T18:17:02Z"
+      },
+      "message": "feat(ui): detox da interface e implementacao da pagina de detalhes da proposicao"
     },
+    "parents": [
+      "0bf594d91733f6d656b26f756e4f7361bb1d13e0"
+    ],
     "additions": 189,
     "deletions": 1133,
     "total_changes": 1322,
@@ -334,13 +493,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:35:47Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:35:47Z"
       },
       "message": "feat(processos): implementar previsao de conclusao e exibir widget"
     },
+    "parents": [
+      "f3ac4ed155bb13b06fc3fc49f8697c0a6a101b44"
+    ],
     "additions": 38,
     "deletions": 3,
     "total_changes": 41,
@@ -351,13 +518,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:34:03Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:34:03Z"
       },
       "message": "feat(usuarios): painel de configuracao de alertas de prazos"
     },
+    "parents": [
+      "a8b539c95c0d95dee9f8344ca3ac2c6d18ec7b9e"
+    ],
     "additions": 174,
     "deletions": 162,
     "total_changes": 336,
@@ -368,13 +543,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:30:40Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:30:40Z"
       },
       "message": "feat(proposicoes): focar listagem e timeline no controle de SLA"
     },
+    "parents": [
+      "b06f7dec57a6db114741ac29328f16c2da9f3999"
+    ],
     "additions": 27,
     "deletions": 15,
     "total_changes": 42,
@@ -385,13 +568,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:28:10Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:28:10Z"
       },
       "message": "feat(favoritos): implementar filtros temporais e métricas de SLA"
     },
+    "parents": [
+      "c0a02e44b5e11fd435da58b24e0d666095c180eb"
+    ],
     "additions": 107,
     "deletions": 103,
     "total_changes": 210,
@@ -402,13 +593,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:25:34Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:25:34Z"
       },
       "message": "feat(alertas): reestruturar painel com indicadores de SLA e estagnacao"
     },
+    "parents": [
+      "9f03c876fea462dda63b18be8323082925d390cd"
+    ],
     "additions": 43,
     "deletions": 20,
     "total_changes": 63,
@@ -419,13 +618,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:16:04Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:16:04Z"
       },
       "message": "feat(sidebar): atualizar labels para monitor de prazos e configurações"
     },
+    "parents": [
+      "60512dd70470c9f144e0cc6068732ee8de7a9ed6"
+    ],
     "additions": 6,
     "deletions": 5,
     "total_changes": 11,
@@ -436,13 +643,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:08:18Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "test(e2e): corrigir configuração do banco em conftest.py"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:08:18Z"
+      },
+      "message": "test(e2e): corrigir configuração do banco em conftest.py\n\nRemove sobrescrita de django_db_setup que forçava o pytest a usar o banco de dados principal e deletar os dados durante os testes, garantindo que o banco de testes seja isolado."
     },
+    "parents": [
+      "6d54e81a272bb23471f834e8aa9041c6bb192e66"
+    ],
     "additions": 1,
     "deletions": 5,
     "total_changes": 6,
@@ -453,13 +668,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T17:00:24Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(proposicoes): adicionar barra de progresso do ciclo legislativo …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T17:00:24Z"
+      },
+      "message": "feat(proposicoes): adicionar barra de progresso do ciclo legislativo (#15)\n\nAdiciona componente de UI premium para exibição do status atual com barra de progresso no detalhamento da proposição. Adiciona método dinâmico para preenchimento do progresso percentual no backend e atualiza testes E2E do playwright para assegurar o funcionamento da nova feature."
     },
+    "parents": [
+      "6f05eb0a843415501082d792ea29e15865d1ee33"
+    ],
     "additions": 49,
     "deletions": 1,
     "total_changes": 50,
@@ -470,13 +693,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T16:52:31Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(dashboard): adaptar interface para métricas de velocidade e dura…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T16:52:31Z"
+      },
+      "message": "feat(dashboard): adaptar interface para métricas de velocidade e duração (#62)\n\n- Atualiza dashboard.html com cards vibrantes (Tempo Médio de Trâmite, Proposições Estagnadas, Em Andamento, SLA de Relatoria)\n- Substitui Impacto Legislativo por Duração Total na listagem de Recém Concluídas\n- Atualiza testes E2E do playwright em test_dashboard.py"
     },
+    "parents": [
+      "ea8474fb0be2d821dc7b5189b63ebaf13ba72ae4"
+    ],
     "additions": 58,
     "deletions": 66,
     "total_changes": 124,
@@ -487,13 +718,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T16:49:00Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T16:49:00Z"
       },
       "message": "feat: integrar indicadores ao dashboard e adicionar teste e2e"
     },
+    "parents": [
+      "5c6b585d2f0def926acd2b3246e9bc13f3581781"
+    ],
     "additions": 50,
     "deletions": 5,
     "total_changes": 55,
@@ -504,13 +743,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T16:46:47Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T16:46:47Z"
       },
       "message": "feat: adicionar indicadores de tempo e estagnação no dashboard"
     },
+    "parents": [
+      "d0455577a27d9cf12f27e80f0e22fc84c38267af"
+    ],
     "additions": 22,
     "deletions": 0,
     "total_changes": 22,
@@ -521,13 +768,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T16:40:42Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat: integra notificações no frontend e adiciona testes e2e"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T16:40:42Z"
+      },
+      "message": "feat: integra notificações no frontend e adiciona testes e2e\n\n- Atualiza AlertasView para listar Notificacao do db\n- Torna Feed de Inteligência na tela alertas.html dinâmico\n- Adiciona teste end-to-end (Playwright) em test_alertas.py validando as Notificações"
     },
+    "parents": [
+      "9168f72da9c1764c3596ef76f475734337f91d85"
+    ],
     "additions": 78,
     "deletions": 154,
     "total_changes": 232,
@@ -538,13 +793,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T16:35:08Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat: implementa motor de alertas para processos favoritos e estagnação"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T16:35:08Z"
+      },
+      "message": "feat: implementa motor de alertas para processos favoritos e estagnação\n\n- Cria model Notificacao e admin\n- Cria comando gerar_alertas para processos estagnados (>30 dias)\n- Adiciona geração de notificação em _sync_camara_api e _sync_senado_api\n- Resolve Issue #17"
     },
+    "parents": [
+      "947fa39f8ff1c1e56c9a2a240edeb983bd2d30a7"
+    ],
     "additions": 119,
     "deletions": 4,
     "total_changes": 123,
@@ -555,13 +818,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T16:16:19Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(processos): implementa sync on-demand real-time com as APIs ofic…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T16:16:19Z"
+      },
+      "message": "feat(processos): implementa sync on-demand real-time com as APIs oficiais\n\nRemove fallbacks do banco e exige variáveis de ambiente corretas do Postgres\nAdiciona src/Processos/services.py com integração das APIs da Câmara e Senado\nAtualiza E2E test para usar mock do requests evitando timeouts e side-effects\nAtualiza views.py para consumir o sync on-demand ao listar/rastrear"
     },
+    "parents": [
+      "f17e4b6f3c3a52f483d9706373389f4456079085"
+    ],
     "additions": 155,
     "deletions": 55,
     "total_changes": 210,
@@ -572,13 +843,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T15:13:45Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "fix(Auth): usar get_user_model no formulário de registro"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T15:13:45Z"
+      },
+      "message": "fix(Auth): usar get_user_model no formulário de registro\n\nResolve o erro de Manager isn't available ao acessar /signup/, substituindo auth.User pelo model de usuário customizado."
     },
+    "parents": [
+      "be63682be5b4d4a6e5d2b61d7013cc3bb41ac890"
+    ],
     "additions": 3,
     "deletions": 4,
     "total_changes": 7,
@@ -589,13 +868,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T15:10:21Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(Frontend): adicionar coluna de SLA na tabela de proposições"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T15:10:21Z"
+      },
+      "message": "feat(Frontend): adicionar coluna de SLA na tabela de proposições\n\nIssue #16: Exibição do tempo total de tramitação e tempo na comissão atual no frontend, incluindo testes E2E correspondentes."
     },
+    "parents": [
+      "d851c999ca1c93afec3fd8fd433bee985eec32d4"
+    ],
     "additions": 17,
     "deletions": 2,
     "total_changes": 19,
@@ -606,13 +893,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-21T15:06:36Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(Processos): adicionar tracking de SLA e dias de tramitação"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-21T15:06:36Z"
+      },
+      "message": "feat(Processos): adicionar tracking de SLA e dias de tramitação\n\nIssue #16: Adicionadas propriedades dias_na_comissao_atual e dias_totais_tramitacao ao model ProcessoLegislativo."
     },
+    "parents": [
+      "5f7ae2134ed1be0162d49a196c6246a01195ab4c"
+    ],
     "additions": 16,
     "deletions": 0,
     "total_changes": 16,
@@ -623,13 +918,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-20T13:48:03Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(proposicoes): adiciona modal interativo para busca e acompanhame…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-20T13:48:03Z"
+      },
+      "message": "feat(proposicoes): adiciona modal interativo para busca e acompanhamento via termo monitorado"
     },
+    "parents": [
+      "50298a068ebcdc06fd186fba2483c85699698333"
+    ],
     "additions": 255,
     "deletions": 18,
     "total_changes": 273,
@@ -640,13 +943,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-20T13:32:29Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(frontend): implementa timeline dinâmica e adiciona teste E2E com…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-20T13:32:29Z"
+      },
+      "message": "feat(frontend): implementa timeline dinâmica e adiciona teste E2E com playwright"
     },
+    "parents": [
+      "3faae07f18a6953c29fa80361c3a4f5be862b2d9"
+    ],
     "additions": 107,
     "deletions": 213,
     "total_changes": 320,
@@ -657,13 +968,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-20T13:15:46Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "feat(processos): adiciona model Movimentacao para histórico de tramit…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-20T13:15:46Z"
+      },
+      "message": "feat(processos): adiciona model Movimentacao para histórico de tramitação"
     },
+    "parents": [
+      "de193f02c254e279cd679395414681911b0b072a"
+    ],
     "additions": 36,
     "deletions": 1,
     "total_changes": 37,
@@ -674,13 +993,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-19T23:14:19Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-19T23:14:19Z"
       },
       "message": "Adiciona .brain/ no gitignore"
     },
+    "parents": [
+      "a4d7840f7cb0651b7945c072d02183b93303c756"
+    ],
     "additions": 1,
     "deletions": 0,
     "total_changes": 1,
@@ -691,13 +1018,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-19T23:13:58Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona um teste inicial de sanidade (sanity check) para validação d…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-19T23:13:58Z"
+      },
+      "message": "Adiciona um teste inicial de sanidade (sanity check) para validação da Home Page."
     },
+    "parents": [
+      "7ba9a207f7bd06539330ec93a0da1df62d610dac"
+    ],
     "additions": 36,
     "deletions": 0,
     "total_changes": 36,
@@ -708,13 +1043,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-19T23:13:42Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Cria pytest.ini com as rotas padrão para o módulo de configurações do…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-19T23:13:42Z"
+      },
+      "message": "Cria pytest.ini com as rotas padrão para o módulo de configurações do Django."
     },
+    "parents": [
+      "b0189e136d91b5b364416ab9b4435db88651118c"
+    ],
     "additions": 3,
     "deletions": 0,
     "total_changes": 3,
@@ -725,13 +1068,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-19T23:12:40Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona dependências de desenvolvimento (pytest, pytest-django, pyte…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-19T23:12:40Z"
+      },
+      "message": "Adiciona dependências de desenvolvimento (pytest, pytest-django, pytest-playwright, playwright)."
     },
+    "parents": [
+      "dfc0308fd0bf4e245c162b3e7e319a7a3ab16177"
+    ],
     "additions": 359,
     "deletions": 0,
     "total_changes": 359,
@@ -742,13 +1093,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-18T13:41:19Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge branch 'main' into Melhorar-Django-Admin-para-visualizacao-limp…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-18T13:41:19Z"
+      },
+      "message": "Merge branch 'main' into Melhorar-Django-Admin-para-visualizacao-limpa-e-organizada-dos-processos-legislativos-#54"
     },
+    "parents": [
+      "6654cd8004229fb619d65542ee9e53f482e06b94",
+      "dfc0308fd0bf4e245c162b3e7e319a7a3ab16177"
+    ],
     "additions": 2141,
     "deletions": 820,
     "total_changes": 2961,
@@ -759,13 +1119,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-18T13:36:17Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "fix: Reverte alteração de porta que foi feito por engano em desenvolv…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-18T13:36:17Z"
+      },
+      "message": "fix: Reverte alteração de porta que foi feito por engano em desenvolvimento e não deveria ter vindo para o github"
     },
+    "parents": [
+      "5bfe4af618b00de02afd13a44e131af898fd6c82"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -776,13 +1144,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-18T13:27:38Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #59 from unb-mds/login"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-18T13:27:38Z"
+      },
+      "message": "Merge pull request #59 from unb-mds/login\n\nfeat(auth): complete login, signup and access restriction system"
     },
+    "parents": [
+      "84a467c543e2b97dc4a10f32af6e4206e3bb5c83",
+      "097982b3cada7c546e052c8128310e4169d63043"
+    ],
     "additions": 185,
     "deletions": 17,
     "total_changes": 202,
@@ -793,13 +1170,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-18T13:26:10Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "fix: Refatora para voltar a utilizar variável de ambiente para modo d…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-18T13:26:10Z"
+      },
+      "message": "fix: Refatora para voltar a utilizar variável de ambiente para modo de debug"
     },
+    "parents": [
+      "af754a5de5ee46dd6cddee6bdc519e3397609575"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -810,13 +1195,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "otheomls",
         "date": "2026-06-17T21:54:33Z",
-        "login": "otheomls"
+        "login": "otheomls",
+        "id": 276396387,
+        "author_email_hash": "d9ecb56a8ad60b8b2f8bfa70a3c0cc8110056a67354ff4531e87c12b55592939"
+      },
+      "committer": {
+        "name": "otheomls",
+        "date": "2026-06-17T21:54:33Z"
       },
       "message": "feat(auth): add authentication templates and login flow"
     },
+    "parents": [
+      "f92000895c03dd76188d8a06bfdedaa42e768a79"
+    ],
     "additions": 33,
     "deletions": 1,
     "total_changes": 34,
@@ -827,13 +1220,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Theo",
         "date": "2026-06-17T21:41:43Z",
-        "login": "otheomls"
+        "login": "otheomls",
+        "id": 276396387,
+        "author_email_hash": "d9ecb56a8ad60b8b2f8bfa70a3c0cc8110056a67354ff4531e87c12b55592939"
       },
-      "message": "Merge pull request #53 from unb-mds/Estrutura-Base-do-Processo-Legisl…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-17T21:41:43Z"
+      },
+      "message": "Merge pull request #53 from unb-mds/Estrutura-Base-do-Processo-Legislativo-e-Termos-#6\n\nEstrutura base do processo legislativo e termos #6\n\nVarias novas funcionalidades muito bem estruturadas e modularizadas. Django funcionando perfeitamente, muito bom!"
     },
+    "parents": [
+      "4b8dc0dcf27aeb33242a823bf8b1559458f1c984",
+      "a2b96f2280798509a64e512fe24fb0ec1489ffc2"
+    ],
     "additions": 185,
     "deletions": 7,
     "total_changes": 192,
@@ -844,13 +1246,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-17T21:34:28Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge branch 'main' into Estrutura-Base-do-Processo-Legislativo-e-Ter…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-17T21:34:28Z"
+      },
+      "message": "Merge branch 'main' into Estrutura-Base-do-Processo-Legislativo-e-Termos-#6"
     },
+    "parents": [
+      "8c3335a7cc2f352d2d5881612ec0c1b5c8b4ff6f",
+      "4b8dc0dcf27aeb33242a823bf8b1559458f1c984"
+    ],
     "additions": 1998,
     "deletions": 845,
     "total_changes": 2843,
@@ -861,13 +1272,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "otheomls",
         "date": "2026-06-13T01:48:37Z",
-        "login": "otheomls"
+        "login": "otheomls",
+        "id": 276396387,
+        "author_email_hash": "d9ecb56a8ad60b8b2f8bfa70a3c0cc8110056a67354ff4531e87c12b55592939"
+      },
+      "committer": {
+        "name": "otheomls",
+        "date": "2026-06-13T01:48:37Z"
       },
       "message": "feat(auth): complete login, signup and access restriction system"
     },
+    "parents": [
+      "4b8dc0dcf27aeb33242a823bf8b1559458f1c984"
+    ],
     "additions": 155,
     "deletions": 19,
     "total_changes": 174,
@@ -878,13 +1297,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-08T04:15:45Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #57 from unb-mds/feature/linters-precommit"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-06-08T04:15:45Z"
+      },
+      "message": "Merge pull request #57 from unb-mds/feature/linters-precommit\n\nchore: configura linters, formatadores e pre-commit (issue #55)"
     },
+    "parents": [
+      "1194cf6097253a1e12f2e5d4ee67812911a03bf1",
+      "07e26cf46176d4772f28f852775efc01b190b0d3"
+    ],
     "additions": 2005,
     "deletions": 852,
     "total_changes": 2857,
@@ -895,13 +1323,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-06-08T03:57:35Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-06-08T03:57:35Z"
       },
       "message": "chore: configura linters, formatadores e pre-commit (issue #55)"
     },
+    "parents": [
+      "1194cf6097253a1e12f2e5d4ee67812911a03bf1"
+    ],
     "additions": 2005,
     "deletions": 852,
     "total_changes": 2857,
@@ -912,13 +1348,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T21:23:05Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona suporte ao Jazzmin para uma interface de administração mais …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T21:23:05Z"
+      },
+      "message": "Adiciona suporte ao Jazzmin para uma interface de administração mais limpa e organizada"
     },
+    "parents": [
+      "7a7d87cd5bd6e2e0cc16394cfb4bd3e846c20194"
+    ],
     "additions": 86,
     "deletions": 3,
     "total_changes": 89,
@@ -929,13 +1373,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T20:33:13Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona script de entrypoint para configuração do cron e execução do…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T20:33:13Z"
+      },
+      "message": "Adiciona script de entrypoint para configuração do cron e execução do servidor Django"
     },
+    "parents": [
+      "8743f6cc848ec5bd8436c00960fa3a3af9a08091"
+    ],
     "additions": 21,
     "deletions": 1,
     "total_changes": 22,
@@ -946,13 +1398,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T20:33:00Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona atualização sob demanda para visualização de processos legis…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T20:33:00Z"
+      },
+      "message": "Adiciona atualização sob demanda para visualização de processos legislativos no admin"
     },
+    "parents": [
+      "c5f96c11cb38f52b196bd361bceb93be07f9a9a2"
+    ],
     "additions": 18,
     "deletions": 0,
     "total_changes": 18,
@@ -963,13 +1423,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T20:05:31Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona função para sincronização periódica de processos legislativo…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T20:05:31Z"
+      },
+      "message": "Adiciona função para sincronização periódica de processos legislativos via cron"
     },
+    "parents": [
+      "11d2b8c0c19786bc133e556413126fa68737c9a2"
+    ],
     "additions": 19,
     "deletions": 0,
     "total_changes": 19,
@@ -980,13 +1448,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T20:05:21Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona suporte para filtragem por data de início na busca de propos…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T20:05:21Z"
+      },
+      "message": "Adiciona suporte para filtragem por data de início na busca de proposições da Câmara e implementa sincronização sob demanda para processos legislativos"
     },
+    "parents": [
+      "c3ec5650065d7145033b29d00563414618a49fba"
+    ],
     "additions": 39,
     "deletions": 9,
     "total_changes": 48,
@@ -997,13 +1473,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:46:35Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Melhora auditoria de processos legislativos, incluindo contagem única…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:46:35Z"
+      },
+      "message": "Melhora auditoria de processos legislativos, incluindo contagem única de processos do Senado e ajustes na contagem da Câmara"
     },
+    "parents": [
+      "b716776fc3f9a1a8915e158d8ff6e2acf87670bc"
+    ],
     "additions": 53,
     "deletions": 17,
     "total_changes": 70,
@@ -1014,13 +1498,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:36:46Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona suporte à nova API do Senado e melhorias na sincronização de…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:36:46Z"
+      },
+      "message": "Adiciona suporte à nova API do Senado e melhorias na sincronização de processos legislativos"
     },
+    "parents": [
+      "4b1d9cb68555cea4920cb05854b2efc9b64348c5"
+    ],
     "additions": 341,
     "deletions": 163,
     "total_changes": 504,
@@ -1031,13 +1523,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:36:36Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona testes para funções de parsing e atualização de detalhes leg…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:36:36Z"
+      },
+      "message": "Adiciona testes para funções de parsing e atualização de detalhes legislativos"
     },
+    "parents": [
+      "a1391823b34eb15876d19b31898949b0a49836ed"
+    ],
     "additions": 401,
     "deletions": 1,
     "total_changes": 402,
@@ -1048,13 +1548,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:36:20Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona comando para auditoria de processos legislativos, comparando…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:36:20Z"
+      },
+      "message": "Adiciona comando para auditoria de processos legislativos, comparando dados da API e do Banco de Dados"
     },
+    "parents": [
+      "e691f2c558ab9c77469fe65a25b722be856bbfc4"
+    ],
     "additions": 77,
     "deletions": 0,
     "total_changes": 77,
@@ -1065,13 +1573,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:35:47Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona comando para carga histórica de processos legislativos, inte…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:35:47Z"
+      },
+      "message": "Adiciona comando para carga histórica de processos legislativos, integrando dados da Câmara e Senado"
     },
+    "parents": [
+      "ec019aaffa4e714479965380a74d3c109ee68cee"
+    ],
     "additions": 180,
     "deletions": 0,
     "total_changes": 180,
@@ -1082,13 +1598,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:34:44Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona novos campos a ProcessoLegislativos, campos que vem da nova …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:34:44Z"
+      },
+      "message": "Adiciona novos campos a ProcessoLegislativos, campos que vem da nova API do senado"
     },
+    "parents": [
+      "346422015fb13cf829c5c3624390abf0402a04d1"
+    ],
     "additions": 71,
     "deletions": 0,
     "total_changes": 71,
@@ -1099,13 +1623,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:32:06Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:32:06Z"
       },
       "message": "Remove a possibilidade de rodar com sqlite nas configurações do django"
     },
+    "parents": [
+      "fbdbbbc71e56302faaa57648aae94bba14529424"
+    ],
     "additions": 31,
     "deletions": 20,
     "total_changes": 51,
@@ -1116,13 +1648,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-05T19:30:40Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Altera porta do postgres para não conflitar caso a pessoa tenha um po…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-05T19:30:40Z"
+      },
+      "message": "Altera porta do postgres para não conflitar caso a pessoa tenha um postgres local e queira rodar apenas o banco com docker"
     },
+    "parents": [
+      "aa9faa51fe6403693f1f3fe9c4b0a2c87a5a4b11"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -1133,13 +1673,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-01T03:22:35Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona serviço para integração com as APIs da Câmara e Senado, incl…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-01T03:22:35Z"
+      },
+      "message": "Adiciona serviço para integração com as APIs da Câmara e Senado, incluindo funções para buscar proposições, detalhes e tramitacoes"
     },
+    "parents": [
+      "bb5a5fe4cb9b356f8868a288f0a25f2cb12f2c12"
+    ],
     "additions": 463,
     "deletions": 0,
     "total_changes": 463,
@@ -1150,13 +1698,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-01T02:02:03Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona migração do django de campos e constraints ao modelo Process…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-01T02:02:03Z"
+      },
+      "message": "Adiciona migração do django de campos e constraints ao modelo Processos Legislativos"
     },
+    "parents": [
+      "5fb88ab932d4bb9d6a5836131b3b9857800ec4f4"
+    ],
     "additions": 150,
     "deletions": 0,
     "total_changes": 150,
@@ -1167,13 +1723,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-01T02:01:25Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona comandos de gerenciamento para carga inicial, limpeza e sinc…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-01T02:01:25Z"
+      },
+      "message": "Adiciona comandos de gerenciamento para carga inicial, limpeza e sincronização de processos legislativos, podem ser utlizados escrevendo manage.py e o nome do comando"
     },
+    "parents": [
+      "96a3bc2a3d1e9b386b031bbb63f32df320d9b95e"
+    ],
     "additions": 68,
     "deletions": 0,
     "total_changes": 68,
@@ -1184,13 +1748,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-06-01T02:00:12Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-06-01T02:00:12Z"
       },
       "message": "Refatora a forme de definir o campo id_externo"
     },
+    "parents": [
+      "5747c0175a1da2c89c465b57f8dd2404ee5ce5c7"
+    ],
     "additions": 9,
     "deletions": 1,
     "total_changes": 10,
@@ -1201,13 +1773,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T22:18:41Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T22:18:41Z"
       },
       "message": "Adiciona campos que podem ser providos pela API da camara e senado"
     },
+    "parents": [
+      "a4755c1ca0c1679e428bc53ce9469c65b01f5c95"
+    ],
     "additions": 23,
     "deletions": 0,
     "total_changes": 23,
@@ -1218,13 +1798,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T21:05:21Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona biblioteca django_crontab nas configurações do django para a…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T21:05:21Z"
+      },
+      "message": "Adiciona biblioteca django_crontab nas configurações do django para agendamento de tarefas periódicas"
     },
+    "parents": [
+      "b0b665710c37bc28913cfa9d6ccbd84465dfe857"
+    ],
     "additions": 10,
     "deletions": 0,
     "total_changes": 10,
@@ -1235,13 +1823,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T21:02:15Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona bibliotéca do django django-crontab para manusear o serviço …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T21:02:15Z"
+      },
+      "message": "Adiciona bibliotéca do django django-crontab para manusear o serviço das chamadas de api da camara e senado de tempos em tempos"
     },
+    "parents": [
+      "966660b1bcfd09e23df1fef96cba0fc77c1e0c0c"
+    ],
     "additions": 12,
     "deletions": 0,
     "total_changes": 12,
@@ -1252,13 +1848,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:53:00Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:53:00Z"
       },
       "message": "Adiciona a bibliotéca requests as dependências no uv"
     },
+    "parents": [
+      "8c3335a7cc2f352d2d5881612ec0c1b5c8b4ff6f"
+    ],
     "additions": 118,
     "deletions": 0,
     "total_changes": 118,
@@ -1269,13 +1873,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:44:22Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:44:22Z"
       },
       "message": "Adiciona arquivos adicionais gerados pelo django para o app Processos"
     },
+    "parents": [
+      "fa24d67038339fd76e4c824fbdd72ad24e24203d"
+    ],
     "additions": 60,
     "deletions": 0,
     "total_changes": 60,
@@ -1286,13 +1898,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:43:55Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Cria o model que sobrescreve o usuário padrão do django e liga o camp…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:43:55Z"
+      },
+      "message": "Cria o model que sobrescreve o usuário padrão do django e liga o campo ProcessosLegislativos a ele"
     },
+    "parents": [
+      "ee14802cbd6f5c501c50ec9ea35f5e518a226d68"
+    ],
     "additions": 10,
     "deletions": 0,
     "total_changes": 10,
@@ -1303,13 +1923,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:43:03Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:43:03Z"
       },
       "message": "Adiciona arquivos adicionais gerados pelo django para o app Processos"
     },
+    "parents": [
+      "950d9a34c17a19f7af7fe685a38e742630a689d2"
+    ],
     "additions": 67,
     "deletions": 0,
     "total_changes": 67,
@@ -1320,13 +1948,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:42:24Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:42:24Z"
       },
       "message": "Adiciona os models ProcessoLegislativo e TermoMonitorado ao django admin"
     },
+    "parents": [
+      "a7995c2a666b4a997b157d57aed22624ec93c847"
+    ],
     "additions": 18,
     "deletions": 0,
     "total_changes": 18,
@@ -1337,13 +1973,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:42:00Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:42:00Z"
       },
       "message": "Cria os models Processo legislativo e Termo monitorado"
     },
+    "parents": [
+      "56302045000e46b813479b2497dafeebcf9a7cd6"
+    ],
     "additions": 19,
     "deletions": 0,
     "total_changes": 19,
@@ -1354,13 +1998,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:41:06Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:41:06Z"
       },
       "message": "Configura um model customizado de User para o django"
     },
+    "parents": [
+      "c8fc99d9cb1096796f73faafa0da6e7657e0f859"
+    ],
     "additions": 2,
     "deletions": 0,
     "total_changes": 2,
@@ -1371,13 +2023,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:40:28Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:40:28Z"
       },
       "message": "Adiciona novos apps a configuração do django: Processos e Usuarios"
     },
+    "parents": [
+      "1194cf6097253a1e12f2e5d4ee67812911a03bf1"
+    ],
     "additions": 2,
     "deletions": 0,
     "total_changes": 2,
@@ -1388,13 +2048,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-31T20:15:18Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Ajusta as configurações para o django saber quando está rodando dentr…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-31T20:15:18Z"
+      },
+      "message": "Ajusta as configurações para o django saber quando está rodando dentro de container e proporcionar o db certo, tornando compatível com configurações locais do postgrees"
     },
+    "parents": [
+      "0f17da1d128b2bbc60d94439011a638ba5a0dde9"
+    ],
     "additions": 38,
     "deletions": 7,
     "total_changes": 45,
@@ -1405,13 +2073,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-05-27T15:16:26Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
       },
-      "message": "Atualiza readme para conter link do Gitpages"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-27T15:16:26Z"
+      },
+      "message": "Atualiza readme para conter link do Gitpages\n\nLink direto para o Gitpages fixado"
     },
+    "parents": [
+      "75810209a2822d2fafdbfe8e18167423d88bd31b"
+    ],
     "additions": 3,
     "deletions": 0,
     "total_changes": 3,
@@ -1422,13 +2098,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-05-27T14:53:47Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
       },
-      "message": "Merge pull request #52 from unb-mds/Configuracao-templates-django"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-27T14:53:47Z"
+      },
+      "message": "Merge pull request #52 from unb-mds/Configuracao-templates-django\n\nConfiguracao templates django"
     },
+    "parents": [
+      "8f68bf078255bb853a1e02a8518562706bc4d76f",
+      "3f6ed535e4f3411a2b175d338b68cbfaa759405b"
+    ],
     "additions": 1499,
     "deletions": 16,
     "total_changes": 1515,
@@ -1439,13 +2124,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-05-27T14:53:26Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
       },
-      "message": "Merge pull request #49 from unb-mds/Padrões-de-Software-Livre-#34"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-27T14:53:26Z"
+      },
+      "message": "Merge pull request #49 from unb-mds/Padrões-de-Software-Livre-#34\n\nPadroes de software livre #34"
     },
+    "parents": [
+      "a249658dbce8be834e71fc7b6f2809f3f9f8fd1f",
+      "0a5f656679ab772b3c8f5f94e56f2a5e6f67d48e"
+    ],
     "additions": 417,
     "deletions": 0,
     "total_changes": 417,
@@ -1456,13 +2150,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-27T12:34:42Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-27T12:34:42Z"
       },
       "message": "Atualiza e organiza a pasta de relatórios de Sprints"
     },
+    "parents": [
+      "7f58170dc5c19b184e41fb9fe7fca3c7ee6b988e"
+    ],
     "additions": 148,
     "deletions": 0,
     "total_changes": 148,
@@ -1473,13 +2175,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-27T11:50:41Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-27T11:50:41Z"
       },
       "message": "Deleta manage.py perdido na raíz do projeto"
     },
+    "parents": [
+      "932391cad3dcc4579e40da236bb6915dc87c1a28"
+    ],
     "additions": 0,
     "deletions": 22,
     "total_changes": 22,
@@ -1490,13 +2200,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-27T11:46:18Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #50 from unb-mds/docs/arquitetura"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-27T11:46:18Z"
+      },
+      "message": "Merge pull request #50 from unb-mds/docs/arquitetura\n\nDocs/arquitetura"
     },
+    "parents": [
+      "393f46818587327278c52e3b841d042146f79ef2",
+      "dc4647a321906ff6d02066c828f61c5ad77744cd"
+    ],
     "additions": 697,
     "deletions": 0,
     "total_changes": 697,
@@ -1507,13 +2226,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-26T22:10:03Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-26T22:10:03Z"
       },
       "message": "Atualiza os templates com ajustes feitos no figma"
     },
+    "parents": [
+      "ac78b27b2bc173de622c6091dfdb449e10d41c73"
+    ],
     "additions": 245,
     "deletions": 34,
     "total_changes": 279,
@@ -1524,13 +2251,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-26T21:28:50Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-26T21:28:50Z"
       },
       "message": "Deleta o diretório que estava tentando fazer deploy do gitpages na main"
     },
+    "parents": [
+      "291be3b26857b366da89bdb86fa5e0de815d1720"
+    ],
     "additions": 0,
     "deletions": 52,
     "total_changes": 52,
@@ -1541,13 +2276,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "CauaoClemente",
         "date": "2026-05-26T21:12:24Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
       },
-      "message": "Update definir-arquitetura.md"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-26T21:12:24Z"
+      },
+      "message": "Update definir-arquitetura.md\n\nMudança apenas organizacional no texto"
     },
+    "parents": [
+      "a7cff2cc1702620a64a57e5b9c3d143f9e65f318"
+    ],
     "additions": 14,
     "deletions": 17,
     "total_changes": 31,
@@ -1558,13 +2301,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-26T21:02:29Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
       },
-      "message": "docs: adicionando arquivos restantes, incluindo os diagramas, revisar…"
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-26T21:02:29Z"
+      },
+      "message": "docs: adicionando arquivos restantes, incluindo os diagramas, revisar e ver se faz sentido como exemplares do nosso projeto."
     },
+    "parents": [
+      "3d5df8009f75ed089f5de49f2558088b3b7bc3b7"
+    ],
     "additions": 340,
     "deletions": 0,
     "total_changes": 340,
@@ -1575,13 +2326,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-26T19:27:17Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona os arquivos estátidos desenvolvidos no figma como templates …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-26T19:27:17Z"
+      },
+      "message": "Adiciona os arquivos estátidos desenvolvidos no figma como templates do django"
     },
+    "parents": [
+      "29145295baaaa0e1141a3c25034cafde73b53709"
+    ],
     "additions": 1273,
     "deletions": 18,
     "total_changes": 1291,
@@ -1592,13 +2351,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-26T07:09:30Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-26T07:09:30Z"
       },
       "message": "docs: adicionando as tecnologias do projeto, documentação"
     },
+    "parents": [
+      "0ceaca82c461d14a598d6bc2c07f31fdc3395773"
+    ],
     "additions": 151,
     "deletions": 0,
     "total_changes": 151,
@@ -1609,13 +2376,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-26T07:06:57Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-26T07:06:57Z"
       },
       "message": "docs: adicionando definicoes-back-end"
     },
+    "parents": [
+      "6cdf210520acf213acc920212b2313beb9bf4081"
+    ],
     "additions": 71,
     "deletions": 0,
     "total_changes": 71,
@@ -1626,13 +2401,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-26T07:05:36Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-26T07:05:36Z"
       },
       "message": "docs: adicionando definicoes-front-end"
     },
+    "parents": [
+      "73f249a16f373b6283a71ab30c93f42c1317bee3"
+    ],
     "additions": 45,
     "deletions": 0,
     "total_changes": 45,
@@ -1643,13 +2426,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-26T07:04:22Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-26T07:04:22Z"
       },
       "message": "docs: adicionando definir-arquitetura"
     },
+    "parents": [
+      "e832797b700327cc969846f4fa8cde86d94f5f17"
+    ],
     "additions": 60,
     "deletions": 0,
     "total_changes": 60,
@@ -1660,13 +2451,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-26T06:59:58Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-26T06:59:58Z"
       },
       "message": "docs: adicionando documentação index"
     },
+    "parents": [
+      "291be3b26857b366da89bdb86fa5e0de815d1720"
+    ],
     "additions": 33,
     "deletions": 0,
     "total_changes": 33,
@@ -1677,13 +2476,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T16:50:26Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T16:50:26Z"
       },
       "message": "Adiciona setup inicial de app e pasta templates"
     },
+    "parents": [
+      "291be3b26857b366da89bdb86fa5e0de815d1720"
+    ],
     "additions": 17,
     "deletions": 0,
     "total_changes": 17,
@@ -1694,13 +2501,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T15:49:42Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T15:49:42Z"
       },
       "message": "Hotfix: Atualiza dependências do requirements.txt"
     },
+    "parents": [
+      "c20014a6635cba9f128d1d059814eb5fe88f0342"
+    ],
     "additions": 1,
     "deletions": 0,
     "total_changes": 1,
@@ -1711,13 +2526,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T14:58:01Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T14:58:01Z"
       },
       "message": "Adiciona documentação de código de conduta"
     },
+    "parents": [
+      "bebe7434bf6f2fe02f60c330bde6a5108039b161"
+    ],
     "additions": 111,
     "deletions": 0,
     "total_changes": 111,
@@ -1728,13 +2551,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T14:56:53Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T14:56:53Z"
       },
       "message": "Adiciona documentação de como contribuir no projeto"
     },
+    "parents": [
+      "937fb79f54003654316277bd96c296b75ac0374a"
+    ],
     "additions": 120,
     "deletions": 0,
     "total_changes": 120,
@@ -1745,13 +2576,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T14:55:33Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T14:55:33Z"
       },
       "message": "Adiciona templates de padrões de commits e branches"
     },
+    "parents": [
+      "c20014a6635cba9f128d1d059814eb5fe88f0342"
+    ],
     "additions": 186,
     "deletions": 0,
     "total_changes": 186,
@@ -1762,13 +2601,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:52:42Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T06:52:42Z"
       },
       "message": "Deleta arquivo index.html perdido"
     },
+    "parents": [
+      "d80029a575879a2ee790cadfe2297acf5385702c"
+    ],
     "additions": 0,
     "deletions": 14,
     "total_changes": 14,
@@ -1779,13 +2626,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:51:24Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T06:51:24Z"
       },
       "message": "Remove arquivos do gitpages que contaminaram a main"
     },
+    "parents": [
+      "299c4e55a09e71cda122c119e0b8c16d75527c8e"
+    ],
     "additions": 0,
     "deletions": 6399,
     "total_changes": 6399,
@@ -1796,13 +2651,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-05-25T06:41:21Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
       },
-      "message": "Merge pull request #48 from unb-mds/Review-Inicializacao-do-Projeto-D…"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T06:41:21Z"
+      },
+      "message": "Merge pull request #48 from unb-mds/Review-Inicializacao-do-Projeto-Django-#3\n\nToda a extensão do projeto extremamente organizada e sem conflitos, ficou perfeito!"
     },
+    "parents": [
+      "f1e6645a545dd997d0991af4ab4e8ebf7aec7ba0",
+      "8acb83b4ee63b3a7d686a6087719de67adb98e0f"
+    ],
     "additions": 7067,
     "deletions": 1,
     "total_changes": 7068,
@@ -1813,13 +2677,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:36:05Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T06:36:05Z"
       },
       "message": "Delete style.css"
     },
+    "parents": [
+      "9a9ab64a57b51cea708e4a92ffe84d4489f03fb1"
+    ],
     "additions": 0,
     "deletions": 212,
     "total_changes": 212,
@@ -1830,13 +2702,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:35:51Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T06:35:51Z"
       },
       "message": "Delete index.html"
     },
+    "parents": [
+      "62aa79283981606bc0a27182b7b2fcf8e1868a14"
+    ],
     "additions": 0,
     "deletions": 152,
     "total_changes": 152,
@@ -1847,13 +2727,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:35:42Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T06:35:42Z"
       },
       "message": "Delete script.js"
     },
+    "parents": [
+      "337d2d1da520aa6ea5db068e5f63c78cfb858c2f"
+    ],
     "additions": 0,
     "deletions": 34,
     "total_changes": 34,
@@ -1864,13 +2752,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:35:01Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #45 from unb-mds/figma"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T06:35:01Z"
+      },
+      "message": "Merge pull request #45 from unb-mds/figma\n\nMuito bom, esses figmas vão ajudar muito a desenvolver o frontend!!! bom trabalho!!"
     },
+    "parents": [
+      "069b823a40c9b86d308a17412582f58decca0141",
+      "8e88a1020efc1ed2bad3ffb9aeb6f8e5fe30b91f"
+    ],
     "additions": 398,
     "deletions": 0,
     "total_changes": 398,
@@ -1881,13 +2778,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T06:23:32Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T06:23:32Z"
       },
       "message": "Reverte commit que apagava os documentos da main"
     },
+    "parents": [
+      "cb680c02533de29dfb33dd1cfcb65c501fca807a"
+    ],
     "additions": 969,
     "deletions": 0,
     "total_changes": 969,
@@ -1898,13 +2803,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-25T06:10:53Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-25T06:10:53Z"
       },
       "message": "Adiciona os tramites aprovados"
     },
+    "parents": [
+      "d6d19b746fb2159a9c48d2bbdb6f9d6f908b01d8"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -1915,13 +2828,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-25T06:10:26Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-25T06:10:26Z"
       },
       "message": "Adiciona o mapa de calor"
     },
+    "parents": [
+      "5338e2fe14a0780c8adf6df873b13bf460af8d72"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -1932,13 +2853,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-25T06:08:50Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-25T06:08:50Z"
       },
       "message": "Adiciona a página de favoritados"
     },
+    "parents": [
+      "0bb6782dc90eb7951c2c1deb6c6dab9fd7977100"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -1949,13 +2878,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-25T06:06:57Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-25T06:06:57Z"
       },
       "message": "Adiciona a central do usuário"
     },
+    "parents": [
+      "624ad48a44190f4c200bbc2f0db8297917f647ee"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -1966,13 +2903,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-25T06:04:22Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-25T06:04:22Z"
       },
       "message": "Adiciona telas de alertas do figma"
     },
+    "parents": [
+      "200076ce1e840f388412d5deab05e4fb7d45afbd"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -1983,13 +2928,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-25T05:54:05Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-25T05:54:05Z"
       },
       "message": "adiciona telas de alertas (print3)"
     },
+    "parents": [
+      "2be1002c63a15e79b673c4ae9e63a9046cb5ab84"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -2000,13 +2953,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T05:49:07Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Reverte commits feitos NA BRANCH ERRADA!! e de funcionalidade que não…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T05:49:07Z"
+      },
+      "message": "Reverte commits feitos NA BRANCH ERRADA!! e de funcionalidade que não seria desenvolvida agora."
     },
+    "parents": [
+      "48405220e509bb28b361d4bc9fd811dafa585d2a"
+    ],
     "additions": 0,
     "deletions": 18,
     "total_changes": 18,
@@ -2017,13 +2978,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T05:38:15Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T05:38:15Z"
       },
       "message": "Reversão drástica de commits feitos por engano na main!!!!"
     },
+    "parents": [
+      "192bd47b7af8737759cdc3355de002f0eab35b4f"
+    ],
     "additions": 1,
     "deletions": 6566,
     "total_changes": 6567,
@@ -2034,13 +3003,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "otheomls",
         "date": "2026-05-25T05:18:29Z",
-        "login": "otheomls"
+        "login": "otheomls",
+        "id": 276396387,
+        "author_email_hash": "d9ecb56a8ad60b8b2f8bfa70a3c0cc8110056a67354ff4531e87c12b55592939"
+      },
+      "committer": {
+        "name": "otheomls",
+        "date": "2026-05-25T05:18:29Z"
       },
       "message": "feat: implementa autenticação"
     },
+    "parents": [
+      "ded265d9c9f8e670276ed465b1865fbd9d967b11"
+    ],
     "additions": 18,
     "deletions": 0,
     "total_changes": 18,
@@ -2051,13 +3028,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T04:14:57Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #46 from unb-mds/add-realease-notes"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-25T04:14:57Z"
+      },
+      "message": "Merge pull request #46 from unb-mds/add-realease-notes\n\nAdiciona release note v0.1.0\n\nMuito bom!!"
     },
+    "parents": [
+      "6b685379243f64190d11bd7770de492fa1a61d43",
+      "734110d8d07cb832764203256348f83e0b2ead5b"
+    ],
     "additions": 45,
     "deletions": 0,
     "total_changes": 45,
@@ -2068,13 +3054,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T04:12:47Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T04:12:47Z"
       },
       "message": "Corrige detalhes no passo a passo de rodar com postgress"
     },
+    "parents": [
+      "7d7e2a626e1edce2c847f4f8cb01ab578ec050b1"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -2085,13 +3079,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T04:12:28Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T04:12:28Z"
       },
       "message": "Altera a porta do postgress para não dar conflito do local com o docker"
     },
+    "parents": [
+      "431c5d9ca77c939c5c1fa945c236c37618e0f5dc"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2102,13 +3104,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T04:00:44Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T04:00:44Z"
       },
       "message": "Atualiza o Readme para ensinar a rodar com postgress local"
     },
+    "parents": [
+      "630b82ea606d15fe33ef72daf8d57f23146aad5b"
+    ],
     "additions": 40,
     "deletions": 11,
     "total_changes": 51,
@@ -2119,13 +3129,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T04:00:16Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T04:00:16Z"
       },
       "message": "Atualiza o envExemplo para rodar local com posrgress fora do docker"
     },
+    "parents": [
+      "2afb55967a861f494afe0e22646177be399cbe9d"
+    ],
     "additions": 11,
     "deletions": 9,
     "total_changes": 20,
@@ -2136,13 +3154,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:47:00Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:47:00Z"
       },
       "message": "Atualiza o Readme para rodar com Uv"
     },
+    "parents": [
+      "72652167e19702330102149a3e5d96835d12af63"
+    ],
     "additions": 41,
     "deletions": 8,
     "total_changes": 49,
@@ -2153,13 +3179,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:31:13Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:31:13Z"
       },
       "message": "Adiciona biblioteca dotenv ao pacote de dependências"
     },
+    "parents": [
+      "1dac4ce9dba06a09dfa340ff7866822659f48438"
+    ],
     "additions": 23,
     "deletions": 0,
     "total_changes": 23,
@@ -2170,13 +3204,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:30:38Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Refatora settings do django para aceitar confiiguração por variáveis …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:30:38Z"
+      },
+      "message": "Refatora settings do django para aceitar confiiguração por variáveis de ambiente com biblioteca python dotenv"
     },
+    "parents": [
+      "b02d896e917cd14e7b7a49c8ce2b87a4a46fd503"
+    ],
     "additions": 3,
     "deletions": 0,
     "total_changes": 3,
@@ -2187,13 +3229,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:26:52Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:26:52Z"
       },
       "message": "Refatora sistema de env para ter um local sem docker e um com docker"
     },
+    "parents": [
+      "54510a6bab86daef968c2fe284059e596aa36b27"
+    ],
     "additions": 16,
     "deletions": 0,
     "total_changes": 16,
@@ -2204,13 +3254,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:24:25Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:24:25Z"
       },
       "message": "Altera nome do env de exemplo no Readme para rodar com docker"
     },
+    "parents": [
+      "4fb39cac3c2e962d8cba3fc78cf4ec17d73120a4"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2221,13 +3279,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:22:33Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:22:33Z"
       },
       "message": "Adiciona arquivo polls ao gitignore"
     },
+    "parents": [
+      "43cc7a04578dee31cb372174d0a167b21fec10a3"
+    ],
     "additions": 1,
     "deletions": 0,
     "total_changes": 1,
@@ -2238,13 +3304,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:11:09Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona possibilidade de buildar o projeto via uv ou uvicorn(gerenci…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:11:09Z"
+      },
+      "message": "Adiciona possibilidade de buildar o projeto via uv ou uvicorn(gerenciador de dependências)"
     },
+    "parents": [
+      "493220c137a8c429871a6a39f304f8ae0148e6d0"
+    ],
     "additions": 143,
     "deletions": 0,
     "total_changes": 143,
@@ -2255,13 +3329,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T03:07:46Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Atualiza README.md com informações do projeto e instruções para rodar…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T03:07:46Z"
+      },
+      "message": "Atualiza README.md com informações do projeto e instruções para rodar com docker compose"
     },
+    "parents": [
+      "e2e565233d707470fdd8d242566285907739a13c"
+    ],
     "additions": 25,
     "deletions": 28,
     "total_changes": 53,
@@ -2272,13 +3354,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T02:56:27Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:56:27Z"
       },
       "message": "Adiciona README.md com configuração de ambiente detalhada."
     },
+    "parents": [
+      "8cfa02eb3c1a77a3c55a8f4efba20fc2af8fb951"
+    ],
     "additions": 27,
     "deletions": 155,
     "total_changes": 182,
@@ -2289,13 +3379,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T02:55:59Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:55:59Z"
       },
       "message": "Corrige o gitignore para padrão pré-estabelecido anteriormente"
     },
+    "parents": [
+      "8e2bfd47ae919985f6f5759dcbfad9be5b085b2e"
+    ],
     "additions": 175,
     "deletions": 6,
     "total_changes": 181,
@@ -2306,13 +3404,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-25T02:53:47Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:53:47Z"
       },
       "message": "fix: corrige sintaxe do workflow de deploy"
     },
+    "parents": [
+      "ba132f4e5ff822689644be63c714105777d0b675"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2323,13 +3429,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-25T02:53:47Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:53:47Z"
       },
       "message": "feat: organiza estrutura e inicia componente dashboard"
     },
+    "parents": [
+      "ae01e71eba608716802e841b055adc79c9c25134"
+    ],
     "additions": 6472,
     "deletions": 176,
     "total_changes": 6648,
@@ -2340,13 +3454,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-25T02:52:55Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Adiciona novos estudos"
     },
+    "parents": [
+      "269ee7bfd74f7e4c10f89f5b69c119d1d8bc9aa6"
+    ],
     "additions": 450,
     "deletions": 0,
     "total_changes": 450,
@@ -2357,13 +3479,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Rename estudo_API_Milla.md to estudo_API.md"
     },
+    "parents": [
+      "188f8f1cc430f7ba0fd1ece013ea060a058fa9f0"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2374,13 +3504,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "af08ff5c2923fbf6e7794ef57abd284b49e98a84"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -2391,13 +3529,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "763bf5ac2f9dd29b249b0ceae5ebf24237e47b4e"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -2408,13 +3554,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "76ac82560e272c84e9fc47411eff6b3ff4ace187"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -2425,13 +3579,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "4b3e816e02831703a320473e24a1e82edfd64a90"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2442,13 +3604,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Corrigindo erros de edição"
     },
+    "parents": [
+      "3c8a7b458d6b2db085ed5f3ec37d9b70c253fee5"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2459,13 +3629,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Adicionando estudos sobre o Miro"
     },
+    "parents": [
+      "bb9da56982df84ccaaad7888d59381bdaff5dcfb"
+    ],
     "additions": 54,
     "deletions": 0,
     "total_changes": 54,
@@ -2476,13 +3654,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Correção no texto do estudo de Figma"
     },
+    "parents": [
+      "42a82b61a3f83d2eb10627ec30fd3425c8754b2b"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2493,13 +3679,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-25T02:52:55Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "adicionando estudo sobre FigmaI"
     },
+    "parents": [
+      "cc53d944ee71732aa9cf30efe81c0054c1c31a79"
+    ],
     "additions": 57,
     "deletions": 0,
     "total_changes": 57,
@@ -2510,13 +3704,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-25T02:52:55Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
       },
-      "message": "Adicionando estudo de backend e frontend, e depois irei mandar o de c…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
+      },
+      "message": "Adicionando estudo de backend e frontend, e depois irei mandar o de cada ferramenta que iremos utilizar"
     },
+    "parents": [
+      "7442cd375a064505e020dc7d5dfcbe59cfd533e7"
+    ],
     "additions": 178,
     "deletions": 0,
     "total_changes": 178,
@@ -2527,13 +3729,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-25T02:52:55Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:52:55Z"
       },
       "message": "Adicionando estudo que havia esquecido sobre requisitos"
     },
+    "parents": [
+      "ee7fc4b414ad9ae6fbc8dfa4d34b12bba174c55e"
+    ],
     "additions": 46,
     "deletions": 0,
     "total_changes": 46,
@@ -2544,13 +3754,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-25T02:38:09Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-25T02:38:09Z"
       },
       "message": "Corrige o gitignore para padrão pré-estabelecido anteriormente"
     },
+    "parents": [
+      "890de84596b8ddd5222f851a1e8ae3a41a7446bf"
+    ],
     "additions": 175,
     "deletions": 6,
     "total_changes": 181,
@@ -2561,13 +3779,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-25T01:41:24Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-25T01:41:24Z"
       },
       "message": "Adiciona release note v0.1.0"
     },
+    "parents": [
+      "890de84596b8ddd5222f851a1e8ae3a41a7446bf"
+    ],
     "additions": 45,
     "deletions": 0,
     "total_changes": 45,
@@ -2578,13 +3804,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-23T22:30:06Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-23T22:30:06Z"
       },
       "message": "concepção modificada e mais robusta"
     },
+    "parents": [
+      "de6d0a705f15502560547923cffe16688cd81267"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -2595,13 +3829,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-23T22:12:08Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-23T22:12:08Z"
       },
       "message": "concepção inicial do app"
     },
+    "parents": [
+      "f990049993e7409b294a575c2882967fd38dcbe9"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -2612,13 +3854,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-13T19:37:54Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "Matheus do Vale Lameira",
+        "date": "2026-05-13T19:37:54Z"
       },
       "message": "Mudança de guia rapido"
     },
+    "parents": [
+      "7b1bab080216233f9f84c4f95b63e7a987e7db96"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -2629,13 +3879,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-13T19:29:33Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "Matheus do Vale Lameira",
+        "date": "2026-05-13T19:29:33Z"
       },
       "message": "correção yml"
     },
+    "parents": [
+      "1ac7ec7b5499660b4a42e1f4c5162f614e9631f6"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2646,13 +3904,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-13T19:27:53Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "Matheus do Vale Lameira",
+        "date": "2026-05-13T19:27:53Z"
       },
       "message": "unificando a apresentação do produto com o dashboard técnico"
     },
+    "parents": [
+      "b13914c639360e9d704d6a4a0241dbd22d015d42"
+    ],
     "additions": 97,
     "deletions": 25,
     "total_changes": 122,
@@ -2663,13 +3929,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-13T19:08:53Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "Matheus do Vale Lameira",
+        "date": "2026-05-13T19:08:53Z"
       },
       "message": "fix: corrige sintaxe do workflow de deploy"
     },
+    "parents": [
+      "f725287b60051f3537ce7cb147179318be12c315"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2680,13 +3954,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus do Vale Lameira",
         "date": "2026-05-13T19:05:33Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "Matheus do Vale Lameira",
+        "date": "2026-05-13T19:05:33Z"
       },
       "message": "feat: organiza estrutura e inicia componente dashboard"
     },
+    "parents": [
+      "262daa449d1c0f0a804b0bd4b3c89e552abc85d3"
+    ],
     "additions": 6500,
     "deletions": 176,
     "total_changes": 6676,
@@ -2697,13 +3979,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-13T15:09:46Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #42 from unb-mds/novos-estudos-caua"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-13T15:09:46Z"
+      },
+      "message": "Merge pull request #42 from unb-mds/novos-estudos-caua\n\nAdiciona novos estudos"
     },
+    "parents": [
+      "77acf9e6b32f4f40b6029656ffac88672c9328cc",
+      "ba42d033d77a3b87d7e8d864ae70cd2bd82c9c04"
+    ],
     "additions": 450,
     "deletions": 0,
     "total_changes": 450,
@@ -2714,13 +4005,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "CauaoClemente",
         "date": "2026-05-13T05:19:06Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-13T05:19:06Z"
       },
       "message": "Alteração Didatica README.md"
     },
+    "parents": [
+      "7b52aac428da29ec6ae7b1302e8ac055a383cc61"
+    ],
     "additions": 68,
     "deletions": 2,
     "total_changes": 70,
@@ -2731,13 +4030,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-12T21:17:47Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-12T21:17:47Z"
       },
       "message": "Adiciona novos estudos"
     },
+    "parents": [
+      "77acf9e6b32f4f40b6029656ffac88672c9328cc"
+    ],
     "additions": 450,
     "deletions": 0,
     "total_changes": 450,
@@ -2748,13 +4055,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:48:39Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:48:39Z"
       },
       "message": "Rename estudo_API_Milla.md to estudo_API.md"
     },
+    "parents": [
+      "a884d3e8ececb10def84ae37c504e2eaabdd75da"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2765,13 +4080,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:46:25Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:46:25Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "e96e3c55eb4f80293753b8e292c7034de7976bb1"
+    ],
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
@@ -2782,13 +4105,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:44:58Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:44:58Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "c13aed6385358041fd2723ce62591f7e2cf75dca"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -2799,13 +4130,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:43:48Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:43:48Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "74b3fc93007f4259672f5987b34188f1e1f66658"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -2816,13 +4155,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:39:51Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:39:51Z"
       },
       "message": "Update estudo_Miro.md"
     },
+    "parents": [
+      "86d5857dfa2a08076ce0788cce39c6737d985611"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2833,13 +4180,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:37:36Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
       },
-      "message": "Merge pull request #40 from unb-mds/Estudos-Milla"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:37:36Z"
+      },
+      "message": "Merge pull request #40 from unb-mds/Estudos-Milla\n\nCorrigindo erros de edição"
     },
+    "parents": [
+      "80bb5e9347312286c35f4c392fe6f5075d2214b3",
+      "46b2bc7123f6997d27c68d9cf724e082fe2372b0"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2850,13 +4206,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:36:25Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-05-11T12:36:25Z"
       },
       "message": "Corrigindo erros de edição"
     },
+    "parents": [
+      "7c2abd0e835a4c0287d1d0815f00b92daf918ed7"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2867,13 +4231,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:31:17Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
       },
-      "message": "Merge pull request #39 from unb-mds/Estudos-Milla"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-11T12:31:17Z"
+      },
+      "message": "Merge pull request #39 from unb-mds/Estudos-Milla\n\nAdicionando estudos sobre o Miro"
     },
+    "parents": [
+      "83536bb9b5846b5c2e8a9227bdc3cc9e78e413d1",
+      "7c2abd0e835a4c0287d1d0815f00b92daf918ed7"
+    ],
     "additions": 54,
     "deletions": 0,
     "total_changes": 54,
@@ -2884,13 +4257,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-11T12:26:15Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-05-11T12:26:15Z"
       },
       "message": "Adicionando estudos sobre o Miro"
     },
+    "parents": [
+      "5329d197f2c653440d03bf635f6c0de224f47ce4"
+    ],
     "additions": 54,
     "deletions": 0,
     "total_changes": 54,
@@ -2901,13 +4282,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-10T19:29:32Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
       },
-      "message": "Merge pull request #38 from unb-mds/Estudos-Milla"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-10T19:29:32Z"
+      },
+      "message": "Merge pull request #38 from unb-mds/Estudos-Milla\n\nCorreção no texto do estudo de Figma"
     },
+    "parents": [
+      "6edabdd19aba4aa67c7253d91a9770ce3b31834b",
+      "5329d197f2c653440d03bf635f6c0de224f47ce4"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2918,13 +4308,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-10T19:24:09Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-05-10T19:24:09Z"
       },
       "message": "Correção no texto do estudo de Figma"
     },
+    "parents": [
+      "bf313b6bd3fddc100bc567eff199b18d46e66a38"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2935,13 +4333,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-10T19:18:50Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
       },
-      "message": "Merge pull request #37 from unb-mds/Estudos-Milla"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-10T19:18:50Z"
+      },
+      "message": "Merge pull request #37 from unb-mds/Estudos-Milla\n\nAdicionando estudo de Figma"
     },
+    "parents": [
+      "7701d4ec57694a53c34ba68d5b19f142e7c830ed",
+      "bf313b6bd3fddc100bc567eff199b18d46e66a38"
+    ],
     "additions": 57,
     "deletions": 0,
     "total_changes": 57,
@@ -2952,13 +4359,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-09T20:30:36Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #25 from unb-mds/add-estudo-caua"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-09T20:30:36Z"
+      },
+      "message": "Merge pull request #25 from unb-mds/add-estudo-caua\n\nAdicionando estudo de backend e frontend"
     },
+    "parents": [
+      "243c1cc8d745285690a98c8930c78b838d65f5dc",
+      "75081dcc45b3f71bed4aff63ad6d09b2cdd033a2"
+    ],
     "additions": 178,
     "deletions": 0,
     "total_changes": 178,
@@ -2969,13 +4385,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-06T10:17:24Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
       },
-      "message": "Merge branch 'Estudos-Milla' of https://github.com/unb-mds/2026-1-Squ…"
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-05-06T10:17:24Z"
+      },
+      "message": "Merge branch 'Estudos-Milla' of https://github.com/unb-mds/2026-1-Squad11 into Estudos-Milla"
     },
+    "parents": [
+      "a5cb83395f2140d1987f0f54361aa07c202933a6",
+      "3779c9f46abde7f8d8327568ef5280941d1803b8"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -2986,13 +4411,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-05-06T10:16:03Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-05-06T10:16:03Z"
       },
       "message": "adicionando estudo sobre FigmaI"
     },
+    "parents": [
+      "20391c9bd2d9a78a702228afa9e01d8f1278eab5"
+    ],
     "additions": 57,
     "deletions": 0,
     "total_changes": 57,
@@ -3003,13 +4436,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-05T23:43:50Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-05T23:43:50Z"
       },
       "message": "melhora de aspectos visuais e identidade do projeto"
     },
+    "parents": [
+      "9309f495cb83f6a42d19f28efb3f3e0b8e22862d"
+    ],
     "additions": 140,
     "deletions": 144,
     "total_changes": 284,
@@ -3020,13 +4461,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-05T23:26:30Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-05T23:26:30Z"
       },
       "message": "implementa nova interface de produto com css/js"
     },
+    "parents": [
+      "c0e43f2f8dcb7100cea251348c5e242bd3a35bf4"
+    ],
     "additions": 402,
     "deletions": 144,
     "total_changes": 546,
@@ -3037,13 +4486,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-05-05T23:16:47Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "c549700a513e1ec2273093fedd20ea6f6ac2545afe8dcba34ee48a27dc5984fe"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-05-05T23:16:47Z"
       },
       "message": "docs: publicacao inicial da pagina de produto do Prisma"
     },
+    "parents": [
+      "243c1cc8d745285690a98c8930c78b838d65f5dc"
+    ],
     "additions": 144,
     "deletions": 969,
     "total_changes": 1113,
@@ -3054,13 +4511,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-05T21:43:40Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Melhora o env de exemplo com comentários e o nome relacionado ao readme"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-05T21:43:40Z"
+      },
+      "message": "Melhora o env de exemplo com comentários e o nome relacionado ao readme\n\nCo-authored-by: Copilot <[email removed]>"
     },
+    "parents": [
+      "030dd7ff5facde77f5aef0d971c1f5a5ff4d5933"
+    ],
     "additions": 16,
     "deletions": 10,
     "total_changes": 26,
@@ -3071,13 +4536,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-05T21:40:47Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-05T21:40:47Z"
       },
       "message": "Adiciona README.md com configuração de ambiente detalhada."
     },
+    "parents": [
+      "a554f9609f3e68081059155e8b1e01e33359b540"
+    ],
     "additions": 103,
     "deletions": 1,
     "total_changes": 104,
@@ -3088,13 +4561,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T17:08:59Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona configuração do Docker, requirements e ajustes nas variáveis…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-04T17:08:59Z"
+      },
+      "message": "Adiciona configuração do Docker, requirements e ajustes nas variáveis de ambiente do Django\n\nCo-authored-by: Copilot <[email removed]>"
     },
+    "parents": [
+      "61ab6efbbf9d272cb28729ef9cd13d4c38413d77"
+    ],
     "additions": 73,
     "deletions": 1,
     "total_changes": 74,
@@ -3105,13 +4586,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T17:08:08Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-04T17:08:08Z"
       },
       "message": "Adiciona arquivo de exemplo .env com configurações básicas do Django"
     },
+    "parents": [
+      "77054c1f80c67bbf8e136525ca1b2e4ff7aeadc4"
+    ],
     "additions": 10,
     "deletions": 0,
     "total_changes": 10,
@@ -3122,13 +4611,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T16:28:45Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Atualiza configuração do banco de dados para utilizar variáveis de am…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-04T16:28:45Z"
+      },
+      "message": "Atualiza configuração do banco de dados para utilizar variáveis de ambiente"
     },
+    "parents": [
+      "0615a9dd6f515efd450f64aac107997e6680ed60"
+    ],
     "additions": 11,
     "deletions": 5,
     "total_changes": 16,
@@ -3139,13 +4636,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T16:17:28Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Atualiza configurações do django para utilizar variáveis de ambiente …"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-04T16:17:28Z"
+      },
+      "message": "Atualiza configurações do django para utilizar variáveis de ambiente do env."
     },
+    "parents": [
+      "a61e64cf9bc1d61d63da6ee7a47f126f208ad960"
+    ],
     "additions": 5,
     "deletions": 3,
     "total_changes": 8,
@@ -3156,13 +4661,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-04T16:03:37Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
       },
-      "message": "Adicionando estudo de backend e frontend, e depois irei mandar o de c…"
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-04T16:03:37Z"
+      },
+      "message": "Adicionando estudo de backend e frontend, e depois irei mandar o de cada ferramenta que iremos utilizar"
     },
+    "parents": [
+      "0fb54f6fd1a060c00c6d47cffff4c10a4bcf5996"
+    ],
     "additions": 178,
     "deletions": 0,
     "total_changes": 178,
@@ -3173,13 +4686,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T15:59:51Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #24 from unb-mds/add-estudo-caua"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-04T15:59:51Z"
+      },
+      "message": "Merge pull request #24 from unb-mds/add-estudo-caua\n\nAdicionando estudo que havia esquecido sobre requisitos"
     },
+    "parents": [
+      "6feb00cb0f3679eca98dff96c64fbbb72ff5704e",
+      "0fb54f6fd1a060c00c6d47cffff4c10a4bcf5996"
+    ],
     "additions": 46,
     "deletions": 0,
     "total_changes": 46,
@@ -3190,13 +4712,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-05-04T15:45:32Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-05-04T15:45:32Z"
       },
       "message": "Adicionando estudo que havia esquecido sobre requisitos"
     },
+    "parents": [
+      "08f63b9f85d24c62df42b9b5ed04216b4ecf8034"
+    ],
     "additions": 46,
     "deletions": 0,
     "total_changes": 46,
@@ -3207,13 +4737,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T15:44:59Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-04T15:44:59Z"
       },
       "message": "Inicializa projeto Django com configuração básica e arquivos essenciais"
     },
+    "parents": [
+      "6feb00cb0f3679eca98dff96c64fbbb72ff5704e"
+    ],
     "additions": 218,
     "deletions": 0,
     "total_changes": 218,
@@ -3224,13 +4762,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-05-04T15:22:37Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-05-04T15:22:37Z"
       },
       "message": "Adiciona relatório da sprint 3."
     },
+    "parents": [
+      "569cb1683493a38edf98a8bce068d2967ec825e8"
+    ],
     "additions": 27,
     "deletions": 0,
     "total_changes": 27,
@@ -3241,13 +4787,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Matheus Do Vale Lameira",
         "date": "2026-05-03T19:02:40Z",
-        "login": "delvale412"
+        "login": "delvale412",
+        "id": 122396991,
+        "author_email_hash": "12598a59f481bfca73dca42a7b1971d3ea64c81e988e7761c294e0789d5de5e7"
       },
-      "message": "Merge pull request #23 from unb-mds/add-estudo-django"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-05-03T19:02:40Z"
+      },
+      "message": "Merge pull request #23 from unb-mds/add-estudo-django\n\ndocs: adiciona estudo sobre django filters"
     },
+    "parents": [
+      "46e038cdb7bbbb72aa7d434155fcf2d6f542a310",
+      "d8fb33841d87163053ec3367be512e04d55b76d5"
+    ],
     "additions": 359,
     "deletions": 0,
     "total_changes": 359,
@@ -3258,13 +4813,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-29T17:00:50Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-04-29T17:00:50Z"
       },
       "message": "Update sprint title to 'Sprint 1'"
     },
+    "parents": [
+      "6f1d3aeff2959c3d31b7ac5d1c203d793eea2e12"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -3275,13 +4838,19 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "delvale412",
         "date": "2026-04-29T01:44:52Z",
-        "login": null
+        "author_email_hash": "1ab5643daabd90b579b31a7ca910700f312330d0f233586bb58014aec3e54a63"
+      },
+      "committer": {
+        "name": "delvale412",
+        "date": "2026-04-29T01:44:52Z"
       },
       "message": "docs: adiciona estudo sobre django filters"
     },
+    "parents": [
+      "6f1d3aeff2959c3d31b7ac5d1c203d793eea2e12"
+    ],
     "additions": 359,
     "deletions": 0,
     "total_changes": 359,
@@ -3292,13 +4861,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-26T23:24:47Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Adiciona documento da Sprint 2 com objetivos, conquistas e tarefas fu…"
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-04-26T23:24:47Z"
+      },
+      "message": "Adiciona documento da Sprint 2 com objetivos, conquistas e tarefas futuras"
     },
+    "parents": [
+      "07ea7505ca645d47bb7c57a4c32f272aa5fe9495"
+    ],
     "additions": 53,
     "deletions": 0,
     "total_changes": 53,
@@ -3309,13 +4886,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-26T23:21:53Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #2 from unb-mds/Estudos-Milla"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-04-26T23:21:53Z"
+      },
+      "message": "Merge pull request #2 from unb-mds/Estudos-Milla\n\nExplicação de APIs com analogia do garçom"
     },
+    "parents": [
+      "28bbb2e61b9b6fbc239129baa9d9098ba08d9af1",
+      "3779c9f46abde7f8d8327568ef5280941d1803b8"
+    ],
     "additions": 26,
     "deletions": 0,
     "total_changes": 26,
@@ -3326,13 +4912,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-26T23:21:04Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Apply suggestions from code review"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-04-26T23:21:04Z"
+      },
+      "message": "Apply suggestions from code review\n\nCorreção de digitação apenas\n\nCo-authored-by: kaikysousa <[email removed]>"
     },
+    "parents": [
+      "20391c9bd2d9a78a702228afa9e01d8f1278eab5"
+    ],
     "additions": 1,
     "deletions": 1,
     "total_changes": 2,
@@ -3343,13 +4937,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-26T22:25:05Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-04-26T22:25:05Z"
       },
       "message": "Adiciona arquivo .gitignore para projeto Django"
     },
+    "parents": [
+      "2f3d7366e627f2c64ea2a8970d165e4d1019b05b"
+    ],
     "additions": 177,
     "deletions": 0,
     "total_changes": 177,
@@ -3360,13 +4962,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-04-23T12:59:50Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-04-23T12:59:50Z"
       },
       "message": "Ajustando detalhes do estudo de APIs"
     },
+    "parents": [
+      "c3905f9078e9bbad951caabed8dd19a601fcb660"
+    ],
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
@@ -3377,13 +4987,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "millapereira1",
         "date": "2026-04-22T16:39:42Z",
-        "login": "millapereira1"
+        "login": "millapereira1",
+        "id": 270409434,
+        "author_email_hash": "f1d7079d6616c6380b4e81d26da43cfee9fb0181a1825e1345619a61393d4a51"
+      },
+      "committer": {
+        "name": "millapereira1",
+        "date": "2026-04-22T16:39:42Z"
       },
       "message": "Explicação de APIs com analogia do garçom"
     },
+    "parents": [
+      "2f3d7366e627f2c64ea2a8970d165e4d1019b05b"
+    ],
     "additions": 26,
     "deletions": 0,
     "total_changes": 26,
@@ -3394,13 +5012,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-15T16:08:56Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-04-15T16:08:56Z"
       },
       "message": "Registra a primeira sprint"
     },
+    "parents": [
+      "b04e251ca52bc1329c74359eb3250118061638d7"
+    ],
     "additions": 47,
     "deletions": 0,
     "total_changes": 47,
@@ -3411,13 +5037,22 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-15T14:44:09Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
       },
-      "message": "Merge pull request #1 from unb-mds/add-estudo-caua"
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-04-15T14:44:09Z"
+      },
+      "message": "Merge pull request #1 from unb-mds/add-estudo-caua\n\nAdiciona markdown de estudo do git e github (Cauã)\n\nFicou muito bom o estudo! vai servir de base para a consulta de comandos de git para quem precisar."
     },
+    "parents": [
+      "88d63607ba27c1ae279cb2a4c2f431c0a673452d",
+      "08f63b9f85d24c62df42b9b5ed04216b4ecf8034"
+    ],
     "additions": 152,
     "deletions": 0,
     "total_changes": 152,
@@ -3428,13 +5063,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Caua",
         "date": "2026-04-14T21:01:49Z",
-        "login": "CauaoClemente"
+        "login": "CauaoClemente",
+        "id": 236893424,
+        "author_email_hash": "414beee6b5bf4bb10acc4eb7a01257ae0f8fb57d8a8499299437cbde2d8f2d77"
+      },
+      "committer": {
+        "name": "Caua",
+        "date": "2026-04-14T21:01:49Z"
       },
       "message": "Adiciona markdown de estudo do git e github"
     },
+    "parents": [
+      "88d63607ba27c1ae279cb2a4c2f431c0a673452d"
+    ],
     "additions": 152,
     "deletions": 0,
     "total_changes": 152,
@@ -3445,13 +5088,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-13T15:40:30Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-04-13T15:40:30Z"
       },
       "message": "Adiciona template para relatórios de sprint"
     },
+    "parents": [
+      "f3c05670bacdf81580f30d2d6399fa59332338c6"
+    ],
     "additions": 36,
     "deletions": 0,
     "total_changes": 36,
@@ -3462,13 +5113,21 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "kaikysousa",
         "date": "2026-04-13T15:39:36Z",
-        "login": "kaikysousa"
+        "login": "kaikysousa",
+        "id": 17420604,
+        "author_email_hash": "d37372877cba0e12b495c2ad74a49fc006a5f2e1762fd40a92f9d9d52eb88a8f"
+      },
+      "committer": {
+        "name": "kaikysousa",
+        "date": "2026-04-13T15:39:36Z"
       },
       "message": "Adiciona primeiro registro de sprint"
     },
+    "parents": [
+      "7bcce6f99de019de794af52fa1d8b85937dff6c5"
+    ],
     "additions": 24,
     "deletions": 0,
     "total_changes": 24,
@@ -3479,13 +5138,19 @@
     "html_url": null,
     "commit": {
       "author": {
-        "name": null,
-        "email": null,
+        "name": "Carla Rocha",
         "date": "2026-04-06T16:34:51Z",
-        "login": "RochaCarla"
+        "login": "RochaCarla",
+        "id": 5897389,
+        "author_email_hash": "688f4c1151d43fb41aaa51ae158dec701c1b6bbcc4b7e36f0bbb2d46a303cc70"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-04-06T16:34:51Z"
       },
       "message": "Initial commit"
     },
+    "parents": [],
     "additions": 22,
     "deletions": 0,
     "total_changes": 22,
