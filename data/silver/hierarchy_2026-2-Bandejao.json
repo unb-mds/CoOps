@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-23T10:49:30.952498",
+  "extracted_at": "2026-09-24T10:53:10.590583",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -19,7 +19,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2360,
+        "size": 3003,
         "extension": ".md",
         "path": "README.md"
       },
@@ -98,6 +98,14 @@
         "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py"
       },
       {
+        "name": "cb27a92c83d1_adiciona_alergeno_amendoim.py",
+        "type": "file",
+        "language": "Python",
+        "size": 798,
+        "extension": ".py",
+        "path": "backend/alembic/versions/cb27a92c83d1_adiciona_alergeno_amendoim.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -135,7 +143,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 2973,
+        "size": 5140,
         "extension": ".py",
         "path": "backend/app/api/routes/cardapio.py"
       },
@@ -211,7 +219,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 354,
+        "size": 596,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -273,7 +281,7 @@
         "name": "item_cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 1804,
+        "size": 1878,
         "extension": ".py",
         "path": "backend/app/models/item_cardapio.py"
       },
@@ -287,7 +295,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 391,
+        "size": 486,
         "extension": ".py",
         "path": "backend/app/schemas/__init__.py"
       },
@@ -311,7 +319,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 401,
+        "size": 1980,
         "extension": ".py",
         "path": "backend/app/schemas/cardapio.py"
       },
@@ -327,7 +335,7 @@
         "name": "item_cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 512,
+        "size": 538,
         "extension": ".py",
         "path": "backend/app/schemas/item_cardapio.py"
       },
@@ -373,7 +381,7 @@
         "name": "test_cardapio_api.py",
         "type": "file",
         "language": "Python",
-        "size": 5161,
+        "size": 7391,
         "extension": ".py",
         "path": "backend/tests/test_cardapio_api.py"
       },
@@ -381,7 +389,7 @@
         "name": "test_health.py",
         "type": "file",
         "language": "Python",
-        "size": 256,
+        "size": 451,
         "extension": ".py",
         "path": "backend/tests/test_health.py"
       },
@@ -405,7 +413,7 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 883,
+        "size": 773,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -518,6 +526,14 @@
         "path": "docs/estudos/ocr_imagem.md"
       },
       {
+        "name": "handoff_banco_e_importacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4098,
+        "extension": ".md",
+        "path": "docs/handoff_banco_e_importacao.md"
+      },
+      {
         "name": "scrum",
         "type": "directory",
         "path": "docs/scrum",
@@ -563,9 +579,17 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 331,
+        "size": 15379,
         "extension": ".py",
         "path": "extracao/extracao/main.py"
+      },
+      {
+        "name": "sincronizar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2096,
+        "extension": ".py",
+        "path": "extracao/extracao/sincronizar.py"
       },
       {
         "name": "pyproject.toml",
@@ -579,7 +603,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 119,
+        "size": 134,
         "extension": ".txt",
         "path": "extracao/requirements.txt"
       },
@@ -598,12 +622,28 @@
         "path": "extracao/tests/__init__.py"
       },
       {
+        "name": "test_cobertura_total.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8318,
+        "extension": ".py",
+        "path": "extracao/tests/test_cobertura_total.py"
+      },
+      {
         "name": "test_main.py",
         "type": "file",
         "language": "Python",
-        "size": 142,
+        "size": 6404,
         "extension": ".py",
         "path": "extracao/tests/test_main.py"
+      },
+      {
+        "name": "test_sincronizar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1314,
+        "extension": ".py",
+        "path": "extracao/tests/test_sincronizar.py"
       },
       {
         "name": "frontend",
@@ -631,7 +671,7 @@
         "name": "Dockerfile",
         "type": "file",
         "language": "No Extension",
-        "size": 134,
+        "size": 269,
         "extension": "",
         "path": "frontend/Dockerfile"
       },
@@ -816,7 +856,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-23T10:50:31.426883",
+    "extracted_at": "2026-09-24T10:54:09.258440",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }

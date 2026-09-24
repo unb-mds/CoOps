@@ -2,19 +2,19 @@
   "repository": "G2-2026-2",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-23T10:49:26.361033",
+  "analyzed_at": "2026-09-24T10:53:03.288081",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 5,
-  "total_bytes": 125404,
+  "total_files": 11,
+  "total_bytes": 151550,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 82.66,
+      "percentage": 68.4,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -39,8 +39,8 @@
     {
       "language": "Markdown",
       "file_count": 2,
-      "total_bytes": 21748,
-      "percentage": 17.34,
+      "total_bytes": 21776,
+      "percentage": 14.37,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
@@ -51,14 +51,66 @@
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 9261,
+          "size": 9289,
           "extension": ".md"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 1,
+      "total_bytes": 20480,
+      "percentage": 13.51,
+      "files": [
+        {
+          "path": "banco.db",
+          "name": "banco.db",
+          "size": 20480,
+          "extension": ".db"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 5,
+      "total_bytes": 5638,
+      "percentage": 3.72,
+      "files": [
+        {
+          "path": "app/test_avaliacoes.py",
+          "name": "test_avaliacoes.py",
+          "size": 2037,
+          "extension": ".py"
+        },
+        {
+          "path": "app/repositorio.py",
+          "name": "repositorio.py",
+          "size": 1649,
+          "extension": ".py"
+        },
+        {
+          "path": "app/database.py",
+          "name": "database.py",
+          "size": 993,
+          "extension": ".py"
+        },
+        {
+          "path": "app/models.py",
+          "name": "models.py",
+          "size": 959,
+          "extension": ".py"
+        },
+        {
+          "path": "app/modelo.py",
+          "name": "modelo.py",
+          "size": 0,
+          "extension": ".py"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-23T10:50:32.590887",
+    "extracted_at": "2026-09-24T10:54:10.425508",
     "file_path": "data/silver/language_analysis_G2-2026-2.json"
   }
 }

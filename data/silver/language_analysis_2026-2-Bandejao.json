@@ -2,19 +2,19 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-23T10:49:30.952498",
+  "analyzed_at": "2026-09-24T10:53:10.590583",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 82,
-  "total_bytes": 217455,
+  "total_files": 87,
+  "total_bytes": 262680,
   "languages": [
     {
       "language": "Markdown",
-      "file_count": 20,
-      "total_bytes": 83735,
-      "percentage": 38.51,
+      "file_count": 21,
+      "total_bytes": 88476,
+      "percentage": 33.68,
       "files": [
         {
           "path": "docs/estudos/frontend.md",
@@ -59,6 +59,12 @@
           "extension": ".md"
         },
         {
+          "path": "docs/handoff_banco_e_importacao.md",
+          "name": "handoff_banco_e_importacao.md",
+          "size": 4098,
+          "extension": ".md"
+        },
+        {
           "path": "docs/estudos/backend.md",
           "name": "backend.md",
           "size": 3990,
@@ -69,12 +75,74 @@
           "name": "git_github.md",
           "size": 3702,
           "extension": ".md"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 39,
+      "total_bytes": 75825,
+      "percentage": 28.87,
+      "files": [
+        {
+          "path": "extracao/extracao/main.py",
+          "name": "main.py",
+          "size": 15379,
+          "extension": ".py"
         },
         {
-          "path": "docs/Arquitetura.md",
-          "name": "Arquitetura.md",
-          "size": 3504,
-          "extension": ".md"
+          "path": "extracao/tests/test_cobertura_total.py",
+          "name": "test_cobertura_total.py",
+          "size": 8318,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_cardapio_api.py",
+          "name": "test_cardapio_api.py",
+          "size": 7391,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_main.py",
+          "name": "test_main.py",
+          "size": 6404,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/routes/cardapio.py",
+          "name": "cardapio.py",
+          "size": 5140,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/db/seed.py",
+          "name": "seed.py",
+          "size": 4048,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py",
+          "name": "3e9ed9bb9055_cria_tabelas_iniciais.py",
+          "size": 3921,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/env.py",
+          "name": "env.py",
+          "size": 2170,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/extracao/sincronizar.py",
+          "name": "sincronizar.py",
+          "size": 2096,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/schemas/cardapio.py",
+          "name": "cardapio.py",
+          "size": 1980,
+          "extension": ".py"
         }
       ]
     },
@@ -82,7 +150,7 @@
       "language": "JSON",
       "file_count": 3,
       "total_bytes": 41627,
-      "percentage": 19.14,
+      "percentage": 15.85,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -105,78 +173,10 @@
       ]
     },
     {
-      "language": "Python",
-      "file_count": 35,
-      "total_bytes": 35381,
-      "percentage": 16.27,
-      "files": [
-        {
-          "path": "backend/tests/test_cardapio_api.py",
-          "name": "test_cardapio_api.py",
-          "size": 5161,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/db/seed.py",
-          "name": "seed.py",
-          "size": 4048,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py",
-          "name": "3e9ed9bb9055_cria_tabelas_iniciais.py",
-          "size": 3921,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/routes/cardapio.py",
-          "name": "cardapio.py",
-          "size": 2973,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/env.py",
-          "name": "env.py",
-          "size": 2170,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/models/item_cardapio.py",
-          "name": "item_cardapio.py",
-          "size": 1804,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/models/cardapio.py",
-          "name": "cardapio.py",
-          "size": 1511,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_seed_e_sessao.py",
-          "name": "test_seed_e_sessao.py",
-          "size": 1464,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/conftest.py",
-          "name": "conftest.py",
-          "size": 1351,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/routes/avaliacao.py",
-          "name": "avaliacao.py",
-          "size": 1261,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 12.59,
+      "percentage": 10.43,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -208,7 +208,7 @@
       "language": "PNG Image",
       "file_count": 1,
       "total_bytes": 13057,
-      "percentage": 6.0,
+      "percentage": 4.97,
       "files": [
         {
           "path": "frontend/src/assets/hero.png",
@@ -222,7 +222,7 @@
       "language": "CSS",
       "file_count": 2,
       "total_bytes": 5060,
-      "percentage": 2.33,
+      "percentage": 1.93,
       "files": [
         {
           "path": "frontend/src/App.css",
@@ -242,7 +242,7 @@
       "language": "JavaScript",
       "file_count": 3,
       "total_bytes": 4036,
-      "percentage": 1.86,
+      "percentage": 1.54,
       "files": [
         {
           "path": "frontend/src/App.jsx",
@@ -268,7 +268,7 @@
       "language": "INI",
       "file_count": 1,
       "total_bytes": 3819,
-      "percentage": 1.76,
+      "percentage": 1.45,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -281,13 +281,13 @@
     {
       "language": "YAML",
       "file_count": 1,
-      "total_bytes": 883,
-      "percentage": 0.41,
+      "total_bytes": 773,
+      "percentage": 0.29,
       "files": [
         {
           "path": "docker-compose.yml",
           "name": "docker-compose.yml",
-          "size": 883,
+          "size": 773,
           "extension": ".yml"
         }
       ]
@@ -296,7 +296,7 @@
       "language": "Unknown",
       "file_count": 2,
       "total_bytes": 704,
-      "percentage": 0.32,
+      "percentage": 0.27,
       "files": [
         {
           "path": "backend/alembic/script.py.mako",
@@ -313,10 +313,36 @@
       ]
     },
     {
+      "language": "No Extension",
+      "file_count": 3,
+      "total_bytes": 513,
+      "percentage": 0.2,
+      "files": [
+        {
+          "path": "frontend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 269,
+          "extension": ""
+        },
+        {
+          "path": "backend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 206,
+          "extension": ""
+        },
+        {
+          "path": "backend/alembic/README",
+          "name": "README",
+          "size": 38,
+          "extension": ""
+        }
+      ]
+    },
+    {
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 448,
-      "percentage": 0.21,
+      "percentage": 0.17,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -333,36 +359,10 @@
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 3,
-      "total_bytes": 378,
-      "percentage": 0.17,
-      "files": [
-        {
-          "path": "backend/Dockerfile",
-          "name": "Dockerfile",
-          "size": 206,
-          "extension": ""
-        },
-        {
-          "path": "frontend/Dockerfile",
-          "name": "Dockerfile",
-          "size": 134,
-          "extension": ""
-        },
-        {
-          "path": "backend/alembic/README",
-          "name": "README",
-          "size": 38,
-          "extension": ""
-        }
-      ]
-    },
-    {
       "language": "HTML",
       "file_count": 1,
       "total_bytes": 360,
-      "percentage": 0.17,
+      "percentage": 0.14,
       "files": [
         {
           "path": "frontend/index.html",
@@ -375,8 +375,8 @@
     {
       "language": "Text",
       "file_count": 2,
-      "total_bytes": 320,
-      "percentage": 0.15,
+      "total_bytes": 335,
+      "percentage": 0.13,
       "files": [
         {
           "path": "backend/requirements.txt",
@@ -387,7 +387,7 @@
         {
           "path": "extracao/requirements.txt",
           "name": "requirements.txt",
-          "size": 119,
+          "size": 134,
           "extension": ".txt"
         }
       ]
@@ -396,7 +396,7 @@
       "language": "TOML",
       "file_count": 2,
       "total_bytes": 259,
-      "percentage": 0.12,
+      "percentage": 0.1,
       "files": [
         {
           "path": "extracao/pyproject.toml",
@@ -414,7 +414,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-23T10:50:31.426185",
+    "extracted_at": "2026-09-24T10:54:09.257474",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }
