@@ -48,6 +48,21 @@ def _write_run_summary(client: GitHubAPIClient) -> None:
             f.write(summary)
 
 
+def persist_watermarks(store: WatermarkStore, client: GitHubAPIClient) -> None:
+    """Write the watermark file at the end of a run — never an offline one.
+
+    An offline replay (#199) reads whatever the cache holds, so a watermark
+    derived from it is a claim about the provider's state the run has no
+    evidence for; writing it is precisely how a stale read became durable
+    corruption. Skipping the write keeps the replay a diagnostic that cannot
+    reproduce the mechanism it exists to diagnose.
+    """
+    if client.offline:
+        print("Offline mode: watermarks are not saved (a replay must not move them from cached reads)")
+        return
+    store.save()
+
+
 def positive_int(value: str) -> int:
     """argparse type for caps: a cap of 0 or less would fetch nothing."""
     number = int(value)
@@ -205,7 +220,10 @@ def main():
         # ========================================
         # Persist Watermarks
         # ========================================
-        watermark_store.save()
+        # Offline runs are excluded here, not in the store: loading the
+        # watermark is what makes the replay request the same URL set as the
+        # run it diagnoses, while persisting one would move it on no evidence.
+        persist_watermarks(watermark_store, client)
 
         # ========================================
         # Update Registry

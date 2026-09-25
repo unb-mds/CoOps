@@ -6,7 +6,7 @@ Data registry management for tracking all generated files and their relationship
 import argparse
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Any
 from coops.utils.github_api import load_json_data, save_json_data
 
@@ -26,7 +26,7 @@ def create_master_registry() -> str:
     """Create master registry that maps all data files across layers"""
     
     master_registry = {
-        'created_at': datetime.now().isoformat(),
+        'created_at': datetime.now(timezone.utc).isoformat(),
         'layers': {
             'bronze': {},
             'silver': {},
@@ -201,7 +201,7 @@ def generate_data_catalog() -> str:
     """Generate comprehensive data catalog with descriptions"""
     
     catalog = {
-        'generated_at': datetime.now().isoformat(),
+        'generated_at': datetime.now(timezone.utc).isoformat(),
         'bronze_layer': {
             'description': 'Raw data extracted directly from GitHub API',
             'entities': {

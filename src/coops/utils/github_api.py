@@ -13,7 +13,7 @@ import hashlib
 import requests
 import threading
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Optional, Any, Tuple
 from urllib.parse import urlsplit, parse_qsl
 
@@ -759,26 +759,41 @@ class GitHubAPIClient:
                             additions = stats.get('additions', 0)
                             deletions = stats.get('deletions', 0)
 
-                            # Extract author login
-                            author_login = None
-                            if rest_commit.get('author') and rest_commit['author'].get('login'):
-                                author_login = rest_commit['author']['login']
-                            elif rest_commit.get('commit', {}).get('author', {}).get('name'):
-                                author_login = rest_commit['commit']['author']['name']
+                            commit_payload = rest_commit.get('commit', {}) or {}
+                            raw_author = commit_payload.get('author') or {}
+                            raw_committer = commit_payload.get('committer') or {}
+
+                            # The GitHub account, present only when the commit
+                            # is linked to one: an unlinked commit has
+                            # `author: null`. The git `name` is not a login —
+                            # standing in for one fabricates an account that
+                            # never existed, and dropping `email` leaves the
+                            # commit unattributable (#203).
+                            account = rest_commit.get('author')
+                            if not isinstance(account, dict):
+                                account = {}
 
                             print(f"[REST][Worker-{worker_num}] Fetched {sha[:8]}: +{additions}/-{deletions}")
 
-                            commit_payload = rest_commit.get('commit', {}) or {}
-                            raw_committer = commit_payload.get('committer') or {}
                             processed_commits.append({
                                 'oid': sha,
                                 'message': commit_payload.get('message', ''),
                                 'messageHeadline': commit_payload.get('message', '').split('\n')[0],
-                                'committedDate': commit_payload.get('author', {}).get('date'),
+                                'committedDate': raw_author.get('date'),
+                                # The node shape the GraphQL query returns
+                                # (`author { name email user { login
+                                # databaseId } }`), so the GraphQL->REST
+                                # mapping in bronze/commits.py treats both
+                                # paths identically. REST's `author.id` is
+                                # GraphQL's `user.databaseId`.
                                 'author': {
+                                    'name': raw_author.get('name'),
+                                    'email': raw_author.get('email'),
+                                    'date': raw_author.get('date'),
                                     'user': {
-                                        'login': author_login
-                                    }
+                                        'login': account.get('login'),
+                                        'databaseId': account.get('id'),
+                                    },
                                 },
                                 'committer': {
                                     'name': raw_committer.get('name'),
@@ -1196,7 +1211,7 @@ class GitHubAPIClient:
                 'sha': tree_sha,
                 'tree': standardized_tree,
                 'truncated': is_truncated,
-                'extracted_at': datetime.now().isoformat(),
+                'extracted_at': datetime.now(timezone.utc).isoformat(),
                 'method': 'rest',
                 'total_items': len(standardized_tree)
             }
@@ -1348,7 +1363,7 @@ class GitHubAPIClient:
                 'repository': repo,
                 'branch': branch,
                 'tree': tree,
-                'extracted_at': datetime.now().isoformat(),
+                'extracted_at': datetime.now(timezone.utc).isoformat(),
                 'method': 'graphql',
                 'total_items': len(tree)
             }
@@ -1364,7 +1379,7 @@ class GitHubAPIClient:
                 'branch': branch,
                 'tree': [],
                 'error': str(e),
-                'extracted_at': datetime.now().isoformat(),
+                'extracted_at': datetime.now(timezone.utc).isoformat(),
                 'method': 'graphql'
             }
 
@@ -1446,7 +1461,7 @@ class GitHubAPIClient:
             'sha': '',
             'tree': [],
             'truncated': False,
-            'extracted_at': datetime.now().isoformat(),
+            'extracted_at': datetime.now(timezone.utc).isoformat(),
             'method': 'rest',
             'total_items': 0,
             'error': error
@@ -1504,7 +1519,7 @@ def save_json_data(data: Any, filepath: str, timestamp: bool = True) -> str:
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
     if timestamp:
-        now = datetime.now().isoformat()
+        now = datetime.now(timezone.utc).isoformat()
         if isinstance(data, dict):
             # Copy: callers may reuse the dict (e.g. in a consolidated file).
             data = {**data, '_metadata': {
@@ -1546,7 +1561,7 @@ def update_data_registry(layer: str, entity: str, files: List[str]) -> None:
         registry[entity] = {}
 
     registry[entity]['files'] = files
-    registry[entity]['updated_at'] = datetime.now().isoformat()
+    registry[entity]['updated_at'] = datetime.now(timezone.utc).isoformat()
     registry[entity]['layer'] = layer
 
     save_json_data(registry, registry_path, timestamp=False)

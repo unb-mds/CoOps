@@ -442,9 +442,13 @@ class TestBronzeExtract:
                         with patch('coops.bronze.members.extract_members', return_value=[]):
                             with patch('coops.bronze.repository_structure.extract_repository_structure', return_value=[]) as mock_structure:
                                 with patch('coops.etl.bronze_extract.update_data_registry'):
-                                    with patch('coops.etl.bronze_extract.GitHubAPIClient'):
+                                    with patch('coops.etl.bronze_extract.GitHubAPIClient') as mock_client_cls:
                                         with patch('coops.etl.bronze_extract.WatermarkStore') as mock_store_cls:
                                             store = mock_store_cls.return_value
+                                            # main só grava o watermark numa execução
+                                            # online; sem isso o mock teria offline
+                                            # "verdadeiro" por acidente.
+                                            mock_client_cls.return_value.offline = False
                                             from coops.etl import bronze_extract
 
                                             bronze_extract.main()
@@ -543,3 +547,44 @@ class TestBronzeExtract:
                                         bronze_extract.main()
 
                                         assert mock_client_cls.call_args[1]['cache_dir'] == 'cache'
+
+
+class TestPersistWatermarks:
+    """Offline replay (#199) não pode gravar watermark nenhum.
+
+    Um replay lê o que o cache tem; um watermark derivado disso é uma
+    afirmação sobre o estado do provedor que a execução não tem como
+    sustentar. Gravá-lo é exatamente o mecanismo que transformou a leitura
+    velha do #199 em corrupção durável.
+    """
+
+    def test_offline_writes_no_watermark_file(self, tmp_path):
+        from coops.bronze.watermarks import WatermarkStore
+        from coops.etl.bronze_extract import persist_watermarks
+        from coops.utils.github_api import GitHubAPIClient
+
+        client = GitHubAPIClient("token", cache_dir=str(tmp_path / "cache"), offline=True)
+        path = tmp_path / "watermarks.json"
+        store = WatermarkStore(str(path))
+        store.update("org/repo1", last_updated_at="2026-09-23T18:48:10Z")
+
+        persist_watermarks(store, client)
+
+        assert not path.exists()
+
+    def test_online_still_writes_the_file(self, tmp_path):
+        # O controle de braços distintos: sem ele, um persist_watermarks
+        # que nunca grava passaria no teste de cima e continuaria quebrado.
+        from coops.bronze.watermarks import WatermarkStore
+        from coops.etl.bronze_extract import persist_watermarks
+        from coops.utils.github_api import GitHubAPIClient
+
+        client = GitHubAPIClient("token", cache_dir=str(tmp_path / "cache"))
+        path = tmp_path / "watermarks.json"
+        store = WatermarkStore(str(path))
+        store.update("org/repo1", last_updated_at="2026-09-23T18:48:10Z")
+
+        persist_watermarks(store, client)
+
+        reloaded = WatermarkStore(str(path))
+        assert reloaded.get("org/repo1").last_updated_at == "2026-09-23T18:48:10Z"

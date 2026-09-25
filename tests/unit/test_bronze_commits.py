@@ -8,6 +8,7 @@ import re
 import pytest
 from unittest.mock import MagicMock, patch, call
 from coops.bronze.commits import extract_commits, _hash_email, _sanitize_commit
+from coops.utils.github_api import GitHubAPIClient
 
 
 class TestExtractCommits:
@@ -1020,3 +1021,137 @@ class TestRecoverableFields:
         # Credit is preserved: the trailer and the human name stay.
         assert "Co-authored-by: Pair Person" in serialized
         assert "Signed-off-by: Mona Octocat" in serialized
+
+
+class TestRestFallbackAuthorShape:
+    """The REST fallback behind the GraphQL circuit breaker must emit the same
+    author node the GraphQL query returns, so the GraphQL->REST mapping in
+    extract_commits and `_sanitize_commit` see identical input from both paths
+    (#203).
+
+    The old fallback kept only `author.user.login` — and let the git `name`
+    stand in as that login for unlinked commits. That dropped `email` (so no
+    `author_email_hash` could ever be derived: the commit became unattributable)
+    and fabricated logins that were never GitHub accounts.
+    """
+
+    SHA = "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4e5f6a1b2"
+
+    def _rest_list_commit(self, author):
+        """A realistic REST list item: the fallback reads every author field
+        from the list entry and only the stats from the detail fetch, so the
+        fixture must carry the full `commit.author` block — a bare
+        `{'sha': ...}` would leave the author code unexercised."""
+        return {
+            "sha": self.SHA,
+            "html_url": f"https://github.com/test-org/repo1/commit/{self.SHA}",
+            "commit": {
+                "message": "feat: subject\n\nBody line.",
+                "author": {
+                    "name": "Dev",
+                    "email": "dev@example.com",
+                    "date": "2026-01-01T00:00:00Z",
+                },
+                "committer": {
+                    "name": "Dev",
+                    "email": "committer@example.com",
+                    "date": "2026-01-01T00:00:01Z",
+                },
+            },
+            "author": author,
+            "parents": [{"sha": "9" * 40}],
+        }
+
+    def _run_fallback(self, tmp_path, commits_list):
+        """Drive the real fallback with its one network-touching method
+        stubbed; commits come back as GraphQL-shaped nodes."""
+        client = GitHubAPIClient(token="test", cache_dir=str(tmp_path / "cache"))
+
+        def fake_fetch(owner, repo, sha, use_cache):
+            return {
+                "data": {"sha": sha, "stats": {"additions": 10, "deletions": 5}},
+                "thread_id": 1,
+                "headers": None,
+            }
+
+        with patch.object(client, "_fetch_with_thread_id", side_effect=fake_fetch):
+            return client._fetch_rest_commit_details_parallel(
+                commits_list, "test-org", "repo1", True, max_workers=1
+            )
+
+    def _sanitize_via_pipeline(self, nodes):
+        """Feed the fallback's nodes through the real GraphQL->REST mapping and
+        `_sanitize_commit` pass in extract_commits; return what would be
+        persisted. `remove_aggregate` is patched so the test cannot touch the
+        tracked `data/` tree whatever the working copy holds."""
+        mock_client = MagicMock()
+        mock_config = MagicMock()
+        mock_config.org_name = "test-org"
+        mock_client.graphql_commit_history.return_value = (nodes, {})
+
+        saved = {}
+
+        def capture_save(data, path):
+            saved.setdefault("records", data)
+            return "file.json"
+
+        with patch(
+            "coops.bronze.commits.load_json_data",
+            return_value=[{"name": "repo1", "full_name": "test-org/repo1"}],
+        ), patch(
+            "coops.bronze.commits.save_json_data", side_effect=capture_save
+        ), patch("coops.bronze.commits.remove_aggregate"):
+            extract_commits(mock_client, mock_config, method="graphql")
+
+        assert "records" in saved, "extract_commits persisted nothing"
+        return saved["records"]
+
+    def test_linked_author_yields_email_hash(self, tmp_path):
+        """Criterion 1: a linked author's email reaches `_sanitize_commit`,
+        which derives the stable `author_email_hash` from it."""
+        nodes = self._run_fallback(
+            tmp_path, [self._rest_list_commit({"login": "octocat", "id": 583231})]
+        )
+        (record,) = self._sanitize_via_pipeline(nodes)
+        author = record["commit"]["author"]
+        assert author.get("author_email_hash") == _hash_email("dev@example.com")
+
+    def test_unlinked_author_login_is_none(self, tmp_path):
+        """Criterion 2: `author: null` means no GitHub account — the git name
+        must not be fabricated into a login."""
+        nodes = self._run_fallback(tmp_path, [self._rest_list_commit(None)])
+        (record,) = self._sanitize_via_pipeline(nodes)
+        assert record["commit"]["author"].get("login") is None
+
+    def test_linked_author_account_id_survives(self, tmp_path):
+        """Criterion 3: the numeric account id (REST `author.id`, GraphQL
+        `user.databaseId`) survives sanitization."""
+        nodes = self._run_fallback(
+            tmp_path, [self._rest_list_commit({"login": "octocat", "id": 583231})]
+        )
+        (record,) = self._sanitize_via_pipeline(nodes)
+        assert record["commit"]["author"].get("id") == 583231
+
+    def test_unlinked_author_email_flows_in_and_never_out(self, tmp_path):
+        """Criterion 4: the address must be carried into the record (else no
+        hash could be derived) yet must not survive sanitization anywhere."""
+        nodes = self._run_fallback(tmp_path, [self._rest_list_commit(None)])
+        # Carried in: the fallback emits the email for the sanitizer to hash.
+        assert nodes[0]["author"].get("email") == "dev@example.com"
+        (record,) = self._sanitize_via_pipeline(nodes)
+        # ...but never out, under any key.
+        serialized = json.dumps(record)
+        assert "dev@example.com" not in serialized
+        assert not _EMAIL_RE.search(serialized)
+
+    def test_node_author_shape_matches_graphql(self, tmp_path):
+        """The fallback's author block is the GraphQL node shape, field for
+        field, so the two paths are indistinguishable downstream."""
+        nodes = self._run_fallback(
+            tmp_path, [self._rest_list_commit({"login": "octocat", "id": 583231})]
+        )
+        author = nodes[0]["author"]
+        assert author["name"] == "Dev"
+        assert author["email"] == "dev@example.com"
+        assert author["date"] == "2026-01-01T00:00:00Z"
+        assert author["user"] == {"login": "octocat", "databaseId": 583231}

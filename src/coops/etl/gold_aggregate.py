@@ -3,7 +3,7 @@
 import argparse
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 def load_json(filepath):
@@ -43,7 +43,7 @@ def main():
     # One timestamp for both artifacts, from a single clock reading: the
     # dashboard and the tiers are produced by the same run, so comparing
     # their freshness is only meaningful if they cannot disagree.
-    generated_at = datetime.now().isoformat()
+    generated_at = datetime.now(timezone.utc).isoformat()
 
     executive_kpis = {
         'generated_at': generated_at,

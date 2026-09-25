@@ -388,3 +388,26 @@ class TestCreateMasterRegistry:
                     
                     assert file_entry['size_bytes'] == 0
                     assert file_entry['modified_at'] is None
+
+
+class TestPersistedTimestampsAreUtc:
+    """Timestamps persistidos são UTC consciente de fuso, com o offset no
+    próprio valor (#143): uma execução no Actions (UTC) e uma local (-03:00)
+    precisam produzir instantes comparáveis."""
+
+    def test_master_registry_created_at_is_utc(self):
+        """Testa que created_at do registro mestre carrega +00:00"""
+        with patch('coops.etl.registry_manager.scan_data_directory', return_value=[]):
+            with patch('coops.etl.registry_manager.save_json_data', return_value='registry.json') as mock_save:
+                create_master_registry()
+
+                created_at = mock_save.call_args[0][0]['created_at']
+                assert created_at.endswith('+00:00')
+
+    def test_catalog_generated_at_is_utc(self):
+        """Testa que generated_at do catálogo carrega +00:00"""
+        with patch('coops.etl.registry_manager.save_json_data', return_value='catalog.json') as mock_save:
+            generate_data_catalog()
+
+            generated_at = mock_save.call_args[0][0]['generated_at']
+            assert generated_at.endswith('+00:00')

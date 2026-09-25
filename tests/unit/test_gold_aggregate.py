@@ -99,3 +99,19 @@ def test_performance_tiers_generated_at(tmp_path):
     assert tiers["generated_at"] == kpis["generated_at"]
     # Same isoformat shape the dashboard uses: YYYY-MM-DDTHH:MM:SS[.ffffff].
     assert re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}", tiers["generated_at"])
+
+
+def test_generated_at_is_utc_with_offset(tmp_path):
+    """generated_at é UTC consciente de fuso: o valor carrega o próprio
+    offset (+00:00), então uma execução no Actions e uma local produzem
+    instantes comparáveis (#143)."""
+    write(tmp_path, "silver/contribution_metrics.json", [META] + [
+        {"user": f"u{i}", "total_contributions": c, "has_contributed": c > 0}
+        for i, c in enumerate([100, 50, 10, 5, 0])
+    ])
+
+    kpis = run(tmp_path)
+    tiers = json.loads((tmp_path / "data" / "gold" / "performance_tiers.json").read_text())
+
+    assert kpis["generated_at"].endswith("+00:00")
+    assert tiers["generated_at"].endswith("+00:00")

@@ -6,7 +6,7 @@ Transforms raw member data into analytics-ready metrics
 
 import pandas as pd
 import numpy as np
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, List, Optional
 from coops.utils.github_api import save_json_data, load_json_data, parse_github_date
 
@@ -43,11 +43,19 @@ def _parse_capture_time(metadata: Any) -> datetime:
         raise ValueError(
             f"_metadata.extracted_at is not a parseable timestamp: {raw!r} (#188)"
         ) from None
-    # created_at is parsed below as a naive wall-clock reading; drop any
-    # offset so the subtraction compares like with like.
-    if parsed.tzinfo is not None:
-        parsed = parsed.replace(tzinfo=None)
-    return parsed
+    # A naive value predates #143 and was written by a run stamping the
+    # clock in UTC (CI runs always were; local runs wrote the local wall
+    # clock — treating it as UTC is the only reading the old format lets a
+    # reader make, and it is what every tracked corpus contains). An aware
+    # value is *converted* to UTC: stripping the offset instead would keep
+    # the local wall-clock reading and shift the instant by the offset.
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    else:
+        parsed = parsed.astimezone(timezone.utc)
+    # created_at is parsed below as a naive UTC reading (…Z); return the
+    # same shape so the subtraction compares like with like.
+    return parsed.replace(tzinfo=None)
 
 def _account_age_days(member_data: dict, as_of: datetime) -> int:
     """Whole days between the member's ``created_at`` and ``as_of``.

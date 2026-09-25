@@ -4,7 +4,12 @@ from datetime import datetime
 import pytest
 from freezegun import freeze_time
 
-from coops.silver.member_analytics import calculate_maturity_score, classify_member_status, process_member_analytics
+from coops.silver.member_analytics import (
+    _parse_capture_time,
+    calculate_maturity_score,
+    classify_member_status,
+    process_member_analytics,
+)
 
 AS_OF = datetime(2025, 1, 1)  # the capture instant the helper tests age against
 
@@ -529,3 +534,30 @@ def test_maturity_score_stable_across_days(monkeypatch):
         + 20 * math.log1p(member["followers"])
     )
     assert math.isclose(scores[0], expected, rel_tol=1e-12)
+
+
+def test_capture_time_old_naive_value_still_works():
+    """Corpora escritos antes de #143 carregam extracted_at naive (sem
+    offset). O leitor precisa aceitá-los e tratá-los como UTC — eles foram
+    gravados por execuções que carimbavam o relógio em UTC."""
+    parsed = _parse_capture_time({"extracted_at": "2025-06-01T12:00:00"})
+    assert parsed == datetime(2025, 6, 1, 12, 0)
+
+
+def test_capture_time_aware_value_still_works():
+    """Corpora novos carregam o offset (+00:00); o leitor precisa aceitar."""
+    parsed = _parse_capture_time({"extracted_at": "2025-06-01T12:00:00+00:00"})
+    assert parsed == datetime(2025, 6, 1, 12, 0)
+
+
+def test_capture_time_same_instant_regardless_of_offset():
+    """Controle arms-differ: o mesmo instante gravado com offsets diferentes
+    tem de parsear para o mesmo valor. Um leitor que descarta o offset (em
+    vez de convertê-lo) passa nos dois testes acima e ainda assim erra pela
+    diferença de fuso — este teste é o que pega isso."""
+    naive = _parse_capture_time({"extracted_at": "2025-06-01T12:00:00"})
+    as_utc = _parse_capture_time({"extracted_at": "2025-06-01T12:00:00+00:00"})
+    as_m03 = _parse_capture_time({"extracted_at": "2025-06-01T09:00:00-03:00"})
+
+    assert naive == as_utc
+    assert naive == as_m03
