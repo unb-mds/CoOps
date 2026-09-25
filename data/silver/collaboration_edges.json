@@ -1,9 +1,9 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-24T22:51:49.498787",
+      "extracted_at": "2026-09-25T06:27:27.486613+00:00",
       "file_path": "data/silver/collaboration_edges.json",
-      "record_count": 4404
+      "record_count": 4407
     }
   },
   {
@@ -59,7 +59,7 @@
   {
     "source": "RochaCarla",
     "target": "unb-mds",
-    "weight": 15,
+    "weight": 16,
     "repos": [
       "2023-2-JuizVirtual",
       "2023-2-Squad04",
@@ -72,6 +72,7 @@
       "2025-1-GovInsights",
       "2025_1-Jakebot",
       "2026-1-SafeStreets",
+      "2026-2-Followw",
       "Gastos-DF-2024-02",
       "MDS-MonitoraBSB",
       "Mds-ArenaPesadelo",
@@ -104,7 +105,7 @@
   {
     "source": "github-project-automation[bot]",
     "target": "unb-mds",
-    "weight": 10,
+    "weight": 11,
     "repos": [
       "2023-2-JuizVirtual",
       "2023-2-Squad04",
@@ -115,6 +116,7 @@
       "2025-1-GovInsights",
       "2025_1-Jakebot",
       "2026-1-SafeStreets",
+      "2026-2-Followw",
       "VIDAProject"
     ],
     "collaboration_type": "same_repository"
@@ -670,6 +672,16 @@
   },
   {
     "source": "github-project-automation[bot]",
+    "target": "vercel[bot]",
+    "weight": 2,
+    "repos": [
+      "2023-2-SuaGradeUnB",
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "unb-mds",
     "target": "vercel[bot]",
     "weight": 2,
     "repos": [
@@ -8914,15 +8926,6 @@
   },
   {
     "source": "sluucke",
-    "target": "vercel[bot]",
-    "weight": 1,
-    "repos": [
-      "2023-2-SuaGradeUnB"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "unb-mds",
     "target": "vercel[bot]",
     "weight": 1,
     "repos": [
@@ -18192,114 +18195,6 @@
     "collaboration_type": "same_repository"
   },
   {
-    "source": "Carla Rocha",
-    "target": "Copilot",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "Gustavo",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "HeitorM50",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "Marcs2608",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "RochaCarla",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "cadumotta",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "danrleypereira",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "github-actions[bot]",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "guxvr",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "pedrogrocha13",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Carla Rocha",
-    "target": "pedruck",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Copilot",
-    "target": "Gustavo",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
     "source": "Copilot",
     "target": "HeitorM50",
     "weight": 1,
@@ -18355,87 +18250,6 @@
   },
   {
     "source": "Copilot",
-    "target": "pedruck",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "HeitorM50",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "Marcs2608",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "RochaCarla",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "cadumotta",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "danrleypereira",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "github-actions[bot]",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "guxvr",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
-    "target": "pedrogrocha13",
-    "weight": 1,
-    "repos": [
-      "2025-2-Squad-01"
-    ],
-    "collaboration_type": "same_repository"
-  },
-  {
-    "source": "Gustavo",
     "target": "pedruck",
     "weight": 1,
     "repos": [
@@ -20110,6 +19924,15 @@
   },
   {
     "source": "RochaCarla",
+    "target": "codex",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "RochaCarla",
     "target": "gabrielrdaraujo",
     "weight": 1,
     "repos": [
@@ -20120,6 +19943,15 @@
   {
     "source": "RochaCarla",
     "target": "nicolaszanin06",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "RochaCarla",
+    "target": "warlleydias",
     "weight": 1,
     "repos": [
       "2026-02-UnDb"
@@ -20155,6 +19987,15 @@
   },
   {
     "source": "TiagoVieira-596",
+    "target": "codex",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "TiagoVieira-596",
     "target": "gabrielrdaraujo",
     "weight": 1,
     "repos": [
@@ -20174,6 +20015,15 @@
   {
     "source": "TiagoVieira-596",
     "target": "nicolaszanin06",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "TiagoVieira-596",
+    "target": "warlleydias",
     "weight": 1,
     "repos": [
       "2026-02-UnDb"
@@ -20191,6 +20041,15 @@
   },
   {
     "source": "ViniGvdo",
+    "target": "codex",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "ViniGvdo",
     "target": "gabrielrdaraujo",
     "weight": 1,
     "repos": [
@@ -20208,6 +20067,24 @@
     "collaboration_type": "same_repository"
   },
   {
+    "source": "ViniGvdo",
+    "target": "warlleydias",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "ailoiol",
+    "target": "codex",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
     "source": "ailoiol",
     "target": "gabrielrdaraujo",
     "weight": 1,
@@ -20219,6 +20096,60 @@
   {
     "source": "ailoiol",
     "target": "github-project-automation[bot]",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "ailoiol",
+    "target": "warlleydias",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "codex",
+    "target": "gabrielrdaraujo",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "codex",
+    "target": "github-project-automation[bot]",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "codex",
+    "target": "nicolaszanin06",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "codex",
+    "target": "warlleydias",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "codex",
+    "target": "warlleymedeiros",
     "weight": 1,
     "repos": [
       "2026-02-UnDb"
@@ -20237,6 +20168,15 @@
   {
     "source": "gabrielrdaraujo",
     "target": "nicolaszanin06",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "gabrielrdaraujo",
+    "target": "warlleydias",
     "weight": 1,
     "repos": [
       "2026-02-UnDb"
@@ -20263,6 +20203,33 @@
   },
   {
     "source": "github-project-automation[bot]",
+    "target": "warlleydias",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "github-project-automation[bot]",
+    "target": "warlleymedeiros",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "nicolaszanin06",
+    "target": "warlleydias",
+    "weight": 1,
+    "repos": [
+      "2026-02-UnDb"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "warlleydias",
     "target": "warlleymedeiros",
     "weight": 1,
     "repos": [
@@ -23566,6 +23533,15 @@
   },
   {
     "source": "Mendezalv",
+    "target": "unb-mds",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "Mendezalv",
     "target": "vercel[bot]",
     "weight": 1,
     "repos": [
@@ -23638,6 +23614,15 @@
   },
   {
     "source": "SamukaToned",
+    "target": "unb-mds",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "SamukaToned",
     "target": "vercel[bot]",
     "weight": 1,
     "repos": [
@@ -23648,6 +23633,15 @@
   {
     "source": "diegolxxz",
     "target": "github-project-automation[bot]",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "diegolxxz",
+    "target": "unb-mds",
     "weight": 1,
     "repos": [
       "2026-2-Followw"
@@ -23666,6 +23660,15 @@
   {
     "source": "ed9gaspar",
     "target": "github-project-automation[bot]",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "ed9gaspar",
+    "target": "unb-mds",
     "weight": 1,
     "repos": [
       "2026-2-Followw"
@@ -23684,6 +23687,15 @@
   {
     "source": "eliabexp",
     "target": "github-project-automation[bot]",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "eliabexp",
+    "target": "unb-mds",
     "weight": 1,
     "repos": [
       "2026-2-Followw"
@@ -23702,6 +23714,15 @@
   {
     "source": "gabrielcrzojo",
     "target": "github-project-automation[bot]",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "gabrielcrzojo",
+    "target": "unb-mds",
     "weight": 1,
     "repos": [
       "2026-2-Followw"
@@ -23720,6 +23741,15 @@
   {
     "source": "github-project-automation[bot]",
     "target": "ratatta-na-nite",
+    "weight": 1,
+    "repos": [
+      "2026-2-Followw"
+    ],
+    "collaboration_type": "same_repository"
+  },
+  {
+    "source": "ratatta-na-nite",
+    "target": "unb-mds",
     "weight": 1,
     "repos": [
       "2026-2-Followw"

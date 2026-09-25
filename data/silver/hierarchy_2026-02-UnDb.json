@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-24T22:51:01.595667",
+  "extracted_at": "2026-09-25T06:26:42.396164+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -77,7 +77,7 @@
         "name": "pull-request.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2675,
+        "size": 6909,
         "extension": ".yml",
         "path": ".github/workflows/pull-request.yml"
       },
@@ -85,7 +85,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 103,
+        "size": 110,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -131,7 +131,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4661,
+        "size": 8439,
         "extension": ".md",
         "path": "README.md"
       },
@@ -153,7 +153,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 650,
+        "size": 1266,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -210,6 +210,38 @@
         "path": "backend/alembic/versions/20260911_01_create_initial_schema.py"
       },
       {
+        "name": "20260917_02_identidade_institucional.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8944,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20260917_02_identidade_institucional.py"
+      },
+      {
+        "name": "20260919_03_email_confirmation_tokens.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1201,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20260919_03_email_confirmation_tokens.py"
+      },
+      {
+        "name": "20260920_01_create_importacao_execucoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1600,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20260920_01_create_importacao_execucoes.py"
+      },
+      {
+        "name": "20260921_01_create_user_sessions.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1099,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20260921_01_create_user_sessions.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -246,6 +278,14 @@
         "path": "backend/app/commands/importar_sigaa.py"
       },
       {
+        "name": "importar_sigaa_agendado.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3052,
+        "extension": ".py",
+        "path": "backend/app/commands/importar_sigaa_agendado.py"
+      },
+      {
         "name": "core",
         "type": "directory",
         "path": "backend/app/core",
@@ -260,10 +300,18 @@
         "path": "backend/app/core/__init__.py"
       },
       {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2705,
+        "extension": ".py",
+        "path": "backend/app/core/auth.py"
+      },
+      {
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 151,
+        "size": 497,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -274,6 +322,14 @@
         "size": 453,
         "extension": ".py",
         "path": "backend/app/core/database.py"
+      },
+      {
+        "name": "security.py",
+        "type": "file",
+        "language": "Python",
+        "size": 480,
+        "extension": ".py",
+        "path": "backend/app/core/security.py"
       },
       {
         "name": "domain",
@@ -298,10 +354,18 @@
         "path": "backend/app/domain/avaliacoes.py"
       },
       {
+        "name": "texto.py",
+        "type": "file",
+        "language": "Python",
+        "size": 343,
+        "extension": ".py",
+        "path": "backend/app/domain/texto.py"
+      },
+      {
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 281,
+        "size": 616,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -315,7 +379,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 300,
+        "size": 613,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -331,7 +395,7 @@
         "name": "disciplina.py",
         "type": "file",
         "language": "Python",
-        "size": 768,
+        "size": 948,
         "extension": ".py",
         "path": "backend/app/models/disciplina.py"
       },
@@ -344,26 +408,58 @@
         "path": "backend/app/models/enums.py"
       },
       {
+        "name": "importacao_execucao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1481,
+        "extension": ".py",
+        "path": "backend/app/models/importacao_execucao.py"
+      },
+      {
         "name": "professor.py",
         "type": "file",
         "language": "Python",
-        "size": 592,
+        "size": 1049,
         "extension": ".py",
         "path": "backend/app/models/professor.py"
+      },
+      {
+        "name": "sessao_usuario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 874,
+        "extension": ".py",
+        "path": "backend/app/models/sessao_usuario.py"
+      },
+      {
+        "name": "token_confirmacao_email.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1002,
+        "extension": ".py",
+        "path": "backend/app/models/token_confirmacao_email.py"
       },
       {
         "name": "turma.py",
         "type": "file",
         "language": "Python",
-        "size": 1005,
+        "size": 1899,
         "extension": ".py",
         "path": "backend/app/models/turma.py"
+      },
+      {
+        "name": "unidade.py",
+        "type": "file",
+        "language": "Python",
+        "size": 959,
+        "extension": ".py",
+        "path": "backend/app/models/unidade.py"
       },
       {
         "name": "usuario.py",
         "type": "file",
         "language": "Python",
-        "size": 931,
+        "size": 1110,
         "extension": ".py",
         "path": "backend/app/models/usuario.py"
       },
@@ -385,7 +481,7 @@
         "name": "avaliacao_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 780,
+        "size": 2823,
         "extension": ".py",
         "path": "backend/app/repositories/avaliacao_repository.py"
       },
@@ -393,7 +489,7 @@
         "name": "disciplina_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 439,
+        "size": 1726,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repository.py"
       },
@@ -401,17 +497,41 @@
         "name": "professor_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 495,
+        "size": 2591,
         "extension": ".py",
         "path": "backend/app/repositories/professor_repository.py"
+      },
+      {
+        "name": "sessao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 465,
+        "extension": ".py",
+        "path": "backend/app/repositories/sessao_repository.py"
       },
       {
         "name": "turma_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 1006,
+        "size": 1837,
         "extension": ".py",
         "path": "backend/app/repositories/turma_repository.py"
+      },
+      {
+        "name": "unidade_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2208,
+        "extension": ".py",
+        "path": "backend/app/repositories/unidade_repository.py"
+      },
+      {
+        "name": "usuario_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 734,
+        "extension": ".py",
+        "path": "backend/app/repositories/usuario_repository.py"
       },
       {
         "name": "routers",
@@ -428,18 +548,34 @@
         "path": "backend/app/routers/__init__.py"
       },
       {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3050,
+        "extension": ".py",
+        "path": "backend/app/routers/auth.py"
+      },
+      {
         "name": "avaliacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 93,
+        "size": 1023,
         "extension": ".py",
         "path": "backend/app/routers/avaliacoes.py"
+      },
+      {
+        "name": "disciplinas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3938,
+        "extension": ".py",
+        "path": "backend/app/routers/disciplinas.py"
       },
       {
         "name": "professores.py",
         "type": "file",
         "language": "Python",
-        "size": 2103,
+        "size": 3538,
         "extension": ".py",
         "path": "backend/app/routers/professores.py"
       },
@@ -458,10 +594,18 @@
         "path": "backend/app/schemas/__init__.py"
       },
       {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1617,
+        "extension": ".py",
+        "path": "backend/app/schemas/auth.py"
+      },
+      {
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2499,
+        "size": 2850,
         "extension": ".py",
         "path": "backend/app/schemas/avaliacao.py"
       },
@@ -469,7 +613,7 @@
         "name": "institucional.py",
         "type": "file",
         "language": "Python",
-        "size": 389,
+        "size": 866,
         "extension": ".py",
         "path": "backend/app/schemas/institucional.py"
       },
@@ -491,7 +635,7 @@
         "name": "sigaa_poc.py",
         "type": "file",
         "language": "Python",
-        "size": 9686,
+        "size": 11151,
         "extension": ".py",
         "path": "backend/app/scrapers/sigaa_poc.py"
       },
@@ -510,26 +654,66 @@
         "path": "backend/app/services/__init__.py"
       },
       {
+        "name": "auth_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4953,
+        "extension": ".py",
+        "path": "backend/app/services/auth_service.py"
+      },
+      {
         "name": "avaliacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3362,
+        "size": 6651,
         "extension": ".py",
         "path": "backend/app/services/avaliacao_service.py"
+      },
+      {
+        "name": "email_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1930,
+        "extension": ".py",
+        "path": "backend/app/services/email_service.py"
+      },
+      {
+        "name": "importacao_agendada_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2789,
+        "extension": ".py",
+        "path": "backend/app/services/importacao_agendada_service.py"
+      },
+      {
+        "name": "institucional_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1536,
+        "extension": ".py",
+        "path": "backend/app/services/institucional_service.py"
       },
       {
         "name": "sigaa_import_service.py",
         "type": "file",
         "language": "Python",
-        "size": 7639,
+        "size": 11795,
         "extension": ".py",
         "path": "backend/app/services/sigaa_import_service.py"
+      },
+      {
+        "name": "pegar_id.py",
+        "type": "file",
+        "language": "Python",
+        "size": 527,
+        "extension": ".py",
+        "path": "backend/pegar_id.py"
       },
       {
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 86,
+        "size": 108,
         "extension": ".txt",
         "path": "backend/requirements.txt"
       },
@@ -548,6 +732,22 @@
         "path": "backend/tests/__init__.py"
       },
       {
+        "name": "integration_avaliacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9824,
+        "extension": ".py",
+        "path": "backend/tests/integration_avaliacao.py"
+      },
+      {
+        "name": "migration_legacy_check.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4502,
+        "extension": ".py",
+        "path": "backend/tests/migration_legacy_check.py"
+      },
+      {
         "name": "test_agregacao_avaliacoes.py",
         "type": "file",
         "language": "Python",
@@ -556,18 +756,42 @@
         "path": "backend/tests/test_agregacao_avaliacoes.py"
       },
       {
+        "name": "test_api_institucional.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3242,
+        "extension": ".py",
+        "path": "backend/tests/test_api_institucional.py"
+      },
+      {
+        "name": "test_auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 17645,
+        "extension": ".py",
+        "path": "backend/tests/test_auth.py"
+      },
+      {
         "name": "test_avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 6958,
+        "size": 23864,
         "extension": ".py",
         "path": "backend/tests/test_avaliacao.py"
+      },
+      {
+        "name": "test_comparacao_professores.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4880,
+        "extension": ".py",
+        "path": "backend/tests/test_comparacao_professores.py"
       },
       {
         "name": "test_consulta_agregada.py",
         "type": "file",
         "language": "Python",
-        "size": 9293,
+        "size": 9484,
         "extension": ".py",
         "path": "backend/tests/test_consulta_agregada.py"
       },
@@ -575,15 +799,23 @@
         "name": "test_fluxo_sigaa_integrado.py",
         "type": "file",
         "language": "Python",
-        "size": 2112,
+        "size": 2138,
         "extension": ".py",
         "path": "backend/tests/test_fluxo_sigaa_integrado.py"
+      },
+      {
+        "name": "test_importacao_agendada_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5748,
+        "extension": ".py",
+        "path": "backend/tests/test_importacao_agendada_service.py"
       },
       {
         "name": "test_sigaa_import_service.py",
         "type": "file",
         "language": "Python",
-        "size": 11399,
+        "size": 11057,
         "extension": ".py",
         "path": "backend/tests/test_sigaa_import_service.py"
       },
@@ -591,9 +823,25 @@
         "name": "test_sigaa_poc_unittest.py",
         "type": "file",
         "language": "Python",
-        "size": 3922,
+        "size": 5770,
         "extension": ".py",
         "path": "backend/tests/test_sigaa_poc_unittest.py"
+      },
+      {
+        "name": "validar_issue27.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1349,
+        "extension": ".py",
+        "path": "backend/validar_issue27.py"
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1851,
+        "extension": ".yml",
+        "path": "docker-compose.yml"
       },
       {
         "name": "docs",
@@ -613,7 +861,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 14164,
+        "size": 21914,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -638,6 +886,28 @@
         "path": "docs/assets/stylesheets/extra.css"
       },
       {
+        "name": "atas",
+        "type": "directory",
+        "path": "docs/atas",
+        "children": []
+      },
+      {
+        "name": "2026-09-17.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2202,
+        "extension": ".md",
+        "path": "docs/atas/2026-09-17.md"
+      },
+      {
+        "name": "template-ata-reuniao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1986,
+        "extension": ".md",
+        "path": "docs/atas/template-ata-reuniao.md"
+      },
+      {
         "name": "diagramas",
         "type": "directory",
         "path": "docs/diagramas",
@@ -647,7 +917,7 @@
         "name": "gerar_modelos.py",
         "type": "file",
         "language": "Python",
-        "size": 8293,
+        "size": 9680,
         "extension": ".py",
         "path": "docs/diagramas/gerar_modelos.py"
       },
@@ -655,7 +925,7 @@
         "name": "modelo conceitual.pdf",
         "type": "file",
         "language": "PDF",
-        "size": 3694,
+        "size": 4269,
         "extension": ".pdf",
         "path": "docs/diagramas/modelo conceitual.pdf"
       },
@@ -663,7 +933,7 @@
         "name": "modelo logico.pdf",
         "type": "file",
         "language": "PDF",
-        "size": 4407,
+        "size": 5385,
         "extension": ".pdf",
         "path": "docs/diagramas/modelo logico.pdf"
       },
@@ -682,6 +952,26 @@
         "path": "docs/estudos/docker.md"
       },
       {
+        "name": "evidencias",
+        "type": "directory",
+        "path": "docs/estudos/evidencias",
+        "children": []
+      },
+      {
+        "name": "issue-37",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-37",
+        "children": []
+      },
+      {
+        "name": "Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
+        "type": "file",
+        "language": "Unknown",
+        "size": 39786,
+        "extension": ".docx",
+        "path": "docs/estudos/evidencias/issue-37/Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx"
+      },
+      {
         "name": "mapeamento-sigaa.md",
         "type": "file",
         "language": "Markdown",
@@ -698,6 +988,70 @@
         "path": "docs/estudos/sigaa-poc.md"
       },
       {
+        "name": "tela-exemplo-api-real.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2910,
+        "extension": ".md",
+        "path": "docs/estudos/tela-exemplo-api-real.md"
+      },
+      {
+        "name": "validacao-release-1-sigaa-2026-09-24.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6266,
+        "extension": ".md",
+        "path": "docs/estudos/validacao-release-1-sigaa-2026-09-24.md"
+      },
+      {
+        "name": "verificacao-ambiente-completo-issue-37-tiago-vieira.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3101,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-ambiente-completo-issue-37-tiago-vieira.md"
+      },
+      {
+        "name": "verificacao-ambiente-completo-issue-37.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2926,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-ambiente-completo-issue-37.md"
+      },
+      {
+        "name": "verificacao-busca-professor-disciplina.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6491,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-busca-professor-disciplina.md"
+      },
+      {
+        "name": "verificacao-docker-compose.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2078,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-docker-compose.md"
+      },
+      {
+        "name": "verificacao-execucao-frontend.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10975,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-execucao-frontend.md"
+      },
+      {
+        "name": "verificacao-formulario-avaliacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5352,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-formulario-avaliacao.md"
+      },
+      {
         "name": "figma.md",
         "type": "file",
         "language": "Markdown",
@@ -709,7 +1063,7 @@
         "name": "importacao-sigaa.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4229,
+        "size": 5955,
         "extension": ".md",
         "path": "docs/importacao-sigaa.md"
       },
@@ -717,7 +1071,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1698,
+        "size": 1840,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -730,10 +1084,40 @@
         "path": "docs/modelos.md"
       },
       {
+        "name": "operacao-importacao-sigaa.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5277,
+        "extension": ".md",
+        "path": "docs/operacao-importacao-sigaa.md"
+      },
+      {
+        "name": "relatorio_rf19.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9313,
+        "extension": ".md",
+        "path": "docs/relatorio_rf19.md"
+      },
+      {
+        "name": "releases",
+        "type": "directory",
+        "path": "docs/releases",
+        "children": []
+      },
+      {
+        "name": "1.0.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1763,
+        "extension": ".md",
+        "path": "docs/releases/1.0.0.md"
+      },
+      {
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 17791,
+        "size": 21966,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -741,15 +1125,521 @@
         "name": "visao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7239,
+        "size": 7687,
         "extension": ".md",
         "path": "docs/visao.md"
+      },
+      {
+        "name": "frontend",
+        "type": "directory",
+        "path": "frontend",
+        "children": []
+      },
+      {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 101,
+        "extension": ".dockerignore",
+        "path": "frontend/.dockerignore"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 665,
+        "extension": ".example",
+        "path": "frontend/.env.example"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 543,
+        "extension": ".gitignore",
+        "path": "frontend/.gitignore"
+      },
+      {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 678,
+        "extension": ".md",
+        "path": "frontend/AGENTS.md"
+      },
+      {
+        "name": "CLAUDE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11,
+        "extension": ".md",
+        "path": "frontend/CLAUDE.md"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 828,
+        "extension": "",
+        "path": "frontend/Dockerfile"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12820,
+        "extension": ".md",
+        "path": "frontend/README.md"
+      },
+      {
+        "name": "eslint.config.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 465,
+        "extension": ".mjs",
+        "path": "frontend/eslint.config.mjs"
+      },
+      {
+        "name": "next.config.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 260,
+        "extension": ".ts",
+        "path": "frontend/next.config.ts"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 223971,
+        "extension": ".json",
+        "path": "frontend/package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 626,
+        "extension": ".json",
+        "path": "frontend/package.json"
+      },
+      {
+        "name": "postcss.config.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 94,
+        "extension": ".mjs",
+        "path": "frontend/postcss.config.mjs"
+      },
+      {
+        "name": "public",
+        "type": "directory",
+        "path": "frontend/public",
+        "children": []
+      },
+      {
+        "name": "file.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 391,
+        "extension": ".svg",
+        "path": "frontend/public/file.svg"
+      },
+      {
+        "name": "globe.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 1035,
+        "extension": ".svg",
+        "path": "frontend/public/globe.svg"
+      },
+      {
+        "name": "next.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 1375,
+        "extension": ".svg",
+        "path": "frontend/public/next.svg"
+      },
+      {
+        "name": "vercel.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 128,
+        "extension": ".svg",
+        "path": "frontend/public/vercel.svg"
+      },
+      {
+        "name": "window.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 385,
+        "extension": ".svg",
+        "path": "frontend/public/window.svg"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "frontend/src",
+        "children": []
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "frontend/src/app",
+        "children": []
+      },
+      {
+        "name": "cadastro",
+        "type": "directory",
+        "path": "frontend/src/app/cadastro",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4517,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cadastro/page.tsx"
+      },
+      {
+        "name": "confirmar-email",
+        "type": "directory",
+        "path": "frontend/src/app/confirmar-email",
+        "children": []
+      },
+      {
+        "name": "confirmation-client.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2324,
+        "extension": ".tsx",
+        "path": "frontend/src/app/confirmar-email/confirmation-client.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 339,
+        "extension": ".tsx",
+        "path": "frontend/src/app/confirmar-email/page.tsx"
+      },
+      {
+        "name": "disciplinas",
+        "type": "directory",
+        "path": "frontend/src/app/disciplinas",
+        "children": []
+      },
+      {
+        "name": "[id]",
+        "type": "directory",
+        "path": "frontend/src/app/disciplinas/[id]",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5773,
+        "extension": ".tsx",
+        "path": "frontend/src/app/disciplinas/[id]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4025,
+        "extension": ".tsx",
+        "path": "frontend/src/app/disciplinas/page.tsx"
+      },
+      {
+        "name": "error.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 674,
+        "extension": ".tsx",
+        "path": "frontend/src/app/error.tsx"
+      },
+      {
+        "name": "favicon.ico",
+        "type": "file",
+        "language": "Icon",
+        "size": 25931,
+        "extension": ".ico",
+        "path": "frontend/src/app/favicon.ico"
+      },
+      {
+        "name": "globals.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 912,
+        "extension": ".css",
+        "path": "frontend/src/app/globals.css"
+      },
+      {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1939,
+        "extension": ".tsx",
+        "path": "frontend/src/app/layout.tsx"
+      },
+      {
+        "name": "login",
+        "type": "directory",
+        "path": "frontend/src/app/login",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5110,
+        "extension": ".tsx",
+        "path": "frontend/src/app/login/page.tsx"
+      },
+      {
+        "name": "not-found.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 791,
+        "extension": ".tsx",
+        "path": "frontend/src/app/not-found.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1323,
+        "extension": ".tsx",
+        "path": "frontend/src/app/page.tsx"
+      },
+      {
+        "name": "professores",
+        "type": "directory",
+        "path": "frontend/src/app/professores",
+        "children": []
+      },
+      {
+        "name": "[id]",
+        "type": "directory",
+        "path": "frontend/src/app/professores/[id]",
+        "children": []
+      },
+      {
+        "name": "disciplinas",
+        "type": "directory",
+        "path": "frontend/src/app/professores/[id]/disciplinas",
+        "children": []
+      },
+      {
+        "name": "[disciplinaId]",
+        "type": "directory",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]",
+        "children": []
+      },
+      {
+        "name": "avaliar",
+        "type": "directory",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar",
+        "children": []
+      },
+      {
+        "name": "avaliacao-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4413,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2068,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4772,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2715,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/[id]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3952,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/page.tsx"
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "path": "frontend/src/lib",
+        "children": []
+      },
+      {
+        "name": "avaliacao-formulario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4071,
+        "extension": ".ts",
+        "path": "frontend/src/lib/avaliacao-formulario.ts"
+      },
+      {
+        "name": "hooks",
+        "type": "directory",
+        "path": "frontend/src/lib/hooks",
+        "children": []
+      },
+      {
+        "name": "useDebouncedValue.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 477,
+        "extension": ".ts",
+        "path": "frontend/src/lib/hooks/useDebouncedValue.ts"
+      },
+      {
+        "name": "identificador.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 232,
+        "extension": ".ts",
+        "path": "frontend/src/lib/identificador.ts"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "frontend/src/lib/services",
+        "children": []
+      },
+      {
+        "name": "api-client.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2220,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/api-client.ts"
+      },
+      {
+        "name": "auth.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1098,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/auth.ts"
+      },
+      {
+        "name": "avaliacoes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2559,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/avaliacoes.ts"
+      },
+      {
+        "name": "disciplinas.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5764,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/disciplinas.ts"
+      },
+      {
+        "name": "http-error.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 391,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/http-error.ts"
+      },
+      {
+        "name": "professores.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1999,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/professores.ts"
+      },
+      {
+        "name": "types",
+        "type": "directory",
+        "path": "frontend/src/lib/types",
+        "children": []
+      },
+      {
+        "name": "avaliacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1596,
+        "extension": ".ts",
+        "path": "frontend/src/lib/types/avaliacao.ts"
+      },
+      {
+        "name": "institucional.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 825,
+        "extension": ".ts",
+        "path": "frontend/src/lib/types/institucional.ts"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "frontend/tests",
+        "children": []
+      },
+      {
+        "name": "avaliacao-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 21157,
+        "extension": ".mjs",
+        "path": "frontend/tests/avaliacao-browser.mjs"
+      },
+      {
+        "name": "avaliacao.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7749,
+        "extension": ".mjs",
+        "path": "frontend/tests/avaliacao.test.mjs"
+      },
+      {
+        "name": "run-tests.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1315,
+        "extension": ".mjs",
+        "path": "frontend/tests/run-tests.mjs"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 670,
+        "extension": ".json",
+        "path": "frontend/tsconfig.json"
       },
       {
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1978,
+        "size": 2222,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -760,6 +1650,26 @@
         "size": 21,
         "extension": ".txt",
         "path": "requirements-docs.txt"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "scripts",
+        "children": []
+      },
+      {
+        "name": "cron",
+        "type": "directory",
+        "path": "scripts/cron",
+        "children": []
+      },
+      {
+        "name": "sigaa-import.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 1613,
+        "extension": ".sh",
+        "path": "scripts/cron/sigaa-import.sh"
       },
       {
         "name": "skills",
@@ -1065,7 +1975,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7657,
+        "size": 8177,
         "extension": ".md",
         "path": "skills/technology/docker/SKILL.md"
       },
@@ -1082,6 +1992,42 @@
         "size": 11060,
         "extension": ".md",
         "path": "skills/technology/fastapi/SKILL.md"
+      },
+      {
+        "name": "gerador-paginas-next-tailwind",
+        "type": "directory",
+        "path": "skills/technology/gerador-paginas-next-tailwind",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10150,
+        "extension": ".md",
+        "path": "skills/technology/gerador-paginas-next-tailwind/SKILL.md"
+      },
+      {
+        "name": "references",
+        "type": "directory",
+        "path": "skills/technology/gerador-paginas-next-tailwind/references",
+        "children": []
+      },
+      {
+        "name": "contexto-repositorio.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7057,
+        "extension": ".md",
+        "path": "skills/technology/gerador-paginas-next-tailwind/references/contexto-repositorio.md"
+      },
+      {
+        "name": "pesquisa.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3892,
+        "extension": ".md",
+        "path": "skills/technology/gerador-paginas-next-tailwind/references/pesquisa.md"
       },
       {
         "name": "postgresql",
@@ -1161,7 +2107,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10618,
+        "size": 13515,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -1246,7 +2192,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-24T22:51:55.143135",
+    "extracted_at": "2026-09-25T06:27:33.823276+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }

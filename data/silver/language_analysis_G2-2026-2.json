@@ -2,19 +2,19 @@
   "repository": "G2-2026-2",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-24T22:50:58.742177",
+  "analyzed_at": "2026-09-25T06:26:40.339034+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 11,
-  "total_bytes": 151550,
+  "total_files": 25,
+  "total_bytes": 197451,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 68.4,
+      "percentage": 52.5,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -37,10 +37,66 @@
       ]
     },
     {
+      "language": "Unknown",
+      "file_count": 8,
+      "total_bytes": 49673,
+      "percentage": 25.16,
+      "files": [
+        {
+          "path": "banco.db",
+          "name": "banco.db",
+          "size": 28672,
+          "extension": ".db"
+        },
+        {
+          "path": "app/controllers/__pycache__/session_controller.cpython-313.pyc",
+          "name": "session_controller.cpython-313.pyc",
+          "size": 8933,
+          "extension": ".pyc"
+        },
+        {
+          "path": "app/routes/__pycache__/auth_routes.cpython-313.pyc",
+          "name": "auth_routes.cpython-313.pyc",
+          "size": 3718,
+          "extension": ".pyc"
+        },
+        {
+          "path": "app/__pycache__/repositorio.cpython-313.pyc",
+          "name": "repositorio.cpython-313.pyc",
+          "size": 2571,
+          "extension": ".pyc"
+        },
+        {
+          "path": "app/__pycache__/database.cpython-313.pyc",
+          "name": "database.cpython-313.pyc",
+          "size": 2451,
+          "extension": ".pyc"
+        },
+        {
+          "path": "app/__pycache__/models.cpython-313.pyc",
+          "name": "models.cpython-313.pyc",
+          "size": 1593,
+          "extension": ".pyc"
+        },
+        {
+          "path": "app/__pycache__/app.cpython-313.pyc",
+          "name": "app.cpython-313.pyc",
+          "size": 994,
+          "extension": ".pyc"
+        },
+        {
+          "path": "app/__pycache__/__init__.cpython-313.pyc",
+          "name": "__init__.cpython-313.pyc",
+          "size": 741,
+          "extension": ".pyc"
+        }
+      ]
+    },
+    {
       "language": "Markdown",
       "file_count": 2,
       "total_bytes": 21776,
-      "percentage": 14.37,
+      "percentage": 11.03,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
@@ -57,25 +113,29 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 1,
-      "total_bytes": 20480,
-      "percentage": 13.51,
+      "language": "Python",
+      "file_count": 9,
+      "total_bytes": 19495,
+      "percentage": 9.87,
       "files": [
         {
-          "path": "banco.db",
-          "name": "banco.db",
-          "size": 20480,
-          "extension": ".db"
-        }
-      ]
-    },
-    {
-      "language": "Python",
-      "file_count": 5,
-      "total_bytes": 5638,
-      "percentage": 3.72,
-      "files": [
+          "path": "app/controllers/session_controller.py",
+          "name": "session_controller.py",
+          "size": 8456,
+          "extension": ".py"
+        },
+        {
+          "path": "app/routes/auth_routes.py",
+          "name": "auth_routes.py",
+          "size": 2700,
+          "extension": ".py"
+        },
+        {
+          "path": "app/database.py",
+          "name": "database.py",
+          "size": 2144,
+          "extension": ".py"
+        },
         {
           "path": "app/test_avaliacoes.py",
           "name": "test_avaliacoes.py",
@@ -85,13 +145,7 @@
         {
           "path": "app/repositorio.py",
           "name": "repositorio.py",
-          "size": 1649,
-          "extension": ".py"
-        },
-        {
-          "path": "app/database.py",
-          "name": "database.py",
-          "size": 993,
+          "size": 1951,
           "extension": ".py"
         },
         {
@@ -101,16 +155,54 @@
           "extension": ".py"
         },
         {
-          "path": "app/modelo.py",
-          "name": "modelo.py",
-          "size": 0,
+          "path": "app/app.py",
+          "name": "app.py",
+          "size": 505,
           "extension": ".py"
+        },
+        {
+          "path": "run.py",
+          "name": "run.py",
+          "size": 451,
+          "extension": ".py"
+        },
+        {
+          "path": "app/__init__.py",
+          "name": "__init__.py",
+          "size": 292,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 3,
+      "total_bytes": 2851,
+      "percentage": 1.44,
+      "files": [
+        {
+          "path": "app/templates/cadastro.html",
+          "name": "cadastro.html",
+          "size": 1163,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/login.html",
+          "name": "login.html",
+          "size": 1065,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil.html",
+          "name": "perfil.html",
+          "size": 623,
+          "extension": ".html"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-24T22:51:55.245751",
+    "extracted_at": "2026-09-25T06:27:33.902123+00:00",
     "file_path": "data/silver/language_analysis_G2-2026-2.json"
   }
 }

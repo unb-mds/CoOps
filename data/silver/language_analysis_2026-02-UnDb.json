@@ -2,19 +2,19 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-24T22:51:01.595667",
+  "analyzed_at": "2026-09-25T06:26:42.396164+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 114,
-  "total_bytes": 500817,
+  "total_files": 212,
+  "total_bytes": 1157752,
   "languages": [
     {
       "language": "Markdown",
-      "file_count": 53,
-      "total_bytes": 383907,
-      "percentage": 76.66,
+      "file_count": 72,
+      "total_bytes": 500591,
+      "percentage": 43.24,
       "files": [
         {
           "path": "docs/agent-skills.md",
@@ -35,21 +35,27 @@
           "extension": ".md"
         },
         {
+          "path": "docs/requisitos.md",
+          "name": "requisitos.md",
+          "size": 21966,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/arquitetura.md",
+          "name": "arquitetura.md",
+          "size": 21914,
+          "extension": ".md"
+        },
+        {
           "path": "skills/engineering/architecture/SKILL.md",
           "name": "SKILL.md",
           "size": 18871,
           "extension": ".md"
         },
         {
-          "path": "docs/requisitos.md",
-          "name": "requisitos.md",
-          "size": 17791,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/arquitetura.md",
-          "name": "arquitetura.md",
-          "size": 14164,
+          "path": "specs.md",
+          "name": "specs.md",
+          "size": 13515,
           "extension": ".md"
         },
         {
@@ -65,113 +71,25 @@
           "extension": ".md"
         },
         {
-          "path": "skills/engineering/testing/SKILL.md",
-          "name": "SKILL.md",
-          "size": 12300,
+          "path": "frontend/README.md",
+          "name": "README.md",
+          "size": 12820,
           "extension": ".md"
-        },
-        {
-          "path": "skills/process/requirements/SKILL.md",
-          "name": "SKILL.md",
-          "size": 11791,
-          "extension": ".md"
-        }
-      ]
-    },
-    {
-      "language": "Python",
-      "file_count": 42,
-      "total_bytes": 92368,
-      "percentage": 18.44,
-      "files": [
-        {
-          "path": "backend/tests/test_sigaa_import_service.py",
-          "name": "test_sigaa_import_service.py",
-          "size": 11399,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/scrapers/sigaa_poc.py",
-          "name": "sigaa_poc.py",
-          "size": 9686,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_consulta_agregada.py",
-          "name": "test_consulta_agregada.py",
-          "size": 9293,
-          "extension": ".py"
-        },
-        {
-          "path": "docs/diagramas/gerar_modelos.py",
-          "name": "gerar_modelos.py",
-          "size": 8293,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/services/sigaa_import_service.py",
-          "name": "sigaa_import_service.py",
-          "size": 7639,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_avaliacao.py",
-          "name": "test_avaliacao.py",
-          "size": 6958,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/versions/20260911_01_create_initial_schema.py",
-          "name": "20260911_01_create_initial_schema.py",
-          "size": 4559,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_sigaa_poc_unittest.py",
-          "name": "test_sigaa_poc_unittest.py",
-          "size": 3922,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_agregacao_avaliacoes.py",
-          "name": "test_agregacao_avaliacoes.py",
-          "size": 3559,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/domain/avaliacoes.py",
-          "name": "avaliacoes.py",
-          "size": 3371,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
-      "language": "PDF",
-      "file_count": 2,
-      "total_bytes": 8101,
-      "percentage": 1.62,
-      "files": [
-        {
-          "path": "docs/diagramas/modelo logico.pdf",
-          "name": "modelo logico.pdf",
-          "size": 4407,
-          "extension": ".pdf"
-        },
-        {
-          "path": "docs/diagramas/modelo conceitual.pdf",
-          "name": "modelo conceitual.pdf",
-          "size": 3694,
-          "extension": ".pdf"
         }
       ]
     },
     {
       "language": "JSON",
-      "file_count": 3,
-      "total_bytes": 6563,
-      "percentage": 1.31,
+      "file_count": 6,
+      "total_bytes": 231830,
+      "percentage": 20.02,
       "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 223971,
+          "extension": ".json"
+        },
         {
           "path": "skills/process/ambiguity-removal/evals/evals.json",
           "name": "evals.json",
@@ -189,25 +107,261 @@
           "name": "evals.json",
           "size": 1850,
           "extension": ".json"
+        },
+        {
+          "path": "frontend/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 670,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 626,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 72,
+      "total_bytes": 228125,
+      "percentage": 19.7,
+      "files": [
+        {
+          "path": "backend/tests/test_avaliacao.py",
+          "name": "test_avaliacao.py",
+          "size": 23864,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_auth.py",
+          "name": "test_auth.py",
+          "size": 17645,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/services/sigaa_import_service.py",
+          "name": "sigaa_import_service.py",
+          "size": 11795,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/scrapers/sigaa_poc.py",
+          "name": "sigaa_poc.py",
+          "size": 11151,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_sigaa_import_service.py",
+          "name": "test_sigaa_import_service.py",
+          "size": 11057,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration_avaliacao.py",
+          "name": "integration_avaliacao.py",
+          "size": 9824,
+          "extension": ".py"
+        },
+        {
+          "path": "docs/diagramas/gerar_modelos.py",
+          "name": "gerar_modelos.py",
+          "size": 9680,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_consulta_agregada.py",
+          "name": "test_consulta_agregada.py",
+          "size": 9484,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/20260917_02_identidade_institucional.py",
+          "name": "20260917_02_identidade_institucional.py",
+          "size": 8944,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/services/avaliacao_service.py",
+          "name": "avaliacao_service.py",
+          "size": 6651,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 10,
+      "total_bytes": 73118,
+      "percentage": 6.32,
+      "files": [
+        {
+          "path": "docs/estudos/evidencias/issue-37/Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
+          "name": "Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
+          "size": 39786,
+          "extension": ".docx"
+        },
+        {
+          "path": "frontend/tests/avaliacao-browser.mjs",
+          "name": "avaliacao-browser.mjs",
+          "size": 21157,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/avaliacao.test.mjs",
+          "name": "avaliacao.test.mjs",
+          "size": 7749,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/run-tests.mjs",
+          "name": "run-tests.mjs",
+          "size": 1315,
+          "extension": ".mjs"
+        },
+        {
+          "path": "backend/.env.example",
+          "name": ".env.example",
+          "size": 1266,
+          "extension": ".example"
+        },
+        {
+          "path": "frontend/.env.example",
+          "name": ".env.example",
+          "size": 665,
+          "extension": ".example"
+        },
+        {
+          "path": "backend/alembic/script.py.mako",
+          "name": "script.py.mako",
+          "size": 608,
+          "extension": ".mako"
+        },
+        {
+          "path": "frontend/eslint.config.mjs",
+          "name": "eslint.config.mjs",
+          "size": 465,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/postcss.config.mjs",
+          "name": "postcss.config.mjs",
+          "size": 94,
+          "extension": ".mjs"
+        },
+        {
+          "path": ".gitattributes",
+          "name": ".gitattributes",
+          "size": 13,
+          "extension": ".gitattributes"
+        }
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "file_count": 27,
+      "total_bytes": 66227,
+      "percentage": 5.72,
+      "files": [
+        {
+          "path": "frontend/src/app/disciplinas/[id]/page.tsx",
+          "name": "page.tsx",
+          "size": 5773,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/lib/services/disciplinas.ts",
+          "name": "disciplinas.ts",
+          "size": 5764,
+          "extension": ".ts"
+        },
+        {
+          "path": "frontend/src/app/login/page.tsx",
+          "name": "page.tsx",
+          "size": 5110,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx",
+          "name": "page.tsx",
+          "size": 4772,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/cadastro/page.tsx",
+          "name": "page.tsx",
+          "size": 4517,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx",
+          "name": "avaliacao-form.tsx",
+          "size": 4413,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/lib/avaliacao-formulario.ts",
+          "name": "avaliacao-formulario.ts",
+          "size": 4071,
+          "extension": ".ts"
+        },
+        {
+          "path": "frontend/src/app/disciplinas/page.tsx",
+          "name": "page.tsx",
+          "size": 4025,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/professores/page.tsx",
+          "name": "page.tsx",
+          "size": 3952,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/professores/[id]/page.tsx",
+          "name": "page.tsx",
+          "size": 2715,
+          "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "Icon",
+      "file_count": 1,
+      "total_bytes": 25931,
+      "percentage": 2.24,
+      "files": [
+        {
+          "path": "frontend/src/app/favicon.ico",
+          "name": "favicon.ico",
+          "size": 25931,
+          "extension": ".ico"
         }
       ]
     },
     {
       "language": "YAML",
-      "file_count": 3,
-      "total_bytes": 6436,
-      "percentage": 1.29,
+      "file_count": 4,
+      "total_bytes": 12765,
+      "percentage": 1.1,
       "files": [
         {
           "path": ".github/workflows/pull-request.yml",
           "name": "pull-request.yml",
-          "size": 2675,
+          "size": 6909,
           "extension": ".yml"
         },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 1978,
+          "size": 2222,
+          "extension": ".yml"
+        },
+        {
+          "path": "docker-compose.yml",
+          "name": "docker-compose.yml",
+          "size": 1851,
           "extension": ".yml"
         },
         {
@@ -219,51 +373,89 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 3,
-      "total_bytes": 1271,
-      "percentage": 0.25,
+      "language": "PDF",
+      "file_count": 2,
+      "total_bytes": 9654,
+      "percentage": 0.83,
       "files": [
         {
-          "path": "backend/.env.example",
-          "name": ".env.example",
-          "size": 650,
-          "extension": ".example"
+          "path": "docs/diagramas/modelo logico.pdf",
+          "name": "modelo logico.pdf",
+          "size": 5385,
+          "extension": ".pdf"
         },
         {
-          "path": "backend/alembic/script.py.mako",
-          "name": "script.py.mako",
-          "size": 608,
-          "extension": ".mako"
-        },
-        {
-          "path": ".gitattributes",
-          "name": ".gitattributes",
-          "size": 13,
-          "extension": ".gitattributes"
+          "path": "docs/diagramas/modelo conceitual.pdf",
+          "name": "modelo conceitual.pdf",
+          "size": 4269,
+          "extension": ".pdf"
         }
       ]
     },
     {
-      "language": "INI",
-      "file_count": 1,
-      "total_bytes": 581,
-      "percentage": 0.12,
+      "language": "SVG Image",
+      "file_count": 5,
+      "total_bytes": 3314,
+      "percentage": 0.29,
       "files": [
         {
-          "path": "backend/alembic.ini",
-          "name": "alembic.ini",
-          "size": 581,
-          "extension": ".ini"
+          "path": "frontend/public/next.svg",
+          "name": "next.svg",
+          "size": 1375,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/globe.svg",
+          "name": "globe.svg",
+          "size": 1035,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/file.svg",
+          "name": "file.svg",
+          "size": 391,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/window.svg",
+          "name": "window.svg",
+          "size": 385,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/vercel.svg",
+          "name": "vercel.svg",
+          "size": 128,
+          "extension": ".svg"
+        }
+      ]
+    },
+    {
+      "language": "Shell",
+      "file_count": 1,
+      "total_bytes": 1613,
+      "percentage": 0.14,
+      "files": [
+        {
+          "path": "scripts/cron/sigaa-import.sh",
+          "name": "sigaa-import.sh",
+          "size": 1613,
+          "extension": ".sh"
         }
       ]
     },
     {
       "language": "CSS",
-      "file_count": 1,
-      "total_bytes": 593,
-      "percentage": 0.12,
+      "file_count": 2,
+      "total_bytes": 1505,
+      "percentage": 0.13,
       "files": [
+        {
+          "path": "frontend/src/app/globals.css",
+          "name": "globals.css",
+          "size": 912,
+          "extension": ".css"
+        },
         {
           "path": "docs/assets/stylesheets/extra.css",
           "name": "extra.css",
@@ -274,10 +466,16 @@
     },
     {
       "language": "No Extension",
-      "file_count": 1,
-      "total_bytes": 446,
-      "percentage": 0.09,
+      "file_count": 2,
+      "total_bytes": 1274,
+      "percentage": 0.11,
       "files": [
+        {
+          "path": "frontend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 828,
+          "extension": ""
+        },
         {
           "path": "backend/Dockerfile",
           "name": "Dockerfile",
@@ -288,10 +486,16 @@
     },
     {
       "language": "Git Ignore",
-      "file_count": 2,
-      "total_bytes": 331,
-      "percentage": 0.07,
+      "file_count": 3,
+      "total_bytes": 881,
+      "percentage": 0.08,
       "files": [
+        {
+          "path": "frontend/.gitignore",
+          "name": ".gitignore",
+          "size": 543,
+          "extension": ".gitignore"
+        },
         {
           "path": ".idea/.gitignore",
           "name": ".gitignore",
@@ -301,15 +505,29 @@
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 103,
+          "size": 110,
           "extension": ".gitignore"
         }
       ]
     },
     {
-      "language": "Docker Ignore",
+      "language": "INI",
       "file_count": 1,
-      "total_bytes": 113,
+      "total_bytes": 581,
+      "percentage": 0.05,
+      "files": [
+        {
+          "path": "backend/alembic.ini",
+          "name": "alembic.ini",
+          "size": 581,
+          "extension": ".ini"
+        }
+      ]
+    },
+    {
+      "language": "Docker Ignore",
+      "file_count": 2,
+      "total_bytes": 214,
       "percentage": 0.02,
       "files": [
         {
@@ -317,19 +535,25 @@
           "name": ".dockerignore",
           "size": 113,
           "extension": ".dockerignore"
+        },
+        {
+          "path": "frontend/.dockerignore",
+          "name": ".dockerignore",
+          "size": 101,
+          "extension": ".dockerignore"
         }
       ]
     },
     {
       "language": "Text",
       "file_count": 2,
-      "total_bytes": 107,
-      "percentage": 0.02,
+      "total_bytes": 129,
+      "percentage": 0.01,
       "files": [
         {
           "path": "backend/requirements.txt",
           "name": "requirements.txt",
-          "size": 86,
+          "size": 108,
           "extension": ".txt"
         },
         {
@@ -342,7 +566,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-24T22:51:55.141457",
+    "extracted_at": "2026-09-25T06:27:33.821896+00:00",
     "file_path": "data/silver/language_analysis_2026-02-UnDb.json"
   }
 }
