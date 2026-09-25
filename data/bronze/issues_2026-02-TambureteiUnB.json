@@ -1,9 +1,9 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-24T22:00:44.785802",
+      "extracted_at": "2026-09-25T05:33:51.733590+00:00",
       "file_path": "data/bronze/issues_2026-02-TambureteiUnB.json",
-      "record_count": 25
+      "record_count": 30
     }
   },
   {
@@ -265,7 +265,7 @@
     "state": "closed",
     "title": "Cadastro de turma vinculada a disciplina e professor",
     "created_at": "2026-09-22T18:51:36Z",
-    "updated_at": "2026-09-24T20:43:59Z",
+    "updated_at": "2026-09-24T22:49:19Z",
     "closed_at": "2026-09-24T20:43:59Z",
     "user": {
       "login": "LuizaCarvalho691",
@@ -276,11 +276,11 @@
   },
   {
     "number": 22,
-    "state": "open",
+    "state": "closed",
     "title": "Consulta de Professores",
     "created_at": "2026-09-22T18:53:06Z",
-    "updated_at": "2026-09-24T20:45:03Z",
-    "closed_at": null,
+    "updated_at": "2026-09-24T22:35:32Z",
+    "closed_at": "2026-09-24T22:35:32Z",
     "user": {
       "login": "LuizaCarvalho691",
       "id": 212163139
@@ -407,6 +407,91 @@
     "assignee": {
       "login": "lucasssmira",
       "id": 77651476
+    },
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "number": 39,
+    "state": "open",
+    "title": "feat(backend): Listagem de cadeiras com filtro de pesquisa",
+    "created_at": "2026-09-24T22:47:50Z",
+    "updated_at": "2026-09-24T22:47:50Z",
+    "closed_at": null,
+    "user": {
+      "login": "LuizaCarvalho691",
+      "id": 212163139
+    },
+    "assignee": {
+      "login": "LuizaCarvalho691",
+      "id": 212163139
+    },
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "number": 40,
+    "state": "open",
+    "title": "refactor(services): desacoplar regras de negócio de turmas e professores para camada de serviço",
+    "created_at": "2026-09-24T23:01:38Z",
+    "updated_at": "2026-09-25T00:03:57Z",
+    "closed_at": null,
+    "user": {
+      "login": "LuisGuilherme67",
+      "id": 119859574
+    },
+    "assignee": {
+      "login": "LuizaCarvalho691",
+      "id": 212163139
+    },
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "number": 41,
+    "state": "open",
+    "title": "feat(schemas): adicionar validações e mensagens em português nos schemas de turmas",
+    "created_at": "2026-09-24T23:02:11Z",
+    "updated_at": "2026-09-24T23:02:11Z",
+    "closed_at": null,
+    "user": {
+      "login": "LuisGuilherme67",
+      "id": 119859574
+    },
+    "assignee": {
+      "login": "LuizaCarvalho691",
+      "id": 212163139
+    },
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "number": 42,
+    "state": "open",
+    "title": "fix(repositories): corrigir carregamento de relacionamentos N:N em turma_repo para evitar duplicações",
+    "created_at": "2026-09-24T23:02:40Z",
+    "updated_at": "2026-09-24T23:03:53Z",
+    "closed_at": null,
+    "user": {
+      "login": "LuisGuilherme67",
+      "id": 119859574
+    },
+    "assignee": {
+      "login": "LuizaCarvalho691",
+      "id": 212163139
+    },
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "number": 43,
+    "state": "open",
+    "title": "test(backend): implementar suíte de testes unitários para turmas e professores",
+    "created_at": "2026-09-24T23:03:18Z",
+    "updated_at": "2026-09-24T23:03:18Z",
+    "closed_at": null,
+    "user": {
+      "login": "LuisGuilherme67",
+      "id": 119859574
+    },
+    "assignee": {
+      "login": "LuizaCarvalho691",
+      "id": 212163139
     },
     "repo_name": "2026-02-TambureteiUnB"
   }
