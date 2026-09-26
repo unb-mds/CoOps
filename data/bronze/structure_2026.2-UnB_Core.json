@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026.2-UnB_Core",
   "branch": "main",
-  "sha": "c86218c113c9464fd97f753dcd376454b087269d",
+  "sha": "f617cf1de0266a0d3669132c712b23b381dde72a",
   "tree": [
     {
       "name": ".github",
@@ -222,10 +222,10 @@
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha": "40b878db5b1c97fc77049537a71bb2e249abe5dc",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 0,
+      "size": 13,
       "is_binary": false
     },
     {
@@ -496,17 +496,17 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "d45629ec4b057220d5bf683e3db389556c21ec03",
+      "sha": "c1e5c24706d33281c86c0343cb9805042286aa99",
       "mode": "100644",
       "extension": ".md",
-      "size": 4441,
+      "size": 4452,
       "is_binary": false
     },
     {
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "7365f16c1dec9d740c4860d49b7e5a318e349d54",
+      "sha": "f98a515a1aaae110ef462771a882fe85494314ff",
       "mode": "040000",
       "children": []
     },
@@ -514,7 +514,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "7a33a6df1914a0c64a833c21dbfec4e7809be847",
+      "sha": "196a73bb9afd7702708c5ac1eb2e8d844ec8d83f",
       "mode": "040000",
       "children": []
     },
@@ -522,9 +522,37 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "749406bb0c252cf7977a5982003fcf0f0ea7b541",
+      "sha": "bf81c69397861b2393e5bdf6f3add332e028e898",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "auth.py",
+      "path": "backend/app/api/auth.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "schemas",
+      "path": "backend/app/api/schemas",
+      "type": "directory",
+      "sha": "2f00f50f26cf0478cc3dedb4ddacee051e222d4b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "auth.py",
+      "path": "backend/app/api/schemas/auth.py",
+      "type": "file",
+      "sha": "ea66f5c5433b9d7f7250aa45e9ffc3accc59fd0d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 614,
+      "is_binary": false
     },
     {
       "name": "search.py",
@@ -578,7 +606,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "3b842492173d321a6c88057f3aaa25f025f431d9",
+      "sha": "f012b26ec776f8f41322060b1a8a0172ed14c4e7",
       "mode": "040000",
       "children": []
     },
@@ -730,7 +758,7 @@
       "name": "scrum",
       "path": "docs/scrum",
       "type": "directory",
-      "sha": "7b603e322f1a754b06160fd617a468984d59479e",
+      "sha": "f0bee933aed438e7c53e56cdcce2fc5daba42aa1",
       "mode": "040000",
       "children": []
     },
@@ -755,6 +783,16 @@
       "is_binary": false
     },
     {
+      "name": "Scrum 2.md",
+      "path": "docs/scrum/Scrum 2.md",
+      "type": "file",
+      "sha": "69df93260ac8f1f143fbc15fd574fb6a865b2833",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1440,
+      "is_binary": false
+    },
+    {
       "name": "modelo scrum.md",
       "path": "docs/scrum/modelo scrum.md",
       "type": "file",
@@ -765,10 +803,636 @@
       "is_binary": false
     },
     {
+      "name": "frontend",
+      "path": "frontend",
+      "type": "directory",
+      "sha": "fe45b82c7a09d4cf1384de0d62384c0a42791c89",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".gitignore",
+      "path": "frontend/.gitignore",
+      "type": "file",
+      "sha": "8aab5cd7c880d646156ecfc5f1de4d34141bbf8b",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 252,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "frontend/README.md",
+      "type": "file",
+      "sha": "83af3cc81b3c03ce33c33a55204306893704bebe",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1297,
+      "is_binary": false
+    },
+    {
+      "name": "eslint.config.js",
+      "path": "frontend/eslint.config.js",
+      "type": "file",
+      "sha": "ea36dd3dc45ddadb9d25dd5e1c74a706dd61a6a9",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 568,
+      "is_binary": false
+    },
+    {
+      "name": "index.html",
+      "path": "frontend/index.html",
+      "type": "file",
+      "sha": "f94d687d35d7fa6e2c619c3f2c6b2ddea19bd219",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 360,
+      "is_binary": false
+    },
+    {
+      "name": "package-lock.json",
+      "path": "frontend/package-lock.json",
+      "type": "file",
+      "sha": "7f6fb4a07d48977817159f13073dc29f11bf9bb2",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 86113,
+      "is_binary": false
+    },
+    {
+      "name": "package.json",
+      "path": "frontend/package.json",
+      "type": "file",
+      "sha": "62cb5b42e821fd5d5ccaa2224f6df2b854d83a9f",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 721,
+      "is_binary": false
+    },
+    {
+      "name": "public",
+      "path": "frontend/public",
+      "type": "directory",
+      "sha": "c12cc4e42b437098ea3d74835eeda3286673d4af",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "brand-mark.svg",
+      "path": "frontend/public/brand-mark.svg",
+      "type": "file",
+      "sha": "ccb7b03ccf2390366d5a07a07f7a08ffdbf356f4",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 362,
+      "is_binary": false
+    },
+    {
+      "name": "favicon.svg",
+      "path": "frontend/public/favicon.svg",
+      "type": "file",
+      "sha": "6893eb13237060adc0c968a690149a49faa2d7d3",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 9522,
+      "is_binary": false
+    },
+    {
+      "name": "icons.svg",
+      "path": "frontend/public/icons.svg",
+      "type": "file",
+      "sha": "e9522193d9f796a9748e9ad8c952a5df73c87db9",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 5031,
+      "is_binary": false
+    },
+    {
+      "name": "src",
+      "path": "frontend/src",
+      "type": "directory",
+      "sha": "b5caf6389df79ef6edfe0aed5bcc45a270c722ee",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "App.jsx",
+      "path": "frontend/src/App.jsx",
+      "type": "file",
+      "sha": "29423b2359d856245459853737854552978e7bc9",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 2260,
+      "is_binary": false
+    },
+    {
+      "name": "assets",
+      "path": "frontend/src/assets",
+      "type": "directory",
+      "sha": "cff299901617c708226dccca2b0bf0ab0378c5fa",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "hero.png",
+      "path": "frontend/src/assets/hero.png",
+      "type": "file",
+      "sha": "02251f4b956c55af2d76fd0788124d7eee2b45eb",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 13057,
+      "is_binary": false
+    },
+    {
+      "name": "react.svg",
+      "path": "frontend/src/assets/react.svg",
+      "type": "file",
+      "sha": "6c87de9bb3358469122cc991d5cf578927246184",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 4126,
+      "is_binary": false
+    },
+    {
+      "name": "vite.svg",
+      "path": "frontend/src/assets/vite.svg",
+      "type": "file",
+      "sha": "5101b674df391399da71c767aa5c976426c9dc7a",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 8709,
+      "is_binary": false
+    },
+    {
+      "name": "components",
+      "path": "frontend/src/components",
+      "type": "directory",
+      "sha": "1ec89193cde8e0187ced1a701898703bf87739f3",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "ErrorMessage.jsx",
+      "path": "frontend/src/components/ErrorMessage.jsx",
+      "type": "file",
+      "sha": "8ff7af285bafe87982edf4840ee7377175c14473",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 332,
+      "is_binary": false
+    },
+    {
+      "name": "FocusVisible.jsx",
+      "path": "frontend/src/components/FocusVisible.jsx",
+      "type": "file",
+      "sha": "010748685e83d6909741cdb9eebd750c6f5d27fe",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 233,
+      "is_binary": false
+    },
+    {
+      "name": "Navigation.jsx",
+      "path": "frontend/src/components/Navigation.jsx",
+      "type": "file",
+      "sha": "df0c64b65f66b8ad2c16dcd5bbb5d9a0af6ed3e5",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1185,
+      "is_binary": false
+    },
+    {
+      "name": "SiteFooter.jsx",
+      "path": "frontend/src/components/SiteFooter.jsx",
+      "type": "file",
+      "sha": "b19305330c0d658662d87be6bb49db3019a7f5dc",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 287,
+      "is_binary": false
+    },
+    {
+      "name": "SiteHeader.jsx",
+      "path": "frontend/src/components/SiteHeader.jsx",
+      "type": "file",
+      "sha": "cc7742a911d2d8470be57a450d2e0b7555da1d37",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 189,
+      "is_binary": false
+    },
+    {
+      "name": "auth",
+      "path": "frontend/src/components/auth",
+      "type": "directory",
+      "sha": "50efc1c48fb88a861d26c6dfd0ab1c2ae014180f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AuthForm.jsx",
+      "path": "frontend/src/components/auth/AuthForm.jsx",
+      "type": "file",
+      "sha": "dfcfae3f36308371caa307068e5e033abc8d5004",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 2381,
+      "is_binary": false
+    },
+    {
+      "name": "auth.css",
+      "path": "frontend/src/components/auth/auth.css",
+      "type": "file",
+      "sha": "c1c00e62fd566c83c60c60ef4d2cf0b874b49f42",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 563,
+      "is_binary": false
+    },
+    {
+      "name": "components.css",
+      "path": "frontend/src/components/components.css",
+      "type": "file",
+      "sha": "07c79160def8df7b47fa4af5bf0d7bd75a820885",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 284,
+      "is_binary": false
+    },
+    {
+      "name": "conteudos",
+      "path": "frontend/src/components/conteudos",
+      "type": "directory",
+      "sha": "c3986605425acd2f7dea1f5979f5988ae8cc5683",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "ConteudoCard.jsx",
+      "path": "frontend/src/components/conteudos/ConteudoCard.jsx",
+      "type": "file",
+      "sha": "38d8f246788338ca40c2c65931d73c9f99459994",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1047,
+      "is_binary": false
+    },
+    {
+      "name": "ConteudoDetalhe.jsx",
+      "path": "frontend/src/components/conteudos/ConteudoDetalhe.jsx",
+      "type": "file",
+      "sha": "9d5fa4330595b14a3e883dff9182380ccf2cb103",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1786,
+      "is_binary": false
+    },
+    {
+      "name": "conteudos.css",
+      "path": "frontend/src/components/conteudos/conteudos.css",
+      "type": "file",
+      "sha": "59b6b6868764a6bc98bc0e1d0d938a0e3c1b3c9b",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2232,
+      "is_binary": false
+    },
+    {
+      "name": "publicacoes",
+      "path": "frontend/src/components/publicacoes",
+      "type": "directory",
+      "sha": "ab439759bc1ed4b6eb6333569721611c453c3806",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "PublicacaoDatas.jsx",
+      "path": "frontend/src/components/publicacoes/PublicacaoDatas.jsx",
+      "type": "file",
+      "sha": "51be78f02cbd4d86126e652c48260ee48d2b003a",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 921,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacaoFonte.jsx",
+      "path": "frontend/src/components/publicacoes/PublicacaoFonte.jsx",
+      "type": "file",
+      "sha": "9b938e54399cdab94868c19b6324c54d8a7b8423",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 583,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacaoLinkOficial.jsx",
+      "path": "frontend/src/components/publicacoes/PublicacaoLinkOficial.jsx",
+      "type": "file",
+      "sha": "99b73884fb851488ab04753d730e6674c7a88cb5",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 702,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacaoStatus.jsx",
+      "path": "frontend/src/components/publicacoes/PublicacaoStatus.jsx",
+      "type": "file",
+      "sha": "72c2d61e7b6e0ee7cc91049e5614f53b4cc132c0",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 642,
+      "is_binary": false
+    },
+    {
+      "name": "ui",
+      "path": "frontend/src/components/ui",
+      "type": "directory",
+      "sha": "45d678ed1386334622d176efcd748b08669b99c1",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "Button.jsx",
+      "path": "frontend/src/components/ui/Button.jsx",
+      "type": "file",
+      "sha": "53df7d925f995368b48449e861d994a061218dfc",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 274,
+      "is_binary": false
+    },
+    {
+      "name": "EmptyState.jsx",
+      "path": "frontend/src/components/ui/EmptyState.jsx",
+      "type": "file",
+      "sha": "961d98a9d344c6d8200fa0e522246c5c4d780a4d",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 211,
+      "is_binary": false
+    },
+    {
+      "name": "SearchInput.jsx",
+      "path": "frontend/src/components/ui/SearchInput.jsx",
+      "type": "file",
+      "sha": "db9e20838422cd7e6171029c4ab37aee5b89eaef",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 382,
+      "is_binary": false
+    },
+    {
+      "name": "StatusBadge.jsx",
+      "path": "frontend/src/components/ui/StatusBadge.jsx",
+      "type": "file",
+      "sha": "16da4514d16d67d6d237db52bdeed70642ee554e",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 491,
+      "is_binary": false
+    },
+    {
+      "name": "ui.css",
+      "path": "frontend/src/components/ui/ui.css",
+      "type": "file",
+      "sha": "2f3b81df93a7cc4d0760a8ad608e8d8afd2dee71",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 3974,
+      "is_binary": false
+    },
+    {
+      "name": "index.css",
+      "path": "frontend/src/index.css",
+      "type": "file",
+      "sha": "62d72b6f4c87653173aa2eb9029a5d71f7fc068b",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 1467,
+      "is_binary": false
+    },
+    {
+      "name": "main.jsx",
+      "path": "frontend/src/main.jsx",
+      "type": "file",
+      "sha": "b9a1a6deac8775b5598874b2bc3c7971d82cf211",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 229,
+      "is_binary": false
+    },
+    {
+      "name": "pages",
+      "path": "frontend/src/pages",
+      "type": "directory",
+      "sha": "d4adcf8b81734752deb2e144f6ee0bcc7a251b0c",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AuthPage.css",
+      "path": "frontend/src/pages/AuthPage.css",
+      "type": "file",
+      "sha": "873de1112644760b1632bc6727d310539d088f30",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 4164,
+      "is_binary": false
+    },
+    {
+      "name": "CadastroPage.jsx",
+      "path": "frontend/src/pages/CadastroPage.jsx",
+      "type": "file",
+      "sha": "3edb1dcd32879a0b2d60123d42f3607b60fd8aec",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1470,
+      "is_binary": false
+    },
+    {
+      "name": "ConhecimentoPage.css",
+      "path": "frontend/src/pages/ConhecimentoPage.css",
+      "type": "file",
+      "sha": "4894fbb8614c39fe8d1a9e57a2c1330458362b07",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2117,
+      "is_binary": false
+    },
+    {
+      "name": "ConhecimentoPage.jsx",
+      "path": "frontend/src/pages/ConhecimentoPage.jsx",
+      "type": "file",
+      "sha": "c3b21f3ca239fb9d9d02cd5a8883db43e2368d45",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 6349,
+      "is_binary": false
+    },
+    {
+      "name": "ContribuicaoPage.css",
+      "path": "frontend/src/pages/ContribuicaoPage.css",
+      "type": "file",
+      "sha": "77da8d70cafc0613beb3cb916a6016261f549169",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2700,
+      "is_binary": false
+    },
+    {
+      "name": "ContribuicaoPage.jsx",
+      "path": "frontend/src/pages/ContribuicaoPage.jsx",
+      "type": "file",
+      "sha": "e6a0d6b814d5cb68b5b9b91719b477893b9e6885",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 7062,
+      "is_binary": false
+    },
+    {
+      "name": "LoginPage.jsx",
+      "path": "frontend/src/pages/LoginPage.jsx",
+      "type": "file",
+      "sha": "fd8844a83475c5760e56e2b95c8acdb42dcef790",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1754,
+      "is_binary": false
+    },
+    {
+      "name": "MinhasContribuicoesPage.css",
+      "path": "frontend/src/pages/MinhasContribuicoesPage.css",
+      "type": "file",
+      "sha": "eebfcd9c831c84d61b13bab6c71b4a942100943b",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2336,
+      "is_binary": false
+    },
+    {
+      "name": "MinhasContribuicoesPage.jsx",
+      "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
+      "type": "file",
+      "sha": "cda1c204e84ccdbce77c8e7dd4f397de43b8bc6c",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 4397,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacaoDetalhePage.css",
+      "path": "frontend/src/pages/PublicacaoDetalhePage.css",
+      "type": "file",
+      "sha": "578db3d7ce56cdf1b2cd7f69015dfd9ead90ffc1",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 3447,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacaoDetalhePage.jsx",
+      "path": "frontend/src/pages/PublicacaoDetalhePage.jsx",
+      "type": "file",
+      "sha": "a637063f0640db8d6d8bf50e90f461d44ecb0c41",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 3745,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacoesPage.css",
+      "path": "frontend/src/pages/PublicacoesPage.css",
+      "type": "file",
+      "sha": "2314a6fb3a56fd1e4584c5991262631cfd8e13b1",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 4127,
+      "is_binary": false
+    },
+    {
+      "name": "PublicacoesPage.jsx",
+      "path": "frontend/src/pages/PublicacoesPage.jsx",
+      "type": "file",
+      "sha": "b21c5809cc42abf1bf03e5b475af70e74d511327",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 7035,
+      "is_binary": false
+    },
+    {
+      "name": "services",
+      "path": "frontend/src/services",
+      "type": "directory",
+      "sha": "0885e171a75a40cfad62ea7a6a1609a2aea54bba",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "api.js",
+      "path": "frontend/src/services/api.js",
+      "type": "file",
+      "sha": "659c378eaf916c5ae6a460ae87a88d4144b0a996",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2963,
+      "is_binary": false
+    },
+    {
+      "name": "state",
+      "path": "frontend/src/state",
+      "type": "directory",
+      "sha": "68b1a9c9b8d2382b5b0c0e698f8913be55f8f138",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "auth.js",
+      "path": "frontend/src/state/auth.js",
+      "type": "file",
+      "sha": "a0200c1456765af0ba5821e8354222c8d96b3daa",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1018,
+      "is_binary": false
+    },
+    {
+      "name": "vite.config.js",
+      "path": "frontend/vite.config.js",
+      "type": "file",
+      "sha": "d789a7cfb4c4da38b734711544a715b2b7115e99",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 286,
+      "is_binary": false
+    },
+    {
+      "name": "package-lock.json",
+      "path": "package-lock.json",
+      "type": "file",
+      "sha": "494804ddf0b0b3a733700c265e48f4917a2d351e",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 11829,
+      "is_binary": false
+    },
+    {
+      "name": "package.json",
+      "path": "package.json",
+      "type": "file",
+      "sha": "df9245add007980870e4cea55c1cd3d902484057",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 51,
+      "is_binary": false
+    },
+    {
       "name": "specs",
       "path": "specs",
       "type": "directory",
-      "sha": "820d266b9cd5074c80a826ed9ddc1fc6e7827aea",
+      "sha": "23bd207c8f1807ba3422754f1df9fd24efd8d929",
       "mode": "040000",
       "children": []
     },
@@ -776,7 +1440,7 @@
       "name": "001-unb-core",
       "path": "specs/001-unb-core",
       "type": "directory",
-      "sha": "663a0fdd8ca2c5f855b40fbd1acca074845ae584",
+      "sha": "c7f50a9de2ae63f68a51b8412d0f4f82462aefc8",
       "mode": "040000",
       "children": []
     },
@@ -890,7 +1554,7 @@
       "name": "tasks.md",
       "path": "specs/001-unb-core/tasks.md",
       "type": "file",
-      "sha": "262c59b02ae756fae3aab20fe43f4302bf22981d",
+      "sha": "ca666c9af2ba6fa6a0ee3fbc41b9e122add3be4c",
       "mode": "100644",
       "extension": ".md",
       "size": 16105,
@@ -898,19 +1562,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-25T10:55:29.842293+00:00",
+  "extracted_at": "2026-09-26T10:39:43.418424+00:00",
   "method": "rest",
-  "total_items": 96,
+  "total_items": 165,
   "repository_metadata": {
     "id": 1338349828,
     "full_name": "unb-mds/2026.2-UnB_Core",
     "description": "Grupo G1 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:55:42Z",
-    "updated_at": "2026-09-24T20:25:23Z",
+    "updated_at": "2026-09-25T23:19:39Z",
     "language": "PowerShell",
-    "size": 311,
+    "size": 312,
     "stars": 1,
     "forks": 2,
-    "open_issues": 44
+    "open_issues": 42
   }
 }
