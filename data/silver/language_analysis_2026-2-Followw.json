@@ -2,24 +2,36 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-25T10:55:31.585046+00:00",
+  "analyzed_at": "2026-09-26T10:39:45.791987+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 136,
-  "total_bytes": 1848861,
+  "total_files": 158,
+  "total_bytes": 2990531,
   "languages": [
     {
       "language": "PDF",
-      "file_count": 3,
-      "total_bytes": 976517,
-      "percentage": 52.82,
+      "file_count": 5,
+      "total_bytes": 1976407,
+      "percentage": 66.09,
       "files": [
+        {
+          "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
+          "name": "cardapio-darcy-28-09.pdf",
+          "size": 506169,
+          "extension": ".pdf"
+        },
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy.pdf",
           "name": "cardapio-darcy.pdf",
           "size": 504923,
+          "extension": ".pdf"
+        },
+        {
+          "path": "packages/unb-browser/tests/fixtures/cardapio-gama-28-09.pdf",
+          "name": "cardapio-gama-28-09.pdf",
+          "size": 493721,
           "extension": ".pdf"
         },
         {
@@ -39,33 +51,39 @@
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 412910,
-      "percentage": 22.33,
+      "total_bytes": 397582,
+      "percentage": 13.29,
       "files": [
         {
           "path": "uv.lock",
           "name": "uv.lock",
-          "size": 315957,
+          "size": 295044,
           "extension": ".lock"
         },
         {
           "path": "apps/web/bun.lock",
           "name": "bun.lock",
-          "size": 96953,
+          "size": 102538,
           "extension": ".lock"
         }
       ]
     },
     {
       "language": "Python",
-      "file_count": 73,
-      "total_bytes": 330918,
-      "percentage": 17.9,
+      "file_count": 82,
+      "total_bytes": 383508,
+      "percentage": 12.82,
       "files": [
         {
           "path": "packages/sigaa-client/sigaa_client/private/classrooms.py",
           "name": "classrooms.py",
           "size": 31717,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_restaurant.py",
+          "name": "test_restaurant.py",
+          "size": 24981,
           "extension": ".py"
         },
         {
@@ -113,22 +131,16 @@
         {
           "path": "apps/api/api/services/sync.py",
           "name": "sync.py",
-          "size": 10743,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_news.py",
-          "name": "test_news.py",
-          "size": 10187,
+          "size": 10774,
           "extension": ".py"
         }
       ]
     },
     {
       "language": "Markdown",
-      "file_count": 23,
-      "total_bytes": 109472,
-      "percentage": 5.92,
+      "file_count": 25,
+      "total_bytes": 119314,
+      "percentage": 3.99,
       "files": [
         {
           "path": "docs/requisitos.md",
@@ -145,19 +157,19 @@
         {
           "path": "apps/api/AGENTS.md",
           "name": "AGENTS.md",
-          "size": 9643,
+          "size": 11695,
           "extension": ".md"
         },
         {
           "path": "packages/sigaa-client/AGENTS.md",
           "name": "AGENTS.md",
-          "size": 9333,
+          "size": 9866,
           "extension": ".md"
         },
         {
           "path": "packages/sigaa-client/README.md",
           "name": "README.md",
-          "size": 8190,
+          "size": 8504,
           "extension": ".md"
         },
         {
@@ -173,109 +185,65 @@
           "extension": ".md"
         },
         {
-          "path": "packages/unb-browser/AGENTS.md",
-          "name": "AGENTS.md",
-          "size": 4963,
-          "extension": ".md"
-        },
-        {
           "path": "packages/unb-browser/README.md",
           "name": "README.md",
-          "size": 4849,
+          "size": 5863,
           "extension": ".md"
         },
         {
-          "path": "docs/segurança.md",
-          "name": "segurança.md",
-          "size": 4378,
+          "path": "packages/unb-browser/AGENTS.md",
+          "name": "AGENTS.md",
+          "size": 5586,
           "extension": ".md"
-        }
-      ]
-    },
-    {
-      "language": "TypeScript",
-      "file_count": 8,
-      "total_bytes": 6751,
-      "percentage": 0.37,
-      "files": [
-        {
-          "path": "apps/web/src/routes/__root.tsx",
-          "name": "__root.tsx",
-          "size": 1925,
-          "extension": ".tsx"
         },
         {
-          "path": "apps/web/src/routeTree.gen.ts",
-          "name": "routeTree.gen.ts",
-          "size": 1741,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/vite.config.ts",
-          "name": "vite.config.ts",
-          "size": 808,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/src/router.tsx",
-          "name": "router.tsx",
-          "size": 763,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/integrations/posthog/provider.tsx",
-          "name": "provider.tsx",
-          "size": 705,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routes/index.tsx",
-          "name": "index.tsx",
-          "size": 424,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx",
-          "name": "root-provider.tsx",
-          "size": 222,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/integrations/tanstack-query/devtools.tsx",
-          "name": "devtools.tsx",
-          "size": 163,
-          "extension": ".tsx"
+          "path": "apps/web/AGENTS.md",
+          "name": "AGENTS.md",
+          "size": 5010,
+          "extension": ".md"
         }
       ]
     },
     {
       "language": "JSON",
-      "file_count": 11,
-      "total_bytes": 5897,
-      "percentage": 0.32,
+      "file_count": 13,
+      "total_bytes": 71747,
+      "percentage": 2.4,
       "files": [
+        {
+          "path": "apps/web/openapi.json",
+          "name": "openapi.json",
+          "size": 37742,
+          "extension": ".json"
+        },
+        {
+          "path": "packages/unb-browser/unb_browser/calendar/academic_calendar.json",
+          "name": "academic_calendar.json",
+          "size": 27493,
+          "extension": ".json"
+        },
         {
           "path": "apps/web/package.json",
           "name": "package.json",
-          "size": 1601,
+          "size": 1785,
           "extension": ".json"
         },
         {
           "path": "apps/web/.oxlintrc.json",
           "name": ".oxlintrc.json",
-          "size": 772,
+          "size": 1102,
+          "extension": ".json"
+        },
+        {
+          "path": "apps/web/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 844,
           "extension": ".json"
         },
         {
           "path": "skills-lock.json",
           "name": "skills-lock.json",
           "size": 767,
-          "extension": ".json"
-        },
-        {
-          "path": "apps/web/tsconfig.json",
-          "name": "tsconfig.json",
-          "size": 743,
           "extension": ".json"
         },
         {
@@ -301,37 +269,93 @@
           "name": "vercel.json",
           "size": 152,
           "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "file_count": 15,
+      "total_bytes": 35740,
+      "percentage": 1.2,
+      "files": [
+        {
+          "path": "apps/web/src/queries/schema.gen.ts",
+          "name": "schema.gen.ts",
+          "size": 22320,
+          "extension": ".ts"
         },
         {
-          "path": ".claude/settings.json",
-          "name": "settings.json",
-          "size": 123,
-          "extension": ".json"
+          "path": "apps/web/src/routes/__root.tsx",
+          "name": "__root.tsx",
+          "size": 1925,
+          "extension": ".tsx"
         },
         {
-          "path": ".vscode/settings.json",
-          "name": "settings.json",
-          "size": 64,
-          "extension": ".json"
+          "path": "apps/web/src/routes/index.tsx",
+          "name": "index.tsx",
+          "size": 1781,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/routeTree.gen.ts",
+          "name": "routeTree.gen.ts",
+          "size": 1741,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/calendar.ts",
+          "name": "calendar.ts",
+          "size": 1717,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/queries/client.ts",
+          "name": "client.ts",
+          "size": 1550,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/queries/errors.ts",
+          "name": "errors.ts",
+          "size": 947,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/scripts/generate-api.ts",
+          "name": "generate-api.ts",
+          "size": 860,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/vite.config.ts",
+          "name": "vite.config.ts",
+          "size": 808,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/router.tsx",
+          "name": "router.tsx",
+          "size": 763,
+          "extension": ".tsx"
         }
       ]
     },
     {
       "language": "TOML",
       "file_count": 4,
-      "total_bytes": 3205,
-      "percentage": 0.17,
+      "total_bytes": 3015,
+      "percentage": 0.1,
       "files": [
-        {
-          "path": "pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 967,
-          "extension": ".toml"
-        },
         {
           "path": "apps/api/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 870,
+          "size": 924,
+          "extension": ".toml"
+        },
+        {
+          "path": "pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 723,
           "extension": ".toml"
         },
         {
@@ -352,7 +376,7 @@
       "language": "YAML",
       "file_count": 4,
       "total_bytes": 1462,
-      "percentage": 0.08,
+      "percentage": 0.05,
       "files": [
         {
           "path": ".github/workflows/ci.yml",
@@ -384,7 +408,7 @@
       "language": "No Extension",
       "file_count": 2,
       "total_bytes": 1085,
-      "percentage": 0.06,
+      "percentage": 0.04,
       "files": [
         {
           "path": "LICENSE",
@@ -403,7 +427,7 @@
     {
       "language": "Unknown",
       "file_count": 3,
-      "total_bytes": 426,
+      "total_bytes": 463,
       "percentage": 0.02,
       "files": [
         {
@@ -415,7 +439,7 @@
         {
           "path": "apps/web/.env.example",
           "name": ".env.example",
-          "size": 62,
+          "size": 99,
           "extension": ".example"
         },
         {
@@ -427,29 +451,15 @@
       ]
     },
     {
-      "language": "CSS",
-      "file_count": 1,
-      "total_bytes": 127,
-      "percentage": 0.01,
-      "files": [
-        {
-          "path": "apps/web/src/styles.css",
-          "name": "styles.css",
-          "size": 127,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
       "language": "Git Ignore",
       "file_count": 2,
-      "total_bytes": 91,
+      "total_bytes": 81,
       "percentage": 0.0,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 59,
+          "size": 49,
           "extension": ".gitignore"
         },
         {
@@ -459,10 +469,24 @@
           "extension": ".gitignore"
         }
       ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 1,
+      "total_bytes": 127,
+      "percentage": 0.0,
+      "files": [
+        {
+          "path": "apps/web/src/styles.css",
+          "name": "styles.css",
+          "size": 127,
+          "extension": ".css"
+        }
+      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-25T10:56:13.951072+00:00",
+    "extracted_at": "2026-09-26T10:40:35.667888+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }

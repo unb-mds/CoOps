@@ -2,7 +2,7 @@
   "repository": "2026.2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-25T10:55:29.842293+00:00",
+  "extracted_at": "2026-09-26T10:39:43.418424+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -177,7 +177,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 0,
+        "size": 13,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -393,7 +393,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4441,
+        "size": 4452,
         "extension": ".md",
         "path": "README.md"
       },
@@ -414,6 +414,28 @@
         "type": "directory",
         "path": "backend/app/api",
         "children": []
+      },
+      {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/app/api/auth.py"
+      },
+      {
+        "name": "schemas",
+        "type": "directory",
+        "path": "backend/app/api/schemas",
+        "children": []
+      },
+      {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 614,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/auth.py"
       },
       {
         "name": "search.py",
@@ -596,12 +618,516 @@
         "path": "docs/scrum/Scrum 1.md"
       },
       {
+        "name": "Scrum 2.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1440,
+        "extension": ".md",
+        "path": "docs/scrum/Scrum 2.md"
+      },
+      {
         "name": "modelo scrum.md",
         "type": "file",
         "language": "Markdown",
         "size": 1189,
         "extension": ".md",
         "path": "docs/scrum/modelo scrum.md"
+      },
+      {
+        "name": "frontend",
+        "type": "directory",
+        "path": "frontend",
+        "children": []
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 252,
+        "extension": ".gitignore",
+        "path": "frontend/.gitignore"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1297,
+        "extension": ".md",
+        "path": "frontend/README.md"
+      },
+      {
+        "name": "eslint.config.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 568,
+        "extension": ".js",
+        "path": "frontend/eslint.config.js"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 360,
+        "extension": ".html",
+        "path": "frontend/index.html"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 86113,
+        "extension": ".json",
+        "path": "frontend/package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 721,
+        "extension": ".json",
+        "path": "frontend/package.json"
+      },
+      {
+        "name": "public",
+        "type": "directory",
+        "path": "frontend/public",
+        "children": []
+      },
+      {
+        "name": "brand-mark.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 362,
+        "extension": ".svg",
+        "path": "frontend/public/brand-mark.svg"
+      },
+      {
+        "name": "favicon.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 9522,
+        "extension": ".svg",
+        "path": "frontend/public/favicon.svg"
+      },
+      {
+        "name": "icons.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 5031,
+        "extension": ".svg",
+        "path": "frontend/public/icons.svg"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "frontend/src",
+        "children": []
+      },
+      {
+        "name": "App.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2260,
+        "extension": ".jsx",
+        "path": "frontend/src/App.jsx"
+      },
+      {
+        "name": "assets",
+        "type": "directory",
+        "path": "frontend/src/assets",
+        "children": []
+      },
+      {
+        "name": "hero.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 13057,
+        "extension": ".png",
+        "path": "frontend/src/assets/hero.png"
+      },
+      {
+        "name": "react.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 4126,
+        "extension": ".svg",
+        "path": "frontend/src/assets/react.svg"
+      },
+      {
+        "name": "vite.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 8709,
+        "extension": ".svg",
+        "path": "frontend/src/assets/vite.svg"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "frontend/src/components",
+        "children": []
+      },
+      {
+        "name": "ErrorMessage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 332,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ErrorMessage.jsx"
+      },
+      {
+        "name": "FocusVisible.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 233,
+        "extension": ".jsx",
+        "path": "frontend/src/components/FocusVisible.jsx"
+      },
+      {
+        "name": "Navigation.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1185,
+        "extension": ".jsx",
+        "path": "frontend/src/components/Navigation.jsx"
+      },
+      {
+        "name": "SiteFooter.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 287,
+        "extension": ".jsx",
+        "path": "frontend/src/components/SiteFooter.jsx"
+      },
+      {
+        "name": "SiteHeader.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 189,
+        "extension": ".jsx",
+        "path": "frontend/src/components/SiteHeader.jsx"
+      },
+      {
+        "name": "auth",
+        "type": "directory",
+        "path": "frontend/src/components/auth",
+        "children": []
+      },
+      {
+        "name": "AuthForm.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2381,
+        "extension": ".jsx",
+        "path": "frontend/src/components/auth/AuthForm.jsx"
+      },
+      {
+        "name": "auth.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 563,
+        "extension": ".css",
+        "path": "frontend/src/components/auth/auth.css"
+      },
+      {
+        "name": "components.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 284,
+        "extension": ".css",
+        "path": "frontend/src/components/components.css"
+      },
+      {
+        "name": "conteudos",
+        "type": "directory",
+        "path": "frontend/src/components/conteudos",
+        "children": []
+      },
+      {
+        "name": "ConteudoCard.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1047,
+        "extension": ".jsx",
+        "path": "frontend/src/components/conteudos/ConteudoCard.jsx"
+      },
+      {
+        "name": "ConteudoDetalhe.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1786,
+        "extension": ".jsx",
+        "path": "frontend/src/components/conteudos/ConteudoDetalhe.jsx"
+      },
+      {
+        "name": "conteudos.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 2232,
+        "extension": ".css",
+        "path": "frontend/src/components/conteudos/conteudos.css"
+      },
+      {
+        "name": "publicacoes",
+        "type": "directory",
+        "path": "frontend/src/components/publicacoes",
+        "children": []
+      },
+      {
+        "name": "PublicacaoDatas.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 921,
+        "extension": ".jsx",
+        "path": "frontend/src/components/publicacoes/PublicacaoDatas.jsx"
+      },
+      {
+        "name": "PublicacaoFonte.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 583,
+        "extension": ".jsx",
+        "path": "frontend/src/components/publicacoes/PublicacaoFonte.jsx"
+      },
+      {
+        "name": "PublicacaoLinkOficial.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 702,
+        "extension": ".jsx",
+        "path": "frontend/src/components/publicacoes/PublicacaoLinkOficial.jsx"
+      },
+      {
+        "name": "PublicacaoStatus.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 642,
+        "extension": ".jsx",
+        "path": "frontend/src/components/publicacoes/PublicacaoStatus.jsx"
+      },
+      {
+        "name": "ui",
+        "type": "directory",
+        "path": "frontend/src/components/ui",
+        "children": []
+      },
+      {
+        "name": "Button.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 274,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ui/Button.jsx"
+      },
+      {
+        "name": "EmptyState.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 211,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ui/EmptyState.jsx"
+      },
+      {
+        "name": "SearchInput.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 382,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ui/SearchInput.jsx"
+      },
+      {
+        "name": "StatusBadge.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 491,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ui/StatusBadge.jsx"
+      },
+      {
+        "name": "ui.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 3974,
+        "extension": ".css",
+        "path": "frontend/src/components/ui/ui.css"
+      },
+      {
+        "name": "index.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 1467,
+        "extension": ".css",
+        "path": "frontend/src/index.css"
+      },
+      {
+        "name": "main.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 229,
+        "extension": ".jsx",
+        "path": "frontend/src/main.jsx"
+      },
+      {
+        "name": "pages",
+        "type": "directory",
+        "path": "frontend/src/pages",
+        "children": []
+      },
+      {
+        "name": "AuthPage.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 4164,
+        "extension": ".css",
+        "path": "frontend/src/pages/AuthPage.css"
+      },
+      {
+        "name": "CadastroPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1470,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/CadastroPage.jsx"
+      },
+      {
+        "name": "ConhecimentoPage.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 2117,
+        "extension": ".css",
+        "path": "frontend/src/pages/ConhecimentoPage.css"
+      },
+      {
+        "name": "ConhecimentoPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6349,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/ConhecimentoPage.jsx"
+      },
+      {
+        "name": "ContribuicaoPage.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 2700,
+        "extension": ".css",
+        "path": "frontend/src/pages/ContribuicaoPage.css"
+      },
+      {
+        "name": "ContribuicaoPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7062,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/ContribuicaoPage.jsx"
+      },
+      {
+        "name": "LoginPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1754,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/LoginPage.jsx"
+      },
+      {
+        "name": "MinhasContribuicoesPage.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 2336,
+        "extension": ".css",
+        "path": "frontend/src/pages/MinhasContribuicoesPage.css"
+      },
+      {
+        "name": "MinhasContribuicoesPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4397,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/MinhasContribuicoesPage.jsx"
+      },
+      {
+        "name": "PublicacaoDetalhePage.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 3447,
+        "extension": ".css",
+        "path": "frontend/src/pages/PublicacaoDetalhePage.css"
+      },
+      {
+        "name": "PublicacaoDetalhePage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3745,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/PublicacaoDetalhePage.jsx"
+      },
+      {
+        "name": "PublicacoesPage.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 4127,
+        "extension": ".css",
+        "path": "frontend/src/pages/PublicacoesPage.css"
+      },
+      {
+        "name": "PublicacoesPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7035,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/PublicacoesPage.jsx"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "frontend/src/services",
+        "children": []
+      },
+      {
+        "name": "api.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2963,
+        "extension": ".js",
+        "path": "frontend/src/services/api.js"
+      },
+      {
+        "name": "state",
+        "type": "directory",
+        "path": "frontend/src/state",
+        "children": []
+      },
+      {
+        "name": "auth.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1018,
+        "extension": ".js",
+        "path": "frontend/src/state/auth.js"
+      },
+      {
+        "name": "vite.config.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 286,
+        "extension": ".js",
+        "path": "frontend/vite.config.js"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 11829,
+        "extension": ".json",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 51,
+        "extension": ".json",
+        "path": "package.json"
       },
       {
         "name": "specs",
@@ -710,7 +1236,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-25T10:56:13.961224+00:00",
+    "extracted_at": "2026-09-26T10:40:35.685567+00:00",
     "file_path": "data/silver/hierarchy_2026.2-UnB_Core.json"
   }
 }

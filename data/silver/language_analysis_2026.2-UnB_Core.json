@@ -2,19 +2,19 @@
   "repository": "2026.2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-25T10:55:29.842293+00:00",
+  "analyzed_at": "2026-09-26T10:39:43.418424+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 62,
-  "total_bytes": 345815,
+  "total_files": 118,
+  "total_bytes": 567516,
   "languages": [
     {
       "language": "Markdown",
-      "file_count": 43,
-      "total_bytes": 278389,
-      "percentage": 80.5,
+      "file_count": 45,
+      "total_bytes": 281137,
+      "percentage": 49.54,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -79,10 +79,78 @@
       ]
     },
     {
+      "language": "JSON",
+      "file_count": 10,
+      "total_bytes": 102438,
+      "percentage": 18.05,
+      "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 86113,
+          "extension": ".json"
+        },
+        {
+          "path": "package-lock.json",
+          "name": "package-lock.json",
+          "size": 11829,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integrations/speckit.manifest.json",
+          "name": "speckit.manifest.json",
+          "size": 1516,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integrations/copilot.manifest.json",
+          "name": "copilot.manifest.json",
+          "size": 1285,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 721,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/workflows/workflow-registry.json",
+          "name": "workflow-registry.json",
+          "size": 369,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integration.json",
+          "name": "integration.json",
+          "size": 279,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/init-options.json",
+          "name": "init-options.json",
+          "size": 172,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/memory/.constitution-template.json",
+          "name": ".constitution-template.json",
+          "size": 103,
+          "extension": ".json"
+        },
+        {
+          "path": "package.json",
+          "name": "package.json",
+          "size": 51,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 17.67,
+      "percentage": 10.77,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -123,46 +191,190 @@
       ]
     },
     {
-      "language": "JSON",
-      "file_count": 6,
-      "total_bytes": 3724,
-      "percentage": 1.08,
+      "language": "JavaScript",
+      "file_count": 29,
+      "total_bytes": 50782,
+      "percentage": 8.95,
       "files": [
         {
-          "path": ".specify/integrations/speckit.manifest.json",
-          "name": "speckit.manifest.json",
-          "size": 1516,
-          "extension": ".json"
+          "path": "frontend/src/pages/ContribuicaoPage.jsx",
+          "name": "ContribuicaoPage.jsx",
+          "size": 7062,
+          "extension": ".jsx"
         },
         {
-          "path": ".specify/integrations/copilot.manifest.json",
-          "name": "copilot.manifest.json",
-          "size": 1285,
-          "extension": ".json"
+          "path": "frontend/src/pages/PublicacoesPage.jsx",
+          "name": "PublicacoesPage.jsx",
+          "size": 7035,
+          "extension": ".jsx"
         },
         {
-          "path": ".specify/workflows/workflow-registry.json",
-          "name": "workflow-registry.json",
-          "size": 369,
-          "extension": ".json"
+          "path": "frontend/src/pages/ConhecimentoPage.jsx",
+          "name": "ConhecimentoPage.jsx",
+          "size": 6349,
+          "extension": ".jsx"
         },
         {
-          "path": ".specify/integration.json",
-          "name": "integration.json",
-          "size": 279,
-          "extension": ".json"
+          "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
+          "name": "MinhasContribuicoesPage.jsx",
+          "size": 4397,
+          "extension": ".jsx"
         },
         {
-          "path": ".specify/init-options.json",
-          "name": "init-options.json",
-          "size": 172,
-          "extension": ".json"
+          "path": "frontend/src/pages/PublicacaoDetalhePage.jsx",
+          "name": "PublicacaoDetalhePage.jsx",
+          "size": 3745,
+          "extension": ".jsx"
         },
         {
-          "path": ".specify/memory/.constitution-template.json",
-          "name": ".constitution-template.json",
-          "size": 103,
-          "extension": ".json"
+          "path": "frontend/src/services/api.js",
+          "name": "api.js",
+          "size": 2963,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/src/components/auth/AuthForm.jsx",
+          "name": "AuthForm.jsx",
+          "size": 2381,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/App.jsx",
+          "name": "App.jsx",
+          "size": 2260,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/components/conteudos/ConteudoDetalhe.jsx",
+          "name": "ConteudoDetalhe.jsx",
+          "size": 1786,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/LoginPage.jsx",
+          "name": "LoginPage.jsx",
+          "size": 1754,
+          "extension": ".jsx"
+        }
+      ]
+    },
+    {
+      "language": "SVG Image",
+      "file_count": 5,
+      "total_bytes": 27750,
+      "percentage": 4.89,
+      "files": [
+        {
+          "path": "frontend/public/favicon.svg",
+          "name": "favicon.svg",
+          "size": 9522,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/src/assets/vite.svg",
+          "name": "vite.svg",
+          "size": 8709,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/icons.svg",
+          "name": "icons.svg",
+          "size": 5031,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/src/assets/react.svg",
+          "name": "react.svg",
+          "size": 4126,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/brand-mark.svg",
+          "name": "brand-mark.svg",
+          "size": 362,
+          "extension": ".svg"
+        }
+      ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 11,
+      "total_bytes": 27411,
+      "percentage": 4.83,
+      "files": [
+        {
+          "path": "frontend/src/pages/AuthPage.css",
+          "name": "AuthPage.css",
+          "size": 4164,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/PublicacoesPage.css",
+          "name": "PublicacoesPage.css",
+          "size": 4127,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/components/ui/ui.css",
+          "name": "ui.css",
+          "size": 3974,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/PublicacaoDetalhePage.css",
+          "name": "PublicacaoDetalhePage.css",
+          "size": 3447,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/ContribuicaoPage.css",
+          "name": "ContribuicaoPage.css",
+          "size": 2700,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/MinhasContribuicoesPage.css",
+          "name": "MinhasContribuicoesPage.css",
+          "size": 2336,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/components/conteudos/conteudos.css",
+          "name": "conteudos.css",
+          "size": 2232,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/ConhecimentoPage.css",
+          "name": "ConhecimentoPage.css",
+          "size": 2117,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "name": "index.css",
+          "size": 1467,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/components/auth/auth.css",
+          "name": "auth.css",
+          "size": 563,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "PNG Image",
+      "file_count": 1,
+      "total_bytes": 13057,
+      "percentage": 2.3,
+      "files": [
+        {
+          "path": "frontend/src/assets/hero.png",
+          "name": "hero.png",
+          "size": 13057,
+          "extension": ".png"
         }
       ]
     },
@@ -170,7 +382,7 @@
       "language": "YAML",
       "file_count": 1,
       "total_bytes": 2216,
-      "percentage": 0.64,
+      "percentage": 0.39,
       "files": [
         {
           "path": ".specify/workflows/speckit/workflow.yml",
@@ -182,8 +394,8 @@
     },
     {
       "language": "Git Ignore",
-      "file_count": 2,
-      "total_bytes": 384,
+      "file_count": 3,
+      "total_bytes": 649,
       "percentage": 0.11,
       "files": [
         {
@@ -193,23 +405,41 @@
           "extension": ".gitignore"
         },
         {
+          "path": "frontend/.gitignore",
+          "name": ".gitignore",
+          "size": 252,
+          "extension": ".gitignore"
+        },
+        {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 0,
+          "size": 13,
           "extension": ".gitignore"
         }
       ]
     },
     {
       "language": "Python",
-      "file_count": 3,
-      "total_bytes": 1,
-      "percentage": 0.0,
+      "file_count": 5,
+      "total_bytes": 615,
+      "percentage": 0.11,
       "files": [
+        {
+          "path": "backend/app/api/schemas/auth.py",
+          "name": "auth.py",
+          "size": 614,
+          "extension": ".py"
+        },
         {
           "path": "backend/app/api/search.py",
           "name": "search.py",
           "size": 1,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/auth.py",
+          "name": "auth.py",
+          "size": 0,
           "extension": ".py"
         },
         {
@@ -223,6 +453,20 @@
           "name": "config.py",
           "size": 0,
           "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 1,
+      "total_bytes": 360,
+      "percentage": 0.06,
+      "files": [
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 360,
+          "extension": ".html"
         }
       ]
     },
@@ -242,7 +486,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-25T10:56:13.960786+00:00",
+    "extracted_at": "2026-09-26T10:40:35.684422+00:00",
     "file_path": "data/silver/language_analysis_2026.2-UnB_Core.json"
   }
 }

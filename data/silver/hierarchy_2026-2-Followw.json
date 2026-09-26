@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-25T10:55:31.585046+00:00",
+  "extracted_at": "2026-09-26T10:39:45.791987+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -189,7 +189,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 59,
+        "size": 49,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -263,7 +263,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9643,
+        "size": 11695,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
       },
@@ -337,7 +337,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 5239,
+        "size": 5866,
         "extension": ".py",
         "path": "apps/api/api/db/models.py"
       },
@@ -388,10 +388,18 @@
         "path": "apps/api/api/dependencies/sync.py"
       },
       {
+        "name": "unb_browser.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1256,
+        "extension": ".py",
+        "path": "apps/api/api/dependencies/unb_browser.py"
+      },
+      {
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 2711,
+        "size": 3003,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -472,6 +480,20 @@
         "path": "apps/api/api/modules/news/main.py"
       },
       {
+        "name": "restaurant",
+        "type": "directory",
+        "path": "apps/api/api/modules/restaurant",
+        "children": []
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2948,
+        "extension": ".py",
+        "path": "apps/api/api/modules/restaurant/main.py"
+      },
+      {
         "name": "repositories",
         "type": "directory",
         "path": "apps/api/api/repositories",
@@ -484,6 +506,14 @@
         "size": 12252,
         "extension": ".py",
         "path": "apps/api/api/repositories/classroom.py"
+      },
+      {
+        "name": "restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2043,
+        "extension": ".py",
+        "path": "apps/api/api/repositories/restaurant.py"
       },
       {
         "name": "user.py",
@@ -524,10 +554,18 @@
         "path": "apps/api/api/services/profile.py"
       },
       {
+        "name": "restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5202,
+        "extension": ".py",
+        "path": "apps/api/api/services/restaurant.py"
+      },
+      {
         "name": "sync.py",
         "type": "file",
         "language": "Python",
-        "size": 10743,
+        "size": 10774,
         "extension": ".py",
         "path": "apps/api/api/services/sync.py"
       },
@@ -557,7 +595,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 870,
+        "size": 924,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
       },
@@ -640,6 +678,14 @@
         "path": "apps/api/tests/test_news.py"
       },
       {
+        "name": "test_restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 24981,
+        "extension": ".py",
+        "path": "apps/api/tests/test_restaurant.py"
+      },
+      {
         "name": "test_session.py",
         "type": "file",
         "language": "Python",
@@ -681,7 +727,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 62,
+        "size": 99,
         "extension": ".example",
         "path": "apps/web/.env.example"
       },
@@ -705,7 +751,7 @@
         "name": ".oxlintrc.json",
         "type": "file",
         "language": "JSON",
-        "size": 772,
+        "size": 1102,
         "extension": ".json",
         "path": "apps/web/.oxlintrc.json"
       },
@@ -732,6 +778,14 @@
         "path": "apps/web/.vscode/settings.json"
       },
       {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5010,
+        "extension": ".md",
+        "path": "apps/web/AGENTS.md"
+      },
+      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
@@ -743,23 +797,53 @@
         "name": "bun.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 96953,
+        "size": 102538,
         "extension": ".lock",
         "path": "apps/web/bun.lock"
+      },
+      {
+        "name": "openapi.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 37742,
+        "extension": ".json",
+        "path": "apps/web/openapi.json"
       },
       {
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1601,
+        "size": 1785,
         "extension": ".json",
         "path": "apps/web/package.json"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "apps/web/scripts",
+        "children": []
+      },
+      {
+        "name": "generate-api.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 860,
+        "extension": ".ts",
+        "path": "apps/web/scripts/generate-api.ts"
       },
       {
         "name": "src",
         "type": "directory",
         "path": "apps/web/src",
         "children": []
+      },
+      {
+        "name": "calendar.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1717,
+        "extension": ".ts",
+        "path": "apps/web/src/calendar.ts"
       },
       {
         "name": "integrations",
@@ -804,6 +888,52 @@
         "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx"
       },
       {
+        "name": "queries",
+        "type": "directory",
+        "path": "apps/web/src/queries",
+        "children": []
+      },
+      {
+        "name": "api.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 143,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/api.ts"
+      },
+      {
+        "name": "client.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1550,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/client.ts"
+      },
+      {
+        "name": "errors.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 947,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/errors.ts"
+      },
+      {
+        "name": "me.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 95,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/me.ts"
+      },
+      {
+        "name": "schema.gen.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 22320,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/schema.gen.ts"
+      },
+      {
         "name": "routeTree.gen.ts",
         "type": "file",
         "language": "TypeScript",
@@ -837,7 +967,7 @@
         "name": "index.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 424,
+        "size": 1781,
         "extension": ".tsx",
         "path": "apps/web/src/routes/index.tsx"
       },
@@ -853,7 +983,7 @@
         "name": "tsconfig.json",
         "type": "file",
         "language": "JSON",
-        "size": 743,
+        "size": 844,
         "extension": ".json",
         "path": "apps/web/tsconfig.json"
       },
@@ -878,6 +1008,14 @@
         "type": "directory",
         "path": "docs",
         "children": []
+      },
+      {
+        "name": "AI-USAGE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 296,
+        "extension": ".md",
+        "path": "docs/AI-USAGE.md"
       },
       {
         "name": "requisitos.md",
@@ -949,7 +1087,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9333,
+        "size": 9866,
         "extension": ".md",
         "path": "packages/sigaa-client/AGENTS.md"
       },
@@ -957,7 +1095,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8190,
+        "size": 8504,
         "extension": ".md",
         "path": "packages/sigaa-client/README.md"
       },
@@ -979,7 +1117,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1404,
+        "size": 1456,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/__init__.py"
       },
@@ -1011,7 +1149,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 6533,
+        "size": 6776,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/models.py"
       },
@@ -1049,7 +1187,7 @@
         "name": "restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 4779,
+        "size": 5649,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/restaurant.py"
       },
@@ -1193,7 +1331,7 @@
         "name": "test_restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 5544,
+        "size": 9712,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_restaurant.py"
       },
@@ -1207,7 +1345,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4963,
+        "size": 5586,
         "extension": ".md",
         "path": "packages/unb-browser/AGENTS.md"
       },
@@ -1215,7 +1353,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4849,
+        "size": 5863,
         "extension": ".md",
         "path": "packages/unb-browser/README.md"
       },
@@ -1240,6 +1378,14 @@
         "children": []
       },
       {
+        "name": "cardapio-darcy-28-09.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 506169,
+        "extension": ".pdf",
+        "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf"
+      },
+      {
         "name": "cardapio-darcy.pdf",
         "type": "file",
         "language": "PDF",
@@ -1256,10 +1402,26 @@
         "path": "packages/unb-browser/tests/fixtures/cardapio-fazenda.pdf"
       },
       {
+        "name": "cardapio-gama-28-09.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 493721,
+        "extension": ".pdf",
+        "path": "packages/unb-browser/tests/fixtures/cardapio-gama-28-09.pdf"
+      },
+      {
+        "name": "test_calendar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4023,
+        "extension": ".py",
+        "path": "packages/unb-browser/tests/test_calendar.py"
+      },
+      {
         "name": "test_restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 7226,
+        "size": 9333,
         "extension": ".py",
         "path": "packages/unb-browser/tests/test_restaurant.py"
       },
@@ -1273,7 +1435,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 307,
+        "size": 691,
         "extension": ".py",
         "path": "packages/unb-browser/unb_browser/__init__.py"
       },
@@ -1281,9 +1443,47 @@
         "name": "browser.py",
         "type": "file",
         "language": "Python",
-        "size": 821,
+        "size": 887,
         "extension": ".py",
         "path": "packages/unb-browser/unb_browser/browser.py"
+      },
+      {
+        "name": "calendar",
+        "type": "directory",
+        "path": "packages/unb-browser/unb_browser/calendar",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 410,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/calendar/__init__.py"
+      },
+      {
+        "name": "academic_calendar.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 27493,
+        "extension": ".json",
+        "path": "packages/unb-browser/unb_browser/calendar/academic_calendar.json"
+      },
+      {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1283,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/calendar/models.py"
+      },
+      {
+        "name": "resource.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1195,
+        "extension": ".py",
+        "path": "packages/unb-browser/unb_browser/calendar/resource.py"
       },
       {
         "name": "config.py",
@@ -1327,7 +1527,7 @@
         "name": "pdf.py",
         "type": "file",
         "language": "Python",
-        "size": 7250,
+        "size": 7659,
         "extension": ".py",
         "path": "packages/unb-browser/unb_browser/restaurant/pdf.py"
       },
@@ -1373,7 +1573,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 967,
+        "size": 723,
         "extension": ".toml",
         "path": "pyproject.toml"
       },
@@ -1397,14 +1597,14 @@
         "name": "uv.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 315957,
+        "size": 295044,
         "extension": ".lock",
         "path": "uv.lock"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-25T10:56:13.951834+00:00",
+    "extracted_at": "2026-09-26T10:40:35.669330+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
