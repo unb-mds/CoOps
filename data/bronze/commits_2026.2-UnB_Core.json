@@ -1,10 +1,87 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-26T10:35:48.962488+00:00",
+      "extracted_at": "2026-09-27T11:18:42.280804+00:00",
       "file_path": "data/bronze/commits_2026.2-UnB_Core.json",
-      "record_count": 101
+      "record_count": 114
     }
+  },
+  {
+    "sha": "f4cb6120c6d693f29dd2bcf1cedef2b3f0181c15",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-26T23:33:50Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-26T23:33:50Z"
+      },
+      "message": "Merge pull request #110 from unb-mds/backend\n\nMerge da Backend para a Main"
+    },
+    "parents": [
+      "f617cf1de0266a0d3669132c712b23b381dde72a",
+      "2d3bbc8e9561321b80acb2047dd8c0e6ccb6cd0f"
+    ],
+    "additions": 614,
+    "deletions": 0,
+    "total_changes": 614,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "2d3bbc8e9561321b80acb2047dd8c0e6ccb6cd0f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "arthurhc3",
+        "date": "2026-09-26T17:50:52Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "817e11fad8ec72ee5b4bb68710183cdde572fdd4f3af5010131c140d10c92514"
+      },
+      "committer": {
+        "name": "arthurhc3",
+        "date": "2026-09-26T17:50:52Z"
+      },
+      "message": "Merge branch 'backend' of https://github.com/unb-mds/2026.2-UnB_Core into backend"
+    },
+    "parents": [
+      "2ef7ada78f619def249ba87fdb2bdc023b9a6893",
+      "86e922aa9dade8dec95d922d79cbed2dbe222a7b"
+    ],
+    "additions": 128,
+    "deletions": 59,
+    "total_changes": 187,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "2ef7ada78f619def249ba87fdb2bdc023b9a6893",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "arthurhc3",
+        "date": "2026-09-26T17:50:09Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "817e11fad8ec72ee5b4bb68710183cdde572fdd4f3af5010131c140d10c92514"
+      },
+      "committer": {
+        "name": "arthurhc3",
+        "date": "2026-09-26T17:50:09Z"
+      },
+      "message": "chore : criação de diretórios novos"
+    },
+    "parents": [
+      "63dff850f0b4c1070944e26f847c233ac23a3e71"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026.2-UnB_Core"
   },
   {
     "sha": "f617cf1de0266a0d3669132c712b23b381dde72a",
@@ -131,6 +208,56 @@
     "additions": 81,
     "deletions": 0,
     "total_changes": 81,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "86e922aa9dade8dec95d922d79cbed2dbe222a7b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-25T22:01:51Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-25T22:01:51Z"
+      },
+      "message": "Implementei as classes get em disciplina.py\n- Criei as classes GetListaCurso,post_disciplina,get_disciplina\n- adicionei mais algums schemas em cliente e disciplina.\n-Resolvi a Issue T026"
+    },
+    "parents": [
+      "fd5fd9d65d40676ce7355254eabe49bf441acac5"
+    ],
+    "additions": 70,
+    "deletions": 26,
+    "total_changes": 96,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "fd5fd9d65d40676ce7355254eabe49bf441acac5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-25T18:33:56Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-25T18:33:56Z"
+      },
+      "message": "implementa aviso de fonte oficial e ajusta validação de URL\n\n- Adiciona aviso de prevalência da fonte oficial nas respostas de listagem e ID\n- Resolve conflito de tipagem  do HttpUrl via overwrite para string nas classes filhas PublicacaoInstitucionalCreate, PublicacaoInstucional\nResolve : #T019"
+    },
+    "parents": [
+      "63dff850f0b4c1070944e26f847c233ac23a3e71"
+    ],
+    "additions": 58,
+    "deletions": 33,
+    "total_changes": 91,
     "repo_name": "2026.2-UnB_Core"
   },
   {
@@ -809,6 +936,56 @@
     "repo_name": "2026.2-UnB_Core"
   },
   {
+    "sha": "63dff850f0b4c1070944e26f847c233ac23a3e71",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-22T13:10:22Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-22T13:10:22Z"
+      },
+      "message": "Implementei a class PublicacaoInstitucionalGet, dentro do router get_publicacao"
+    },
+    "parents": [
+      "c51afda7867abee0576d1d7b726056625a80d3b6"
+    ],
+    "additions": 3,
+    "deletions": 2,
+    "total_changes": 5,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "c51afda7867abee0576d1d7b726056625a80d3b6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-22T13:00:03Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-22T13:00:03Z"
+      },
+      "message": "Adicionei rotas GET para disciplinas e schem CursoGet\n-Implementei a class CursoGet dentro de Curso.py\n-Implementei o router disciplina_router dentro de disciplina.py\n-Implementei os Get para \"/{curso_id}/disciplina\""
+    },
+    "parents": [
+      "8f6a11f3ded6fc2e53919fe9102d721600291a98"
+    ],
+    "additions": 37,
+    "deletions": 1,
+    "total_changes": 38,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
     "sha": "935d632e668310b7a84564feb705ccee70ccb6b8",
     "html_url": null,
     "commit": {
@@ -881,6 +1058,56 @@
     "additions": 65,
     "deletions": 9,
     "total_changes": 74,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "8f6a11f3ded6fc2e53919fe9102d721600291a98",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-19T19:50:21Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-19T19:50:21Z"
+      },
+      "message": "-esqueci de colocar o __init__ no ultimo commit"
+    },
+    "parents": [
+      "86304c94e54b1c6bd880d074193a1d085337c3b2"
+    ],
+    "additions": 6,
+    "deletions": 0,
+    "total_changes": 6,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "86304c94e54b1c6bd880d074193a1d085337c3b2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-19T19:35:31Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-19T19:35:31Z"
+      },
+      "message": "-Resolvi a issue T018\n-criei a classe PubicacaoInstitucionalGet, feita para pegar os dados do banco de dados\n-adicionei o route com endereço temporario,vou trocar depois, e criei uma funçao de entrada e outra de saida"
+    },
+    "parents": [
+      "b70b29bacee782c8f541000862596cf0fd0149e0"
+    ],
+    "additions": 37,
+    "deletions": 2,
+    "total_changes": 39,
     "repo_name": "2026.2-UnB_Core"
   },
   {
@@ -984,6 +1211,81 @@
     "repo_name": "2026.2-UnB_Core"
   },
   {
+    "sha": "b70b29bacee782c8f541000862596cf0fd0149e0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-15T00:03:02Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-15T00:03:02Z"
+      },
+      "message": "readicionei schemas"
+    },
+    "parents": [
+      "909808b6bda355ee2654b7b6cf08de2ca65f13a0"
+    ],
+    "additions": 466,
+    "deletions": 0,
+    "total_changes": 466,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "909808b6bda355ee2654b7b6cf08de2ca65f13a0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-14T23:59:07Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-14T23:59:07Z"
+      },
+      "message": "deletei alguns arquivos"
+    },
+    "parents": [
+      "0017aab98664350bb385b516f12aa99a97d7b761"
+    ],
+    "additions": 0,
+    "deletions": 746,
+    "total_changes": 746,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "0017aab98664350bb385b516f12aa99a97d7b761",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-14T23:46:10Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-14T23:46:10Z"
+      },
+      "message": "-Consertei os schemas,para ser mais fiel ao novo requisitos"
+    },
+    "parents": [
+      "1f89c809d2149fad152e3fc9ac62b2f7a57df6c6"
+    ],
+    "additions": 32,
+    "deletions": 22,
+    "total_changes": 54,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
     "sha": "912f9cb300b38672f670a4d52b38e40ed72d630f",
     "html_url": null,
     "commit": {
@@ -1006,6 +1308,31 @@
     "additions": 0,
     "deletions": 0,
     "total_changes": 0,
+    "repo_name": "2026.2-UnB_Core"
+  },
+  {
+    "sha": "1f89c809d2149fad152e3fc9ac62b2f7a57df6c6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-14T23:31:04Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-09-14T23:31:04Z"
+      },
+      "message": "-Retirei o nome domain dos arquivos"
+    },
+    "parents": [
+      "a61b76a5e8ad2139f406c43a1e6ab6f32247f293"
+    ],
+    "additions": 457,
+    "deletions": 0,
+    "total_changes": 457,
     "repo_name": "2026.2-UnB_Core"
   },
   {

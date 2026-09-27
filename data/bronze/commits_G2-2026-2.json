@@ -1,10 +1,233 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-26T10:35:52.116835+00:00",
+      "extracted_at": "2026-09-27T11:18:45.190185+00:00",
       "file_path": "data/bronze/commits_G2-2026-2.json",
-      "record_count": 51
+      "record_count": 60
     }
+  },
+  {
+    "sha": "ca9c4328fabcc2a630e9d2a50d885cdac9935564",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-09-27T00:19:19Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-27T00:19:19Z"
+      },
+      "message": "Merge pull request #52 from unb-mds/feature/consulta-professores\n\nModelagem, consulta e filtros de professores"
+    },
+    "parents": [
+      "e284d462b3b1289d8db04ab78a4655d5451b89d9",
+      "14956b94c0d2d48096f39bb717da5ea328da9c75"
+    ],
+    "additions": 723,
+    "deletions": 0,
+    "total_changes": 723,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "14956b94c0d2d48096f39bb717da5ea328da9c75",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-09-26T19:48:22Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-09-26T19:48:22Z"
+      },
+      "message": "docs: adiciona CLAUDE.md com contexto do projeto para uso do Claude Code\n\nCo-Authored-By: Claude Sonnet 5 <[email removed]>"
+    },
+    "parents": [
+      "bf0ea4b169c45495e8387e2eeb9a8c448bf7d774"
+    ],
+    "additions": 45,
+    "deletions": 0,
+    "total_changes": 45,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "bf0ea4b169c45495e8387e2eeb9a8c448bf7d774",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-09-26T19:38:44Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-09-26T19:38:44Z"
+      },
+      "message": "test: cobre casos de borda da busca (#42)\n\nCo-Authored-By: Claude Sonnet 5 <[email removed]>"
+    },
+    "parents": [
+      "d03ba82ce28a2a28f074629d708344cd511e51ed"
+    ],
+    "additions": 152,
+    "deletions": 0,
+    "total_changes": 152,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "d03ba82ce28a2a28f074629d708344cd511e51ed",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-09-26T19:17:00Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-09-26T19:17:00Z"
+      },
+      "message": "feat: implementa filtros de busca de professores (#31)\n\nAdiciona busca por nome do professor e por disciplina (nome ou codigo)\nna pagina /professores, com filtros combinados por E, curingas do LIKE\ntratados como texto e aviso quando nao ha resultados.\n\nCo-Authored-By: Claude Sonnet 5 <[email removed]>"
+    },
+    "parents": [
+      "acb4d88745ec81fb77ac1fe237e9fa57797cfd22"
+    ],
+    "additions": 165,
+    "deletions": 2,
+    "total_changes": 167,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "acb4d88745ec81fb77ac1fe237e9fa57797cfd22",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-09-26T18:52:24Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-09-26T18:52:24Z"
+      },
+      "message": "feat: implementa consulta de professores (#30)\n\nAdiciona a página /professores, pública, que lista os professores em\nordem alfabética com departamento e disciplinas, cada um com link para\no perfil existente. Inclui ProfessorRepository.listar() e testes.\n\nCo-Authored-By: Claude Sonnet 5 <[email removed]>"
+    },
+    "parents": [
+      "99061f611074813eb748733dfe7b4e557ee22139"
+    ],
+    "additions": 125,
+    "deletions": 0,
+    "total_changes": 125,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "99061f611074813eb748733dfe7b4e557ee22139",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-09-26T16:30:00Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-09-26T16:30:00Z"
+      },
+      "message": "feat: modela professores e disciplinas (#29)\n\nCo-Authored-By: Claude Sonnet 5 <[email removed]>"
+    },
+    "parents": [
+      "e284d462b3b1289d8db04ab78a4655d5451b89d9"
+    ],
+    "additions": 238,
+    "deletions": 0,
+    "total_changes": 238,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "e284d462b3b1289d8db04ab78a4655d5451b89d9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-09-26T15:52:10Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-26T15:52:10Z"
+      },
+      "message": "Merge pull request #51 from unb-mds/feat/cadastro-medias-indicadores\n\nValida cadastro e exibe médias por disciplina (#26, #36 e #37)"
+    },
+    "parents": [
+      "85f6281636b4c69769ade3d52e3ba36f8eb7b8e4",
+      "bd29f8580ad9fd5aa7a75f773d4fab73a55b94cd"
+    ],
+    "additions": 879,
+    "deletions": 26,
+    "total_changes": 905,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "bd29f8580ad9fd5aa7a75f773d4fab73a55b94cd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "geovanaduartee",
+        "date": "2026-09-26T14:02:13Z",
+        "author_email_hash": "7bdd2eb243699a7763065dce5efb0458839e492ca6cb709cc04f2fca6daa3ba2"
+      },
+      "committer": {
+        "name": "geovanaduartee",
+        "date": "2026-09-26T14:02:13Z"
+      },
+      "message": "test: amplia cobertura do calculo das medias (#44)"
+    },
+    "parents": [
+      "2753ba54d57a6a33419d829d431d51b55d306223"
+    ],
+    "additions": 98,
+    "deletions": 2,
+    "total_changes": 100,
+    "repo_name": "G2-2026-2"
+  },
+  {
+    "sha": "2753ba54d57a6a33419d829d431d51b55d306223",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "geovanaduartee",
+        "date": "2026-09-26T05:08:38Z",
+        "author_email_hash": "7bdd2eb243699a7763065dce5efb0458839e492ca6cb709cc04f2fca6daa3ba2"
+      },
+      "committer": {
+        "name": "geovanaduartee",
+        "date": "2026-09-26T05:08:38Z"
+      },
+      "message": "feat: valida cadastro e exibe medias por disciplina"
+    },
+    "parents": [
+      "85f6281636b4c69769ade3d52e3ba36f8eb7b8e4"
+    ],
+    "additions": 783,
+    "deletions": 26,
+    "total_changes": 809,
+    "repo_name": "G2-2026-2"
   },
   {
     "sha": "85f6281636b4c69769ade3d52e3ba36f8eb7b8e4",

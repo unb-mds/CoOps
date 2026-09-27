@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "Fique-de-Olho",
   "branch": "main",
-  "sha": "a90b6dea729bee125fe3c7dbe9409e6c30dd510d",
+  "sha": "c6cd8e522551b915a60b5dd9d57710164d046970",
   "tree": [
     {
       "name": ".github",
@@ -591,6 +591,298 @@
       "is_binary": false
     },
     {
+      "name": "Back",
+      "path": "Back",
+      "type": "directory",
+      "sha": "76a5817fc9b61e4d7794c84ecfba8fdaa430360f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".env.example",
+      "path": "Back/.env.example",
+      "type": "file",
+      "sha": "9bdb6d688da03f7bbef0fa8e50e2d242219415e5",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 411,
+      "is_binary": false
+    },
+    {
+      "name": ".gitignore",
+      "path": "Back/.gitignore",
+      "type": "file",
+      "sha": "04489e57ef20c033c6fb4dcd352f75f699c60a2d",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 462,
+      "is_binary": false
+    },
+    {
+      "name": "Dockerfile",
+      "path": "Back/Dockerfile",
+      "type": "file",
+      "sha": "f073730f8bf446c99c9b0b629431b1bdb4a57d02",
+      "mode": "100644",
+      "extension": "",
+      "size": 629,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "Back/README.md",
+      "type": "file",
+      "sha": "2fa80765661d08a50bac5115d5c229a7e8e2f6e4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6452,
+      "is_binary": false
+    },
+    {
+      "name": "app",
+      "path": "Back/app",
+      "type": "directory",
+      "sha": "7ced66058fe4e62b3ce0a31b91d443ece6f63df9",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/__init__.py",
+      "type": "file",
+      "sha": "6c6f1f35c04d93301273f175b86650f8b52e555d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 83,
+      "is_binary": false
+    },
+    {
+      "name": "core",
+      "path": "Back/app/core",
+      "type": "directory",
+      "sha": "287c053471e2b9be53a5bfa10d668f7b9e3bfac2",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/core/__init__.py",
+      "type": "file",
+      "sha": "1d69462c710f1a629716c386facc26737bbbb7b6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 73,
+      "is_binary": false
+    },
+    {
+      "name": "config.py",
+      "path": "Back/app/core/config.py",
+      "type": "file",
+      "sha": "67aeb4aaa77e05284803cfed8268d2ccdb359d63",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 575,
+      "is_binary": false
+    },
+    {
+      "name": "database.py",
+      "path": "Back/app/core/database.py",
+      "type": "file",
+      "sha": "30fc15bfda3e5a1630eb81594d1f11ceddbaf025",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 788,
+      "is_binary": false
+    },
+    {
+      "name": "main.py",
+      "path": "Back/app/main.py",
+      "type": "file",
+      "sha": "1c215cfdd48ef5778b112d2ea17a84de2f4de9a6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1398,
+      "is_binary": false
+    },
+    {
+      "name": "modules",
+      "path": "Back/app/modules",
+      "type": "directory",
+      "sha": "14988013c701bb8806d6f54537aa8006eeac08be",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/modules/__init__.py",
+      "type": "file",
+      "sha": "945f46318789357f6273d65eae7780860c3f4047",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 80,
+      "is_binary": false
+    },
+    {
+      "name": "editais",
+      "path": "Back/app/modules/editais",
+      "type": "directory",
+      "sha": "5a6049391056e6f0a9f6a8bb8683003cc9d97ced",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/modules/editais/__init__.py",
+      "type": "file",
+      "sha": "9a34e21f8d528dfbd7896e33304cf7ba87e1fa59",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 86,
+      "is_binary": false
+    },
+    {
+      "name": "router.py",
+      "path": "Back/app/modules/editais/router.py",
+      "type": "file",
+      "sha": "1500071b8cadb33f80ff798bf82de9cb515737e9",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 580,
+      "is_binary": false
+    },
+    {
+      "name": "favoritos",
+      "path": "Back/app/modules/favoritos",
+      "type": "directory",
+      "sha": "c9b19f97b04afd7486ecb2195c21d12020025bf7",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/modules/favoritos/__init__.py",
+      "type": "file",
+      "sha": "1dfe82084dfd5634e3ffb39c33c2bdcd436fb94a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 99,
+      "is_binary": false
+    },
+    {
+      "name": "scraper",
+      "path": "Back/app/modules/scraper",
+      "type": "directory",
+      "sha": "3d26c4bca9e199a189c8a953e1c380877431b77f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/modules/scraper/__init__.py",
+      "type": "file",
+      "sha": "977b1ba317c6f1ef6a4ecb651b2267b57a47b322",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 102,
+      "is_binary": false
+    },
+    {
+      "name": "deg.py",
+      "path": "Back/app/modules/scraper/deg.py",
+      "type": "file",
+      "sha": "9737f2f03064d10b3c5bece33698903a25fb0107",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4495,
+      "is_binary": false
+    },
+    {
+      "name": "usuarios",
+      "path": "Back/app/modules/usuarios",
+      "type": "directory",
+      "sha": "4ae8936df6b46d92c84c6a1f4cb3f5d07f7a8b97",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/modules/usuarios/__init__.py",
+      "type": "file",
+      "sha": "ff55e556a8efbc86a9ddf6905fc77024bbe7c343",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 77,
+      "is_binary": false
+    },
+    {
+      "name": "docker-compose.yml",
+      "path": "Back/docker-compose.yml",
+      "type": "file",
+      "sha": "481f9e9bec1b4e4f6ab0924000f4779ac8f23deb",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 954,
+      "is_binary": false
+    },
+    {
+      "name": "requirements.txt",
+      "path": "Back/requirements.txt",
+      "type": "file",
+      "sha": "08dc4c4f5139b01e0f212382fe01f769fe23508e",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 336,
+      "is_binary": false
+    },
+    {
+      "name": "tests",
+      "path": "Back/tests",
+      "type": "directory",
+      "sha": "2f0fbc94419a33360e49738e59482b6e98d946ee",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/tests/__init__.py",
+      "type": "file",
+      "sha": "a5f1d884d99b1c6da500993cb5708e7ab38aead0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 38,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "Back/tests/conftest.py",
+      "type": "file",
+      "sha": "a7fe9e96c31013d802c30f72b69c0d9ac246c8cd",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 286,
+      "is_binary": false
+    },
+    {
+      "name": "test_health.py",
+      "path": "Back/tests/test_health.py",
+      "type": "file",
+      "sha": "b0cf01d1aa204bd5929f52c1f5160600ea40da88",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 645,
+      "is_binary": false
+    },
+    {
+      "name": "test_scraper.py",
+      "path": "Back/tests/test_scraper.py",
+      "type": "file",
+      "sha": "e5c4741a5426c29610ef72d6a85b4e516e81d7dd",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3471,
+      "is_binary": false
+    },
+    {
       "name": "CONTEXT.md",
       "path": "CONTEXT.md",
       "type": "file",
@@ -601,13 +893,329 @@
       "is_binary": false
     },
     {
+      "name": "Front",
+      "path": "Front",
+      "type": "directory",
+      "sha": "15d802548acc1586794c1e5911e04a39b7d73330",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".env.example",
+      "path": "Front/.env.example",
+      "type": "file",
+      "sha": "c2058b5ea0627f57723ad732d1576b554be1a30a",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 40,
+      "is_binary": false
+    },
+    {
+      "name": ".eslintrc.cjs",
+      "path": "Front/.eslintrc.cjs",
+      "type": "file",
+      "sha": "d791e172b9abfbf142eeb684c7b3976cb40f0872",
+      "mode": "100644",
+      "extension": ".cjs",
+      "size": 611,
+      "is_binary": false
+    },
+    {
+      "name": ".gitignore",
+      "path": "Front/.gitignore",
+      "type": "file",
+      "sha": "3631359ab93fe1702d3903ac553e3383305eeb0e",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 164,
+      "is_binary": false
+    },
+    {
+      "name": ".prettierrc",
+      "path": "Front/.prettierrc",
+      "type": "file",
+      "sha": "1d9d0f612787a34fe92330294d4ff7e3045c5608",
+      "mode": "100644",
+      "extension": ".prettierrc",
+      "size": 133,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "Front/README.md",
+      "type": "file",
+      "sha": "c4e3414bb0e94f2f4b2f24c9769ba3744f44865a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1781,
+      "is_binary": false
+    },
+    {
+      "name": "index.html",
+      "path": "Front/index.html",
+      "type": "file",
+      "sha": "8a7c0d58f4861bfd283f95502901d4110c4c9b1f",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 698,
+      "is_binary": false
+    },
+    {
+      "name": "package-lock.json",
+      "path": "Front/package-lock.json",
+      "type": "file",
+      "sha": "40560db42447490332947afdd8779129bc91199e",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 123918,
+      "is_binary": false
+    },
+    {
+      "name": "package.json",
+      "path": "Front/package.json",
+      "type": "file",
+      "sha": "ec63e136fc510eb9d8bfa469a2e5f941fcc5110f",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 922,
+      "is_binary": false
+    },
+    {
+      "name": "src",
+      "path": "Front/src",
+      "type": "directory",
+      "sha": "3a13307ff942f9959ad007a32f60f394a0d665b2",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "App.tsx",
+      "path": "Front/src/App.tsx",
+      "type": "file",
+      "sha": "ee4487aa2e21b601c110ec77c914325e797e6326",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 158,
+      "is_binary": false
+    },
+    {
+      "name": "components",
+      "path": "Front/src/components",
+      "type": "directory",
+      "sha": "4f5b588282f77355e7c8c9c2d4421e0d565e09ea",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "EditalCard.tsx",
+      "path": "Front/src/components/EditalCard.tsx",
+      "type": "file",
+      "sha": "20de6243991221518c801f681c3033ac9991202c",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 1990,
+      "is_binary": false
+    },
+    {
+      "name": "FilterBar.tsx",
+      "path": "Front/src/components/FilterBar.tsx",
+      "type": "file",
+      "sha": "4c2264385513f6d8b2b523093ac8c01765e59133",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 1457,
+      "is_binary": false
+    },
+    {
+      "name": "Footer.tsx",
+      "path": "Front/src/components/Footer.tsx",
+      "type": "file",
+      "sha": "1c4752eb04cc480c94de100c52bd5efcef8cb773",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 955,
+      "is_binary": false
+    },
+    {
+      "name": "Header.tsx",
+      "path": "Front/src/components/Header.tsx",
+      "type": "file",
+      "sha": "d69233e36682b570e1429d2974026509c9235990",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 1312,
+      "is_binary": false
+    },
+    {
+      "name": "Hero.tsx",
+      "path": "Front/src/components/Hero.tsx",
+      "type": "file",
+      "sha": "55a68ea88bf1cb88aebadaea33410e6e10652176",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 2053,
+      "is_binary": false
+    },
+    {
+      "name": "index.css",
+      "path": "Front/src/index.css",
+      "type": "file",
+      "sha": "a6efa3ee96df9afbf2b467de663a1603763baa44",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 8961,
+      "is_binary": false
+    },
+    {
+      "name": "main.tsx",
+      "path": "Front/src/main.tsx",
+      "type": "file",
+      "sha": "7e1e7a5290de0918569c34538a1fc635b6fdc607",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 344,
+      "is_binary": false
+    },
+    {
+      "name": "pages",
+      "path": "Front/src/pages",
+      "type": "directory",
+      "sha": "3f699871b2fc600afdb795fee0af86e593d8ade4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "EditalDetailPage.tsx",
+      "path": "Front/src/pages/EditalDetailPage.tsx",
+      "type": "file",
+      "sha": "28c94b96c2692b76380147f1745c0323354c1edf",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 1038,
+      "is_binary": false
+    },
+    {
+      "name": "HomePage.tsx",
+      "path": "Front/src/pages/HomePage.tsx",
+      "type": "file",
+      "sha": "a0916657bdbfd4204e1faeb78eba09451d7b5960",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 2558,
+      "is_binary": false
+    },
+    {
+      "name": "routes",
+      "path": "Front/src/routes",
+      "type": "directory",
+      "sha": "554f6e4ca396aa7395407cf50d00089ccab188b8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AppRoutes.tsx",
+      "path": "Front/src/routes/AppRoutes.tsx",
+      "type": "file",
+      "sha": "510f63f9ee8aa92f37c9b8b8f4dc69046f1a7273",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 347,
+      "is_binary": false
+    },
+    {
+      "name": "services",
+      "path": "Front/src/services",
+      "type": "directory",
+      "sha": "c78f2ab197ebf3696b54c64f002650da2af37658",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "editaisService.ts",
+      "path": "Front/src/services/editaisService.ts",
+      "type": "file",
+      "sha": "fc480cae3b0c025d3548b56fba73a02f316570f4",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 627,
+      "is_binary": false
+    },
+    {
+      "name": "types.ts",
+      "path": "Front/src/services/types.ts",
+      "type": "file",
+      "sha": "d1d9a6d7eb795f2502a975b9e0fbad7b77d5de59",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 413,
+      "is_binary": false
+    },
+    {
+      "name": "utils",
+      "path": "Front/src/utils",
+      "type": "directory",
+      "sha": "7c5011307d636c56928a7cff35a1614823ff430b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "editalDisplay.ts",
+      "path": "Front/src/utils/editalDisplay.ts",
+      "type": "file",
+      "sha": "daf76a27c96bebc6c1319a84face2606aaab4f71",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 2296,
+      "is_binary": false
+    },
+    {
+      "name": "vite-env.d.ts",
+      "path": "Front/src/vite-env.d.ts",
+      "type": "file",
+      "sha": "8304c331462e6230ff00fd7af5d0b9675c5c7605",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 162,
+      "is_binary": false
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "Front/tsconfig.json",
+      "type": "file",
+      "sha": "1ebbc6a6a64b8feb2f00bd49477269c748b6955b",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 629,
+      "is_binary": false
+    },
+    {
+      "name": "tsconfig.node.json",
+      "path": "Front/tsconfig.node.json",
+      "type": "file",
+      "sha": "42872c59f5b01c9155864572bc2fbd5833a7406c",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 213,
+      "is_binary": false
+    },
+    {
+      "name": "vite.config.ts",
+      "path": "Front/vite.config.ts",
+      "type": "file",
+      "sha": "e5346c2e8f13b56c37485f2d72f4959909b128b0",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 307,
+      "is_binary": false
+    },
+    {
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "4d94e023951bc1e94a10352c73134d49cbacbe4f",
+      "sha": "9a4bf90f83208ef34d0930fb61fc2c145d90abcc",
       "mode": "100644",
       "extension": ".md",
-      "size": 735,
+      "size": 1908,
       "is_binary": false
     },
     {
@@ -1028,19 +1636,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-26T10:39:45.229476+00:00",
+  "extracted_at": "2026-09-27T11:22:43.701289+00:00",
   "method": "rest",
-  "total_items": 110,
+  "total_items": 174,
   "repository_metadata": {
     "id": 1338350642,
     "full_name": "unb-mds/Fique-de-Olho",
     "description": "Grupo G4 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:56:41Z",
-    "updated_at": "2026-09-25T01:41:28Z",
-    "language": null,
-    "size": 1567,
+    "updated_at": "2026-09-26T21:33:02Z",
+    "language": "TypeScript",
+    "size": 1636,
     "stars": 1,
     "forks": 0,
-    "open_issues": 23
+    "open_issues": 20
   }
 }
