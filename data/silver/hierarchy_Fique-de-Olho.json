@@ -2,7 +2,7 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-26T10:39:45.229476+00:00",
+  "extracted_at": "2026-09-27T11:22:43.701289+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -466,6 +466,236 @@
         "path": ".github/workflows/deploy-docs.yml"
       },
       {
+        "name": "Back",
+        "type": "directory",
+        "path": "Back",
+        "children": []
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 411,
+        "extension": ".example",
+        "path": "Back/.env.example"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 462,
+        "extension": ".gitignore",
+        "path": "Back/.gitignore"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 629,
+        "extension": "",
+        "path": "Back/Dockerfile"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6452,
+        "extension": ".md",
+        "path": "Back/README.md"
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "Back/app",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 83,
+        "extension": ".py",
+        "path": "Back/app/__init__.py"
+      },
+      {
+        "name": "core",
+        "type": "directory",
+        "path": "Back/app/core",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 73,
+        "extension": ".py",
+        "path": "Back/app/core/__init__.py"
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 575,
+        "extension": ".py",
+        "path": "Back/app/core/config.py"
+      },
+      {
+        "name": "database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 788,
+        "extension": ".py",
+        "path": "Back/app/core/database.py"
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1398,
+        "extension": ".py",
+        "path": "Back/app/main.py"
+      },
+      {
+        "name": "modules",
+        "type": "directory",
+        "path": "Back/app/modules",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 80,
+        "extension": ".py",
+        "path": "Back/app/modules/__init__.py"
+      },
+      {
+        "name": "editais",
+        "type": "directory",
+        "path": "Back/app/modules/editais",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 86,
+        "extension": ".py",
+        "path": "Back/app/modules/editais/__init__.py"
+      },
+      {
+        "name": "router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 580,
+        "extension": ".py",
+        "path": "Back/app/modules/editais/router.py"
+      },
+      {
+        "name": "favoritos",
+        "type": "directory",
+        "path": "Back/app/modules/favoritos",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 99,
+        "extension": ".py",
+        "path": "Back/app/modules/favoritos/__init__.py"
+      },
+      {
+        "name": "scraper",
+        "type": "directory",
+        "path": "Back/app/modules/scraper",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 102,
+        "extension": ".py",
+        "path": "Back/app/modules/scraper/__init__.py"
+      },
+      {
+        "name": "deg.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4495,
+        "extension": ".py",
+        "path": "Back/app/modules/scraper/deg.py"
+      },
+      {
+        "name": "usuarios",
+        "type": "directory",
+        "path": "Back/app/modules/usuarios",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 77,
+        "extension": ".py",
+        "path": "Back/app/modules/usuarios/__init__.py"
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 954,
+        "extension": ".yml",
+        "path": "Back/docker-compose.yml"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 336,
+        "extension": ".txt",
+        "path": "Back/requirements.txt"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "Back/tests",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 38,
+        "extension": ".py",
+        "path": "Back/tests/__init__.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 286,
+        "extension": ".py",
+        "path": "Back/tests/conftest.py"
+      },
+      {
+        "name": "test_health.py",
+        "type": "file",
+        "language": "Python",
+        "size": 645,
+        "extension": ".py",
+        "path": "Back/tests/test_health.py"
+      },
+      {
+        "name": "test_scraper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3471,
+        "extension": ".py",
+        "path": "Back/tests/test_scraper.py"
+      },
+      {
         "name": "CONTEXT.md",
         "type": "file",
         "language": "Markdown",
@@ -474,10 +704,260 @@
         "path": "CONTEXT.md"
       },
       {
+        "name": "Front",
+        "type": "directory",
+        "path": "Front",
+        "children": []
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 40,
+        "extension": ".example",
+        "path": "Front/.env.example"
+      },
+      {
+        "name": ".eslintrc.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 611,
+        "extension": ".cjs",
+        "path": "Front/.eslintrc.cjs"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 164,
+        "extension": ".gitignore",
+        "path": "Front/.gitignore"
+      },
+      {
+        "name": ".prettierrc",
+        "type": "file",
+        "language": "Unknown",
+        "size": 133,
+        "extension": ".prettierrc",
+        "path": "Front/.prettierrc"
+      },
+      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 735,
+        "size": 1781,
+        "extension": ".md",
+        "path": "Front/README.md"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 698,
+        "extension": ".html",
+        "path": "Front/index.html"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 123918,
+        "extension": ".json",
+        "path": "Front/package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 922,
+        "extension": ".json",
+        "path": "Front/package.json"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "Front/src",
+        "children": []
+      },
+      {
+        "name": "App.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 158,
+        "extension": ".tsx",
+        "path": "Front/src/App.tsx"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "Front/src/components",
+        "children": []
+      },
+      {
+        "name": "EditalCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1990,
+        "extension": ".tsx",
+        "path": "Front/src/components/EditalCard.tsx"
+      },
+      {
+        "name": "FilterBar.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1457,
+        "extension": ".tsx",
+        "path": "Front/src/components/FilterBar.tsx"
+      },
+      {
+        "name": "Footer.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 955,
+        "extension": ".tsx",
+        "path": "Front/src/components/Footer.tsx"
+      },
+      {
+        "name": "Header.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1312,
+        "extension": ".tsx",
+        "path": "Front/src/components/Header.tsx"
+      },
+      {
+        "name": "Hero.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2053,
+        "extension": ".tsx",
+        "path": "Front/src/components/Hero.tsx"
+      },
+      {
+        "name": "index.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 8961,
+        "extension": ".css",
+        "path": "Front/src/index.css"
+      },
+      {
+        "name": "main.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 344,
+        "extension": ".tsx",
+        "path": "Front/src/main.tsx"
+      },
+      {
+        "name": "pages",
+        "type": "directory",
+        "path": "Front/src/pages",
+        "children": []
+      },
+      {
+        "name": "EditalDetailPage.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1038,
+        "extension": ".tsx",
+        "path": "Front/src/pages/EditalDetailPage.tsx"
+      },
+      {
+        "name": "HomePage.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2558,
+        "extension": ".tsx",
+        "path": "Front/src/pages/HomePage.tsx"
+      },
+      {
+        "name": "routes",
+        "type": "directory",
+        "path": "Front/src/routes",
+        "children": []
+      },
+      {
+        "name": "AppRoutes.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 347,
+        "extension": ".tsx",
+        "path": "Front/src/routes/AppRoutes.tsx"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "Front/src/services",
+        "children": []
+      },
+      {
+        "name": "editaisService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 627,
+        "extension": ".ts",
+        "path": "Front/src/services/editaisService.ts"
+      },
+      {
+        "name": "types.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 413,
+        "extension": ".ts",
+        "path": "Front/src/services/types.ts"
+      },
+      {
+        "name": "utils",
+        "type": "directory",
+        "path": "Front/src/utils",
+        "children": []
+      },
+      {
+        "name": "editalDisplay.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2296,
+        "extension": ".ts",
+        "path": "Front/src/utils/editalDisplay.ts"
+      },
+      {
+        "name": "vite-env.d.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 162,
+        "extension": ".ts",
+        "path": "Front/src/vite-env.d.ts"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 629,
+        "extension": ".json",
+        "path": "Front/tsconfig.json"
+      },
+      {
+        "name": "tsconfig.node.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 213,
+        "extension": ".json",
+        "path": "Front/tsconfig.node.json"
+      },
+      {
+        "name": "vite.config.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 307,
+        "extension": ".ts",
+        "path": "Front/vite.config.ts"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1908,
         "extension": ".md",
         "path": "README.md"
       },
@@ -812,7 +1292,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-26T10:40:35.698447+00:00",
+    "extracted_at": "2026-09-27T11:23:36.023446+00:00",
     "file_path": "data/silver/hierarchy_Fique-de-Olho.json"
   }
 }

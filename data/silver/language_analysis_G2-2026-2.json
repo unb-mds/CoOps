@@ -2,19 +2,19 @@
   "repository": "G2-2026-2",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-26T10:39:44.028226+00:00",
+  "analyzed_at": "2026-09-27T11:22:42.517256+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 25,
-  "total_bytes": 197451,
+  "total_files": 41,
+  "total_bytes": 274410,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 52.5,
+      "percentage": 37.77,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -37,10 +37,78 @@
       ]
     },
     {
+      "language": "Python",
+      "file_count": 17,
+      "total_bytes": 77048,
+      "percentage": 28.08,
+      "files": [
+        {
+          "path": "app/test_implementacao.py",
+          "name": "test_implementacao.py",
+          "size": 18026,
+          "extension": ".py"
+        },
+        {
+          "path": "app/repositorio.py",
+          "name": "repositorio.py",
+          "size": 9382,
+          "extension": ".py"
+        },
+        {
+          "path": "app/controllers/session_controller.py",
+          "name": "session_controller.py",
+          "size": 8456,
+          "extension": ".py"
+        },
+        {
+          "path": "app/test_busca_professores.py",
+          "name": "test_busca_professores.py",
+          "size": 6856,
+          "extension": ".py"
+        },
+        {
+          "path": "app/test_professores.py",
+          "name": "test_professores.py",
+          "size": 6370,
+          "extension": ".py"
+        },
+        {
+          "path": "app/test_filtros_professores.py",
+          "name": "test_filtros_professores.py",
+          "size": 5759,
+          "extension": ".py"
+        },
+        {
+          "path": "app/database.py",
+          "name": "database.py",
+          "size": 4101,
+          "extension": ".py"
+        },
+        {
+          "path": "app/routes/auth_routes.py",
+          "name": "auth_routes.py",
+          "size": 3458,
+          "extension": ".py"
+        },
+        {
+          "path": "app/routes/professor_routes.py",
+          "name": "professor_routes.py",
+          "size": 3380,
+          "extension": ".py"
+        },
+        {
+          "path": "app/test_consulta_professores.py",
+          "name": "test_consulta_professores.py",
+          "size": 2607,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
       "language": "Unknown",
       "file_count": 8,
       "total_bytes": 49673,
-      "percentage": 25.16,
+      "percentage": 18.1,
       "files": [
         {
           "path": "banco.db",
@@ -94,9 +162,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 2,
-      "total_bytes": 21776,
-      "percentage": 11.03,
+      "file_count": 4,
+      "total_bytes": 32960,
+      "percentage": 12.01,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
@@ -109,81 +177,49 @@
           "name": "README.md",
           "size": 9289,
           "extension": ".md"
-        }
-      ]
-    },
-    {
-      "language": "Python",
-      "file_count": 9,
-      "total_bytes": 19495,
-      "percentage": 9.87,
-      "files": [
-        {
-          "path": "app/controllers/session_controller.py",
-          "name": "session_controller.py",
-          "size": 8456,
-          "extension": ".py"
         },
         {
-          "path": "app/routes/auth_routes.py",
-          "name": "auth_routes.py",
-          "size": 2700,
-          "extension": ".py"
+          "path": "docs/IMPLEMENTACAO_26_36_37.md",
+          "name": "IMPLEMENTACAO_26_36_37.md",
+          "size": 6895,
+          "extension": ".md"
         },
         {
-          "path": "app/database.py",
-          "name": "database.py",
-          "size": 2144,
-          "extension": ".py"
-        },
-        {
-          "path": "app/test_avaliacoes.py",
-          "name": "test_avaliacoes.py",
-          "size": 2037,
-          "extension": ".py"
-        },
-        {
-          "path": "app/repositorio.py",
-          "name": "repositorio.py",
-          "size": 1951,
-          "extension": ".py"
-        },
-        {
-          "path": "app/models.py",
-          "name": "models.py",
-          "size": 959,
-          "extension": ".py"
-        },
-        {
-          "path": "app/app.py",
-          "name": "app.py",
-          "size": 505,
-          "extension": ".py"
-        },
-        {
-          "path": "run.py",
-          "name": "run.py",
-          "size": 451,
-          "extension": ".py"
-        },
-        {
-          "path": "app/__init__.py",
-          "name": "__init__.py",
-          "size": 292,
-          "extension": ".py"
+          "path": "CLAUDE.md",
+          "name": "CLAUDE.md",
+          "size": 4289,
+          "extension": ".md"
         }
       ]
     },
     {
       "language": "HTML",
-      "file_count": 3,
-      "total_bytes": 2851,
-      "percentage": 1.44,
+      "file_count": 6,
+      "total_bytes": 9669,
+      "percentage": 3.52,
       "files": [
+        {
+          "path": "app/templates/lista_professores.html",
+          "name": "lista_professores.html",
+          "size": 2045,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil_professor.html",
+          "name": "perfil_professor.html",
+          "size": 2014,
+          "extension": ".html"
+        },
         {
           "path": "app/templates/cadastro.html",
           "name": "cadastro.html",
-          "size": 1163,
+          "size": 1995,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/avaliacao.html",
+          "name": "avaliacao.html",
+          "size": 1927,
           "extension": ".html"
         },
         {
@@ -199,10 +235,52 @@
           "extension": ".html"
         }
       ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 1,
+      "total_bytes": 1345,
+      "percentage": 0.49,
+      "files": [
+        {
+          "path": "app/static/indicadores.css",
+          "name": "indicadores.css",
+          "size": 1345,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "Git Ignore",
+      "file_count": 1,
+      "total_bytes": 45,
+      "percentage": 0.02,
+      "files": [
+        {
+          "path": ".gitignore",
+          "name": ".gitignore",
+          "size": 45,
+          "extension": ".gitignore"
+        }
+      ]
+    },
+    {
+      "language": "Text",
+      "file_count": 1,
+      "total_bytes": 14,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "requirements.txt",
+          "name": "requirements.txt",
+          "size": 14,
+          "extension": ".txt"
+        }
+      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-26T10:40:35.699566+00:00",
+    "extracted_at": "2026-09-27T11:23:36.025368+00:00",
     "file_path": "data/silver/language_analysis_G2-2026-2.json"
   }
 }
