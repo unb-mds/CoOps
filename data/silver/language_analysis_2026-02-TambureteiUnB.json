@@ -2,19 +2,211 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-28T12:33:34.475939+00:00",
+  "analyzed_at": "2026-09-29T12:07:06.809115+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 18,
-  "total_bytes": 147688,
+  "total_files": 203,
+  "total_bytes": 1236291,
   "languages": [
     {
+      "language": "TypeScript",
+      "file_count": 31,
+      "total_bytes": 362011,
+      "percentage": 29.28,
+      "files": [
+        {
+          "path": "frontend/src/figma-export/src/App.tsx",
+          "name": "App.tsx",
+          "size": 135064,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/cursos/[slug]/page.tsx",
+          "name": "page.tsx",
+          "size": 28788,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/disciplinas/[slug]/page.tsx",
+          "name": "page.tsx",
+          "size": 27239,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/disciplinas/page.tsx",
+          "name": "page.tsx",
+          "size": 19542,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/components/auth/LoginForm.tsx",
+          "name": "LoginForm.tsx",
+          "size": 18810,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/cadastro/page.tsx",
+          "name": "page.tsx",
+          "size": 16693,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/cursos/page.tsx",
+          "name": "page.tsx",
+          "size": 16689,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/components/Navbar.tsx",
+          "name": "Navbar.tsx",
+          "size": 16115,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/page.tsx",
+          "name": "page.tsx",
+          "size": 14679,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/login/page.tsx",
+          "name": "page.tsx",
+          "size": 12059,
+          "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 97,
+      "total_bytes": 330295,
+      "percentage": 26.72,
+      "files": [
+        {
+          "path": "backend/app/pipeline/extractors/sigaa_extractor.py",
+          "name": "sigaa_extractor.py",
+          "size": 52005,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/unit/test_pipeline.py",
+          "name": "test_pipeline.py",
+          "size": 45811,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/pipeline/loaders/db_loader.py",
+          "name": "db_loader.py",
+          "size": 26649,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/001_initial_schema.py",
+          "name": "001_initial_schema.py",
+          "size": 12124,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/pipeline/transformers/sigaa_transformer.py",
+          "name": "sigaa_transformer.py",
+          "size": 10890,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/pipeline/runner.py",
+          "name": "runner.py",
+          "size": 8050,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/pipeline/transformers/sanitizer.py",
+          "name": "sanitizer.py",
+          "size": 7484,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_disciplina_service.py",
+          "name": "test_disciplina_service.py",
+          "size": 7373,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_comentarios.py",
+          "name": "test_comentarios.py",
+          "size": 6177,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_turma_service.py",
+          "name": "test_turma_service.py",
+          "size": 5239,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "JSON",
+      "file_count": 8,
+      "total_bytes": 252904,
+      "percentage": 20.46,
+      "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 236718,
+          "extension": ".json"
+        },
+        {
+          "path": "backend/app/pipeline/data/departamentos_unb.json",
+          "name": "departamentos_unb.json",
+          "size": 12567,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/dev.json",
+          "name": "dev.json",
+          "size": 959,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 697,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/src/figma-export/package.json",
+          "name": "package.json",
+          "size": 585,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/src/figma-export/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 556,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 530,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/site.json",
+          "name": "site.json",
+          "size": 292,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
       "language": "Markdown",
-      "file_count": 13,
-      "total_bytes": 144149,
-      "percentage": 97.6,
+      "file_count": 24,
+      "total_bytes": 196405,
+      "percentage": 15.89,
       "files": [
         {
           "path": "docs/historias_usuario_arquitetura.md",
@@ -41,9 +233,33 @@
           "extension": ".md"
         },
         {
+          "path": "docs/arquitetura.md",
+          "name": "arquitetura.md",
+          "size": 12504,
+          "extension": ".md"
+        },
+        {
           "path": "docs/historias_usuario_database.md",
           "name": "historias_usuario_database.md",
           "size": 11382,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/pipeline_etl.md",
+          "name": "pipeline_etl.md",
+          "size": 9219,
+          "extension": ".md"
+        },
+        {
+          "path": "specs/backend-architecture-spec.md",
+          "name": "backend-architecture-spec.md",
+          "size": 8376,
+          "extension": ".md"
+        },
+        {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 7889,
           "extension": ".md"
         },
         {
@@ -51,43 +267,31 @@
           "name": "requisitos.md",
           "size": 6569,
           "extension": ".md"
-        },
-        {
-          "path": ".gemini/skills/tamburetei-dev/SKILL.md",
-          "name": "SKILL.md",
-          "size": 5891,
-          "extension": ".md"
-        },
-        {
-          "path": "skills/tamburetei-dev/SKILL.md",
-          "name": "SKILL.md",
-          "size": 5891,
-          "extension": ".md"
-        },
-        {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 4805,
-          "extension": ".md"
-        },
-        {
-          "path": ".github/skills/code-review/SKILL.md",
-          "name": "SKILL.md",
-          "size": 4072,
-          "extension": ".md"
         }
       ]
     },
     {
       "language": "YAML",
-      "file_count": 3,
-      "total_bytes": 3222,
-      "percentage": 2.18,
+      "file_count": 5,
+      "total_bytes": 34559,
+      "percentage": 2.8,
       "files": [
+        {
+          "path": "frontend/src/figma-export/pnpm-lock.yaml",
+          "name": "pnpm-lock.yaml",
+          "size": 29455,
+          "extension": ".yaml"
+        },
+        {
+          "path": ".github/workflows/backend-cursos.yml",
+          "name": "backend-cursos.yml",
+          "size": 1654,
+          "extension": ".yml"
+        },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 1245,
+          "size": 1400,
           "extension": ".yml"
         },
         {
@@ -99,42 +303,320 @@
         {
           "path": "docker-compose.yml",
           "name": "docker-compose.yml",
-          "size": 834,
+          "size": 907,
           "extension": ".yml"
         }
       ]
     },
     {
-      "language": "Unknown",
+      "language": "Icon",
       "file_count": 1,
-      "total_bytes": 271,
-      "percentage": 0.18,
+      "total_bytes": 25931,
+      "percentage": 2.1,
       "files": [
+        {
+          "path": "frontend/src/app/favicon.ico",
+          "name": "favicon.ico",
+          "size": 25931,
+          "extension": ".ico"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 13,
+      "total_bytes": 12056,
+      "percentage": 0.98,
+      "files": [
+        {
+          "path": "frontend/src/figma-export/.gitattributes",
+          "name": ".gitattributes",
+          "size": 7728,
+          "extension": ".gitattributes"
+        },
+        {
+          "path": "backend/app/pipeline/data/sample_metricas_cursos.csv",
+          "name": "sample_metricas_cursos.csv",
+          "size": 1055,
+          "extension": ".csv"
+        },
+        {
+          "path": "backend/app/pipeline/data/departamentos_ID_unb.csv",
+          "name": "departamentos_ID_unb.csv",
+          "size": 890,
+          "extension": ".csv"
+        },
+        {
+          "path": "backend/alembic/script.py.mako",
+          "name": "script.py.mako",
+          "size": 635,
+          "extension": ".mako"
+        },
+        {
+          "path": "frontend/eslint.config.mjs",
+          "name": "eslint.config.mjs",
+          "size": 446,
+          "extension": ".mjs"
+        },
+        {
+          "path": "backend/app/pipeline/data/sample_turmas.csv",
+          "name": "sample_turmas.csv",
+          "size": 438,
+          "extension": ".csv"
+        },
+        {
+          "path": "backend/app/pipeline/data/sample_metricas.csv",
+          "name": "sample_metricas.csv",
+          "size": 322,
+          "extension": ".csv"
+        },
         {
           "path": ".env.example",
           "name": ".env.example",
-          "size": 271,
+          "size": 221,
+          "extension": ".example"
+        },
+        {
+          "path": "frontend/postcss.config.mjs",
+          "name": "postcss.config.mjs",
+          "size": 94,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/.env.example",
+          "name": ".env.example",
+          "size": 86,
           "extension": ".example"
         }
       ]
     },
     {
-      "language": "Git Ignore",
+      "language": "SQL",
       "file_count": 1,
-      "total_bytes": 46,
-      "percentage": 0.03,
+      "total_bytes": 10644,
+      "percentage": 0.86,
       "files": [
+        {
+          "path": "init.sql",
+          "name": "init.sql",
+          "size": 10644,
+          "extension": ".sql"
+        }
+      ]
+    },
+    {
+      "language": "SVG Image",
+      "file_count": 5,
+      "total_bytes": 3314,
+      "percentage": 0.27,
+      "files": [
+        {
+          "path": "frontend/public/next.svg",
+          "name": "next.svg",
+          "size": 1375,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/globe.svg",
+          "name": "globe.svg",
+          "size": 1035,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/file.svg",
+          "name": "file.svg",
+          "size": 391,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/window.svg",
+          "name": "window.svg",
+          "size": 385,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/vercel.svg",
+          "name": "vercel.svg",
+          "size": 128,
+          "extension": ".svg"
+        }
+      ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 2,
+      "total_bytes": 2931,
+      "percentage": 0.24,
+      "files": [
+        {
+          "path": "frontend/src/figma-export/src/index.css",
+          "name": "index.css",
+          "size": 1489,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/app/globals.css",
+          "name": "globals.css",
+          "size": 1442,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "Git Ignore",
+      "file_count": 3,
+      "total_bytes": 1257,
+      "percentage": 0.1,
+      "files": [
+        {
+          "path": "frontend/.gitignore",
+          "name": ".gitignore",
+          "size": 494,
+          "extension": ".gitignore"
+        },
+        {
+          "path": "frontend/src/figma-export/.gitignore",
+          "name": ".gitignore",
+          "size": 424,
+          "extension": ".gitignore"
+        },
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 46,
+          "size": 339,
           "extension": ".gitignore"
+        }
+      ]
+    },
+    {
+      "language": "INI",
+      "file_count": 1,
+      "total_bytes": 1177,
+      "percentage": 0.1,
+      "files": [
+        {
+          "path": "backend/alembic.ini",
+          "name": "alembic.ini",
+          "size": 1177,
+          "extension": ".ini"
+        }
+      ]
+    },
+    {
+      "language": "No Extension",
+      "file_count": 8,
+      "total_bytes": 1131,
+      "percentage": 0.09,
+      "files": [
+        {
+          "path": "backend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 499,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/deploy-preview",
+          "name": "deploy-preview",
+          "size": 163,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/langserver",
+          "name": "langserver",
+          "size": 106,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/install",
+          "name": "install",
+          "size": 90,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/deploy",
+          "name": "deploy",
+          "size": 88,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/analyze-routes",
+          "name": "analyze-routes",
+          "size": 70,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/format",
+          "name": "format",
+          "size": 63,
+          "extension": ""
+        },
+        {
+          "path": "frontend/src/figma-export/.figma/make/dev",
+          "name": "dev",
+          "size": 52,
+          "extension": ""
+        }
+      ]
+    },
+    {
+      "language": "Shell",
+      "file_count": 1,
+      "total_bytes": 800,
+      "percentage": 0.06,
+      "files": [
+        {
+          "path": "backend/entrypoint.sh",
+          "name": "entrypoint.sh",
+          "size": 800,
+          "extension": ".sh"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 1,
+      "total_bytes": 440,
+      "percentage": 0.04,
+      "files": [
+        {
+          "path": "frontend/src/figma-export/index.html",
+          "name": "index.html",
+          "size": 440,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
+      "language": "Text",
+      "file_count": 1,
+      "total_bytes": 393,
+      "percentage": 0.03,
+      "files": [
+        {
+          "path": "backend/requirements.txt",
+          "name": "requirements.txt",
+          "size": 393,
+          "extension": ".txt"
+        }
+      ]
+    },
+    {
+      "language": "TOML",
+      "file_count": 1,
+      "total_bytes": 43,
+      "percentage": 0.0,
+      "files": [
+        {
+          "path": "frontend/src/figma-export/.mise.toml",
+          "name": ".mise.toml",
+          "size": 43,
+          "extension": ".toml"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-28T12:34:28.559167+00:00",
+    "extracted_at": "2026-09-29T12:07:56.344349+00:00",
     "file_path": "data/silver/language_analysis_2026-02-TambureteiUnB.json"
   }
 }

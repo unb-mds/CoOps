@@ -2,7 +2,7 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-28T12:33:34.475939+00:00",
+  "extracted_at": "2026-09-29T12:07:06.809115+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -11,7 +11,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 271,
+        "size": 221,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -42,10 +42,26 @@
         "path": ".gemini/skills/tamburetei-dev/SKILL.md"
       },
       {
+        "name": ".gitattributes",
+        "type": "file",
+        "language": "Unknown",
+        "size": 17,
+        "extension": ".gitattributes",
+        "path": ".gitattributes"
+      },
+      {
         "name": ".github",
         "type": "directory",
         "path": ".github",
         "children": []
+      },
+      {
+        "name": "pull_request_template.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2176,
+        "extension": ".md",
+        "path": ".github/pull_request_template.md"
       },
       {
         "name": "skills",
@@ -63,7 +79,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4072,
+        "size": 4523,
         "extension": ".md",
         "path": ".github/skills/code-review/SKILL.md"
       },
@@ -72,6 +88,14 @@
         "type": "directory",
         "path": ".github/workflows",
         "children": []
+      },
+      {
+        "name": "backend-cursos.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1654,
+        "extension": ".yml",
+        "path": ".github/workflows/backend-cursos.yml"
       },
       {
         "name": "deploy-docs.yml",
@@ -85,7 +109,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 46,
+        "size": 339,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -101,15 +125,1039 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4805,
+        "size": 7889,
         "extension": ".md",
         "path": "README.md"
+      },
+      {
+        "name": "backend",
+        "type": "directory",
+        "path": "backend",
+        "children": []
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 499,
+        "extension": "",
+        "path": "backend/Dockerfile"
+      },
+      {
+        "name": "alembic.ini",
+        "type": "file",
+        "language": "INI",
+        "size": 1177,
+        "extension": ".ini",
+        "path": "backend/alembic.ini"
+      },
+      {
+        "name": "alembic",
+        "type": "directory",
+        "path": "backend/alembic",
+        "children": []
+      },
+      {
+        "name": "env.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1761,
+        "extension": ".py",
+        "path": "backend/alembic/env.py"
+      },
+      {
+        "name": "script.py.mako",
+        "type": "file",
+        "language": "Unknown",
+        "size": 635,
+        "extension": ".mako",
+        "path": "backend/alembic/script.py.mako"
+      },
+      {
+        "name": "versions",
+        "type": "directory",
+        "path": "backend/alembic/versions",
+        "children": []
+      },
+      {
+        "name": "001_initial_schema.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12124,
+        "extension": ".py",
+        "path": "backend/alembic/versions/001_initial_schema.py"
+      },
+      {
+        "name": "002_add_amostragem_suprimida_lgpd.py",
+        "type": "file",
+        "language": "Python",
+        "size": 680,
+        "extension": ".py",
+        "path": "backend/alembic/versions/002_add_amostragem_suprimida_lgpd.py"
+      },
+      {
+        "name": "003_add_turma_ocupacao_and_metricas_consolidadas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2203,
+        "extension": ".py",
+        "path": "backend/alembic/versions/003_add_turma_ocupacao_and_metricas_consolidadas.py"
+      },
+      {
+        "name": "004_widen_turma_horario_and_local.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1211,
+        "extension": ".py",
+        "path": "backend/alembic/versions/004_widen_turma_horario_and_local.py"
+      },
+      {
+        "name": "005_widen_departamento_columns.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1254,
+        "extension": ".py",
+        "path": "backend/alembic/versions/005_widen_departamento_columns.py"
+      },
+      {
+        "name": "006_add_requisitos_and_natureza.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1188,
+        "extension": ".py",
+        "path": "backend/alembic/versions/006_add_requisitos_and_natureza.py"
+      },
+      {
+        "name": "007_add_metricas_cursos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2835,
+        "extension": ".py",
+        "path": "backend/alembic/versions/007_add_metricas_cursos.py"
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "backend/app",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14,
+        "extension": ".py",
+        "path": "backend/app/__init__.py"
+      },
+      {
+        "name": "api",
+        "type": "directory",
+        "path": "backend/app/api",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/app/api/__init__.py"
+      },
+      {
+        "name": "deps.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2121,
+        "extension": ".py",
+        "path": "backend/app/api/deps.py"
+      },
+      {
+        "name": "routers",
+        "type": "directory",
+        "path": "backend/app/api/routers",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/app/api/routers/__init__.py"
+      },
+      {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1598,
+        "extension": ".py",
+        "path": "backend/app/api/routers/auth.py"
+      },
+      {
+        "name": "catalogo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 974,
+        "extension": ".py",
+        "path": "backend/app/api/routers/catalogo.py"
+      },
+      {
+        "name": "comentarios.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1863,
+        "extension": ".py",
+        "path": "backend/app/api/routers/comentarios.py"
+      },
+      {
+        "name": "cursos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 794,
+        "extension": ".py",
+        "path": "backend/app/api/routers/cursos.py"
+      },
+      {
+        "name": "disciplinas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2248,
+        "extension": ".py",
+        "path": "backend/app/api/routers/disciplinas.py"
+      },
+      {
+        "name": "professores.py",
+        "type": "file",
+        "language": "Python",
+        "size": 888,
+        "extension": ".py",
+        "path": "backend/app/api/routers/professores.py"
+      },
+      {
+        "name": "turmas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1136,
+        "extension": ".py",
+        "path": "backend/app/api/routers/turmas.py"
+      },
+      {
+        "name": "schemas",
+        "type": "directory",
+        "path": "backend/app/api/schemas",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/__init__.py"
+      },
+      {
+        "name": "comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2451,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/comentario.py"
+      },
+      {
+        "name": "curso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1812,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/curso.py"
+      },
+      {
+        "name": "disciplina.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1945,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/disciplina.py"
+      },
+      {
+        "name": "professor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 851,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/professor.py"
+      },
+      {
+        "name": "turma.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2576,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/turma.py"
+      },
+      {
+        "name": "usuario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4037,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/usuario.py"
+      },
+      {
+        "name": "core",
+        "type": "directory",
+        "path": "backend/app/core",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15,
+        "extension": ".py",
+        "path": "backend/app/core/__init__.py"
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1790,
+        "extension": ".py",
+        "path": "backend/app/core/config.py"
+      },
+      {
+        "name": "database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 460,
+        "extension": ".py",
+        "path": "backend/app/core/database.py"
+      },
+      {
+        "name": "security.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1009,
+        "extension": ".py",
+        "path": "backend/app/core/security.py"
+      },
+      {
+        "name": "domain",
+        "type": "directory",
+        "path": "backend/app/domain",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/app/domain/__init__.py"
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1111,
+        "extension": ".py",
+        "path": "backend/app/main.py"
+      },
+      {
+        "name": "models",
+        "type": "directory",
+        "path": "backend/app/models",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 822,
+        "extension": ".py",
+        "path": "backend/app/models/__init__.py"
+      },
+      {
+        "name": "comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1853,
+        "extension": ".py",
+        "path": "backend/app/models/comentario.py"
+      },
+      {
+        "name": "conteudo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1891,
+        "extension": ".py",
+        "path": "backend/app/models/conteudo.py"
+      },
+      {
+        "name": "curso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3785,
+        "extension": ".py",
+        "path": "backend/app/models/curso.py"
+      },
+      {
+        "name": "disciplina.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1789,
+        "extension": ".py",
+        "path": "backend/app/models/disciplina.py"
+      },
+      {
+        "name": "metrica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4601,
+        "extension": ".py",
+        "path": "backend/app/models/metrica.py"
+      },
+      {
+        "name": "professor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 740,
+        "extension": ".py",
+        "path": "backend/app/models/professor.py"
+      },
+      {
+        "name": "situacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1369,
+        "extension": ".py",
+        "path": "backend/app/models/situacao.py"
+      },
+      {
+        "name": "turma.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1862,
+        "extension": ".py",
+        "path": "backend/app/models/turma.py"
+      },
+      {
+        "name": "usuario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1255,
+        "extension": ".py",
+        "path": "backend/app/models/usuario.py"
+      },
+      {
+        "name": "voto.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1132,
+        "extension": ".py",
+        "path": "backend/app/models/voto.py"
+      },
+      {
+        "name": "pipeline",
+        "type": "directory",
+        "path": "backend/app/pipeline",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4665,
+        "extension": ".md",
+        "path": "backend/app/pipeline/README.md"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1189,
+        "extension": ".py",
+        "path": "backend/app/pipeline/__init__.py"
+      },
+      {
+        "name": "cli.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5065,
+        "extension": ".py",
+        "path": "backend/app/pipeline/cli.py"
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3918,
+        "extension": ".py",
+        "path": "backend/app/pipeline/config.py"
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "path": "backend/app/pipeline/data",
+        "children": []
+      },
+      {
+        "name": "departamentos_ID_unb.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 890,
+        "extension": ".csv",
+        "path": "backend/app/pipeline/data/departamentos_ID_unb.csv"
+      },
+      {
+        "name": "departamentos_unb.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 12567,
+        "extension": ".json",
+        "path": "backend/app/pipeline/data/departamentos_unb.json"
+      },
+      {
+        "name": "processed",
+        "type": "directory",
+        "path": "backend/app/pipeline/data/processed",
+        "children": []
+      },
+      {
+        "name": ".gitkeep",
+        "type": "file",
+        "language": "Unknown",
+        "size": 67,
+        "extension": ".gitkeep",
+        "path": "backend/app/pipeline/data/processed/.gitkeep"
+      },
+      {
+        "name": "raw",
+        "type": "directory",
+        "path": "backend/app/pipeline/data/raw",
+        "children": []
+      },
+      {
+        "name": ".gitkeep",
+        "type": "file",
+        "language": "Unknown",
+        "size": 57,
+        "extension": ".gitkeep",
+        "path": "backend/app/pipeline/data/raw/.gitkeep"
+      },
+      {
+        "name": "sample_metricas.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 322,
+        "extension": ".csv",
+        "path": "backend/app/pipeline/data/sample_metricas.csv"
+      },
+      {
+        "name": "sample_metricas_cursos.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1055,
+        "extension": ".csv",
+        "path": "backend/app/pipeline/data/sample_metricas_cursos.csv"
+      },
+      {
+        "name": "sample_turmas.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 438,
+        "extension": ".csv",
+        "path": "backend/app/pipeline/data/sample_turmas.csv"
+      },
+      {
+        "name": "extractors",
+        "type": "directory",
+        "path": "backend/app/pipeline/extractors",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 276,
+        "extension": ".py",
+        "path": "backend/app/pipeline/extractors/__init__.py"
+      },
+      {
+        "name": "base.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1171,
+        "extension": ".py",
+        "path": "backend/app/pipeline/extractors/base.py"
+      },
+      {
+        "name": "dpo_inep_extractor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3746,
+        "extension": ".py",
+        "path": "backend/app/pipeline/extractors/dpo_inep_extractor.py"
+      },
+      {
+        "name": "sigaa_extractor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 52005,
+        "extension": ".py",
+        "path": "backend/app/pipeline/extractors/sigaa_extractor.py"
+      },
+      {
+        "name": "loaders",
+        "type": "directory",
+        "path": "backend/app/pipeline/loaders",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 242,
+        "extension": ".py",
+        "path": "backend/app/pipeline/loaders/__init__.py"
+      },
+      {
+        "name": "base.py",
+        "type": "file",
+        "language": "Python",
+        "size": 746,
+        "extension": ".py",
+        "path": "backend/app/pipeline/loaders/base.py"
+      },
+      {
+        "name": "db_loader.py",
+        "type": "file",
+        "language": "Python",
+        "size": 26649,
+        "extension": ".py",
+        "path": "backend/app/pipeline/loaders/db_loader.py"
+      },
+      {
+        "name": "export_loader.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2456,
+        "extension": ".py",
+        "path": "backend/app/pipeline/loaders/export_loader.py"
+      },
+      {
+        "name": "runner.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8050,
+        "extension": ".py",
+        "path": "backend/app/pipeline/runner.py"
+      },
+      {
+        "name": "schemas",
+        "type": "directory",
+        "path": "backend/app/pipeline/schemas",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 492,
+        "extension": ".py",
+        "path": "backend/app/pipeline/schemas/__init__.py"
+      },
+      {
+        "name": "metricas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 925,
+        "extension": ".py",
+        "path": "backend/app/pipeline/schemas/metricas.py"
+      },
+      {
+        "name": "sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2806,
+        "extension": ".py",
+        "path": "backend/app/pipeline/schemas/sigaa.py"
+      },
+      {
+        "name": "transformers",
+        "type": "directory",
+        "path": "backend/app/pipeline/transformers",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 407,
+        "extension": ".py",
+        "path": "backend/app/pipeline/transformers/__init__.py"
+      },
+      {
+        "name": "base.py",
+        "type": "file",
+        "language": "Python",
+        "size": 723,
+        "extension": ".py",
+        "path": "backend/app/pipeline/transformers/base.py"
+      },
+      {
+        "name": "metricas_transformer.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3849,
+        "extension": ".py",
+        "path": "backend/app/pipeline/transformers/metricas_transformer.py"
+      },
+      {
+        "name": "sanitizer.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7484,
+        "extension": ".py",
+        "path": "backend/app/pipeline/transformers/sanitizer.py"
+      },
+      {
+        "name": "sigaa_transformer.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10890,
+        "extension": ".py",
+        "path": "backend/app/pipeline/transformers/sigaa_transformer.py"
+      },
+      {
+        "name": "repositories",
+        "type": "directory",
+        "path": "backend/app/repositories",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 948,
+        "extension": ".py",
+        "path": "backend/app/repositories/__init__.py"
+      },
+      {
+        "name": "base.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1063,
+        "extension": ".py",
+        "path": "backend/app/repositories/base.py"
+      },
+      {
+        "name": "comentario_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1913,
+        "extension": ".py",
+        "path": "backend/app/repositories/comentario_repo.py"
+      },
+      {
+        "name": "conteudo_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1042,
+        "extension": ".py",
+        "path": "backend/app/repositories/conteudo_repo.py"
+      },
+      {
+        "name": "curso_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1182,
+        "extension": ".py",
+        "path": "backend/app/repositories/curso_repo.py"
+      },
+      {
+        "name": "disciplina_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2556,
+        "extension": ".py",
+        "path": "backend/app/repositories/disciplina_repo.py"
+      },
+      {
+        "name": "metricas_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1180,
+        "extension": ".py",
+        "path": "backend/app/repositories/metricas_repo.py"
+      },
+      {
+        "name": "professor_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1612,
+        "extension": ".py",
+        "path": "backend/app/repositories/professor_repo.py"
+      },
+      {
+        "name": "situacao_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2211,
+        "extension": ".py",
+        "path": "backend/app/repositories/situacao_repo.py"
+      },
+      {
+        "name": "turma_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1476,
+        "extension": ".py",
+        "path": "backend/app/repositories/turma_repo.py"
+      },
+      {
+        "name": "usuario_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 691,
+        "extension": ".py",
+        "path": "backend/app/repositories/usuario_repo.py"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "backend/app/services",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 110,
+        "extension": ".py",
+        "path": "backend/app/services/__init__.py"
+      },
+      {
+        "name": "auth_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2749,
+        "extension": ".py",
+        "path": "backend/app/services/auth_service.py"
+      },
+      {
+        "name": "comentario_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3757,
+        "extension": ".py",
+        "path": "backend/app/services/comentario_service.py"
+      },
+      {
+        "name": "curso_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 620,
+        "extension": ".py",
+        "path": "backend/app/services/curso_service.py"
+      },
+      {
+        "name": "disciplina_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4884,
+        "extension": ".py",
+        "path": "backend/app/services/disciplina_service.py"
+      },
+      {
+        "name": "professor_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 978,
+        "extension": ".py",
+        "path": "backend/app/services/professor_service.py"
+      },
+      {
+        "name": "turma_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2466,
+        "extension": ".py",
+        "path": "backend/app/services/turma_service.py"
+      },
+      {
+        "name": "entrypoint.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 800,
+        "extension": ".sh",
+        "path": "backend/entrypoint.sh"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 393,
+        "extension": ".txt",
+        "path": "backend/requirements.txt"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/tests",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15,
+        "extension": ".py",
+        "path": "backend/tests/__init__.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2869,
+        "extension": ".py",
+        "path": "backend/tests/conftest.py"
+      },
+      {
+        "name": "integration",
+        "type": "directory",
+        "path": "backend/tests/integration",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/tests/integration/__init__.py"
+      },
+      {
+        "name": "cursos",
+        "type": "directory",
+        "path": "backend/tests/integration/cursos",
+        "children": []
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1665,
+        "extension": ".py",
+        "path": "backend/tests/integration/cursos/conftest.py"
+      },
+      {
+        "name": "test_cursos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4203,
+        "extension": ".py",
+        "path": "backend/tests/integration/cursos/test_cursos.py"
+      },
+      {
+        "name": "test_auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4476,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_auth.py"
+      },
+      {
+        "name": "test_disciplina_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7373,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_disciplina_service.py"
+      },
+      {
+        "name": "test_professor_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2143,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_professor_service.py"
+      },
+      {
+        "name": "test_turma_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5239,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_turma_service.py"
+      },
+      {
+        "name": "test_comentarios.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6177,
+        "extension": ".py",
+        "path": "backend/tests/test_comentarios.py"
+      },
+      {
+        "name": "unit",
+        "type": "directory",
+        "path": "backend/tests/unit",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/tests/unit/__init__.py"
+      },
+      {
+        "name": "test_curso_disciplina_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2526,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_curso_disciplina_schemas.py"
+      },
+      {
+        "name": "test_pipeline.py",
+        "type": "file",
+        "language": "Python",
+        "size": 45811,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_pipeline.py"
+      },
+      {
+        "name": "test_professor_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1271,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_professor_schemas.py"
+      },
+      {
+        "name": "test_turma_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3649,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_turma_schemas.py"
+      },
+      {
+        "name": "test_usuario_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4303,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_usuario_schemas.py"
       },
       {
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 834,
+        "size": 907,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -120,10 +1168,18 @@
         "children": []
       },
       {
+        "name": "arquitetura.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12504,
+        "extension": ".md",
+        "path": "docs/arquitetura.md"
+      },
+      {
         "name": "desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3063,
+        "size": 4116,
         "extension": ".md",
         "path": "docs/desenvolvimento.md"
       },
@@ -168,6 +1224,22 @@
         "path": "docs/index.md"
       },
       {
+        "name": "pipeline_etl.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9219,
+        "extension": ".md",
+        "path": "docs/pipeline_etl.md"
+      },
+      {
+        "name": "popular_banco_de_dados.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6257,
+        "extension": ".md",
+        "path": "docs/popular_banco_de_dados.md"
+      },
+      {
         "name": "regras_negocio.md",
         "type": "file",
         "language": "Markdown",
@@ -184,10 +1256,668 @@
         "path": "docs/requisitos.md"
       },
       {
+        "name": "frontend",
+        "type": "directory",
+        "path": "frontend",
+        "children": []
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 86,
+        "extension": ".example",
+        "path": "frontend/.env.example"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 494,
+        "extension": ".gitignore",
+        "path": "frontend/.gitignore"
+      },
+      {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 678,
+        "extension": ".md",
+        "path": "frontend/AGENTS.md"
+      },
+      {
+        "name": "CLAUDE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11,
+        "extension": ".md",
+        "path": "frontend/CLAUDE.md"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1450,
+        "extension": ".md",
+        "path": "frontend/README.md"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "frontend/components",
+        "children": []
+      },
+      {
+        "name": "LoginForm.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 78,
+        "extension": ".tsx",
+        "path": "frontend/components/LoginForm.tsx"
+      },
+      {
+        "name": "StoolLogo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2113,
+        "extension": ".tsx",
+        "path": "frontend/components/StoolLogo.tsx"
+      },
+      {
+        "name": "auth",
+        "type": "directory",
+        "path": "frontend/components/auth",
+        "children": []
+      },
+      {
+        "name": "LoginForm.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 18810,
+        "extension": ".tsx",
+        "path": "frontend/components/auth/LoginForm.tsx"
+      },
+      {
+        "name": "eslint.config.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 446,
+        "extension": ".mjs",
+        "path": "frontend/eslint.config.mjs"
+      },
+      {
+        "name": "next.config.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 133,
+        "extension": ".ts",
+        "path": "frontend/next.config.ts"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 236718,
+        "extension": ".json",
+        "path": "frontend/package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 530,
+        "extension": ".json",
+        "path": "frontend/package.json"
+      },
+      {
+        "name": "postcss.config.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 94,
+        "extension": ".mjs",
+        "path": "frontend/postcss.config.mjs"
+      },
+      {
+        "name": "public",
+        "type": "directory",
+        "path": "frontend/public",
+        "children": []
+      },
+      {
+        "name": "file.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 391,
+        "extension": ".svg",
+        "path": "frontend/public/file.svg"
+      },
+      {
+        "name": "globe.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 1035,
+        "extension": ".svg",
+        "path": "frontend/public/globe.svg"
+      },
+      {
+        "name": "next.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 1375,
+        "extension": ".svg",
+        "path": "frontend/public/next.svg"
+      },
+      {
+        "name": "vercel.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 128,
+        "extension": ".svg",
+        "path": "frontend/public/vercel.svg"
+      },
+      {
+        "name": "window.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 385,
+        "extension": ".svg",
+        "path": "frontend/public/window.svg"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "frontend/src",
+        "children": []
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "frontend/src/app",
+        "children": []
+      },
+      {
+        "name": "cadastro",
+        "type": "directory",
+        "path": "frontend/src/app/cadastro",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 16693,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cadastro/page.tsx"
+      },
+      {
+        "name": "cursos",
+        "type": "directory",
+        "path": "frontend/src/app/cursos",
+        "children": []
+      },
+      {
+        "name": "[slug]",
+        "type": "directory",
+        "path": "frontend/src/app/cursos/[slug]",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 28788,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cursos/[slug]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 16689,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cursos/page.tsx"
+      },
+      {
+        "name": "disciplinas",
+        "type": "directory",
+        "path": "frontend/src/app/disciplinas",
+        "children": []
+      },
+      {
+        "name": "[slug]",
+        "type": "directory",
+        "path": "frontend/src/app/disciplinas/[slug]",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 27239,
+        "extension": ".tsx",
+        "path": "frontend/src/app/disciplinas/[slug]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 19542,
+        "extension": ".tsx",
+        "path": "frontend/src/app/disciplinas/page.tsx"
+      },
+      {
+        "name": "favicon.ico",
+        "type": "file",
+        "language": "Icon",
+        "size": 25931,
+        "extension": ".ico",
+        "path": "frontend/src/app/favicon.ico"
+      },
+      {
+        "name": "globals.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 1442,
+        "extension": ".css",
+        "path": "frontend/src/app/globals.css"
+      },
+      {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 922,
+        "extension": ".tsx",
+        "path": "frontend/src/app/layout.tsx"
+      },
+      {
+        "name": "login",
+        "type": "directory",
+        "path": "frontend/src/app/login",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12059,
+        "extension": ".tsx",
+        "path": "frontend/src/app/login/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 14679,
+        "extension": ".tsx",
+        "path": "frontend/src/app/page.tsx"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "frontend/src/components",
+        "children": []
+      },
+      {
+        "name": "Button.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3056,
+        "extension": ".tsx",
+        "path": "frontend/src/components/Button.tsx"
+      },
+      {
+        "name": "Footer.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1784,
+        "extension": ".tsx",
+        "path": "frontend/src/components/Footer.tsx"
+      },
+      {
+        "name": "GuestBanner.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3968,
+        "extension": ".tsx",
+        "path": "frontend/src/components/GuestBanner.tsx"
+      },
+      {
+        "name": "Input.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3409,
+        "extension": ".tsx",
+        "path": "frontend/src/components/Input.tsx"
+      },
+      {
+        "name": "Navbar.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 16115,
+        "extension": ".tsx",
+        "path": "frontend/src/components/Navbar.tsx"
+      },
+      {
+        "name": "Pagination.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5864,
+        "extension": ".tsx",
+        "path": "frontend/src/components/Pagination.tsx"
+      },
+      {
+        "name": "StoolIllustration.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2182,
+        "extension": ".tsx",
+        "path": "frontend/src/components/StoolIllustration.tsx"
+      },
+      {
+        "name": "figma-export",
+        "type": "directory",
+        "path": "frontend/src/figma-export",
+        "children": []
+      },
+      {
+        "name": ".figma",
+        "type": "directory",
+        "path": "frontend/src/figma-export/.figma",
+        "children": []
+      },
+      {
+        "name": "make",
+        "type": "directory",
+        "path": "frontend/src/figma-export/.figma/make",
+        "children": []
+      },
+      {
+        "name": "analyze-routes",
+        "type": "file",
+        "language": "No Extension",
+        "size": 70,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/analyze-routes"
+      },
+      {
+        "name": "deploy",
+        "type": "file",
+        "language": "No Extension",
+        "size": 88,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/deploy"
+      },
+      {
+        "name": "deploy-preview",
+        "type": "file",
+        "language": "No Extension",
+        "size": 163,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/deploy-preview"
+      },
+      {
+        "name": "dev",
+        "type": "file",
+        "language": "No Extension",
+        "size": 52,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/dev"
+      },
+      {
+        "name": "dev.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 959,
+        "extension": ".json",
+        "path": "frontend/src/figma-export/.figma/make/dev.json"
+      },
+      {
+        "name": "format",
+        "type": "file",
+        "language": "No Extension",
+        "size": 63,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/format"
+      },
+      {
+        "name": "install",
+        "type": "file",
+        "language": "No Extension",
+        "size": 90,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/install"
+      },
+      {
+        "name": "langserver",
+        "type": "file",
+        "language": "No Extension",
+        "size": 106,
+        "extension": "",
+        "path": "frontend/src/figma-export/.figma/make/langserver"
+      },
+      {
+        "name": "site.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 292,
+        "extension": ".json",
+        "path": "frontend/src/figma-export/.figma/make/site.json"
+      },
+      {
+        "name": ".gitattributes",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7728,
+        "extension": ".gitattributes",
+        "path": "frontend/src/figma-export/.gitattributes"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 424,
+        "extension": ".gitignore",
+        "path": "frontend/src/figma-export/.gitignore"
+      },
+      {
+        "name": ".mise.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 43,
+        "extension": ".toml",
+        "path": "frontend/src/figma-export/.mise.toml"
+      },
+      {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2321,
+        "extension": ".md",
+        "path": "frontend/src/figma-export/AGENTS.md"
+      },
+      {
+        "name": "CLAUDE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11,
+        "extension": ".md",
+        "path": "frontend/src/figma-export/CLAUDE.md"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 440,
+        "extension": ".html",
+        "path": "frontend/src/figma-export/index.html"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 585,
+        "extension": ".json",
+        "path": "frontend/src/figma-export/package.json"
+      },
+      {
+        "name": "pnpm-lock.yaml",
+        "type": "file",
+        "language": "YAML",
+        "size": 29455,
+        "extension": ".yaml",
+        "path": "frontend/src/figma-export/pnpm-lock.yaml"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "frontend/src/figma-export/src",
+        "children": []
+      },
+      {
+        "name": "App.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 135064,
+        "extension": ".tsx",
+        "path": "frontend/src/figma-export/src/App.tsx"
+      },
+      {
+        "name": "index.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 1489,
+        "extension": ".css",
+        "path": "frontend/src/figma-export/src/index.css"
+      },
+      {
+        "name": "main.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 232,
+        "extension": ".tsx",
+        "path": "frontend/src/figma-export/src/main.tsx"
+      },
+      {
+        "name": "vite-env.d.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 38,
+        "extension": ".ts",
+        "path": "frontend/src/figma-export/src/vite-env.d.ts"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 556,
+        "extension": ".json",
+        "path": "frontend/src/figma-export/tsconfig.json"
+      },
+      {
+        "name": "vite.config.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11728,
+        "extension": ".ts",
+        "path": "frontend/src/figma-export/vite.config.ts"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "frontend/src/services",
+        "children": []
+      },
+      {
+        "name": "authService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3003,
+        "extension": ".ts",
+        "path": "frontend/src/services/authService.ts"
+      },
+      {
+        "name": "courseService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1024,
+        "extension": ".ts",
+        "path": "frontend/src/services/courseService.ts"
+      },
+      {
+        "name": "disciplineService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3356,
+        "extension": ".ts",
+        "path": "frontend/src/services/disciplineService.ts"
+      },
+      {
+        "name": "httpClient.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3386,
+        "extension": ".ts",
+        "path": "frontend/src/services/httpClient.ts"
+      },
+      {
+        "name": "index.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 925,
+        "extension": ".ts",
+        "path": "frontend/src/services/index.ts"
+      },
+      {
+        "name": "types",
+        "type": "directory",
+        "path": "frontend/src/types",
+        "children": []
+      },
+      {
+        "name": "auth.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 359,
+        "extension": ".ts",
+        "path": "frontend/src/types/auth.ts"
+      },
+      {
+        "name": "curso.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1448,
+        "extension": ".ts",
+        "path": "frontend/src/types/curso.ts"
+      },
+      {
+        "name": "disciplina.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7325,
+        "extension": ".ts",
+        "path": "frontend/src/types/disciplina.ts"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 697,
+        "extension": ".json",
+        "path": "frontend/tsconfig.json"
+      },
+      {
+        "name": "init.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 10644,
+        "extension": ".sql",
+        "path": "init.sql"
+      },
+      {
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1245,
+        "size": 1400,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -210,11 +1940,25 @@
         "size": 5891,
         "extension": ".md",
         "path": "skills/tamburetei-dev/SKILL.md"
+      },
+      {
+        "name": "specs",
+        "type": "directory",
+        "path": "specs",
+        "children": []
+      },
+      {
+        "name": "backend-architecture-spec.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8376,
+        "extension": ".md",
+        "path": "specs/backend-architecture-spec.md"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-28T12:34:28.559411+00:00",
+    "extracted_at": "2026-09-29T12:07:56.345530+00:00",
     "file_path": "data/silver/hierarchy_2026-02-TambureteiUnB.json"
   }
 }

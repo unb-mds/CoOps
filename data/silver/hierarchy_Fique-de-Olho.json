@@ -2,7 +2,7 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-28T12:33:31.812549+00:00",
+  "extracted_at": "2026-09-29T12:07:04.193333+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -475,7 +475,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 411,
+        "size": 434,
         "extension": ".example",
         "path": "Back/.env.example"
       },
@@ -499,9 +499,17 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6452,
+        "size": 11336,
         "extension": ".md",
         "path": "Back/README.md"
+      },
+      {
+        "name": "alembic.ini",
+        "type": "file",
+        "language": "INI",
+        "size": 667,
+        "extension": ".ini",
+        "path": "Back/alembic.ini"
       },
       {
         "name": "app",
@@ -535,7 +543,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 575,
+        "size": 584,
         "extension": ".py",
         "path": "Back/app/core/config.py"
       },
@@ -543,7 +551,7 @@
         "name": "database.py",
         "type": "file",
         "language": "Python",
-        "size": 788,
+        "size": 3413,
         "extension": ".py",
         "path": "Back/app/core/database.py"
       },
@@ -587,7 +595,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 580,
+        "size": 1756,
         "extension": ".py",
         "path": "Back/app/modules/editais/router.py"
       },
@@ -645,9 +653,45 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 954,
+        "size": 1042,
         "extension": ".yml",
         "path": "Back/docker-compose.yml"
+      },
+      {
+        "name": "migrations",
+        "type": "directory",
+        "path": "Back/migrations",
+        "children": []
+      },
+      {
+        "name": "env.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1302,
+        "extension": ".py",
+        "path": "Back/migrations/env.py"
+      },
+      {
+        "name": "script.py.mako",
+        "type": "file",
+        "language": "Unknown",
+        "size": 593,
+        "extension": ".mako",
+        "path": "Back/migrations/script.py.mako"
+      },
+      {
+        "name": "versions",
+        "type": "directory",
+        "path": "Back/migrations/versions",
+        "children": []
+      },
+      {
+        "name": "0001_initial_schema.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4713,
+        "extension": ".py",
+        "path": "Back/migrations/versions/0001_initial_schema.py"
       },
       {
         "name": "requirements.txt",
@@ -680,10 +724,18 @@
         "path": "Back/tests/conftest.py"
       },
       {
+        "name": "test_database_schema.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2927,
+        "extension": ".py",
+        "path": "Back/tests/test_database_schema.py"
+      },
+      {
         "name": "test_health.py",
         "type": "file",
         "language": "Python",
-        "size": 645,
+        "size": 957,
         "extension": ".py",
         "path": "Back/tests/test_health.py"
       },
@@ -761,7 +813,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 123918,
+        "size": 124638,
         "extension": ".json",
         "path": "Front/package-lock.json"
       },
@@ -769,7 +821,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 922,
+        "size": 952,
         "extension": ".json",
         "path": "Front/package.json"
       },
@@ -797,7 +849,7 @@
         "name": "EditalCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1642,
+        "size": 1586,
         "extension": ".tsx",
         "path": "Front/src/components/EditalCard.tsx"
       },
@@ -805,7 +857,7 @@
         "name": "FavoriteButton.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 937,
+        "size": 601,
         "extension": ".tsx",
         "path": "Front/src/components/FavoriteButton.tsx"
       },
@@ -845,7 +897,7 @@
         "name": "index.css",
         "type": "file",
         "language": "CSS",
-        "size": 9323,
+        "size": 10754,
         "extension": ".css",
         "path": "Front/src/index.css"
       },
@@ -867,7 +919,7 @@
         "name": "EditalDetailPage.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1038,
+        "size": 2181,
         "extension": ".tsx",
         "path": "Front/src/pages/EditalDetailPage.tsx"
       },
@@ -903,7 +955,7 @@
         "name": "editaisService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 627,
+        "size": 634,
         "extension": ".ts",
         "path": "Front/src/services/editaisService.ts"
       },
@@ -925,7 +977,7 @@
         "name": "editalDisplay.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2296,
+        "size": 2128,
         "extension": ".ts",
         "path": "Front/src/utils/editalDisplay.ts"
       },
@@ -965,7 +1017,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1908,
+        "size": 7016,
         "extension": ".md",
         "path": "README.md"
       },
@@ -1044,6 +1096,42 @@
         "path": "docs/Estudos/sprint00/estudo_GitGtHub.md"
       },
       {
+        "name": "RealiseNotes",
+        "type": "directory",
+        "path": "docs/RealiseNotes",
+        "children": []
+      },
+      {
+        "name": "img",
+        "type": "directory",
+        "path": "docs/RealiseNotes/img",
+        "children": []
+      },
+      {
+        "name": "API.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 83435,
+        "extension": ".png",
+        "path": "docs/RealiseNotes/img/API.png"
+      },
+      {
+        "name": "Front.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 266188,
+        "extension": ".png",
+        "path": "docs/RealiseNotes/img/Front.png"
+      },
+      {
+        "name": "release-1.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7510,
+        "extension": ".md",
+        "path": "docs/RealiseNotes/release-1.md"
+      },
+      {
         "name": "Requisitos",
         "type": "directory",
         "path": "docs/Requisitos",
@@ -1077,7 +1165,7 @@
         "name": "StoryMap.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7642,
+        "size": 8021,
         "extension": ".md",
         "path": "docs/Requisitos/StoryMap.md"
       },
@@ -1085,7 +1173,7 @@
         "name": "Visão de produto.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3113,
+        "size": 3129,
         "extension": ".md",
         "path": "docs/Requisitos/Visão de produto.md"
       },
@@ -1196,6 +1284,14 @@
         "path": "docs/adr/0002-stack-frontend.md"
       },
       {
+        "name": "0003-database-schema.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5427,
+        "extension": ".md",
+        "path": "docs/adr/0003-database-schema.md"
+      },
+      {
         "name": "agents",
         "type": "directory",
         "path": "docs/agents",
@@ -1268,10 +1364,26 @@
         "path": "docs/assets/img/pattern-swirls.webp"
       },
       {
+        "name": "back.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1598,
+        "extension": ".md",
+        "path": "docs/back.md"
+      },
+      {
+        "name": "front.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1356,
+        "extension": ".md",
+        "path": "docs/front.md"
+      },
+      {
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4265,
+        "size": 4278,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -1285,7 +1397,7 @@
         "name": "extra.css",
         "type": "file",
         "language": "CSS",
-        "size": 5105,
+        "size": 5277,
         "extension": ".css",
         "path": "docs/stylesheets/extra.css"
       },
@@ -1293,14 +1405,22 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2128,
+        "size": 2351,
         "extension": ".yml",
         "path": "mkdocs.yml"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 88,
+        "extension": ".json",
+        "path": "package-lock.json"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-28T12:34:28.636657+00:00",
+    "extracted_at": "2026-09-29T12:07:56.432050+00:00",
     "file_path": "data/silver/hierarchy_Fique-de-Olho.json"
   }
 }

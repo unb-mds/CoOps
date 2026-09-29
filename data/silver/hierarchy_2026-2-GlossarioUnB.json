@@ -2,7 +2,7 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-28T12:33:35.056113+00:00",
+  "extracted_at": "2026-09-29T12:07:07.315798+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -63,7 +63,7 @@
         "name": "PULL_REQUEST_TEMPLATE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1225,
+        "size": 1230,
         "extension": ".md",
         "path": ".github/PULL_REQUEST_TEMPLATE.md"
       },
@@ -82,6 +82,30 @@
         "path": ".github/workflows/.gitkeep"
       },
       {
+        "name": "ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 431,
+        "extension": ".yml",
+        "path": ".github/workflows/ci.yml"
+      },
+      {
+        "name": "pages.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1317,
+        "extension": ".yml",
+        "path": ".github/workflows/pages.yml"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 119,
+        "extension": ".gitignore",
+        "path": ".gitignore"
+      },
+      {
         "name": ".gitmessage",
         "type": "file",
         "language": "Unknown",
@@ -93,7 +117,7 @@
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1219,
+        "size": 1395,
         "extension": ".md",
         "path": "AI-USAGE.md"
       },
@@ -101,15 +125,23 @@
         "name": "CONTRIBUTING.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2700,
+        "size": 3057,
         "extension": ".md",
         "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1116,
+        "extension": "",
+        "path": "LICENSE"
       },
       {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 747,
+        "size": 2194,
         "extension": ".md",
         "path": "README.md"
       },
@@ -123,9 +155,17 @@
         "name": "ARQUITETURA.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1994,
+        "size": 2850,
         "extension": ".md",
         "path": "docs/ARQUITETURA.md"
+      },
+      {
+        "name": "BENCHMARK.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1531,
+        "extension": ".md",
+        "path": "docs/BENCHMARK.md"
       },
       {
         "name": "GUIA-FLUXO-DE-TRABALHO.md",
@@ -147,7 +187,7 @@
         "name": "REQUISITOS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2624,
+        "size": 2435,
         "extension": ".md",
         "path": "docs/REQUISITOS.md"
       },
@@ -166,10 +206,82 @@
         "path": "docs/adr/.gitkeep"
       },
       {
+        "name": "0001-termos-em-json-estatico.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2756,
+        "extension": ".md",
+        "path": "docs/adr/0001-termos-em-json-estatico.md"
+      },
+      {
+        "name": "0002-frontend-sem-framework.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2257,
+        "extension": ".md",
+        "path": "docs/adr/0002-frontend-sem-framework.md"
+      },
+      {
+        "name": "0003-pwa-com-service-worker-proprio.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2350,
+        "extension": ".md",
+        "path": "docs/adr/0003-pwa-com-service-worker-proprio.md"
+      },
+      {
+        "name": "0004-schema-unico-do-termo.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3551,
+        "extension": ".md",
+        "path": "docs/adr/0004-schema-unico-do-termo.md"
+      },
+      {
+        "name": "0005-mapa-de-locais-com-leaflet.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1541,
+        "extension": ".md",
+        "path": "docs/adr/0005-mapa-de-locais-com-leaflet.md"
+      },
+      {
+        "name": "0006-contribuicao-por-pr-e-issue.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2461,
+        "extension": ".md",
+        "path": "docs/adr/0006-contribuicao-por-pr-e-issue.md"
+      },
+      {
+        "name": "0007-github-pages-e-ci-com-actions.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3628,
+        "extension": ".md",
+        "path": "docs/adr/0007-github-pages-e-ci-com-actions.md"
+      },
+      {
+        "name": "0008-interface-com-css-puro-e-tokens.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3380,
+        "extension": ".md",
+        "path": "docs/adr/0008-interface-com-css-puro-e-tokens.md"
+      },
+      {
         "name": "estudos",
         "type": "directory",
         "path": "docs/estudos",
         "children": []
+      },
+      {
+        "name": "Frontend-react-vue.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 28271,
+        "extension": ".pdf",
+        "path": "docs/estudos/Frontend-react-vue.pdf"
       },
       {
         "name": "Resumo_Frontend_Moderno.pdf",
@@ -196,12 +308,28 @@
         "path": "docs/estudos/estudo-git-github.md"
       },
       {
+        "name": "estudo-i18n.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2724,
+        "extension": ".md",
+        "path": "docs/estudos/estudo-i18n.md"
+      },
+      {
         "name": "estudo-metodologias-ageis.md",
         "type": "file",
         "language": "Markdown",
         "size": 2546,
         "extension": ".md",
         "path": "docs/estudos/estudo-metodologias-ageis.md"
+      },
+      {
+        "name": "estudo-pwa.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6321,
+        "extension": ".md",
+        "path": "docs/estudos/estudo-pwa.md"
       },
       {
         "name": "scrum",
@@ -226,12 +354,42 @@
         "path": "docs/scrum/horarios.md"
       },
       {
+        "name": "molde_milestone.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 204,
+        "extension": ".md",
+        "path": "docs/scrum/molde_milestone.md"
+      },
+      {
         "name": "sprint-planning.md",
         "type": "file",
         "language": "Markdown",
         "size": 9584,
         "extension": ".md",
         "path": "docs/scrum/sprint-planning.md"
+      },
+      {
+        "name": "skills",
+        "type": "directory",
+        "path": "docs/skills",
+        "children": []
+      },
+      {
+        "name": "docker.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2376,
+        "extension": ".md",
+        "path": "docs/skills/docker.md"
+      },
+      {
+        "name": "github-actions-e-testes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3522,
+        "extension": ".md",
+        "path": "docs/skills/github-actions-e-testes.md"
       },
       {
         "name": "storymap",
@@ -246,11 +404,261 @@
         "size": 135,
         "extension": ".txt",
         "path": "docs/storymap/link_figma.txt"
+      },
+      {
+        "name": "story-map.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 334859,
+        "extension": ".png",
+        "path": "docs/storymap/story-map.png"
+      },
+      {
+        "name": "frontend",
+        "type": "directory",
+        "path": "frontend",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4779,
+        "extension": ".md",
+        "path": "frontend/README.md"
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "path": "frontend/data",
+        "children": []
+      },
+      {
+        "name": "termos.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 16018,
+        "extension": ".json",
+        "path": "frontend/data/termos.json"
+      },
+      {
+        "name": "favicon.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 6788,
+        "extension": ".png",
+        "path": "frontend/favicon.png"
+      },
+      {
+        "name": "icon-source.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 11042,
+        "extension": ".svg",
+        "path": "frontend/icon-source.svg"
+      },
+      {
+        "name": "icons",
+        "type": "directory",
+        "path": "frontend/icons",
+        "children": []
+      },
+      {
+        "name": "icon-192.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 11592,
+        "extension": ".png",
+        "path": "frontend/icons/icon-192.png"
+      },
+      {
+        "name": "icon-512.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 21644,
+        "extension": ".png",
+        "path": "frontend/icons/icon-512.png"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 3642,
+        "extension": ".html",
+        "path": "frontend/index.html"
+      },
+      {
+        "name": "js",
+        "type": "directory",
+        "path": "frontend/js",
+        "children": []
+      },
+      {
+        "name": "app.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 16462,
+        "extension": ".js",
+        "path": "frontend/js/app.js"
+      },
+      {
+        "name": "termos.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2994,
+        "extension": ".js",
+        "path": "frontend/js/termos.js"
+      },
+      {
+        "name": "validacao-termo.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3231,
+        "extension": ".js",
+        "path": "frontend/js/validacao-termo.js"
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 587,
+        "extension": ".json",
+        "path": "frontend/manifest.json"
+      },
+      {
+        "name": "styles.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 14970,
+        "extension": ".css",
+        "path": "frontend/styles.css"
+      },
+      {
+        "name": "sw.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3768,
+        "extension": ".js",
+        "path": "frontend/sw.js"
+      },
+      {
+        "name": "termo.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 2822,
+        "extension": ".html",
+        "path": "frontend/termo.html"
+      },
+      {
+        "name": "todas-siglas.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 2796,
+        "extension": ".html",
+        "path": "frontend/todas-siglas.html"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 599,
+        "extension": ".html",
+        "path": "index.html"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 373,
+        "extension": ".json",
+        "path": "package.json"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "scripts",
+        "children": []
+      },
+      {
+        "name": "servidor-local.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2960,
+        "extension": ".mjs",
+        "path": "scripts/servidor-local.mjs"
+      },
+      {
+        "name": "sobre",
+        "type": "directory",
+        "path": "sobre",
+        "children": []
+      },
+      {
+        "name": "estilo.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 14267,
+        "extension": ".css",
+        "path": "sobre/estilo.css"
+      },
+      {
+        "name": "favicon.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 6788,
+        "extension": ".png",
+        "path": "sobre/favicon.png"
+      },
+      {
+        "name": "icone.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 11592,
+        "extension": ".png",
+        "path": "sobre/icone.png"
+      },
+      {
+        "name": "index.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 34725,
+        "extension": ".html",
+        "path": "sobre/index.html"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "tests",
+        "children": []
+      },
+      {
+        "name": "dados.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 525,
+        "extension": ".js",
+        "path": "tests/dados.test.js"
+      },
+      {
+        "name": "termos.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4137,
+        "extension": ".js",
+        "path": "tests/termos.test.js"
+      },
+      {
+        "name": "validacao-termo.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2877,
+        "extension": ".js",
+        "path": "tests/validacao-termo.test.js"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-28T12:34:28.612585+00:00",
+    "extracted_at": "2026-09-29T12:07:56.403988+00:00",
     "file_path": "data/silver/hierarchy_2026-2-GlossarioUnB.json"
   }
 }

@@ -2,19 +2,19 @@
   "repository": "2026-2-MonitoraUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-28T12:33:35.663863+00:00",
+  "analyzed_at": "2026-09-29T12:07:07.789927+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 22,
-  "total_bytes": 244104,
+  "total_files": 46,
+  "total_bytes": 294152,
   "languages": [
     {
       "language": "PDF",
       "file_count": 2,
       "total_bytes": 185760,
-      "percentage": 76.1,
+      "percentage": 63.15,
       "files": [
         {
           "path": "docs/estudos/HTML_parte1_.pdf",
@@ -32,10 +32,22 @@
     },
     {
       "language": "Markdown",
-      "file_count": 14,
-      "total_bytes": 41261,
-      "percentage": 16.9,
+      "file_count": 16,
+      "total_bytes": 73142,
+      "percentage": 24.87,
       "files": [
+        {
+          "path": "docs/Documento_de_visao.md",
+          "name": "Documento_de_visao.md",
+          "size": 12548,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/Documento_de_requisitos.md",
+          "name": "Documento_de_requisitos.md",
+          "size": 10206,
+          "extension": ".md"
+        },
         {
           "path": "docs/estudos/Metodologia Scrum.md",
           "name": "Metodologia Scrum.md",
@@ -55,9 +67,21 @@
           "extension": ".md"
         },
         {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 5515,
+          "extension": ".md"
+        },
+        {
           "path": "docs/estudos/Skills.md",
           "name": "Skills.md",
           "size": 4045,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/Como_executar.md",
+          "name": "Como_executar.md",
+          "size": 3749,
           "extension": ".md"
         },
         {
@@ -71,50 +95,132 @@
           "name": "Guia GitFlow.md",
           "size": 3641,
           "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/git_cheatsheet.md",
-          "name": "git_cheatsheet.md",
-          "size": 1914,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/sprints/sprint0.md",
-          "name": "sprint0.md",
-          "size": 960,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/sprints/sprint_template.md",
-          "name": "sprint_template.md",
-          "size": 753,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/Front-end.md",
-          "name": "Front-end.md",
-          "size": 197,
-          "extension": ".md"
         }
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 2,
-      "total_bytes": 12842,
-      "percentage": 5.26,
+      "language": "CSS",
+      "file_count": 5,
+      "total_bytes": 10975,
+      "percentage": 3.73,
       "files": [
         {
-          "path": "docs/estudos/Metodologia Scrum",
-          "name": "Metodologia Scrum",
-          "size": 10015,
-          "extension": ""
+          "path": "front-end/styles/solicitacao.css",
+          "name": "solicitacao.css",
+          "size": 4251,
+          "extension": ".css"
         },
         {
-          "path": "docs/estudos/leitura do histórico",
-          "name": "leitura do histórico",
-          "size": 2827,
-          "extension": ""
+          "path": "front-end/styles/revisao.css",
+          "name": "revisao.css",
+          "size": 2512,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/inscricao.css",
+          "name": "inscricao.css",
+          "size": 2401,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/portal.css",
+          "name": "portal.css",
+          "size": 1614,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/global.css",
+          "name": "global.css",
+          "size": 197,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 5,
+      "total_bytes": 8430,
+      "percentage": 2.87,
+      "files": [
+        {
+          "path": "front-end/pages/revisao.html",
+          "name": "revisao.html",
+          "size": 2962,
+          "extension": ".html"
+        },
+        {
+          "path": "front-end/pages/inscricao.html",
+          "name": "inscricao.html",
+          "size": 2851,
+          "extension": ".html"
+        },
+        {
+          "path": "front-end/pages/solicitacao.html",
+          "name": "solicitacao.html",
+          "size": 1218,
+          "extension": ".html"
+        },
+        {
+          "path": "front-end/pages/portal.html",
+          "name": "portal.html",
+          "size": 758,
+          "extension": ".html"
+        },
+        {
+          "path": "docs/index.html",
+          "name": "index.html",
+          "size": 641,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "file_count": 7,
+      "total_bytes": 6197,
+      "percentage": 2.11,
+      "files": [
+        {
+          "path": "front-end/src/pages/inscricao.ts",
+          "name": "inscricao.ts",
+          "size": 2258,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/pages/revisao.ts",
+          "name": "revisao.ts",
+          "size": 1449,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/services/inscricao.ts",
+          "name": "inscricao.ts",
+          "size": 779,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/utils/storage.ts",
+          "name": "storage.ts",
+          "size": 683,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/types/inscricao.ts",
+          "name": "inscricao.ts",
+          "size": 545,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/utils/validadores.ts",
+          "name": "validadores.ts",
+          "size": 329,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/pages/solicitacao.ts",
+          "name": "solicitacao.ts",
+          "size": 154,
+          "extension": ".ts"
         }
       ]
     },
@@ -122,7 +228,7 @@
       "language": "Text",
       "file_count": 2,
       "total_bytes": 3450,
-      "percentage": 1.41,
+      "percentage": 1.17,
       "files": [
         {
           "path": "docs/estudos/estudo fast api e django.txt",
@@ -139,16 +245,68 @@
       ]
     },
     {
-      "language": "HTML",
+      "language": "No Extension",
       "file_count": 1,
-      "total_bytes": 638,
-      "percentage": 0.26,
+      "total_bytes": 2827,
+      "percentage": 0.96,
       "files": [
         {
-          "path": "docs/index.html",
-          "name": "index.html",
-          "size": 638,
-          "extension": ".html"
+          "path": "docs/estudos/leitura do histórico",
+          "name": "leitura do histórico",
+          "size": 2827,
+          "extension": ""
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 3,
+      "total_bytes": 1987,
+      "percentage": 0.68,
+      "files": [
+        {
+          "path": "python_scripts/leiturapdf.py",
+          "name": "leiturapdf.py",
+          "size": 1608,
+          "extension": ".py"
+        },
+        {
+          "path": "python_scripts/leitura_creditos.py",
+          "name": "leitura_creditos.py",
+          "size": 287,
+          "extension": ".py"
+        },
+        {
+          "path": "python_scripts/main.py",
+          "name": "main.py",
+          "size": 92,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "JSON",
+      "file_count": 3,
+      "total_bytes": 1179,
+      "percentage": 0.4,
+      "files": [
+        {
+          "path": "front-end/package-lock.json",
+          "name": "package-lock.json",
+          "size": 726,
+          "extension": ".json"
+        },
+        {
+          "path": "front-end/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 252,
+          "extension": ".json"
+        },
+        {
+          "path": "front-end/package.json",
+          "name": "package.json",
+          "size": 201,
+          "extension": ".json"
         }
       ]
     },
@@ -156,7 +314,7 @@
       "language": "Unknown",
       "file_count": 1,
       "total_bytes": 153,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": "docs/.nojekyll",
@@ -165,10 +323,24 @@
           "extension": ".nojekyll"
         }
       ]
+    },
+    {
+      "language": "Git Ignore",
+      "file_count": 1,
+      "total_bytes": 52,
+      "percentage": 0.02,
+      "files": [
+        {
+          "path": ".gitignore",
+          "name": ".gitignore",
+          "size": 52,
+          "extension": ".gitignore"
+        }
+      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-28T12:34:28.613090+00:00",
+    "extracted_at": "2026-09-29T12:07:56.404939+00:00",
     "file_path": "data/silver/language_analysis_2026-2-MonitoraUnB.json"
   }
 }

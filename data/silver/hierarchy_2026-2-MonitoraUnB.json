@@ -2,16 +2,24 @@
   "repository": "2026-2-MonitoraUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-28T12:33:35.663863+00:00",
+  "extracted_at": "2026-09-29T12:07:07.789927+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
     "children": [
       {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 52,
+        "extension": ".gitignore",
+        "path": ".gitignore"
+      },
+      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 72,
+        "size": 5515,
         "extension": ".md",
         "path": "README.md"
       },
@@ -30,18 +38,34 @@
         "path": "docs/.nojekyll"
       },
       {
-        "name": "README.md",
+        "name": "Como_executar.md",
         "type": "file",
         "language": "Markdown",
-        "size": 72,
+        "size": 3749,
         "extension": ".md",
-        "path": "docs/README.md"
+        "path": "docs/Como_executar.md"
+      },
+      {
+        "name": "Documento_de_requisitos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10206,
+        "extension": ".md",
+        "path": "docs/Documento_de_requisitos.md"
+      },
+      {
+        "name": "Documento_de_visao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12548,
+        "extension": ".md",
+        "path": "docs/Documento_de_visao.md"
       },
       {
         "name": "_sidebar.md",
         "type": "file",
         "language": "Markdown",
-        "size": 182,
+        "size": 189,
         "extension": ".md",
         "path": "docs/_sidebar.md"
       },
@@ -98,14 +122,6 @@
         "size": 82265,
         "extension": ".pdf",
         "path": "docs/estudos/HTML_parte2_.pdf"
-      },
-      {
-        "name": "Metodologia Scrum",
-        "type": "file",
-        "language": "No Extension",
-        "size": 10015,
-        "extension": "",
-        "path": "docs/estudos/Metodologia Scrum"
       },
       {
         "name": "Metodologia Scrum.md",
@@ -167,7 +183,7 @@
         "name": "index.html",
         "type": "file",
         "language": "HTML",
-        "size": 638,
+        "size": 641,
         "extension": ".html",
         "path": "docs/index.html"
       },
@@ -200,11 +216,241 @@
         "size": 753,
         "extension": ".md",
         "path": "docs/sprints/sprint_template.md"
+      },
+      {
+        "name": "front-end",
+        "type": "directory",
+        "path": "front-end",
+        "children": []
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 726,
+        "extension": ".json",
+        "path": "front-end/package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 201,
+        "extension": ".json",
+        "path": "front-end/package.json"
+      },
+      {
+        "name": "pages",
+        "type": "directory",
+        "path": "front-end/pages",
+        "children": []
+      },
+      {
+        "name": "inscricao.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 2851,
+        "extension": ".html",
+        "path": "front-end/pages/inscricao.html"
+      },
+      {
+        "name": "portal.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 758,
+        "extension": ".html",
+        "path": "front-end/pages/portal.html"
+      },
+      {
+        "name": "revisao.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 2962,
+        "extension": ".html",
+        "path": "front-end/pages/revisao.html"
+      },
+      {
+        "name": "solicitacao.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 1218,
+        "extension": ".html",
+        "path": "front-end/pages/solicitacao.html"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "front-end/src",
+        "children": []
+      },
+      {
+        "name": "pages",
+        "type": "directory",
+        "path": "front-end/src/pages",
+        "children": []
+      },
+      {
+        "name": "inscricao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2258,
+        "extension": ".ts",
+        "path": "front-end/src/pages/inscricao.ts"
+      },
+      {
+        "name": "revisao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1449,
+        "extension": ".ts",
+        "path": "front-end/src/pages/revisao.ts"
+      },
+      {
+        "name": "solicitacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 154,
+        "extension": ".ts",
+        "path": "front-end/src/pages/solicitacao.ts"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "front-end/src/services",
+        "children": []
+      },
+      {
+        "name": "inscricao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 779,
+        "extension": ".ts",
+        "path": "front-end/src/services/inscricao.ts"
+      },
+      {
+        "name": "types",
+        "type": "directory",
+        "path": "front-end/src/types",
+        "children": []
+      },
+      {
+        "name": "inscricao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 545,
+        "extension": ".ts",
+        "path": "front-end/src/types/inscricao.ts"
+      },
+      {
+        "name": "utils",
+        "type": "directory",
+        "path": "front-end/src/utils",
+        "children": []
+      },
+      {
+        "name": "storage.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 683,
+        "extension": ".ts",
+        "path": "front-end/src/utils/storage.ts"
+      },
+      {
+        "name": "validadores.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 329,
+        "extension": ".ts",
+        "path": "front-end/src/utils/validadores.ts"
+      },
+      {
+        "name": "styles",
+        "type": "directory",
+        "path": "front-end/styles",
+        "children": []
+      },
+      {
+        "name": "global.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 197,
+        "extension": ".css",
+        "path": "front-end/styles/global.css"
+      },
+      {
+        "name": "inscricao.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 2401,
+        "extension": ".css",
+        "path": "front-end/styles/inscricao.css"
+      },
+      {
+        "name": "portal.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 1614,
+        "extension": ".css",
+        "path": "front-end/styles/portal.css"
+      },
+      {
+        "name": "revisao.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 2512,
+        "extension": ".css",
+        "path": "front-end/styles/revisao.css"
+      },
+      {
+        "name": "solicitacao.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 4251,
+        "extension": ".css",
+        "path": "front-end/styles/solicitacao.css"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 252,
+        "extension": ".json",
+        "path": "front-end/tsconfig.json"
+      },
+      {
+        "name": "python_scripts",
+        "type": "directory",
+        "path": "python_scripts",
+        "children": []
+      },
+      {
+        "name": "leitura_creditos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 287,
+        "extension": ".py",
+        "path": "python_scripts/leitura_creditos.py"
+      },
+      {
+        "name": "leiturapdf.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1608,
+        "extension": ".py",
+        "path": "python_scripts/leiturapdf.py"
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 92,
+        "extension": ".py",
+        "path": "python_scripts/main.py"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-28T12:34:28.613388+00:00",
+    "extracted_at": "2026-09-29T12:07:56.405713+00:00",
     "file_path": "data/silver/hierarchy_2026-2-MonitoraUnB.json"
   }
 }
