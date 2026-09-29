@@ -2,16 +2,732 @@
   "owner": "unb-mds",
   "repository": "2026-2-AgendaUnB",
   "branch": "main",
-  "sha": "aceeed3c636a35abe40b2cbaed6b8a6ed6494e5d",
+  "sha": "2c23433ca6f3634c2495c91fd7e4613f73caa79d",
   "tree": [
+    {
+      "name": ".agent",
+      "path": ".agent",
+      "type": "directory",
+      "sha": "97155d0ccb228d3978e1fd4b08c898a27d73293a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "skills",
+      "path": ".agent/skills",
+      "type": "directory",
+      "sha": "740b40c1a326278519f17458b6156689befe812f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "impeccable",
+      "path": ".agent/skills/impeccable",
+      "type": "directory",
+      "sha": "0b2cde619f7e2b19dcdbadb5a922af0cfe93ef94",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".agent/skills/impeccable/SKILL.md",
+      "type": "file",
+      "sha": "63e309e819b29e5af922e6980a2ea70ff8f8755b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11760,
+      "is_binary": false
+    },
+    {
+      "name": "reference",
+      "path": ".agent/skills/impeccable/reference",
+      "type": "directory",
+      "sha": "4047de342ba9513a9d15dc2c3f77fe7b07bc023a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "adapt.md",
+      "path": ".agent/skills/impeccable/reference/adapt.md",
+      "type": "file",
+      "sha": "7f76bbbb4599d02eadec85dc5143e63ec6253ba4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10307,
+      "is_binary": false
+    },
+    {
+      "name": "adapt.native.md",
+      "path": ".agent/skills/impeccable/reference/adapt.native.md",
+      "type": "file",
+      "sha": "f1ccd65d9788ffdfb5761824e6c51b8866f4cba5",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3910,
+      "is_binary": false
+    },
+    {
+      "name": "android.md",
+      "path": ".agent/skills/impeccable/reference/android.md",
+      "type": "file",
+      "sha": "1f67a6bb574960cccb1692f460cc5432baebad65",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4093,
+      "is_binary": false
+    },
+    {
+      "name": "animate.md",
+      "path": ".agent/skills/impeccable/reference/animate.md",
+      "type": "file",
+      "sha": "4ae4cc5fcd7ae4341f4f130ab67a7d9b03c00562",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5236,
+      "is_binary": false
+    },
+    {
+      "name": "audit.md",
+      "path": ".agent/skills/impeccable/reference/audit.md",
+      "type": "file",
+      "sha": "474af415497e17312e611182ce22773670dc0f91",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7873,
+      "is_binary": false
+    },
+    {
+      "name": "audit.native.md",
+      "path": ".agent/skills/impeccable/reference/audit.native.md",
+      "type": "file",
+      "sha": "fbccb56f6e6fe64fc6b24d82977f392a6285848e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8364,
+      "is_binary": false
+    },
+    {
+      "name": "bolder.md",
+      "path": ".agent/skills/impeccable/reference/bolder.md",
+      "type": "file",
+      "sha": "78ceb8dfd8c8c5c636052d553f46d8942ec6aa76",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3476,
+      "is_binary": false
+    },
+    {
+      "name": "clarify.md",
+      "path": ".agent/skills/impeccable/reference/clarify.md",
+      "type": "file",
+      "sha": "3047a9d82b9cfa31b392e35c643d82bcdb50250a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4590,
+      "is_binary": false
+    },
+    {
+      "name": "colorize.md",
+      "path": ".agent/skills/impeccable/reference/colorize.md",
+      "type": "file",
+      "sha": "dc45f88c5f81c61355a915c6ea1391b1a36c9ba8",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4537,
+      "is_binary": false
+    },
+    {
+      "name": "craft-floor.md",
+      "path": ".agent/skills/impeccable/reference/craft-floor.md",
+      "type": "file",
+      "sha": "9653b980895fa343127982ba575085c31726eecc",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4484,
+      "is_binary": false
+    },
+    {
+      "name": "craft.md",
+      "path": ".agent/skills/impeccable/reference/craft.md",
+      "type": "file",
+      "sha": "dbbc9402c07cdab21f2b6eb69279b8435fecfd7f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 555,
+      "is_binary": false
+    },
+    {
+      "name": "critique.md",
+      "path": ".agent/skills/impeccable/reference/critique.md",
+      "type": "file",
+      "sha": "2a72efcd1aaf2068f74ad32b18f2441800687f50",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 42717,
+      "is_binary": false
+    },
+    {
+      "name": "degraded",
+      "path": ".agent/skills/impeccable/reference/degraded",
+      "type": "directory",
+      "sha": "ede695424c95a02f0dabf746f243d8325082d5de",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "asset-producer.md",
+      "path": ".agent/skills/impeccable/reference/degraded/asset-producer.md",
+      "type": "file",
+      "sha": "40cb05c5e0cf9afeeafacc8fbac98e8d16cb2860",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7302,
+      "is_binary": false
+    },
+    {
+      "name": "documenter.md",
+      "path": ".agent/skills/impeccable/reference/degraded/documenter.md",
+      "type": "file",
+      "sha": "e9dfb799bcece32233386bf9702bc3141d56d196",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3325,
+      "is_binary": false
+    },
+    {
+      "name": "finish-reviewer.md",
+      "path": ".agent/skills/impeccable/reference/degraded/finish-reviewer.md",
+      "type": "file",
+      "sha": "b5a131005b3bb617dbdfec584ac79100e17af02f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 15397,
+      "is_binary": false
+    },
+    {
+      "name": "manual-edit-applier.md",
+      "path": ".agent/skills/impeccable/reference/degraded/manual-edit-applier.md",
+      "type": "file",
+      "sha": "ef5095b924623ce04e02188a6790ebd98a273bcd",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7196,
+      "is_binary": false
+    },
+    {
+      "name": "delight.md",
+      "path": ".agent/skills/impeccable/reference/delight.md",
+      "type": "file",
+      "sha": "798c43a5b735a5b75b67484c516821f1355dfbd6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3716,
+      "is_binary": false
+    },
+    {
+      "name": "distill.md",
+      "path": ".agent/skills/impeccable/reference/distill.md",
+      "type": "file",
+      "sha": "6eb4f19b31060949d04882a0c514ac592d8a42cf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5629,
+      "is_binary": false
+    },
+    {
+      "name": "doctor.md",
+      "path": ".agent/skills/impeccable/reference/doctor.md",
+      "type": "file",
+      "sha": "bd62a59d392d0701730af1526e128c46cdd8ebd8",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5479,
+      "is_binary": false
+    },
+    {
+      "name": "document.md",
+      "path": ".agent/skills/impeccable/reference/document.md",
+      "type": "file",
+      "sha": "9da0bc743f1883440c8d5261d137141a2c28e746",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 27433,
+      "is_binary": false
+    },
+    {
+      "name": "extract.md",
+      "path": ".agent/skills/impeccable/reference/extract.md",
+      "type": "file",
+      "sha": "64ccab40ba439e82aaed95a3d14d43ebbf362af9",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3345,
+      "is_binary": false
+    },
+    {
+      "name": "harden.md",
+      "path": ".agent/skills/impeccable/reference/harden.md",
+      "type": "file",
+      "sha": "46ca8a7c31946a9259b40aa1472dc25bbbd7cbc8",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8539,
+      "is_binary": false
+    },
+    {
+      "name": "hooks.md",
+      "path": ".agent/skills/impeccable/reference/hooks.md",
+      "type": "file",
+      "sha": "e591e314452e4c533e9a5af765112ab5a5c24ed0",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 13306,
+      "is_binary": false
+    },
+    {
+      "name": "init.md",
+      "path": ".agent/skills/impeccable/reference/init.md",
+      "type": "file",
+      "sha": "4072cfbc4f9b3637edadbc9470e3baf23bff5a1b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11448,
+      "is_binary": false
+    },
+    {
+      "name": "ios.md",
+      "path": ".agent/skills/impeccable/reference/ios.md",
+      "type": "file",
+      "sha": "c6244dfe32176e5718d86211b7d1eb5601eb0860",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3812,
+      "is_binary": false
+    },
+    {
+      "name": "layout.md",
+      "path": ".agent/skills/impeccable/reference/layout.md",
+      "type": "file",
+      "sha": "0ecd6de7252f34c78e00d9fabb8091f67f272eeb",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5160,
+      "is_binary": false
+    },
+    {
+      "name": "live-setup.md",
+      "path": ".agent/skills/impeccable/reference/live-setup.md",
+      "type": "file",
+      "sha": "54dbabf4c2602f2d835e0fce90abd4506ac2a357",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8185,
+      "is_binary": false
+    },
+    {
+      "name": "live.md",
+      "path": ".agent/skills/impeccable/reference/live.md",
+      "type": "file",
+      "sha": "1faa46b9339e5c85869964e22f4eb0439d858d2f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 36231,
+      "is_binary": false
+    },
+    {
+      "name": "new-work.md",
+      "path": ".agent/skills/impeccable/reference/new-work.md",
+      "type": "file",
+      "sha": "40c0e1f683e5233478bf09689a00afb04fde4793",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 52758,
+      "is_binary": false
+    },
+    {
+      "name": "onboard.md",
+      "path": ".agent/skills/impeccable/reference/onboard.md",
+      "type": "file",
+      "sha": "d6a6de372d527d232c60f8317a077b5c5405b927",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7740,
+      "is_binary": false
+    },
+    {
+      "name": "operate.md",
+      "path": ".agent/skills/impeccable/reference/operate.md",
+      "type": "file",
+      "sha": "524f2c3ae9fa497284e9699f3ca5320cce5d05cf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4145,
+      "is_binary": false
+    },
+    {
+      "name": "optimize.md",
+      "path": ".agent/skills/impeccable/reference/optimize.md",
+      "type": "file",
+      "sha": "cc6ce4925266bf3c4a7d40b5a435fe315cbf6f1a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7614,
+      "is_binary": false
+    },
+    {
+      "name": "overdrive.md",
+      "path": ".agent/skills/impeccable/reference/overdrive.md",
+      "type": "file",
+      "sha": "76953e24e6dd06b62415fdfe71c7caa9756bd981",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9090,
+      "is_binary": false
+    },
+    {
+      "name": "polish.md",
+      "path": ".agent/skills/impeccable/reference/polish.md",
+      "type": "file",
+      "sha": "3805a28c014b4d1d44e9fd82fca9d1cf74eda96a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6644,
+      "is_binary": false
+    },
+    {
+      "name": "quieter.md",
+      "path": ".agent/skills/impeccable/reference/quieter.md",
+      "type": "file",
+      "sha": "a04100bf298c108fcf39139f19caffd665413232",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4864,
+      "is_binary": false
+    },
+    {
+      "name": "routing.md",
+      "path": ".agent/skills/impeccable/reference/routing.md",
+      "type": "file",
+      "sha": "7c7b3c356d22943febabf01579a1060e60b7ee15",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3255,
+      "is_binary": false
+    },
+    {
+      "name": "shape.md",
+      "path": ".agent/skills/impeccable/reference/shape.md",
+      "type": "file",
+      "sha": "90a74ae813331cbce8fff6beb498ced77970fadf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3547,
+      "is_binary": false
+    },
+    {
+      "name": "typeset.md",
+      "path": ".agent/skills/impeccable/reference/typeset.md",
+      "type": "file",
+      "sha": "1188191dc5988ea1c4c3175ff73d7f1263af5584",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5255,
+      "is_binary": false
+    },
+    {
+      "name": "visualize.md",
+      "path": ".agent/skills/impeccable/reference/visualize.md",
+      "type": "file",
+      "sha": "26b91553a58081f88d00528e77d56a587f1b9442",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11756,
+      "is_binary": false
+    },
+    {
+      "name": "scripts",
+      "path": ".agent/skills/impeccable/scripts",
+      "type": "directory",
+      "sha": "5670e5069bffefb2f1fec7aab81426e7a8897325",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "VERSION",
+      "path": ".agent/skills/impeccable/scripts/VERSION",
+      "type": "file",
+      "sha": "9faa1b7a7339db85692f91ad4b922554624a3ef7",
+      "mode": "100644",
+      "extension": "",
+      "size": 6,
+      "is_binary": false
+    },
+    {
+      "name": "bin",
+      "path": ".agent/skills/impeccable/scripts/bin",
+      "type": "directory",
+      "sha": "e1c9a5a46bb9f331b2963d10f1edce24034b518c",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "windows-x64",
+      "path": ".agent/skills/impeccable/scripts/bin/windows-x64",
+      "type": "directory",
+      "sha": "9cb644f263ffd5bac404ea43e7357852d1a6c987",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "impeccable.exe",
+      "path": ".agent/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
+      "type": "file",
+      "sha": "1d1c646074166a888567dab1bbe8efbe6043b326",
+      "mode": "100644",
+      "extension": ".exe",
+      "size": 14720392,
+      "is_binary": false
+    },
+    {
+      "name": "command-metadata.json",
+      "path": ".agent/skills/impeccable/scripts/command-metadata.json",
+      "type": "file",
+      "sha": "dad8ef2e0ca304f6a0fe48c0c6b90880df93e01b",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 7934,
+      "is_binary": false
+    },
+    {
+      "name": "data",
+      "path": ".agent/skills/impeccable/scripts/data",
+      "type": "directory",
+      "sha": "dcc1037d5e6ff236a9fb60c76b02976b380ce6e4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "font-index-failures.json",
+      "path": ".agent/skills/impeccable/scripts/data/font-index-failures.json",
+      "type": "file",
+      "sha": "1aca67220413ef163570c75405b444d7a27a32be",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2437,
+      "is_binary": false
+    },
+    {
+      "name": "font-index.json",
+      "path": ".agent/skills/impeccable/scripts/data/font-index.json",
+      "type": "file",
+      "sha": "9d2029971df232a72ff6584d264c104490521742",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1100013,
+      "is_binary": false
+    },
+    {
+      "name": "impeccable",
+      "path": ".agent/skills/impeccable/scripts/impeccable",
+      "type": "file",
+      "sha": "eb60f8667dd6924bc6271e9e1a0761ea5f945751",
+      "mode": "100644",
+      "extension": "",
+      "size": 8514,
+      "is_binary": false
+    },
+    {
+      "name": "impeccable.cmd",
+      "path": ".agent/skills/impeccable/scripts/impeccable.cmd",
+      "type": "file",
+      "sha": "7ebe419bfe5b58c6214e39e8ce566181c72781d2",
+      "mode": "100644",
+      "extension": ".cmd",
+      "size": 8472,
+      "is_binary": false
+    },
+    {
+      "name": "live-browser-dom.js",
+      "path": ".agent/skills/impeccable/scripts/live-browser-dom.js",
+      "type": "file",
+      "sha": "e85c95c43ead132f04fe61dc3d0bf90b04e22d37",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4917,
+      "is_binary": false
+    },
+    {
+      "name": "live-browser-ignores.js",
+      "path": ".agent/skills/impeccable/scripts/live-browser-ignores.js",
+      "type": "file",
+      "sha": "1c8514c7bcd8b8d889a1763965326fb6adec24a1",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 10346,
+      "is_binary": false
+    },
+    {
+      "name": "live-browser-session.js",
+      "path": ".agent/skills/impeccable/scripts/live-browser-session.js",
+      "type": "file",
+      "sha": "1514bf472a5bb6dffdec1c67176713e3fab47af6",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4090,
+      "is_binary": false
+    },
+    {
+      "name": "live-browser.js",
+      "path": ".agent/skills/impeccable/scripts/live-browser.js",
+      "type": "file",
+      "sha": "ac6f185861ed917d88f039a696b0602a1b7ad9f2",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 522871,
+      "is_binary": false
+    },
+    {
+      "name": "modern-screenshot.umd.js",
+      "path": ".agent/skills/impeccable/scripts/modern-screenshot.umd.js",
+      "type": "file",
+      "sha": "a9c5208f6b141d3bafdb8eb843d6fcbdcf23e370",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 29290,
+      "is_binary": false
+    },
+    {
+      "name": ".antigravity",
+      "path": ".antigravity",
+      "type": "directory",
+      "sha": "8c3462d7d2e9ec7223a328a03a7d66db73a3395f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "skills",
+      "path": ".antigravity/skills",
+      "type": "directory",
+      "sha": "d4c509f66429908624f0de98b315e8e5b0ebb426",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "api-design-standard",
+      "path": ".antigravity/skills/api-design-standard",
+      "type": "directory",
+      "sha": "a7c01e556043a222b3599f8eef1654c117d50485",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".antigravity/skills/api-design-standard/SKILL.md",
+      "type": "file",
+      "sha": "440ae2ccd797c99b09bda6a5ccdc86db8c33f50d",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9885,
+      "is_binary": false
+    },
+    {
+      "name": "code-review",
+      "path": ".antigravity/skills/code-review",
+      "type": "directory",
+      "sha": "1f4768c3200e379ddadd7f9af33b98e9b806860f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".antigravity/skills/code-review/SKILL.md",
+      "type": "file",
+      "sha": "643ebe76ca54dcef596f71a9e5f9ed4a3f557ec6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11474,
+      "is_binary": false
+    },
+    {
+      "name": "grill-with-docs",
+      "path": ".antigravity/skills/grill-with-docs",
+      "type": "directory",
+      "sha": "fd5fe07fe8a3b474236567f9997da9f585a94130",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".antigravity/skills/grill-with-docs/SKILL.md",
+      "type": "file",
+      "sha": "91320b4281e9be58d2a321741dadbfc4a5267376",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6109,
+      "is_binary": false
+    },
+    {
+      "name": "project-standards",
+      "path": ".antigravity/skills/project-standards",
+      "type": "directory",
+      "sha": "c4441f1046006f0b29fbe652a379e8ca582eb298",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".antigravity/skills/project-standards/SKILL.md",
+      "type": "file",
+      "sha": "5d8e4c225d86b842379a61d96afad66eed96ea9b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 15668,
+      "is_binary": false
+    },
+    {
+      "name": "tdd-test-driven-development",
+      "path": ".antigravity/skills/tdd-test-driven-development",
+      "type": "directory",
+      "sha": "cd28fd531c323287069ec2196cd4e162556fc78f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".antigravity/skills/tdd-test-driven-development/SKILL.md",
+      "type": "file",
+      "sha": "df3d4c903650568be48ee37c13f634851cba920b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6559,
+      "is_binary": false
+    },
+    {
+      "name": "to-prd",
+      "path": ".antigravity/skills/to-prd",
+      "type": "directory",
+      "sha": "e60167628c548650839c51224f4dc9d61a2e49cb",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".antigravity/skills/to-prd/SKILL.md",
+      "type": "file",
+      "sha": "1d219e6335a620d36d6761bbf3c846697273b18a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10359,
+      "is_binary": false
+    },
     {
       "name": ".env.example",
       "path": ".env.example",
       "type": "file",
-      "sha": "f806a4b72c4649ffa3ce1a4c454f83db51d7a0d0",
+      "sha": "af8ff50655931ee50c229881648eb054d9ef8fc0",
       "mode": "100644",
       "extension": ".example",
-      "size": 164,
+      "size": 165,
       "is_binary": false
     },
     {
@@ -54,45 +770,251 @@
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "6d7d277050219ceae7244b5be8595b427863a2cd",
+      "sha": "16d17f6f3bb077dc5a3f357f3d59afcb689688d2",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 290,
+      "size": 347,
       "is_binary": false
     },
     {
-      "name": ".vscode",
-      "path": ".vscode",
+      "name": ".impeccable",
+      "path": ".impeccable",
       "type": "directory",
-      "sha": "65c6c46571d0870fad39ced3ccbbdfcadb658a11",
+      "sha": "f2e85f09f249a90c84ff2e92573eda9f102100a1",
       "mode": "040000",
       "children": []
     },
     {
-      "name": "settings.json",
-      "path": ".vscode/settings.json",
+      "name": "config.json",
+      "path": ".impeccable/config.json",
       "type": "file",
-      "sha": "3b664107303df336bab8010caad42ddaed24550e",
+      "sha": "7030e9a125bf18b80a9a5220a43cc2094c3874c7",
       "mode": "100644",
       "extension": ".json",
-      "size": 38,
+      "size": 22,
+      "is_binary": false
+    },
+    {
+      "name": "design.json",
+      "path": ".impeccable/design.json",
+      "type": "file",
+      "sha": "ecfd200e3be789daf3ec7fade52e5af86c3966d6",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 5250,
+      "is_binary": false
+    },
+    {
+      "name": "DESIGN.md",
+      "path": "DESIGN.md",
+      "type": "file",
+      "sha": "3a08b4f872ff6590856484cfad016c5f9cae20e2",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6512,
+      "is_binary": false
+    },
+    {
+      "name": "PRODUCT.md",
+      "path": "PRODUCT.md",
+      "type": "file",
+      "sha": "259ffa0757f40ae2d494e06c71d76d9498025eb0",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2673,
       "is_binary": false
     },
     {
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "dde4e9c1615929ae346abeaa5312219721f243ef",
+      "sha": "eda9c6075bc9c00d76b62874ab6c1b19cb637990",
       "mode": "100644",
       "extension": ".md",
-      "size": 3120,
+      "size": 7970,
+      "is_binary": false
+    },
+    {
+      "name": "backend",
+      "path": "backend",
+      "type": "directory",
+      "sha": "3e0525cb4b70d90e8a3f27940fec675a6d0c0c5f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".env.example",
+      "path": "backend/.env.example",
+      "type": "file",
+      "sha": "8f66d2e8b65275b23ca70777064633050b99a0af",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 219,
+      "is_binary": false
+    },
+    {
+      "name": "Dockerfile",
+      "path": "backend/Dockerfile",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": "",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "requirements-dev.txt",
+      "path": "backend/requirements-dev.txt",
+      "type": "file",
+      "sha": "26b77f68be53ca5605724cc5dead0e5cd6d4132b",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 27,
+      "is_binary": false
+    },
+    {
+      "name": "requirements.txt",
+      "path": "backend/requirements.txt",
+      "type": "file",
+      "sha": "20b3b3581f0932a711832acf4a040e80b4910bff",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 73,
+      "is_binary": false
+    },
+    {
+      "name": "src",
+      "path": "backend/src",
+      "type": "directory",
+      "sha": "0e29dc05a183aaa7550d5b9dffefb58d1d656606",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "database",
+      "path": "backend/src/database",
+      "type": "directory",
+      "sha": "ae6ad82babd474037410c5d830e916a6a5ee67b2",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "connection.py",
+      "path": "backend/src/database/connection.py",
+      "type": "file",
+      "sha": "c448c6a6244b580a23e0fcca738fdf721ae9e008",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 570,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "backend/src/database/models.py",
+      "type": "file",
+      "sha": "67d471fda86b31760875dcc5ee16e39bc7db4e4e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3535,
+      "is_binary": false
+    },
+    {
+      "name": "main.py",
+      "path": "backend/src/main.py",
+      "type": "file",
+      "sha": "976c69ec270a91cf407f1c6269dc3654706bde91",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1677,
+      "is_binary": false
+    },
+    {
+      "name": "middlewares",
+      "path": "backend/src/middlewares",
+      "type": "directory",
+      "sha": "542bff0a189e5f9db224efaed2162e769f725de8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "auth.py",
+      "path": "backend/src/middlewares/auth.py",
+      "type": "file",
+      "sha": "783d8f48bf867f96ab61b672038e22f4142a5868",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2538,
+      "is_binary": false
+    },
+    {
+      "name": "modules",
+      "path": "backend/src/modules",
+      "type": "directory",
+      "sha": "4812efcde7c971f092b56668c735238c28377a99",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "events",
+      "path": "backend/src/modules/events",
+      "type": "directory",
+      "sha": "1dcd810fceba6c7237f1270c15fbcbd2c7181bd4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "router.py",
+      "path": "backend/src/modules/events/router.py",
+      "type": "file",
+      "sha": "8177a2cd889ff8fefe730d22ef9be8563355f26b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9536,
+      "is_binary": false
+    },
+    {
+      "name": "schemas.py",
+      "path": "backend/src/modules/events/schemas.py",
+      "type": "file",
+      "sha": "e7d0743f57665558a4f880861532ccd406922338",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1700,
+      "is_binary": false
+    },
+    {
+      "name": "tests",
+      "path": "backend/tests",
+      "type": "directory",
+      "sha": "42bfe4a7284e7ccf083d1f91062f3d7e9088c69d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "conftest.py",
+      "path": "backend/tests/conftest.py",
+      "type": "file",
+      "sha": "4491040662fb545bd2ea5742ab8016cea1df4ea5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1591,
+      "is_binary": false
+    },
+    {
+      "name": "test_events_api.py",
+      "path": "backend/tests/test_events_api.py",
+      "type": "file",
+      "sha": "75631ae691da655ba7f6be2ba92ef84060da0d1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4400,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "c9436876bf1bc5caaee8369eec105a67f39dcf5c",
+      "sha": "6efe792ce5e34953bde8fdc02547b7bc6f88fb27",
       "mode": "040000",
       "children": []
     },
@@ -110,10 +1032,10 @@
       "name": "Architecture.md",
       "path": "docs/Architecture.md",
       "type": "file",
-      "sha": "792c2e849aca1ca28c189de9fddee702a2027917",
+      "sha": "1af4ef56750b672f3fac1d5afc96b2d30670a8bc",
       "mode": "100644",
       "extension": ".md",
-      "size": 11841,
+      "size": 11140,
       "is_binary": false
     },
     {
@@ -154,6 +1076,24 @@
       "mode": "100644",
       "extension": ".md",
       "size": 8769,
+      "is_binary": false
+    },
+    {
+      "name": "release-notes",
+      "path": "docs/release-notes",
+      "type": "directory",
+      "sha": "96f05532d0e2e76e14a5d216e4c103dcd7e6a2df",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "v0.1.0.md",
+      "path": "docs/release-notes/v0.1.0.md",
+      "type": "file",
+      "sha": "fd8b9c381084054357a3526ab6f6339e16594644",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 24261,
       "is_binary": false
     },
     {
@@ -198,49 +1138,59 @@
       "name": "index.html",
       "path": "index.html",
       "type": "file",
-      "sha": "bdf028ec3df92ec9773da4ce197111765fe8aba3",
+      "sha": "2ce0e6bac5bf6de9f2a6105dea86fd82c0cc01d2",
       "mode": "100644",
       "extension": ".html",
-      "size": 739,
+      "size": 791,
       "is_binary": false
     },
     {
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "5fa92ed375040ff8693f98a0588c790bed22f343",
+      "sha": "63eed31a1c58f4aef9a9e2435855b1b006f88f93",
       "mode": "100644",
       "extension": ".yml",
-      "size": 1645,
+      "size": 1702,
       "is_binary": false
     },
     {
       "name": "package-lock.json",
       "path": "package-lock.json",
       "type": "file",
-      "sha": "e89b33df5a954c85cafb854d2bb6053fba28d064",
+      "sha": "a06398f9c807956931aa0b2788eef11fa4e4334f",
       "mode": "100644",
       "extension": ".json",
-      "size": 58818,
+      "size": 62966,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "package.json",
       "type": "file",
-      "sha": "cd52fa1e6442effec1cfcf7c48e3ece87e424893",
+      "sha": "90f1afaf4a943f8838030594fb2bf3d198ef79ce",
       "mode": "100644",
       "extension": ".json",
-      "size": 447,
+      "size": 488,
       "is_binary": false
     },
     {
       "name": "public",
       "path": "public",
       "type": "directory",
-      "sha": "162dadcfc53133993866bcd70fdbdcbcf2c79f0b",
+      "sha": "52142331b7b0740ad3a950f08c767d01749fe450",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "Logo-AgendaUnB1.png",
+      "path": "public/Logo-AgendaUnB1.png",
+      "type": "file",
+      "sha": "33a5a171799cc57affc017ab95072a6c7ef5ae60",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 47316,
+      "is_binary": false
     },
     {
       "name": "Marca-UnB.png",
@@ -250,6 +1200,16 @@
       "mode": "100644",
       "extension": ".png",
       "size": 3942,
+      "is_binary": false
+    },
+    {
+      "name": "banner.png",
+      "path": "public/banner.png",
+      "type": "file",
+      "sha": "70a395a51db851d6b76a9bab8af69041f114d23a",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 296974,
       "is_binary": false
     },
     {
@@ -276,7 +1236,7 @@
       "name": "src",
       "path": "src",
       "type": "directory",
-      "sha": "753688e8edc5dc7782d1ea854efeeef9b0a3846f",
+      "sha": "784a82b576a8c3bf062338e951e194071d89663a",
       "mode": "040000",
       "children": []
     },
@@ -284,45 +1244,119 @@
       "name": "App.jsx",
       "path": "src/App.jsx",
       "type": "file",
-      "sha": "ab48d4e634042379c19baef8c0f96161113b4caa",
+      "sha": "9362e3b87ea7f1aa2b628d97bc639cf2665064ad",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 23551,
+      "size": 26376,
+      "is_binary": false
+    },
+    {
+      "name": "components",
+      "path": "src/components",
+      "type": "directory",
+      "sha": "0ad19a02d2d26f20d514e52b2ded8ced9e034c08",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "NavBar.jsx",
+      "path": "src/components/NavBar.jsx",
+      "type": "file",
+      "sha": "6a2782626d5b19d08460f53ca0d10f6de52ec575",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 3863,
+      "is_binary": false
+    },
+    {
+      "name": "contexts",
+      "path": "src/contexts",
+      "type": "directory",
+      "sha": "f5804571b021d7819960770cd56b507721efc026",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AuthContext.jsx",
+      "path": "src/contexts/AuthContext.jsx",
+      "type": "file",
+      "sha": "ad36b92319e172953bae87365d14ae7e8256221f",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 6701,
+      "is_binary": false
+    },
+    {
+      "name": "lib",
+      "path": "src/lib",
+      "type": "directory",
+      "sha": "b2bea6e4b47a56544409ddb7abf3fb8474d6df94",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "api.js",
+      "path": "src/lib/api.js",
+      "type": "file",
+      "sha": "ffc83e115eb4d9a0a1a15a4d3d1b7c6389fa0579",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3619,
+      "is_binary": false
+    },
+    {
+      "name": "supabase.js",
+      "path": "src/lib/supabase.js",
+      "type": "file",
+      "sha": "a327977788819a52f78d8bdfb16f83586009ca10",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 355,
       "is_binary": false
     },
     {
       "name": "main.jsx",
       "path": "src/main.jsx",
       "type": "file",
-      "sha": "12e6a38e4cffa1353b1488f6b041a2669eed4724",
+      "sha": "dbe13770a2c7f2f8f66e6ceb686901c394e99792",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 441,
+      "size": 668,
       "is_binary": false
     },
     {
       "name": "pages",
       "path": "src/pages",
       "type": "directory",
-      "sha": "1bbb1baec9bca9b79cda88c172103ccb1b055f1a",
+      "sha": "614cc2f46b7f986bc8d4ba7de78a9bf4c6a94fb6",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "PaginaDeEvento.jsx",
+      "path": "src/pages/PaginaDeEvento.jsx",
+      "type": "file",
+      "sha": "82be044f620f9e781e0f9d26ce56099a4a9e2c24",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 11403,
+      "is_binary": false
     },
     {
       "name": "SecondPage.jsx",
       "path": "src/pages/SecondPage.jsx",
       "type": "file",
-      "sha": "0f3c7ca74ccf9ea69c494adae7fcd848dcaa9874",
+      "sha": "31afde8e910c2680e94865478067caf1e09756ec",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 4099,
+      "size": 35974,
       "is_binary": false
     },
     {
       "name": "styles",
       "path": "src/styles",
       "type": "directory",
-      "sha": "e3d898a46254e61eb417e89f60fc9edae4cf72af",
+      "sha": "5339bd4fa4fa150c7d24ba418015ce3f7396aa76",
       "mode": "040000",
       "children": []
     },
@@ -330,10 +1364,106 @@
       "name": "global.css",
       "path": "src/styles/global.css",
       "type": "file",
-      "sha": "92ec834be4f204811503806cd1ae8d43fa154359",
+      "sha": "f0dd2e60eedbca8f18199d64849100314ac173f9",
       "mode": "100644",
       "extension": ".css",
-      "size": 15787,
+      "size": 31645,
+      "is_binary": false
+    },
+    {
+      "name": "supabase",
+      "path": "supabase",
+      "type": "directory",
+      "sha": "8e0e9d3d4b8b92aa278e4c95989c4e2bdb15ae35",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".gitignore",
+      "path": "supabase/.gitignore",
+      "type": "file",
+      "sha": "ad9264f0b14b294627f8e77383875c994af54865",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 72,
+      "is_binary": false
+    },
+    {
+      "name": "config.toml",
+      "path": "supabase/config.toml",
+      "type": "file",
+      "sha": "a96cde69a2992cc528f16d6a498fecb5e114d072",
+      "mode": "100644",
+      "extension": ".toml",
+      "size": 15903,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "supabase/migrations",
+      "type": "directory",
+      "sha": "2c61a13fc919a4d506f4d225b8dd1351887ca574",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "20260922195137_profiles.sql",
+      "path": "supabase/migrations/20260922195137_profiles.sql",
+      "type": "file",
+      "sha": "868ed4d99283342007e6801f58b12c39872a2c19",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 6183,
+      "is_binary": false
+    },
+    {
+      "name": "20260923000000_adiciona_campus_e_categorias.sql",
+      "path": "supabase/migrations/20260923000000_adiciona_campus_e_categorias.sql",
+      "type": "file",
+      "sha": "5062eeba370ae7c37bd1ffb1d449c5d9b0755fff",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 664,
+      "is_binary": false
+    },
+    {
+      "name": "20260923004151_cria_tabela_eventos_pessoais.sql",
+      "path": "supabase/migrations/20260923004151_cria_tabela_eventos_pessoais.sql",
+      "type": "file",
+      "sha": "869b6beb3a3e1fd49fb007f050da56df1bb6c046",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 1247,
+      "is_binary": false
+    },
+    {
+      "name": "20260923172640_adiciona_tabelas_agenda.sql",
+      "path": "supabase/migrations/20260923172640_adiciona_tabelas_agenda.sql",
+      "type": "file",
+      "sha": "7efa61b6fa72e3879d7dd5a675fd25507c11768f",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 3214,
+      "is_binary": false
+    },
+    {
+      "name": "20260929011710_adiciona_avatar_url_em_profiles.sql",
+      "path": "supabase/migrations/20260929011710_adiciona_avatar_url_em_profiles.sql",
+      "type": "file",
+      "sha": "b99de68262de0fab99a2320f697641e9b713d112",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 56,
+      "is_binary": false
+    },
+    {
+      "name": "seed.sql",
+      "path": "supabase/seed.sql",
+      "type": "file",
+      "sha": "e4c809a989b2bc07fbd4d4838074238097f74f2b",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 383,
       "is_binary": false
     },
     {
@@ -348,19 +1478,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-28T12:33:33.897073+00:00",
+  "extracted_at": "2026-09-29T12:07:06.321867+00:00",
   "method": "rest",
-  "total_items": 36,
+  "total_items": 155,
   "repository_metadata": {
     "id": 1338351818,
     "full_name": "unb-mds/2026-2-AgendaUnB",
     "description": "Grupo G8 - MDS 2026/2  -  O Agenda UnB é uma plataforma que reúne e organiza os eventos da UnB em um único lugar.",
     "created_at": "2026-08-18T11:58:00Z",
-    "updated_at": "2026-09-26T21:54:25Z",
+    "updated_at": "2026-09-29T04:00:38Z",
     "language": "JavaScript",
-    "size": 69764,
+    "size": 70405,
     "stars": 3,
     "forks": 0,
-    "open_issues": 6
+    "open_issues": 4
   }
 }

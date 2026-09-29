@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "Fique-de-Olho",
   "branch": "main",
-  "sha": "b9d4f6643ee8710990d5bef7baf839ffb1abae1b",
+  "sha": "23a312f202c23f4da00cbe8025fc8eb040dfd004",
   "tree": [
     {
       "name": ".github",
@@ -594,7 +594,7 @@
       "name": "Back",
       "path": "Back",
       "type": "directory",
-      "sha": "76a5817fc9b61e4d7794c84ecfba8fdaa430360f",
+      "sha": "3253aef3278a7352ebe869beb9200243f7c7c018",
       "mode": "040000",
       "children": []
     },
@@ -602,10 +602,10 @@
       "name": ".env.example",
       "path": "Back/.env.example",
       "type": "file",
-      "sha": "9bdb6d688da03f7bbef0fa8e50e2d242219415e5",
+      "sha": "d9a9c48600995c153ad2c6b39986b79ae4ea1266",
       "mode": "100644",
       "extension": ".example",
-      "size": 411,
+      "size": 434,
       "is_binary": false
     },
     {
@@ -632,17 +632,27 @@
       "name": "README.md",
       "path": "Back/README.md",
       "type": "file",
-      "sha": "2fa80765661d08a50bac5115d5c229a7e8e2f6e4",
+      "sha": "dff87ae6605ad298344e416a6cb1548f6f90bd10",
       "mode": "100644",
       "extension": ".md",
-      "size": 6452,
+      "size": 11336,
+      "is_binary": false
+    },
+    {
+      "name": "alembic.ini",
+      "path": "Back/alembic.ini",
+      "type": "file",
+      "sha": "ab19cd65017aa9b6bf775a6974c877d84d12a9fd",
+      "mode": "100644",
+      "extension": ".ini",
+      "size": 667,
       "is_binary": false
     },
     {
       "name": "app",
       "path": "Back/app",
       "type": "directory",
-      "sha": "7ced66058fe4e62b3ce0a31b91d443ece6f63df9",
+      "sha": "604c0bf4d72a9bce2b1540618b28e23c0a136dd0",
       "mode": "040000",
       "children": []
     },
@@ -660,7 +670,7 @@
       "name": "core",
       "path": "Back/app/core",
       "type": "directory",
-      "sha": "287c053471e2b9be53a5bfa10d668f7b9e3bfac2",
+      "sha": "b003585cfeccea74c58bb2d7acafaaf79745101e",
       "mode": "040000",
       "children": []
     },
@@ -678,20 +688,20 @@
       "name": "config.py",
       "path": "Back/app/core/config.py",
       "type": "file",
-      "sha": "67aeb4aaa77e05284803cfed8268d2ccdb359d63",
+      "sha": "d31373b0e2da6632283ee8ed1455348afd0e991e",
       "mode": "100644",
       "extension": ".py",
-      "size": 575,
+      "size": 584,
       "is_binary": false
     },
     {
       "name": "database.py",
       "path": "Back/app/core/database.py",
       "type": "file",
-      "sha": "30fc15bfda3e5a1630eb81594d1f11ceddbaf025",
+      "sha": "a10a6d004de1a0d80e526f5bd5e4215bc38fc011",
       "mode": "100644",
       "extension": ".py",
-      "size": 788,
+      "size": 3413,
       "is_binary": false
     },
     {
@@ -708,7 +718,7 @@
       "name": "modules",
       "path": "Back/app/modules",
       "type": "directory",
-      "sha": "14988013c701bb8806d6f54537aa8006eeac08be",
+      "sha": "41dea466ff4ff959a2072e25df494542c5d32d2b",
       "mode": "040000",
       "children": []
     },
@@ -726,7 +736,7 @@
       "name": "editais",
       "path": "Back/app/modules/editais",
       "type": "directory",
-      "sha": "5a6049391056e6f0a9f6a8bb8683003cc9d97ced",
+      "sha": "0594a145683452c0ba08d3491b362c9a599fb6ab",
       "mode": "040000",
       "children": []
     },
@@ -744,10 +754,10 @@
       "name": "router.py",
       "path": "Back/app/modules/editais/router.py",
       "type": "file",
-      "sha": "1500071b8cadb33f80ff798bf82de9cb515737e9",
+      "sha": "06e7f8f5c10371c72059ac26c7a63f99c3ed31ee",
       "mode": "100644",
       "extension": ".py",
-      "size": 580,
+      "size": 1756,
       "is_binary": false
     },
     {
@@ -818,10 +828,56 @@
       "name": "docker-compose.yml",
       "path": "Back/docker-compose.yml",
       "type": "file",
-      "sha": "481f9e9bec1b4e4f6ab0924000f4779ac8f23deb",
+      "sha": "a3188cc376e3ce9d3378002a976ddb48bf46ee71",
       "mode": "100644",
       "extension": ".yml",
-      "size": 954,
+      "size": 1042,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "Back/migrations",
+      "type": "directory",
+      "sha": "32cc2b3ef24159f4ac8934be8230213d9a57d45b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "env.py",
+      "path": "Back/migrations/env.py",
+      "type": "file",
+      "sha": "8094c31746a8d0c4fe3b20493593398bdcd72f8a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1302,
+      "is_binary": false
+    },
+    {
+      "name": "script.py.mako",
+      "path": "Back/migrations/script.py.mako",
+      "type": "file",
+      "sha": "800cd8d2f6f0d7bfd44bacfbc4abebf65d0e0d7c",
+      "mode": "100644",
+      "extension": ".mako",
+      "size": 593,
+      "is_binary": false
+    },
+    {
+      "name": "versions",
+      "path": "Back/migrations/versions",
+      "type": "directory",
+      "sha": "23959a751c336d7759cabdc1fd41cbf5dc5b1f51",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "0001_initial_schema.py",
+      "path": "Back/migrations/versions/0001_initial_schema.py",
+      "type": "file",
+      "sha": "737d0443ccf6da29e1cb9af2b181e741db81ad14",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4713,
       "is_binary": false
     },
     {
@@ -838,7 +894,7 @@
       "name": "tests",
       "path": "Back/tests",
       "type": "directory",
-      "sha": "2f0fbc94419a33360e49738e59482b6e98d946ee",
+      "sha": "429dbc15b364258125e06f30dfeab646b789c5e5",
       "mode": "040000",
       "children": []
     },
@@ -863,13 +919,23 @@
       "is_binary": false
     },
     {
+      "name": "test_database_schema.py",
+      "path": "Back/tests/test_database_schema.py",
+      "type": "file",
+      "sha": "6217633a01e0bf12d1d5a6606bd675e1e54e1d26",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2927,
+      "is_binary": false
+    },
+    {
       "name": "test_health.py",
       "path": "Back/tests/test_health.py",
       "type": "file",
-      "sha": "b0cf01d1aa204bd5929f52c1f5160600ea40da88",
+      "sha": "b027461c06a01b24868a711f4f58cc0d738da203",
       "mode": "100644",
       "extension": ".py",
-      "size": 645,
+      "size": 957,
       "is_binary": false
     },
     {
@@ -896,7 +962,7 @@
       "name": "Front",
       "path": "Front",
       "type": "directory",
-      "sha": "83bc3685e76af137e5b15ba222e46983e42cf21a",
+      "sha": "0ccbb53739bf17c01bcb8fc7e78e6a78f3de974c",
       "mode": "040000",
       "children": []
     },
@@ -964,27 +1030,27 @@
       "name": "package-lock.json",
       "path": "Front/package-lock.json",
       "type": "file",
-      "sha": "40560db42447490332947afdd8779129bc91199e",
+      "sha": "cbc04ca2550770653b99c9b456f42305dbb93430",
       "mode": "100644",
       "extension": ".json",
-      "size": 123918,
+      "size": 124638,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "Front/package.json",
       "type": "file",
-      "sha": "ec63e136fc510eb9d8bfa469a2e5f941fcc5110f",
+      "sha": "1fd4b56d16a762d85afcf2b8fdea6033e22246cd",
       "mode": "100644",
       "extension": ".json",
-      "size": 922,
+      "size": 952,
       "is_binary": false
     },
     {
       "name": "src",
       "path": "Front/src",
       "type": "directory",
-      "sha": "04fc630665b8d1e79ade8aed5b5c8cb73c01e9e5",
+      "sha": "0b8186a74b9478fb18baf493c08ffd6e8b00fbcb",
       "mode": "040000",
       "children": []
     },
@@ -1002,7 +1068,7 @@
       "name": "components",
       "path": "Front/src/components",
       "type": "directory",
-      "sha": "d3c5ed25dc15d1c9161343a9d04c0ddeb65f3069",
+      "sha": "c42f40bb64e9143d344e69d9ef1c377ee3f55c08",
       "mode": "040000",
       "children": []
     },
@@ -1010,20 +1076,20 @@
       "name": "EditalCard.tsx",
       "path": "Front/src/components/EditalCard.tsx",
       "type": "file",
-      "sha": "f67cfee4425483601320de9880c9b292d860b8f1",
+      "sha": "09fb44069c6fef6bf68a220e0804a5ec4b69cc1b",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1642,
+      "size": 1586,
       "is_binary": false
     },
     {
       "name": "FavoriteButton.tsx",
       "path": "Front/src/components/FavoriteButton.tsx",
       "type": "file",
-      "sha": "a593d726d11ebd28d9152d385dfc4d832a1d168b",
+      "sha": "8848773fe29111746a0402b22e0c95511f57a2f4",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 937,
+      "size": 601,
       "is_binary": false
     },
     {
@@ -1070,10 +1136,10 @@
       "name": "index.css",
       "path": "Front/src/index.css",
       "type": "file",
-      "sha": "46a8ab3c75fb9bc3357bd53f2d8d93346e0512ad",
+      "sha": "e770467340dc07bf557e8e39c07500f33d295947",
       "mode": "100644",
       "extension": ".css",
-      "size": 9323,
+      "size": 10754,
       "is_binary": false
     },
     {
@@ -1090,7 +1156,7 @@
       "name": "pages",
       "path": "Front/src/pages",
       "type": "directory",
-      "sha": "3f699871b2fc600afdb795fee0af86e593d8ade4",
+      "sha": "acf56052ab4bf04df29595825adc59b1d3415a20",
       "mode": "040000",
       "children": []
     },
@@ -1098,10 +1164,10 @@
       "name": "EditalDetailPage.tsx",
       "path": "Front/src/pages/EditalDetailPage.tsx",
       "type": "file",
-      "sha": "28c94b96c2692b76380147f1745c0323354c1edf",
+      "sha": "c2d3683c7f240e9a02693313ac680270f2f6e3fc",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1038,
+      "size": 2181,
       "is_binary": false
     },
     {
@@ -1136,7 +1202,7 @@
       "name": "services",
       "path": "Front/src/services",
       "type": "directory",
-      "sha": "c78f2ab197ebf3696b54c64f002650da2af37658",
+      "sha": "8d62e5d1ddd3e552d29431bf227cd2165c2f2e2f",
       "mode": "040000",
       "children": []
     },
@@ -1144,10 +1210,10 @@
       "name": "editaisService.ts",
       "path": "Front/src/services/editaisService.ts",
       "type": "file",
-      "sha": "fc480cae3b0c025d3548b56fba73a02f316570f4",
+      "sha": "82fdaabd4babed812b344d078bb852f512e7f64a",
       "mode": "100644",
       "extension": ".ts",
-      "size": 627,
+      "size": 634,
       "is_binary": false
     },
     {
@@ -1164,7 +1230,7 @@
       "name": "utils",
       "path": "Front/src/utils",
       "type": "directory",
-      "sha": "7c5011307d636c56928a7cff35a1614823ff430b",
+      "sha": "dc1fb6d5f8b5eab7bfabe7008031b7d200d99f22",
       "mode": "040000",
       "children": []
     },
@@ -1172,10 +1238,10 @@
       "name": "editalDisplay.ts",
       "path": "Front/src/utils/editalDisplay.ts",
       "type": "file",
-      "sha": "daf76a27c96bebc6c1319a84face2606aaab4f71",
+      "sha": "17a7d2ef8387d80d50f23684cfdb92982356fe72",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2296,
+      "size": 2128,
       "is_binary": false
     },
     {
@@ -1222,17 +1288,17 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "9a4bf90f83208ef34d0930fb61fc2c145d90abcc",
+      "sha": "8af28d26f75125e433f2a990e2e18b77df5b1335",
       "mode": "100644",
       "extension": ".md",
-      "size": 1908,
+      "size": 7016,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "13bd42d49811f562ad8d85ef5d05a3a6090cb2b3",
+      "sha": "ec6c42f02023073a04f1f2685d4e82c46b41f32b",
       "mode": "040000",
       "children": []
     },
@@ -1323,10 +1389,56 @@
       "is_binary": false
     },
     {
+      "name": "RealiseNotes",
+      "path": "docs/RealiseNotes",
+      "type": "directory",
+      "sha": "00a511c71556f8a3ed0dad1edc30899ff70951ea",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "img",
+      "path": "docs/RealiseNotes/img",
+      "type": "directory",
+      "sha": "28e22f1cf704dbcb897d28b54bcbae3e9b8601aa",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "API.png",
+      "path": "docs/RealiseNotes/img/API.png",
+      "type": "file",
+      "sha": "a59de170ce253d47224005562362d2d3e4114cc9",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 83435,
+      "is_binary": false
+    },
+    {
+      "name": "Front.png",
+      "path": "docs/RealiseNotes/img/Front.png",
+      "type": "file",
+      "sha": "e9f1d3de6ac76186d099553243d92ae0c55a2675",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 266188,
+      "is_binary": false
+    },
+    {
+      "name": "release-1.md",
+      "path": "docs/RealiseNotes/release-1.md",
+      "type": "file",
+      "sha": "ea7d76bafb39b8089988c8404bbf47827d878595",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7510,
+      "is_binary": false
+    },
+    {
       "name": "Requisitos",
       "path": "docs/Requisitos",
       "type": "directory",
-      "sha": "c265fd1070b3627ae15d9e7806cfae9d7bc1f13d",
+      "sha": "9041aa1e783ceed1d7a2c076509c54417dda82ca",
       "mode": "040000",
       "children": []
     },
@@ -1364,20 +1476,20 @@
       "name": "StoryMap.md",
       "path": "docs/Requisitos/StoryMap.md",
       "type": "file",
-      "sha": "2598b9368455bf049712a72e7090cab051868943",
+      "sha": "29a6e72febad7ace80387b8b4b9726450e9065cd",
       "mode": "100644",
       "extension": ".md",
-      "size": 7642,
+      "size": 8021,
       "is_binary": false
     },
     {
       "name": "Visão de produto.md",
       "path": "docs/Requisitos/Visão de produto.md",
       "type": "file",
-      "sha": "bd97b0e10955f97791aa595c44dbffba367d2d25",
+      "sha": "934e45112be76035bee03ca2f61aede589970041",
       "mode": "100644",
       "extension": ".md",
-      "size": 3113,
+      "size": 3129,
       "is_binary": false
     },
     {
@@ -1490,7 +1602,7 @@
       "name": "adr",
       "path": "docs/adr",
       "type": "directory",
-      "sha": "1d075c041d487f0a4af28460caa95f9ea0a8e889",
+      "sha": "724b42ed1afe7f0ac5f353513cf3ce2f8e45fb02",
       "mode": "040000",
       "children": []
     },
@@ -1512,6 +1624,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 4984,
+      "is_binary": false
+    },
+    {
+      "name": "0003-database-schema.md",
+      "path": "docs/adr/0003-database-schema.md",
+      "type": "file",
+      "sha": "80667dcf379bfcdf994cc5773f77a002c793e19b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5427,
       "is_binary": false
     },
     {
@@ -1607,20 +1729,40 @@
       "is_binary": false
     },
     {
+      "name": "back.md",
+      "path": "docs/back.md",
+      "type": "file",
+      "sha": "238f560be6a49c78b43b6e5e1ad648082771f640",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1598,
+      "is_binary": false
+    },
+    {
+      "name": "front.md",
+      "path": "docs/front.md",
+      "type": "file",
+      "sha": "e57fab68ce8b50cdabefdbd1c9d99ae36c87f75b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1356,
+      "is_binary": false
+    },
+    {
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "61b0418f05d6f6bbe0703bd903888e176eedb8c4",
+      "sha": "f80be8fe51011f5cf1b070eb57a8da8f9c682971",
       "mode": "100644",
       "extension": ".md",
-      "size": 4265,
+      "size": 4278,
       "is_binary": false
     },
     {
       "name": "stylesheets",
       "path": "docs/stylesheets",
       "type": "directory",
-      "sha": "2e96f0c716cc2fdedfe7352d3801e1b8d384d560",
+      "sha": "5e5f8b708ea7435e75c4473e0a0455642bac04a4",
       "mode": "040000",
       "children": []
     },
@@ -1628,37 +1770,47 @@
       "name": "extra.css",
       "path": "docs/stylesheets/extra.css",
       "type": "file",
-      "sha": "1f622bdd1e2211d1d91d3d4a65377bd1631f0588",
+      "sha": "e880ed935753ffa7c5f5a78cd0b14a48408f5945",
       "mode": "100644",
       "extension": ".css",
-      "size": 5105,
+      "size": 5277,
       "is_binary": false
     },
     {
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "b8d2b6c2993a9d4492aa0390f83fcb89b5f264a1",
+      "sha": "0cb808952cd806c5523e69bdef063778f441d8c7",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2128,
+      "size": 2351,
+      "is_binary": false
+    },
+    {
+      "name": "package-lock.json",
+      "path": "package-lock.json",
+      "type": "file",
+      "sha": "6196873730332b8b67056550a8ce3168320ae317",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 88,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-28T12:33:31.812549+00:00",
+  "extracted_at": "2026-09-29T12:07:04.193333+00:00",
   "method": "rest",
-  "total_items": 175,
+  "total_items": 191,
   "repository_metadata": {
     "id": 1338350642,
     "full_name": "unb-mds/Fique-de-Olho",
     "description": "Grupo G4 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:56:41Z",
-    "updated_at": "2026-09-28T02:17:37Z",
-    "language": "TypeScript",
-    "size": 1648,
+    "updated_at": "2026-09-29T03:48:07Z",
+    "language": "Python",
+    "size": 2029,
     "stars": 1,
     "forks": 0,
-    "open_issues": 17
+    "open_issues": 19
   }
 }

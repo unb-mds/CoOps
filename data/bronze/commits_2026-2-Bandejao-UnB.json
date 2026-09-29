@@ -1,10 +1,1531 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-09-28T12:29:18.040811+00:00",
+      "extracted_at": "2026-09-29T12:03:30.548943+00:00",
       "file_path": "data/bronze/commits_2026-2-Bandejao-UnB.json",
-      "record_count": 8
+      "record_count": 96
     }
+  },
+  {
+    "sha": "c10182ebc4e4a8bf012a841c44d5f375c26c594e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T16:03:27Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T16:03:27Z"
+      },
+      "message": "Ajuste de nomenclatura"
+    },
+    "parents": [
+      "ebf31982df177f8cccef2f253086061e11d4ce1e"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "ebf31982df177f8cccef2f253086061e11d4ce1e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eusojj",
+        "date": "2026-09-28T15:29:56Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T15:29:56Z"
+      },
+      "message": "Merge pull request #46 from unb-mds/develop\n\nDevelop"
+    },
+    "parents": [
+      "bf80dfc64e00e7b01191bc433d3c87d4c7eac150",
+      "b84cff3c8f1c032c376500e741e6a5297fd617d7"
+    ],
+    "additions": 6877,
+    "deletions": 125,
+    "total_changes": 7002,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "b84cff3c8f1c032c376500e741e6a5297fd617d7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna",
+        "date": "2026-09-28T14:42:58Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:42:58Z"
+      },
+      "message": "Merge pull request #45 from unb-mds/feature/frontend-R1\n\nfeat(frontend): implementa telas da Release 1 (MVP) a partir do protótipo"
+    },
+    "parents": [
+      "207fcb02c2c389983ea9dc86b51c229b30b4081a",
+      "63dbd24c86877776c37d92789a261f3280998d6d"
+    ],
+    "additions": 6877,
+    "deletions": 125,
+    "total_changes": 7002,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "bf80dfc64e00e7b01191bc433d3c87d4c7eac150",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T14:31:55Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:31:55Z"
+      },
+      "message": "Merge pull request #42 from unb-mds/develop\n\nrelease: R1 (MVP) — documentação inicial, GitHub Pages e README"
+    },
+    "parents": [
+      "c314f4b56f1ff1305eb307274e4e6f8910425c14",
+      "207fcb02c2c389983ea9dc86b51c229b30b4081a"
+    ],
+    "additions": 12382,
+    "deletions": 23,
+    "total_changes": 12405,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "63dbd24c86877776c37d92789a261f3280998d6d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-28T14:30:52Z",
+        "login": "corinaxc",
+        "id": 284761417,
+        "author_email_hash": "c66c1b74c728414a7a8a835cd180ce79f193afff71341ec0cd283ce33f6768b6"
+      },
+      "committer": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-28T14:30:52Z"
+      },
+      "message": "feat(frontend): implementa telas da Release 1 (MVP) a partir do protótipo\n\nConverte o protótipo do Figma (React + Tailwind) para Vue 3 + Vite com\nHTML, CSS e JavaScript, mantendo telas e navegação do protótipo.\n\n- Telas: boas-vindas, login, cadastro, confirmação de e-mail,\n  recuperação/redefinição de senha, campus, início, cardápio,\n  avaliações, fila (\"em breve\", Release 2) e 404\n- Cardápio por campus/dia/refeição com filtros de dieta e marcadores\n  (RF06-RF09) e avaliações por estrelas e comentário (RF15)\n- Stores Pinia (auth, preferências, cardápio, avaliações) e apiClient\n  único, conforme o C4 nível 3b\n- Backend simulado com as regras do MVP enquanto a API não está pronta\n  (VITE_USE_MOCK=false usa a API real)\n- Manifest e service worker para o PWA (RNF05)\n- Testes de filtros, validações do RF01, fluxos do backend simulado e\n  navegação\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "4fe0b9f6465f3b6f9b50226788516e43c22d3659"
+    ],
+    "additions": 6877,
+    "deletions": 125,
+    "total_changes": 7002,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "207fcb02c2c389983ea9dc86b51c229b30b4081a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T14:30:48Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:30:48Z"
+      },
+      "message": "Merge pull request #41 from unb-mds/docs/readme\n\ndocs: novo README do projeto"
+    },
+    "parents": [
+      "a1cfb8728bf7f377ab274c3f82a5152b42bc81a8",
+      "5b13a33a9521d77c5337f8985b1eefb55d359ca5"
+    ],
+    "additions": 94,
+    "deletions": 23,
+    "total_changes": 117,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5b13a33a9521d77c5337f8985b1eefb55d359ca5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:29:44Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:29:44Z"
+      },
+      "message": "docs: README mostra só como abrir o GitHub Pages\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "b36d49ce1b6ef9bc8ee2e6ddb036a4e6ad006f53"
+    ],
+    "additions": 2,
+    "deletions": 24,
+    "total_changes": 26,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "b36d49ce1b6ef9bc8ee2e6ddb036a4e6ad006f53",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:28:39Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:28:39Z"
+      },
+      "message": "docs: README mostra só como abrir o frontend e o GitHub Pages\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "57bc13cb57439bb0f272727f4c33c777df326cc6"
+    ],
+    "additions": 16,
+    "deletions": 39,
+    "total_changes": 55,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "57bc13cb57439bb0f272727f4c33c777df326cc6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:27:20Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:27:20Z"
+      },
+      "message": "docs: reescreve o README com releases, documentação, GitHub Pages e guia de execução\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "a1cfb8728bf7f377ab274c3f82a5152b42bc81a8"
+    ],
+    "additions": 139,
+    "deletions": 23,
+    "total_changes": 162,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "a1cfb8728bf7f377ab274c3f82a5152b42bc81a8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T14:20:40Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:20:40Z"
+      },
+      "message": "Merge pull request #37 from unb-mds/docs/gestao-projeto\n\ndocs: atas de reunião e reviews de sprint"
+    },
+    "parents": [
+      "1ed295d67236189a2ff8df726b56209aadf7eb3f",
+      "1a41e689f2fc7d40fbfc214119a10a97e7dcdbb6"
+    ],
+    "additions": 12,
+    "deletions": 0,
+    "total_changes": 12,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "1a41e689f2fc7d40fbfc214119a10a97e7dcdbb6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:18:37Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:18:37Z"
+      },
+      "message": "Merge branch 'develop' into docs/gestao-projeto\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "7165cf2bc087da42e53ec0004ea719755e2a7060",
+      "1ed295d67236189a2ff8df726b56209aadf7eb3f"
+    ],
+    "additions": 12589,
+    "deletions": 0,
+    "total_changes": 12589,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "1ed295d67236189a2ff8df726b56209aadf7eb3f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T14:16:57Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:16:57Z"
+      },
+      "message": "Merge pull request #40 from unb-mds/docs/documentacao-inicial\n\nchore: remove o PDF do Documento de Visão"
+    },
+    "parents": [
+      "6678d00eec8bdd21a755bbd4a5a8b4d1d9d2a0b7",
+      "b2c843c45f3ec421da38ba8a65d02055385bfc2d"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "b2c843c45f3ec421da38ba8a65d02055385bfc2d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:12:19Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:12:19Z"
+      },
+      "message": "chore: remove o PDF do Documento de Visão (a versão em Markdown é a oficial)\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "ef30020f5bc69190a83cc90b88dc9360bfca38cb"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "6678d00eec8bdd21a755bbd4a5a8b4d1d9d2a0b7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna",
+        "date": "2026-09-28T14:12:05Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:12:05Z"
+      },
+      "message": "Merge pull request #36 from unb-mds/docs/documentacao-inicial\n\ndocs: documentação inicial (requisitos, arquitetura C4, ADRs) e novo backlog"
+    },
+    "parents": [
+      "5fdb1c7cbec52733696fedf49fdad046b75e2923",
+      "ef30020f5bc69190a83cc90b88dc9360bfca38cb"
+    ],
+    "additions": 5243,
+    "deletions": 5,
+    "total_changes": 5248,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5fdb1c7cbec52733696fedf49fdad046b75e2923",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna",
+        "date": "2026-09-28T14:11:42Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:11:42Z"
+      },
+      "message": "Merge pull request #39 from unb-mds/docs/ajustes-gitpages\n\ndocs: completa o menu do site e fixa a versão da busca do Docsify"
+    },
+    "parents": [
+      "c32f6542b5628d24f94f2bc2aa6fbfef6984c8d1",
+      "9f814ba7e01ba6c854d6d883ab0f6ccbfdaaaea3"
+    ],
+    "additions": 6,
+    "deletions": 2,
+    "total_changes": 8,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "c32f6542b5628d24f94f2bc2aa6fbfef6984c8d1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna",
+        "date": "2026-09-28T14:11:17Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T14:11:17Z"
+      },
+      "message": "Merge pull request #38 from unb-mds/feature/estudos\n\ndocs: estudos semanais da equipe"
+    },
+    "parents": [
+      "4fe0b9f6465f3b6f9b50226788516e43c22d3659",
+      "dbd4195ebba727cef23d53f09d14e1e0b00b08cd"
+    ],
+    "additions": 692,
+    "deletions": 0,
+    "total_changes": 692,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "9f814ba7e01ba6c854d6d883ab0f6ccbfdaaaea3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:01:50Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:01:50Z"
+      },
+      "message": "docs: completa o menu do site e fixa a versão da busca do Docsify\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "4fe0b9f6465f3b6f9b50226788516e43c22d3659"
+    ],
+    "additions": 6,
+    "deletions": 2,
+    "total_changes": 8,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "7165cf2bc087da42e53ec0004ea719755e2a7060",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:01:49Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:01:49Z"
+      },
+      "message": "docs: lista as atas de reunião em PDF\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "e47bb7fbffbec0f0dff7d8fcd93eeadebc5e6ee6"
+    ],
+    "additions": 9,
+    "deletions": 0,
+    "total_changes": 9,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "ef30020f5bc69190a83cc90b88dc9360bfca38cb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:01:48Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Álvaro Bento",
+        "date": "2026-09-28T14:01:48Z"
+      },
+      "message": "docs: reescreve o backlog e adiciona as ADRs 0007 e 0008\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "5a7e784c3a6b31942b5dfa6f6db93cb42f0b6138"
+    ],
+    "additions": 767,
+    "deletions": 176,
+    "total_changes": 943,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "4fe0b9f6465f3b6f9b50226788516e43c22d3659",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T13:24:46Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T13:24:46Z"
+      },
+      "message": "Merge pull request #35 from unb-mds/feature/gitpages-docsify\n\ndocs: adiciona configuração do GitHub Pages com Docsify"
+    },
+    "parents": [
+      "8ed7d314031ff05c42fe6fc59c294b6c2dfcf57d",
+      "4b941731e0d2b21c033a42160deeea0947e23537"
+    ],
+    "additions": 112,
+    "deletions": 0,
+    "total_changes": 112,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "4b941731e0d2b21c033a42160deeea0947e23537",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-28T13:10:40Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-28T13:10:40Z"
+      },
+      "message": "docs: adiciona site Docsify (GitHub Pages) com menu lateral (Sidebar)"
+    },
+    "parents": [
+      "8ed7d314031ff05c42fe6fc59c294b6c2dfcf57d"
+    ],
+    "additions": 112,
+    "deletions": 0,
+    "total_changes": 112,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5a7e784c3a6b31942b5dfa6f6db93cb42f0b6138",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T02:21:39Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T02:21:39Z"
+      },
+      "message": "chore: removendo Copia do nome dos arquivos markdown"
+    },
+    "parents": [
+      "7f76c4c69e8a0426162067acb98027ee0db4d35e"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "7f76c4c69e8a0426162067acb98027ee0db4d35e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T02:02:11Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T02:02:11Z"
+      },
+      "message": "Merge branch 'docs/documentacao-inicial' of https://github.com/unb-mds/G6-2026-2 into docs/documentacao-inicial"
+    },
+    "parents": [
+      "4b35941c2a32068ea7b5d7b1161178131245d724",
+      "c5e597b4da47c9a70b419dcda66b210390592e2a"
+    ],
+    "additions": 364,
+    "deletions": 0,
+    "total_changes": 364,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "4b35941c2a32068ea7b5d7b1161178131245d724",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T01:59:53Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T01:59:53Z"
+      },
+      "message": "docs(arquitetura): nível 4 dos diagramas de cadastro e fila do Backend"
+    },
+    "parents": [
+      "f1afb473e4cd0801ebda93016a0c9c08c2814a94"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "f1afb473e4cd0801ebda93016a0c9c08c2814a94",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T01:48:40Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T01:48:40Z"
+      },
+      "message": "Merge commit '9085863' into docs/documentacao-inicial"
+    },
+    "parents": [
+      "c314f4b56f1ff1305eb307274e4e6f8910425c14",
+      "908586389b9cc162bbf39914129602703bd622fb"
+    ],
+    "additions": 3970,
+    "deletions": 0,
+    "total_changes": 3970,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "c5e597b4da47c9a70b419dcda66b210390592e2a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:44:35Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:44:35Z"
+      },
+      "message": "docs(arquitetura): adiciona ADRs 0003 a 0006"
+    },
+    "parents": [
+      "6be5cd85003f3db776d1c443de441c199711c04f"
+    ],
+    "additions": 364,
+    "deletions": 0,
+    "total_changes": 364,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "908586389b9cc162bbf39914129602703bd622fb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T01:43:57Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-28T01:43:57Z"
+      },
+      "message": "docs: Documentação dos níveis 3 e 4 do Backend e dos diagramas de cadastro e fila"
+    },
+    "parents": [
+      "6be5cd85003f3db776d1c443de441c199711c04f"
+    ],
+    "additions": 552,
+    "deletions": 0,
+    "total_changes": 552,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "6be5cd85003f3db776d1c443de441c199711c04f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:20:36Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:20:36Z"
+      },
+      "message": "docs(arquitetura): move pasta backend para dentro da pasta arquitetura existente"
+    },
+    "parents": [
+      "7cd34d9adabb87999b6af0cecb44d3d2afa8e302"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "7cd34d9adabb87999b6af0cecb44d3d2afa8e302",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:13:36Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:13:36Z"
+      },
+      "message": "docs(arquitetura): adiciona nível 4 dos Épicos de avaliação, exposição e leitor de cardápio"
+    },
+    "parents": [
+      "87463e7d9bb68c227130183468e86fb08eb6c11f"
+    ],
+    "additions": 590,
+    "deletions": 0,
+    "total_changes": 590,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "87463e7d9bb68c227130183468e86fb08eb6c11f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:08:07Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-28T01:08:07Z"
+      },
+      "message": "docs(arquitetura): adiciona nível 3 (componentes) do backend"
+    },
+    "parents": [
+      "e934fe40b543027b1273ee16409a8e4b27b82d31"
+    ],
+    "additions": 193,
+    "deletions": 0,
+    "total_changes": 193,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "e934fe40b543027b1273ee16409a8e4b27b82d31",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-27T22:04:53Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-27T22:04:53Z"
+      },
+      "message": "docs: adiciona niveis 3 e 4 do banco de dados"
+    },
+    "parents": [
+      "72741f8fa004c1ab121d0acbc9acc6a2d19f4c2c"
+    ],
+    "additions": 466,
+    "deletions": 0,
+    "total_changes": 466,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "8ed7d314031ff05c42fe6fc59c294b6c2dfcf57d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-27T21:45:46Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-27T21:45:46Z"
+      },
+      "message": "Merge pull request #34 from unb-mds/feature/issue-17-modelagem-avaliacao-v2\n\nfeat: modelagem inicial de Avaliacao (#17) - reenvio pos-revert"
+    },
+    "parents": [
+      "d696bce7d16fc4550d601d38bd19cc91c5388988",
+      "d1c57ef32e1b93a03e827b93e0d9c77d5ffe5f8b"
+    ],
+    "additions": 70,
+    "deletions": 14,
+    "total_changes": 84,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "72741f8fa004c1ab121d0acbc9acc6a2d19f4c2c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-27T21:08:48Z",
+        "login": "corinaxc",
+        "id": 284761417,
+        "author_email_hash": "c66c1b74c728414a7a8a835cd180ce79f193afff71341ec0cd283ce33f6768b6"
+      },
+      "committer": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-27T21:08:48Z"
+      },
+      "message": "docs: adiciona níveis 3 e 4 do front-end"
+    },
+    "parents": [
+      "54bab4f7ef789fe270385472452d21576703a336"
+    ],
+    "additions": 505,
+    "deletions": 0,
+    "total_changes": 505,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "d1c57ef32e1b93a03e827b93e0d9c77d5ffe5f8b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-27T21:01:18Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-27T21:01:18Z"
+      },
+      "message": "merge: reaplica modelagem de Avaliacao apos revert do PR #27"
+    },
+    "parents": [
+      "d696bce7d16fc4550d601d38bd19cc91c5388988",
+      "5749e060963eee491714a14384f8f3fb50a4e170"
+    ],
+    "additions": 70,
+    "deletions": 14,
+    "total_changes": 84,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "d696bce7d16fc4550d601d38bd19cc91c5388988",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe",
+        "date": "2026-09-27T20:44:52Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-27T20:44:52Z"
+      },
+      "message": "Merge pull request #33 from unb-mds/revert-27-feature/issue-17-modelagem-avaliacao\n\nRevert \"feat: modelagem inicial de Avaliacao (#17)\""
+    },
+    "parents": [
+      "74ac97fd1dfd4f1bc8b6976e39a6d59cb2c30adb",
+      "33abae7cbf31a3ab09a8368dc995142d00dfa34c"
+    ],
+    "additions": 12,
+    "deletions": 66,
+    "total_changes": 78,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "33abae7cbf31a3ab09a8368dc995142d00dfa34c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eusojj",
+        "date": "2026-09-27T20:41:10Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-27T20:41:10Z"
+      },
+      "message": "Revert \"feat: modelagem inicial de Avaliacao (#17)\""
+    },
+    "parents": [
+      "74ac97fd1dfd4f1bc8b6976e39a6d59cb2c30adb"
+    ],
+    "additions": 12,
+    "deletions": 66,
+    "total_changes": 78,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "74ac97fd1dfd4f1bc8b6976e39a6d59cb2c30adb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe",
+        "date": "2026-09-27T20:34:48Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-27T20:34:48Z"
+      },
+      "message": "Merge pull request #27 from unb-mds/feature/issue-17-modelagem-avaliacao\n\nfeat: modelagem inicial de Avaliacao (#17)"
+    },
+    "parents": [
+      "f2e10fed35aa8765e9b3105c6599f94724881706",
+      "3b1ca6f31d623dbf3af1b4c90642360b5973d63c"
+    ],
+    "additions": 66,
+    "deletions": 12,
+    "total_changes": 78,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5749e060963eee491714a14384f8f3fb50a4e170",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-27T20:33:24Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-27T20:33:24Z"
+      },
+      "message": "fix: evita duplicar log do banco ativo no reload do runserver"
+    },
+    "parents": [
+      "3b1ca6f31d623dbf3af1b4c90642360b5973d63c"
+    ],
+    "additions": 5,
+    "deletions": 2,
+    "total_changes": 7,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "dbd4195ebba727cef23d53f09d14e1e0b00b08cd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-27T17:34:20Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-27T17:34:20Z"
+      },
+      "message": "chore: remove arquivo que estava no lugar errado"
+    },
+    "parents": [
+      "b1e93e3bb2092cf233482af56e8f90f0357d2f2b"
+    ],
+    "additions": 0,
+    "deletions": 30,
+    "total_changes": 30,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "e47bb7fbffbec0f0dff7d8fcd93eeadebc5e6ee6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-27T17:28:29Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-27T17:28:29Z"
+      },
+      "message": "chore: reorganiza estrutura de pastas e apaga arquivos/pastas inutilizados"
+    },
+    "parents": [
+      "888e8031640284a9cf536b5029df1afe418dda25"
+    ],
+    "additions": 0,
+    "deletions": 1,
+    "total_changes": 1,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "b1e93e3bb2092cf233482af56e8f90f0357d2f2b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-27T17:06:31Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-27T17:06:31Z"
+      },
+      "message": "docs(estudo): adiciona resumo c4 model semana 03"
+    },
+    "parents": [
+      "1cbfe38dc93872a5f2b70452c1b1ce93a6392ede"
+    ],
+    "additions": 29,
+    "deletions": 0,
+    "total_changes": 29,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "3b1ca6f31d623dbf3af1b4c90642360b5973d63c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eusojj",
+        "date": "2026-09-27T01:07:42Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "eusojj",
+        "date": "2026-09-27T01:07:42Z"
+      },
+      "message": "chore: log do banco de dados ativo no settings.py, sugestao de review"
+    },
+    "parents": [
+      "252baa4527b5019b4f4c7a4a51a160bdf4779712"
+    ],
+    "additions": 2,
+    "deletions": 0,
+    "total_changes": 2,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "54bab4f7ef789fe270385472452d21576703a336",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-26T21:20:26Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-26T21:20:26Z"
+      },
+      "message": "docs: atualiza documento de requisitos e documento de visao"
+    },
+    "parents": [
+      "128ad96f0844aa5b8950f98003338935a8e9f17f"
+    ],
+    "additions": 27,
+    "deletions": 9,
+    "total_changes": 36,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "128ad96f0844aa5b8950f98003338935a8e9f17f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-26T21:10:13Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-26T21:10:13Z"
+      },
+      "message": "docs: adiciona níveis 1 e 2 e move ADRs para docs/arquitetura"
+    },
+    "parents": [
+      "4b4ebcce8a85bcbfcb2bafad96d6f120cc943bc5"
+    ],
+    "additions": 209,
+    "deletions": 0,
+    "total_changes": 209,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "1cbfe38dc93872a5f2b70452c1b1ce93a6392ede",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-26T13:12:38Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-26T13:12:38Z"
+      },
+      "message": "docs: Resumo de arquitetura e C4 Model"
+    },
+    "parents": [
+      "d1affcbdcce86f9f508e647cfb062bf25bb563cc",
+      "9454c080ccd1e9ea55d9201c6469c8120669bf27"
+    ],
+    "additions": 41,
+    "deletions": 0,
+    "total_changes": 41,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "d1affcbdcce86f9f508e647cfb062bf25bb563cc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-26T13:05:59Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-26T13:05:59Z"
+      },
+      "message": "docs: Estudo de arquitetura e C4 Model"
+    },
+    "parents": [
+      "1d1e1ada860eb89ff54e2ec862b9d1da2858fc88"
+    ],
+    "additions": 60,
+    "deletions": 0,
+    "total_changes": 60,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "f2e10fed35aa8765e9b3105c6599f94724881706",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-26T03:08:37Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-26T03:08:37Z"
+      },
+      "message": "Merge pull request #28 from unb-mds/feature/issue-18-home-cardapio\n\nfeat(frontend): adiciona placeholder da home"
+    },
+    "parents": [
+      "9d2789618f3f3e0d6439d26678595bc6c136473a",
+      "58146d4d69063256daf1310d716bce45187f83bc"
+    ],
+    "additions": 6,
+    "deletions": 0,
+    "total_changes": 6,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "252baa4527b5019b4f4c7a4a51a160bdf4779712",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eusojj",
+        "date": "2026-09-26T02:49:57Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "eusojj",
+        "date": "2026-09-26T02:49:57Z"
+      },
+      "message": "fix: adiciona validators de nota 1-5 em Avaliacao, sugestao de review"
+    },
+    "parents": [
+      "8340c2283e421d2b4084c028d885e3d2427444d8"
+    ],
+    "additions": 4,
+    "deletions": 1,
+    "total_changes": 5,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "4b4ebcce8a85bcbfcb2bafad96d6f120cc943bc5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-25T21:45:48Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-25T21:45:48Z"
+      },
+      "message": "docs: adiciona ADRs 0001 (stack de backend) e 0002 (matrícula/apelido extraídos do e-mail)"
+    },
+    "parents": [
+      "e16897d96ca0429fc0386c0d11d641d60c2af810"
+    ],
+    "additions": 60,
+    "deletions": 0,
+    "total_changes": 60,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "e16897d96ca0429fc0386c0d11d641d60c2af810",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-25T21:37:47Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-25T21:37:47Z"
+      },
+      "message": "docs: atualiza documento de visão, requisitos e glossário do Bandejão"
+    },
+    "parents": [
+      "bdf3bfbe2ba54c1e91d9e58d6440e3be12c6d8a5"
+    ],
+    "additions": 46,
+    "deletions": 20,
+    "total_changes": 66,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "58146d4d69063256daf1310d716bce45187f83bc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-24T15:35:53Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-24T15:35:53Z"
+      },
+      "message": "feat(frontend): adiciona placeholder da home"
+    },
+    "parents": [
+      "9d2789618f3f3e0d6439d26678595bc6c136473a"
+    ],
+    "additions": 6,
+    "deletions": 0,
+    "total_changes": 6,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "9d2789618f3f3e0d6439d26678595bc6c136473a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna",
+        "date": "2026-09-24T14:35:33Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-24T14:35:33Z"
+      },
+      "message": "Merge pull request #26 from unb-mds/feat/setup-frontend\n\nfeat(frontend): setup inicial com Vue 3, Vite e rotas básicas"
+    },
+    "parents": [
+      "74ca4922f301b9e7f160dfc76fec4bdf703237ee",
+      "5657a4deab6555182c25ad0c6239adb99b607b0f"
+    ],
+    "additions": 6005,
+    "deletions": 0,
+    "total_changes": 6005,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "8340c2283e421d2b4084c028d885e3d2427444d8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eusojj",
+        "date": "2026-09-24T01:43:53Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "eusojj",
+        "date": "2026-09-24T01:43:53Z"
+      },
+      "message": "feat: modelagem inicial de Avaliacao (#17)Adiciona model Avaliacao com FK para usuarios.Usuario e cardapio.Prato,constraint de uma avaliacao por usuario/prato/dia.Tambem torna o banco configuravel via DB_ENGINE no .env (sqlite/mysql),ja que o settings.py estava fixo em MySQL e bloqueava qualquer comandomanage.py sem o driver mysqlclient instalado."
+    },
+    "parents": [
+      "74ca4922f301b9e7f160dfc76fec4bdf703237ee"
+    ],
+    "additions": 61,
+    "deletions": 12,
+    "total_changes": 73,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5657a4deab6555182c25ad0c6239adb99b607b0f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "corinaxc",
+        "date": "2026-09-24T00:07:23Z",
+        "login": "corinaxc",
+        "id": 284761417,
+        "author_email_hash": "c66c1b74c728414a7a8a835cd180ce79f193afff71341ec0cd283ce33f6768b6"
+      },
+      "committer": {
+        "name": "corinaxc",
+        "date": "2026-09-24T00:07:23Z"
+      },
+      "message": "fix: restaura arquivos do backend para o estado da develop"
+    },
+    "parents": [
+      "53aff86504127846a5be39fe95e825a7ef3a4ac1"
+    ],
+    "additions": 24,
+    "deletions": 2,
+    "total_changes": 26,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "74ca4922f301b9e7f160dfc76fec4bdf703237ee",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-23T19:17:55Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-23T19:17:55Z"
+      },
+      "message": "Merge pull request #24 from unb-mds/feature/esqueleto-autenticacao\n\nFeature/esqueleto autenticacao"
+    },
+    "parents": [
+      "554b47e197d561f29872fca3f47254bbad453a8d",
+      "f68083afab63453a4b76f307599ce34e121c4c6f"
+    ],
+    "additions": 24,
+    "deletions": 2,
+    "total_changes": 26,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "53aff86504127846a5be39fe95e825a7ef3a4ac1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-23T18:41:15Z",
+        "login": "corinaxc",
+        "id": 284761417,
+        "author_email_hash": "c66c1b74c728414a7a8a835cd180ce79f193afff71341ec0cd283ce33f6768b6"
+      },
+      "committer": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-23T18:41:15Z"
+      },
+      "message": "feat(frontend): setup inicial com Vue 3, Vite e rotas básicas"
+    },
+    "parents": [
+      "554b47e197d561f29872fca3f47254bbad453a8d"
+    ],
+    "additions": 6005,
+    "deletions": 0,
+    "total_changes": 6005,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "f68083afab63453a4b76f307599ce34e121c4c6f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-23T01:02:06Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-23T01:02:06Z"
+      },
+      "message": "docs: correção para remover comentários no URL.py"
+    },
+    "parents": [
+      "6e8953e5c4533fe61117071b70e3fb99e4d06880"
+    ],
+    "additions": 0,
+    "deletions": 1,
+    "total_changes": 1,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "6e8953e5c4533fe61117071b70e3fb99e4d06880",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-23T00:24:31Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-23T00:24:31Z"
+      },
+      "message": "feat: esqueleto das rotas de login e cadastro mockadas para a sprint 2"
+    },
+    "parents": [
+      "554b47e197d561f29872fca3f47254bbad453a8d"
+    ],
+    "additions": 25,
+    "deletions": 2,
+    "total_changes": 27,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "9454c080ccd1e9ea55d9201c6469c8120669bf27",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-22T21:30:13Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-22T21:30:13Z"
+      },
+      "message": "feat(estudos): arquitetura de software seguindo o C4 Model e ideia inicial dos níveis 3 e 4 para o backend"
+    },
+    "parents": [
+      "1d1e1ada860eb89ff54e2ec862b9d1da2858fc88"
+    ],
+    "additions": 41,
+    "deletions": 0,
+    "total_changes": 41,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "888e8031640284a9cf536b5029df1afe418dda25",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-22T20:19:23Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-22T20:19:23Z"
+      },
+      "message": "docs: adiciona ATAs das reuniões até a data atual"
+    },
+    "parents": [
+      "5a0693581a9fdb718b56e32f90e46d6666b770cd"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
   },
   {
     "sha": "c314f4b56f1ff1305eb307274e4e6f8910425c14",
@@ -29,6 +1550,107 @@
     "additions": 64,
     "deletions": 1,
     "total_changes": 65,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "bdf3bfbe2ba54c1e91d9e58d6440e3be12c6d8a5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-21T16:31:39Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-21T16:31:39Z"
+      },
+      "message": "docs: move documentos de visão, requisitos e CONTEXT para docs/requisitos"
+    },
+    "parents": [
+      "e778e71a00a3fde33af43fda6d171f411274f0a1"
+    ],
+    "additions": 254,
+    "deletions": 638,
+    "total_changes": 892,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "e778e71a00a3fde33af43fda6d171f411274f0a1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-21T16:23:28Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-21T16:23:28Z"
+      },
+      "message": "docs: adiciona documento de visão, de requisitos e Context do Bandejão"
+    },
+    "parents": [
+      "a381838c0d3e87bb9c309655fd314f0325766ff5"
+    ],
+    "additions": 1008,
+    "deletions": 0,
+    "total_changes": 1008,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "554b47e197d561f29872fca3f47254bbad453a8d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-20T13:13:00Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-20T13:13:00Z"
+      },
+      "message": "Merge pull request #22 from unb-mds/feature/16-setup-sgbd-schema\n\nSetup do MySQL e schema inicial (Usuario/Cardapio/Prato) (#16)"
+    },
+    "parents": [
+      "df2dc86f40916b09482975be37a0e97414c9ee3e",
+      "f5b46179f802e367578e1a46a5573966a995b3e7"
+    ],
+    "additions": 223,
+    "deletions": 2,
+    "total_changes": 225,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "f5b46179f802e367578e1a46a5573966a995b3e7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-18T04:03:00Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-18T04:03:00Z"
+      },
+      "message": "wip: setup do MySQL e schema inicial (#16)"
+    },
+    "parents": [
+      "df2dc86f40916b09482975be37a0e97414c9ee3e"
+    ],
+    "additions": 223,
+    "deletions": 2,
+    "total_changes": 225,
     "repo_name": "2026-2-Bandejao-UnB"
   },
   {
@@ -57,6 +1679,56 @@
     "repo_name": "2026-2-Bandejao-UnB"
   },
   {
+    "sha": "5a0693581a9fdb718b56e32f90e46d6666b770cd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-16T15:20:39Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-16T15:20:39Z"
+      },
+      "message": "docs: Adiciona Story map"
+    },
+    "parents": [
+      "322a06b8dc3cbd876fe71fbe74a3c5e9f28cdcb2"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "322a06b8dc3cbd876fe71fbe74a3c5e9f28cdcb2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-16T12:26:13Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-16T12:26:13Z"
+      },
+      "message": "docs(double diamond): Adiciona Template Figma Double Diamond da equipe"
+    },
+    "parents": [
+      "aba0404333418b919b30137071256e3071bb397d"
+    ],
+    "additions": 1,
+    "deletions": 0,
+    "total_changes": 1,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
     "sha": "fdec79a9fce53cc88eeac1eae328f729bedec739",
     "html_url": null,
     "commit": {
@@ -82,6 +1754,82 @@
     "repo_name": "2026-2-Bandejao-UnB"
   },
   {
+    "sha": "aba0404333418b919b30137071256e3071bb397d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-15T21:04:33Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-15T21:04:33Z"
+      },
+      "message": "Cria estrutura de pastas para atas, reviews e diários de atividades"
+    },
+    "parents": [
+      "c5daaf1ee97a3aba7dc55fd8ad76c91be5992d31"
+    ],
+    "additions": 3,
+    "deletions": 0,
+    "total_changes": 3,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "df2dc86f40916b09482975be37a0e97414c9ee3e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eusojj",
+        "date": "2026-09-14T01:55:25Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-14T01:55:25Z"
+      },
+      "message": "Merge pull request #19 from unb-mds/feature/setup-backend\n\nSetup inicial do backend: Django DRF e endpoint /status"
+    },
+    "parents": [
+      "a6730b05bea388f4e6365a7cb212753801df7863",
+      "2945bc0730704cbe7a845916dc2a2e74b33374c4"
+    ],
+    "additions": 233,
+    "deletions": 0,
+    "total_changes": 233,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "2945bc0730704cbe7a845916dc2a2e74b33374c4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-13T18:55:49Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-13T18:55:49Z"
+      },
+      "message": "feat: setup inicial do backend com Django DRF e endpoint/status"
+    },
+    "parents": [
+      "a6730b05bea388f4e6365a7cb212753801df7863"
+    ],
+    "additions": 233,
+    "deletions": 0,
+    "total_changes": 233,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
     "sha": "c5daaf1ee97a3aba7dc55fd8ad76c91be5992d31",
     "html_url": null,
     "commit": {
@@ -104,6 +1852,432 @@
     "additions": 5,
     "deletions": 5,
     "total_changes": 10,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "a381838c0d3e87bb9c309655fd314f0325766ff5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-12T01:33:24Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-12T01:33:24Z"
+      },
+      "message": "docs(requisitos): adiciona documento de requisitos funcionais e não funcionais e backlog do produto"
+    },
+    "parents": [
+      "02725435ff05a13f8d540bdd885162330e890999"
+    ],
+    "additions": 671,
+    "deletions": 0,
+    "total_changes": 671,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "1d1e1ada860eb89ff54e2ec862b9d1da2858fc88",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-11T20:12:21Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-11T20:12:21Z"
+      },
+      "message": "docs(estudos): Resumo de pdf plumber e cálculo de média ponderada"
+    },
+    "parents": [
+      "af5bb804d5c83d6bdfe96c3619909d6b9ea7588d"
+    ],
+    "additions": 76,
+    "deletions": 0,
+    "total_changes": 76,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "02725435ff05a13f8d540bdd885162330e890999",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-09T00:44:40Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-09T00:44:40Z"
+      },
+      "message": "chore: move documento de visão para subpasta requisitos"
+    },
+    "parents": [
+      "8b82a52b9f88a966cc5504ccb8d3778b23d129f7"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "8b82a52b9f88a966cc5504ccb8d3778b23d129f7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-09T00:33:44Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-09-09T00:33:44Z"
+      },
+      "message": "docs: adiciona documento de visão do produto"
+    },
+    "parents": [
+      "ca6076ee889efe8aff0a7edf80b9eaf85acd3072"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "af5bb804d5c83d6bdfe96c3619909d6b9ea7588d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-08T23:13:18Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-08T23:13:18Z"
+      },
+      "message": "Organiza arquivo Django na pasta docs/estudos"
+    },
+    "parents": [
+      "44d82146d549164da9a16837d20c2967914c6409"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "44d82146d549164da9a16837d20c2967914c6409",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Poviovsky",
+        "date": "2026-09-08T23:03:48Z",
+        "login": "Poviovsky",
+        "id": 290768263,
+        "author_email_hash": "24b597108bbd937952347b4306086604b3a2050d7df087beea472defacfbd477"
+      },
+      "committer": {
+        "name": "Poviovsky",
+        "date": "2026-09-08T23:03:48Z"
+      },
+      "message": "Adiciona resumo de Django - Semana 00"
+    },
+    "parents": [
+      "35ba6c4ca29b5b9654639dff3f1bd8d33fceb590"
+    ],
+    "additions": 25,
+    "deletions": 0,
+    "total_changes": 25,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "35ba6c4ca29b5b9654639dff3f1bd8d33fceb590",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-08T13:06:30Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-08T13:06:30Z"
+      },
+      "message": "feat(estudos): Adiciona resumo mysql da sprint 1"
+    },
+    "parents": [
+      "5cc7882a8f707240045ef07070fd2f7059a731a2"
+    ],
+    "additions": 50,
+    "deletions": 0,
+    "total_changes": 50,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5cc7882a8f707240045ef07070fd2f7059a731a2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-07T02:53:17Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-07T02:53:17Z"
+      },
+      "message": "docs: adiciona estudo sobre API REST, Django e DRF (semana 01)"
+    },
+    "parents": [
+      "6151274f70e343ea7136a6de09df352551cedb86"
+    ],
+    "additions": 148,
+    "deletions": 0,
+    "total_changes": 148,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "6151274f70e343ea7136a6de09df352551cedb86",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-07T00:04:01Z",
+        "login": "corinaxc",
+        "id": 284761417,
+        "author_email_hash": "c66c1b74c728414a7a8a835cd180ce79f193afff71341ec0cd283ce33f6768b6"
+      },
+      "committer": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-07T00:04:01Z"
+      },
+      "message": "feat(estudos): adiciona resumo HTML da sprint 1"
+    },
+    "parents": [
+      "4d55c05dc81c8c4ddcf924b708c1cbde702712d4"
+    ],
+    "additions": 51,
+    "deletions": 0,
+    "total_changes": 51,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "4d55c05dc81c8c4ddcf924b708c1cbde702712d4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-05T22:05:05Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-05T22:05:05Z"
+      },
+      "message": "Merge branch 'feature/estudos' of https://github.com/unb-mds/G6-2026-2 into feature/estudos"
+    },
+    "parents": [
+      "002e29b9883bc7b7cb5b987304c88c74a6447671",
+      "6ba355ac3ee8e0a2dfd070cc1a0712b0671b4a51"
+    ],
+    "additions": 146,
+    "deletions": 0,
+    "total_changes": 146,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "002e29b9883bc7b7cb5b987304c88c74a6447671",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-05T22:04:13Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-05T22:04:13Z"
+      },
+      "message": "feat(estudos): adiciona resumo sqlite da sprint 1"
+    },
+    "parents": [
+      "c7f856e28b4583cfbf4647c035b7e3f2452a3c89"
+    ],
+    "additions": 37,
+    "deletions": 0,
+    "total_changes": 37,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "6ba355ac3ee8e0a2dfd070cc1a0712b0671b4a51",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-01T04:56:37Z",
+        "login": "LuisFelipe311",
+        "id": 230936353,
+        "author_email_hash": "148673dc0588beef4ccad3525125347e03c448440112dd7625530b3890bab3e5"
+      },
+      "committer": {
+        "name": "Luís Felipe Albuquerque Fernandes",
+        "date": "2026-09-01T04:56:37Z"
+      },
+      "message": "feat(estudos): adicionando resumo mysql da sprint 0"
+    },
+    "parents": [
+      "5c3f0e9c93801bc81e0e86556ad2811f919f4638"
+    ],
+    "additions": 61,
+    "deletions": 0,
+    "total_changes": 61,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "5c3f0e9c93801bc81e0e86556ad2811f919f4638",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-01T04:09:18Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-01T04:09:18Z"
+      },
+      "message": "fix: move estudo docker para docs/estudos"
+    },
+    "parents": [
+      "2a9d7e1545dc8cdce3f56817e2d7cff2cad7d0ef"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "2a9d7e1545dc8cdce3f56817e2d7cff2cad7d0ef",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-01T03:58:00Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-09-01T03:58:00Z"
+      },
+      "message": "adiciona estudo docker sprint 0"
+    },
+    "parents": [
+      "92f73c3430c905a196674855d9a52957a0671a4e"
+    ],
+    "additions": 43,
+    "deletions": 0,
+    "total_changes": 43,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "92f73c3430c905a196674855d9a52957a0671a4e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-01T02:11:04Z",
+        "login": "corinaxc",
+        "id": 284761417,
+        "author_email_hash": "c66c1b74c728414a7a8a835cd180ce79f193afff71341ec0cd283ce33f6768b6"
+      },
+      "committer": {
+        "name": "Corina Xavier Carneiro",
+        "date": "2026-09-01T02:11:04Z"
+      },
+      "message": "feat(estudos): adiciona resumo git e github da sprint 0"
+    },
+    "parents": [
+      "c7f856e28b4583cfbf4647c035b7e3f2452a3c89"
+    ],
+    "additions": 42,
+    "deletions": 0,
+    "total_changes": 42,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "c7f856e28b4583cfbf4647c035b7e3f2452a3c89",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-01T01:47:35Z",
+        "login": "eusojj",
+        "id": 227901692,
+        "author_email_hash": "e4f01af5340d6948ab78e235165956a254595b129e8e34bcb5c84571ce9f9480"
+      },
+      "committer": {
+        "name": "Josué Xavier Carneiro",
+        "date": "2026-09-01T01:47:35Z"
+      },
+      "message": "feat(estudos): adiciona resumo sqlite da sprint 0"
+    },
+    "parents": [
+      "d55b02561e9f305806a7aa549305ca4879307c8b"
+    ],
+    "additions": 34,
+    "deletions": 0,
+    "total_changes": 34,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "d55b02561e9f305806a7aa549305ca4879307c8b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-08-31T23:57:03Z",
+        "login": "alanafeitosa-ui",
+        "id": 269747096,
+        "author_email_hash": "92ab9b59991daa26f524faa804ad65878c7cdd1b65c70d5a033da38304e5f0f4"
+      },
+      "committer": {
+        "name": "Alana Cristyna Feitosa Dias",
+        "date": "2026-08-31T23:57:03Z"
+      },
+      "message": "feat(estudos): adiciona resumo gitflow da sprint 0"
+    },
+    "parents": [
+      "a6730b05bea388f4e6365a7cb212753801df7863"
+    ],
+    "additions": 25,
+    "deletions": 0,
+    "total_changes": 25,
     "repo_name": "2026-2-Bandejao-UnB"
   },
   {
@@ -179,6 +2353,56 @@
     "additions": 223,
     "deletions": 0,
     "total_changes": 223,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "ca6076ee889efe8aff0a7edf80b9eaf85acd3072",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-08-27T18:44:42Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-08-27T18:44:42Z"
+      },
+      "message": "docs: atualiza CONTEXTmld com nova versao com mais funcionalidades"
+    },
+    "parents": [
+      "35cfccc15257852b1c7c2e6b5cf1534b55d250cf"
+    ],
+    "additions": 26,
+    "deletions": 5,
+    "total_changes": 31,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "sha": "35cfccc15257852b1c7c2e6b5cf1534b55d250cf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Alvaro Bento",
+        "date": "2026-08-26T02:34:37Z",
+        "login": "AlvaroBento12",
+        "id": 209044765,
+        "author_email_hash": "3b66d8887e38a8caac833b0fb965f76aa52dbb604c5d4581fd7558e119e373b7"
+      },
+      "committer": {
+        "name": "Alvaro Bento",
+        "date": "2026-08-26T02:34:37Z"
+      },
+      "message": "docs: adiciona CONTEXT.md com a documentacao inicial do projeto"
+    },
+    "parents": [
+      "767547baccccf81131a28d732db7fcb16201c478"
+    ],
+    "additions": 35,
+    "deletions": 0,
+    "total_changes": 35,
     "repo_name": "2026-2-Bandejao-UnB"
   },
   {

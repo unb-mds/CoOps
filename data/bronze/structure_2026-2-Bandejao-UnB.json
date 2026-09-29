@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Bandejao-UnB",
   "branch": "main",
-  "sha": "c314f4b56f1ff1305eb307274e4e6f8910425c14",
+  "sha": "c10182ebc4e4a8bf012a841c44d5f375c26c594e",
   "tree": [
     {
       "name": ".github",
@@ -71,13 +71,33 @@
       "is_binary": false
     },
     {
+      "name": ".gitignore",
+      "path": ".gitignore",
+      "type": "file",
+      "sha": "194f4d4b409048e7dfc2f50f66844d1c8b61e44b",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 85,
+      "is_binary": false
+    },
+    {
+      "name": "CONTEXT.md",
+      "path": "CONTEXT.md",
+      "type": "file",
+      "sha": "9657b956b77b2c6e571b2db846e1cfbf1a13c1a4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5316,
+      "is_binary": false
+    },
+    {
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "c278808c5758b93693627d795cb1bf6b60396284",
+      "sha": "07babbaf4924d0b25b78da0c6bb0dfed46affedd",
       "mode": "100644",
       "extension": ".md",
-      "size": 4058,
+      "size": 9857,
       "is_binary": false
     },
     {
@@ -171,18 +191,910 @@
       "is_binary": false
     },
     {
+      "name": "backend",
+      "path": "backend",
+      "type": "directory",
+      "sha": "b55b9bb15095bf1c06b23ed07dcf01c5d493dc0d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "apps",
+      "path": "backend/apps",
+      "type": "directory",
+      "sha": "aa1239a42f3fafbbc71506044ed974f98fb7578c",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacoes",
+      "path": "backend/apps/avaliacoes",
+      "type": "directory",
+      "sha": "453615bb68b0a48b855bb3c61d9e9d786462378b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/avaliacoes/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "admin.py",
+      "path": "backend/apps/avaliacoes/admin.py",
+      "type": "file",
+      "sha": "8c38f3f3dad51e4585f3984282c2a4bec5349c1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "apps.py",
+      "path": "backend/apps/avaliacoes/apps.py",
+      "type": "file",
+      "sha": "da7083c23821d52e00459f18ed0e1ee8587180b6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 100,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "backend/apps/avaliacoes/migrations",
+      "type": "directory",
+      "sha": "9d1dcfdaf1a6857c5f83dc27019c7600e1ffaff8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/avaliacoes/migrations/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "backend/apps/avaliacoes/models.py",
+      "type": "file",
+      "sha": "46c5a48596f00a8b42f9b235ee98e131ff6d89b0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 875,
+      "is_binary": false
+    },
+    {
+      "name": "tests.py",
+      "path": "backend/apps/avaliacoes/tests.py",
+      "type": "file",
+      "sha": "7ce503c2dd97ba78597f6ff6e4393132753573f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 60,
+      "is_binary": false
+    },
+    {
+      "name": "views.py",
+      "path": "backend/apps/avaliacoes/views.py",
+      "type": "file",
+      "sha": "91ea44a218fbd2f408430959283f0419c921093e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio",
+      "path": "backend/apps/cardapio",
+      "type": "directory",
+      "sha": "e28c60d254620bc1f6a45f45ac48806bd40d4772",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/cardapio/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "admin.py",
+      "path": "backend/apps/cardapio/admin.py",
+      "type": "file",
+      "sha": "8c38f3f3dad51e4585f3984282c2a4bec5349c1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "apps.py",
+      "path": "backend/apps/cardapio/apps.py",
+      "type": "file",
+      "sha": "5d26310d0baee1af2c2bc0b20322667ed79db930",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 94,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "backend/apps/cardapio/migrations",
+      "type": "directory",
+      "sha": "be626be47f19a61f78c7969b0d0cae037ce0853e",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "0001_initial.py",
+      "path": "backend/apps/cardapio/migrations/0001_initial.py",
+      "type": "file",
+      "sha": "df6cd175c45531069654e1d22f11c80a4669fc7c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1716,
+      "is_binary": false
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/cardapio/migrations/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "backend/apps/cardapio/models.py",
+      "type": "file",
+      "sha": "c2328a65051880ea652e02365d5fc8786cd85345",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1047,
+      "is_binary": false
+    },
+    {
+      "name": "tests.py",
+      "path": "backend/apps/cardapio/tests.py",
+      "type": "file",
+      "sha": "7ce503c2dd97ba78597f6ff6e4393132753573f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 60,
+      "is_binary": false
+    },
+    {
+      "name": "views.py",
+      "path": "backend/apps/cardapio/views.py",
+      "type": "file",
+      "sha": "91ea44a218fbd2f408430959283f0419c921093e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "core",
+      "path": "backend/apps/core",
+      "type": "directory",
+      "sha": "9c72b198d034111f7c632d42117eae8876472f68",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/core/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "admin.py",
+      "path": "backend/apps/core/admin.py",
+      "type": "file",
+      "sha": "8c38f3f3dad51e4585f3984282c2a4bec5349c1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "apps.py",
+      "path": "backend/apps/core/apps.py",
+      "type": "file",
+      "sha": "38f2cdff80e42e55410addfc96a0191a304da647",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 86,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "backend/apps/core/migrations",
+      "type": "directory",
+      "sha": "827f8f93ae22f06e9bd807c1f7b65f6788b92f52",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "0001_initial.py",
+      "path": "backend/apps/core/migrations/0001_initial.py",
+      "type": "file",
+      "sha": "3078497cf4f402d00da55096800e722597bc8bfd",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1135,
+      "is_binary": false
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/core/migrations/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "backend/apps/core/models.py",
+      "type": "file",
+      "sha": "6acd0ee91b577b6d6409acef30dda8ed3d1fdf18",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 549,
+      "is_binary": false
+    },
+    {
+      "name": "tests.py",
+      "path": "backend/apps/core/tests.py",
+      "type": "file",
+      "sha": "7ce503c2dd97ba78597f6ff6e4393132753573f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 60,
+      "is_binary": false
+    },
+    {
+      "name": "views.py",
+      "path": "backend/apps/core/views.py",
+      "type": "file",
+      "sha": "91ea44a218fbd2f408430959283f0419c921093e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "status",
+      "path": "backend/apps/status",
+      "type": "directory",
+      "sha": "29cd5c92aca37f18fc0035f43354af670cf00edd",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/status/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "admin.py",
+      "path": "backend/apps/status/admin.py",
+      "type": "file",
+      "sha": "8c38f3f3dad51e4585f3984282c2a4bec5349c1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "apps.py",
+      "path": "backend/apps/status/apps.py",
+      "type": "file",
+      "sha": "b4e6b370f5a8d8d3c83178468c8fe329c6dcd60f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 149,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "backend/apps/status/migrations",
+      "type": "directory",
+      "sha": "9d1dcfdaf1a6857c5f83dc27019c7600e1ffaff8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/status/migrations/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "backend/apps/status/models.py",
+      "type": "file",
+      "sha": "71a836239075aa6e6e4ecb700e9c42c95c022d91",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 57,
+      "is_binary": false
+    },
+    {
+      "name": "tests.py",
+      "path": "backend/apps/status/tests.py",
+      "type": "file",
+      "sha": "7ce503c2dd97ba78597f6ff6e4393132753573f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 60,
+      "is_binary": false
+    },
+    {
+      "name": "urls.py",
+      "path": "backend/apps/status/urls.py",
+      "type": "file",
+      "sha": "931c8a373cd6a308f299ed7237edef2858a61eb3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 129,
+      "is_binary": false
+    },
+    {
+      "name": "views.py",
+      "path": "backend/apps/status/views.py",
+      "type": "file",
+      "sha": "db4b09ae90a28e616e300729c956cedf0b9c44f1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 177,
+      "is_binary": false
+    },
+    {
+      "name": "usuarios",
+      "path": "backend/apps/usuarios",
+      "type": "directory",
+      "sha": "9bc297f28448c4fa86a6b2ed5804caab4acf9558",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/usuarios/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "admin.py",
+      "path": "backend/apps/usuarios/admin.py",
+      "type": "file",
+      "sha": "8c38f3f3dad51e4585f3984282c2a4bec5349c1e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 63,
+      "is_binary": false
+    },
+    {
+      "name": "apps.py",
+      "path": "backend/apps/usuarios/apps.py",
+      "type": "file",
+      "sha": "206d1d87916b04123542a30ab11d160ea62d335a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 94,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "backend/apps/usuarios/migrations",
+      "type": "directory",
+      "sha": "7850d20e5726c9e8e18c1a9d3f8108508e15a6b0",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "0001_initial.py",
+      "path": "backend/apps/usuarios/migrations/0001_initial.py",
+      "type": "file",
+      "sha": "ae3412a56b6b1760d7514dab46b41b40cb17c888",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 644,
+      "is_binary": false
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/apps/usuarios/migrations/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "models.py",
+      "path": "backend/apps/usuarios/models.py",
+      "type": "file",
+      "sha": "3447c21c08be01158b555ecfa0d5127e9df67fe2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 358,
+      "is_binary": false
+    },
+    {
+      "name": "tests.py",
+      "path": "backend/apps/usuarios/tests.py",
+      "type": "file",
+      "sha": "7ce503c2dd97ba78597f6ff6e4393132753573f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 60,
+      "is_binary": false
+    },
+    {
+      "name": "views.py",
+      "path": "backend/apps/usuarios/views.py",
+      "type": "file",
+      "sha": "5f9df0c343f7fdf9f32b19a5395bf5e389684bdc",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 645,
+      "is_binary": false
+    },
+    {
+      "name": "config",
+      "path": "backend/config",
+      "type": "directory",
+      "sha": "6f7e6199fc28825d2b47ba5bc1f260fd25b80b30",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/config/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "asgi.py",
+      "path": "backend/config/asgi.py",
+      "type": "file",
+      "sha": "33a47a1f93a5e033824f74fa17d80bd3fa4e5e1b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 389,
+      "is_binary": false
+    },
+    {
+      "name": "settings.py",
+      "path": "backend/config/settings.py",
+      "type": "file",
+      "sha": "2269899cf3c69270727418dedb5c314bc6dd8460",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4164,
+      "is_binary": false
+    },
+    {
+      "name": "urls.py",
+      "path": "backend/config/urls.py",
+      "type": "file",
+      "sha": "450c12a3ef95a2d81d357c5f2d07949c99d89f58",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 377,
+      "is_binary": false
+    },
+    {
+      "name": "wsgi.py",
+      "path": "backend/config/wsgi.py",
+      "type": "file",
+      "sha": "1b4cc019e517751eb7eb2b72bd5518084b96524e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 389,
+      "is_binary": false
+    },
+    {
+      "name": "manage.py",
+      "path": "backend/manage.py",
+      "type": "file",
+      "sha": "8e7ac79b9576cb38f460147ec7f3ade64a100c62",
+      "mode": "100755",
+      "extension": ".py",
+      "size": 662,
+      "is_binary": false
+    },
+    {
+      "name": "requirements.txt",
+      "path": "backend/requirements.txt",
+      "type": "file",
+      "sha": "89ca738daeee0df616e6543548a31b9f47d0fced",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 95,
+      "is_binary": false
+    },
+    {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "e44266fd9d2f77f07ffc760310c7328f2dad37db",
+      "sha": "3367a2cf850dc260f4eb8b8bcf02ccc52bd127ac",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": ".nojekyll",
+      "path": "docs/.nojekyll",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".nojekyll",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "docs/README.md",
+      "type": "file",
+      "sha": "c6aae1a28ca878b39df19c1cfb044b4ce2e4e6b9",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1431,
+      "is_binary": false
+    },
+    {
+      "name": "_sidebar.md",
+      "path": "docs/_sidebar.md",
+      "type": "file",
+      "sha": "aff9d653a48e1202b2d53edcf7f028d1be76af61",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2961,
+      "is_binary": false
+    },
+    {
+      "name": "arquitetura",
+      "path": "docs/arquitetura",
+      "type": "directory",
+      "sha": "c8c90662117ca3fb918f05e1c290bd16d3b89d1d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "adr",
+      "path": "docs/arquitetura/adr",
+      "type": "directory",
+      "sha": "8e9e840dffafbfc642b3e6eb89d6d90ac5a80a4a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "0001-escolha-stack-backend.md",
+      "path": "docs/arquitetura/adr/0001-escolha-stack-backend.md",
+      "type": "file",
+      "sha": "d547141fa16e84e8b7d8c921cc4d68b21e264231",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3442,
+      "is_binary": false
+    },
+    {
+      "name": "0002-matricula-apelido-extraidos-do-email.md",
+      "path": "docs/arquitetura/adr/0002-matricula-apelido-extraidos-do-email.md",
+      "type": "file",
+      "sha": "a08c4f60b90564817db58a6e0bd927e13e877022",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3033,
+      "is_binary": false
+    },
+    {
+      "name": "0003-leitor-pdf-como-modulo-do-backend.md",
+      "path": "docs/arquitetura/adr/0003-leitor-pdf-como-modulo-do-backend.md",
+      "type": "file",
+      "sha": "2159cb94d4799f5b3859bd3164afd48aba3f2686",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4664,
+      "is_binary": false
+    },
+    {
+      "name": "0004-acesso-direto-da-equipe-ao-banco.md",
+      "path": "docs/arquitetura/adr/0004-acesso-direto-da-equipe-ao-banco.md",
+      "type": "file",
+      "sha": "f876678aa8e4555af08ea0e1ea13b59e1c1885c6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4757,
+      "is_binary": false
+    },
+    {
+      "name": "0005-filtros-de-marcador-e-dieta-no-backend.md",
+      "path": "docs/arquitetura/adr/0005-filtros-de-marcador-e-dieta-no-backend.md",
+      "type": "file",
+      "sha": "9fd64d124be93ebf4b03c25c1ceb47be50c96ed3",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4124,
+      "is_binary": false
+    },
+    {
+      "name": "0006-alerta-de-falha-do-leitor-por-email.md",
+      "path": "docs/arquitetura/adr/0006-alerta-de-falha-do-leitor-por-email.md",
+      "type": "file",
+      "sha": "0d269e5e2a206be86a0899cf786782d0ab584f9e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4752,
+      "is_binary": false
+    },
+    {
+      "name": "0007-sessao-autenticada-por-cookie-httponly.md",
+      "path": "docs/arquitetura/adr/0007-sessao-autenticada-por-cookie-httponly.md",
+      "type": "file",
+      "sha": "a193bd648c52245d5852ef18545a32873953c9e9",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4719,
+      "is_binary": false
+    },
+    {
+      "name": "0008-matricula-siape-em-texto-claro.md",
+      "path": "docs/arquitetura/adr/0008-matricula-siape-em-texto-claro.md",
+      "type": "file",
+      "sha": "da9d70a8137a2ecf4cefe5f951a8d8a923ff36bb",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4427,
+      "is_binary": false
+    },
+    {
+      "name": "backend",
+      "path": "docs/arquitetura/backend",
+      "type": "directory",
+      "sha": "1bbbb9fcae24221c958125aab6d5665b1715b183",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "c4-nivel-3-backend.md",
+      "path": "docs/arquitetura/backend/c4-nivel-3-backend.md",
+      "type": "file",
+      "sha": "f93b9a65de470c7c14a122f8fdebad66aedaf14a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8160,
+      "is_binary": false
+    },
+    {
+      "name": "c4-nivel-4-avaliacao.md",
+      "path": "docs/arquitetura/backend/c4-nivel-4-avaliacao.md",
+      "type": "file",
+      "sha": "1dfd28c47e1bd75425d80761ef67541d749e06aa",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7576,
+      "is_binary": false
+    },
+    {
+      "name": "c4-nivel-4-cadastro-autenticacao.md",
+      "path": "docs/arquitetura/backend/c4-nivel-4-cadastro-autenticacao.md",
+      "type": "file",
+      "sha": "6a1d916788b74375730b2174e079028a51416d06",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10821,
+      "is_binary": false
+    },
+    {
+      "name": "c4-nivel-4-exposicao-cardapio.md",
+      "path": "docs/arquitetura/backend/c4-nivel-4-exposicao-cardapio.md",
+      "type": "file",
+      "sha": "451b1bf6d0f51497e509a3949d04508a1b189f69",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8185,
+      "is_binary": false
+    },
+    {
+      "name": "c4-nivel-4-fila.md",
+      "path": "docs/arquitetura/backend/c4-nivel-4-fila.md",
+      "type": "file",
+      "sha": "0c02f11366ebd1b231509d8897a3f2d4ac7a2043",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11684,
+      "is_binary": false
+    },
+    {
+      "name": "c4-nivel-4-leitor-cardapio.md",
+      "path": "docs/arquitetura/backend/c4-nivel-4-leitor-cardapio.md",
+      "type": "file",
+      "sha": "76ed8c4a82024d419bba9776df2a1fcec6d12698",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8545,
+      "is_binary": false
+    },
+    {
+      "name": "banco-de-dados",
+      "path": "docs/arquitetura/banco-de-dados",
+      "type": "directory",
+      "sha": "bc011cbb3dbca8c0f6d5d4ad1660a29f06ea98d8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "C4-niveis-3-4-banco-de-dados-bandejao.md",
+      "path": "docs/arquitetura/banco-de-dados/C4-niveis-3-4-banco-de-dados-bandejao.md",
+      "type": "file",
+      "sha": "218bca49a88c796778198254f3d123fd25d48acc",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 28975,
+      "is_binary": false
+    },
+    {
+      "name": "c4-niveis-1-2.md",
+      "path": "docs/arquitetura/c4-niveis-1-2.md",
+      "type": "file",
+      "sha": "92e052ea8554f5dc8b2a6702e027741135e3ad62",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8764,
+      "is_binary": false
+    },
+    {
+      "name": "front-end",
+      "path": "docs/arquitetura/front-end",
+      "type": "directory",
+      "sha": "d8dcda125af1bbc700fb8f39a1e3627b180a66b6",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "c4-niveis-3-4-frontend-bandejao.md",
+      "path": "docs/arquitetura/front-end/c4-niveis-3-4-frontend-bandejao.md",
+      "type": "file",
+      "sha": "cfbd415fd4d7741b98548ccd5d6858b72fa9bf80",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 22120,
+      "is_binary": false
+    },
+    {
+      "name": "atas-reunioes",
+      "path": "docs/atas-reunioes",
+      "type": "directory",
+      "sha": "22f0d1c42c590d2648ce0c89aee0b8759d89eb7d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "Ata_Reuniao_0_Bandejao.pdf",
+      "path": "docs/atas-reunioes/Ata_Reuniao_0_Bandejao.pdf",
+      "type": "file",
+      "sha": "4deaafbf7b9a8e899ab6b7c4b50bf9eba0365356",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 68678,
+      "is_binary": false
+    },
+    {
+      "name": "Ata_Reuniao_1_Bandejao.pdf",
+      "path": "docs/atas-reunioes/Ata_Reuniao_1_Bandejao.pdf",
+      "type": "file",
+      "sha": "843c354e83f83bd3984a795ee5975bbd44a4f7cd",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 75945,
+      "is_binary": false
+    },
+    {
+      "name": "Ata_Reuniao_2_Bandejao.pdf",
+      "path": "docs/atas-reunioes/Ata_Reuniao_2_Bandejao.pdf",
+      "type": "file",
+      "sha": "61d17c0cd2ce311ae0bba574547eb35be7ce22ff",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 63110,
+      "is_binary": false
+    },
+    {
+      "name": "Ata_Reuniao_3_Bandejao.pdf",
+      "path": "docs/atas-reunioes/Ata_Reuniao_3_Bandejao.pdf",
+      "type": "file",
+      "sha": "4b917037c012254239c2b73e6b5279a856f712fe",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 57819,
+      "is_binary": false
+    },
+    {
+      "name": "Ata_Reuniao_4_Bandejao.pdf",
+      "path": "docs/atas-reunioes/Ata_Reuniao_4_Bandejao.pdf",
+      "type": "file",
+      "sha": "a49189b384799078207108b1a261b6fead0fc6b8",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 67075,
+      "is_binary": false
+    },
+    {
+      "name": "Ata_preenchimento_figma_bandejao.pdf",
+      "path": "docs/atas-reunioes/Ata_preenchimento_figma_bandejao.pdf",
+      "type": "file",
+      "sha": "277e4aec2670f63e05157e5af6aba07cc7e6179b",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 55046,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "docs/atas-reunioes/README.md",
+      "type": "file",
+      "sha": "889eadd7865d5ffaef244629c32cdd7a635e7fd2",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 502,
+      "is_binary": false
     },
     {
       "name": "estudos",
       "path": "docs/estudos",
       "type": "directory",
-      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "sha": "0c3d17c16ad923238170f4b94f24dcd5907c9042",
       "mode": "040000",
       "children": []
     },
@@ -195,22 +1107,1210 @@
       "extension": ".gitkeep",
       "size": 0,
       "is_binary": false
+    },
+    {
+      "name": "semana0-docker.md",
+      "path": "docs/estudos/semana0-docker.md",
+      "type": "file",
+      "sha": "b5a44c79520bb98175b50f10494b69be59ae4585",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4770,
+      "is_binary": false
+    },
+    {
+      "name": "semana00-django.md",
+      "path": "docs/estudos/semana00-django.md",
+      "type": "file",
+      "sha": "86cabe0cc0b184c2b677d40dc58a782f41d83771",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2893,
+      "is_binary": false
+    },
+    {
+      "name": "semana00-gitegithub.md",
+      "path": "docs/estudos/semana00-gitegithub.md",
+      "type": "file",
+      "sha": "76238641d0f122a759d284002b856e3918bf7ced",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2404,
+      "is_binary": false
+    },
+    {
+      "name": "semana00-gitflow.md",
+      "path": "docs/estudos/semana00-gitflow.md",
+      "type": "file",
+      "sha": "443dde3a210591b70499b913d06661b28ecb02bf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2482,
+      "is_binary": false
+    },
+    {
+      "name": "semana00-mysql.md",
+      "path": "docs/estudos/semana00-mysql.md",
+      "type": "file",
+      "sha": "9b238148234a653013864a0d1ba79e25b3b68a1c",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4773,
+      "is_binary": false
+    },
+    {
+      "name": "semana00-sqlite.md",
+      "path": "docs/estudos/semana00-sqlite.md",
+      "type": "file",
+      "sha": "a782090cc2f5ec0c026239eeca4868b07a3477a3",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2532,
+      "is_binary": false
+    },
+    {
+      "name": "semana01-api-rest-django-drf.md",
+      "path": "docs/estudos/semana01-api-rest-django-drf.md",
+      "type": "file",
+      "sha": "00e4525b29f7dfb7e9e73641aa63d790bc80e400",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8331,
+      "is_binary": false
+    },
+    {
+      "name": "semana01-extracao-pdf-e-media-ponderada.md",
+      "path": "docs/estudos/semana01-extracao-pdf-e-media-ponderada.md",
+      "type": "file",
+      "sha": "02a585c57130ea230708ad75ef53648821f8da43",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4491,
+      "is_binary": false
+    },
+    {
+      "name": "semana01-html.md",
+      "path": "docs/estudos/semana01-html.md",
+      "type": "file",
+      "sha": "d7ddfe4559276bb5ef76495a088c66c162f8276c",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2297,
+      "is_binary": false
+    },
+    {
+      "name": "semana01-mysql.md",
+      "path": "docs/estudos/semana01-mysql.md",
+      "type": "file",
+      "sha": "89289eb5edc6166ecbce6e2d33eaabc95ca34372",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4621,
+      "is_binary": false
+    },
+    {
+      "name": "semana01-sqlite.md",
+      "path": "docs/estudos/semana01-sqlite.md",
+      "type": "file",
+      "sha": "e2daece15e191737bd40a4915c3f6b60faa4e2cd",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3732,
+      "is_binary": false
+    },
+    {
+      "name": "semana03-arquitetura-c4-model.md",
+      "path": "docs/estudos/semana03-arquitetura-c4-model.md",
+      "type": "file",
+      "sha": "9857c0bd8448af8b5bcf1d90cd92b621f0d0f1ba",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2810,
+      "is_binary": false
+    },
+    {
+      "name": "semana03-arquitetura-de-software-c4-model.md",
+      "path": "docs/estudos/semana03-arquitetura-de-software-c4-model.md",
+      "type": "file",
+      "sha": "d6e1941cc284c4fa20f9e5aac091274253e182ce",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6274,
+      "is_binary": false
+    },
+    {
+      "name": "semana03-c4-model.md",
+      "path": "docs/estudos/semana03-c4-model.md",
+      "type": "file",
+      "sha": "763a646c19c53807dfd6a76adb6fd47bd36cb17c",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3108,
+      "is_binary": false
+    },
+    {
+      "name": "index.html",
+      "path": "docs/index.html",
+      "type": "file",
+      "sha": "53996727d398bbb80da2e615a416a15838f87281",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 1382,
+      "is_binary": false
+    },
+    {
+      "name": "requisitos",
+      "path": "docs/requisitos",
+      "type": "directory",
+      "sha": "d13f2be4f76a960af6639f8cd396803846bad5df",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "CONTEXT-DOMINIO.md",
+      "path": "docs/requisitos/CONTEXT-DOMINIO.md",
+      "type": "file",
+      "sha": "45e887f66b9d791a818da4e0a503d88dea830881",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4647,
+      "is_binary": false
+    },
+    {
+      "name": "backlog.md",
+      "path": "docs/requisitos/backlog.md",
+      "type": "file",
+      "sha": "db4e87b9840cc75867e362c19f843f3613d6c2aa",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 55819,
+      "is_binary": false
+    },
+    {
+      "name": "documento-de-requisitos-bandejao.md",
+      "path": "docs/requisitos/documento-de-requisitos-bandejao.md",
+      "type": "file",
+      "sha": "bc3328d5e70d071dea0daa3e52bf2a1a8b2553cb",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 46007,
+      "is_binary": false
+    },
+    {
+      "name": "documento-de-visao-bandejao.md",
+      "path": "docs/requisitos/documento-de-visao-bandejao.md",
+      "type": "file",
+      "sha": "87c6b9a57f85bb16850c92fc9494542e48bace9d",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 37345,
+      "is_binary": false
+    },
+    {
+      "name": "reviews-sprints",
+      "path": "docs/reviews-sprints",
+      "type": "directory",
+      "sha": "fce72448f4dd353d9ccd039b05b3c06be05f74c9",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "docs/reviews-sprints/README.md",
+      "type": "file",
+      "sha": "c0f52b20e042526ee3aa1c8a9abd316e10a2019f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 22,
+      "is_binary": false
+    },
+    {
+      "name": "double-diamond",
+      "path": "double-diamond",
+      "type": "directory",
+      "sha": "1dac98d2f0eec81fe0d359cfbbe7d2ab6ee96e12",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "canvas.fig",
+      "path": "double-diamond/canvas.fig",
+      "type": "file",
+      "sha": "87fdbb3ad2cb0c66b64c5abfd16104c54a7e8ccf",
+      "mode": "100644",
+      "extension": ".fig",
+      "size": 425962,
+      "is_binary": false
+    },
+    {
+      "name": "images",
+      "path": "double-diamond/images",
+      "type": "directory",
+      "sha": "cad9efebded0608bb3e5d181bab87c24ee641fc7",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "06916586b376d61feddc3a45154366d63226ce19",
+      "path": "double-diamond/images/06916586b376d61feddc3a45154366d63226ce19",
+      "type": "file",
+      "sha": "24bcf98d578fd3e0342d1cf88cfaa57db9d716d2",
+      "mode": "100644",
+      "extension": "",
+      "size": 1389980,
+      "is_binary": false
+    },
+    {
+      "name": "27b1ea118822f05a02a5a3b894faac8c1b113306",
+      "path": "double-diamond/images/27b1ea118822f05a02a5a3b894faac8c1b113306",
+      "type": "file",
+      "sha": "54ca9c2554be3f2a8bb9983d7fd1019f744983f7",
+      "mode": "100644",
+      "extension": "",
+      "size": 146132,
+      "is_binary": false
+    },
+    {
+      "name": "29abc66ea10674c80025f59a6c81ae6565f7b7b1",
+      "path": "double-diamond/images/29abc66ea10674c80025f59a6c81ae6565f7b7b1",
+      "type": "file",
+      "sha": "f7f2d4d9301e404df6e51fb600e1f717aab1d1df",
+      "mode": "100644",
+      "extension": "",
+      "size": 416611,
+      "is_binary": false
+    },
+    {
+      "name": "4c3bc0f22810f87e2ad9ccb25c89d5d3c33bad67",
+      "path": "double-diamond/images/4c3bc0f22810f87e2ad9ccb25c89d5d3c33bad67",
+      "type": "file",
+      "sha": "a9be920dc08d3be2d460668cfcfefdb2ee603584",
+      "mode": "100644",
+      "extension": "",
+      "size": 546703,
+      "is_binary": false
+    },
+    {
+      "name": "6f335b1c184b532bbe23760d3abb9117eae810f9",
+      "path": "double-diamond/images/6f335b1c184b532bbe23760d3abb9117eae810f9",
+      "type": "file",
+      "sha": "41186329ee0bb544dad19274d54d0553bd76a51f",
+      "mode": "100644",
+      "extension": "",
+      "size": 268,
+      "is_binary": false
+    },
+    {
+      "name": "89ffa32cdc908816447368e353994771ecec649f",
+      "path": "double-diamond/images/89ffa32cdc908816447368e353994771ecec649f",
+      "type": "file",
+      "sha": "42a51509a066b28a5bdd0439713819f683fbc69f",
+      "mode": "100644",
+      "extension": "",
+      "size": 1338388,
+      "is_binary": false
+    },
+    {
+      "name": "926fe5da04bfb68f3bfecf54ed014260947acc08",
+      "path": "double-diamond/images/926fe5da04bfb68f3bfecf54ed014260947acc08",
+      "type": "file",
+      "sha": "3fb0dfffb7e246ae98a2883a676dc79a9c6d8f76",
+      "mode": "100644",
+      "extension": "",
+      "size": 80923,
+      "is_binary": false
+    },
+    {
+      "name": "a72491d83d538f39f2bcf7ce6f12f852f617253b",
+      "path": "double-diamond/images/a72491d83d538f39f2bcf7ce6f12f852f617253b",
+      "type": "file",
+      "sha": "c0508602f4b225f0a8efd1196ff5a7d3f2637383",
+      "mode": "100644",
+      "extension": "",
+      "size": 552085,
+      "is_binary": false
+    },
+    {
+      "name": "b26901e5820b89d9770be8e7fdbe077b65cdb25b",
+      "path": "double-diamond/images/b26901e5820b89d9770be8e7fdbe077b65cdb25b",
+      "type": "file",
+      "sha": "98b87b9b8d3bed462a2b97ac6a5e9ff207ef6bb6",
+      "mode": "100644",
+      "extension": "",
+      "size": 12700,
+      "is_binary": false
+    },
+    {
+      "name": "cf421ccb9586ac5a5c20232fbb09a739000b14d0",
+      "path": "double-diamond/images/cf421ccb9586ac5a5c20232fbb09a739000b14d0",
+      "type": "file",
+      "sha": "141079f31a0683a38fab3164d25c11be5485d194",
+      "mode": "100644",
+      "extension": "",
+      "size": 870,
+      "is_binary": false
+    },
+    {
+      "name": "d366cf58b0c3663fbaeeed3061b2f1d6c40db127",
+      "path": "double-diamond/images/d366cf58b0c3663fbaeeed3061b2f1d6c40db127",
+      "type": "file",
+      "sha": "8112ff4db03009047f008964f6f720d3e74002d6",
+      "mode": "100644",
+      "extension": "",
+      "size": 133281,
+      "is_binary": false
+    },
+    {
+      "name": "f0234610a8dc4b8d7e634341780af187823b1fbc",
+      "path": "double-diamond/images/f0234610a8dc4b8d7e634341780af187823b1fbc",
+      "type": "file",
+      "sha": "810adc2d015edacd21224c70bcadbc77bf9874b1",
+      "mode": "100644",
+      "extension": "",
+      "size": 215,
+      "is_binary": false
+    },
+    {
+      "name": "f2f3781686831fc70d7abe81c94fa71c75cc22f7",
+      "path": "double-diamond/images/f2f3781686831fc70d7abe81c94fa71c75cc22f7",
+      "type": "file",
+      "sha": "2bc759df89a608085e16461928109b0ebda7120f",
+      "mode": "100644",
+      "extension": "",
+      "size": 1792,
+      "is_binary": false
+    },
+    {
+      "name": "meta.json",
+      "path": "double-diamond/meta.json",
+      "type": "file",
+      "sha": "4b4c851b669153c09efbccffc8371e2133755fe0",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 343,
+      "is_binary": false
+    },
+    {
+      "name": "thumbnail.png",
+      "path": "double-diamond/thumbnail.png",
+      "type": "file",
+      "sha": "a1d965edfd01b2a5f993a5b28e0f4df73da67136",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 7673,
+      "is_binary": false
+    },
+    {
+      "name": "frontend",
+      "path": "frontend",
+      "type": "directory",
+      "sha": "4f0bce9d4e7e25735200676105542902143148e9",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".editorconfig",
+      "path": "frontend/.editorconfig",
+      "type": "file",
+      "sha": "3b510aa687ba5d3dbaec1b9c6989327f84261a21",
+      "mode": "100644",
+      "extension": ".editorconfig",
+      "size": 216,
+      "is_binary": false
+    },
+    {
+      "name": ".gitattributes",
+      "path": "frontend/.gitattributes",
+      "type": "file",
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "mode": "100644",
+      "extension": ".gitattributes",
+      "size": 19,
+      "is_binary": false
+    },
+    {
+      "name": ".gitignore",
+      "path": "frontend/.gitignore",
+      "type": "file",
+      "sha": "cd68f14023e4fc491710683f9b4b2f8f1455b6b1",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 396,
+      "is_binary": false
+    },
+    {
+      "name": ".oxlintrc.json",
+      "path": "frontend/.oxlintrc.json",
+      "type": "file",
+      "sha": "aca89287c6e2e7d4d8e7a89c7878d53ff0575758",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 213,
+      "is_binary": false
+    },
+    {
+      "name": ".prettierrc.json",
+      "path": "frontend/.prettierrc.json",
+      "type": "file",
+      "sha": "29a2402ef050746efe041b9e3393bf33796407c3",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 120,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "frontend/README.md",
+      "type": "file",
+      "sha": "184e14c8f06a93020c930f71f3dd3bb387d684b0",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6344,
+      "is_binary": false
+    },
+    {
+      "name": "eslint.config.js",
+      "path": "frontend/eslint.config.js",
+      "type": "file",
+      "sha": "b146dc0a0aacbfbd0df67fe644830dc271e23898",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 828,
+      "is_binary": false
+    },
+    {
+      "name": "index.html",
+      "path": "frontend/index.html",
+      "type": "file",
+      "sha": "9f33c7b5139ef66beed6190790da946ee194c964",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 1044,
+      "is_binary": false
+    },
+    {
+      "name": "jsconfig.json",
+      "path": "frontend/jsconfig.json",
+      "type": "file",
+      "sha": "5a1f2d222a302a174e710614c6d76531b7bda926",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 116,
+      "is_binary": false
+    },
+    {
+      "name": "package-lock.json",
+      "path": "frontend/package-lock.json",
+      "type": "file",
+      "sha": "e130b6f08206a997bae991203c016004168686ce",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 194516,
+      "is_binary": false
+    },
+    {
+      "name": "package.json",
+      "path": "frontend/package.json",
+      "type": "file",
+      "sha": "a1c1a2e4f65ce73b63e6a679600e4faa872daf35",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1098,
+      "is_binary": false
+    },
+    {
+      "name": "public",
+      "path": "frontend/public",
+      "type": "directory",
+      "sha": "305f1a8983b0da8525d4786cf5847c524ac6f3f5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "favicon.ico",
+      "path": "frontend/public/favicon.ico",
+      "type": "file",
+      "sha": "df36fcfb72584e00488330b560ebcf34a41c64c2",
+      "mode": "100644",
+      "extension": ".ico",
+      "size": 4286,
+      "is_binary": false
+    },
+    {
+      "name": "icone-192.png",
+      "path": "frontend/public/icone-192.png",
+      "type": "file",
+      "sha": "3e4976581d60fbc1b71079d29c71637db5dcaff6",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 22740,
+      "is_binary": false
+    },
+    {
+      "name": "icone-512.png",
+      "path": "frontend/public/icone-512.png",
+      "type": "file",
+      "sha": "6309b6c52a58d602723cb99445198fc0d972fe18",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 110963,
+      "is_binary": false
+    },
+    {
+      "name": "icone.svg",
+      "path": "frontend/public/icone.svg",
+      "type": "file",
+      "sha": "15577571a7603473c38c9c478a8a28fc377f6b74",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 3649,
+      "is_binary": false
+    },
+    {
+      "name": "manifest.webmanifest",
+      "path": "frontend/public/manifest.webmanifest",
+      "type": "file",
+      "sha": "8936a6078d954df4817fc4ff6074067a3630ca68",
+      "mode": "100644",
+      "extension": ".webmanifest",
+      "size": 646,
+      "is_binary": false
+    },
+    {
+      "name": "sw.js",
+      "path": "frontend/public/sw.js",
+      "type": "file",
+      "sha": "f96db99c07c3adc7520cf1bb6211fa20bcd569e8",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1570,
+      "is_binary": false
+    },
+    {
+      "name": "src",
+      "path": "frontend/src",
+      "type": "directory",
+      "sha": "bf21678aa11add30690e9ed142e1be28a6e4b96b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "App.vue",
+      "path": "frontend/src/App.vue",
+      "type": "file",
+      "sha": "1cb613519f5a67c29c8981a67c0e085d41e23187",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 493,
+      "is_binary": false
+    },
+    {
+      "name": "assets",
+      "path": "frontend/src/assets",
+      "type": "directory",
+      "sha": "12bbc1b000d70b9cb4059c1df39a346e7426f60e",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "base.css",
+      "path": "frontend/src/assets/base.css",
+      "type": "file",
+      "sha": "410195fae7ccb49496d66c5e00962ed115806c12",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2785,
+      "is_binary": false
+    },
+    {
+      "name": "main.css",
+      "path": "frontend/src/assets/main.css",
+      "type": "file",
+      "sha": "d633950af9d6d7e736ea1b9a4d25244e9b72920c",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 5112,
+      "is_binary": false
+    },
+    {
+      "name": "components",
+      "path": "frontend/src/components",
+      "type": "directory",
+      "sha": "129d00111b355f06d5232974aa1cff76d7806093",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AppLogo.vue",
+      "path": "frontend/src/components/AppLogo.vue",
+      "type": "file",
+      "sha": "cf25944a4897a25a0bf8697d414856c7a3b1f3ba",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 4753,
+      "is_binary": false
+    },
+    {
+      "name": "AvaliacaoWidget.vue",
+      "path": "frontend/src/components/AvaliacaoWidget.vue",
+      "type": "file",
+      "sha": "67fed14a81f0f509d3638ff88332eac8ecd2638c",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 6015,
+      "is_binary": false
+    },
+    {
+      "name": "BotaoVoltar.vue",
+      "path": "frontend/src/components/BotaoVoltar.vue",
+      "type": "file",
+      "sha": "7f3bc4ffe4b22dc37f8a5d0001b0c9d64d35ba9f",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 1255,
+      "is_binary": false
+    },
+    {
+      "name": "CabecalhoFormulario.vue",
+      "path": "frontend/src/components/CabecalhoFormulario.vue",
+      "type": "file",
+      "sha": "08220580d6afaa3b48909d3fa66320d7b5687824",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 548,
+      "is_binary": false
+    },
+    {
+      "name": "CampoSenha.vue",
+      "path": "frontend/src/components/CampoSenha.vue",
+      "type": "file",
+      "sha": "4c693d3d2a16be107ba4e70ea10664324557fc6e",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 1132,
+      "is_binary": false
+    },
+    {
+      "name": "CampoTexto.vue",
+      "path": "frontend/src/components/CampoTexto.vue",
+      "type": "file",
+      "sha": "5088223f8061ca543cac09677c4f41e32f0e1e2d",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 1509,
+      "is_binary": false
+    },
+    {
+      "name": "ConviteLogin.vue",
+      "path": "frontend/src/components/ConviteLogin.vue",
+      "type": "file",
+      "sha": "4ba8234f0fd79c303ce01ff45d2b61ad28e094b9",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 1308,
+      "is_binary": false
+    },
+    {
+      "name": "EstrelasNota.vue",
+      "path": "frontend/src/components/EstrelasNota.vue",
+      "type": "file",
+      "sha": "53a3ffc7a5f57ccc8932db246d3345af90971ce0",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 681,
+      "is_binary": false
+    },
+    {
+      "name": "FiltroCardapio.vue",
+      "path": "frontend/src/components/FiltroCardapio.vue",
+      "type": "file",
+      "sha": "cd07e4d2c9c2b6aece82b484b3d207f69efe9b31",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 6863,
+      "is_binary": false
+    },
+    {
+      "name": "IconeSvg.vue",
+      "path": "frontend/src/components/IconeSvg.vue",
+      "type": "file",
+      "sha": "723f8fda7a9869c6003923c88870ee9bf918472b",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 4069,
+      "is_binary": false
+    },
+    {
+      "name": "LinkSimulado.vue",
+      "path": "frontend/src/components/LinkSimulado.vue",
+      "type": "file",
+      "sha": "b63968b72b70861afeda5f624cc97cce695a9df1",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 991,
+      "is_binary": false
+    },
+    {
+      "name": "NavegacaoInferior.vue",
+      "path": "frontend/src/components/NavegacaoInferior.vue",
+      "type": "file",
+      "sha": "fb91bd3bb3347b34e7fcac189c45040e2cca9c41",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 2012,
+      "is_binary": false
+    },
+    {
+      "name": "constants",
+      "path": "frontend/src/constants",
+      "type": "directory",
+      "sha": "cbe6f93f785a6bd60b548110d12bb3777e394e32",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "campi.js",
+      "path": "frontend/src/constants/campi.js",
+      "type": "file",
+      "sha": "465af35d5b35d609989c6c4783f3d271f37d189a",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 920,
+      "is_binary": false
+    },
+    {
+      "name": "contato.js",
+      "path": "frontend/src/constants/contato.js",
+      "type": "file",
+      "sha": "6c48dceb4b3c7375d21aed4f7a47ba81204c3967",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 146,
+      "is_binary": false
+    },
+    {
+      "name": "dietas.js",
+      "path": "frontend/src/constants/dietas.js",
+      "type": "file",
+      "sha": "f4bb56d9eb85d3b6ccd97f555464b24545645ad1",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 645,
+      "is_binary": false
+    },
+    {
+      "name": "marcadores.js",
+      "path": "frontend/src/constants/marcadores.js",
+      "type": "file",
+      "sha": "c00ec79e028a51444ef0edcad85826835aba6a47",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 671,
+      "is_binary": false
+    },
+    {
+      "name": "refeicoes.js",
+      "path": "frontend/src/constants/refeicoes.js",
+      "type": "file",
+      "sha": "4a62766faa744f08739c6f1d40afecee9f8e13b3",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1162,
+      "is_binary": false
+    },
+    {
+      "name": "main.js",
+      "path": "frontend/src/main.js",
+      "type": "file",
+      "sha": "68bf9cafd1a9d811f904f0980450f170a6f68049",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 386,
+      "is_binary": false
+    },
+    {
+      "name": "pwa.js",
+      "path": "frontend/src/pwa.js",
+      "type": "file",
+      "sha": "6f5c72577d1f5f147dccd02e64f9092aadd56fc6",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 500,
+      "is_binary": false
+    },
+    {
+      "name": "router",
+      "path": "frontend/src/router",
+      "type": "directory",
+      "sha": "cfd7e10489e6a7d20995ae27fe1e5616cb4e8288",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "index.js",
+      "path": "frontend/src/router/index.js",
+      "type": "file",
+      "sha": "ecb16e5dc9ab92a68c7240f70430620ad7d6eb4b",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3727,
+      "is_binary": false
+    },
+    {
+      "name": "index.test.js",
+      "path": "frontend/src/router/index.test.js",
+      "type": "file",
+      "sha": "8beafcdfa780965444e9efe753127c919f0a748a",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 6848,
+      "is_binary": false
+    },
+    {
+      "name": "services",
+      "path": "frontend/src/services",
+      "type": "directory",
+      "sha": "9729ac79a7f158ebcbf52569eae0e929393d0b0f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "apiClient.js",
+      "path": "frontend/src/services/apiClient.js",
+      "type": "file",
+      "sha": "6e023fd05c15edb8a8863e96c4f61eeba9df4cd4",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2755,
+      "is_binary": false
+    },
+    {
+      "name": "mock",
+      "path": "frontend/src/services/mock",
+      "type": "directory",
+      "sha": "2fd0d82a3170cfb54a75238e4fc4258fc7fe84ae",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "banco.js",
+      "path": "frontend/src/services/mock/banco.js",
+      "type": "file",
+      "sha": "f828b62d55bc33fe0b7824478443fb1020465e22",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1857,
+      "is_binary": false
+    },
+    {
+      "name": "cardapios.js",
+      "path": "frontend/src/services/mock/cardapios.js",
+      "type": "file",
+      "sha": "52ef65815f980cf6076202604592b3c22d882e4d",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 10877,
+      "is_binary": false
+    },
+    {
+      "name": "sementes.js",
+      "path": "frontend/src/services/mock/sementes.js",
+      "type": "file",
+      "sha": "53f73000e4f3f82cd926ed486e6e998061dc4e28",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4328,
+      "is_binary": false
+    },
+    {
+      "name": "servidor.js",
+      "path": "frontend/src/services/mock/servidor.js",
+      "type": "file",
+      "sha": "d51389c8e43232c1b5c42ba6caf06b6d81ffde18",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 16273,
+      "is_binary": false
+    },
+    {
+      "name": "servidor.test.js",
+      "path": "frontend/src/services/mock/servidor.test.js",
+      "type": "file",
+      "sha": "f7f57e0a924b68797f394e3641deb4c98c1c3af7",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 9529,
+      "is_binary": false
+    },
+    {
+      "name": "validacoes.js",
+      "path": "frontend/src/services/mock/validacoes.js",
+      "type": "file",
+      "sha": "edf0022d4af98dfffc679368509c5949f0da2cee",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2942,
+      "is_binary": false
+    },
+    {
+      "name": "validacoes.test.js",
+      "path": "frontend/src/services/mock/validacoes.test.js",
+      "type": "file",
+      "sha": "73e09c2ebb2e1fd719730f522d10fd980700978c",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2695,
+      "is_binary": false
+    },
+    {
+      "name": "stores",
+      "path": "frontend/src/stores",
+      "type": "directory",
+      "sha": "93d47581d9dc2206e35949e004eeb7c2884b543d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "auth.js",
+      "path": "frontend/src/stores/auth.js",
+      "type": "file",
+      "sha": "db7148256796d2229c16ec38062dd8b7b12990b0",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1802,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacoes.js",
+      "path": "frontend/src/stores/avaliacoes.js",
+      "type": "file",
+      "sha": "40e9f9340c11356be9ec3d74ef0b6ef966bd06b1",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1696,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio.js",
+      "path": "frontend/src/stores/cardapio.js",
+      "type": "file",
+      "sha": "e63ab97583416828e8c74f8c8f1377a82a437a6f",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1155,
+      "is_binary": false
+    },
+    {
+      "name": "preferencias.js",
+      "path": "frontend/src/stores/preferencias.js",
+      "type": "file",
+      "sha": "1a742f366e1da4fdaadbc92dcbc5554136901082",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3035,
+      "is_binary": false
+    },
+    {
+      "name": "utils",
+      "path": "frontend/src/utils",
+      "type": "directory",
+      "sha": "78b2dc54156d64ff9ae125f95348bf7fd9825257",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "cardapio.js",
+      "path": "frontend/src/utils/cardapio.js",
+      "type": "file",
+      "sha": "5fdb9dd6d7ee3203c96fe2ec0aa6078378823bfe",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3336,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio.test.js",
+      "path": "frontend/src/utils/cardapio.test.js",
+      "type": "file",
+      "sha": "2303f588387eb4bd50a9bfbac45a377bf1cc9b1a",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 5331,
+      "is_binary": false
+    },
+    {
+      "name": "datas.js",
+      "path": "frontend/src/utils/datas.js",
+      "type": "file",
+      "sha": "da927ea15509e0a8fc26ef412a490c15747b56ed",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2688,
+      "is_binary": false
+    },
+    {
+      "name": "views",
+      "path": "frontend/src/views",
+      "type": "directory",
+      "sha": "8d4818bb263a623a13969a42335c4df9bc924c3a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "AvaliacoesView.vue",
+      "path": "frontend/src/views/AvaliacoesView.vue",
+      "type": "file",
+      "sha": "e99fa88ba9c854cc6198e33ac51939381750b933",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 7130,
+      "is_binary": false
+    },
+    {
+      "name": "BoasVindasView.vue",
+      "path": "frontend/src/views/BoasVindasView.vue",
+      "type": "file",
+      "sha": "45a0afd9be410540f178169be7ad27bf76796aa7",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 2507,
+      "is_binary": false
+    },
+    {
+      "name": "CadastroView.vue",
+      "path": "frontend/src/views/CadastroView.vue",
+      "type": "file",
+      "sha": "7f24a1399c4f315daeb9ae8322d62bc123e0ceeb",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 8178,
+      "is_binary": false
+    },
+    {
+      "name": "CampusView.vue",
+      "path": "frontend/src/views/CampusView.vue",
+      "type": "file",
+      "sha": "12095b052f99caf4bfeca95bdc1feb3260e09119",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 2669,
+      "is_binary": false
+    },
+    {
+      "name": "CardapioView.vue",
+      "path": "frontend/src/views/CardapioView.vue",
+      "type": "file",
+      "sha": "65141840750d03c8cfb2a3b8c3ca2fe8e79b4738",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 13907,
+      "is_binary": false
+    },
+    {
+      "name": "ConfirmarEmailView.vue",
+      "path": "frontend/src/views/ConfirmarEmailView.vue",
+      "type": "file",
+      "sha": "aebb2935a0f8a6e352587e82ee28bfef15a3c147",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 5933,
+      "is_binary": false
+    },
+    {
+      "name": "FilaView.vue",
+      "path": "frontend/src/views/FilaView.vue",
+      "type": "file",
+      "sha": "eb6f5eedd1f25e8201b6d8cf9a27abc2f4cea261",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 4140,
+      "is_binary": false
+    },
+    {
+      "name": "HomeView.vue",
+      "path": "frontend/src/views/HomeView.vue",
+      "type": "file",
+      "sha": "1633c47c123c63f7f2eabdeaed8bcdcaf8abd062",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 15246,
+      "is_binary": false
+    },
+    {
+      "name": "LoginView.vue",
+      "path": "frontend/src/views/LoginView.vue",
+      "type": "file",
+      "sha": "0cd5fb876aaac1d5bd265bb22a4a8542f2349723",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 4334,
+      "is_binary": false
+    },
+    {
+      "name": "NotFoundView.vue",
+      "path": "frontend/src/views/NotFoundView.vue",
+      "type": "file",
+      "sha": "86e707f819ac56acdd50af9457e9ac9fe2e237b6",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 798,
+      "is_binary": false
+    },
+    {
+      "name": "RecuperarSenhaView.vue",
+      "path": "frontend/src/views/RecuperarSenhaView.vue",
+      "type": "file",
+      "sha": "dffe7ebcb0bc43020576cf032860bfc69a9356f1",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 2420,
+      "is_binary": false
+    },
+    {
+      "name": "RedefinirSenhaView.vue",
+      "path": "frontend/src/views/RedefinirSenhaView.vue",
+      "type": "file",
+      "sha": "9ad77358af4e4b979133dd96dd226d8621e47f51",
+      "mode": "100644",
+      "extension": ".vue",
+      "size": 3123,
+      "is_binary": false
+    },
+    {
+      "name": "vite.config.js",
+      "path": "frontend/vite.config.js",
+      "type": "file",
+      "sha": "04146817a69734a92753a8d9145d328dc4737d0f",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 380,
+      "is_binary": false
+    },
+    {
+      "name": "vitest.config.js",
+      "path": "frontend/vitest.config.js",
+      "type": "file",
+      "sha": "19e700caa9b9f0ce6907264403c6843718498721",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 385,
+      "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-09-28T12:33:32.815107+00:00",
+  "extracted_at": "2026-09-29T12:07:05.228897+00:00",
   "method": "rest",
-  "total_items": 21,
+  "total_items": 238,
   "repository_metadata": {
     "id": 1338351277,
     "full_name": "unb-mds/2026-2-Bandejao-UnB",
     "description": "Grupo G6 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:57:21Z",
-    "updated_at": "2026-09-21T18:39:19Z",
-    "language": null,
-    "size": 5607,
+    "updated_at": "2026-09-28T16:03:44Z",
+    "language": "Vue",
+    "size": 5869,
     "stars": 2,
     "forks": 0,
-    "open_issues": 2
+    "open_issues": 1
   }
 }
