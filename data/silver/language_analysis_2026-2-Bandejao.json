@@ -2,24 +2,30 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-09-29T12:07:08.413458+00:00",
+  "analyzed_at": "2026-09-30T11:56:12.411539+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 90,
-  "total_bytes": 298294,
+  "total_files": 96,
+  "total_bytes": 320285,
   "languages": [
     {
       "language": "Markdown",
-      "file_count": 23,
-      "total_bytes": 122753,
-      "percentage": 41.15,
+      "file_count": 27,
+      "total_bytes": 142491,
+      "percentage": 44.49,
       "files": [
         {
           "path": "docs/Requisitos.md",
           "name": "Requisitos.md",
           "size": 29349,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/Arquitetura.md",
+          "name": "Arquitetura.md",
+          "size": 11245,
           "extension": ".md"
         },
         {
@@ -55,7 +61,7 @@
         {
           "path": "contexto.md",
           "name": "contexto.md",
-          "size": 6526,
+          "size": 6880,
           "extension": ".md"
         },
         {
@@ -65,15 +71,9 @@
           "extension": ".md"
         },
         {
-          "path": "docs/handoff_banco_e_importacao.md",
-          "name": "handoff_banco_e_importacao.md",
-          "size": 4098,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/backend.md",
-          "name": "backend.md",
-          "size": 3990,
+          "path": "docs/index.md",
+          "name": "index.md",
+          "size": 4637,
           "extension": ".md"
         }
       ]
@@ -82,7 +82,7 @@
       "language": "Python",
       "file_count": 39,
       "total_bytes": 75825,
-      "percentage": 25.42,
+      "percentage": 23.67,
       "files": [
         {
           "path": "extracao/extracao/main.py",
@@ -150,7 +150,7 @@
       "language": "JSON",
       "file_count": 3,
       "total_bytes": 41627,
-      "percentage": 13.96,
+      "percentage": 13.0,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -176,7 +176,7 @@
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 9.18,
+      "percentage": 8.55,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -208,7 +208,7 @@
       "language": "PNG Image",
       "file_count": 1,
       "total_bytes": 13057,
-      "percentage": 4.38,
+      "percentage": 4.08,
       "files": [
         {
           "path": "frontend/src/assets/hero.png",
@@ -222,7 +222,7 @@
       "language": "CSS",
       "file_count": 2,
       "total_bytes": 5060,
-      "percentage": 1.7,
+      "percentage": 1.58,
       "files": [
         {
           "path": "frontend/src/App.css",
@@ -239,10 +239,36 @@
       ]
     },
     {
+      "language": "YAML",
+      "file_count": 3,
+      "total_bytes": 4296,
+      "percentage": 1.34,
+      "files": [
+        {
+          "path": "mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 1926,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "name": "docs.yml",
+          "size": 1597,
+          "extension": ".yml"
+        },
+        {
+          "path": "docker-compose.yml",
+          "name": "docker-compose.yml",
+          "size": 773,
+          "extension": ".yml"
+        }
+      ]
+    },
+    {
       "language": "JavaScript",
       "file_count": 3,
       "total_bytes": 4036,
-      "percentage": 1.35,
+      "percentage": 1.26,
       "files": [
         {
           "path": "frontend/src/App.jsx",
@@ -268,7 +294,7 @@
       "language": "INI",
       "file_count": 1,
       "total_bytes": 3819,
-      "percentage": 1.28,
+      "percentage": 1.19,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -279,30 +305,10 @@
       ]
     },
     {
-      "language": "YAML",
-      "file_count": 2,
-      "total_bytes": 2080,
-      "percentage": 0.7,
-      "files": [
-        {
-          "path": "mkdocs.yml",
-          "name": "mkdocs.yml",
-          "size": 1307,
-          "extension": ".yml"
-        },
-        {
-          "path": "docker-compose.yml",
-          "name": "docker-compose.yml",
-          "size": 773,
-          "extension": ".yml"
-        }
-      ]
-    },
-    {
       "language": "Unknown",
       "file_count": 2,
       "total_bytes": 704,
-      "percentage": 0.24,
+      "percentage": 0.22,
       "files": [
         {
           "path": "backend/alembic/script.py.mako",
@@ -322,7 +328,7 @@
       "language": "No Extension",
       "file_count": 3,
       "total_bytes": 513,
-      "percentage": 0.17,
+      "percentage": 0.16,
       "files": [
         {
           "path": "frontend/Dockerfile",
@@ -348,7 +354,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 478,
-      "percentage": 0.16,
+      "percentage": 0.15,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -365,24 +371,10 @@
       ]
     },
     {
-      "language": "HTML",
-      "file_count": 1,
-      "total_bytes": 360,
-      "percentage": 0.12,
-      "files": [
-        {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 360,
-          "extension": ".html"
-        }
-      ]
-    },
-    {
       "language": "Text",
-      "file_count": 2,
-      "total_bytes": 335,
-      "percentage": 0.11,
+      "file_count": 3,
+      "total_bytes": 372,
+      "percentage": 0.12,
       "files": [
         {
           "path": "backend/requirements.txt",
@@ -395,6 +387,26 @@
           "name": "requirements.txt",
           "size": 134,
           "extension": ".txt"
+        },
+        {
+          "path": "requirements-docs.txt",
+          "name": "requirements-docs.txt",
+          "size": 37,
+          "extension": ".txt"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 1,
+      "total_bytes": 360,
+      "percentage": 0.11,
+      "files": [
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 360,
+          "extension": ".html"
         }
       ]
     },
@@ -402,7 +414,7 @@
       "language": "TOML",
       "file_count": 2,
       "total_bytes": 259,
-      "percentage": 0.09,
+      "percentage": 0.08,
       "files": [
         {
           "path": "extracao/pyproject.toml",
@@ -420,7 +432,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-09-29T12:07:56.397008+00:00",
+    "extracted_at": "2026-09-30T11:57:05.918515+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }

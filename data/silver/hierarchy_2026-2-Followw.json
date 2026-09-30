@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-09-29T12:07:04.657315+00:00",
+  "extracted_at": "2026-09-30T11:56:06.099033+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -194,6 +194,22 @@
         "path": ".gitignore"
       },
       {
+        "name": ".oxfmtrc.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 721,
+        "extension": ".json",
+        "path": ".oxfmtrc.json"
+      },
+      {
+        "name": ".oxlintrc.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1415,
+        "extension": ".json",
+        "path": ".oxlintrc.json"
+      },
+      {
         "name": ".vscode",
         "type": "directory",
         "path": ".vscode",
@@ -219,7 +235,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1700,
+        "size": 1931,
         "extension": ".md",
         "path": "AGENTS.md"
       },
@@ -271,7 +287,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7582,
+        "size": 3359,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
       },
@@ -356,6 +372,14 @@
         "children": []
       },
       {
+        "name": "cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3244,
+        "extension": ".py",
+        "path": "apps/api/api/dependencies/cache.py"
+      },
+      {
         "name": "qstash.py",
         "type": "file",
         "language": "Python",
@@ -364,18 +388,10 @@
         "path": "apps/api/api/dependencies/qstash.py"
       },
       {
-        "name": "refresh.py",
-        "type": "file",
-        "language": "Python",
-        "size": 205,
-        "extension": ".py",
-        "path": "apps/api/api/dependencies/refresh.py"
-      },
-      {
         "name": "sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 4075,
+        "size": 4264,
         "extension": ".py",
         "path": "apps/api/api/dependencies/sigaa.py"
       },
@@ -407,7 +423,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 4972,
+        "size": 5000,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -427,7 +443,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 2139,
+        "size": 2825,
         "extension": ".py",
         "path": "apps/api/api/modules/auth/main.py"
       },
@@ -441,7 +457,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 4822,
+        "size": 4501,
         "extension": ".py",
         "path": "apps/api/api/modules/classrooms/main.py"
       },
@@ -469,7 +485,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1567,
+        "size": 1446,
         "extension": ".py",
         "path": "apps/api/api/modules/me/main.py"
       },
@@ -483,7 +499,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 827,
+        "size": 813,
         "extension": ".py",
         "path": "apps/api/api/modules/news/main.py"
       },
@@ -497,7 +513,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 2402,
+        "size": 2501,
         "extension": ".py",
         "path": "apps/api/api/modules/public_classrooms/main.py"
       },
@@ -511,7 +527,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1737,
+        "size": 1721,
         "extension": ".py",
         "path": "apps/api/api/modules/public_restaurant/main.py"
       },
@@ -555,7 +571,7 @@
         "name": "classroom.py",
         "type": "file",
         "language": "Python",
-        "size": 8394,
+        "size": 8401,
         "extension": ".py",
         "path": "apps/api/api/services/classroom.py"
       },
@@ -571,7 +587,7 @@
         "name": "profile.py",
         "type": "file",
         "language": "Python",
-        "size": 1538,
+        "size": 1592,
         "extension": ".py",
         "path": "apps/api/api/services/profile.py"
       },
@@ -587,7 +603,7 @@
         "name": "restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 5202,
+        "size": 5897,
         "extension": ".py",
         "path": "apps/api/api/services/restaurant.py"
       },
@@ -595,7 +611,7 @@
         "name": "sync.py",
         "type": "file",
         "language": "Python",
-        "size": 11143,
+        "size": 12693,
         "extension": ".py",
         "path": "apps/api/api/services/sync.py"
       },
@@ -647,9 +663,17 @@
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 4455,
+        "size": 6317,
         "extension": ".py",
         "path": "apps/api/tests/test_auth.py"
+      },
+      {
+        "name": "test_cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3423,
+        "extension": ".py",
+        "path": "apps/api/tests/test_cache.py"
       },
       {
         "name": "test_classroom_repository.py",
@@ -663,7 +687,7 @@
         "name": "test_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 32543,
+        "size": 33174,
         "extension": ".py",
         "path": "apps/api/tests/test_classrooms.py"
       },
@@ -695,7 +719,7 @@
         "name": "test_me.py",
         "type": "file",
         "language": "Python",
-        "size": 14060,
+        "size": 14091,
         "extension": ".py",
         "path": "apps/api/tests/test_me.py"
       },
@@ -703,7 +727,7 @@
         "name": "test_news.py",
         "type": "file",
         "language": "Python",
-        "size": 10187,
+        "size": 10215,
         "extension": ".py",
         "path": "apps/api/tests/test_news.py"
       },
@@ -711,7 +735,7 @@
         "name": "test_public_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 12038,
+        "size": 12156,
         "extension": ".py",
         "path": "apps/api/tests/test_public_classrooms.py"
       },
@@ -719,7 +743,7 @@
         "name": "test_restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 18588,
+        "size": 20517,
         "extension": ".py",
         "path": "apps/api/tests/test_restaurant.py"
       },
@@ -735,7 +759,7 @@
         "name": "test_sync.py",
         "type": "file",
         "language": "Python",
-        "size": 13354,
+        "size": 16940,
         "extension": ".py",
         "path": "apps/api/tests/test_sync.py"
       },
@@ -778,26 +802,10 @@
         "path": "apps/web/.gitignore"
       },
       {
-        "name": ".oxfmtrc.json",
-        "type": "file",
-        "language": "JSON",
-        "size": 676,
-        "extension": ".json",
-        "path": "apps/web/.oxfmtrc.json"
-      },
-      {
-        "name": ".oxlintrc.json",
-        "type": "file",
-        "language": "JSON",
-        "size": 1415,
-        "extension": ".json",
-        "path": "apps/web/.oxlintrc.json"
-      },
-      {
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2837,
+        "size": 2033,
         "extension": ".md",
         "path": "apps/web/AGENTS.md"
       },
@@ -805,7 +813,7 @@
         "name": "bun.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 103211,
+        "size": 103212,
         "extension": ".lock",
         "path": "apps/web/bun.lock"
       },
@@ -821,7 +829,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1668,
+        "size": 1669,
         "extension": ".json",
         "path": "apps/web/package.json"
       },
@@ -838,6 +846,14 @@
         "size": 1851,
         "extension": ".svg",
         "path": "apps/web/public/favicon.svg"
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 586,
+        "extension": ".json",
+        "path": "apps/web/public/manifest.json"
       },
       {
         "name": "scripts",
@@ -877,9 +893,17 @@
         "name": "AppLayout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1489,
+        "size": 1455,
         "extension": ".tsx",
         "path": "apps/web/src/components/AppLayout.tsx"
+      },
+      {
+        "name": "PageState.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1431,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/PageState.tsx"
       },
       {
         "name": "auth",
@@ -899,7 +923,7 @@
         "name": "LoginSubmitButton.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1442,
+        "size": 1681,
         "extension": ".tsx",
         "path": "apps/web/src/components/auth/LoginSubmitButton.tsx"
       },
@@ -913,7 +937,7 @@
         "name": "ClassCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3457,
+        "size": 3440,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/ClassCard.tsx"
       },
@@ -943,7 +967,7 @@
         "name": "BottomNavigation.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5711,
+        "size": 5286,
         "extension": ".tsx",
         "path": "apps/web/src/components/ui/BottomNavigation.tsx"
       },
@@ -959,7 +983,7 @@
         "name": "ErrorState.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1400,
+        "size": 1276,
         "extension": ".tsx",
         "path": "apps/web/src/components/ui/ErrorState.tsx"
       },
@@ -975,7 +999,7 @@
         "name": "HeaderBar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 540,
+        "size": 1695,
         "extension": ".tsx",
         "path": "apps/web/src/components/ui/HeaderBar.tsx"
       },
@@ -988,6 +1012,14 @@
         "path": "apps/web/src/components/ui/LiquidGlass.tsx"
       },
       {
+        "name": "PullToRefresh.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2605,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/ui/PullToRefresh.tsx"
+      },
+      {
         "name": "SectionHeader.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -996,10 +1028,18 @@
         "path": "apps/web/src/components/ui/SectionHeader.tsx"
       },
       {
+        "name": "ShareButton.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1117,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/ui/ShareButton.tsx"
+      },
+      {
         "name": "WeekDayPicker.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1971,
+        "size": 1939,
         "extension": ".tsx",
         "path": "apps/web/src/components/ui/WeekDayPicker.tsx"
       },
@@ -1093,7 +1133,7 @@
         "name": "auth.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1157,
+        "size": 1778,
         "extension": ".ts",
         "path": "apps/web/src/queries/auth.ts"
       },
@@ -1125,9 +1165,17 @@
         "name": "me.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 532,
+        "size": 518,
         "extension": ".ts",
         "path": "apps/web/src/queries/me.ts"
+      },
+      {
+        "name": "refresh.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1589,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/refresh.ts"
       },
       {
         "name": "restaurant.ts",
@@ -1141,7 +1189,7 @@
         "name": "schema.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 45772,
+        "size": 48600,
         "extension": ".ts",
         "path": "apps/web/src/queries/schema.gen.ts"
       },
@@ -1149,7 +1197,7 @@
         "name": "routeTree.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4550,
+        "size": 5901,
         "extension": ".ts",
         "path": "apps/web/src/routeTree.gen.ts"
       },
@@ -1168,66 +1216,88 @@
         "children": []
       },
       {
+        "name": "$.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 192,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/$.tsx"
+      },
+      {
         "name": "__root.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2405,
+        "size": 2606,
         "extension": ".tsx",
         "path": "apps/web/src/routes/__root.tsx"
+      },
+      {
+        "name": "_app.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 265,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/_app.tsx"
+      },
+      {
+        "name": "_app",
+        "type": "directory",
+        "path": "apps/web/src/routes/_app",
+        "children": []
       },
       {
         "name": "index.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6342,
+        "size": 6704,
         "extension": ".tsx",
-        "path": "apps/web/src/routes/index.tsx"
-      },
-      {
-        "name": "login.tsx",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 6067,
-        "extension": ".tsx",
-        "path": "apps/web/src/routes/login.tsx"
+        "path": "apps/web/src/routes/_app/index.tsx"
       },
       {
         "name": "perfil.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5522,
+        "size": 5703,
         "extension": ".tsx",
-        "path": "apps/web/src/routes/perfil.tsx"
+        "path": "apps/web/src/routes/_app/perfil.tsx"
       },
       {
         "name": "ru.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8141,
+        "size": 8162,
         "extension": ".tsx",
-        "path": "apps/web/src/routes/ru.tsx"
+        "path": "apps/web/src/routes/_app/ru.tsx"
       },
       {
         "name": "turmas.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2549,
+        "size": 3019,
         "extension": ".tsx",
-        "path": "apps/web/src/routes/turmas.tsx"
+        "path": "apps/web/src/routes/_app/turmas.tsx"
       },
       {
         "name": "turmas_.$id.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 20409,
+        "size": 21115,
         "extension": ".tsx",
-        "path": "apps/web/src/routes/turmas_.$id.tsx"
+        "path": "apps/web/src/routes/_app/turmas_.$id.tsx"
+      },
+      {
+        "name": "login.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6101,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/login.tsx"
       },
       {
         "name": "styles.css",
         "type": "file",
         "language": "CSS",
-        "size": 2297,
+        "size": 2211,
         "extension": ".css",
         "path": "apps/web/src/styles.css"
       },
@@ -1242,6 +1312,14 @@
         "type": "directory",
         "path": "apps/web/tests/components",
         "children": []
+      },
+      {
+        "name": "PageState.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 713,
+        "extension": ".tsx",
+        "path": "apps/web/tests/components/PageState.test.tsx"
       },
       {
         "name": "auth",
@@ -1261,7 +1339,7 @@
         "name": "LoginSubmitButton.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 999,
+        "size": 1001,
         "extension": ".tsx",
         "path": "apps/web/tests/components/auth/LoginSubmitButton.test.tsx"
       },
@@ -1318,6 +1396,14 @@
         "path": "apps/web/tests/queries/classrooms.test.ts"
       },
       {
+        "name": "refresh.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2607,
+        "extension": ".ts",
+        "path": "apps/web/tests/queries/refresh.test.ts"
+      },
+      {
         "name": "restaurant.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1335,9 +1421,17 @@
         "name": "auth-navigation.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 835,
+        "size": 840,
         "extension": ".js",
         "path": "apps/web/tests/routes/auth-navigation.test.js"
+      },
+      {
+        "name": "root.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1629,
+        "extension": ".js",
+        "path": "apps/web/tests/routes/root.test.js"
       },
       {
         "name": "tsconfig.json",
@@ -1501,7 +1595,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6210,
+        "size": 2547,
         "extension": ".md",
         "path": "packages/sigaa-client/AGENTS.md"
       },
@@ -1759,7 +1853,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5586,
+        "size": 1550,
         "extension": ".md",
         "path": "packages/unb-browser/AGENTS.md"
       },
@@ -2018,7 +2112,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-09-29T12:07:56.401538+00:00",
+    "extracted_at": "2026-09-30T11:57:05.924172+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
