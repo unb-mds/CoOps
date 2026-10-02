@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-01T12:28:37.144492+00:00",
+  "analyzed_at": "2026-10-02T12:06:09.454922+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 214,
-  "total_bytes": 3449885,
+  "total_files": 218,
+  "total_bytes": 3513424,
   "languages": [
     {
       "language": "PDF",
       "file_count": 5,
       "total_bytes": 1976407,
-      "percentage": 57.29,
+      "percentage": 56.25,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -50,9 +50,9 @@
     },
     {
       "language": "Python",
-      "file_count": 86,
-      "total_bytes": 445579,
-      "percentage": 12.92,
+      "file_count": 89,
+      "total_bytes": 471953,
+      "percentage": 13.43,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
@@ -70,6 +70,12 @@
           "path": "packages/sigaa-client/tests/test_classrooms.py",
           "name": "test_classrooms.py",
           "size": 25180,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_public_classrooms.py",
+          "name": "test_public_classrooms.py",
+          "size": 23653,
           "extension": ".py"
         },
         {
@@ -107,20 +113,14 @@
           "name": "classroom.py",
           "size": 13575,
           "extension": ".py"
-        },
-        {
-          "path": "apps/api/api/services/sync.py",
-          "name": "sync.py",
-          "size": 12693,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 398256,
-      "percentage": 11.54,
+      "total_bytes": 402857,
+      "percentage": 11.47,
       "files": [
         {
           "path": "uv.lock",
@@ -131,7 +131,7 @@
         {
           "path": "apps/web/bun.lock",
           "name": "bun.lock",
-          "size": 103212,
+          "size": 107813,
           "extension": ".lock"
         }
       ]
@@ -140,7 +140,7 @@
       "language": "PNG Image",
       "file_count": 4,
       "total_bytes": 213023,
-      "percentage": 6.17,
+      "percentage": 6.06,
       "files": [
         {
           "path": "docs/assets/Diagrama de container.png",
@@ -171,13 +171,13 @@
     {
       "language": "TypeScript",
       "file_count": 58,
-      "total_bytes": 194233,
-      "percentage": 5.63,
+      "total_bytes": 195961,
+      "percentage": 5.58,
       "files": [
         {
           "path": "apps/web/src/queries/schema.gen.ts",
           "name": "schema.gen.ts",
-          "size": 48600,
+          "size": 50241,
           "extension": ".ts"
         },
         {
@@ -238,14 +238,14 @@
     },
     {
       "language": "JSON",
-      "file_count": 13,
-      "total_bytes": 115822,
-      "percentage": 3.36,
+      "file_count": 14,
+      "total_bytes": 146460,
+      "percentage": 4.17,
       "files": [
         {
           "path": "apps/web/openapi.json",
           "name": "openapi.json",
-          "size": 80989,
+          "size": 88992,
           "extension": ".json"
         },
         {
@@ -255,9 +255,15 @@
           "extension": ".json"
         },
         {
+          "path": "apps/api/api/data/classroom_code_units.json",
+          "name": "classroom_code_units.json",
+          "size": 22636,
+          "extension": ".json"
+        },
+        {
           "path": "apps/web/package.json",
           "name": "package.json",
-          "size": 1669,
+          "size": 1668,
           "extension": ".json"
         },
         {
@@ -295,20 +301,14 @@
           "name": "settings.json",
           "size": 528,
           "extension": ".json"
-        },
-        {
-          "path": "scalar.config.json",
-          "name": "scalar.config.json",
-          "size": 456,
-          "extension": ".json"
         }
       ]
     },
     {
       "language": "Markdown",
       "file_count": 26,
-      "total_bytes": 93667,
-      "percentage": 2.72,
+      "total_bytes": 93714,
+      "percentage": 2.67,
       "files": [
         {
           "path": "docs/requisitos.md",
@@ -337,7 +337,7 @@
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 5313,
+          "size": 5360,
           "extension": ".md"
         },
         {
@@ -425,6 +425,20 @@
       ]
     },
     {
+      "language": "SVG Image",
+      "file_count": 1,
+      "total_bytes": 2002,
+      "percentage": 0.06,
+      "files": [
+        {
+          "path": "apps/web/public/favicon.svg",
+          "name": "favicon.svg",
+          "size": 2002,
+          "extension": ".svg"
+        }
+      ]
+    },
+    {
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 2211,
@@ -435,20 +449,6 @@
           "name": "styles.css",
           "size": 2211,
           "extension": ".css"
-        }
-      ]
-    },
-    {
-      "language": "SVG Image",
-      "file_count": 1,
-      "total_bytes": 1851,
-      "percentage": 0.05,
-      "files": [
-        {
-          "path": "apps/web/public/favicon.svg",
-          "name": "favicon.svg",
-          "size": 1851,
-          "extension": ".svg"
         }
       ]
     },
@@ -566,7 +566,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-01T12:29:40.702317+00:00",
+    "extracted_at": "2026-10-02T12:07:14.008149+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }

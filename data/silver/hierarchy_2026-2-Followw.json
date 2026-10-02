@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-01T12:28:37.144492+00:00",
+  "extracted_at": "2026-10-02T12:06:09.454922+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -251,7 +251,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5313,
+        "size": 5360,
         "extension": ".md",
         "path": "README.md"
       },
@@ -318,6 +318,20 @@
         "size": 808,
         "extension": ".py",
         "path": "apps/api/api/core/config.py"
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "path": "apps/api/api/data",
+        "children": []
+      },
+      {
+        "name": "classroom_code_units.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 22636,
+        "extension": ".json",
+        "path": "apps/api/api/data/classroom_code_units.json"
       },
       {
         "name": "db",
@@ -513,7 +527,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 2501,
+        "size": 4283,
         "extension": ".py",
         "path": "apps/api/api/modules/public_classrooms/main.py"
       },
@@ -595,7 +609,7 @@
         "name": "public_classroom.py",
         "type": "file",
         "language": "Python",
-        "size": 2110,
+        "size": 5195,
         "extension": ".py",
         "path": "apps/api/api/services/public_classroom.py"
       },
@@ -630,6 +644,14 @@
         "path": "apps/api/api/utils/__init__.py"
       },
       {
+        "name": "classroom_code.py",
+        "type": "file",
+        "language": "Python",
+        "size": 326,
+        "extension": ".py",
+        "path": "apps/api/api/utils/classroom_code.py"
+      },
+      {
         "name": "session.py",
         "type": "file",
         "language": "Python",
@@ -644,6 +666,20 @@
         "size": 924,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "apps/api/scripts",
+        "children": []
+      },
+      {
+        "name": "update_classroom_code_units.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4584,
+        "extension": ".py",
+        "path": "apps/api/scripts/update_classroom_code_units.py"
       },
       {
         "name": "tests",
@@ -674,6 +710,14 @@
         "size": 3423,
         "extension": ".py",
         "path": "apps/api/tests/test_cache.py"
+      },
+      {
+        "name": "test_classroom_code_index.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5100,
+        "extension": ".py",
+        "path": "apps/api/tests/test_classroom_code_index.py"
       },
       {
         "name": "test_classroom_repository.py",
@@ -735,7 +779,7 @@
         "name": "test_public_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 12156,
+        "size": 23653,
         "extension": ".py",
         "path": "apps/api/tests/test_public_classrooms.py"
       },
@@ -813,7 +857,7 @@
         "name": "bun.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 103212,
+        "size": 107813,
         "extension": ".lock",
         "path": "apps/web/bun.lock"
       },
@@ -821,7 +865,7 @@
         "name": "openapi.json",
         "type": "file",
         "language": "JSON",
-        "size": 80989,
+        "size": 88992,
         "extension": ".json",
         "path": "apps/web/openapi.json"
       },
@@ -829,7 +873,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1669,
+        "size": 1668,
         "extension": ".json",
         "path": "apps/web/package.json"
       },
@@ -843,7 +887,7 @@
         "name": "favicon.svg",
         "type": "file",
         "language": "SVG Image",
-        "size": 1851,
+        "size": 2002,
         "extension": ".svg",
         "path": "apps/web/public/favicon.svg"
       },
@@ -901,7 +945,7 @@
         "name": "AppLayout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1455,
+        "size": 1542,
         "extension": ".tsx",
         "path": "apps/web/src/components/AppLayout.tsx"
       },
@@ -1205,7 +1249,7 @@
         "name": "schema.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 48600,
+        "size": 50241,
         "extension": ".ts",
         "path": "apps/web/src/queries/schema.gen.ts"
       },
@@ -2136,7 +2180,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-01T12:29:40.704016+00:00",
+    "extracted_at": "2026-10-02T12:07:14.010009+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
