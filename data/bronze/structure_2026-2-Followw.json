@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Followw",
   "branch": "main",
-  "sha": "4407d485161fc65918d451f072b85e3d71e9525d",
+  "sha": "3c2df34430b67da173b892b9ee0b39ba33a12e67",
   "tree": [
     {
       "name": ".agents",
@@ -314,17 +314,17 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "0ab67bf71a2a20aa135b2ab816e2a4b0d54d2f55",
+      "sha": "0b12df5f9e23b2290b9c31b36f1e30f1b0486813",
       "mode": "100644",
       "extension": ".md",
-      "size": 5313,
+      "size": 5360,
       "is_binary": false
     },
     {
       "name": "apps",
       "path": "apps",
       "type": "directory",
-      "sha": "a4ef9df9c1e1287f9ffb6b4a2d131acd60e29b3f",
+      "sha": "8acd1dc7b7d3e89a195e1688fd0da205eed610e1",
       "mode": "040000",
       "children": []
     },
@@ -332,7 +332,7 @@
       "name": "api",
       "path": "apps/api",
       "type": "directory",
-      "sha": "15d578ec3ec92a5b7e286ffd70df3dd531500028",
+      "sha": "b01cd2c79ac48b0b5d6014cd5a4973bf3a29838b",
       "mode": "040000",
       "children": []
     },
@@ -370,7 +370,7 @@
       "name": "api",
       "path": "apps/api/api",
       "type": "directory",
-      "sha": "9e6b15470d27ecf321449700565ecd7c802efca5",
+      "sha": "0c838aa9eb8927d2b9173827bfaa01c8ea191412",
       "mode": "040000",
       "children": []
     },
@@ -400,6 +400,24 @@
       "mode": "100644",
       "extension": ".py",
       "size": 808,
+      "is_binary": false
+    },
+    {
+      "name": "data",
+      "path": "apps/api/api/data",
+      "type": "directory",
+      "sha": "8409a3a28e6b8d68d36b0035ae67925507391257",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "classroom_code_units.json",
+      "path": "apps/api/api/data/classroom_code_units.json",
+      "type": "file",
+      "sha": "dd9c74884b3cac99eb7209672ded4e99ab1146b8",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 22636,
       "is_binary": false
     },
     {
@@ -542,7 +560,7 @@
       "name": "modules",
       "path": "apps/api/api/modules",
       "type": "directory",
-      "sha": "d8d19b99d7dd5d7e472183c08e579f745fded06a",
+      "sha": "997943373af9bd6c0023bd95ebdd0137895ae684",
       "mode": "040000",
       "children": []
     },
@@ -640,7 +658,7 @@
       "name": "public_classrooms",
       "path": "apps/api/api/modules/public_classrooms",
       "type": "directory",
-      "sha": "95fc6ffcf6bd1f2ba58b26db9a43fb67b5a4aa86",
+      "sha": "52115c21b6f19b2179d0ccdc184b59c563464cb6",
       "mode": "040000",
       "children": []
     },
@@ -648,10 +666,10 @@
       "name": "main.py",
       "path": "apps/api/api/modules/public_classrooms/main.py",
       "type": "file",
-      "sha": "00108a60648fb4739172c54bebd8688ac4036895",
+      "sha": "1b1197d7c52971de8282ac16b1c16332dc2adaea",
       "mode": "100644",
       "extension": ".py",
-      "size": 2501,
+      "size": 4283,
       "is_binary": false
     },
     {
@@ -714,7 +732,7 @@
       "name": "services",
       "path": "apps/api/api/services",
       "type": "directory",
-      "sha": "dfb2043dfc94bb20c2a33323567a65134106b631",
+      "sha": "cf13c632698500647afefec762b970ce2cb0ff66",
       "mode": "040000",
       "children": []
     },
@@ -752,10 +770,10 @@
       "name": "public_classroom.py",
       "path": "apps/api/api/services/public_classroom.py",
       "type": "file",
-      "sha": "fb82623b422dd48e7657e905205f45eac61f1be9",
+      "sha": "a4e6ecb095f31272221c41ccc383325badb07aca",
       "mode": "100644",
       "extension": ".py",
-      "size": 2110,
+      "size": 5195,
       "is_binary": false
     },
     {
@@ -782,7 +800,7 @@
       "name": "utils",
       "path": "apps/api/api/utils",
       "type": "directory",
-      "sha": "17b75606facbbd417d8b5a374231c1d0c910522a",
+      "sha": "94e0a0a55d29e263b7499d75f2b62d244adea76a",
       "mode": "040000",
       "children": []
     },
@@ -794,6 +812,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "classroom_code.py",
+      "path": "apps/api/api/utils/classroom_code.py",
+      "type": "file",
+      "sha": "cc76316bae683e50c8188a873b57687e81da4595",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 326,
       "is_binary": false
     },
     {
@@ -817,10 +845,28 @@
       "is_binary": false
     },
     {
+      "name": "scripts",
+      "path": "apps/api/scripts",
+      "type": "directory",
+      "sha": "f4302f87fa39dd78cc176b66b0354463b77af607",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "update_classroom_code_units.py",
+      "path": "apps/api/scripts/update_classroom_code_units.py",
+      "type": "file",
+      "sha": "6d6aa436ba51c1a189dc61f2b511f05c5f9c3b2d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4584,
+      "is_binary": false
+    },
+    {
       "name": "tests",
       "path": "apps/api/tests",
       "type": "directory",
-      "sha": "5dcd9936001b2731bfbd1ec6b3abce208fb4db00",
+      "sha": "ba1049696d09dd9e56913ace16fc054d7da9d455",
       "mode": "040000",
       "children": []
     },
@@ -852,6 +898,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 3423,
+      "is_binary": false
+    },
+    {
+      "name": "test_classroom_code_index.py",
+      "path": "apps/api/tests/test_classroom_code_index.py",
+      "type": "file",
+      "sha": "d7b46bb9a04b2569fc603223c1f11de58308453d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5100,
       "is_binary": false
     },
     {
@@ -928,10 +984,10 @@
       "name": "test_public_classrooms.py",
       "path": "apps/api/tests/test_public_classrooms.py",
       "type": "file",
-      "sha": "d95ace1051a5e5a128bf3e30b3f80295ddbcb54b",
+      "sha": "c840f1a4f05d7ebbf8dd1df1d48f01f61368eb63",
       "mode": "100644",
       "extension": ".py",
-      "size": 12156,
+      "size": 23653,
       "is_binary": false
     },
     {
@@ -988,7 +1044,7 @@
       "name": "web",
       "path": "apps/web",
       "type": "directory",
-      "sha": "67ebcc23bbdf3a78062205dd9ee0d539c602e1ab",
+      "sha": "0dd352e8379151f9fede55da5fd93b3038d50463",
       "mode": "040000",
       "children": []
     },
@@ -1026,37 +1082,37 @@
       "name": "bun.lock",
       "path": "apps/web/bun.lock",
       "type": "file",
-      "sha": "e4566088b12abacc76f8e8436b00c6d7cb17dbe7",
+      "sha": "a03424071a05a8f38820304b41eb26c0a3873ab1",
       "mode": "100644",
       "extension": ".lock",
-      "size": 103212,
+      "size": 107813,
       "is_binary": false
     },
     {
       "name": "openapi.json",
       "path": "apps/web/openapi.json",
       "type": "file",
-      "sha": "fdce998475c0aa781b67e68534b8f2ba71bce661",
+      "sha": "84c53e3822832858fbd6b5cdc985ff6294ce4d21",
       "mode": "100644",
       "extension": ".json",
-      "size": 80989,
+      "size": 88992,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "apps/web/package.json",
       "type": "file",
-      "sha": "f1adf5e0c521538ffed5d6a941ab5661110e96d6",
+      "sha": "f07e3a985153a9c5e12be473be8581cbf8c86e8a",
       "mode": "100644",
       "extension": ".json",
-      "size": 1669,
+      "size": 1668,
       "is_binary": false
     },
     {
       "name": "public",
       "path": "apps/web/public",
       "type": "directory",
-      "sha": "324403e072ba0926de3bd5846de656a0b9b48f38",
+      "sha": "8568b521590181e9e808e8e31f3720e8d757ea68",
       "mode": "040000",
       "children": []
     },
@@ -1064,10 +1120,10 @@
       "name": "favicon.svg",
       "path": "apps/web/public/favicon.svg",
       "type": "file",
-      "sha": "95795f0c18fe1a29e8c99f400fac8bbd6d2970a5",
+      "sha": "e9e3cb86b5e236d095c7cca576f41717ac1838c7",
       "mode": "100644",
       "extension": ".svg",
-      "size": 1851,
+      "size": 2002,
       "is_binary": false
     },
     {
@@ -1112,7 +1168,7 @@
       "name": "src",
       "path": "apps/web/src",
       "type": "directory",
-      "sha": "1369708718e8786fd7611194d05f503f9885938a",
+      "sha": "43dc0f682376ec9f60b1197ee0957dfef9fb3359",
       "mode": "040000",
       "children": []
     },
@@ -1130,7 +1186,7 @@
       "name": "components",
       "path": "apps/web/src/components",
       "type": "directory",
-      "sha": "853ea7f15c5471dca2ced71388213d22c8702057",
+      "sha": "e73d599a44934e6e7092f39208f4d9e2e2306a95",
       "mode": "040000",
       "children": []
     },
@@ -1138,10 +1194,10 @@
       "name": "AppLayout.tsx",
       "path": "apps/web/src/components/AppLayout.tsx",
       "type": "file",
-      "sha": "7e847b9e84c36696b13eb50a8ac76b6d010175c0",
+      "sha": "b47b475d1b860d6ef0f1c39ada218fb320d93f5c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1455,
+      "size": 1542,
       "is_binary": false
     },
     {
@@ -1434,7 +1490,7 @@
       "name": "queries",
       "path": "apps/web/src/queries",
       "type": "directory",
-      "sha": "fed2166a117933d3e3d1f5c900e71244a62b82c2",
+      "sha": "0512297bfc3223d781e566ae8dfb2d292f71c6f3",
       "mode": "040000",
       "children": []
     },
@@ -1522,10 +1578,10 @@
       "name": "schema.gen.ts",
       "path": "apps/web/src/queries/schema.gen.ts",
       "type": "file",
-      "sha": "08941ee100623f235ee2c00961200de692d464a7",
+      "sha": "3a1fbf40bdb475ba463e8c429c18772374ba276b",
       "mode": "100644",
       "extension": ".ts",
-      "size": 48600,
+      "size": 50241,
       "is_binary": false
     },
     {
@@ -2698,19 +2754,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-01T12:28:37.144492+00:00",
+  "extracted_at": "2026-10-02T12:06:09.454922+00:00",
   "method": "rest",
-  "total_items": 283,
+  "total_items": 289,
   "repository_metadata": {
     "id": 1338350948,
     "full_name": "unb-mds/2026-2-Followw",
     "description": "O Followw é uma nova forma de usar o SIGAA UnB.",
     "created_at": "2026-08-18T11:57:01Z",
-    "updated_at": "2026-10-01T02:17:01Z",
+    "updated_at": "2026-10-02T04:54:56Z",
     "language": "Python",
-    "size": 1344,
+    "size": 1398,
     "stars": 7,
     "forks": 0,
-    "open_issues": 7
+    "open_issues": 6
   }
 }
