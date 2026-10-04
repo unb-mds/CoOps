@@ -1,7 +1,7 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-03T10:15:08.688043+00:00",
+      "extracted_at": "2026-10-04T10:59:13.433133+00:00",
       "file_path": "data/bronze/issues_2026-2-UnB_Core.json",
       "record_count": 100
     }
@@ -1130,7 +1130,7 @@
     "state": "open",
     "title": "T033: [US3] Criar `backend/app/services/contribuicao_service.py` para validar campos obrigatórios e iniciar contribuições no estado `pendente`.",
     "created_at": "2026-09-11T03:46:03Z",
-    "updated_at": "2026-09-11T03:55:36Z",
+    "updated_at": "2026-10-03T17:38:40Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1155,16 +1155,19 @@
   },
   {
     "number": 85,
-    "state": "open",
+    "state": "closed",
     "title": "T035: [US3] Implementar `POST /api/v1/contribuicoes` e `GET /api/v1/contribuicoes/minhas` em `backend/app/api/contribuicoes.py`, exigindo usuário autenticado.",
     "created_at": "2026-09-11T03:46:04Z",
-    "updated_at": "2026-09-11T03:55:34Z",
-    "closed_at": null,
+    "updated_at": "2026-10-03T19:43:57Z",
+    "closed_at": "2026-10-03T19:43:48Z",
     "user": {
       "login": "DanielAlmeidaFrota",
       "id": 244839088
     },
-    "assignee": null,
+    "assignee": {
+      "login": "Joao-vithor-1",
+      "id": 133594979
+    },
     "repo_name": "2026-2-UnB_Core"
   },
   {
@@ -1200,7 +1203,7 @@
     "state": "open",
     "title": "T038: [P] [US4] Criar `backend/app/services/moderacao_service.py` com transições `pendente -> aprovada/ajustes/rejeitada/arquivada`, justificativa e criação/atualização de conteúdo.",
     "created_at": "2026-09-11T03:46:06Z",
-    "updated_at": "2026-09-11T03:55:32Z",
+    "updated_at": "2026-10-03T17:41:19Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1214,7 +1217,7 @@
     "state": "open",
     "title": "T039: [P] [US4] Criar `backend/app/services/denuncia_service.py` com estados de denúncia e associação ao usuário autenticado.",
     "created_at": "2026-09-11T03:46:06Z",
-    "updated_at": "2026-09-11T03:55:31Z",
+    "updated_at": "2026-10-03T18:15:57Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1228,7 +1231,7 @@
     "state": "open",
     "title": "T040: [US4] Implementar `POST /api/v1/moderacao/contribuicoes/{id}/decisao` em `backend/app/api/moderacao.py`, restrito a moderador ou administrador.",
     "created_at": "2026-09-11T03:46:07Z",
-    "updated_at": "2026-09-11T03:55:31Z",
+    "updated_at": "2026-10-03T18:20:13Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1242,7 +1245,7 @@
     "state": "open",
     "title": "T041: [US4] Implementar `POST /api/v1/publicacoes`, `PATCH /api/v1/publicacoes/{id}`, `GET/POST /api/v1/fontes`, `GET/POST /api/v1/categorias` e `POST/PATCH /api/v1/disciplinas` em `backend/app/api/administracao.py`, restritos a administrador.",
     "created_at": "2026-09-11T03:46:07Z",
-    "updated_at": "2026-09-11T03:55:30Z",
+    "updated_at": "2026-10-03T18:21:23Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1256,7 +1259,7 @@
     "state": "open",
     "title": "T042: [US4] Implementar `POST /api/v1/publicacoes/{id}/denuncias`, `GET /api/v1/denuncias` e `PATCH /api/v1/denuncias/{id}` em `backend/app/api/denuncias.py`, aplicando as permissões definidas.",
     "created_at": "2026-09-11T03:46:08Z",
-    "updated_at": "2026-09-11T03:55:29Z",
+    "updated_at": "2026-10-03T18:24:22Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1270,7 +1273,7 @@
     "state": "open",
     "title": "T043: [US4] Criar páginas administrativas e de moderação em `frontend/src/pages/AdminPage.jsx` e `frontend/src/pages/ModeracaoPage.jsx`.",
     "created_at": "2026-09-11T03:46:08Z",
-    "updated_at": "2026-09-11T03:55:28Z",
+    "updated_at": "2026-10-03T18:25:28Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1284,7 +1287,7 @@
     "state": "open",
     "title": "T044: [US4] Criar componentes de decisão, justificativa e estados em `frontend/src/components/moderacao/` e `frontend/src/components/admin/`.",
     "created_at": "2026-09-11T03:46:09Z",
-    "updated_at": "2026-09-11T03:55:28Z",
+    "updated_at": "2026-10-03T18:29:46Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1298,7 +1301,7 @@
     "state": "open",
     "title": "T045: [US4] Integrar formulário de denúncia autenticada em `frontend/src/components/publicacoes/DenunciaForm.jsx`.",
     "created_at": "2026-09-11T03:46:09Z",
-    "updated_at": "2026-09-11T03:55:27Z",
+    "updated_at": "2026-10-03T18:30:27Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1312,7 +1315,7 @@
     "state": "open",
     "title": "T046: [P] Aplicar nomes acessíveis, foco visível e navegação por teclado nos componentes de `frontend/src/components/` e páginas de `frontend/src/pages/`.",
     "created_at": "2026-09-11T03:46:10Z",
-    "updated_at": "2026-09-11T03:55:26Z",
+    "updated_at": "2026-10-03T18:32:08Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1326,7 +1329,7 @@
     "state": "open",
     "title": "T047: [P] Padronizar mensagens de erro com causa e orientação em `backend/app/api/errors.py` e `frontend/src/services/api.js`.",
     "created_at": "2026-09-11T03:46:10Z",
-    "updated_at": "2026-09-11T03:55:25Z",
+    "updated_at": "2026-10-03T18:38:16Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1340,7 +1343,7 @@
     "state": "open",
     "title": "T048: [P] Atualizar `specs/001-unb-core/quickstart.md` com os comandos e cenários realmente disponíveis após a implementação.",
     "created_at": "2026-09-11T03:46:10Z",
-    "updated_at": "2026-09-11T03:55:24Z",
+    "updated_at": "2026-10-03T18:40:27Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1354,7 +1357,7 @@
     "state": "open",
     "title": "T049: Revisar `docs/requisitos.md` e `README.md` para manter as decisões do MVP, permissões e limites de escopo documentados.",
     "created_at": "2026-09-11T03:46:11Z",
-    "updated_at": "2026-09-11T03:55:23Z",
+    "updated_at": "2026-10-03T18:41:11Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1368,7 +1371,7 @@
     "state": "open",
     "title": "T050: Executar os cenários de `specs/001-unb-core/quickstart.md` e registrar pendências de validação em `docs/`.",
     "created_at": "2026-09-11T03:46:12Z",
-    "updated_at": "2026-09-11T03:55:23Z",
+    "updated_at": "2026-10-03T18:42:58Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1396,7 +1399,7 @@
     "state": "open",
     "title": "T052: [US1] Adicionar em `backend/app/domain/model_publicacao.py`, `backend/app/api/schemas/publicacao.py` e `frontend/src/components/publicacoes/` o indicador de documento não pesquisável e a orientação para consulta no link oficial (FR-023).",
     "created_at": "2026-09-11T03:46:13Z",
-    "updated_at": "2026-09-11T03:55:21Z",
+    "updated_at": "2026-10-03T18:43:59Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
@@ -1410,7 +1413,7 @@
     "state": "open",
     "title": "T053: [P] Validar em `docs/compatibilidade.md` os navegadores desktop atuais e Chrome/Safari mobile previstos para o MVP, registrando o escopo de compatibilidade (FR-027).",
     "created_at": "2026-09-11T03:46:13Z",
-    "updated_at": "2026-09-11T03:55:20Z",
+    "updated_at": "2026-10-03T18:44:43Z",
     "closed_at": null,
     "user": {
       "login": "DanielAlmeidaFrota",
