@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-05T13:07:04.977897+00:00",
+  "analyzed_at": "2026-10-06T12:56:44.922307+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 218,
-  "total_bytes": 3513424,
+  "total_files": 263,
+  "total_bytes": 3762835,
   "languages": [
     {
       "language": "PDF",
       "file_count": 5,
       "total_bytes": 1976407,
-      "percentage": 56.25,
+      "percentage": 52.52,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -50,9 +50,9 @@
     },
     {
       "language": "Python",
-      "file_count": 89,
-      "total_bytes": 471953,
-      "percentage": 13.43,
+      "file_count": 92,
+      "total_bytes": 495465,
+      "percentage": 13.17,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
@@ -85,33 +85,33 @@
           "extension": ".py"
         },
         {
+          "path": "apps/api/tests/test_news.py",
+          "name": "test_news.py",
+          "size": 19006,
+          "extension": ".py"
+        },
+        {
           "path": "apps/api/tests/test_sync.py",
           "name": "test_sync.py",
           "size": 16940,
           "extension": ".py"
         },
         {
-          "path": "apps/api/tests/test_classroom_repository.py",
-          "name": "test_classroom_repository.py",
-          "size": 14864,
-          "extension": ".py"
-        },
-        {
           "path": "apps/api/tests/test_me.py",
           "name": "test_me.py",
-          "size": 14091,
+          "size": 16540,
           "extension": ".py"
         },
         {
-          "path": "apps/api/tests/test_session.py",
-          "name": "test_session.py",
-          "size": 13667,
+          "path": "apps/api/tests/test_classroom_repository.py",
+          "name": "test_classroom_repository.py",
+          "size": 15208,
           "extension": ".py"
         },
         {
-          "path": "apps/api/api/repositories/classroom.py",
-          "name": "classroom.py",
-          "size": 13575,
+          "path": "apps/api/api/services/sync.py",
+          "name": "sync.py",
+          "size": 14502,
           "extension": ".py"
         }
       ]
@@ -119,8 +119,8 @@
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 402857,
-      "percentage": 11.47,
+      "total_bytes": 486581,
+      "percentage": 12.93,
       "files": [
         {
           "path": "uv.lock",
@@ -131,8 +131,76 @@
         {
           "path": "apps/web/bun.lock",
           "name": "bun.lock",
-          "size": 107813,
+          "size": 191537,
           "extension": ".lock"
+        }
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "file_count": 97,
+      "total_bytes": 322623,
+      "percentage": 8.57,
+      "files": [
+        {
+          "path": "apps/web/src/queries/schema.gen.ts",
+          "name": "schema.gen.ts",
+          "size": 55442,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/routes/_app/turmas_.$id.tsx",
+          "name": "turmas_.$id.tsx",
+          "size": 18293,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/routes/_app/ru.tsx",
+          "name": "ru.tsx",
+          "size": 13484,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
+          "name": "RestaurantAccount.tsx",
+          "size": 11829,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/components/ui/drawer.tsx",
+          "name": "drawer.tsx",
+          "size": 11346,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/queries/restaurant-account.test.ts",
+          "name": "restaurant-account.test.ts",
+          "size": 10846,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/components/ui/select.tsx",
+          "name": "select.tsx",
+          "size": 7225,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/components/profile/ProfileOverview.tsx",
+          "name": "ProfileOverview.tsx",
+          "size": 6208,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/routes/login.tsx",
+          "name": "login.tsx",
+          "size": 6173,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/components/ru/RestaurantAccount.test.tsx",
+          "name": "RestaurantAccount.test.tsx",
+          "size": 5996,
+          "extension": ".tsx"
         }
       ]
     },
@@ -140,7 +208,7 @@
       "language": "PNG Image",
       "file_count": 4,
       "total_bytes": 213023,
-      "percentage": 6.06,
+      "percentage": 5.66,
       "files": [
         {
           "path": "docs/assets/Diagrama de container.png",
@@ -169,83 +237,15 @@
       ]
     },
     {
-      "language": "TypeScript",
-      "file_count": 58,
-      "total_bytes": 195961,
-      "percentage": 5.58,
-      "files": [
-        {
-          "path": "apps/web/src/queries/schema.gen.ts",
-          "name": "schema.gen.ts",
-          "size": 50241,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/src/routes/_app/turmas_.$id.tsx",
-          "name": "turmas_.$id.tsx",
-          "size": 21115,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routes/_app/ru.tsx",
-          "name": "ru.tsx",
-          "size": 8162,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routes/_app/index.tsx",
-          "name": "index.tsx",
-          "size": 6704,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/components/ui/LiquidGlass.tsx",
-          "name": "LiquidGlass.tsx",
-          "size": 6411,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routes/login.tsx",
-          "name": "login.tsx",
-          "size": 6101,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routeTree.gen.ts",
-          "name": "routeTree.gen.ts",
-          "size": 5901,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/src/routes/_app/perfil.tsx",
-          "name": "perfil.tsx",
-          "size": 5703,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/tests/lib/local-storage.test.ts",
-          "name": "local-storage.test.ts",
-          "size": 5524,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/src/components/ui/BottomNavigation.tsx",
-          "name": "BottomNavigation.tsx",
-          "size": 5286,
-          "extension": ".tsx"
-        }
-      ]
-    },
-    {
       "language": "JSON",
-      "file_count": 14,
-      "total_bytes": 146460,
-      "percentage": 4.17,
+      "file_count": 15,
+      "total_bytes": 155234,
+      "percentage": 4.13,
       "files": [
         {
           "path": "apps/web/openapi.json",
           "name": "openapi.json",
-          "size": 88992,
+          "size": 96807,
           "extension": ".json"
         },
         {
@@ -263,13 +263,13 @@
         {
           "path": "apps/web/package.json",
           "name": "package.json",
-          "size": 1668,
+          "size": 1992,
           "extension": ".json"
         },
         {
           "path": ".oxlintrc.json",
           "name": ".oxlintrc.json",
-          "size": 1415,
+          "size": 1438,
           "extension": ".json"
         },
         {
@@ -291,24 +291,24 @@
           "extension": ".json"
         },
         {
-          "path": "apps/web/public/manifest.json",
-          "name": "manifest.json",
-          "size": 586,
+          "path": "apps/web/components.json",
+          "name": "components.json",
+          "size": 612,
           "extension": ".json"
         },
         {
-          "path": ".vscode/settings.json",
-          "name": "settings.json",
-          "size": 528,
+          "path": "apps/web/public/manifest.json",
+          "name": "manifest.json",
+          "size": 586,
           "extension": ".json"
         }
       ]
     },
     {
       "language": "Markdown",
-      "file_count": 26,
-      "total_bytes": 93714,
-      "percentage": 2.67,
+      "file_count": 27,
+      "total_bytes": 95914,
+      "percentage": 2.55,
       "files": [
         {
           "path": "docs/requisitos.md",
@@ -373,10 +373,50 @@
       ]
     },
     {
+      "language": "CSS",
+      "file_count": 1,
+      "total_bytes": 5218,
+      "percentage": 0.14,
+      "files": [
+        {
+          "path": "apps/web/src/styles.css",
+          "name": "styles.css",
+          "size": 5218,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "JavaScript",
+      "file_count": 3,
+      "total_bytes": 4001,
+      "percentage": 0.11,
+      "files": [
+        {
+          "path": "apps/web/tests/routes/root.test.js",
+          "name": "root.test.js",
+          "size": 1640,
+          "extension": ".js"
+        },
+        {
+          "path": "apps/web/tests/routes/ru.test.js",
+          "name": "ru.test.js",
+          "size": 1521,
+          "extension": ".js"
+        },
+        {
+          "path": "apps/web/tests/routes/auth-navigation.test.js",
+          "name": "auth-navigation.test.js",
+          "size": 840,
+          "extension": ".js"
+        }
+      ]
+    },
+    {
       "language": "TOML",
       "file_count": 4,
       "total_bytes": 3015,
-      "percentage": 0.09,
+      "percentage": 0.08,
       "files": [
         {
           "path": "apps/api/pyproject.toml",
@@ -405,50 +445,16 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "file_count": 2,
-      "total_bytes": 2469,
-      "percentage": 0.07,
-      "files": [
-        {
-          "path": "apps/web/tests/routes/root.test.js",
-          "name": "root.test.js",
-          "size": 1629,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/tests/routes/auth-navigation.test.js",
-          "name": "auth-navigation.test.js",
-          "size": 840,
-          "extension": ".js"
-        }
-      ]
-    },
-    {
       "language": "SVG Image",
       "file_count": 1,
       "total_bytes": 2002,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": "apps/web/public/favicon.svg",
           "name": "favicon.svg",
           "size": 2002,
           "extension": ".svg"
-        }
-      ]
-    },
-    {
-      "language": "CSS",
-      "file_count": 1,
-      "total_bytes": 2211,
-      "percentage": 0.06,
-      "files": [
-        {
-          "path": "apps/web/src/styles.css",
-          "name": "styles.css",
-          "size": 2211,
-          "extension": ".css"
         }
       ]
     },
@@ -566,7 +572,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-05T13:08:01.039447+00:00",
+    "extracted_at": "2026-10-06T12:57:48.943544+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }

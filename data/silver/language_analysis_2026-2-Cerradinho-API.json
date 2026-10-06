@@ -2,20 +2,66 @@
   "repository": "2026-2-Cerradinho-API",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-05T13:07:04.021406+00:00",
+  "analyzed_at": "2026-10-06T12:56:43.193893+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 37,
-  "total_bytes": 94883,
+  "total_files": 171,
+  "total_bytes": 1521292,
   "languages": [
     {
-      "language": "Markdown",
-      "file_count": 21,
-      "total_bytes": 94656,
-      "percentage": 99.76,
+      "language": "PDF",
+      "file_count": 1,
+      "total_bytes": 505065,
+      "percentage": 33.2,
       "files": [
+        {
+          "path": "backend/tests/scrapers/fixtures/cardapio_darcy_semana.pdf",
+          "name": "cardapio_darcy_semana.pdf",
+          "size": 505065,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 2,
+      "total_bytes": 363910,
+      "percentage": 23.92,
+      "files": [
+        {
+          "path": "backend/tests/scrapers/fixtures/turmas_fcte_gama_2026_2.html",
+          "name": "turmas_fcte_gama_2026_2.html",
+          "size": 361813,
+          "extension": ".html"
+        },
+        {
+          "path": "backend/tests/scrapers/fixtures/turma_vagas_em_branco.html",
+          "name": "turma_vagas_em_branco.html",
+          "size": 2097,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
+      "language": "Markdown",
+      "file_count": 58,
+      "total_bytes": 247885,
+      "percentage": 16.29,
+      "files": [
+        {
+          "path": "AI-USAGE.md",
+          "name": "AI-USAGE.md",
+          "size": 16983,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/scrum/checklist-release-1.md",
+          "name": "checklist-release-1.md",
+          "size": 14634,
+          "extension": ".md"
+        },
         {
           "path": "docs/estudos/estudo-git-github.md",
           "name": "estudo-git-github.md",
@@ -23,9 +69,33 @@
           "extension": ".md"
         },
         {
-          "path": "docs/scrum/sprint-planning.md",
-          "name": "sprint-planning.md",
-          "size": 12091,
+          "path": "docs/scrum/atas.md",
+          "name": "atas.md",
+          "size": 11810,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/DOCUMENTO-VISAO.md",
+          "name": "DOCUMENTO-VISAO.md",
+          "size": 10279,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/fontes/relatorio-de-risco.md",
+          "name": "relatorio-de-risco.md",
+          "size": 9381,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/estudos/estudo-sqlalchemy.md",
+          "name": "estudo-sqlalchemy.md",
+          "size": 8457,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/ARQUITETURA.md",
+          "name": "ARQUITETURA.md",
+          "size": 7954,
           "extension": ".md"
         },
         {
@@ -35,55 +105,237 @@
           "extension": ".md"
         },
         {
-          "path": "docs/REQUISITOS.md",
-          "name": "REQUISITOS.md",
-          "size": 7152,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/ARQUITETURA.md",
-          "name": "ARQUITETURA.md",
-          "size": 6695,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-web-scraping.md",
-          "name": "estudo-web-scraping.md",
-          "size": 6244,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-pytest-mocking.md",
-          "name": "estudo-pytest-mocking.md",
-          "size": 6102,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-playwright.md",
-          "name": "estudo-playwright.md",
-          "size": 5942,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-schemathesis.md",
-          "name": "estudo-schemathesis.md",
-          "size": 5840,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-fastapi.md",
-          "name": "estudo-fastapi.md",
-          "size": 5616,
+          "path": "docs/estudos/estudo-beautifulsoup.md",
+          "name": "estudo-beautifulsoup.md",
+          "size": 7759,
           "extension": ".md"
         }
       ]
     },
     {
+      "language": "JSON",
+      "file_count": 3,
+      "total_bytes": 242248,
+      "percentage": 15.92,
+      "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 241028,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 666,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 554,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 57,
+      "total_bytes": 95932,
+      "percentage": 6.31,
+      "files": [
+        {
+          "path": "backend/app/scrapers/cardapio/parser.py",
+          "name": "parser.py",
+          "size": 9375,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/scrapers/disciplinas/scraper.py",
+          "name": "scraper.py",
+          "size": 5735,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/domain/disciplinas.py",
+          "name": "disciplinas.py",
+          "size": 4924,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/0001_schema_inicial.py",
+          "name": "0001_schema_inicial.py",
+          "size": 4122,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/domain/test_disciplinas.py",
+          "name": "test_disciplinas.py",
+          "size": 4115,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_models.py",
+          "name": "test_models.py",
+          "size": 4031,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/scrapers/disciplinas/parser.py",
+          "name": "parser.py",
+          "size": 3367,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/scrapers/test_disciplinas_parser.py",
+          "name": "test_disciplinas_parser.py",
+          "size": 3260,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_pipeline_disciplinas_postgres.py",
+          "name": "test_pipeline_disciplinas_postgres.py",
+          "size": 3118,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/domain/cardapio.py",
+          "name": "cardapio.py",
+          "size": 3086,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "file_count": 22,
+      "total_bytes": 44109,
+      "percentage": 2.9,
+      "files": [
+        {
+          "path": "frontend/app/disciplinas/page.tsx",
+          "name": "page.tsx",
+          "size": 5517,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/app/page.tsx",
+          "name": "page.tsx",
+          "size": 4931,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/components/Icons.tsx",
+          "name": "Icons.tsx",
+          "size": 4320,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/app/professores/page.tsx",
+          "name": "page.tsx",
+          "size": 4135,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/components/Filters.tsx",
+          "name": "Filters.tsx",
+          "size": 3403,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/hooks/useCardapioSemana.ts",
+          "name": "useCardapioSemana.ts",
+          "size": 3018,
+          "extension": ".ts"
+        },
+        {
+          "path": "frontend/app/salas/page.tsx",
+          "name": "page.tsx",
+          "size": 2866,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/hooks/useDisciplinas.ts",
+          "name": "useDisciplinas.ts",
+          "size": 2719,
+          "extension": ".ts"
+        },
+        {
+          "path": "frontend/components/Sidebar.tsx",
+          "name": "Sidebar.tsx",
+          "size": 2250,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/app/cardapio/page.tsx",
+          "name": "page.tsx",
+          "size": 2202,
+          "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "SVG Image",
+      "file_count": 6,
+      "total_bytes": 13149,
+      "percentage": 0.86,
+      "files": [
+        {
+          "path": "frontend/app/icon.svg",
+          "name": "icon.svg",
+          "size": 9835,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/next.svg",
+          "name": "next.svg",
+          "size": 1375,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/globe.svg",
+          "name": "globe.svg",
+          "size": 1035,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/file.svg",
+          "name": "file.svg",
+          "size": 391,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/window.svg",
+          "name": "window.svg",
+          "size": 385,
+          "extension": ".svg"
+        },
+        {
+          "path": "frontend/public/vercel.svg",
+          "name": "vercel.svg",
+          "size": 128,
+          "extension": ".svg"
+        }
+      ]
+    },
+    {
       "language": "YAML",
-      "file_count": 1,
-      "total_bytes": 227,
+      "file_count": 3,
+      "total_bytes": 3610,
       "percentage": 0.24,
       "files": [
+        {
+          "path": ".github/workflows/ci.yml",
+          "name": "ci.yml",
+          "size": 1943,
+          "extension": ".yml"
+        },
+        {
+          "path": "docker-compose.yml",
+          "name": "docker-compose.yml",
+          "size": 1440,
+          "extension": ".yml"
+        },
         {
           "path": ".github/ISSUE_TEMPLATE/config.yml",
           "name": "config.yml",
@@ -93,43 +345,57 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 14,
-      "total_bytes": 0,
-      "percentage": 0.0,
+      "language": "CSS",
+      "file_count": 1,
+      "total_bytes": 2021,
+      "percentage": 0.13,
       "files": [
         {
+          "path": "frontend/app/globals.css",
+          "name": "globals.css",
+          "size": 2021,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 9,
+      "total_bytes": 1233,
+      "percentage": 0.08,
+      "files": [
+        {
+          "path": "backend/alembic/script.py.mako",
+          "name": "script.py.mako",
+          "size": 510,
+          "extension": ".mako"
+        },
+        {
+          "path": "frontend/eslint.config.mjs",
+          "name": "eslint.config.mjs",
+          "size": 465,
+          "extension": ".mjs"
+        },
+        {
+          "path": "backend/.env.example",
+          "name": ".env.example",
+          "size": 120,
+          "extension": ".example"
+        },
+        {
+          "path": "frontend/postcss.config.mjs",
+          "name": "postcss.config.mjs",
+          "size": 94,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/.env.example",
+          "name": ".env.example",
+          "size": 44,
+          "extension": ".example"
+        },
+        {
           "path": ".github/workflows/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/alembic/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/app/core/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/app/domain/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/app/models/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/app/routers/.gitkeep",
           "name": ".gitkeep",
           "size": 0,
           "extension": ".gitkeep"
@@ -147,13 +413,7 @@
           "extension": ".gitkeep"
         },
         {
-          "path": "backend/app/tasks/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/tests/.gitkeep",
+          "path": "sdk/.gitkeep",
           "name": ".gitkeep",
           "size": 0,
           "extension": ".gitkeep"
@@ -162,21 +422,109 @@
     },
     {
       "language": "Git Ignore",
-      "file_count": 1,
-      "total_bytes": 0,
-      "percentage": 0.0,
+      "file_count": 2,
+      "total_bytes": 740,
+      "percentage": 0.05,
       "files": [
+        {
+          "path": "frontend/.gitignore",
+          "name": ".gitignore",
+          "size": 494,
+          "extension": ".gitignore"
+        },
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 0,
+          "size": 246,
           "extension": ".gitignore"
+        }
+      ]
+    },
+    {
+      "language": "INI",
+      "file_count": 2,
+      "total_bytes": 640,
+      "percentage": 0.04,
+      "files": [
+        {
+          "path": "backend/alembic.ini",
+          "name": "alembic.ini",
+          "size": 552,
+          "extension": ".ini"
+        },
+        {
+          "path": "backend/pytest.ini",
+          "name": "pytest.ini",
+          "size": 88,
+          "extension": ".ini"
+        }
+      ]
+    },
+    {
+      "language": "Text",
+      "file_count": 2,
+      "total_bytes": 384,
+      "percentage": 0.03,
+      "files": [
+        {
+          "path": "backend/requirements.txt",
+          "name": "requirements.txt",
+          "size": 284,
+          "extension": ".txt"
+        },
+        {
+          "path": "backend/requirements-dev.txt",
+          "name": "requirements-dev.txt",
+          "size": 100,
+          "extension": ".txt"
+        }
+      ]
+    },
+    {
+      "language": "No Extension",
+      "file_count": 1,
+      "total_bytes": 211,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "backend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 211,
+          "extension": ""
+        }
+      ]
+    },
+    {
+      "language": "TOML",
+      "file_count": 1,
+      "total_bytes": 118,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "backend/ruff.toml",
+          "name": "ruff.toml",
+          "size": 118,
+          "extension": ".toml"
+        }
+      ]
+    },
+    {
+      "language": "Docker Ignore",
+      "file_count": 1,
+      "total_bytes": 37,
+      "percentage": 0.0,
+      "files": [
+        {
+          "path": "backend/.dockerignore",
+          "name": ".dockerignore",
+          "size": 37,
+          "extension": ".dockerignore"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-05T13:08:01.036828+00:00",
+    "extracted_at": "2026-10-06T12:57:48.938406+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Cerradinho-API.json"
   }
 }

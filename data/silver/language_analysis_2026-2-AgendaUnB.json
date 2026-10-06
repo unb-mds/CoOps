@@ -2,19 +2,19 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-05T13:07:06.668107+00:00",
+  "analyzed_at": "2026-10-06T12:56:47.505235+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 117,
-  "total_bytes": 21232356,
+  "total_files": 118,
+  "total_bytes": 21235371,
   "languages": [
     {
       "language": "Unknown",
-      "file_count": 4,
-      "total_bytes": 14720822,
-      "percentage": 69.33,
+      "file_count": 3,
+      "total_bytes": 14720824,
+      "percentage": 69.32,
       "files": [
         {
           "path": ".agent/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
@@ -23,15 +23,9 @@
           "extension": ".exe"
         },
         {
-          "path": "backend/.env.example",
-          "name": ".env.example",
-          "size": 219,
-          "extension": ".example"
-        },
-        {
           "path": ".env.example",
           "name": ".env.example",
-          "size": 122,
+          "size": 343,
           "extension": ".example"
         },
         {
@@ -49,13 +43,13 @@
       "percentage": 17.21,
       "files": [
         {
-          "path": "public/shaderopt-light.webm",
+          "path": "frontend/public/shaderopt-light.webm",
           "name": "shaderopt-light.webm",
           "size": 2626756,
           "extension": ".webm"
         },
         {
-          "path": "public/shaderopt-dark.webm",
+          "path": "frontend/public/shaderopt-dark.webm",
           "name": "shaderopt-dark.webm",
           "size": 1027916,
           "extension": ".webm"
@@ -75,7 +69,7 @@
           "extension": ".json"
         },
         {
-          "path": "package-lock.json",
+          "path": "frontend/package-lock.json",
           "name": "package-lock.json",
           "size": 62966,
           "extension": ".json"
@@ -99,7 +93,7 @@
           "extension": ".json"
         },
         {
-          "path": "package.json",
+          "path": "frontend/package.json",
           "name": "package.json",
           "size": 488,
           "extension": ".json"
@@ -115,7 +109,7 @@
     {
       "language": "JavaScript",
       "file_count": 14,
-      "total_bytes": 660607,
+      "total_bytes": 660623,
       "percentage": 3.11,
       "files": [
         {
@@ -125,7 +119,7 @@
           "extension": ".js"
         },
         {
-          "path": "src/pages/SecondPage.jsx",
+          "path": "frontend/src/pages/SecondPage.jsx",
           "name": "SecondPage.jsx",
           "size": 35974,
           "extension": ".jsx"
@@ -137,13 +131,13 @@
           "extension": ".js"
         },
         {
-          "path": "src/App.jsx",
+          "path": "frontend/src/App.jsx",
           "name": "App.jsx",
           "size": 26376,
           "extension": ".jsx"
         },
         {
-          "path": "src/pages/PaginaDeEvento.jsx",
+          "path": "frontend/src/pages/PaginaDeEvento.jsx",
           "name": "PaginaDeEvento.jsx",
           "size": 11403,
           "extension": ".jsx"
@@ -155,7 +149,7 @@
           "extension": ".js"
         },
         {
-          "path": "src/contexts/AuthContext.jsx",
+          "path": "frontend/src/contexts/AuthContext.jsx",
           "name": "AuthContext.jsx",
           "size": 6701,
           "extension": ".jsx"
@@ -173,7 +167,7 @@
           "extension": ".js"
         },
         {
-          "path": "src/components/NavBar.jsx",
+          "path": "frontend/src/components/NavBar.jsx",
           "name": "NavBar.jsx",
           "size": 3863,
           "extension": ".jsx"
@@ -182,9 +176,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 60,
-      "total_bytes": 562779,
-      "percentage": 2.65,
+      "file_count": 62,
+      "total_bytes": 565650,
+      "percentage": 2.66,
       "files": [
         {
           "path": ".agent/skills/impeccable/reference/new-work.md",
@@ -217,7 +211,7 @@
           "extension": ".md"
         },
         {
-          "path": ".antigravity/skills/project-standards/SKILL.md",
+          "path": ".agent/skills/project-standards/SKILL.md",
           "name": "SKILL.md",
           "size": 15668,
           "extension": ".md"
@@ -255,19 +249,19 @@
       "percentage": 1.64,
       "files": [
         {
-          "path": "public/banner.png",
+          "path": "frontend/public/banner.png",
           "name": "banner.png",
           "size": 296974,
           "extension": ".png"
         },
         {
-          "path": "public/Logo-AgendaUnB1.png",
+          "path": "frontend/public/Logo-AgendaUnB1.png",
           "name": "Logo-AgendaUnB1.png",
           "size": 47316,
           "extension": ".png"
         },
         {
-          "path": "public/Marca-UnB.png",
+          "path": "frontend/public/Marca-UnB.png",
           "name": "Marca-UnB.png",
           "size": 3942,
           "extension": ".png"
@@ -281,7 +275,7 @@
       "percentage": 0.15,
       "files": [
         {
-          "path": "src/styles/global.css",
+          "path": "frontend/src/styles/global.css",
           "name": "global.css",
           "size": 31645,
           "extension": ".css"
@@ -291,7 +285,7 @@
     {
       "language": "Python",
       "file_count": 8,
-      "total_bytes": 25547,
+      "total_bytes": 25601,
       "percentage": 0.12,
       "files": [
         {
@@ -319,15 +313,15 @@
           "extension": ".py"
         },
         {
-          "path": "backend/src/modules/events/schemas.py",
-          "name": "schemas.py",
-          "size": 1700,
+          "path": "backend/src/main.py",
+          "name": "main.py",
+          "size": 1749,
           "extension": ".py"
         },
         {
-          "path": "backend/src/main.py",
-          "name": "main.py",
-          "size": 1677,
+          "path": "backend/src/modules/events/schemas.py",
+          "name": "schemas.py",
+          "size": 1700,
           "extension": ".py"
         },
         {
@@ -339,7 +333,7 @@
         {
           "path": "backend/src/database/connection.py",
           "name": "connection.py",
-          "size": 570,
+          "size": 552,
           "extension": ".py"
         }
       ]
@@ -445,13 +439,13 @@
     {
       "language": "YAML",
       "file_count": 2,
-      "total_bytes": 2702,
+      "total_bytes": 2774,
       "percentage": 0.01,
       "files": [
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 1702,
+          "size": 1774,
           "extension": ".yml"
         },
         {
@@ -509,7 +503,7 @@
       "percentage": 0.0,
       "files": [
         {
-          "path": "index.html",
+          "path": "frontend/index.html",
           "name": "index.html",
           "size": 791,
           "extension": ".html"
@@ -518,7 +512,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-05T13:08:01.025741+00:00",
+    "extracted_at": "2026-10-06T12:57:48.924390+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AgendaUnB.json"
   }
 }
