@@ -2,19 +2,19 @@
   "repository": "2026-2-Cerradinho-API",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-06T12:56:43.193893+00:00",
+  "analyzed_at": "2026-10-07T12:37:52.586264+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 171,
-  "total_bytes": 1521292,
+  "total_files": 175,
+  "total_bytes": 1543400,
   "languages": [
     {
       "language": "PDF",
       "file_count": 1,
       "total_bytes": 505065,
-      "percentage": 33.2,
+      "percentage": 32.72,
       "files": [
         {
           "path": "backend/tests/scrapers/fixtures/cardapio_darcy_semana.pdf",
@@ -28,7 +28,7 @@
       "language": "HTML",
       "file_count": 2,
       "total_bytes": 363910,
-      "percentage": 23.92,
+      "percentage": 23.58,
       "files": [
         {
           "path": "backend/tests/scrapers/fixtures/turmas_fcte_gama_2026_2.html",
@@ -46,10 +46,16 @@
     },
     {
       "language": "Markdown",
-      "file_count": 58,
-      "total_bytes": 247885,
-      "percentage": 16.29,
+      "file_count": 59,
+      "total_bytes": 264822,
+      "percentage": 17.16,
       "files": [
+        {
+          "path": "docs/REQUISITOS.md",
+          "name": "REQUISITOS.md",
+          "size": 19378,
+          "extension": ".md"
+        },
         {
           "path": "AI-USAGE.md",
           "name": "AI-USAGE.md",
@@ -77,7 +83,7 @@
         {
           "path": "docs/DOCUMENTO-VISAO.md",
           "name": "DOCUMENTO-VISAO.md",
-          "size": 10279,
+          "size": 10297,
           "extension": ".md"
         },
         {
@@ -95,19 +101,13 @@
         {
           "path": "docs/ARQUITETURA.md",
           "name": "ARQUITETURA.md",
-          "size": 7954,
+          "size": 8018,
           "extension": ".md"
         },
         {
           "path": "docs/estudos/estudo-postman-api.md",
           "name": "estudo-postman-api.md",
           "size": 7889,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-beautifulsoup.md",
-          "name": "estudo-beautifulsoup.md",
-          "size": 7759,
           "extension": ".md"
         }
       ]
@@ -116,7 +116,7 @@
       "language": "JSON",
       "file_count": 3,
       "total_bytes": 242248,
-      "percentage": 15.92,
+      "percentage": 15.7,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -142,7 +142,7 @@
       "language": "Python",
       "file_count": 57,
       "total_bytes": 95932,
-      "percentage": 6.31,
+      "percentage": 6.22,
       "files": [
         {
           "path": "backend/app/scrapers/cardapio/parser.py",
@@ -210,7 +210,7 @@
       "language": "TypeScript",
       "file_count": 22,
       "total_bytes": 44109,
-      "percentage": 2.9,
+      "percentage": 2.86,
       "files": [
         {
           "path": "frontend/app/disciplinas/page.tsx",
@@ -278,7 +278,7 @@
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 13149,
-      "percentage": 0.86,
+      "percentage": 0.85,
       "files": [
         {
           "path": "frontend/app/icon.svg",
@@ -320,14 +320,26 @@
     },
     {
       "language": "YAML",
-      "file_count": 3,
-      "total_bytes": 3610,
-      "percentage": 0.24,
+      "file_count": 5,
+      "total_bytes": 8699,
+      "percentage": 0.56,
       "files": [
+        {
+          "path": "mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 3489,
+          "extension": ".yml"
+        },
         {
           "path": ".github/workflows/ci.yml",
           "name": "ci.yml",
           "size": 1943,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "name": "docs.yml",
+          "size": 1600,
           "extension": ".yml"
         },
         {
@@ -423,7 +435,7 @@
     {
       "language": "Git Ignore",
       "file_count": 2,
-      "total_bytes": 740,
+      "total_bytes": 756,
       "percentage": 0.05,
       "files": [
         {
@@ -435,7 +447,7 @@
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 246,
+          "size": 262,
           "extension": ".gitignore"
         }
       ]
@@ -462,8 +474,8 @@
     },
     {
       "language": "Text",
-      "file_count": 2,
-      "total_bytes": 384,
+      "file_count": 3,
+      "total_bytes": 450,
       "percentage": 0.03,
       "files": [
         {
@@ -476,6 +488,12 @@
           "path": "backend/requirements-dev.txt",
           "name": "requirements-dev.txt",
           "size": 100,
+          "extension": ".txt"
+        },
+        {
+          "path": "requirements-docs.txt",
+          "name": "requirements-docs.txt",
+          "size": 66,
           "extension": ".txt"
         }
       ]
@@ -524,7 +542,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-06T12:57:48.938406+00:00",
+    "extracted_at": "2026-10-07T12:38:56.442732+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Cerradinho-API.json"
   }
 }

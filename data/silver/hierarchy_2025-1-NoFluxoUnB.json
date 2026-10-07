@@ -2,7 +2,7 @@
   "repository": "2025-1-NoFluxoUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-06T12:56:02.876939+00:00",
+  "extracted_at": "2026-10-07T12:37:28.332689+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -120,6 +120,14 @@
         "path": ".github/PULL_REQUEST_TEMPLATE.md"
       },
       {
+        "name": "dependabot.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1346,
+        "extension": ".yml",
+        "path": ".github/dependabot.yml"
+      },
+      {
         "name": "gitleaks-baseline.json",
         "type": "file",
         "language": "JSON",
@@ -134,10 +142,18 @@
         "children": []
       },
       {
+        "name": "a11y.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1605,
+        "extension": ".yml",
+        "path": ".github/workflows/a11y.yml"
+      },
+      {
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 761,
+        "size": 989,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
       },
@@ -153,7 +169,7 @@
         "name": "deploy.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2236,
+        "size": 3879,
         "extension": ".yml",
         "path": ".github/workflows/deploy.yml"
       },
@@ -161,7 +177,7 @@
         "name": "pipelineCI.yml",
         "type": "file",
         "language": "YAML",
-        "size": 4902,
+        "size": 5079,
         "extension": ".yml",
         "path": ".github/workflows/pipelineCI.yml"
       },
@@ -201,7 +217,7 @@
         "name": "security-and-quality.yml",
         "type": "file",
         "language": "YAML",
-        "size": 6376,
+        "size": 7256,
         "extension": ".yml",
         "path": ".github/workflows/security-and-quality.yml"
       },
@@ -271,7 +287,7 @@
         "name": "CLAUDE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4255,
+        "size": 4369,
         "extension": ".md",
         "path": "CLAUDE.md"
       },
@@ -1213,7 +1229,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 1700,
+        "size": 1904,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -1355,7 +1371,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 312498,
+        "size": 313481,
         "extension": ".json",
         "path": "backend/package-lock.json"
       },
@@ -1363,7 +1379,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2536,
+        "size": 2621,
         "extension": ".json",
         "path": "backend/package.json"
       },
@@ -1496,6 +1512,14 @@
         "children": []
       },
       {
+        "name": "body_limit.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2572,
+        "extension": ".ts",
+        "path": "backend/src/config/body_limit.ts"
+      },
+      {
         "name": "cors.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1520,6 +1544,14 @@
         "path": "backend/src/config/maritaca_errors.ts"
       },
       {
+        "name": "rate_limit.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3623,
+        "extension": ".ts",
+        "path": "backend/src/config/rate_limit.ts"
+      },
+      {
         "name": "controllers",
         "type": "directory",
         "path": "backend/src/controllers",
@@ -1529,7 +1561,7 @@
         "name": "PlanejamentoController.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 46883,
+        "size": 50079,
         "extension": ".ts",
         "path": "backend/src/controllers/PlanejamentoController.ts"
       },
@@ -1537,7 +1569,7 @@
         "name": "assistente_controller.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 18154,
+        "size": 30285,
         "extension": ".ts",
         "path": "backend/src/controllers/assistente_controller.ts"
       },
@@ -1545,7 +1577,7 @@
         "name": "chat_controller.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6631,
+        "size": 7227,
         "extension": ".ts",
         "path": "backend/src/controllers/chat_controller.ts"
       },
@@ -1561,7 +1593,7 @@
         "name": "fluxograma_controller.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 53071,
+        "size": 54471,
         "extension": ".ts",
         "path": "backend/src/controllers/fluxograma_controller.ts"
       },
@@ -1577,7 +1609,7 @@
         "name": "users_controller.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4316,
+        "size": 5352,
         "extension": ".ts",
         "path": "backend/src/controllers/users_controller.ts"
       },
@@ -1585,7 +1617,7 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6622,
+        "size": 7345,
         "extension": ".ts",
         "path": "backend/src/index.ts"
       },
@@ -1601,7 +1633,7 @@
         "name": "logger.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1578,
+        "size": 2417,
         "extension": ".ts",
         "path": "backend/src/logger.ts"
       },
@@ -1637,7 +1669,7 @@
         "name": "context.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7606,
+        "size": 7804,
         "extension": ".ts",
         "path": "backend/src/services/agente/context.ts"
       },
@@ -1711,7 +1743,7 @@
         "name": "grade_actuator.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 26084,
+        "size": 26219,
         "extension": ".ts",
         "path": "backend/src/services/chat/actuators/grade_actuator.ts"
       },
@@ -1719,7 +1751,7 @@
         "name": "integralizacao_actuator.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7629,
+        "size": 7764,
         "extension": ".ts",
         "path": "backend/src/services/chat/actuators/integralizacao_actuator.ts"
       },
@@ -1759,9 +1791,17 @@
         "name": "orquestrador_agent.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 9968,
+        "size": 10172,
         "extension": ".ts",
         "path": "backend/src/services/chat/orquestrador_agent.ts"
+      },
+      {
+        "name": "sub_run.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1301,
+        "extension": ".ts",
+        "path": "backend/src/services/chat/sub_run.ts"
       },
       {
         "name": "supabase_session.ts",
@@ -1772,10 +1812,18 @@
         "path": "backend/src/services/chat/supabase_session.ts"
       },
       {
+        "name": "darcy_cota.service.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4993,
+        "extension": ".ts",
+        "path": "backend/src/services/darcy_cota.service.ts"
+      },
+      {
         "name": "dificuldade_agente.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 23065,
+        "size": 23469,
         "extension": ".ts",
         "path": "backend/src/services/dificuldade_agente.service.ts"
       },
@@ -1783,7 +1831,7 @@
         "name": "integralizacao.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3408,
+        "size": 3888,
         "extension": ".ts",
         "path": "backend/src/services/integralizacao.service.ts"
       },
@@ -1791,7 +1839,7 @@
         "name": "planejador_agente.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 11179,
+        "size": 12872,
         "extension": ".ts",
         "path": "backend/src/services/planejador_agente.service.ts"
       },
@@ -1823,7 +1871,7 @@
         "name": "sabia.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 11357,
+        "size": 23437,
         "extension": ".ts",
         "path": "backend/src/services/sabia.service.ts"
       },
@@ -1867,7 +1915,7 @@
         "name": "ai_usage_logger.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1913,
+        "size": 7104,
         "extension": ".ts",
         "path": "backend/src/utils/ai_usage_logger.ts"
       },
@@ -1878,6 +1926,14 @@
         "size": 1007,
         "extension": ".ts",
         "path": "backend/src/utils/controller_logger.ts"
+      },
+      {
+        "name": "erro_publico.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1049,
+        "extension": ".ts",
+        "path": "backend/src/utils/erro_publico.ts"
       },
       {
         "name": "expressao_logica.ts",
@@ -1904,12 +1960,44 @@
         "path": "backend/src/utils/horario_slots.ts"
       },
       {
+        "name": "ia_acesso.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6706,
+        "extension": ".ts",
+        "path": "backend/src/utils/ia_acesso.ts"
+      },
+      {
+        "name": "ragflow_usage.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1240,
+        "extension": ".ts",
+        "path": "backend/src/utils/ragflow_usage.ts"
+      },
+      {
         "name": "ranking.formatter.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7884,
+        "size": 8672,
         "extension": ".ts",
         "path": "backend/src/utils/ranking.formatter.ts"
+      },
+      {
+        "name": "readiness.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2557,
+        "extension": ".ts",
+        "path": "backend/src/utils/readiness.ts"
+      },
+      {
+        "name": "shutdown.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1951,
+        "extension": ".ts",
+        "path": "backend/src/utils/shutdown.ts"
       },
       {
         "name": "text.utils.ts",
@@ -1974,6 +2062,70 @@
         "children": []
       },
       {
+        "name": "ai-sem-creditos-evento.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 14582,
+        "extension": ".ts",
+        "path": "backend/tests-ts/ai-sem-creditos-evento.test.ts"
+      },
+      {
+        "name": "assistente-erros.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11804,
+        "extension": ".ts",
+        "path": "backend/tests-ts/assistente-erros.test.ts"
+      },
+      {
+        "name": "assistente-health.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5520,
+        "extension": ".ts",
+        "path": "backend/tests-ts/assistente-health.test.ts"
+      },
+      {
+        "name": "assistente-input-limit.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2149,
+        "extension": ".ts",
+        "path": "backend/tests-ts/assistente-input-limit.test.ts"
+      },
+      {
+        "name": "assistente-sabia-resiliencia.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6240,
+        "extension": ".ts",
+        "path": "backend/tests-ts/assistente-sabia-resiliencia.test.ts"
+      },
+      {
+        "name": "body-limit.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3196,
+        "extension": ".ts",
+        "path": "backend/tests-ts/body-limit.test.ts"
+      },
+      {
+        "name": "ci-workflows.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4721,
+        "extension": ".ts",
+        "path": "backend/tests-ts/ci-workflows.test.ts"
+      },
+      {
+        "name": "comando-direto-sem-llm.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3317,
+        "extension": ".ts",
+        "path": "backend/tests-ts/comando-direto-sem-llm.test.ts"
+      },
+      {
         "name": "controller_logger.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1996,6 +2148,76 @@
         "size": 3281,
         "extension": ".ts",
         "path": "backend/tests-ts/cursos_controller.test.ts"
+      },
+      {
+        "name": "darcy-login-cota.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 39483,
+        "extension": ".ts",
+        "path": "backend/tests-ts/darcy-login-cota.test.ts"
+      },
+      {
+        "name": "db",
+        "type": "directory",
+        "path": "backend/tests-ts/db",
+        "children": []
+      },
+      {
+        "name": "ai-saldo.pglite.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 22972,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/ai-saldo.pglite.test.ts"
+      },
+      {
+        "name": "casar-disciplinas.pglite.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 24589,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/casar-disciplinas.pglite.test.ts"
+      },
+      {
+        "name": "catalogo.pglite.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6717,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/catalogo.pglite.test.ts"
+      },
+      {
+        "name": "darcy-cota.pglite.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 22563,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/darcy-cota.pglite.test.ts"
+      },
+      {
+        "name": "dashboard-rastreabilidade.pglite.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 14548,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/dashboard-rastreabilidade.pglite.test.ts"
+      },
+      {
+        "name": "pglite_runner.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3069,
+        "extension": ".mjs",
+        "path": "backend/tests-ts/db/pglite_runner.mjs"
+      },
+      {
+        "name": "pglite_supabase.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2139,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/pglite_supabase.ts"
       },
       {
         "name": "distribuir-slots-fix.test.ts",
@@ -2033,7 +2255,7 @@
         "name": "fluxograma_controller.routes.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 14682,
+        "size": 16619,
         "extension": ".ts",
         "path": "backend/tests-ts/fluxograma_controller.routes.test.ts"
       },
@@ -2041,7 +2263,7 @@
         "name": "fluxograma_controller.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4601,
+        "size": 4827,
         "extension": ".ts",
         "path": "backend/tests-ts/fluxograma_controller.test.ts"
       },
@@ -2057,7 +2279,7 @@
         "name": "grade-actuator.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 44040,
+        "size": 45734,
         "extension": ".ts",
         "path": "backend/tests-ts/grade-actuator.test.ts"
       },
@@ -2068,6 +2290,22 @@
         "size": 1790,
         "extension": ".ts",
         "path": "backend/tests-ts/horario-slots-backend.test.ts"
+      },
+      {
+        "name": "integralizacao-service.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1910,
+        "extension": ".ts",
+        "path": "backend/tests-ts/integralizacao-service.test.ts"
+      },
+      {
+        "name": "logger-transports.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2949,
+        "extension": ".ts",
+        "path": "backend/tests-ts/logger-transports.test.ts"
       },
       {
         "name": "maritaca-errors.test.ts",
@@ -2121,7 +2359,7 @@
         "name": "orquestrador-fase2.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 17513,
+        "size": 19152,
         "extension": ".ts",
         "path": "backend/tests-ts/orquestrador-fase2.test.ts"
       },
@@ -2137,7 +2375,7 @@
         "name": "planejador-agente.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 11567,
+        "size": 14002,
         "extension": ".ts",
         "path": "backend/tests-ts/planejador-agente.test.ts"
       },
@@ -2166,20 +2404,60 @@
         "path": "backend/tests-ts/planejamento.test.ts"
       },
       {
+        "name": "rate-limit.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5932,
+        "extension": ".ts",
+        "path": "backend/tests-ts/rate-limit.test.ts"
+      },
+      {
+        "name": "readiness.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3608,
+        "extension": ".ts",
+        "path": "backend/tests-ts/readiness.test.ts"
+      },
+      {
         "name": "revisor-fase3.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 9409,
+        "size": 10845,
         "extension": ".ts",
         "path": "backend/tests-ts/revisor-fase3.test.ts"
+      },
+      {
+        "name": "sabia-erros.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4112,
+        "extension": ".ts",
+        "path": "backend/tests-ts/sabia-erros.test.ts"
+      },
+      {
+        "name": "sabia-service.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 15531,
+        "extension": ".ts",
+        "path": "backend/tests-ts/sabia-service.test.ts"
       },
       {
         "name": "session-persistence.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 12394,
+        "size": 12571,
         "extension": ".ts",
         "path": "backend/tests-ts/session-persistence.test.ts"
+      },
+      {
+        "name": "shutdown.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2826,
+        "extension": ".ts",
+        "path": "backend/tests-ts/shutdown.test.ts"
       },
       {
         "name": "substitutos-equivalencia.test.ts",
@@ -2201,7 +2479,7 @@
         "name": "users_controller.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8847,
+        "size": 10650,
         "extension": ".ts",
         "path": "backend/tests-ts/users_controller.test.ts"
       },
@@ -2228,10 +2506,18 @@
         "path": "backend/tests-ts/utils/historico_sigaa.test.ts"
       },
       {
+        "name": "ia_acesso_liberado.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1140,
+        "extension": ".ts",
+        "path": "backend/tests-ts/utils/ia_acesso_liberado.ts"
+      },
+      {
         "name": "ranking.formatter.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 10998,
+        "size": 11291,
         "extension": ".ts",
         "path": "backend/tests-ts/utils/ranking.formatter.test.ts"
       },
@@ -2306,6 +2592,14 @@
         "path": "docs/chatbot-orquestrador.md"
       },
       {
+        "name": "design-system.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10419,
+        "extension": ".md",
+        "path": "docs/design-system.md"
+      },
+      {
         "name": "investigacoes",
         "type": "directory",
         "path": "docs/investigacoes",
@@ -2318,6 +2612,14 @@
         "size": 20803,
         "extension": ".md",
         "path": "docs/investigacoes/2026-09-diagnostico-dados-ml.md"
+      },
+      {
+        "name": "2026-09-light-mode-contraste.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6129,
+        "extension": ".md",
+        "path": "docs/investigacoes/2026-09-light-mode-contraste.md"
       },
       {
         "name": "motor2-v2-spec.md",
@@ -2356,6 +2658,14 @@
         "size": 7919,
         "extension": ".md",
         "path": "docs/testes/PTOSS2-fluxograma-controller.md"
+      },
+      {
+        "name": "acessibilidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5134,
+        "extension": ".md",
+        "path": "docs/testes/acessibilidade.md"
       },
       {
         "name": "evidencias",
@@ -3831,7 +4141,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1998,
+        "size": 2279,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -3879,7 +4189,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 364839,
+        "size": 389994,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -3887,7 +4197,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2442,
+        "size": 2719,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -3903,7 +4213,7 @@
         "name": "pnpm-lock.yaml",
         "type": "file",
         "language": "YAML",
-        "size": 231158,
+        "size": 247371,
         "extension": ".yaml",
         "path": "frontend/pnpm-lock.yaml"
       },
@@ -3955,7 +4265,7 @@
         "name": "app.css",
         "type": "file",
         "language": "CSS",
-        "size": 7751,
+        "size": 22860,
         "extension": ".css",
         "path": "frontend/src/app.css"
       },
@@ -3971,7 +4281,7 @@
         "name": "app.html",
         "type": "file",
         "language": "HTML",
-        "size": 1109,
+        "size": 3078,
         "extension": ".html",
         "path": "frontend/src/app.html"
       },
@@ -4034,6 +4344,52 @@
         "children": []
       },
       {
+        "name": "a11y",
+        "type": "directory",
+        "path": "frontend/src/lib/components/a11y",
+        "children": []
+      },
+      {
+        "name": "A11yMenu.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3666,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/a11y/A11yMenu.svelte"
+      },
+      {
+        "name": "A11ySwitch.a11y.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1400,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/a11y/A11ySwitch.a11y.test.ts"
+      },
+      {
+        "name": "A11ySwitch.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2130,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/a11y/A11ySwitch.svelte"
+      },
+      {
+        "name": "UniversalAccessIcon.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 901,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/a11y/UniversalAccessIcon.svelte"
+      },
+      {
+        "name": "a11y-options.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1474,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/a11y/a11y-options.ts"
+      },
+      {
         "name": "admin",
         "type": "directory",
         "path": "frontend/src/lib/components/admin",
@@ -4048,6 +4404,68 @@
         "path": "frontend/src/lib/components/admin/AdminNav.svelte"
       },
       {
+        "name": "dashboard",
+        "type": "directory",
+        "path": "frontend/src/lib/components/admin/dashboard",
+        "children": []
+      },
+      {
+        "name": "IaSaldoAlertas.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2411,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/dashboard/IaSaldoAlertas.svelte"
+      },
+      {
+        "name": "IaSaldoCard.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7643,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/dashboard/IaSaldoCard.svelte"
+      },
+      {
+        "name": "IaSaudeLogCard.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3151,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/dashboard/IaSaudeLogCard.svelte"
+      },
+      {
+        "name": "IaSemPrecoAlerta.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 879,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/dashboard/IaSemPrecoAlerta.svelte"
+      },
+      {
+        "name": "SuporteCard.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5709,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/dashboard/SuporteCard.svelte"
+      },
+      {
+        "name": "dashboard-cards.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4049,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/admin/dashboard/dashboard-cards.test.ts"
+      },
+      {
+        "name": "ia-saldo-cards.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5429,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/admin/dashboard/ia-saldo-cards.test.ts"
+      },
+      {
         "name": "auth",
         "type": "directory",
         "path": "frontend/src/lib/components/auth",
@@ -4057,23 +4475,15 @@
         "name": "AnonymousLogin.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2926,
+        "size": 3109,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/auth/AnonymousLogin.svelte"
-      },
-      {
-        "name": "AuthErrorBoundary.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1812,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/auth/AuthErrorBoundary.svelte"
       },
       {
         "name": "AuthHomeLink.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 633,
+        "size": 991,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/auth/AuthHomeLink.svelte"
       },
@@ -4081,23 +4491,15 @@
         "name": "LoginForm.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7100,
+        "size": 7454,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/auth/LoginForm.svelte"
-      },
-      {
-        "name": "LogoutButton.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1017,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/auth/LogoutButton.svelte"
       },
       {
         "name": "PasswordRecovery.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3440,
+        "size": 3516,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/auth/PasswordRecovery.svelte"
       },
@@ -4105,9 +4507,23 @@
         "name": "SignupForm.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 10123,
+        "size": 10615,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/auth/SignupForm.svelte"
+      },
+      {
+        "name": "brand",
+        "type": "directory",
+        "path": "frontend/src/lib/components/brand",
+        "children": []
+      },
+      {
+        "name": "CrianexWordmark.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4689,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/brand/CrianexWordmark.svelte"
       },
       {
         "name": "chat",
@@ -4119,7 +4535,7 @@
         "name": "ChatBubble.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 826,
+        "size": 1049,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/chat/ChatBubble.svelte"
       },
@@ -4127,7 +4543,7 @@
         "name": "ChatLoader.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3006,
+        "size": 3338,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/chat/ChatLoader.svelte"
       },
@@ -4135,7 +4551,7 @@
         "name": "ChatPanel.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 22858,
+        "size": 26013,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/chat/ChatPanel.svelte"
       },
@@ -4143,9 +4559,41 @@
         "name": "ChatWrapper.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 810,
+        "size": 974,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/chat/ChatWrapper.svelte"
+      },
+      {
+        "name": "DarcyLimiteCard.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2115,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/chat/DarcyLimiteCard.svelte"
+      },
+      {
+        "name": "DarcyLoginModal.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2188,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/chat/DarcyLoginModal.svelte"
+      },
+      {
+        "name": "DarcyPedidoMaisPerguntas.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5557,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/chat/DarcyPedidoMaisPerguntas.svelte"
+      },
+      {
+        "name": "DarcyUsoRing.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1963,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/chat/DarcyUsoRing.svelte"
       },
       {
         "name": "conheca",
@@ -4171,7 +4619,7 @@
         "name": "SubjectChainView.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 21970,
+        "size": 22859,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/disciplinas/SubjectChainView.svelte"
       },
@@ -4179,7 +4627,7 @@
         "name": "TurmasVagasPanel.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 8844,
+        "size": 9016,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/disciplinas/TurmasVagasPanel.svelte"
       },
@@ -4193,7 +4641,7 @@
         "name": "PageBackground.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1341,
+        "size": 1753,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/effects/PageBackground.svelte"
       },
@@ -4229,7 +4677,7 @@
         "name": "CourseCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2923,
+        "size": 3120,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/cards/CourseCard.svelte"
       },
@@ -4237,9 +4685,25 @@
         "name": "SubjectCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 16040,
+        "size": 19284,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/cards/SubjectCard.svelte"
+      },
+      {
+        "name": "subject-card-colors.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1580,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/fluxograma/cards/subject-card-colors.test.ts"
+      },
+      {
+        "name": "subject-card-colors.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1270,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/fluxograma/cards/subject-card-colors.ts"
       },
       {
         "name": "controls",
@@ -4251,7 +4715,7 @@
         "name": "FluxogramViewMenu.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 5449,
+        "size": 5934,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/controls/FluxogramViewMenu.svelte"
       },
@@ -4259,7 +4723,7 @@
         "name": "FluxogramaHeader.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 12268,
+        "size": 15009,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/controls/FluxogramaHeader.svelte"
       },
@@ -4267,15 +4731,23 @@
         "name": "FluxogramaLegendControls.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 5332,
+        "size": 4889,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/controls/FluxogramaLegendControls.svelte"
+      },
+      {
+        "name": "FluxogramaLegendaStatus.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1656,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/fluxograma/controls/FluxogramaLegendaStatus.svelte"
       },
       {
         "name": "MobileFilterNotice.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2062,
+        "size": 2113,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/controls/MobileFilterNotice.svelte"
       },
@@ -4283,7 +4755,7 @@
         "name": "MudancaCursoLauncher.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1400,
+        "size": 1454,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/controls/MudancaCursoLauncher.svelte"
       },
@@ -4291,7 +4763,7 @@
         "name": "RequisitosMudancaCursoBanner.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6471,
+        "size": 6880,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/controls/RequisitosMudancaCursoBanner.svelte"
       },
@@ -4305,7 +4777,7 @@
         "name": "CargaHorariaDashboard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 10232,
+        "size": 10875,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/dashboard/CargaHorariaDashboard.svelte"
       },
@@ -4313,7 +4785,7 @@
         "name": "IntegralizacaoSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1658,
+        "size": 1716,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/dashboard/IntegralizacaoSection.svelte"
       },
@@ -4321,7 +4793,7 @@
         "name": "OptativasAdicionadasSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6661,
+        "size": 7197,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/dashboard/OptativasAdicionadasSection.svelte"
       },
@@ -4329,7 +4801,7 @@
         "name": "ProgressSummaryBar.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3460,
+        "size": 3777,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/dashboard/ProgressSummaryBar.svelte"
       },
@@ -4337,7 +4809,7 @@
         "name": "ProgressSummarySection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 11163,
+        "size": 12188,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/dashboard/ProgressSummarySection.svelte"
       },
@@ -4345,7 +4817,7 @@
         "name": "ProgressToolsSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1532,
+        "size": 1612,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/dashboard/ProgressToolsSection.svelte"
       },
@@ -4359,7 +4831,7 @@
         "name": "FluxogramContainer.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 13569,
+        "size": 13618,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/layout/FluxogramContainer.svelte"
       },
@@ -4367,7 +4839,7 @@
         "name": "FluxogramViewportChrome.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 33280,
+        "size": 36011,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/layout/FluxogramViewportChrome.svelte"
       },
@@ -4375,7 +4847,7 @@
         "name": "PrerequisiteConnections.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 21757,
+        "size": 22974,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/layout/PrerequisiteConnections.svelte"
       },
@@ -4383,7 +4855,7 @@
         "name": "SemesterColumn.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7194,
+        "size": 7202,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/layout/SemesterColumn.svelte"
       },
@@ -4391,7 +4863,7 @@
         "name": "SemesterNavChips.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4975,
+        "size": 4997,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/layout/SemesterNavChips.svelte"
       },
@@ -4405,7 +4877,7 @@
         "name": "ManualStatusEditor.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6293,
+        "size": 6791,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/ManualStatusEditor.svelte"
       },
@@ -4413,7 +4885,7 @@
         "name": "MateriasConcluidasModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 18597,
+        "size": 19161,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/MateriasConcluidasModal.svelte"
       },
@@ -4421,7 +4893,7 @@
         "name": "MudancaCursoModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 9175,
+        "size": 9766,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/MudancaCursoModal.svelte"
       },
@@ -4429,7 +4901,7 @@
         "name": "PrerequisiteChainDialog.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 17390,
+        "size": 18090,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/PrerequisiteChainDialog.svelte"
       },
@@ -4437,7 +4909,7 @@
         "name": "ScreenshotChoiceModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3584,
+        "size": 3750,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/ScreenshotChoiceModal.svelte"
       },
@@ -4445,7 +4917,7 @@
         "name": "SubjectClassesTab.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3136,
+        "size": 3232,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/SubjectClassesTab.svelte"
       },
@@ -4453,31 +4925,9 @@
         "name": "SubjectDetailsModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 19107,
+        "size": 20219,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/fluxograma/modal/SubjectDetailsModal.svelte"
-      },
-      {
-        "name": "forms",
-        "type": "directory",
-        "path": "frontend/src/lib/components/forms",
-        "children": []
-      },
-      {
-        "name": "Select.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1992,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/forms/Select.svelte"
-      },
-      {
-        "name": "TextInput.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2136,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/forms/TextInput.svelte"
       },
       {
         "name": "home",
@@ -4489,15 +4939,23 @@
         "name": "ComoFuncionaSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2325,
+        "size": 2433,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/ComoFuncionaSection.svelte"
+      },
+      {
+        "name": "CrianexSection.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4110,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/home/CrianexSection.svelte"
       },
       {
         "name": "FeatureCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2996,
+        "size": 3133,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/FeatureCard.svelte"
       },
@@ -4505,7 +4963,7 @@
         "name": "HeroSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6026,
+        "size": 5999,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/HeroSection.svelte"
       },
@@ -4513,7 +4971,7 @@
         "name": "HomeFooter.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3226,
+        "size": 3807,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/HomeFooter.svelte"
       },
@@ -4521,7 +4979,7 @@
         "name": "MemberCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 10064,
+        "size": 11389,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/MemberCard.svelte"
       },
@@ -4529,7 +4987,7 @@
         "name": "ProntoParaOrganizarSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1368,
+        "size": 1476,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/ProntoParaOrganizarSection.svelte"
       },
@@ -4537,7 +4995,7 @@
         "name": "SobreNosSection.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 19390,
+        "size": 27483,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/home/SobreNosSection.svelte"
       },
@@ -4562,52 +5020,12 @@
         "children": []
       },
       {
-        "name": "AppLogo.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1164,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/AppLogo.svelte"
-      },
-      {
-        "name": "Breadcrumbs.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 973,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/Breadcrumbs.svelte"
-      },
-      {
         "name": "Footer.svelte",
         "type": "file",
         "language": "Unknown",
         "size": 1016,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/Footer.svelte"
-      },
-      {
-        "name": "GlassContainer.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1342,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/GlassContainer.svelte"
-      },
-      {
-        "name": "GradientCTAButton.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2011,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/GradientCTAButton.svelte"
-      },
-      {
-        "name": "GradientUnderlineButton.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1467,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/GradientUnderlineButton.svelte"
       },
       {
         "name": "LoadingBar.svelte",
@@ -4621,23 +5039,15 @@
         "name": "Navbar.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7085,
+        "size": 7699,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/Navbar.svelte"
-      },
-      {
-        "name": "PageLoading.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 697,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/PageLoading.svelte"
       },
       {
         "name": "PageTransition.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7103,
+        "size": 7309,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/PageTransition.svelte"
       },
@@ -4645,25 +5055,9 @@
         "name": "ReleaseNotesModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 8014,
+        "size": 10840,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/ReleaseNotesModal.svelte"
-      },
-      {
-        "name": "Sidebar.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2737,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/Sidebar.svelte"
-      },
-      {
-        "name": "SplashScreen.svelte",
-        "type": "file",
-        "language": "Unknown",
-        "size": 711,
-        "extension": ".svelte",
-        "path": "frontend/src/lib/components/layout/SplashScreen.svelte"
       },
       {
         "name": "navbar",
@@ -4675,7 +5069,7 @@
         "name": "AccountMenu.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4492,
+        "size": 4903,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/navbar/AccountMenu.svelte"
       },
@@ -4683,23 +5077,39 @@
         "name": "MobileDrawer.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7478,
+        "size": 8044,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/navbar/MobileDrawer.svelte"
+      },
+      {
+        "name": "ModeToggle.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3278,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/layout/navbar/ModeToggle.svelte"
       },
       {
         "name": "NavItems.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1658,
+        "size": 1747,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/navbar/NavItems.svelte"
+      },
+      {
+        "name": "NavTooltip.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 885,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/layout/navbar/NavTooltip.svelte"
       },
       {
         "name": "NotificationsMenu.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3336,
+        "size": 3586,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/layout/navbar/NotificationsMenu.svelte"
       },
@@ -4721,7 +5131,7 @@
         "name": "MateriaNaturezaBadge.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1566,
+        "size": 1583,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/materia/MateriaNaturezaBadge.svelte"
       },
@@ -4729,7 +5139,7 @@
         "name": "SeguirVagaButton.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1603,
+        "size": 1605,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/materia/SeguirVagaButton.svelte"
       },
@@ -4743,7 +5153,7 @@
         "name": "HelpTip.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1966,
+        "size": 2034,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/onboarding/HelpTip.svelte"
       },
@@ -4751,7 +5161,7 @@
         "name": "OnboardingTour.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 12292,
+        "size": 12475,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/onboarding/OnboardingTour.svelte"
       },
@@ -4773,7 +5183,7 @@
         "name": "AssistenteChatFab.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 8003,
+        "size": 8875,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/AssistenteChatFab.svelte"
       },
@@ -4781,7 +5191,7 @@
         "name": "CenarioSwitcher.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2112,
+        "size": 2148,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/CenarioSwitcher.svelte"
       },
@@ -4789,7 +5199,7 @@
         "name": "GradeResumo.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3402,
+        "size": 3519,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/GradeResumo.svelte"
       },
@@ -4797,7 +5207,7 @@
         "name": "MateriaSearchAdd.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4203,
+        "size": 4466,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/MateriaSearchAdd.svelte"
       },
@@ -4805,7 +5215,7 @@
         "name": "MontadorGradeView.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 45601,
+        "size": 46794,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/MontadorGradeView.svelte"
       },
@@ -4813,7 +5223,7 @@
         "name": "PreRequisitoConfirmDialog.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4967,
+        "size": 5208,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/PreRequisitoConfirmDialog.svelte"
       },
@@ -4821,7 +5231,7 @@
         "name": "ScheduleGrid.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 18075,
+        "size": 18455,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/ScheduleGrid.svelte"
       },
@@ -4829,7 +5239,7 @@
         "name": "SituacaoPanel.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 12241,
+        "size": 12722,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/SituacaoPanel.svelte"
       },
@@ -4837,7 +5247,7 @@
         "name": "SubjectTurmaSelector.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 11528,
+        "size": 12065,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/SubjectTurmaSelector.svelte"
       },
@@ -4845,7 +5255,7 @@
         "name": "TrocarTurmaDialog.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3100,
+        "size": 3214,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/TrocarTurmaDialog.svelte"
       },
@@ -4853,7 +5263,7 @@
         "name": "TurmaOption.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3629,
+        "size": 3831,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/planejamento/TurmaOption.svelte"
       },
@@ -4867,7 +5277,7 @@
         "name": "MateriaPlanCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6024,
+        "size": 6827,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/MateriaPlanCard.svelte"
       },
@@ -4875,7 +5285,7 @@
         "name": "OnboardingModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 11280,
+        "size": 12108,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/OnboardingModal.svelte"
       },
@@ -4883,7 +5293,7 @@
         "name": "PlannerChatPanel.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 5254,
+        "size": 5364,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/PlannerChatPanel.svelte"
       },
@@ -4891,7 +5301,7 @@
         "name": "PlannerPrerequisiteConnections.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 14410,
+        "size": 14435,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/PlannerPrerequisiteConnections.svelte"
       },
@@ -4899,7 +5309,7 @@
         "name": "PlannerSvelteFlow.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 13389,
+        "size": 16991,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/PlannerSvelteFlow.svelte"
       },
@@ -4907,7 +5317,7 @@
         "name": "PlanoFormaturaView.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 27494,
+        "size": 28804,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/PlanoFormaturaView.svelte"
       },
@@ -4923,7 +5333,7 @@
         "name": "SemestreAtualColumn.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 2713,
+        "size": 3436,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/SemestreAtualColumn.svelte"
       },
@@ -4931,7 +5341,7 @@
         "name": "SemestrePlanCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4094,
+        "size": 4274,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/SemestrePlanCard.svelte"
       },
@@ -4939,7 +5349,7 @@
         "name": "SlotCard.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1042,
+        "size": 1144,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/SlotCard.svelte"
       },
@@ -4947,7 +5357,7 @@
         "name": "SvelteFlowHeaderNode.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 712,
+        "size": 850,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/plano-formatura/SvelteFlowHeaderNode.svelte"
       },
@@ -4977,7 +5387,7 @@
         "name": "PageMeta.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1586,
+        "size": 1618,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/seo/PageMeta.svelte"
       },
@@ -4991,7 +5401,7 @@
         "name": "SuporteFab.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 14370,
+        "size": 15019,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/support/SuporteFab.svelte"
       },
@@ -5002,10 +5412,18 @@
         "children": []
       },
       {
+        "name": "DarcyPedidoAdminPanel.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7462,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/tickets/DarcyPedidoAdminPanel.svelte"
+      },
+      {
         "name": "TicketChat.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 16645,
+        "size": 17470,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/tickets/TicketChat.svelte"
       },
@@ -5095,7 +5513,7 @@
         "name": "badge.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1894,
+        "size": 1914,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/ui/badge/badge.svelte"
       },
@@ -5117,7 +5535,7 @@
         "name": "button.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3080,
+        "size": 3093,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/ui/button/button.svelte"
       },
@@ -5187,7 +5605,7 @@
         "name": "card.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 521,
+        "size": 526,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/ui/card/card.svelte"
       },
@@ -5765,7 +6183,7 @@
         "name": "CourseSelectionModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6951,
+        "size": 7581,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/CourseSelectionModal.svelte"
       },
@@ -5773,7 +6191,7 @@
         "name": "DisciplinaList.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1981,
+        "size": 2233,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/DisciplinaList.svelte"
       },
@@ -5781,7 +6199,7 @@
         "name": "FileDropzone.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 5978,
+        "size": 7058,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/FileDropzone.svelte"
       },
@@ -5789,7 +6207,7 @@
         "name": "HelpButton.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 831,
+        "size": 993,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/HelpButton.svelte"
       },
@@ -5797,7 +6215,7 @@
         "name": "HelpModal.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 5934,
+        "size": 6623,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/HelpModal.svelte"
       },
@@ -5805,7 +6223,7 @@
         "name": "ProcessingResults.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7092,
+        "size": 7297,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/ProcessingResults.svelte"
       },
@@ -5813,7 +6231,7 @@
         "name": "UploadProgress.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1955,
+        "size": 2022,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/UploadProgress.svelte"
       },
@@ -5821,9 +6239,17 @@
         "name": "UploadSuccess.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3379,
+        "size": 3573,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/upload/UploadSuccess.svelte"
+      },
+      {
+        "name": "uploadTema.contrast.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10631,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/upload/uploadTema.contrast.test.ts"
       },
       {
         "name": "config.ts",
@@ -5843,7 +6269,7 @@
         "name": "release.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2711,
+        "size": 3639,
         "extension": ".ts",
         "path": "frontend/src/lib/config/release.ts"
       },
@@ -5851,7 +6277,7 @@
         "name": "routes.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2723,
+        "size": 2744,
         "extension": ".ts",
         "path": "frontend/src/lib/config/routes.ts"
       },
@@ -5860,6 +6286,14 @@
         "type": "directory",
         "path": "frontend/src/lib/factories",
         "children": []
+      },
+      {
+        "name": "casar-response-equivalencia.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3100,
+        "extension": ".ts",
+        "path": "frontend/src/lib/factories/casar-response-equivalencia.test.ts"
       },
       {
         "name": "equivalencias-pdf.test.ts",
@@ -5873,7 +6307,7 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 33328,
+        "size": 34093,
         "extension": ".ts",
         "path": "frontend/src/lib/factories/index.ts"
       },
@@ -5895,7 +6329,7 @@
         "name": "authGuard.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6011,
+        "size": 6031,
         "extension": ".ts",
         "path": "frontend/src/lib/guards/authGuard.ts"
       },
@@ -5947,7 +6381,7 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6975,
+        "size": 6986,
         "extension": ".ts",
         "path": "frontend/src/lib/schemas/index.ts"
       },
@@ -5980,10 +6414,18 @@
         "path": "frontend/src/lib/services/assistente-ui.service.ts"
       },
       {
+        "name": "assistente.service.auth.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4022,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/assistente.service.auth.test.ts"
+      },
+      {
         "name": "assistente.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8609,
+        "size": 9233,
         "extension": ".ts",
         "path": "frontend/src/lib/services/assistente.service.ts"
       },
@@ -6015,7 +6457,7 @@
         "name": "chat.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1498,
+        "size": 1614,
         "extension": ".ts",
         "path": "frontend/src/lib/services/chat.service.ts"
       },
@@ -6023,7 +6465,7 @@
         "name": "dashboard.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2928,
+        "size": 3998,
         "extension": ".ts",
         "path": "frontend/src/lib/services/dashboard.service.ts"
       },
@@ -6092,10 +6534,18 @@
         "path": "frontend/src/lib/services/grade-pool.service.ts"
       },
       {
+        "name": "integralizacao.service.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5623,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/integralizacao.service.test.ts"
+      },
+      {
         "name": "integralizacao.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 13811,
+        "size": 13950,
         "extension": ".ts",
         "path": "frontend/src/lib/services/integralizacao.service.ts"
       },
@@ -6154,6 +6604,44 @@
         "children": []
       },
       {
+        "name": "__tests__",
+        "type": "directory",
+        "path": "frontend/src/lib/services/pdf/__tests__",
+        "children": []
+      },
+      {
+        "name": "all_pdfs.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2641,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/pdf/__tests__/all_pdfs.test.ts"
+      },
+      {
+        "name": "edge_cases.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8168,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/pdf/__tests__/edge_cases.test.ts"
+      },
+      {
+        "name": "genpdf.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4235,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/pdf/__tests__/genpdf.ts"
+      },
+      {
+        "name": "harness.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2033,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/pdf/__tests__/harness.ts"
+      },
+      {
         "name": "historico_231011417 (6) - Gustavo Choueiri.pdf",
         "type": "file",
         "language": "PDF",
@@ -6162,10 +6650,18 @@
         "path": "frontend/src/lib/services/pdf/historico_231011417 (6) - Gustavo Choueiri.pdf"
       },
       {
+        "name": "pdfDataExtractor.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6437,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/pdf/pdfDataExtractor.test.ts"
+      },
+      {
         "name": "pdfDataExtractor.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 37866,
+        "size": 39317,
         "extension": ".ts",
         "path": "frontend/src/lib/services/pdf/pdfDataExtractor.ts"
       },
@@ -6173,7 +6669,7 @@
         "name": "pdfExtractor.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8571,
+        "size": 9512,
         "extension": ".ts",
         "path": "frontend/src/lib/services/pdf/pdfExtractor.ts"
       },
@@ -6181,15 +6677,23 @@
         "name": "pdfParser.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 15725,
+        "size": 16037,
         "extension": ".ts",
         "path": "frontend/src/lib/services/pdf/pdfParser.ts"
+      },
+      {
+        "name": "pdfPositionExtractor.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1488,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/pdf/pdfPositionExtractor.test.ts"
       },
       {
         "name": "pdfPositionExtractor.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 17155,
+        "size": 17998,
         "extension": ".ts",
         "path": "frontend/src/lib/services/pdf/pdfPositionExtractor.ts"
       },
@@ -6197,7 +6701,7 @@
         "name": "plano-formatura.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3704,
+        "size": 3715,
         "extension": ".ts",
         "path": "frontend/src/lib/services/plano-formatura.service.ts"
       },
@@ -6226,10 +6730,26 @@
         "path": "frontend/src/lib/services/situacao-academica.test.ts"
       },
       {
+        "name": "supabase-data.anoVigor.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3425,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/supabase-data.anoVigor.test.ts"
+      },
+      {
+        "name": "supabase-data.equivalencias.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1844,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/supabase-data.equivalencias.test.ts"
+      },
+      {
         "name": "supabase-data.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 32346,
+        "size": 33388,
         "extension": ".ts",
         "path": "frontend/src/lib/services/supabase-data.service.ts"
       },
@@ -6245,7 +6765,7 @@
         "name": "ticket.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7341,
+        "size": 8265,
         "extension": ".ts",
         "path": "frontend/src/lib/services/ticket.service.ts"
       },
@@ -6288,6 +6808,30 @@
         "children": []
       },
       {
+        "name": "a11y.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1926,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/a11y.test.ts"
+      },
+      {
+        "name": "a11y.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4510,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/a11y.ts"
+      },
+      {
+        "name": "assistente-chat-store-cota.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4327,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/assistente-chat-store-cota.test.ts"
+      },
+      {
         "name": "assistente-chat-store-erros.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6307,7 +6851,7 @@
         "name": "assistente-chat.store.svelte.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5789,
+        "size": 6256,
         "extension": ".ts",
         "path": "frontend/src/lib/stores/assistente-chat.store.svelte.ts"
       },
@@ -6328,10 +6872,34 @@
         "path": "frontend/src/lib/stores/chatStore.ts"
       },
       {
+        "name": "darcy-cota.store.svelte.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3449,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/darcy-cota.store.svelte.ts"
+      },
+      {
+        "name": "fluxograma-cabecalho.store.svelte.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1047,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/fluxograma-cabecalho.store.svelte.ts"
+      },
+      {
+        "name": "fluxograma.store.race.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2883,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/fluxograma.store.race.test.ts"
+      },
+      {
         "name": "fluxograma.store.svelte.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 36526,
+        "size": 37105,
         "extension": ".ts",
         "path": "frontend/src/lib/stores/fluxograma.store.svelte.ts"
       },
@@ -6419,7 +6987,7 @@
         "name": "grade.store.svelte.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 39875,
+        "size": 41331,
         "extension": ".ts",
         "path": "frontend/src/lib/stores/grade.store.svelte.ts"
       },
@@ -6459,7 +7027,7 @@
         "name": "plano-formatura.store.svelte.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 12527,
+        "size": 12867,
         "extension": ".ts",
         "path": "frontend/src/lib/stores/plano-formatura.store.svelte.ts"
       },
@@ -6467,7 +7035,7 @@
         "name": "theme.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1641,
+        "size": 2935,
         "extension": ".ts",
         "path": "frontend/src/lib/stores/theme.ts"
       },
@@ -6488,10 +7056,18 @@
         "path": "frontend/src/lib/stores/unidade-carga.store.svelte.ts"
       },
       {
+        "name": "uploadStore.retrySelecao.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4076,
+        "extension": ".ts",
+        "path": "frontend/src/lib/stores/uploadStore.retrySelecao.test.ts"
+      },
+      {
         "name": "uploadStore.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 14697,
+        "size": 15297,
         "extension": ".ts",
         "path": "frontend/src/lib/stores/uploadStore.ts"
       },
@@ -6510,12 +7086,44 @@
         "children": []
       },
       {
+        "name": "contraste.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6930,
+        "extension": ".ts",
+        "path": "frontend/src/lib/styles/contraste.test.ts"
+      },
+      {
+        "name": "contraste.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11458,
+        "extension": ".ts",
+        "path": "frontend/src/lib/styles/contraste.ts"
+      },
+      {
         "name": "nofluxo-ds.css",
         "type": "file",
         "language": "CSS",
-        "size": 4318,
+        "size": 6141,
         "extension": ".css",
         "path": "frontend/src/lib/styles/nofluxo-ds.css"
+      },
+      {
+        "name": "tema-estados-fluxograma.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11242,
+        "extension": ".ts",
+        "path": "frontend/src/lib/styles/tema-estados-fluxograma.test.ts"
+      },
+      {
+        "name": "theme-contrast.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 15892,
+        "extension": ".ts",
+        "path": "frontend/src/lib/styles/theme-contrast.test.ts"
       },
       {
         "name": "supabase",
@@ -6563,7 +7171,7 @@
         "name": "api.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2203,
+        "size": 2210,
         "extension": ".ts",
         "path": "frontend/src/lib/types/api.ts"
       },
@@ -6576,10 +7184,18 @@
         "path": "frontend/src/lib/types/auth.ts"
       },
       {
+        "name": "curso.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3055,
+        "extension": ".ts",
+        "path": "frontend/src/lib/types/curso.test.ts"
+      },
+      {
         "name": "curso.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5444,
+        "size": 6503,
         "extension": ".ts",
         "path": "frontend/src/lib/types/curso.ts"
       },
@@ -6587,7 +7203,7 @@
         "name": "dashboard.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2496,
+        "size": 7996,
         "extension": ".ts",
         "path": "frontend/src/lib/types/dashboard.ts"
       },
@@ -6619,7 +7235,7 @@
         "name": "guards.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5299,
+        "size": 5323,
         "extension": ".ts",
         "path": "frontend/src/lib/types/guards.ts"
       },
@@ -6643,7 +7259,7 @@
         "name": "materia.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6105,
+        "size": 5655,
         "extension": ".ts",
         "path": "frontend/src/lib/types/materia.ts"
       },
@@ -6667,7 +7283,7 @@
         "name": "plano-formatura.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 9752,
+        "size": 9876,
         "extension": ".ts",
         "path": "frontend/src/lib/types/plano-formatura.ts"
       },
@@ -6683,7 +7299,7 @@
         "name": "ticket.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3841,
+        "size": 4460,
         "extension": ".ts",
         "path": "frontend/src/lib/types/ticket.ts"
       },
@@ -6691,7 +7307,7 @@
         "name": "user.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8095,
+        "size": 8177,
         "extension": ".ts",
         "path": "frontend/src/lib/types/user.ts"
       },
@@ -6742,6 +7358,22 @@
         "path": "frontend/src/lib/utils/breakpoints.ts"
       },
       {
+        "name": "carregamento-cancelavel.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2478,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/carregamento-cancelavel.test.ts"
+      },
+      {
+        "name": "carregamento-cancelavel.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1031,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/carregamento-cancelavel.ts"
+      },
+      {
         "name": "casar-materias.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6782,6 +7414,46 @@
         "path": "frontend/src/lib/utils/curriculum-utils.ts"
       },
       {
+        "name": "darcy-cota.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4326,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/darcy-cota.test.ts"
+      },
+      {
+        "name": "darcy-cota.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5576,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/darcy-cota.ts"
+      },
+      {
+        "name": "dashboard-admin.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4776,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/dashboard-admin.test.ts"
+      },
+      {
+        "name": "dashboard-admin.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4874,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/dashboard-admin.ts"
+      },
+      {
+        "name": "expressao-logica.codigo-unico.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2789,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/expressao-logica.codigo-unico.test.ts"
+      },
+      {
         "name": "expressao-logica.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6798,20 +7470,60 @@
         "path": "frontend/src/lib/utils/expressao-logica.ts"
       },
       {
+        "name": "fileValidation.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1851,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/fileValidation.test.ts"
+      },
+      {
         "name": "fileValidation.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1402,
+        "size": 2542,
         "extension": ".ts",
         "path": "frontend/src/lib/utils/fileValidation.ts"
+      },
+      {
+        "name": "fluxogram-initial-focus.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2794,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/fluxogram-initial-focus.ts"
+      },
+      {
+        "name": "fluxogram-viewport.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4492,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/fluxogram-viewport.test.ts"
       },
       {
         "name": "fluxogram-viewport.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 767,
+        "size": 5036,
         "extension": ".ts",
         "path": "frontend/src/lib/utils/fluxogram-viewport.ts"
+      },
+      {
+        "name": "fluxograma-carga.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1453,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/fluxograma-carga.test.ts"
+      },
+      {
+        "name": "fluxograma-carga.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1550,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/fluxograma-carga.ts"
       },
       {
         "name": "horario-slots.orcamento.test.ts",
@@ -6838,6 +7550,30 @@
         "path": "frontend/src/lib/utils/horario-slots.ts"
       },
       {
+        "name": "ia-saldo.fixture.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1382,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/ia-saldo.fixture.ts"
+      },
+      {
+        "name": "ia-saldo.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8261,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/ia-saldo.test.ts"
+      },
+      {
+        "name": "ia-saldo.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8100,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/ia-saldo.ts"
+      },
+      {
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6846,12 +7582,36 @@
         "path": "frontend/src/lib/utils/index.ts"
       },
       {
+        "name": "ira.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2634,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/ira.test.ts"
+      },
+      {
         "name": "ira.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1494,
+        "size": 2068,
         "extension": ".ts",
         "path": "frontend/src/lib/utils/ira.ts"
+      },
+      {
+        "name": "matriz-resolvida.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 841,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/matriz-resolvida.test.ts"
+      },
+      {
+        "name": "matriz-resolvida.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 885,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/matriz-resolvida.ts"
       },
       {
         "name": "oferta-equivalencia.test.ts",
@@ -6886,6 +7646,22 @@
         "path": "frontend/src/lib/utils/post-login-redirect.ts"
       },
       {
+        "name": "prereq-display.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1580,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/prereq-display.test.ts"
+      },
+      {
+        "name": "prereq-display.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1453,
+        "extension": ".ts",
+        "path": "frontend/src/lib/utils/prereq-display.ts"
+      },
+      {
         "name": "prerequisite-routing.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6905,7 +7681,7 @@
         "name": "screenshot.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4388,
+        "size": 5005,
         "extension": ".ts",
         "path": "frontend/src/lib/utils/screenshot.ts"
       },
@@ -7015,9 +7791,17 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 21142,
+        "size": 26432,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/admin/dashboard/+page.svelte"
+      },
+      {
+        "name": "perguntas-com-falha.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1121,
+        "extension": ".ts",
+        "path": "frontend/src/routes/(protected)/admin/dashboard/perguntas-com-falha.test.ts"
       },
       {
         "name": "tickets",
@@ -7029,7 +7813,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 24906,
+        "size": 29958,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/admin/tickets/+page.svelte"
       },
@@ -7043,7 +7827,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3997,
+        "size": 4275,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/assistente/+page.svelte"
       },
@@ -7063,7 +7847,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 20547,
+        "size": 20608,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/planejamento/grade/+page.svelte"
       },
@@ -7077,7 +7861,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 11055,
+        "size": 11574,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/planejamento/turmas/+page.svelte"
       },
@@ -7105,7 +7889,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 21229,
+        "size": 22799,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/suporte/+page.svelte"
       },
@@ -7119,7 +7903,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 8994,
+        "size": 10464,
         "extension": ".svelte",
         "path": "frontend/src/routes/(protected)/upload-historico/+page.svelte"
       },
@@ -7135,7 +7919,7 @@
         "name": "+layout.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4725,
+        "size": 5856,
         "extension": ".svelte",
         "path": "frontend/src/routes/+layout.svelte"
       },
@@ -7151,7 +7935,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1927,
+        "size": 2128,
         "extension": ".svelte",
         "path": "frontend/src/routes/+page.svelte"
       },
@@ -7162,6 +7946,20 @@
         "size": 31,
         "extension": ".ts",
         "path": "frontend/src/routes/+page.ts"
+      },
+      {
+        "name": "acessibilidade",
+        "type": "directory",
+        "path": "frontend/src/routes/acessibilidade",
+        "children": []
+      },
+      {
+        "name": "+page.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4540,
+        "extension": ".svelte",
+        "path": "frontend/src/routes/acessibilidade/+page.svelte"
       },
       {
         "name": "auth",
@@ -7187,7 +7985,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3013,
+        "size": 3491,
         "extension": ".svelte",
         "path": "frontend/src/routes/auth/callback/+page.svelte"
       },
@@ -7201,7 +7999,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 6369,
+        "size": 6889,
         "extension": ".svelte",
         "path": "frontend/src/routes/auth/reset-password/+page.svelte"
       },
@@ -7215,7 +8013,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 26482,
+        "size": 26840,
         "extension": ".svelte",
         "path": "frontend/src/routes/conheca/+page.svelte"
       },
@@ -7257,7 +8055,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7748,
+        "size": 8201,
         "extension": ".svelte",
         "path": "frontend/src/routes/dev/impersonar/+page.svelte"
       },
@@ -7279,7 +8077,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4430,
+        "size": 4454,
         "extension": ".svelte",
         "path": "frontend/src/routes/dev/planner-toque/+page.svelte"
       },
@@ -7301,7 +8099,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 44036,
+        "size": 45313,
         "extension": ".svelte",
         "path": "frontend/src/routes/disciplinas/+page.svelte"
       },
@@ -7315,7 +8113,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 11065,
+        "size": 11847,
         "extension": ".svelte",
         "path": "frontend/src/routes/fluxogramas/+page.svelte"
       },
@@ -7379,7 +8177,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1545,
+        "size": 1396,
         "extension": ".svelte",
         "path": "frontend/src/routes/login/+page.svelte"
       },
@@ -7393,7 +8191,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 17258,
+        "size": 16547,
         "extension": ".svelte",
         "path": "frontend/src/routes/meu-fluxograma/+page.svelte"
       },
@@ -7415,7 +8213,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 23933,
+        "size": 23147,
         "extension": ".svelte",
         "path": "frontend/src/routes/meu-fluxograma/[courseName]/+page.svelte"
       },
@@ -7443,7 +8241,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3514,
+        "size": 3615,
         "extension": ".svelte",
         "path": "frontend/src/routes/privacidade/+page.svelte"
       },
@@ -7493,7 +8291,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 4365,
+        "size": 4493,
         "extension": ".svelte",
         "path": "frontend/src/routes/termos/+page.svelte"
       },
@@ -7628,6 +8426,28 @@
         "path": "frontend/static/sitemap.xml"
       },
       {
+        "name": "team",
+        "type": "directory",
+        "path": "frontend/static/team",
+        "children": []
+      },
+      {
+        "name": "bessone.webp",
+        "type": "file",
+        "language": "WebP Image",
+        "size": 10194,
+        "extension": ".webp",
+        "path": "frontend/static/team/bessone.webp"
+      },
+      {
+        "name": "vitor-marconi.webp",
+        "type": "file",
+        "language": "WebP Image",
+        "size": 12032,
+        "extension": ".webp",
+        "path": "frontend/static/team/vitor-marconi.webp"
+      },
+      {
         "name": "svelte.config.js",
         "type": "file",
         "language": "JavaScript",
@@ -7639,7 +8459,7 @@
         "name": "tailwind.config.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4053,
+        "size": 5283,
         "extension": ".ts",
         "path": "frontend/tailwind.config.ts"
       },
@@ -7648,6 +8468,14 @@
         "type": "directory",
         "path": "frontend/tests-e2e",
         "children": []
+      },
+      {
+        "name": "a11y.spec.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2805,
+        "extension": ".ts",
+        "path": "frontend/tests-e2e/a11y.spec.ts"
       },
       {
         "name": "assistente-ia.exploratorio.spec.ts",
@@ -7741,7 +8569,7 @@
         "name": "vite.config.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1530,
+        "size": 2233,
         "extension": ".ts",
         "path": "frontend/vite.config.ts"
       },
@@ -8077,7 +8905,7 @@
         "name": "api_producao.py",
         "type": "file",
         "language": "Python",
-        "size": 31718,
+        "size": 32824,
         "extension": ".py",
         "path": "mcp_agent/api_producao.py"
       },
@@ -8112,6 +8940,14 @@
         "path": "mcp_agent/requirements.txt"
       },
       {
+        "name": "sabia_utils.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8544,
+        "extension": ".py",
+        "path": "mcp_agent/sabia_utils.py"
+      },
+      {
         "name": "start_api.bat",
         "type": "file",
         "language": "Batch",
@@ -8142,6 +8978,14 @@
         "size": 573,
         "extension": ".sh",
         "path": "mcp_agent/start_api_production.sh"
+      },
+      {
+        "name": "test_sabia_utils.py",
+        "type": "file",
+        "language": "Python",
+        "size": 17166,
+        "extension": ".py",
+        "path": "mcp_agent/test_sabia_utils.py"
       },
       {
         "name": "test_tool_call_utils.py",
@@ -8534,10 +9378,58 @@
         "children": []
       },
       {
+        "name": "20260928_casar_disciplinas_premortem.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 44116,
+        "extension": ".sql",
+        "path": "supabase/migrations/20260928_casar_disciplinas_premortem.sql"
+      },
+      {
+        "name": "20260928_rls_catalogo.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 2912,
+        "extension": ".sql",
+        "path": "supabase/migrations/20260928_rls_catalogo.sql"
+      },
+      {
+        "name": "20260928_vw_creditos_por_matriz_id_curso.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 2173,
+        "extension": ".sql",
+        "path": "supabase/migrations/20260928_vw_creditos_por_matriz_id_curso.sql"
+      },
+      {
+        "name": "20260929_darcy_cota.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 25248,
+        "extension": ".sql",
+        "path": "supabase/migrations/20260929_darcy_cota.sql"
+      },
+      {
+        "name": "20260929b_dashboard_rastreabilidade.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 15658,
+        "extension": ".sql",
+        "path": "supabase/migrations/20260929b_dashboard_rastreabilidade.sql"
+      },
+      {
+        "name": "20260930_ai_saldo.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 17238,
+        "extension": ".sql",
+        "path": "supabase/migrations/20260930_ai_saldo.sql"
+      },
+      {
         "name": "casar_disciplinas_function.sql",
         "type": "file",
         "language": "SQL",
-        "size": 33623,
+        "size": 33868,
         "extension": ".sql",
         "path": "supabase/migrations/casar_disciplinas_function.sql"
       },
@@ -8584,7 +9476,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-06T12:57:48.737941+00:00",
+    "extracted_at": "2026-10-07T12:38:55.808400+00:00",
     "file_path": "data/silver/hierarchy_2025-1-NoFluxoUnB.json"
   }
 }
