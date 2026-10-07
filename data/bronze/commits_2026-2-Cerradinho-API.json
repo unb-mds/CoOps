@@ -1,10 +1,163 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-06T12:50:24.554133+00:00",
+      "extracted_at": "2026-10-07T12:34:04.895088+00:00",
       "file_path": "data/bronze/commits_2026-2-Cerradinho-API.json",
-      "record_count": 187
+      "record_count": 193
     }
+  },
+  {
+    "sha": "3033a2b714ca6c9fd3ac48ad940fda0bf43a5e75",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "paulinpj",
+        "date": "2026-10-06T14:05:52Z",
+        "login": "paulinpj",
+        "id": 231473584,
+        "author_email_hash": "87d24a697388f687c24648695ad72665198b56b3bd2630f3df958a5957ea6a46"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-06T14:05:52Z"
+      },
+      "message": "Merge pull request #138 from unb-mds/dev\n\nTudo ok, nenhum problema"
+    },
+    "parents": [
+      "7a621f2bc673f997c1015196d56eabaf05143b75",
+      "ca353b2e6b56e7e078b672c0479bead07d2853e5"
+    ],
+    "additions": 530,
+    "deletions": 78,
+    "total_changes": 608,
+    "repo_name": "2026-2-Cerradinho-API"
+  },
+  {
+    "sha": "ca353b2e6b56e7e078b672c0479bead07d2853e5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "paulinpj",
+        "date": "2026-10-06T00:08:44Z",
+        "login": "paulinpj",
+        "id": 231473584,
+        "author_email_hash": "87d24a697388f687c24648695ad72665198b56b3bd2630f3df958a5957ea6a46"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-06T00:08:44Z"
+      },
+      "message": "Merge pull request #137 from unb-mds/docs/reestrutura-requisitos\n\nAprovado! Reestruturação clara e consistente com o código"
+    },
+    "parents": [
+      "5f4f38f4b20427b3343644beed6ac2423bb22c17",
+      "a047598175e48219f785978be8280fc27dea6714"
+    ],
+    "additions": 294,
+    "deletions": 67,
+    "total_changes": 361,
+    "repo_name": "2026-2-Cerradinho-API"
+  },
+  {
+    "sha": "a047598175e48219f785978be8280fc27dea6714",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "vitorcoelho21",
+        "date": "2026-10-05T23:11:19Z",
+        "login": "vitorcoelho21",
+        "id": 253326124,
+        "author_email_hash": "042cbe9344d56235a089f38131de4ad8aa961cd7afc67e5dd172962197219122"
+      },
+      "committer": {
+        "name": "vitorcoelho21",
+        "date": "2026-10-05T23:11:19Z"
+      },
+      "message": "docs: reestrutura requisitos no formato verbo + objeto com criterios de aceitacao e regra de negocio\n\nReescreve docs/REQUISITOS.md: cada RF e RNF passa a ter titulo no\nformato verbo + objeto (ex: \"Cadastro de docentes\" vira \"Cadastrar\ndocentes vinculados as disciplinas\"), com secoes separadas de\nCriterios de aceitacao e Regra de negocio.\n\nAs Features derivadas (RF17-19) saem de secao a parte e entram no\nmesmo formato dos demais RFs. Fontes de dados e Rastreabilidade\nseguem como estavam, so com os titulos da tabela atualizados."
+    },
+    "parents": [
+      "5f4f38f4b20427b3343644beed6ac2423bb22c17"
+    ],
+    "additions": 294,
+    "deletions": 67,
+    "total_changes": 361,
+    "repo_name": "2026-2-Cerradinho-API"
+  },
+  {
+    "sha": "5f4f38f4b20427b3343644beed6ac2423bb22c17",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "vitorcoelho21",
+        "date": "2026-10-05T22:52:52Z",
+        "login": "vitorcoelho21",
+        "id": 253326124,
+        "author_email_hash": "042cbe9344d56235a089f38131de4ad8aa961cd7afc67e5dd172962197219122"
+      },
+      "committer": {
+        "name": "vitorcoelho21",
+        "date": "2026-10-05T22:52:52Z"
+      },
+      "message": "docs: documenta por que o botao Run workflow nao aparece ainda na aba Actions"
+    },
+    "parents": [
+      "07062e4beee3dd81445b71a192f882b555489b2d"
+    ],
+    "additions": 5,
+    "deletions": 0,
+    "total_changes": 5,
+    "repo_name": "2026-2-Cerradinho-API"
+  },
+  {
+    "sha": "07062e4beee3dd81445b71a192f882b555489b2d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Coelho",
+        "date": "2026-10-05T22:34:20Z",
+        "login": "vitorcoelho21",
+        "id": 253326124,
+        "author_email_hash": "042cbe9344d56235a089f38131de4ad8aa961cd7afc67e5dd172962197219122"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-05T22:34:20Z"
+      },
+      "message": "Merge pull request #135 from unb-mds/feat/implementacao-do-github-pages\n\ndocs: configura site de documentação com MkDocs Material e deploy no github Pages"
+    },
+    "parents": [
+      "4789cb538446da4c7985a7a2f91de0d797c273ac",
+      "a96a7de01d40165b110cde27a4434b54c22a9b99"
+    ],
+    "additions": 231,
+    "deletions": 11,
+    "total_changes": 242,
+    "repo_name": "2026-2-Cerradinho-API"
+  },
+  {
+    "sha": "a96a7de01d40165b110cde27a4434b54c22a9b99",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "vitorcoelho21",
+        "date": "2026-10-05T22:24:32Z",
+        "login": "vitorcoelho21",
+        "id": 253326124,
+        "author_email_hash": "042cbe9344d56235a089f38131de4ad8aa961cd7afc67e5dd172962197219122"
+      },
+      "committer": {
+        "name": "vitorcoelho21",
+        "date": "2026-10-05T22:24:32Z"
+      },
+      "message": "docs: configura site de documentação com MkDocs Material e deploy no GitHub Pages\n\nPublica docs/ como site navegável (abas de navegação, busca, modo\nescuro), no estilo de outros projetos da disciplina (ex: LegisKids).\nHome reescrita em docs/index.md (visão geral, stack, time, como\nnavegar); o antigo índice em tabela virou docs/indice-completo.md,\njá que o MkDocs não permite README.md e index.md na mesma pasta.\n\nWorkflow builda com --strict e publica via actions/deploy-pages a\ncada push na dev que mexer em docs/** ou mkdocs.yml.\n\nCorrige links que apontavam pra fora de docs_dir (../CONTRIBUTING.md,\n../AI-USAGE.md, ../frontend/README.md), que quebrariam no site\npublicado — agora apontam pro GitHub direto."
+    },
+    "parents": [
+      "4789cb538446da4c7985a7a2f91de0d797c273ac"
+    ],
+    "additions": 231,
+    "deletions": 11,
+    "total_changes": 242,
+    "repo_name": "2026-2-Cerradinho-API"
   },
   {
     "sha": "7a621f2bc673f997c1015196d56eabaf05143b75",
