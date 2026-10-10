@@ -2,19 +2,19 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-09T12:46:52.721224+00:00",
+  "analyzed_at": "2026-10-10T11:59:58.932585+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 133,
-  "total_bytes": 505756,
+  "total_files": 137,
+  "total_bytes": 515917,
   "languages": [
     {
       "language": "Markdown",
       "file_count": 48,
-      "total_bytes": 285442,
-      "percentage": 56.44,
+      "total_bytes": 286638,
+      "percentage": 55.56,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -82,7 +82,7 @@
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 12.08,
+      "percentage": 11.84,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -126,7 +126,7 @@
       "language": "JavaScript",
       "file_count": 29,
       "total_bytes": 57666,
-      "percentage": 11.4,
+      "percentage": 11.18,
       "files": [
         {
           "path": "frontend/src/pages/ContribuicaoPage.jsx",
@@ -192,9 +192,9 @@
     },
     {
       "language": "Python",
-      "file_count": 18,
-      "total_bytes": 31355,
-      "percentage": 6.2,
+      "file_count": 22,
+      "total_bytes": 40232,
+      "percentage": 7.8,
       "files": [
         {
           "path": "backend/app/api/errors.py",
@@ -209,6 +209,12 @@
           "extension": ".py"
         },
         {
+          "path": "backend/app/api/schema/usuario.py",
+          "name": "usuario.py",
+          "size": 4625,
+          "extension": ".py"
+        },
+        {
           "path": "backend/app/services/publicacao_service.py",
           "name": "publicacao_service.py",
           "size": 4085,
@@ -217,43 +223,37 @@
         {
           "path": "backend/app/api/schema/disciplina.py",
           "name": "disciplina.py",
-          "size": 3832,
+          "size": 3736,
           "extension": ".py"
         },
         {
           "path": "backend/app/api/schema/publicacao_institucional.py",
           "name": "publicacao_institucional.py",
-          "size": 3385,
+          "size": 3054,
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/schema/fonte_institucional.py",
-          "name": "fonte_institucional.py",
-          "size": 1282,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/schema/usuario.py",
-          "name": "usuario.py",
-          "size": 1237,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/schema/denuncia.py",
-          "name": "denuncia.py",
-          "size": 985,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/schema/SubmissaoBase.py",
-          "name": "SubmissaoBase.py",
-          "size": 828,
+          "path": "backend/app/moderacao.py",
+          "name": "moderacao.py",
+          "size": 2366,
           "extension": ".py"
         },
         {
           "path": "backend/app/api/schema/Contribuicao.py",
           "name": "Contribuicao.py",
-          "size": 789,
+          "size": 2078,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/security.py",
+          "name": "security.py",
+          "size": 1302,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/schema/fonte_institucional.py",
+          "name": "fonte_institucional.py",
+          "size": 1180,
           "extension": ".py"
         }
       ]
@@ -262,7 +262,7 @@
       "language": "CSS",
       "file_count": 12,
       "total_bytes": 30475,
-      "percentage": 6.03,
+      "percentage": 5.91,
       "files": [
         {
           "path": "frontend/src/components/ui/ui.css",
@@ -330,7 +330,7 @@
       "language": "JSON",
       "file_count": 8,
       "total_bytes": 15604,
-      "percentage": 3.09,
+      "percentage": 3.02,
       "files": [
         {
           "path": "package-lock.json",
@@ -386,7 +386,7 @@
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 1.98,
+      "percentage": 1.94,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -406,7 +406,7 @@
       "language": "No Extension",
       "file_count": 3,
       "total_bytes": 9252,
-      "percentage": 1.83,
+      "percentage": 1.79,
       "files": [
         {
           "path": "git status",
@@ -432,7 +432,7 @@
       "language": "YAML",
       "file_count": 2,
       "total_bytes": 4037,
-      "percentage": 0.8,
+      "percentage": 0.78,
       "files": [
         {
           "path": ".specify/workflows/speckit/workflow.yml",
@@ -483,6 +483,20 @@
       ]
     },
     {
+      "language": "Text",
+      "file_count": 1,
+      "total_bytes": 88,
+      "percentage": 0.02,
+      "files": [
+        {
+          "path": "backend/requirements.txt",
+          "name": "requirements.txt",
+          "size": 88,
+          "extension": ".txt"
+        }
+      ]
+    },
+    {
       "language": "Unknown",
       "file_count": 1,
       "total_bytes": 31,
@@ -495,24 +509,10 @@
           "extension": ".gitattributes"
         }
       ]
-    },
-    {
-      "language": "Text",
-      "file_count": 1,
-      "total_bytes": 0,
-      "percentage": 0.0,
-      "files": [
-        {
-          "path": "backend/requirements.txt",
-          "name": "requirements.txt",
-          "size": 0,
-          "extension": ".txt"
-        }
-      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-09T12:47:59.122603+00:00",
+    "extracted_at": "2026-10-10T12:01:00.923930+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }
