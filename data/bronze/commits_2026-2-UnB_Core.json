@@ -1,10 +1,186 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-09T12:42:58.923237+00:00",
+      "extracted_at": "2026-10-10T11:55:54.061643+00:00",
       "file_path": "data/bronze/commits_2026-2-UnB_Core.json",
-      "record_count": 150
+      "record_count": 158
     }
+  },
+  {
+    "sha": "af9fba0e8284a92da39487946b80e095e376935f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-09T23:08:01Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-09T23:08:01Z"
+      },
+      "message": "Update readme.md"
+    },
+    "parents": [
+      "6d36ca38033a25f19cf2311ceeead5e0c2253b55"
+    ],
+    "additions": 0,
+    "deletions": 1,
+    "total_changes": 1,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "6d36ca38033a25f19cf2311ceeead5e0c2253b55",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-09T23:07:13Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-09T23:07:13Z"
+      },
+      "message": "Update readme"
+    },
+    "parents": [
+      "dccd08a1275f4dca0e90754135011193ae5b4802"
+    ],
+    "additions": 1,
+    "deletions": 2,
+    "total_changes": 3,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "dccd08a1275f4dca0e90754135011193ae5b4802",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-09T23:05:35Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-09T23:05:35Z"
+      },
+      "message": "Merge pull request #119 from unb-mds/backend\n\nchore(backend): implementar PostgreSQL e autenticação OAuth2 com JWT"
+    },
+    "parents": [
+      "104b3e6325d2bcd7d1baf826879f50c5a504e393",
+      "81f782a7541d77dced8a75a50547c4dc866cf7b2"
+    ],
+    "additions": 435,
+    "deletions": 58,
+    "total_changes": 493,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "81f782a7541d77dced8a75a50547c4dc866cf7b2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-09T22:46:09Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-09T22:46:09Z"
+      },
+      "message": "Update no readme"
+    },
+    "parents": [
+      "e62eb50166872b9e9ff9e6a2b43ef2433de8e8f5"
+    ],
+    "additions": 4,
+    "deletions": 15,
+    "total_changes": 19,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "e62eb50166872b9e9ff9e6a2b43ef2433de8e8f5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-09T22:41:02Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-09T22:41:02Z"
+      },
+      "message": "chore(db): implementar PostgreSQL e autenticação JWT conforme a issue #116\n\n- Configura o uso do PostgreSQL e adiciona as dependências necessárias\n- Substitui validações baseadas em Annotated/AfterValidator por field_validator\n- Corrige erros de sintaxe e imports nos schemas e na configuração da API\n- Adiciona autenticação OAuth2 com Bearer Token e endpoint /usuario/me\n- Cria o módulo de segurança em backend/app/api/security.py\n- Atualiza o README com instruções de inicialização rápida"
+    },
+    "parents": [
+      "2e75d8c0d5100a866daee09d3392177380975182"
+    ],
+    "additions": 192,
+    "deletions": 51,
+    "total_changes": 243,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2e75d8c0d5100a866daee09d3392177380975182",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-08T22:44:26Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-08T22:44:26Z"
+      },
+      "message": "chore(db): configurar conexao com PostgreSQL e rotas de autenticacao"
+    },
+    "parents": [
+      "0eec81c5143675a4c950f8c1e0e22e69b1feef03"
+    ],
+    "additions": 104,
+    "deletions": 37,
+    "total_changes": 141,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "0eec81c5143675a4c950f8c1e0e22e69b1feef03",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-05T23:07:21Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-05T23:07:21Z"
+      },
+      "message": "feat(moderation): adiciona moderacao endpoints\n\n- Contribuicao.py: adiciona schema moderacao response com id e justificativa\n- __init__.py: registrado contribuicao router\n- usuario.py: update nos modelos de usuario com perfil,e verificador de admin/moderador\n- moderacao.py: foi implementado decisao request schema e decisao da moderacao endpoint"
+    },
+    "parents": [
+      "a6cc6ed397b2fd5f2d955c044b6031d2491b2062"
+    ],
+    "additions": 124,
+    "deletions": 10,
+    "total_changes": 134,
+    "repo_name": "2026-2-UnB_Core"
   },
   {
     "sha": "104b3e6325d2bcd7d1baf826879f50c5a504e393",
@@ -54,6 +230,31 @@
     "additions": 2,
     "deletions": 2,
     "total_changes": 4,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "a6cc6ed397b2fd5f2d955c044b6031d2491b2062",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-03T19:42:35Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-10-03T19:42:35Z"
+      },
+      "message": "feat(contribuicoes): implementa endpoints de criacao e historico do usuario\n\nImplementa a funcionalidade que permite aos usuarios autenticados submeterem\nnovas contribuicoes e consultarem seu historico de envios.\n\n- Adiciona schemas Pydantic/SQLModel para Contribuicao\n- Implementa rota POST /api/v1/contribuicoes com vinculo automatico do autor\n- Implementa rota GET /api/v1/contribuicoes/minhas para listagem do usuario\n- Garante tratamento de autenticacao via usuario logado\n\nCloses #T035"
+    },
+    "parents": [
+      "4e7bff74237ed70d112cc4094a60000ad1c9f1f6"
+    ],
+    "additions": 69,
+    "deletions": 15,
+    "total_changes": 84,
     "repo_name": "2026-2-UnB_Core"
   },
   {

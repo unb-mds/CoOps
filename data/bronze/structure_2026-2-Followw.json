@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Followw",
   "branch": "main",
-  "sha": "3d3b0d7b86c164dc7a5666003ff3ad30d1de509e",
+  "sha": "6fc6587796bfd2b53357fceca41aee3d97299852",
   "tree": [
     {
       "name": ".agents",
@@ -324,7 +324,7 @@
       "name": "apps",
       "path": "apps",
       "type": "directory",
-      "sha": "e43e713a261dd44e5cb7e3a5a71236099652fb53",
+      "sha": "153efe4d9e3b6e03149a99281c3395cf65ae5df2",
       "mode": "040000",
       "children": []
     },
@@ -332,7 +332,7 @@
       "name": "api",
       "path": "apps/api",
       "type": "directory",
-      "sha": "6a0ccc83f732686abef0d65cd79a585c5457c479",
+      "sha": "f5cc66631b82e004382fb71f0cb7ab2062725bfa",
       "mode": "040000",
       "children": []
     },
@@ -360,17 +360,17 @@
       "name": "AGENTS.md",
       "path": "apps/api/AGENTS.md",
       "type": "file",
-      "sha": "034d29d14798b54804a1d8ae35de3cb25551ea61",
+      "sha": "dbd2fa30c12d7eed12bddc2a08e402c1de21dcb8",
       "mode": "100644",
       "extension": ".md",
-      "size": 4396,
+      "size": 5174,
       "is_binary": false
     },
     {
       "name": "api",
       "path": "apps/api/api",
       "type": "directory",
-      "sha": "c4250eeb5ec85a208006713a9939210201af7a12",
+      "sha": "7a51e1124d990d96ab009489600f411e9c493b59",
       "mode": "040000",
       "children": []
     },
@@ -436,7 +436,7 @@
       "name": "db",
       "path": "apps/api/api/db",
       "type": "directory",
-      "sha": "65bdb754c6a564bd9b7db6dbc63d303a682ee1a3",
+      "sha": "efc11686487e9e746fa54b3279db30c63974c573",
       "mode": "040000",
       "children": []
     },
@@ -461,6 +461,16 @@
       "is_binary": false
     },
     {
+      "name": "courses.py",
+      "path": "apps/api/api/db/courses.py",
+      "type": "file",
+      "sha": "b073a0f6dfc324b4d12af8ab5c13a6bbc48151a3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1752,
+      "is_binary": false
+    },
+    {
       "name": "enums.py",
       "path": "apps/api/api/db/enums.py",
       "type": "file",
@@ -474,20 +484,88 @@
       "name": "main.py",
       "path": "apps/api/api/db/main.py",
       "type": "file",
-      "sha": "bce84200f872142457cc764d62cf910f7e57e2b4",
+      "sha": "a01f900fecc0c211e3e30c7c81161d4273412105",
       "mode": "100644",
       "extension": ".py",
-      "size": 2466,
+      "size": 2594,
       "is_binary": false
     },
     {
       "name": "models.py",
       "path": "apps/api/api/db/models.py",
       "type": "file",
-      "sha": "7e3625cf1b274885d97914656ddcb67b5865a392",
+      "sha": "eca3a97c0efc7298b557ff499e576c434e26d907",
       "mode": "100644",
       "extension": ".py",
-      "size": 9942,
+      "size": 11224,
+      "is_binary": false
+    },
+    {
+      "name": "seed",
+      "path": "apps/api/api/db/seed",
+      "type": "directory",
+      "sha": "ee9f5ce1bb50c1a069d530dda78357f67f2b76a4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/api/db/seed/__init__.py",
+      "type": "file",
+      "sha": "d5d4f1cd9594b51eace39c1babb5ccbc27b8c416",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1568,
+      "is_binary": false
+    },
+    {
+      "name": "courses.py",
+      "path": "apps/api/api/db/seed/courses.py",
+      "type": "file",
+      "sha": "47a4cb4614626430bd06c216a272f00bea58c110",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 866,
+      "is_binary": false
+    },
+    {
+      "name": "run.py",
+      "path": "apps/api/api/db/seed/run.py",
+      "type": "file",
+      "sha": "75caf90492c0b429de095f7bfe8051766873a5d0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 399,
+      "is_binary": false
+    },
+    {
+      "name": "subjects.py",
+      "path": "apps/api/api/db/seed/subjects.py",
+      "type": "file",
+      "sha": "de726e6a77329bcc8f3e83bf70dc4c2434c8800c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 923,
+      "is_binary": false
+    },
+    {
+      "name": "unities.py",
+      "path": "apps/api/api/db/seed/unities.py",
+      "type": "file",
+      "sha": "6dc1da38895d138c078bb9d02276de9a528fb8f0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 743,
+      "is_binary": false
+    },
+    {
+      "name": "unities.py",
+      "path": "apps/api/api/db/unities.py",
+      "type": "file",
+      "sha": "ae2d15b8f9ee5d066dd38706c04daa60e5b7fa0f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 582,
       "is_binary": false
     },
     {
@@ -514,7 +592,7 @@
       "name": "modules",
       "path": "apps/api/api/modules",
       "type": "directory",
-      "sha": "94adf19bf0d3df42f8e447b2fee85b7f21ed02cf",
+      "sha": "9fe36ee6ed1e8f55bef5b68058d6bda80f480ca8",
       "mode": "040000",
       "children": []
     },
@@ -550,7 +628,7 @@
       "name": "classrooms",
       "path": "apps/api/api/modules/classrooms",
       "type": "directory",
-      "sha": "96a5b4152e93456073031c4d5407dc946c3cb92d",
+      "sha": "5b2e29cf8005c4332127339e824993521297826f",
       "mode": "040000",
       "children": []
     },
@@ -588,10 +666,10 @@
       "name": "repository.py",
       "path": "apps/api/api/modules/classrooms/repository.py",
       "type": "file",
-      "sha": "1b4aa008d1a8d1dcbf74c076e8ad245f1ac49320",
+      "sha": "b8c7538a65714920907ad394d0949144be150fad",
       "mode": "100644",
       "extension": ".py",
-      "size": 29600,
+      "size": 30351,
       "is_binary": false
     },
     {
@@ -608,17 +686,17 @@
       "name": "service.py",
       "path": "apps/api/api/modules/classrooms/service.py",
       "type": "file",
-      "sha": "11f00a25b8f777065195daa946fae2973903ebf9",
+      "sha": "4dd25f948d22d3f7f969f44eba9eb4b342a943d7",
       "mode": "100644",
       "extension": ".py",
-      "size": 10935,
+      "size": 11034,
       "is_binary": false
     },
     {
       "name": "me",
       "path": "apps/api/api/modules/me",
       "type": "directory",
-      "sha": "4c1e903818e8444d0b73d7004eca3eda9ce61dd6",
+      "sha": "df54c7d2203360929b17f595fcaf4e726ac15c50",
       "mode": "040000",
       "children": []
     },
@@ -626,27 +704,27 @@
       "name": "profile.py",
       "path": "apps/api/api/modules/me/profile.py",
       "type": "file",
-      "sha": "f6c5a9243ee424e09e6e6c37eaf5a0a327d94ab8",
+      "sha": "2351c398794bc3e69cbb278989fe0a8e3bc70cd5",
       "mode": "100644",
       "extension": ".py",
-      "size": 2090,
+      "size": 2397,
       "is_binary": false
     },
     {
       "name": "repository.py",
       "path": "apps/api/api/modules/me/repository.py",
       "type": "file",
-      "sha": "ad85dd27f2cc78b371e221053cc6e105d432a20c",
+      "sha": "86c4f2f56a2f7a43f56d4c85800ad23105af75a1",
       "mode": "100644",
       "extension": ".py",
-      "size": 2189,
+      "size": 2349,
       "is_binary": false
     },
     {
       "name": "router.py",
       "path": "apps/api/api/modules/me/router.py",
       "type": "file",
-      "sha": "2af0a987c4806894657ed92478c777127c86c453",
+      "sha": "e766f6c804f8fdc8d9c23fc80d3b3d9fbb25735c",
       "mode": "100644",
       "extension": ".py",
       "size": 2242,
@@ -694,19 +772,9 @@
       "name": "public_classrooms",
       "path": "apps/api/api/modules/public_classrooms",
       "type": "directory",
-      "sha": "dac1121f66c6e52c0ada6ae8d431a17732693e8c",
+      "sha": "968116e90a6a6692adce7c66bbc1c3e2f6079c7e",
       "mode": "040000",
       "children": []
-    },
-    {
-      "name": "classroom_code_units.json",
-      "path": "apps/api/api/modules/public_classrooms/classroom_code_units.json",
-      "type": "file",
-      "sha": "dd9c74884b3cac99eb7209672ded4e99ab1146b8",
-      "mode": "100644",
-      "extension": ".json",
-      "size": 22636,
-      "is_binary": false
     },
     {
       "name": "code.py",
@@ -719,23 +787,33 @@
       "is_binary": false
     },
     {
+      "name": "repository.py",
+      "path": "apps/api/api/modules/public_classrooms/repository.py",
+      "type": "file",
+      "sha": "b26d70c0fada4f59d0cc12c0fb4988cef78493e0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1178,
+      "is_binary": false
+    },
+    {
       "name": "router.py",
       "path": "apps/api/api/modules/public_classrooms/router.py",
       "type": "file",
-      "sha": "d55831dc5da4822c5987fe03a27affd672665c8d",
+      "sha": "57f7ee92cf0803e641241b8b703fad9fc28d64a7",
       "mode": "100644",
       "extension": ".py",
-      "size": 4288,
+      "size": 4300,
       "is_binary": false
     },
     {
       "name": "service.py",
       "path": "apps/api/api/modules/public_classrooms/service.py",
       "type": "file",
-      "sha": "f0891053a1202623a6e808fadaeb0eab2dfe47da",
+      "sha": "84b7477b9d7b08c095fd3c744ab7e5e1783dfc5d",
       "mode": "100644",
       "extension": ".py",
-      "size": 5418,
+      "size": 5533,
       "is_binary": false
     },
     {
@@ -845,28 +923,10 @@
       "is_binary": false
     },
     {
-      "name": "scripts",
-      "path": "apps/api/scripts",
-      "type": "directory",
-      "sha": "e8838a29509f59ab84d1206ba7443f4ca7cf3858",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "update_classroom_code_units.py",
-      "path": "apps/api/scripts/update_classroom_code_units.py",
-      "type": "file",
-      "sha": "bd694066d2e6075444fd6a3c250ac9b3a78f847a",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 4627,
-      "is_binary": false
-    },
-    {
       "name": "tests",
       "path": "apps/api/tests",
       "type": "directory",
-      "sha": "44755ee1b3ed00acfb4ec93e1b1d343e5aef36fe",
+      "sha": "2a5189f14a8481be9f260edf41bbed3aa41b0cc2",
       "mode": "040000",
       "children": []
     },
@@ -874,10 +934,10 @@
       "name": "conftest.py",
       "path": "apps/api/tests/conftest.py",
       "type": "file",
-      "sha": "1b3de7bb844715cc23140adbba729e01732f48e4",
+      "sha": "bb9d77b57cc671cdebe53ca6fb2d3799119fd9da",
       "mode": "100644",
       "extension": ".py",
-      "size": 13755,
+      "size": 13872,
       "is_binary": false
     },
     {
@@ -914,10 +974,10 @@
       "name": "test_classrooms.py",
       "path": "apps/api/tests/test_classrooms.py",
       "type": "file",
-      "sha": "09138ad081402d42d850683fc5df70e0560d8080",
+      "sha": "57b9736d93cd13d2a39a0de323e7ad327e4570e2",
       "mode": "100644",
       "extension": ".py",
-      "size": 44781,
+      "size": 45474,
       "is_binary": false
     },
     {
@@ -928,6 +988,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 12627,
+      "is_binary": false
+    },
+    {
+      "name": "test_courses.py",
+      "path": "apps/api/tests/test_courses.py",
+      "type": "file",
+      "sha": "4c3c1ca123f9044b775ba67925e112cfc885833d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7696,
       "is_binary": false
     },
     {
@@ -954,10 +1024,10 @@
       "name": "test_me.py",
       "path": "apps/api/tests/test_me.py",
       "type": "file",
-      "sha": "8def3106fe945766e38478ba71fd7257f6e3f34c",
+      "sha": "36f73455523018133e2249f891ffbd2450fa8d14",
       "mode": "100644",
       "extension": ".py",
-      "size": 21215,
+      "size": 21254,
       "is_binary": false
     },
     {
@@ -974,10 +1044,10 @@
       "name": "test_public_classrooms.py",
       "path": "apps/api/tests/test_public_classrooms.py",
       "type": "file",
-      "sha": "830fc86168cd647a969150a8aac8a8df3564b31d",
+      "sha": "f45ff5f6ca8ab1f7acdce2bf0bd9703bb5448acc",
       "mode": "100644",
       "extension": ".py",
-      "size": 28787,
+      "size": 24562,
       "is_binary": false
     },
     {
@@ -1001,6 +1071,16 @@
       "is_binary": false
     },
     {
+      "name": "test_subjects_seed.py",
+      "path": "apps/api/tests/test_subjects_seed.py",
+      "type": "file",
+      "sha": "954d8279055091c5c5e0cd10efb1e15c78f7b432",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2659,
+      "is_binary": false
+    },
+    {
       "name": "test_sync.py",
       "path": "apps/api/tests/test_sync.py",
       "type": "file",
@@ -1011,10 +1091,20 @@
       "is_binary": false
     },
     {
+      "name": "test_unities.py",
+      "path": "apps/api/tests/test_unities.py",
+      "type": "file",
+      "sha": "603a82c1cce15d4fd4f7d4edc7244a610ad8d15b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2049,
+      "is_binary": false
+    },
+    {
       "name": "web",
       "path": "apps/web",
       "type": "directory",
-      "sha": "0f0ed20582f24faee453243349bff6eecfb28289",
+      "sha": "da016c946cd89ff184cddf3cb382b0e5ed03daf8",
       "mode": "040000",
       "children": []
     },
@@ -1042,20 +1132,20 @@
       "name": "AGENTS.md",
       "path": "apps/web/AGENTS.md",
       "type": "file",
-      "sha": "885d0851b863c73da6fc26efac905508d79ae724",
+      "sha": "f2153706c9bc3cc09e802fd0ecf5beabd304b56a",
       "mode": "100644",
       "extension": ".md",
-      "size": 2204,
+      "size": 2189,
       "is_binary": false
     },
     {
       "name": "bun.lock",
       "path": "apps/web/bun.lock",
       "type": "file",
-      "sha": "0fdd0128ea1f195abac9806bc330c42ec19ad46e",
+      "sha": "0c591651deb7e9084e2018e55f66702a226c1122",
       "mode": "100644",
       "extension": ".lock",
-      "size": 270875,
+      "size": 266635,
       "is_binary": false
     },
     {
@@ -1082,10 +1172,10 @@
       "name": "package.json",
       "path": "apps/web/package.json",
       "type": "file",
-      "sha": "48dafd4f98cb260e477ae8b93bd51d8714bb8426",
+      "sha": "34e852c1563db3218dceb88ae7d522d280e8ce25",
       "mode": "100644",
       "extension": ".json",
-      "size": 2182,
+      "size": 2199,
       "is_binary": false
     },
     {
@@ -1207,28 +1297,10 @@
       "is_binary": false
     },
     {
-      "name": "scripts",
-      "path": "apps/web/scripts",
-      "type": "directory",
-      "sha": "8a6c471873e924a44334016237197df485e14151",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "generate-api.ts",
-      "path": "apps/web/scripts/generate-api.ts",
-      "type": "file",
-      "sha": "6f41693f03b263de5770d24a6ad92fa78d02fd08",
-      "mode": "100644",
-      "extension": ".ts",
-      "size": 860,
-      "is_binary": false
-    },
-    {
       "name": "src",
       "path": "apps/web/src",
       "type": "directory",
-      "sha": "3ad38e1e4c7552f251a44a8190bad3e32ada0219",
+      "sha": "61278ff396f0fa8e25ce8e06cfbd9d4530a30c4d",
       "mode": "040000",
       "children": []
     },
@@ -1246,7 +1318,7 @@
       "name": "components",
       "path": "apps/web/src/components",
       "type": "directory",
-      "sha": "3a5a0c10c406f402fe9728bccd9cc2632a3a02fb",
+      "sha": "d07581df48c97b7926b210cc312dbbbd7351d3bc",
       "mode": "040000",
       "children": []
     },
@@ -1344,10 +1416,10 @@
       "name": "PageState.tsx",
       "path": "apps/web/src/components/PageState.tsx",
       "type": "file",
-      "sha": "31a938685d903a08b3d93180bbf2c2586bd98515",
+      "sha": "f93e23f409a18308a9453147ac385536ac123d3f",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1431,
+      "size": 1477,
       "is_binary": false
     },
     {
@@ -1432,7 +1504,7 @@
       "name": "classroom",
       "path": "apps/web/src/components/classroom",
       "type": "directory",
-      "sha": "f7435cefd5c42880f4fb36c36d19c2664a3d8c98",
+      "sha": "77631f298e1d35ca55070c544e1803399e1bcf89",
       "mode": "040000",
       "children": []
     },
@@ -1450,10 +1522,10 @@
       "name": "FrequencyContent.tsx",
       "path": "apps/web/src/components/classroom/FrequencyContent.tsx",
       "type": "file",
-      "sha": "e9608087d07ffd1c8fd35acff4c3b43ca0f696a2",
+      "sha": "7c1966be472f3ed2844bf11c03d0fcdad61ef76e",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 8992,
+      "size": 9375,
       "is_binary": false
     },
     {
@@ -1508,7 +1580,7 @@
       "name": "profile",
       "path": "apps/web/src/components/profile",
       "type": "directory",
-      "sha": "063adee6fb93ad91f8b1304fd77a1f60b9fa8587",
+      "sha": "7865e102cbdc52f1336c1aff305d006163507a1f",
       "mode": "040000",
       "children": []
     },
@@ -1526,10 +1598,10 @@
       "name": "ProfileOverview.tsx",
       "path": "apps/web/src/components/profile/ProfileOverview.tsx",
       "type": "file",
-      "sha": "fb698348fff7ba82df84d61602879ad440e6ef8e",
+      "sha": "df627b8e5761751c278a57c162a041d342ea3fd9",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 5862,
+      "size": 5962,
       "is_binary": false
     },
     {
@@ -1742,7 +1814,7 @@
       "name": "integrations",
       "path": "apps/web/src/integrations",
       "type": "directory",
-      "sha": "f5bea9c7ace545bfe79f12f591428dcd280cf9b6",
+      "sha": "a061ae3c36e5cd7357eb547cc64bf8d3c697c83e",
       "mode": "040000",
       "children": []
     },
@@ -1808,7 +1880,7 @@
       "name": "posthog",
       "path": "apps/web/src/integrations/posthog",
       "type": "directory",
-      "sha": "71dad21bbac0eab6bba37f2450c1391dbc0cdf22",
+      "sha": "2111daee77eeaa9dd5cf0d51727cf7bd51f5feef",
       "mode": "040000",
       "children": []
     },
@@ -1816,10 +1888,10 @@
       "name": "provider.tsx",
       "path": "apps/web/src/integrations/posthog/provider.tsx",
       "type": "file",
-      "sha": "e3a7a173b5f37d9d4e6c7993277e1eafa5fd38cb",
+      "sha": "6167b9a120210498f68ff8f179f57e9a3243c3af",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 744,
+      "size": 711,
       "is_binary": false
     },
     {
@@ -1854,7 +1926,7 @@
       "name": "lib",
       "path": "apps/web/src/lib",
       "type": "directory",
-      "sha": "a16f21809496d06dc6a52332b373a137296ea471",
+      "sha": "226bfac22648bcc2f45c0f082e225185860c6d28",
       "mode": "040000",
       "children": []
     },
@@ -1872,10 +1944,10 @@
       "name": "classroom-details.ts",
       "path": "apps/web/src/lib/classroom-details.ts",
       "type": "file",
-      "sha": "9f2923c9de85bf0e8641f8614362649a5c5ce9ce",
+      "sha": "9ebd529cf74cb204c7738a17d0b68b0c3334a4d7",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1369,
+      "size": 1766,
       "is_binary": false
     },
     {
@@ -1982,7 +2054,7 @@
       "name": "queries",
       "path": "apps/web/src/queries",
       "type": "directory",
-      "sha": "757b52a581e5606f34f862335f60aa3086491da8",
+      "sha": "f40f3374045cdc1a3d64805788e253c9e8fa0fd1",
       "mode": "040000",
       "children": []
     },
@@ -2000,10 +2072,10 @@
       "name": "auth.ts",
       "path": "apps/web/src/queries/auth.ts",
       "type": "file",
-      "sha": "14991b8b1a429dd42f79e6f4de50961964e94283",
+      "sha": "5bb21c47402c64af2cb6173b7c8018315c743e1a",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2466,
+      "size": 2306,
       "is_binary": false
     },
     {
@@ -2070,10 +2142,10 @@
       "name": "restaurant-account.ts",
       "path": "apps/web/src/queries/restaurant-account.ts",
       "type": "file",
-      "sha": "b3995b35aa0390734ee440b8eb1eaf297276715e",
+      "sha": "04577758ec3cb58f1f88b8ab0f23229bd82c0063",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1492,
+      "size": 1497,
       "is_binary": false
     },
     {
@@ -2090,10 +2162,10 @@
       "name": "schema.gen.ts",
       "path": "apps/web/src/queries/schema.gen.ts",
       "type": "file",
-      "sha": "2c19fc22d48a5ef2d4b0a0f2acd986cdba234e0d",
+      "sha": "defb8122326974623a7d5670cbda1216080c4fc6",
       "mode": "100644",
       "extension": ".ts",
-      "size": 58548,
+      "size": 58865,
       "is_binary": false
     },
     {
@@ -2246,7 +2318,7 @@
       "name": "tests",
       "path": "apps/web/tests",
       "type": "directory",
-      "sha": "456bbce02655fd1969b25caf606302eec830bf7f",
+      "sha": "a52927fa2aaa07cb9cfa4bedd0ad2c28e4cf14a9",
       "mode": "040000",
       "children": []
     },
@@ -2264,7 +2336,7 @@
       "name": "components",
       "path": "apps/web/tests/components",
       "type": "directory",
-      "sha": "431b128ec52039316513aaeeddc5f838b5cb8698",
+      "sha": "c84ee047f1c8e7642d63c3f2bc491fe27acc31cd",
       "mode": "040000",
       "children": []
     },
@@ -2380,7 +2452,7 @@
       "name": "classroom",
       "path": "apps/web/tests/components/classroom",
       "type": "directory",
-      "sha": "dcdd458cb0403d90b6c278138f4537c2ca5ca0cb",
+      "sha": "eab7f7cf99e4e292c07c1a46dca1e8073ec269bf",
       "mode": "040000",
       "children": []
     },
@@ -2398,10 +2470,10 @@
       "name": "FrequencyContent.test.tsx",
       "path": "apps/web/tests/components/classroom/FrequencyContent.test.tsx",
       "type": "file",
-      "sha": "75aaabdd51652a7aadb01eb25db64dc3833e703b",
+      "sha": "d89c0248a002847a5be99492e8ae89fc43f36391",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 5415,
+      "size": 6107,
       "is_binary": false
     },
     {
@@ -2436,7 +2508,7 @@
       "name": "profile",
       "path": "apps/web/tests/components/profile",
       "type": "directory",
-      "sha": "3301031208507f1e835144c10f3ae851566f619a",
+      "sha": "ccef293d3da099f0ea995500f6f603b4a5c835e5",
       "mode": "040000",
       "children": []
     },
@@ -2444,10 +2516,10 @@
       "name": "ProfileOverview.test.tsx",
       "path": "apps/web/tests/components/profile/ProfileOverview.test.tsx",
       "type": "file",
-      "sha": "af382f9f874c5e629bdf04bd58dcce8a1e14c1be",
+      "sha": "98e88bd3c6afc60ec930b2d5703b8e757e3a8d88",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4621,
+      "size": 4642,
       "is_binary": false
     },
     {
@@ -2562,7 +2634,7 @@
       "name": "lib",
       "path": "apps/web/tests/lib",
       "type": "directory",
-      "sha": "3644add20710b4fae5e9205556950c9dcc7c6628",
+      "sha": "a28522f9c0e553afde393b102e00d6bd1c4769a7",
       "mode": "040000",
       "children": []
     },
@@ -2580,10 +2652,10 @@
       "name": "classroom-details.test.ts",
       "path": "apps/web/tests/lib/classroom-details.test.ts",
       "type": "file",
-      "sha": "0158f956835f139a5f0ed33a00415792d96cf000",
+      "sha": "8e4d45ba2dbc24953f09e24790134f74dbfc229b",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2359,
+      "size": 2922,
       "is_binary": false
     },
     {
@@ -2660,7 +2732,7 @@
       "name": "queries",
       "path": "apps/web/tests/queries",
       "type": "directory",
-      "sha": "96e3151b3201d5d3ab0bcc7833b055dc8b8130e8",
+      "sha": "ae887bc3888a945d72caa6b5c7f459aa2682042e",
       "mode": "040000",
       "children": []
     },
@@ -2668,10 +2740,10 @@
       "name": "auth.test.ts",
       "path": "apps/web/tests/queries/auth.test.ts",
       "type": "file",
-      "sha": "8ae30db5370254b11461b821760a57767ec77963",
+      "sha": "f8d0d3ecefabed78eb16e2f01d2141ffa42e58c4",
       "mode": "100644",
       "extension": ".ts",
-      "size": 4524,
+      "size": 4545,
       "is_binary": false
     },
     {
@@ -2708,10 +2780,10 @@
       "name": "restaurant-account.test.ts",
       "path": "apps/web/tests/queries/restaurant-account.test.ts",
       "type": "file",
-      "sha": "f86745a191a908b2f7b0436d36a7617fcca9b54c",
+      "sha": "e772c5f4fb43214934db96136949e6faf8725e34",
       "mode": "100644",
       "extension": ".ts",
-      "size": 5308,
+      "size": 5856,
       "is_binary": false
     },
     {
@@ -3088,7 +3160,7 @@
       "name": "packages",
       "path": "packages",
       "type": "directory",
-      "sha": "baae5ed4b270a06fad4f141c5e2dd78e717e1c6d",
+      "sha": "d21d49522bbb615d5a240dc40f48910b0ea0010f",
       "mode": "040000",
       "children": []
     },
@@ -3096,7 +3168,7 @@
       "name": "sigaa-client",
       "path": "packages/sigaa-client",
       "type": "directory",
-      "sha": "681d2db6a308532b72c7b3de7bd975874b121ce9",
+      "sha": "10fe02603c3d9b742bd7c9730bbca0cac0cc5eb4",
       "mode": "040000",
       "children": []
     },
@@ -3104,20 +3176,58 @@
       "name": "AGENTS.md",
       "path": "packages/sigaa-client/AGENTS.md",
       "type": "file",
-      "sha": "cd6af4bfb713abd6009be508586296633395f4c3",
+      "sha": "b6aa14f592c3b176f96e715fd886c8d22b8f994c",
       "mode": "100644",
       "extension": ".md",
-      "size": 2688,
+      "size": 2861,
       "is_binary": false
     },
     {
       "name": "README.md",
       "path": "packages/sigaa-client/README.md",
       "type": "file",
-      "sha": "23fa279396a2380a04e96fb7f80840da181efdaf",
+      "sha": "d63f887ab563a00b3b1d1cfbed09e0310df31b52",
       "mode": "100644",
       "extension": ".md",
-      "size": 1472,
+      "size": 1778,
+      "is_binary": false
+    },
+    {
+      "name": "data",
+      "path": "packages/sigaa-client/data",
+      "type": "directory",
+      "sha": "d491ce262cb44082518bd9275fae205aa8264c41",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "courses.csv",
+      "path": "packages/sigaa-client/data/courses.csv",
+      "type": "file",
+      "sha": "2af0fbbcb234469643c4a9557985ad17da75bcb2",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 6447,
+      "is_binary": false
+    },
+    {
+      "name": "subjects.csv",
+      "path": "packages/sigaa-client/data/subjects.csv",
+      "type": "file",
+      "sha": "885d70ca467cb39cd2821b06c58d91ed12ed3c1e",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 298028,
+      "is_binary": false
+    },
+    {
+      "name": "unities.csv",
+      "path": "packages/sigaa-client/data/unities.csv",
+      "type": "file",
+      "sha": "149cec527d3cef61d5f8f5a7e0771d9d44b268c1",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 14404,
       "is_binary": false
     },
     {
@@ -3131,10 +3241,28 @@
       "is_binary": false
     },
     {
+      "name": "scripts",
+      "path": "packages/sigaa-client/scripts",
+      "type": "directory",
+      "sha": "696730e8aadb9a4441af7e4cd99df779a647764d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "collect_subjects.py",
+      "path": "packages/sigaa-client/scripts/collect_subjects.py",
+      "type": "file",
+      "sha": "df634c6999d4228dfeb1eaa30bea70182178bb75",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5356,
+      "is_binary": false
+    },
+    {
       "name": "sigaa_client",
       "path": "packages/sigaa-client/sigaa_client",
       "type": "directory",
-      "sha": "a98228b30345b5b3582e3fba5fa8d9cd8bdc7e57",
+      "sha": "f20d16b649bece28709c70170de24d5ea87c9590",
       "mode": "040000",
       "children": []
     },
@@ -3142,10 +3270,10 @@
       "name": "__init__.py",
       "path": "packages/sigaa-client/sigaa_client/__init__.py",
       "type": "file",
-      "sha": "da88601d1fa4ce9a9c969c55ad31630d05f0e255",
+      "sha": "493a9035cecd309db87caca1bc40b4ae8e680dce",
       "mode": "100644",
       "extension": ".py",
-      "size": 1622,
+      "size": 1700,
       "is_binary": false
     },
     {
@@ -3182,17 +3310,17 @@
       "name": "models.py",
       "path": "packages/sigaa-client/sigaa_client/models.py",
       "type": "file",
-      "sha": "9621bbcd0095e0ea7b26b1e7b8cdcf32a163b065",
+      "sha": "d0d92526a6e1adcc1ccb16e200dc958a62dde1c2",
       "mode": "100644",
       "extension": ".py",
-      "size": 8929,
+      "size": 9273,
       "is_binary": false
     },
     {
       "name": "private",
       "path": "packages/sigaa-client/sigaa_client/private",
       "type": "directory",
-      "sha": "8c917e33a7578e63e7ab83857305d4d0ea6e37f5",
+      "sha": "2a8a8948aec9f7dde0dd633df8d575071c86e59c",
       "mode": "040000",
       "children": []
     },
@@ -3220,10 +3348,10 @@
       "name": "profile.py",
       "path": "packages/sigaa-client/sigaa_client/private/profile.py",
       "type": "file",
-      "sha": "951d115865d346b59cbb6ce55304c56e5bb19a70",
+      "sha": "b391e528c917f9d490534ec61b29162bf9e84d04",
       "mode": "100644",
       "extension": ".py",
-      "size": 6013,
+      "size": 6096,
       "is_binary": false
     },
     {
@@ -3250,7 +3378,7 @@
       "name": "public",
       "path": "packages/sigaa-client/sigaa_client/public",
       "type": "directory",
-      "sha": "e823bf9b0cdd3c062996d9640b90954903ae5d81",
+      "sha": "00ae3832df296c4edbaf984ac09da5bd3d5a6976",
       "mode": "040000",
       "children": []
     },
@@ -3268,10 +3396,10 @@
       "name": "classrooms.py",
       "path": "packages/sigaa-client/sigaa_client/public/classrooms.py",
       "type": "file",
-      "sha": "fcd3a0e5c5cf5971100f91239906bfbdad6058f9",
+      "sha": "e218e78c925f72c3b523ba22ff18145a13e63a40",
       "mode": "100644",
       "extension": ".py",
-      "size": 8387,
+      "size": 12847,
       "is_binary": false
     },
     {
@@ -3288,7 +3416,7 @@
       "name": "utils",
       "path": "packages/sigaa-client/sigaa_client/utils",
       "type": "directory",
-      "sha": "881ca79f8c30eec08e32732d1f2aa6b679a23d3f",
+      "sha": "77710b335ab226f742c36dae6ec65d47e2bf19ce",
       "mode": "040000",
       "children": []
     },
@@ -3316,10 +3444,10 @@
       "name": "parsing.py",
       "path": "packages/sigaa-client/sigaa_client/utils/parsing.py",
       "type": "file",
-      "sha": "fd497232380fcfffda39b7a434a101a85997ad8e",
+      "sha": "2081723ce989992dc39860ef104b77f7c4e9227a",
       "mode": "100644",
       "extension": ".py",
-      "size": 3641,
+      "size": 4050,
       "is_binary": false
     },
     {
@@ -3336,7 +3464,7 @@
       "name": "tests",
       "path": "packages/sigaa-client/tests",
       "type": "directory",
-      "sha": "d45e4d2abac8e334833b43398d0688a868e7d5b1",
+      "sha": "7ee8188f838edfd32522be62a761716149364754",
       "mode": "040000",
       "children": []
     },
@@ -3392,20 +3520,20 @@
       "name": "test_profile.py",
       "path": "packages/sigaa-client/tests/test_profile.py",
       "type": "file",
-      "sha": "ab8c7ce2682ad75034becabe0b014d7fb1994e41",
+      "sha": "dda2c4a93412f0d5a26c249608719f5dbfbc2d4b",
       "mode": "100644",
       "extension": ".py",
-      "size": 5298,
+      "size": 6160,
       "is_binary": false
     },
     {
       "name": "test_public_classrooms.py",
       "path": "packages/sigaa-client/tests/test_public_classrooms.py",
       "type": "file",
-      "sha": "404cc4dee0edcc0871655ec58eaacd7181e843c7",
+      "sha": "84a72bfcbbb3621f208cdfb27c0a043f23ff2f27",
       "mode": "100644",
       "extension": ".py",
-      "size": 9174,
+      "size": 15620,
       "is_binary": false
     },
     {
@@ -3784,19 +3912,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-09T12:46:54.616439+00:00",
+  "extracted_at": "2026-10-10T12:00:01.212091+00:00",
   "method": "rest",
-  "total_items": 394,
+  "total_items": 407,
   "repository_metadata": {
     "id": 1338350948,
     "full_name": "unb-mds/2026-2-Followw",
     "description": "O Followw é uma nova forma de usar o SIGAA UnB.",
     "created_at": "2026-08-18T11:57:01Z",
-    "updated_at": "2026-10-09T06:28:59Z",
+    "updated_at": "2026-10-10T07:24:38Z",
     "language": "Python",
-    "size": 1897,
+    "size": 1992,
     "stars": 7,
     "forks": 0,
-    "open_issues": 4
+    "open_issues": 5
   }
 }
