@@ -2,19 +2,19 @@
   "repository": "G2-2026-2",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-11T12:13:11.735090+00:00",
+  "analyzed_at": "2026-10-12T13:24:44.515275+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 43,
-  "total_bytes": 274961,
+  "total_files": 38,
+  "total_bytes": 263764,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 37.7,
+      "percentage": 39.3,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -38,9 +38,9 @@
     },
     {
       "language": "Python",
-      "file_count": 17,
-      "total_bytes": 77138,
-      "percentage": 28.05,
+      "file_count": 18,
+      "total_bytes": 78771,
+      "percentage": 29.86,
       "files": [
         {
           "path": "app/test_implementacao.py",
@@ -51,7 +51,7 @@
         {
           "path": "app/repositorio.py",
           "name": "repositorio.py",
-          "size": 9382,
+          "size": 9735,
           "extension": ".py"
         },
         {
@@ -81,7 +81,7 @@
         {
           "path": "app/database.py",
           "name": "database.py",
-          "size": 4101,
+          "size": 4524,
           "extension": ".py"
         },
         {
@@ -105,77 +105,21 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 8,
-      "total_bytes": 49673,
-      "percentage": 18.07,
-      "files": [
-        {
-          "path": "banco.db",
-          "name": "banco.db",
-          "size": 28672,
-          "extension": ".db"
-        },
-        {
-          "path": "app/controllers/__pycache__/session_controller.cpython-313.pyc",
-          "name": "session_controller.cpython-313.pyc",
-          "size": 8933,
-          "extension": ".pyc"
-        },
-        {
-          "path": "app/routes/__pycache__/auth_routes.cpython-313.pyc",
-          "name": "auth_routes.cpython-313.pyc",
-          "size": 3718,
-          "extension": ".pyc"
-        },
-        {
-          "path": "app/__pycache__/repositorio.cpython-313.pyc",
-          "name": "repositorio.cpython-313.pyc",
-          "size": 2571,
-          "extension": ".pyc"
-        },
-        {
-          "path": "app/__pycache__/database.cpython-313.pyc",
-          "name": "database.cpython-313.pyc",
-          "size": 2451,
-          "extension": ".pyc"
-        },
-        {
-          "path": "app/__pycache__/models.cpython-313.pyc",
-          "name": "models.cpython-313.pyc",
-          "size": 1593,
-          "extension": ".pyc"
-        },
-        {
-          "path": "app/__pycache__/app.cpython-313.pyc",
-          "name": "app.cpython-313.pyc",
-          "size": 994,
-          "extension": ".pyc"
-        },
-        {
-          "path": "app/__pycache__/__init__.cpython-313.pyc",
-          "name": "__init__.cpython-313.pyc",
-          "size": 741,
-          "extension": ".pyc"
-        }
-      ]
-    },
-    {
       "language": "Markdown",
-      "file_count": 5,
-      "total_bytes": 33256,
-      "percentage": 12.09,
+      "file_count": 6,
+      "total_bytes": 34957,
+      "percentage": 13.25,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
           "name": "DOCUMENTO_DE_VISAO.md",
-          "size": 12487,
+          "size": 12445,
           "extension": ".md"
         },
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 9263,
+          "size": 9235,
           "extension": ".md"
         },
         {
@@ -191,6 +135,12 @@
           "extension": ".md"
         },
         {
+          "path": "RELEASE-v1.0.0.md",
+          "name": "RELEASE-v1.0.0.md",
+          "size": 1771,
+          "extension": ".md"
+        },
+        {
           "path": "docs/index.md",
           "name": "index.md",
           "size": 322,
@@ -199,11 +149,43 @@
       ]
     },
     {
+      "language": "Unknown",
+      "file_count": 1,
+      "total_bytes": 28672,
+      "percentage": 10.87,
+      "files": [
+        {
+          "path": "banco.db",
+          "name": "banco.db",
+          "size": 28672,
+          "extension": ".db"
+        }
+      ]
+    },
+    {
       "language": "HTML",
       "file_count": 6,
-      "total_bytes": 9669,
-      "percentage": 3.52,
+      "total_bytes": 16139,
+      "percentage": 6.12,
       "files": [
+        {
+          "path": "app/templates/avaliacao.html",
+          "name": "avaliacao.html",
+          "size": 4272,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil_professor.html",
+          "name": "perfil_professor.html",
+          "size": 4201,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/cadastro.html",
+          "name": "cadastro.html",
+          "size": 3074,
+          "extension": ".html"
+        },
         {
           "path": "app/templates/lista_professores.html",
           "name": "lista_professores.html",
@@ -211,27 +193,9 @@
           "extension": ".html"
         },
         {
-          "path": "app/templates/perfil_professor.html",
-          "name": "perfil_professor.html",
-          "size": 2014,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/cadastro.html",
-          "name": "cadastro.html",
-          "size": 1995,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/avaliacao.html",
-          "name": "avaliacao.html",
-          "size": 1927,
-          "extension": ".html"
-        },
-        {
           "path": "app/templates/login.html",
           "name": "login.html",
-          "size": 1065,
+          "size": 1924,
           "extension": ".html"
         },
         {
@@ -246,7 +210,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 1345,
-      "percentage": 0.49,
+      "percentage": 0.51,
       "files": [
         {
           "path": "app/static/indicadores.css",
@@ -300,7 +264,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-11T12:14:09.223630+00:00",
+    "extracted_at": "2026-10-12T13:25:49.481628+00:00",
     "file_path": "data/silver/language_analysis_G2-2026-2.json"
   }
 }
