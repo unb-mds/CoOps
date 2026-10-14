@@ -2,19 +2,19 @@
   "repository": "G2-2026-2",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-13T13:41:17.888459+00:00",
+  "analyzed_at": "2026-10-14T11:06:58.688634+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 38,
-  "total_bytes": 263764,
+  "total_files": 39,
+  "total_bytes": 289925,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 39.3,
+      "percentage": 35.75,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -39,8 +39,8 @@
     {
       "language": "Python",
       "file_count": 18,
-      "total_bytes": 78771,
-      "percentage": 29.86,
+      "total_bytes": 78893,
+      "percentage": 27.21,
       "files": [
         {
           "path": "app/test_implementacao.py",
@@ -105,10 +105,24 @@
       ]
     },
     {
+      "language": "Unknown",
+      "file_count": 1,
+      "total_bytes": 53248,
+      "percentage": 18.37,
+      "files": [
+        {
+          "path": "banco.db",
+          "name": "banco.db",
+          "size": 53248,
+          "extension": ".db"
+        }
+      ]
+    },
+    {
       "language": "Markdown",
       "file_count": 6,
       "total_bytes": 34957,
-      "percentage": 13.25,
+      "percentage": 12.06,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
@@ -149,24 +163,10 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 1,
-      "total_bytes": 28672,
-      "percentage": 10.87,
-      "files": [
-        {
-          "path": "banco.db",
-          "name": "banco.db",
-          "size": 28672,
-          "extension": ".db"
-        }
-      ]
-    },
-    {
       "language": "HTML",
-      "file_count": 6,
-      "total_bytes": 16139,
-      "percentage": 6.12,
+      "file_count": 7,
+      "total_bytes": 17602,
+      "percentage": 6.07,
       "files": [
         {
           "path": "app/templates/avaliacao.html",
@@ -199,6 +199,12 @@
           "extension": ".html"
         },
         {
+          "path": "app/templates/index.html",
+          "name": "index.html",
+          "size": 1463,
+          "extension": ".html"
+        },
+        {
           "path": "app/templates/perfil.html",
           "name": "perfil.html",
           "size": 623,
@@ -210,7 +216,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 1345,
-      "percentage": 0.51,
+      "percentage": 0.46,
       "files": [
         {
           "path": "app/static/indicadores.css",
@@ -224,7 +230,7 @@
       "language": "YAML",
       "file_count": 1,
       "total_bytes": 158,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": "mkdocs.yml",
@@ -252,7 +258,7 @@
       "language": "Text",
       "file_count": 1,
       "total_bytes": 14,
-      "percentage": 0.01,
+      "percentage": 0.0,
       "files": [
         {
           "path": "requirements.txt",
@@ -264,7 +270,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-13T13:42:35.522286+00:00",
+    "extracted_at": "2026-10-14T11:08:00.158456+00:00",
     "file_path": "data/silver/language_analysis_G2-2026-2.json"
   }
 }

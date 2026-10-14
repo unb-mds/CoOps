@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-13T13:41:21.266109+00:00",
+  "extracted_at": "2026-10-14T11:07:00.945459+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -251,7 +251,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5364,
+        "size": 5370,
         "extension": ".md",
         "path": "README.md"
       },
@@ -287,7 +287,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5174,
+        "size": 5250,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
       },
@@ -393,7 +393,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 11308,
+        "size": 11865,
         "extension": ".py",
         "path": "apps/api/api/db/models.py"
       },
@@ -407,15 +407,23 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1568,
+        "size": 1733,
         "extension": ".py",
         "path": "apps/api/api/db/seed/__init__.py"
+      },
+      {
+        "name": "classrooms.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1694,
+        "extension": ".py",
+        "path": "apps/api/api/db/seed/classrooms.py"
       },
       {
         "name": "courses.py",
         "type": "file",
         "language": "Python",
-        "size": 866,
+        "size": 905,
         "extension": ".py",
         "path": "apps/api/api/db/seed/courses.py"
       },
@@ -423,7 +431,7 @@
         "name": "run.py",
         "type": "file",
         "language": "Python",
-        "size": 399,
+        "size": 485,
         "extension": ".py",
         "path": "apps/api/api/db/seed/run.py"
       },
@@ -431,7 +439,7 @@
         "name": "subjects.py",
         "type": "file",
         "language": "Python",
-        "size": 923,
+        "size": 2471,
         "extension": ".py",
         "path": "apps/api/api/db/seed/subjects.py"
       },
@@ -439,7 +447,7 @@
         "name": "unities.py",
         "type": "file",
         "language": "Python",
-        "size": 743,
+        "size": 752,
         "extension": ".py",
         "path": "apps/api/api/db/seed/unities.py"
       },
@@ -463,7 +471,7 @@
         "name": "logger.py",
         "type": "file",
         "language": "Python",
-        "size": 3602,
+        "size": 3623,
         "extension": ".py",
         "path": "apps/api/api/logger.py"
       },
@@ -471,7 +479,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 5239,
+        "size": 5673,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -491,7 +499,7 @@
         "name": "account.py",
         "type": "file",
         "language": "Python",
-        "size": 2557,
+        "size": 2898,
         "extension": ".py",
         "path": "apps/api/api/modules/auth/account.py"
       },
@@ -537,7 +545,7 @@
         "name": "repository.py",
         "type": "file",
         "language": "Python",
-        "size": 30351,
+        "size": 30506,
         "extension": ".py",
         "path": "apps/api/api/modules/classrooms/repository.py"
       },
@@ -553,7 +561,7 @@
         "name": "service.py",
         "type": "file",
         "language": "Python",
-        "size": 11034,
+        "size": 11217,
         "extension": ".py",
         "path": "apps/api/api/modules/classrooms/service.py"
       },
@@ -583,7 +591,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 2242,
+        "size": 3519,
         "extension": ".py",
         "path": "apps/api/api/modules/me/router.py"
       },
@@ -643,7 +651,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 4300,
+        "size": 4126,
         "extension": ".py",
         "path": "apps/api/api/modules/public_classrooms/router.py"
       },
@@ -651,7 +659,7 @@
         "name": "service.py",
         "type": "file",
         "language": "Python",
-        "size": 5533,
+        "size": 5024,
         "extension": ".py",
         "path": "apps/api/api/modules/public_classrooms/service.py"
       },
@@ -686,10 +694,48 @@
         "path": "apps/api/api/modules/public_restaurant/service.py"
       },
       {
+        "name": "public_subjects",
+        "type": "directory",
+        "path": "apps/api/api/modules/public_subjects",
+        "children": []
+      },
+      {
+        "name": "repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1486,
+        "extension": ".py",
+        "path": "apps/api/api/modules/public_subjects/repository.py"
+      },
+      {
+        "name": "router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1882,
+        "extension": ".py",
+        "path": "apps/api/api/modules/public_subjects/router.py"
+      },
+      {
+        "name": "service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3191,
+        "extension": ".py",
+        "path": "apps/api/api/modules/public_subjects/service.py"
+      },
+      {
+        "name": "schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 660,
+        "extension": ".py",
+        "path": "apps/api/api/schemas.py"
+      },
+      {
         "name": "sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 3464,
+        "size": 3714,
         "extension": ".py",
         "path": "apps/api/api/sigaa.py"
       },
@@ -727,7 +773,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 3637,
+        "size": 3639,
         "extension": ".py",
         "path": "apps/api/api/sync/router.py"
       },
@@ -735,7 +781,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 946,
+        "size": 945,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
       },
@@ -749,7 +795,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 14094,
+        "size": 14139,
         "extension": ".py",
         "path": "apps/api/tests/conftest.py"
       },
@@ -781,9 +827,17 @@
         "name": "test_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 45474,
+        "size": 48917,
         "extension": ".py",
         "path": "apps/api/tests/test_classrooms.py"
+      },
+      {
+        "name": "test_classrooms_seed.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3246,
+        "extension": ".py",
+        "path": "apps/api/tests/test_classrooms_seed.py"
       },
       {
         "name": "test_cookies.py",
@@ -805,7 +859,7 @@
         "name": "test_frequency.py",
         "type": "file",
         "language": "Python",
-        "size": 37725,
+        "size": 37827,
         "extension": ".py",
         "path": "apps/api/tests/test_frequency.py"
       },
@@ -821,7 +875,7 @@
         "name": "test_main.py",
         "type": "file",
         "language": "Python",
-        "size": 2921,
+        "size": 3037,
         "extension": ".py",
         "path": "apps/api/tests/test_main.py"
       },
@@ -829,7 +883,7 @@
         "name": "test_me.py",
         "type": "file",
         "language": "Python",
-        "size": 21254,
+        "size": 24525,
         "extension": ".py",
         "path": "apps/api/tests/test_me.py"
       },
@@ -850,6 +904,14 @@
         "path": "apps/api/tests/test_public_classrooms.py"
       },
       {
+        "name": "test_public_subjects.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5771,
+        "extension": ".py",
+        "path": "apps/api/tests/test_public_subjects.py"
+      },
+      {
         "name": "test_restaurant.py",
         "type": "file",
         "language": "Python",
@@ -861,7 +923,7 @@
         "name": "test_sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 6634,
+        "size": 6585,
         "extension": ".py",
         "path": "apps/api/tests/test_sigaa.py"
       },
@@ -869,7 +931,7 @@
         "name": "test_subjects_seed.py",
         "type": "file",
         "language": "Python",
-        "size": 2659,
+        "size": 3801,
         "extension": ".py",
         "path": "apps/api/tests/test_subjects_seed.py"
       },
@@ -877,7 +939,7 @@
         "name": "test_sync.py",
         "type": "file",
         "language": "Python",
-        "size": 28036,
+        "size": 28043,
         "extension": ".py",
         "path": "apps/api/tests/test_sync.py"
       },
@@ -923,7 +985,7 @@
         "name": "bun.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 266635,
+        "size": 266499,
         "extension": ".lock",
         "path": "apps/web/bun.lock"
       },
@@ -936,18 +998,10 @@
         "path": "apps/web/components.json"
       },
       {
-        "name": "openapi.json",
-        "type": "file",
-        "language": "JSON",
-        "size": 82979,
-        "extension": ".json",
-        "path": "apps/web/openapi.json"
-      },
-      {
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2199,
+        "size": 2198,
         "extension": ".json",
         "path": "apps/web/package.json"
       },
@@ -1077,7 +1131,7 @@
         "name": "BottomNavigation.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3388,
+        "size": 3487,
         "extension": ".tsx",
         "path": "apps/web/src/components/BottomNavigation.tsx"
       },
@@ -1247,7 +1301,7 @@
         "name": "ClassCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3965,
+        "size": 4767,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/ClassCard.tsx"
       },
@@ -1272,6 +1326,14 @@
         "type": "directory",
         "path": "apps/web/src/components/profile",
         "children": []
+      },
+      {
+        "name": "DocumentDownloads.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2923,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/profile/DocumentDownloads.tsx"
       },
       {
         "name": "InstallPromptCard.tsx",
@@ -1302,6 +1364,44 @@
         "size": 12168,
         "extension": ".tsx",
         "path": "apps/web/src/components/ru/RestaurantAccount.tsx"
+      },
+      {
+        "name": "search",
+        "type": "directory",
+        "path": "apps/web/src/components/search",
+        "children": []
+      },
+      {
+        "name": "FilterSelect.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1724,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/search/FilterSelect.tsx"
+      },
+      {
+        "name": "TurmaCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2860,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/search/TurmaCard.tsx"
+      },
+      {
+        "name": "TurmaDetails.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4095,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/search/TurmaDetails.tsx"
+      },
+      {
+        "name": "TurmaSection.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2877,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/search/TurmaSection.tsx"
       },
       {
         "name": "ui",
@@ -1537,7 +1637,7 @@
         "name": "root-provider.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1298,
+        "size": 1351,
         "extension": ".tsx",
         "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx"
       },
@@ -1559,9 +1659,17 @@
         "name": "classroom-details.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1766,
+        "size": 1993,
         "extension": ".ts",
         "path": "apps/web/src/lib/classroom-details.ts"
+      },
+      {
+        "name": "download.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 428,
+        "extension": ".ts",
+        "path": "apps/web/src/lib/download.ts"
       },
       {
         "name": "local-storage.ts",
@@ -1682,6 +1790,14 @@
         "path": "apps/web/src/queries/client.ts"
       },
       {
+        "name": "documents.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1079,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/documents.ts"
+      },
+      {
         "name": "errors.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1733,7 +1849,7 @@
         "name": "schema.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 58865,
+        "size": 65596,
         "extension": ".ts",
         "path": "apps/web/src/queries/schema.gen.ts"
       },
@@ -1746,10 +1862,18 @@
         "path": "apps/web/src/queries/settings.ts"
       },
       {
+        "name": "subjects.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4114,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/subjects.ts"
+      },
+      {
         "name": "routeTree.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5901,
+        "size": 6582,
         "extension": ".ts",
         "path": "apps/web/src/routeTree.gen.ts"
       },
@@ -1798,10 +1922,18 @@
         "children": []
       },
       {
+        "name": "buscar.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6394,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/_app/buscar.tsx"
+      },
+      {
         "name": "index.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7264,
+        "size": 7113,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/index.tsx"
       },
@@ -1809,7 +1941,7 @@
         "name": "perfil.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9445,
+        "size": 9479,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/perfil.tsx"
       },
@@ -1833,7 +1965,7 @@
         "name": "turmas_.$id.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 13717,
+        "size": 13977,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/turmas_.$id.tsx"
       },
@@ -1877,7 +2009,7 @@
         "name": "BottomNavigation.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2432,
+        "size": 2693,
         "extension": ".tsx",
         "path": "apps/web/tests/components/BottomNavigation.test.tsx"
       },
@@ -1969,7 +2101,7 @@
         "name": "ClassroomSummary.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1706,
+        "size": 1726,
         "extension": ".tsx",
         "path": "apps/web/tests/components/classroom/ClassroomSummary.test.tsx"
       },
@@ -2010,6 +2142,14 @@
         "children": []
       },
       {
+        "name": "DocumentDownloads.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 989,
+        "extension": ".tsx",
+        "path": "apps/web/tests/components/profile/DocumentDownloads.test.tsx"
+      },
+      {
         "name": "ProfileOverview.test.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -2030,6 +2170,20 @@
         "size": 6051,
         "extension": ".tsx",
         "path": "apps/web/tests/components/ru/RestaurantAccount.test.tsx"
+      },
+      {
+        "name": "search",
+        "type": "directory",
+        "path": "apps/web/tests/components/search",
+        "children": []
+      },
+      {
+        "name": "TurmaCard.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5890,
+        "extension": ".tsx",
+        "path": "apps/web/tests/components/search/TurmaCard.test.tsx"
       },
       {
         "name": "ui",
@@ -2097,7 +2251,7 @@
         "name": "root-provider.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2034,
+        "size": 3117,
         "extension": ".ts",
         "path": "apps/web/tests/integrations/tanstack-query/root-provider.test.ts"
       },
@@ -2119,7 +2273,7 @@
         "name": "classroom-details.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2922,
+        "size": 3386,
         "extension": ".ts",
         "path": "apps/web/tests/lib/classroom-details.test.ts"
       },
@@ -2202,6 +2356,14 @@
         "path": "apps/web/tests/queries/classrooms.test.ts"
       },
       {
+        "name": "documents.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2136,
+        "extension": ".ts",
+        "path": "apps/web/tests/queries/documents.test.ts"
+      },
+      {
         "name": "load.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2242,6 +2404,14 @@
         "path": "apps/web/tests/queries/settings.test.ts"
       },
       {
+        "name": "subjects.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5454,
+        "extension": ".ts",
+        "path": "apps/web/tests/queries/subjects.test.ts"
+      },
+      {
         "name": "routes",
         "type": "directory",
         "path": "apps/web/tests/routes",
@@ -2270,6 +2440,14 @@
         "size": 1520,
         "extension": ".js",
         "path": "apps/web/tests/routes/ru.test.js"
+      },
+      {
+        "name": "search.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1041,
+        "extension": ".js",
+        "path": "apps/web/tests/routes/search.test.js"
       },
       {
         "name": "seo.test.js",
@@ -2491,7 +2669,7 @@
         "name": "sprint-02.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2197,
+        "size": 2234,
         "extension": ".md",
         "path": "docs/sprints/sprint-02.md"
       },
@@ -2499,7 +2677,7 @@
         "name": "sprint-03.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2114,
+        "size": 2164,
         "extension": ".md",
         "path": "docs/sprints/sprint-03.md"
       },
@@ -2507,7 +2685,7 @@
         "name": "sprint-04.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1788,
+        "size": 1825,
         "extension": ".md",
         "path": "docs/sprints/sprint-04.md"
       },
@@ -2515,9 +2693,17 @@
         "name": "sprint-05.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2157,
+        "size": 2194,
         "extension": ".md",
         "path": "docs/sprints/sprint-05.md"
+      },
+      {
+        "name": "sprint-06.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2812,
+        "extension": ".md",
+        "path": "docs/sprints/sprint-06.md"
       },
       {
         "name": "template.md",
@@ -2543,7 +2729,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2861,
+        "size": 2896,
         "extension": ".md",
         "path": "packages/sigaa-client/AGENTS.md"
       },
@@ -2551,7 +2737,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1778,
+        "size": 3385,
         "extension": ".md",
         "path": "packages/sigaa-client/README.md"
       },
@@ -2560,6 +2746,14 @@
         "type": "directory",
         "path": "packages/sigaa-client/data",
         "children": []
+      },
+      {
+        "name": "classrooms.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 521674,
+        "extension": ".csv",
+        "path": "packages/sigaa-client/data/classrooms.csv"
       },
       {
         "name": "courses.csv",
@@ -2589,7 +2783,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 712,
+        "size": 711,
         "extension": ".toml",
         "path": "packages/sigaa-client/pyproject.toml"
       },
@@ -2600,10 +2794,26 @@
         "children": []
       },
       {
+        "name": "_by_unit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4719,
+        "extension": ".py",
+        "path": "packages/sigaa-client/scripts/_by_unit.py"
+      },
+      {
+        "name": "collect_classrooms.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2832,
+        "extension": ".py",
+        "path": "packages/sigaa-client/scripts/collect_classrooms.py"
+      },
+      {
         "name": "collect_subjects.py",
         "type": "file",
         "language": "Python",
-        "size": 5356,
+        "size": 2756,
         "extension": ".py",
         "path": "packages/sigaa-client/scripts/collect_subjects.py"
       },
@@ -2617,7 +2827,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1700,
+        "size": 2077,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/__init__.py"
       },
@@ -2625,7 +2835,7 @@
         "name": "client.py",
         "type": "file",
         "language": "Python",
-        "size": 2570,
+        "size": 2759,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/client.py"
       },
@@ -2633,7 +2843,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 807,
+        "size": 880,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/config.py"
       },
@@ -2649,7 +2859,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 9273,
+        "size": 10382,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/models.py"
       },
@@ -2671,9 +2881,17 @@
         "name": "classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 34138,
+        "size": 35326,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/classrooms.py"
+      },
+      {
+        "name": "documents.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2468,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/private/documents.py"
       },
       {
         "name": "profile.py",
@@ -2687,7 +2905,7 @@
         "name": "restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 5660,
+        "size": 5031,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/restaurant.py"
       },
@@ -2717,7 +2935,7 @@
         "name": "classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 12847,
+        "size": 11382,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/public/classrooms.py"
       },
@@ -2728,6 +2946,22 @@
         "size": 1833,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/public/session.py"
+      },
+      {
+        "name": "subjects.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7751,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/public/subjects.py"
+      },
+      {
+        "name": "units.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1394,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/public/units.py"
       },
       {
         "name": "utils",
@@ -2755,7 +2989,7 @@
         "name": "parsing.py",
         "type": "file",
         "language": "Python",
-        "size": 4050,
+        "size": 4326,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/utils/parsing.py"
       },
@@ -2799,15 +3033,31 @@
         "name": "test_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 28964,
+        "size": 31315,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_classrooms.py"
+      },
+      {
+        "name": "test_collect.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5968,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/test_collect.py"
+      },
+      {
+        "name": "test_documents.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4994,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/test_documents.py"
       },
       {
         "name": "test_parsing.py",
         "type": "file",
         "language": "Python",
-        "size": 2691,
+        "size": 3345,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_parsing.py"
       },
@@ -2828,10 +3078,18 @@
         "path": "packages/sigaa-client/tests/test_public_classrooms.py"
       },
       {
+        "name": "test_public_subjects.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8807,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/test_public_subjects.py"
+      },
+      {
         "name": "test_restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 10500,
+        "size": 11104,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_restaurant.py"
       },
@@ -2861,7 +3119,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 657,
+        "size": 656,
         "extension": ".toml",
         "path": "packages/unb-browser/pyproject.toml"
       },
@@ -3081,17 +3339,9 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 724,
+        "size": 723,
         "extension": ".toml",
         "path": "pyproject.toml"
-      },
-      {
-        "name": "scalar.config.json",
-        "type": "file",
-        "language": "JSON",
-        "size": 1436,
-        "extension": ".json",
-        "path": "scalar.config.json"
       },
       {
         "name": "scripts",
@@ -3119,7 +3369,7 @@
         "name": "uv.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 343420,
+        "size": 365916,
         "extension": ".lock",
         "path": "uv.lock"
       },
@@ -3134,7 +3384,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-13T13:42:35.481129+00:00",
+    "extracted_at": "2026-10-14T11:08:00.124308+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
