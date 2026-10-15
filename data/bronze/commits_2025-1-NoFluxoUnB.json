@@ -1,10 +1,261 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-14T10:24:48.258779+00:00",
+      "extracted_at": "2026-10-15T10:02:50.325866+00:00",
       "file_path": "data/bronze/commits_2025-1-NoFluxoUnB.json",
-      "record_count": 1456
+      "record_count": 1466
     }
+  },
+  {
+    "sha": "87b5475b848299085b113cb441e8ddea0b205249",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Felipe Pedroza",
+        "date": "2026-10-14T21:48:57Z",
+        "login": "darkymeubem",
+        "id": 73255212,
+        "author_email_hash": "645107d9454b9b5822eb99872627cdccbfe5a1fbe3637b2813d0193eb42019c0"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T21:48:57Z"
+      },
+      "message": "Merge pull request #273 from unb-mds/fix/exportacao-png-fluxograma\n\nfix(fluxograma): exportação PNG fiel e conexões organizadas por trilha"
+    },
+    "parents": [
+      "37157907d6edf81e9e45f20e71e1b471a3f29ade",
+      "5d82f1cfc2609015aa30c4f2db48fba179547130"
+    ],
+    "additions": 803,
+    "deletions": 10,
+    "total_changes": 813,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "37157907d6edf81e9e45f20e71e1b471a3f29ade",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T15:01:24Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T15:01:24Z"
+      },
+      "message": "fix(database): liga RLS em materias_vetorizadas e preferencias_grade (#267)\n\nFecha as duas tabelas do schema public que ainda estavam abertas depois de\n20260928_rls_catalogo.sql (matrizes já coberta lá). Com os grants padrão do\nSupabase, qualquer um com a anon key do bundle conseguia INSERT/UPDATE/DELETE\nnas duas pelo PostgREST, sem login: envenenar o corpus que o Darcy recupera\nvia match_materias e listar/sobrescrever a preferência de grade de qualquer\nid_user.\n\n- materias_vetorizadas: RLS + policy só de SELECT para anon/authenticated\n  (como matrizes); escrita fica com service_role. Os jobs de mcp_agent/jobs/\n  passam a exigir SUPABASE_SERVICE_ROLE_KEY e recusam sb_publishable_, o\n  bloqueio que deixou a tabela pendente na migration anterior.\n- preferencias_grade: RLS sem policy + REVOKE de anon/authenticated; só o\n  backend (service_role) lê e escreve.\n- teste PGlite cobrindo leitura, escrita negada, service_role, grants,\n  idempotência e \"nenhuma tabela sem RLS\".\n\nAplicar manualmente no SQL Editor (pré-requisito: preferencias_grade.sql).\n\nCo-authored-by: Claude Fable 5.1 <[email removed]>"
+    },
+    "parents": [
+      "432a1c2a297e9522a056b5f0c13f99d7a4092315"
+    ],
+    "additions": 247,
+    "deletions": 8,
+    "total_changes": 255,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "432a1c2a297e9522a056b5f0c13f99d7a4092315",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:59:37Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T14:59:37Z"
+      },
+      "message": "feat(fluxograma): cabeçalho começa recolhido por padrão (#275)\n\nQuem nunca alternou o cabeçalho entra com ele e a legenda recolhidos,\ndando mais altura ao diagrama. Quem expandiu manualmente mantém a\nescolha salva no navegador. Celular não muda.\n\nCo-authored-by: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "9ec0bf741cc4578db1520e387669a08173ad0a5e"
+    ],
+    "additions": 5,
+    "deletions": 5,
+    "total_changes": 10,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "5d82f1cfc2609015aa30c4f2db48fba179547130",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:57:35Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:57:35Z"
+      },
+      "message": "feat(fluxograma): PNG com conexões colorido por trilha, com gradiente e legenda\n\nA cor da seta vinha do semestre de origem e não dizia nada. Agora cada\ncadeia de pré-requisitos (trilha que parte de uma matéria sem\npré-requisito: Cálculo, Algoritmos, Discreta…) tem um matiz próprio,\nmais claro perto da raiz e mais intenso nos semestres seguintes; cada\nseta tem gradiente da origem ao destino. \"Também requer X\" usa a cor\nda trilha de X, e o rodapé da imagem traz a legenda das trilhas.\n\nQuem depende de duas trilhas fica com a raiz mais antiga\n(calcularTrilhas, com testes). Nomes da legenda vêm do curso.\n\nRefs #272\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "f3ce5176d96cce7bbad4e859398d316164314834"
+    ],
+    "additions": 221,
+    "deletions": 46,
+    "total_changes": 267,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "f3ce5176d96cce7bbad4e859398d316164314834",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:43:55Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:43:55Z"
+      },
+      "message": "feat(fluxograma): PNG com conexões organizado (setas só entre vizinhos)\n\nNo PNG \"Com todas as conexões\", as 34 setas de Eng. Software cruzavam\ncards e umas às outras. Agora, só na imagem (a tela não muda):\n- setas apenas entre semestres vizinhos, ortogonais, cada trecho\n  vertical numa faixa própria do vão e cor pelo semestre de origem;\n- cards de cada semestre reordenados pelo baricentro (cruzamentos\n  entre vizinhos 16 -> 7 em Eng. Software);\n- pré-requisitos que pulam semestres viram \"também requer X\" no card.\n\nA cópia é montada fora da tela antes da captura, para o tamanho da\nimagem incluir o texto extra. Lógica pura em export-conexoes.ts, com\ntestes; montagem do DOM em export-conexoes-dom.ts.\n\nRefs #272\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "68b5e59243476eaa499a277a958ecab7dd972dba"
+    ],
+    "additions": 562,
+    "deletions": 5,
+    "total_changes": 567,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "68b5e59243476eaa499a277a958ecab7dd972dba",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:05:38Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T14:05:38Z"
+      },
+      "message": "fix(fluxograma): exportação PNG no tamanho natural, sem o CSS zoom\n\nO html2canvas não entende a propriedade CSS zoom do pan/zoom do\nfluxograma. Com zoom != 1 (ex.: 0.79 do zoom inicial), o PNG saía com\nos cards encolhidos, palavras sobrepostas e as conexões fora do lugar.\n\nA captura agora usa o clone com zoom: 1 e o tamanho natural do\nconteúdo (rect / zoom); a tela do usuário não muda. Mesmo ajuste no\nfallback via SVG. Validado com o screenshot.ts real contra o\nfluxograma de produção, temas claro e escuro.\n\nCloses #272\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "9ec0bf741cc4578db1520e387669a08173ad0a5e"
+    ],
+    "additions": 66,
+    "deletions": 5,
+    "total_changes": 71,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "9ec0bf741cc4578db1520e387669a08173ad0a5e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T13:57:38Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T13:57:38Z"
+      },
+      "message": "feat(plano-formatura): slider de créditos mostra o valor e as horas enquanto arrasta (#271)\n\n- Caixa e \"(Nh)\" acompanham o slider na hora; o recálculo do plano segue\n  com debounce de 400 ms e um indicador discreto enquanto não termina.\n- Valor escolhido durante um recálculo fica pendente e é aplicado no fim\n  (antes era descartado pelo early return).\n- Lógica em creditos-slider.svelte.ts, com testes.\n- Caixa numérica usa os mesmos limites do slider (8–32; antes aceitava 40)\n  e ignora campo vazio. aria-valuetext anuncia créditos e horas.\n\nCloses #270\n\nCo-authored-by: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "d8be59c1d5d03c87a412edda5a99cab5036da038"
+    ],
+    "additions": 174,
+    "deletions": 26,
+    "total_changes": 200,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "d8be59c1d5d03c87a412edda5a99cab5036da038",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T13:57:16Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T13:57:16Z"
+      },
+      "message": "fix(chat): contraste no chat do assistente coberto pelo axe nos dois temas (#269)\n\n- Harness /dev/chat (só em dev) com o ChatPanel real e mensagens fixas:\n  negrito, códigos de matéria, lista, cartão de turma, botões e montar grade.\n- a11y.spec varre o chat nos temas claro e escuro.\n- Escuro: \"Powered by Maritaca AI\" passava de 3,78:1 para AA (white/40 -> /60).\n- Claro: o negrito medido na main está em 15,7:1 (assistente) e 6,3:1\n  (usuário); o teste trava regressão.\n\nCloses #268\n\nCo-authored-by: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "a9b4bd532bf92c2592a1e10bd8ac8c523468f3fe"
+    ],
+    "additions": 66,
+    "deletions": 1,
+    "total_changes": 67,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "a9b4bd532bf92c2592a1e10bd8ac8c523468f3fe",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T12:26:32Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T12:26:32Z"
+      },
+      "message": "feat(home): Otávio Maya entra no time atual como CTO da Crianex (#265)\n\nFoto própria em /team/otavio-maya.webp (400x400), usada também na menção\nhonrosa da aba Fundadores.\n\nCo-authored-by: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "61efbb966394afdd3b7a17e42d13ea9d6365e0a0"
+    ],
+    "additions": 6,
+    "deletions": 1,
+    "total_changes": 7,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "61efbb966394afdd3b7a17e42d13ea9d6365e0a0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vitor Trancoso",
+        "date": "2026-10-14T12:26:27Z",
+        "login": "Vitor-Trancoso",
+        "id": 179967365,
+        "author_email_hash": "4b6fe4e00d123d418696824c46bf1cd9fe4ea6f8369f7d010a9cec311e6fd55b"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T12:26:27Z"
+      },
+      "message": "feat(legal): links de termos e privacidade no rodapé e no login com Google (#264)\n\n* feat(legal): links de termos e privacidade no rodapé e no login com Google\n\n- Rodapé da home ganha faixa inferior com copyright + Termos de uso e\n  Política de privacidade (padrão de sites; empilha no celular).\n- Login e cadastro: aviso \"Ao continuar, você concorda com...\" abaixo do\n  botão do Google, que cria conta sem passar pelo checkbox de aceite.\n- Checkbox do cadastro passa a dizer \"Termos de Uso\", como o título da página.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>\n\n* fix(a11y): links do aviso legal sublinhados e axe sem animação no meio\n\n- Links de Termos/Privacidade no aviso do login e cadastro ficam sempre\n  sublinhados (.auth-link--inline): o axe reprovava link-in-text-block no\n  tema escuro (cor do link ~ cor do texto, sem outro indicador).\n- a11y.spec roda com reducedMotion reduce: o nex animado do wordmark da\n  Crianex no rodapé era pego com opacidade parcial e reprovava contraste\n  de forma intermitente.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>\n\n---------\n\nCo-authored-by: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "bbba4b1c5a77fb3f8e4e843cd2db19895a773faa"
+    ],
+    "additions": 70,
+    "deletions": 3,
+    "total_changes": 73,
+    "repo_name": "2025-1-NoFluxoUnB"
   },
   {
     "sha": "bbba4b1c5a77fb3f8e4e843cd2db19895a773faa",
