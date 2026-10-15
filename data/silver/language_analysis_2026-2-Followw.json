@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-14T11:07:00.945459+00:00",
+  "analyzed_at": "2026-10-15T10:42:37.968298+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 358,
-  "total_bytes": 5384317,
+  "total_files": 374,
+  "total_bytes": 6003909,
   "languages": [
     {
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 2161302,
-      "percentage": 40.14,
+      "percentage": 36.0,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -56,9 +56,9 @@
     },
     {
       "language": "Unknown",
-      "file_count": 11,
-      "total_bytes": 846768,
-      "percentage": 15.73,
+      "file_count": 12,
+      "total_bytes": 1331771,
+      "percentage": 22.18,
       "files": [
         {
           "path": "packages/sigaa-client/data/classrooms.csv",
@@ -67,9 +67,21 @@
           "extension": ".csv"
         },
         {
+          "path": "packages/sigaa-client/data/curriculum_components.csv",
+          "name": "curriculum_components.csv",
+          "size": 414455,
+          "extension": ".csv"
+        },
+        {
           "path": "packages/sigaa-client/data/subjects.csv",
           "name": "subjects.csv",
-          "size": 298028,
+          "size": 349561,
+          "extension": ".csv"
+        },
+        {
+          "path": "packages/sigaa-client/data/curricula.csv",
+          "name": "curricula.csv",
+          "size": 19014,
           "extension": ".csv"
         },
         {
@@ -107,26 +119,14 @@
           "name": "context.puml",
           "size": 1196,
           "extension": ".puml"
-        },
-        {
-          "path": "apps/api/.env.example",
-          "name": ".env.example",
-          "size": 462,
-          "extension": ".example"
-        },
-        {
-          "path": "apps/web/.env.example",
-          "name": ".env.example",
-          "size": 62,
-          "extension": ".example"
         }
       ]
     },
     {
       "language": "Python",
-      "file_count": 120,
-      "total_bytes": 710298,
-      "percentage": 13.19,
+      "file_count": 130,
+      "total_bytes": 795694,
+      "percentage": 13.25,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
@@ -161,19 +161,19 @@
         {
           "path": "apps/api/tests/test_sync.py",
           "name": "test_sync.py",
-          "size": 28043,
+          "size": 28556,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_me.py",
+          "name": "test_me.py",
+          "size": 26955,
           "extension": ".py"
         },
         {
           "path": "apps/api/tests/test_public_classrooms.py",
           "name": "test_public_classrooms.py",
           "size": 24562,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_me.py",
-          "name": "test_me.py",
-          "size": 24525,
           "extension": ".py"
         },
         {
@@ -193,8 +193,8 @@
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 632415,
-      "percentage": 11.75,
+      "total_bytes": 634876,
+      "percentage": 10.57,
       "files": [
         {
           "path": "uv.lock",
@@ -205,22 +205,28 @@
         {
           "path": "apps/web/bun.lock",
           "name": "bun.lock",
-          "size": 266499,
+          "size": 268960,
           "extension": ".lock"
         }
       ]
     },
     {
       "language": "TypeScript",
-      "file_count": 140,
-      "total_bytes": 468823,
-      "percentage": 8.71,
+      "file_count": 144,
+      "total_bytes": 508379,
+      "percentage": 8.47,
       "files": [
         {
           "path": "apps/web/src/queries/schema.gen.ts",
           "name": "schema.gen.ts",
-          "size": 65596,
+          "size": 71937,
           "extension": ".ts"
+        },
+        {
+          "path": "apps/web/src/routes/_app/ru.tsx",
+          "name": "ru.tsx",
+          "size": 14543,
+          "extension": ".tsx"
         },
         {
           "path": "apps/web/src/routes/_app/turmas_.$id.tsx",
@@ -229,15 +235,15 @@
           "extension": ".tsx"
         },
         {
-          "path": "apps/web/src/routes/_app/ru.tsx",
-          "name": "ru.tsx",
-          "size": 13962,
+          "path": "apps/web/tests/routes/search-page.test.tsx",
+          "name": "search-page.test.tsx",
+          "size": 13817,
           "extension": ".tsx"
         },
         {
           "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
           "name": "RestaurantAccount.tsx",
-          "size": 12168,
+          "size": 13614,
           "extension": ".tsx"
         },
         {
@@ -269,12 +275,6 @@
           "name": "FrequencyContent.tsx",
           "size": 9375,
           "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/components/ui/select.tsx",
-          "name": "select.tsx",
-          "size": 7225,
-          "extension": ".tsx"
         }
       ]
     },
@@ -282,7 +282,7 @@
       "language": "PNG Image",
       "file_count": 9,
       "total_bytes": 251942,
-      "percentage": 4.68,
+      "percentage": 4.2,
       "files": [
         {
           "path": "docs/assets/Diagrama de container.png",
@@ -341,10 +341,78 @@
       ]
     },
     {
+      "language": "Markdown",
+      "file_count": 32,
+      "total_bytes": 124712,
+      "percentage": 2.08,
+      "files": [
+        {
+          "path": "docs/requisitos.md",
+          "name": "requisitos.md",
+          "size": 19798,
+          "extension": ".md"
+        },
+        {
+          "path": ".agents/skills/scalar-docs/SKILL.md",
+          "name": "SKILL.md",
+          "size": 14046,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/arquitetura.md",
+          "name": "arquitetura.md",
+          "size": 8521,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/cache-e-sincronizacao.md",
+          "name": "cache-e-sincronizacao.md",
+          "size": 7870,
+          "extension": ".md"
+        },
+        {
+          "path": ".agents/skills/codebase-design/SKILL.md",
+          "name": "SKILL.md",
+          "size": 6446,
+          "extension": ".md"
+        },
+        {
+          "path": "packages/sigaa-client/README.md",
+          "name": "README.md",
+          "size": 6417,
+          "extension": ".md"
+        },
+        {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 6241,
+          "extension": ".md"
+        },
+        {
+          "path": "apps/api/AGENTS.md",
+          "name": "AGENTS.md",
+          "size": 5250,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/segurança.md",
+          "name": "segurança.md",
+          "size": 4567,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/AI-USAGE.md",
+          "name": "AI-USAGE.md",
+          "size": 4560,
+          "extension": ".md"
+        }
+      ]
+    },
+    {
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 119688,
-      "percentage": 2.22,
+      "percentage": 1.99,
       "files": [
         {
           "path": "docs/assets/components_backend.svg",
@@ -385,78 +453,10 @@
       ]
     },
     {
-      "language": "Markdown",
-      "file_count": 31,
-      "total_bytes": 118794,
-      "percentage": 2.21,
-      "files": [
-        {
-          "path": "docs/requisitos.md",
-          "name": "requisitos.md",
-          "size": 19798,
-          "extension": ".md"
-        },
-        {
-          "path": ".agents/skills/scalar-docs/SKILL.md",
-          "name": "SKILL.md",
-          "size": 14046,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/arquitetura.md",
-          "name": "arquitetura.md",
-          "size": 8521,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/cache-e-sincronizacao.md",
-          "name": "cache-e-sincronizacao.md",
-          "size": 7870,
-          "extension": ".md"
-        },
-        {
-          "path": ".agents/skills/codebase-design/SKILL.md",
-          "name": "SKILL.md",
-          "size": 6446,
-          "extension": ".md"
-        },
-        {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 5370,
-          "extension": ".md"
-        },
-        {
-          "path": "apps/api/AGENTS.md",
-          "name": "AGENTS.md",
-          "size": 5250,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/segurança.md",
-          "name": "segurança.md",
-          "size": 4567,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/AI-USAGE.md",
-          "name": "AI-USAGE.md",
-          "size": 4560,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/offline.md",
-          "name": "offline.md",
-          "size": 4014,
-          "extension": ".md"
-        }
-      ]
-    },
-    {
       "language": "JSON",
       "file_count": 12,
-      "total_bytes": 36943,
-      "percentage": 0.69,
+      "total_bytes": 37048,
+      "percentage": 0.62,
       "files": [
         {
           "path": "packages/unb-browser/unb_browser/calendar/academic_calendar.json",
@@ -467,7 +467,7 @@
         {
           "path": "apps/web/package.json",
           "name": "package.json",
-          "size": 2198,
+          "size": 2303,
           "extension": ".json"
         },
         {
@@ -524,7 +524,7 @@
       "language": "Icon",
       "file_count": 1,
       "total_bytes": 15086,
-      "percentage": 0.28,
+      "percentage": 0.25,
       "files": [
         {
           "path": "apps/web/public/favicon.ico",
@@ -537,13 +537,19 @@
     {
       "language": "JavaScript",
       "file_count": 5,
-      "total_bytes": 10494,
+      "total_bytes": 11647,
       "percentage": 0.19,
       "files": [
         {
           "path": "apps/web/tests/routes/seo.test.js",
           "name": "seo.test.js",
           "size": 5182,
+          "extension": ".js"
+        },
+        {
+          "path": "apps/web/tests/routes/search.test.js",
+          "name": "search.test.js",
+          "size": 2194,
           "extension": ".js"
         },
         {
@@ -559,12 +565,6 @@
           "extension": ".js"
         },
         {
-          "path": "apps/web/tests/routes/search.test.js",
-          "name": "search.test.js",
-          "size": 1041,
-          "extension": ".js"
-        },
-        {
           "path": "apps/web/tests/routes/auth-navigation.test.js",
           "name": "auth-navigation.test.js",
           "size": 871,
@@ -576,7 +576,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 5711,
-      "percentage": 0.11,
+      "percentage": 0.1,
       "files": [
         {
           "path": "apps/web/src/styles.css",
@@ -590,7 +590,7 @@
       "language": "TOML",
       "file_count": 4,
       "total_bytes": 3035,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": "apps/api/pyproject.toml",
@@ -622,7 +622,7 @@
       "language": "YAML",
       "file_count": 4,
       "total_bytes": 1493,
-      "percentage": 0.03,
+      "percentage": 0.02,
       "files": [
         {
           "path": ".github/workflows/ci.yml",
@@ -720,7 +720,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-14T11:08:00.122317+00:00",
+    "extracted_at": "2026-10-15T10:43:40.826722+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }

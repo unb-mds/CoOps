@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-14T11:07:00.945459+00:00",
+  "extracted_at": "2026-10-15T10:42:37.968298+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -128,6 +128,14 @@
         "path": ".claude/skills"
       },
       {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 525,
+        "extension": ".example",
+        "path": ".env.example"
+      },
+      {
         "name": ".github",
         "type": "directory",
         "path": ".github",
@@ -251,7 +259,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5370,
+        "size": 6241,
         "extension": ".md",
         "path": "README.md"
       },
@@ -266,14 +274,6 @@
         "type": "directory",
         "path": "apps/api",
         "children": []
-      },
-      {
-        "name": ".env.example",
-        "type": "file",
-        "language": "Unknown",
-        "size": 462,
-        "extension": ".example",
-        "path": "apps/api/.env.example"
       },
       {
         "name": ".python-version",
@@ -393,7 +393,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 11865,
+        "size": 13198,
         "extension": ".py",
         "path": "apps/api/api/db/models.py"
       },
@@ -428,10 +428,18 @@
         "path": "apps/api/api/db/seed/courses.py"
       },
       {
+        "name": "curricula.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5981,
+        "extension": ".py",
+        "path": "apps/api/api/db/seed/curricula.py"
+      },
+      {
         "name": "run.py",
         "type": "file",
         "language": "Python",
-        "size": 485,
+        "size": 568,
         "extension": ".py",
         "path": "apps/api/api/db/seed/run.py"
       },
@@ -479,7 +487,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 5673,
+        "size": 6160,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -591,7 +599,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 3519,
+        "size": 3935,
         "extension": ".py",
         "path": "apps/api/api/modules/me/router.py"
       },
@@ -664,6 +672,36 @@
         "path": "apps/api/api/modules/public_classrooms/service.py"
       },
       {
+        "name": "public_courses",
+        "type": "directory",
+        "path": "apps/api/api/modules/public_courses",
+        "children": []
+      },
+      {
+        "name": "repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1471,
+        "extension": ".py",
+        "path": "apps/api/api/modules/public_courses/repository.py"
+      },
+      {
+        "name": "router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2566,
+        "extension": ".py",
+        "path": "apps/api/api/modules/public_courses/router.py"
+      },
+      {
+        "name": "service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5053,
+        "extension": ".py",
+        "path": "apps/api/api/modules/public_courses/service.py"
+      },
+      {
         "name": "public_restaurant",
         "type": "directory",
         "path": "apps/api/api/modules/public_restaurant",
@@ -703,7 +741,7 @@
         "name": "repository.py",
         "type": "file",
         "language": "Python",
-        "size": 1486,
+        "size": 1815,
         "extension": ".py",
         "path": "apps/api/api/modules/public_subjects/repository.py"
       },
@@ -711,7 +749,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 1882,
+        "size": 2040,
         "extension": ".py",
         "path": "apps/api/api/modules/public_subjects/router.py"
       },
@@ -719,7 +757,7 @@
         "name": "service.py",
         "type": "file",
         "language": "Python",
-        "size": 3191,
+        "size": 4603,
         "extension": ".py",
         "path": "apps/api/api/modules/public_subjects/service.py"
       },
@@ -765,7 +803,7 @@
         "name": "queue.py",
         "type": "file",
         "language": "Python",
-        "size": 4239,
+        "size": 4476,
         "extension": ".py",
         "path": "apps/api/api/sync/queue.py"
       },
@@ -856,6 +894,14 @@
         "path": "apps/api/tests/test_courses.py"
       },
       {
+        "name": "test_curricula_seed.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8456,
+        "extension": ".py",
+        "path": "apps/api/tests/test_curricula_seed.py"
+      },
+      {
         "name": "test_frequency.py",
         "type": "file",
         "language": "Python",
@@ -875,7 +921,7 @@
         "name": "test_main.py",
         "type": "file",
         "language": "Python",
-        "size": 3037,
+        "size": 3127,
         "extension": ".py",
         "path": "apps/api/tests/test_main.py"
       },
@@ -883,7 +929,7 @@
         "name": "test_me.py",
         "type": "file",
         "language": "Python",
-        "size": 24525,
+        "size": 26955,
         "extension": ".py",
         "path": "apps/api/tests/test_me.py"
       },
@@ -904,10 +950,18 @@
         "path": "apps/api/tests/test_public_classrooms.py"
       },
       {
+        "name": "test_public_courses.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13781,
+        "extension": ".py",
+        "path": "apps/api/tests/test_public_courses.py"
+      },
+      {
         "name": "test_public_subjects.py",
         "type": "file",
         "language": "Python",
-        "size": 5771,
+        "size": 9459,
         "extension": ".py",
         "path": "apps/api/tests/test_public_subjects.py"
       },
@@ -931,7 +985,7 @@
         "name": "test_subjects_seed.py",
         "type": "file",
         "language": "Python",
-        "size": 3801,
+        "size": 4109,
         "extension": ".py",
         "path": "apps/api/tests/test_subjects_seed.py"
       },
@@ -939,7 +993,7 @@
         "name": "test_sync.py",
         "type": "file",
         "language": "Python",
-        "size": 28043,
+        "size": 28556,
         "extension": ".py",
         "path": "apps/api/tests/test_sync.py"
       },
@@ -956,14 +1010,6 @@
         "type": "directory",
         "path": "apps/web",
         "children": []
-      },
-      {
-        "name": ".env.example",
-        "type": "file",
-        "language": "Unknown",
-        "size": 62,
-        "extension": ".example",
-        "path": "apps/web/.env.example"
       },
       {
         "name": ".gitignore",
@@ -985,7 +1031,7 @@
         "name": "bun.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 266499,
+        "size": 268960,
         "extension": ".lock",
         "path": "apps/web/bun.lock"
       },
@@ -1001,7 +1047,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2198,
+        "size": 2303,
         "extension": ".json",
         "path": "apps/web/package.json"
       },
@@ -1235,7 +1281,7 @@
         "name": "WeekDayPicker.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1577,
+        "size": 3539,
         "extension": ".tsx",
         "path": "apps/web/src/components/WeekDayPicker.tsx"
       },
@@ -1331,7 +1377,7 @@
         "name": "DocumentDownloads.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2923,
+        "size": 3435,
         "extension": ".tsx",
         "path": "apps/web/src/components/profile/DocumentDownloads.tsx"
       },
@@ -1361,7 +1407,7 @@
         "name": "RestaurantAccount.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12168,
+        "size": 13614,
         "extension": ".tsx",
         "path": "apps/web/src/components/ru/RestaurantAccount.tsx"
       },
@@ -1380,10 +1426,18 @@
         "path": "apps/web/src/components/search/FilterSelect.tsx"
       },
       {
+        "name": "RequirementList.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2729,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/search/RequirementList.tsx"
+      },
+      {
         "name": "TurmaCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2860,
+        "size": 2975,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaCard.tsx"
       },
@@ -1391,7 +1445,7 @@
         "name": "TurmaDetails.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4095,
+        "size": 4479,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaDetails.tsx"
       },
@@ -1399,7 +1453,7 @@
         "name": "TurmaSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2877,
+        "size": 2998,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaSection.tsx"
       },
@@ -1585,7 +1639,7 @@
         "name": "pwa.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2521,
+        "size": 2545,
         "extension": ".ts",
         "path": "apps/web/src/integrations/offline/pwa.ts"
       },
@@ -1723,9 +1777,17 @@
         "name": "schedule.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5177,
+        "size": 5885,
         "extension": ".ts",
         "path": "apps/web/src/lib/schedule.ts"
+      },
+      {
+        "name": "search-params.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1369,
+        "extension": ".ts",
+        "path": "apps/web/src/lib/search-params.ts"
       },
       {
         "name": "seo.ts",
@@ -1825,7 +1887,7 @@
         "name": "refresh.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1630,
+        "size": 1689,
         "extension": ".ts",
         "path": "apps/web/src/queries/refresh.ts"
       },
@@ -1849,7 +1911,7 @@
         "name": "schema.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 65596,
+        "size": 71937,
         "extension": ".ts",
         "path": "apps/web/src/queries/schema.gen.ts"
       },
@@ -1865,7 +1927,7 @@
         "name": "subjects.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4114,
+        "size": 4456,
         "extension": ".ts",
         "path": "apps/web/src/queries/subjects.ts"
       },
@@ -1881,7 +1943,7 @@
         "name": "router.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 990,
+        "size": 1158,
         "extension": ".tsx",
         "path": "apps/web/src/router.tsx"
       },
@@ -1903,7 +1965,7 @@
         "name": "__root.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3279,
+        "size": 3405,
         "extension": ".tsx",
         "path": "apps/web/src/routes/__root.tsx"
       },
@@ -1925,7 +1987,7 @@
         "name": "buscar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6394,
+        "size": 7382,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/buscar.tsx"
       },
@@ -1949,7 +2011,7 @@
         "name": "ru.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 13962,
+        "size": 14543,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/ru.tsx"
       },
@@ -2145,7 +2207,7 @@
         "name": "DocumentDownloads.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 989,
+        "size": 1042,
         "extension": ".tsx",
         "path": "apps/web/tests/components/profile/DocumentDownloads.test.tsx"
       },
@@ -2181,7 +2243,7 @@
         "name": "TurmaCard.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5890,
+        "size": 8137,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/TurmaCard.test.tsx"
       },
@@ -2321,9 +2383,17 @@
         "name": "schedule.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3344,
+        "size": 4810,
         "extension": ".ts",
         "path": "apps/web/tests/lib/schedule.test.ts"
+      },
+      {
+        "name": "search-params.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1888,
+        "extension": ".ts",
+        "path": "apps/web/tests/lib/search-params.test.ts"
       },
       {
         "name": "theme.test.ts",
@@ -2375,7 +2445,7 @@
         "name": "refresh.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2607,
+        "size": 3505,
         "extension": ".ts",
         "path": "apps/web/tests/queries/refresh.test.ts"
       },
@@ -2407,7 +2477,7 @@
         "name": "subjects.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5454,
+        "size": 6666,
         "extension": ".ts",
         "path": "apps/web/tests/queries/subjects.test.ts"
       },
@@ -2442,10 +2512,18 @@
         "path": "apps/web/tests/routes/ru.test.js"
       },
       {
+        "name": "search-page.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 13817,
+        "extension": ".tsx",
+        "path": "apps/web/tests/routes/search-page.test.tsx"
+      },
+      {
         "name": "search.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1041,
+        "size": 2194,
         "extension": ".js",
         "path": "apps/web/tests/routes/search.test.js"
       },
@@ -2737,7 +2815,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3385,
+        "size": 6417,
         "extension": ".md",
         "path": "packages/sigaa-client/README.md"
       },
@@ -2764,10 +2842,34 @@
         "path": "packages/sigaa-client/data/courses.csv"
       },
       {
+        "name": "curricula.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 19014,
+        "extension": ".csv",
+        "path": "packages/sigaa-client/data/curricula.csv"
+      },
+      {
+        "name": "curricula.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2017,
+        "extension": ".md",
+        "path": "packages/sigaa-client/data/curricula.md"
+      },
+      {
+        "name": "curriculum_components.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 414455,
+        "extension": ".csv",
+        "path": "packages/sigaa-client/data/curriculum_components.csv"
+      },
+      {
         "name": "subjects.csv",
         "type": "file",
         "language": "Unknown",
-        "size": 298028,
+        "size": 349561,
         "extension": ".csv",
         "path": "packages/sigaa-client/data/subjects.csv"
       },
@@ -2810,12 +2912,28 @@
         "path": "packages/sigaa-client/scripts/collect_classrooms.py"
       },
       {
+        "name": "collect_curricula.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6755,
+        "extension": ".py",
+        "path": "packages/sigaa-client/scripts/collect_curricula.py"
+      },
+      {
         "name": "collect_subjects.py",
         "type": "file",
         "language": "Python",
-        "size": 2756,
+        "size": 2848,
         "extension": ".py",
         "path": "packages/sigaa-client/scripts/collect_subjects.py"
+      },
+      {
+        "name": "complete_subjects.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3030,
+        "extension": ".py",
+        "path": "packages/sigaa-client/scripts/complete_subjects.py"
       },
       {
         "name": "sigaa_client",
@@ -2827,7 +2945,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 2077,
+        "size": 2205,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/__init__.py"
       },
@@ -2835,7 +2953,7 @@
         "name": "client.py",
         "type": "file",
         "language": "Python",
-        "size": 2759,
+        "size": 2861,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/client.py"
       },
@@ -2843,7 +2961,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 880,
+        "size": 940,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/config.py"
       },
@@ -2859,7 +2977,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 10382,
+        "size": 11076,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/models.py"
       },
@@ -2938,6 +3056,14 @@
         "size": 11382,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/public/classrooms.py"
+      },
+      {
+        "name": "curricula.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7934,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/public/curricula.py"
       },
       {
         "name": "session.py",
@@ -3041,7 +3167,7 @@
         "name": "test_collect.py",
         "type": "file",
         "language": "Python",
-        "size": 5968,
+        "size": 15100,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_collect.py"
       },
@@ -3078,6 +3204,14 @@
         "path": "packages/sigaa-client/tests/test_public_classrooms.py"
       },
       {
+        "name": "test_public_curricula.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8677,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/test_public_curricula.py"
+      },
+      {
         "name": "test_public_subjects.py",
         "type": "file",
         "language": "Python",
@@ -3111,7 +3245,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 819,
+        "size": 817,
         "extension": ".md",
         "path": "packages/unb-browser/README.md"
       },
@@ -3384,7 +3518,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-14T11:08:00.124308+00:00",
+    "extracted_at": "2026-10-15T10:43:40.829947+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }
