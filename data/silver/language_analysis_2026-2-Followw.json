@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-15T10:42:37.968298+00:00",
+  "analyzed_at": "2026-10-16T10:34:34.003494+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 374,
-  "total_bytes": 6003909,
+  "total_files": 383,
+  "total_bytes": 6066769,
   "languages": [
     {
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 2161302,
-      "percentage": 36.0,
+      "percentage": 35.63,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -57,8 +57,8 @@
     {
       "language": "Unknown",
       "file_count": 12,
-      "total_bytes": 1331771,
-      "percentage": 22.18,
+      "total_bytes": 1331852,
+      "percentage": 21.95,
       "files": [
         {
           "path": "packages/sigaa-client/data/classrooms.csv",
@@ -124,9 +124,9 @@
     },
     {
       "language": "Python",
-      "file_count": 130,
-      "total_bytes": 795694,
-      "percentage": 13.25,
+      "file_count": 132,
+      "total_bytes": 820415,
+      "percentage": 13.52,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
@@ -143,19 +143,19 @@
         {
           "path": "packages/sigaa-client/sigaa_client/private/classrooms.py",
           "name": "classrooms.py",
-          "size": 35326,
-          "extension": ".py"
-        },
-        {
-          "path": "packages/sigaa-client/tests/test_classrooms.py",
-          "name": "test_classrooms.py",
-          "size": 31315,
+          "size": 37175,
           "extension": ".py"
         },
         {
           "path": "apps/api/api/modules/classrooms/repository.py",
           "name": "repository.py",
-          "size": 30506,
+          "size": 31703,
+          "extension": ".py"
+        },
+        {
+          "path": "packages/sigaa-client/tests/test_classrooms.py",
+          "name": "test_classrooms.py",
+          "size": 31045,
           "extension": ".py"
         },
         {
@@ -183,9 +183,9 @@
           "extension": ".py"
         },
         {
-          "path": "apps/api/tests/test_news.py",
-          "name": "test_news.py",
-          "size": 19101,
+          "path": "apps/api/tests/test_posts.py",
+          "name": "test_posts.py",
+          "size": 20075,
           "extension": ".py"
         }
       ]
@@ -194,7 +194,7 @@
       "language": "Lock File",
       "file_count": 2,
       "total_bytes": 634876,
-      "percentage": 10.57,
+      "percentage": 10.46,
       "files": [
         {
           "path": "uv.lock",
@@ -212,26 +212,20 @@
     },
     {
       "language": "TypeScript",
-      "file_count": 144,
-      "total_bytes": 508379,
-      "percentage": 8.47,
+      "file_count": 151,
+      "total_bytes": 544922,
+      "percentage": 8.98,
       "files": [
         {
           "path": "apps/web/src/queries/schema.gen.ts",
           "name": "schema.gen.ts",
-          "size": 71937,
+          "size": 72818,
           "extension": ".ts"
         },
         {
           "path": "apps/web/src/routes/_app/ru.tsx",
           "name": "ru.tsx",
           "size": 14543,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routes/_app/turmas_.$id.tsx",
-          "name": "turmas_.$id.tsx",
-          "size": 13977,
           "extension": ".tsx"
         },
         {
@@ -247,9 +241,21 @@
           "extension": ".tsx"
         },
         {
+          "path": "apps/web/src/components/classroom/ClassroomPosts.tsx",
+          "name": "ClassroomPosts.tsx",
+          "size": 11544,
+          "extension": ".tsx"
+        },
+        {
           "path": "apps/web/src/components/ui/drawer.tsx",
           "name": "drawer.tsx",
           "size": 11346,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/components/classroom/ClassroomPosts.test.tsx",
+          "name": "ClassroomPosts.test.tsx",
+          "size": 11133,
           "extension": ".tsx"
         },
         {
@@ -259,22 +265,16 @@
           "extension": ".tsx"
         },
         {
+          "path": "apps/web/src/routes/_app/turmas_.$id.tsx",
+          "name": "turmas_.$id.tsx",
+          "size": 9897,
+          "extension": ".tsx"
+        },
+        {
           "path": "apps/web/tests/integrations/offline/install.test.ts",
           "name": "install.test.ts",
           "size": 9743,
           "extension": ".ts"
-        },
-        {
-          "path": "apps/web/src/routes/_app/perfil.tsx",
-          "name": "perfil.tsx",
-          "size": 9479,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/components/classroom/FrequencyContent.tsx",
-          "name": "FrequencyContent.tsx",
-          "size": 9375,
-          "extension": ".tsx"
         }
       ]
     },
@@ -282,7 +282,7 @@
       "language": "PNG Image",
       "file_count": 9,
       "total_bytes": 251942,
-      "percentage": 4.2,
+      "percentage": 4.15,
       "files": [
         {
           "path": "docs/assets/Diagrama de container.png",
@@ -343,7 +343,7 @@
     {
       "language": "Markdown",
       "file_count": 32,
-      "total_bytes": 124712,
+      "total_bytes": 126227,
       "percentage": 2.08,
       "files": [
         {
@@ -359,15 +359,21 @@
           "extension": ".md"
         },
         {
+          "path": "docs/cache-e-sincronizacao.md",
+          "name": "cache-e-sincronizacao.md",
+          "size": 9231,
+          "extension": ".md"
+        },
+        {
           "path": "docs/arquitetura.md",
           "name": "arquitetura.md",
           "size": 8521,
           "extension": ".md"
         },
         {
-          "path": "docs/cache-e-sincronizacao.md",
-          "name": "cache-e-sincronizacao.md",
-          "size": 7870,
+          "path": "packages/sigaa-client/README.md",
+          "name": "README.md",
+          "size": 7979,
           "extension": ".md"
         },
         {
@@ -377,21 +383,9 @@
           "extension": ".md"
         },
         {
-          "path": "packages/sigaa-client/README.md",
-          "name": "README.md",
-          "size": 6417,
-          "extension": ".md"
-        },
-        {
           "path": "README.md",
           "name": "README.md",
           "size": 6241,
-          "extension": ".md"
-        },
-        {
-          "path": "apps/api/AGENTS.md",
-          "name": "AGENTS.md",
-          "size": 5250,
           "extension": ".md"
         },
         {
@@ -405,6 +399,12 @@
           "name": "AI-USAGE.md",
           "size": 4560,
           "extension": ".md"
+        },
+        {
+          "path": "docs/offline.md",
+          "name": "offline.md",
+          "size": 4014,
+          "extension": ".md"
         }
       ]
     },
@@ -412,7 +412,7 @@
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 119688,
-      "percentage": 1.99,
+      "percentage": 1.97,
       "files": [
         {
           "path": "docs/assets/components_backend.svg",
@@ -456,7 +456,7 @@
       "language": "JSON",
       "file_count": 12,
       "total_bytes": 37048,
-      "percentage": 0.62,
+      "percentage": 0.61,
       "files": [
         {
           "path": "packages/unb-browser/unb_browser/calendar/academic_calendar.json",
@@ -576,7 +576,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 5711,
-      "percentage": 0.1,
+      "percentage": 0.09,
       "files": [
         {
           "path": "apps/web/src/styles.css",
@@ -720,7 +720,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-15T10:43:40.826722+00:00",
+    "extracted_at": "2026-10-16T10:35:36.598044+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }

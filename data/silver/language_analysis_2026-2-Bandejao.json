@@ -2,30 +2,30 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-15T10:42:41.814372+00:00",
+  "analyzed_at": "2026-10-16T10:34:38.502852+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 134,
-  "total_bytes": 545732,
+  "total_files": 143,
+  "total_bytes": 585762,
   "languages": [
     {
       "language": "Markdown",
-      "file_count": 31,
-      "total_bytes": 178880,
-      "percentage": 32.78,
+      "file_count": 32,
+      "total_bytes": 195377,
+      "percentage": 33.35,
       "files": [
         {
           "path": "docs/Requisitos.md",
           "name": "Requisitos.md",
-          "size": 35352,
+          "size": 35613,
           "extension": ".md"
         },
         {
           "path": "docs/Arquitetura.md",
           "name": "Arquitetura.md",
-          "size": 12786,
+          "size": 13230,
           "extension": ".md"
         },
         {
@@ -43,13 +43,19 @@
         {
           "path": "contexto.md",
           "name": "contexto.md",
-          "size": 9095,
+          "size": 9143,
           "extension": ".md"
         },
         {
           "path": "docs/estudos/extracao_dados_pdf.md",
           "name": "extracao_dados_pdf.md",
           "size": 8685,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/scrum/sprint03.md",
+          "name": "sprint03.md",
+          "size": 8473,
           "extension": ".md"
         },
         {
@@ -69,12 +75,6 @@
           "name": "sprint02.md",
           "size": 7281,
           "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/ia-desenvolvimento.md",
-          "name": "ia-desenvolvimento.md",
-          "size": 5666,
-          "extension": ".md"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "language": "TypeScript",
       "file_count": 34,
       "total_bytes": 145989,
-      "percentage": 26.75,
+      "percentage": 24.92,
       "files": [
         {
           "path": "frontend/src/App.tsx",
@@ -147,10 +147,78 @@
       ]
     },
     {
+      "language": "Python",
+      "file_count": 43,
+      "total_bytes": 98259,
+      "percentage": 16.77,
+      "files": [
+        {
+          "path": "extracao/extracao/main.py",
+          "name": "main.py",
+          "size": 16372,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_cobertura_total.py",
+          "name": "test_cobertura_total.py",
+          "size": 9993,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_cardapio_api.py",
+          "name": "test_cardapio_api.py",
+          "size": 9953,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_main.py",
+          "name": "test_main.py",
+          "size": 6882,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/routes/cardapio.py",
+          "name": "cardapio.py",
+          "size": 5262,
+          "extension": ".py"
+        },
+        {
+          "path": "scripts/security/test_check_reports.py",
+          "name": "test_check_reports.py",
+          "size": 5144,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_sincronizar.py",
+          "name": "test_sincronizar.py",
+          "size": 4828,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/db/seed.py",
+          "name": "seed.py",
+          "size": 4048,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py",
+          "name": "3e9ed9bb9055_cria_tabelas_iniciais.py",
+          "size": 3921,
+          "extension": ".py"
+        },
+        {
+          "path": "scripts/security/check_reports.py",
+          "name": "check_reports.py",
+          "size": 3533,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
       "language": "JSON",
       "file_count": 4,
       "total_bytes": 80600,
-      "percentage": 14.77,
+      "percentage": 13.76,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -179,78 +247,10 @@
       ]
     },
     {
-      "language": "Python",
-      "file_count": 39,
-      "total_bytes": 78418,
-      "percentage": 14.37,
-      "files": [
-        {
-          "path": "extracao/extracao/main.py",
-          "name": "main.py",
-          "size": 15839,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_cobertura_total.py",
-          "name": "test_cobertura_total.py",
-          "size": 9285,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_cardapio_api.py",
-          "name": "test_cardapio_api.py",
-          "size": 7844,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_main.py",
-          "name": "test_main.py",
-          "size": 6778,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/routes/cardapio.py",
-          "name": "cardapio.py",
-          "size": 5140,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/db/seed.py",
-          "name": "seed.py",
-          "size": 4048,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py",
-          "name": "3e9ed9bb9055_cria_tabelas_iniciais.py",
-          "size": 3921,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/env.py",
-          "name": "env.py",
-          "size": 2170,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/extracao/sincronizar.py",
-          "name": "sincronizar.py",
-          "size": 2096,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/schemas/cardapio.py",
-          "name": "cardapio.py",
-          "size": 1980,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 5.02,
+      "percentage": 4.68,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -282,7 +282,7 @@
       "language": "PNG Image",
       "file_count": 1,
       "total_bytes": 13057,
-      "percentage": 2.39,
+      "percentage": 2.23,
       "files": [
         {
           "path": "frontend/src/assets/hero.png",
@@ -294,10 +294,16 @@
     },
     {
       "language": "YAML",
-      "file_count": 4,
-      "total_bytes": 6355,
-      "percentage": 1.16,
+      "file_count": 5,
+      "total_bytes": 9609,
+      "percentage": 1.64,
       "files": [
+        {
+          "path": ".github/workflows/sast.yml",
+          "name": "sast.yml",
+          "size": 2712,
+          "extension": ".yml"
+        },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
@@ -319,7 +325,7 @@
         {
           "path": "docker-compose.yml",
           "name": "docker-compose.yml",
-          "size": 871,
+          "size": 1413,
           "extension": ".yml"
         }
       ]
@@ -328,7 +334,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 6061,
-      "percentage": 1.11,
+      "percentage": 1.03,
       "files": [
         {
           "path": "frontend/src/index.css",
@@ -342,7 +348,7 @@
       "language": "INI",
       "file_count": 1,
       "total_bytes": 3819,
-      "percentage": 0.7,
+      "percentage": 0.65,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -356,7 +362,7 @@
       "language": "JavaScript",
       "file_count": 1,
       "total_bytes": 2201,
-      "percentage": 0.4,
+      "percentage": 0.38,
       "files": [
         {
           "path": "frontend/tests/api.test.js",
@@ -369,7 +375,7 @@
     {
       "language": "Unknown",
       "file_count": 3,
-      "total_bytes": 863,
+      "total_bytes": 965,
       "percentage": 0.16,
       "files": [
         {
@@ -381,7 +387,7 @@
         {
           "path": "backend/.env.example",
           "name": ".env.example",
-          "size": 188,
+          "size": 290,
           "extension": ".example"
         },
         {
@@ -394,14 +400,20 @@
     },
     {
       "language": "No Extension",
-      "file_count": 3,
-      "total_bytes": 552,
-      "percentage": 0.1,
+      "file_count": 4,
+      "total_bytes": 788,
+      "percentage": 0.13,
       "files": [
         {
           "path": "frontend/Dockerfile",
           "name": "Dockerfile",
           "size": 308,
+          "extension": ""
+        },
+        {
+          "path": "extracao/Dockerfile",
+          "name": "Dockerfile",
+          "size": 236,
           "extension": ""
         },
         {
@@ -422,7 +434,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 478,
-      "percentage": 0.09,
+      "percentage": 0.08,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -454,8 +466,8 @@
     },
     {
       "language": "Text",
-      "file_count": 3,
-      "total_bytes": 372,
+      "file_count": 4,
+      "total_bytes": 386,
       "percentage": 0.07,
       "files": [
         {
@@ -475,6 +487,12 @@
           "name": "requirements-docs.txt",
           "size": 37,
           "extension": ".txt"
+        },
+        {
+          "path": "requirements-security.txt",
+          "name": "requirements-security.txt",
+          "size": 14,
+          "extension": ".txt"
         }
       ]
     },
@@ -482,7 +500,7 @@
       "language": "TOML",
       "file_count": 2,
       "total_bytes": 259,
-      "percentage": 0.05,
+      "percentage": 0.04,
       "files": [
         {
           "path": "extracao/pyproject.toml",
@@ -497,10 +515,24 @@
           "extension": ".toml"
         }
       ]
+    },
+    {
+      "language": "Docker Ignore",
+      "file_count": 1,
+      "total_bytes": 86,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "extracao/.dockerignore",
+          "name": ".dockerignore",
+          "size": 86,
+          "extension": ".dockerignore"
+        }
+      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-15T10:43:40.817465+00:00",
+    "extracted_at": "2026-10-16T10:35:36.588865+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }

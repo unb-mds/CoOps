@@ -2,46 +2,26 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-15T10:42:36.567381+00:00",
+  "analyzed_at": "2026-10-16T10:34:32.663641+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 40,
-  "total_bytes": 267968,
+  "total_files": 43,
+  "total_bytes": 265544,
   "languages": [
     {
-      "language": "PNG Image",
-      "file_count": 3,
-      "total_bytes": 103656,
-      "percentage": 38.68,
-      "files": [
-        {
-          "path": "docs/Diagrama de Componentes da API.png",
-          "name": "Diagrama de Componentes da API.png",
-          "size": 44273,
-          "extension": ".png"
-        },
-        {
-          "path": "docs/Diagrama de contexto.png",
-          "name": "Diagrama de contexto.png",
-          "size": 39209,
-          "extension": ".png"
-        },
-        {
-          "path": "docs/teck stack.png",
-          "name": "teck stack.png",
-          "size": 20174,
-          "extension": ".png"
-        }
-      ]
-    },
-    {
       "language": "Python",
-      "file_count": 18,
-      "total_bytes": 78893,
-      "percentage": 29.44,
+      "file_count": 22,
+      "total_bytes": 105087,
+      "percentage": 39.57,
       "files": [
+        {
+          "path": "scraper/scraper_sigaa.py",
+          "name": "scraper_sigaa.py",
+          "size": 19316,
+          "extension": ".py"
+        },
         {
           "path": "app/test_implementacao.py",
           "name": "test_implementacao.py",
@@ -79,6 +59,12 @@
           "extension": ".py"
         },
         {
+          "path": "scraper/debug_cookies.py",
+          "name": "debug_cookies.py",
+          "size": 4946,
+          "extension": ".py"
+        },
+        {
           "path": "app/database.py",
           "name": "database.py",
           "size": 4524,
@@ -89,18 +75,32 @@
           "name": "auth_routes.py",
           "size": 3458,
           "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "PNG Image",
+      "file_count": 3,
+      "total_bytes": 103656,
+      "percentage": 39.04,
+      "files": [
+        {
+          "path": "docs/Diagrama de Componentes da API.png",
+          "name": "Diagrama de Componentes da API.png",
+          "size": 44273,
+          "extension": ".png"
         },
         {
-          "path": "app/routes/professor_routes.py",
-          "name": "professor_routes.py",
-          "size": 3380,
-          "extension": ".py"
+          "path": "docs/Diagrama de contexto.png",
+          "name": "Diagrama de contexto.png",
+          "size": 39209,
+          "extension": ".png"
         },
         {
-          "path": "app/test_consulta_professores.py",
-          "name": "test_consulta_professores.py",
-          "size": 2607,
-          "extension": ".py"
+          "path": "docs/teck stack.png",
+          "name": "teck stack.png",
+          "size": 20174,
+          "extension": ".png"
         }
       ]
     },
@@ -108,7 +108,7 @@
       "language": "Markdown",
       "file_count": 6,
       "total_bytes": 36439,
-      "percentage": 13.6,
+      "percentage": 13.72,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
@@ -149,24 +149,10 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 1,
-      "total_bytes": 28672,
-      "percentage": 10.7,
-      "files": [
-        {
-          "path": "banco.db",
-          "name": "banco.db",
-          "size": 28672,
-          "extension": ".db"
-        }
-      ]
-    },
-    {
       "language": "HTML",
       "file_count": 7,
       "total_bytes": 17602,
-      "percentage": 6.57,
+      "percentage": 6.63,
       "files": [
         {
           "path": "app/templates/avaliacao.html",
@@ -216,7 +202,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 1345,
-      "percentage": 0.5,
+      "percentage": 0.51,
       "files": [
         {
           "path": "app/static/indicadores.css",
@@ -230,7 +216,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 1137,
-      "percentage": 0.42,
+      "percentage": 0.43,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -257,13 +243,13 @@
     {
       "language": "Git Ignore",
       "file_count": 1,
-      "total_bytes": 52,
+      "total_bytes": 57,
       "percentage": 0.02,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 52,
+          "size": 57,
           "extension": ".gitignore"
         }
       ]
@@ -271,20 +257,20 @@
     {
       "language": "Text",
       "file_count": 1,
-      "total_bytes": 14,
-      "percentage": 0.01,
+      "total_bytes": 63,
+      "percentage": 0.02,
       "files": [
         {
           "path": "requirements.txt",
           "name": "requirements.txt",
-          "size": 14,
+          "size": 63,
           "extension": ".txt"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-15T10:43:40.810767+00:00",
+    "extracted_at": "2026-10-16T10:35:36.581929+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }

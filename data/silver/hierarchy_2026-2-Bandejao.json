@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-15T10:42:41.814372+00:00",
+  "extracted_at": "2026-10-16T10:34:38.502852+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -36,6 +36,14 @@
         "path": ".github/workflows/docs.yml"
       },
       {
+        "name": "sast.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2712,
+        "extension": ".yml",
+        "path": ".github/workflows/sast.yml"
+      },
+      {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
@@ -47,7 +55,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4925,
+        "size": 6697,
         "extension": ".md",
         "path": "README.md"
       },
@@ -61,7 +69,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 188,
+        "size": 290,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -171,7 +179,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 5140,
+        "size": 5262,
         "extension": ".py",
         "path": "backend/app/api/routes/cardapio.py"
       },
@@ -209,9 +217,17 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 453,
+        "size": 512,
         "extension": ".py",
         "path": "backend/app/core/config.py"
+      },
+      {
+        "name": "security.py",
+        "type": "file",
+        "language": "Python",
+        "size": 876,
+        "extension": ".py",
+        "path": "backend/app/core/security.py"
       },
       {
         "name": "db",
@@ -247,7 +263,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 782,
+        "size": 738,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -409,7 +425,7 @@
         "name": "test_cardapio_api.py",
         "type": "file",
         "language": "Python",
-        "size": 7844,
+        "size": 9953,
         "extension": ".py",
         "path": "backend/tests/test_cardapio_api.py"
       },
@@ -433,7 +449,7 @@
         "name": "contexto.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9095,
+        "size": 9143,
         "extension": ".md",
         "path": "contexto.md"
       },
@@ -441,7 +457,7 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 871,
+        "size": 1413,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -455,7 +471,7 @@
         "name": "Arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12786,
+        "size": 13230,
         "extension": ".md",
         "path": "docs/Arquitetura.md"
       },
@@ -463,7 +479,7 @@
         "name": "Requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 35352,
+        "size": 35613,
         "extension": ".md",
         "path": "docs/Requisitos.md"
       },
@@ -471,7 +487,7 @@
         "name": "changelog.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2974,
+        "size": 4452,
         "extension": ".md",
         "path": "docs/changelog.md"
       },
@@ -479,7 +495,7 @@
         "name": "desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2765,
+        "size": 5803,
         "extension": ".md",
         "path": "docs/desenvolvimento.md"
       },
@@ -565,7 +581,7 @@
         "name": "ia-desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5666,
+        "size": 5672,
         "extension": ".md",
         "path": "docs/estudos/ia-desenvolvimento.md"
       },
@@ -589,7 +605,7 @@
         "name": "handoff_banco_e_importacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4098,
+        "size": 5001,
         "extension": ".md",
         "path": "docs/handoff_banco_e_importacao.md"
       },
@@ -657,7 +673,7 @@
         "name": "sprint03.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4530,
+        "size": 8473,
         "extension": ".md",
         "path": "docs/scrum/sprint03.md"
       },
@@ -674,6 +690,22 @@
         "type": "directory",
         "path": "extracao",
         "children": []
+      },
+      {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 86,
+        "extension": ".dockerignore",
+        "path": "extracao/.dockerignore"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 236,
+        "extension": "",
+        "path": "extracao/Dockerfile"
       },
       {
         "name": "extracao",
@@ -693,7 +725,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 15839,
+        "size": 16372,
         "extension": ".py",
         "path": "extracao/extracao/main.py"
       },
@@ -701,7 +733,7 @@
         "name": "sincronizar.py",
         "type": "file",
         "language": "Python",
-        "size": 2096,
+        "size": 3321,
         "extension": ".py",
         "path": "extracao/extracao/sincronizar.py"
       },
@@ -739,7 +771,7 @@
         "name": "test_cobertura_total.py",
         "type": "file",
         "language": "Python",
-        "size": 9285,
+        "size": 9993,
         "extension": ".py",
         "path": "extracao/tests/test_cobertura_total.py"
       },
@@ -747,7 +779,7 @@
         "name": "test_main.py",
         "type": "file",
         "language": "Python",
-        "size": 6778,
+        "size": 6882,
         "extension": ".py",
         "path": "extracao/tests/test_main.py"
       },
@@ -755,7 +787,7 @@
         "name": "test_sincronizar.py",
         "type": "file",
         "language": "Python",
-        "size": 1314,
+        "size": 4828,
         "extension": ".py",
         "path": "extracao/tests/test_sincronizar.py"
       },
@@ -1224,6 +1256,58 @@
         "path": "requirements-docs.txt"
       },
       {
+        "name": "requirements-security.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 14,
+        "extension": ".txt",
+        "path": "requirements-security.txt"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "scripts",
+        "children": []
+      },
+      {
+        "name": "security",
+        "type": "directory",
+        "path": "scripts/security",
+        "children": []
+      },
+      {
+        "name": "POLICY.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4604,
+        "extension": ".md",
+        "path": "scripts/security/POLICY.md"
+      },
+      {
+        "name": "check_reports.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3533,
+        "extension": ".py",
+        "path": "scripts/security/check_reports.py"
+      },
+      {
+        "name": "run_bandit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1958,
+        "extension": ".py",
+        "path": "scripts/security/run_bandit.py"
+      },
+      {
+        "name": "test_check_reports.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5144,
+        "extension": ".py",
+        "path": "scripts/security/test_check_reports.py"
+      },
+      {
         "name": "skills",
         "type": "directory",
         "path": "skills",
@@ -1274,7 +1358,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-15T10:43:40.818752+00:00",
+    "extracted_at": "2026-10-16T10:35:36.590172+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }
