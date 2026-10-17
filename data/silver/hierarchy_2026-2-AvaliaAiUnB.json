@@ -2,7 +2,7 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-16T10:34:32.663641+00:00",
+  "extracted_at": "2026-10-17T10:07:46.975499+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -19,7 +19,7 @@
         "name": "CLAUDE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4289,
+        "size": 3765,
         "extension": ".md",
         "path": "CLAUDE.md"
       },
@@ -27,7 +27,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10427,
+        "size": 10432,
         "extension": ".md",
         "path": "README.md"
       },
@@ -49,17 +49,9 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 569,
+        "size": 608,
         "extension": ".py",
         "path": "app/__init__.py"
-      },
-      {
-        "name": "app.py",
-        "type": "file",
-        "language": "Python",
-        "size": 615,
-        "extension": ".py",
-        "path": "app/app.py"
       },
       {
         "name": "controllers",
@@ -68,34 +60,34 @@
         "children": []
       },
       {
+        "name": "auth_controller.py",
+        "type": "file",
+        "language": "Python",
+        "size": 914,
+        "extension": ".py",
+        "path": "app/controllers/auth_controller.py"
+      },
+      {
+        "name": "professor_controller.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2037,
+        "extension": ".py",
+        "path": "app/controllers/professor_controller.py"
+      },
+      {
         "name": "session_controller.py",
         "type": "file",
         "language": "Python",
-        "size": 8456,
+        "size": 3360,
         "extension": ".py",
         "path": "app/controllers/session_controller.py"
-      },
-      {
-        "name": "database.py",
-        "type": "file",
-        "language": "Python",
-        "size": 4524,
-        "extension": ".py",
-        "path": "app/database.py"
-      },
-      {
-        "name": "modelo.py",
-        "type": "file",
-        "language": "Python",
-        "size": 0,
-        "extension": ".py",
-        "path": "app/modelo.py"
       },
       {
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 2173,
+        "size": 1821,
         "extension": ".py",
         "path": "app/models.py"
       },
@@ -103,7 +95,7 @@
         "name": "repositorio.py",
         "type": "file",
         "language": "Python",
-        "size": 9735,
+        "size": 10514,
         "extension": ".py",
         "path": "app/repositorio.py"
       },
@@ -117,15 +109,23 @@
         "name": "auth_routes.py",
         "type": "file",
         "language": "Python",
-        "size": 3458,
+        "size": 2571,
         "extension": ".py",
         "path": "app/routes/auth_routes.py"
+      },
+      {
+        "name": "main_routes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 257,
+        "extension": ".py",
+        "path": "app/routes/main_routes.py"
       },
       {
         "name": "professor_routes.py",
         "type": "file",
         "language": "Python",
-        "size": 3380,
+        "size": 2369,
         "extension": ".py",
         "path": "app/routes/professor_routes.py"
       },
@@ -142,6 +142,14 @@
         "size": 1345,
         "extension": ".css",
         "path": "app/static/indicadores.css"
+      },
+      {
+        "name": "supabase_db.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1385,
+        "extension": ".py",
+        "path": "app/supabase_db.py"
       },
       {
         "name": "templates",
@@ -161,7 +169,7 @@
         "name": "cadastro.html",
         "type": "file",
         "language": "HTML",
-        "size": 3074,
+        "size": 3665,
         "extension": ".html",
         "path": "app/templates/cadastro.html"
       },
@@ -169,7 +177,7 @@
         "name": "index.html",
         "type": "file",
         "language": "HTML",
-        "size": 1463,
+        "size": 1803,
         "extension": ".html",
         "path": "app/templates/index.html"
       },
@@ -177,7 +185,7 @@
         "name": "lista_professores.html",
         "type": "file",
         "language": "HTML",
-        "size": 2045,
+        "size": 2262,
         "extension": ".html",
         "path": "app/templates/lista_professores.html"
       },
@@ -185,7 +193,7 @@
         "name": "login.html",
         "type": "file",
         "language": "HTML",
-        "size": 1924,
+        "size": 2024,
         "extension": ".html",
         "path": "app/templates/login.html"
       },
@@ -193,7 +201,7 @@
         "name": "perfil.html",
         "type": "file",
         "language": "HTML",
-        "size": 623,
+        "size": 742,
         "extension": ".html",
         "path": "app/templates/perfil.html"
       },
@@ -206,68 +214,20 @@
         "path": "app/templates/perfil_professor.html"
       },
       {
-        "name": "test_avaliacoes.py",
+        "name": "utils.py",
         "type": "file",
         "language": "Python",
-        "size": 2285,
+        "size": 310,
         "extension": ".py",
-        "path": "app/test_avaliacoes.py"
-      },
-      {
-        "name": "test_busca_professores.py",
-        "type": "file",
-        "language": "Python",
-        "size": 6856,
-        "extension": ".py",
-        "path": "app/test_busca_professores.py"
-      },
-      {
-        "name": "test_consulta_professores.py",
-        "type": "file",
-        "language": "Python",
-        "size": 2607,
-        "extension": ".py",
-        "path": "app/test_consulta_professores.py"
-      },
-      {
-        "name": "test_filtros_professores.py",
-        "type": "file",
-        "language": "Python",
-        "size": 5759,
-        "extension": ".py",
-        "path": "app/test_filtros_professores.py"
-      },
-      {
-        "name": "test_implementacao.py",
-        "type": "file",
-        "language": "Python",
-        "size": 18026,
-        "extension": ".py",
-        "path": "app/test_implementacao.py"
-      },
-      {
-        "name": "test_professores.py",
-        "type": "file",
-        "language": "Python",
-        "size": 6370,
-        "extension": ".py",
-        "path": "app/test_professores.py"
+        "path": "app/utils.py"
       },
       {
         "name": "validacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 1856,
+        "size": 2319,
         "extension": ".py",
         "path": "app/validacoes.py"
-      },
-      {
-        "name": "demo.py",
-        "type": "file",
-        "language": "Python",
-        "size": 1793,
-        "extension": ".py",
-        "path": "demo.py"
       },
       {
         "name": "docs",
@@ -276,10 +236,18 @@
         "children": []
       },
       {
+        "name": "COMO_USAR_SCRAPER.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 629,
+        "extension": ".md",
+        "path": "docs/COMO_USAR_SCRAPER.md"
+      },
+      {
         "name": "DOCUMENTO_DE_VISAO.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12445,
+        "size": 12458,
         "extension": ".md",
         "path": "docs/DOCUMENTO_DE_VISAO.md"
       },
@@ -303,7 +271,7 @@
         "name": "IMPLEMENTACAO_26_36_37.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6895,
+        "size": 6899,
         "extension": ".md",
         "path": "docs/IMPLEMENTACAO_26_36_37.md"
       },
@@ -349,7 +317,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 63,
+        "size": 98,
         "extension": ".txt",
         "path": "requirements.txt"
       },
@@ -398,11 +366,49 @@
         "size": 1453,
         "extension": ".py",
         "path": "scraper/supabase_client.py"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "tests",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "tests/__init__.py"
+      },
+      {
+        "name": "fake_supabase.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5646,
+        "extension": ".py",
+        "path": "tests/fake_supabase.py"
+      },
+      {
+        "name": "test_supabase.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10166,
+        "extension": ".py",
+        "path": "tests/test_supabase.py"
+      },
+      {
+        "name": "test_validacoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2453,
+        "extension": ".py",
+        "path": "tests/test_validacoes.py"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-16T10:35:36.582591+00:00",
+    "extracted_at": "2026-10-17T10:08:51.954928+00:00",
     "file_path": "data/silver/hierarchy_2026-2-AvaliaAiUnB.json"
   }
 }

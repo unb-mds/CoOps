@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-16T10:34:38.502852+00:00",
+  "extracted_at": "2026-10-17T10:07:54.793053+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -134,6 +134,14 @@
         "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py"
       },
       {
+        "name": "4f5a6b7c8d9e_adiciona_identidade_avaliacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1523,
+        "extension": ".py",
+        "path": "backend/alembic/versions/4f5a6b7c8d9e_adiciona_identidade_avaliacao.py"
+      },
+      {
         "name": "cb27a92c83d1_adiciona_alergeno_amendoim.py",
         "type": "file",
         "language": "Python",
@@ -163,7 +171,7 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 1261,
+        "size": 2341,
         "extension": ".py",
         "path": "backend/app/api/routes/avaliacao.py"
       },
@@ -217,7 +225,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 512,
+        "size": 864,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -228,6 +236,14 @@
         "size": 876,
         "extension": ".py",
         "path": "backend/app/core/security.py"
+      },
+      {
+        "name": "tempo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1999,
+        "extension": ".py",
+        "path": "backend/app/core/tempo.py"
       },
       {
         "name": "db",
@@ -247,7 +263,7 @@
         "name": "seed.py",
         "type": "file",
         "language": "Python",
-        "size": 4048,
+        "size": 4169,
         "extension": ".py",
         "path": "backend/app/db/seed.py"
       },
@@ -263,7 +279,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 738,
+        "size": 828,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -285,7 +301,7 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 1081,
+        "size": 1351,
         "extension": ".py",
         "path": "backend/app/models/avaliacao.py"
       },
@@ -387,7 +403,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 127,
+        "size": 148,
         "extension": ".toml",
         "path": "backend/pyproject.toml"
       },
@@ -395,7 +411,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 201,
+        "size": 216,
         "extension": ".txt",
         "path": "backend/requirements.txt"
       },
@@ -425,7 +441,7 @@
         "name": "test_cardapio_api.py",
         "type": "file",
         "language": "Python",
-        "size": 9953,
+        "size": 12669,
         "extension": ".py",
         "path": "backend/tests/test_cardapio_api.py"
       },
@@ -438,12 +454,36 @@
         "path": "backend/tests/test_health.py"
       },
       {
+        "name": "test_horarios.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1994,
+        "extension": ".py",
+        "path": "backend/tests/test_horarios.py"
+      },
+      {
+        "name": "test_migracao_identidade.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2614,
+        "extension": ".py",
+        "path": "backend/tests/test_migracao_identidade.py"
+      },
+      {
         "name": "test_seed_e_sessao.py",
         "type": "file",
         "language": "Python",
         "size": 1464,
         "extension": ".py",
         "path": "backend/tests/test_seed_e_sessao.py"
+      },
+      {
+        "name": "test_tempo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1123,
+        "extension": ".py",
+        "path": "backend/tests/test_tempo.py"
       },
       {
         "name": "contexto.md",
@@ -479,7 +519,7 @@
         "name": "Requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 35613,
+        "size": 35789,
         "extension": ".md",
         "path": "docs/Requisitos.md"
       },
@@ -487,7 +527,7 @@
         "name": "changelog.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4452,
+        "size": 5578,
         "extension": ".md",
         "path": "docs/changelog.md"
       },
@@ -495,7 +535,7 @@
         "name": "desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5803,
+        "size": 5818,
         "extension": ".md",
         "path": "docs/desenvolvimento.md"
       },
@@ -594,6 +634,20 @@
         "path": "docs/estudos/ocr_imagem.md"
       },
       {
+        "name": "evidencias",
+        "type": "directory",
+        "path": "docs/evidencias",
+        "children": []
+      },
+      {
+        "name": "sast-issue-60.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2812,
+        "extension": ".md",
+        "path": "docs/evidencias/sast-issue-60.md"
+      },
+      {
         "name": "github-pages.md",
         "type": "file",
         "language": "Markdown",
@@ -673,7 +727,7 @@
         "name": "sprint03.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8473,
+        "size": 8349,
         "extension": ".md",
         "path": "docs/scrum/sprint03.md"
       },
@@ -893,7 +947,7 @@
         "name": "App.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 17345,
+        "size": 18184,
         "extension": ".tsx",
         "path": "frontend/src/App.tsx"
       },
@@ -901,7 +955,7 @@
         "name": "api.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2032,
+        "size": 2873,
         "extension": ".ts",
         "path": "frontend/src/api.ts"
       },
@@ -1100,6 +1154,14 @@
         "path": "frontend/src/data.ts"
       },
       {
+        "name": "identidade.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1514,
+        "extension": ".ts",
+        "path": "frontend/src/identidade.ts"
+      },
+      {
         "name": "index.css",
         "type": "file",
         "language": "CSS",
@@ -1125,7 +1187,7 @@
         "name": "AvaliacaoForm.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12041,
+        "size": 12356,
         "extension": ".tsx",
         "path": "frontend/src/screens/AvaliacaoForm.tsx"
       },
@@ -1211,7 +1273,7 @@
         "name": "api.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2201,
+        "size": 3209,
         "extension": ".js",
         "path": "frontend/tests/api.test.js"
       },
@@ -1222,6 +1284,14 @@
         "size": 2639,
         "extension": ".ts",
         "path": "frontend/tests/cardapios.test.ts"
+      },
+      {
+        "name": "identidade.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2036,
+        "extension": ".ts",
+        "path": "frontend/tests/identidade.test.ts"
       },
       {
         "name": "tsconfig.json",
@@ -1243,7 +1313,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2142,
+        "size": 2191,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -1279,7 +1349,7 @@
         "name": "POLICY.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4604,
+        "size": 4759,
         "extension": ".md",
         "path": "scripts/security/POLICY.md"
       },
@@ -1358,7 +1428,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-16T10:35:36.590172+00:00",
+    "extracted_at": "2026-10-17T10:08:51.962336+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }
