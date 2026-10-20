@@ -1,10 +1,236 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-19T10:58:50.986594+00:00",
+      "extracted_at": "2026-10-20T10:17:31.585769+00:00",
       "file_path": "data/bronze/commits_2025-1-NoFluxoUnB.json",
-      "record_count": 1466
+      "record_count": 1475
     }
+  },
+  {
+    "sha": "41d356964bca035f41948c9d960c454513306860",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T05:38:22Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "77462ecbdf795961e553aed961b04fa3cd811c4aa6cd6093fed20fa28c8b763d"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-20T05:38:22Z"
+      },
+      "message": "Merge pull request #282 from unb-mds/feat/nofluxo-estudos-lojas\n\nNoFluxo dos Estudos: comentários seguros, exclusão de conta e fix do backend (Node 22)"
+    },
+    "parents": [
+      "b9602bf4d35dc64bcea190b32a13c5160de5548c",
+      "a7275cd4689ae7bfc0be1c904ce4719d79f84500"
+    ],
+    "additions": 146949,
+    "deletions": 155,
+    "total_changes": 147104,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "a7275cd4689ae7bfc0be1c904ce4719d79f84500",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T05:02:27Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T05:02:27Z"
+      },
+      "message": "fix(ci): aceita o espelho oficial ghcr.io da imagem postgres 17 do Supabase\n\nO CLI cai para ghcr.io/supabase/postgres quando o pull do ECR público falha; a checagem\nde identidade do banco local recusava essa imagem e derrubava o job de estudos.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "b449b010e441e039a2e4fefcc9b853104c9fab81"
+    ],
+    "additions": 17,
+    "deletions": 1,
+    "total_changes": 18,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "b449b010e441e039a2e4fefcc9b853104c9fab81",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T05:01:24Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T05:01:24Z"
+      },
+      "message": "fix(ci): checagem do banco local de estudos mostra o que divergiu\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "cc0ab5aa41c9afc52d876300bd0648709ca4f824"
+    ],
+    "additions": 8,
+    "deletions": 1,
+    "total_changes": 9,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "cc0ab5aa41c9afc52d876300bd0648709ca4f824",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T00:15:57Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T00:15:57Z"
+      },
+      "message": "test(estudos): testes de conteúdo publicado e CGU só rodam onde há esses dados\n\nO job de estudos do CI carrega só fixtures sintéticas. Relatório de escala vai para\nos.tmpdir(); suítes da CGU exigem .env.study-development; busca lexical e cobertura do\nadmin exigem matéria publicada e são puladas com CI definido.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "d8a8beddaf0d7186ba6749e0dc5c28395ba451c6"
+    ],
+    "additions": 17,
+    "deletions": 7,
+    "total_changes": 24,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "d8a8beddaf0d7186ba6749e0dc5c28395ba451c6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T23:16:46Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T23:16:46Z"
+      },
+      "message": "fix(ci): ensaio da cadeia isola study_private e testes de aceite só no macOS\n\n- test_migration_chain.py: o ensaio renomeava só `study`; o schema `study_private` e o\n  trigger em auth.users criados pela 0026 colidiam com a cadeia já aplicada pelo CLI\n  (\"relation user_erasure already exists\"). Agora ganham nomes privados do ensaio.\n- studies-cgu-learning-acceptance: verify_cgu_acceptance só aceita saídas em /private/tmp\n  (ferramenta de QA local do macOS); o bloco de gates locais roda só em darwin.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "2d2656d832e49da169a1e7461aa29ae19759717e"
+    ],
+    "additions": 10,
+    "deletions": 1,
+    "total_changes": 11,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "2d2656d832e49da169a1e7461aa29ae19759717e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T21:44:45Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T21:44:45Z"
+      },
+      "message": "fix(ci): lint, tsc estrito, Black, Python 3.12 no gerador e tokens Flutter\n\n- backend: 12 erros de ESLint (regex de controle, vars/args não usados, const, função interna) e TS6133 do tsc estrito\n- Black 25.11.0 aplicado em 4 arquivos Python (bundle de prod-apply continua idêntico: --check OK)\n- pipelineCI: job testes-studies em Python 3.12 (Unicode 15 do comment_filter.g.dart)\n- security-and-quality: Node 22.x (supabase-js 2.118 exige >=22)\n- web_tokens.g.dart regenerado a partir do CSS do site\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "83379c7bdbd82cc7380d604da5a94f525406e683"
+    ],
+    "additions": 83,
+    "deletions": 44,
+    "total_changes": 127,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "83379c7bdbd82cc7380d604da5a94f525406e683",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T21:07:23Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T21:07:23Z"
+      },
+      "message": "ci(deploy): publica a API de estudos e passa as flags de produção\n\n- Passo próprio \"Deploy studies-api\" (alvo separado do \"all\", credencial study_learner), com\n  GIT_COMMIT para o /health e verificação de rollout própria; pula com aviso se os segredos\n  STUDY_* não existirem. workflow_dispatch ganha a opção studies-api.\n- STUDY_COMMENTS_ENABLED vem de vars (padrão 'true': comentários já estão ligados e vazio os\n  desligaria). ACCOUNT_DELETION_ENABLED vem de vars (padrão 'false').\n- Segredos novos esperados: STUDY_DATABASE_URL, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "730174afffa095a26f9260badf3ccad8f3a11f53"
+    ],
+    "additions": 43,
+    "deletions": 0,
+    "total_changes": 43,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "730174afffa095a26f9260badf3ccad8f3a11f53",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T20:24:05Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "8381ca42dae46003f9fddda4d6fdf1687c7f7010ae3d53330cfe9719a76f4ea2"
+      },
+      "committer": {
+        "name": "Otavio Maya",
+        "date": "2026-10-19T20:24:05Z"
+      },
+      "message": "feat(estudos): NoFluxo dos Estudos para as lojas + fix do backend (Node 22)\n\nSó código (sem o banco de questões nem os artefatos pesados de conteúdo, que ficam no\nrepositório da Crianex):\n- fix(backend): imagem em node:22-alpine e `npm ci` sem fallback; CI do backend e dos\n  estudos em Node 22. Corrige o CrashLoop do #257 (supabase-js 2.118 exige WebSocket nativo).\n- App Flutter NoFluxo dos Estudos, API de estudos (aluno, telemetria, comentários seguros,\n  moderação, alertas Telegram), migrações `study` 0001-0029 e bundle de produção.\n- Exclusão de conta por autoatendimento: migração public 20261018_exclusao_conta,\n  rotas /conta/*, página /excluir-conta.\n- Site: /estudos/regras, privacidade/suporte dos Estudos, aba Moderação.\n- Testes que dependem de supabase/study-content ficam no repositório de conteúdo.\n\nVerificado neste ramo: backend em Node 22 (Jest 1653 ok, tsc ok, supabase-js 2.118),\nfrontend (Vitest 942 ok, build ok), Flutter (analyze 0, 319 testes ok), Python 323 ok,\nbundle --check ok, gerador do filtro --check ok.\n\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "b9602bf4d35dc64bcea190b32a13c5160de5548c"
+    ],
+    "additions": 146822,
+    "deletions": 152,
+    "total_changes": 146974,
+    "repo_name": "2025-1-NoFluxoUnB"
+  },
+  {
+    "sha": "b9602bf4d35dc64bcea190b32a13c5160de5548c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "dependabot[bot]",
+        "date": "2026-10-19T16:17:45Z",
+        "login": "dependabot[bot]",
+        "id": 49699333,
+        "author_email_hash": "bd5a8d6c673b738d52b0ac42a110045f3f964b3ebfc1d60ea805af743b1dc0e6"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-19T16:17:45Z"
+      },
+      "message": "fix(deps): Bump the producao-minor-patch group across 1 directory with 6 updates (#257)\n\nBumps the producao-minor-patch group with 6 updates in the /backend directory:\n\n| Package | From | To |\n| --- | --- | --- |\n| [@supabase/supabase-js](https://github.com/supabase/supabase-js/tree/HEAD/packages/core/supabase-js) | `2.50.0` | `2.118.0` |\n| [cors](https://github.com/expressjs/cors) | `2.8.5` | `2.8.6` |\n| [dotenv](https://github.com/motdotla/dotenv) | `18.0.5` | `18.0.8` |\n| [express-rate-limit](https://github.com/express-rate-limit/express-rate-limit) | `8.7.0` | `8.7.1` |\n| [winston](https://github.com/winstonjs/winston) | `3.17.0` | `3.19.0` |\n| [zod](https://github.com/colinhacks/zod) | `4.4.3` | `4.6.7` |\n\n\n\nUpdates `@supabase/supabase-js` from 2.50.0 to 2.118.0\n- [Release notes](https://github.com/supabase/supabase-js/releases)\n- [Changelog](https://github.com/supabase/supabase-js/blob/master/packages/core/supabase-js/CHANGELOG.md)\n- [Commits](https://github.com/supabase/supabase-js/commits/v2.118.0/packages/core/supabase-js)\n\nUpdates `cors` from 2.8.5 to 2.8.6\n- [Release notes](https://github.com/expressjs/cors/releases)\n- [Changelog](https://github.com/expressjs/cors/blob/master/HISTORY.md)\n- [Commits](https://github.com/expressjs/cors/compare/v2.8.5...v2.8.6)\n\nUpdates `dotenv` from 18.0.5 to 18.0.8\n- [Changelog](https://github.com/motdotla/dotenv/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/motdotla/dotenv/compare/v18.0.5...v18.0.8)\n\nUpdates `express-rate-limit` from 8.7.0 to 8.7.1\n- [Release notes](https://github.com/express-rate-limit/express-rate-limit/releases)\n- [Commits](https://github.com/express-rate-limit/express-rate-limit/compare/v8.7.0...v8.7.1)\n\nUpdates `winston` from 3.17.0 to 3.19.0\n- [Release notes](https://github.com/winstonjs/winston/releases)\n- [Changelog](https://github.com/winstonjs/winston/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/winstonjs/winston/compare/v3.17.0...v3.19.0)\n\nUpdates `zod` from 4.4.3 to 4.6.7\n- [Release notes](https://github.com/colinhacks/zod/releases)\n- [Commits](https://github.com/colinhacks/zod/compare/v4.4.3...v4.6.7)\n\n---\nupdated-dependencies:\n- dependency-name: \"@supabase/supabase-js\"\n  dependency-version: 2.117.3\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: producao-minor-patch\n- dependency-name: cors\n  dependency-version: 2.8.6\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: producao-minor-patch\n- dependency-name: dotenv\n  dependency-version: 18.0.7\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: producao-minor-patch\n- dependency-name: express-rate-limit\n  dependency-version: 8.7.1\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: producao-minor-patch\n- dependency-name: winston\n  dependency-version: 3.19.0\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: producao-minor-patch\n- dependency-name: zod\n  dependency-version: 4.6.5\n  dependency-type: direct:production\n  update-type: version-update:semver-minor\n  dependency-group: producao-minor-patch\n...\n\nSigned-off-by: dependabot[bot] <[email removed]>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+    },
+    "parents": [
+      "87b5475b848299085b113cb441e8ddea0b205249"
+    ],
+    "additions": 154,
+    "deletions": 145,
+    "total_changes": 299,
+    "repo_name": "2025-1-NoFluxoUnB"
   },
   {
     "sha": "87b5475b848299085b113cb441e8ddea0b205249",
