@@ -2,7 +2,7 @@
   "repository": "2025-1-NoFluxoUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-19T11:39:23.196263+00:00",
+  "extracted_at": "2026-10-20T10:58:23.809067+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -12,6 +12,28 @@
         "type": "directory",
         "path": ".claude",
         "children": []
+      },
+      {
+        "name": "agents",
+        "type": "directory",
+        "path": ".claude/agents",
+        "children": []
+      },
+      {
+        "name": "study-content-fixer.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1070,
+        "extension": ".md",
+        "path": ".claude/agents/study-content-fixer.md"
+      },
+      {
+        "name": "study-content-reviewer.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 865,
+        "extension": ".md",
+        "path": ".claude/agents/study-content-reviewer.md"
       },
       {
         "name": "settings.json",
@@ -115,7 +137,7 @@
         "name": ".dockerignore",
         "type": "file",
         "language": "Docker Ignore",
-        "size": 792,
+        "size": 869,
         "extension": ".dockerignore",
         "path": ".dockerignore"
       },
@@ -205,7 +227,7 @@
         "name": "deploy.yml",
         "type": "file",
         "language": "YAML",
-        "size": 4535,
+        "size": 6927,
         "extension": ".yml",
         "path": ".github/workflows/deploy.yml"
       },
@@ -213,7 +235,7 @@
         "name": "pipelineCI.yml",
         "type": "file",
         "language": "YAML",
-        "size": 5242,
+        "size": 9557,
         "extension": ".yml",
         "path": ".github/workflows/pipelineCI.yml"
       },
@@ -269,7 +291,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 4974,
+        "size": 5507,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -315,7 +337,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6014,
+        "size": 6280,
         "extension": ".md",
         "path": "AGENTS.md"
       },
@@ -1197,7 +1219,7 @@
         "name": "PROJECT_WIDE_DECISIONS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7544,
+        "size": 51871,
         "extension": ".md",
         "path": "PROJECT_WIDE_DECISIONS.md"
       },
@@ -1335,7 +1357,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 1320,
+        "size": 2624,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -1362,6 +1384,20 @@
         "size": 6707,
         "extension": ".md",
         "path": "backend/README.md"
+      },
+      {
+        "name": "certs",
+        "type": "directory",
+        "path": "backend/certs",
+        "children": []
+      },
+      {
+        "name": "supabase-prod-ca-2021.crt",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1367,
+        "extension": ".crt",
+        "path": "backend/certs/supabase-prod-ca-2021.crt"
       },
       {
         "name": "docs",
@@ -1461,7 +1497,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 363069,
+        "size": 366716,
         "extension": ".json",
         "path": "backend/package-lock.json"
       },
@@ -1469,7 +1505,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2630,
+        "size": 2991,
         "extension": ".json",
         "path": "backend/package.json"
       },
@@ -1528,6 +1564,14 @@
         "path": "backend/scripts/export_schema.ts"
       },
       {
+        "name": "gotrue_gate_local.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6072,
+        "extension": ".mjs",
+        "path": "backend/scripts/gotrue_gate_local.mjs"
+      },
+      {
         "name": "import_avaliacoes_disciplinas.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1556,6 +1600,14 @@
         "size": 21312,
         "extension": ".sql",
         "path": "backend/scripts/migrations/export_schema_rpc.sql"
+      },
+      {
+        "name": "reconciliar_exclusoes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2222,
+        "extension": ".ts",
+        "path": "backend/scripts/reconciliar_exclusoes.ts"
       },
       {
         "name": "reset_dificuldade_para_recalculo.ts",
@@ -1637,7 +1689,7 @@
         "name": "rate_limit.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3623,
+        "size": 5637,
         "extension": ".ts",
         "path": "backend/src/config/rate_limit.ts"
       },
@@ -1670,6 +1722,14 @@
         "size": 7227,
         "extension": ".ts",
         "path": "backend/src/controllers/chat_controller.ts"
+      },
+      {
+        "name": "conta_controller.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4178,
+        "extension": ".ts",
+        "path": "backend/src/controllers/conta_controller.ts"
       },
       {
         "name": "cursos_controller.ts",
@@ -1707,7 +1767,7 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7584,
+        "size": 8109,
         "extension": ".ts",
         "path": "backend/src/index.ts"
       },
@@ -1902,6 +1962,22 @@
         "path": "backend/src/services/chat/supabase_session.ts"
       },
       {
+        "name": "conta_exclusao.service.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 39329,
+        "extension": ".ts",
+        "path": "backend/src/services/conta_exclusao.service.ts"
+      },
+      {
+        "name": "conta_exclusao_job.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2627,
+        "extension": ".ts",
+        "path": "backend/src/services/conta_exclusao_job.ts"
+      },
+      {
         "name": "darcy_cota.service.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1964,6 +2040,284 @@
         "size": 23437,
         "extension": ".ts",
         "path": "backend/src/services/sabia.service.ts"
+      },
+      {
+        "name": "studies",
+        "type": "directory",
+        "path": "backend/src/services/studies",
+        "children": []
+      },
+      {
+        "name": "acceptance-contracts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8683,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/acceptance-contracts.ts"
+      },
+      {
+        "name": "admin-config.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1038,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/admin-config.ts"
+      },
+      {
+        "name": "admin-router.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10545,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/admin-router.ts"
+      },
+      {
+        "name": "agent-review.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 18879,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/agent-review.ts"
+      },
+      {
+        "name": "cgu-exam-blueprint.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 10351,
+        "extension": ".json",
+        "path": "backend/src/services/studies/cgu-exam-blueprint.json"
+      },
+      {
+        "name": "comment-filter.pt-BR.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3993,
+        "extension": ".json",
+        "path": "backend/src/services/studies/comment-filter.pt-BR.json"
+      },
+      {
+        "name": "comment-filter.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12721,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/comment-filter.ts"
+      },
+      {
+        "name": "comment-filter.vectors.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 15671,
+        "extension": ".json",
+        "path": "backend/src/services/studies/comment-filter.vectors.json"
+      },
+      {
+        "name": "community-router.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4645,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/community-router.ts"
+      },
+      {
+        "name": "community.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 29880,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/community.ts"
+      },
+      {
+        "name": "contracts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7039,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/contracts.ts"
+      },
+      {
+        "name": "database.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1760,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/database.ts"
+      },
+      {
+        "name": "editorial.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 46476,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/editorial.ts"
+      },
+      {
+        "name": "errors.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1023,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/errors.ts"
+      },
+      {
+        "name": "exam-blueprint.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2481,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/exam-blueprint.ts"
+      },
+      {
+        "name": "index-campaign-contracts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2517,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/index-campaign-contracts.ts"
+      },
+      {
+        "name": "learner-router.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4010,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/learner-router.ts"
+      },
+      {
+        "name": "learner.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 29989,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/learner.ts"
+      },
+      {
+        "name": "moderation-alert.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5903,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/moderation-alert.ts"
+      },
+      {
+        "name": "optional-preparation.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1431,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/optional-preparation.ts"
+      },
+      {
+        "name": "production.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4934,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/production.ts"
+      },
+      {
+        "name": "review-hash.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6404,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/review-hash.ts"
+      },
+      {
+        "name": "review-verdict.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 22719,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/review-verdict.ts"
+      },
+      {
+        "name": "runtime-target.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 612,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/runtime-target.ts"
+      },
+      {
+        "name": "search-document.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1537,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/search-document.ts"
+      },
+      {
+        "name": "search.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 16981,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/search.ts"
+      },
+      {
+        "name": "telemetry-router.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1372,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/telemetry-router.ts"
+      },
+      {
+        "name": "telemetry.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6889,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/telemetry.ts"
+      },
+      {
+        "name": "validator.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7298,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/validator.ts"
+      },
+      {
+        "name": "vector-schema.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1781,
+        "extension": ".ts",
+        "path": "backend/src/services/studies/vector-schema.ts"
+      },
+      {
+        "name": "studies-http.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4271,
+        "extension": ".ts",
+        "path": "backend/src/studies-http.ts"
+      },
+      {
+        "name": "studies-index.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 806,
+        "extension": ".ts",
+        "path": "backend/src/studies-index.ts"
+      },
+      {
+        "name": "studies-mcp.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10540,
+        "extension": ".ts",
+        "path": "backend/src/studies-mcp.ts"
+      },
+      {
+        "name": "studies-production-http.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6655,
+        "extension": ".ts",
+        "path": "backend/src/studies-production-http.ts"
       },
       {
         "name": "supabase_wrapper.ts",
@@ -2208,6 +2562,22 @@
         "path": "backend/tests-ts/comando-direto-sem-llm.test.ts"
       },
       {
+        "name": "conta-controller.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3147,
+        "extension": ".ts",
+        "path": "backend/tests-ts/conta-controller.test.ts"
+      },
+      {
+        "name": "conta-exclusao.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 36802,
+        "extension": ".ts",
+        "path": "backend/tests-ts/conta-exclusao.test.ts"
+      },
+      {
         "name": "controller_logger.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2244,6 +2614,14 @@
         "type": "directory",
         "path": "backend/tests-ts/db",
         "children": []
+      },
+      {
+        "name": "acceptance_fingerprint_runner.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 723,
+        "extension": ".mjs",
+        "path": "backend/tests-ts/db/acceptance_fingerprint_runner.mjs"
       },
       {
         "name": "ai-saldo.pglite.test.ts",
@@ -2286,10 +2664,18 @@
         "path": "backend/tests-ts/db/dashboard-rastreabilidade.pglite.test.ts"
       },
       {
+        "name": "exclusao-conta.pglite.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 76324,
+        "extension": ".ts",
+        "path": "backend/tests-ts/db/exclusao-conta.pglite.test.ts"
+      },
+      {
         "name": "pglite_runner.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 3069,
+        "size": 3336,
         "extension": ".mjs",
         "path": "backend/tests-ts/db/pglite_runner.mjs"
       },
@@ -2297,7 +2683,7 @@
         "name": "pglite_supabase.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2139,
+        "size": 2256,
         "extension": ".ts",
         "path": "backend/tests-ts/db/pglite_supabase.ts"
       },
@@ -2372,6 +2758,20 @@
         "size": 45855,
         "extension": ".ts",
         "path": "backend/tests-ts/grade-actuator.test.ts"
+      },
+      {
+        "name": "helpers",
+        "type": "directory",
+        "path": "backend/tests-ts/helpers",
+        "children": []
+      },
+      {
+        "name": "study-community-fixture.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5767,
+        "extension": ".ts",
+        "path": "backend/tests-ts/helpers/study-community-fixture.ts"
       },
       {
         "name": "horario-slots-backend.test.ts",
@@ -2494,6 +2894,14 @@
         "path": "backend/tests-ts/planejamento.test.ts"
       },
       {
+        "name": "rate-limit-conta.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3675,
+        "extension": ".ts",
+        "path": "backend/tests-ts/rate-limit-conta.test.ts"
+      },
+      {
         "name": "rate-limit.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2548,6 +2956,294 @@
         "size": 2826,
         "extension": ".ts",
         "path": "backend/tests-ts/shutdown.test.ts"
+      },
+      {
+        "name": "studies-acceptance-activation.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7553,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-acceptance-activation.test.ts"
+      },
+      {
+        "name": "studies-acceptance-fingerprint.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5159,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-acceptance-fingerprint.test.ts"
+      },
+      {
+        "name": "studies-admin.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4322,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-admin.test.ts"
+      },
+      {
+        "name": "studies-agent-review-claude.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 13912,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-agent-review-claude.test.ts"
+      },
+      {
+        "name": "studies-bundle-export.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 26452,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-bundle-export.test.ts"
+      },
+      {
+        "name": "studies-cgu-learning-acceptance.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12406,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-cgu-learning-acceptance.test.ts"
+      },
+      {
+        "name": "studies-cgu-learning-modes.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11830,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-cgu-learning-modes.test.ts"
+      },
+      {
+        "name": "studies-comment-filter.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11887,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-comment-filter.test.ts"
+      },
+      {
+        "name": "studies-community-http-errors.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2015,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-community-http-errors.test.ts"
+      },
+      {
+        "name": "studies-community-router.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6239,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-community-router.test.ts"
+      },
+      {
+        "name": "studies-community-safety.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 42098,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-community-safety.test.ts"
+      },
+      {
+        "name": "studies-community.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 23923,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-community.test.ts"
+      },
+      {
+        "name": "studies-coverage-parity.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5373,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-coverage-parity.test.ts"
+      },
+      {
+        "name": "studies-editorial.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 33121,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-editorial.test.ts"
+      },
+      {
+        "name": "studies-errors.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 660,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-errors.test.ts"
+      },
+      {
+        "name": "studies-exam-blueprint.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2512,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-exam-blueprint.test.ts"
+      },
+      {
+        "name": "studies-index-subject.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4742,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-index-subject.test.ts"
+      },
+      {
+        "name": "studies-label-metadata.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7095,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-label-metadata.test.ts"
+      },
+      {
+        "name": "studies-learner.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 40122,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-learner.test.ts"
+      },
+      {
+        "name": "studies-math-markup.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2940,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-math-markup.test.ts"
+      },
+      {
+        "name": "studies-moderation-alert.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 17090,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-moderation-alert.test.ts"
+      },
+      {
+        "name": "studies-optional-preparation.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1845,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-optional-preparation.test.ts"
+      },
+      {
+        "name": "studies-production-comments.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 18710,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-production-comments.test.ts"
+      },
+      {
+        "name": "studies-review-acceptance-receipt-recovery.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2677,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-acceptance-receipt-recovery.test.ts"
+      },
+      {
+        "name": "studies-review-editorial.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10702,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-editorial.test.ts"
+      },
+      {
+        "name": "studies-review-exam-revisions.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 19654,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-exam-revisions.test.ts"
+      },
+      {
+        "name": "studies-review-hash-parity.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11529,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-hash-parity.test.ts"
+      },
+      {
+        "name": "studies-review-learner.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 16274,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-learner.test.ts"
+      },
+      {
+        "name": "studies-review-taxonomy-candidate.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 23073,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-taxonomy-candidate.test.ts"
+      },
+      {
+        "name": "studies-review-telemetry.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 15059,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-telemetry.test.ts"
+      },
+      {
+        "name": "studies-review-verdict.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 20101,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-review-verdict.test.ts"
+      },
+      {
+        "name": "studies-search.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5341,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-search.test.ts"
+      },
+      {
+        "name": "studies-shared-adoptions.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8571,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-shared-adoptions.test.ts"
+      },
+      {
+        "name": "studies-telemetry.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7502,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-telemetry.test.ts"
+      },
+      {
+        "name": "studies-validator.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2441,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-validator.test.ts"
+      },
+      {
+        "name": "studies-vector-schema.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4332,
+        "extension": ".ts",
+        "path": "backend/tests-ts/studies-vector-schema.test.ts"
       },
       {
         "name": "substitutos-equivalencia.test.ts",
@@ -2721,7 +3417,7 @@
         "name": "INDEX.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3890,
+        "size": 14206,
         "extension": ".md",
         "path": "docs/kb/INDEX.md"
       },
@@ -2729,7 +3425,7 @@
         "name": "OPEN_DECISIONS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 636,
+        "size": 7163,
         "extension": ".md",
         "path": "docs/kb/OPEN_DECISIONS.md"
       },
@@ -2807,7 +3503,7 @@
         "name": "document-inventory.csv",
         "type": "file",
         "language": "Unknown",
-        "size": 108324,
+        "size": 482175,
         "extension": ".csv",
         "path": "docs/kb/_provenance/document-inventory.csv"
       },
@@ -2823,7 +3519,7 @@
         "name": "plan-disposition.csv",
         "type": "file",
         "language": "Unknown",
-        "size": 24632,
+        "size": 31806,
         "extension": ".csv",
         "path": "docs/kb/_provenance/plan-disposition.csv"
       },
@@ -2907,7 +3603,7 @@
         "name": "auth-security-and-privacy.md",
         "type": "file",
         "language": "Markdown",
-        "size": 19092,
+        "size": 67093,
         "extension": ".md",
         "path": "docs/kb/subsystems/auth-security-and-privacy.md"
       },
@@ -2915,7 +3611,7 @@
         "name": "backend-api-and-motor2.md",
         "type": "file",
         "language": "Markdown",
-        "size": 27452,
+        "size": 72036,
         "extension": ".md",
         "path": "docs/kb/subsystems/backend-api-and-motor2.md"
       },
@@ -2923,7 +3619,7 @@
         "name": "darcy-ai-orchestration.md",
         "type": "file",
         "language": "Markdown",
-        "size": 21026,
+        "size": 57227,
         "extension": ".md",
         "path": "docs/kb/subsystems/darcy-ai-orchestration.md"
       },
@@ -2931,7 +3627,7 @@
         "name": "data-ingestion-and-schema.md",
         "type": "file",
         "language": "Markdown",
-        "size": 20867,
+        "size": 72494,
         "extension": ".md",
         "path": "docs/kb/subsystems/data-ingestion-and-schema.md"
       },
@@ -2939,7 +3635,7 @@
         "name": "deployment-ci-and-operations.md",
         "type": "file",
         "language": "Markdown",
-        "size": 22462,
+        "size": 66879,
         "extension": ".md",
         "path": "docs/kb/subsystems/deployment-ci-and-operations.md"
       },
@@ -2947,7 +3643,7 @@
         "name": "frontend-and-academic-planning.md",
         "type": "file",
         "language": "Markdown",
-        "size": 23653,
+        "size": 68340,
         "extension": ".md",
         "path": "docs/kb/subsystems/frontend-and-academic-planning.md"
       },
@@ -2955,7 +3651,7 @@
         "name": "project-and-documentation.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8372,
+        "size": 50595,
         "extension": ".md",
         "path": "docs/kb/subsystems/project-and-documentation.md"
       },
@@ -2963,7 +3659,7 @@
         "name": "marca-e-posicionamento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5908,
+        "size": 7869,
         "extension": ".md",
         "path": "docs/marca-e-posicionamento.md"
       },
@@ -2982,6 +3678,1694 @@
         "size": 1166,
         "extension": ".md",
         "path": "docs/motor2.md"
+      },
+      {
+        "name": "nofluxo-dos-estudos",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos",
+        "children": []
+      },
+      {
+        "name": "ACEITACAO-CGU-20261015.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 33910,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ACEITACAO-CGU-20261015.md"
+      },
+      {
+        "name": "ALUNO-BACKEND-LOCAL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8933,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ALUNO-BACKEND-LOCAL.md"
+      },
+      {
+        "name": "ARQUITETURA-CONTEUDO-MCP.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 67983,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ARQUITETURA-CONTEUDO-MCP.md"
+      },
+      {
+        "name": "ATIVACAO-CGU-LOCAL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7494,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ATIVACAO-CGU-LOCAL.md"
+      },
+      {
+        "name": "CALCULO1-CURSO-PUBLICACAO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 15124,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CALCULO1-CURSO-PUBLICACAO.md"
+      },
+      {
+        "name": "CALCULO1-PILOTO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5582,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CALCULO1-PILOTO.md"
+      },
+      {
+        "name": "CALCULO1-PRODUCAO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8678,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CALCULO1-PRODUCAO.md"
+      },
+      {
+        "name": "CALCULO1-REFERENCIAS-20261019.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 15943,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CALCULO1-REFERENCIAS-20261019.md"
+      },
+      {
+        "name": "CGU-BENCHMARK-BANCO-STAGED.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8773,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CGU-BENCHMARK-BANCO-STAGED.md"
+      },
+      {
+        "name": "CGU-CONTAGEM.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 24144,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/CGU-CONTAGEM.json"
+      },
+      {
+        "name": "CGU-INFRA-CONTEUDO-STAGED.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 43607,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CGU-INFRA-CONTEUDO-STAGED.md"
+      },
+      {
+        "name": "CGU-INGESTAO-MEDICAO-REFINAMENTO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11500,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CGU-INGESTAO-MEDICAO-REFINAMENTO.md"
+      },
+      {
+        "name": "CGU-PROVAS-ANTERIORES-STAGED.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2039,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CGU-PROVAS-ANTERIORES-STAGED.md"
+      },
+      {
+        "name": "CONEXAO-APPLLAMA.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3699,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CONEXAO-APPLLAMA.md"
+      },
+      {
+        "name": "CONSOLIDACAO-BRANCH-20261018.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6966,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/CONSOLIDACAO-BRANCH-20261018.md"
+      },
+      {
+        "name": "DESIGN-APPLLAMA-20261014.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7996,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/DESIGN-APPLLAMA-20261014.md"
+      },
+      {
+        "name": "DESIGN-COMPOSICAO-20261014.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11160,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/DESIGN-COMPOSICAO-20261014.md"
+      },
+      {
+        "name": "DESIGN-COMPOSICAO-VERIFICACAO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 23633,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/DESIGN-COMPOSICAO-VERIFICACAO.json"
+      },
+      {
+        "name": "DESIGN-CRITICA-20261014.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14472,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/DESIGN-CRITICA-20261014.md"
+      },
+      {
+        "name": "DESIGN-GAMIFICACAO-20261015.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8604,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/DESIGN-GAMIFICACAO-20261015.md"
+      },
+      {
+        "name": "DESIGN-MOVIMENTO-20261014.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12388,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/DESIGN-MOVIMENTO-20261014.md"
+      },
+      {
+        "name": "ENSAIO-PG15-20261018.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4753,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ENSAIO-PG15-20261018.md"
+      },
+      {
+        "name": "ESTILO-CEBRASPE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 28847,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ESTILO-CEBRASPE.md"
+      },
+      {
+        "name": "EXPLICACOES-VISUALIZADOR-20261019.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 16248,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/EXPLICACOES-VISUALIZADOR-20261019.md"
+      },
+      {
+        "name": "FLUTTER-FINAL-VERIFICATION.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 15021,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/FLUTTER-FINAL-VERIFICATION.json"
+      },
+      {
+        "name": "GUIA-AUTORIA-MATEMATICA-PILOTO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 923,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/GUIA-AUTORIA-MATEMATICA-PILOTO.md"
+      },
+      {
+        "name": "GUIA-AUTORIA-MATEMATICA.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 26699,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/GUIA-AUTORIA-MATEMATICA.md"
+      },
+      {
+        "name": "GUIA-AUTORIA-QUESTOES.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 46232,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/GUIA-AUTORIA-QUESTOES.md"
+      },
+      {
+        "name": "IMPLEMENTACAO-LOCAL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12852,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/IMPLEMENTACAO-LOCAL.md"
+      },
+      {
+        "name": "JORNADA-LOCAL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12790,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/JORNADA-LOCAL.md"
+      },
+      {
+        "name": "JORNADA-VERIFICACAO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 10790,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/JORNADA-VERIFICACAO.json"
+      },
+      {
+        "name": "LEARNER-VERIFICACAO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2917,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/LEARNER-VERIFICACAO.json"
+      },
+      {
+        "name": "LOCAL-VERIFICACAO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3188,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/LOCAL-VERIFICACAO.json"
+      },
+      {
+        "name": "MCP-BATCH-EXEMPLO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5099,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/MCP-BATCH-EXEMPLO.json"
+      },
+      {
+        "name": "MCP-EDITORIAL-LOCAL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 17883,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/MCP-EDITORIAL-LOCAL.md"
+      },
+      {
+        "name": "MCP-LOCAL-VERIFICACAO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2263,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/MCP-LOCAL-VERIFICACAO.json"
+      },
+      {
+        "name": "MCP-STDIO.example.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 530,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/MCP-STDIO.example.json"
+      },
+      {
+        "name": "MIGRATION-CHAIN-VERIFICACAO.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1562,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/MIGRATION-CHAIN-VERIFICACAO.json"
+      },
+      {
+        "name": "PLANO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 90247,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/PLANO.md"
+      },
+      {
+        "name": "PRECALCULO-JORNADA-20261019.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4589,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/PRECALCULO-JORNADA-20261019.md"
+      },
+      {
+        "name": "PREVISAO-CGU.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8814,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/PREVISAO-CGU.md"
+      },
+      {
+        "name": "PRODUCAO-CONTEUDO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 47479,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/PRODUCAO-CONTEUDO.md"
+      },
+      {
+        "name": "RETRIEVAL-CORPUS.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 93728,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/RETRIEVAL-CORPUS.json"
+      },
+      {
+        "name": "RETRIEVAL-GEMINI-TESTES.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12296,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/RETRIEVAL-GEMINI-TESTES.md"
+      },
+      {
+        "name": "RETRIEVAL-TESTES.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 15426,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/RETRIEVAL-TESTES.md"
+      },
+      {
+        "name": "REVIEW-EDITORIAL-STORAGE.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 13123,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/REVIEW-EDITORIAL-STORAGE.json"
+      },
+      {
+        "name": "REVIEW-FLUTTER.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 49051,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/REVIEW-FLUTTER.json"
+      },
+      {
+        "name": "REVIEW-LEARNER.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 19773,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/REVIEW-LEARNER.json"
+      },
+      {
+        "name": "REVIEW-TELEMETRY-CI.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 20475,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/REVIEW-TELEMETRY-CI.json"
+      },
+      {
+        "name": "REVISAO-ARQUITETURA-CONTEUDO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10987,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/REVISAO-ARQUITETURA-CONTEUDO.md"
+      },
+      {
+        "name": "REVISAO-PRONTIDAO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14087,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/REVISAO-PRONTIDAO.md"
+      },
+      {
+        "name": "ROTEIRO-CINCO-ETAPAS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10789,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/ROTEIRO-CINCO-ETAPAS.md"
+      },
+      {
+        "name": "SHARED-ADOPTIONS-IMPLEMENTACAO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7951,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/SHARED-ADOPTIONS-IMPLEMENTACAO.md"
+      },
+      {
+        "name": "SHARED-ADOPTIONS-SCALE.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1957,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/SHARED-ADOPTIONS-SCALE.json"
+      },
+      {
+        "name": "SHARED-ADOPTIONS-VERIFICATION.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 888,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/SHARED-ADOPTIONS-VERIFICATION.json"
+      },
+      {
+        "name": "STORAGE-METODOLOGIA.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6251,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/STORAGE-METODOLOGIA.md"
+      },
+      {
+        "name": "STORAGE-RESULTADOS.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 126838,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/STORAGE-RESULTADOS.json"
+      },
+      {
+        "name": "VERIFICACAO-CINCO-ETAPAS.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 21185,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/VERIFICACAO-CINCO-ETAPAS.json"
+      },
+      {
+        "name": "evidence-ativacao-cgu",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu",
+        "children": []
+      },
+      {
+        "name": "analyze.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/analyze.txt"
+      },
+      {
+        "name": "api-smoke.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 194,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/api-smoke.txt"
+      },
+      {
+        "name": "backend-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 181,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/backend-tests.txt"
+      },
+      {
+        "name": "capture-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 129,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/capture-tests.txt"
+      },
+      {
+        "name": "evidence.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 6960,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/evidence.json"
+      },
+      {
+        "name": "flutter-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 16450,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/flutter-tests.txt"
+      },
+      {
+        "name": "native-android-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2450,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/native-android-trace.json"
+      },
+      {
+        "name": "native-android.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 23436,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/native-android.txt"
+      },
+      {
+        "name": "native-ios-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2398,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/native-ios-trace.json"
+      },
+      {
+        "name": "native-ios.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2936,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/native-ios.txt"
+      },
+      {
+        "name": "rejected-android-r2.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 6680,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/rejected-android-r2.txt"
+      },
+      {
+        "name": "rejected-android-r3.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 22362,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/rejected-android-r3.txt"
+      },
+      {
+        "name": "rejected-ios-r1.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 36182,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/rejected-ios-r1.txt"
+      },
+      {
+        "name": "router-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 195,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-ativacao-cgu/router-tests.txt"
+      },
+      {
+        "name": "evidence-cinco-etapas",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas",
+        "children": []
+      },
+      {
+        "name": "admin-browser-result.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 292,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/admin-browser-result.json"
+      },
+      {
+        "name": "admin-math-proof.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 173,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/admin-math-proof.json"
+      },
+      {
+        "name": "boundaries-current.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 236,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/boundaries-current.txt"
+      },
+      {
+        "name": "capture-tests-accepted.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 126,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/capture-tests-accepted.txt"
+      },
+      {
+        "name": "design-accepted.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 164,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/design-accepted.txt"
+      },
+      {
+        "name": "final-authoring-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 351,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/final-authoring-tests.txt"
+      },
+      {
+        "name": "final-typecheck.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 43,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/final-typecheck.txt"
+      },
+      {
+        "name": "fresh-ddl18.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1107,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/fresh-ddl18.json"
+      },
+      {
+        "name": "frontend-final-check.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 7500,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/frontend-final-check.txt"
+      },
+      {
+        "name": "frontend-final-unit.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 351,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/frontend-final-unit.txt"
+      },
+      {
+        "name": "golden-final-proof.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 157,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/golden-final-proof.json"
+      },
+      {
+        "name": "math-android-final2.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2629,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/math-android-final2.txt"
+      },
+      {
+        "name": "math-ios-final.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2493,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/math-ios-final.txt"
+      },
+      {
+        "name": "normal-build-proof.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 220,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/normal-build-proof.json"
+      },
+      {
+        "name": "published-final-state.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 73,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/published-final-state.json"
+      },
+      {
+        "name": "python-quality-accepted.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 56,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/python-quality-accepted.txt"
+      },
+      {
+        "name": "review-exam-revisions.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3873,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/review-exam-revisions.json"
+      },
+      {
+        "name": "review-flutter-community.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 20570,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/review-flutter-community.json"
+      },
+      {
+        "name": "review-taxonomy-candidate.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 6077,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/review-taxonomy-candidate.json"
+      },
+      {
+        "name": "stage3-mcp-search.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5292,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage3-mcp-search.json"
+      },
+      {
+        "name": "stage5-analyze-accepted-final.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-analyze-accepted-final.txt"
+      },
+      {
+        "name": "stage5-analyze-r8.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-analyze-r8.txt"
+      },
+      {
+        "name": "stage5-android-final2.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2727,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-android-final2.txt"
+      },
+      {
+        "name": "stage5-flutter-accepted.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 16565,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-flutter-accepted.txt"
+      },
+      {
+        "name": "stage5-flutter-r8.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 15576,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-flutter-r8.txt"
+      },
+      {
+        "name": "stage5-full-backend-r6.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 258,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-full-backend-r6.txt"
+      },
+      {
+        "name": "stage5-ios-final.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2560,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-ios-final.txt"
+      },
+      {
+        "name": "stage5-ios-final2.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2616,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/stage5-ios-final2.txt"
+      },
+      {
+        "name": "taxonomy-authority-proof.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 267,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-cinco-etapas/taxonomy-authority-proof.json"
+      },
+      {
+        "name": "evidence-composicao-20261014",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2179,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/README.md"
+      },
+      {
+        "name": "android-exam-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2450,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/android-exam-trace.json"
+      },
+      {
+        "name": "android-learning-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7584,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/android-learning-trace.json"
+      },
+      {
+        "name": "android-motion-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5282,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/android-motion-trace.json"
+      },
+      {
+        "name": "capture-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 135,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/capture-tests.txt"
+      },
+      {
+        "name": "flutter-analyze.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/flutter-analyze.txt"
+      },
+      {
+        "name": "flutter-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 23256,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/flutter-tests.txt"
+      },
+      {
+        "name": "ios-exam-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2398,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/ios-exam-trace.json"
+      },
+      {
+        "name": "ios-learning-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7502,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/ios-learning-trace.json"
+      },
+      {
+        "name": "ios-motion-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5245,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/ios-motion-trace.json"
+      },
+      {
+        "name": "normal-build-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 750,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/normal-build-audit.json"
+      },
+      {
+        "name": "token-parity.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 324,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-composicao-20261014/token-parity.txt"
+      },
+      {
+        "name": "evidence-design-20261014",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014",
+        "children": []
+      },
+      {
+        "name": "analyzer.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/analyzer.txt"
+      },
+      {
+        "name": "android-exam-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2450,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/android-exam-trace.json"
+      },
+      {
+        "name": "android-exam.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 19407,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/android-exam.txt"
+      },
+      {
+        "name": "android-learning-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7584,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/android-learning-trace.json"
+      },
+      {
+        "name": "android-learning.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 49725,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/android-learning.txt"
+      },
+      {
+        "name": "backend-202.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 164,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/backend-202.txt"
+      },
+      {
+        "name": "capture-33.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 98,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/capture-33.txt"
+      },
+      {
+        "name": "evidence.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3616,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/evidence.json"
+      },
+      {
+        "name": "files.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7067,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/files.json"
+      },
+      {
+        "name": "flutter-71.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 17442,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/flutter-71.txt"
+      },
+      {
+        "name": "ios-exam-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2398,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/ios-exam-trace.json"
+      },
+      {
+        "name": "ios-exam.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 3036,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/ios-exam.txt"
+      },
+      {
+        "name": "ios-learning-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 13085,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/ios-learning-trace.json"
+      },
+      {
+        "name": "ios-learning.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 3988,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/ios-learning.txt"
+      },
+      {
+        "name": "kb-26.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 5416,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/kb-26.txt"
+      },
+      {
+        "name": "normal-android-install.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 103,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/normal-android-install.txt"
+      },
+      {
+        "name": "normal-build-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 519,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/normal-build-audit.json"
+      },
+      {
+        "name": "normal-ios-install.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 34,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/normal-ios-install.txt"
+      },
+      {
+        "name": "tokens-3.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 97,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-design-20261014/tokens-3.txt"
+      },
+      {
+        "name": "evidence-explanation-viewer-20261019",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019",
+        "children": []
+      },
+      {
+        "name": "android-native.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 430,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/android-native.json"
+      },
+      {
+        "name": "canonical-integration.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1588,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/canonical-integration.json"
+      },
+      {
+        "name": "independent-review.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3777,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/independent-review.json"
+      },
+      {
+        "name": "ios-native.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 427,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/ios-native.json"
+      },
+      {
+        "name": "normal-build-verification.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1126,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/normal-build-verification.json"
+      },
+      {
+        "name": "optimized-apk-verification.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3667,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/optimized-apk-verification.json"
+      },
+      {
+        "name": "panel-runtime.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 477,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/panel-runtime.json"
+      },
+      {
+        "name": "production-baseline-source-comparison.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1720,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-baseline-source-comparison.json"
+      },
+      {
+        "name": "production-cleanup.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 832,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-cleanup.json"
+      },
+      {
+        "name": "production-deployment.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1562,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-deployment.json"
+      },
+      {
+        "name": "production-overlay-plan.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 815,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-overlay-plan.json"
+      },
+      {
+        "name": "production-overlay-verification.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1266,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-overlay-verification.json"
+      },
+      {
+        "name": "production-overlay.Dockerfile",
+        "type": "file",
+        "language": "Unknown",
+        "size": 257,
+        "extension": ".Dockerfile",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-overlay.Dockerfile"
+      },
+      {
+        "name": "production-smoke.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3203,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/production-smoke.json"
+      },
+      {
+        "name": "verification.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5309,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/verification.json"
+      },
+      {
+        "name": "writing-runtime.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 292,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-explanation-viewer-20261019/writing-runtime.json"
+      },
+      {
+        "name": "evidence-motion-20261014",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014",
+        "children": []
+      },
+      {
+        "name": "analyzer.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/analyzer.txt"
+      },
+      {
+        "name": "android-exam-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2450,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/android-exam-trace.json"
+      },
+      {
+        "name": "android-exam.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 20650,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/android-exam.txt"
+      },
+      {
+        "name": "android-learning-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7582,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/android-learning-trace.json"
+      },
+      {
+        "name": "android-learning.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 47710,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/android-learning.txt"
+      },
+      {
+        "name": "android-navigation-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2842,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/android-navigation-trace.json"
+      },
+      {
+        "name": "android-navigation.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 14097,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/android-navigation.txt"
+      },
+      {
+        "name": "capture-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 133,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/capture-tests.txt"
+      },
+      {
+        "name": "evidence.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3462,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/evidence.json"
+      },
+      {
+        "name": "flake8.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 1,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/flake8.txt"
+      },
+      {
+        "name": "flutter-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 17974,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/flutter-tests.txt"
+      },
+      {
+        "name": "ios-exam-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2398,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/ios-exam-trace.json"
+      },
+      {
+        "name": "ios-exam.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2936,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/ios-exam.txt"
+      },
+      {
+        "name": "ios-learning-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7502,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/ios-learning-trace.json"
+      },
+      {
+        "name": "ios-learning.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 3988,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/ios-learning.txt"
+      },
+      {
+        "name": "ios-navigation-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2786,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/ios-navigation-trace.json"
+      },
+      {
+        "name": "ios-navigation.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2955,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/ios-navigation.txt"
+      },
+      {
+        "name": "kb-26.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 5621,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/kb-26.txt"
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 12017,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/manifest.json"
+      },
+      {
+        "name": "normal-build-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 629,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/normal-build-audit.json"
+      },
+      {
+        "name": "source-hashes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 672,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/source-hashes.json"
+      },
+      {
+        "name": "tokens-3.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 324,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/evidence-motion-20261014/tokens-3.txt"
+      },
+      {
+        "name": "evidence-precalculo-20261019",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence-precalculo-20261019",
+        "children": []
+      },
+      {
+        "name": "verification.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5615,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence-precalculo-20261019/verification.json"
+      },
+      {
+        "name": "evidence",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence",
+        "children": []
+      },
+      {
+        "name": "android-v20",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence/android-v20",
+        "children": []
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1449,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence/android-v20/manifest.json"
+      },
+      {
+        "name": "ios-v19",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence/ios-v19",
+        "children": []
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1359,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence/ios-v19/manifest.json"
+      },
+      {
+        "name": "normal-main",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/evidence/normal-main",
+        "children": []
+      },
+      {
+        "name": "cold-proof-receipt.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 868,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence/normal-main/cold-proof-receipt.json"
+      },
+      {
+        "name": "manifest.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1239,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence/normal-main/manifest.json"
+      },
+      {
+        "name": "standard-build-receipt.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 188,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/evidence/normal-main/standard-build-receipt.json"
+      },
+      {
+        "name": "guia-fluxos",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10742,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/README.md"
+      },
+      {
+        "name": "evidence-explanations",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations",
+        "children": []
+      },
+      {
+        "name": "compiler-final.log",
+        "type": "file",
+        "language": "Log File",
+        "size": 43269,
+        "extension": ".log",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations/compiler-final.log"
+      },
+      {
+        "name": "existing-review-adaptation.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1290,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations/existing-review-adaptation.json"
+      },
+      {
+        "name": "native-android-assertions.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 430,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations/native-android-assertions.json"
+      },
+      {
+        "name": "native-ios-assertions.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 427,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations/native-ios-assertions.json"
+      },
+      {
+        "name": "production-api-smoke.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3203,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations/production-api-smoke.json"
+      },
+      {
+        "name": "widget-independent-review.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3777,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-explanations/widget-independent-review.json"
+      },
+      {
+        "name": "evidence-logo",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo",
+        "children": []
+      },
+      {
+        "name": "analyzer.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2077,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/analyzer.txt"
+      },
+      {
+        "name": "capture-36.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 135,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/capture-36.txt"
+      },
+      {
+        "name": "capture-documentation-ios.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2866,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/capture-documentation-ios.txt"
+      },
+      {
+        "name": "flake8.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 1,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/flake8.txt"
+      },
+      {
+        "name": "flutter-79.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 18190,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/flutter-79.txt"
+      },
+      {
+        "name": "logo-no-unb-tests.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2762,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/logo-no-unb-tests.txt"
+      },
+      {
+        "name": "navigation-android-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2842,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/navigation-android-trace.json"
+      },
+      {
+        "name": "navigation-android.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 13599,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/navigation-android.txt"
+      },
+      {
+        "name": "navigation-ios-trace.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2786,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/navigation-ios-trace.json"
+      },
+      {
+        "name": "navigation-ios.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 2955,
+        "extension": ".txt",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/navigation-ios.txt"
+      },
+      {
+        "name": "normal-build-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 708,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/evidence-logo/normal-build-audit.json"
+      },
+      {
+        "name": "guia-fluxos-nofluxo-estudos.tex",
+        "type": "file",
+        "language": "LaTeX",
+        "size": 79604,
+        "extension": ".tex",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/guia-fluxos-nofluxo-estudos.tex"
+      },
+      {
+        "name": "screenshots.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 30698,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/screenshots.json"
+      },
+      {
+        "name": "verification.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 20508,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/guia-fluxos/verification.json"
+      },
+      {
+        "name": "store",
+        "type": "directory",
+        "path": "docs/nofluxo-dos-estudos/store",
+        "children": []
+      },
+      {
+        "name": "LISTING.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7226,
+        "extension": ".md",
+        "path": "docs/nofluxo-dos-estudos/store/LISTING.md"
+      },
+      {
+        "name": "xp-v1.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 231,
+        "extension": ".json",
+        "path": "docs/nofluxo-dos-estudos/xp-v1.json"
       },
       {
         "name": "testes",
@@ -4417,7 +6801,7 @@
         "name": "pipeline-ci.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3652,
+        "size": 4776,
         "extension": ".md",
         "path": "documentacao/testes/pipeline-ci.md"
       },
@@ -4535,7 +6919,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2719,
+        "size": 2821,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -4576,6 +6960,14 @@
         "size": 774,
         "extension": ".cjs",
         "path": "frontend/scripts/copy-pdf-worker.cjs"
+      },
+      {
+        "name": "copy-study-math.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 339,
+        "extension": ".cjs",
+        "path": "frontend/scripts/copy-study-math.cjs"
       },
       {
         "name": "shot-grade.mjs",
@@ -4737,9 +7129,33 @@
         "name": "AdminNav.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 1389,
+        "size": 1655,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/admin/AdminNav.svelte"
+      },
+      {
+        "name": "ModerationQueue.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5338,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/ModerationQueue.svelte"
+      },
+      {
+        "name": "ModerationQueue.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2901,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/admin/ModerationQueue.test.ts"
+      },
+      {
+        "name": "StudyMathPreview.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 459,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/admin/StudyMathPreview.svelte"
       },
       {
         "name": "dashboard",
@@ -4826,10 +7242,18 @@
         "path": "frontend/src/lib/components/auth/AuthHomeLink.svelte"
       },
       {
+        "name": "LoginForm.a11y.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1308,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/auth/LoginForm.a11y.test.ts"
+      },
+      {
         "name": "LoginForm.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 7808,
+        "size": 8268,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/auth/LoginForm.svelte"
       },
@@ -4946,6 +7370,36 @@
         "size": 4400,
         "extension": ".svelte",
         "path": "frontend/src/lib/components/conheca/FluxoAnimado.svelte"
+      },
+      {
+        "name": "conta",
+        "type": "directory",
+        "path": "frontend/src/lib/components/conta",
+        "children": []
+      },
+      {
+        "name": "CallbackReauth.a11y.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2071,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/conta/CallbackReauth.a11y.test.ts"
+      },
+      {
+        "name": "ExcluirConta.a11y.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 14211,
+        "extension": ".ts",
+        "path": "frontend/src/lib/components/conta/ExcluirConta.a11y.test.ts"
+      },
+      {
+        "name": "ExcluirContaFluxo.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 27402,
+        "extension": ".svelte",
+        "path": "frontend/src/lib/components/conta/ExcluirContaFluxo.svelte"
       },
       {
         "name": "disciplinas",
@@ -6631,9 +9085,23 @@
         "name": "routes.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2744,
+        "size": 2981,
         "extension": ".ts",
         "path": "frontend/src/lib/config/routes.ts"
+      },
+      {
+        "name": "estudos",
+        "type": "directory",
+        "path": "frontend/src/lib/estudos",
+        "children": []
+      },
+      {
+        "name": "community-terms.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 687,
+        "extension": ".ts",
+        "path": "frontend/src/lib/estudos/community-terms.ts"
       },
       {
         "name": "factories",
@@ -6675,7 +9143,7 @@
         "name": "authGuard.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3847,
+        "size": 5158,
         "extension": ".ts",
         "path": "frontend/src/lib/guards/authGuard.test.ts"
       },
@@ -6683,7 +9151,7 @@
         "name": "authGuard.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6031,
+        "size": 6544,
         "extension": ".ts",
         "path": "frontend/src/lib/guards/authGuard.ts"
       },
@@ -6787,7 +9255,7 @@
         "name": "auth.service.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1258,
+        "size": 2358,
         "extension": ".ts",
         "path": "frontend/src/lib/services/auth.service.test.ts"
       },
@@ -6795,7 +9263,7 @@
         "name": "auth.service.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 14875,
+        "size": 15599,
         "extension": ".ts",
         "path": "frontend/src/lib/services/auth.service.ts"
       },
@@ -6814,6 +9282,22 @@
         "size": 1614,
         "extension": ".ts",
         "path": "frontend/src/lib/services/chat.service.ts"
+      },
+      {
+        "name": "conta-exclusao.service.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 15118,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/conta-exclusao.service.test.ts"
+      },
+      {
+        "name": "conta-exclusao.service.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12821,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/conta-exclusao.service.ts"
       },
       {
         "name": "dashboard.service.ts",
@@ -7068,6 +9552,38 @@
         "path": "frontend/src/lib/services/preferencias-grade.service.ts"
       },
       {
+        "name": "reautenticar.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7023,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/reautenticar.test.ts"
+      },
+      {
+        "name": "reautenticar.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9489,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/reautenticar.ts"
+      },
+      {
+        "name": "reauth-callback.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1946,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/reauth-callback.test.ts"
+      },
+      {
+        "name": "reauth-callback.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2167,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/reauth-callback.ts"
+      },
+      {
         "name": "situacao-academica.service.ts",
         "type": "file",
         "language": "TypeScript",
@@ -7082,6 +9598,38 @@
         "size": 6379,
         "extension": ".ts",
         "path": "frontend/src/lib/services/situacao-academica.test.ts"
+      },
+      {
+        "name": "studies-admin.service.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4052,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/studies-admin.service.ts"
+      },
+      {
+        "name": "studies-authoring.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2763,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/studies-authoring.test.ts"
+      },
+      {
+        "name": "studies-authoring.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3808,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/studies-authoring.ts"
+      },
+      {
+        "name": "studies-moderation.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4668,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/studies-moderation.test.ts"
       },
       {
         "name": "supabase-data.anoVigor.test.ts",
@@ -8011,7 +10559,7 @@
         "name": "post-login-redirect.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1051,
+        "size": 2305,
         "extension": ".ts",
         "path": "frontend/src/lib/utils/post-login-redirect.test.ts"
       },
@@ -8019,7 +10567,7 @@
         "name": "post-login-redirect.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 610,
+        "size": 1333,
         "extension": ".ts",
         "path": "frontend/src/lib/utils/post-login-redirect.ts"
       },
@@ -8188,6 +10736,20 @@
         "size": 1121,
         "extension": ".ts",
         "path": "frontend/src/routes/(protected)/admin/dashboard/perguntas-com-falha.test.ts"
+      },
+      {
+        "name": "estudos",
+        "type": "directory",
+        "path": "frontend/src/routes/(protected)/admin/estudos",
+        "children": []
+      },
+      {
+        "name": "+page.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 22940,
+        "extension": ".svelte",
+        "path": "frontend/src/routes/(protected)/admin/estudos/+page.svelte"
       },
       {
         "name": "tickets",
@@ -8371,7 +10933,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3491,
+        "size": 4533,
         "extension": ".svelte",
         "path": "frontend/src/routes/auth/callback/+page.svelte"
       },
@@ -8512,6 +11074,100 @@
         "path": "frontend/src/routes/disciplinas/+page.svelte"
       },
       {
+        "name": "estudos",
+        "type": "directory",
+        "path": "frontend/src/routes/estudos",
+        "children": []
+      },
+      {
+        "name": "privacidade",
+        "type": "directory",
+        "path": "frontend/src/routes/estudos/privacidade",
+        "children": []
+      },
+      {
+        "name": "+page.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 16085,
+        "extension": ".svelte",
+        "path": "frontend/src/routes/estudos/privacidade/+page.svelte"
+      },
+      {
+        "name": "+page.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 31,
+        "extension": ".ts",
+        "path": "frontend/src/routes/estudos/privacidade/+page.ts"
+      },
+      {
+        "name": "regras",
+        "type": "directory",
+        "path": "frontend/src/routes/estudos/regras",
+        "children": []
+      },
+      {
+        "name": "+page.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6517,
+        "extension": ".svelte",
+        "path": "frontend/src/routes/estudos/regras/+page.svelte"
+      },
+      {
+        "name": "+page.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 31,
+        "extension": ".ts",
+        "path": "frontend/src/routes/estudos/regras/+page.ts"
+      },
+      {
+        "name": "suporte",
+        "type": "directory",
+        "path": "frontend/src/routes/estudos/suporte",
+        "children": []
+      },
+      {
+        "name": "+page.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9287,
+        "extension": ".svelte",
+        "path": "frontend/src/routes/estudos/suporte/+page.svelte"
+      },
+      {
+        "name": "+page.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 31,
+        "extension": ".ts",
+        "path": "frontend/src/routes/estudos/suporte/+page.ts"
+      },
+      {
+        "name": "excluir-conta",
+        "type": "directory",
+        "path": "frontend/src/routes/excluir-conta",
+        "children": []
+      },
+      {
+        "name": "+page.svelte",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5959,
+        "extension": ".svelte",
+        "path": "frontend/src/routes/excluir-conta/+page.svelte"
+      },
+      {
+        "name": "+page.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 31,
+        "extension": ".ts",
+        "path": "frontend/src/routes/excluir-conta/+page.ts"
+      },
+      {
         "name": "fluxogramas",
         "type": "directory",
         "path": "frontend/src/routes/fluxogramas",
@@ -8649,7 +11305,7 @@
         "name": "+page.svelte",
         "type": "file",
         "language": "Unknown",
-        "size": 3615,
+        "size": 7865,
         "extension": ".svelte",
         "path": "frontend/src/routes/privacidade/+page.svelte"
       },
@@ -8829,9 +11485,23 @@
         "name": "sitemap.xml",
         "type": "file",
         "language": "XML",
-        "size": 694,
+        "size": 1193,
         "extension": ".xml",
         "path": "frontend/static/sitemap.xml"
+      },
+      {
+        "name": "studies",
+        "type": "directory",
+        "path": "frontend/static/studies",
+        "children": []
+      },
+      {
+        "name": "math-config.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 247,
+        "extension": ".js",
+        "path": "frontend/static/studies/math-config.js"
       },
       {
         "name": "team",
@@ -8889,7 +11559,7 @@
         "name": "a11y.spec.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3934,
+        "size": 3952,
         "extension": ".ts",
         "path": "frontend/tests-e2e/a11y.spec.ts"
       },
@@ -8985,7 +11655,7 @@
         "name": "vite.config.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2233,
+        "size": 2408,
         "extension": ".ts",
         "path": "frontend/vite.config.ts"
       },
@@ -8993,7 +11663,7 @@
         "name": "k8s.backend.Dockerfile",
         "type": "file",
         "language": "Unknown",
-        "size": 967,
+        "size": 1209,
         "extension": ".Dockerfile",
         "path": "k8s.backend.Dockerfile"
       },
@@ -9001,7 +11671,7 @@
         "name": "k8s.frontend-svelte.Dockerfile",
         "type": "file",
         "language": "Unknown",
-        "size": 3149,
+        "size": 3217,
         "extension": ".Dockerfile",
         "path": "k8s.frontend-svelte.Dockerfile"
       },
@@ -9012,6 +11682,22 @@
         "size": 1211,
         "extension": ".Dockerfile",
         "path": "k8s.mcp-agent.Dockerfile"
+      },
+      {
+        "name": "k8s.studies-api.Dockerfile",
+        "type": "file",
+        "language": "Unknown",
+        "size": 736,
+        "extension": ".Dockerfile",
+        "path": "k8s.studies-api.Dockerfile"
+      },
+      {
+        "name": "k8s.studies-api.Dockerfile.dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 149,
+        "extension": ".dockerignore",
+        "path": "k8s.studies-api.Dockerfile.dockerignore"
       },
       {
         "name": "kubernetes_docs",
@@ -9406,10 +12092,1600 @@
         "path": "mkdocs.yml"
       },
       {
+        "name": "nofluxo_estudos",
+        "type": "directory",
+        "path": "nofluxo_estudos",
+        "children": []
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 125,
+        "extension": ".example",
+        "path": "nofluxo_estudos/.env.example"
+      },
+      {
+        "name": ".env.production.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 289,
+        "extension": ".example",
+        "path": "nofluxo_estudos/.env.production.example"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 868,
+        "extension": ".gitignore",
+        "path": "nofluxo_estudos/.gitignore"
+      },
+      {
+        "name": ".metadata",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1114,
+        "extension": ".metadata",
+        "path": "nofluxo_estudos/.metadata"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 20148,
+        "extension": ".md",
+        "path": "nofluxo_estudos/README.md"
+      },
+      {
+        "name": "analysis_options.yaml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1420,
+        "extension": ".yaml",
+        "path": "nofluxo_estudos/analysis_options.yaml"
+      },
+      {
+        "name": "android",
+        "type": "directory",
+        "path": "nofluxo_estudos/android",
+        "children": []
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 253,
+        "extension": ".gitignore",
+        "path": "nofluxo_estudos/android/.gitignore"
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app",
+        "children": []
+      },
+      {
+        "name": "build.gradle.kts",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2318,
+        "extension": ".kts",
+        "path": "nofluxo_estudos/android/app/build.gradle.kts"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src",
+        "children": []
+      },
+      {
+        "name": "debug",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/debug",
+        "children": []
+      },
+      {
+        "name": "AndroidManifest.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 452,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/debug/AndroidManifest.xml"
+      },
+      {
+        "name": "res",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/debug/res",
+        "children": []
+      },
+      {
+        "name": "xml",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/debug/res/xml",
+        "children": []
+      },
+      {
+        "name": "local_network_security.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 240,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/debug/res/xml/local_network_security.xml"
+      },
+      {
+        "name": "main",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main",
+        "children": []
+      },
+      {
+        "name": "AndroidManifest.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 2579,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/main/AndroidManifest.xml"
+      },
+      {
+        "name": "kotlin",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/kotlin",
+        "children": []
+      },
+      {
+        "name": "com",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/kotlin/com",
+        "children": []
+      },
+      {
+        "name": "crianex",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/kotlin/com/crianex",
+        "children": []
+      },
+      {
+        "name": "nofluxo_estudos",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/kotlin/com/crianex/nofluxo_estudos",
+        "children": []
+      },
+      {
+        "name": "MainActivity.kt",
+        "type": "file",
+        "language": "Kotlin",
+        "size": 129,
+        "extension": ".kt",
+        "path": "nofluxo_estudos/android/app/src/main/kotlin/com/crianex/nofluxo_estudos/MainActivity.kt"
+      },
+      {
+        "name": "res",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res",
+        "children": []
+      },
+      {
+        "name": "drawable-v21",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/drawable-v21",
+        "children": []
+      },
+      {
+        "name": "launch_background.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 438,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/main/res/drawable-v21/launch_background.xml"
+      },
+      {
+        "name": "drawable",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/drawable",
+        "children": []
+      },
+      {
+        "name": "launch_background.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 434,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/main/res/drawable/launch_background.xml"
+      },
+      {
+        "name": "mipmap-hdpi",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-hdpi",
+        "children": []
+      },
+      {
+        "name": "ic_launcher.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 4327,
+        "extension": ".png",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+      },
+      {
+        "name": "mipmap-mdpi",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-mdpi",
+        "children": []
+      },
+      {
+        "name": "ic_launcher.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 2491,
+        "extension": ".png",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+      },
+      {
+        "name": "mipmap-xhdpi",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-xhdpi",
+        "children": []
+      },
+      {
+        "name": "ic_launcher.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 6633,
+        "extension": ".png",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+      },
+      {
+        "name": "mipmap-xxhdpi",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-xxhdpi",
+        "children": []
+      },
+      {
+        "name": "ic_launcher.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 13009,
+        "extension": ".png",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+      },
+      {
+        "name": "mipmap-xxxhdpi",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-xxxhdpi",
+        "children": []
+      },
+      {
+        "name": "ic_launcher.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 20411,
+        "extension": ".png",
+        "path": "nofluxo_estudos/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+      },
+      {
+        "name": "values-night",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/values-night",
+        "children": []
+      },
+      {
+        "name": "styles.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 995,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/main/res/values-night/styles.xml"
+      },
+      {
+        "name": "values",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/main/res/values",
+        "children": []
+      },
+      {
+        "name": "styles.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 996,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/main/res/values/styles.xml"
+      },
+      {
+        "name": "profile",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/app/src/profile",
+        "children": []
+      },
+      {
+        "name": "AndroidManifest.xml",
+        "type": "file",
+        "language": "XML",
+        "size": 378,
+        "extension": ".xml",
+        "path": "nofluxo_estudos/android/app/src/profile/AndroidManifest.xml"
+      },
+      {
+        "name": "build.gradle.kts",
+        "type": "file",
+        "language": "Unknown",
+        "size": 537,
+        "extension": ".kts",
+        "path": "nofluxo_estudos/android/build.gradle.kts"
+      },
+      {
+        "name": "gradle.properties",
+        "type": "file",
+        "language": "Unknown",
+        "size": 138,
+        "extension": ".properties",
+        "path": "nofluxo_estudos/android/gradle.properties"
+      },
+      {
+        "name": "gradle",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/gradle",
+        "children": []
+      },
+      {
+        "name": "wrapper",
+        "type": "directory",
+        "path": "nofluxo_estudos/android/gradle/wrapper",
+        "children": []
+      },
+      {
+        "name": "gradle-wrapper.properties",
+        "type": "file",
+        "language": "Unknown",
+        "size": 201,
+        "extension": ".properties",
+        "path": "nofluxo_estudos/android/gradle/wrapper/gradle-wrapper.properties"
+      },
+      {
+        "name": "settings.gradle.kts",
+        "type": "file",
+        "language": "Unknown",
+        "size": 772,
+        "extension": ".kts",
+        "path": "nofluxo_estudos/android/settings.gradle.kts"
+      },
+      {
+        "name": "assets",
+        "type": "directory",
+        "path": "nofluxo_estudos/assets",
+        "children": []
+      },
+      {
+        "name": "brand",
+        "type": "directory",
+        "path": "nofluxo_estudos/assets/brand",
+        "children": []
+      },
+      {
+        "name": "LICENSE.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 11358,
+        "extension": ".txt",
+        "path": "nofluxo_estudos/assets/brand/LICENSE.txt"
+      },
+      {
+        "name": "PermanentMarker-Regular.ttf",
+        "type": "file",
+        "language": "TrueType Font",
+        "size": 74632,
+        "extension": ".ttf",
+        "path": "nofluxo_estudos/assets/brand/PermanentMarker-Regular.ttf"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1015,
+        "extension": ".md",
+        "path": "nofluxo_estudos/assets/brand/README.md"
+      },
+      {
+        "name": "mathjax",
+        "type": "directory",
+        "path": "nofluxo_estudos/assets/mathjax",
+        "children": []
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "language": "No Extension",
+        "size": 11358,
+        "extension": "",
+        "path": "nofluxo_estudos/assets/mathjax/LICENSE"
+      },
+      {
+        "name": "provenance.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 371,
+        "extension": ".json",
+        "path": "nofluxo_estudos/assets/mathjax/provenance.json"
+      },
+      {
+        "name": "tex-svg-full.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2275113,
+        "extension": ".js",
+        "path": "nofluxo_estudos/assets/mathjax/tex-svg-full.js"
+      },
+      {
+        "name": "integration_test",
+        "type": "directory",
+        "path": "nofluxo_estudos/integration_test",
+        "children": []
+      },
+      {
+        "name": "calculo_course_production_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10112,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/calculo_course_production_test.dart"
+      },
+      {
+        "name": "calculo_production_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7153,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/calculo_production_test.dart"
+      },
+      {
+        "name": "cold_resume_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 14659,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/cold_resume_test.dart"
+      },
+      {
+        "name": "community_journey_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12762,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/community_journey_test.dart"
+      },
+      {
+        "name": "grouping_design_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6697,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/grouping_design_test.dart"
+      },
+      {
+        "name": "guide_capture_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10754,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/guide_capture_test.dart"
+      },
+      {
+        "name": "journey_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 24998,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/journey_test.dart"
+      },
+      {
+        "name": "math_probe_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4462,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/math_probe_test.dart"
+      },
+      {
+        "name": "motion_journey_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9678,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/motion_journey_test.dart"
+      },
+      {
+        "name": "preparation_journey_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 8191,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/preparation_journey_test.dart"
+      },
+      {
+        "name": "support",
+        "type": "directory",
+        "path": "nofluxo_estudos/integration_test/support",
+        "children": []
+      },
+      {
+        "name": "explanation_fixture.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 8464,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/support/explanation_fixture.dart"
+      },
+      {
+        "name": "native_dom.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1054,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/support/native_dom.dart"
+      },
+      {
+        "name": "public_question_answer.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1442,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/support/public_question_answer.dart"
+      },
+      {
+        "name": "reveal_account_sync.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1264,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/integration_test/support/reveal_account_sync.dart"
+      },
+      {
+        "name": "ios",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios",
+        "children": []
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 569,
+        "extension": ".gitignore",
+        "path": "nofluxo_estudos/ios/.gitignore"
+      },
+      {
+        "name": "Flutter",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Flutter",
+        "children": []
+      },
+      {
+        "name": "AppFrameworkInfo.plist",
+        "type": "file",
+        "language": "Unknown",
+        "size": 720,
+        "extension": ".plist",
+        "path": "nofluxo_estudos/ios/Flutter/AppFrameworkInfo.plist"
+      },
+      {
+        "name": "Debug.xcconfig",
+        "type": "file",
+        "language": "Unknown",
+        "size": 107,
+        "extension": ".xcconfig",
+        "path": "nofluxo_estudos/ios/Flutter/Debug.xcconfig"
+      },
+      {
+        "name": "Release.xcconfig",
+        "type": "file",
+        "language": "Unknown",
+        "size": 109,
+        "extension": ".xcconfig",
+        "path": "nofluxo_estudos/ios/Flutter/Release.xcconfig"
+      },
+      {
+        "name": "Podfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1391,
+        "extension": "",
+        "path": "nofluxo_estudos/ios/Podfile"
+      },
+      {
+        "name": "Podfile.lock",
+        "type": "file",
+        "language": "Lock File",
+        "size": 2246,
+        "extension": ".lock",
+        "path": "nofluxo_estudos/ios/Podfile.lock"
+      },
+      {
+        "name": "Runner.xcodeproj",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj",
+        "children": []
+      },
+      {
+        "name": "project.pbxproj",
+        "type": "file",
+        "language": "Unknown",
+        "size": 31165,
+        "extension": ".pbxproj",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/project.pbxproj"
+      },
+      {
+        "name": "project.xcworkspace",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/project.xcworkspace",
+        "children": []
+      },
+      {
+        "name": "contents.xcworkspacedata",
+        "type": "file",
+        "language": "Unknown",
+        "size": 135,
+        "extension": ".xcworkspacedata",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata"
+      },
+      {
+        "name": "xcshareddata",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata",
+        "children": []
+      },
+      {
+        "name": "IDEWorkspaceChecks.plist",
+        "type": "file",
+        "language": "Unknown",
+        "size": 238,
+        "extension": ".plist",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist"
+      },
+      {
+        "name": "WorkspaceSettings.xcsettings",
+        "type": "file",
+        "language": "Unknown",
+        "size": 226,
+        "extension": ".xcsettings",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings"
+      },
+      {
+        "name": "xcshareddata",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/xcshareddata",
+        "children": []
+      },
+      {
+        "name": "xcschemes",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/xcshareddata/xcschemes",
+        "children": []
+      },
+      {
+        "name": "Runner.xcscheme",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3833,
+        "extension": ".xcscheme",
+        "path": "nofluxo_estudos/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme"
+      },
+      {
+        "name": "Runner.xcworkspace",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcworkspace",
+        "children": []
+      },
+      {
+        "name": "contents.xcworkspacedata",
+        "type": "file",
+        "language": "Unknown",
+        "size": 224,
+        "extension": ".xcworkspacedata",
+        "path": "nofluxo_estudos/ios/Runner.xcworkspace/contents.xcworkspacedata"
+      },
+      {
+        "name": "xcshareddata",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner.xcworkspace/xcshareddata",
+        "children": []
+      },
+      {
+        "name": "IDEWorkspaceChecks.plist",
+        "type": "file",
+        "language": "Unknown",
+        "size": 238,
+        "extension": ".plist",
+        "path": "nofluxo_estudos/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist"
+      },
+      {
+        "name": "WorkspaceSettings.xcsettings",
+        "type": "file",
+        "language": "Unknown",
+        "size": 226,
+        "extension": ".xcsettings",
+        "path": "nofluxo_estudos/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings"
+      },
+      {
+        "name": "Runner",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner",
+        "children": []
+      },
+      {
+        "name": "AppDelegate.swift",
+        "type": "file",
+        "language": "Swift",
+        "size": 539,
+        "extension": ".swift",
+        "path": "nofluxo_estudos/ios/Runner/AppDelegate.swift"
+      },
+      {
+        "name": "Assets.xcassets",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets",
+        "children": []
+      },
+      {
+        "name": "AppIcon.appiconset",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset",
+        "children": []
+      },
+      {
+        "name": "Contents.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2519,
+        "extension": ".json",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json"
+      },
+      {
+        "name": "Icon-App-1024x1024@1x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 498751,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+      },
+      {
+        "name": "Icon-App-20x20@1x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 867,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png"
+      },
+      {
+        "name": "Icon-App-20x20@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 2025,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png"
+      },
+      {
+        "name": "Icon-App-20x20@3x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 3416,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png"
+      },
+      {
+        "name": "Icon-App-29x29@1x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 1382,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png"
+      },
+      {
+        "name": "Icon-App-29x29@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 3212,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png"
+      },
+      {
+        "name": "Icon-App-29x29@3x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 5574,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png"
+      },
+      {
+        "name": "Icon-App-40x40@1x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 2025,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png"
+      },
+      {
+        "name": "Icon-App-40x40@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 5089,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png"
+      },
+      {
+        "name": "Icon-App-40x40@3x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 9602,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png"
+      },
+      {
+        "name": "Icon-App-60x60@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 9602,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png"
+      },
+      {
+        "name": "Icon-App-60x60@3x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 18774,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png"
+      },
+      {
+        "name": "Icon-App-76x76@1x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 4715,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png"
+      },
+      {
+        "name": "Icon-App-76x76@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 14245,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png"
+      },
+      {
+        "name": "Icon-App-83.5x83.5@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 16472,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png"
+      },
+      {
+        "name": "LaunchImage.imageset",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/LaunchImage.imageset",
+        "children": []
+      },
+      {
+        "name": "Contents.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 391,
+        "extension": ".json",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json"
+      },
+      {
+        "name": "LaunchImage.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 68,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png"
+      },
+      {
+        "name": "LaunchImage@2x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 68,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png"
+      },
+      {
+        "name": "LaunchImage@3x.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 68,
+        "extension": ".png",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 336,
+        "extension": ".md",
+        "path": "nofluxo_estudos/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md"
+      },
+      {
+        "name": "Base.lproj",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/Runner/Base.lproj",
+        "children": []
+      },
+      {
+        "name": "LaunchScreen.storyboard",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2377,
+        "extension": ".storyboard",
+        "path": "nofluxo_estudos/ios/Runner/Base.lproj/LaunchScreen.storyboard"
+      },
+      {
+        "name": "Main.storyboard",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1605,
+        "extension": ".storyboard",
+        "path": "nofluxo_estudos/ios/Runner/Base.lproj/Main.storyboard"
+      },
+      {
+        "name": "Info.plist",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2325,
+        "extension": ".plist",
+        "path": "nofluxo_estudos/ios/Runner/Info.plist"
+      },
+      {
+        "name": "Runner-Bridging-Header.h",
+        "type": "file",
+        "language": "C/C++ Header",
+        "size": 38,
+        "extension": ".h",
+        "path": "nofluxo_estudos/ios/Runner/Runner-Bridging-Header.h"
+      },
+      {
+        "name": "SceneDelegate.swift",
+        "type": "file",
+        "language": "Swift",
+        "size": 76,
+        "extension": ".swift",
+        "path": "nofluxo_estudos/ios/Runner/SceneDelegate.swift"
+      },
+      {
+        "name": "RunnerTests",
+        "type": "directory",
+        "path": "nofluxo_estudos/ios/RunnerTests",
+        "children": []
+      },
+      {
+        "name": "RunnerTests.swift",
+        "type": "file",
+        "language": "Swift",
+        "size": 285,
+        "extension": ".swift",
+        "path": "nofluxo_estudos/ios/RunnerTests/RunnerTests.swift"
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "path": "nofluxo_estudos/lib",
+        "children": []
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "path": "nofluxo_estudos/lib/data",
+        "children": []
+      },
+      {
+        "name": "api.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2387,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/api.dart"
+      },
+      {
+        "name": "app_version.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 135,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/app_version.dart"
+      },
+      {
+        "name": "auth.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2203,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/auth.dart"
+      },
+      {
+        "name": "comment_filter.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12043,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/comment_filter.dart"
+      },
+      {
+        "name": "comment_filter.g.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 85350,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/comment_filter.g.dart"
+      },
+      {
+        "name": "controller.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 25051,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/controller.dart"
+      },
+      {
+        "name": "course_groups.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1298,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/course_groups.dart"
+      },
+      {
+        "name": "explanation.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4808,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/explanation.dart"
+      },
+      {
+        "name": "links.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1455,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/links.dart"
+      },
+      {
+        "name": "rewards.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9428,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/rewards.dart"
+      },
+      {
+        "name": "store.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 13146,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/data/store.dart"
+      },
+      {
+        "name": "main.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12225,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/main.dart"
+      },
+      {
+        "name": "ui",
+        "type": "directory",
+        "path": "nofluxo_estudos/lib/ui",
+        "children": []
+      },
+      {
+        "name": "common.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 41991,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/common.dart"
+      },
+      {
+        "name": "community.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 63049,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/community.dart"
+      },
+      {
+        "name": "course_catalog.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5281,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/course_catalog.dart"
+      },
+      {
+        "name": "curriculum.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5552,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/curriculum.dart"
+      },
+      {
+        "name": "exam_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 29147,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/exam_ui.dart"
+      },
+      {
+        "name": "explanation_viewer.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 21326,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/explanation_viewer.dart"
+      },
+      {
+        "name": "marks.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10062,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/marks.dart"
+      },
+      {
+        "name": "path_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 33484,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/path_ui.dart"
+      },
+      {
+        "name": "preparation_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4324,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/preparation_ui.dart"
+      },
+      {
+        "name": "reader.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 20021,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/reader.dart"
+      },
+      {
+        "name": "rewards_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 51709,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/rewards_ui.dart"
+      },
+      {
+        "name": "screens.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 100224,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/screens.dart"
+      },
+      {
+        "name": "session_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 29744,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/session_ui.dart"
+      },
+      {
+        "name": "stats_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 32089,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/stats_ui.dart"
+      },
+      {
+        "name": "study_art.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4053,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/study_art.dart"
+      },
+      {
+        "name": "theme.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9991,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/theme.dart"
+      },
+      {
+        "name": "trail_ui.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 13515,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/trail_ui.dart"
+      },
+      {
+        "name": "web_tokens.g.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2247,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/lib/ui/web_tokens.g.dart"
+      },
+      {
+        "name": "pubspec.lock",
+        "type": "file",
+        "language": "Lock File",
+        "size": 30203,
+        "extension": ".lock",
+        "path": "nofluxo_estudos/pubspec.lock"
+      },
+      {
+        "name": "pubspec.yaml",
+        "type": "file",
+        "language": "YAML",
+        "size": 925,
+        "extension": ".yaml",
+        "path": "nofluxo_estudos/pubspec.yaml"
+      },
+      {
+        "name": "test",
+        "type": "directory",
+        "path": "nofluxo_estudos/test",
+        "children": []
+      },
+      {
+        "name": "app_version_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 401,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/app_version_test.dart"
+      },
+      {
+        "name": "cold_account_scroll_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3478,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/cold_account_scroll_test.dart"
+      },
+      {
+        "name": "comment_filter_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1973,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/comment_filter_test.dart"
+      },
+      {
+        "name": "comment_filter_vectors.g.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 23113,
+        "extension": ".json",
+        "path": "nofluxo_estudos/test/comment_filter_vectors.g.json"
+      },
+      {
+        "name": "community_safety_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 49012,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/community_safety_test.dart"
+      },
+      {
+        "name": "course_groups_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9049,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/course_groups_test.dart"
+      },
+      {
+        "name": "currency_math_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 877,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/currency_math_test.dart"
+      },
+      {
+        "name": "curriculum_projection_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5623,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/curriculum_projection_test.dart"
+      },
+      {
+        "name": "design_accessibility_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7764,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/design_accessibility_test.dart"
+      },
+      {
+        "name": "design_iteration_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 22810,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/design_iteration_test.dart"
+      },
+      {
+        "name": "design_palette_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3731,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/design_palette_test.dart"
+      },
+      {
+        "name": "exam_revision_review_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 34602,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/exam_revision_review_test.dart"
+      },
+      {
+        "name": "explanation_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6509,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/explanation_test.dart"
+      },
+      {
+        "name": "explanation_viewer_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 18482,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/explanation_viewer_test.dart"
+      },
+      {
+        "name": "motion_interaction_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7642,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/motion_interaction_test.dart"
+      },
+      {
+        "name": "native_dom_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1450,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/native_dom_test.dart"
+      },
+      {
+        "name": "path_design_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10133,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/path_design_test.dart"
+      },
+      {
+        "name": "preparation_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12842,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/preparation_test.dart"
+      },
+      {
+        "name": "public_question_answer_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4250,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/public_question_answer_test.dart"
+      },
+      {
+        "name": "review_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 48423,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/review_test.dart"
+      },
+      {
+        "name": "rewards_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 16402,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/rewards_test.dart"
+      },
+      {
+        "name": "session_cache_release_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 14153,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/session_cache_release_test.dart"
+      },
+      {
+        "name": "session_design_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 13467,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/session_design_test.dart"
+      },
+      {
+        "name": "stats_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5695,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/stats_test.dart"
+      },
+      {
+        "name": "study_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 26645,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/study_test.dart"
+      },
+      {
+        "name": "trail_design_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 8710,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test/trail_design_test.dart"
+      },
+      {
+        "name": "test_driver",
+        "type": "directory",
+        "path": "nofluxo_estudos/test_driver",
+        "children": []
+      },
+      {
+        "name": "integration_test.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 145,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/test_driver/integration_test.dart"
+      },
+      {
+        "name": "tool",
+        "type": "directory",
+        "path": "nofluxo_estudos/tool",
+        "children": []
+      },
+      {
+        "name": "capture_mobile_evidence.py",
+        "type": "file",
+        "language": "Python",
+        "size": 30313,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/capture_mobile_evidence.py"
+      },
+      {
+        "name": "cold_resume_coordinator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6855,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/cold_resume_coordinator.py"
+      },
+      {
+        "name": "preview_explanations.dart",
+        "type": "file",
+        "language": "Unknown",
+        "size": 427,
+        "extension": ".dart",
+        "path": "nofluxo_estudos/tool/preview_explanations.dart"
+      },
+      {
+        "name": "restore_normal_builds.py",
+        "type": "file",
+        "language": "Python",
+        "size": 19260,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/restore_normal_builds.py"
+      },
+      {
+        "name": "resume_cold_proof.py",
+        "type": "file",
+        "language": "Python",
+        "size": 24861,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/resume_cold_proof.py"
+      },
+      {
+        "name": "run_cold_proof.py",
+        "type": "file",
+        "language": "Python",
+        "size": 31192,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/run_cold_proof.py"
+      },
+      {
+        "name": "store_screenshots",
+        "type": "directory",
+        "path": "nofluxo_estudos/tool/store_screenshots",
+        "children": []
+      },
+      {
+        "name": "generate.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7519,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/store_screenshots/generate.py"
+      },
+      {
+        "name": "icon",
+        "type": "directory",
+        "path": "nofluxo_estudos/tool/store_screenshots/icon",
+        "children": []
+      },
+      {
+        "name": "icon.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 2141,
+        "extension": ".html",
+        "path": "nofluxo_estudos/tool/store_screenshots/icon/icon.html"
+      },
+      {
+        "name": "test_cold_resume_coordinator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2611,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/test_cold_resume_coordinator.py"
+      },
+      {
+        "name": "test_restore_normal_builds.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3445,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/test_restore_normal_builds.py"
+      },
+      {
+        "name": "test_resume_cold_proof.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12566,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/test_resume_cold_proof.py"
+      },
+      {
+        "name": "test_run_cold_proof.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13163,
+        "extension": ".py",
+        "path": "nofluxo_estudos/tool/test_run_cold_proof.py"
+      },
+      {
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1828,
+        "size": 2052,
         "extension": ".json",
         "path": "package.json"
       },
@@ -9420,12 +13696,232 @@
         "children": []
       },
       {
+        "name": "2026-10-15_estudos-conteudo-para-producao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 91476,
+        "extension": ".md",
+        "path": "plans/2026-10-15_estudos-conteudo-para-producao.md"
+      },
+      {
+        "name": "2026-10-18_anexos-verificacao-sql",
+        "type": "directory",
+        "path": "plans/2026-10-18_anexos-verificacao-sql",
+        "children": []
+      },
+      {
+        "name": "202610120022_study_comment_safety.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 5736,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/202610120022_study_comment_safety.sql"
+      },
+      {
+        "name": "202610120023_study_account_erasure.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 17140,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/202610120023_study_account_erasure.sql"
+      },
+      {
+        "name": "20261018_exclusao_conta.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 10657,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/20261018_exclusao_conta.sql"
+      },
+      {
+        "name": "adopt_sim.psql",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6532,
+        "extension": ".psql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/adopt_sim.psql"
+      },
+      {
+        "name": "body22.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 5721,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/body22.sql"
+      },
+      {
+        "name": "body23.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 17125,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/body23.sql"
+      },
+      {
+        "name": "fixture_ext.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 364,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/fixture_ext.sql"
+      },
+      {
+        "name": "seed_heavy.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 4883,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/seed_heavy.sql"
+      },
+      {
+        "name": "vc_base.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 4710,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/vc_base.sql"
+      },
+      {
+        "name": "vc_v3.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 6283,
+        "extension": ".sql",
+        "path": "plans/2026-10-18_anexos-verificacao-sql/vc_v3.sql"
+      },
+      {
+        "name": "2026-10-18_estudos-api-deploy-separado.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2427,
+        "extension": ".md",
+        "path": "plans/2026-10-18_estudos-api-deploy-separado.md"
+      },
+      {
+        "name": "2026-10-18_estudos-comentarios-bloqueio-filtro.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 111519,
+        "extension": ".md",
+        "path": "plans/2026-10-18_estudos-comentarios-bloqueio-filtro.md"
+      },
+      {
+        "name": "2026-10-18_estudos-preparacao-lojas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3739,
+        "extension": ".md",
+        "path": "plans/2026-10-18_estudos-preparacao-lojas.md"
+      },
+      {
+        "name": "2026-10-18_exclusao-de-conta-autoatendimento.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 126059,
+        "extension": ".md",
+        "path": "plans/2026-10-18_exclusao-de-conta-autoatendimento.md"
+      },
+      {
+        "name": "2026-10-19_contrato-funcoes-0027.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4288,
+        "extension": ".md",
+        "path": "plans/2026-10-19_contrato-funcoes-0027.md"
+      },
+      {
+        "name": "2026-10-19_estudos-comentarios-adendo-producao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 30326,
+        "extension": ".md",
+        "path": "plans/2026-10-19_estudos-comentarios-adendo-producao.md"
+      },
+      {
+        "name": "2026-10-19_exclusao-conta-adendo-producao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 16758,
+        "extension": ".md",
+        "path": "plans/2026-10-19_exclusao-conta-adendo-producao.md"
+      },
+      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
         "size": 954,
         "extension": ".md",
         "path": "plans/README.md"
+      },
+      {
+        "name": "_implemented",
+        "type": "directory",
+        "path": "plans/_implemented",
+        "children": []
+      },
+      {
+        "name": "2026-10-15_estudos-identidade-nofluxo.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11704,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-15_estudos-identidade-nofluxo.md"
+      },
+      {
+        "name": "2026-10-15_estudos-premium-gamificado.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 33316,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-15_estudos-premium-gamificado.md"
+      },
+      {
+        "name": "2026-10-15_estudos-trilha-setas-fluxograma.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5656,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-15_estudos-trilha-setas-fluxograma.md"
+      },
+      {
+        "name": "2026-10-16_estudos-cabecalho-unidade-faixa.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3336,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-16_estudos-cabecalho-unidade-faixa.md"
+      },
+      {
+        "name": "2026-10-16_estudos-fontes-primarias-revisor-honesto.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 43594,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-16_estudos-fontes-primarias-revisor-honesto.md"
+      },
+      {
+        "name": "2026-10-16_estudos-simulado-cabecalho-dobravel.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2934,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-16_estudos-simulado-cabecalho-dobravel.md"
+      },
+      {
+        "name": "2026-10-16_estudos-simulado-resultado-e-status.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1867,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-16_estudos-simulado-resultado-e-status.md"
+      },
+      {
+        "name": "2026-10-17_estudos-estatisticas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2271,
+        "extension": ".md",
+        "path": "plans/_implemented/2026-10-17_estudos-estatisticas.md"
       },
       {
         "name": "pnpm-lock.yaml",
@@ -9483,7 +13979,7 @@
         "name": "deploy_config.py",
         "type": "file",
         "language": "Python",
-        "size": 6276,
+        "size": 7770,
         "extension": ".py",
         "path": "scripts/deploy/deploy_config.py"
       },
@@ -9491,7 +13987,7 @@
         "name": "deploy_local.py",
         "type": "file",
         "language": "Python",
-        "size": 27451,
+        "size": 27772,
         "extension": ".py",
         "path": "scripts/deploy/deploy_local.py"
       },
@@ -9504,10 +14000,18 @@
         "path": "scripts/deploy/requirements.txt"
       },
       {
+        "name": "test_deploy_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3639,
+        "extension": ".py",
+        "path": "scripts/deploy/test_deploy_config.py"
+      },
+      {
         "name": "test_verificar_rollout.py",
         "type": "file",
         "language": "Python",
-        "size": 2249,
+        "size": 2512,
         "extension": ".py",
         "path": "scripts/deploy/test_verificar_rollout.py"
       },
@@ -9515,9 +14019,31 @@
         "name": "verificar_rollout.py",
         "type": "file",
         "language": "Python",
-        "size": 3979,
+        "size": 4018,
         "extension": ".py",
         "path": "scripts/deploy/verificar_rollout.py"
+      },
+      {
+        "name": "design",
+        "type": "directory",
+        "path": "scripts/design",
+        "children": []
+      },
+      {
+        "name": "generate_flutter_tokens.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3698,
+        "extension": ".py",
+        "path": "scripts/design/generate_flutter_tokens.py"
+      },
+      {
+        "name": "test_tokens.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1158,
+        "extension": ".py",
+        "path": "scripts/design/test_tokens.py"
       },
       {
         "name": "docs-kb",
@@ -9558,6 +14084,754 @@
         "path": "scripts/setup_env.py"
       },
       {
+        "name": "studies",
+        "type": "directory",
+        "path": "scripts/studies",
+        "children": []
+      },
+      {
+        "name": "activate_cgu.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 13836,
+        "extension": ".ts",
+        "path": "scripts/studies/activate_cgu.ts"
+      },
+      {
+        "name": "activate_cgu_acceptance.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 31894,
+        "extension": ".ts",
+        "path": "scripts/studies/activate_cgu_acceptance.ts"
+      },
+      {
+        "name": "apply_fixes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8444,
+        "extension": ".ts",
+        "path": "scripts/studies/apply_fixes.ts"
+      },
+      {
+        "name": "assemble_calculo1_course.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16297,
+        "extension": ".py",
+        "path": "scripts/studies/assemble_calculo1_course.py"
+      },
+      {
+        "name": "assemble_calculo1_unit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9723,
+        "extension": ".py",
+        "path": "scripts/studies/assemble_calculo1_unit.py"
+      },
+      {
+        "name": "assemble_cgu_benchmark_batches.py",
+        "type": "file",
+        "language": "Python",
+        "size": 17035,
+        "extension": ".py",
+        "path": "scripts/studies/assemble_cgu_benchmark_batches.py"
+      },
+      {
+        "name": "assemble_cgu_drafts.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15756,
+        "extension": ".py",
+        "path": "scripts/studies/assemble_cgu_drafts.py"
+      },
+      {
+        "name": "audit_cgu_activation.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12322,
+        "extension": ".ts",
+        "path": "scripts/studies/audit_cgu_activation.ts"
+      },
+      {
+        "name": "audit_cgu_question_quality.py",
+        "type": "file",
+        "language": "Python",
+        "size": 18751,
+        "extension": ".py",
+        "path": "scripts/studies/audit_cgu_question_quality.py"
+      },
+      {
+        "name": "build_cgu_acceptance.py",
+        "type": "file",
+        "language": "Python",
+        "size": 32257,
+        "extension": ".py",
+        "path": "scripts/studies/build_cgu_acceptance.py"
+      },
+      {
+        "name": "build_cgu_benchmark_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11156,
+        "extension": ".py",
+        "path": "scripts/studies/build_cgu_benchmark_review.py"
+      },
+      {
+        "name": "build_prod_apply.py",
+        "type": "file",
+        "language": "Python",
+        "size": 45790,
+        "extension": ".py",
+        "path": "scripts/studies/build_prod_apply.py"
+      },
+      {
+        "name": "build_review_packets.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12354,
+        "extension": ".ts",
+        "path": "scripts/studies/build_review_packets.ts"
+      },
+      {
+        "name": "build_workflow_waves.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 26913,
+        "extension": ".ts",
+        "path": "scripts/studies/build_workflow_waves.ts"
+      },
+      {
+        "name": "calculo_course_api.py",
+        "type": "file",
+        "language": "Python",
+        "size": 26941,
+        "extension": ".py",
+        "path": "scripts/studies/calculo_course_api.py"
+      },
+      {
+        "name": "calculo_course_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 20254,
+        "extension": ".py",
+        "path": "scripts/studies/calculo_course_review.py"
+      },
+      {
+        "name": "cgu_development.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9204,
+        "extension": ".cjs",
+        "path": "scripts/studies/cgu_development.cjs"
+      },
+      {
+        "name": "check_calculo1_course_render.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10844,
+        "extension": ".cjs",
+        "path": "scripts/studies/check_calculo1_course_render.cjs"
+      },
+      {
+        "name": "check_calculo1_course_runtime.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 9209,
+        "extension": ".cjs",
+        "path": "scripts/studies/check_calculo1_course_runtime.cjs"
+      },
+      {
+        "name": "check_calculo1_render.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2703,
+        "extension": ".cjs",
+        "path": "scripts/studies/check_calculo1_render.cjs"
+      },
+      {
+        "name": "check_production_runtime_db.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10544,
+        "extension": ".cjs",
+        "path": "scripts/studies/check_production_runtime_db.cjs"
+      },
+      {
+        "name": "check_production_runtime_http.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6326,
+        "extension": ".cjs",
+        "path": "scripts/studies/check_production_runtime_http.cjs"
+      },
+      {
+        "name": "check_university_publication_guards.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2285,
+        "extension": ".cjs",
+        "path": "scripts/studies/check_university_publication_guards.cjs"
+      },
+      {
+        "name": "ci",
+        "type": "directory",
+        "path": "scripts/studies/ci",
+        "children": []
+      },
+      {
+        "name": "adopt_rehearsal.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 7699,
+        "extension": ".sh",
+        "path": "scripts/studies/ci/adopt_rehearsal.sh"
+      },
+      {
+        "name": "build_synthetic_bundle.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 17773,
+        "extension": ".ts",
+        "path": "scripts/studies/ci/build_synthetic_bundle.ts"
+      },
+      {
+        "name": "prodlike_fixture.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 2083,
+        "extension": ".sql",
+        "path": "scripts/studies/ci/prodlike_fixture.sql"
+      },
+      {
+        "name": "scratch_checks.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 21104,
+        "extension": ".sh",
+        "path": "scripts/studies/ci/scratch_checks.sh"
+      },
+      {
+        "name": "synthetic_staging.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 18320,
+        "extension": ".sql",
+        "path": "scripts/studies/ci/synthetic_staging.sql"
+      },
+      {
+        "name": "compile_review_verdicts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 25047,
+        "extension": ".ts",
+        "path": "scripts/studies/compile_review_verdicts.ts"
+      },
+      {
+        "name": "compose_retrieval.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9603,
+        "extension": ".py",
+        "path": "scripts/studies/compose_retrieval.py"
+      },
+      {
+        "name": "embed_gemini.py",
+        "type": "file",
+        "language": "Python",
+        "size": 32159,
+        "extension": ".py",
+        "path": "scripts/studies/embed_gemini.py"
+      },
+      {
+        "name": "embed_retrieval.py",
+        "type": "file",
+        "language": "Python",
+        "size": 25092,
+        "extension": ".py",
+        "path": "scripts/studies/embed_retrieval.py"
+      },
+      {
+        "name": "enrich_sources.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 73528,
+        "extension": ".ts",
+        "path": "scripts/studies/enrich_sources.ts"
+      },
+      {
+        "name": "export_cgu_benchmark_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 46989,
+        "extension": ".py",
+        "path": "scripts/studies/export_cgu_benchmark_review.py"
+      },
+      {
+        "name": "export_content_bundle.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 54658,
+        "extension": ".ts",
+        "path": "scripts/studies/export_content_bundle.ts"
+      },
+      {
+        "name": "extract_journal.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 13266,
+        "extension": ".ts",
+        "path": "scripts/studies/extract_journal.ts"
+      },
+      {
+        "name": "fix_cgu_root_label.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6371,
+        "extension": ".ts",
+        "path": "scripts/studies/fix_cgu_root_label.ts"
+      },
+      {
+        "name": "generate_comment_filter_dart.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11683,
+        "extension": ".py",
+        "path": "scripts/studies/generate_comment_filter_dart.py"
+      },
+      {
+        "name": "index_cgu_incremental.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9777,
+        "extension": ".ts",
+        "path": "scripts/studies/index_cgu_incremental.ts"
+      },
+      {
+        "name": "load_fixtures.py",
+        "type": "file",
+        "language": "Python",
+        "size": 20383,
+        "extension": ".py",
+        "path": "scripts/studies/load_fixtures.py"
+      },
+      {
+        "name": "local_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 22193,
+        "extension": ".py",
+        "path": "scripts/studies/local_database.py"
+      },
+      {
+        "name": "measure_cgu_development.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10937,
+        "extension": ".cjs",
+        "path": "scripts/studies/measure_cgu_development.cjs"
+      },
+      {
+        "name": "measure_storage.py",
+        "type": "file",
+        "language": "Python",
+        "size": 19325,
+        "extension": ".py",
+        "path": "scripts/studies/measure_storage.py"
+      },
+      {
+        "name": "publish_calculo1.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 11657,
+        "extension": ".cjs",
+        "path": "scripts/studies/publish_calculo1.cjs"
+      },
+      {
+        "name": "publish_calculo1_course.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 16641,
+        "extension": ".cjs",
+        "path": "scripts/studies/publish_calculo1_course.cjs"
+      },
+      {
+        "name": "refine_cgu_development.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7436,
+        "extension": ".cjs",
+        "path": "scripts/studies/refine_cgu_development.cjs"
+      },
+      {
+        "name": "rehearse_pg15.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 4899,
+        "extension": ".sh",
+        "path": "scripts/studies/rehearse_pg15.sh"
+      },
+      {
+        "name": "rehearse_prod_import.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 6599,
+        "extension": ".sh",
+        "path": "scripts/studies/rehearse_prod_import.sh"
+      },
+      {
+        "name": "requirements-calculo-pilot.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 28,
+        "extension": ".txt",
+        "path": "scripts/studies/requirements-calculo-pilot.txt"
+      },
+      {
+        "name": "requirements-retrieval.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 761,
+        "extension": ".txt",
+        "path": "scripts/studies/requirements-retrieval.txt"
+      },
+      {
+        "name": "retrieval_benchmark.py",
+        "type": "file",
+        "language": "Python",
+        "size": 24922,
+        "extension": ".py",
+        "path": "scripts/studies/retrieval_benchmark.py"
+      },
+      {
+        "name": "retrieval_inputs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11094,
+        "extension": ".py",
+        "path": "scripts/studies/retrieval_inputs.py"
+      },
+      {
+        "name": "reveal_cgu_benchmark_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3193,
+        "extension": ".py",
+        "path": "scripts/studies/reveal_cgu_benchmark_review.py"
+      },
+      {
+        "name": "review_pilot_lib.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 34048,
+        "extension": ".ts",
+        "path": "scripts/studies/review_pilot_lib.ts"
+      },
+      {
+        "name": "scale_shared_adoptions.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12112,
+        "extension": ".cjs",
+        "path": "scripts/studies/scale_shared_adoptions.cjs"
+      },
+      {
+        "name": "scan_comment_filter_corpus.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6383,
+        "extension": ".ts",
+        "path": "scripts/studies/scan_comment_filter_corpus.ts"
+      },
+      {
+        "name": "setup_cgu_development.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8606,
+        "extension": ".py",
+        "path": "scripts/studies/setup_cgu_development.py"
+      },
+      {
+        "name": "setup_editorial.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7900,
+        "extension": ".py",
+        "path": "scripts/studies/setup_editorial.py"
+      },
+      {
+        "name": "setup_learner.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3705,
+        "extension": ".py",
+        "path": "scripts/studies/setup_learner.py"
+      },
+      {
+        "name": "stage_cgu_drafts.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 8565,
+        "extension": ".cjs",
+        "path": "scripts/studies/stage_cgu_drafts.cjs"
+      },
+      {
+        "name": "stage_past_exam_review.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6867,
+        "extension": ".cjs",
+        "path": "scripts/studies/stage_past_exam_review.cjs"
+      },
+      {
+        "name": "test_account_erasure.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 59186,
+        "extension": ".sql",
+        "path": "scripts/studies/test_account_erasure.sql"
+      },
+      {
+        "name": "test_build_cgu_acceptance.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10825,
+        "extension": ".py",
+        "path": "scripts/studies/test_build_cgu_acceptance.py"
+      },
+      {
+        "name": "test_build_prod_apply.py",
+        "type": "file",
+        "language": "Python",
+        "size": 37935,
+        "extension": ".py",
+        "path": "scripts/studies/test_build_prod_apply.py"
+      },
+      {
+        "name": "test_calculo1_course_publication.cjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 17439,
+        "extension": ".cjs",
+        "path": "scripts/studies/test_calculo1_course_publication.cjs"
+      },
+      {
+        "name": "test_calculo1_provider_encoding.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16524,
+        "extension": ".py",
+        "path": "scripts/studies/test_calculo1_provider_encoding.py"
+      },
+      {
+        "name": "test_calculo_course_api.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16182,
+        "extension": ".py",
+        "path": "scripts/studies/test_calculo_course_api.py"
+      },
+      {
+        "name": "test_calculo_course_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13088,
+        "extension": ".py",
+        "path": "scripts/studies/test_calculo_course_review.py"
+      },
+      {
+        "name": "test_capture_bootstrap.py",
+        "type": "file",
+        "language": "Python",
+        "size": 42293,
+        "extension": ".py",
+        "path": "scripts/studies/test_capture_bootstrap.py"
+      },
+      {
+        "name": "test_cgu_benchmark_code_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 20104,
+        "extension": ".py",
+        "path": "scripts/studies/test_cgu_benchmark_code_review.py"
+      },
+      {
+        "name": "test_cgu_benchmark_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12010,
+        "extension": ".py",
+        "path": "scripts/studies/test_cgu_benchmark_review.py"
+      },
+      {
+        "name": "test_clock_concurrency.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5070,
+        "extension": ".py",
+        "path": "scripts/studies/test_clock_concurrency.py"
+      },
+      {
+        "name": "test_comment_safety.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 52193,
+        "extension": ".sql",
+        "path": "scripts/studies/test_comment_safety.sql"
+      },
+      {
+        "name": "test_content_import.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 29687,
+        "extension": ".sql",
+        "path": "scripts/studies/test_content_import.sql"
+      },
+      {
+        "name": "test_embedding_transport.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10946,
+        "extension": ".py",
+        "path": "scripts/studies/test_embedding_transport.py"
+      },
+      {
+        "name": "test_export_cgu_benchmark_review.py",
+        "type": "file",
+        "language": "Python",
+        "size": 27906,
+        "extension": ".py",
+        "path": "scripts/studies/test_export_cgu_benchmark_review.py"
+      },
+      {
+        "name": "test_foundation.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 27953,
+        "extension": ".sql",
+        "path": "scripts/studies/test_foundation.sql"
+      },
+      {
+        "name": "test_gemini_transport.py",
+        "type": "file",
+        "language": "Python",
+        "size": 26801,
+        "extension": ".py",
+        "path": "scripts/studies/test_gemini_transport.py"
+      },
+      {
+        "name": "test_generate_comment_filter_dart.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6922,
+        "extension": ".py",
+        "path": "scripts/studies/test_generate_comment_filter_dart.py"
+      },
+      {
+        "name": "test_ledger_bootstrap.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8010,
+        "extension": ".py",
+        "path": "scripts/studies/test_ledger_bootstrap.py"
+      },
+      {
+        "name": "test_local_bootstrap.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3977,
+        "extension": ".py",
+        "path": "scripts/studies/test_local_bootstrap.py"
+      },
+      {
+        "name": "test_migration_chain.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4956,
+        "extension": ".py",
+        "path": "scripts/studies/test_migration_chain.py"
+      },
+      {
+        "name": "test_question_quality.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10352,
+        "extension": ".py",
+        "path": "scripts/studies/test_question_quality.py"
+      },
+      {
+        "name": "test_retrieval_metrics.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6728,
+        "extension": ".py",
+        "path": "scripts/studies/test_retrieval_metrics.py"
+      },
+      {
+        "name": "test_review_bootstrap.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11008,
+        "extension": ".py",
+        "path": "scripts/studies/test_review_bootstrap.py"
+      },
+      {
+        "name": "verify_calculo1_course.py",
+        "type": "file",
+        "language": "Python",
+        "size": 22047,
+        "extension": ".py",
+        "path": "scripts/studies/verify_calculo1_course.py"
+      },
+      {
+        "name": "verify_calculo1_pilot.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14579,
+        "extension": ".py",
+        "path": "scripts/studies/verify_calculo1_pilot.py"
+      },
+      {
+        "name": "verify_calculo1_unit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6877,
+        "extension": ".py",
+        "path": "scripts/studies/verify_calculo1_unit.py"
+      },
+      {
+        "name": "verify_cgu_acceptance.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 28280,
+        "extension": ".ts",
+        "path": "scripts/studies/verify_cgu_acceptance.ts"
+      },
+      {
+        "name": "verify_cgu_development.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4268,
+        "extension": ".py",
+        "path": "scripts/studies/verify_cgu_development.py"
+      },
+      {
+        "name": "verify_cgu_learning_modes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 21706,
+        "extension": ".ts",
+        "path": "scripts/studies/verify_cgu_learning_modes.ts"
+      },
+      {
+        "name": "verify_full_cgu.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11508,
+        "extension": ".ts",
+        "path": "scripts/studies/verify_full_cgu.ts"
+      },
+      {
         "name": "setup.cfg",
         "type": "file",
         "language": "Config",
@@ -9578,6 +14852,126 @@
         "type": "directory",
         "path": "supabase",
         "children": []
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "supabase/fixtures",
+        "children": []
+      },
+      {
+        "name": "studies-retrieval",
+        "type": "directory",
+        "path": "supabase/fixtures/studies-retrieval",
+        "children": []
+      },
+      {
+        "name": "gold-cloud.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 42325,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies-retrieval/gold-cloud.json"
+      },
+      {
+        "name": "gold-derivatives.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 44662,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies-retrieval/gold-derivatives.json"
+      },
+      {
+        "name": "gold-euler.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 22058,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies-retrieval/gold-euler.json"
+      },
+      {
+        "name": "gold-limits.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 49593,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies-retrieval/gold-limits.json"
+      },
+      {
+        "name": "gold-negatives.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 24988,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies-retrieval/gold-negatives.json"
+      },
+      {
+        "name": "gold-statistics.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 43248,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies-retrieval/gold-statistics.json"
+      },
+      {
+        "name": "studies",
+        "type": "directory",
+        "path": "supabase/fixtures/studies",
+        "children": []
+      },
+      {
+        "name": "estatistica-descritiva.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 31665,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies/estatistica-descritiva.json"
+      },
+      {
+        "name": "euler-modular.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 31951,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies/euler-modular.json"
+      },
+      {
+        "name": "limites-laterais.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 37555,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies/limites-laterais.json"
+      },
+      {
+        "name": "modelos-nuvem.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 39783,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies/modelos-nuvem.json"
+      },
+      {
+        "name": "regra-produto.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 37443,
+        "extension": ".json",
+        "path": "supabase/fixtures/studies/regra-produto.json"
+      },
+      {
+        "name": "local-study",
+        "type": "directory",
+        "path": "supabase/local-study",
+        "children": []
+      },
+      {
+        "name": "config.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 1079,
+        "extension": ".toml",
+        "path": "supabase/local-study/config.toml"
       },
       {
         "name": "migrations",
@@ -9634,12 +15028,236 @@
         "path": "supabase/migrations/20260930_ai_saldo.sql"
       },
       {
+        "name": "202610120001_study_content_foundation.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 49905,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120001_study_content_foundation.sql"
+      },
+      {
+        "name": "202610120002_study_adoption_scope.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 3414,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120002_study_adoption_scope.sql"
+      },
+      {
+        "name": "202610120003_study_editorial_workflow.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 6540,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120003_study_editorial_workflow.sql"
+      },
+      {
+        "name": "202610120004_study_validation_reconciliation.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 164,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120004_study_validation_reconciliation.sql"
+      },
+      {
+        "name": "202610120005_study_development_review.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 2006,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120005_study_development_review.sql"
+      },
+      {
+        "name": "202610120006_study_shared_adoptions.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 14126,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120006_study_shared_adoptions.sql"
+      },
+      {
+        "name": "202610120007_study_learner.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 4506,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120007_study_learner.sql"
+      },
+      {
+        "name": "202610120008_study_telemetry.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 2018,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120008_study_telemetry.sql"
+      },
+      {
+        "name": "202610120009_study_learner_session_scope.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 453,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120009_study_learner_session_scope.sql"
+      },
+      {
+        "name": "202610120010_study_historical_adoption_guard.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 4207,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120010_study_historical_adoption_guard.sql"
+      },
+      {
+        "name": "202610120011_study_attempt_session_index.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 166,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120011_study_attempt_session_index.sql"
+      },
+      {
+        "name": "202610120012_study_history_telemetry.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 536,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120012_study_history_telemetry.sql"
+      },
+      {
+        "name": "202610120013_study_admin.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 945,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120013_study_admin.sql"
+      },
+      {
+        "name": "202610120014_study_search.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 5171,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120014_study_search.sql"
+      },
+      {
+        "name": "202610120015_study_community_exams.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 4052,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120015_study_community_exams.sql"
+      },
+      {
+        "name": "202610120016_study_exam_learning.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1111,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120016_study_exam_learning.sql"
+      },
+      {
+        "name": "202610120017_study_full_cgu_exam.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1668,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120017_study_full_cgu_exam.sql"
+      },
+      {
+        "name": "202610120018_study_exam_answer_revisions.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 376,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120018_study_exam_answer_revisions.sql"
+      },
+      {
+        "name": "202610120019_study_hardening.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1437,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120019_study_hardening.sql"
+      },
+      {
+        "name": "202610120020_study_agent_validation.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 16833,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120020_study_agent_validation.sql"
+      },
+      {
+        "name": "202610120021_study_content_import.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 45775,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120021_study_content_import.sql"
+      },
+      {
+        "name": "202610120024_study_production_runtime.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 5649,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120024_study_production_runtime.sql"
+      },
+      {
+        "name": "202610120025_study_university_review.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 14691,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120025_study_university_review.sql"
+      },
+      {
+        "name": "202610120026_study_learner_erasure.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 4317,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120026_study_learner_erasure.sql"
+      },
+      {
+        "name": "202610120027_study_comment_safety.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 31494,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120027_study_comment_safety.sql"
+      },
+      {
+        "name": "202610120028_study_university_course.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 16150,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120028_study_university_course.sql"
+      },
+      {
+        "name": "202610120029_study_account_erasure.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 20725,
+        "extension": ".sql",
+        "path": "supabase/migrations/202610120029_study_account_erasure.sql"
+      },
+      {
         "name": "20261014_rls_vetorizadas_preferencias.sql",
         "type": "file",
         "language": "SQL",
         "size": 2206,
         "extension": ".sql",
         "path": "supabase/migrations/20261014_rls_vetorizadas_preferencias.sql"
+      },
+      {
+        "name": "20261018_exclusao_conta.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 38106,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261018_exclusao_conta.sql"
       },
       {
         "name": "casar_disciplinas_function.sql",
@@ -9688,11 +15306,25 @@
         "size": 7506,
         "extension": ".sql",
         "path": "supabase/migrations/ticket_chat_nao_lidas.sql"
+      },
+      {
+        "name": "prod-apply",
+        "type": "directory",
+        "path": "supabase/prod-apply",
+        "children": []
+      },
+      {
+        "name": "study_chain_f41da1264b9d.psql",
+        "type": "file",
+        "language": "Unknown",
+        "size": 330805,
+        "extension": ".psql",
+        "path": "supabase/prod-apply/study_chain_f41da1264b9d.psql"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-19T11:40:59.740014+00:00",
+    "extracted_at": "2026-10-20T10:59:57.357815+00:00",
     "file_path": "data/silver/hierarchy_2025-1-NoFluxoUnB.json"
   }
 }

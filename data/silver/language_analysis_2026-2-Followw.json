@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-19T11:39:52.760051+00:00",
+  "analyzed_at": "2026-10-20T10:58:56.456119+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 404,
-  "total_bytes": 6242658,
+  "total_files": 413,
+  "total_bytes": 6299990,
   "languages": [
     {
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 2161302,
-      "percentage": 34.62,
+      "percentage": 34.31,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -58,7 +58,7 @@
       "language": "Unknown",
       "file_count": 12,
       "total_bytes": 1332587,
-      "percentage": 21.35,
+      "percentage": 21.15,
       "files": [
         {
           "path": "packages/sigaa-client/data/classrooms.csv",
@@ -125,13 +125,19 @@
     {
       "language": "Python",
       "file_count": 136,
-      "total_bytes": 877699,
-      "percentage": 14.06,
+      "total_bytes": 892067,
+      "percentage": 14.16,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
           "name": "test_classrooms.py",
-          "size": 48832,
+          "size": 48847,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/test_recommendations.py",
+          "name": "test_recommendations.py",
+          "size": 38061,
           "extension": ".py"
         },
         {
@@ -147,15 +153,9 @@
           "extension": ".py"
         },
         {
-          "path": "apps/api/tests/test_recommendations.py",
-          "name": "test_recommendations.py",
-          "size": 32937,
-          "extension": ".py"
-        },
-        {
           "path": "apps/api/api/modules/classrooms/repository.py",
           "name": "repository.py",
-          "size": 32833,
+          "size": 32725,
           "extension": ".py"
         },
         {
@@ -191,41 +191,21 @@
       ]
     },
     {
-      "language": "Lock File",
-      "file_count": 2,
-      "total_bytes": 639066,
-      "percentage": 10.24,
-      "files": [
-        {
-          "path": "uv.lock",
-          "name": "uv.lock",
-          "size": 365948,
-          "extension": ".lock"
-        },
-        {
-          "path": "apps/web/bun.lock",
-          "name": "bun.lock",
-          "size": 273118,
-          "extension": ".lock"
-        }
-      ]
-    },
-    {
       "language": "TypeScript",
-      "file_count": 165,
-      "total_bytes": 611675,
-      "percentage": 9.8,
+      "file_count": 179,
+      "total_bytes": 650303,
+      "percentage": 10.32,
       "files": [
         {
           "path": "apps/web/src/queries/schema.gen.ts",
           "name": "schema.gen.ts",
-          "size": 71819,
+          "size": 72221,
           "extension": ".ts"
         },
         {
           "path": "apps/web/src/routes/_app/ru.tsx",
           "name": "ru.tsx",
-          "size": 16330,
+          "size": 16583,
           "extension": ".tsx"
         },
         {
@@ -238,6 +218,12 @@
           "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
           "name": "RestaurantAccount.tsx",
           "size": 13614,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/components/search/TurmaCard.test.tsx",
+          "name": "TurmaCard.test.tsx",
+          "size": 13287,
           "extension": ".tsx"
         },
         {
@@ -269,12 +255,26 @@
           "name": "restaurant-share.test.tsx",
           "size": 11046,
           "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "Lock File",
+      "file_count": 2,
+      "total_bytes": 647036,
+      "percentage": 10.27,
+      "files": [
+        {
+          "path": "uv.lock",
+          "name": "uv.lock",
+          "size": 365948,
+          "extension": ".lock"
         },
         {
-          "path": "apps/web/src/components/ui/dropdown-menu.tsx",
-          "name": "dropdown-menu.tsx",
-          "size": 9904,
-          "extension": ".tsx"
+          "path": "apps/web/bun.lock",
+          "name": "bun.lock",
+          "size": 281088,
+          "extension": ".lock"
         }
       ]
     },
@@ -282,7 +282,7 @@
       "language": "PNG Image",
       "file_count": 9,
       "total_bytes": 251942,
-      "percentage": 4.04,
+      "percentage": 4.0,
       "files": [
         {
           "path": "docs/assets/Diagrama de container.png",
@@ -342,14 +342,14 @@
     },
     {
       "language": "Markdown",
-      "file_count": 33,
-      "total_bytes": 154058,
-      "percentage": 2.47,
+      "file_count": 34,
+      "total_bytes": 165332,
+      "percentage": 2.62,
       "files": [
         {
           "path": "docs/requisitos.md",
           "name": "requisitos.md",
-          "size": 33641,
+          "size": 33640,
           "extension": ".md"
         },
         {
@@ -362,6 +362,12 @@
           "path": ".agents/skills/scalar-docs/SKILL.md",
           "name": "SKILL.md",
           "size": 14046,
+          "extension": ".md"
+        },
+        {
+          "path": ".agents/skills/thermo-nuclear-code-quality-review/SKILL.md",
+          "name": "SKILL.md",
+          "size": 12437,
           "extension": ".md"
         },
         {
@@ -391,19 +397,13 @@
         {
           "path": "docs/AI-USAGE.md",
           "name": "AI-USAGE.md",
-          "size": 5400,
+          "size": 5618,
           "extension": ".md"
         },
         {
           "path": "docs/segurança.md",
           "name": "segurança.md",
           "size": 4559,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/offline.md",
-          "name": "offline.md",
-          "size": 4399,
           "extension": ".md"
         }
       ]
@@ -412,7 +412,7 @@
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 134146,
-      "percentage": 2.15,
+      "percentage": 2.13,
       "files": [
         {
           "path": "docs/assets/components_backend.svg",
@@ -455,8 +455,8 @@
     {
       "language": "JSON",
       "file_count": 12,
-      "total_bytes": 37835,
-      "percentage": 0.61,
+      "total_bytes": 37581,
+      "percentage": 0.6,
       "files": [
         {
           "path": "packages/unb-browser/unb_browser/calendar/academic_calendar.json",
@@ -479,7 +479,7 @@
         {
           "path": "skills-lock.json",
           "name": "skills-lock.json",
-          "size": 1338,
+          "size": 1084,
           "extension": ".json"
         },
         {
@@ -517,56 +517,6 @@
           "name": "settings.json",
           "size": 568,
           "extension": ".json"
-        }
-      ]
-    },
-    {
-      "language": "JavaScript",
-      "file_count": 7,
-      "total_bytes": 15497,
-      "percentage": 0.25,
-      "files": [
-        {
-          "path": "apps/web/tests/routes/seo.test.js",
-          "name": "seo.test.js",
-          "size": 5182,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/tests/routes/search.test.js",
-          "name": "search.test.js",
-          "size": 3217,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/tests/routes/ru.test.js",
-          "name": "ru.test.js",
-          "size": 2530,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/tests/routes/root.test.js",
-          "name": "root.test.js",
-          "size": 1880,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/tests/routes/home.test.js",
-          "name": "home.test.js",
-          "size": 952,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/tests/routes/auth-navigation.test.js",
-          "name": "auth-navigation.test.js",
-          "size": 871,
-          "extension": ".js"
-        },
-        {
-          "path": "apps/web/lint/followw-plugin.js",
-          "name": "followw-plugin.js",
-          "size": 865,
-          "extension": ".js"
         }
       ]
     },
@@ -633,7 +583,7 @@
     {
       "language": "YAML",
       "file_count": 4,
-      "total_bytes": 1494,
+      "total_bytes": 1472,
       "percentage": 0.02,
       "files": [
         {
@@ -649,9 +599,9 @@
           "extension": ".yml"
         },
         {
-          "path": ".agents/skills/to-spec/agents/openai.yaml",
+          "path": ".agents/skills/grilling/agents/openai.yaml",
           "name": "openai.yaml",
-          "size": 135,
+          "size": 113,
           "extension": ".yaml"
         },
         {
@@ -679,6 +629,20 @@
           "name": "skills",
           "size": 17,
           "extension": ""
+        }
+      ]
+    },
+    {
+      "language": "JavaScript",
+      "file_count": 1,
+      "total_bytes": 865,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "apps/web/lint/followw-plugin.js",
+          "name": "followw-plugin.js",
+          "size": 865,
+          "extension": ".js"
         }
       ]
     },
@@ -732,7 +696,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-19T11:40:59.935707+00:00",
+    "extracted_at": "2026-10-20T10:59:57.560292+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }
