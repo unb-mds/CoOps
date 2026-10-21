@@ -1,10 +1,35 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-20T10:17:31.585769+00:00",
+      "extracted_at": "2026-10-21T10:21:11.568091+00:00",
       "file_path": "data/bronze/commits_2025-1-NoFluxoUnB.json",
-      "record_count": 1475
+      "record_count": 1476
     }
+  },
+  {
+    "sha": "46d9e81f2042f93fa895acf7b25592b5b8d7d674",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Otavio Maya",
+        "date": "2026-10-20T16:14:51Z",
+        "login": "knz13",
+        "id": 82895172,
+        "author_email_hash": "77462ecbdf795961e553aed961b04fa3cd811c4aa6cd6093fed20fa28c8b763d"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-20T16:14:51Z"
+      },
+      "message": "fix(deploy): imagem do frontend inclui o MathJax do leitor de estudos (#285)\n\nO prebuild (copy-study-math.cjs) copia tex-svg-full.js de nofluxo_estudos/, que o\n.dockerignore excluía inteiro, e escrevia em <raiz>/frontend/static, fora de /app na\nimagem. Agora o .dockerignore libera só assets/mathjax, o Dockerfile copia a pasta para\n/nofluxo_estudos e o script escreve em static/studies relativo ao próprio frontend.\n\nCo-authored-by: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "41d356964bca035f41948c9d960c454513306860"
+    ],
+    "additions": 10,
+    "deletions": 3,
+    "total_changes": 13,
+    "repo_name": "2025-1-NoFluxoUnB"
   },
   {
     "sha": "41d356964bca035f41948c9d960c454513306860",

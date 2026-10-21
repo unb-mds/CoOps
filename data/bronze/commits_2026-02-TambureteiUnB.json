@@ -1,10 +1,2150 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-20T10:54:33.819903+00:00",
+      "extracted_at": "2026-10-21T10:58:00.754269+00:00",
       "file_path": "data/bronze/commits_2026-02-TambureteiUnB.json",
-      "record_count": 160
+      "record_count": 246
     }
+  },
+  {
+    "sha": "8969dc9db0bb4652b311f936f5a06c32e6971c65",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen",
+        "date": "2026-10-21T00:54:29Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-21T00:54:29Z"
+      },
+      "message": "Merge pull request #103 from unb-mds/develop\n\nfeat: exibe turmas ofertadas e suporte a fallback na página de disciplina"
+    },
+    "parents": [
+      "6de393f729e9c76f323a1892d0d3fd3c20661c6b",
+      "8da10034506b3edfb94e5032c77fe03d1e34b31d"
+    ],
+    "additions": 6979,
+    "deletions": 1097,
+    "total_changes": 8076,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "8da10034506b3edfb94e5032c77fe03d1e34b31d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-21T00:04:52Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-21T00:04:52Z"
+      },
+      "message": "Merge pull request #95 from unb-mds/feat/integracao-materiais\n\nfeat(materiais): integra arquivos de apoio e migrações à develop"
+    },
+    "parents": [
+      "153a6ddb9080b1824af9caf93f7ff5b69e0b421b",
+      "cf3486aa4b04533504fe6b7c72a2d24631139311"
+    ],
+    "additions": 1639,
+    "deletions": 126,
+    "total_changes": 1765,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "cf3486aa4b04533504fe6b7c72a2d24631139311",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T22:58:30Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T22:58:30Z"
+      },
+      "message": "feat(materiais): desacopla arquivos de tipo rigido, suporta tipos semanticos e busca por slug"
+    },
+    "parents": [
+      "4ca216bf99dbdcefd35c7d95711390d5e16ba7a7"
+    ],
+    "additions": 119,
+    "deletions": 25,
+    "total_changes": 144,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "4ca216bf99dbdcefd35c7d95711390d5e16ba7a7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T22:58:23Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T22:58:23Z"
+      },
+      "message": "ci: remove workflow backend-materiais.yml adicionado sem alinhamento"
+    },
+    "parents": [
+      "33b76d95bbbd64b0e9b1d59e84240714dd919eb7"
+    ],
+    "additions": 0,
+    "deletions": 97,
+    "total_changes": 97,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "153a6ddb9080b1824af9caf93f7ff5b69e0b421b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-20T22:23:18Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-20T22:23:18Z"
+      },
+      "message": "Merge pull request #105 from unb-mds/feat/feed-comentarios\n\nfeat(frontend): adiciona mural de comentários e curtidas na página da disciplina"
+    },
+    "parents": [
+      "3d5be02670b0f62e73a3e58dbc8d46b5dd7bc1c6",
+      "f4bd571a54e2a5c7168d4fa134b3a98518f936c1"
+    ],
+    "additions": 336,
+    "deletions": 25,
+    "total_changes": 361,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "3d5be02670b0f62e73a3e58dbc8d46b5dd7bc1c6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-20T22:16:14Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-20T22:16:14Z"
+      },
+      "message": "Merge pull request #121 from unb-mds/fix/busca-turmas-por-slug\n\nfix(turmas): permitir busca de turmas por slug da disciplina no backe…"
+    },
+    "parents": [
+      "76806a7b52b8845b7be640b20f6dc22a4f101408",
+      "14178d02a4d834fb62637179b3f0837e3c275ea8"
+    ],
+    "additions": 74,
+    "deletions": 10,
+    "total_changes": 84,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "76806a7b52b8845b7be640b20f6dc22a4f101408",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-20T22:15:04Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-20T22:15:04Z"
+      },
+      "message": "Merge pull request #120 from unb-mds/docs/regras-comunicacao-skills\n\ndocs: adicionar diretriz de comunicacao sem emojis e documentar issue…"
+    },
+    "parents": [
+      "8ddd9e6609ec6254b5bcd0e90563c379753c0cdc",
+      "f85165e38732cd7cc3141537d240a1485acef734"
+    ],
+    "additions": 137,
+    "deletions": 27,
+    "total_changes": 164,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "14178d02a4d834fb62637179b3f0837e3c275ea8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme de Almeida Costa",
+        "date": "2026-10-20T18:08:42Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis Guilherme de Almeida Costa",
+        "date": "2026-10-20T18:08:42Z"
+      },
+      "message": "fix(turmas): permitir busca de turmas por slug da disciplina no backend e frontend"
+    },
+    "parents": [
+      "8ddd9e6609ec6254b5bcd0e90563c379753c0cdc"
+    ],
+    "additions": 74,
+    "deletions": 10,
+    "total_changes": 84,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "f85165e38732cd7cc3141537d240a1485acef734",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme de Almeida Costa",
+        "date": "2026-10-20T17:56:04Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis Guilherme de Almeida Costa",
+        "date": "2026-10-20T17:56:04Z"
+      },
+      "message": "docs: adicionar diretriz de comunicacao sem emojis e documentar issue de turmas"
+    },
+    "parents": [
+      "409c253e3a0c102f5482dd75313e9426b5dc7d8c"
+    ],
+    "additions": 137,
+    "deletions": 27,
+    "total_changes": 164,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "33b76d95bbbd64b0e9b1d59e84240714dd919eb7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-20T16:54:51Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-20T16:54:51Z"
+      },
+      "message": "chore: sincroniza integracao de conteudos com develop"
+    },
+    "parents": [
+      "abd94fff91a0bd1dc80fe884f7ef56f4627a65e7",
+      "8ddd9e6609ec6254b5bcd0e90563c379753c0cdc"
+    ],
+    "additions": 3760,
+    "deletions": 182,
+    "total_changes": 3942,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "f4bd571a54e2a5c7168d4fa134b3a98518f936c1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T14:50:58Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T14:50:58Z"
+      },
+      "message": "fix: posição do use client no page.tsx do slug das disciplinas"
+    },
+    "parents": [
+      "c25dc0e42d5a67ab817186933039aa4669062a78"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "c25dc0e42d5a67ab817186933039aa4669062a78",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T14:47:05Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-20T14:47:05Z"
+      },
+      "message": "chore: merge com a develop"
+    },
+    "parents": [
+      "76e29f58f49e35b05a8d822fbf4aeda6de4dafd1",
+      "8ddd9e6609ec6254b5bcd0e90563c379753c0cdc"
+    ],
+    "additions": 3800,
+    "deletions": 127,
+    "total_changes": 3927,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "8ddd9e6609ec6254b5bcd0e90563c379753c0cdc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-20T14:33:14Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-20T14:33:14Z"
+      },
+      "message": "Merge pull request #100 from unb-mds/feat/listagem-turmas-reais\n\nfeat(turmas): listagem de turmas reais com filtros, ocupação e skeletons"
+    },
+    "parents": [
+      "a1b236a55beba5f2ec1914140bc5a270be000674",
+      "409c253e3a0c102f5482dd75313e9426b5dc7d8c"
+    ],
+    "additions": 2900,
+    "deletions": 630,
+    "total_changes": 3530,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "409c253e3a0c102f5482dd75313e9426b5dc7d8c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-20T10:21:09Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-20T10:21:09Z"
+      },
+      "message": "merge: resolve conflitos com develop preservando refatoracao de turmas"
+    },
+    "parents": [
+      "2995ed80f1bf9d53eb4980fdce94f7da822290ed",
+      "a1b236a55beba5f2ec1914140bc5a270be000674"
+    ],
+    "additions": 615,
+    "deletions": 8,
+    "total_changes": 623,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "2995ed80f1bf9d53eb4980fdce94f7da822290ed",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-20T09:41:51Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-20T09:41:51Z"
+      },
+      "message": "refactor(frontend): atende revisao de turmas e desacopla componentes"
+    },
+    "parents": [
+      "225bec5febee94f87bf4692cc65a32535cb187f7"
+    ],
+    "additions": 1585,
+    "deletions": 608,
+    "total_changes": 2193,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "76e29f58f49e35b05a8d822fbf4aeda6de4dafd1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "mariav-07",
+        "date": "2026-10-20T00:20:50Z",
+        "login": "mariav-07",
+        "id": 242483262,
+        "author_email_hash": "83a469bbf37b638caeb22af6daacf7f0e65565ee63de46a811abe41d0839cce0"
+      },
+      "committer": {
+        "name": "mariav-07",
+        "date": "2026-10-20T00:20:50Z"
+      },
+      "message": "refactor: remove dados fixos e limpa codigo dos comentarios"
+    },
+    "parents": [
+      "0d281b430d3a079b09dfe92390ae2a914699ac5c"
+    ],
+    "additions": 131,
+    "deletions": 119,
+    "total_changes": 250,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "abd94fff91a0bd1dc80fe884f7ef56f4627a65e7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:01Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:01Z"
+      },
+      "message": "docs(conteudos): alinha contratos e contexto ao armazenamento unificado"
+    },
+    "parents": [
+      "04338de7c85afa8227f21fa9506076b0c369f1e2"
+    ],
+    "additions": 48,
+    "deletions": 38,
+    "total_changes": 86,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "04338de7c85afa8227f21fa9506076b0c369f1e2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:01Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:01Z"
+      },
+      "message": "ci(conteudos): valida arquivos na entidade compartilhada"
+    },
+    "parents": [
+      "facbce7de6050499392d78258016fb7d016b7b81"
+    ],
+    "additions": 4,
+    "deletions": 4,
+    "total_changes": 8,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "facbce7de6050499392d78258016fb7d016b7b81",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:00Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:00Z"
+      },
+      "message": "test(conteudos): verifica origens curadoria e preservacao dos registros"
+    },
+    "parents": [
+      "93b3a9d99edcc1f87fd6e86792ac7d7cab656f5b"
+    ],
+    "additions": 91,
+    "deletions": 0,
+    "total_changes": 91,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "93b3a9d99edcc1f87fd6e86792ac7d7cab656f5b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:00Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:12:00Z"
+      },
+      "message": "refactor(conteudos): integra arquivos a entidade unica de contribuicoes"
+    },
+    "parents": [
+      "2ed2b8ea60ff45f8f35810090c560e0a17f32386"
+    ],
+    "additions": 153,
+    "deletions": 144,
+    "total_changes": 297,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "2ed2b8ea60ff45f8f35810090c560e0a17f32386",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:45Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:45Z"
+      },
+      "message": "docs(materiais): esclarece dominio escopo e integracao do frontend"
+    },
+    "parents": [
+      "048c7dd2c2c311434e81e6f13c9d7aed4cd765dc"
+    ],
+    "additions": 75,
+    "deletions": 8,
+    "total_changes": 83,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "048c7dd2c2c311434e81e6f13c9d7aed4cd765dc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:02Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:02Z"
+      },
+      "message": "ci(materiais): verifica testes locais e revisao linear no Docker"
+    },
+    "parents": [
+      "e8115c2843a0154c618d5c33236d66fb32a38c3c"
+    ],
+    "additions": 5,
+    "deletions": 3,
+    "total_changes": 8,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "e8115c2843a0154c618d5c33236d66fb32a38c3c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:02Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:02Z"
+      },
+      "message": "fix(testes): provisiona banco isolado no comando padrao do Docker"
+    },
+    "parents": [
+      "939656f099890faddbb58244c4e5de3648ebc57f"
+    ],
+    "additions": 40,
+    "deletions": 5,
+    "total_changes": 45,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "939656f099890faddbb58244c4e5de3648ebc57f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:01Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:01Z"
+      },
+      "message": "fix(database): sincroniza bootstrap com materiais e revisao atual"
+    },
+    "parents": [
+      "31f3b8b3def8b720f89ab216c4bb222fa7875775"
+    ],
+    "additions": 40,
+    "deletions": 2,
+    "total_changes": 42,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "31f3b8b3def8b720f89ab216c4bb222fa7875775",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:01Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-19T20:02:01Z"
+      },
+      "message": "fix(database): lineariza materiais apos doacoes estatisticas"
+    },
+    "parents": [
+      "f009b4b7a5bbb148d6ecdff68bf18d4c091fc172"
+    ],
+    "additions": 72,
+    "deletions": 47,
+    "total_changes": 119,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "a1b236a55beba5f2ec1914140bc5a270be000674",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-19T11:40:13Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-19T11:40:13Z"
+      },
+      "message": "Merge pull request #101 from unb-mds/feat/doacao-estatistica\n\nFeat/doacao estatistica"
+    },
+    "parents": [
+      "053e1504da502c964ac8bf8eef08ef42d567cbb4",
+      "bb1ceb94bd1ede85c68ae295a36353db321baed3"
+    ],
+    "additions": 615,
+    "deletions": 8,
+    "total_changes": 623,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "053e1504da502c964ac8bf8eef08ef42d567cbb4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen",
+        "date": "2026-10-19T09:33:16Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-19T09:33:16Z"
+      },
+      "message": "Merge pull request #85 from unb-mds/feature/componentes-turmas\n\nFeature/componentes turmas"
+    },
+    "parents": [
+      "f53e0cfe9745bb6bbdc6d5acaa72c287e3f81f00",
+      "e94a7a24861e655812e1809bab15b46031af5481"
+    ],
+    "additions": 778,
+    "deletions": 17,
+    "total_changes": 795,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "e94a7a24861e655812e1809bab15b46031af5481",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen",
+        "date": "2026-10-19T09:32:39Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-19T09:32:39Z"
+      },
+      "message": "Merge branch 'develop' into feature/componentes-turmas"
+    },
+    "parents": [
+      "eafb31bfd42cfa7f4dfe5c8ff4c3944646fad532",
+      "f53e0cfe9745bb6bbdc6d5acaa72c287e3f81f00"
+    ],
+    "additions": 1033,
+    "deletions": 788,
+    "total_changes": 1821,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "225bec5febee94f87bf4692cc65a32535cb187f7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen",
+        "date": "2026-10-19T09:31:47Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-19T09:31:47Z"
+      },
+      "message": "Merge branch 'develop' into feat/listagem-turmas-reais"
+    },
+    "parents": [
+      "ad7d5d6243cb99091505d7b17829e5854dce090c",
+      "f53e0cfe9745bb6bbdc6d5acaa72c287e3f81f00"
+    ],
+    "additions": 1033,
+    "deletions": 788,
+    "total_changes": 1821,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "0d281b430d3a079b09dfe92390ae2a914699ac5c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "mariav-07",
+        "date": "2026-10-18T03:37:43Z",
+        "login": "mariav-07",
+        "id": 242483262,
+        "author_email_hash": "83a469bbf37b638caeb22af6daacf7f0e65565ee63de46a811abe41d0839cce0"
+      },
+      "committer": {
+        "name": "mariav-07",
+        "date": "2026-10-18T03:37:43Z"
+      },
+      "message": "feat(disciplinas): integra sessao de comentarios na pagina da disciplina"
+    },
+    "parents": [
+      "08388c1a63b00360249bf081636b87c919bd3337"
+    ],
+    "additions": 5,
+    "deletions": 0,
+    "total_changes": 5,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "08388c1a63b00360249bf081636b87c919bd3337",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "mariav-07",
+        "date": "2026-10-18T03:37:16Z",
+        "login": "mariav-07",
+        "id": 242483262,
+        "author_email_hash": "83a469bbf37b638caeb22af6daacf7f0e65565ee63de46a811abe41d0839cce0"
+      },
+      "committer": {
+        "name": "mariav-07",
+        "date": "2026-10-18T03:37:16Z"
+      },
+      "message": "feat(comentarios): cria componente CommentsSection com upvotes e formulario"
+    },
+    "parents": [
+      "f53e0cfe9745bb6bbdc6d5acaa72c287e3f81f00"
+    ],
+    "additions": 259,
+    "deletions": 0,
+    "total_changes": 259,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "f53e0cfe9745bb6bbdc6d5acaa72c287e3f81f00",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-10-17T19:35:51Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-17T19:35:51Z"
+      },
+      "message": "Merge pull request #93 from unb-mds/feat/dados-reais-disciplina\n\nFeat/dados reais disciplina"
+    },
+    "parents": [
+      "f38c67cc29a00e3b93f8f8f2e01b5504908b5dc5",
+      "b1dffb32c12a215d90f5cb44cf09181cf14b5204"
+    ],
+    "additions": 30,
+    "deletions": 17,
+    "total_changes": 47,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "bb1ceb94bd1ede85c68ae295a36353db321baed3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:11:59Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:11:59Z"
+      },
+      "message": "docs(db): documenta tabela doacoes_estatisticas no dicionario de dados"
+    },
+    "parents": [
+      "cdad95c951aee57c0e586c129fe9d054e9233902"
+    ],
+    "additions": 27,
+    "deletions": 4,
+    "total_changes": 31,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "cdad95c951aee57c0e586c129fe9d054e9233902",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:10:11Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:10:11Z"
+      },
+      "message": "test(integration): adiciona testes de integracao para POST /turmas/{id}/doacoes"
+    },
+    "parents": [
+      "a1ab781f90c9de1d863aca2795d8050a0cb0d7c8"
+    ],
+    "additions": 148,
+    "deletions": 0,
+    "total_changes": 148,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "a1ab781f90c9de1d863aca2795d8050a0cb0d7c8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:09:26Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:09:26Z"
+      },
+      "message": "test(unit): adiciona testes unitarios para validadores do schema DoacaoCreate"
+    },
+    "parents": [
+      "8d08418ad1add95dce9f1a9836a8e16dca4a1131"
+    ],
+    "additions": 103,
+    "deletions": 0,
+    "total_changes": 103,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "8d08418ad1add95dce9f1a9836a8e16dca4a1131",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:08:41Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:08:41Z"
+      },
+      "message": "feat(routers): adiciona endpoint POST /turmas/{turma_id}/doacoes restrito a alunos"
+    },
+    "parents": [
+      "896c1d58f6b081b0db906521dd86a17b67c29c8b"
+    ],
+    "additions": 23,
+    "deletions": 1,
+    "total_changes": 24,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "896c1d58f6b081b0db906521dd86a17b67c29c8b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:07:47Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:07:47Z"
+      },
+      "message": "feat(services): implementa DoacaoService com regras de negocio de envio de doacao"
+    },
+    "parents": [
+      "4db6e575b5224e00f3a3da37bfe1865819e739f4"
+    ],
+    "additions": 48,
+    "deletions": 0,
+    "total_changes": 48,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "4db6e575b5224e00f3a3da37bfe1865819e739f4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:07:05Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:07:05Z"
+      },
+      "message": "feat(repositories): implementa DoacaoRepository para persistencia e checagem de duplicidade"
+    },
+    "parents": [
+      "d908f5a9596167c6aab93b6adcc3d72794288e22"
+    ],
+    "additions": 39,
+    "deletions": 0,
+    "total_changes": 39,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d908f5a9596167c6aab93b6adcc3d72794288e22",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:06:23Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:06:23Z"
+      },
+      "message": "feat(schemas): cria schemas DoacaoCreate e DoacaoResponse com validadores customizados"
+    },
+    "parents": [
+      "d17b1273ba69effda73e5db717c5e278ed3e4923"
+    ],
+    "additions": 86,
+    "deletions": 0,
+    "total_changes": 86,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d17b1273ba69effda73e5db717c5e278ed3e4923",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:05:47Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:05:47Z"
+      },
+      "message": "feat(models): cria model SQLAlchemy DoacaoEstatistica e registra relacionamentos"
+    },
+    "parents": [
+      "9827fe26de981da4c84a624d9f08d76c294e259c"
+    ],
+    "additions": 66,
+    "deletions": 1,
+    "total_changes": 67,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "9827fe26de981da4c84a624d9f08d76c294e259c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:03:40Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:03:40Z"
+      },
+      "message": "feat(migrations): cria migracao 008 para tabela doacoes_estatisticas"
+    },
+    "parents": [
+      "3a87de5b7f475637ad9ba1675a209e943c5153a6"
+    ],
+    "additions": 54,
+    "deletions": 0,
+    "total_changes": 54,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "3a87de5b7f475637ad9ba1675a209e943c5153a6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:02:51Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-17T17:02:51Z"
+      },
+      "message": "feat(db): adiciona tabela doacoes_estatisticas e indices no init.sql"
+    },
+    "parents": [
+      "f38c67cc29a00e3b93f8f8f2e01b5504908b5dc5"
+    ],
+    "additions": 21,
+    "deletions": 2,
+    "total_changes": 23,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "ad7d5d6243cb99091505d7b17829e5854dce090c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:23Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:23Z"
+      },
+      "message": "feat(classes): integrate real class data and states into subject details page"
+    },
+    "parents": [
+      "16fcf39662507ea4f9c6d0f0cecc58653b9206fa"
+    ],
+    "additions": 659,
+    "deletions": 132,
+    "total_changes": 791,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "16fcf39662507ea4f9c6d0f0cecc58653b9206fa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:16Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:16Z"
+      },
+      "message": "feat(classes): add shift filtering and sorting toolbar"
+    },
+    "parents": [
+      "0ceb7d589ec876d7d5e538e65f08c3130df86e09"
+    ],
+    "additions": 224,
+    "deletions": 0,
+    "total_changes": 224,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "0ceb7d589ec876d7d5e538e65f08c3130df86e09",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:09Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:09Z"
+      },
+      "message": "feat(ui): implement ClassCard and ClassCardSkeleton components"
+    },
+    "parents": [
+      "112b7957e8ae97f511ae1f4ea1e4d63794c7a9a1"
+    ],
+    "additions": 274,
+    "deletions": 148,
+    "total_changes": 422,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "112b7957e8ae97f511ae1f4ea1e4d63794c7a9a1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:01Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-16T11:54:01Z"
+      },
+      "message": "feat(types): define class schedule and occupancy rate interfaces"
+    },
+    "parents": [
+      "eafb31bfd42cfa7f4dfe5c8ff4c3944646fad532"
+    ],
+    "additions": 430,
+    "deletions": 14,
+    "total_changes": 444,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "b1dffb32c12a215d90f5cb44cf09181cf14b5204",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "mariav-07",
+        "date": "2026-10-16T01:23:09Z",
+        "login": "mariav-07",
+        "id": 242483262,
+        "author_email_hash": "83a469bbf37b638caeb22af6daacf7f0e65565ee63de46a811abe41d0839cce0"
+      },
+      "committer": {
+        "name": "mariav-07",
+        "date": "2026-10-16T01:23:09Z"
+      },
+      "message": "refactor(disciplinas): centraliza calculo de taxas no adaptador e remove duplicidade"
+    },
+    "parents": [
+      "d459724814d03a3c1b6c396de137bf9bee7206dc"
+    ],
+    "additions": 6,
+    "deletions": 24,
+    "total_changes": 30,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "f009b4b7a5bbb148d6ecdff68bf18d4c091fc172",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:55:58Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:55:58Z"
+      },
+      "message": "fix(docker): permite executar inicializacao em volumes Linux"
+    },
+    "parents": [
+      "2467af168794f0ee965301c31cf2f5671236b1ec"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "2467af168794f0ee965301c31cf2f5671236b1ec",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "docs(materiais): registra integracao contratos e evidencias de testes"
+    },
+    "parents": [
+      "d7d0aa159ec4003a6a95c15a8548448361efa069"
+    ],
+    "additions": 303,
+    "deletions": 6,
+    "total_changes": 309,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d7d0aa159ec4003a6a95c15a8548448361efa069",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "ci(materiais): verifica cobertura mutacao seguranca e Docker"
+    },
+    "parents": [
+      "aafa1bb0463d0943550a78f51d8374d562677919"
+    ],
+    "additions": 101,
+    "deletions": 0,
+    "total_changes": 101,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "aafa1bb0463d0943550a78f51d8374d562677919",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "test(smoke): verifica materiais antes e depois de recriar backend"
+    },
+    "parents": [
+      "f7027f51e601a57425e25f0c20a68cdf5117cc62"
+    ],
+    "additions": 55,
+    "deletions": 0,
+    "total_changes": 55,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "f7027f51e601a57425e25f0c20a68cdf5117cc62",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "chore(git): ignora uploads privados e artefatos de mutacao"
+    },
+    "parents": [
+      "aa8113eafcc2f7c19a017437676f54e676ee71b5"
+    ],
+    "additions": 22,
+    "deletions": 18,
+    "total_changes": 40,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "aa8113eafcc2f7c19a017437676f54e676ee71b5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "fix(docker): interrompe inicializacao quando migracoes falham"
+    },
+    "parents": [
+      "fb1d2af4ff43ee01351fefbd35f14b050cd98d62"
+    ],
+    "additions": 2,
+    "deletions": 3,
+    "total_changes": 5,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "fb1d2af4ff43ee01351fefbd35f14b050cd98d62",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "build(docker): preserva arquivos de materiais em volume privado"
+    },
+    "parents": [
+      "1e636c966220fd7439771342a39137ec234b5681"
+    ],
+    "additions": 8,
+    "deletions": 2,
+    "total_changes": 10,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "1e636c966220fd7439771342a39137ec234b5681",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "build(backend): declara bcrypt e ferramentas de verificacao"
+    },
+    "parents": [
+      "5fe5f53176822aa597400b95b7341e3fa9f9e6c2"
+    ],
+    "additions": 5,
+    "deletions": 1,
+    "total_changes": 6,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "5fe5f53176822aa597400b95b7341e3fa9f9e6c2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "test(materiais): verifica endpoints integridade e evolucao do banco"
+    },
+    "parents": [
+      "d222f9b3c2cb5a433decec0ce454e2917df017b1"
+    ],
+    "additions": 401,
+    "deletions": 75,
+    "total_changes": 476,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d222f9b3c2cb5a433decec0ce454e2917df017b1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "feat(api): disponibiliza upload listagem e download de materiais"
+    },
+    "parents": [
+      "497d95b3eabe112bfca8683f12cd7adade5afa9e"
+    ],
+    "additions": 66,
+    "deletions": 1,
+    "total_changes": 67,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "497d95b3eabe112bfca8683f12cd7adade5afa9e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "feat(service): coordena materiais transacoes e compensacao"
+    },
+    "parents": [
+      "0638810539f0a70db5aafa2cdfe6cbe0e45a5da9"
+    ],
+    "additions": 90,
+    "deletions": 0,
+    "total_changes": 90,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "0638810539f0a70db5aafa2cdfe6cbe0e45a5da9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "feat(repository): persiste e pagina materiais ativos"
+    },
+    "parents": [
+      "dc843511b8f7ea32f2c39f92373f998e544c1b7b"
+    ],
+    "additions": 35,
+    "deletions": 0,
+    "total_changes": 35,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "dc843511b8f7ea32f2c39f92373f998e544c1b7b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:23Z"
+      },
+      "message": "feat(storage): armazena materiais em diretorio privado"
+    },
+    "parents": [
+      "8062c310078dba35bbe66aa35ee44d144848210c"
+    ],
+    "additions": 75,
+    "deletions": 0,
+    "total_changes": 75,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "8062c310078dba35bbe66aa35ee44d144848210c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:22Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:22Z"
+      },
+      "message": "feat(materiais): valida titulo formato e tamanho dos arquivos"
+    },
+    "parents": [
+      "52fd62cf7d09ef31b4b836ee919f3d945a29c62c"
+    ],
+    "additions": 152,
+    "deletions": 0,
+    "total_changes": 152,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "52fd62cf7d09ef31b4b836ee919f3d945a29c62c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:22Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:22Z"
+      },
+      "message": "fix(database): converge materiais e metricas de cursos"
+    },
+    "parents": [
+      "73edde675181305d3ca4717bf243d355418174ba"
+    ],
+    "additions": 28,
+    "deletions": 0,
+    "total_changes": 28,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "73edde675181305d3ca4717bf243d355418174ba",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:22Z",
+        "login": "diangellis",
+        "id": 274620483,
+        "author_email_hash": "2d4f2fdcdbf0f3e33871aef2328cbf4bc75ed0231988f4d78a17ca5d16062344"
+      },
+      "committer": {
+        "name": "Gabriel Ferreira",
+        "date": "2026-10-12T20:21:22Z"
+      },
+      "message": "feat(models): adiciona arquivos de apoio e migracao de materiais"
+    },
+    "parents": [
+      "f38c67cc29a00e3b93f8f8f2e01b5504908b5dc5"
+    ],
+    "additions": 75,
+    "deletions": 0,
+    "total_changes": 75,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "f38c67cc29a00e3b93f8f8f2e01b5504908b5dc5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen",
+        "date": "2026-10-12T13:19:00Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-12T13:19:00Z"
+      },
+      "message": "Merge pull request #83 from unb-mds/feature/auth-pages\n\nFeature/auth pages"
+    },
+    "parents": [
+      "4deece2f87ee8611152f1505a7c48da6563db45a",
+      "c6911c43502feed6434ba0fab7e21ea89beb8a79"
+    ],
+    "additions": 92,
+    "deletions": 87,
+    "total_changes": 179,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d459724814d03a3c1b6c396de137bf9bee7206dc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "mariav-07",
+        "date": "2026-10-11T05:06:22Z",
+        "login": "mariav-07",
+        "id": 242483262,
+        "author_email_hash": "83a469bbf37b638caeb22af6daacf7f0e65565ee63de46a811abe41d0839cce0"
+      },
+      "committer": {
+        "name": "mariav-07",
+        "date": "2026-10-11T05:06:22Z"
+      },
+      "message": "feat(disciplinas): conecta cards de metricas e base acumulada aos dados reais da api"
+    },
+    "parents": [
+      "3dd13c5a50f5c8dd90a8a0d1a159f0f5066b823d"
+    ],
+    "additions": 41,
+    "deletions": 11,
+    "total_changes": 52,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "3dd13c5a50f5c8dd90a8a0d1a159f0f5066b823d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "mariav-07",
+        "date": "2026-10-11T05:05:48Z",
+        "login": "mariav-07",
+        "id": 242483262,
+        "author_email_hash": "83a469bbf37b638caeb22af6daacf7f0e65565ee63de46a811abe41d0839cce0"
+      },
+      "committer": {
+        "name": "mariav-07",
+        "date": "2026-10-11T05:05:48Z"
+      },
+      "message": "feat(types): adiciona metrica_consolidada na interface de disciplina"
+    },
+    "parents": [
+      "6de393f729e9c76f323a1892d0d3fd3c20661c6b"
+    ],
+    "additions": 9,
+    "deletions": 8,
+    "total_changes": 17,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "4deece2f87ee8611152f1505a7c48da6563db45a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "bcaueLPS",
+        "date": "2026-10-11T00:55:25Z",
+        "login": "bcaueLPS",
+        "id": 30941831,
+        "author_email_hash": "865a206b477370d78575e50ec8177d350f5cebad42cadfcc6f49129143628dc4"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-11T00:55:25Z"
+      },
+      "message": "Merge pull request #88 from unb-mds/docs/dicionario-dados\n\ndocs(database): estrutura dicionário de dados oficial e mapeia débitos técnicos"
+    },
+    "parents": [
+      "8eab66de58fbde85d1dd64ae7a5cffad9ba1221e",
+      "9a54deb0709a04d56eef29e7b55605b5f7992673"
+    ],
+    "additions": 974,
+    "deletions": 746,
+    "total_changes": 1720,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "c6911c43502feed6434ba0fab7e21ea89beb8a79",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:50:26Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:50:26Z"
+      },
+      "message": "fix(home): atualiza badges de campus e texto institucional para fcte"
+    },
+    "parents": [
+      "5341498fb9cbafe54b816e339dae307bac3397e9"
+    ],
+    "additions": 14,
+    "deletions": 12,
+    "total_changes": 26,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "5341498fb9cbafe54b816e339dae307bac3397e9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:50:18Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:50:18Z"
+      },
+      "message": "fix(cursos): aprimora estilizacao de badges e filtros de campus para fcte"
+    },
+    "parents": [
+      "9e2ee0fd6a3cf833163fb8881b398f98bd977e70"
+    ],
+    "additions": 15,
+    "deletions": 13,
+    "total_changes": 28,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "9e2ee0fd6a3cf833163fb8881b398f98bd977e70",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:50:02Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:50:02Z"
+      },
+      "message": "docs(frontend): restaura readme com instrucoes de execucao em portugues"
+    },
+    "parents": [
+      "97f8f2ab50497ae33d76c9edb10eeca7611c3a16"
+    ],
+    "additions": 23,
+    "deletions": 30,
+    "total_changes": 53,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "9a54deb0709a04d56eef29e7b55605b5f7992673",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:54Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:54Z"
+      },
+      "message": "docs(readme): saneia titulos quebrados, atualiza status do projeto e adiciona mapa de links"
+    },
+    "parents": [
+      "047f85f60f21653714d09537b8acb3d47ade0d9a"
+    ],
+    "additions": 27,
+    "deletions": 21,
+    "total_changes": 48,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "047f85f60f21653714d09537b8acb3d47ade0d9a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:48Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:48Z"
+      },
+      "message": "docs(dev): adiciona roteiro de smoke test e corrige porta do mkdocs para 8001"
+    },
+    "parents": [
+      "38eb849e7baa0b087d07015033efd6be421ad38d"
+    ],
+    "additions": 59,
+    "deletions": 2,
+    "total_changes": 61,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "38eb849e7baa0b087d07015033efd6be421ad38d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:41Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:41Z"
+      },
+      "message": "docs(mkdocs): reestrutura navegacao do sumario em categorias hierarquicas"
+    },
+    "parents": [
+      "2c58c89d846ac4b8efd09f093a88f1039af89896"
+    ],
+    "additions": 14,
+    "deletions": 11,
+    "total_changes": 25,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "2c58c89d846ac4b8efd09f093a88f1039af89896",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:35Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:35Z"
+      },
+      "message": "docs(arch): centraliza arquitetura e adrs, refatora fluxos e remove doc redundante"
+    },
+    "parents": [
+      "84c344564aaf3736fe21951b753631dcd048a816"
+    ],
+    "additions": 493,
+    "deletions": 701,
+    "total_changes": 1194,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "84c344564aaf3736fe21951b753631dcd048a816",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:25Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:25Z"
+      },
+      "message": "docs(db): atualiza dicionario de dados, mapa relacional e saneia debito tecnico"
+    },
+    "parents": [
+      "4629641cb76017387d33f209eb91ee778018351a"
+    ],
+    "additions": 323,
+    "deletions": 253,
+    "total_changes": 576,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "4629641cb76017387d33f209eb91ee778018351a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:19Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "e82b04154fd18fa0bd68df2c477dc6162607c3b678ce231f77a26870651c260a"
+      },
+      "committer": {
+        "name": "Luis-Guilherme-de-Almeida-Costa",
+        "date": "2026-10-11T00:02:19Z"
+      },
+      "message": "fix(db): sincroniza init.sql com baseline alembic 007 e modelos sqlalchemy"
+    },
+    "parents": [
+      "e05f8bc2f1ccceb8e9c14610391b97e4bd207691"
+    ],
+    "additions": 57,
+    "deletions": 11,
+    "total_changes": 68,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "e05f8bc2f1ccceb8e9c14610391b97e4bd207691",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "bcaueLPS",
+        "date": "2026-10-10T19:03:21Z",
+        "login": "bcaueLPS",
+        "id": 30941831,
+        "author_email_hash": "74e84328e06ee26b3a143a97454da7d2ba1b94a629f22b9906b3db4ad820d481"
+      },
+      "committer": {
+        "name": "bcaueLPS",
+        "date": "2026-10-10T19:03:21Z"
+      },
+      "message": "docs: adiciona banco de dados na navegacao"
+    },
+    "parents": [
+      "cfc53d13fb00bb8982219dfa4e00772ae25d0504"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "cfc53d13fb00bb8982219dfa4e00772ae25d0504",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "bcaueLPS",
+        "date": "2026-10-10T19:00:53Z",
+        "login": "bcaueLPS",
+        "id": 30941831,
+        "author_email_hash": "74e84328e06ee26b3a143a97454da7d2ba1b94a629f22b9906b3db4ad820d481"
+      },
+      "committer": {
+        "name": "bcaueLPS",
+        "date": "2026-10-10T19:00:53Z"
+      },
+      "message": "fix(docs): ajusta diagrama entidade-relacionamento no dicionario de dados"
+    },
+    "parents": [
+      "107bb3da6d74f1ab8b2ee340b0a6170695595165"
+    ],
+    "additions": 2,
+    "deletions": 3,
+    "total_changes": 5,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "107bb3da6d74f1ab8b2ee340b0a6170695595165",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "bcaueLPS",
+        "date": "2026-10-10T15:57:03Z",
+        "login": "bcaueLPS",
+        "id": 30941831,
+        "author_email_hash": "74e84328e06ee26b3a143a97454da7d2ba1b94a629f22b9906b3db4ad820d481"
+      },
+      "committer": {
+        "name": "bcaueLPS",
+        "date": "2026-10-10T15:57:03Z"
+      },
+      "message": "docs: adiciona dicionario de dados"
+    },
+    "parents": [
+      "8eab66de58fbde85d1dd64ae7a5cffad9ba1221e"
+    ],
+    "additions": 254,
+    "deletions": 0,
+    "total_changes": 254,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "eafb31bfd42cfa7f4dfe5c8ff4c3944646fad532",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:47:44Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:47:44Z"
+      },
+      "message": "test(frontend): adiciona cenarios de teste e dados de validacao para CardTurma"
+    },
+    "parents": [
+      "dbe5665e5a2b37a452ab9f2783ff3e19d55288e8"
+    ],
+    "additions": 192,
+    "deletions": 0,
+    "total_changes": 192,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "dbe5665e5a2b37a452ab9f2783ff3e19d55288e8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:46:55Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:46:55Z"
+      },
+      "message": "docs(frontend): documenta componente CardTurma e componentes de interface no README"
+    },
+    "parents": [
+      "78abdf14fef2274d8580c85fb65e78413bd9cf94"
+    ],
+    "additions": 46,
+    "deletions": 20,
+    "total_changes": 66,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "78abdf14fef2274d8580c85fb65e78413bd9cf94",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:46:14Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:46:14Z"
+      },
+      "message": "feat(disciplinas): adiciona estado vazio para listagem de turmas"
+    },
+    "parents": [
+      "953e21aa20ab29c33d5aceff0a32f140f5ee1e1f"
+    ],
+    "additions": 48,
+    "deletions": 7,
+    "total_changes": 55,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "953e21aa20ab29c33d5aceff0a32f140f5ee1e1f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:34:09Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-09T00:34:09Z"
+      },
+      "message": "feat(frontend): adiciona componentes de turmas e fallback mock de disciplinas"
+    },
+    "parents": [
+      "97f8f2ab50497ae33d76c9edb10eeca7611c3a16"
+    ],
+    "additions": 497,
+    "deletions": 2,
+    "total_changes": 499,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "97f8f2ab50497ae33d76c9edb10eeca7611c3a16",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-01T22:45:15Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-01T22:45:15Z"
+      },
+      "message": "feat(frontend): atualiza constantes e filtros com a nomenclatura FCTE"
+    },
+    "parents": [
+      "8c286fa617e88ea5afc2d24c8f53fde6c2adf112"
+    ],
+    "additions": 36,
+    "deletions": 27,
+    "total_changes": 63,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "8c286fa617e88ea5afc2d24c8f53fde6c2adf112",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-01T22:43:28Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-01T22:43:28Z"
+      },
+      "message": "feat(frontend): atualiza nomenclatura para FCTE, ajusta proporcoes do grafico e documenta README"
+    },
+    "parents": [
+      "86b728762278667be09669acda2481241c94f9fa"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "86b728762278667be09669acda2481241c94f9fa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-01T22:10:17Z",
+        "author_email_hash": "72d80b806a9a9871a7f0c3bf3bf178cd698057d3b9767ddd4ca2813cc1d084b0"
+      },
+      "committer": {
+        "name": "thamires ellen souza",
+        "date": "2026-10-01T22:10:17Z"
+      },
+      "message": "feat(frontend): corrige porcentagem do grafico e atualiza README"
+    },
+    "parents": [
+      "6de393f729e9c76f323a1892d0d3fd3c20661c6b"
+    ],
+    "additions": 52,
+    "deletions": 53,
+    "total_changes": 105,
+    "repo_name": "2026-02-TambureteiUnB"
   },
   {
     "sha": "6de393f729e9c76f323a1892d0d3fd3c20661c6b",
