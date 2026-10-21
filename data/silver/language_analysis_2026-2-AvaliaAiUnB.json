@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-20T10:58:54.242867+00:00",
+  "analyzed_at": "2026-10-21T11:02:46.618712+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 43,
-  "total_bytes": 235341,
+  "total_files": 45,
+  "total_bytes": 246070,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 44.05,
+      "percentage": 42.12,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -38,9 +38,9 @@
     },
     {
       "language": "Python",
-      "file_count": 21,
-      "total_bytes": 73355,
-      "percentage": 31.17,
+      "file_count": 22,
+      "total_bytes": 81187,
+      "percentage": 32.99,
       "files": [
         {
           "path": "scraper/scraper_sigaa.py",
@@ -49,15 +49,15 @@
           "extension": ".py"
         },
         {
-          "path": "app/repositorio.py",
-          "name": "repositorio.py",
-          "size": 10514,
+          "path": "tests/test_supabase.py",
+          "name": "test_supabase.py",
+          "size": 13380,
           "extension": ".py"
         },
         {
-          "path": "tests/test_supabase.py",
-          "name": "test_supabase.py",
-          "size": 10166,
+          "path": "app/repositorio.py",
+          "name": "repositorio.py",
+          "size": 10514,
           "extension": ".py"
         },
         {
@@ -70,6 +70,12 @@
           "path": "scraper/debug_cookies.py",
           "name": "debug_cookies.py",
           "size": 4946,
+          "extension": ".py"
+        },
+        {
+          "path": "tests/test_seguranca.py",
+          "name": "test_seguranca.py",
+          "size": 4167,
           "extension": ".py"
         },
         {
@@ -95,20 +101,14 @@
           "name": "professor_routes.py",
           "size": 2369,
           "extension": ".py"
-        },
-        {
-          "path": "app/validacoes.py",
-          "name": "validacoes.py",
-          "size": 2319,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "Markdown",
       "file_count": 7,
-      "total_bytes": 36566,
-      "percentage": 15.54,
+      "total_bytes": 38819,
+      "percentage": 15.78,
       "files": [
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
@@ -119,7 +119,7 @@
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 10432,
+          "size": 12410,
           "extension": ".md"
         },
         {
@@ -131,7 +131,7 @@
         {
           "path": "CLAUDE.md",
           "name": "CLAUDE.md",
-          "size": 3765,
+          "size": 4040,
           "extension": ".md"
         },
         {
@@ -157,13 +157,13 @@
     {
       "language": "HTML",
       "file_count": 7,
-      "total_bytes": 18969,
-      "percentage": 8.06,
+      "total_bytes": 19356,
+      "percentage": 7.87,
       "files": [
         {
           "path": "app/templates/avaliacao.html",
           "name": "avaliacao.html",
-          "size": 4272,
+          "size": 4352,
           "extension": ".html"
         },
         {
@@ -175,7 +175,7 @@
         {
           "path": "app/templates/cadastro.html",
           "name": "cadastro.html",
-          "size": 3665,
+          "size": 3741,
           "extension": ".html"
         },
         {
@@ -187,19 +187,19 @@
         {
           "path": "app/templates/login.html",
           "name": "login.html",
-          "size": 2024,
+          "size": 2100,
           "extension": ".html"
         },
         {
           "path": "app/templates/index.html",
           "name": "index.html",
-          "size": 1803,
+          "size": 1883,
           "extension": ".html"
         },
         {
           "path": "app/templates/perfil.html",
           "name": "perfil.html",
-          "size": 742,
+          "size": 817,
           "extension": ".html"
         }
       ]
@@ -208,7 +208,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 1345,
-      "percentage": 0.57,
+      "percentage": 0.55,
       "files": [
         {
           "path": "app/static/indicadores.css",
@@ -222,7 +222,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 1137,
-      "percentage": 0.48,
+      "percentage": 0.46,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -233,10 +233,24 @@
       ]
     },
     {
+      "language": "Unknown",
+      "file_count": 1,
+      "total_bytes": 238,
+      "percentage": 0.1,
+      "files": [
+        {
+          "path": ".env.example",
+          "name": ".env.example",
+          "size": 238,
+          "extension": ".example"
+        }
+      ]
+    },
+    {
       "language": "YAML",
       "file_count": 1,
       "total_bytes": 158,
-      "percentage": 0.07,
+      "percentage": 0.06,
       "files": [
         {
           "path": "mkdocs.yml",
@@ -249,13 +263,13 @@
     {
       "language": "Text",
       "file_count": 1,
-      "total_bytes": 98,
-      "percentage": 0.04,
+      "total_bytes": 117,
+      "percentage": 0.05,
       "files": [
         {
           "path": "requirements.txt",
           "name": "requirements.txt",
-          "size": 98,
+          "size": 117,
           "extension": ".txt"
         }
       ]
@@ -276,7 +290,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-20T10:59:57.543573+00:00",
+    "extracted_at": "2026-10-21T11:03:47.029057+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }
