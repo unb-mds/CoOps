@@ -1,10 +1,61 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-22T10:54:29.900601+00:00",
+      "extracted_at": "2026-10-23T10:46:52.662855+00:00",
       "file_path": "data/bronze/commits_2026-2-Bandejao.json",
-      "record_count": 136
+      "record_count": 138
     }
+  },
+  {
+    "sha": "dac53e4e5eb00463871ed654ab55775b3d2b1367",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gustavo-0611",
+        "date": "2026-10-22T13:13:32Z",
+        "login": "Gustavo-0611",
+        "id": 287090259,
+        "author_email_hash": "164f1b175a229ce44b319878c4085f4187ec771370897e9c73237ef1c7be9fa0"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-22T13:13:32Z"
+      },
+      "message": "Merge pull request #66 from unb-mds/feature/janela-avaliacao\n\nrecusa avaliações fora da janela da refeição (RF04, RN05)"
+    },
+    "parents": [
+      "db02657dda291b252a888256a0a9c8a76b900dcb",
+      "0d8dc8fc1fc645fa8c32091b5a3eb75b231eb96a"
+    ],
+    "additions": 160,
+    "deletions": 7,
+    "total_changes": 167,
+    "repo_name": "2026-2-Bandejao"
+  },
+  {
+    "sha": "0d8dc8fc1fc645fa8c32091b5a3eb75b231eb96a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "VictorSouzaJVTS",
+        "date": "2026-10-21T19:23:50Z",
+        "login": "VictorSouzaJVTS",
+        "id": 151692848,
+        "author_email_hash": "b2f2d8bb8a8a4dc6b56a9d47599b10dba52d33d8970439b13cd5793254e8ef46"
+      },
+      "committer": {
+        "name": "VictorSouzaJVTS",
+        "date": "2026-10-21T19:23:50Z"
+      },
+      "message": "recusa avaliações fora da janela da refeição (RF04, RN05)\n\n- avaliação só aceita do início do serviço até antes das 00h do dia\n  seguinte (America/Sao_Paulo); fora disso responde 422 com o motivo\n- relógio injetável (core.tempo.agora) para fixar o instante nos testes\n- testes cobrem antes do início, início, 23:59:59, 00h, refeição"
+    },
+    "parents": [
+      "db02657dda291b252a888256a0a9c8a76b900dcb"
+    ],
+    "additions": 160,
+    "deletions": 7,
+    "total_changes": 167,
+    "repo_name": "2026-2-Bandejao"
   },
   {
     "sha": "db02657dda291b252a888256a0a9c8a76b900dcb",

@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Bandejao",
   "branch": "main",
-  "sha": "db02657dda291b252a888256a0a9c8a76b900dcb",
+  "sha": "dac53e4e5eb00463871ed654ab55775b3d2b1367",
   "tree": [
     {
       "name": ".github",
@@ -74,7 +74,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "86654ef8a99258b5365fa12a1e141aaf7c566007",
+      "sha": "519c2cee3ac07ca81c8a81c74b618160cf7dd31e",
       "mode": "040000",
       "children": []
     },
@@ -188,7 +188,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "d18da43eb6d638cc5ca7405b51cacacd9915d3c4",
+      "sha": "78d41d8d01f2fc6d7575f098d1ebea0b023e3fa9",
       "mode": "040000",
       "children": []
     },
@@ -196,7 +196,7 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "0a2028516eb4c75c6c95fdd4986deef6796c9973",
+      "sha": "283bf87a4ce2fd3a29b39f0345b11dfdd8f563e0",
       "mode": "040000",
       "children": []
     },
@@ -204,7 +204,7 @@
       "name": "routes",
       "path": "backend/app/api/routes",
       "type": "directory",
-      "sha": "31df555ef4ede12f6cb9e5bec165d0f424e83fa6",
+      "sha": "3f19692e635322fea683f5d807bf880c955457be",
       "mode": "040000",
       "children": []
     },
@@ -212,10 +212,10 @@
       "name": "avaliacao.py",
       "path": "backend/app/api/routes/avaliacao.py",
       "type": "file",
-      "sha": "ad4cdceeba4279e126571703d0db6855e0253bfb",
+      "sha": "e113ea1cfc7e362773187a156f3841fd51b74fcd",
       "mode": "100644",
       "extension": ".py",
-      "size": 2341,
+      "size": 3167,
       "is_binary": false
     },
     {
@@ -262,7 +262,7 @@
       "name": "core",
       "path": "backend/app/core",
       "type": "directory",
-      "sha": "af1c7dc34497aeebac71133a659f309b09d24da3",
+      "sha": "e22bc0eaf975d9190436fb8e81111072db7079cc",
       "mode": "040000",
       "children": []
     },
@@ -300,10 +300,10 @@
       "name": "tempo.py",
       "path": "backend/app/core/tempo.py",
       "type": "file",
-      "sha": "c0fb8f5295195adf5aad4688c3395437195fbc88",
+      "sha": "33e9856e0d07942cdb38d691ba09bd56eb9c55d3",
       "mode": "100644",
       "extension": ".py",
-      "size": 1999,
+      "size": 2170,
       "is_binary": false
     },
     {
@@ -524,7 +524,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "c4970972b882c7f3ffaafad10304a4f8b63584c1",
+      "sha": "0e51b61c4cb0f6c5efbace418596a7d05c6b484c",
       "mode": "040000",
       "children": []
     },
@@ -542,20 +542,30 @@
       "name": "conftest.py",
       "path": "backend/tests/conftest.py",
       "type": "file",
-      "sha": "29cd6861d0e9cf12f7e94fa4c45fc818b98c7a10",
+      "sha": "8c50ca6d7514abb28f1698b34033b12c8d6ba2f0",
       "mode": "100644",
       "extension": ".py",
-      "size": 1351,
+      "size": 1912,
+      "is_binary": false
+    },
+    {
+      "name": "test_avaliacao_janela.py",
+      "path": "backend/tests/test_avaliacao_janela.py",
+      "type": "file",
+      "sha": "9796e20e9771f85eab9bd60a6c6c5a3a8b0d666c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3476,
       "is_binary": false
     },
     {
       "name": "test_cardapio_api.py",
       "path": "backend/tests/test_cardapio_api.py",
       "type": "file",
-      "sha": "6859156cdb65dd2895466ebfbc728e28bca34052",
+      "sha": "1e725cc56c7df748fa3cf7bfc924fe986c44efb5",
       "mode": "100644",
       "extension": ".py",
-      "size": 13544,
+      "size": 13700,
       "is_binary": false
     },
     {
@@ -602,10 +612,10 @@
       "name": "test_tempo.py",
       "path": "backend/tests/test_tempo.py",
       "type": "file",
-      "sha": "3aa8b28a3bde3d0ea6cd71ec72244605f56f3272",
+      "sha": "6d7581a7c784500cf085376f78068ce537c415fa",
       "mode": "100644",
       "extension": ".py",
-      "size": 1123,
+      "size": 1377,
       "is_binary": false
     },
     {
@@ -1796,19 +1806,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-22T10:58:28.142844+00:00",
+  "extracted_at": "2026-10-23T10:49:49.165290+00:00",
   "method": "rest",
-  "total_items": 186,
+  "total_items": 187,
   "repository_metadata": {
     "id": 1338353011,
     "full_name": "unb-mds/2026-2-Bandejao",
     "description": "Grupo G12 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:59:18Z",
-    "updated_at": "2026-10-19T01:33:58Z",
+    "updated_at": "2026-10-22T13:13:38Z",
     "language": "TypeScript",
-    "size": 1217,
+    "size": 1218,
     "stars": 2,
     "forks": 0,
-    "open_issues": 8
+    "open_issues": 7
   }
 }
