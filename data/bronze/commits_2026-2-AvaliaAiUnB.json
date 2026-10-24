@@ -1,10 +1,86 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-23T10:45:33.293828+00:00",
+      "extracted_at": "2026-10-24T10:14:13.219808+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaAiUnB.json",
-      "record_count": 110
+      "record_count": 114
     }
+  },
+  {
+    "sha": "3cdb7d5fb97b8d53af24e2f418f638bb160ec2f6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-10-24T00:03:31Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-24T00:03:31Z"
+      },
+      "message": "Merge pull request #97 from unb-mds/fix/scraper-departamento\n\nCorrige o scraper: departamento da unidade, docentes separados e --dry-run (#87)"
+    },
+    "parents": [
+      "af122e97e895767c6dadc0337349483470e1380e",
+      "f5388f7e1ab831ddd85c8735389d876c0925b05d"
+    ],
+    "additions": 461,
+    "deletions": 108,
+    "total_changes": 569,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "f5388f7e1ab831ddd85c8735389d876c0925b05d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-10-21T15:23:39Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-10-21T15:23:39Z"
+      },
+      "message": "Adiciona modo --dry-run ao scraper e separa docentes pelo sufixo de horas (#87)"
+    },
+    "parents": [
+      "d32ca65163eb9efcb0112519990c0615c7d04902"
+    ],
+    "additions": 249,
+    "deletions": 36,
+    "total_changes": 285,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "d32ca65163eb9efcb0112519990c0615c7d04902",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-10-21T15:12:54Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-10-21T15:12:54Z"
+      },
+      "message": "Grava como departamento a unidade selecionada no formulário (#87)"
+    },
+    "parents": [
+      "d84d917b17906c1ae07cd3e5479b190445b82243"
+    ],
+    "additions": 109,
+    "deletions": 53,
+    "total_changes": 162,
+    "repo_name": "2026-2-AvaliaAiUnB"
   },
   {
     "sha": "af122e97e895767c6dadc0337349483470e1380e",
@@ -30,6 +106,31 @@
     "additions": 243,
     "deletions": 23,
     "total_changes": 266,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "d84d917b17906c1ae07cd3e5479b190445b82243",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-10-20T18:54:41Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-10-20T18:54:41Z"
+      },
+      "message": "Adiciona funções de limpeza de docentes e usa no scraper (#87)"
+    },
+    "parents": [
+      "1e97caee9f6201cb269afe0cc33210c23897b1e5"
+    ],
+    "additions": 112,
+    "deletions": 28,
+    "total_changes": 140,
     "repo_name": "2026-2-AvaliaAiUnB"
   },
   {

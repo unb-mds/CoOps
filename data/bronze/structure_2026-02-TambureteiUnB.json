@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-02-TambureteiUnB",
   "branch": "main",
-  "sha": "8969dc9db0bb4652b311f936f5a06c32e6971c65",
+  "sha": "eb3e6989f3e548fc5bba31f937120a14988951cd",
   "tree": [
     {
       "name": ".agents",
@@ -204,7 +204,7 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "3747f36fdda531464b4aaecd1b616cee4d7eed67",
+      "sha": "1770170bb67b19ad22d61ab4fc395772ff1e90c7",
       "mode": "040000",
       "children": []
     },
@@ -248,7 +248,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "1011e396e28d91e9c751340bac7879579966a5bb",
+      "sha": "366bb85128093060fd5e0020e4bc778ed4a304a7",
       "mode": "040000",
       "children": []
     },
@@ -260,6 +260,16 @@
       "mode": "100644",
       "extension": ".yml",
       "size": 1654,
+      "is_binary": false
+    },
+    {
+      "name": "ci.yml",
+      "path": ".github/workflows/ci.yml",
+      "type": "file",
+      "sha": "204d5210d1ccfd802b453cd97f685761d99f0821",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 1782,
       "is_binary": false
     },
     {
@@ -313,10 +323,20 @@
       "is_binary": false
     },
     {
+      "name": "RELEASE_NOTES_v0.6.0.md",
+      "path": "RELEASE_NOTES_v0.6.0.md",
+      "type": "file",
+      "sha": "1abde61ab2fba9a912a8fa9412f798cd67ba60bf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3299,
+      "is_binary": false
+    },
+    {
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "44350f0f387449415bd284cca9ddc9b7b6addf7d",
+      "sha": "c3f8ebbea755b1c69ebaa62386f3cf9fa4e56f58",
       "mode": "040000",
       "children": []
     },
@@ -470,7 +490,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "e47a8cf6ca3c323791a341304eef1aa185fe95b4",
+      "sha": "ea68431fc6b04e25a9f628af09648ff5c8f9bc85",
       "mode": "040000",
       "children": []
     },
@@ -712,7 +732,7 @@
       "name": "core",
       "path": "backend/app/core",
       "type": "directory",
-      "sha": "be1d6507e480ca068e1b4c5167e66eed20593f62",
+      "sha": "f0455cc87688905c7c1725e1a06d521fa2c04e1d",
       "mode": "040000",
       "children": []
     },
@@ -730,7 +750,7 @@
       "name": "config.py",
       "path": "backend/app/core/config.py",
       "type": "file",
-      "sha": "e57726350247314c7406bd481a81aad934f5328f",
+      "sha": "3d05c9ee3e135d2474f8a4214cded19735d35122",
       "mode": "100644",
       "extension": ".py",
       "size": 1962,
@@ -1886,7 +1906,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "8b877df117b4120ae0c0c251c056571161589bd3",
+      "sha": "b8a011762bcc32979acfbce31d910eec18d86220",
       "mode": "040000",
       "children": []
     },
@@ -1964,10 +1984,10 @@
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "d5b1bcb829f9064226571b67f1a5f56663705f37",
+      "sha": "dd53fee46c9f54d7b6766caca57901ce8fb84b99",
       "mode": "100644",
       "extension": ".md",
-      "size": 3281,
+      "size": 3575,
       "is_binary": false
     },
     {
@@ -2011,6 +2031,24 @@
       "is_binary": false
     },
     {
+      "name": "releases",
+      "path": "docs/releases",
+      "type": "directory",
+      "sha": "ec00ddfe36142bcbd3f62dd7105a92caf5b315b5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "v0.6.0.md",
+      "path": "docs/releases/v0.6.0.md",
+      "type": "file",
+      "sha": "1abde61ab2fba9a912a8fa9412f798cd67ba60bf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3299,
+      "is_binary": false
+    },
+    {
       "name": "requisitos.md",
       "path": "docs/requisitos.md",
       "type": "file",
@@ -2044,7 +2082,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "4cb949dd84e362435ceceb25fe8a805757ca8334",
+      "sha": "c36a3c936d5537f66ee0fe9e0425e9beaeac0981",
       "mode": "040000",
       "children": []
     },
@@ -2178,7 +2216,7 @@
       "name": "package-lock.json",
       "path": "frontend/package-lock.json",
       "type": "file",
-      "sha": "64227a8f89f8b4e4e7bd6d0e23dde3a13c1a2357",
+      "sha": "60ea30c0ee56ce265a9fc2841cd8da088a944483",
       "mode": "100644",
       "extension": ".json",
       "size": 236718,
@@ -2188,10 +2226,10 @@
       "name": "package.json",
       "path": "frontend/package.json",
       "type": "file",
-      "sha": "5f17ce633b6015b0f3b91fee4b2f27f13da60459",
+      "sha": "993ba35d7478611653ac6a7e9d3f39abbe50fd86",
       "mode": "100644",
       "extension": ".json",
-      "size": 530,
+      "size": 627,
       "is_binary": false
     },
     {
@@ -2266,7 +2304,7 @@
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "21ef2ce9ebbdd81670e2b74986011619a6cc17d6",
+      "sha": "bd5de6f7a29467029bbe2a5784402d5cca1e2a04",
       "mode": "040000",
       "children": []
     },
@@ -2274,7 +2312,7 @@
       "name": "app",
       "path": "frontend/src/app",
       "type": "directory",
-      "sha": "5459ca64ac8c45fc1b1065d9780bb01de58f5154",
+      "sha": "3e06e52435d09aef43f806203c7cff70b702e959",
       "mode": "040000",
       "children": []
     },
@@ -2336,7 +2374,7 @@
       "name": "disciplinas",
       "path": "frontend/src/app/disciplinas",
       "type": "directory",
-      "sha": "0bc0a4ffd0cc1ae06dd293764a9248f847ea117c",
+      "sha": "81e50aa0fbdcb273f70d3ebab936b3bbaa771725",
       "mode": "040000",
       "children": []
     },
@@ -2344,7 +2382,7 @@
       "name": "[slug]",
       "path": "frontend/src/app/disciplinas/[slug]",
       "type": "directory",
-      "sha": "6cf555cba3c1b8330280250ebdd6932dd291cb41",
+      "sha": "a9d8c2573da6e0ca99504974f62ff3d83964db77",
       "mode": "040000",
       "children": []
     },
@@ -2352,10 +2390,10 @@
       "name": "page.tsx",
       "path": "frontend/src/app/disciplinas/[slug]/page.tsx",
       "type": "file",
-      "sha": "44ac58808eaa7d3f615297166f44c4000ae8f522",
+      "sha": "3a240e7db17e362ea7b73acd5d447cd81be93775",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 46335,
+      "size": 44605,
       "is_binary": false
     },
     {
@@ -2430,7 +2468,7 @@
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "880f9f65601249a6680e7bae7e859e5e36afd973",
+      "sha": "5569e2e09ab56e8573b0cfddaf29525507f70c49",
       "mode": "040000",
       "children": []
     },
@@ -2528,10 +2566,10 @@
       "name": "MaterialModal.tsx",
       "path": "frontend/src/components/MaterialModal.tsx",
       "type": "file",
-      "sha": "1df35e76e518f10fe849254d9cb85243fca39930",
+      "sha": "3808b5865019857be4e7f2bb05b59ebc3bb01317",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2310,
+      "size": 32298,
       "is_binary": false
     },
     {
@@ -2830,9 +2868,27 @@
       "name": "services",
       "path": "frontend/src/services",
       "type": "directory",
-      "sha": "486cf63f8a6bd06b21ec0ce703edca0001ba8dd7",
+      "sha": "178bdd19d49f08ed1b2e1194ff9a07dcab04f58f",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "__tests__",
+      "path": "frontend/src/services/__tests__",
+      "type": "directory",
+      "sha": "2b95df1e4b327bc1806b7d85124cfb24a867cba5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "materialService.test.ts",
+      "path": "frontend/src/services/__tests__/materialService.test.ts",
+      "type": "file",
+      "sha": "67983d4a3a2edaf4df4afba4715e9c6aaa63c8b4",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 5473,
+      "is_binary": false
     },
     {
       "name": "authService.ts",
@@ -2878,17 +2934,27 @@
       "name": "index.ts",
       "path": "frontend/src/services/index.ts",
       "type": "file",
-      "sha": "a39ab2945bba0587e8beecbdf5b9f4ec19354683",
+      "sha": "49a78c1bf1119a25fbdb4a92e576d9886b89704e",
       "mode": "100644",
       "extension": ".ts",
-      "size": 993,
+      "size": 1271,
+      "is_binary": false
+    },
+    {
+      "name": "materialService.ts",
+      "path": "frontend/src/services/materialService.ts",
+      "type": "file",
+      "sha": "c4aa4109abd3d2086a01733561ce297cf2e770a4",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 7505,
       "is_binary": false
     },
     {
       "name": "types",
       "path": "frontend/src/types",
       "type": "directory",
-      "sha": "0410948feef081ca04e06fc210db03340acaef7a",
+      "sha": "7e28f42150951cfd8409c4760255967043bff664",
       "mode": "040000",
       "children": []
     },
@@ -2923,6 +2989,16 @@
       "is_binary": false
     },
     {
+      "name": "material.ts",
+      "path": "frontend/src/types/material.ts",
+      "type": "file",
+      "sha": "35d6463e9e13d244597f1227c820836bfdc2c03c",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 832,
+      "is_binary": false
+    },
+    {
       "name": "turma.ts",
       "path": "frontend/src/types/turma.ts",
       "type": "file",
@@ -2933,13 +3009,49 @@
       "is_binary": false
     },
     {
+      "name": "utils",
+      "path": "frontend/src/utils",
+      "type": "directory",
+      "sha": "a6c851bf929473db71f9b1612e8dabbaca878ce0",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__tests__",
+      "path": "frontend/src/utils/__tests__",
+      "type": "directory",
+      "sha": "ebf6abd77dc6e474024d6d5d2ce7b8ff4a46425a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "fileValidation.test.ts",
+      "path": "frontend/src/utils/__tests__/fileValidation.test.ts",
+      "type": "file",
+      "sha": "50b680e356c566e224ab0bf3a790fb1f24ae7e6f",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 5455,
+      "is_binary": false
+    },
+    {
+      "name": "fileValidation.ts",
+      "path": "frontend/src/utils/fileValidation.ts",
+      "type": "file",
+      "sha": "cb0aeedb0c9e8b16a21403957c52097715fc47b0",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 4711,
+      "is_binary": false
+    },
+    {
       "name": "tsconfig.json",
       "path": "frontend/tsconfig.json",
       "type": "file",
-      "sha": "dadb3b41bb1ff024d347c74a9d89e44e0d9fd806",
+      "sha": "4c4604f5b247d6d4edad924761da3c9193c1a5ef",
       "mode": "100644",
       "extension": ".json",
-      "size": 697,
+      "size": 737,
       "is_binary": false
     },
     {
@@ -2956,10 +3068,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "5265cb95ffb9ac77741ac9fe17f028579172ac98",
+      "sha": "8f9f0d0fd653e2c91a2d30b4edaafa636a2c6d5f",
       "mode": "100644",
       "extension": ".yml",
-      "size": 1606,
+      "size": 1684,
       "is_binary": false
     },
     {
@@ -3018,9 +3130,9 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-23T10:49:47.586820+00:00",
+  "extracted_at": "2026-10-24T10:19:17.037200+00:00",
   "method": "rest",
-  "total_items": 314,
+  "total_items": 326,
   "repository_metadata": {
     "id": 1338352116,
     "full_name": "unb-mds/2026-02-TambureteiUnB",
@@ -3028,9 +3140,9 @@
     "created_at": "2026-08-18T11:58:22Z",
     "updated_at": "2026-10-21T00:54:40Z",
     "language": "TypeScript",
-    "size": 785,
+    "size": 922,
     "stars": 4,
     "forks": 1,
-    "open_issues": 8
+    "open_issues": 15
   }
 }

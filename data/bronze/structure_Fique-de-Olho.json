@@ -2,13 +2,13 @@
   "owner": "unb-mds",
   "repository": "Fique-de-Olho",
   "branch": "main",
-  "sha": "4e109f9a60ceda7313b8b5adb84a82b137aa1070",
+  "sha": "cd73b543b10294e17073210d2202f238b9e1985c",
   "tree": [
     {
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "9d73abe5dd379cf16799f1a014a12991c72fb9d2",
+      "sha": "71655673f46dcf63bb4e9836b94d85a1cc3c1252",
       "mode": "040000",
       "children": []
     },
@@ -576,7 +576,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "5b004329d1f5407a0188314738d016fad1f22547",
+      "sha": "02e715a875a8a4c637cf6c9fa9897bdfaf22c19f",
       "mode": "040000",
       "children": []
     },
@@ -591,10 +591,20 @@
       "is_binary": false
     },
     {
+      "name": "pipeline.yml",
+      "path": ".github/workflows/pipeline.yml",
+      "type": "file",
+      "sha": "50f7b8a2c3609b78f8e837802986c2db2ec3ebb1",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 1064,
+      "is_binary": false
+    },
+    {
       "name": "Back",
       "path": "Back",
       "type": "directory",
-      "sha": "3253aef3278a7352ebe869beb9200243f7c7c018",
+      "sha": "26c7e0a8932c8594f704ba326e1901123aa9bb53",
       "mode": "040000",
       "children": []
     },
@@ -602,10 +612,10 @@
       "name": ".env.example",
       "path": "Back/.env.example",
       "type": "file",
-      "sha": "d9a9c48600995c153ad2c6b39986b79ae4ea1266",
+      "sha": "ab05c79c19d32d6270401e8f4c73edf72a868609",
       "mode": "100644",
       "extension": ".example",
-      "size": 434,
+      "size": 477,
       "is_binary": false
     },
     {
@@ -642,17 +652,17 @@
       "name": "alembic.ini",
       "path": "Back/alembic.ini",
       "type": "file",
-      "sha": "ab19cd65017aa9b6bf775a6974c877d84d12a9fd",
+      "sha": "1f5f62f43edbad0af92fea596a76d2bc09c50388",
       "mode": "100644",
       "extension": ".ini",
-      "size": 667,
+      "size": 675,
       "is_binary": false
     },
     {
       "name": "app",
       "path": "Back/app",
       "type": "directory",
-      "sha": "604c0bf4d72a9bce2b1540618b28e23c0a136dd0",
+      "sha": "48ad2e52932548e207cc71dec09666e90db2ae35",
       "mode": "040000",
       "children": []
     },
@@ -670,7 +680,7 @@
       "name": "core",
       "path": "Back/app/core",
       "type": "directory",
-      "sha": "b003585cfeccea74c58bb2d7acafaaf79745101e",
+      "sha": "d13bf1f966a63417fee64e6774c5c00e739c803d",
       "mode": "040000",
       "children": []
     },
@@ -688,37 +698,37 @@
       "name": "config.py",
       "path": "Back/app/core/config.py",
       "type": "file",
-      "sha": "d31373b0e2da6632283ee8ed1455348afd0e991e",
+      "sha": "e0a83fefb2c85fd894edee6803c26125618afc79",
       "mode": "100644",
       "extension": ".py",
-      "size": 584,
+      "size": 656,
       "is_binary": false
     },
     {
       "name": "database.py",
       "path": "Back/app/core/database.py",
       "type": "file",
-      "sha": "a10a6d004de1a0d80e526f5bd5e4215bc38fc011",
+      "sha": "f183a1e3cd9c233ab95e72bce55080a29c59e85d",
       "mode": "100644",
       "extension": ".py",
-      "size": 3413,
+      "size": 6606,
       "is_binary": false
     },
     {
       "name": "main.py",
       "path": "Back/app/main.py",
       "type": "file",
-      "sha": "1c215cfdd48ef5778b112d2ea17a84de2f4de9a6",
+      "sha": "58029bb68dfd784cfc4f26a67204358973cbbfe3",
       "mode": "100644",
       "extension": ".py",
-      "size": 1398,
+      "size": 1717,
       "is_binary": false
     },
     {
       "name": "modules",
       "path": "Back/app/modules",
       "type": "directory",
-      "sha": "41dea466ff4ff959a2072e25df494542c5d32d2b",
+      "sha": "fa52308c1e76117c09023b966325034bcd76a8a0",
       "mode": "040000",
       "children": []
     },
@@ -736,7 +746,7 @@
       "name": "editais",
       "path": "Back/app/modules/editais",
       "type": "directory",
-      "sha": "0594a145683452c0ba08d3491b362c9a599fb6ab",
+      "sha": "538da66d1b3d32f820284a15e8d37da8d25d02cf",
       "mode": "040000",
       "children": []
     },
@@ -751,13 +761,33 @@
       "is_binary": false
     },
     {
+      "name": "models.py",
+      "path": "Back/app/modules/editais/models.py",
+      "type": "file",
+      "sha": "32a1b23d6ff4268c920d2a2a2e4fab397f9262b6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 701,
+      "is_binary": false
+    },
+    {
       "name": "router.py",
       "path": "Back/app/modules/editais/router.py",
       "type": "file",
-      "sha": "06e7f8f5c10371c72059ac26c7a63f99c3ed31ee",
+      "sha": "2e22dc822ba98ee11bb4aee3ba4249248fdfde6f",
       "mode": "100644",
       "extension": ".py",
-      "size": 1756,
+      "size": 7303,
+      "is_binary": false
+    },
+    {
+      "name": "service.py",
+      "path": "Back/app/modules/editais/service.py",
+      "type": "file",
+      "sha": "5d9487e318735250fc58227c2b5c671c159b3a58",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10470,
       "is_binary": false
     },
     {
@@ -782,7 +812,7 @@
       "name": "scraper",
       "path": "Back/app/modules/scraper",
       "type": "directory",
-      "sha": "3d26c4bca9e199a189c8a953e1c380877431b77f",
+      "sha": "18f5e6eaefec9e14916dcb765eb605591ebd9a53",
       "mode": "040000",
       "children": []
     },
@@ -790,27 +820,47 @@
       "name": "__init__.py",
       "path": "Back/app/modules/scraper/__init__.py",
       "type": "file",
-      "sha": "977b1ba317c6f1ef6a4ecb651b2267b57a47b322",
+      "sha": "b1f7f0272f38d7d3b27452636347f26f771a7251",
       "mode": "100644",
       "extension": ".py",
-      "size": 102,
+      "size": 1421,
+      "is_binary": false
+    },
+    {
+      "name": "base.py",
+      "path": "Back/app/modules/scraper/base.py",
+      "type": "file",
+      "sha": "909f8cbc94a503a9e6c46c4620e1c8e68a53b503",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2131,
       "is_binary": false
     },
     {
       "name": "deg.py",
       "path": "Back/app/modules/scraper/deg.py",
       "type": "file",
-      "sha": "9737f2f03064d10b3c5bece33698903a25fb0107",
+      "sha": "f6d90f5f1ad9d6af868568b5767b2bc52e03e16f",
       "mode": "100644",
       "extension": ".py",
-      "size": 4495,
+      "size": 5354,
+      "is_binary": false
+    },
+    {
+      "name": "service.py",
+      "path": "Back/app/modules/scraper/service.py",
+      "type": "file",
+      "sha": "012c435e87197a6cacb1e4ac0a703717f25cf32f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5277,
       "is_binary": false
     },
     {
       "name": "usuarios",
       "path": "Back/app/modules/usuarios",
       "type": "directory",
-      "sha": "4ae8936df6b46d92c84c6a1f4cb3f5d07f7a8b97",
+      "sha": "8f93bcb49dc869f80df02061c61c659c0c8980f2",
       "mode": "040000",
       "children": []
     },
@@ -822,6 +872,46 @@
       "mode": "100644",
       "extension": ".py",
       "size": 77,
+      "is_binary": false
+    },
+    {
+      "name": "router.py",
+      "path": "Back/app/modules/usuarios/router.py",
+      "type": "file",
+      "sha": "d1d20078fa038aa445eabf389f9a52db76cc50f7",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1403,
+      "is_binary": false
+    },
+    {
+      "name": "schemas.py",
+      "path": "Back/app/modules/usuarios/schemas.py",
+      "type": "file",
+      "sha": "ca49c80453a3b235d6c4922697759d5d328e76d4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 447,
+      "is_binary": false
+    },
+    {
+      "name": "security.py",
+      "path": "Back/app/modules/usuarios/security.py",
+      "type": "file",
+      "sha": "1e379f057817e133dec4dcc756b1070c55ae30e3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 297,
+      "is_binary": false
+    },
+    {
+      "name": "service.py",
+      "path": "Back/app/modules/usuarios/service.py",
+      "type": "file",
+      "sha": "47f87d8a60c97932bf5dd38a5b0d96fa4372d385",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 844,
       "is_binary": false
     },
     {
@@ -884,17 +974,17 @@
       "name": "requirements.txt",
       "path": "Back/requirements.txt",
       "type": "file",
-      "sha": "08dc4c4f5139b01e0f212382fe01f769fe23508e",
+      "sha": "0778ee619219ff727ce5cedafaa9c76143b77fde",
       "mode": "100644",
       "extension": ".txt",
-      "size": 336,
+      "size": 381,
       "is_binary": false
     },
     {
       "name": "tests",
       "path": "Back/tests",
       "type": "directory",
-      "sha": "429dbc15b364258125e06f30dfeab646b789c5e5",
+      "sha": "35da52d210ac3a970b1a4f7bd9faaeef989d7dda",
       "mode": "040000",
       "children": []
     },
@@ -912,10 +1002,20 @@
       "name": "conftest.py",
       "path": "Back/tests/conftest.py",
       "type": "file",
-      "sha": "a7fe9e96c31013d802c30f72b69c0d9ac246c8cd",
+      "sha": "3fde7ecd1e2ff4edc7699b73e2f829de2b5bb070",
       "mode": "100644",
       "extension": ".py",
-      "size": 286,
+      "size": 288,
+      "is_binary": false
+    },
+    {
+      "name": "test_base_scraper.py",
+      "path": "Back/tests/test_base_scraper.py",
+      "type": "file",
+      "sha": "2d8e9f25bd4d947352224e1d5e22ddad450125c0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4606,
       "is_binary": false
     },
     {
@@ -962,7 +1062,7 @@
       "name": "Front",
       "path": "Front",
       "type": "directory",
-      "sha": "7ac62e391d80ce4f3f3ea1f2064ca209642a7046",
+      "sha": "6f27080fd034bd41b37f4aece43f2033588fc246",
       "mode": "040000",
       "children": []
     },
@@ -1050,7 +1150,7 @@
       "name": "src",
       "path": "Front/src",
       "type": "directory",
-      "sha": "b2a8502e49ede9e81feed9b1b76467967fe4570a",
+      "sha": "42f38a47fd974d995100c3a077a176eb5c0495f5",
       "mode": "040000",
       "children": []
     },
@@ -1068,7 +1168,7 @@
       "name": "components",
       "path": "Front/src/components",
       "type": "directory",
-      "sha": "1d0e0e69bafd0fdaf4a5b154499fda632df881ec",
+      "sha": "c5781483dab4619f71395090c135f0a91ccf0712",
       "mode": "040000",
       "children": []
     },
@@ -1086,10 +1186,10 @@
       "name": "FavoriteButton.tsx",
       "path": "Front/src/components/FavoriteButton.tsx",
       "type": "file",
-      "sha": "8848773fe29111746a0402b22e0c95511f57a2f4",
+      "sha": "a593d726d11ebd28d9152d385dfc4d832a1d168b",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 601,
+      "size": 937,
       "is_binary": false
     },
     {
@@ -1285,6 +1385,46 @@
       "is_binary": false
     },
     {
+      "name": "tsconfig.node.tsbuildinfo",
+      "path": "Front/tsconfig.node.tsbuildinfo",
+      "type": "file",
+      "sha": "8dae46a530e1e3335d7a66d23383644f66756c9a",
+      "mode": "100644",
+      "extension": ".tsbuildinfo",
+      "size": 43045,
+      "is_binary": false
+    },
+    {
+      "name": "tsconfig.tsbuildinfo",
+      "path": "Front/tsconfig.tsbuildinfo",
+      "type": "file",
+      "sha": "cfaf4f2f53782be1bd24a3029dbf155a1d629294",
+      "mode": "100644",
+      "extension": ".tsbuildinfo",
+      "size": 459,
+      "is_binary": false
+    },
+    {
+      "name": "vite.config.d.ts",
+      "path": "Front/vite.config.d.ts",
+      "type": "file",
+      "sha": "340562aff103906b000e905d3c228c55c71decc9",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 76,
+      "is_binary": false
+    },
+    {
+      "name": "vite.config.js",
+      "path": "Front/vite.config.js",
+      "type": "file",
+      "sha": "5c065a8330bf282da5e947d2b9290e399226470c",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 334,
+      "is_binary": false
+    },
+    {
       "name": "vite.config.ts",
       "path": "Front/vite.config.ts",
       "type": "file",
@@ -1298,17 +1438,17 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "8af28d26f75125e433f2a990e2e18b77df5b1335",
+      "sha": "db12eac4d8b0a2b0c783cbdc2628e35eccfaa4fd",
       "mode": "100644",
       "extension": ".md",
-      "size": 7016,
+      "size": 7076,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "f7c8689bbae93e1c149b4845acc98d750e1c3843",
+      "sha": "6e40b269a97a61c5bd9a8d98a6f752301a483999",
       "mode": "040000",
       "children": []
     },
@@ -1334,7 +1474,7 @@
       "name": "Estudos",
       "path": "docs/Estudos",
       "type": "directory",
-      "sha": "293f560deb0301fb9a99dc57a5cff8ab4669166b",
+      "sha": "7c5b7fdb53187e419d2da5ae0bde4b2f5cd24013",
       "mode": "040000",
       "children": []
     },
@@ -1342,7 +1482,7 @@
       "name": "sprint00",
       "path": "docs/Estudos/sprint00",
       "type": "directory",
-      "sha": "27e78cd2cebff700f7e2e226289b26cc10da7308",
+      "sha": "0af9f939118961fe85b6ee0f98dab66880ac7641",
       "mode": "040000",
       "children": []
     },
@@ -1417,10 +1557,20 @@
       "is_binary": false
     },
     {
+      "name": "jornada_dos_dados_e_usuario.md",
+      "path": "docs/Estudos/sprint00/jornada_dos_dados_e_usuario.md",
+      "type": "file",
+      "sha": "0b44619c6a1ed33cac3b11dd3278fb0d378acd3b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4000,
+      "is_binary": false
+    },
+    {
       "name": "RealiseNotes",
       "path": "docs/RealiseNotes",
       "type": "directory",
-      "sha": "00a511c71556f8a3ed0dad1edc30899ff70951ea",
+      "sha": "74e0c9de3041333b248d6d72d78bbc1272952aca",
       "mode": "040000",
       "children": []
     },
@@ -1456,10 +1606,10 @@
       "name": "release-1.md",
       "path": "docs/RealiseNotes/release-1.md",
       "type": "file",
-      "sha": "ea7d76bafb39b8089988c8404bbf47827d878595",
+      "sha": "579ee9caf5d9ef131b05c076ce2736b883743c04",
       "mode": "100644",
       "extension": ".md",
-      "size": 7510,
+      "size": 7693,
       "is_binary": false
     },
     {
@@ -1760,10 +1910,20 @@
       "name": "back.md",
       "path": "docs/back.md",
       "type": "file",
-      "sha": "238f560be6a49c78b43b6e5e1ad648082771f640",
+      "sha": "6426e236ad4088cdff0881675e61985634c2cc6a",
       "mode": "100644",
       "extension": ".md",
-      "size": 1598,
+      "size": 1608,
+      "is_binary": false
+    },
+    {
+      "name": "fontes-de-dados.md",
+      "path": "docs/fontes-de-dados.md",
+      "type": "file",
+      "sha": "328fea39b3b936a18ab48965a3f533ddd26f2385",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 12234,
       "is_binary": false
     },
     {
@@ -1784,6 +1944,34 @@
       "mode": "100644",
       "extension": ".md",
       "size": 4234,
+      "is_binary": false
+    },
+    {
+      "name": "sprints",
+      "path": "docs/sprints",
+      "type": "directory",
+      "sha": "57ef0598d2f3b7e40e4b3822fa5b574fc570c690",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "sprint-04.md",
+      "path": "docs/sprints/sprint-04.md",
+      "type": "file",
+      "sha": "5cc8d471ed87683a1504ca41b493cad8af25a5aa",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2262,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-05.md",
+      "path": "docs/sprints/sprint-05.md",
+      "type": "file",
+      "sha": "845b3fb626a9a10689e717ab8a92c082de29f7bf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4714,
       "is_binary": false
     },
     {
@@ -1808,10 +1996,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "0cb808952cd806c5523e69bdef063778f441d8c7",
+      "sha": "9b6ae88c9b5df9772706bad16af97219fb8ffe30",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2351,
+      "size": 2423,
       "is_binary": false
     },
     {
@@ -1826,19 +2014,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-23T10:49:44.992681+00:00",
+  "extracted_at": "2026-10-24T10:19:13.289116+00:00",
   "method": "rest",
-  "total_items": 194,
+  "total_items": 213,
   "repository_metadata": {
     "id": 1338350642,
     "full_name": "unb-mds/Fique-de-Olho",
     "description": "Grupo G4 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:56:41Z",
-    "updated_at": "2026-10-19T18:56:14Z",
+    "updated_at": "2026-10-23T15:32:41Z",
     "language": "Python",
-    "size": 2281,
+    "size": 2535,
     "stars": 1,
     "forks": 0,
-    "open_issues": 12
+    "open_issues": 11
   }
 }

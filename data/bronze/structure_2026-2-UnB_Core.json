@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-UnB_Core",
   "branch": "main",
-  "sha": "ec7e904295e7bfc8bfb231320ac1be3b69a0034f",
+  "sha": "b2491617577869d6443839c2b8e85ef831f5ae0d",
   "tree": [
     {
       "name": ".gitattributes",
@@ -18,17 +18,103 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "112bc8a6170ce64f7c2d83a0b2f590b122acc38d",
+      "sha": "02a50df1c4ee9cf27e456baefb24e987357f018a",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "ISSUE_TEMPLATE",
+      "path": ".github/ISSUE_TEMPLATE",
+      "type": "directory",
+      "sha": "ea0e11d1dfea4d086e0bcff79b420cb68e5df6c4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "bug-report.md",
+      "path": ".github/ISSUE_TEMPLATE/bug-report.md",
+      "type": "file",
+      "sha": "006c7c7d70bb2083ca680bb7b3130c71f13814f5",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 961,
+      "is_binary": false
+    },
+    {
+      "name": "docs-repair.md",
+      "path": ".github/ISSUE_TEMPLATE/docs-repair.md",
+      "type": "file",
+      "sha": "1ac3d303acc42a35b2de1990da3e09b180fcd0e9",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 380,
+      "is_binary": false
+    },
+    {
+      "name": "feature-request.md",
+      "path": ".github/ISSUE_TEMPLATE/feature-request.md",
+      "type": "file",
+      "sha": "51049eba8c51bbb2ab5de96f29f57b9417b321ec",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 711,
+      "is_binary": false
+    },
+    {
+      "name": "pull_request_template.md",
+      "path": ".github/ISSUE_TEMPLATE/pull_request_template.md",
+      "type": "file",
+      "sha": "b4832cf8e9db3bb7801dbf25ea5da9507f092953",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3373,
+      "is_binary": false
+    },
+    {
+      "name": "tasks.md",
+      "path": ".github/ISSUE_TEMPLATE/tasks.md",
+      "type": "file",
+      "sha": "6919fbccf7535e735f72f04c3eccfa6d7353ca40",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 391,
+      "is_binary": false
+    },
+    {
+      "name": "pull_request_template.md",
+      "path": ".github/pull_request_template.md",
+      "type": "file",
+      "sha": "1ccfc101b00dcd47f43215febd1cda88dc9d5a8b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3194,
+      "is_binary": false
     },
     {
       "name": "skills",
       "path": ".github/skills",
       "type": "directory",
-      "sha": "f7aeb482dba835b54ede29a59c6e885881c27917",
+      "sha": "674e1796247f7481fee23d308b88686127011c62",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "pytest-coverage",
+      "path": ".github/skills/pytest-coverage",
+      "type": "directory",
+      "sha": "3d068224569c846ea2cec3a0f6fa91680af1ad8f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".github/skills/pytest-coverage/SKILL.md",
+      "type": "file",
+      "sha": "a0fa77d399cc0928a57a3e5d2250b91dfcebad23",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1126,
+      "is_binary": false
     },
     {
       "name": "speckit-analyze",
@@ -526,7 +612,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "be02ed8b882444d38613d636a6ebf081344d1e72",
+      "sha": "c17c47f938ed433b98568411e78d3d86bce2c35d",
       "mode": "040000",
       "children": []
     },
@@ -534,7 +620,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "2a3f8975f4ceaf85ce39a6731739a5aeb26a9503",
+      "sha": "c5f62a4f9313af56f89391ec362c37e524e7f12c",
       "mode": "040000",
       "children": []
     },
@@ -542,7 +628,7 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "c86e60f84f2df4d8a50a966a08dfb37ddf33a454",
+      "sha": "c32be67fdd35d31513afda338aa84c0445c42069",
       "mode": "040000",
       "children": []
     },
@@ -580,7 +666,7 @@
       "name": "schema",
       "path": "backend/app/api/schema",
       "type": "directory",
-      "sha": "1c7a3a13412459f0a5215ff8ad395bedd6bd3195",
+      "sha": "f3946a76399c5120d9133694acd307e232b74b58",
       "mode": "040000",
       "children": []
     },
@@ -588,40 +674,50 @@
       "name": "ConteudoAcademico.py",
       "path": "backend/app/api/schema/ConteudoAcademico.py",
       "type": "file",
-      "sha": "f77dad97f8950c56e077ad418e29a9b4a290f2b5",
+      "sha": "4afd8152d8f23329d78a28f545f9e84d0b73355a",
       "mode": "100644",
       "extension": ".py",
-      "size": 492,
+      "size": 576,
       "is_binary": false
     },
     {
       "name": "Contribuicao.py",
       "path": "backend/app/api/schema/Contribuicao.py",
       "type": "file",
-      "sha": "534df5c95b2ca837aadf6da7d73f2982ef0bf957",
+      "sha": "232e1c28b3f711f02580477c6d4585b695e0ad4b",
       "mode": "100644",
       "extension": ".py",
-      "size": 2078,
+      "size": 3557,
       "is_binary": false
     },
     {
       "name": "SubmissaoBase.py",
       "path": "backend/app/api/schema/SubmissaoBase.py",
       "type": "file",
-      "sha": "afb1465cd527b4f9eea7f10e5bd46c7e162bcd06",
+      "sha": "2fdd6e977aed1ec692e25cd54bde5006fb65e658",
       "mode": "100644",
       "extension": ".py",
-      "size": 828,
+      "size": 829,
       "is_binary": false
     },
     {
       "name": "__init__.py",
       "path": "backend/app/api/schema/__init__.py",
       "type": "file",
-      "sha": "0786e65b3ec0995ed8191254bc4c8e6bb42b94c9",
+      "sha": "133a151c6fd660ac56db8cb1e28343adce2ffe70",
       "mode": "100644",
       "extension": ".py",
-      "size": 348,
+      "size": 551,
+      "is_binary": false
+    },
+    {
+      "name": "categoria.py",
+      "path": "backend/app/api/schema/categoria.py",
+      "type": "file",
+      "sha": "7a1e45fc051696e0b5c69587b36734edebdb2185",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 403,
       "is_binary": false
     },
     {
@@ -658,30 +754,30 @@
       "name": "disciplina.py",
       "path": "backend/app/api/schema/disciplina.py",
       "type": "file",
-      "sha": "479c2afafb334b20396b7b1c130337aef09026f0",
+      "sha": "d07368878ac9e1ebcf2de04a6f7b7d8f06c33e4a",
       "mode": "100644",
       "extension": ".py",
-      "size": 3736,
+      "size": 3658,
       "is_binary": false
     },
     {
       "name": "fonte_institucional.py",
       "path": "backend/app/api/schema/fonte_institucional.py",
       "type": "file",
-      "sha": "5fb20bb5b9498bcbf5358108dbd7d78af9f688a5",
+      "sha": "4cf5b516378c141580ae2263f5b460868461a3ce",
       "mode": "100644",
       "extension": ".py",
-      "size": 1180,
+      "size": 1360,
       "is_binary": false
     },
     {
       "name": "publicacao_institucional.py",
       "path": "backend/app/api/schema/publicacao_institucional.py",
       "type": "file",
-      "sha": "e6d065b29fa7f89ed7dd074e9549c8cb2e38d71a",
+      "sha": "0ce604505c310a6579b985b9bffc2499494941e4",
       "mode": "100644",
       "extension": ".py",
-      "size": 3208,
+      "size": 3819,
       "is_binary": false
     },
     {
@@ -698,10 +794,10 @@
       "name": "usuario.py",
       "path": "backend/app/api/schema/usuario.py",
       "type": "file",
-      "sha": "74e382bb51863e2234942a5c8edcb938fee69ef0",
+      "sha": "9c8de90ea2065a2c8f0fcd82849176c4cd417586",
       "mode": "100644",
       "extension": ".py",
-      "size": 4797,
+      "size": 5318,
       "is_binary": false
     },
     {
@@ -726,10 +822,10 @@
       "name": "search.py",
       "path": "backend/app/api/search.py",
       "type": "file",
-      "sha": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+      "sha": "f2b2a52998ba8b6a1a075660928ec6dffb8e8249",
       "mode": "100644",
       "extension": ".py",
-      "size": 1,
+      "size": 4837,
       "is_binary": false
     },
     {
@@ -746,30 +842,30 @@
       "name": "db.py",
       "path": "backend/app/db.py",
       "type": "file",
-      "sha": "a800d8cdbbf4637dba46cb30f9d66c50add10380",
+      "sha": "cbc098feb5ddc0238573aa13bf6b6b55d1e8b0ee",
       "mode": "100644",
       "extension": ".py",
-      "size": 621,
+      "size": 695,
       "is_binary": false
     },
     {
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
-      "sha": "23ed4fbe96cc2fcc13575419e27f12e3a2be6b30",
+      "sha": "986b908a74e0b0e4096c523b463d05487779c2ac",
       "mode": "100644",
       "extension": ".py",
-      "size": 1418,
+      "size": 1784,
       "is_binary": false
     },
     {
       "name": "moderacao.py",
       "path": "backend/app/moderacao.py",
       "type": "file",
-      "sha": "07cf18595f2c4363096a742fec71068cdeabc8e8",
+      "sha": "5f38c7a7b8cdf55fda8a4f0850e90cc449db72e3",
       "mode": "100644",
       "extension": ".py",
-      "size": 2366,
+      "size": 2516,
       "is_binary": false
     },
     {
@@ -812,17 +908,105 @@
       "name": "requirements.txt",
       "path": "backend/requirements.txt",
       "type": "file",
-      "sha": "ae3460f6156b602908e3695a69372824270cc339",
+      "sha": "d1029d7facfbdab846a266226633881811259d81",
       "mode": "100644",
       "extension": ".txt",
-      "size": 101,
+      "size": 118,
+      "is_binary": false
+    },
+    {
+      "name": "tests",
+      "path": "backend/tests",
+      "type": "directory",
+      "sha": "f3caef3fed9f8560fd750c3c20f06df9c977e738",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "test_config.py",
+      "path": "backend/tests/test_config.py",
+      "type": "file",
+      "sha": "f540575e619edebb912cb5f4f61b393c5ce7e41d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2074,
+      "is_binary": false
+    },
+    {
+      "name": "test_contribuicao.py",
+      "path": "backend/tests/test_contribuicao.py",
+      "type": "file",
+      "sha": "23b6eb5389f24fa5ff8bc965d0ccf826f41cfa54",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2256,
+      "is_binary": false
+    },
+    {
+      "name": "test_curso_disciplina.py",
+      "path": "backend/tests/test_curso_disciplina.py",
+      "type": "file",
+      "sha": "6056ab67d8a08f91f7d0950f259c87b7bac282bb",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 750,
+      "is_binary": false
+    },
+    {
+      "name": "test_disciplina.py",
+      "path": "backend/tests/test_disciplina.py",
+      "type": "file",
+      "sha": "ddcc22c66d6c1edd44bafd46081304da846fdd29",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2813,
+      "is_binary": false
+    },
+    {
+      "name": "test_moderacao.py",
+      "path": "backend/tests/test_moderacao.py",
+      "type": "file",
+      "sha": "8e1ceea5d9654a347f60d1d46b69c29a3706fd7e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1693,
+      "is_binary": false
+    },
+    {
+      "name": "test_publicacao.py",
+      "path": "backend/tests/test_publicacao.py",
+      "type": "file",
+      "sha": "beba683fe0644f1356f1e9dc362f130d71f05bd8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2961,
+      "is_binary": false
+    },
+    {
+      "name": "test_search.py",
+      "path": "backend/tests/test_search.py",
+      "type": "file",
+      "sha": "e3cdb721a9a21e115961ee12bced00b7266270a4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1525,
+      "is_binary": false
+    },
+    {
+      "name": "test_usuario.py",
+      "path": "backend/tests/test_usuario.py",
+      "type": "file",
+      "sha": "2ff6f49621ce6e5274ec1afd575e9e1a69bb4518",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5844,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "437a1529e6ead80ca90301d929e0ace0ae87de2f",
+      "sha": "72df45f8ace33e334c80582098076573c0252d6c",
       "mode": "040000",
       "children": []
     },
@@ -873,20 +1057,10 @@
       "is_binary": false
     },
     {
-      "name": "documento_de_visao.md",
-      "path": "docs/documento_de_visao.md",
-      "type": "file",
-      "sha": "b2933c001841f0de1f51bd2c13ee1c442e1d38ba",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 12117,
-      "is_binary": false
-    },
-    {
       "name": "frontend",
       "path": "docs/frontend",
       "type": "directory",
-      "sha": "d7c0163d7b6c9a99455c676cff359af813353f82",
+      "sha": "1f41b9d53b6b97a22fb38c9debbf3c8680388773",
       "mode": "040000",
       "children": []
     },
@@ -901,39 +1075,21 @@
       "is_binary": false
     },
     {
-      "name": "design-system.md",
-      "path": "docs/frontend/design-system.md",
-      "type": "file",
-      "sha": "a69d83fd53f891ece6a90c8e26052820459b40e8",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 9714,
-      "is_binary": false
-    },
-    {
       "name": "gitpage",
       "path": "docs/gitpage",
       "type": "directory",
-      "sha": "43dfbe3610f0495fb47ec0cd04a55a63e7501837",
+      "sha": "40e0e9d9680e092ab8956c6b5a28ecdd1c8c0bba",
       "mode": "040000",
       "children": []
     },
     {
-      "name": "docs",
-      "path": "docs/gitpage/docs",
-      "type": "directory",
-      "sha": "c1a23b1bcd771dad864b2056ccf923a6b46cb9d4",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "index.md",
-      "path": "docs/gitpage/docs/index.md",
+      "name": "mkdocs.yml",
+      "path": "docs/gitpage/mkdocs.yml",
       "type": "file",
-      "sha": "000ea3455fa1226682a1b9dee6a720de44b0bcef",
+      "sha": "c0e554c84961906edad30ff29e3056e375f8c571",
       "mode": "100644",
-      "extension": ".md",
-      "size": 491,
+      "extension": ".yml",
+      "size": 2776,
       "is_binary": false
     },
     {
@@ -944,74 +1100,6 @@
       "mode": "100644",
       "extension": ".md",
       "size": 2685,
-      "is_binary": false
-    },
-    {
-      "name": "logbook",
-      "path": "docs/logbook",
-      "type": "directory",
-      "sha": "58db5e2ad53e6f2bb2acbfe6640ce929a0bd97b9",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "Arthur Vinicius Morais de Lima.md",
-      "path": "docs/logbook/Arthur Vinicius Morais de Lima.md",
-      "type": "file",
-      "sha": "74936ee67f6625bd6242a186baaf4c4034c06445",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 51,
-      "is_binary": false
-    },
-    {
-      "name": "Breno Henrique da Rocha Rodrigues.md",
-      "path": "docs/logbook/Breno Henrique da Rocha Rodrigues.md",
-      "type": "file",
-      "sha": "b188e7276271a12354f6aed3dd86c5f4af06f75a",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 54,
-      "is_binary": false
-    },
-    {
-      "name": "Daniel Almeida Frota.md",
-      "path": "docs/logbook/Daniel Almeida Frota.md",
-      "type": "file",
-      "sha": "4c965592ee1d2dbc978afd1e65e0fadbf47a8cdf",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 41,
-      "is_binary": false
-    },
-    {
-      "name": "Daniel Paz Dos Passos.md",
-      "path": "docs/logbook/Daniel Paz Dos Passos.md",
-      "type": "file",
-      "sha": "eac93a0b8bd40b3852e7f531bf6c4a35b7050572",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 42,
-      "is_binary": false
-    },
-    {
-      "name": "Deboráh Fragoso da Silva.md",
-      "path": "docs/logbook/Deboráh Fragoso da Silva.md",
-      "type": "file",
-      "sha": "44b3bbf246fc65137eee322df599a84768d10efa",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 46,
-      "is_binary": false
-    },
-    {
-      "name": "João Vithor Camargo Emidio.md",
-      "path": "docs/logbook/João Vithor Camargo Emidio.md",
-      "type": "file",
-      "sha": "131997be7ecb46b77976246fd700755a541d8c8a",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 48,
       "is_binary": false
     },
     {
@@ -1028,29 +1116,9 @@
       "name": "scrum",
       "path": "docs/scrum",
       "type": "directory",
-      "sha": "01da15a0efce0d8bdc63c451b7d5403dcce92f8e",
+      "sha": "95ff90527228d1953c79d2dec78a00f0748b9673",
       "mode": "040000",
       "children": []
-    },
-    {
-      "name": "Scrum 0.md",
-      "path": "docs/scrum/Scrum 0.md",
-      "type": "file",
-      "sha": "88cc687bc00c97d9aa94f8f8544118537cb8a3f6",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 2339,
-      "is_binary": false
-    },
-    {
-      "name": "Scrum 1.md",
-      "path": "docs/scrum/Scrum 1.md",
-      "type": "file",
-      "sha": "9db8a1758bf1be1b71dd8078f9f9ba071b828fa3",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 2053,
-      "is_binary": false
     },
     {
       "name": "Scrum 2.md",
@@ -1662,10 +1730,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "bf5c385f7f90042d9e37803d59328c7843862d11",
+      "sha": "8737c635986e21f478694714fb1fda3c90000775",
       "mode": "100644",
       "extension": ".yml",
-      "size": 1589,
+      "size": 1930,
       "is_binary": false
     },
     {
@@ -1822,19 +1890,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-23T10:49:43.574967+00:00",
+  "extracted_at": "2026-10-24T10:19:11.437864+00:00",
   "method": "rest",
-  "total_items": 192,
+  "total_items": 199,
   "repository_metadata": {
     "id": 1338349828,
     "full_name": "unb-mds/2026-2-UnB_Core",
     "description": "Grupo G1 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:55:42Z",
-    "updated_at": "2026-10-20T22:49:41Z",
-    "language": "JavaScript",
-    "size": 1161,
+    "updated_at": "2026-10-23T21:17:38Z",
+    "language": "Python",
+    "size": 1182,
     "stars": 1,
     "forks": 2,
-    "open_issues": 26
+    "open_issues": 25
   }
 }
