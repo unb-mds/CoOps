@@ -2,19 +2,19 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-23T10:49:47.586820+00:00",
+  "analyzed_at": "2026-10-24T10:19:17.037200+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 250,
-  "total_bytes": 1523199,
+  "total_files": 258,
+  "total_bytes": 1584600,
   "languages": [
     {
       "language": "TypeScript",
-      "file_count": 39,
-      "total_bytes": 426616,
-      "percentage": 28.01,
+      "file_count": 44,
+      "total_bytes": 479128,
+      "percentage": 30.24,
       "files": [
         {
           "path": "frontend/src/figma-export/src/App.tsx",
@@ -25,7 +25,13 @@
         {
           "path": "frontend/src/app/disciplinas/[slug]/page.tsx",
           "name": "page.tsx",
-          "size": 46335,
+          "size": 44605,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/components/MaterialModal.tsx",
+          "name": "MaterialModal.tsx",
+          "size": 32298,
           "extension": ".tsx"
         },
         {
@@ -69,12 +75,6 @@
           "name": "page.tsx",
           "size": 14935,
           "extension": ".tsx"
-        },
-        {
-          "path": "frontend/src/app/login/page.tsx",
-          "name": "page.tsx",
-          "size": 12059,
-          "extension": ".tsx"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "language": "Python",
       "file_count": 120,
       "total_bytes": 404634,
-      "percentage": 26.56,
+      "percentage": 25.54,
       "files": [
         {
           "path": "backend/app/pipeline/extractors/sigaa_extractor.py",
@@ -148,9 +148,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 34,
-      "total_bytes": 332935,
-      "percentage": 21.86,
+      "file_count": 36,
+      "total_bytes": 339827,
+      "percentage": 21.45,
       "files": [
         {
           "path": "docs/arquitetura.md",
@@ -217,8 +217,8 @@
     {
       "language": "JSON",
       "file_count": 9,
-      "total_bytes": 253433,
-      "percentage": 16.64,
+      "total_bytes": 253570,
+      "percentage": 16.0,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -241,7 +241,13 @@
         {
           "path": "frontend/tsconfig.json",
           "name": "tsconfig.json",
-          "size": 697,
+          "size": 737,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 627,
           "extension": ".json"
         },
         {
@@ -254,12 +260,6 @@
           "path": "frontend/src/figma-export/tsconfig.json",
           "name": "tsconfig.json",
           "size": 556,
-          "extension": ".json"
-        },
-        {
-          "path": "frontend/package.json",
-          "name": "package.json",
-          "size": 530,
           "extension": ".json"
         },
         {
@@ -278,9 +278,9 @@
     },
     {
       "language": "YAML",
-      "file_count": 6,
-      "total_bytes": 35558,
-      "percentage": 2.33,
+      "file_count": 7,
+      "total_bytes": 37418,
+      "percentage": 2.36,
       "files": [
         {
           "path": "frontend/src/figma-export/pnpm-lock.yaml",
@@ -289,15 +289,21 @@
           "extension": ".yaml"
         },
         {
-          "path": ".github/workflows/backend-cursos.yml",
-          "name": "backend-cursos.yml",
-          "size": 1654,
+          "path": ".github/workflows/ci.yml",
+          "name": "ci.yml",
+          "size": 1782,
           "extension": ".yml"
         },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 1606,
+          "size": 1684,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/backend-cursos.yml",
+          "name": "backend-cursos.yml",
+          "size": 1654,
           "extension": ".yml"
         },
         {
@@ -324,7 +330,7 @@
       "language": "Icon",
       "file_count": 1,
       "total_bytes": 25931,
-      "percentage": 1.7,
+      "percentage": 1.64,
       "files": [
         {
           "path": "frontend/src/app/favicon.ico",
@@ -338,7 +344,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 15244,
-      "percentage": 1.0,
+      "percentage": 0.96,
       "files": [
         {
           "path": "init.sql",
@@ -352,7 +358,7 @@
       "language": "Unknown",
       "file_count": 13,
       "total_bytes": 12280,
-      "percentage": 0.81,
+      "percentage": 0.77,
       "files": [
         {
           "path": "frontend/src/figma-export/.gitattributes",
@@ -420,7 +426,7 @@
       "language": "Shell",
       "file_count": 2,
       "total_bytes": 5449,
-      "percentage": 0.36,
+      "percentage": 0.34,
       "files": [
         {
           "path": ".agents/skills/github-project-triage/scripts/github-activity.sh",
@@ -440,7 +446,7 @@
       "language": "SVG Image",
       "file_count": 5,
       "total_bytes": 3314,
-      "percentage": 0.22,
+      "percentage": 0.21,
       "files": [
         {
           "path": "frontend/public/next.svg",
@@ -478,7 +484,7 @@
       "language": "CSS",
       "file_count": 2,
       "total_bytes": 2931,
-      "percentage": 0.19,
+      "percentage": 0.18,
       "files": [
         {
           "path": "frontend/src/figma-export/src/index.css",
@@ -498,7 +504,7 @@
       "language": "Git Ignore",
       "file_count": 3,
       "total_bytes": 1328,
-      "percentage": 0.09,
+      "percentage": 0.08,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -652,7 +658,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-23T10:50:45.465400+00:00",
+    "extracted_at": "2026-10-24T10:20:12.881491+00:00",
     "file_path": "data/silver/language_analysis_2026-02-TambureteiUnB.json"
   }
 }

@@ -2,7 +2,7 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-23T10:49:44.992681+00:00",
+  "extracted_at": "2026-10-24T10:19:13.289116+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -466,6 +466,14 @@
         "path": ".github/workflows/deploy-docs.yml"
       },
       {
+        "name": "pipeline.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1064,
+        "extension": ".yml",
+        "path": ".github/workflows/pipeline.yml"
+      },
+      {
         "name": "Back",
         "type": "directory",
         "path": "Back",
@@ -475,7 +483,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 434,
+        "size": 477,
         "extension": ".example",
         "path": "Back/.env.example"
       },
@@ -507,7 +515,7 @@
         "name": "alembic.ini",
         "type": "file",
         "language": "INI",
-        "size": 667,
+        "size": 675,
         "extension": ".ini",
         "path": "Back/alembic.ini"
       },
@@ -543,7 +551,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 584,
+        "size": 656,
         "extension": ".py",
         "path": "Back/app/core/config.py"
       },
@@ -551,7 +559,7 @@
         "name": "database.py",
         "type": "file",
         "language": "Python",
-        "size": 3413,
+        "size": 6606,
         "extension": ".py",
         "path": "Back/app/core/database.py"
       },
@@ -559,7 +567,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1398,
+        "size": 1717,
         "extension": ".py",
         "path": "Back/app/main.py"
       },
@@ -592,12 +600,28 @@
         "path": "Back/app/modules/editais/__init__.py"
       },
       {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 701,
+        "extension": ".py",
+        "path": "Back/app/modules/editais/models.py"
+      },
+      {
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 1756,
+        "size": 7303,
         "extension": ".py",
         "path": "Back/app/modules/editais/router.py"
+      },
+      {
+        "name": "service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10470,
+        "extension": ".py",
+        "path": "Back/app/modules/editais/service.py"
       },
       {
         "name": "favoritos",
@@ -623,17 +647,33 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 102,
+        "size": 1421,
         "extension": ".py",
         "path": "Back/app/modules/scraper/__init__.py"
+      },
+      {
+        "name": "base.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2131,
+        "extension": ".py",
+        "path": "Back/app/modules/scraper/base.py"
       },
       {
         "name": "deg.py",
         "type": "file",
         "language": "Python",
-        "size": 4495,
+        "size": 5354,
         "extension": ".py",
         "path": "Back/app/modules/scraper/deg.py"
+      },
+      {
+        "name": "service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5277,
+        "extension": ".py",
+        "path": "Back/app/modules/scraper/service.py"
       },
       {
         "name": "usuarios",
@@ -648,6 +688,38 @@
         "size": 77,
         "extension": ".py",
         "path": "Back/app/modules/usuarios/__init__.py"
+      },
+      {
+        "name": "router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1403,
+        "extension": ".py",
+        "path": "Back/app/modules/usuarios/router.py"
+      },
+      {
+        "name": "schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 447,
+        "extension": ".py",
+        "path": "Back/app/modules/usuarios/schemas.py"
+      },
+      {
+        "name": "security.py",
+        "type": "file",
+        "language": "Python",
+        "size": 297,
+        "extension": ".py",
+        "path": "Back/app/modules/usuarios/security.py"
+      },
+      {
+        "name": "service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 844,
+        "extension": ".py",
+        "path": "Back/app/modules/usuarios/service.py"
       },
       {
         "name": "docker-compose.yml",
@@ -697,7 +769,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 336,
+        "size": 381,
         "extension": ".txt",
         "path": "Back/requirements.txt"
       },
@@ -719,9 +791,17 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 286,
+        "size": 288,
         "extension": ".py",
         "path": "Back/tests/conftest.py"
+      },
+      {
+        "name": "test_base_scraper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4606,
+        "extension": ".py",
+        "path": "Back/tests/test_base_scraper.py"
       },
       {
         "name": "test_database_schema.py",
@@ -857,7 +937,7 @@
         "name": "FavoriteButton.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 601,
+        "size": 937,
         "extension": ".tsx",
         "path": "Front/src/components/FavoriteButton.tsx"
       },
@@ -1014,6 +1094,38 @@
         "path": "Front/tsconfig.node.json"
       },
       {
+        "name": "tsconfig.node.tsbuildinfo",
+        "type": "file",
+        "language": "Unknown",
+        "size": 43045,
+        "extension": ".tsbuildinfo",
+        "path": "Front/tsconfig.node.tsbuildinfo"
+      },
+      {
+        "name": "tsconfig.tsbuildinfo",
+        "type": "file",
+        "language": "Unknown",
+        "size": 459,
+        "extension": ".tsbuildinfo",
+        "path": "Front/tsconfig.tsbuildinfo"
+      },
+      {
+        "name": "vite.config.d.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 76,
+        "extension": ".ts",
+        "path": "Front/vite.config.d.ts"
+      },
+      {
+        "name": "vite.config.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 334,
+        "extension": ".js",
+        "path": "Front/vite.config.js"
+      },
+      {
         "name": "vite.config.ts",
         "type": "file",
         "language": "TypeScript",
@@ -1025,7 +1137,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7016,
+        "size": 7076,
         "extension": ".md",
         "path": "README.md"
       },
@@ -1118,6 +1230,14 @@
         "path": "docs/Estudos/sprint00/estudo_GitGtHub.md"
       },
       {
+        "name": "jornada_dos_dados_e_usuario.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4000,
+        "extension": ".md",
+        "path": "docs/Estudos/sprint00/jornada_dos_dados_e_usuario.md"
+      },
+      {
         "name": "RealiseNotes",
         "type": "directory",
         "path": "docs/RealiseNotes",
@@ -1149,7 +1269,7 @@
         "name": "release-1.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7510,
+        "size": 7693,
         "extension": ".md",
         "path": "docs/RealiseNotes/release-1.md"
       },
@@ -1389,9 +1509,17 @@
         "name": "back.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1598,
+        "size": 1608,
         "extension": ".md",
         "path": "docs/back.md"
+      },
+      {
+        "name": "fontes-de-dados.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12234,
+        "extension": ".md",
+        "path": "docs/fontes-de-dados.md"
       },
       {
         "name": "front.md",
@@ -1408,6 +1536,28 @@
         "size": 4234,
         "extension": ".md",
         "path": "docs/index.md"
+      },
+      {
+        "name": "sprints",
+        "type": "directory",
+        "path": "docs/sprints",
+        "children": []
+      },
+      {
+        "name": "sprint-04.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2262,
+        "extension": ".md",
+        "path": "docs/sprints/sprint-04.md"
+      },
+      {
+        "name": "sprint-05.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4714,
+        "extension": ".md",
+        "path": "docs/sprints/sprint-05.md"
       },
       {
         "name": "stylesheets",
@@ -1427,7 +1577,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2351,
+        "size": 2423,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -1442,7 +1592,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-23T10:50:45.589511+00:00",
+    "extracted_at": "2026-10-24T10:20:13.900279+00:00",
     "file_path": "data/silver/hierarchy_Fique-de-Olho.json"
   }
 }

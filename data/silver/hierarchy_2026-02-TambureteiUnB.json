@@ -2,7 +2,7 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-23T10:49:47.586820+00:00",
+  "extracted_at": "2026-10-24T10:19:17.037200+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -208,6 +208,14 @@
         "path": ".github/workflows/backend-cursos.yml"
       },
       {
+        "name": "ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1782,
+        "extension": ".yml",
+        "path": ".github/workflows/ci.yml"
+      },
+      {
         "name": "deploy-docs.yml",
         "type": "file",
         "language": "YAML",
@@ -246,6 +254,14 @@
         "size": 9526,
         "extension": ".md",
         "path": "README.md"
+      },
+      {
+        "name": "RELEASE_NOTES_v0.6.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3299,
+        "extension": ".md",
+        "path": "RELEASE_NOTES_v0.6.0.md"
       },
       {
         "name": "backend",
@@ -1559,7 +1575,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3281,
+        "size": 3575,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -1594,6 +1610,20 @@
         "size": 4213,
         "extension": ".md",
         "path": "docs/regras_negocio.md"
+      },
+      {
+        "name": "releases",
+        "type": "directory",
+        "path": "docs/releases",
+        "children": []
+      },
+      {
+        "name": "v0.6.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3299,
+        "extension": ".md",
+        "path": "docs/releases/v0.6.0.md"
       },
       {
         "name": "requisitos.md",
@@ -1737,7 +1767,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 530,
+        "size": 627,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -1865,7 +1895,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 46335,
+        "size": 44605,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[slug]/page.tsx"
       },
@@ -2005,7 +2035,7 @@
         "name": "MaterialModal.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2310,
+        "size": 32298,
         "extension": ".tsx",
         "path": "frontend/src/components/MaterialModal.tsx"
       },
@@ -2248,6 +2278,20 @@
         "children": []
       },
       {
+        "name": "__tests__",
+        "type": "directory",
+        "path": "frontend/src/services/__tests__",
+        "children": []
+      },
+      {
+        "name": "materialService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5473,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/materialService.test.ts"
+      },
+      {
         "name": "authService.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2283,9 +2327,17 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 993,
+        "size": 1271,
         "extension": ".ts",
         "path": "frontend/src/services/index.ts"
+      },
+      {
+        "name": "materialService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7505,
+        "extension": ".ts",
+        "path": "frontend/src/services/materialService.ts"
       },
       {
         "name": "types",
@@ -2318,6 +2370,14 @@
         "path": "frontend/src/types/disciplina.ts"
       },
       {
+        "name": "material.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 832,
+        "extension": ".ts",
+        "path": "frontend/src/types/material.ts"
+      },
+      {
         "name": "turma.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2326,10 +2386,38 @@
         "path": "frontend/src/types/turma.ts"
       },
       {
+        "name": "utils",
+        "type": "directory",
+        "path": "frontend/src/utils",
+        "children": []
+      },
+      {
+        "name": "__tests__",
+        "type": "directory",
+        "path": "frontend/src/utils/__tests__",
+        "children": []
+      },
+      {
+        "name": "fileValidation.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5455,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/fileValidation.test.ts"
+      },
+      {
+        "name": "fileValidation.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4711,
+        "extension": ".ts",
+        "path": "frontend/src/utils/fileValidation.ts"
+      },
+      {
         "name": "tsconfig.json",
         "type": "file",
         "language": "JSON",
-        "size": 697,
+        "size": 737,
         "extension": ".json",
         "path": "frontend/tsconfig.json"
       },
@@ -2345,7 +2433,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1606,
+        "size": 1684,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -2394,7 +2482,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-23T10:50:45.467234+00:00",
+    "extracted_at": "2026-10-24T10:20:12.882732+00:00",
     "file_path": "data/silver/hierarchy_2026-02-TambureteiUnB.json"
   }
 }
