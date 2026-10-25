@@ -1,10 +1,61 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-24T10:15:36.441270+00:00",
+      "extracted_at": "2026-10-25T10:33:02.113206+00:00",
       "file_path": "data/bronze/commits_2026-2-Bandejao.json",
-      "record_count": 138
+      "record_count": 140
     }
+  },
+  {
+    "sha": "fbe6fb2f9decf10d40c21838d48e96cc92992750",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gustavo-0611",
+        "date": "2026-10-24T22:37:53Z",
+        "login": "Gustavo-0611",
+        "id": 287090259,
+        "author_email_hash": "164f1b175a229ce44b319878c4085f4187ec771370897e9c73237ef1c7be9fa0"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-24T22:37:53Z"
+      },
+      "message": "Merge pull request #67 from unb-mds/feature/reclamacoes\n\nregistro de reclamações e leitura interna da equipe (RF08)"
+    },
+    "parents": [
+      "dac53e4e5eb00463871ed654ab55775b3d2b1367",
+      "9ec6954936cce670d93249e2b5ea58e59a961d32"
+    ],
+    "additions": 652,
+    "deletions": 42,
+    "total_changes": 694,
+    "repo_name": "2026-2-Bandejao"
+  },
+  {
+    "sha": "9ec6954936cce670d93249e2b5ea58e59a961d32",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "VictorSouzaJVTS",
+        "date": "2026-10-23T20:52:36Z",
+        "login": "VictorSouzaJVTS",
+        "id": 151692848,
+        "author_email_hash": "b2f2d8bb8a8a4dc6b56a9d47599b10dba52d33d8970439b13cd5793254e8ef46"
+      },
+      "committer": {
+        "name": "VictorSouzaJVTS",
+        "date": "2026-10-23T20:52:36Z"
+      },
+      "message": "registro de reclamações e leitura interna da equipe (RF08)\n\n- modelo Reclamacao, migração e schemas (4 categorias, 1 a 1.000 caracteres)\n- POST /cardapios/{id}/reclamacoes/ com identidade UUID v4 e a mesma\n  janela das avaliações; confirmação sem prometer encaminhamento\n- GET /equipe/reclamacoes/ protegido por EQUIPE_TOKEN, sem expor identidade\n- sem rota pública de listagem; reimportação do cardápio preserva reclamações"
+    },
+    "parents": [
+      "dac53e4e5eb00463871ed654ab55775b3d2b1367"
+    ],
+    "additions": 652,
+    "deletions": 42,
+    "total_changes": 694,
+    "repo_name": "2026-2-Bandejao"
   },
   {
     "sha": "dac53e4e5eb00463871ed654ab55775b3d2b1367",

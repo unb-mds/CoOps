@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Bandejao",
   "branch": "main",
-  "sha": "dac53e4e5eb00463871ed654ab55775b3d2b1367",
+  "sha": "fbe6fb2f9decf10d40c21838d48e96cc92992750",
   "tree": [
     {
       "name": ".github",
@@ -74,7 +74,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "519c2cee3ac07ca81c8a81c74b618160cf7dd31e",
+      "sha": "d199af709cb60401a09ef6fee2536821c4c5b1ef",
       "mode": "040000",
       "children": []
     },
@@ -82,10 +82,10 @@
       "name": ".env.example",
       "path": "backend/.env.example",
       "type": "file",
-      "sha": "438e1ea022815aaeb6d6ec42466817905039dd66",
+      "sha": "2c4be9c2e4d2f8a8feb7f7f21ff7a9d3e301fce4",
       "mode": "100644",
       "extension": ".example",
-      "size": 290,
+      "size": 402,
       "is_binary": false
     },
     {
@@ -112,7 +112,7 @@
       "name": "alembic",
       "path": "backend/alembic",
       "type": "directory",
-      "sha": "d5f2be8cfd7218c84e2171f37900cb014cca8da3",
+      "sha": "7327fd9ba1d842894be5e724c5c751f4baf7a13e",
       "mode": "040000",
       "children": []
     },
@@ -150,7 +150,7 @@
       "name": "versions",
       "path": "backend/alembic/versions",
       "type": "directory",
-      "sha": "4d3c30f0b3c0d46bc846922838b87b405a7c4675",
+      "sha": "4dc0b85775fa7a88dd36df39a59ac5f3d12322d4",
       "mode": "040000",
       "children": []
     },
@@ -175,6 +175,16 @@
       "is_binary": false
     },
     {
+      "name": "5a6b7c8d9e0f_cria_reclamacao.py",
+      "path": "backend/alembic/versions/5a6b7c8d9e0f_cria_reclamacao.py",
+      "type": "file",
+      "sha": "32263b05450551434941bcf8f162abae468fedb2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1311,
+      "is_binary": false
+    },
+    {
       "name": "cb27a92c83d1_adiciona_alergeno_amendoim.py",
       "path": "backend/alembic/versions/cb27a92c83d1_adiciona_alergeno_amendoim.py",
       "type": "file",
@@ -188,7 +198,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "78d41d8d01f2fc6d7575f098d1ebea0b023e3fa9",
+      "sha": "30d493b1fa95f1414a11dfdcafe471da2bd4eb98",
       "mode": "040000",
       "children": []
     },
@@ -196,15 +206,25 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "283bf87a4ce2fd3a29b39f0345b11dfdd8f563e0",
+      "sha": "f3c97b5803015a2ec73b9d884767885a13e99f5e",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "dependencias.py",
+      "path": "backend/app/api/dependencias.py",
+      "type": "file",
+      "sha": "005ff180b0fb698027c96df100a96365d4e614d3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1357,
+      "is_binary": false
     },
     {
       "name": "routes",
       "path": "backend/app/api/routes",
       "type": "directory",
-      "sha": "3f19692e635322fea683f5d807bf880c955457be",
+      "sha": "4091003673a5ef323f92a9def1895789a3845dd6",
       "mode": "040000",
       "children": []
     },
@@ -212,10 +232,10 @@
       "name": "avaliacao.py",
       "path": "backend/app/api/routes/avaliacao.py",
       "type": "file",
-      "sha": "e113ea1cfc7e362773187a156f3841fd51b74fcd",
+      "sha": "a51266ba1a49fbcc8ccc6de116f2f8c5e1c8f4bb",
       "mode": "100644",
       "extension": ".py",
-      "size": 3167,
+      "size": 2133,
       "is_binary": false
     },
     {
@@ -259,10 +279,20 @@
       "is_binary": false
     },
     {
+      "name": "reclamacao.py",
+      "path": "backend/app/api/routes/reclamacao.py",
+      "type": "file",
+      "sha": "19fdb446fb51c47d1d040e74d445a4e0d443f85d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2341,
+      "is_binary": false
+    },
+    {
       "name": "core",
       "path": "backend/app/core",
       "type": "directory",
-      "sha": "e22bc0eaf975d9190436fb8e81111072db7079cc",
+      "sha": "5cfa0eb36ef1ab57d040dd126a104780a3663dd9",
       "mode": "040000",
       "children": []
     },
@@ -280,20 +310,20 @@
       "name": "config.py",
       "path": "backend/app/core/config.py",
       "type": "file",
-      "sha": "723864a1e12620565b61b9baa8189a85d3ef5a99",
+      "sha": "c644acde27b1b541dfc2503044438d4f1dae0173",
       "mode": "100644",
       "extension": ".py",
-      "size": 864,
+      "size": 908,
       "is_binary": false
     },
     {
       "name": "security.py",
       "path": "backend/app/core/security.py",
       "type": "file",
-      "sha": "3da7b16e95bb99b8bc31d7419accb2621e60eb77",
+      "sha": "a299f5b1bf5868f0bde4c927b963b919a45d1d63",
       "mode": "100644",
       "extension": ".py",
-      "size": 876,
+      "size": 1447,
       "is_binary": false
     },
     {
@@ -348,17 +378,17 @@
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
-      "sha": "ee100dd8b42be9bd84cef1770de7032ff4ff2023",
+      "sha": "def4cba03b233c42ccc7521e36d0f4214122b00a",
       "mode": "100644",
       "extension": ".py",
-      "size": 828,
+      "size": 923,
       "is_binary": false
     },
     {
       "name": "models",
       "path": "backend/app/models",
       "type": "directory",
-      "sha": "7d2ada6c95fd71c17cb3bc5065a956d1e1df0773",
+      "sha": "ed1a21884bba5c2bfb9b942ee7719ca61640a1db",
       "mode": "040000",
       "children": []
     },
@@ -366,10 +396,10 @@
       "name": "__init__.py",
       "path": "backend/app/models/__init__.py",
       "type": "file",
-      "sha": "87d20afd6424ba2e4602ccfcd11ad95b5bd71dc3",
+      "sha": "b46e97cb5be080d4afee1fa62af5538ba681ac79",
       "mode": "100644",
       "extension": ".py",
-      "size": 425,
+      "size": 536,
       "is_binary": false
     },
     {
@@ -396,10 +426,10 @@
       "name": "cardapio.py",
       "path": "backend/app/models/cardapio.py",
       "type": "file",
-      "sha": "ef55402147ceb62feff616e93bc41c7288d5b32d",
+      "sha": "900ed5f1ee76d4304b32653984fa3a6e907d2e27",
       "mode": "100644",
       "extension": ".py",
-      "size": 1511,
+      "size": 1690,
       "is_binary": false
     },
     {
@@ -416,10 +446,10 @@
       "name": "enums.py",
       "path": "backend/app/models/enums.py",
       "type": "file",
-      "sha": "4a45a9028135dee04074a0c9dea0d6641c12fb6a",
+      "sha": "a026355c12b32f65ac2c0407e8f284bdeb395c0c",
       "mode": "100644",
       "extension": ".py",
-      "size": 730,
+      "size": 881,
       "is_binary": false
     },
     {
@@ -433,10 +463,20 @@
       "is_binary": false
     },
     {
+      "name": "reclamacao.py",
+      "path": "backend/app/models/reclamacao.py",
+      "type": "file",
+      "sha": "a046701bfe1b55dc2e44073d00fb396eae9f6de1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1147,
+      "is_binary": false
+    },
+    {
       "name": "schemas",
       "path": "backend/app/schemas",
       "type": "directory",
-      "sha": "06f421cf6553c2e6f4ff3b2058d2b3c5d98d3e06",
+      "sha": "e772742845a6fdb1f2dd66834695f0223dff1531",
       "mode": "040000",
       "children": []
     },
@@ -444,10 +484,10 @@
       "name": "__init__.py",
       "path": "backend/app/schemas/__init__.py",
       "type": "file",
-      "sha": "7474fa4c1139a460d6857a20357a06b093aa737e",
+      "sha": "4be14a189992ac69c4b09b91a1c88059c1398720",
       "mode": "100644",
       "extension": ".py",
-      "size": 486,
+      "size": 681,
       "is_binary": false
     },
     {
@@ -501,6 +541,16 @@
       "is_binary": false
     },
     {
+      "name": "reclamacao.py",
+      "path": "backend/app/schemas/reclamacao.py",
+      "type": "file",
+      "sha": "f67ff0a5be5c8fdd3cb2035e0564c72279fd6794",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 882,
+      "is_binary": false
+    },
+    {
       "name": "pyproject.toml",
       "path": "backend/pyproject.toml",
       "type": "file",
@@ -524,7 +574,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "0e51b61c4cb0f6c5efbace418596a7d05c6b484c",
+      "sha": "7390cf5dd078277e3b2d43e9d448e03682b883c8",
       "mode": "040000",
       "children": []
     },
@@ -552,10 +602,10 @@
       "name": "test_avaliacao_janela.py",
       "path": "backend/tests/test_avaliacao_janela.py",
       "type": "file",
-      "sha": "9796e20e9771f85eab9bd60a6c6c5a3a8b0d666c",
+      "sha": "775b561edeaad3da0758cf81a0eba7a83cd61078",
       "mode": "100644",
       "extension": ".py",
-      "size": 3476,
+      "size": 3482,
       "is_binary": false
     },
     {
@@ -596,6 +646,26 @@
       "mode": "100644",
       "extension": ".py",
       "size": 2614,
+      "is_binary": false
+    },
+    {
+      "name": "test_migracao_reclamacao.py",
+      "path": "backend/tests/test_migracao_reclamacao.py",
+      "type": "file",
+      "sha": "e6f2309365cf52bd1d4259fd9e1d0a1e382a13c5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1908,
+      "is_binary": false
+    },
+    {
+      "name": "test_reclamacao.py",
+      "path": "backend/tests/test_reclamacao.py",
+      "type": "file",
+      "sha": "203e196d37c342ace5fa322fa88a7d8d3a412204",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 12506,
       "is_binary": false
     },
     {
@@ -1806,19 +1876,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-24T10:19:19.725348+00:00",
+  "extracted_at": "2026-10-25T10:36:21.061579+00:00",
   "method": "rest",
-  "total_items": 187,
+  "total_items": 194,
   "repository_metadata": {
     "id": 1338353011,
     "full_name": "unb-mds/2026-2-Bandejao",
     "description": "Grupo G12 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:59:18Z",
-    "updated_at": "2026-10-22T13:13:38Z",
+    "updated_at": "2026-10-24T22:37:58Z",
     "language": "TypeScript",
-    "size": 1230,
+    "size": 1129,
     "stars": 2,
     "forks": 0,
-    "open_issues": 7
+    "open_issues": 8
   }
 }
