@@ -2,7 +2,7 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-24T10:19:12.037499+00:00",
+  "extracted_at": "2026-10-25T10:36:15.278529+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -19,7 +19,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 57,
+        "size": 118,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -35,7 +35,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12410,
+        "size": 12771,
         "extension": ".md",
         "path": "README.md"
       },
@@ -79,7 +79,7 @@
         "name": "professor_controller.py",
         "type": "file",
         "language": "Python",
-        "size": 2037,
+        "size": 2215,
         "extension": ".py",
         "path": "app/controllers/professor_controller.py"
       },
@@ -95,7 +95,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 1821,
+        "size": 2232,
         "extension": ".py",
         "path": "app/models.py"
       },
@@ -103,7 +103,7 @@
         "name": "repositorio.py",
         "type": "file",
         "language": "Python",
-        "size": 10514,
+        "size": 11158,
         "extension": ".py",
         "path": "app/repositorio.py"
       },
@@ -133,7 +133,7 @@
         "name": "professor_routes.py",
         "type": "file",
         "language": "Python",
-        "size": 2369,
+        "size": 2457,
         "extension": ".py",
         "path": "app/routes/professor_routes.py"
       },
@@ -193,7 +193,7 @@
         "name": "lista_professores.html",
         "type": "file",
         "language": "HTML",
-        "size": 2262,
+        "size": 2731,
         "extension": ".html",
         "path": "app/templates/lista_professores.html"
       },
@@ -247,7 +247,7 @@
         "name": "COMO_USAR_SCRAPER.md",
         "type": "file",
         "language": "Markdown",
-        "size": 629,
+        "size": 4115,
         "extension": ".md",
         "path": "docs/COMO_USAR_SCRAPER.md"
       },
@@ -301,7 +301,7 @@
         "name": "001_initial_schema.sql",
         "type": "file",
         "language": "SQL",
-        "size": 1137,
+        "size": 3180,
         "extension": ".sql",
         "path": "docs/migrations/001_initial_schema.sql"
       },
@@ -352,6 +352,14 @@
         "path": "scraper/checar_tabelas.py"
       },
       {
+        "name": "cli_sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1617,
+        "extension": ".py",
+        "path": "scraper/cli_sigaa.py"
+      },
+      {
         "name": "debug_cookies.py",
         "type": "file",
         "language": "Python",
@@ -360,10 +368,26 @@
         "path": "scraper/debug_cookies.py"
       },
       {
+        "name": "persistencia_sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2380,
+        "extension": ".py",
+        "path": "scraper/persistencia_sigaa.py"
+      },
+      {
+        "name": "resumo_sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3066,
+        "extension": ".py",
+        "path": "scraper/resumo_sigaa.py"
+      },
+      {
         "name": "scraper_sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 22220,
+        "size": 21815,
         "extension": ".py",
         "path": "scraper/scraper_sigaa.py"
       },
@@ -379,7 +403,7 @@
         "name": "texto_sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 2105,
+        "size": 3387,
         "extension": ".py",
         "path": "scraper/texto_sigaa.py"
       },
@@ -390,6 +414,14 @@
         "size": 916,
         "extension": ".py",
         "path": "scraper/turmas_sigaa.py"
+      },
+      {
+        "name": "unidades_sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1655,
+        "extension": ".py",
+        "path": "scraper/unidades_sigaa.py"
       },
       {
         "name": "tests",
@@ -409,15 +441,39 @@
         "name": "fake_supabase.py",
         "type": "file",
         "language": "Python",
-        "size": 5646,
+        "size": 6772,
         "extension": ".py",
         "path": "tests/fake_supabase.py"
+      },
+      {
+        "name": "test_scraper_cli.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1272,
+        "extension": ".py",
+        "path": "tests/test_scraper_cli.py"
+      },
+      {
+        "name": "test_scraper_persistencia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3139,
+        "extension": ".py",
+        "path": "tests/test_scraper_persistencia.py"
+      },
+      {
+        "name": "test_scraper_resumo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2510,
+        "extension": ".py",
+        "path": "tests/test_scraper_resumo.py"
       },
       {
         "name": "test_scraper_texto.py",
         "type": "file",
         "language": "Python",
-        "size": 4485,
+        "size": 5643,
         "extension": ".py",
         "path": "tests/test_scraper_texto.py"
       },
@@ -428,6 +484,14 @@
         "size": 1895,
         "extension": ".py",
         "path": "tests/test_scraper_turmas.py"
+      },
+      {
+        "name": "test_scraper_unidades.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2919,
+        "extension": ".py",
+        "path": "tests/test_scraper_unidades.py"
       },
       {
         "name": "test_seguranca.py",
@@ -441,7 +505,7 @@
         "name": "test_supabase.py",
         "type": "file",
         "language": "Python",
-        "size": 13380,
+        "size": 16277,
         "extension": ".py",
         "path": "tests/test_supabase.py"
       },
@@ -456,7 +520,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-24T10:20:13.520955+00:00",
+    "extracted_at": "2026-10-25T10:37:22.730263+00:00",
     "file_path": "data/silver/hierarchy_2026-2-AvaliaAiUnB.json"
   }
 }
