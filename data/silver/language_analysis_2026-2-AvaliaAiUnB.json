@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-25T10:36:15.278529+00:00",
+  "analyzed_at": "2026-10-26T11:51:20.205734+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 57,
-  "total_bytes": 290732,
+  "total_files": 60,
+  "total_bytes": 305885,
   "languages": [
     {
       "language": "Python",
       "file_count": 34,
-      "total_bytes": 119429,
-      "percentage": 41.08,
+      "total_bytes": 131183,
+      "percentage": 42.89,
       "files": [
         {
           "path": "scraper/scraper_sigaa.py",
@@ -25,19 +25,19 @@
         {
           "path": "tests/test_supabase.py",
           "name": "test_supabase.py",
-          "size": 16277,
+          "size": 21347,
           "extension": ".py"
         },
         {
           "path": "app/repositorio.py",
           "name": "repositorio.py",
-          "size": 11158,
+          "size": 14223,
           "extension": ".py"
         },
         {
           "path": "tests/fake_supabase.py",
           "name": "fake_supabase.py",
-          "size": 6772,
+          "size": 7416,
           "extension": ".py"
         },
         {
@@ -50,6 +50,12 @@
           "path": "scraper/debug_cookies.py",
           "name": "debug_cookies.py",
           "size": 4946,
+          "extension": ".py"
+        },
+        {
+          "path": "app/routes/professor_routes.py",
+          "name": "professor_routes.py",
+          "size": 4190,
           "extension": ".py"
         },
         {
@@ -69,12 +75,6 @@
           "name": "session_controller.py",
           "size": 3360,
           "extension": ".py"
-        },
-        {
-          "path": "tests/test_scraper_persistencia.py",
-          "name": "test_scraper_persistencia.py",
-          "size": 3139,
-          "extension": ".py"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 35.65,
+      "percentage": 33.89,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -108,7 +108,7 @@
       "language": "Markdown",
       "file_count": 7,
       "total_bytes": 42666,
-      "percentage": 14.68,
+      "percentage": 13.95,
       "files": [
         {
           "path": "README.md",
@@ -157,13 +157,13 @@
     {
       "language": "HTML",
       "file_count": 7,
-      "total_bytes": 19825,
-      "percentage": 6.82,
+      "total_bytes": 22576,
+      "percentage": 7.38,
       "files": [
         {
           "path": "app/templates/avaliacao.html",
           "name": "avaliacao.html",
-          "size": 4352,
+          "size": 4509,
           "extension": ".html"
         },
         {
@@ -176,6 +176,12 @@
           "path": "app/templates/cadastro.html",
           "name": "cadastro.html",
           "size": 3741,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil.html",
+          "name": "perfil.html",
+          "size": 3411,
           "extension": ".html"
         },
         {
@@ -195,12 +201,6 @@
           "name": "index.html",
           "size": 1883,
           "extension": ".html"
-        },
-        {
-          "path": "app/templates/perfil.html",
-          "name": "perfil.html",
-          "size": 817,
-          "extension": ".html"
         }
       ]
     },
@@ -208,7 +208,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 3180,
-      "percentage": 1.09,
+      "percentage": 1.04,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -222,13 +222,27 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 1345,
-      "percentage": 0.46,
+      "percentage": 0.44,
       "files": [
         {
           "path": "app/static/indicadores.css",
           "name": "indicadores.css",
           "size": 1345,
           "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "No Extension",
+      "file_count": 1,
+      "total_bytes": 570,
+      "percentage": 0.19,
+      "files": [
+        {
+          "path": "Dockerfile",
+          "name": "Dockerfile",
+          "size": 570,
+          "extension": ""
         }
       ]
     },
@@ -276,21 +290,41 @@
     },
     {
       "language": "Text",
-      "file_count": 1,
-      "total_bytes": 117,
+      "file_count": 2,
+      "total_bytes": 124,
       "percentage": 0.04,
       "files": [
         {
           "path": "requirements.txt",
           "name": "requirements.txt",
-          "size": 117,
+          "size": 74,
           "extension": ".txt"
+        },
+        {
+          "path": "requirements-scraper.txt",
+          "name": "requirements-scraper.txt",
+          "size": 50,
+          "extension": ".txt"
+        }
+      ]
+    },
+    {
+      "language": "Docker Ignore",
+      "file_count": 1,
+      "total_bytes": 71,
+      "percentage": 0.02,
+      "files": [
+        {
+          "path": ".dockerignore",
+          "name": ".dockerignore",
+          "size": 71,
+          "extension": ".dockerignore"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-25T10:37:22.729813+00:00",
+    "extracted_at": "2026-10-26T11:52:26.441852+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }
