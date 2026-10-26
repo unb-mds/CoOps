@@ -1,10 +1,113 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-25T10:31:47.830738+00:00",
+      "extracted_at": "2026-10-26T11:46:09.872904+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaAiUnB.json",
-      "record_count": 123
+      "record_count": 128
     }
+  },
+  {
+    "sha": "f8faa95866bfb4e07008249c6d0155d054851a26",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-10-25T18:52:42Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-25T18:52:42Z"
+      },
+      "message": "Merge pull request #102 from unb-mds/feat/docker-app\n\nfeat: adiciona dockerfile, dockerignore e separa dependencias (Issue …"
+    },
+    "parents": [
+      "40a367f5d58de10f31118ba1577d6e75f2483e10",
+      "3bb3ad75081ac0400091faf390e84c6d75ffb2d7"
+    ],
+    "additions": 32,
+    "deletions": 3,
+    "total_changes": 35,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "40a367f5d58de10f31118ba1577d6e75f2483e10",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-10-25T18:21:28Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-25T18:21:28Z"
+      },
+      "message": "Merge pull request #100 from unb-mds/feat/92-perfil-editar-apagar-avaliacoes\n\nfeat(perfil): exibe avaliações do usuário com opção de editar e apagar (#92)"
+    },
+    "parents": [
+      "4cc56040158604525e847937bcbf4de7e7e5f4b3",
+      "56d0d0305d960ec714f318c929f37e1936adcb9c"
+    ],
+    "additions": 325,
+    "deletions": 20,
+    "total_changes": 345,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "3bb3ad75081ac0400091faf390e84c6d75ffb2d7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-10-25T05:46:12Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-10-25T05:46:12Z"
+      },
+      "message": "feat: adiciona dockerfile, dockerignore e separa dependencias (Issue #85)"
+    },
+    "parents": [
+      "4cc56040158604525e847937bcbf4de7e7e5f4b3"
+    ],
+    "additions": 32,
+    "deletions": 3,
+    "total_changes": 35,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "56d0d0305d960ec714f318c929f37e1936adcb9c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-10-25T01:32:29Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-25T01:32:29Z"
+      },
+      "message": "Merge branch 'main' into feat/92-perfil-editar-apagar-avaliacoes"
+    },
+    "parents": [
+      "4ef0fc3acc8bc33da88c33447fe8b2fcd57df30d",
+      "4cc56040158604525e847937bcbf4de7e7e5f4b3"
+    ],
+    "additions": 40,
+    "deletions": 12,
+    "total_changes": 52,
+    "repo_name": "2026-2-AvaliaAiUnB"
   },
   {
     "sha": "4cc56040158604525e847937bcbf4de7e7e5f4b3",
@@ -55,6 +158,31 @@
     "additions": 38,
     "deletions": 10,
     "total_changes": 48,
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "sha": "4ef0fc3acc8bc33da88c33447fe8b2fcd57df30d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-10-24T17:18:51Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "Miguel Cardoso",
+        "date": "2026-10-24T17:18:51Z"
+      },
+      "message": "feat(perfil): lista avaliacoes do usuario e permite editar e apagar (#92)"
+    },
+    "parents": [
+      "5e4272eb1302549d2e2ac73d84329e92ed983b6a"
+    ],
+    "additions": 322,
+    "deletions": 17,
+    "total_changes": 339,
     "repo_name": "2026-2-AvaliaAiUnB"
   },
   {
