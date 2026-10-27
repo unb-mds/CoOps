@@ -2,19 +2,87 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-26T11:51:19.478228+00:00",
+  "analyzed_at": "2026-10-27T11:14:21.059330+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 146,
-  "total_bytes": 536619,
+  "total_files": 187,
+  "total_bytes": 844315,
   "languages": [
+    {
+      "language": "JSON",
+      "file_count": 10,
+      "total_bytes": 246171,
+      "percentage": 29.16,
+      "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 229817,
+          "extension": ".json"
+        },
+        {
+          "path": "package-lock.json",
+          "name": "package-lock.json",
+          "size": 11829,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integrations/speckit.manifest.json",
+          "name": "speckit.manifest.json",
+          "size": 1516,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integrations/copilot.manifest.json",
+          "name": "copilot.manifest.json",
+          "size": 1285,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 750,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/workflows/workflow-registry.json",
+          "name": "workflow-registry.json",
+          "size": 369,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integration.json",
+          "name": "integration.json",
+          "size": 279,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/init-options.json",
+          "name": "init-options.json",
+          "size": 172,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/memory/.constitution-template.json",
+          "name": ".constitution-template.json",
+          "size": 103,
+          "extension": ".json"
+        },
+        {
+          "path": "package.json",
+          "name": "package.json",
+          "size": 51,
+          "extension": ".json"
+        }
+      ]
+    },
     {
       "language": "Markdown",
       "file_count": 47,
-      "total_bytes": 274582,
-      "percentage": 51.17,
+      "total_bytes": 242436,
+      "percentage": 28.71,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -35,24 +103,6 @@
           "extension": ".md"
         },
         {
-          "path": "specs/001-unb-core/tasks.md",
-          "name": "tasks.md",
-          "size": 16105,
-          "extension": ".md"
-        },
-        {
-          "path": "specs/001-unb-core/spec.md",
-          "name": "spec.md",
-          "size": 15211,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/requisitos.md",
-          "name": "requisitos.md",
-          "size": 12882,
-          "extension": ".md"
-        },
-        {
           "path": ".github/skills/speckit-implement/SKILL.md",
           "name": "SKILL.md",
           "size": 12713,
@@ -65,9 +115,9 @@
           "extension": ".md"
         },
         {
-          "path": "specs/001-unb-core/issues.md",
-          "name": "issues.md",
-          "size": 12331,
+          "path": "docs/requisitos.md",
+          "name": "requisitos.md",
+          "size": 12034,
           "extension": ".md"
         },
         {
@@ -75,19 +125,111 @@
           "name": "SKILL.md",
           "size": 11652,
           "extension": ".md"
+        },
+        {
+          "path": "specs/001-unb-core/spec.md",
+          "name": "spec.md",
+          "size": 11633,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/speckit-tasks/SKILL.md",
+          "name": "SKILL.md",
+          "size": 10988,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/speckit-constitution/SKILL.md",
+          "name": "SKILL.md",
+          "size": 9969,
+          "extension": ".md"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 34,
+      "total_bytes": 117765,
+      "percentage": 13.95,
+      "files": [
+        {
+          "path": "unb_core.db",
+          "name": "unb_core.db",
+          "size": 28672,
+          "extension": ".db"
+        },
+        {
+          "path": "backend/app/api/__pycache__/errors.cpython-314.pyc",
+          "name": "errors.cpython-314.pyc",
+          "size": 13232,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/api/schema/__pycache__/usuario.cpython-314.pyc",
+          "name": "usuario.cpython-314.pyc",
+          "size": 9706,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/api/schema/__pycache__/disciplina.cpython-314.pyc",
+          "name": "disciplina.cpython-314.pyc",
+          "size": 7129,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/api/schema/__pycache__/publicacao_institucional.cpython-314.pyc",
+          "name": "publicacao_institucional.cpython-314.pyc",
+          "size": 6667,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/domain/__pycache__/models.cpython-314.pyc",
+          "name": "models.cpython-314.pyc",
+          "size": 6619,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/api/schema/__pycache__/testes.cpython-314.pyc",
+          "name": "testes.cpython-314.pyc",
+          "size": 6490,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/services/__pycache__/publicacao_service.cpython-314.pyc",
+          "name": "publicacao_service.cpython-314.pyc",
+          "size": 5970,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/api/schema/__pycache__/Contribuicao.cpython-314.pyc",
+          "name": "Contribuicao.cpython-314.pyc",
+          "size": 4694,
+          "extension": ".pyc"
+        },
+        {
+          "path": "backend/app/__pycache__/moderacao.cpython-314.pyc",
+          "name": "moderacao.cpython-314.pyc",
+          "size": 4000,
+          "extension": ".pyc"
         }
       ]
     },
     {
       "language": "Python",
-      "file_count": 31,
-      "total_bytes": 70069,
-      "percentage": 13.06,
+      "file_count": 42,
+      "total_bytes": 74223,
+      "percentage": 8.79,
       "files": [
         {
           "path": "backend/app/api/errors.py",
           "name": "errors.py",
           "size": 7216,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_publicacao.py",
+          "name": "test_publicacao.py",
+          "size": 6296,
           "extension": ".py"
         },
         {
@@ -97,51 +239,45 @@
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/schema/usuario.py",
-          "name": "usuario.py",
-          "size": 5318,
+          "path": "backend/tests/integration/test_moderacao.py",
+          "name": "test_moderacao.py",
+          "size": 4239,
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/schema/testes.py",
-          "name": "testes.py",
-          "size": 5211,
+          "path": "backend/tests/integration/test_auth_contribuicoes.py",
+          "name": "test_auth_contribuicoes.py",
+          "size": 3524,
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/search.py",
-          "name": "search.py",
-          "size": 4837,
+          "path": "backend/app/services/moderacao_service.py",
+          "name": "moderacao_service.py",
+          "size": 3447,
           "extension": ".py"
         },
         {
-          "path": "backend/app/services/publicacao_service.py",
-          "name": "publicacao_service.py",
-          "size": 4085,
+          "path": "backend/tests/integration/test_consulta_academica.py",
+          "name": "test_consulta_academica.py",
+          "size": 3156,
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/schema/publicacao_institucional.py",
-          "name": "publicacao_institucional.py",
-          "size": 3819,
+          "path": "backend/tests/integration/test_usuarios_admin.py",
+          "name": "test_usuarios_admin.py",
+          "size": 2964,
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/schema/disciplina.py",
-          "name": "disciplina.py",
-          "size": 3658,
+          "path": "backend/tests/test_disciplina.py",
+          "name": "test_disciplina.py",
+          "size": 2813,
           "extension": ".py"
         },
         {
-          "path": "backend/app/api/schema/Contribuicao.py",
-          "name": "Contribuicao.py",
-          "size": 3557,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_publicacao.py",
-          "name": "test_publicacao.py",
-          "size": 2961,
+          "path": "backend/app/domain/models.py",
+          "name": "models.py",
+          "size": 2720,
           "extension": ".py"
         }
       ]
@@ -150,7 +286,7 @@
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 11.39,
+      "percentage": 7.24,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -192,32 +328,20 @@
     },
     {
       "language": "JavaScript",
-      "file_count": 29,
-      "total_bytes": 57672,
-      "percentage": 10.75,
+      "file_count": 26,
+      "total_bytes": 52508,
+      "percentage": 6.22,
       "files": [
         {
           "path": "frontend/src/pages/ContribuicaoPage.jsx",
           "name": "ContribuicaoPage.jsx",
-          "size": 7536,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/PublicacoesPage.jsx",
-          "name": "PublicacoesPage.jsx",
-          "size": 7357,
+          "size": 8385,
           "extension": ".jsx"
         },
         {
           "path": "frontend/src/pages/ConhecimentoPage.jsx",
           "name": "ConhecimentoPage.jsx",
-          "size": 6360,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/PublicacaoDetalhePage.jsx",
-          "name": "PublicacaoDetalhePage.jsx",
-          "size": 4960,
+          "size": 6824,
           "extension": ".jsx"
         },
         {
@@ -233,6 +357,18 @@
           "extension": ".jsx"
         },
         {
+          "path": "frontend/src/pages/ModeracaoPage.jsx",
+          "name": "ModeracaoPage.jsx",
+          "size": 3889,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/AdminUsuariosPage.jsx",
+          "name": "AdminUsuariosPage.jsx",
+          "size": 3876,
+          "extension": ".jsx"
+        },
+        {
           "path": "frontend/src/services/api.js",
           "name": "api.js",
           "size": 2956,
@@ -241,7 +377,7 @@
         {
           "path": "frontend/src/App.jsx",
           "name": "App.jsx",
-          "size": 2568,
+          "size": 2547,
           "extension": ".jsx"
         },
         {
@@ -253,27 +389,21 @@
         {
           "path": "frontend/src/components/Navigation.jsx",
           "name": "Navigation.jsx",
-          "size": 2168,
+          "size": 2259,
           "extension": ".jsx"
         }
       ]
     },
     {
       "language": "CSS",
-      "file_count": 12,
-      "total_bytes": 30475,
-      "percentage": 5.68,
+      "file_count": 10,
+      "total_bytes": 23012,
+      "percentage": 2.73,
       "files": [
         {
           "path": "frontend/src/components/ui/ui.css",
           "name": "ui.css",
           "size": 4649,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/PublicacoesPage.css",
-          "name": "PublicacoesPage.css",
-          "size": 4406,
           "extension": ".css"
         },
         {
@@ -286,12 +416,6 @@
           "path": "frontend/src/pages/AuthPage.css",
           "name": "AuthPage.css",
           "size": 3559,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/PublicacaoDetalhePage.css",
-          "name": "PublicacaoDetalhePage.css",
-          "size": 3057,
           "extension": ".css"
         },
         {
@@ -323,62 +447,18 @@
           "name": "index.css",
           "size": 1467,
           "extension": ".css"
-        }
-      ]
-    },
-    {
-      "language": "JSON",
-      "file_count": 8,
-      "total_bytes": 15604,
-      "percentage": 2.91,
-      "files": [
-        {
-          "path": "package-lock.json",
-          "name": "package-lock.json",
-          "size": 11829,
-          "extension": ".json"
         },
         {
-          "path": ".specify/integrations/speckit.manifest.json",
-          "name": "speckit.manifest.json",
-          "size": 1516,
-          "extension": ".json"
+          "path": "frontend/src/components/auth/auth.css",
+          "name": "auth.css",
+          "size": 563,
+          "extension": ".css"
         },
         {
-          "path": ".specify/integrations/copilot.manifest.json",
-          "name": "copilot.manifest.json",
-          "size": 1285,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/workflows/workflow-registry.json",
-          "name": "workflow-registry.json",
-          "size": 369,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/integration.json",
-          "name": "integration.json",
-          "size": 279,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/init-options.json",
-          "name": "init-options.json",
-          "size": 172,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/memory/.constitution-template.json",
-          "name": ".constitution-template.json",
-          "size": 103,
-          "extension": ".json"
-        },
-        {
-          "path": "package.json",
-          "name": "package.json",
-          "size": 51,
-          "extension": ".json"
+          "path": "frontend/src/components/components.css",
+          "name": "components.css",
+          "size": 284,
+          "extension": ".css"
         }
       ]
     },
@@ -386,7 +466,7 @@
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 1.87,
+      "percentage": 1.19,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -406,7 +486,7 @@
       "language": "No Extension",
       "file_count": 3,
       "total_bytes": 9252,
-      "percentage": 1.72,
+      "percentage": 1.1,
       "files": [
         {
           "path": "git status",
@@ -432,7 +512,7 @@
       "language": "YAML",
       "file_count": 3,
       "total_bytes": 6922,
-      "percentage": 1.29,
+      "percentage": 0.82,
       "files": [
         {
           "path": "docs/gitpage/mkdocs.yml",
@@ -458,7 +538,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 412,
-      "percentage": 0.08,
+      "percentage": 0.05,
       "files": [
         {
           "path": ".specify/.gitignore",
@@ -478,7 +558,7 @@
       "language": "HTML",
       "file_count": 1,
       "total_bytes": 348,
-      "percentage": 0.06,
+      "percentage": 0.04,
       "files": [
         {
           "path": "frontend/index.html",
@@ -491,34 +571,20 @@
     {
       "language": "Text",
       "file_count": 1,
-      "total_bytes": 118,
+      "total_bytes": 132,
       "percentage": 0.02,
       "files": [
         {
           "path": "backend/requirements.txt",
           "name": "requirements.txt",
-          "size": 118,
+          "size": 132,
           "extension": ".txt"
-        }
-      ]
-    },
-    {
-      "language": "Unknown",
-      "file_count": 1,
-      "total_bytes": 31,
-      "percentage": 0.01,
-      "files": [
-        {
-          "path": ".gitattributes",
-          "name": ".gitattributes",
-          "size": 31,
-          "extension": ".gitattributes"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-26T11:52:26.464226+00:00",
+    "extracted_at": "2026-10-27T11:15:20.441689+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }

@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-26T11:51:20.205734+00:00",
+  "analyzed_at": "2026-10-27T11:14:21.584313+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 60,
-  "total_bytes": 305885,
+  "total_files": 61,
+  "total_bytes": 307052,
   "languages": [
     {
       "language": "Python",
       "file_count": 34,
       "total_bytes": 131183,
-      "percentage": 42.89,
+      "percentage": 42.72,
       "files": [
         {
           "path": "scraper/scraper_sigaa.py",
@@ -82,7 +82,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 33.89,
+      "percentage": 33.76,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -107,13 +107,13 @@
     {
       "language": "Markdown",
       "file_count": 7,
-      "total_bytes": 42666,
-      "percentage": 13.95,
+      "total_bytes": 43726,
+      "percentage": 14.24,
       "files": [
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 12771,
+          "size": 13666,
           "extension": ".md"
         },
         {
@@ -125,19 +125,19 @@
         {
           "path": "docs/IMPLEMENTACAO_26_36_37.md",
           "name": "IMPLEMENTACAO_26_36_37.md",
-          "size": 6899,
+          "size": 7050,
           "extension": ".md"
         },
         {
           "path": "docs/COMO_USAR_SCRAPER.md",
           "name": "COMO_USAR_SCRAPER.md",
-          "size": 4115,
+          "size": 4156,
           "extension": ".md"
         },
         {
           "path": "CLAUDE.md",
           "name": "CLAUDE.md",
-          "size": 4040,
+          "size": 4013,
           "extension": ".md"
         },
         {
@@ -158,7 +158,7 @@
       "language": "HTML",
       "file_count": 7,
       "total_bytes": 22576,
-      "percentage": 7.38,
+      "percentage": 7.35,
       "files": [
         {
           "path": "app/templates/avaliacao.html",
@@ -262,15 +262,41 @@
     },
     {
       "language": "YAML",
-      "file_count": 1,
-      "total_bytes": 158,
-      "percentage": 0.05,
+      "file_count": 2,
+      "total_bytes": 245,
+      "percentage": 0.08,
       "files": [
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
           "size": 158,
           "extension": ".yml"
+        },
+        {
+          "path": "docker-compose.yml",
+          "name": "docker-compose.yml",
+          "size": 87,
+          "extension": ".yml"
+        }
+      ]
+    },
+    {
+      "language": "Text",
+      "file_count": 2,
+      "total_bytes": 144,
+      "percentage": 0.05,
+      "files": [
+        {
+          "path": "requirements.txt",
+          "name": "requirements.txt",
+          "size": 74,
+          "extension": ".txt"
+        },
+        {
+          "path": "requirements-scraper.txt",
+          "name": "requirements-scraper.txt",
+          "size": 70,
+          "extension": ".txt"
         }
       ]
     },
@@ -285,26 +311,6 @@
           "name": ".gitignore",
           "size": 118,
           "extension": ".gitignore"
-        }
-      ]
-    },
-    {
-      "language": "Text",
-      "file_count": 2,
-      "total_bytes": 124,
-      "percentage": 0.04,
-      "files": [
-        {
-          "path": "requirements.txt",
-          "name": "requirements.txt",
-          "size": 74,
-          "extension": ".txt"
-        },
-        {
-          "path": "requirements-scraper.txt",
-          "name": "requirements-scraper.txt",
-          "size": 50,
-          "extension": ".txt"
         }
       ]
     },
@@ -324,7 +330,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-26T11:52:26.441852+00:00",
+    "extracted_at": "2026-10-27T11:15:20.424603+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }

@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-26T11:51:27.198136+00:00",
+  "extracted_at": "2026-10-27T11:14:26.778110+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -150,6 +150,14 @@
         "path": "backend/alembic/versions/5a6b7c8d9e0f_cria_reclamacao.py"
       },
       {
+        "name": "6b7c8d9e0f1a_registra_ultima_importacao_campus.py",
+        "type": "file",
+        "language": "Python",
+        "size": 813,
+        "extension": ".py",
+        "path": "backend/alembic/versions/6b7c8d9e0f1a_registra_ultima_importacao_campus.py"
+      },
+      {
         "name": "cb27a92c83d1_adiciona_alergeno_amendoim.py",
         "type": "file",
         "language": "Python",
@@ -203,7 +211,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 5572,
+        "size": 6055,
         "extension": ".py",
         "path": "backend/app/api/routes/cardapio.py"
       },
@@ -333,7 +341,7 @@
         "name": "campus.py",
         "type": "file",
         "language": "Python",
-        "size": 793,
+        "size": 1042,
         "extension": ".py",
         "path": "backend/app/models/campus.py"
       },
@@ -403,7 +411,7 @@
         "name": "campus.py",
         "type": "file",
         "language": "Python",
-        "size": 152,
+        "size": 740,
         "extension": ".py",
         "path": "backend/app/schemas/campus.py"
       },
@@ -411,7 +419,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 1980,
+        "size": 2232,
         "extension": ".py",
         "path": "backend/app/schemas/cardapio.py"
       },
@@ -489,7 +497,7 @@
         "name": "test_cardapio_api.py",
         "type": "file",
         "language": "Python",
-        "size": 13700,
+        "size": 17285,
         "extension": ".py",
         "path": "backend/tests/test_cardapio_api.py"
       },
@@ -524,6 +532,14 @@
         "size": 1908,
         "extension": ".py",
         "path": "backend/tests/test_migracao_reclamacao.py"
+      },
+      {
+        "name": "test_migracao_ultima_importacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1513,
+        "extension": ".py",
+        "path": "backend/tests/test_migracao_ultima_importacao.py"
       },
       {
         "name": "test_reclamacao.py",
@@ -575,7 +591,7 @@
         "name": "Arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13336,
+        "size": 13853,
         "extension": ".md",
         "path": "docs/Arquitetura.md"
       },
@@ -583,7 +599,7 @@
         "name": "Requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 35956,
+        "size": 36561,
         "extension": ".md",
         "path": "docs/Requisitos.md"
       },
@@ -591,7 +607,7 @@
         "name": "changelog.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6205,
+        "size": 7724,
         "extension": ".md",
         "path": "docs/changelog.md"
       },
@@ -599,7 +615,7 @@
         "name": "desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5818,
+        "size": 5889,
         "extension": ".md",
         "path": "docs/desenvolvimento.md"
       },
@@ -723,7 +739,7 @@
         "name": "handoff_banco_e_importacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5001,
+        "size": 5362,
         "extension": ".md",
         "path": "docs/handoff_banco_e_importacao.md"
       },
@@ -791,7 +807,7 @@
         "name": "sprint03.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8402,
+        "size": 8443,
         "extension": ".md",
         "path": "docs/scrum/sprint03.md"
       },
@@ -951,7 +967,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3887,
+        "size": 4168,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -1011,7 +1027,7 @@
         "name": "App.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 18184,
+        "size": 18867,
         "extension": ".tsx",
         "path": "frontend/src/App.tsx"
       },
@@ -1019,7 +1035,7 @@
         "name": "api.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2873,
+        "size": 4417,
         "extension": ".ts",
         "path": "frontend/src/api.ts"
       },
@@ -1054,10 +1070,18 @@
         "path": "frontend/src/assets/vite.svg"
       },
       {
+        "name": "avaliacoes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1094,
+        "extension": ".ts",
+        "path": "frontend/src/avaliacoes.ts"
+      },
+      {
         "name": "cardapios.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4756,
+        "size": 5262,
         "extension": ".ts",
         "path": "frontend/src/cardapios.ts"
       },
@@ -1119,7 +1143,7 @@
         "name": "MealContent.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3038,
+        "size": 3917,
         "extension": ".tsx",
         "path": "frontend/src/components/MealContent.tsx"
       },
@@ -1205,7 +1229,7 @@
         "name": "ui.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9416,
+        "size": 6962,
         "extension": ".tsx",
         "path": "frontend/src/components/ui.tsx"
       },
@@ -1251,7 +1275,7 @@
         "name": "AvaliacaoForm.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12356,
+        "size": 6206,
         "extension": ".tsx",
         "path": "frontend/src/screens/AvaliacaoForm.tsx"
       },
@@ -1259,7 +1283,7 @@
         "name": "AvaliacaoHistorico.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4063,
+        "size": 4498,
         "extension": ".tsx",
         "path": "frontend/src/screens/AvaliacaoHistorico.tsx"
       },
@@ -1275,7 +1299,7 @@
         "name": "CardapioTab.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9387,
+        "size": 9581,
         "extension": ".tsx",
         "path": "frontend/src/screens/CardapioTab.tsx"
       },
@@ -1307,7 +1331,7 @@
         "name": "types.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2575,
+        "size": 2504,
         "extension": ".ts",
         "path": "frontend/src/types.ts"
       },
@@ -1337,15 +1361,23 @@
         "name": "api.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3209,
+        "size": 4890,
         "extension": ".js",
         "path": "frontend/tests/api.test.js"
+      },
+      {
+        "name": "avaliacoes.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 984,
+        "extension": ".ts",
+        "path": "frontend/tests/avaliacoes.test.ts"
       },
       {
         "name": "cardapios.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3768,
+        "size": 3974,
         "extension": ".ts",
         "path": "frontend/tests/cardapios.test.ts"
       },
@@ -1492,7 +1524,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-26T11:52:26.447867+00:00",
+    "extracted_at": "2026-10-27T11:15:20.429331+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }
