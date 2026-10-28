@@ -1,9 +1,9 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-27T10:15:35.725540+00:00",
+      "extracted_at": "2026-10-28T11:05:29.591889+00:00",
       "file_path": "data/bronze/issues_Fique-de-Olho.json",
-      "record_count": 44
+      "record_count": 53
     }
   },
   {
@@ -522,7 +522,7 @@
     "state": "open",
     "title": "[TASK] - Criar migration Alembic para adicionar órgão emissor e prazos de inscrição em editais",
     "created_at": "2026-10-09T23:05:22Z",
-    "updated_at": "2026-10-20T14:10:38Z",
+    "updated_at": "2026-10-27T15:55:18Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -536,7 +536,7 @@
     "state": "open",
     "title": "[FEATURE] - Integrar extração de PDFs ao pipeline de persistência com cálculo automático de status",
     "created_at": "2026-10-09T23:06:28Z",
-    "updated_at": "2026-10-14T02:00:24Z",
+    "updated_at": "2026-10-27T15:55:46Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -690,6 +690,132 @@
     "user": {
       "login": "Thur-sylva",
       "id": 160291426
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 71,
+    "state": "closed",
+    "title": "[BUG] - Corrigir inconsistência de tipo do ID no fallback de editais em router.py",
+    "created_at": "2026-10-27T14:17:31Z",
+    "updated_at": "2026-10-27T15:16:12Z",
+    "closed_at": "2026-10-27T15:16:12Z",
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 72,
+    "state": "open",
+    "title": "[TASK] - Corrigir persistência da URL do PDF e unificar serviço de sincronização do DEG no endpoint /sync",
+    "created_at": "2026-10-27T14:23:00Z",
+    "updated_at": "2026-10-27T14:23:00Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 73,
+    "state": "closed",
+    "title": "[FEATURE] - Implementar scrapers para os 8 portais institucionais da UnB baseados em BaseScraper",
+    "created_at": "2026-10-27T14:25:17Z",
+    "updated_at": "2026-10-27T15:36:44Z",
+    "closed_at": "2026-10-27T15:36:44Z",
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 74,
+    "state": "open",
+    "title": "[FEATURE] - Implementar agendador de tarefas (Scheduler/Cron) para coleta automatizada periódica de editais",
+    "created_at": "2026-10-27T14:26:46Z",
+    "updated_at": "2026-10-27T14:26:46Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 77,
+    "state": "open",
+    "title": "[FEATURE] - Gerar resumo automático dos editais utilizando Abordagem Híbrida com Fallback (Heurística + LLM)",
+    "created_at": "2026-10-27T15:49:08Z",
+    "updated_at": "2026-10-27T15:51:50Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 78,
+    "state": "open",
+    "title": "[FEATURE] - Conectar os scrapers dos 8 portais institucionais ao pipeline de sincronização e persistência no banco de dados",
+    "created_at": "2026-10-27T15:52:34Z",
+    "updated_at": "2026-10-27T15:52:52Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 79,
+    "state": "open",
+    "title": "# [FEATURE][FRONT] - Adicionar filtro e identificação visual por Órgão/Decanato nos Cards e na FilterBar",
+    "created_at": "2026-10-27T16:19:38Z",
+    "updated_at": "2026-10-27T16:24:39Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 80,
+    "state": "open",
+    "title": "# [FEATURE][FRONT] - Ativar barra de pesquisa no Header e integrar filtros dinâmicos com a API",
+    "created_at": "2026-10-27T16:21:29Z",
+    "updated_at": "2026-10-27T16:25:10Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
+    },
+    "assignee": null,
+    "repo_name": "Fique-de-Olho"
+  },
+  {
+    "number": 81,
+    "state": "open",
+    "title": "# [FEATURE][FRONT] - Exibir anexos, retificações e metadados detalhados (prazos, vagas e bolsas) na página de detalhes",
+    "created_at": "2026-10-27T16:21:51Z",
+    "updated_at": "2026-10-27T16:25:44Z",
+    "closed_at": null,
+    "user": {
+      "login": "Isac-sil-mar",
+      "id": 170209600
     },
     "assignee": null,
     "repo_name": "Fique-de-Olho"
