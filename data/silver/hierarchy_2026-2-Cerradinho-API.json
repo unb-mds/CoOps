@@ -2,7 +2,7 @@
   "repository": "2026-2-Cerradinho-API",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-27T11:14:22.183754+00:00",
+  "extracted_at": "2026-10-28T12:08:42.625821+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -23,7 +23,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3898,
+        "size": 3908,
         "extension": ".md",
         "path": ".claude/skills/README.md"
       },
@@ -79,7 +79,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3138,
+        "size": 3162,
         "extension": ".md",
         "path": ".claude/skills/data-contract/SKILL.md"
       },
@@ -93,7 +93,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2467,
+        "size": 2504,
         "extension": ".md",
         "path": ".claude/skills/db-model/SKILL.md"
       },
@@ -107,7 +107,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3394,
+        "size": 3408,
         "extension": ".md",
         "path": ".claude/skills/fastapi-endpoint/SKILL.md"
       },
@@ -135,7 +135,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2872,
+        "size": 3319,
         "extension": ".md",
         "path": ".claude/skills/git-workflow/SKILL.md"
       },
@@ -149,7 +149,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2358,
+        "size": 2352,
         "extension": ".md",
         "path": ".claude/skills/scheduled-task/SKILL.md"
       },
@@ -163,7 +163,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2228,
+        "size": 2232,
         "extension": ".md",
         "path": ".claude/skills/sdk-cli/SKILL.md"
       },
@@ -221,7 +221,7 @@
         "name": "feature_request.md",
         "type": "file",
         "language": "Markdown",
-        "size": 371,
+        "size": 359,
         "extension": ".md",
         "path": ".github/ISSUE_TEMPLATE/feature_request.md"
       },
@@ -237,7 +237,7 @@
         "name": "PULL_REQUEST_TEMPLATE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1234,
+        "size": 1362,
         "extension": ".md",
         "path": ".github/PULL_REQUEST_TEMPLATE.md"
       },
@@ -267,7 +267,7 @@
         "name": "docs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1600,
+        "size": 1679,
         "extension": ".yml",
         "path": ".github/workflows/docs.yml"
       },
@@ -283,23 +283,47 @@
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 16983,
+        "size": 21174,
         "extension": ".md",
         "path": "AI-USAGE.md"
+      },
+      {
+        "name": "CHANGELOG.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7268,
+        "extension": ".md",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CODE_OF_CONDUCT.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6360,
+        "extension": ".md",
+        "path": "CODE_OF_CONDUCT.md"
       },
       {
         "name": "CONTRIBUTING.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4293,
+        "size": 4635,
         "extension": ".md",
         "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1090,
+        "extension": "",
+        "path": "LICENSE"
       },
       {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3129,
+        "size": 3517,
         "extension": ".md",
         "path": "README.md"
       },
@@ -386,6 +410,38 @@
         "path": "backend/alembic/versions/0001_schema_inicial.py"
       },
       {
+        "name": "0002_execucao_log.py",
+        "type": "file",
+        "language": "Python",
+        "size": 731,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0002_execucao_log.py"
+      },
+      {
+        "name": "0003_alarga_codigo_horario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 648,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0003_alarga_codigo_horario.py"
+      },
+      {
+        "name": "0004_funde_salas_e_professores_duplicados.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4461,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0004_funde_salas_e_professores_duplicados.py"
+      },
+      {
+        "name": "0005_sala_por_horario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2124,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0005_sala_por_horario.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -403,7 +459,7 @@
         "name": "celery_app.py",
         "type": "file",
         "language": "Python",
-        "size": 1021,
+        "size": 1088,
         "extension": ".py",
         "path": "backend/app/celery_app.py"
       },
@@ -422,10 +478,18 @@
         "path": "backend/app/core/__init__.py"
       },
       {
+        "name": "cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1590,
+        "extension": ".py",
+        "path": "backend/app/core/cache.py"
+      },
+      {
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 799,
+        "size": 1607,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -438,6 +502,22 @@
         "path": "backend/app/core/database.py"
       },
       {
+        "name": "exceptions.py",
+        "type": "file",
+        "language": "Python",
+        "size": 99,
+        "extension": ".py",
+        "path": "backend/app/core/exceptions.py"
+      },
+      {
+        "name": "rate_limit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 329,
+        "extension": ".py",
+        "path": "backend/app/core/rate_limit.py"
+      },
+      {
         "name": "domain",
         "type": "directory",
         "path": "backend/app/domain",
@@ -447,7 +527,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 3086,
+        "size": 3606,
         "extension": ".py",
         "path": "backend/app/domain/cardapio.py"
       },
@@ -455,15 +535,23 @@
         "name": "disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 4924,
+        "size": 14374,
         "extension": ".py",
         "path": "backend/app/domain/disciplinas.py"
+      },
+      {
+        "name": "execucoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 792,
+        "extension": ".py",
+        "path": "backend/app/domain/execucoes.py"
       },
       {
         "name": "professores.py",
         "type": "file",
         "language": "Python",
-        "size": 757,
+        "size": 1823,
         "extension": ".py",
         "path": "backend/app/domain/professores.py"
       },
@@ -471,7 +559,7 @@
         "name": "salas.py",
         "type": "file",
         "language": "Python",
-        "size": 522,
+        "size": 2838,
         "extension": ".py",
         "path": "backend/app/domain/salas.py"
       },
@@ -479,7 +567,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1703,
+        "size": 2098,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -493,7 +581,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 431,
+        "size": 498,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -522,10 +610,18 @@
         "path": "backend/app/models/disciplina.py"
       },
       {
+        "name": "execucao_log.py",
+        "type": "file",
+        "language": "Python",
+        "size": 654,
+        "extension": ".py",
+        "path": "backend/app/models/execucao_log.py"
+      },
+      {
         "name": "horario.py",
         "type": "file",
         "language": "Python",
-        "size": 634,
+        "size": 1281,
         "extension": ".py",
         "path": "backend/app/models/horario.py"
       },
@@ -541,7 +637,7 @@
         "name": "sala.py",
         "type": "file",
         "language": "Python",
-        "size": 530,
+        "size": 538,
         "extension": ".py",
         "path": "backend/app/models/sala.py"
       },
@@ -549,7 +645,7 @@
         "name": "turma.py",
         "type": "file",
         "language": "Python",
-        "size": 1680,
+        "size": 1657,
         "extension": ".py",
         "path": "backend/app/models/turma.py"
       },
@@ -563,7 +659,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 942,
+        "size": 1269,
         "extension": ".py",
         "path": "backend/app/routers/cardapio.py"
       },
@@ -571,15 +667,23 @@
         "name": "disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 663,
+        "size": 820,
         "extension": ".py",
         "path": "backend/app/routers/disciplinas.py"
+      },
+      {
+        "name": "execucoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 716,
+        "extension": ".py",
+        "path": "backend/app/routers/execucoes.py"
       },
       {
         "name": "professores.py",
         "type": "file",
         "language": "Python",
-        "size": 725,
+        "size": 1153,
         "extension": ".py",
         "path": "backend/app/routers/professores.py"
       },
@@ -587,7 +691,7 @@
         "name": "salas.py",
         "type": "file",
         "language": "Python",
-        "size": 674,
+        "size": 2126,
         "extension": ".py",
         "path": "backend/app/routers/salas.py"
       },
@@ -626,6 +730,22 @@
         "size": 0,
         "extension": ".py",
         "path": "backend/app/schemas/api/__init__.py"
+      },
+      {
+        "name": "cardapio.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1528,
+        "extension": ".py",
+        "path": "backend/app/schemas/api/cardapio.py"
+      },
+      {
+        "name": "execucao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 798,
+        "extension": ".py",
+        "path": "backend/app/schemas/api/execucao.py"
       },
       {
         "name": "professor.py",
@@ -691,7 +811,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1556,
+        "size": 2107,
         "extension": ".py",
         "path": "backend/app/scrapers/cardapio/__init__.py"
       },
@@ -699,7 +819,7 @@
         "name": "parser.py",
         "type": "file",
         "language": "Python",
-        "size": 9375,
+        "size": 11263,
         "extension": ".py",
         "path": "backend/app/scrapers/cardapio/parser.py"
       },
@@ -707,7 +827,7 @@
         "name": "scraper.py",
         "type": "file",
         "language": "Python",
-        "size": 2366,
+        "size": 2510,
         "extension": ".py",
         "path": "backend/app/scrapers/cardapio/scraper.py"
       },
@@ -737,7 +857,7 @@
         "name": "scraper.py",
         "type": "file",
         "language": "Python",
-        "size": 5735,
+        "size": 5799,
         "extension": ".py",
         "path": "backend/app/scrapers/disciplinas/scraper.py"
       },
@@ -759,7 +879,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 821,
+        "size": 519,
         "extension": ".py",
         "path": "backend/app/tasks/cardapio.py"
       },
@@ -767,7 +887,7 @@
         "name": "logging_signals.py",
         "type": "file",
         "language": "Python",
-        "size": 420,
+        "size": 1166,
         "extension": ".py",
         "path": "backend/app/tasks/logging_signals.py"
       },
@@ -775,7 +895,7 @@
         "name": "scraping.py",
         "type": "file",
         "language": "Python",
-        "size": 1091,
+        "size": 1771,
         "extension": ".py",
         "path": "backend/app/tasks/scraping.py"
       },
@@ -791,7 +911,7 @@
         "name": "requirements-dev.txt",
         "type": "file",
         "language": "Text",
-        "size": 100,
+        "size": 120,
         "extension": ".txt",
         "path": "backend/requirements-dev.txt"
       },
@@ -799,7 +919,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 284,
+        "size": 300,
         "extension": ".txt",
         "path": "backend/requirements.txt"
       },
@@ -812,10 +932,26 @@
         "path": "backend/ruff.toml"
       },
       {
+        "name": "schemathesis.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 48,
+        "extension": ".toml",
+        "path": "backend/schemathesis.toml"
+      },
+      {
         "name": "tests",
         "type": "directory",
         "path": "backend/tests",
         "children": []
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 887,
+        "extension": ".py",
+        "path": "backend/tests/conftest.py"
       },
       {
         "name": "contract",
@@ -827,7 +963,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 2337,
+        "size": 3584,
         "extension": ".py",
         "path": "backend/tests/contract/conftest.py"
       },
@@ -838,6 +974,36 @@
         "size": 334,
         "extension": ".py",
         "path": "backend/tests/contract/test_openapi_contract.py"
+      },
+      {
+        "name": "core",
+        "type": "directory",
+        "path": "backend/tests/core",
+        "children": []
+      },
+      {
+        "name": "test_cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1376,
+        "extension": ".py",
+        "path": "backend/tests/core/test_cache.py"
+      },
+      {
+        "name": "test_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 872,
+        "extension": ".py",
+        "path": "backend/tests/core/test_config.py"
+      },
+      {
+        "name": "test_rate_limit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 858,
+        "extension": ".py",
+        "path": "backend/tests/core/test_rate_limit.py"
       },
       {
         "name": "domain",
@@ -857,7 +1023,7 @@
         "name": "test_disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 4115,
+        "size": 13444,
         "extension": ".py",
         "path": "backend/tests/domain/test_disciplinas.py"
       },
@@ -879,7 +1045,7 @@
         "name": "test_pipeline_disciplinas_postgres.py",
         "type": "file",
         "language": "Python",
-        "size": 3118,
+        "size": 4319,
         "extension": ".py",
         "path": "backend/tests/integration/test_pipeline_disciplinas_postgres.py"
       },
@@ -893,7 +1059,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 838,
+        "size": 682,
         "extension": ".py",
         "path": "backend/tests/routers/conftest.py"
       },
@@ -901,7 +1067,7 @@
         "name": "test_cardapio_router.py",
         "type": "file",
         "language": "Python",
-        "size": 1627,
+        "size": 2792,
         "extension": ".py",
         "path": "backend/tests/routers/test_cardapio_router.py"
       },
@@ -914,10 +1080,18 @@
         "path": "backend/tests/routers/test_disciplinas_router.py"
       },
       {
+        "name": "test_execucoes_router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 602,
+        "extension": ".py",
+        "path": "backend/tests/routers/test_execucoes_router.py"
+      },
+      {
         "name": "test_professores_router.py",
         "type": "file",
         "language": "Python",
-        "size": 2216,
+        "size": 3327,
         "extension": ".py",
         "path": "backend/tests/routers/test_professores_router.py"
       },
@@ -925,7 +1099,7 @@
         "name": "test_salas_router.py",
         "type": "file",
         "language": "Python",
-        "size": 2298,
+        "size": 7207,
         "extension": ".py",
         "path": "backend/tests/routers/test_salas_router.py"
       },
@@ -942,12 +1116,44 @@
         "children": []
       },
       {
-        "name": "cardapio_darcy_semana.pdf",
+        "name": "cardapio_darcy_2026-09-14.pdf",
         "type": "file",
         "language": "PDF",
         "size": 505065,
         "extension": ".pdf",
-        "path": "backend/tests/scrapers/fixtures/cardapio_darcy_semana.pdf"
+        "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-09-14.pdf"
+      },
+      {
+        "name": "cardapio_darcy_2026-09-21.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 281109,
+        "extension": ".pdf",
+        "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-09-21.pdf"
+      },
+      {
+        "name": "cardapio_darcy_2026-09-28.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 506100,
+        "extension": ".pdf",
+        "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-09-28.pdf"
+      },
+      {
+        "name": "cardapio_darcy_2026-10-05.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 322604,
+        "extension": ".pdf",
+        "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-10-05.pdf"
+      },
+      {
+        "name": "cardapio_darcy_2026-10-12.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 184889,
+        "extension": ".pdf",
+        "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-10-12.pdf"
       },
       {
         "name": "turma_vagas_em_branco.html",
@@ -969,15 +1175,23 @@
         "name": "test_cardapio_parser.py",
         "type": "file",
         "language": "Python",
-        "size": 2464,
+        "size": 5204,
         "extension": ".py",
         "path": "backend/tests/scrapers/test_cardapio_parser.py"
+      },
+      {
+        "name": "test_cardapio_scraper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2118,
+        "extension": ".py",
+        "path": "backend/tests/scrapers/test_cardapio_scraper.py"
       },
       {
         "name": "test_disciplinas_parser.py",
         "type": "file",
         "language": "Python",
-        "size": 3260,
+        "size": 3422,
         "extension": ".py",
         "path": "backend/tests/scrapers/test_disciplinas_parser.py"
       },
@@ -991,15 +1205,31 @@
         "name": "test_celery_app.py",
         "type": "file",
         "language": "Python",
-        "size": 2549,
+        "size": 3241,
         "extension": ".py",
         "path": "backend/tests/tasks/test_celery_app.py"
+      },
+      {
+        "name": "test_log_das_tasks.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3669,
+        "extension": ".py",
+        "path": "backend/tests/tasks/test_log_das_tasks.py"
+      },
+      {
+        "name": "test_loggin_signals.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1803,
+        "extension": ".py",
+        "path": "backend/tests/tasks/test_loggin_signals.py"
       },
       {
         "name": "test_scraping.py",
         "type": "file",
         "language": "Python",
-        "size": 2813,
+        "size": 4573,
         "extension": ".py",
         "path": "backend/tests/tasks/test_scraping.py"
       },
@@ -1007,7 +1237,7 @@
         "name": "test_models.py",
         "type": "file",
         "language": "Python",
-        "size": 4031,
+        "size": 4235,
         "extension": ".py",
         "path": "backend/tests/test_models.py"
       },
@@ -1015,7 +1245,7 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1440,
+        "size": 1488,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -1029,15 +1259,23 @@
         "name": "ARQUITETURA.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8018,
+        "size": 10323,
         "extension": ".md",
         "path": "docs/ARQUITETURA.md"
+      },
+      {
+        "name": "DEPLOY.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4676,
+        "extension": ".md",
+        "path": "docs/DEPLOY.md"
       },
       {
         "name": "DOCUMENTO-VISAO.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10297,
+        "size": 10484,
         "extension": ".md",
         "path": "docs/DOCUMENTO-VISAO.md"
       },
@@ -1045,7 +1283,7 @@
         "name": "PROCESSO.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4637,
+        "size": 4910,
         "extension": ".md",
         "path": "docs/PROCESSO.md"
       },
@@ -1053,9 +1291,17 @@
         "name": "REQUISITOS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 19378,
+        "size": 7528,
         "extension": ".md",
         "path": "docs/REQUISITOS.md"
+      },
+      {
+        "name": "RESUMO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2423,
+        "extension": ".md",
+        "path": "docs/RESUMO.md"
       },
       {
         "name": "adr",
@@ -1134,6 +1380,14 @@
         "size": 760,
         "extension": ".md",
         "path": "docs/adr/0009-railway-para-deploy.md"
+      },
+      {
+        "name": "0010-sala-por-horario-nao-por-turma.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2318,
+        "extension": ".md",
+        "path": "docs/adr/0010-sala-por-horario-nao-por-turma.md"
       },
       {
         "name": "template.md",
@@ -1255,7 +1509,7 @@
         "name": "plano-de-monitoramento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6015,
+        "size": 6039,
         "extension": ".md",
         "path": "docs/fontes/plano-de-monitoramento.md"
       },
@@ -1271,7 +1525,7 @@
         "name": "ru-cardapio.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5332,
+        "size": 6134,
         "extension": ".md",
         "path": "docs/fontes/ru-cardapio.md"
       },
@@ -1287,7 +1541,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2906,
+        "size": 2962,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -1295,9 +1549,23 @@
         "name": "indice-completo.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2430,
+        "size": 2643,
         "extension": ".md",
         "path": "docs/indice-completo.md"
+      },
+      {
+        "name": "releases",
+        "type": "directory",
+        "path": "docs/releases",
+        "children": []
+      },
+      {
+        "name": "v1.2.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3498,
+        "extension": ".md",
+        "path": "docs/releases/v1.2.md"
       },
       {
         "name": "scrum",
@@ -1309,7 +1577,7 @@
         "name": "atas.md",
         "type": "file",
         "language": "Markdown",
-        "size": 11810,
+        "size": 16517,
         "extension": ".md",
         "path": "docs/scrum/atas.md"
       },
@@ -1322,12 +1590,28 @@
         "path": "docs/scrum/checklist-release-1.md"
       },
       {
+        "name": "retrospectivas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8486,
+        "extension": ".md",
+        "path": "docs/scrum/retrospectivas.md"
+      },
+      {
         "name": "sprint-planning.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7128,
+        "size": 10133,
         "extension": ".md",
         "path": "docs/scrum/sprint-planning.md"
+      },
+      {
+        "name": "specs",
+        "type": "file",
+        "language": "No Extension",
+        "size": 8,
+        "extension": "",
+        "path": "docs/specs"
       },
       {
         "name": "frontend",
@@ -1371,7 +1655,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1160,
+        "size": 1178,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -1391,9 +1675,39 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2202,
+        "size": 3825,
         "extension": ".tsx",
         "path": "frontend/app/cardapio/page.tsx"
+      },
+      {
+        "name": "desenvolvedores",
+        "type": "directory",
+        "path": "frontend/app/desenvolvedores",
+        "children": []
+      },
+      {
+        "name": "SwaggerViewer.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 868,
+        "extension": ".tsx",
+        "path": "frontend/app/desenvolvedores/SwaggerViewer.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 419,
+        "extension": ".tsx",
+        "path": "frontend/app/desenvolvedores/page.tsx"
+      },
+      {
+        "name": "swagger-ui-bundle.d.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 187,
+        "extension": ".ts",
+        "path": "frontend/app/desenvolvedores/swagger-ui-bundle.d.ts"
       },
       {
         "name": "disciplinas",
@@ -1470,6 +1784,20 @@
         "path": "frontend/app/salas/page.tsx"
       },
       {
+        "name": "vazias",
+        "type": "directory",
+        "path": "frontend/app/salas/vazias",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3529,
+        "extension": ".tsx",
+        "path": "frontend/app/salas/vazias/page.tsx"
+      },
+      {
         "name": "components",
         "type": "directory",
         "path": "frontend/components",
@@ -1503,17 +1831,9 @@
         "name": "Icons.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4320,
+        "size": 5197,
         "extension": ".tsx",
         "path": "frontend/components/Icons.tsx"
-      },
-      {
-        "name": "Nav.tsx",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1518,
-        "extension": ".tsx",
-        "path": "frontend/components/Nav.tsx"
       },
       {
         "name": "PageHeader.tsx",
@@ -1535,7 +1855,7 @@
         "name": "Sidebar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2250,
+        "size": 2338,
         "extension": ".tsx",
         "path": "frontend/components/Sidebar.tsx"
       },
@@ -1565,7 +1885,7 @@
         "name": "useApiResource.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1140,
+        "size": 1338,
         "extension": ".ts",
         "path": "frontend/hooks/useApiResource.ts"
       },
@@ -1573,7 +1893,7 @@
         "name": "useCardapioSemana.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3018,
+        "size": 3604,
         "extension": ".ts",
         "path": "frontend/hooks/useCardapioSemana.ts"
       },
@@ -1581,7 +1901,7 @@
         "name": "useDisciplinas.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2719,
+        "size": 2652,
         "extension": ".ts",
         "path": "frontend/hooks/useDisciplinas.ts"
       },
@@ -1600,6 +1920,14 @@
         "size": 288,
         "extension": ".ts",
         "path": "frontend/hooks/useSalas.ts"
+      },
+      {
+        "name": "useSalasVazias.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 492,
+        "extension": ".ts",
+        "path": "frontend/hooks/useSalasVazias.ts"
       },
       {
         "name": "lib",
@@ -1627,7 +1955,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 241028,
+        "size": 242156,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -1635,7 +1963,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 554,
+        "size": 629,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -1705,7 +2033,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 3489,
+        "size": 3791,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -1730,11 +2058,249 @@
         "size": 0,
         "extension": ".gitkeep",
         "path": "sdk/.gitkeep"
+      },
+      {
+        "name": "specs",
+        "type": "directory",
+        "path": "specs",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6804,
+        "extension": ".md",
+        "path": "specs/README.md"
+      },
+      {
+        "name": "RF01-capturar-oferta-de-disciplinas-de-todas-as-unidades.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3046,
+        "extension": ".md",
+        "path": "specs/RF01-capturar-oferta-de-disciplinas-de-todas-as-unidades.md"
+      },
+      {
+        "name": "RF02-associar-disciplina-a-professor.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1757,
+        "extension": ".md",
+        "path": "specs/RF02-associar-disciplina-a-professor.md"
+      },
+      {
+        "name": "RF03-associar-disciplina-a-sala-predio.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1745,
+        "extension": ".md",
+        "path": "specs/RF03-associar-disciplina-a-sala-predio.md"
+      },
+      {
+        "name": "RF04-cadastrar-docentes-vinculados-as-disciplinas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1677,
+        "extension": ".md",
+        "path": "specs/RF04-cadastrar-docentes-vinculados-as-disciplinas.md"
+      },
+      {
+        "name": "RF05-derivar-identificacao-de-salas-e-predios-a-partir-das-turmas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2830,
+        "extension": ".md",
+        "path": "specs/RF05-derivar-identificacao-de-salas-e-predios-a-partir-das-turmas.md"
+      },
+      {
+        "name": "RF06-capturar-cardapio-diario-do-ru.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2082,
+        "extension": ".md",
+        "path": "specs/RF06-capturar-cardapio-diario-do-ru.md"
+      },
+      {
+        "name": "RF07-manter-historico-de-cardapios.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1366,
+        "extension": ".md",
+        "path": "specs/RF07-manter-historico-de-cardapios.md"
+      },
+      {
+        "name": "RF08-capturar-eventos-institucionais.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 785,
+        "extension": ".md",
+        "path": "specs/RF08-capturar-eventos-institucionais.md"
+      },
+      {
+        "name": "RF09-capturar-editais-publicados.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 833,
+        "extension": ".md",
+        "path": "specs/RF09-capturar-editais-publicados.md"
+      },
+      {
+        "name": "RF10-expor-endpoints-rest-por-dominio.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1511,
+        "extension": ".md",
+        "path": "specs/RF10-expor-endpoints-rest-por-dominio.md"
+      },
+      {
+        "name": "RF11-documentar-a-api-via-openapi-swagger.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 978,
+        "extension": ".md",
+        "path": "specs/RF11-documentar-a-api-via-openapi-swagger.md"
+      },
+      {
+        "name": "RF12-versionar-a-api-desde-o-inicio.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 952,
+        "extension": ".md",
+        "path": "specs/RF12-versionar-a-api-desde-o-inicio.md"
+      },
+      {
+        "name": "RF13-disponibilizar-sdk-e-cli-para-integracao-de-terceiros.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 757,
+        "extension": ".md",
+        "path": "specs/RF13-disponibilizar-sdk-e-cli-para-integracao-de-terceiros.md"
+      },
+      {
+        "name": "RF14-publicar-portal-do-desenvolvedor.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 603,
+        "extension": ".md",
+        "path": "specs/RF14-publicar-portal-do-desenvolvedor.md"
+      },
+      {
+        "name": "RF15-agendar-execucao-automatica-do-scraping.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1733,
+        "extension": ".md",
+        "path": "specs/RF15-agendar-execucao-automatica-do-scraping.md"
+      },
+      {
+        "name": "RF16-registrar-log-de-sucesso-falha-de-cada-execucao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1335,
+        "extension": ".md",
+        "path": "specs/RF16-registrar-log-de-sucesso-falha-de-cada-execucao.md"
+      },
+      {
+        "name": "RF17-calcular-salas-vazias-por-dia-e-horario.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2242,
+        "extension": ".md",
+        "path": "specs/RF17-calcular-salas-vazias-por-dia-e-horario.md"
+      },
+      {
+        "name": "RF18-listar-agenda-de-turmas-por-professor.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 610,
+        "extension": ".md",
+        "path": "specs/RF18-listar-agenda-de-turmas-por-professor.md"
+      },
+      {
+        "name": "RF19-agrupar-cardapio-semanal.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1371,
+        "extension": ".md",
+        "path": "specs/RF19-agrupar-cardapio-semanal.md"
+      },
+      {
+        "name": "RNF01-limitar-requisicoes-por-cliente-ip-rate-limiting.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 708,
+        "extension": ".md",
+        "path": "specs/RNF01-limitar-requisicoes-por-cliente-ip-rate-limiting.md"
+      },
+      {
+        "name": "RNF02-cachear-respostas-para-reduzir-tempo-de-resposta-e-carga-no.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3530,
+        "extension": ".md",
+        "path": "specs/RNF02-cachear-respostas-para-reduzir-tempo-de-resposta-e-carga-no.md"
+      },
+      {
+        "name": "RNF03-monitorar-disponibilidade-das-fontes-e-da-api-com-alertas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 857,
+        "extension": ".md",
+        "path": "specs/RNF03-monitorar-disponibilidade-das-fontes-e-da-api-com-alertas.md"
+      },
+      {
+        "name": "RNF04-validar-a-api-contra-testes-de-contrato.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1513,
+        "extension": ".md",
+        "path": "specs/RNF04-validar-a-api-contra-testes-de-contrato.md"
+      },
+      {
+        "name": "RNF05-tratar-falhas-de-scraping-de-forma-resiliente.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1277,
+        "extension": ".md",
+        "path": "specs/RNF05-tratar-falhas-de-scraping-de-forma-resiliente.md"
+      },
+      {
+        "name": "RNF06-garantir-disponibilidade-do-software-implantado.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1169,
+        "extension": ".md",
+        "path": "specs/RNF06-garantir-disponibilidade-do-software-implantado.md"
+      },
+      {
+        "name": "RNF07-manter-a-documentacao-sincronizada-com-o-estado-real-da-api.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1127,
+        "extension": ".md",
+        "path": "specs/RNF07-manter-a-documentacao-sincronizada-com-o-estado-real-da-api.md"
+      },
+      {
+        "name": "RNF08-rodar-pipeline-de-ci-cd.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1391,
+        "extension": ".md",
+        "path": "specs/RNF08-rodar-pipeline-de-ci-cd.md"
+      },
+      {
+        "name": "RNF09-garantir-qualidade-de-testes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3347,
+        "extension": ".md",
+        "path": "specs/RNF09-garantir-qualidade-de-testes.md"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-27T11:15:20.431941+00:00",
+    "extracted_at": "2026-10-28T12:09:46.535629+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Cerradinho-API.json"
   }
 }

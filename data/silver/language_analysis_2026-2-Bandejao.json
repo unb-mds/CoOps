@@ -2,30 +2,86 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-27T11:14:26.778110+00:00",
+  "analyzed_at": "2026-10-28T12:08:49.374351+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 163,
-  "total_bytes": 651900,
+  "total_files": 196,
+  "total_bytes": 1799561,
   "languages": [
     {
+      "language": "PDF",
+      "file_count": 5,
+      "total_bytes": 790557,
+      "percentage": 43.93,
+      "files": [
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf",
+          "name": "Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf",
+          "size": 177476,
+          "extension": ".pdf"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Planaltina-Semana-02-26-10-a-01-11-1.pdf",
+          "name": "Planaltina-Semana-02-26-10-a-01-11-1.pdf",
+          "size": 175980,
+          "extension": ".pdf"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Ceilandia-Semana-02-26-10-a-01-11-1.pdf",
+          "name": "Ceilandia-Semana-02-26-10-a-01-11-1.pdf",
+          "size": 161037,
+          "extension": ".pdf"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Gama-Semana-02-26-10-a-01-11-1.pdf",
+          "name": "Gama-Semana-02-26-10-a-01-11-1.pdf",
+          "size": 156520,
+          "extension": ".pdf"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Fazenda-Semana-02-26-10-a-01-11.pdf",
+          "name": "Fazenda-Semana-02-26-10-a-01-11.pdf",
+          "size": 119544,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    {
       "language": "Markdown",
-      "file_count": 33,
-      "total_bytes": 203863,
-      "percentage": 31.27,
+      "file_count": 39,
+      "total_bytes": 243257,
+      "percentage": 13.52,
       "files": [
         {
           "path": "docs/Requisitos.md",
           "name": "Requisitos.md",
-          "size": 36561,
+          "size": 37270,
           "extension": ".md"
         },
         {
           "path": "docs/Arquitetura.md",
           "name": "Arquitetura.md",
-          "size": 13853,
+          "size": 15923,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/changelog.md",
+          "name": "changelog.md",
+          "size": 11203,
+          "extension": ".md"
+        },
+        {
+          "path": "contexto.md",
+          "name": "contexto.md",
+          "size": 10194,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/scrum/sprint03.md",
+          "name": "sprint03.md",
+          "size": 9889,
           "extension": ".md"
         },
         {
@@ -41,65 +97,177 @@
           "extension": ".md"
         },
         {
-          "path": "contexto.md",
-          "name": "contexto.md",
-          "size": 9143,
-          "extension": ".md"
-        },
-        {
           "path": "docs/estudos/extracao_dados_pdf.md",
           "name": "extracao_dados_pdf.md",
           "size": 8685,
           "extension": ".md"
         },
         {
-          "path": "docs/scrum/sprint03.md",
-          "name": "sprint03.md",
-          "size": 8443,
+          "path": "docs/desenvolvimento.md",
+          "name": "desenvolvimento.md",
+          "size": 8431,
           "extension": ".md"
         },
         {
-          "path": "docs/estudos/banco_de_dados.md",
-          "name": "banco_de_dados.md",
-          "size": 8270,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/changelog.md",
-          "name": "changelog.md",
-          "size": 7724,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/engenharia_requisitos.md",
-          "name": "engenharia_requisitos.md",
-          "size": 7540,
+          "path": "README.md",
+          "name": "README.md",
+          "size": 8283,
           "extension": ".md"
         }
       ]
     },
     {
+      "language": "JSON",
+      "file_count": 12,
+      "total_bytes": 225399,
+      "percentage": 12.53,
+      "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 79076,
+          "extension": ".json"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf.json",
+          "name": "Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf.json",
+          "size": 35290,
+          "extension": ".json"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Planaltina-Semana-02-26-10-a-01-11-1.pdf.json",
+          "name": "Planaltina-Semana-02-26-10-a-01-11-1.pdf.json",
+          "size": 35282,
+          "extension": ".json"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Ceilandia-Semana-02-26-10-a-01-11-1.pdf.json",
+          "name": "Ceilandia-Semana-02-26-10-a-01-11-1.pdf.json",
+          "size": 28552,
+          "extension": ".json"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Gama-Semana-02-26-10-a-01-11-1.pdf.json",
+          "name": "Gama-Semana-02-26-10-a-01-11-1.pdf.json",
+          "size": 25618,
+          "extension": ".json"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/Fazenda-Semana-02-26-10-a-01-11.pdf.json",
+          "name": "Fazenda-Semana-02-26-10-a-01-11.pdf.json",
+          "size": 15682,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/evidencias/dados/sincronizacao-2026-10-27.json",
+          "name": "sincronizacao-2026-10-27.json",
+          "size": 3066,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/evidencias/dados/publicacao-https-2026-10-27.json",
+          "name": "publicacao-https-2026-10-27.json",
+          "size": 887,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 693,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/tsconfig.json",
+          "name": "tsconfig.json",
+          "size": 600,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 61,
+      "total_bytes": 169685,
+      "percentage": 9.43,
+      "files": [
+        {
+          "path": "backend/tests/test_cardapio_api.py",
+          "name": "test_cardapio_api.py",
+          "size": 17285,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/extracao/main.py",
+          "name": "main.py",
+          "size": 17022,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_reclamacao.py",
+          "name": "test_reclamacao.py",
+          "size": 13135,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_cobertura_total.py",
+          "name": "test_cobertura_total.py",
+          "size": 9993,
+          "extension": ".py"
+        },
+        {
+          "path": "scripts/verificar_publicacao.py",
+          "name": "verificar_publicacao.py",
+          "size": 7613,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_main.py",
+          "name": "test_main.py",
+          "size": 6882,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/routes/cardapio.py",
+          "name": "cardapio.py",
+          "size": 6055,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_sincronizar.py",
+          "name": "test_sincronizar.py",
+          "size": 5673,
+          "extension": ".py"
+        },
+        {
+          "path": "scripts/security/test_check_reports.py",
+          "name": "test_check_reports.py",
+          "size": 5144,
+          "extension": ".py"
+        },
+        {
+          "path": "scripts/test_verificar_publicacao.py",
+          "name": "test_verificar_publicacao.py",
+          "size": 5109,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
       "language": "TypeScript",
-      "file_count": 38,
-      "total_bytes": 150991,
-      "percentage": 23.16,
+      "file_count": 43,
+      "total_bytes": 157655,
+      "percentage": 8.76,
       "files": [
         {
           "path": "frontend/src/App.tsx",
           "name": "App.tsx",
-          "size": 18867,
+          "size": 19478,
           "extension": ".tsx"
         },
         {
           "path": "frontend/src/screens/CardapioTab.tsx",
           "name": "CardapioTab.tsx",
           "size": 9581,
-          "extension": ".tsx"
-        },
-        {
-          "path": "frontend/src/screens/Reclamacoes.tsx",
-          "name": "Reclamacoes.tsx",
-          "size": 8319,
           "extension": ".tsx"
         },
         {
@@ -121,9 +289,9 @@
           "extension": ".tsx"
         },
         {
-          "path": "frontend/src/screens/AvaliacaoForm.tsx",
-          "name": "AvaliacaoForm.tsx",
-          "size": 6206,
+          "path": "frontend/src/screens/Reclamacoes.tsx",
+          "name": "Reclamacoes.tsx",
+          "size": 6765,
           "extension": ".tsx"
         },
         {
@@ -139,6 +307,12 @@
           "extension": ".tsx"
         },
         {
+          "path": "frontend/src/screens/AvaliacaoForm.tsx",
+          "name": "AvaliacaoForm.tsx",
+          "size": 5917,
+          "extension": ".tsx"
+        },
+        {
           "path": "frontend/src/components/A11yFloat.tsx",
           "name": "A11yFloat.tsx",
           "size": 5775,
@@ -147,102 +321,28 @@
       ]
     },
     {
-      "language": "Python",
-      "file_count": 58,
-      "total_bytes": 148023,
-      "percentage": 22.71,
+      "language": "PNG Image",
+      "file_count": 3,
+      "total_bytes": 149399,
+      "percentage": 8.3,
       "files": [
         {
-          "path": "backend/tests/test_cardapio_api.py",
-          "name": "test_cardapio_api.py",
-          "size": 17285,
-          "extension": ".py"
+          "path": "docs/evidencias/capturas/privacidade-desktop.png",
+          "name": "privacidade-desktop.png",
+          "size": 84737,
+          "extension": ".png"
         },
         {
-          "path": "extracao/extracao/main.py",
-          "name": "main.py",
-          "size": 16372,
-          "extension": ".py"
+          "path": "docs/evidencias/capturas/privacidade-mobile.png",
+          "name": "privacidade-mobile.png",
+          "size": 51605,
+          "extension": ".png"
         },
         {
-          "path": "backend/tests/test_reclamacao.py",
-          "name": "test_reclamacao.py",
-          "size": 12506,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_cobertura_total.py",
-          "name": "test_cobertura_total.py",
-          "size": 9993,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_main.py",
-          "name": "test_main.py",
-          "size": 6882,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/routes/cardapio.py",
-          "name": "cardapio.py",
-          "size": 6055,
-          "extension": ".py"
-        },
-        {
-          "path": "scripts/security/test_check_reports.py",
-          "name": "test_check_reports.py",
-          "size": 5144,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_sincronizar.py",
-          "name": "test_sincronizar.py",
-          "size": 4828,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/db/seed.py",
-          "name": "seed.py",
-          "size": 4169,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/versions/3e9ed9bb9055_cria_tabelas_iniciais.py",
-          "name": "3e9ed9bb9055_cria_tabelas_iniciais.py",
-          "size": 3921,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
-      "language": "JSON",
-      "file_count": 4,
-      "total_bytes": 80600,
-      "percentage": 12.36,
-      "files": [
-        {
-          "path": "frontend/package-lock.json",
-          "name": "package-lock.json",
-          "size": 79076,
-          "extension": ".json"
-        },
-        {
-          "path": "frontend/package.json",
-          "name": "package.json",
-          "size": 693,
-          "extension": ".json"
-        },
-        {
-          "path": "frontend/tsconfig.json",
-          "name": "tsconfig.json",
-          "size": 600,
-          "extension": ".json"
-        },
-        {
-          "path": "frontend/.oxlintrc.json",
-          "name": ".oxlintrc.json",
-          "size": 231,
-          "extension": ".json"
+          "path": "frontend/src/assets/hero.png",
+          "name": "hero.png",
+          "size": 13057,
+          "extension": ".png"
         }
       ]
     },
@@ -250,7 +350,7 @@
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 4.2,
+      "percentage": 1.52,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -279,25 +379,17 @@
       ]
     },
     {
-      "language": "PNG Image",
-      "file_count": 1,
-      "total_bytes": 13057,
-      "percentage": 2.0,
+      "language": "YAML",
+      "file_count": 7,
+      "total_bytes": 15572,
+      "percentage": 0.87,
       "files": [
         {
-          "path": "frontend/src/assets/hero.png",
-          "name": "hero.png",
-          "size": 13057,
-          "extension": ".png"
-        }
-      ]
-    },
-    {
-      "language": "YAML",
-      "file_count": 5,
-      "total_bytes": 9658,
-      "percentage": 1.48,
-      "files": [
+          "path": ".github/workflows/sincronizacao.yml",
+          "name": "sincronizacao.yml",
+          "size": 3899,
+          "extension": ".yml"
+        },
         {
           "path": ".github/workflows/sast.yml",
           "name": "sast.yml",
@@ -307,13 +399,13 @@
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 2191,
+          "size": 2403,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/ci.yml",
           "name": "ci.yml",
-          "size": 1745,
+          "size": 2134,
           "extension": ".yml"
         },
         {
@@ -321,6 +413,12 @@
           "name": "docs.yml",
           "size": 1597,
           "extension": ".yml"
+        },
+        {
+          "path": "render.yaml",
+          "name": "render.yaml",
+          "size": 1414,
+          "extension": ".yaml"
         },
         {
           "path": "docker-compose.yml",
@@ -331,10 +429,24 @@
       ]
     },
     {
+      "language": "JavaScript",
+      "file_count": 1,
+      "total_bytes": 6551,
+      "percentage": 0.36,
+      "files": [
+        {
+          "path": "frontend/tests/api.test.js",
+          "name": "api.test.js",
+          "size": 6551,
+          "extension": ".js"
+        }
+      ]
+    },
+    {
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 6061,
-      "percentage": 0.93,
+      "percentage": 0.34,
       "files": [
         {
           "path": "frontend/src/index.css",
@@ -345,24 +457,10 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "file_count": 1,
-      "total_bytes": 4890,
-      "percentage": 0.75,
-      "files": [
-        {
-          "path": "frontend/tests/api.test.js",
-          "name": "api.test.js",
-          "size": 4890,
-          "extension": ".js"
-        }
-      ]
-    },
-    {
       "language": "INI",
       "file_count": 1,
       "total_bytes": 3819,
-      "percentage": 0.59,
+      "percentage": 0.21,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -375,8 +473,8 @@
     {
       "language": "Unknown",
       "file_count": 3,
-      "total_bytes": 1077,
-      "percentage": 0.17,
+      "total_bytes": 1175,
+      "percentage": 0.07,
       "files": [
         {
           "path": "backend/alembic/script.py.mako",
@@ -387,7 +485,7 @@
         {
           "path": "backend/.env.example",
           "name": ".env.example",
-          "size": 402,
+          "size": 500,
           "extension": ".example"
         },
         {
@@ -399,10 +497,30 @@
       ]
     },
     {
+      "language": "HTML",
+      "file_count": 2,
+      "total_bytes": 992,
+      "percentage": 0.06,
+      "files": [
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/links.html",
+          "name": "links.html",
+          "size": 552,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 440,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
       "language": "No Extension",
       "file_count": 4,
       "total_bytes": 788,
-      "percentage": 0.12,
+      "percentage": 0.04,
       "files": [
         {
           "path": "frontend/Dockerfile",
@@ -434,7 +552,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 478,
-      "percentage": 0.07,
+      "percentage": 0.03,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -451,16 +569,22 @@
       ]
     },
     {
-      "language": "HTML",
-      "file_count": 1,
-      "total_bytes": 440,
-      "percentage": 0.07,
+      "language": "TOML",
+      "file_count": 2,
+      "total_bytes": 280,
+      "percentage": 0.02,
       "files": [
         {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 440,
-          "extension": ".html"
+          "path": "backend/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 148,
+          "extension": ".toml"
+        },
+        {
+          "path": "extracao/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 132,
+          "extension": ".toml"
         }
       ]
     },
@@ -468,7 +592,7 @@
       "language": "Text",
       "file_count": 4,
       "total_bytes": 401,
-      "percentage": 0.06,
+      "percentage": 0.02,
       "files": [
         {
           "path": "backend/requirements.txt",
@@ -497,29 +621,9 @@
       ]
     },
     {
-      "language": "TOML",
-      "file_count": 2,
-      "total_bytes": 280,
-      "percentage": 0.04,
-      "files": [
-        {
-          "path": "backend/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 148,
-          "extension": ".toml"
-        },
-        {
-          "path": "extracao/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 132,
-          "extension": ".toml"
-        }
-      ]
-    },
-    {
       "language": "Docker Ignore",
-      "file_count": 1,
-      "total_bytes": 86,
+      "file_count": 2,
+      "total_bytes": 104,
       "percentage": 0.01,
       "files": [
         {
@@ -527,12 +631,18 @@
           "name": ".dockerignore",
           "size": 86,
           "extension": ".dockerignore"
+        },
+        {
+          "path": "frontend/.dockerignore",
+          "name": ".dockerignore",
+          "size": 18,
+          "extension": ".dockerignore"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-27T11:15:20.428574+00:00",
+    "extracted_at": "2026-10-28T12:09:46.532213+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }
