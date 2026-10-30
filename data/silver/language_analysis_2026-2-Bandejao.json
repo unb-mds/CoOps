@@ -2,19 +2,19 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-29T12:24:33.499799+00:00",
+  "analyzed_at": "2026-10-30T12:17:14.021767+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 197,
-  "total_bytes": 1804065,
+  "total_files": 210,
+  "total_bytes": 1868947,
   "languages": [
     {
       "language": "PDF",
       "file_count": 5,
       "total_bytes": 790557,
-      "percentage": 43.82,
+      "percentage": 42.3,
       "files": [
         {
           "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf",
@@ -50,9 +50,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 40,
-      "total_bytes": 247761,
-      "percentage": 13.73,
+      "file_count": 41,
+      "total_bytes": 257700,
+      "percentage": 13.79,
       "files": [
         {
           "path": "docs/Requisitos.md",
@@ -76,6 +76,12 @@
           "path": "contexto.md",
           "name": "contexto.md",
           "size": 10194,
+          "extension": ".md"
+        },
+        {
+          "path": "backend/README.md",
+          "name": "README.md",
+          "size": 9939,
           "extension": ".md"
         },
         {
@@ -107,12 +113,6 @@
           "name": "desenvolvimento.md",
           "size": 8431,
           "extension": ".md"
-        },
-        {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 8283,
-          "extension": ".md"
         }
       ]
     },
@@ -120,7 +120,7 @@
       "language": "JSON",
       "file_count": 12,
       "total_bytes": 225399,
-      "percentage": 12.49,
+      "percentage": 12.06,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -186,9 +186,9 @@
     },
     {
       "language": "Python",
-      "file_count": 61,
-      "total_bytes": 169685,
-      "percentage": 9.41,
+      "file_count": 73,
+      "total_bytes": 224628,
+      "percentage": 12.02,
       "files": [
         {
           "path": "backend/tests/test_cardapio_api.py",
@@ -203,9 +203,21 @@
           "extension": ".py"
         },
         {
+          "path": "backend/tests/test_intencao.py",
+          "name": "test_intencao.py",
+          "size": 13293,
+          "extension": ".py"
+        },
+        {
           "path": "backend/tests/test_reclamacao.py",
           "name": "test_reclamacao.py",
           "size": 13135,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_simular_intencoes.py",
+          "name": "test_simular_intencoes.py",
+          "size": 11657,
           "extension": ".py"
         },
         {
@@ -221,6 +233,12 @@
           "extension": ".py"
         },
         {
+          "path": "backend/tests/test_estimativa.py",
+          "name": "test_estimativa.py",
+          "size": 7339,
+          "extension": ".py"
+        },
+        {
           "path": "extracao/tests/test_main.py",
           "name": "test_main.py",
           "size": 6882,
@@ -231,24 +249,6 @@
           "name": "cardapio.py",
           "size": 6055,
           "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_sincronizar.py",
-          "name": "test_sincronizar.py",
-          "size": 5673,
-          "extension": ".py"
-        },
-        {
-          "path": "scripts/security/test_check_reports.py",
-          "name": "test_check_reports.py",
-          "size": 5144,
-          "extension": ".py"
-        },
-        {
-          "path": "scripts/test_verificar_publicacao.py",
-          "name": "test_verificar_publicacao.py",
-          "size": 5109,
-          "extension": ".py"
         }
       ]
     },
@@ -256,7 +256,7 @@
       "language": "TypeScript",
       "file_count": 43,
       "total_bytes": 157655,
-      "percentage": 8.74,
+      "percentage": 8.44,
       "files": [
         {
           "path": "frontend/src/App.tsx",
@@ -324,7 +324,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 149399,
-      "percentage": 8.28,
+      "percentage": 7.99,
       "files": [
         {
           "path": "docs/evidencias/capturas/privacidade-desktop.png",
@@ -350,7 +350,7 @@
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 1.52,
+      "percentage": 1.47,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -382,7 +382,7 @@
       "language": "YAML",
       "file_count": 7,
       "total_bytes": 15572,
-      "percentage": 0.86,
+      "percentage": 0.83,
       "files": [
         {
           "path": ".github/workflows/sincronizacao.yml",
@@ -432,7 +432,7 @@
       "language": "JavaScript",
       "file_count": 1,
       "total_bytes": 6551,
-      "percentage": 0.36,
+      "percentage": 0.35,
       "files": [
         {
           "path": "frontend/tests/api.test.js",
@@ -446,7 +446,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 6061,
-      "percentage": 0.34,
+      "percentage": 0.32,
       "files": [
         {
           "path": "frontend/src/index.css",
@@ -460,7 +460,7 @@
       "language": "INI",
       "file_count": 1,
       "total_bytes": 3819,
-      "percentage": 0.21,
+      "percentage": 0.2,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -474,7 +474,7 @@
       "language": "Unknown",
       "file_count": 3,
       "total_bytes": 1175,
-      "percentage": 0.07,
+      "percentage": 0.06,
       "files": [
         {
           "path": "backend/alembic/script.py.mako",
@@ -569,26 +569,6 @@
       ]
     },
     {
-      "language": "TOML",
-      "file_count": 2,
-      "total_bytes": 280,
-      "percentage": 0.02,
-      "files": [
-        {
-          "path": "backend/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 148,
-          "extension": ".toml"
-        },
-        {
-          "path": "extracao/pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 132,
-          "extension": ".toml"
-        }
-      ]
-    },
-    {
       "language": "Text",
       "file_count": 4,
       "total_bytes": 401,
@@ -621,6 +601,26 @@
       ]
     },
     {
+      "language": "TOML",
+      "file_count": 2,
+      "total_bytes": 280,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "backend/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 148,
+          "extension": ".toml"
+        },
+        {
+          "path": "extracao/pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 132,
+          "extension": ".toml"
+        }
+      ]
+    },
+    {
       "language": "Docker Ignore",
       "file_count": 2,
       "total_bytes": 104,
@@ -642,7 +642,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-29T12:25:31.871230+00:00",
+    "extracted_at": "2026-10-30T12:18:14.284703+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }

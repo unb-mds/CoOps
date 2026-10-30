@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-10-29T12:24:33.499799+00:00",
+  "extracted_at": "2026-10-30T12:17:14.021767+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -90,6 +90,14 @@
         "path": "backend/Dockerfile"
       },
       {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9939,
+        "extension": ".md",
+        "path": "backend/README.md"
+      },
+      {
         "name": "alembic.ini",
         "type": "file",
         "language": "INI",
@@ -166,6 +174,14 @@
         "path": "backend/alembic/versions/6b7c8d9e0f1a_registra_ultima_importacao_campus.py"
       },
       {
+        "name": "7c8d9e0f1a2b_cria_intencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 929,
+        "extension": ".py",
+        "path": "backend/alembic/versions/7c8d9e0f1a2b_cria_intencao.py"
+      },
+      {
         "name": "cb27a92c83d1_adiciona_alergeno_amendoim.py",
         "type": "file",
         "language": "Python",
@@ -232,12 +248,28 @@
         "path": "backend/app/api/routes/checkin.py"
       },
       {
+        "name": "estimativa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3035,
+        "extension": ".py",
+        "path": "backend/app/api/routes/estimativa.py"
+      },
+      {
         "name": "health.py",
         "type": "file",
         "language": "Python",
         "size": 466,
         "extension": ".py",
         "path": "backend/app/api/routes/health.py"
+      },
+      {
+        "name": "intencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5973,
+        "extension": ".py",
+        "path": "backend/app/api/routes/intencao.py"
       },
       {
         "name": "reclamacao.py",
@@ -316,10 +348,18 @@
         "path": "backend/app/db/session.py"
       },
       {
+        "name": "simular_intencoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4226,
+        "extension": ".py",
+        "path": "backend/app/db/simular_intencoes.py"
+      },
+      {
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 923,
+        "size": 1019,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -333,7 +373,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 536,
+        "size": 593,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -357,7 +397,7 @@
         "name": "cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 1690,
+        "size": 1861,
         "extension": ".py",
         "path": "backend/app/models/cardapio.py"
       },
@@ -376,6 +416,14 @@
         "size": 881,
         "extension": ".py",
         "path": "backend/app/models/enums.py"
+      },
+      {
+        "name": "intencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1129,
+        "extension": ".py",
+        "path": "backend/app/models/intencao.py"
       },
       {
         "name": "item_cardapio.py",
@@ -438,6 +486,22 @@
         "size": 214,
         "extension": ".py",
         "path": "backend/app/schemas/checkin.py"
+      },
+      {
+        "name": "estimativa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 513,
+        "extension": ".py",
+        "path": "backend/app/schemas/estimativa.py"
+      },
+      {
+        "name": "intencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 280,
+        "extension": ".py",
+        "path": "backend/app/schemas/intencao.py"
       },
       {
         "name": "item_cardapio.py",
@@ -510,6 +574,22 @@
         "path": "backend/tests/test_cardapio_api.py"
       },
       {
+        "name": "test_comando_simulacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2795,
+        "extension": ".py",
+        "path": "backend/tests/test_comando_simulacao.py"
+      },
+      {
+        "name": "test_estimativa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7339,
+        "extension": ".py",
+        "path": "backend/tests/test_estimativa.py"
+      },
+      {
         "name": "test_health.py",
         "type": "file",
         "language": "Python",
@@ -526,12 +606,28 @@
         "path": "backend/tests/test_horarios.py"
       },
       {
+        "name": "test_intencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13293,
+        "extension": ".py",
+        "path": "backend/tests/test_intencao.py"
+      },
+      {
         "name": "test_migracao_identidade.py",
         "type": "file",
         "language": "Python",
         "size": 2614,
         "extension": ".py",
         "path": "backend/tests/test_migracao_identidade.py"
+      },
+      {
+        "name": "test_migracao_intencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3450,
+        "extension": ".py",
+        "path": "backend/tests/test_migracao_intencao.py"
       },
       {
         "name": "test_migracao_reclamacao.py",
@@ -564,6 +660,14 @@
         "size": 1464,
         "extension": ".py",
         "path": "backend/tests/test_seed_e_sessao.py"
+      },
+      {
+        "name": "test_simular_intencoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11657,
+        "extension": ".py",
+        "path": "backend/tests/test_simular_intencoes.py"
       },
       {
         "name": "test_tempo.py",
@@ -1832,7 +1936,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-10-29T12:25:31.872774+00:00",
+    "extracted_at": "2026-10-30T12:18:14.286380+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }

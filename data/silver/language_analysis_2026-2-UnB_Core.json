@@ -2,19 +2,19 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-29T12:24:25.661671+00:00",
+  "analyzed_at": "2026-10-30T12:17:05.759065+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 180,
-  "total_bytes": 823581,
+  "total_files": 191,
+  "total_bytes": 851330,
   "languages": [
     {
       "language": "JSON",
       "file_count": 10,
       "total_bytes": 246171,
-      "percentage": 29.89,
+      "percentage": 28.92,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -82,7 +82,7 @@
       "language": "Markdown",
       "file_count": 48,
       "total_bytes": 243706,
-      "percentage": 29.59,
+      "percentage": 28.63,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -150,7 +150,7 @@
       "language": "Unknown",
       "file_count": 34,
       "total_bytes": 118914,
-      "percentage": 14.44,
+      "percentage": 13.97,
       "files": [
         {
           "path": "unb_core.db",
@@ -215,10 +215,78 @@
       ]
     },
     {
+      "language": "Python",
+      "file_count": 45,
+      "total_bytes": 78735,
+      "percentage": 9.25,
+      "files": [
+        {
+          "path": "backend/app/api/errors.py",
+          "name": "errors.py",
+          "size": 7218,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/unit/test_routers.py",
+          "name": "test_routers.py",
+          "size": 4979,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_errors.py",
+          "name": "test_errors.py",
+          "size": 4425,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_moderacao.py",
+          "name": "test_moderacao.py",
+          "size": 4239,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_auth_contribuicoes.py",
+          "name": "test_auth_contribuicoes.py",
+          "size": 3524,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/services/moderacao_service.py",
+          "name": "moderacao_service.py",
+          "size": 3447,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/unit/test_moderacao_service.py",
+          "name": "test_moderacao_service.py",
+          "size": 3158,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_consulta_academica.py",
+          "name": "test_consulta_academica.py",
+          "size": 3156,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/unit/test_auth_service.py",
+          "name": "test_auth_service.py",
+          "size": 3059,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_usuarios_admin.py",
+          "name": "test_usuarios_admin.py",
+          "size": 2964,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 7.42,
+      "percentage": 7.18,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -262,7 +330,7 @@
       "language": "JavaScript",
       "file_count": 26,
       "total_bytes": 52542,
-      "percentage": 6.38,
+      "percentage": 6.17,
       "files": [
         {
           "path": "frontend/src/pages/ContribuicaoPage.jsx",
@@ -327,78 +395,10 @@
       ]
     },
     {
-      "language": "Python",
-      "file_count": 34,
-      "total_bytes": 50986,
-      "percentage": 6.19,
-      "files": [
-        {
-          "path": "backend/app/api/errors.py",
-          "name": "errors.py",
-          "size": 7218,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_moderacao.py",
-          "name": "test_moderacao.py",
-          "size": 4239,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_auth_contribuicoes.py",
-          "name": "test_auth_contribuicoes.py",
-          "size": 3524,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/services/moderacao_service.py",
-          "name": "moderacao_service.py",
-          "size": 3447,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_consulta_academica.py",
-          "name": "test_consulta_academica.py",
-          "size": 3156,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_usuarios_admin.py",
-          "name": "test_usuarios_admin.py",
-          "size": 2964,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/domain/models.py",
-          "name": "models.py",
-          "size": 2720,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/routers/academico.py",
-          "name": "academico.py",
-          "size": 1934,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/services/auth_service.py",
-          "name": "auth_service.py",
-          "size": 1627,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/services/usuario_service.py",
-          "name": "usuario_service.py",
-          "size": 1600,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
       "language": "CSS",
       "file_count": 10,
       "total_bytes": 23012,
-      "percentage": 2.79,
+      "percentage": 2.7,
       "files": [
         {
           "path": "frontend/src/components/ui/ui.css",
@@ -466,7 +466,7 @@
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 1.22,
+      "percentage": 1.18,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -486,7 +486,7 @@
       "language": "No Extension",
       "file_count": 3,
       "total_bytes": 9252,
-      "percentage": 1.12,
+      "percentage": 1.09,
       "files": [
         {
           "path": "git status",
@@ -512,7 +512,7 @@
       "language": "YAML",
       "file_count": 3,
       "total_bytes": 6922,
-      "percentage": 0.84,
+      "percentage": 0.81,
       "files": [
         {
           "path": "docs/gitpage/mkdocs.yml",
@@ -538,7 +538,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 462,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": ".specify/.gitignore",
@@ -584,7 +584,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-29T12:25:31.943682+00:00",
+    "extracted_at": "2026-10-30T12:18:14.308355+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }
