@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-UnB_Core",
   "branch": "main",
-  "sha": "cf15bcb7afea49142d8bd247fa0b906de1e0e887",
+  "sha": "451571da2c62e4d6cdfb71a6c75a6bf6164936d8",
   "tree": [
     {
       "name": ".gitattributes",
@@ -612,7 +612,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "14e669479340f155b36364f615bbe1953a62406d",
+      "sha": "94e1b034b4ec0f1412693376df56e9ca8e515ec9",
       "mode": "040000",
       "children": []
     },
@@ -1338,7 +1338,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "a7186cf421189466d958547b0207bf276f92fa7b",
+      "sha": "b3a241f3c9bc199c1f9294b97645d2e45e331dfc",
       "mode": "040000",
       "children": []
     },
@@ -1364,7 +1364,7 @@
       "name": "integration",
       "path": "backend/tests/integration",
       "type": "directory",
-      "sha": "ab2525a555df2b2a5950a7a7e6436ec55bfc13a7",
+      "sha": "aa3932d0674925297fc21d9b4f01fe8e01d8cff0",
       "mode": "040000",
       "children": []
     },
@@ -1399,6 +1399,16 @@
       "is_binary": false
     },
     {
+      "name": "test_errors.py",
+      "path": "backend/tests/integration/test_errors.py",
+      "type": "file",
+      "sha": "b1e2ced0c8e30c10cd6153b59f80b6be83482875",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4425,
+      "is_binary": false
+    },
+    {
       "name": "test_moderacao.py",
       "path": "backend/tests/integration/test_moderacao.py",
       "type": "file",
@@ -1422,7 +1432,7 @@
       "name": "unit",
       "path": "backend/tests/unit",
       "type": "directory",
-      "sha": "d564d0bc3dd917926892c55e3706cc116d5b165e",
+      "sha": "c4c7d44daab2e8cb0c996220358994b09965c87e",
       "mode": "040000",
       "children": []
     },
@@ -1434,6 +1444,106 @@
       "mode": "100644",
       "extension": ".gitkeep",
       "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "test_app_setup.py",
+      "path": "backend/tests/unit/test_app_setup.py",
+      "type": "file",
+      "sha": "6abd29be32a2065d1573aca50a7c804628dce6cd",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1632,
+      "is_binary": false
+    },
+    {
+      "name": "test_auth_service.py",
+      "path": "backend/tests/unit/test_auth_service.py",
+      "type": "file",
+      "sha": "dae186bd983bc1225ab29452ed325cb133d259cc",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3059,
+      "is_binary": false
+    },
+    {
+      "name": "test_conteudo_service.py",
+      "path": "backend/tests/unit/test_conteudo_service.py",
+      "type": "file",
+      "sha": "b8811a6324f43bf8b9c8789436424767a87ab84f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1664,
+      "is_binary": false
+    },
+    {
+      "name": "test_contribuicao_service.py",
+      "path": "backend/tests/unit/test_contribuicao_service.py",
+      "type": "file",
+      "sha": "56cc587052b5d299361aac68ad31498d45696fe6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1589,
+      "is_binary": false
+    },
+    {
+      "name": "test_curso_service.py",
+      "path": "backend/tests/unit/test_curso_service.py",
+      "type": "file",
+      "sha": "e225c61766d9995b3c80b7b40344658b36436dfa",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 480,
+      "is_binary": false
+    },
+    {
+      "name": "test_dependencies_security.py",
+      "path": "backend/tests/unit/test_dependencies_security.py",
+      "type": "file",
+      "sha": "058e0139f6590a40c29249f2d867dccab4d4d174",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1930,
+      "is_binary": false
+    },
+    {
+      "name": "test_errors.py",
+      "path": "backend/tests/unit/test_errors.py",
+      "type": "file",
+      "sha": "0b55805c27d6788e95e5245c786c9b482c7a424f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2701,
+      "is_binary": false
+    },
+    {
+      "name": "test_moderacao_service.py",
+      "path": "backend/tests/unit/test_moderacao_service.py",
+      "type": "file",
+      "sha": "223e83bd6e982cb8ecc98664252e475b7e6eb2a0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3158,
+      "is_binary": false
+    },
+    {
+      "name": "test_routers.py",
+      "path": "backend/tests/unit/test_routers.py",
+      "type": "file",
+      "sha": "b7a10db4a23ecf9996d4825f5fbb5bbfc40f5f2f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4979,
+      "is_binary": false
+    },
+    {
+      "name": "test_usuario_service.py",
+      "path": "backend/tests/unit/test_usuario_service.py",
+      "type": "file",
+      "sha": "913841a4e86a973381416ebb8114c234ccc50321",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2132,
       "is_binary": false
     },
     {
@@ -2350,17 +2460,17 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-29T12:24:25.661671+00:00",
+  "extracted_at": "2026-10-30T12:17:05.759065+00:00",
   "method": "rest",
-  "total_items": 248,
+  "total_items": 259,
   "repository_metadata": {
     "id": 1338349828,
     "full_name": "unb-mds/2026-2-UnB_Core",
     "description": "Grupo G1 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:55:42Z",
-    "updated_at": "2026-10-27T22:51:57Z",
-    "language": "JavaScript",
-    "size": 1291,
+    "updated_at": "2026-10-29T20:13:16Z",
+    "language": "Python",
+    "size": 1301,
     "stars": 2,
     "forks": 2,
     "open_issues": 24

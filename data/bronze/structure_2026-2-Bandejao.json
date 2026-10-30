@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Bandejao",
   "branch": "main",
-  "sha": "03aa4e079feb428c7346140cf2b341cc3ff75c4e",
+  "sha": "2226b7e1339760f4523f01893b8485746ddc0354",
   "tree": [
     {
       "name": ".github",
@@ -84,7 +84,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "f775a465b43c8ad9ba22daa1a56f77cedc709b30",
+      "sha": "e1689f3b81fcef56e2b86dd912ba01110f2430cc",
       "mode": "040000",
       "children": []
     },
@@ -109,6 +109,16 @@
       "is_binary": false
     },
     {
+      "name": "README.md",
+      "path": "backend/README.md",
+      "type": "file",
+      "sha": "1def2e3eb394f453bb4ca7c5ed6605d1b16cc639",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9939,
+      "is_binary": false
+    },
+    {
       "name": "alembic.ini",
       "path": "backend/alembic.ini",
       "type": "file",
@@ -122,7 +132,7 @@
       "name": "alembic",
       "path": "backend/alembic",
       "type": "directory",
-      "sha": "c5bc136a24579757cc19b9eb2b994ef12141d56b",
+      "sha": "9838cfcf2394c0dd05b29a3e51f311a997321c24",
       "mode": "040000",
       "children": []
     },
@@ -160,7 +170,7 @@
       "name": "versions",
       "path": "backend/alembic/versions",
       "type": "directory",
-      "sha": "8400762485ae62218810c0db85c01bf2510a6685",
+      "sha": "90a09c3bcb046a572e0c97e325c9a9b7f83f5c5d",
       "mode": "040000",
       "children": []
     },
@@ -205,6 +215,16 @@
       "is_binary": false
     },
     {
+      "name": "7c8d9e0f1a2b_cria_intencao.py",
+      "path": "backend/alembic/versions/7c8d9e0f1a2b_cria_intencao.py",
+      "type": "file",
+      "sha": "f5622c796c7c544a4b8417092e895d1c9da01342",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 929,
+      "is_binary": false
+    },
+    {
       "name": "cb27a92c83d1_adiciona_alergeno_amendoim.py",
       "path": "backend/alembic/versions/cb27a92c83d1_adiciona_alergeno_amendoim.py",
       "type": "file",
@@ -218,7 +238,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "eed8c3613ba6b69b6e733f6a36fa36c11566ce52",
+      "sha": "91f8bc6ff85f04ba1384b090a5820d8c6549a2ba",
       "mode": "040000",
       "children": []
     },
@@ -226,7 +246,7 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "ed11ad25ae34921e0079699fecda7976186a9076",
+      "sha": "52af0aa9e60c4453daa98ec8eebe75b58d427aa7",
       "mode": "040000",
       "children": []
     },
@@ -244,7 +264,7 @@
       "name": "routes",
       "path": "backend/app/api/routes",
       "type": "directory",
-      "sha": "22d3bd564676918f944215dd3e3909ae1a46d1be",
+      "sha": "faed119b4f7d7884ee7afabb9793b419f0123207",
       "mode": "040000",
       "children": []
     },
@@ -289,6 +309,16 @@
       "is_binary": false
     },
     {
+      "name": "estimativa.py",
+      "path": "backend/app/api/routes/estimativa.py",
+      "type": "file",
+      "sha": "705126921471817aab70d02eaadf2fb83fdbddbb",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3035,
+      "is_binary": false
+    },
+    {
       "name": "health.py",
       "path": "backend/app/api/routes/health.py",
       "type": "file",
@@ -296,6 +326,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 466,
+      "is_binary": false
+    },
+    {
+      "name": "intencao.py",
+      "path": "backend/app/api/routes/intencao.py",
+      "type": "file",
+      "sha": "aab225330e63075bcd082df335f2b4e198ecb921",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5973,
       "is_binary": false
     },
     {
@@ -360,7 +400,7 @@
       "name": "db",
       "path": "backend/app/db",
       "type": "directory",
-      "sha": "0e444dca73d5f98cd7c9e4c3718dc53a1647e722",
+      "sha": "a375284c5642d110873f050cc5d52bb2135aef37",
       "mode": "040000",
       "children": []
     },
@@ -395,20 +435,30 @@
       "is_binary": false
     },
     {
+      "name": "simular_intencoes.py",
+      "path": "backend/app/db/simular_intencoes.py",
+      "type": "file",
+      "sha": "c5425b64b7f4bb9033dbeaf1baf3d9db7d9d6340",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4226,
+      "is_binary": false
+    },
+    {
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
-      "sha": "9e5ca66b784172004bfe3c7adbb414864022fb68",
+      "sha": "e477fe7dac7de225979d4e3bda1d95dc1749bee2",
       "mode": "100644",
       "extension": ".py",
-      "size": 923,
+      "size": 1019,
       "is_binary": false
     },
     {
       "name": "models",
       "path": "backend/app/models",
       "type": "directory",
-      "sha": "aba6413efc8a1a924140e5b0476fa290ea6b600b",
+      "sha": "1c91c361afb005a2f23c665e3905a5209841ecfd",
       "mode": "040000",
       "children": []
     },
@@ -416,10 +466,10 @@
       "name": "__init__.py",
       "path": "backend/app/models/__init__.py",
       "type": "file",
-      "sha": "b46e97cb5be080d4afee1fa62af5538ba681ac79",
+      "sha": "1fbe5c4f5aca3e408cfc084d4aaea5f42a4a4398",
       "mode": "100644",
       "extension": ".py",
-      "size": 536,
+      "size": 593,
       "is_binary": false
     },
     {
@@ -446,10 +496,10 @@
       "name": "cardapio.py",
       "path": "backend/app/models/cardapio.py",
       "type": "file",
-      "sha": "900ed5f1ee76d4304b32653984fa3a6e907d2e27",
+      "sha": "17186bf84e70a292d4206e099e4155114f59a612",
       "mode": "100644",
       "extension": ".py",
-      "size": 1690,
+      "size": 1861,
       "is_binary": false
     },
     {
@@ -470,6 +520,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 881,
+      "is_binary": false
+    },
+    {
+      "name": "intencao.py",
+      "path": "backend/app/models/intencao.py",
+      "type": "file",
+      "sha": "fd382424a5ee28e83c1a55679453048a25cd8779",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1129,
       "is_binary": false
     },
     {
@@ -496,7 +556,7 @@
       "name": "schemas",
       "path": "backend/app/schemas",
       "type": "directory",
-      "sha": "0a8675166fd7397b5b81742d9a573d11d2b10216",
+      "sha": "12733fc22810d89bf878de6ce15009cab3603d8e",
       "mode": "040000",
       "children": []
     },
@@ -551,6 +611,26 @@
       "is_binary": false
     },
     {
+      "name": "estimativa.py",
+      "path": "backend/app/schemas/estimativa.py",
+      "type": "file",
+      "sha": "0bbd31edead5c82c999ac1521beecfb8ff853b09",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 513,
+      "is_binary": false
+    },
+    {
+      "name": "intencao.py",
+      "path": "backend/app/schemas/intencao.py",
+      "type": "file",
+      "sha": "a05dc423144a1bcb0dc944a85d0c9b6c99afcc3a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 280,
+      "is_binary": false
+    },
+    {
       "name": "item_cardapio.py",
       "path": "backend/app/schemas/item_cardapio.py",
       "type": "file",
@@ -594,7 +674,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "1eebd75ba241ae3578e7917f1d2fede48205b757",
+      "sha": "7a3669a6d38012c40d3bb2a8b910743ce8a85f0c",
       "mode": "040000",
       "children": []
     },
@@ -639,6 +719,26 @@
       "is_binary": false
     },
     {
+      "name": "test_comando_simulacao.py",
+      "path": "backend/tests/test_comando_simulacao.py",
+      "type": "file",
+      "sha": "294a1209278496b8b5aa4f29afa6a4a7caa61b2b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2795,
+      "is_binary": false
+    },
+    {
+      "name": "test_estimativa.py",
+      "path": "backend/tests/test_estimativa.py",
+      "type": "file",
+      "sha": "6f459cd3e0ac8e56a6d684d9b87b6abe5775248f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7339,
+      "is_binary": false
+    },
+    {
       "name": "test_health.py",
       "path": "backend/tests/test_health.py",
       "type": "file",
@@ -659,6 +759,16 @@
       "is_binary": false
     },
     {
+      "name": "test_intencao.py",
+      "path": "backend/tests/test_intencao.py",
+      "type": "file",
+      "sha": "7b045aa1d68616b94af87e43e4d4283304a491d6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 13293,
+      "is_binary": false
+    },
+    {
       "name": "test_migracao_identidade.py",
       "path": "backend/tests/test_migracao_identidade.py",
       "type": "file",
@@ -666,6 +776,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 2614,
+      "is_binary": false
+    },
+    {
+      "name": "test_migracao_intencao.py",
+      "path": "backend/tests/test_migracao_intencao.py",
+      "type": "file",
+      "sha": "0ea504a18672f7df6096a39db787aa0ef06aac50",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3450,
       "is_binary": false
     },
     {
@@ -706,6 +826,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 1464,
+      "is_binary": false
+    },
+    {
+      "name": "test_simular_intencoes.py",
+      "path": "backend/tests/test_simular_intencoes.py",
+      "type": "file",
+      "sha": "2049d5359e0b04d91a313fdde9b1f347aafe038c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 11657,
       "is_binary": false
     },
     {
@@ -2304,19 +2434,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-29T12:24:33.499799+00:00",
+  "extracted_at": "2026-10-30T12:17:14.021767+00:00",
   "method": "rest",
-  "total_items": 238,
+  "total_items": 251,
   "repository_metadata": {
     "id": 1338353011,
     "full_name": "unb-mds/2026-2-Bandejao",
     "description": "Grupo G12 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:59:18Z",
-    "updated_at": "2026-10-28T14:44:24Z",
+    "updated_at": "2026-10-29T15:56:27Z",
     "language": "Python",
-    "size": 1777,
+    "size": 1780,
     "stars": 1,
     "forks": 0,
-    "open_issues": 12
+    "open_issues": 8
   }
 }
