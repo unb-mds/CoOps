@@ -2,19 +2,19 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-30T12:17:05.759065+00:00",
+  "analyzed_at": "2026-10-31T11:41:50.925093+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 191,
-  "total_bytes": 851330,
+  "total_files": 199,
+  "total_bytes": 868177,
   "languages": [
     {
       "language": "JSON",
       "file_count": 10,
       "total_bytes": 246171,
-      "percentage": 28.92,
+      "percentage": 28.35,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -82,7 +82,7 @@
       "language": "Markdown",
       "file_count": 48,
       "total_bytes": 243706,
-      "percentage": 28.63,
+      "percentage": 28.07,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -150,7 +150,7 @@
       "language": "Unknown",
       "file_count": 34,
       "total_bytes": 118914,
-      "percentage": 13.97,
+      "percentage": 13.7,
       "files": [
         {
           "path": "unb_core.db",
@@ -218,7 +218,7 @@
       "language": "Python",
       "file_count": 45,
       "total_bytes": 78735,
-      "percentage": 9.25,
+      "percentage": 9.07,
       "files": [
         {
           "path": "backend/app/api/errors.py",
@@ -283,10 +283,78 @@
       ]
     },
     {
+      "language": "JavaScript",
+      "file_count": 33,
+      "total_bytes": 66904,
+      "percentage": 7.71,
+      "files": [
+        {
+          "path": "frontend/src/pages/ContribuicaoPage.jsx",
+          "name": "ContribuicaoPage.jsx",
+          "size": 8385,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/ConhecimentoPage.jsx",
+          "name": "ConhecimentoPage.jsx",
+          "size": 6824,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/AdminPage.jsx",
+          "name": "AdminPage.jsx",
+          "size": 4679,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
+          "name": "MinhasContribuicoesPage.jsx",
+          "size": 4408,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/ModeracaoPage.jsx",
+          "name": "ModeracaoPage.jsx",
+          "size": 4037,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/GuiaContribuicaoPage.jsx",
+          "name": "GuiaContribuicaoPage.jsx",
+          "size": 3893,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/AdminUsuariosPage.jsx",
+          "name": "AdminUsuariosPage.jsx",
+          "size": 3876,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/services/api.js",
+          "name": "api.js",
+          "size": 2963,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/src/App.jsx",
+          "name": "App.jsx",
+          "size": 2734,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/components/publicacoes/DenunciaForm.jsx",
+          "name": "DenunciaForm.jsx",
+          "size": 2651,
+          "extension": ".jsx"
+        }
+      ]
+    },
+    {
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 7.18,
+      "percentage": 7.04,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -327,83 +395,15 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "file_count": 26,
-      "total_bytes": 52542,
-      "percentage": 6.17,
-      "files": [
-        {
-          "path": "frontend/src/pages/ContribuicaoPage.jsx",
-          "name": "ContribuicaoPage.jsx",
-          "size": 8385,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/ConhecimentoPage.jsx",
-          "name": "ConhecimentoPage.jsx",
-          "size": 6824,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
-          "name": "MinhasContribuicoesPage.jsx",
-          "size": 4408,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/GuiaContribuicaoPage.jsx",
-          "name": "GuiaContribuicaoPage.jsx",
-          "size": 3893,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/ModeracaoPage.jsx",
-          "name": "ModeracaoPage.jsx",
-          "size": 3889,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/AdminUsuariosPage.jsx",
-          "name": "AdminUsuariosPage.jsx",
-          "size": 3876,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/services/api.js",
-          "name": "api.js",
-          "size": 2963,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/src/App.jsx",
-          "name": "App.jsx",
-          "size": 2547,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/components/auth/AuthForm.jsx",
-          "name": "AuthForm.jsx",
-          "size": 2381,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/components/Navigation.jsx",
-          "name": "Navigation.jsx",
-          "size": 2259,
-          "extension": ".jsx"
-        }
-      ]
-    },
-    {
       "language": "CSS",
-      "file_count": 10,
-      "total_bytes": 23012,
-      "percentage": 2.7,
+      "file_count": 11,
+      "total_bytes": 25497,
+      "percentage": 2.94,
       "files": [
         {
           "path": "frontend/src/components/ui/ui.css",
           "name": "ui.css",
-          "size": 4649,
+          "size": 4824,
           "extension": ".css"
         },
         {
@@ -419,15 +419,15 @@
           "extension": ".css"
         },
         {
-          "path": "frontend/src/pages/MinhasContribuicoesPage.css",
-          "name": "MinhasContribuicoesPage.css",
-          "size": 2336,
+          "path": "frontend/src/components/conteudos/conteudos.css",
+          "name": "conteudos.css",
+          "size": 2501,
           "extension": ".css"
         },
         {
-          "path": "frontend/src/components/conteudos/conteudos.css",
-          "name": "conteudos.css",
-          "size": 2232,
+          "path": "frontend/src/pages/MinhasContribuicoesPage.css",
+          "name": "MinhasContribuicoesPage.css",
+          "size": 2336,
           "extension": ".css"
         },
         {
@@ -443,6 +443,12 @@
           "extension": ".css"
         },
         {
+          "path": "frontend/src/pages/governance.css",
+          "name": "governance.css",
+          "size": 2041,
+          "extension": ".css"
+        },
+        {
           "path": "frontend/src/index.css",
           "name": "index.css",
           "size": 1467,
@@ -453,12 +459,6 @@
           "name": "auth.css",
           "size": 563,
           "extension": ".css"
-        },
-        {
-          "path": "frontend/src/components/components.css",
-          "name": "components.css",
-          "size": 284,
-          "extension": ".css"
         }
       ]
     },
@@ -466,7 +466,7 @@
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 1.18,
+      "percentage": 1.16,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -486,7 +486,7 @@
       "language": "No Extension",
       "file_count": 3,
       "total_bytes": 9252,
-      "percentage": 1.09,
+      "percentage": 1.07,
       "files": [
         {
           "path": "git status",
@@ -512,7 +512,7 @@
       "language": "YAML",
       "file_count": 3,
       "total_bytes": 6922,
-      "percentage": 0.81,
+      "percentage": 0.8,
       "files": [
         {
           "path": "docs/gitpage/mkdocs.yml",
@@ -584,7 +584,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-30T12:18:14.308355+00:00",
+    "extracted_at": "2026-10-31T11:42:53.699674+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }
