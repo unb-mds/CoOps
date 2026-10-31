@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-UnB_Core",
   "branch": "main",
-  "sha": "451571da2c62e4d6cdfb71a6c75a6bf6164936d8",
+  "sha": "06794cb5144c8d89008cc117565ef74658a50dc2",
   "tree": [
     {
       "name": ".gitattributes",
@@ -1738,7 +1738,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "dea283fbba4caccb2b31b2d799dc831f3abcbecb",
+      "sha": "a56abfd87cb811745e1bfd1493eab5dd88f2f8d3",
       "mode": "040000",
       "children": []
     },
@@ -1804,7 +1804,7 @@
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "0ddec7588f6a47c521e3ff854d0042f36c692bd7",
+      "sha": "fca0173f53fe5db65f271ee15fd94d2945a06f58",
       "mode": "040000",
       "children": []
     },
@@ -1812,10 +1812,10 @@
       "name": "App.jsx",
       "path": "frontend/src/App.jsx",
       "type": "file",
-      "sha": "f1c14b3787e721282b59aedac348d5d8f9151f7f",
+      "sha": "6590c7224d37f5e21d3ef985e54cc1c66242bfe6",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 2547,
+      "size": 2734,
       "is_binary": false
     },
     {
@@ -1840,7 +1840,7 @@
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "e6965f8b3d0a246709cf20064034d906f67c5664",
+      "sha": "0f35c763c23f8357a460dfdd98fb7e7a5f06112f",
       "mode": "040000",
       "children": []
     },
@@ -1895,6 +1895,34 @@
       "is_binary": false
     },
     {
+      "name": "admin",
+      "path": "frontend/src/components/admin",
+      "type": "directory",
+      "sha": "a7ef30b16ce1900900fb530ae8c317e1ca6ad4e8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "EntidadeFormModal.jsx",
+      "path": "frontend/src/components/admin/EntidadeFormModal.jsx",
+      "type": "file",
+      "sha": "47d65816ad40efc4ce3b5831b045abb2de6f7435",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1437,
+      "is_binary": false
+    },
+    {
+      "name": "TabelaEntidades.jsx",
+      "path": "frontend/src/components/admin/TabelaEntidades.jsx",
+      "type": "file",
+      "sha": "29cdfe7206711bc8dbefba6606329a1b69a0e1bf",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 1148,
+      "is_binary": false
+    },
+    {
       "name": "auth",
       "path": "frontend/src/components/auth",
       "type": "directory",
@@ -1936,7 +1964,7 @@
       "name": "conteudos",
       "path": "frontend/src/components/conteudos",
       "type": "directory",
-      "sha": "c3986605425acd2f7dea1f5979f5988ae8cc5683",
+      "sha": "82955d1293e5b297ab6b92cbb6ca4d6cb3cfa1f5",
       "mode": "040000",
       "children": []
     },
@@ -1944,37 +1972,93 @@
       "name": "ConteudoCard.jsx",
       "path": "frontend/src/components/conteudos/ConteudoCard.jsx",
       "type": "file",
-      "sha": "38d8f246788338ca40c2c65931d73c9f99459994",
+      "sha": "65fac1b182ef78b54756a6388725c91481b93463",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 1047,
+      "size": 1373,
       "is_binary": false
     },
     {
       "name": "ConteudoDetalhe.jsx",
       "path": "frontend/src/components/conteudos/ConteudoDetalhe.jsx",
       "type": "file",
-      "sha": "9d5fa4330595b14a3e883dff9182380ccf2cb103",
+      "sha": "c5732d657edb75cacca01cff53ba2cee7dc0e7b6",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 1786,
+      "size": 2220,
       "is_binary": false
     },
     {
       "name": "conteudos.css",
       "path": "frontend/src/components/conteudos/conteudos.css",
       "type": "file",
-      "sha": "59b6b6868764a6bc98bc0e1d0d938a0e3c1b3c9b",
+      "sha": "0d5bbe22d1c0f47e95c8f75c1246392d68f85afd",
       "mode": "100644",
       "extension": ".css",
-      "size": 2232,
+      "size": 2501,
+      "is_binary": false
+    },
+    {
+      "name": "moderacao",
+      "path": "frontend/src/components/moderacao",
+      "type": "directory",
+      "sha": "e442c18152ae0876662f1e920ed921362c42984a",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "DecisaoModal.jsx",
+      "path": "frontend/src/components/moderacao/DecisaoModal.jsx",
+      "type": "file",
+      "sha": "1e44ee9db6e5559adb3177494e3cc0ccc1d4b00b",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 2248,
+      "is_binary": false
+    },
+    {
+      "name": "JustificativaInput.jsx",
+      "path": "frontend/src/components/moderacao/JustificativaInput.jsx",
+      "type": "file",
+      "sha": "6d7da8ecb4bc9fe4bf6f80a10bbe776449592ac1",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 553,
+      "is_binary": false
+    },
+    {
+      "name": "StatusBadge.jsx",
+      "path": "frontend/src/components/moderacao/StatusBadge.jsx",
+      "type": "file",
+      "sha": "c54aa694b589a4f379ac430d3659e53b679f3673",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 543,
+      "is_binary": false
+    },
+    {
+      "name": "publicacoes",
+      "path": "frontend/src/components/publicacoes",
+      "type": "directory",
+      "sha": "9cbd3103e0ce38cd6a7b2f7e846c28ec452426af",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "DenunciaForm.jsx",
+      "path": "frontend/src/components/publicacoes/DenunciaForm.jsx",
+      "type": "file",
+      "sha": "1d01425f75e49d684b7191610ea24dd23f1006e0",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 2651,
       "is_binary": false
     },
     {
       "name": "ui",
       "path": "frontend/src/components/ui",
       "type": "directory",
-      "sha": "741b1f3006e01daedfc0f03da4ce5d5ed7fa34ef",
+      "sha": "63f81c78a09330f66b14739d6d2c5cd201da6dd8",
       "mode": "040000",
       "children": []
     },
@@ -2022,10 +2106,10 @@
       "name": "ui.css",
       "path": "frontend/src/components/ui/ui.css",
       "type": "file",
-      "sha": "d180cf823d0b3771042a108d0109749b5f8b2d11",
+      "sha": "3d557935b8ba42ce9b3264765558aa22354cadef",
       "mode": "100644",
       "extension": ".css",
-      "size": 4649,
+      "size": 4824,
       "is_binary": false
     },
     {
@@ -2052,9 +2136,19 @@
       "name": "pages",
       "path": "frontend/src/pages",
       "type": "directory",
-      "sha": "53e428ccd5299d866601e4c735a7dde5a586b92e",
+      "sha": "df591be065ffbd8904774bed886e33ed97a8420f",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "AdminPage.jsx",
+      "path": "frontend/src/pages/AdminPage.jsx",
+      "type": "file",
+      "sha": "b03b0fdafcae2e48158914dbcbd0578c3ddd13c3",
+      "mode": "100644",
+      "extension": ".jsx",
+      "size": 4679,
+      "is_binary": false
     },
     {
       "name": "AdminUsuariosPage.jsx",
@@ -2180,10 +2274,20 @@
       "name": "ModeracaoPage.jsx",
       "path": "frontend/src/pages/ModeracaoPage.jsx",
       "type": "file",
-      "sha": "8cb7af677de6c906e5167d454df9c8ecdacf23e3",
+      "sha": "9d5d9bf80c8fd85897f1e7fc0de016862a3f67f6",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 3889,
+      "size": 4037,
+      "is_binary": false
+    },
+    {
+      "name": "governance.css",
+      "path": "frontend/src/pages/governance.css",
+      "type": "file",
+      "sha": "cb49a3df4b637232a88e65386345623fd3be07f1",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2041,
       "is_binary": false
     },
     {
@@ -2208,7 +2312,7 @@
       "name": "state",
       "path": "frontend/src/state",
       "type": "directory",
-      "sha": "f2a0f64385323a95d6bd60dd465f2600eeb73b7e",
+      "sha": "ddc7544c92bd1209adfb0e810334c2237e6dea0d",
       "mode": "040000",
       "children": []
     },
@@ -2216,10 +2320,10 @@
       "name": "auth.js",
       "path": "frontend/src/state/auth.js",
       "type": "file",
-      "sha": "7a67a450448e38897b9b6df01ebc1ffeca4c6179",
+      "sha": "bc4b4a0d6ae227f3dee97fa1a97f1aea3fd332c4",
       "mode": "100644",
       "extension": ".js",
-      "size": 1355,
+      "size": 1363,
       "is_binary": false
     },
     {
@@ -2460,17 +2564,17 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-10-30T12:17:05.759065+00:00",
+  "extracted_at": "2026-10-31T11:41:50.925093+00:00",
   "method": "rest",
-  "total_items": 259,
+  "total_items": 270,
   "repository_metadata": {
     "id": 1338349828,
     "full_name": "unb-mds/2026-2-UnB_Core",
     "description": "Grupo G1 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:55:42Z",
-    "updated_at": "2026-10-29T20:13:16Z",
+    "updated_at": "2026-10-31T03:58:24Z",
     "language": "Python",
-    "size": 1301,
+    "size": 1311,
     "stars": 2,
     "forks": 2,
     "open_issues": 24
