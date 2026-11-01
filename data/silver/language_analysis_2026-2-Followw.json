@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-10-31T11:41:52.547300+00:00",
+  "analyzed_at": "2026-11-01T12:34:57.605040+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 485,
-  "total_bytes": 9393259,
+  "total_files": 525,
+  "total_bytes": 9711619,
   "languages": [
     {
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 2161302,
-      "percentage": 23.01,
+      "percentage": 22.25,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -58,7 +58,7 @@
       "language": "PNG Image",
       "file_count": 11,
       "total_bytes": 1813906,
-      "percentage": 19.31,
+      "percentage": 18.68,
       "files": [
         {
           "path": "apps/web/public/images/ios-install-dock-dark.png",
@@ -125,8 +125,8 @@
     {
       "language": "Unknown",
       "file_count": 13,
-      "total_bytes": 1341151,
-      "percentage": 14.28,
+      "total_bytes": 1477473,
+      "percentage": 15.21,
       "files": [
         {
           "path": "packages/sigaa-client/data/classrooms.csv",
@@ -135,15 +135,15 @@
           "extension": ".csv"
         },
         {
-          "path": "packages/sigaa-client/data/curriculum_components.csv",
-          "name": "curriculum_components.csv",
-          "size": 414455,
+          "path": "packages/sigaa-client/data/subjects.csv",
+          "name": "subjects.csv",
+          "size": 485882,
           "extension": ".csv"
         },
         {
-          "path": "packages/sigaa-client/data/subjects.csv",
-          "name": "subjects.csv",
-          "size": 349560,
+          "path": "packages/sigaa-client/data/curriculum_components.csv",
+          "name": "curriculum_components.csv",
+          "size": 414455,
           "extension": ".csv"
         },
         {
@@ -192,9 +192,9 @@
     },
     {
       "language": "Python",
-      "file_count": 153,
-      "total_bytes": 1041768,
-      "percentage": 11.09,
+      "file_count": 154,
+      "total_bytes": 1059553,
+      "percentage": 10.91,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
@@ -259,47 +259,27 @@
       ]
     },
     {
-      "language": "WebP Image",
-      "file_count": 3,
-      "total_bytes": 1017258,
-      "percentage": 10.83,
-      "files": [
-        {
-          "path": "apps/web/public/images/not-found/icc-corredor.webp",
-          "name": "icc-corredor.webp",
-          "size": 513546,
-          "extension": ".webp"
-        },
-        {
-          "path": "apps/web/public/images/not-found/collage.webp",
-          "name": "collage.webp",
-          "size": 329990,
-          "extension": ".webp"
-        },
-        {
-          "path": "apps/web/public/images/not-found/icc-exterior.webp",
-          "name": "icc-exterior.webp",
-          "size": 173722,
-          "extension": ".webp"
-        }
-      ]
-    },
-    {
       "language": "TypeScript",
-      "file_count": 225,
-      "total_bytes": 886330,
-      "percentage": 9.44,
+      "file_count": 264,
+      "total_bytes": 1050214,
+      "percentage": 10.81,
       "files": [
         {
           "path": "apps/web/src/queries/schema.gen.ts",
           "name": "schema.gen.ts",
-          "size": 85150,
+          "size": 85618,
           "extension": ".ts"
         },
         {
           "path": "apps/web/tests/routes/search-page.test.tsx",
           "name": "search-page.test.tsx",
-          "size": 23542,
+          "size": 33467,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/routes/flow-page.test.tsx",
+          "name": "flow-page.test.tsx",
+          "size": 25576,
           "extension": ".tsx"
         },
         {
@@ -313,6 +293,12 @@
           "name": "ru.tsx",
           "size": 17235,
           "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/lib/curriculum/geometry.test.ts",
+          "name": "geometry.test.ts",
+          "size": 16320,
+          "extension": ".ts"
         },
         {
           "path": "apps/web/tests/components/search/TurmaCard.test.tsx",
@@ -337,18 +323,32 @@
           "name": "restaurant-share.test.tsx",
           "size": 13986,
           "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "WebP Image",
+      "file_count": 3,
+      "total_bytes": 1017258,
+      "percentage": 10.47,
+      "files": [
+        {
+          "path": "apps/web/public/images/not-found/icc-corredor.webp",
+          "name": "icc-corredor.webp",
+          "size": 513546,
+          "extension": ".webp"
         },
         {
-          "path": "apps/web/src/components/ru/RestaurantShareImage.tsx",
-          "name": "RestaurantShareImage.tsx",
-          "size": 12290,
-          "extension": ".tsx"
+          "path": "apps/web/public/images/not-found/collage.webp",
+          "name": "collage.webp",
+          "size": 329990,
+          "extension": ".webp"
         },
         {
-          "path": "apps/web/tests/queries/auth.test.ts",
-          "name": "auth.test.ts",
-          "size": 11776,
-          "extension": ".ts"
+          "path": "apps/web/public/images/not-found/icc-exterior.webp",
+          "name": "icc-exterior.webp",
+          "size": 173722,
+          "extension": ".webp"
         }
       ]
     },
@@ -356,7 +356,7 @@
       "language": "Lock File",
       "file_count": 2,
       "total_bytes": 645320,
-      "percentage": 6.87,
+      "percentage": 6.64,
       "files": [
         {
           "path": "uv.lock",
@@ -375,8 +375,8 @@
     {
       "language": "Markdown",
       "file_count": 35,
-      "total_bytes": 165046,
-      "percentage": 1.76,
+      "total_bytes": 165415,
+      "percentage": 1.7,
       "files": [
         {
           "path": "docs/requisitos.md",
@@ -405,7 +405,7 @@
         {
           "path": "packages/sigaa-client/README.md",
           "name": "README.md",
-          "size": 8558,
+          "size": 8927,
           "extension": ".md"
         },
         {
@@ -444,7 +444,7 @@
       "language": "JSON",
       "file_count": 14,
       "total_bytes": 152421,
-      "percentage": 1.62,
+      "percentage": 1.57,
       "files": [
         {
           "path": "docs/mintlify/openapi.json",
@@ -512,7 +512,7 @@
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 139950,
-      "percentage": 1.49,
+      "percentage": 1.44,
       "files": [
         {
           "path": "docs/assets/components_backend.svg",
@@ -570,7 +570,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 6219,
-      "percentage": 0.07,
+      "percentage": 0.06,
       "files": [
         {
           "path": "apps/web/src/styles.css",
@@ -720,7 +720,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-10-31T11:42:53.683927+00:00",
+    "extracted_at": "2026-11-01T12:36:02.039653+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }
