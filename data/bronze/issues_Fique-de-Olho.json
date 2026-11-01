@@ -1,7 +1,7 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-10-31T10:47:27.018018+00:00",
+      "extracted_at": "2026-11-01T11:40:43.703732+00:00",
       "file_path": "data/bronze/issues_Fique-de-Olho.json",
       "record_count": 58
     }
@@ -520,9 +520,9 @@
   {
     "number": 52,
     "state": "open",
-    "title": "[TASK] - Criar migration Alembic para adicionar órgão emissor e prazos de inscrição em editais",
+    "title": "[TASK] - Criar migration Alembic para adicionar órgão emissor, prazos de inscrição e metadados estruturados em editais",
     "created_at": "2026-10-09T23:05:22Z",
-    "updated_at": "2026-10-27T15:55:18Z",
+    "updated_at": "2026-10-31T16:41:53Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -534,9 +534,9 @@
   {
     "number": 53,
     "state": "open",
-    "title": "[FEATURE] - Integrar extração de PDFs ao pipeline de persistência com cálculo automático de status",
+    "title": "[FEATURE] - Integrar extração de metadados e PDFs ao pipeline de persistência com cálculo automático de status",
     "created_at": "2026-10-09T23:06:28Z",
-    "updated_at": "2026-10-27T15:55:46Z",
+    "updated_at": "2026-10-31T16:41:56Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -717,9 +717,9 @@
   {
     "number": 72,
     "state": "open",
-    "title": "[TASK] - Corrigir persistência da URL do PDF e unificar serviço de sincronização do DEG no endpoint /sync",
+    "title": "[TASK] - Corrigir persistência da URL do PDF e padronizar gravação de documentos oficiais no pipeline",
     "created_at": "2026-10-27T14:23:00Z",
-    "updated_at": "2026-10-29T00:38:51Z",
+    "updated_at": "2026-10-31T16:41:59Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -773,9 +773,9 @@
   {
     "number": 78,
     "state": "open",
-    "title": "[FEATURE] - Conectar os scrapers dos 8 portais institucionais ao pipeline de sincronização e persistência no banco de dados",
+    "title": "[FEATURE] - Conectar todos os scrapers da malha da UnB (SCRAPERS_REGISTRY) ao pipeline de sincronização e persistência no banco",
     "created_at": "2026-10-27T15:52:34Z",
-    "updated_at": "2026-10-29T00:38:53Z",
+    "updated_at": "2026-10-31T16:42:01Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -787,9 +787,9 @@
   {
     "number": 79,
     "state": "open",
-    "title": "# [FEATURE][FRONT] - Adicionar filtro e identificação visual por Órgão/Decanato nos Cards e na FilterBar",
+    "title": "[FEATURE][FRONT] - Adicionar filtro dinâmico e identificação visual por Órgão nos Cards e na FilterBar",
     "created_at": "2026-10-27T16:19:38Z",
-    "updated_at": "2026-10-29T00:40:13Z",
+    "updated_at": "2026-10-31T16:42:04Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -804,9 +804,9 @@
   {
     "number": 80,
     "state": "open",
-    "title": "# [FEATURE][FRONT] - Ativar barra de pesquisa no Header e integrar filtros dinâmicos com a API",
+    "title": "[FEATURE][FRONT] - Ativar barra de pesquisa no Header e integrar filtros dinâmicos com a API",
     "created_at": "2026-10-27T16:21:29Z",
-    "updated_at": "2026-10-29T00:40:05Z",
+    "updated_at": "2026-10-31T16:42:07Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -821,9 +821,9 @@
   {
     "number": 81,
     "state": "open",
-    "title": "# [FEATURE][FRONT] - Exibir anexos, retificações e metadados detalhados (prazos, vagas e bolsas) na página de detalhes",
+    "title": "[FEATURE][FRONT] - Exibir anexos, retificações e metadados detalhados (prazos, vagas e bolsas) na página de detalhes",
     "created_at": "2026-10-27T16:21:51Z",
-    "updated_at": "2026-10-29T00:39:45Z",
+    "updated_at": "2026-10-31T16:42:09Z",
     "closed_at": null,
     "user": {
       "login": "Isac-sil-mar",
@@ -837,11 +837,11 @@
   },
   {
     "number": 82,
-    "state": "open",
+    "state": "closed",
     "title": "[FEATURE][SCRAPER] - Integrar scraper da BCE à API REST do Repositório Administrativo (Tainacan) com extração de Assunto e Objeto",
     "created_at": "2026-10-28T23:11:11Z",
-    "updated_at": "2026-10-29T00:38:56Z",
-    "closed_at": null,
+    "updated_at": "2026-11-01T00:11:57Z",
+    "closed_at": "2026-11-01T00:11:57Z",
     "user": {
       "login": "Isac-sil-mar",
       "id": 170209600
@@ -851,11 +851,11 @@
   },
   {
     "number": 83,
-    "state": "open",
+    "state": "closed",
     "title": "[FEATURE][SCRAPER] - Implementar scraper do CEAD (Educação a Distância e UAB) via API REST do Tainacan",
     "created_at": "2026-10-28T23:31:57Z",
-    "updated_at": "2026-10-29T00:38:56Z",
-    "closed_at": null,
+    "updated_at": "2026-10-31T22:45:44Z",
+    "closed_at": "2026-10-31T22:45:44Z",
     "user": {
       "login": "Isac-sil-mar",
       "id": 170209600
@@ -894,9 +894,9 @@
   {
     "number": 86,
     "state": "open",
-    "title": "[TASK] - Redesign da página principal (HomePage) com foco em hierarquia visual, responsividade e acessibilidade",
+    "title": "[TASK] - Redesign da página principal (HomePage) com foco em hierarquia visual, responsividade, paginação e acessibilidade",
     "created_at": "2026-10-29T00:53:26Z",
-    "updated_at": "2026-10-29T00:54:16Z",
+    "updated_at": "2026-10-31T16:42:12Z",
     "closed_at": null,
     "user": {
       "login": "EdHCG",
