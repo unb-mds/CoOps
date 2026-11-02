@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-01T12:34:57.605040+00:00",
+  "analyzed_at": "2026-11-02T14:17:11.379674+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 525,
-  "total_bytes": 9711619,
+  "total_files": 532,
+  "total_bytes": 9773536,
   "languages": [
     {
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 2161302,
-      "percentage": 22.25,
+      "percentage": 22.11,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -58,7 +58,7 @@
       "language": "PNG Image",
       "file_count": 11,
       "total_bytes": 1813906,
-      "percentage": 18.68,
+      "percentage": 18.56,
       "files": [
         {
           "path": "apps/web/public/images/ios-install-dock-dark.png",
@@ -126,7 +126,7 @@
       "language": "Unknown",
       "file_count": 13,
       "total_bytes": 1477473,
-      "percentage": 15.21,
+      "percentage": 15.12,
       "files": [
         {
           "path": "packages/sigaa-client/data/classrooms.csv",
@@ -191,15 +191,83 @@
       ]
     },
     {
+      "language": "TypeScript",
+      "file_count": 268,
+      "total_bytes": 1091869,
+      "percentage": 11.17,
+      "files": [
+        {
+          "path": "apps/web/src/queries/schema.gen.ts",
+          "name": "schema.gen.ts",
+          "size": 93651,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/tests/routes/search-page.test.tsx",
+          "name": "search-page.test.tsx",
+          "size": 33922,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/routes/flow-page.test.tsx",
+          "name": "flow-page.test.tsx",
+          "size": 26413,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/lib/curriculum/geometry.test.ts",
+          "name": "geometry.test.ts",
+          "size": 23081,
+          "extension": ".ts"
+        },
+        {
+          "path": "apps/web/tests/components/schedule/SchedulePreview.test.tsx",
+          "name": "SchedulePreview.test.tsx",
+          "size": 17275,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/routes/_app/ru.tsx",
+          "name": "ru.tsx",
+          "size": 17235,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/components/classroom/FrequencyContent.tsx",
+          "name": "FrequencyContent.tsx",
+          "size": 17060,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/components/search/TurmaCard.test.tsx",
+          "name": "TurmaCard.test.tsx",
+          "size": 15271,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
+          "name": "RestaurantAccount.tsx",
+          "size": 14071,
+          "extension": ".tsx"
+        },
+        {
+          "path": "apps/web/tests/routes/restaurant-share.test.tsx",
+          "name": "restaurant-share.test.tsx",
+          "size": 13986,
+          "extension": ".tsx"
+        }
+      ]
+    },
+    {
       "language": "Python",
-      "file_count": 154,
-      "total_bytes": 1059553,
-      "percentage": 10.91,
+      "file_count": 157,
+      "total_bytes": 1078308,
+      "percentage": 11.03,
       "files": [
         {
           "path": "apps/api/tests/test_classrooms.py",
           "name": "test_classrooms.py",
-          "size": 51282,
+          "size": 53031,
           "extension": ".py"
         },
         {
@@ -229,7 +297,7 @@
         {
           "path": "apps/api/api/modules/classrooms/repository.py",
           "name": "repository.py",
-          "size": 32359,
+          "size": 32572,
           "extension": ".py"
         },
         {
@@ -259,78 +327,10 @@
       ]
     },
     {
-      "language": "TypeScript",
-      "file_count": 264,
-      "total_bytes": 1050214,
-      "percentage": 10.81,
-      "files": [
-        {
-          "path": "apps/web/src/queries/schema.gen.ts",
-          "name": "schema.gen.ts",
-          "size": 85618,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/tests/routes/search-page.test.tsx",
-          "name": "search-page.test.tsx",
-          "size": 33467,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/tests/routes/flow-page.test.tsx",
-          "name": "flow-page.test.tsx",
-          "size": 25576,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/tests/components/schedule/SchedulePreview.test.tsx",
-          "name": "SchedulePreview.test.tsx",
-          "size": 17275,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/routes/_app/ru.tsx",
-          "name": "ru.tsx",
-          "size": 17235,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/tests/lib/curriculum/geometry.test.ts",
-          "name": "geometry.test.ts",
-          "size": 16320,
-          "extension": ".ts"
-        },
-        {
-          "path": "apps/web/tests/components/search/TurmaCard.test.tsx",
-          "name": "TurmaCard.test.tsx",
-          "size": 15271,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/components/classroom/FrequencyContent.tsx",
-          "name": "FrequencyContent.tsx",
-          "size": 14567,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
-          "name": "RestaurantAccount.tsx",
-          "size": 14071,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/tests/routes/restaurant-share.test.tsx",
-          "name": "restaurant-share.test.tsx",
-          "size": 13986,
-          "extension": ".tsx"
-        }
-      ]
-    },
-    {
       "language": "WebP Image",
       "file_count": 3,
       "total_bytes": 1017258,
-      "percentage": 10.47,
+      "percentage": 10.41,
       "files": [
         {
           "path": "apps/web/public/images/not-found/icc-corredor.webp",
@@ -355,19 +355,19 @@
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 645320,
-      "percentage": 6.64,
+      "total_bytes": 645950,
+      "percentage": 6.61,
       "files": [
         {
           "path": "uv.lock",
           "name": "uv.lock",
-          "size": 396918,
+          "size": 396965,
           "extension": ".lock"
         },
         {
           "path": "apps/web/bun.lock",
           "name": "bun.lock",
-          "size": 248402,
+          "size": 248985,
           "extension": ".lock"
         }
       ]
@@ -375,8 +375,8 @@
     {
       "language": "Markdown",
       "file_count": 35,
-      "total_bytes": 165415,
-      "percentage": 1.7,
+      "total_bytes": 165298,
+      "percentage": 1.69,
       "files": [
         {
           "path": "docs/requisitos.md",
@@ -443,8 +443,8 @@
     {
       "language": "JSON",
       "file_count": 14,
-      "total_bytes": 152421,
-      "percentage": 1.57,
+      "total_bytes": 152653,
+      "percentage": 1.56,
       "files": [
         {
           "path": "docs/mintlify/openapi.json",
@@ -467,7 +467,7 @@
         {
           "path": ".oxlintrc.json",
           "name": ".oxlintrc.json",
-          "size": 1783,
+          "size": 2015,
           "extension": ".json"
         },
         {
@@ -512,7 +512,7 @@
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 139950,
-      "percentage": 1.44,
+      "percentage": 1.43,
       "files": [
         {
           "path": "docs/assets/components_backend.svg",
@@ -556,7 +556,7 @@
       "language": "Icon",
       "file_count": 1,
       "total_bytes": 15086,
-      "percentage": 0.16,
+      "percentage": 0.15,
       "files": [
         {
           "path": "apps/web/public/favicon.ico",
@@ -569,13 +569,13 @@
     {
       "language": "CSS",
       "file_count": 1,
-      "total_bytes": 6219,
-      "percentage": 0.06,
+      "total_bytes": 6957,
+      "percentage": 0.07,
       "files": [
         {
           "path": "apps/web/src/styles.css",
           "name": "styles.css",
-          "size": 6219,
+          "size": 6957,
           "extension": ".css"
         }
       ]
@@ -621,31 +621,31 @@
     {
       "language": "TOML",
       "file_count": 4,
-      "total_bytes": 3191,
+      "total_bytes": 3215,
       "percentage": 0.03,
       "files": [
         {
           "path": "apps/api/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 1101,
+          "size": 1107,
           "extension": ".toml"
         },
         {
           "path": "pyproject.toml",
           "name": "pyproject.toml",
-          "size": 723,
+          "size": 729,
           "extension": ".toml"
         },
         {
           "path": "packages/sigaa-client/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 711,
+          "size": 717,
           "extension": ".toml"
         },
         {
           "path": "packages/unb-browser/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 656,
+          "size": 662,
           "extension": ".toml"
         }
       ]
@@ -720,7 +720,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-01T12:36:02.039653+00:00",
+    "extracted_at": "2026-11-02T14:18:18.362695+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }
