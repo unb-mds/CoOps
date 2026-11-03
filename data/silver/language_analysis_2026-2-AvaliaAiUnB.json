@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-02T14:17:08.763658+00:00",
+  "analyzed_at": "2026-11-03T13:48:00.626892+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 73,
-  "total_bytes": 360917,
+  "total_files": 79,
+  "total_bytes": 370660,
   "languages": [
     {
       "language": "Python",
       "file_count": 37,
-      "total_bytes": 157018,
-      "percentage": 43.51,
+      "total_bytes": 159464,
+      "percentage": 43.02,
       "files": [
         {
           "path": "scraper/scraper_sigaa.py",
@@ -37,19 +37,19 @@
         {
           "path": "tests/test_seguranca.py",
           "name": "test_seguranca.py",
-          "size": 8416,
+          "size": 9930,
+          "extension": ".py"
+        },
+        {
+          "path": "app/seguranca.py",
+          "name": "seguranca.py",
+          "size": 7727,
           "extension": ".py"
         },
         {
           "path": "tests/fake_supabase.py",
           "name": "fake_supabase.py",
           "size": 7416,
-          "extension": ".py"
-        },
-        {
-          "path": "app/seguranca.py",
-          "name": "seguranca.py",
-          "size": 7284,
           "extension": ".py"
         },
         {
@@ -61,19 +61,19 @@
         {
           "path": "tests/test_ranking.py",
           "name": "test_ranking.py",
-          "size": 5232,
+          "size": 5264,
+          "extension": ".py"
+        },
+        {
+          "path": "app/routes/professor_routes.py",
+          "name": "professor_routes.py",
+          "size": 5188,
           "extension": ".py"
         },
         {
           "path": "scraper/debug_cookies.py",
           "name": "debug_cookies.py",
           "size": 4946,
-          "extension": ".py"
-        },
-        {
-          "path": "app/routes/professor_routes.py",
-          "name": "professor_routes.py",
-          "size": 4731,
           "extension": ".py"
         }
       ]
@@ -82,7 +82,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 28.72,
+      "percentage": 27.97,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -106,9 +106,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 9,
-      "total_bytes": 65435,
-      "percentage": 18.13,
+      "file_count": 11,
+      "total_bytes": 70454,
+      "percentage": 19.01,
       "files": [
         {
           "path": "docs/Modelo de Dados.md",
@@ -141,6 +141,12 @@
           "extension": ".md"
         },
         {
+          "path": "docs/AUDITORIA_SEGURANCA.md",
+          "name": "AUDITORIA_SEGURANCA.md",
+          "size": 4118,
+          "extension": ".md"
+        },
+        {
           "path": "CLAUDE.md",
           "name": "CLAUDE.md",
           "size": 4013,
@@ -153,15 +159,15 @@
           "extension": ".md"
         },
         {
-          "path": "docs/index.md",
-          "name": "index.md",
-          "size": 612,
+          "path": "docs/pipeline.md",
+          "name": "pipeline.md",
+          "size": 901,
           "extension": ".md"
         },
         {
-          "path": "docs/ARQUITETURA.md",
-          "name": "ARQUITETURA.md",
-          "size": 347,
+          "path": "docs/index.md",
+          "name": "index.md",
+          "size": 612,
           "extension": ".md"
         }
       ]
@@ -169,8 +175,8 @@
     {
       "language": "HTML",
       "file_count": 9,
-      "total_bytes": 22346,
-      "percentage": 6.19,
+      "total_bytes": 22707,
+      "percentage": 6.13,
       "files": [
         {
           "path": "app/templates/comparacao.html",
@@ -181,13 +187,13 @@
         {
           "path": "app/templates/lista_professores.html",
           "name": "lista_professores.html",
-          "size": 3099,
+          "size": 3123,
           "extension": ".html"
         },
         {
           "path": "app/templates/avaliacao.html",
           "name": "avaliacao.html",
-          "size": 2934,
+          "size": 2923,
           "extension": ".html"
         },
         {
@@ -197,15 +203,15 @@
           "extension": ".html"
         },
         {
-          "path": "app/templates/cadastro.html",
-          "name": "cadastro.html",
-          "size": 2712,
+          "path": "app/templates/perfil_professor.html",
+          "name": "perfil_professor.html",
+          "size": 2779,
           "extension": ".html"
         },
         {
-          "path": "app/templates/perfil_professor.html",
-          "name": "perfil_professor.html",
-          "size": 2431,
+          "path": "app/templates/cadastro.html",
+          "name": "cadastro.html",
+          "size": 2712,
           "extension": ".html"
         },
         {
@@ -232,7 +238,7 @@
       "language": "CSS",
       "file_count": 6,
       "total_bytes": 7557,
-      "percentage": 2.09,
+      "percentage": 2.04,
       "files": [
         {
           "path": "app/static/indicadores.css",
@@ -276,7 +282,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 3180,
-      "percentage": 0.88,
+      "percentage": 0.86,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -287,29 +293,33 @@
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 1,
-      "total_bytes": 570,
-      "percentage": 0.16,
+      "language": "YAML",
+      "file_count": 5,
+      "total_bytes": 2168,
+      "percentage": 0.58,
       "files": [
         {
-          "path": "Dockerfile",
-          "name": "Dockerfile",
-          "size": 570,
-          "extension": ""
-        }
-      ]
-    },
-    {
-      "language": "YAML",
-      "file_count": 2,
-      "total_bytes": 570,
-      "percentage": 0.16,
-      "files": [
+          "path": ".github/workflows/seguranca.yml",
+          "name": "seguranca.yml",
+          "size": 623,
+          "extension": ".yml"
+        },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 483,
+          "size": 561,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "name": "docs.yml",
+          "size": 475,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/testes.yml",
+          "name": "testes.yml",
+          "size": 422,
           "extension": ".yml"
         },
         {
@@ -321,16 +331,58 @@
       ]
     },
     {
+      "language": "No Extension",
+      "file_count": 1,
+      "total_bytes": 570,
+      "percentage": 0.15,
+      "files": [
+        {
+          "path": "Dockerfile",
+          "name": "Dockerfile",
+          "size": 570,
+          "extension": ""
+        }
+      ]
+    },
+    {
+      "language": "TOML",
+      "file_count": 1,
+      "total_bytes": 256,
+      "percentage": 0.07,
+      "files": [
+        {
+          "path": "pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 256,
+          "extension": ".toml"
+        }
+      ]
+    },
+    {
       "language": "Unknown",
       "file_count": 1,
       "total_bytes": 238,
-      "percentage": 0.07,
+      "percentage": 0.06,
       "files": [
         {
           "path": ".env.example",
           "name": ".env.example",
           "size": 238,
           "extension": ".example"
+        }
+      ]
+    },
+    {
+      "language": "Git Ignore",
+      "file_count": 1,
+      "total_bytes": 181,
+      "percentage": 0.05,
+      "files": [
+        {
+          "path": ".gitignore",
+          "name": ".gitignore",
+          "size": 181,
+          "extension": ".gitignore"
         }
       ]
     },
@@ -355,20 +407,6 @@
       ]
     },
     {
-      "language": "Git Ignore",
-      "file_count": 1,
-      "total_bytes": 118,
-      "percentage": 0.03,
-      "files": [
-        {
-          "path": ".gitignore",
-          "name": ".gitignore",
-          "size": 118,
-          "extension": ".gitignore"
-        }
-      ]
-    },
-    {
       "language": "Docker Ignore",
       "file_count": 1,
       "total_bytes": 71,
@@ -384,7 +422,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-02T14:18:18.347993+00:00",
+    "extracted_at": "2026-11-03T13:49:20.650334+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }

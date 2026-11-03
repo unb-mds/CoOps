@@ -2,7 +2,7 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-02T14:17:08.763658+00:00",
+  "extracted_at": "2026-11-03T13:48:00.626892+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -24,10 +24,46 @@
         "path": ".env.example"
       },
       {
+        "name": ".github",
+        "type": "directory",
+        "path": ".github",
+        "children": []
+      },
+      {
+        "name": "workflows",
+        "type": "directory",
+        "path": ".github/workflows",
+        "children": []
+      },
+      {
+        "name": "docs.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 475,
+        "extension": ".yml",
+        "path": ".github/workflows/docs.yml"
+      },
+      {
+        "name": "seguranca.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 623,
+        "extension": ".yml",
+        "path": ".github/workflows/seguranca.yml"
+      },
+      {
+        "name": "testes.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 422,
+        "extension": ".yml",
+        "path": ".github/workflows/testes.yml"
+      },
+      {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 118,
+        "size": 181,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -149,7 +185,7 @@
         "name": "professor_routes.py",
         "type": "file",
         "language": "Python",
-        "size": 4731,
+        "size": 5188,
         "extension": ".py",
         "path": "app/routes/professor_routes.py"
       },
@@ -157,7 +193,7 @@
         "name": "seguranca.py",
         "type": "file",
         "language": "Python",
-        "size": 7284,
+        "size": 7727,
         "extension": ".py",
         "path": "app/seguranca.py"
       },
@@ -233,7 +269,7 @@
         "name": "avaliacao.html",
         "type": "file",
         "language": "HTML",
-        "size": 2934,
+        "size": 2923,
         "extension": ".html",
         "path": "app/templates/avaliacao.html"
       },
@@ -265,7 +301,7 @@
         "name": "lista_professores.html",
         "type": "file",
         "language": "HTML",
-        "size": 3099,
+        "size": 3123,
         "extension": ".html",
         "path": "app/templates/lista_professores.html"
       },
@@ -289,7 +325,7 @@
         "name": "perfil_professor.html",
         "type": "file",
         "language": "HTML",
-        "size": 2431,
+        "size": 2779,
         "extension": ".html",
         "path": "app/templates/perfil_professor.html"
       },
@@ -338,6 +374,14 @@
         "size": 347,
         "extension": ".md",
         "path": "docs/ARQUITETURA.md"
+      },
+      {
+        "name": "AUDITORIA_SEGURANCA.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4118,
+        "extension": ".md",
+        "path": "docs/AUDITORIA_SEGURANCA.md"
       },
       {
         "name": "COMO_USAR_SCRAPER.md",
@@ -410,6 +454,14 @@
         "path": "docs/migrations/001_initial_schema.sql"
       },
       {
+        "name": "pipeline.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 901,
+        "extension": ".md",
+        "path": "docs/pipeline.md"
+      },
+      {
         "name": "teck stack.png",
         "type": "file",
         "language": "PNG Image",
@@ -421,9 +473,17 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 483,
+        "size": 561,
         "extension": ".yml",
         "path": "mkdocs.yml"
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 256,
+        "extension": ".toml",
+        "path": "pyproject.toml"
       },
       {
         "name": "requirements-scraper.txt",
@@ -569,7 +629,7 @@
         "name": "test_ranking.py",
         "type": "file",
         "language": "Python",
-        "size": 5232,
+        "size": 5264,
         "extension": ".py",
         "path": "tests/test_ranking.py"
       },
@@ -625,7 +685,7 @@
         "name": "test_seguranca.py",
         "type": "file",
         "language": "Python",
-        "size": 8416,
+        "size": 9930,
         "extension": ".py",
         "path": "tests/test_seguranca.py"
       },
@@ -648,7 +708,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-02T14:18:18.348629+00:00",
+    "extracted_at": "2026-11-03T13:49:20.651260+00:00",
     "file_path": "data/silver/hierarchy_2026-2-AvaliaAiUnB.json"
   }
 }
