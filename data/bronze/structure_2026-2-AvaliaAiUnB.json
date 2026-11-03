@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-AvaliaAiUnB",
   "branch": "main",
-  "sha": "89465ae0282fe89aa777a22d40a071dfa127aeb6",
+  "sha": "6584eb2fe27a400a3d83f23212dd256761f78858",
   "tree": [
     {
       "name": ".dockerignore",
@@ -25,13 +25,59 @@
       "is_binary": false
     },
     {
+      "name": ".github",
+      "path": ".github",
+      "type": "directory",
+      "sha": "da2ccac0e48aaf0aa49c1767780e548944af913d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "workflows",
+      "path": ".github/workflows",
+      "type": "directory",
+      "sha": "33cbd4143556debb6df1c522923f52a3cd4191eb",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "docs.yml",
+      "path": ".github/workflows/docs.yml",
+      "type": "file",
+      "sha": "fe5df62c8e65e4045e7b28828daa6d5f56151470",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 475,
+      "is_binary": false
+    },
+    {
+      "name": "seguranca.yml",
+      "path": ".github/workflows/seguranca.yml",
+      "type": "file",
+      "sha": "be07a83153d0ed27bf77b7d730bac845359b0423",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 623,
+      "is_binary": false
+    },
+    {
+      "name": "testes.yml",
+      "path": ".github/workflows/testes.yml",
+      "type": "file",
+      "sha": "8ec8041f4400e84f4bdfde1a893e24d3c70c56f8",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 422,
+      "is_binary": false
+    },
+    {
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "9485a2004adedb19e523e4d524fe97484ea8e666",
+      "sha": "7384f11ed686d4377a99e25be5d9b3f0b4423eec",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 118,
+      "size": 181,
       "is_binary": false
     },
     {
@@ -78,7 +124,7 @@
       "name": "app",
       "path": "app",
       "type": "directory",
-      "sha": "1e8cadf79f272a8cc849c30ee53b25de0bc137df",
+      "sha": "8422e128288a8df9074568b3b638ca6c68b98b43",
       "mode": "040000",
       "children": []
     },
@@ -154,7 +200,7 @@
       "name": "routes",
       "path": "app/routes",
       "type": "directory",
-      "sha": "1d77b06edefa97661613327be5bb46d457b34a5e",
+      "sha": "66e0a31f0b6c4831336199522791ef86c3a67ee1",
       "mode": "040000",
       "children": []
     },
@@ -182,20 +228,20 @@
       "name": "professor_routes.py",
       "path": "app/routes/professor_routes.py",
       "type": "file",
-      "sha": "2fb72a9f0954360303f48692e3f8035e599716ac",
+      "sha": "29b5176c6a2cfece5707ded9ed19c005f3e4122d",
       "mode": "100644",
       "extension": ".py",
-      "size": 4731,
+      "size": 5188,
       "is_binary": false
     },
     {
       "name": "seguranca.py",
       "path": "app/seguranca.py",
       "type": "file",
-      "sha": "cd04c4c06ac2b6a22f4b1702f1c3d6fb9a7a92b9",
+      "sha": "ca2f4d225076ceec6296cc90a597010daf2cae6b",
       "mode": "100644",
       "extension": ".py",
-      "size": 7284,
+      "size": 7727,
       "is_binary": false
     },
     {
@@ -280,7 +326,7 @@
       "name": "templates",
       "path": "app/templates",
       "type": "directory",
-      "sha": "6cf5508ea5a3862c7dd14fe8c6418c973be51ce4",
+      "sha": "e9c7a4a536da31163aa4b6d0ea54049ad9589d07",
       "mode": "040000",
       "children": []
     },
@@ -288,10 +334,10 @@
       "name": "avaliacao.html",
       "path": "app/templates/avaliacao.html",
       "type": "file",
-      "sha": "1f3c2c7aaac07784617f942a2fcfacfb27ee548e",
+      "sha": "9344c90464ed8e12216499f8195f81f9c07d9664",
       "mode": "100644",
       "extension": ".html",
-      "size": 2934,
+      "size": 2923,
       "is_binary": false
     },
     {
@@ -328,10 +374,10 @@
       "name": "lista_professores.html",
       "path": "app/templates/lista_professores.html",
       "type": "file",
-      "sha": "7261321f7139768b33eb0610ac10914857e6224f",
+      "sha": "fe9056a508e549a4c795a8284c20ac4ecc91d1b9",
       "mode": "100644",
       "extension": ".html",
-      "size": 3099,
+      "size": 3123,
       "is_binary": false
     },
     {
@@ -358,10 +404,10 @@
       "name": "perfil_professor.html",
       "path": "app/templates/perfil_professor.html",
       "type": "file",
-      "sha": "403084b1443ddb266402b076930dc3444a6284dc",
+      "sha": "2c80e675b8f1738a38a74f10931903d563093ebe",
       "mode": "100644",
       "extension": ".html",
-      "size": 2431,
+      "size": 2779,
       "is_binary": false
     },
     {
@@ -408,7 +454,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "9bba75c8379ed76df827accb23c7264b512d4d49",
+      "sha": "25f045fe5be435f543219873b4edd3bdb9f65f43",
       "mode": "040000",
       "children": []
     },
@@ -420,6 +466,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 347,
+      "is_binary": false
+    },
+    {
+      "name": "AUDITORIA_SEGURANCA.md",
+      "path": "docs/AUDITORIA_SEGURANCA.md",
+      "type": "file",
+      "sha": "52c2d828d7fbd541972f6a6f72b15b9c2bd782f1",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4118,
       "is_binary": false
     },
     {
@@ -511,6 +567,16 @@
       "is_binary": false
     },
     {
+      "name": "pipeline.md",
+      "path": "docs/pipeline.md",
+      "type": "file",
+      "sha": "2fc8823c0757d1b9ffdc4ef0dc4b0474d8ac8eb6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 901,
+      "is_binary": false
+    },
+    {
       "name": "teck stack.png",
       "path": "docs/teck stack.png",
       "type": "file",
@@ -524,10 +590,20 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "a2863669bcb2f10c07f03e703e4611ea8d4c1be7",
+      "sha": "91b053eee9a04ccc3ff27ab46734644528199f3c",
       "mode": "100644",
       "extension": ".yml",
-      "size": 483,
+      "size": 561,
+      "is_binary": false
+    },
+    {
+      "name": "pyproject.toml",
+      "path": "pyproject.toml",
+      "type": "file",
+      "sha": "8a7349961826bc004f2e61709612db30a0f82138",
+      "mode": "100644",
+      "extension": ".toml",
+      "size": 256,
       "is_binary": false
     },
     {
@@ -672,7 +748,7 @@
       "name": "tests",
       "path": "tests",
       "type": "directory",
-      "sha": "c3ab979b90f79f959ab836765c3ae9a44f6d2db2",
+      "sha": "7ae51836681a20f98369b0cc063d6c500cac9526",
       "mode": "040000",
       "children": []
     },
@@ -710,10 +786,10 @@
       "name": "test_ranking.py",
       "path": "tests/test_ranking.py",
       "type": "file",
-      "sha": "a2ceab84be74c691ad5494e4a61c925dc1a2f954",
+      "sha": "a0cae824c09d385c84659bced3b4aa6795bb505a",
       "mode": "100644",
       "extension": ".py",
-      "size": 5232,
+      "size": 5264,
       "is_binary": false
     },
     {
@@ -780,10 +856,10 @@
       "name": "test_seguranca.py",
       "path": "tests/test_seguranca.py",
       "type": "file",
-      "sha": "dd2d5df349e17d928d9c4d13ce1f85e0aa6d61ef",
+      "sha": "48581d7bf59a4f49063a2316f7e5ee39c8777b6f",
       "mode": "100644",
       "extension": ".py",
-      "size": 8416,
+      "size": 9930,
       "is_binary": false
     },
     {
@@ -808,19 +884,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-02T14:17:08.763658+00:00",
+  "extracted_at": "2026-11-03T13:48:00.626892+00:00",
   "method": "rest",
-  "total_items": 82,
+  "total_items": 90,
   "repository_metadata": {
     "id": 1338350068,
     "full_name": "unb-mds/2026-2-AvaliaAiUnB",
     "description": "Grupo G2 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:56:00Z",
-    "updated_at": "2026-11-02T05:04:49Z",
+    "updated_at": "2026-11-03T01:22:59Z",
     "language": "Python",
-    "size": 3075,
+    "size": 3118,
     "stars": 4,
-    "forks": 1,
-    "open_issues": 10
+    "forks": 0,
+    "open_issues": 13
   }
 }

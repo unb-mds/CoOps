@@ -1,9 +1,9 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-02T13:09:58.150320+00:00",
+      "extracted_at": "2026-11-03T12:38:14.285739+00:00",
       "file_path": "data/bronze/issues_2026-2-AvaliaAiUnB.json",
-      "record_count": 67
+      "record_count": 74
     }
   },
   {
@@ -948,28 +948,28 @@
   },
   {
     "number": 106,
-    "state": "open",
+    "state": "closed",
     "title": "Definir a hospedagem e configurar o deploy de staging",
     "created_at": "2026-10-30T21:02:49Z",
-    "updated_at": "2026-10-30T21:02:49Z",
-    "closed_at": null,
+    "updated_at": "2026-11-03T00:34:51Z",
+    "closed_at": "2026-11-03T00:34:51Z",
     "user": {
       "login": "gsm22",
       "id": 277538111
     },
     "assignee": {
-      "login": "gsm22",
-      "id": 277538111
+      "login": "caiionog",
+      "id": 78627883
     },
     "repo_name": "2026-2-AvaliaAiUnB"
   },
   {
     "number": 107,
-    "state": "open",
+    "state": "closed",
     "title": "Configurar o pipeline no GitHub Actions (testes, auditoria e documentação)",
     "created_at": "2026-10-30T21:03:49Z",
-    "updated_at": "2026-11-02T05:43:49Z",
-    "closed_at": null,
+    "updated_at": "2026-11-02T21:39:33Z",
+    "closed_at": "2026-11-02T18:27:36Z",
     "user": {
       "login": "gsm22",
       "id": 277538111
@@ -982,11 +982,11 @@
   },
   {
     "number": 108,
-    "state": "open",
+    "state": "closed",
     "title": "Auditar o repositório e remover resíduos do banco antigo (SQLite)",
     "created_at": "2026-10-30T21:04:45Z",
-    "updated_at": "2026-10-30T21:04:45Z",
-    "closed_at": null,
+    "updated_at": "2026-11-02T19:38:46Z",
+    "closed_at": "2026-11-02T19:38:45Z",
     "user": {
       "login": "gsm22",
       "id": 277538111
@@ -1033,11 +1033,11 @@
   },
   {
     "number": 111,
-    "state": "open",
+    "state": "closed",
     "title": "Auditoria de segurança e plano de correção",
     "created_at": "2026-10-30T21:07:23Z",
-    "updated_at": "2026-10-30T21:07:23Z",
-    "closed_at": null,
+    "updated_at": "2026-11-03T00:12:00Z",
+    "closed_at": "2026-11-03T00:12:00Z",
     "user": {
       "login": "gsm22",
       "id": 277538111
@@ -1070,7 +1070,7 @@
     "state": "open",
     "title": "Implementar a navegação de retorno na consulta de professores",
     "created_at": "2026-10-30T21:18:09Z",
-    "updated_at": "2026-10-30T21:18:09Z",
+    "updated_at": "2026-11-03T02:28:23Z",
     "closed_at": null,
     "user": {
       "login": "gsm22",
@@ -1130,6 +1130,125 @@
     "assignee": {
       "login": "Geovanaduartee",
       "id": 302299188
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 123,
+    "state": "open",
+    "title": "Habilitar o RLS e as políticas nos scripts de migração",
+    "created_at": "2026-11-02T22:36:32Z",
+    "updated_at": "2026-11-02T22:36:33Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "lgalencar25",
+      "id": 317712896
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 124,
+    "state": "open",
+    "title": "Reduzir o uso da service key no site: base e leitura pública",
+    "created_at": "2026-11-02T22:37:33Z",
+    "updated_at": "2026-11-02T23:34:26Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "MiguelCardoso28",
+      "id": 237799277
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 125,
+    "state": "open",
+    "title": "Verificar o e-mail no cadastro",
+    "created_at": "2026-11-02T22:38:29Z",
+    "updated_at": "2026-11-02T22:38:29Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "MiguelCardoso28",
+      "id": 237799277
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 126,
+    "state": "open",
+    "title": "Revogar a sessão no logout",
+    "created_at": "2026-11-02T22:39:35Z",
+    "updated_at": "2026-11-02T22:39:35Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "Geovanaduartee",
+      "id": 302299188
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 127,
+    "state": "open",
+    "title": "Tratar os itens de baixa prioridade da auditoria de segurança",
+    "created_at": "2026-11-02T22:40:35Z",
+    "updated_at": "2026-11-02T22:40:35Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "giiicostaa",
+      "id": 289751025
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 129,
+    "state": "open",
+    "title": "Migrar as avaliações para a chave pública com RLS",
+    "created_at": "2026-11-02T23:31:00Z",
+    "updated_at": "2026-11-02T23:31:24Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "repo_name": "2026-2-AvaliaAiUnB"
+  },
+  {
+    "number": 130,
+    "state": "open",
+    "title": "Migrar o perfil do usuário para a chave pública com RLS",
+    "created_at": "2026-11-02T23:32:27Z",
+    "updated_at": "2026-11-02T23:32:27Z",
+    "closed_at": null,
+    "user": {
+      "login": "gsm22",
+      "id": 277538111
+    },
+    "assignee": {
+      "login": "giiicostaa",
+      "id": 289751025
     },
     "repo_name": "2026-2-AvaliaAiUnB"
   }
