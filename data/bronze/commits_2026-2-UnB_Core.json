@@ -1,10 +1,61 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-04T13:51:49.440215+00:00",
+      "extracted_at": "2026-11-05T14:04:52.652352+00:00",
       "file_path": "data/bronze/commits_2026-2-UnB_Core.json",
-      "record_count": 205
+      "record_count": 207
     }
+  },
+  {
+    "sha": "bce29ecebad76d91742fe63f3a14edaa0e3f22f0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-05T13:53:42Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-05T13:53:42Z"
+      },
+      "message": "Merge pull request #132 from unb-mds/backend\n\n#infra(db): adicionar fluxo de migracões com alembic"
+    },
+    "parents": [
+      "ec4979c3a3540738f10bba7ab774479286c56769",
+      "eca07a8040c1490ffe823da9f122ddf29ff5381a"
+    ],
+    "additions": 495,
+    "deletions": 2,
+    "total_changes": 497,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "eca07a8040c1490ffe823da9f122ddf29ff5381a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-05T13:49:26Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-05T13:49:26Z"
+      },
+      "message": "#infra(db): adicionar fluxo de migracões com alembic\nFoi adicionado as migrações com alembic apenas para o postgreeSQl,sem suporte para sqlite"
+    },
+    "parents": [
+      "cf15bcb7afea49142d8bd247fa0b906de1e0e887"
+    ],
+    "additions": 495,
+    "deletions": 2,
+    "total_changes": 497,
+    "repo_name": "2026-2-UnB_Core"
   },
   {
     "sha": "ec4979c3a3540738f10bba7ab774479286c56769",

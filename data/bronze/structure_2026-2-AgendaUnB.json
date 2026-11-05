@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-AgendaUnB",
   "branch": "main",
-  "sha": "87e24ff0da776d662895f7c90d082e6816038b1a",
+  "sha": "5ba979a0adfd1e28858e2db206dde7e64a570bfd",
   "tree": [
     {
       "name": ".agent",
@@ -789,6 +789,16 @@
       "is_binary": false
     },
     {
+      "name": ".mintignore",
+      "path": ".mintignore",
+      "type": "file",
+      "sha": "89c8b8d1e67ee0063f4b5be069bc4fc353f2fdd0",
+      "mode": "100644",
+      "extension": ".mintignore",
+      "size": 231,
+      "is_binary": false
+    },
+    {
       "name": "DESIGN.md",
       "path": "DESIGN.md",
       "type": "file",
@@ -995,10 +1005,20 @@
       "is_binary": false
     },
     {
+      "name": "docs.json",
+      "path": "docs.json",
+      "type": "file",
+      "sha": "1e8fb0804d67fe37e11be8f6960c9d0f519b1d59",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2620,
+      "is_binary": false
+    },
+    {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "7a001d3bc3d65063815a6c39fb9429bdee4d9c66",
+      "sha": "de0bfb38aca08a4e58508def218b0f239365e281",
       "mode": "040000",
       "children": []
     },
@@ -1033,6 +1053,64 @@
       "is_binary": false
     },
     {
+      "name": "arquitetura",
+      "path": "docs/arquitetura",
+      "type": "directory",
+      "sha": "d753cb3049e7508a11b9a36f590398cdb7c909a1",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "banco-de-dados.mdx",
+      "path": "docs/arquitetura/banco-de-dados.mdx",
+      "type": "file",
+      "sha": "1a31f5456d3829854c6175266f391803f7106e43",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 6213,
+      "is_binary": false
+    },
+    {
+      "name": "frontend.mdx",
+      "path": "docs/arquitetura/frontend.mdx",
+      "type": "file",
+      "sha": "45d2e161cd14c7515936c2e7d4b4bdf2180496c3",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 15315,
+      "is_binary": false
+    },
+    {
+      "name": "modelo-de-dados.mdx",
+      "path": "docs/arquitetura/modelo-de-dados.mdx",
+      "type": "file",
+      "sha": "82742a24711c19d4e4114fc232cba3e68f162cb1",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 2489,
+      "is_binary": false
+    },
+    {
+      "name": "padroes.mdx",
+      "path": "docs/arquitetura/padroes.mdx",
+      "type": "file",
+      "sha": "9e6b6e9737ce126ccb75cdc608e171e730d54617",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 10594,
+      "is_binary": false
+    },
+    {
+      "name": "visao-geral.mdx",
+      "path": "docs/arquitetura/visao-geral.mdx",
+      "type": "file",
+      "sha": "964ce70db90f014d50901cc9f46dcf7d55bc3da6",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 13578,
+      "is_binary": false
+    },
+    {
       "name": "documento-de-visao.md",
       "path": "docs/documento-de-visao.md",
       "type": "file",
@@ -1060,6 +1138,24 @@
       "mode": "100644",
       "extension": ".md",
       "size": 14972,
+      "is_binary": false
+    },
+    {
+      "name": "images",
+      "path": "docs/images",
+      "type": "directory",
+      "sha": "5bd0a8d1253cfe6ccc4ace72267641c9c6825e33",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "logo-agendaunb.png",
+      "path": "docs/images/logo-agendaunb.png",
+      "type": "file",
+      "sha": "33a5a171799cc57affc017ab95072a6c7ef5ae60",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 47316,
       "is_binary": false
     },
     {
@@ -1100,6 +1196,138 @@
       "mode": "100644",
       "extension": ".md",
       "size": 3648,
+      "is_binary": false
+    },
+    {
+      "name": "processo",
+      "path": "docs/processo",
+      "type": "directory",
+      "sha": "0409d305a58a043f085e20293739b7a8274c9ba0",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "contribuindo.mdx",
+      "path": "docs/processo/contribuindo.mdx",
+      "type": "file",
+      "sha": "d3f6db6d3227c7ef2b1c5940b655c0b95e4cf82f",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 6561,
+      "is_binary": false
+    },
+    {
+      "name": "release-notes",
+      "path": "docs/processo/release-notes",
+      "type": "directory",
+      "sha": "527da424007eeb5446d437e537b0eb75d021e1cd",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "v0-1-0.mdx",
+      "path": "docs/processo/release-notes/v0-1-0.mdx",
+      "type": "file",
+      "sha": "8eb6e2f63015c7819d7c62b7fe5c7b7373e7dd4d",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 24281,
+      "is_binary": false
+    },
+    {
+      "name": "sprints",
+      "path": "docs/processo/sprints",
+      "type": "directory",
+      "sha": "f633c1e443d48192072f27e35183118e7920698d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "sprint-1.mdx",
+      "path": "docs/processo/sprints/sprint-1.mdx",
+      "type": "file",
+      "sha": "61116d99df58bb1f9aeae30986ac2c397b4ed37e",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 1426,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-2.mdx",
+      "path": "docs/processo/sprints/sprint-2.mdx",
+      "type": "file",
+      "sha": "f0dd4fcbb010ffbb3b3023cafe5b1fee42b70922",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 1452,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-3.mdx",
+      "path": "docs/processo/sprints/sprint-3.mdx",
+      "type": "file",
+      "sha": "c70b2dbb97e31d8a038c29be48d5e8b6bcd07cd1",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 1801,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-4.mdx",
+      "path": "docs/processo/sprints/sprint-4.mdx",
+      "type": "file",
+      "sha": "98c869e0c8b1e41a013caaa6c95e1ebaf2a147bf",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 1221,
+      "is_binary": false
+    },
+    {
+      "name": "uso-de-ia.mdx",
+      "path": "docs/processo/uso-de-ia.mdx",
+      "type": "file",
+      "sha": "90cdb0f36b15c287c11c14550c8aaf4e7e671dd0",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 6471,
+      "is_binary": false
+    },
+    {
+      "name": "produto",
+      "path": "docs/produto",
+      "type": "directory",
+      "sha": "ee998bf5c3417b625b3acda9d17036fd5f8d4afe",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "personas.mdx",
+      "path": "docs/produto/personas.mdx",
+      "type": "file",
+      "sha": "b01cf41627f343f40b5af954bc3984bd3af7c878",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 4321,
+      "is_binary": false
+    },
+    {
+      "name": "requisitos.mdx",
+      "path": "docs/produto/requisitos.mdx",
+      "type": "file",
+      "sha": "1c71d233129419505adc52cdfc0a1f759237f326",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 8444,
+      "is_binary": false
+    },
+    {
+      "name": "visao.mdx",
+      "path": "docs/produto/visao.mdx",
+      "type": "file",
+      "sha": "69b5ada07808e1ef9c0e7905db5e295ddd85be39",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 15428,
       "is_binary": false
     },
     {
@@ -1423,6 +1651,34 @@
       "is_binary": false
     },
     {
+      "name": "images",
+      "path": "images",
+      "type": "directory",
+      "sha": "5bd0a8d1253cfe6ccc4ace72267641c9c6825e33",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "logo-agendaunb.png",
+      "path": "images/logo-agendaunb.png",
+      "type": "file",
+      "sha": "33a5a171799cc57affc017ab95072a6c7ef5ae60",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 47316,
+      "is_binary": false
+    },
+    {
+      "name": "index.mdx",
+      "path": "index.mdx",
+      "type": "file",
+      "sha": "411a2f92fe7764f30bc096fcb6ae6d2a6f9a1f09",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 4703,
+      "is_binary": false
+    },
+    {
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
@@ -1430,6 +1686,26 @@
       "mode": "100644",
       "extension": ".yml",
       "size": 1819,
+      "is_binary": false
+    },
+    {
+      "name": "quickstart.mdx",
+      "path": "quickstart.mdx",
+      "type": "file",
+      "sha": "84bea749ba5ea604f9e17dd11dd3e6daa6c978a0",
+      "mode": "100644",
+      "extension": ".mdx",
+      "size": 10687,
+      "is_binary": false
+    },
+    {
+      "name": "style.css",
+      "path": "style.css",
+      "type": "file",
+      "sha": "c66e72081eff5f463a3e3fd0cdb51f8f76fb6f91",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 4037,
       "is_binary": false
     },
     {
@@ -1530,17 +1806,17 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-04T13:58:05.790194+00:00",
+  "extracted_at": "2026-11-05T14:11:47.481666+00:00",
   "method": "rest",
-  "total_items": 160,
+  "total_items": 189,
   "repository_metadata": {
     "id": 1338351818,
     "full_name": "unb-mds/2026-2-AgendaUnB",
     "description": "Grupo G8 - MDS 2026/2  -  O Agenda UnB é uma plataforma que reúne e organiza os eventos da UnB em um único lugar.",
     "created_at": "2026-08-18T11:58:00Z",
-    "updated_at": "2026-10-31T04:41:36Z",
+    "updated_at": "2026-11-04T19:40:05Z",
     "language": "JavaScript",
-    "size": 69928,
+    "size": 70015,
     "stars": 3,
     "forks": 0,
     "open_issues": 3
