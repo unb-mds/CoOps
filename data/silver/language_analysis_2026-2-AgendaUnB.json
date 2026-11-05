@@ -2,19 +2,19 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-04T13:58:05.790194+00:00",
+  "analyzed_at": "2026-11-05T14:11:47.481666+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 122,
-  "total_bytes": 21278908,
+  "total_files": 144,
+  "total_bytes": 21515413,
   "languages": [
     {
       "language": "Unknown",
-      "file_count": 3,
-      "total_bytes": 14720823,
-      "percentage": 69.18,
+      "file_count": 21,
+      "total_bytes": 14856039,
+      "percentage": 69.05,
       "files": [
         {
           "path": ".agent/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
@@ -23,16 +23,58 @@
           "extension": ".exe"
         },
         {
-          "path": ".env.example",
-          "name": ".env.example",
-          "size": 342,
-          "extension": ".example"
+          "path": "docs/processo/release-notes/v0-1-0.mdx",
+          "name": "v0-1-0.mdx",
+          "size": 24281,
+          "extension": ".mdx"
         },
         {
-          "path": ".gitattributes",
-          "name": ".gitattributes",
-          "size": 89,
-          "extension": ".gitattributes"
+          "path": "docs/produto/visao.mdx",
+          "name": "visao.mdx",
+          "size": 15428,
+          "extension": ".mdx"
+        },
+        {
+          "path": "docs/arquitetura/frontend.mdx",
+          "name": "frontend.mdx",
+          "size": 15315,
+          "extension": ".mdx"
+        },
+        {
+          "path": "docs/arquitetura/visao-geral.mdx",
+          "name": "visao-geral.mdx",
+          "size": 13578,
+          "extension": ".mdx"
+        },
+        {
+          "path": "quickstart.mdx",
+          "name": "quickstart.mdx",
+          "size": 10687,
+          "extension": ".mdx"
+        },
+        {
+          "path": "docs/arquitetura/padroes.mdx",
+          "name": "padroes.mdx",
+          "size": 10594,
+          "extension": ".mdx"
+        },
+        {
+          "path": "docs/produto/requisitos.mdx",
+          "name": "requisitos.mdx",
+          "size": 8444,
+          "extension": ".mdx"
+        },
+        {
+          "path": "docs/processo/contribuindo.mdx",
+          "name": "contribuindo.mdx",
+          "size": 6561,
+          "extension": ".mdx"
+        },
+        {
+          "path": "docs/processo/uso-de-ia.mdx",
+          "name": "uso-de-ia.mdx",
+          "size": 6471,
+          "extension": ".mdx"
         }
       ]
     },
@@ -40,7 +82,7 @@
       "language": "WebM Video",
       "file_count": 2,
       "total_bytes": 3654672,
-      "percentage": 17.18,
+      "percentage": 16.99,
       "files": [
         {
           "path": "frontend/public/shaderopt-light.webm",
@@ -58,9 +100,9 @@
     },
     {
       "language": "JSON",
-      "file_count": 7,
-      "total_bytes": 1179110,
-      "percentage": 5.54,
+      "file_count": 8,
+      "total_bytes": 1181730,
+      "percentage": 5.49,
       "files": [
         {
           "path": ".agent/skills/impeccable/scripts/data/font-index.json",
@@ -87,6 +129,12 @@
           "extension": ".json"
         },
         {
+          "path": "docs.json",
+          "name": "docs.json",
+          "size": 2620,
+          "extension": ".json"
+        },
+        {
           "path": ".agent/skills/impeccable/scripts/data/font-index-failures.json",
           "name": "font-index-failures.json",
           "size": 2437,
@@ -110,7 +158,7 @@
       "language": "JavaScript",
       "file_count": 14,
       "total_bytes": 660623,
-      "percentage": 3.1,
+      "percentage": 3.07,
       "files": [
         {
           "path": ".agent/skills/impeccable/scripts/live-browser.js",
@@ -178,7 +226,7 @@
       "language": "Markdown",
       "file_count": 65,
       "total_bytes": 600884,
-      "percentage": 2.82,
+      "percentage": 2.79,
       "files": [
         {
           "path": ".agent/skills/impeccable/reference/new-work.md",
@@ -244,9 +292,9 @@
     },
     {
       "language": "PNG Image",
-      "file_count": 3,
-      "total_bytes": 348232,
-      "percentage": 1.64,
+      "file_count": 5,
+      "total_bytes": 442864,
+      "percentage": 2.06,
       "files": [
         {
           "path": "frontend/public/banner.png",
@@ -255,8 +303,20 @@
           "extension": ".png"
         },
         {
+          "path": "docs/images/logo-agendaunb.png",
+          "name": "logo-agendaunb.png",
+          "size": 47316,
+          "extension": ".png"
+        },
+        {
           "path": "frontend/public/Logo-AgendaUnB1.png",
           "name": "Logo-AgendaUnB1.png",
+          "size": 47316,
+          "extension": ".png"
+        },
+        {
+          "path": "images/logo-agendaunb.png",
+          "name": "logo-agendaunb.png",
           "size": 47316,
           "extension": ".png"
         },
@@ -270,14 +330,20 @@
     },
     {
       "language": "CSS",
-      "file_count": 1,
-      "total_bytes": 31645,
-      "percentage": 0.15,
+      "file_count": 2,
+      "total_bytes": 35682,
+      "percentage": 0.17,
       "files": [
         {
           "path": "frontend/src/styles/global.css",
           "name": "global.css",
           "size": 31645,
+          "extension": ".css"
+        },
+        {
+          "path": "style.css",
+          "name": "style.css",
+          "size": 4037,
           "extension": ".css"
         }
       ]
@@ -388,7 +454,7 @@
       "language": "SQL",
       "file_count": 6,
       "total_bytes": 11747,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": "supabase/migrations/20260922195137_profiles.sql",
@@ -518,7 +584,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-04T13:59:14.892675+00:00",
+    "extracted_at": "2026-11-05T14:12:52.725819+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AgendaUnB.json"
   }
 }

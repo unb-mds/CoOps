@@ -2,19 +2,19 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-04T13:57:57.861374+00:00",
+  "analyzed_at": "2026-11-05T14:11:40.981147+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 199,
-  "total_bytes": 868389,
+  "total_files": 204,
+  "total_bytes": 884341,
   "languages": [
     {
       "language": "JSON",
       "file_count": 10,
       "total_bytes": 246171,
-      "percentage": 28.35,
+      "percentage": 27.84,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -81,8 +81,8 @@
     {
       "language": "Markdown",
       "file_count": 48,
-      "total_bytes": 243918,
-      "percentage": 28.09,
+      "total_bytes": 244064,
+      "percentage": 27.6,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -148,9 +148,9 @@
     },
     {
       "language": "Unknown",
-      "file_count": 34,
-      "total_bytes": 118914,
-      "percentage": 13.69,
+      "file_count": 35,
+      "total_bytes": 119633,
+      "percentage": 13.53,
       "files": [
         {
           "path": "unb_core.db",
@@ -216,14 +216,20 @@
     },
     {
       "language": "Python",
-      "file_count": 45,
-      "total_bytes": 78735,
-      "percentage": 9.07,
+      "file_count": 47,
+      "total_bytes": 87837,
+      "percentage": 9.93,
       "files": [
         {
           "path": "backend/app/api/errors.py",
           "name": "errors.py",
           "size": 7218,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/0001_initial_schema.py",
+          "name": "0001_initial_schema.py",
+          "size": 6547,
           "extension": ".py"
         },
         {
@@ -273,12 +279,6 @@
           "name": "test_auth_service.py",
           "size": 3059,
           "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_usuarios_admin.py",
-          "name": "test_usuarios_admin.py",
-          "size": 2964,
-          "extension": ".py"
         }
       ]
     },
@@ -286,7 +286,7 @@
       "language": "JavaScript",
       "file_count": 33,
       "total_bytes": 66904,
-      "percentage": 7.7,
+      "percentage": 7.57,
       "files": [
         {
           "path": "frontend/src/pages/ContribuicaoPage.jsx",
@@ -354,7 +354,7 @@
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 7.04,
+      "percentage": 6.91,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -398,7 +398,7 @@
       "language": "CSS",
       "file_count": 11,
       "total_bytes": 25497,
-      "percentage": 2.94,
+      "percentage": 2.88,
       "files": [
         {
           "path": "frontend/src/components/ui/ui.css",
@@ -463,10 +463,42 @@
       ]
     },
     {
+      "language": "No Extension",
+      "file_count": 4,
+      "total_bytes": 10228,
+      "percentage": 1.16,
+      "files": [
+        {
+          "path": "git status",
+          "name": "git status",
+          "size": 8192,
+          "extension": ""
+        },
+        {
+          "path": "LICENSE",
+          "name": "LICENSE",
+          "size": 1060,
+          "extension": ""
+        },
+        {
+          "path": "backend/alembic/README",
+          "name": "README",
+          "size": 976,
+          "extension": ""
+        },
+        {
+          "path": "backend/app/api/schema/database_publicaco_institucional",
+          "name": "database_publicaco_institucional",
+          "size": 0,
+          "extension": ""
+        }
+      ]
+    },
+    {
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 1.16,
+      "percentage": 1.13,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -483,36 +515,10 @@
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 3,
-      "total_bytes": 9252,
-      "percentage": 1.07,
-      "files": [
-        {
-          "path": "git status",
-          "name": "git status",
-          "size": 8192,
-          "extension": ""
-        },
-        {
-          "path": "LICENSE",
-          "name": "LICENSE",
-          "size": 1060,
-          "extension": ""
-        },
-        {
-          "path": "backend/app/api/schema/database_publicaco_institucional",
-          "name": "database_publicaco_institucional",
-          "size": 0,
-          "extension": ""
-        }
-      ]
-    },
-    {
       "language": "YAML",
       "file_count": 3,
       "total_bytes": 6922,
-      "percentage": 0.8,
+      "percentage": 0.78,
       "files": [
         {
           "path": "docs/gitpage/mkdocs.yml",
@@ -531,6 +537,20 @@
           "name": "mkdocs.yml",
           "size": 1930,
           "extension": ".yml"
+        }
+      ]
+    },
+    {
+      "language": "INI",
+      "file_count": 1,
+      "total_bytes": 5009,
+      "percentage": 0.57,
+      "files": [
+        {
+          "path": "backend/alembic.ini",
+          "name": "alembic.ini",
+          "size": 5009,
+          "extension": ".ini"
         }
       ]
     },
@@ -572,7 +592,7 @@
       "language": "Text",
       "file_count": 1,
       "total_bytes": 132,
-      "percentage": 0.02,
+      "percentage": 0.01,
       "files": [
         {
           "path": "backend/requirements.txt",
@@ -584,7 +604,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-04T13:59:14.927854+00:00",
+    "extracted_at": "2026-11-05T14:12:52.756465+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }
