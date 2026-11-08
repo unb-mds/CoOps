@@ -2,54 +2,30 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-07T12:32:18.238229+00:00",
+  "analyzed_at": "2026-11-08T12:38:14.817106+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 144,
-  "total_bytes": 21515413,
+  "total_files": 216,
+  "total_bytes": 22061368,
   "languages": [
     {
       "language": "Unknown",
-      "file_count": 21,
-      "total_bytes": 14856039,
-      "percentage": 69.05,
+      "file_count": 7,
+      "total_bytes": 14747173,
+      "percentage": 66.85,
       "files": [
         {
-          "path": ".agent/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
+          "path": ".agents/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
           "name": "impeccable.exe",
           "size": 14720392,
           "extension": ".exe"
         },
         {
-          "path": "docs/processo/release-notes/v0-1-0.mdx",
-          "name": "v0-1-0.mdx",
-          "size": 24281,
-          "extension": ".mdx"
-        },
-        {
-          "path": "docs/produto/visao.mdx",
-          "name": "visao.mdx",
-          "size": 15428,
-          "extension": ".mdx"
-        },
-        {
-          "path": "docs/arquitetura/frontend.mdx",
-          "name": "frontend.mdx",
-          "size": 15315,
-          "extension": ".mdx"
-        },
-        {
-          "path": "docs/arquitetura/visao-geral.mdx",
-          "name": "visao-geral.mdx",
-          "size": 13578,
-          "extension": ".mdx"
-        },
-        {
-          "path": "quickstart.mdx",
+          "path": "docs/quickstart.mdx",
           "name": "quickstart.mdx",
-          "size": 10687,
+          "size": 10731,
           "extension": ".mdx"
         },
         {
@@ -59,22 +35,28 @@
           "extension": ".mdx"
         },
         {
-          "path": "docs/produto/requisitos.mdx",
-          "name": "requisitos.mdx",
-          "size": 8444,
+          "path": "docs/introducao.mdx",
+          "name": "introducao.mdx",
+          "size": 4747,
           "extension": ".mdx"
         },
         {
-          "path": "docs/processo/contribuindo.mdx",
-          "name": "contribuindo.mdx",
-          "size": 6561,
-          "extension": ".mdx"
+          "path": ".env.example",
+          "name": ".env.example",
+          "size": 400,
+          "extension": ".example"
         },
         {
-          "path": "docs/processo/uso-de-ia.mdx",
-          "name": "uso-de-ia.mdx",
-          "size": 6471,
-          "extension": ".mdx"
+          "path": ".mintignore",
+          "name": ".mintignore",
+          "size": 220,
+          "extension": ".mintignore"
+        },
+        {
+          "path": ".gitattributes",
+          "name": ".gitattributes",
+          "size": 89,
+          "extension": ".gitattributes"
         }
       ]
     },
@@ -82,7 +64,7 @@
       "language": "WebM Video",
       "file_count": 2,
       "total_bytes": 3654672,
-      "percentage": 16.99,
+      "percentage": 16.57,
       "files": [
         {
           "path": "frontend/public/shaderopt-light.webm",
@@ -100,12 +82,12 @@
     },
     {
       "language": "JSON",
-      "file_count": 8,
-      "total_bytes": 1181730,
-      "percentage": 5.49,
+      "file_count": 9,
+      "total_bytes": 1184557,
+      "percentage": 5.37,
       "files": [
         {
-          "path": ".agent/skills/impeccable/scripts/data/font-index.json",
+          "path": ".agents/skills/impeccable/scripts/data/font-index.json",
           "name": "font-index.json",
           "size": 1100013,
           "extension": ".json"
@@ -113,11 +95,11 @@
         {
           "path": "frontend/package-lock.json",
           "name": "package-lock.json",
-          "size": 62966,
+          "size": 64433,
           "extension": ".json"
         },
         {
-          "path": ".agent/skills/impeccable/scripts/command-metadata.json",
+          "path": ".agents/skills/impeccable/scripts/command-metadata.json",
           "name": "command-metadata.json",
           "size": 7934,
           "extension": ".json"
@@ -131,11 +113,11 @@
         {
           "path": "docs.json",
           "name": "docs.json",
-          "size": 2620,
+          "size": 3542,
           "extension": ".json"
         },
         {
-          "path": ".agent/skills/impeccable/scripts/data/font-index-failures.json",
+          "path": ".agents/skills/impeccable/scripts/data/font-index-failures.json",
           "name": "font-index-failures.json",
           "size": 2437,
           "extension": ".json"
@@ -143,7 +125,13 @@
         {
           "path": "frontend/package.json",
           "name": "package.json",
-          "size": 488,
+          "size": 603,
+          "extension": ".json"
+        },
+        {
+          "path": ".github/hooks/impeccable.json",
+          "name": "impeccable.json",
+          "size": 323,
           "extension": ".json"
         },
         {
@@ -155,101 +143,57 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "file_count": 14,
-      "total_bytes": 660623,
-      "percentage": 3.07,
-      "files": [
-        {
-          "path": ".agent/skills/impeccable/scripts/live-browser.js",
-          "name": "live-browser.js",
-          "size": 522871,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/src/pages/SecondPage.jsx",
-          "name": "SecondPage.jsx",
-          "size": 35974,
-          "extension": ".jsx"
-        },
-        {
-          "path": ".agent/skills/impeccable/scripts/modern-screenshot.umd.js",
-          "name": "modern-screenshot.umd.js",
-          "size": 29290,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/src/App.jsx",
-          "name": "App.jsx",
-          "size": 26376,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/PaginaDeEvento.jsx",
-          "name": "PaginaDeEvento.jsx",
-          "size": 11403,
-          "extension": ".jsx"
-        },
-        {
-          "path": ".agent/skills/impeccable/scripts/live-browser-ignores.js",
-          "name": "live-browser-ignores.js",
-          "size": 10346,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/src/contexts/AuthContext.jsx",
-          "name": "AuthContext.jsx",
-          "size": 6701,
-          "extension": ".jsx"
-        },
-        {
-          "path": ".agent/skills/impeccable/scripts/live-browser-dom.js",
-          "name": "live-browser-dom.js",
-          "size": 4917,
-          "extension": ".js"
-        },
-        {
-          "path": ".agent/skills/impeccable/scripts/live-browser-session.js",
-          "name": "live-browser-session.js",
-          "size": 4090,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/src/components/NavBar.jsx",
-          "name": "NavBar.jsx",
-          "size": 3863,
-          "extension": ".jsx"
-        }
-      ]
-    },
-    {
       "language": "Markdown",
-      "file_count": 65,
-      "total_bytes": 600884,
-      "percentage": 2.79,
+      "file_count": 90,
+      "total_bytes": 948770,
+      "percentage": 4.3,
       "files": [
         {
-          "path": ".agent/skills/impeccable/reference/new-work.md",
+          "path": "docs/planejamento-r2-sprints-7-8.md",
+          "name": "planejamento-r2-sprints-7-8.md",
+          "size": 64559,
+          "extension": ".md"
+        },
+        {
+          "path": ".agents/skills/impeccable/reference/new-work.md",
           "name": "new-work.md",
           "size": 52758,
           "extension": ".md"
         },
         {
-          "path": ".agent/skills/impeccable/reference/critique.md",
+          "path": ".agents/skills/impeccable/reference/critique.md",
           "name": "critique.md",
           "size": 42717,
           "extension": ".md"
         },
         {
-          "path": ".agent/skills/impeccable/reference/live.md",
+          "path": ".agents/skills/impeccable/reference/live.md",
           "name": "live.md",
           "size": 36231,
           "extension": ".md"
         },
         {
-          "path": ".agent/skills/impeccable/reference/document.md",
+          "path": "docs/sprints/sprint-7.md",
+          "name": "sprint-7.md",
+          "size": 30003,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/sprints/sprint-8.md",
+          "name": "sprint-8.md",
+          "size": 28077,
+          "extension": ".md"
+        },
+        {
+          "path": ".agents/skills/impeccable/reference/document.md",
           "name": "document.md",
           "size": 27433,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/processo/release-notes/v0-1-0.md",
+          "name": "v0-1-0.md",
+          "size": 24281,
           "extension": ".md"
         },
         {
@@ -259,42 +203,86 @@
           "extension": ".md"
         },
         {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 15705,
-          "extension": ".md"
-        },
-        {
-          "path": ".agent/skills/project-standards/SKILL.md",
-          "name": "SKILL.md",
-          "size": 15668,
-          "extension": ".md"
-        },
-        {
-          "path": ".agent/skills/impeccable/reference/degraded/finish-reviewer.md",
-          "name": "finish-reviewer.md",
-          "size": 15397,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/especificacao-frontend.md",
-          "name": "especificacao-frontend.md",
-          "size": 14972,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/documento-de-visao.md",
-          "name": "documento-de-visao.md",
-          "size": 14947,
+          "path": "docs/sprints/sprint-6.md",
+          "name": "sprint-6.md",
+          "size": 19075,
           "extension": ".md"
         }
       ]
     },
     {
+      "language": "JavaScript",
+      "file_count": 40,
+      "total_bytes": 797157,
+      "percentage": 3.61,
+      "files": [
+        {
+          "path": ".agents/skills/impeccable/scripts/live-browser.js",
+          "name": "live-browser.js",
+          "size": 522871,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/src/pages/SecondPage.jsx",
+          "name": "SecondPage.jsx",
+          "size": 42432,
+          "extension": ".jsx"
+        },
+        {
+          "path": ".agents/skills/impeccable/scripts/modern-screenshot.umd.js",
+          "name": "modern-screenshot.umd.js",
+          "size": 29290,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/src/App.jsx",
+          "name": "App.jsx",
+          "size": 26698,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/components/TeachingPlanJourney.jsx",
+          "name": "TeachingPlanJourney.jsx",
+          "size": 19329,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/TeachingPlanPage.jsx",
+          "name": "TeachingPlanPage.jsx",
+          "size": 15822,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/tests/syllabus.spec.js",
+          "name": "syllabus.spec.js",
+          "size": 13062,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/src/pages/PaginaDeEvento.jsx",
+          "name": "PaginaDeEvento.jsx",
+          "size": 11647,
+          "extension": ".jsx"
+        },
+        {
+          "path": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
+          "name": "live-browser-ignores.js",
+          "size": 10346,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/src/pages/SuggestionsPage.jsx",
+          "name": "SuggestionsPage.jsx",
+          "size": 7862,
+          "extension": ".jsx"
+        }
+      ]
+    },
+    {
       "language": "PNG Image",
-      "file_count": 5,
-      "total_bytes": 442864,
-      "percentage": 2.06,
+      "file_count": 4,
+      "total_bytes": 395548,
+      "percentage": 1.79,
       "files": [
         {
           "path": "frontend/public/banner.png",
@@ -315,12 +303,6 @@
           "extension": ".png"
         },
         {
-          "path": "images/logo-agendaunb.png",
-          "name": "logo-agendaunb.png",
-          "size": 47316,
-          "extension": ".png"
-        },
-        {
           "path": "frontend/public/Marca-UnB.png",
           "name": "Marca-UnB.png",
           "size": 3942,
@@ -329,89 +311,199 @@
       ]
     },
     {
-      "language": "CSS",
-      "file_count": 2,
-      "total_bytes": 35682,
-      "percentage": 0.17,
-      "files": [
-        {
-          "path": "frontend/src/styles/global.css",
-          "name": "global.css",
-          "size": 31645,
-          "extension": ".css"
-        },
-        {
-          "path": "style.css",
-          "name": "style.css",
-          "size": 4037,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
       "language": "Python",
-      "file_count": 8,
-      "total_bytes": 25601,
-      "percentage": 0.12,
+      "file_count": 21,
+      "total_bytes": 108880,
+      "percentage": 0.49,
       "files": [
         {
-          "path": "backend/src/modules/events/router.py",
-          "name": "router.py",
-          "size": 9536,
+          "path": "backend/tests/test_syllabus_upload.py",
+          "name": "test_syllabus_upload.py",
+          "size": 16477,
           "extension": ".py"
         },
         {
-          "path": "backend/tests/test_events_api.py",
-          "name": "test_events_api.py",
-          "size": 4400,
+          "path": "backend/src/modules/events/router.py",
+          "name": "router.py",
+          "size": 13717,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/src/modules/syllabus/router.py",
+          "name": "router.py",
+          "size": 10147,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_moderation_database.py",
+          "name": "test_moderation_database.py",
+          "size": 8774,
           "extension": ".py"
         },
         {
           "path": "backend/src/database/models.py",
           "name": "models.py",
-          "size": 3535,
+          "size": 7715,
           "extension": ".py"
         },
         {
-          "path": "backend/src/middlewares/auth.py",
-          "name": "auth.py",
-          "size": 2538,
+          "path": "backend/tests/test_syllabus_review_api.py",
+          "name": "test_syllabus_review_api.py",
+          "size": 7457,
           "extension": ".py"
         },
         {
-          "path": "backend/src/main.py",
-          "name": "main.py",
-          "size": 1749,
+          "path": "backend/src/modules/syllabus/services.py",
+          "name": "services.py",
+          "size": 7236,
           "extension": ".py"
         },
         {
-          "path": "backend/src/modules/events/schemas.py",
+          "path": "backend/tests/test_events_api.py",
+          "name": "test_events_api.py",
+          "size": 6368,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_saved_events_api.py",
+          "name": "test_saved_events_api.py",
+          "size": 5185,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/src/modules/syllabus/schemas.py",
           "name": "schemas.py",
-          "size": 1700,
+          "size": 4022,
           "extension": ".py"
+        }
+      ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 7,
+      "total_bytes": 101046,
+      "percentage": 0.46,
+      "files": [
+        {
+          "path": "frontend/src/styles/global.css",
+          "name": "global.css",
+          "size": 49636,
+          "extension": ".css"
         },
         {
-          "path": "backend/tests/conftest.py",
-          "name": "conftest.py",
-          "size": 1591,
-          "extension": ".py"
+          "path": "frontend/src/styles/management.css",
+          "name": "management.css",
+          "size": 20962,
+          "extension": ".css"
         },
         {
-          "path": "backend/src/database/connection.py",
-          "name": "connection.py",
-          "size": 552,
-          "extension": ".py"
+          "path": "frontend/public/prototipo-plano-de-ensino/styles.css",
+          "name": "styles.css",
+          "size": 14893,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/styles/teaching-plan.css",
+          "name": "teaching-plan.css",
+          "size": 8684,
+          "extension": ".css"
+        },
+        {
+          "path": "docs/style.css",
+          "name": "style.css",
+          "size": 4182,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/styles/syllabus-review.css",
+          "name": "syllabus-review.css",
+          "size": 1844,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/styles/events-loading.css",
+          "name": "events-loading.css",
+          "size": 845,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "SQL",
+      "file_count": 22,
+      "total_bytes": 63731,
+      "percentage": 0.29,
+      "files": [
+        {
+          "path": "supabase/migrations/20261027120000_planos_particulares_e_candidatos.sql",
+          "name": "20261027120000_planos_particulares_e_candidatos.sql",
+          "size": 13563,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261018000000_moderacao_e_notificacoes.sql",
+          "name": "20261018000000_moderacao_e_notificacoes.sql",
+          "size": 9441,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261014120100_rls_painel_administrativo.sql",
+          "name": "20261014120100_rls_painel_administrativo.sql",
+          "size": 7240,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20260922195137_profiles.sql",
+          "name": "20260922195137_profiles.sql",
+          "size": 6183,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261014120000_sugestao_de_eventos_e_contador.sql",
+          "name": "20261014120000_sugestao_de_eventos_e_contador.sql",
+          "size": 3868,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261014120200_bucket_planos_de_ensino.sql",
+          "name": "20261014120200_bucket_planos_de_ensino.sql",
+          "size": 3402,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261029155158_s6_d02_parte3_transacao_eventos.sql",
+          "name": "20261029155158_s6_d02_parte3_transacao_eventos.sql",
+          "size": 3297,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20260923172640_adiciona_tabelas_agenda.sql",
+          "name": "20260923172640_adiciona_tabelas_agenda.sql",
+          "size": 3214,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261026120000_upload_planos_ensino.sql",
+          "name": "20261026120000_upload_planos_ensino.sql",
+          "size": 2198,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261029160000_syllabus_review_confirmation.sql",
+          "name": "20261029160000_syllabus_review_confirmation.sql",
+          "size": 2040,
+          "extension": ".sql"
         }
       ]
     },
     {
       "language": "No Extension",
       "file_count": 4,
-      "total_bytes": 16779,
+      "total_bytes": 16797,
       "percentage": 0.08,
       "files": [
         {
-          "path": ".agent/skills/impeccable/scripts/impeccable",
+          "path": ".agents/skills/impeccable/scripts/impeccable",
           "name": "impeccable",
           "size": 8514,
           "extension": ""
@@ -419,11 +511,11 @@
         {
           "path": "Makefile",
           "name": "Makefile",
-          "size": 8259,
+          "size": 8277,
           "extension": ""
         },
         {
-          "path": ".agent/skills/impeccable/scripts/VERSION",
+          "path": ".agents/skills/impeccable/scripts/VERSION",
           "name": "VERSION",
           "size": 6,
           "extension": ""
@@ -451,46 +543,22 @@
       ]
     },
     {
-      "language": "SQL",
-      "file_count": 6,
-      "total_bytes": 11747,
-      "percentage": 0.05,
+      "language": "HTML",
+      "file_count": 2,
+      "total_bytes": 14251,
+      "percentage": 0.06,
       "files": [
         {
-          "path": "supabase/migrations/20260922195137_profiles.sql",
-          "name": "20260922195137_profiles.sql",
-          "size": 6183,
-          "extension": ".sql"
+          "path": "frontend/public/prototipo-plano-de-ensino/index.html",
+          "name": "index.html",
+          "size": 13460,
+          "extension": ".html"
         },
         {
-          "path": "supabase/migrations/20260923172640_adiciona_tabelas_agenda.sql",
-          "name": "20260923172640_adiciona_tabelas_agenda.sql",
-          "size": 3214,
-          "extension": ".sql"
-        },
-        {
-          "path": "supabase/migrations/20260923004151_cria_tabela_eventos_pessoais.sql",
-          "name": "20260923004151_cria_tabela_eventos_pessoais.sql",
-          "size": 1247,
-          "extension": ".sql"
-        },
-        {
-          "path": "supabase/migrations/20260923000000_adiciona_campus_e_categorias.sql",
-          "name": "20260923000000_adiciona_campus_e_categorias.sql",
-          "size": 664,
-          "extension": ".sql"
-        },
-        {
-          "path": "supabase/seed.sql",
-          "name": "seed.sql",
-          "size": 383,
-          "extension": ".sql"
-        },
-        {
-          "path": "supabase/migrations/20260929011710_adiciona_avatar_url_em_profiles.sql",
-          "name": "20260929011710_adiciona_avatar_url_em_profiles.sql",
-          "size": 56,
-          "extension": ".sql"
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 791,
+          "extension": ".html"
         }
       ]
     },
@@ -501,7 +569,7 @@
       "percentage": 0.04,
       "files": [
         {
-          "path": ".agent/skills/impeccable/scripts/impeccable.cmd",
+          "path": ".agents/skills/impeccable/scripts/impeccable.cmd",
           "name": "impeccable.cmd",
           "size": 8472,
           "extension": ".cmd"
@@ -511,19 +579,19 @@
     {
       "language": "YAML",
       "file_count": 2,
-      "total_bytes": 2819,
-      "percentage": 0.01,
+      "total_bytes": 3504,
+      "percentage": 0.02,
       "files": [
         {
-          "path": "mkdocs.yml",
+          "path": ".github/mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 1819,
+          "size": 2466,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/docs.yml",
           "name": "docs.yml",
-          "size": 1000,
+          "size": 1038,
           "extension": ".yml"
         }
       ]
@@ -531,13 +599,13 @@
     {
       "language": "Git Ignore",
       "file_count": 2,
-      "total_bytes": 707,
+      "total_bytes": 784,
       "percentage": 0.0,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 635,
+          "size": 712,
           "extension": ".gitignore"
         },
         {
@@ -551,13 +619,13 @@
     {
       "language": "Text",
       "file_count": 2,
-      "total_bytes": 100,
+      "total_bytes": 123,
       "percentage": 0.0,
       "files": [
         {
           "path": "backend/requirements.txt",
           "name": "requirements.txt",
-          "size": 73,
+          "size": 96,
           "extension": ".txt"
         },
         {
@@ -567,24 +635,10 @@
           "extension": ".txt"
         }
       ]
-    },
-    {
-      "language": "HTML",
-      "file_count": 1,
-      "total_bytes": 791,
-      "percentage": 0.0,
-      "files": [
-        {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 791,
-          "extension": ".html"
-        }
-      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-07T12:33:21.282420+00:00",
+    "extracted_at": "2026-11-08T12:39:13.307314+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AgendaUnB.json"
   }
 }
