@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-08T12:38:13.524086+00:00",
+  "extracted_at": "2026-11-09T14:40:07.147683+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -197,7 +197,7 @@
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 997,
+        "size": 1005,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
       },
@@ -259,7 +259,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2426,
+        "size": 2659,
         "extension": ".md",
         "path": "AGENTS.md"
       },
@@ -303,7 +303,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4133,
+        "size": 4716,
         "extension": ".md",
         "path": "apps/api/AGENTS.md"
       },
@@ -535,7 +535,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 6834,
+        "size": 6932,
         "extension": ".py",
         "path": "apps/api/api/main.py"
       },
@@ -628,10 +628,26 @@
         "children": []
       },
       {
+        "name": "edit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1220,
+        "extension": ".py",
+        "path": "apps/api/api/modules/me/edit.py"
+      },
+      {
+        "name": "photo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1148,
+        "extension": ".py",
+        "path": "apps/api/api/modules/me/photo.py"
+      },
+      {
         "name": "profile.py",
         "type": "file",
         "language": "Python",
-        "size": 3012,
+        "size": 3040,
         "extension": ".py",
         "path": "apps/api/api/modules/me/profile.py"
       },
@@ -639,7 +655,7 @@
         "name": "repository.py",
         "type": "file",
         "language": "Python",
-        "size": 6083,
+        "size": 6645,
         "extension": ".py",
         "path": "apps/api/api/modules/me/repository.py"
       },
@@ -647,7 +663,7 @@
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 4074,
+        "size": 6736,
         "extension": ".py",
         "path": "apps/api/api/modules/me/router.py"
       },
@@ -658,6 +674,14 @@
         "size": 1305,
         "extension": ".py",
         "path": "apps/api/api/modules/me/settings.py"
+      },
+      {
+        "name": "upload_guard.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1598,
+        "extension": ".py",
+        "path": "apps/api/api/modules/me/upload_guard.py"
       },
       {
         "name": "posts",
@@ -895,7 +919,7 @@
         "name": "rate_limit.py",
         "type": "file",
         "language": "Python",
-        "size": 5195,
+        "size": 5518,
         "extension": ".py",
         "path": "apps/api/api/rate_limit.py"
       },
@@ -965,7 +989,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 1107,
+        "size": 1129,
         "extension": ".toml",
         "path": "apps/api/pyproject.toml"
       },
@@ -979,137 +1003,315 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 16315,
+        "size": 3104,
         "extension": ".py",
         "path": "apps/api/tests/conftest.py"
       },
       {
-        "name": "test_academic_calendar.py",
+        "name": "integration",
+        "type": "directory",
+        "path": "apps/api/tests/integration",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 2016,
+        "size": 0,
         "extension": ".py",
-        "path": "apps/api/tests/test_academic_calendar.py"
+        "path": "apps/api/tests/integration/__init__.py"
+      },
+      {
+        "name": "auth",
+        "type": "directory",
+        "path": "apps/api/tests/integration/auth",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/auth/__init__.py"
       },
       {
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 9965,
+        "size": 11051,
         "extension": ".py",
-        "path": "apps/api/tests/test_auth.py"
+        "path": "apps/api/tests/integration/auth/test_auth.py"
       },
       {
-        "name": "test_cache.py",
-        "type": "file",
-        "language": "Python",
-        "size": 3244,
-        "extension": ".py",
-        "path": "apps/api/tests/test_cache.py"
+        "name": "classrooms",
+        "type": "directory",
+        "path": "apps/api/tests/integration/classrooms",
+        "children": []
       },
       {
-        "name": "test_classrooms.py",
+        "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 55358,
+        "size": 0,
         "extension": ".py",
-        "path": "apps/api/tests/test_classrooms.py"
+        "path": "apps/api/tests/integration/classrooms/__init__.py"
       },
       {
-        "name": "test_classrooms_seed.py",
+        "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 5105,
+        "size": 1295,
         "extension": ".py",
-        "path": "apps/api/tests/test_classrooms_seed.py"
+        "path": "apps/api/tests/integration/classrooms/conftest.py"
       },
       {
-        "name": "test_cookies.py",
+        "name": "helpers.py",
         "type": "file",
         "language": "Python",
-        "size": 13579,
+        "size": 6225,
         "extension": ".py",
-        "path": "apps/api/tests/test_cookies.py"
+        "path": "apps/api/tests/integration/classrooms/helpers.py"
       },
       {
-        "name": "test_courses.py",
+        "name": "test_contas_sombra.py",
         "type": "file",
         "language": "Python",
-        "size": 7911,
+        "size": 4230,
         "extension": ".py",
-        "path": "apps/api/tests/test_courses.py"
+        "path": "apps/api/tests/integration/classrooms/test_contas_sombra.py"
       },
       {
-        "name": "test_curricula_seed.py",
+        "name": "test_docentes.py",
         "type": "file",
         "language": "Python",
-        "size": 9329,
+        "size": 6839,
         "extension": ".py",
-        "path": "apps/api/tests/test_curricula_seed.py"
+        "path": "apps/api/tests/integration/classrooms/test_docentes.py"
       },
       {
-        "name": "test_frequency.py",
+        "name": "test_estatisticas.py",
         "type": "file",
         "language": "Python",
-        "size": 40581,
+        "size": 3521,
         "extension": ".py",
-        "path": "apps/api/tests/test_frequency.py"
+        "path": "apps/api/tests/integration/classrooms/test_estatisticas.py"
       },
       {
-        "name": "test_logger.py",
+        "name": "test_listagem.py",
         "type": "file",
         "language": "Python",
-        "size": 5045,
+        "size": 11737,
         "extension": ".py",
-        "path": "apps/api/tests/test_logger.py"
+        "path": "apps/api/tests/integration/classrooms/test_listagem.py"
       },
       {
-        "name": "test_main.py",
+        "name": "test_mencoes.py",
         "type": "file",
         "language": "Python",
-        "size": 3468,
+        "size": 5614,
         "extension": ".py",
-        "path": "apps/api/tests/test_main.py"
+        "path": "apps/api/tests/integration/classrooms/test_mencoes.py"
       },
       {
-        "name": "test_me.py",
+        "name": "test_participantes.py",
         "type": "file",
         "language": "Python",
-        "size": 30945,
+        "size": 8755,
         "extension": ".py",
-        "path": "apps/api/tests/test_me.py"
+        "path": "apps/api/tests/integration/classrooms/test_participantes.py"
+      },
+      {
+        "name": "test_persistencia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9103,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/classrooms/test_persistencia.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13526,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/conftest.py"
+      },
+      {
+        "name": "frequency",
+        "type": "directory",
+        "path": "apps/api/tests/integration/frequency",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/frequency/__init__.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 912,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/frequency/conftest.py"
+      },
+      {
+        "name": "helpers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5776,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/frequency/helpers.py"
+      },
+      {
+        "name": "test_consulta.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11534,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/frequency/test_consulta.py"
+      },
+      {
+        "name": "test_marcacoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7646,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/frequency/test_marcacoes.py"
+      },
+      {
+        "name": "test_plano_de_aulas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7682,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/frequency/test_plano_de_aulas.py"
+      },
+      {
+        "name": "me",
+        "type": "directory",
+        "path": "apps/api/tests/integration/me",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/__init__.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1196,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/conftest.py"
+      },
+      {
+        "name": "helpers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2340,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/helpers.py"
+      },
+      {
+        "name": "test_configuracoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4354,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/test_configuracoes.py"
+      },
+      {
+        "name": "test_documentos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3985,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/test_documentos.py"
+      },
+      {
+        "name": "test_perfil.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10562,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/test_perfil.py"
+      },
+      {
+        "name": "test_profile_edit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7599,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/test_profile_edit.py"
+      },
+      {
+        "name": "test_restaurante.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9486,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/me/test_restaurante.py"
+      },
+      {
+        "name": "posts",
+        "type": "directory",
+        "path": "apps/api/tests/integration/posts",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/posts/__init__.py"
       },
       {
         "name": "test_posts.py",
         "type": "file",
         "language": "Python",
-        "size": 23899,
+        "size": 23784,
         "extension": ".py",
-        "path": "apps/api/tests/test_posts.py"
+        "path": "apps/api/tests/integration/posts/test_posts.py"
       },
       {
-        "name": "test_professors_seed.py",
+        "name": "public",
+        "type": "directory",
+        "path": "apps/api/tests/integration/public",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 7060,
+        "size": 0,
         "extension": ".py",
-        "path": "apps/api/tests/test_professors_seed.py"
+        "path": "apps/api/tests/integration/public/__init__.py"
       },
       {
         "name": "test_public_classrooms.py",
         "type": "file",
         "language": "Python",
-        "size": 24813,
+        "size": 25029,
         "extension": ".py",
-        "path": "apps/api/tests/test_public_classrooms.py"
+        "path": "apps/api/tests/integration/public/test_public_classrooms.py"
       },
       {
         "name": "test_public_courses.py",
         "type": "file",
         "language": "Python",
-        "size": 21053,
+        "size": 21191,
         "extension": ".py",
-        "path": "apps/api/tests/test_public_courses.py"
+        "path": "apps/api/tests/integration/public/test_public_courses.py"
       },
       {
         "name": "test_public_professors.py",
@@ -1117,23 +1319,37 @@
         "language": "Python",
         "size": 5709,
         "extension": ".py",
-        "path": "apps/api/tests/test_public_professors.py"
+        "path": "apps/api/tests/integration/public/test_public_professors.py"
       },
       {
         "name": "test_public_search.py",
         "type": "file",
         "language": "Python",
-        "size": 5733,
+        "size": 5752,
         "extension": ".py",
-        "path": "apps/api/tests/test_public_search.py"
+        "path": "apps/api/tests/integration/public/test_public_search.py"
       },
       {
         "name": "test_public_subjects.py",
         "type": "file",
         "language": "Python",
-        "size": 16051,
+        "size": 16110,
         "extension": ".py",
-        "path": "apps/api/tests/test_public_subjects.py"
+        "path": "apps/api/tests/integration/public/test_public_subjects.py"
+      },
+      {
+        "name": "rate_limit",
+        "type": "directory",
+        "path": "apps/api/tests/integration/rate_limit",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/rate_limit/__init__.py"
       },
       {
         "name": "test_rate_limit.py",
@@ -1141,39 +1357,107 @@
         "language": "Python",
         "size": 14217,
         "extension": ".py",
-        "path": "apps/api/tests/test_rate_limit.py"
+        "path": "apps/api/tests/integration/rate_limit/test_rate_limit.py"
       },
       {
-        "name": "test_recommendations.py",
-        "type": "file",
-        "language": "Python",
-        "size": 38544,
-        "extension": ".py",
-        "path": "apps/api/tests/test_recommendations.py"
+        "name": "recommendations",
+        "type": "directory",
+        "path": "apps/api/tests/integration/recommendations",
+        "children": []
       },
       {
-        "name": "test_restaurant.py",
+        "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 23795,
+        "size": 0,
         "extension": ".py",
-        "path": "apps/api/tests/test_restaurant.py"
+        "path": "apps/api/tests/integration/recommendations/__init__.py"
       },
       {
-        "name": "test_sigaa.py",
+        "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 8030,
+        "size": 1884,
         "extension": ".py",
-        "path": "apps/api/tests/test_sigaa.py"
+        "path": "apps/api/tests/integration/recommendations/conftest.py"
       },
       {
-        "name": "test_subject_statistics.py",
+        "name": "helpers.py",
         "type": "file",
         "language": "Python",
-        "size": 6893,
+        "size": 5006,
         "extension": ".py",
-        "path": "apps/api/tests/test_subject_statistics.py"
+        "path": "apps/api/tests/integration/recommendations/helpers.py"
+      },
+      {
+        "name": "test_matriz.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2938,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/recommendations/test_matriz.py"
+      },
+      {
+        "name": "test_ranking.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14129,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/recommendations/test_ranking.py"
+      },
+      {
+        "name": "test_requisitos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6784,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/recommendations/test_requisitos.py"
+      },
+      {
+        "name": "test_sincronizacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7173,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/recommendations/test_sincronizacao.py"
+      },
+      {
+        "name": "seed",
+        "type": "directory",
+        "path": "apps/api/tests/integration/seed",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/seed/__init__.py"
+      },
+      {
+        "name": "test_classrooms_seed.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5105,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/seed/test_classrooms_seed.py"
+      },
+      {
+        "name": "test_curricula_seed.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9329,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/seed/test_curricula_seed.py"
+      },
+      {
+        "name": "test_professors_seed.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7060,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/seed/test_professors_seed.py"
       },
       {
         "name": "test_subjects_seed.py",
@@ -1181,15 +1465,117 @@
         "language": "Python",
         "size": 4980,
         "extension": ".py",
-        "path": "apps/api/tests/test_subjects_seed.py"
+        "path": "apps/api/tests/integration/seed/test_subjects_seed.py"
       },
       {
-        "name": "test_sync.py",
+        "name": "sync",
+        "type": "directory",
+        "path": "apps/api/tests/integration/sync",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 27672,
+        "size": 0,
         "extension": ".py",
-        "path": "apps/api/tests/test_sync.py"
+        "path": "apps/api/tests/integration/sync/__init__.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1004,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/sync/conftest.py"
+      },
+      {
+        "name": "helpers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2597,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/sync/helpers.py"
+      },
+      {
+        "name": "test_jobs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14737,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/sync/test_jobs.py"
+      },
+      {
+        "name": "test_revalidacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10218,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/sync/test_revalidacao.py"
+      },
+      {
+        "name": "test_cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1049,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_cache.py"
+      },
+      {
+        "name": "test_courses.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7911,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_courses.py"
+      },
+      {
+        "name": "test_errors.py",
+        "type": "file",
+        "language": "Python",
+        "size": 678,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_errors.py"
+      },
+      {
+        "name": "test_logger.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5045,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_logger.py"
+      },
+      {
+        "name": "test_main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3435,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_main.py"
+      },
+      {
+        "name": "test_restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 24072,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_restaurant.py"
+      },
+      {
+        "name": "test_sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8030,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_sigaa.py"
+      },
+      {
+        "name": "test_subject_statistics.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6893,
+        "extension": ".py",
+        "path": "apps/api/tests/integration/test_subject_statistics.py"
       },
       {
         "name": "test_units.py",
@@ -1197,7 +1583,69 @@
         "language": "Python",
         "size": 2403,
         "extension": ".py",
-        "path": "apps/api/tests/test_units.py"
+        "path": "apps/api/tests/integration/test_units.py"
+      },
+      {
+        "name": "unit",
+        "type": "directory",
+        "path": "apps/api/tests/unit",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/__init__.py"
+      },
+      {
+        "name": "test_academic_calendar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2016,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/test_academic_calendar.py"
+      },
+      {
+        "name": "test_cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2230,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/test_cache.py"
+      },
+      {
+        "name": "test_cookies.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12897,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/test_cookies.py"
+      },
+      {
+        "name": "test_lessons.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9731,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/test_lessons.py"
+      },
+      {
+        "name": "test_photo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1166,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/test_photo.py"
+      },
+      {
+        "name": "test_recommendations.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1439,
+        "extension": ".py",
+        "path": "apps/api/tests/unit/test_recommendations.py"
       },
       {
         "name": "web",
@@ -1225,7 +1673,7 @@
         "name": "bun.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 245961,
+        "size": 246094,
         "extension": ".lock",
         "path": "apps/web/bun.lock"
       },
@@ -1255,7 +1703,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2255,
+        "size": 2254,
         "extension": ".json",
         "path": "apps/web/package.json"
       },
@@ -1581,7 +2029,7 @@
         "name": "TabFilter.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1124,
+        "size": 1132,
         "extension": ".tsx",
         "path": "apps/web/src/components/TabFilter.tsx"
       },
@@ -1814,6 +2262,14 @@
         "path": "apps/web/src/components/profile/DocumentDownloads.tsx"
       },
       {
+        "name": "EditProfile.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12921,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/profile/EditProfile.tsx"
+      },
+      {
         "name": "InstallPromptCard.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -1838,10 +2294,18 @@
         "path": "apps/web/src/components/profile/IosInstallTour.tsx"
       },
       {
+        "name": "PhotoCrop.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8913,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/profile/PhotoCrop.tsx"
+      },
+      {
         "name": "ProfileOverview.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7039,
+        "size": 7093,
         "extension": ".tsx",
         "path": "apps/web/src/components/profile/ProfileOverview.tsx"
       },
@@ -1855,7 +2319,7 @@
         "name": "RestaurantAccount.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 14238,
+        "size": 14137,
         "extension": ".tsx",
         "path": "apps/web/src/components/ru/RestaurantAccount.tsx"
       },
@@ -1955,7 +2419,7 @@
         "name": "RecommendationsSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4185,
+        "size": 4212,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/RecommendationsSection.tsx"
       },
@@ -2019,7 +2483,7 @@
         "name": "SubjectStatistics.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2924,
+        "size": 2975,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SubjectStatistics.tsx"
       },
@@ -2043,7 +2507,7 @@
         "name": "TurmaDetails.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4949,
+        "size": 4957,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaDetails.tsx"
       },
@@ -2509,7 +2973,7 @@
         "name": "profile.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2472,
+        "size": 2702,
         "extension": ".ts",
         "path": "apps/web/src/lib/profile.ts"
       },
@@ -2728,6 +3192,14 @@
         "path": "apps/web/src/queries/professors.ts"
       },
       {
+        "name": "profile-edit.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1497,
+        "extension": ".ts",
+        "path": "apps/web/src/queries/profile-edit.ts"
+      },
+      {
         "name": "recommendations.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2771,7 +3243,7 @@
         "name": "schema.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 94048,
+        "size": 96859,
         "extension": ".ts",
         "path": "apps/web/src/queries/schema.gen.ts"
       },
@@ -2887,7 +3359,7 @@
         "name": "perfil.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10343,
+        "size": 5953,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/perfil.tsx"
       },
@@ -3138,6 +3610,14 @@
         "path": "apps/web/tests/components/curriculum/SubjectDetails.test.tsx"
       },
       {
+        "name": "edit-profile.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 15644,
+        "extension": ".tsx",
+        "path": "apps/web/tests/components/edit-profile.test.tsx"
+      },
+      {
         "name": "home",
         "type": "directory",
         "path": "apps/web/tests/components/home",
@@ -3221,7 +3701,7 @@
         "name": "RestaurantAccount.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6414,
+        "size": 6365,
         "extension": ".tsx",
         "path": "apps/web/tests/components/ru/RestaurantAccount.test.tsx"
       },
@@ -3333,7 +3813,7 @@
         "name": "dom.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2552,
+        "size": 2633,
         "extension": ".ts",
         "path": "apps/web/tests/helpers/dom.ts"
       },
@@ -3531,7 +4011,7 @@
         "name": "profile.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2582,
+        "size": 3120,
         "extension": ".ts",
         "path": "apps/web/tests/lib/profile.test.ts"
       },
@@ -3767,7 +4247,7 @@
         "name": "profile.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3636,
+        "size": 3843,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/profile.test.tsx"
       },
@@ -4253,7 +4733,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3029,
+        "size": 3227,
         "extension": ".md",
         "path": "packages/sigaa-client/AGENTS.md"
       },
@@ -4261,7 +4741,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10515,
+        "size": 10944,
         "extension": ".md",
         "path": "packages/sigaa-client/README.md"
       },
@@ -4331,7 +4811,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 717,
+        "size": 716,
         "extension": ".toml",
         "path": "packages/sigaa-client/pyproject.toml"
       },
@@ -4415,7 +4895,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 1293,
+        "size": 1394,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/config.py"
       },
@@ -4431,7 +4911,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 14775,
+        "size": 14761,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/models.py"
       },
@@ -4485,15 +4965,23 @@
         "name": "profile.py",
         "type": "file",
         "language": "Python",
-        "size": 4698,
+        "size": 5278,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/profile.py"
+      },
+      {
+        "name": "profile_edit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5912,
+        "extension": ".py",
+        "path": "packages/sigaa-client/sigaa_client/private/profile_edit.py"
       },
       {
         "name": "restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 5386,
+        "size": 5522,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/restaurant.py"
       },
@@ -4501,7 +4989,7 @@
         "name": "session.py",
         "type": "file",
         "language": "Python",
-        "size": 8071,
+        "size": 8193,
         "extension": ".py",
         "path": "packages/sigaa-client/sigaa_client/private/session.py"
       },
@@ -4628,6 +5116,14 @@
         "path": "packages/sigaa-client/tests/__init__.py"
       },
       {
+        "name": "fakes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6030,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/fakes.py"
+      },
+      {
         "name": "fixtures",
         "type": "directory",
         "path": "packages/sigaa-client/tests/fixtures",
@@ -4642,12 +5138,196 @@
         "path": "packages/sigaa-client/tests/fixtures/carteirinha.pdf"
       },
       {
+        "name": "private",
+        "type": "directory",
+        "path": "packages/sigaa-client/tests/private",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/__init__.py"
+      },
+      {
+        "name": "classrooms",
+        "type": "directory",
+        "path": "packages/sigaa-client/tests/private/classrooms",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/__init__.py"
+      },
+      {
+        "name": "test_contexto.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2403,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_contexto.py"
+      },
+      {
+        "name": "test_estatisticas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4885,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_estatisticas.py"
+      },
+      {
+        "name": "test_frequencia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6703,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_frequencia.py"
+      },
+      {
+        "name": "test_listagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3633,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_listagem.py"
+      },
+      {
+        "name": "test_notas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6408,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_notas.py"
+      },
+      {
+        "name": "test_noticias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4853,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_noticias.py"
+      },
+      {
+        "name": "test_participantes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6752,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/classrooms/test_participantes.py"
+      },
+      {
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 13586,
+        "size": 10515,
         "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_auth.py"
+        "path": "packages/sigaa-client/tests/private/test_auth.py"
+      },
+      {
+        "name": "test_documents.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6562,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/test_documents.py"
+      },
+      {
+        "name": "test_posts.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10105,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/test_posts.py"
+      },
+      {
+        "name": "test_profile.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15466,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/test_profile.py"
+      },
+      {
+        "name": "test_restaurant.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12774,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/private/test_restaurant.py"
+      },
+      {
+        "name": "public",
+        "type": "directory",
+        "path": "packages/sigaa-client/tests/public",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/public/__init__.py"
+      },
+      {
+        "name": "test_classrooms.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9646,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/public/test_classrooms.py"
+      },
+      {
+        "name": "test_curricula.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13244,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/public/test_curricula.py"
+      },
+      {
+        "name": "test_professors.py",
+        "type": "file",
+        "language": "Python",
+        "size": 18941,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/public/test_professors.py"
+      },
+      {
+        "name": "test_session.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1436,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/public/test_session.py"
+      },
+      {
+        "name": "test_subjects.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14518,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/public/test_subjects.py"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "packages/sigaa-client/tests/scripts",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "packages/sigaa-client/tests/scripts/__init__.py"
       },
       {
         "name": "test_catalog.py",
@@ -4655,15 +5335,7 @@
         "language": "Python",
         "size": 3529,
         "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_catalog.py"
-      },
-      {
-        "name": "test_classrooms.py",
-        "type": "file",
-        "language": "Python",
-        "size": 33551,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_classrooms.py"
+        "path": "packages/sigaa-client/tests/scripts/test_catalog.py"
       },
       {
         "name": "test_collect.py",
@@ -4671,15 +5343,7 @@
         "language": "Python",
         "size": 19715,
         "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_collect.py"
-      },
-      {
-        "name": "test_documents.py",
-        "type": "file",
-        "language": "Python",
-        "size": 6542,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_documents.py"
+        "path": "packages/sigaa-client/tests/scripts/test_collect.py"
       },
       {
         "name": "test_internships.py",
@@ -4696,70 +5360,6 @@
         "size": 4031,
         "extension": ".py",
         "path": "packages/sigaa-client/tests/test_parsing.py"
-      },
-      {
-        "name": "test_posts.py",
-        "type": "file",
-        "language": "Python",
-        "size": 10105,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_posts.py"
-      },
-      {
-        "name": "test_profile.py",
-        "type": "file",
-        "language": "Python",
-        "size": 5856,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_profile.py"
-      },
-      {
-        "name": "test_public_classrooms.py",
-        "type": "file",
-        "language": "Python",
-        "size": 9646,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_public_classrooms.py"
-      },
-      {
-        "name": "test_public_curricula.py",
-        "type": "file",
-        "language": "Python",
-        "size": 13258,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_public_curricula.py"
-      },
-      {
-        "name": "test_public_professors.py",
-        "type": "file",
-        "language": "Python",
-        "size": 18941,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_public_professors.py"
-      },
-      {
-        "name": "test_public_session.py",
-        "type": "file",
-        "language": "Python",
-        "size": 1436,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_public_session.py"
-      },
-      {
-        "name": "test_public_subjects.py",
-        "type": "file",
-        "language": "Python",
-        "size": 14518,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_public_subjects.py"
-      },
-      {
-        "name": "test_restaurant.py",
-        "type": "file",
-        "language": "Python",
-        "size": 12852,
-        "extension": ".py",
-        "path": "packages/sigaa-client/tests/test_restaurant.py"
       },
       {
         "name": "unb-browser",
@@ -4855,7 +5455,7 @@
         "name": "test_restaurant.py",
         "type": "file",
         "language": "Python",
-        "size": 13573,
+        "size": 13927,
         "extension": ".py",
         "path": "packages/unb-browser/tests/test_restaurant.py"
       },
@@ -5007,7 +5607,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 729,
+        "size": 771,
         "extension": ".toml",
         "path": "pyproject.toml"
       },
@@ -5037,7 +5637,7 @@
         "name": "uv.lock",
         "type": "file",
         "language": "Lock File",
-        "size": 396965,
+        "size": 398582,
         "extension": ".lock",
         "path": "uv.lock"
       },
@@ -5052,7 +5652,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-08T12:39:13.328265+00:00",
+    "extracted_at": "2026-11-09T14:41:12.936292+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }

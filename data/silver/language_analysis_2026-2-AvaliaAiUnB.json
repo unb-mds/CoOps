@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-08T12:38:12.278648+00:00",
+  "analyzed_at": "2026-11-09T14:40:04.856317+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 80,
-  "total_bytes": 374768,
+  "total_files": 81,
+  "total_bytes": 381740,
   "languages": [
     {
       "language": "Python",
       "file_count": 37,
       "total_bytes": 159876,
-      "percentage": 42.66,
+      "percentage": 41.88,
       "files": [
         {
           "path": "scraper/scraper_sigaa.py",
@@ -82,7 +82,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 27.66,
+      "percentage": 27.15,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -107,8 +107,8 @@
     {
       "language": "Markdown",
       "file_count": 12,
-      "total_bytes": 72855,
-      "percentage": 19.44,
+      "total_bytes": 76089,
+      "percentage": 19.93,
       "files": [
         {
           "path": "docs/Modelo de Dados.md",
@@ -153,6 +153,12 @@
           "extension": ".md"
         },
         {
+          "path": "docs/index.md",
+          "name": "index.md",
+          "size": 3509,
+          "extension": ".md"
+        },
+        {
           "path": "RELEASE-v2.0.0.md",
           "name": "RELEASE-v2.0.0.md",
           "size": 2401,
@@ -163,12 +169,6 @@
           "name": "RELEASE-v1.0.0.md",
           "size": 1771,
           "extension": ".md"
-        },
-        {
-          "path": "docs/pipeline.md",
-          "name": "pipeline.md",
-          "size": 901,
-          "extension": ".md"
         }
       ]
     },
@@ -176,7 +176,7 @@
       "language": "HTML",
       "file_count": 9,
       "total_bytes": 22748,
-      "percentage": 6.07,
+      "percentage": 5.96,
       "files": [
         {
           "path": "app/templates/comparacao.html",
@@ -236,14 +236,20 @@
     },
     {
       "language": "CSS",
-      "file_count": 6,
-      "total_bytes": 7557,
-      "percentage": 2.02,
+      "file_count": 7,
+      "total_bytes": 10115,
+      "percentage": 2.65,
       "files": [
         {
           "path": "app/static/indicadores.css",
           "name": "indicadores.css",
           "size": 2605,
+          "extension": ".css"
+        },
+        {
+          "path": "docs/stylesheets/extra.css",
+          "name": "extra.css",
+          "size": 2558,
           "extension": ".css"
         },
         {
@@ -282,7 +288,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 4434,
-      "percentage": 1.18,
+      "percentage": 1.16,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -295,9 +301,15 @@
     {
       "language": "YAML",
       "file_count": 5,
-      "total_bytes": 2168,
-      "percentage": 0.58,
+      "total_bytes": 3348,
+      "percentage": 0.88,
       "files": [
+        {
+          "path": "mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 1720,
+          "extension": ".yml"
+        },
         {
           "path": ".github/workflows/seguranca.yml",
           "name": "seguranca.yml",
@@ -305,15 +317,9 @@
           "extension": ".yml"
         },
         {
-          "path": "mkdocs.yml",
-          "name": "mkdocs.yml",
-          "size": 561,
-          "extension": ".yml"
-        },
-        {
           "path": ".github/workflows/docs.yml",
           "name": "docs.yml",
-          "size": 475,
+          "size": 496,
           "extension": ".yml"
         },
         {
@@ -422,7 +428,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-08T12:39:13.310438+00:00",
+    "extracted_at": "2026-11-09T14:41:12.909932+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }

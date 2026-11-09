@@ -2,19 +2,19 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-08T12:38:13.524086+00:00",
+  "analyzed_at": "2026-11-09T14:40:07.147683+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 553,
-  "total_bytes": 13556205,
+  "total_files": 616,
+  "total_bytes": 13645421,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 23,
       "total_bytes": 5193614,
-      "percentage": 38.31,
+      "percentage": 38.06,
       "files": [
         {
           "path": "apps/web/public/images/ios-install-dock-dark.png",
@@ -82,7 +82,7 @@
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 2161302,
-      "percentage": 15.94,
+      "percentage": 15.84,
       "files": [
         {
           "path": "packages/unb-browser/tests/fixtures/cardapio-darcy-28-09.pdf",
@@ -126,7 +126,7 @@
       "language": "Unknown",
       "file_count": 13,
       "total_bytes": 1808250,
-      "percentage": 13.34,
+      "percentage": 13.25,
       "files": [
         {
           "path": "packages/sigaa-client/data/subjects.csv",
@@ -192,38 +192,14 @@
     },
     {
       "language": "Python",
-      "file_count": 161,
-      "total_bytes": 1125744,
-      "percentage": 8.3,
+      "file_count": 220,
+      "total_bytes": 1173247,
+      "percentage": 8.6,
       "files": [
-        {
-          "path": "apps/api/tests/test_classrooms.py",
-          "name": "test_classrooms.py",
-          "size": 55358,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_frequency.py",
-          "name": "test_frequency.py",
-          "size": 40581,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_recommendations.py",
-          "name": "test_recommendations.py",
-          "size": 38544,
-          "extension": ".py"
-        },
         {
           "path": "packages/sigaa-client/sigaa_client/private/classrooms.py",
           "name": "classrooms.py",
           "size": 37209,
-          "extension": ".py"
-        },
-        {
-          "path": "packages/sigaa-client/tests/test_classrooms.py",
-          "name": "test_classrooms.py",
-          "size": 33551,
           "extension": ".py"
         },
         {
@@ -233,41 +209,65 @@
           "extension": ".py"
         },
         {
-          "path": "apps/api/tests/test_me.py",
-          "name": "test_me.py",
-          "size": 30945,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_sync.py",
-          "name": "test_sync.py",
-          "size": 27672,
-          "extension": ".py"
-        },
-        {
-          "path": "apps/api/tests/test_public_classrooms.py",
+          "path": "apps/api/tests/integration/public/test_public_classrooms.py",
           "name": "test_public_classrooms.py",
-          "size": 24813,
+          "size": 25029,
           "extension": ".py"
         },
         {
-          "path": "apps/api/tests/test_posts.py",
+          "path": "apps/api/tests/integration/test_restaurant.py",
+          "name": "test_restaurant.py",
+          "size": 24072,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/integration/posts/test_posts.py",
           "name": "test_posts.py",
-          "size": 23899,
+          "size": 23784,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/integration/public/test_public_courses.py",
+          "name": "test_public_courses.py",
+          "size": 21191,
+          "extension": ".py"
+        },
+        {
+          "path": "packages/sigaa-client/tests/scripts/test_collect.py",
+          "name": "test_collect.py",
+          "size": 19715,
+          "extension": ".py"
+        },
+        {
+          "path": "packages/sigaa-client/tests/public/test_professors.py",
+          "name": "test_professors.py",
+          "size": 18941,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/api/db/models.py",
+          "name": "models.py",
+          "size": 16840,
+          "extension": ".py"
+        },
+        {
+          "path": "apps/api/tests/integration/public/test_public_subjects.py",
+          "name": "test_public_subjects.py",
+          "size": 16110,
           "extension": ".py"
         }
       ]
     },
     {
       "language": "TypeScript",
-      "file_count": 271,
-      "total_bytes": 1117712,
-      "percentage": 8.25,
+      "file_count": 275,
+      "total_bytes": 1156162,
+      "percentage": 8.47,
       "files": [
         {
           "path": "apps/web/src/queries/schema.gen.ts",
           "name": "schema.gen.ts",
-          "size": 94048,
+          "size": 96859,
           "extension": ".ts"
         },
         {
@@ -307,6 +307,12 @@
           "extension": ".tsx"
         },
         {
+          "path": "apps/web/tests/components/edit-profile.test.tsx",
+          "name": "edit-profile.test.tsx",
+          "size": 15644,
+          "extension": ".tsx"
+        },
+        {
           "path": "apps/web/tests/components/search/TurmaCard.test.tsx",
           "name": "TurmaCard.test.tsx",
           "size": 15271,
@@ -315,13 +321,7 @@
         {
           "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
           "name": "RestaurantAccount.tsx",
-          "size": 14238,
-          "extension": ".tsx"
-        },
-        {
-          "path": "apps/web/tests/routes/restaurant-share.test.tsx",
-          "name": "restaurant-share.test.tsx",
-          "size": 13986,
+          "size": 14137,
           "extension": ".tsx"
         }
       ]
@@ -330,7 +330,7 @@
       "language": "WebP Image",
       "file_count": 3,
       "total_bytes": 1017258,
-      "percentage": 7.5,
+      "percentage": 7.45,
       "files": [
         {
           "path": "apps/web/public/images/not-found/icc-corredor.webp",
@@ -355,19 +355,19 @@
     {
       "language": "Lock File",
       "file_count": 2,
-      "total_bytes": 642926,
-      "percentage": 4.74,
+      "total_bytes": 644676,
+      "percentage": 4.72,
       "files": [
         {
           "path": "uv.lock",
           "name": "uv.lock",
-          "size": 396965,
+          "size": 398582,
           "extension": ".lock"
         },
         {
           "path": "apps/web/bun.lock",
           "name": "bun.lock",
-          "size": 245961,
+          "size": 246094,
           "extension": ".lock"
         }
       ]
@@ -375,7 +375,7 @@
     {
       "language": "Markdown",
       "file_count": 36,
-      "total_bytes": 167001,
+      "total_bytes": 168444,
       "percentage": 1.23,
       "files": [
         {
@@ -405,7 +405,7 @@
         {
           "path": "packages/sigaa-client/README.md",
           "name": "README.md",
-          "size": 10515,
+          "size": 10944,
           "extension": ".md"
         },
         {
@@ -433,9 +433,9 @@
           "extension": ".md"
         },
         {
-          "path": "docs/segurança.md",
-          "name": "segurança.md",
-          "size": 4553,
+          "path": "apps/api/AGENTS.md",
+          "name": "AGENTS.md",
+          "size": 4716,
           "extension": ".md"
         }
       ]
@@ -443,8 +443,8 @@
     {
       "language": "JSON",
       "file_count": 15,
-      "total_bytes": 152879,
-      "percentage": 1.13,
+      "total_bytes": 152878,
+      "percentage": 1.12,
       "files": [
         {
           "path": "docs/mintlify/openapi.json",
@@ -461,7 +461,7 @@
         {
           "path": "apps/web/package.json",
           "name": "package.json",
-          "size": 2255,
+          "size": 2254,
           "extension": ".json"
         },
         {
@@ -583,7 +583,7 @@
     {
       "language": "YAML",
       "file_count": 5,
-      "total_bytes": 2786,
+      "total_bytes": 2794,
       "percentage": 0.02,
       "files": [
         {
@@ -595,7 +595,7 @@
         {
           "path": ".github/workflows/ci.yml",
           "name": "ci.yml",
-          "size": 997,
+          "size": 1005,
           "extension": ".yml"
         },
         {
@@ -621,25 +621,25 @@
     {
       "language": "TOML",
       "file_count": 4,
-      "total_bytes": 3215,
+      "total_bytes": 3278,
       "percentage": 0.02,
       "files": [
         {
           "path": "apps/api/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 1107,
+          "size": 1129,
           "extension": ".toml"
         },
         {
           "path": "pyproject.toml",
           "name": "pyproject.toml",
-          "size": 729,
+          "size": 771,
           "extension": ".toml"
         },
         {
           "path": "packages/sigaa-client/pyproject.toml",
           "name": "pyproject.toml",
-          "size": 717,
+          "size": 716,
           "extension": ".toml"
         },
         {
@@ -720,7 +720,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-08T12:39:13.325852+00:00",
+    "extracted_at": "2026-11-09T14:41:12.932484+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Followw.json"
   }
 }
