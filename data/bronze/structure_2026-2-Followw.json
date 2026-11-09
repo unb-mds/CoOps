@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Followw",
   "branch": "main",
-  "sha": "7219b37aefb6e46b1c4d363f382528f53d241837",
+  "sha": "4120c1c6ffd2fde8df066434d0401a901b9bf1cf",
   "tree": [
     {
       "name": ".agents",
@@ -182,7 +182,7 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "fc33b2ef686201005e96153c0ddb19e73661f148",
+      "sha": "14ede19106d4bce5d0000119c14830f653826171",
       "mode": "040000",
       "children": []
     },
@@ -238,7 +238,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "d355a3bb65cba0f6d39c653629a40a87f1792638",
+      "sha": "42b3ececbfb6ebec6ae2e17dfd471bbf7d734ee2",
       "mode": "040000",
       "children": []
     },
@@ -246,10 +246,10 @@
       "name": "ci.yml",
       "path": ".github/workflows/ci.yml",
       "type": "file",
-      "sha": "81dea79fc0dbb0cdde56655fc6e5315a0c7e94a3",
+      "sha": "bf40886e2c5d63647b8b2f71d7456b3b52fe25c6",
       "mode": "100644",
       "extension": ".yml",
-      "size": 997,
+      "size": 1005,
       "is_binary": false
     },
     {
@@ -324,10 +324,10 @@
       "name": "AGENTS.md",
       "path": "AGENTS.md",
       "type": "file",
-      "sha": "e8827659f59320698da54553a355cd3068c04150",
+      "sha": "7b825e1429486bcfe96abc7076a5381e6468553d",
       "mode": "100644",
       "extension": ".md",
-      "size": 2426,
+      "size": 2659,
       "is_binary": false
     },
     {
@@ -354,7 +354,7 @@
       "name": "apps",
       "path": "apps",
       "type": "directory",
-      "sha": "c2e7569c5dbe4b51e70f38b9cf74a9c3d81876be",
+      "sha": "9dd09e61edadfd90393f50c99cb0bf05d8b3966e",
       "mode": "040000",
       "children": []
     },
@@ -362,7 +362,7 @@
       "name": "api",
       "path": "apps/api",
       "type": "directory",
-      "sha": "0d77d633e695a49114e9619f1b4699c5dfc67bf9",
+      "sha": "880cf4a5d30fd88a9a7940b98b923e508485a61b",
       "mode": "040000",
       "children": []
     },
@@ -380,17 +380,17 @@
       "name": "AGENTS.md",
       "path": "apps/api/AGENTS.md",
       "type": "file",
-      "sha": "246a448e293a7d9606d7250983af180ba3f95778",
+      "sha": "c39b3700ee582c32822116a49d7918583905416e",
       "mode": "100644",
       "extension": ".md",
-      "size": 4133,
+      "size": 4716,
       "is_binary": false
     },
     {
       "name": "api",
       "path": "apps/api/api",
       "type": "directory",
-      "sha": "c732fce6f50cb85de555a78716a0e452544a9828",
+      "sha": "588ff1c48b3303b01ab3d9c960312b56a40b2426",
       "mode": "040000",
       "children": []
     },
@@ -672,17 +672,17 @@
       "name": "main.py",
       "path": "apps/api/api/main.py",
       "type": "file",
-      "sha": "bf21bb3a9fe9d47b983770b3081b1cae8c91b631",
+      "sha": "0e6cc8f6f76630a6131b82f34ea88a35f49fad1f",
       "mode": "100644",
       "extension": ".py",
-      "size": 6834,
+      "size": 6932,
       "is_binary": false
     },
     {
       "name": "modules",
       "path": "apps/api/api/modules",
       "type": "directory",
-      "sha": "84831e0eb4c58626c3ec38c523ce9746d2691feb",
+      "sha": "600b73f56aaf94f8cc2f8e0011ca0987e03bf085",
       "mode": "040000",
       "children": []
     },
@@ -786,38 +786,58 @@
       "name": "me",
       "path": "apps/api/api/modules/me",
       "type": "directory",
-      "sha": "b2202bc59af912a24742e30974e385256be9fd6c",
+      "sha": "ab1634e9fbd79c75a991491b9ea1fdd9614c2006",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "edit.py",
+      "path": "apps/api/api/modules/me/edit.py",
+      "type": "file",
+      "sha": "b6ba0168948292e9b0f8c60ccad5f13a339d6364",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1220,
+      "is_binary": false
+    },
+    {
+      "name": "photo.py",
+      "path": "apps/api/api/modules/me/photo.py",
+      "type": "file",
+      "sha": "5246658aa9f34c8744355c814b256541d9e40dd0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1148,
+      "is_binary": false
     },
     {
       "name": "profile.py",
       "path": "apps/api/api/modules/me/profile.py",
       "type": "file",
-      "sha": "c6b8ccd2035297212804522110ad4ad9af94eb87",
+      "sha": "81201b9d2afafb17636cd2d643d5f096017af0b7",
       "mode": "100644",
       "extension": ".py",
-      "size": 3012,
+      "size": 3040,
       "is_binary": false
     },
     {
       "name": "repository.py",
       "path": "apps/api/api/modules/me/repository.py",
       "type": "file",
-      "sha": "df3fc49edbd0f8a432a984b8c26e3fc9a25389ad",
+      "sha": "367e828eb0b0c5ba8a44ac38109ece19cb20b6a2",
       "mode": "100644",
       "extension": ".py",
-      "size": 6083,
+      "size": 6645,
       "is_binary": false
     },
     {
       "name": "router.py",
       "path": "apps/api/api/modules/me/router.py",
       "type": "file",
-      "sha": "63e19eab13d22f64695f5a802f0d3a0fa3fae6d2",
+      "sha": "61a3bf55a3783ef21a7555fe9e7f2da88daa7878",
       "mode": "100644",
       "extension": ".py",
-      "size": 4074,
+      "size": 6736,
       "is_binary": false
     },
     {
@@ -828,6 +848,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 1305,
+      "is_binary": false
+    },
+    {
+      "name": "upload_guard.py",
+      "path": "apps/api/api/modules/me/upload_guard.py",
+      "type": "file",
+      "sha": "acf7bdd86c5518a7b44234a8b535b043ccf84c42",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1598,
       "is_binary": false
     },
     {
@@ -1128,10 +1158,10 @@
       "name": "rate_limit.py",
       "path": "apps/api/api/rate_limit.py",
       "type": "file",
-      "sha": "9a736c18060b068c3b5da5dbb737af177fdbf584",
+      "sha": "2e0beec519919823db80f85ea6945005fd786d8d",
       "mode": "100644",
       "extension": ".py",
-      "size": 5195,
+      "size": 5518,
       "is_binary": false
     },
     {
@@ -1216,17 +1246,17 @@
       "name": "pyproject.toml",
       "path": "apps/api/pyproject.toml",
       "type": "file",
-      "sha": "21a20a0476bf8b75664762e1425408620c7d4149",
+      "sha": "cf9f5f51795fb227a4c01edb3d7a6aecae4ad6d6",
       "mode": "100644",
       "extension": ".toml",
-      "size": 1107,
+      "size": 1129,
       "is_binary": false
     },
     {
       "name": "tests",
       "path": "apps/api/tests",
       "type": "directory",
-      "sha": "248f7f4194d424e78a39c063835a3b86783fa790",
+      "sha": "be32ba8e4cf16075221ed846fff0ece1b6d8730a",
       "mode": "040000",
       "children": []
     },
@@ -1234,175 +1264,401 @@
       "name": "conftest.py",
       "path": "apps/api/tests/conftest.py",
       "type": "file",
-      "sha": "54db2b82f597aebc4091ae8c813e328213580757",
+      "sha": "31119ac4bc2f77d5e7f5423376fbf5fa818f36d3",
       "mode": "100644",
       "extension": ".py",
-      "size": 16315,
+      "size": 3104,
       "is_binary": false
     },
     {
-      "name": "test_academic_calendar.py",
-      "path": "apps/api/tests/test_academic_calendar.py",
+      "name": "integration",
+      "path": "apps/api/tests/integration",
+      "type": "directory",
+      "sha": "55292301f7bf1f0b287a97250274174a290ff88f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/__init__.py",
       "type": "file",
-      "sha": "9adb4b32907eebda1670a58e69dcfc08120675a9",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "mode": "100644",
       "extension": ".py",
-      "size": 2016,
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "auth",
+      "path": "apps/api/tests/integration/auth",
+      "type": "directory",
+      "sha": "a82b2bd3a0a2a844915c53529c507056b47066b2",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/auth/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
       "is_binary": false
     },
     {
       "name": "test_auth.py",
-      "path": "apps/api/tests/test_auth.py",
+      "path": "apps/api/tests/integration/auth/test_auth.py",
       "type": "file",
-      "sha": "7050c566729f823975dc2828b05a96251e529819",
+      "sha": "8334f3e6caf3a2964a9327003d6f0a80d3460a38",
       "mode": "100644",
       "extension": ".py",
-      "size": 9965,
+      "size": 11051,
       "is_binary": false
     },
     {
-      "name": "test_cache.py",
-      "path": "apps/api/tests/test_cache.py",
+      "name": "classrooms",
+      "path": "apps/api/tests/integration/classrooms",
+      "type": "directory",
+      "sha": "5da393fc1a2311cbf0c13ea5fa32f5d1d8235024",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/classrooms/__init__.py",
       "type": "file",
-      "sha": "de17becb023d73ba698f66b9a348806782ddc550",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "mode": "100644",
       "extension": ".py",
-      "size": 3244,
+      "size": 0,
       "is_binary": false
     },
     {
-      "name": "test_classrooms.py",
-      "path": "apps/api/tests/test_classrooms.py",
+      "name": "conftest.py",
+      "path": "apps/api/tests/integration/classrooms/conftest.py",
       "type": "file",
-      "sha": "5c62e725e97a1d60e4282de05cd1a9fea8702a12",
+      "sha": "61c98bd0f624db8449bbab5ead69423bdbf9d35f",
       "mode": "100644",
       "extension": ".py",
-      "size": 55358,
+      "size": 1295,
       "is_binary": false
     },
     {
-      "name": "test_classrooms_seed.py",
-      "path": "apps/api/tests/test_classrooms_seed.py",
+      "name": "helpers.py",
+      "path": "apps/api/tests/integration/classrooms/helpers.py",
       "type": "file",
-      "sha": "3e3f1faa76c82983c6b58b53e50b136f0f066d9e",
+      "sha": "bf7d8edd2c14ab70e770c3c5ccbbc929bb6b8117",
       "mode": "100644",
       "extension": ".py",
-      "size": 5105,
+      "size": 6225,
       "is_binary": false
     },
     {
-      "name": "test_cookies.py",
-      "path": "apps/api/tests/test_cookies.py",
+      "name": "test_contas_sombra.py",
+      "path": "apps/api/tests/integration/classrooms/test_contas_sombra.py",
       "type": "file",
-      "sha": "252c1c1be5c2534fa4a8a1c060f1499485143d0d",
+      "sha": "17fed60832220aa3493842e32cc099e587fa05c6",
       "mode": "100644",
       "extension": ".py",
-      "size": 13579,
+      "size": 4230,
       "is_binary": false
     },
     {
-      "name": "test_courses.py",
-      "path": "apps/api/tests/test_courses.py",
+      "name": "test_docentes.py",
+      "path": "apps/api/tests/integration/classrooms/test_docentes.py",
       "type": "file",
-      "sha": "7f0aa533b04dc649ddd9e50e14e2f2b2f573e35d",
+      "sha": "047d4497217c44dcaa6dc371d1da3cb21d065395",
       "mode": "100644",
       "extension": ".py",
-      "size": 7911,
+      "size": 6839,
       "is_binary": false
     },
     {
-      "name": "test_curricula_seed.py",
-      "path": "apps/api/tests/test_curricula_seed.py",
+      "name": "test_estatisticas.py",
+      "path": "apps/api/tests/integration/classrooms/test_estatisticas.py",
       "type": "file",
-      "sha": "88dfeed891954b24b5e7b1162f00e550cbfefaba",
+      "sha": "f6821ca17c82732c2d88f2d77f6e7abd46b41c45",
       "mode": "100644",
       "extension": ".py",
-      "size": 9329,
+      "size": 3521,
       "is_binary": false
     },
     {
-      "name": "test_frequency.py",
-      "path": "apps/api/tests/test_frequency.py",
+      "name": "test_listagem.py",
+      "path": "apps/api/tests/integration/classrooms/test_listagem.py",
       "type": "file",
-      "sha": "b062d90cfef7366e9d60db3981dd578ec23633e7",
+      "sha": "be9f875c952a75091dcd7fad202db967faa635a2",
       "mode": "100644",
       "extension": ".py",
-      "size": 40581,
+      "size": 11737,
       "is_binary": false
     },
     {
-      "name": "test_logger.py",
-      "path": "apps/api/tests/test_logger.py",
+      "name": "test_mencoes.py",
+      "path": "apps/api/tests/integration/classrooms/test_mencoes.py",
       "type": "file",
-      "sha": "0a185acc6f33176a2bd13660d5f76e95e0e56fff",
+      "sha": "b57384e2271c8836a75362de46ce0a6328e00be0",
       "mode": "100644",
       "extension": ".py",
-      "size": 5045,
+      "size": 5614,
       "is_binary": false
     },
     {
-      "name": "test_main.py",
-      "path": "apps/api/tests/test_main.py",
+      "name": "test_participantes.py",
+      "path": "apps/api/tests/integration/classrooms/test_participantes.py",
       "type": "file",
-      "sha": "98ac7ede33641080a2f612ed0839d86ba81d1022",
+      "sha": "1cb12fc3577e066d46374e92a829c4a59c718660",
       "mode": "100644",
       "extension": ".py",
-      "size": 3468,
+      "size": 8755,
       "is_binary": false
     },
     {
-      "name": "test_me.py",
-      "path": "apps/api/tests/test_me.py",
+      "name": "test_persistencia.py",
+      "path": "apps/api/tests/integration/classrooms/test_persistencia.py",
       "type": "file",
-      "sha": "9fb5a7c6eac26afefe8006d7454cbc832d56dc32",
+      "sha": "f57c0970a0719b592b1d3afa28249b22c62e494a",
       "mode": "100644",
       "extension": ".py",
-      "size": 30945,
+      "size": 9103,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "apps/api/tests/integration/conftest.py",
+      "type": "file",
+      "sha": "bc22890911be4510f85d59ff87a5301c56842d68",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 13526,
+      "is_binary": false
+    },
+    {
+      "name": "frequency",
+      "path": "apps/api/tests/integration/frequency",
+      "type": "directory",
+      "sha": "2b0fad64b639c06a4ec9663c1567f6d5a6fb98b8",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/frequency/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "apps/api/tests/integration/frequency/conftest.py",
+      "type": "file",
+      "sha": "9300823483a3bf6cd2210e13dc6970209f84ca02",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 912,
+      "is_binary": false
+    },
+    {
+      "name": "helpers.py",
+      "path": "apps/api/tests/integration/frequency/helpers.py",
+      "type": "file",
+      "sha": "72024e381dbe1ccca0159d0860f05de451d44962",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5776,
+      "is_binary": false
+    },
+    {
+      "name": "test_consulta.py",
+      "path": "apps/api/tests/integration/frequency/test_consulta.py",
+      "type": "file",
+      "sha": "f3b34c58c2e8e84d68bfdf01696583c462ce0b04",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 11534,
+      "is_binary": false
+    },
+    {
+      "name": "test_marcacoes.py",
+      "path": "apps/api/tests/integration/frequency/test_marcacoes.py",
+      "type": "file",
+      "sha": "960bebbb3aafe9720e0de205bd1be18caf13dcdd",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7646,
+      "is_binary": false
+    },
+    {
+      "name": "test_plano_de_aulas.py",
+      "path": "apps/api/tests/integration/frequency/test_plano_de_aulas.py",
+      "type": "file",
+      "sha": "b9ce93cb71a72618786e34ce8077a5fc75315b88",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7682,
+      "is_binary": false
+    },
+    {
+      "name": "me",
+      "path": "apps/api/tests/integration/me",
+      "type": "directory",
+      "sha": "eac0ffed9ac2d5833513e815057faaa36a1ae71b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/me/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "apps/api/tests/integration/me/conftest.py",
+      "type": "file",
+      "sha": "2782fc4b51f8b6573fb80b85a62e76553b98c540",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1196,
+      "is_binary": false
+    },
+    {
+      "name": "helpers.py",
+      "path": "apps/api/tests/integration/me/helpers.py",
+      "type": "file",
+      "sha": "ae5a4b948e69524389607c89a0d59cfe5ebdde12",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2340,
+      "is_binary": false
+    },
+    {
+      "name": "test_configuracoes.py",
+      "path": "apps/api/tests/integration/me/test_configuracoes.py",
+      "type": "file",
+      "sha": "8dd2014ce07d9910038e8cee884b2e38c50221b7",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4354,
+      "is_binary": false
+    },
+    {
+      "name": "test_documentos.py",
+      "path": "apps/api/tests/integration/me/test_documentos.py",
+      "type": "file",
+      "sha": "9f5c3e58c6b35054f94f48a381b1d9663c144359",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3985,
+      "is_binary": false
+    },
+    {
+      "name": "test_perfil.py",
+      "path": "apps/api/tests/integration/me/test_perfil.py",
+      "type": "file",
+      "sha": "a8faa393a541d93328221c2f0cee7f66a382b1a4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10562,
+      "is_binary": false
+    },
+    {
+      "name": "test_profile_edit.py",
+      "path": "apps/api/tests/integration/me/test_profile_edit.py",
+      "type": "file",
+      "sha": "00756810da6468c6373c5ee525c431cd509f54ff",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7599,
+      "is_binary": false
+    },
+    {
+      "name": "test_restaurante.py",
+      "path": "apps/api/tests/integration/me/test_restaurante.py",
+      "type": "file",
+      "sha": "407bf4322af61affc9dfd41036070ebd48248cf5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9486,
+      "is_binary": false
+    },
+    {
+      "name": "posts",
+      "path": "apps/api/tests/integration/posts",
+      "type": "directory",
+      "sha": "c31be93f5a33b6587b679aeafe6a8a1815298cd9",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/posts/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
       "is_binary": false
     },
     {
       "name": "test_posts.py",
-      "path": "apps/api/tests/test_posts.py",
+      "path": "apps/api/tests/integration/posts/test_posts.py",
       "type": "file",
-      "sha": "cf544ac945db447a4ca6e5ad98abe3055b96f1eb",
+      "sha": "c712655c696092eda1b9ca3db722f85d279e956a",
       "mode": "100644",
       "extension": ".py",
-      "size": 23899,
+      "size": 23784,
       "is_binary": false
     },
     {
-      "name": "test_professors_seed.py",
-      "path": "apps/api/tests/test_professors_seed.py",
+      "name": "public",
+      "path": "apps/api/tests/integration/public",
+      "type": "directory",
+      "sha": "877dd739580fa081ac3acc76d4b748dbfc57937e",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/public/__init__.py",
       "type": "file",
-      "sha": "d2ac564e3670c83a3bbec418bb4d06d8a8266635",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "mode": "100644",
       "extension": ".py",
-      "size": 7060,
+      "size": 0,
       "is_binary": false
     },
     {
       "name": "test_public_classrooms.py",
-      "path": "apps/api/tests/test_public_classrooms.py",
+      "path": "apps/api/tests/integration/public/test_public_classrooms.py",
       "type": "file",
-      "sha": "ab7ce43ce0951391ab2de2a15ab3b0f90b376e3b",
+      "sha": "dc424ba65fd6b8a15110866dd44508b95089d5fe",
       "mode": "100644",
       "extension": ".py",
-      "size": 24813,
+      "size": 25029,
       "is_binary": false
     },
     {
       "name": "test_public_courses.py",
-      "path": "apps/api/tests/test_public_courses.py",
+      "path": "apps/api/tests/integration/public/test_public_courses.py",
       "type": "file",
-      "sha": "fb6c0e87a6e7a5944b500bdf5ba70c266f88f4da",
+      "sha": "0d35863090656d499e8823b65bd8ccb0a2a75b33",
       "mode": "100644",
       "extension": ".py",
-      "size": 21053,
+      "size": 21191,
       "is_binary": false
     },
     {
       "name": "test_public_professors.py",
-      "path": "apps/api/tests/test_public_professors.py",
+      "path": "apps/api/tests/integration/public/test_public_professors.py",
       "type": "file",
       "sha": "98f6b13675aa8ace1e357acf5227190753cc53e7",
       "mode": "100644",
@@ -1412,27 +1668,45 @@
     },
     {
       "name": "test_public_search.py",
-      "path": "apps/api/tests/test_public_search.py",
+      "path": "apps/api/tests/integration/public/test_public_search.py",
       "type": "file",
-      "sha": "f964bbda930f0c5d3a11a10bcbab2d26eeeedb59",
+      "sha": "13dda1ab4569e9575393807dd58b542ebbc5b3fa",
       "mode": "100644",
       "extension": ".py",
-      "size": 5733,
+      "size": 5752,
       "is_binary": false
     },
     {
       "name": "test_public_subjects.py",
-      "path": "apps/api/tests/test_public_subjects.py",
+      "path": "apps/api/tests/integration/public/test_public_subjects.py",
       "type": "file",
-      "sha": "54c29921d7d9112b09175322010ae7053284bf8d",
+      "sha": "2518c030a4b2deda024a21fd122a0674ceaaf9bc",
       "mode": "100644",
       "extension": ".py",
-      "size": 16051,
+      "size": 16110,
+      "is_binary": false
+    },
+    {
+      "name": "rate_limit",
+      "path": "apps/api/tests/integration/rate_limit",
+      "type": "directory",
+      "sha": "bc0c0192b4a015c78c473343e5d8acbd97bf387b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/rate_limit/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
       "is_binary": false
     },
     {
       "name": "test_rate_limit.py",
-      "path": "apps/api/tests/test_rate_limit.py",
+      "path": "apps/api/tests/integration/rate_limit/test_rate_limit.py",
       "type": "file",
       "sha": "2ef5523ecfc927ca2a736b9fe098e8a0b95c696d",
       "mode": "100644",
@@ -1441,28 +1715,262 @@
       "is_binary": false
     },
     {
-      "name": "test_recommendations.py",
-      "path": "apps/api/tests/test_recommendations.py",
+      "name": "recommendations",
+      "path": "apps/api/tests/integration/recommendations",
+      "type": "directory",
+      "sha": "24affad9496fa26a4b9e039681decb6a045b96fb",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/recommendations/__init__.py",
       "type": "file",
-      "sha": "bd842ee4455a208f4b8513a5d08dfb674146a19f",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "mode": "100644",
       "extension": ".py",
-      "size": 38544,
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "apps/api/tests/integration/recommendations/conftest.py",
+      "type": "file",
+      "sha": "498f4b10c910ba5479f2f416fef40ac7ad4d71a5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1884,
+      "is_binary": false
+    },
+    {
+      "name": "helpers.py",
+      "path": "apps/api/tests/integration/recommendations/helpers.py",
+      "type": "file",
+      "sha": "650beb088e0c0a1fab3b3bd3b7f47618b4d25995",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5006,
+      "is_binary": false
+    },
+    {
+      "name": "test_matriz.py",
+      "path": "apps/api/tests/integration/recommendations/test_matriz.py",
+      "type": "file",
+      "sha": "692f65794177fc0d93d76eb39b71119749dd0fb2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2938,
+      "is_binary": false
+    },
+    {
+      "name": "test_ranking.py",
+      "path": "apps/api/tests/integration/recommendations/test_ranking.py",
+      "type": "file",
+      "sha": "a435747c1f845a518f7e5ad0fbd083aea739814f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 14129,
+      "is_binary": false
+    },
+    {
+      "name": "test_requisitos.py",
+      "path": "apps/api/tests/integration/recommendations/test_requisitos.py",
+      "type": "file",
+      "sha": "a8eee9179a8398b6ebc8e3df29f12ea0dd032966",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6784,
+      "is_binary": false
+    },
+    {
+      "name": "test_sincronizacao.py",
+      "path": "apps/api/tests/integration/recommendations/test_sincronizacao.py",
+      "type": "file",
+      "sha": "aa1b4e2b234b4bdf3f089dddedf64dd474ca524e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7173,
+      "is_binary": false
+    },
+    {
+      "name": "seed",
+      "path": "apps/api/tests/integration/seed",
+      "type": "directory",
+      "sha": "0aa6abbf5fdd4fac2be204fc676d88acdd305569",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/seed/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "test_classrooms_seed.py",
+      "path": "apps/api/tests/integration/seed/test_classrooms_seed.py",
+      "type": "file",
+      "sha": "3e3f1faa76c82983c6b58b53e50b136f0f066d9e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5105,
+      "is_binary": false
+    },
+    {
+      "name": "test_curricula_seed.py",
+      "path": "apps/api/tests/integration/seed/test_curricula_seed.py",
+      "type": "file",
+      "sha": "88dfeed891954b24b5e7b1162f00e550cbfefaba",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9329,
+      "is_binary": false
+    },
+    {
+      "name": "test_professors_seed.py",
+      "path": "apps/api/tests/integration/seed/test_professors_seed.py",
+      "type": "file",
+      "sha": "d2ac564e3670c83a3bbec418bb4d06d8a8266635",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7060,
+      "is_binary": false
+    },
+    {
+      "name": "test_subjects_seed.py",
+      "path": "apps/api/tests/integration/seed/test_subjects_seed.py",
+      "type": "file",
+      "sha": "9723ff7d6567e4178c3d327c1e8a53e1af7f7f8a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4980,
+      "is_binary": false
+    },
+    {
+      "name": "sync",
+      "path": "apps/api/tests/integration/sync",
+      "type": "directory",
+      "sha": "258f6749115fd4510b4064daaf2c473b570aecff",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/integration/sync/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "apps/api/tests/integration/sync/conftest.py",
+      "type": "file",
+      "sha": "8865a99f83b83f22037be4ae0f2e72af339fa182",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1004,
+      "is_binary": false
+    },
+    {
+      "name": "helpers.py",
+      "path": "apps/api/tests/integration/sync/helpers.py",
+      "type": "file",
+      "sha": "6a0f39a8268b9c60275d100ec28cef751c417d37",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2597,
+      "is_binary": false
+    },
+    {
+      "name": "test_jobs.py",
+      "path": "apps/api/tests/integration/sync/test_jobs.py",
+      "type": "file",
+      "sha": "edcc749c8a7adf135f4a5f98cc6f18b2f7d06235",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 14737,
+      "is_binary": false
+    },
+    {
+      "name": "test_revalidacao.py",
+      "path": "apps/api/tests/integration/sync/test_revalidacao.py",
+      "type": "file",
+      "sha": "c698e656442f97bfe655c180378ca08bf091e2f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10218,
+      "is_binary": false
+    },
+    {
+      "name": "test_cache.py",
+      "path": "apps/api/tests/integration/test_cache.py",
+      "type": "file",
+      "sha": "cfcc7a94af609697c5c480721b9b7d04353963be",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1049,
+      "is_binary": false
+    },
+    {
+      "name": "test_courses.py",
+      "path": "apps/api/tests/integration/test_courses.py",
+      "type": "file",
+      "sha": "7f0aa533b04dc649ddd9e50e14e2f2b2f573e35d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7911,
+      "is_binary": false
+    },
+    {
+      "name": "test_errors.py",
+      "path": "apps/api/tests/integration/test_errors.py",
+      "type": "file",
+      "sha": "007d64e15703a56ea7b4d81108a97a4401523a67",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 678,
+      "is_binary": false
+    },
+    {
+      "name": "test_logger.py",
+      "path": "apps/api/tests/integration/test_logger.py",
+      "type": "file",
+      "sha": "0a185acc6f33176a2bd13660d5f76e95e0e56fff",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5045,
+      "is_binary": false
+    },
+    {
+      "name": "test_main.py",
+      "path": "apps/api/tests/integration/test_main.py",
+      "type": "file",
+      "sha": "fdbebb049c30f89d8af2ad4d6ccb2c7a69ec6290",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3435,
       "is_binary": false
     },
     {
       "name": "test_restaurant.py",
-      "path": "apps/api/tests/test_restaurant.py",
+      "path": "apps/api/tests/integration/test_restaurant.py",
       "type": "file",
-      "sha": "3870f4af28ecb31769c4e3902611307b4aa1fe3f",
+      "sha": "3728961b25bb0ddbd4c138a92047f021e3349bca",
       "mode": "100644",
       "extension": ".py",
-      "size": 23795,
+      "size": 24072,
       "is_binary": false
     },
     {
       "name": "test_sigaa.py",
-      "path": "apps/api/tests/test_sigaa.py",
+      "path": "apps/api/tests/integration/test_sigaa.py",
       "type": "file",
       "sha": "cdd829d508871d4d8c3b12148320bc165d2d1059",
       "mode": "100644",
@@ -1472,7 +1980,7 @@
     },
     {
       "name": "test_subject_statistics.py",
-      "path": "apps/api/tests/test_subject_statistics.py",
+      "path": "apps/api/tests/integration/test_subject_statistics.py",
       "type": "file",
       "sha": "f588cefcb003bfb568238a673d0c838274cc23de",
       "mode": "100644",
@@ -1481,28 +1989,8 @@
       "is_binary": false
     },
     {
-      "name": "test_subjects_seed.py",
-      "path": "apps/api/tests/test_subjects_seed.py",
-      "type": "file",
-      "sha": "9723ff7d6567e4178c3d327c1e8a53e1af7f7f8a",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 4980,
-      "is_binary": false
-    },
-    {
-      "name": "test_sync.py",
-      "path": "apps/api/tests/test_sync.py",
-      "type": "file",
-      "sha": "9c26520ee149f0bebda78b9e406e1ec08ffb4ace",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 27672,
-      "is_binary": false
-    },
-    {
       "name": "test_units.py",
-      "path": "apps/api/tests/test_units.py",
+      "path": "apps/api/tests/integration/test_units.py",
       "type": "file",
       "sha": "3eba8ed349b6344c68e67b136f075c65f20787ba",
       "mode": "100644",
@@ -1511,10 +1999,88 @@
       "is_binary": false
     },
     {
+      "name": "unit",
+      "path": "apps/api/tests/unit",
+      "type": "directory",
+      "sha": "673daa983289e679be1992f37ced2629d11cfad1",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "apps/api/tests/unit/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "test_academic_calendar.py",
+      "path": "apps/api/tests/unit/test_academic_calendar.py",
+      "type": "file",
+      "sha": "9adb4b32907eebda1670a58e69dcfc08120675a9",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2016,
+      "is_binary": false
+    },
+    {
+      "name": "test_cache.py",
+      "path": "apps/api/tests/unit/test_cache.py",
+      "type": "file",
+      "sha": "5edc22674e6ab102a5a191bd780ea863eec4717f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2230,
+      "is_binary": false
+    },
+    {
+      "name": "test_cookies.py",
+      "path": "apps/api/tests/unit/test_cookies.py",
+      "type": "file",
+      "sha": "8e1704a61e9249b8593ee5d0f9932c35e7231def",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 12897,
+      "is_binary": false
+    },
+    {
+      "name": "test_lessons.py",
+      "path": "apps/api/tests/unit/test_lessons.py",
+      "type": "file",
+      "sha": "627bf3db5468f3497ce9ef8564d383db3f27c63d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9731,
+      "is_binary": false
+    },
+    {
+      "name": "test_photo.py",
+      "path": "apps/api/tests/unit/test_photo.py",
+      "type": "file",
+      "sha": "e8362ee1b089b9b2ea047de162d07ece40573f1c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1166,
+      "is_binary": false
+    },
+    {
+      "name": "test_recommendations.py",
+      "path": "apps/api/tests/unit/test_recommendations.py",
+      "type": "file",
+      "sha": "5b1d9bc3fdf9bc28f756c0626382748b3ff3fbce",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1439,
+      "is_binary": false
+    },
+    {
       "name": "web",
       "path": "apps/web",
       "type": "directory",
-      "sha": "510c67504eab1423a71df935652d43a82da98802",
+      "sha": "6d0b016098cd4dd1996b022c244ed407850103d5",
       "mode": "040000",
       "children": []
     },
@@ -1542,10 +2108,10 @@
       "name": "bun.lock",
       "path": "apps/web/bun.lock",
       "type": "file",
-      "sha": "9324a5de90b6341a5140123a28f4b903951e1d73",
+      "sha": "24e1d1891697c58f064818e52370a549e13c1629",
       "mode": "100644",
       "extension": ".lock",
-      "size": 245961,
+      "size": 246094,
       "is_binary": false
     },
     {
@@ -1580,10 +2146,10 @@
       "name": "package.json",
       "path": "apps/web/package.json",
       "type": "file",
-      "sha": "cc022c27163ef338c9451bf38724f116e93969b4",
+      "sha": "15a45db35dc65b8abc1abad7fc7fd013d43c3a0d",
       "mode": "100644",
       "extension": ".json",
-      "size": 2255,
+      "size": 2254,
       "is_binary": false
     },
     {
@@ -1784,7 +2350,7 @@
       "name": "src",
       "path": "apps/web/src",
       "type": "directory",
-      "sha": "b060d2681a5db4f72552412d1d0c8b3efd57dd3b",
+      "sha": "01f4f46ff63f073f1a65ed6d90b6049ca21456f7",
       "mode": "040000",
       "children": []
     },
@@ -1802,7 +2368,7 @@
       "name": "components",
       "path": "apps/web/src/components",
       "type": "directory",
-      "sha": "604f88f13040f5aeec5ded4b1448daf9c89c3c3b",
+      "sha": "7cd6384abe3584d5e533991137931d105d180ee5",
       "mode": "040000",
       "children": []
     },
@@ -1990,10 +2556,10 @@
       "name": "TabFilter.tsx",
       "path": "apps/web/src/components/TabFilter.tsx",
       "type": "file",
-      "sha": "65d665fd1603bbfc0ce4e641ef926d7e41f6ef09",
+      "sha": "acc1d90d5bd110cc06f47d1a2edc20fb3c357834",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1124,
+      "size": 1132,
       "is_binary": false
     },
     {
@@ -2270,7 +2836,7 @@
       "name": "profile",
       "path": "apps/web/src/components/profile",
       "type": "directory",
-      "sha": "36009f36e5b238c5ced889ce1d094df433f7fa88",
+      "sha": "c2ded77e7b1d21b610861a0ac5f7d424f3804d9e",
       "mode": "040000",
       "children": []
     },
@@ -2282,6 +2848,16 @@
       "mode": "100644",
       "extension": ".tsx",
       "size": 3931,
+      "is_binary": false
+    },
+    {
+      "name": "EditProfile.tsx",
+      "path": "apps/web/src/components/profile/EditProfile.tsx",
+      "type": "file",
+      "sha": "755b192b5c51dfc1dfd10e28e61fb25dc883be12",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 12921,
       "is_binary": false
     },
     {
@@ -2315,20 +2891,30 @@
       "is_binary": false
     },
     {
+      "name": "PhotoCrop.tsx",
+      "path": "apps/web/src/components/profile/PhotoCrop.tsx",
+      "type": "file",
+      "sha": "e6b726dc23fac9a53a65e1454facadf8aa1a8d50",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 8913,
+      "is_binary": false
+    },
+    {
       "name": "ProfileOverview.tsx",
       "path": "apps/web/src/components/profile/ProfileOverview.tsx",
       "type": "file",
-      "sha": "70ce73e87ae479082f48edd2f5ae85f86bb01c4b",
+      "sha": "0248615555e6e18a768f4cc75c9db82101bcd027",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 7039,
+      "size": 7093,
       "is_binary": false
     },
     {
       "name": "ru",
       "path": "apps/web/src/components/ru",
       "type": "directory",
-      "sha": "10b754edcddd9a47c88505b4add029915f081e9f",
+      "sha": "f4db335138b4918b7607bb0fc15c45402bf8b7a3",
       "mode": "040000",
       "children": []
     },
@@ -2336,10 +2922,10 @@
       "name": "RestaurantAccount.tsx",
       "path": "apps/web/src/components/ru/RestaurantAccount.tsx",
       "type": "file",
-      "sha": "a8c1fd55a340a2e3a60fd637eecc806bf05d755a",
+      "sha": "ccf0f51f527e492aa04f7eaa7747ca5d1f75be06",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 14238,
+      "size": 14137,
       "is_binary": false
     },
     {
@@ -2404,7 +2990,7 @@
       "name": "search",
       "path": "apps/web/src/components/search",
       "type": "directory",
-      "sha": "f06f421ae1844b9ba4485f8d36bd124f4d10d0ef",
+      "sha": "f76e7eddad783cff4d00c4045a5e9a4e91e55b42",
       "mode": "040000",
       "children": []
     },
@@ -2462,10 +3048,10 @@
       "name": "RecommendationsSection.tsx",
       "path": "apps/web/src/components/search/RecommendationsSection.tsx",
       "type": "file",
-      "sha": "4ec59912cd160734e67d99ff212fd2d276f30626",
+      "sha": "e7f60ca9f94ae4a20fed9009d6c453da347e9f1c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4185,
+      "size": 4212,
       "is_binary": false
     },
     {
@@ -2542,10 +3128,10 @@
       "name": "SubjectStatistics.tsx",
       "path": "apps/web/src/components/search/SubjectStatistics.tsx",
       "type": "file",
-      "sha": "04e1552da1d8492dfeb0323440a1192f17f2d6de",
+      "sha": "96f1d50d5918538f736658b2011d4f954539f08a",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2924,
+      "size": 2975,
       "is_binary": false
     },
     {
@@ -2572,10 +3158,10 @@
       "name": "TurmaDetails.tsx",
       "path": "apps/web/src/components/search/TurmaDetails.tsx",
       "type": "file",
-      "sha": "5f5b93f5fcbdd67219823dca2e2f4a0203bb8a16",
+      "sha": "811afb6af8ee1b0321d7f409ee486e7b99c1d2c0",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4949,
+      "size": 4957,
       "is_binary": false
     },
     {
@@ -2912,7 +3498,7 @@
       "name": "lib",
       "path": "apps/web/src/lib",
       "type": "directory",
-      "sha": "494359afbdb4e262b0d8bcdde95eca13f4f045be",
+      "sha": "01e9e5c3826717f159b5378f5ed3daa6ed676f68",
       "mode": "040000",
       "children": []
     },
@@ -3158,10 +3744,10 @@
       "name": "profile.ts",
       "path": "apps/web/src/lib/profile.ts",
       "type": "file",
-      "sha": "124b1e520d3fd48dde4a41327666324a6f31b54d",
+      "sha": "1e30d4ca727949b388510fce81968e93d9f8c1e1",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2472,
+      "size": 2702,
       "is_binary": false
     },
     {
@@ -3288,7 +3874,7 @@
       "name": "queries",
       "path": "apps/web/src/queries",
       "type": "directory",
-      "sha": "4a6cbbcd7cdec0f7e0cf1209795e0d2cf7871e7b",
+      "sha": "5373c02602726f6ef79a7b80eff72c8e2a6c8b33",
       "mode": "040000",
       "children": []
     },
@@ -3433,6 +4019,16 @@
       "is_binary": false
     },
     {
+      "name": "profile-edit.ts",
+      "path": "apps/web/src/queries/profile-edit.ts",
+      "type": "file",
+      "sha": "bf76a3c2b8b1d8459e6ad5e69553ea1dce6bff46",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1497,
+      "is_binary": false
+    },
+    {
       "name": "recommendations.ts",
       "path": "apps/web/src/queries/recommendations.ts",
       "type": "file",
@@ -3486,10 +4082,10 @@
       "name": "schema.gen.ts",
       "path": "apps/web/src/queries/schema.gen.ts",
       "type": "file",
-      "sha": "22f1e218bf068ea3f58d06562ff91c4a70cd56bc",
+      "sha": "bab83c1a2b83b4ccbeeb442d3b31d6ae4a0323c4",
       "mode": "100644",
       "extension": ".ts",
-      "size": 94048,
+      "size": 96859,
       "is_binary": false
     },
     {
@@ -3556,7 +4152,7 @@
       "name": "routes",
       "path": "apps/web/src/routes",
       "type": "directory",
-      "sha": "ce32c24740934cc3d383c075b93f275479e959ee",
+      "sha": "fc3562d1479b84867f6a22a31764b77edd9ba104",
       "mode": "040000",
       "children": []
     },
@@ -3594,7 +4190,7 @@
       "name": "_app",
       "path": "apps/web/src/routes/_app",
       "type": "directory",
-      "sha": "2771d1a5c42c32112fecc80c541086dc6d5050ba",
+      "sha": "997ed50ee96b57f4c7d3081e12e7cdcc535a5721",
       "mode": "040000",
       "children": []
     },
@@ -3632,10 +4228,10 @@
       "name": "perfil.tsx",
       "path": "apps/web/src/routes/_app/perfil.tsx",
       "type": "file",
-      "sha": "0043b1eadc3b6803f796e42024702c81ab5a1e17",
+      "sha": "cde8dd346c852701a37b27c482e853dea120f78b",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 10343,
+      "size": 5953,
       "is_binary": false
     },
     {
@@ -3722,7 +4318,7 @@
       "name": "tests",
       "path": "apps/web/tests",
       "type": "directory",
-      "sha": "133a55afecf6f2e9023dbfeab3234f2b093bfea1",
+      "sha": "14d71ecca4e7048d7b2d7b7161c57bf7e45505fb",
       "mode": "040000",
       "children": []
     },
@@ -3740,7 +4336,7 @@
       "name": "components",
       "path": "apps/web/tests/components",
       "type": "directory",
-      "sha": "a444f67470e2be570fcca4734e86b5bcb5aca176",
+      "sha": "57b603dfe1c0682849e2402cbbea1574433c4553",
       "mode": "040000",
       "children": []
     },
@@ -3949,6 +4545,16 @@
       "is_binary": false
     },
     {
+      "name": "edit-profile.test.tsx",
+      "path": "apps/web/tests/components/edit-profile.test.tsx",
+      "type": "file",
+      "sha": "2ca9dd888e744a6d46a653623c24e6a5eb5e0e16",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 15644,
+      "is_binary": false
+    },
+    {
       "name": "home",
       "path": "apps/web/tests/components/home",
       "type": "directory",
@@ -4046,7 +4652,7 @@
       "name": "ru",
       "path": "apps/web/tests/components/ru",
       "type": "directory",
-      "sha": "4bbbecd72d5beb6d4ef90990c7c0575ed3e6a21e",
+      "sha": "b21f9c20730c79ebcc2a63440b0b441dec9845a3",
       "mode": "040000",
       "children": []
     },
@@ -4054,10 +4660,10 @@
       "name": "RestaurantAccount.test.tsx",
       "path": "apps/web/tests/components/ru/RestaurantAccount.test.tsx",
       "type": "file",
-      "sha": "fdcb36b4bbd23442c0268cbf9ca76a06c90fc8dc",
+      "sha": "42ba0fc2e6e11b3777f4f73de3bbf0cfacba16b1",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 6414,
+      "size": 6365,
       "is_binary": false
     },
     {
@@ -4178,7 +4784,7 @@
       "name": "helpers",
       "path": "apps/web/tests/helpers",
       "type": "directory",
-      "sha": "0ec75b73f2953efa4b32429a174ba3cc68cdbaec",
+      "sha": "7ddeec62029878aa3c61d002e1913d76bf18f77c",
       "mode": "040000",
       "children": []
     },
@@ -4196,10 +4802,10 @@
       "name": "dom.ts",
       "path": "apps/web/tests/helpers/dom.ts",
       "type": "file",
-      "sha": "a487a4b2952d1d42e343cd2f6cca1d734cbd74b0",
+      "sha": "bc044e842790e4729ee1a823079a66eee38fca82",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2552,
+      "size": 2633,
       "is_binary": false
     },
     {
@@ -4300,7 +4906,7 @@
       "name": "lib",
       "path": "apps/web/tests/lib",
       "type": "directory",
-      "sha": "5afe8ec81a54934296012c4b6ce711b4f4c3d63c",
+      "sha": "68741422e2e743b3f7fa481066f1f3a5885bc8f2",
       "mode": "040000",
       "children": []
     },
@@ -4446,10 +5052,10 @@
       "name": "profile.test.ts",
       "path": "apps/web/tests/lib/profile.test.ts",
       "type": "file",
-      "sha": "38d9a838ef63cf2d3e73582e68bd7b38a08386a9",
+      "sha": "2139a2127852999e4063795ad782e38617edd580",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2582,
+      "size": 3120,
       "is_binary": false
     },
     {
@@ -4644,7 +5250,7 @@
       "name": "routes",
       "path": "apps/web/tests/routes",
       "type": "directory",
-      "sha": "832099f278e3dbf55f524bf7c4f7d0309d1f1721",
+      "sha": "7e3c5f71b76a5b60b0049c08fc0c8bb8f4281212",
       "mode": "040000",
       "children": []
     },
@@ -4742,10 +5348,10 @@
       "name": "profile.test.tsx",
       "path": "apps/web/tests/routes/profile.test.tsx",
       "type": "file",
-      "sha": "f6014224b2b81bcd09c158df9f06e61c64504aa6",
+      "sha": "6e7b9eb471f938394969179c8ac94a4130c3db68",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3636,
+      "size": 3843,
       "is_binary": false
     },
     {
@@ -4842,7 +5448,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "7695b6127e8eceedf6ac8cee7af1efb02d3371ac",
+      "sha": "4e7fa2a9e6f0c26fdb8b0be453b0525190286bcb",
       "mode": "040000",
       "children": []
     },
@@ -5104,7 +5710,7 @@
       "name": "cache-e-sincronizacao.md",
       "path": "docs/cache-e-sincronizacao.md",
       "type": "file",
-      "sha": "0ce93a1971e2172a1f52a3ecc69ec7198264e921",
+      "sha": "7b6d02643981b75faa70de511bf64e9f3b055e7a",
       "mode": "100644",
       "extension": ".md",
       "size": 11293,
@@ -5338,7 +5944,7 @@
       "name": "packages",
       "path": "packages",
       "type": "directory",
-      "sha": "9d3990c7c7b0b67d0f57b8a371591cde9faa1e28",
+      "sha": "8ee5368c8b45256304252377e11d28ad47e99ee2",
       "mode": "040000",
       "children": []
     },
@@ -5346,7 +5952,7 @@
       "name": "sigaa-client",
       "path": "packages/sigaa-client",
       "type": "directory",
-      "sha": "ed95acebe056e5e136ddd5a254a076b2a22a7f54",
+      "sha": "0b1386c4886027e598e4c1d3224c9267c5fd4a76",
       "mode": "040000",
       "children": []
     },
@@ -5354,20 +5960,20 @@
       "name": "AGENTS.md",
       "path": "packages/sigaa-client/AGENTS.md",
       "type": "file",
-      "sha": "c1dfc792d31624cf1f2f68ac8e38ea706fff2e3c",
+      "sha": "a3cc9d7995ec92e1f556f659d4b08463bfd89a86",
       "mode": "100644",
       "extension": ".md",
-      "size": 3029,
+      "size": 3227,
       "is_binary": false
     },
     {
       "name": "README.md",
       "path": "packages/sigaa-client/README.md",
       "type": "file",
-      "sha": "71d775a7db96dee49562aeb2e4d34f639621e444",
+      "sha": "5e8e2e56aeb48d8beb0b5980a2c3d2e1f412a5ec",
       "mode": "100644",
       "extension": ".md",
-      "size": 10515,
+      "size": 10944,
       "is_binary": false
     },
     {
@@ -5452,10 +6058,10 @@
       "name": "pyproject.toml",
       "path": "packages/sigaa-client/pyproject.toml",
       "type": "file",
-      "sha": "32ad17a810c31e0d1963e822e1b0e22fa1fa4fd4",
+      "sha": "cfabcfbd33b77a5372453fe16ccd3602ce4febf0",
       "mode": "100644",
       "extension": ".toml",
-      "size": 717,
+      "size": 716,
       "is_binary": false
     },
     {
@@ -5530,7 +6136,7 @@
       "name": "sigaa_client",
       "path": "packages/sigaa-client/sigaa_client",
       "type": "directory",
-      "sha": "7f5fa0feeb25f0724d71e6422f01b3f614262e20",
+      "sha": "0bac2750896648fadb9259e616f07b18b0f5c9cd",
       "mode": "040000",
       "children": []
     },
@@ -5558,10 +6164,10 @@
       "name": "config.py",
       "path": "packages/sigaa-client/sigaa_client/config.py",
       "type": "file",
-      "sha": "b57344b4add9d2b67841581b4e4bea3481bcd9e0",
+      "sha": "2374bf5ba797241895fa443d536494a956d931e9",
       "mode": "100644",
       "extension": ".py",
-      "size": 1293,
+      "size": 1394,
       "is_binary": false
     },
     {
@@ -5578,17 +6184,17 @@
       "name": "models.py",
       "path": "packages/sigaa-client/sigaa_client/models.py",
       "type": "file",
-      "sha": "33fc5f54c5983a524a0650a58a23ceb7326fd067",
+      "sha": "eef5e0367b29e5216522c8277b25cc8f771496cf",
       "mode": "100644",
       "extension": ".py",
-      "size": 14775,
+      "size": 14761,
       "is_binary": false
     },
     {
       "name": "private",
       "path": "packages/sigaa-client/sigaa_client/private",
       "type": "directory",
-      "sha": "03c928acbd34c31f5f3f7460bfcdb8b466c30ef4",
+      "sha": "71da0dc219a758c0bd5b6a223049425c307d4630",
       "mode": "040000",
       "children": []
     },
@@ -5646,30 +6252,40 @@
       "name": "profile.py",
       "path": "packages/sigaa-client/sigaa_client/private/profile.py",
       "type": "file",
-      "sha": "f54b4a954d5f5642e88b253f095a15025d19cc0a",
+      "sha": "b8ad81e918d8a558d90a4b5fbf09dc6bcdd0b774",
       "mode": "100644",
       "extension": ".py",
-      "size": 4698,
+      "size": 5278,
+      "is_binary": false
+    },
+    {
+      "name": "profile_edit.py",
+      "path": "packages/sigaa-client/sigaa_client/private/profile_edit.py",
+      "type": "file",
+      "sha": "9cc75d8fff3c6f9ffdeb2e30a68ba503b3d09ae4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5912,
       "is_binary": false
     },
     {
       "name": "restaurant.py",
       "path": "packages/sigaa-client/sigaa_client/private/restaurant.py",
       "type": "file",
-      "sha": "4d210fa6b3757fc88e2efa41deffc52295a4b526",
+      "sha": "84a08eed645d6c608b9eb2304d4ae090b01704f5",
       "mode": "100644",
       "extension": ".py",
-      "size": 5386,
+      "size": 5522,
       "is_binary": false
     },
     {
       "name": "session.py",
       "path": "packages/sigaa-client/sigaa_client/private/session.py",
       "type": "file",
-      "sha": "537f9f7488957d10b74ec1ee36339d6920fe8d06",
+      "sha": "dab76ce1461adca4c64f6a80d39053751a347117",
       "mode": "100644",
       "extension": ".py",
-      "size": 8071,
+      "size": 8193,
       "is_binary": false
     },
     {
@@ -5812,7 +6428,7 @@
       "name": "tests",
       "path": "packages/sigaa-client/tests",
       "type": "directory",
-      "sha": "b30c843b2e8be041b18874e2442aaede5f87e406",
+      "sha": "a9bb8db64c3f1a28f664d2a62dc345242e91e1b7",
       "mode": "040000",
       "children": []
     },
@@ -5824,6 +6440,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "fakes.py",
+      "path": "packages/sigaa-client/tests/fakes.py",
+      "type": "file",
+      "sha": "f8426c27d4b1f14b792a783819e19f05f3525dd7",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6030,
       "is_binary": false
     },
     {
@@ -5845,53 +6471,265 @@
       "is_binary": false
     },
     {
-      "name": "test_auth.py",
-      "path": "packages/sigaa-client/tests/test_auth.py",
+      "name": "private",
+      "path": "packages/sigaa-client/tests/private",
+      "type": "directory",
+      "sha": "df7e7919572caac66d476058f4006ef4e19fc9a6",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/sigaa-client/tests/private/__init__.py",
       "type": "file",
-      "sha": "961ea29b926dcd0470412023f552884c2f89c10b",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
       "mode": "100644",
       "extension": ".py",
-      "size": 13586,
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "classrooms",
+      "path": "packages/sigaa-client/tests/private/classrooms",
+      "type": "directory",
+      "sha": "de04e3f91acd09b6979c29bfb4835a7b9a497ce7",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "test_contexto.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_contexto.py",
+      "type": "file",
+      "sha": "4de7140448cb0f1c63e72628f79f7bbd498c91a3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2403,
+      "is_binary": false
+    },
+    {
+      "name": "test_estatisticas.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_estatisticas.py",
+      "type": "file",
+      "sha": "fa5e26f437d1551a5c7a7139e5ac7ae7d802708b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4885,
+      "is_binary": false
+    },
+    {
+      "name": "test_frequencia.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_frequencia.py",
+      "type": "file",
+      "sha": "dbdbe82bea69c1ec2fe7a4f2a64e4adac151666f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6703,
+      "is_binary": false
+    },
+    {
+      "name": "test_listagem.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_listagem.py",
+      "type": "file",
+      "sha": "95bace857e67ba3460b69454ceaa6cf5b991c9e5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3633,
+      "is_binary": false
+    },
+    {
+      "name": "test_notas.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_notas.py",
+      "type": "file",
+      "sha": "21b1f7173a5a306e07cd13059e8d6f27e5292683",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6408,
+      "is_binary": false
+    },
+    {
+      "name": "test_noticias.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_noticias.py",
+      "type": "file",
+      "sha": "01517d0cb13f1208e51f91bf9f25e44b31ac1c04",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4853,
+      "is_binary": false
+    },
+    {
+      "name": "test_participantes.py",
+      "path": "packages/sigaa-client/tests/private/classrooms/test_participantes.py",
+      "type": "file",
+      "sha": "9a4e7adf8c41cba78fcd467e389c7389e3c5c869",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6752,
+      "is_binary": false
+    },
+    {
+      "name": "test_auth.py",
+      "path": "packages/sigaa-client/tests/private/test_auth.py",
+      "type": "file",
+      "sha": "0a9cf024973ade59a7744ba9cf9c914d4f94b7ff",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10515,
+      "is_binary": false
+    },
+    {
+      "name": "test_documents.py",
+      "path": "packages/sigaa-client/tests/private/test_documents.py",
+      "type": "file",
+      "sha": "9928aebf0a6e8fa3e6aca5def4f6dce7725a42bc",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6562,
+      "is_binary": false
+    },
+    {
+      "name": "test_posts.py",
+      "path": "packages/sigaa-client/tests/private/test_posts.py",
+      "type": "file",
+      "sha": "ed886b70c27f1edb56e86e35c735fff05a501dc8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10105,
+      "is_binary": false
+    },
+    {
+      "name": "test_profile.py",
+      "path": "packages/sigaa-client/tests/private/test_profile.py",
+      "type": "file",
+      "sha": "7fa3028950708dd31d57120f45d78abd58ed68e6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 15466,
+      "is_binary": false
+    },
+    {
+      "name": "test_restaurant.py",
+      "path": "packages/sigaa-client/tests/private/test_restaurant.py",
+      "type": "file",
+      "sha": "9194df2b47fa1018f7ebd05ab91b0584b92a6329",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 12774,
+      "is_binary": false
+    },
+    {
+      "name": "public",
+      "path": "packages/sigaa-client/tests/public",
+      "type": "directory",
+      "sha": "6d12dd91ed58d85e32ed5a6adc17104c2d23067c",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/sigaa-client/tests/public/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "test_classrooms.py",
+      "path": "packages/sigaa-client/tests/public/test_classrooms.py",
+      "type": "file",
+      "sha": "47882aa79b27c1f69bb76b1b8ed22a650a36d045",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9646,
+      "is_binary": false
+    },
+    {
+      "name": "test_curricula.py",
+      "path": "packages/sigaa-client/tests/public/test_curricula.py",
+      "type": "file",
+      "sha": "eb9b0d0728c73b4050891050bd3b548e4a11acb6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 13244,
+      "is_binary": false
+    },
+    {
+      "name": "test_professors.py",
+      "path": "packages/sigaa-client/tests/public/test_professors.py",
+      "type": "file",
+      "sha": "1408b35f9337c52ee1de2cad43f6da36dc66344a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 18941,
+      "is_binary": false
+    },
+    {
+      "name": "test_session.py",
+      "path": "packages/sigaa-client/tests/public/test_session.py",
+      "type": "file",
+      "sha": "ad8444a2b395e31fa267695ec65ec315301455b9",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1436,
+      "is_binary": false
+    },
+    {
+      "name": "test_subjects.py",
+      "path": "packages/sigaa-client/tests/public/test_subjects.py",
+      "type": "file",
+      "sha": "0a92b057f01635a00f312579d44c369924683af1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 14518,
+      "is_binary": false
+    },
+    {
+      "name": "scripts",
+      "path": "packages/sigaa-client/tests/scripts",
+      "type": "directory",
+      "sha": "2c3bdea56cb36b94c4bea0f1320a36fbd0493d9d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "packages/sigaa-client/tests/scripts/__init__.py",
+      "type": "file",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 0,
       "is_binary": false
     },
     {
       "name": "test_catalog.py",
-      "path": "packages/sigaa-client/tests/test_catalog.py",
+      "path": "packages/sigaa-client/tests/scripts/test_catalog.py",
       "type": "file",
-      "sha": "9d30646f079a11aee0ea152c0fd194ef6b530414",
+      "sha": "9490dbe57c0dafdcdac029372207ce62db339d9d",
       "mode": "100644",
       "extension": ".py",
       "size": 3529,
       "is_binary": false
     },
     {
-      "name": "test_classrooms.py",
-      "path": "packages/sigaa-client/tests/test_classrooms.py",
-      "type": "file",
-      "sha": "a343fa1f7deb4aeb6ef0e2d4299c0501ae08eb4a",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 33551,
-      "is_binary": false
-    },
-    {
       "name": "test_collect.py",
-      "path": "packages/sigaa-client/tests/test_collect.py",
+      "path": "packages/sigaa-client/tests/scripts/test_collect.py",
       "type": "file",
-      "sha": "75bd219d7f030ed5ecfa94f7fc04f31743c422fe",
+      "sha": "99122b0f62d6e5a781da52a477465907bf6ef7bb",
       "mode": "100644",
       "extension": ".py",
       "size": 19715,
-      "is_binary": false
-    },
-    {
-      "name": "test_documents.py",
-      "path": "packages/sigaa-client/tests/test_documents.py",
-      "type": "file",
-      "sha": "1e5ea61f2b6bd4f766e425884f00af2da0e43228",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 6542,
       "is_binary": false
     },
     {
@@ -5915,90 +6753,10 @@
       "is_binary": false
     },
     {
-      "name": "test_posts.py",
-      "path": "packages/sigaa-client/tests/test_posts.py",
-      "type": "file",
-      "sha": "ed886b70c27f1edb56e86e35c735fff05a501dc8",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 10105,
-      "is_binary": false
-    },
-    {
-      "name": "test_profile.py",
-      "path": "packages/sigaa-client/tests/test_profile.py",
-      "type": "file",
-      "sha": "6aefcb1e0ba0b801b358a75b0d642ddfaf30723f",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 5856,
-      "is_binary": false
-    },
-    {
-      "name": "test_public_classrooms.py",
-      "path": "packages/sigaa-client/tests/test_public_classrooms.py",
-      "type": "file",
-      "sha": "47882aa79b27c1f69bb76b1b8ed22a650a36d045",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 9646,
-      "is_binary": false
-    },
-    {
-      "name": "test_public_curricula.py",
-      "path": "packages/sigaa-client/tests/test_public_curricula.py",
-      "type": "file",
-      "sha": "7efe5b58987cef53223a89d56387fc409544a9ea",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 13258,
-      "is_binary": false
-    },
-    {
-      "name": "test_public_professors.py",
-      "path": "packages/sigaa-client/tests/test_public_professors.py",
-      "type": "file",
-      "sha": "1408b35f9337c52ee1de2cad43f6da36dc66344a",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 18941,
-      "is_binary": false
-    },
-    {
-      "name": "test_public_session.py",
-      "path": "packages/sigaa-client/tests/test_public_session.py",
-      "type": "file",
-      "sha": "ad8444a2b395e31fa267695ec65ec315301455b9",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 1436,
-      "is_binary": false
-    },
-    {
-      "name": "test_public_subjects.py",
-      "path": "packages/sigaa-client/tests/test_public_subjects.py",
-      "type": "file",
-      "sha": "0a92b057f01635a00f312579d44c369924683af1",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 14518,
-      "is_binary": false
-    },
-    {
-      "name": "test_restaurant.py",
-      "path": "packages/sigaa-client/tests/test_restaurant.py",
-      "type": "file",
-      "sha": "de97d26fc8b91a0a3234122dcf9fbb3209f1a89d",
-      "mode": "100644",
-      "extension": ".py",
-      "size": 12852,
-      "is_binary": false
-    },
-    {
       "name": "unb-browser",
       "path": "packages/unb-browser",
       "type": "directory",
-      "sha": "f39453abe2c06519b02c04f295a50ed3b818f6a8",
+      "sha": "90a196b21ae164ddece200da71d5aa58c6a0041f",
       "mode": "040000",
       "children": []
     },
@@ -6026,7 +6784,7 @@
       "name": "pyproject.toml",
       "path": "packages/unb-browser/pyproject.toml",
       "type": "file",
-      "sha": "70509fe0fb485ebdc8a06fc135f187bcd39232a8",
+      "sha": "f2affb3aadd95b88c1b8f183e906cc60c69a5244",
       "mode": "100644",
       "extension": ".toml",
       "size": 662,
@@ -6036,7 +6794,7 @@
       "name": "tests",
       "path": "packages/unb-browser/tests",
       "type": "directory",
-      "sha": "f928a400092251b84d28136f9738ab60829f51c2",
+      "sha": "debe4523b396176dd268310af5e28979455fbc47",
       "mode": "040000",
       "children": []
     },
@@ -6112,10 +6870,10 @@
       "name": "test_restaurant.py",
       "path": "packages/unb-browser/tests/test_restaurant.py",
       "type": "file",
-      "sha": "8d685921961e893940caba3263a65ee5bafd0cb2",
+      "sha": "7e14c18d9524897a28681e911f14a79b0294161c",
       "mode": "100644",
       "extension": ".py",
-      "size": 13573,
+      "size": 13927,
       "is_binary": false
     },
     {
@@ -6304,10 +7062,10 @@
       "name": "pyproject.toml",
       "path": "pyproject.toml",
       "type": "file",
-      "sha": "e01342750469a8a876bd437deabdc5ad59c1f7ad",
+      "sha": "9718829a9fd12d5eccd374c21109ee55fb72c334",
       "mode": "100644",
       "extension": ".toml",
-      "size": 729,
+      "size": 771,
       "is_binary": false
     },
     {
@@ -6342,10 +7100,10 @@
       "name": "uv.lock",
       "path": "uv.lock",
       "type": "file",
-      "sha": "638ddd9d6ef2093320eea3dbe75a37db5934e8ac",
+      "sha": "bf062ef438d1d1119261e1886d0bb0cc4eaf8e44",
       "mode": "100644",
       "extension": ".lock",
-      "size": 396965,
+      "size": 398582,
       "is_binary": false
     },
     {
@@ -6360,19 +7118,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-08T12:38:13.524086+00:00",
+  "extracted_at": "2026-11-09T14:40:07.147683+00:00",
   "method": "rest",
-  "total_items": 656,
+  "total_items": 735,
   "repository_metadata": {
     "id": 1338350948,
     "full_name": "unb-mds/2026-2-Followw",
     "description": "O Followw é uma nova forma de usar o SIGAA UnB.",
     "created_at": "2026-08-18T11:57:01Z",
-    "updated_at": "2026-11-08T02:58:32Z",
+    "updated_at": "2026-11-09T04:45:40Z",
     "language": "Python",
-    "size": 9942,
+    "size": 10286,
     "stars": 8,
     "forks": 4,
-    "open_issues": 7
+    "open_issues": 2
   }
 }
