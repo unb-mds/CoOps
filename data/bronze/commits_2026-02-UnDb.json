@@ -1,10 +1,3674 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-09T14:36:02.854898+00:00",
+      "extracted_at": "2026-11-10T14:18:57.405928+00:00",
       "file_path": "data/bronze/commits_2026-02-UnDb.json",
-      "record_count": 262
+      "record_count": 413
     }
+  },
+  {
+    "sha": "b4fa7f21b99609302b35f3038893a5f7067d8e6d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-09T21:14:42Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-09T21:14:42Z"
+      },
+      "message": "Merge pull request #210 from unb-mds/release/1.1.0\n\nrelease: promover UnDb 1.1.0 para main"
+    },
+    "parents": [
+      "5a3f731a8907ff8423e994984b8cee5515204001",
+      "6104f1909fdfe71c9968ab09598455b17b404813"
+    ],
+    "additions": 24570,
+    "deletions": 1344,
+    "total_changes": 25914,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6104f1909fdfe71c9968ab09598455b17b404813",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-09T21:09:12Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-09T21:09:12Z"
+      },
+      "message": "release: preparar versao 1.1.0"
+    },
+    "parents": [
+      "ee28011699d485a64b9a1d27e8a0204abcb629af"
+    ],
+    "additions": 92,
+    "deletions": 3,
+    "total_changes": 95,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ee28011699d485a64b9a1d27e8a0204abcb629af",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-09T21:04:37Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-09T21:04:37Z"
+      },
+      "message": "Merge pull request #209 from unb-mds/feature/203-home-busca-unidades\n\nfeat(ui): integrar home, busca e unidades e corrigir inicialização no Render"
+    },
+    "parents": [
+      "72227ccc522f78925a0b38cd5ab2558563fbd48b",
+      "4ed93dd8c5ebcd9f4073e1d59e3e71552591a2f0"
+    ],
+    "additions": 615,
+    "deletions": 95,
+    "total_changes": 710,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4ed93dd8c5ebcd9f4073e1d59e3e71552591a2f0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-09T21:00:15Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-09T21:00:15Z"
+      },
+      "message": "fix: corrigir inicializacao no Render e validar PR #209"
+    },
+    "parents": [
+      "495718d47b59fc9119b233f6381a25d1c63af670"
+    ],
+    "additions": 162,
+    "deletions": 1,
+    "total_changes": 163,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "495718d47b59fc9119b233f6381a25d1c63af670",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:58Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:58Z"
+      },
+      "message": "docs(ui): registrar contratos, validacao e capturas da busca (#203)"
+    },
+    "parents": [
+      "a0c39628cfd75c6faa4c06a4d2c7cb58ff7cf4f3"
+    ],
+    "additions": 82,
+    "deletions": 0,
+    "total_changes": 82,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a0c39628cfd75c6faa4c06a4d2c7cb58ff7cf4f3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:57Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:57Z"
+      },
+      "message": "test(hidratacao): limitar atraso aos bundles da aplicacao (#203)"
+    },
+    "parents": [
+      "aa16c29aa99cc1e2c207f69488ac5ed539843551"
+    ],
+    "additions": 3,
+    "deletions": 1,
+    "total_changes": 4,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "aa16c29aa99cc1e2c207f69488ac5ed539843551",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:57Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:57Z"
+      },
+      "message": "test(busca): cobrir catalogo, homonimos, retorno e responsividade (#203)"
+    },
+    "parents": [
+      "d77af4760e5860eb6b769c39dc58ef63d58f8d99"
+    ],
+    "additions": 84,
+    "deletions": 9,
+    "total_changes": 93,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d77af4760e5860eb6b769c39dc58ef63d58f8d99",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:56Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:56Z"
+      },
+      "message": "test(catalogo): verificar origem institucional e identidade das unidades (#203)"
+    },
+    "parents": [
+      "2c1caab5134cde5b860fa62ca995f05682b7fce9"
+    ],
+    "additions": 30,
+    "deletions": 0,
+    "total_changes": 30,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2c1caab5134cde5b860fa62ca995f05682b7fce9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:55Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:55Z"
+      },
+      "message": "feat(busca): integrar resultados dark preservando contexto e ordenacao (#203)"
+    },
+    "parents": [
+      "6dff1c1add5937fc28e8d5803cd079e0e27e2af4"
+    ],
+    "additions": 27,
+    "deletions": 31,
+    "total_changes": 58,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6dff1c1add5937fc28e8d5803cd079e0e27e2af4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:55Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:55Z"
+      },
+      "message": "feat(professores): destacar disciplinas e acoes de consulta e avaliacao (#203)"
+    },
+    "parents": [
+      "b7c49a8784d02d32c2a422800e5606f8a58610cf"
+    ],
+    "additions": 43,
+    "deletions": 26,
+    "total_changes": 69,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b7c49a8784d02d32c2a422800e5606f8a58610cf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:54Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:54Z"
+      },
+      "message": "feat(unidades): adicionar catalogo filtrado pela URL (#203)"
+    },
+    "parents": [
+      "d4226188342414209ec6e6d6af7a5a4df58a36ea"
+    ],
+    "additions": 49,
+    "deletions": 1,
+    "total_changes": 50,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d4226188342414209ec6e6d6af7a5a4df58a36ea",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:54Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:54Z"
+      },
+      "message": "feat(home): integrar busca e catalogo institucional na interface dark (#203)"
+    },
+    "parents": [
+      "0c1fbd1f8ceb04c3bbcf664248165ab5056288e0"
+    ],
+    "additions": 58,
+    "deletions": 26,
+    "total_changes": 84,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0c1fbd1f8ceb04c3bbcf664248165ab5056288e0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:54Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-09T19:57:54Z"
+      },
+      "message": "feat(catalogo): criar base compartilhada de disciplinas e unidades (#203)"
+    },
+    "parents": [
+      "72227ccc522f78925a0b38cd5ab2558563fbd48b"
+    ],
+    "additions": 77,
+    "deletions": 0,
+    "total_changes": 77,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "72227ccc522f78925a0b38cd5ab2558563fbd48b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vinicius Gavaldao Franco",
+        "date": "2026-11-07T15:26:23Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-07T15:26:23Z"
+      },
+      "message": "Merge pull request #201 from unb-mds/chore/190-cobertura-testes\n\nchore: mede cobertura dos testes no CI (#190)"
+    },
+    "parents": [
+      "8067802ef1228972404012418f500afa3eb721c8",
+      "fbbeeab89cf5b1e12a98e388583c7e5f473e666c"
+    ],
+    "additions": 826,
+    "deletions": 36,
+    "total_changes": 862,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "fbbeeab89cf5b1e12a98e388583c7e5f473e666c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vinicius Gavaldao Franco",
+        "date": "2026-11-07T15:14:20Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-07T15:14:20Z"
+      },
+      "message": "Merge branch 'develop' into chore/190-cobertura-testes"
+    },
+    "parents": [
+      "a890ce06ea14c0363cd9b51249d3bcaab94a2888",
+      "8067802ef1228972404012418f500afa3eb721c8"
+    ],
+    "additions": 7309,
+    "deletions": 959,
+    "total_changes": 8268,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8067802ef1228972404012418f500afa3eb721c8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Vinicius Gavaldao Franco",
+        "date": "2026-11-07T15:11:51Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-07T15:11:51Z"
+      },
+      "message": "Merge pull request #208 from unb-mds/feature/202-base-visual-dark\n\nfeat(ui): integrar base visual dark e navegação compartilhada (#202)"
+    },
+    "parents": [
+      "1435ef746065d9bdbb08d39e2f88337b4a804d94",
+      "f697ab4ed6c25f8745141584a7b2a4ece0405ed3"
+    ],
+    "additions": 5130,
+    "deletions": 168,
+    "total_changes": 5298,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f697ab4ed6c25f8745141584a7b2a4ece0405ed3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-07T14:59:10Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-07T14:59:10Z"
+      },
+      "message": "fix(ui): alinhar contraste ao tema dark da aplicação (#202)"
+    },
+    "parents": [
+      "2936a2533954b697993ac29885a939be08800075"
+    ],
+    "additions": 60,
+    "deletions": 2,
+    "total_changes": 62,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2936a2533954b697993ac29885a939be08800075",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-07T01:58:05Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-07T01:58:05Z"
+      },
+      "message": "feat(ui): integrar base dark e navegação compartilhada (#202)"
+    },
+    "parents": [
+      "1435ef746065d9bdbb08d39e2f88337b4a804d94"
+    ],
+    "additions": 5070,
+    "deletions": 166,
+    "total_changes": 5236,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1435ef746065d9bdbb08d39e2f88337b4a804d94",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-07T01:19:51Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-07T01:19:51Z"
+      },
+      "message": "Merge pull request #200 from unb-mds/chore/189-lint-verificacao-tipos\n\nchore: completar lint e verificação de tipos (#189)"
+    },
+    "parents": [
+      "717582a2e8230a539e5f3a9cf4c2d6528344b30c",
+      "02ef80f150f1a1977a8341882e5e8c0d940ca6db"
+    ],
+    "additions": 1814,
+    "deletions": 791,
+    "total_changes": 2605,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "02ef80f150f1a1977a8341882e5e8c0d940ca6db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-07T01:10:40Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-07T01:10:40Z"
+      },
+      "message": "Merge branch 'develop' into chore/189-lint-verificacao-tipos"
+    },
+    "parents": [
+      "890da7f81cf4268c123cdae96282f2ccad89a4d3",
+      "717582a2e8230a539e5f3a9cf4c2d6528344b30c"
+    ],
+    "additions": 365,
+    "deletions": 0,
+    "total_changes": 365,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "717582a2e8230a539e5f3a9cf4c2d6528344b30c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-07T01:10:25Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-07T01:10:25Z"
+      },
+      "message": "Merge pull request #199 from unb-mds/docs/188-padronizacao-adrs-qualidade\n\ndocs: padronizar ADRs e registrar estratégia de qualidade (#188)"
+    },
+    "parents": [
+      "af61ba072394fb66c2b82c933d74a0efa2051e03",
+      "926777357cbfad2c2cfc2c2a4e974581f7859f52"
+    ],
+    "additions": 365,
+    "deletions": 0,
+    "total_changes": 365,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a890ce06ea14c0363cd9b51249d3bcaab94a2888",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-05T13:39:16Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-05T13:39:16Z"
+      },
+      "message": "chore: mede cobertura dos testes no CI (#190)"
+    },
+    "parents": [
+      "af61ba072394fb66c2b82c933d74a0efa2051e03"
+    ],
+    "additions": 826,
+    "deletions": 36,
+    "total_changes": 862,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "890da7f81cf4268c123cdae96282f2ccad89a4d3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-04T14:14:50Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-04T14:14:50Z"
+      },
+      "message": "chore: adiciona lint e verificacao de tipos (#189)"
+    },
+    "parents": [
+      "af61ba072394fb66c2b82c933d74a0efa2051e03"
+    ],
+    "additions": 1814,
+    "deletions": 791,
+    "total_changes": 2605,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "926777357cbfad2c2cfc2c2a4e974581f7859f52",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-04T13:57:14Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-04T13:57:14Z"
+      },
+      "message": "docs: padroniza ADRs e registra estrategia de qualidade (#188)"
+    },
+    "parents": [
+      "af61ba072394fb66c2b82c933d74a0efa2051e03"
+    ],
+    "additions": 365,
+    "deletions": 0,
+    "total_changes": 365,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "af61ba072394fb66c2b82c933d74a0efa2051e03",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-04T13:39:52Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-04T13:39:52Z"
+      },
+      "message": "Merge pull request #198 from unb-mds/fix/163-validacao-integrada\n\ntest: validar percurso integrado de comentários, denúncia e moderação (#163)"
+    },
+    "parents": [
+      "fa6ea376a7a56fec9417b66910d5f12c2a061dcc",
+      "c6d6869923daf9e733a269f7e989334dfc224fbf"
+    ],
+    "additions": 491,
+    "deletions": 8,
+    "total_changes": 499,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c6d6869923daf9e733a269f7e989334dfc224fbf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-04T13:33:58Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-04T13:33:58Z"
+      },
+      "message": "test: evitar cancelamentos repetidos na seleção de moderação (#163)"
+    },
+    "parents": [
+      "c80a36045767410a77340b76cd7f3fba18ee21b7"
+    ],
+    "additions": 20,
+    "deletions": 6,
+    "total_changes": 26,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c80a36045767410a77340b76cd7f3fba18ee21b7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-04T03:29:50Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-04T03:29:50Z"
+      },
+      "message": "test(moderacao): validar fluxo integrado e estabilizar navegador (#163)"
+    },
+    "parents": [
+      "fa6ea376a7a56fec9417b66910d5f12c2a061dcc"
+    ],
+    "additions": 477,
+    "deletions": 8,
+    "total_changes": 485,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "fa6ea376a7a56fec9417b66910d5f12c2a061dcc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-04T03:11:48Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-04T03:11:48Z"
+      },
+      "message": "Merge pull request #197 from unb-mds/feature/159-interface-comentarios-rf20\n\n[R2][RF20] Integrar comentários à jornada de avaliação (#159)"
+    },
+    "parents": [
+      "78dfa460b73a46554d78005602e7d2f41e91a5b8",
+      "63d1a11541dcc80f5de91fe554ce58063ea6623a"
+    ],
+    "additions": 947,
+    "deletions": 79,
+    "total_changes": 1026,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "63d1a11541dcc80f5de91fe554ce58063ea6623a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-04T03:02:29Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-04T03:02:29Z"
+      },
+      "message": "fix(comentarios): completar e validar os fluxos de RF20 (#159)"
+    },
+    "parents": [
+      "b9f04164c9585335badf51c9db359649c21b363f"
+    ],
+    "additions": 605,
+    "deletions": 220,
+    "total_changes": 825,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b9f04164c9585335badf51c9db359649c21b363f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:26:25Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:26:25Z"
+      },
+      "message": "test: aguardar hidratação ao abrir denúncia"
+    },
+    "parents": [
+      "9618ffa4c915913c30f3f8eed20f9db1b947ff87"
+    ],
+    "additions": 11,
+    "deletions": 2,
+    "total_changes": 13,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9618ffa4c915913c30f3f8eed20f9db1b947ff87",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:19:43Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:19:43Z"
+      },
+      "message": "test: alinhar fila ao banner global integrado"
+    },
+    "parents": [
+      "285d4420a9c515b689b92cd4e008d70d519ecdac"
+    ],
+    "additions": 17,
+    "deletions": 2,
+    "total_changes": 19,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "285d4420a9c515b689b92cd4e008d70d519ecdac",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:13:52Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:13:52Z"
+      },
+      "message": "fix: isolar avisos reais das rotas do protótipo"
+    },
+    "parents": [
+      "1b279a79e92f54abbd74927574d3dcec4596e3da"
+    ],
+    "additions": 27,
+    "deletions": 1,
+    "total_changes": 28,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1b279a79e92f54abbd74927574d3dcec4596e3da",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:04:16Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T02:04:16Z"
+      },
+      "message": "docs: registrar interface RF20 e validações pendentes"
+    },
+    "parents": [
+      "2fc94e9df102476c18bfb4b93e9356ee6937b6ef"
+    ],
+    "additions": 78,
+    "deletions": 0,
+    "total_changes": 78,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2fc94e9df102476c18bfb4b93e9356ee6937b6ef",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T01:52:26Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T01:52:26Z"
+      },
+      "message": "test: cobrir estados e privacidade dos comentários"
+    },
+    "parents": [
+      "72d9fde08ed694bd282e0847d958f057ca7e029c"
+    ],
+    "additions": 122,
+    "deletions": 39,
+    "total_changes": 161,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "72d9fde08ed694bd282e0847d958f057ca7e029c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T01:44:01Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T01:44:01Z"
+      },
+      "message": "feat: integrar comentários do autor à avaliação"
+    },
+    "parents": [
+      "77d6ef2b55ec9b17cead0394762417046ac06f8d"
+    ],
+    "additions": 29,
+    "deletions": 1,
+    "total_changes": 30,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "77d6ef2b55ec9b17cead0394762417046ac06f8d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-04T01:41:08Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-04T01:41:08Z"
+      },
+      "message": "feat: exibir estados dos comentários do autor"
+    },
+    "parents": [
+      "18e88dd6c07e0c28160e0cd9c25923eb09ec1049"
+    ],
+    "additions": 76,
+    "deletions": 3,
+    "total_changes": 79,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "18e88dd6c07e0c28160e0cd9c25923eb09ec1049",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-03T23:53:12Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-03T23:53:12Z"
+      },
+      "message": "feat: consultar comentários do autor"
+    },
+    "parents": [
+      "78dfa460b73a46554d78005602e7d2f41e91a5b8"
+    ],
+    "additions": 172,
+    "deletions": 1,
+    "total_changes": 173,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "78dfa460b73a46554d78005602e7d2f41e91a5b8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-03T23:17:02Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-03T23:17:02Z"
+      },
+      "message": "Merge pull request #196 from unb-mds/feature/193-denuncia-comentarios-agradecimentos\n\nFeature/193 denuncia comentarios agradecimentos"
+    },
+    "parents": [
+      "d7f79bfbfe01edfaabad8be5f0a9633eb409fda5",
+      "68c3a1b5a5b6f8851659065fd3610bc55fa07a2e"
+    ],
+    "additions": 1335,
+    "deletions": 5,
+    "total_changes": 1340,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "68c3a1b5a5b6f8851659065fd3610bc55fa07a2e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-03T23:12:21Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-03T23:12:21Z"
+      },
+      "message": "fix(frontend): corrigir sessão e exibição dos agradecimentos (#193)"
+    },
+    "parents": [
+      "bbffbe4305a7892b381f4d8733d0a663af7fd342"
+    ],
+    "additions": 391,
+    "deletions": 255,
+    "total_changes": 646,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "bbffbe4305a7892b381f4d8733d0a663af7fd342",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:58:08Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:58:08Z"
+      },
+      "message": "docs(reports): documentar integração de denúncia e agradecimentos (#193)"
+    },
+    "parents": [
+      "25ba8e27d46df0e9ad6ff8c02f651cdb71c81f3f"
+    ],
+    "additions": 102,
+    "deletions": 0,
+    "total_changes": 102,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "25ba8e27d46df0e9ad6ff8c02f651cdb71c81f3f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:56:46Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:56:46Z"
+      },
+      "message": "test(frontend): adicionar testes unitários e de navegador para denúncias (#193)"
+    },
+    "parents": [
+      "c242740e53ed91a3c12f06d92155fb3bef5af857"
+    ],
+    "additions": 557,
+    "deletions": 3,
+    "total_changes": 560,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c242740e53ed91a3c12f06d92155fb3bef5af857",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:54:52Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:54:52Z"
+      },
+      "message": "feat(frontend): criar componentes de denúncia e aviso de agradecimento (#193)"
+    },
+    "parents": [
+      "0aade372cad2460e17b28078f73db2c122f9db97"
+    ],
+    "additions": 367,
+    "deletions": 0,
+    "total_changes": 367,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0aade372cad2460e17b28078f73db2c122f9db97",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:53:12Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-03T21:53:12Z"
+      },
+      "message": "feat(frontend): adicionar tipos e serviços de denúncia e agradecimentos (#193)"
+    },
+    "parents": [
+      "d7f79bfbfe01edfaabad8be5f0a9633eb409fda5"
+    ],
+    "additions": 171,
+    "deletions": 0,
+    "total_changes": 171,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d7f79bfbfe01edfaabad8be5f0a9633eb409fda5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-02T19:02:38Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-02T19:02:38Z"
+      },
+      "message": "Merge pull request #194 from unb-mds/feature/162-fila-moderacao\n\nfeat(frontend): cria fila de moderação integrada à API (#162)"
+    },
+    "parents": [
+      "81e54be3fd568a2cabe70e638f8320476bd4b5ca",
+      "1ba0d5d0699408b1180dbae945f54ee69fd4eb38"
+    ],
+    "additions": 1112,
+    "deletions": 6,
+    "total_changes": 1118,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1ba0d5d0699408b1180dbae945f54ee69fd4eb38",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-02T02:20:37Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-02T02:20:37Z"
+      },
+      "message": "test(frontend): valida fila de moderação e documenta integração"
+    },
+    "parents": [
+      "3ac5c5b700304a046f7296ad79d5fa7952d480a0"
+    ],
+    "additions": 557,
+    "deletions": 4,
+    "total_changes": 561,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3ac5c5b700304a046f7296ad79d5fa7952d480a0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-02T02:01:55Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-02T02:01:55Z"
+      },
+      "message": "feat(frontend): cria fila de moderação com análise e decisões"
+    },
+    "parents": [
+      "003d7f78aab615410c6b82a2ad5de8c30fbe7d1d"
+    ],
+    "additions": 302,
+    "deletions": 0,
+    "total_changes": 302,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "003d7f78aab615410c6b82a2ad5de8c30fbe7d1d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-02T01:57:00Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-02T01:57:00Z"
+      },
+      "message": "feat(frontend): integra serviços privados de moderação"
+    },
+    "parents": [
+      "81e54be3fd568a2cabe70e638f8320476bd4b5ca"
+    ],
+    "additions": 255,
+    "deletions": 4,
+    "total_changes": 259,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "81e54be3fd568a2cabe70e638f8320476bd4b5ca",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-01T22:11:22Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-01T22:11:22Z"
+      },
+      "message": "Merge pull request #192 from unb-mds/feature/160-denuncia-conteudo\n\nfeat: integrar denúncias e moderação de comentários (#160, #161)"
+    },
+    "parents": [
+      "4126897e89e119696f3c137c2491771959f52bbd",
+      "ef3450df1f2ccb87616db16f2ea0970744cc06b4"
+    ],
+    "additions": 1917,
+    "deletions": 29,
+    "total_changes": 1946,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ef3450df1f2ccb87616db16f2ea0970744cc06b4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:47:13Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:47:13Z"
+      },
+      "message": "docs: corrigir link da especificação no build do MkDocs"
+    },
+    "parents": [
+      "007bbb40c70a0c2bf39bd478aba2585c44b21833"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "007bbb40c70a0c2bf39bd478aba2585c44b21833",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:38:15Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:38:15Z"
+      },
+      "message": "docs(reports): atualizar referências dos commits traduzidos"
+    },
+    "parents": [
+      "5e9510626c18d18f55dd7d387ef7436c18b12abe"
+    ],
+    "additions": 17,
+    "deletions": 9,
+    "total_changes": 26,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5e9510626c18d18f55dd7d387ef7436c18b12abe",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:28:38Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:28:38Z"
+      },
+      "message": "docs(api): documentar APIs de denúncia e moderação e suas verificações"
+    },
+    "parents": [
+      "f08a749d27d33ceb643a6e0d78d6b68e58aca79e"
+    ],
+    "additions": 167,
+    "deletions": 11,
+    "total_changes": 178,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f08a749d27d33ceb643a6e0d78d6b68e58aca79e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:27:31Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:27:31Z"
+      },
+      "message": "fix(reports): preservar cookie de sessão ao confirmar exibição de mensagens"
+    },
+    "parents": [
+      "20715f0728beb36d518835750da902cfffe93a6b"
+    ],
+    "additions": 5,
+    "deletions": 2,
+    "total_changes": 7,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "20715f0728beb36d518835750da902cfffe93a6b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:23:52Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:23:52Z"
+      },
+      "message": "test(moderation): verificar fluxos integrados de denúncia e revisão"
+    },
+    "parents": [
+      "a4c0ad0ccf8dc58a88986837549476b61350f2c6"
+    ],
+    "additions": 337,
+    "deletions": 18,
+    "total_changes": 355,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a4c0ad0ccf8dc58a88986837549476b61350f2c6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:13:28Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:13:28Z"
+      },
+      "message": "feat(moderation): integrar encerramento de denúncias e descarte de registros"
+    },
+    "parents": [
+      "bc96ff1b1e5b7c79cff11b63dd31acab899f588d"
+    ],
+    "additions": 296,
+    "deletions": 28,
+    "total_changes": 324,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "bc96ff1b1e5b7c79cff11b63dd31acab899f588d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:09:19Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:09:19Z"
+      },
+      "message": "feat(reports): expor API de denúncias e suspensão automática de versões"
+    },
+    "parents": [
+      "7922204ba16dca822671470b062b4b73d0bcf123"
+    ],
+    "additions": 187,
+    "deletions": 1,
+    "total_changes": 188,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7922204ba16dca822671470b062b4b73d0bcf123",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:07:56Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:07:56Z"
+      },
+      "message": "feat(reports): adicionar persistência e validação de denúncias abertas"
+    },
+    "parents": [
+      "842a635804d3625c1445444d65d9a04671e821bd"
+    ],
+    "additions": 212,
+    "deletions": 0,
+    "total_changes": 212,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "842a635804d3625c1445444d65d9a04671e821bd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:06:37Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:06:37Z"
+      },
+      "message": "feat(moderation): implementar autorização e revisão humana de comentários"
+    },
+    "parents": [
+      "7df0e8ed7afbb6386f23da375de1789df35a02b6"
+    ],
+    "additions": 482,
+    "deletions": 2,
+    "total_changes": 484,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7df0e8ed7afbb6386f23da375de1789df35a02b6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:03:14Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:03:14Z"
+      },
+      "message": "docs(moderation): consolidar contratos de denúncias e moderação"
+    },
+    "parents": [
+      "0d393f61e610c106aff236fe9be500edfeb50f62"
+    ],
+    "additions": 69,
+    "deletions": 1,
+    "total_changes": 70,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0d393f61e610c106aff236fe9be500edfeb50f62",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:00:38Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-01T15:00:38Z"
+      },
+      "message": "docs(moderation): definir contrato inicial de moderação"
+    },
+    "parents": [
+      "4126897e89e119696f3c137c2491771959f52bbd"
+    ],
+    "additions": 188,
+    "deletions": 0,
+    "total_changes": 188,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4126897e89e119696f3c137c2491771959f52bbd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-30T03:19:20Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-30T03:19:20Z"
+      },
+      "message": "Merge pull request #191 from unb-mds/feature/156-persistencia-api-comentarios\n\nFeature/156 persistencia api comentarios"
+    },
+    "parents": [
+      "1b699cf2d03916cdd9673ac063f4bdb42a31b94b",
+      "cbc7820c0bea7854108c91901e0044f543691fc3"
+    ],
+    "additions": 1300,
+    "deletions": 26,
+    "total_changes": 1326,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "cbc7820c0bea7854108c91901e0044f543691fc3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-30T03:15:01Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-30T03:15:01Z"
+      },
+      "message": "Merge branch 'develop' into feature/156-persistencia-api-comentarios"
+    },
+    "parents": [
+      "c2e833dd8cfb3d9d52666d575b95626b7459bc2e",
+      "1b699cf2d03916cdd9673ac063f4bdb42a31b94b"
+    ],
+    "additions": 7173,
+    "deletions": 858,
+    "total_changes": 8031,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c2e833dd8cfb3d9d52666d575b95626b7459bc2e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-30T03:03:38Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-30T03:03:38Z"
+      },
+      "message": "fix: corrigir retirada e validacao de comentarios RF20"
+    },
+    "parents": [
+      "ff2a5d5eb8dec9d38aaad55fd791c9c9d1087e9b"
+    ],
+    "additions": 156,
+    "deletions": 35,
+    "total_changes": 191,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ff2a5d5eb8dec9d38aaad55fd791c9c9d1087e9b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:27:03Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:27:03Z"
+      },
+      "message": "docs: documentar contratos e migração de comentários"
+    },
+    "parents": [
+      "63f84fb31664ac122cfe58172e3e5248304dd9d4"
+    ],
+    "additions": 86,
+    "deletions": 10,
+    "total_changes": 96,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "63f84fb31664ac122cfe58172e3e5248304dd9d4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:26:25Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:26:25Z"
+      },
+      "message": "test: validar permissões, integridade e contratos dos comentários"
+    },
+    "parents": [
+      "e2d6d5e96e12c1b10ad44186df00177ed85483c0"
+    ],
+    "additions": 639,
+    "deletions": 7,
+    "total_changes": 646,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e2d6d5e96e12c1b10ad44186df00177ed85483c0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:26:18Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:26:18Z"
+      },
+      "message": "feat: expor endpoints de comentários e integrar à avaliação"
+    },
+    "parents": [
+      "76001e75fc21dae0bb19e9823855826cccc25910"
+    ],
+    "additions": 166,
+    "deletions": 3,
+    "total_changes": 169,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "76001e75fc21dae0bb19e9823855826cccc25910",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:26:10Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:26:10Z"
+      },
+      "message": "feat: implementar repositório e serviço de comentários"
+    },
+    "parents": [
+      "b57802419c31fa7b51eb978a350a7324fb11c7ea"
+    ],
+    "additions": 175,
+    "deletions": 0,
+    "total_changes": 175,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b57802419c31fa7b51eb978a350a7324fb11c7ea",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:25:58Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-30T01:25:58Z"
+      },
+      "message": "feat: modelar e migrar versões de comentários (RF20)"
+    },
+    "parents": [
+      "661c7cb68c27ca730b53632b6851a61bc8057d46"
+    ],
+    "additions": 107,
+    "deletions": 0,
+    "total_changes": 107,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1b699cf2d03916cdd9673ac063f4bdb42a31b94b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-29T00:02:38Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-29T00:02:38Z"
+      },
+      "message": "Merge pull request #187 from unb-mds/feature/186-integracao-visual\n\nfeat(ux): integrar visual do protótipo à jornada real"
+    },
+    "parents": [
+      "dcff008eb820c094db9506b3b6d988b0053177c6",
+      "a64d23b7e39523b7a1041bc6e0130ef5975c8bf4"
+    ],
+    "additions": 2316,
+    "deletions": 314,
+    "total_changes": 2630,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a64d23b7e39523b7a1041bc6e0130ef5975c8bf4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-28T16:50:35Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-28T16:50:35Z"
+      },
+      "message": "fix(frontend): preservar modalidade da busca antes da hidratacao"
+    },
+    "parents": [
+      "edd9188767fa3d3358464b692da7445fc81090f8"
+    ],
+    "additions": 47,
+    "deletions": 14,
+    "total_changes": 61,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "edd9188767fa3d3358464b692da7445fc81090f8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T16:17:23Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T16:17:23Z"
+      },
+      "message": "test(ux): registrar validação e evidências da jornada visual (#186)"
+    },
+    "parents": [
+      "97a32159601bf3159426cad8df431f4ca4bd9483"
+    ],
+    "additions": 1938,
+    "deletions": 8,
+    "total_changes": 1946,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "97a32159601bf3159426cad8df431f4ca4bd9483",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T16:16:16Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T16:16:16Z"
+      },
+      "message": "feat(ux): alinhar apresentação da avaliação e do acesso (#186)"
+    },
+    "parents": [
+      "e249d0909ea54a0fd200a2535f15b6221fc9b597"
+    ],
+    "additions": 169,
+    "deletions": 118,
+    "total_changes": 287,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e249d0909ea54a0fd200a2535f15b6221fc9b597",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T16:16:05Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T16:16:05Z"
+      },
+      "message": "feat(ux): integrar entrada, resultados e consulta da jornada (#186)"
+    },
+    "parents": [
+      "dcff008eb820c094db9506b3b6d988b0053177c6"
+    ],
+    "additions": 176,
+    "deletions": 188,
+    "total_changes": 364,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "dcff008eb820c094db9506b3b6d988b0053177c6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-28T13:50:49Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-28T13:50:49Z"
+      },
+      "message": "Merge pull request #185 from unb-mds/feature/155-navegacao-integrada\n\nfeat(ux): integrar navegação, busca e retorno à avaliação (#155)"
+    },
+    "parents": [
+      "ed9aa0f660d26d33e84fc57bf8d3201f966dafa3",
+      "6d7480bac6d1284648cbabca5ae0077c73775d0e"
+    ],
+    "additions": 1630,
+    "deletions": 286,
+    "total_changes": 1916,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6d7480bac6d1284648cbabca5ae0077c73775d0e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T03:19:36Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T03:19:36Z"
+      },
+      "message": "docs(ux): registrar validação integrada da jornada (#155)"
+    },
+    "parents": [
+      "660528eb938eb284ae778ec43644f4b3ee20e22d"
+    ],
+    "additions": 861,
+    "deletions": 0,
+    "total_changes": 861,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "660528eb938eb284ae778ec43644f4b3ee20e22d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T03:18:53Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-28T03:18:53Z"
+      },
+      "message": "feat(ux): integrar navegação e contexto das buscas (#155)"
+    },
+    "parents": [
+      "ed9aa0f660d26d33e84fc57bf8d3201f966dafa3"
+    ],
+    "additions": 769,
+    "deletions": 286,
+    "total_changes": 1055,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ed9aa0f660d26d33e84fc57bf8d3201f966dafa3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-27T00:19:00Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-27T00:19:00Z"
+      },
+      "message": "Merge pull request #184 from unb-mds/feature/158-formulario-acesso-avaliacao\n\nfeat(auth): habilitar acesso ao formulário de avaliação via login e cadastro"
+    },
+    "parents": [
+      "3c886df9cb960a3585725200024ab31b212c1451",
+      "4121e996801a86266e5a338cd851f23b9a00a753"
+    ],
+    "additions": 1416,
+    "deletions": 303,
+    "total_changes": 1719,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4121e996801a86266e5a338cd851f23b9a00a753",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-10-27T00:10:20Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-10-27T00:10:20Z"
+      },
+      "message": "fix(ci): verificar porta de integração e link da documentação (#158)"
+    },
+    "parents": [
+      "fa96514eba58bacee6dfe060d72ed2ccd0adaf75"
+    ],
+    "additions": 53,
+    "deletions": 4,
+    "total_changes": 57,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "fa96514eba58bacee6dfe060d72ed2ccd0adaf75",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-10-27T00:05:44Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-10-27T00:05:44Z"
+      },
+      "message": "chore: integrar develop à branch da PR #184 (#158)"
+    },
+    "parents": [
+      "fa92a818a61c68e65ea2c9440e8e7aaa82e8f2d7",
+      "3c886df9cb960a3585725200024ab31b212c1451"
+    ],
+    "additions": 873,
+    "deletions": 44,
+    "total_changes": 917,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "fa92a818a61c68e65ea2c9440e8e7aaa82e8f2d7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-10-27T00:01:30Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-10-27T00:01:30Z"
+      },
+      "message": "fix(auth): isolar retorno e validar jornada com API real (#158)"
+    },
+    "parents": [
+      "bf010d7c87c72abbc616928d4388204106e52b19"
+    ],
+    "additions": 883,
+    "deletions": 80,
+    "total_changes": 963,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "bf010d7c87c72abbc616928d4388204106e52b19",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-26T19:08:06Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-26T19:08:06Z"
+      },
+      "message": "fix(auth): preservar retorno da avaliação durante autenticação"
+    },
+    "parents": [
+      "6c2def0a4444ab993b27aaac0fabfe823159f208"
+    ],
+    "additions": 37,
+    "deletions": 11,
+    "total_changes": 48,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3c886df9cb960a3585725200024ab31b212c1451",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-26T15:50:39Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-26T15:50:39Z"
+      },
+      "message": "Merge pull request #183 from unb-mds/feature/157-resultados-comparacao\n\nfeat(ux): melhorar apresentação de resultados e comparação (#157)"
+    },
+    "parents": [
+      "91ecb79efc1c473624e0adeb358d57eab835da98",
+      "b8704f2b076ea89fd5f8f81d6d7ae062710af8b5"
+    ],
+    "additions": 903,
+    "deletions": 43,
+    "total_changes": 946,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b8704f2b076ea89fd5f8f81d6d7ae062710af8b5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-10-26T15:47:00Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-10-26T15:47:00Z"
+      },
+      "message": "fix(ux): agrupar disciplinas e registrar validação real (#157)"
+    },
+    "parents": [
+      "e04122a6e115639d33e86a047a2d4ab67296f745"
+    ],
+    "additions": 873,
+    "deletions": 44,
+    "total_changes": 917,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6c2def0a4444ab993b27aaac0fabfe823159f208",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:49:37Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:49:37Z"
+      },
+      "message": "test: fix evaluation browser integration assertions"
+    },
+    "parents": [
+      "30eabae5dc61995509237c16e36e3cefbde7df3c"
+    ],
+    "additions": 10,
+    "deletions": 4,
+    "total_changes": 14,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "30eabae5dc61995509237c16e36e3cefbde7df3c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:30:02Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:30:02Z"
+      },
+      "message": "test(frontend): cobrir jornada de avaliação e autenticação (#158)"
+    },
+    "parents": [
+      "358d4cfe6daa16ba5fc61e4a3cec3eeda2a983fc"
+    ],
+    "additions": 43,
+    "deletions": 5,
+    "total_changes": 48,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "358d4cfe6daa16ba5fc61e4a3cec3eeda2a983fc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:29:48Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:29:48Z"
+      },
+      "message": "feat(auth): preservar retorno à avaliação no acesso (#158)"
+    },
+    "parents": [
+      "a96ea1e41919f01ad40ddc461e5f95dd2f99b3ab"
+    ],
+    "additions": 384,
+    "deletions": 273,
+    "total_changes": 657,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a96ea1e41919f01ad40ddc461e5f95dd2f99b3ab",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:28:22Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:28:22Z"
+      },
+      "message": "feat(ux): destacar contexto e acesso no formulário (#158)"
+    },
+    "parents": [
+      "9b50740805986935fd222b191c29ed25040f96bc"
+    ],
+    "additions": 34,
+    "deletions": 10,
+    "total_changes": 44,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9b50740805986935fd222b191c29ed25040f96bc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:27:40Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:27:40Z"
+      },
+      "message": "feat(ux): refinar controles dos critérios da avaliação (#158)"
+    },
+    "parents": [
+      "e04122a6e115639d33e86a047a2d4ab67296f745"
+    ],
+    "additions": 64,
+    "deletions": 8,
+    "total_changes": 72,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e04122a6e115639d33e86a047a2d4ab67296f745",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:16:46Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:16:46Z"
+      },
+      "message": "feat(ux): destacar professor e disciplina selecionados (#157)"
+    },
+    "parents": [
+      "7a6dd00ddf257c7731e2685c974878226d22878d"
+    ],
+    "additions": 10,
+    "deletions": 2,
+    "total_changes": 12,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7a6dd00ddf257c7731e2685c974878226d22878d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:15:43Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:15:43Z"
+      },
+      "message": "feat(ux): apresentar ações nos cartões de comparação (#157)"
+    },
+    "parents": [
+      "b4bd990ad667205df2d4e1c1456f56276bc86238"
+    ],
+    "additions": 17,
+    "deletions": 3,
+    "total_changes": 20,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b4bd990ad667205df2d4e1c1456f56276bc86238",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:15:10Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:15:10Z"
+      },
+      "message": "feat(ux): contextualizar disciplinas no perfil do professor (#157)"
+    },
+    "parents": [
+      "1c235f7da89aa50ebcfb0bb89d2538299aa14310"
+    ],
+    "additions": 13,
+    "deletions": 4,
+    "total_changes": 17,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1c235f7da89aa50ebcfb0bb89d2538299aa14310",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:14:41Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-26T00:14:41Z"
+      },
+      "message": "feat(ux): identificar unidades e códigos nos resultados (#157)"
+    },
+    "parents": [
+      "91ecb79efc1c473624e0adeb358d57eab835da98"
+    ],
+    "additions": 3,
+    "deletions": 3,
+    "total_changes": 6,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "91ecb79efc1c473624e0adeb358d57eab835da98",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T03:07:52Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-23T03:07:52Z"
+      },
+      "message": "Merge pull request #182 from unb-mds/feature/153-ajustes-prototipo\n\nfeat(ux): registrar validação da jornada e ajustar protótipo (#153)"
+    },
+    "parents": [
+      "741083cebe7cbb1d5ea0b3c2f4ac83cf362f8fa1",
+      "25d99d423218b39f8b24a782ec57a99dc7e3031f"
+    ],
+    "additions": 795,
+    "deletions": 141,
+    "total_changes": 936,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "25d99d423218b39f8b24a782ec57a99dc7e3031f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T02:10:30Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T02:10:30Z"
+      },
+      "message": "test(frontend): aguardar hidratação no acesso direto à avaliação"
+    },
+    "parents": [
+      "4d224771bc864c2e11ae11f406135faf53347399"
+    ],
+    "additions": 3,
+    "deletions": 2,
+    "total_changes": 5,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4d224771bc864c2e11ae11f406135faf53347399",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T02:01:14Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T02:01:14Z"
+      },
+      "message": "feat(ux): registrar reteste e refinar protótipo (#153)"
+    },
+    "parents": [
+      "60e63246831533f7c27ac93031bd5828ff37b5bf"
+    ],
+    "additions": 193,
+    "deletions": 42,
+    "total_changes": 235,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "60e63246831533f7c27ac93031bd5828ff37b5bf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T00:27:24Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-23T00:27:24Z"
+      },
+      "message": "feat(ux): adaptar protótipo para reteste com base simulada (#153)"
+    },
+    "parents": [
+      "741083cebe7cbb1d5ea0b3c2f4ac83cf362f8fa1"
+    ],
+    "additions": 633,
+    "deletions": 131,
+    "total_changes": 764,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "741083cebe7cbb1d5ea0b3c2f4ac83cf362f8fa1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-22T02:13:33Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-22T02:13:33Z"
+      },
+      "message": "Merge pull request #181 from unb-mds/feature/148-ux-observacao\n\ndocs(ux): consolidar observação da jornada com alunos (#148)"
+    },
+    "parents": [
+      "661c7cb68c27ca730b53632b6851a61bc8057d46",
+      "170b806b2c81c830d24b47ca0dcb02536a691f67"
+    ],
+    "additions": 371,
+    "deletions": 29,
+    "total_changes": 400,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "170b806b2c81c830d24b47ca0dcb02536a691f67",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-22T02:09:58Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-22T02:09:58Z"
+      },
+      "message": "Merge branch 'develop' into feature/148-ux-observacao"
+    },
+    "parents": [
+      "bfca0b4578670a6856b662ecff86b8f0f392f1ae",
+      "661c7cb68c27ca730b53632b6851a61bc8057d46"
+    ],
+    "additions": 699,
+    "deletions": 12,
+    "total_changes": 711,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "bfca0b4578670a6856b662ecff86b8f0f392f1ae",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-22T02:01:02Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-22T02:01:02Z"
+      },
+      "message": "docs(ux): consolidar relatos da jornada e correções da documentação (#148)"
+    },
+    "parents": [
+      "a2299ab5151ca406dd552a01798092c4d3f5b50e"
+    ],
+    "additions": 347,
+    "deletions": 22,
+    "total_changes": 369,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "661c7cb68c27ca730b53632b6851a61bc8057d46",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-19T14:15:57Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-19T14:15:57Z"
+      },
+      "message": "Merge pull request #178 from unb-mds/docs/153-validacao-prototipo-jornada\n\ndocs: preparar validação da jornada com alunos (#153)"
+    },
+    "parents": [
+      "5360ff46bb390c7e0ff26f5849257cf77727d1a0",
+      "5cc6263a1b13c7a4d8dcc634ddf3699fc597b1a6"
+    ],
+    "additions": 147,
+    "deletions": 0,
+    "total_changes": 147,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5cc6263a1b13c7a4d8dcc634ddf3699fc597b1a6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-14T17:22:42Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-14T17:22:42Z"
+      },
+      "message": "docs: sincronizar validacao com develop e preservar navegacao (#153)"
+    },
+    "parents": [
+      "1d40dde8e19e5fc6153971cfd4ca32a80a0b1940",
+      "5360ff46bb390c7e0ff26f5849257cf77727d1a0"
+    ],
+    "additions": 1775,
+    "deletions": 124,
+    "total_changes": 1899,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1d40dde8e19e5fc6153971cfd4ca32a80a0b1940",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-14T17:20:06Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-14T17:20:06Z"
+      },
+      "message": "docs: corrigir escopo e evidencias da validacao da jornada (#153)"
+    },
+    "parents": [
+      "e320ee710d2bc6ffe6a5c63633822e848f2aad89"
+    ],
+    "additions": 96,
+    "deletions": 158,
+    "total_changes": 254,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a2299ab5151ca406dd552a01798092c4d3f5b50e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:23:30Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:23:30Z"
+      },
+      "message": "Merge branch 'feature/148-ux-observacao' of https://github.com/unb-mds/2026-02-UnDb into feature/148-ux-observacao"
+    },
+    "parents": [
+      "27bce566ff504dcc9381463a6dbc4c3f3c795c30",
+      "838e4435122136a008df630b89606ad10aeab077"
+    ],
+    "additions": 1057,
+    "deletions": 110,
+    "total_changes": 1167,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "27bce566ff504dcc9381463a6dbc4c3f3c795c30",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:23:04Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:23:04Z"
+      },
+      "message": "docs(mkdocs): disable strict mode to prevent build failures"
+    },
+    "parents": [
+      "ae472942e589acc995df58ae0f0a11b47f2763c5"
+    ],
+    "additions": 13,
+    "deletions": 1,
+    "total_changes": 14,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ae472942e589acc995df58ae0f0a11b47f2763c5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:22:52Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:22:52Z"
+      },
+      "message": "docs(study): improve observação‑jornada‑busca‑comparacao and fix navigation"
+    },
+    "parents": [
+      "a26b909bf41452a378aeeec0a1e35c43eb18bc3c"
+    ],
+    "additions": 16,
+    "deletions": 11,
+    "total_changes": 27,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a26b909bf41452a378aeeec0a1e35c43eb18bc3c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:22:37Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T15:22:37Z"
+      },
+      "message": "ci: use python -m pip for docs dependencies"
+    },
+    "parents": [
+      "36c6984c801d0d8e8c04713d9d46dd34e9491b3a"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5360ff46bb390c7e0ff26f5849257cf77727d1a0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-14T14:41:25Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T14:41:25Z"
+      },
+      "message": "Merge pull request #180 from unb-mds/docs/154-comentarios-denuncia-moderacao\n\ndocs: detalhar RF20–RF22 e decisões de moderação (#154)"
+    },
+    "parents": [
+      "f84f1bd54f599cd4645dd5e3e8d0b4d6263d4fc6",
+      "c66ae6fc1451b58a324e38ec94f359cc7f0d6e93"
+    ],
+    "additions": 552,
+    "deletions": 12,
+    "total_changes": 564,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c66ae6fc1451b58a324e38ec94f359cc7f0d6e93",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-14T14:36:45Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T14:36:45Z"
+      },
+      "message": "Merge branch 'develop' into docs/154-comentarios-denuncia-moderacao"
+    },
+    "parents": [
+      "22271705987a8c3c639b093f843f5aa29d555596",
+      "f84f1bd54f599cd4645dd5e3e8d0b4d6263d4fc6"
+    ],
+    "additions": 164,
+    "deletions": 0,
+    "total_changes": 164,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f84f1bd54f599cd4645dd5e3e8d0b4d6263d4fc6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-14T14:17:47Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T14:17:47Z"
+      },
+      "message": "Merge pull request #176 from unb-mds/feature/148-ux-observacao\n\ndocs: registrar jornada de observação UX da busca e avaliação"
+    },
+    "parents": [
+      "2cdc0aaed007582655537be6a288b6a399de7f42",
+      "838e4435122136a008df630b89606ad10aeab077"
+    ],
+    "additions": 164,
+    "deletions": 0,
+    "total_changes": 164,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "22271705987a8c3c639b093f843f5aa29d555596",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-14T00:43:49Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-14T00:43:49Z"
+      },
+      "message": "docs: sincronizar derivados e validar requisitos da R2 (#154)"
+    },
+    "parents": [
+      "7fed904f7a0b6a36437f625c6478f2583599f92a"
+    ],
+    "additions": 290,
+    "deletions": 4,
+    "total_changes": 294,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7fed904f7a0b6a36437f625c6478f2583599f92a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-14T00:38:46Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-14T00:38:46Z"
+      },
+      "message": "docs: detalhar regras de comentarios denuncia e moderacao (#154)"
+    },
+    "parents": [
+      "2cdc0aaed007582655537be6a288b6a399de7f42"
+    ],
+    "additions": 262,
+    "deletions": 8,
+    "total_changes": 270,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "838e4435122136a008df630b89606ad10aeab077",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T00:11:22Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-14T00:11:22Z"
+      },
+      "message": "Merge branch 'develop' into feature/148-ux-observacao"
+    },
+    "parents": [
+      "36c6984c801d0d8e8c04713d9d46dd34e9491b3a",
+      "2cdc0aaed007582655537be6a288b6a399de7f42"
+    ],
+    "additions": 1057,
+    "deletions": 110,
+    "total_changes": 1167,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "36c6984c801d0d8e8c04713d9d46dd34e9491b3a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T00:01:09Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-14T00:01:09Z"
+      },
+      "message": "docs: alinhar protocolo UX ao feedback da R1 e corrigir navegacao no MkDocs (#148)"
+    },
+    "parents": [
+      "a1d7454d480d8b440d01690c6f3a1956447b0d87"
+    ],
+    "additions": 128,
+    "deletions": 193,
+    "total_changes": 321,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a1d7454d480d8b440d01690c6f3a1956447b0d87",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-13T23:55:05Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-13T23:55:05Z"
+      },
+      "message": "Merge branch 'feature/148-ux-observacao' of https://github.com/unb-mds/2026-02-UnDb into feature/148-ux-observacao"
+    },
+    "parents": [
+      "0198fb1460460585d07beee6c2ba52ba0629c727",
+      "71cb9545e94cc68aa9185feaf668bf15a427285c"
+    ],
+    "additions": 421,
+    "deletions": 8,
+    "total_changes": 429,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2cdc0aaed007582655537be6a288b6a399de7f42",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Medeiros",
+        "date": "2026-10-13T23:33:43Z",
+        "login": "warlleymedeiros",
+        "id": 294646625,
+        "author_email_hash": "dd8c960fa8db537671c1880a99b8184b1257e9e369bd8394c6e1ae2115f18107"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-13T23:33:43Z"
+      },
+      "message": "Merge pull request #179 from unb-mds/feature/152-prototipo-jornada-ux\n\nfeat: prototipar jornada da entrada à avaliação (#152)"
+    },
+    "parents": [
+      "07fed88e0f3fce5922ef4f696b960ad99c01fc6d",
+      "d5bd2008d8a0daf125d74bd7cc87f94a98e1a2d0"
+    ],
+    "additions": 783,
+    "deletions": 32,
+    "total_changes": 815,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d5bd2008d8a0daf125d74bd7cc87f94a98e1a2d0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-13T22:24:33Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-13T22:24:33Z"
+      },
+      "message": "fix: estabilizar testes de navegador e ajustar prototipo (#152)"
+    },
+    "parents": [
+      "85c57515d1f9b3ecdcab893c7c4ee3c28a8e5170"
+    ],
+    "additions": 110,
+    "deletions": 13,
+    "total_changes": 123,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "85c57515d1f9b3ecdcab893c7c4ee3c28a8e5170",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-13T13:51:39Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-13T13:51:39Z"
+      },
+      "message": "test: validar prototipo e registrar evidencias da jornada (#152)"
+    },
+    "parents": [
+      "9481e6b2b023f6298f890a501c46a50c839345bd"
+    ],
+    "additions": 365,
+    "deletions": 0,
+    "total_changes": 365,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9481e6b2b023f6298f890a501c46a50c839345bd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-10-13T13:51:09Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-10-13T13:51:09Z"
+      },
+      "message": "feat: prototipar jornada da entrada a avaliacao (#152)"
+    },
+    "parents": [
+      "07fed88e0f3fce5922ef4f696b960ad99c01fc6d"
+    ],
+    "additions": 312,
+    "deletions": 23,
+    "total_changes": 335,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "07fed88e0f3fce5922ef4f696b960ad99c01fc6d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-13T13:28:48Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-13T13:28:48Z"
+      },
+      "message": "Merge pull request #177 from unb-mds/docs/150-fluxo-integracao-sigaa\n\ndocs: explicar o fluxo completo da integracao SIGAA"
+    },
+    "parents": [
+      "1e56f14c778a6f9a06e8e902bb164d3fa799afc3",
+      "547403fada593e7a2aa09361f8178b7c2171bf58"
+    ],
+    "additions": 274,
+    "deletions": 78,
+    "total_changes": 352,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "547403fada593e7a2aa09361f8178b7c2171bf58",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-13T13:26:37Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-10-13T13:26:37Z"
+      },
+      "message": "docs: corrigir consulta e semantica da importacao SIGAA (#150)"
+    },
+    "parents": [
+      "6e78d47727586bbf0b78a654db917c963a0a44f3"
+    ],
+    "additions": 10,
+    "deletions": 8,
+    "total_changes": 18,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e320ee710d2bc6ffe6a5c63633822e848f2aad89",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:04:44Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:04:44Z"
+      },
+      "message": "style: remover trailing whitespace do documento de validacao"
+    },
+    "parents": [
+      "3465c1b61ab3275555129a65043d8bf6558d8f6c"
+    ],
+    "additions": 6,
+    "deletions": 6,
+    "total_changes": 12,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3465c1b61ab3275555129a65043d8bf6558d8f6c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:02:14Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:02:14Z"
+      },
+      "message": "docs: adicionar validacao da jornada ao mkdocs (#153)"
+    },
+    "parents": [
+      "9063687ba2d948ba4ae0cb215b563262a2b03776"
+    ],
+    "additions": 1,
+    "deletions": 0,
+    "total_changes": 1,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9063687ba2d948ba4ae0cb215b563262a2b03776",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:01:27Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:01:27Z"
+      },
+      "message": "docs: comparar obstaculos e documentar encaminhamentos ao PO (#153)"
+    },
+    "parents": [
+      "1ed56fb6f6bc5d3073a2e6a946de1a2061a9051b"
+    ],
+    "additions": 70,
+    "deletions": 0,
+    "total_changes": 70,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1ed56fb6f6bc5d3073a2e6a946de1a2061a9051b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:00:43Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:00:43Z"
+      },
+      "message": "docs: registrar evidencias da avaliacao do prototipo (#153)"
+    },
+    "parents": [
+      "e1678e3fa492e3560201ce181e3f80ffe409bd39"
+    ],
+    "additions": 40,
+    "deletions": 0,
+    "total_changes": 40,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e1678e3fa492e3560201ce181e3f80ffe409bd39",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:00:22Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T04:00:22Z"
+      },
+      "message": "docs: estruturar roteiro de avaliacao da jornada (#153)"
+    },
+    "parents": [
+      "1e56f14c778a6f9a06e8e902bb164d3fa799afc3"
+    ],
+    "additions": 98,
+    "deletions": 0,
+    "total_changes": 98,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6e78d47727586bbf0b78a654db917c963a0a44f3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T03:44:45Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T03:44:45Z"
+      },
+      "message": "docs: alinhar arquitetura e referencias da integracao"
+    },
+    "parents": [
+      "fff99f8b879eabf5c68501fecfce1ca4f3f27e2e"
+    ],
+    "additions": 36,
+    "deletions": 16,
+    "total_changes": 52,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "fff99f8b879eabf5c68501fecfce1ca4f3f27e2e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T03:44:38Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T03:44:38Z"
+      },
+      "message": "docs: explicar falhas e historico das importacoes"
+    },
+    "parents": [
+      "4f3dcc3e52ba46c90befda7bae92141546e2bae3"
+    ],
+    "additions": 89,
+    "deletions": 27,
+    "total_changes": 116,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4f3dcc3e52ba46c90befda7bae92141546e2bae3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-10-13T03:44:44Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-10-13T03:44:44Z"
+      },
+      "message": "docs: mapear o fluxo de importacao SIGAA"
+    },
+    "parents": [
+      "1e56f14c778a6f9a06e8e902bb164d3fa799afc3"
+    ],
+    "additions": 147,
+    "deletions": 35,
+    "total_changes": 182,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0198fb1460460585d07beee6c2ba52ba0629c727",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:24:59Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:24:59Z"
+      },
+      "message": "docs: add UX observation protocol for search/comparison/evaluation (#148)"
+    },
+    "parents": [
+      "1610804aeceff104e824442b9b088cbe88670204"
+    ],
+    "additions": 96,
+    "deletions": 0,
+    "total_changes": 96,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "71cb9545e94cc68aa9185feaf668bf15a427285c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:22:04Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-12T22:22:04Z"
+      },
+      "message": "Merge branch 'develop' into feature/148-ux-observacao"
+    },
+    "parents": [
+      "397a7d7813695a3a43c9471013679783f6980736",
+      "1e56f14c778a6f9a06e8e902bb164d3fa799afc3"
+    ],
+    "additions": 420,
+    "deletions": 5,
+    "total_changes": 425,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "397a7d7813695a3a43c9471013679783f6980736",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:21:35Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:21:35Z"
+      },
+      "message": "Fix mkdocs.yml YAML structure and include the new UX observation page in the navigation"
+    },
+    "parents": [
+      "1610804aeceff104e824442b9b088cbe88670204"
+    ],
+    "additions": 1,
+    "deletions": 3,
+    "total_changes": 4,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1610804aeceff104e824442b9b088cbe88670204",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:14:22Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T22:14:22Z"
+      },
+      "message": "docs: registrar jornada de observação UX da busca e avaliação"
+    },
+    "parents": [
+      "5a3f731a8907ff8423e994984b8cee5515204001"
+    ],
+    "additions": 135,
+    "deletions": 0,
+    "total_changes": 135,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1e56f14c778a6f9a06e8e902bb164d3fa799afc3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T21:53:24Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-12T21:53:24Z"
+      },
+      "message": "Merge pull request #174 from unb-mds/docs/151-distribution-plan\n\ndocs: registrar proposta de distribuição da Release 2 (#151)"
+    },
+    "parents": [
+      "45e352390151c8827c33f366ae0bfb74dbe93a0f",
+      "0745be905a0493a42fb762ea2a4c50fc2fc68676"
+    ],
+    "additions": 96,
+    "deletions": 0,
+    "total_changes": 96,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0745be905a0493a42fb762ea2a4c50fc2fc68676",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-12T19:37:10Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-10-12T19:37:10Z"
+      },
+      "message": "docs: corrige planejamento da Release 2 e configuracao MkDocs"
+    },
+    "parents": [
+      "4668d83cc7ebefe518c3a18be06f08bebcdd96b8"
+    ],
+    "additions": 84,
+    "deletions": 24,
+    "total_changes": 108,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4668d83cc7ebefe518c3a18be06f08bebcdd96b8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T19:19:24Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-12T19:19:24Z"
+      },
+      "message": "Merge branch 'develop' into r2/distribution-plan-issue-151"
+    },
+    "parents": [
+      "67dec494ce9788b41d09d1445ea2bf2915f07783",
+      "45e352390151c8827c33f366ae0bfb74dbe93a0f"
+    ],
+    "additions": 361,
+    "deletions": 5,
+    "total_changes": 366,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "67dec494ce9788b41d09d1445ea2bf2915f07783",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T19:16:24Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-12T19:16:24Z"
+      },
+      "message": "Adicionar documento de planejamento e distribuição da Release 2 para validar a issue #151 via PR."
+    },
+    "parents": [
+      "5a3f731a8907ff8423e994984b8cee5515204001"
+    ],
+    "additions": 82,
+    "deletions": 83,
+    "total_changes": 165,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "45e352390151c8827c33f366ae0bfb74dbe93a0f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T17:11:58Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-07T17:11:58Z"
+      },
+      "message": "Merge pull request #172 from unb-mds/docs/149-clareza-requisitos\n\n[DOCS] Auditoria de clareza e rastreabilidade dos requisitos (#149)"
+    },
+    "parents": [
+      "79561d937eb868a411accda89cdbdd9f351c2739",
+      "544906b00e4982f8778fc0d7cff1fa9fef2820e3"
+    ],
+    "additions": 322,
+    "deletions": 0,
+    "total_changes": 322,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "544906b00e4982f8778fc0d7cff1fa9fef2820e3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T16:31:09Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T16:31:09Z"
+      },
+      "message": "docs(estudos): corrigir link externo de specs.md para build do mkdocs (#149)"
+    },
+    "parents": [
+      "6c89f78118ffa33087dfd7f0bb44817982d92590"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6c89f78118ffa33087dfd7f0bb44817982d92590",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:56:29Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-07T15:56:29Z"
+      },
+      "message": "Fix path for technical implementation specification\n\nUpdated the path for the technical implementation specification in the audit document."
+    },
+    "parents": [
+      "426c8f91d0a845010c3759f9daab61e8ce4602cc"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "426c8f91d0a845010c3759f9daab61e8ce4602cc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:55:20Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-07T15:55:20Z"
+      },
+      "message": "Update mkdocs.yml"
+    },
+    "parents": [
+      "8abe67e40c9b38bf7ad88db3123f5ce07b40491c"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8abe67e40c9b38bf7ad88db3123f5ce07b40491c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:51:44Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-10-07T15:51:44Z"
+      },
+      "message": "Merge branch 'develop' into docs/149-clareza-requisitos"
+    },
+    "parents": [
+      "cc04c8f505b4ebd05f7975e98ad7b939806e9816",
+      "79561d937eb868a411accda89cdbdd9f351c2739"
+    ],
+    "additions": 2,
+    "deletions": 5,
+    "total_changes": 7,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "cc04c8f505b4ebd05f7975e98ad7b939806e9816",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:48:05Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:48:05Z"
+      },
+      "message": "docs(mkdocs): incluir auditoria de requisitos na navegação (#149)\n\nAdiciona o documento de auditoria à árvore de navegação de Estudos no mkdocs.yml."
+    },
+    "parents": [
+      "b3c625847792631f8c452a1c74155a262651b55c"
+    ],
+    "additions": 1,
+    "deletions": 0,
+    "total_changes": 1,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b3c625847792631f8c452a1c74155a262651b55c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:47:42Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:47:42Z"
+      },
+      "message": "docs(requisitos): referenciar auditoria da issue 149 na rastreabilidade (#149)\n\nVincula a auditoria de clareza e rastreabilidade na seção 13 de docs/requisitos.md."
+    },
+    "parents": [
+      "d8c726344f1e9a82c21906833b561be71d78a77f"
+    ],
+    "additions": 2,
+    "deletions": 0,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d8c726344f1e9a82c21906833b561be71d78a77f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:47:17Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-10-07T15:47:17Z"
+      },
+      "message": "docs(requisitos): auditar clareza e rastreabilidade dos requisitos (#149)\n\nCria relatório de auditoria de clareza e rastreabilidade para a Release 2, detalhando achados AMB-001 a AMB-012, distinguindo correções documentais de novas decisões e formalizando pauta para o PO."
+    },
+    "parents": [
+      "5a3f731a8907ff8423e994984b8cee5515204001"
+    ],
+    "additions": 319,
+    "deletions": 0,
+    "total_changes": 319,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "79561d937eb868a411accda89cdbdd9f351c2739",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-09-28T00:15:52Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-28T00:15:52Z"
+      },
+      "message": "Merge pull request #143 from unb-mds/docs/141-sync-release-notes-develop\n\ndocs: sincronizar notas da Release 1 em develop"
+    },
+    "parents": [
+      "da24087fa3fdb424a5b536c571b1002b440579e8",
+      "8776a17b761e4ee3533c1d8de113fbbadac850e5"
+    ],
+    "additions": 3,
+    "deletions": 3,
+    "total_changes": 6,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8776a17b761e4ee3533c1d8de113fbbadac850e5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-09-27T23:10:05Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-09-27T23:10:05Z"
+      },
+      "message": "docs: corrige estado da release 1.0.0 (#141)"
+    },
+    "parents": [
+      "da24087fa3fdb424a5b536c571b1002b440579e8"
+    ],
+    "additions": 3,
+    "deletions": 3,
+    "total_changes": 6,
+    "repo_name": "2026-02-UnDb"
   },
   {
     "sha": "5a3f731a8907ff8423e994984b8cee5515204001",
@@ -55,6 +3719,160 @@
     "additions": 3,
     "deletions": 3,
     "total_changes": 6,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "da24087fa3fdb424a5b536c571b1002b440579e8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-09-27T15:33:50Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-27T15:33:50Z"
+      },
+      "message": "Merge pull request #140 from unb-mds/docs/139-atualizar-requisitos"
+    },
+    "parents": [
+      "179edbda768fac50d928b37b8a7b9be0331b1374",
+      "069b276f675dea423dc175e6b6c8614afdf834db"
+    ],
+    "additions": 2,
+    "deletions": 4,
+    "total_changes": 6,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "069b276f675dea423dc175e6b6c8614afdf834db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-09-27T13:25:34Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-09-27T13:25:34Z"
+      },
+      "message": "docs(requisitos): atualizar motivacao e origem dos requisitos (#139)"
+    },
+    "parents": [
+      "179edbda768fac50d928b37b8a7b9be0331b1374"
+    ],
+    "additions": 2,
+    "deletions": 4,
+    "total_changes": 6,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "179edbda768fac50d928b37b8a7b9be0331b1374",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-09-25T15:02:42Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-25T15:02:42Z"
+      },
+      "message": "Merge pull request #137 from unb-mds/docs/135-ajuste-nos-requisitos\n\ndocs: ajustar seção de requisitos"
+    },
+    "parents": [
+      "31f47798c2583f4ffc37e6244a944fae2b44f9dc",
+      "d92545f8d9444cba543b2b1dba632e71f1835d7c"
+    ],
+    "additions": 1,
+    "deletions": 2,
+    "total_changes": 3,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d92545f8d9444cba543b2b1dba632e71f1835d7c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-09-25T14:57:31Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-25T14:57:31Z"
+      },
+      "message": "Merge branch 'develop' into docs/135-ajuste-nos-requisitos"
+    },
+    "parents": [
+      "f1bbee8d8f7fcd41bf3d816fa27f6e55001ed3ae",
+      "31f47798c2583f4ffc37e6244a944fae2b44f9dc"
+    ],
+    "additions": 95,
+    "deletions": 20,
+    "total_changes": 115,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "31f47798c2583f4ffc37e6244a944fae2b44f9dc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-09-25T14:57:12Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-09-25T14:57:12Z"
+      },
+      "message": "Merge pull request #134 from unb-mds/release/1.0.0\n\nchore(release): sincronizar 1.0.0 com develop (#132)"
+    },
+    "parents": [
+      "f40d4e97acf0a957bd316ced218c10ac0eb2e058",
+      "4fe06c006eb0ed84dad0eafc7b2357cc74d7e6b8"
+    ],
+    "additions": 95,
+    "deletions": 20,
+    "total_changes": 115,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f1bbee8d8f7fcd41bf3d816fa27f6e55001ed3ae",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-09-25T13:55:50Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-09-25T13:55:50Z"
+      },
+      "message": "docs: ajustar seção de requisitos"
+    },
+    "parents": [
+      "f40d4e97acf0a957bd316ced218c10ac0eb2e058"
+    ],
+    "additions": 1,
+    "deletions": 2,
+    "total_changes": 3,
     "repo_name": "2026-02-UnDb"
   },
   {
