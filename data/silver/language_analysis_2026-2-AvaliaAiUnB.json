@@ -2,20 +2,26 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-09T14:40:04.856317+00:00",
+  "analyzed_at": "2026-11-10T14:23:49.620545+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 81,
-  "total_bytes": 381740,
+  "total_files": 102,
+  "total_bytes": 481924,
   "languages": [
     {
       "language": "Python",
       "file_count": 37,
-      "total_bytes": 159876,
-      "percentage": 41.88,
+      "total_bytes": 162983,
+      "percentage": 33.82,
       "files": [
+        {
+          "path": "tests/test_supabase.py",
+          "name": "test_supabase.py",
+          "size": 23285,
+          "extension": ".py"
+        },
         {
           "path": "scraper/scraper_sigaa.py",
           "name": "scraper_sigaa.py",
@@ -23,15 +29,9 @@
           "extension": ".py"
         },
         {
-          "path": "tests/test_supabase.py",
-          "name": "test_supabase.py",
-          "size": 21611,
-          "extension": ".py"
-        },
-        {
           "path": "app/repositorio.py",
           "name": "repositorio.py",
-          "size": 15964,
+          "size": 16712,
           "extension": ".py"
         },
         {
@@ -49,7 +49,7 @@
         {
           "path": "tests/fake_supabase.py",
           "name": "fake_supabase.py",
-          "size": 7416,
+          "size": 7701,
           "extension": ".py"
         },
         {
@@ -59,15 +59,15 @@
           "extension": ".py"
         },
         {
-          "path": "tests/test_ranking.py",
-          "name": "test_ranking.py",
-          "size": 5264,
+          "path": "app/routes/professor_routes.py",
+          "name": "professor_routes.py",
+          "size": 5497,
           "extension": ".py"
         },
         {
-          "path": "app/routes/professor_routes.py",
-          "name": "professor_routes.py",
-          "size": 5188,
+          "path": "tests/test_ranking.py",
+          "name": "test_ranking.py",
+          "size": 5264,
           "extension": ".py"
         },
         {
@@ -79,10 +79,78 @@
       ]
     },
     {
+      "language": "Markdown",
+      "file_count": 20,
+      "total_bytes": 120862,
+      "percentage": 25.08,
+      "files": [
+        {
+          "path": "docs/Modelo de Dados.md",
+          "name": "Modelo de Dados.md",
+          "size": 19448,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/DOCUMENTO_DE_VISAO.md",
+          "name": "DOCUMENTO_DE_VISAO.md",
+          "size": 12458,
+          "extension": ".md"
+        },
+        {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 11924,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/BACKEND.md",
+          "name": "BACKEND.md",
+          "size": 10270,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/COMENTARIOS.md",
+          "name": "COMENTARIOS.md",
+          "size": 9932,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/IMPLEMENTACAO_26_36_37.md",
+          "name": "IMPLEMENTACAO_26_36_37.md",
+          "size": 7050,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/FRONTEND.md",
+          "name": "FRONTEND.md",
+          "size": 6447,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/HOSPEDAGEM.md",
+          "name": "HOSPEDAGEM.md",
+          "size": 4947,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/CIBERSEGURANCA.md",
+          "name": "CIBERSEGURANCA.md",
+          "size": 4839,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/FUNCIONALIDADES.md",
+          "name": "FUNCIONALIDADES.md",
+          "size": 4639,
+          "extension": ".md"
+        }
+      ]
+    },
+    {
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 27.15,
+      "percentage": 21.51,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -105,145 +173,45 @@
       ]
     },
     {
-      "language": "Markdown",
-      "file_count": 12,
-      "total_bytes": 76089,
-      "percentage": 19.93,
-      "files": [
-        {
-          "path": "docs/Modelo de Dados.md",
-          "name": "Modelo de Dados.md",
-          "size": 19448,
-          "extension": ".md"
-        },
-        {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 15580,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/DOCUMENTO_DE_VISAO.md",
-          "name": "DOCUMENTO_DE_VISAO.md",
-          "size": 12458,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/IMPLEMENTACAO_26_36_37.md",
-          "name": "IMPLEMENTACAO_26_36_37.md",
-          "size": 7050,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/COMO_USAR_SCRAPER.md",
-          "name": "COMO_USAR_SCRAPER.md",
-          "size": 4156,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/AUDITORIA_SEGURANCA.md",
-          "name": "AUDITORIA_SEGURANCA.md",
-          "size": 4118,
-          "extension": ".md"
-        },
-        {
-          "path": "CLAUDE.md",
-          "name": "CLAUDE.md",
-          "size": 4013,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/index.md",
-          "name": "index.md",
-          "size": 3509,
-          "extension": ".md"
-        },
-        {
-          "path": "RELEASE-v2.0.0.md",
-          "name": "RELEASE-v2.0.0.md",
-          "size": 2401,
-          "extension": ".md"
-        },
-        {
-          "path": "RELEASE-v1.0.0.md",
-          "name": "RELEASE-v1.0.0.md",
-          "size": 1771,
-          "extension": ".md"
-        }
-      ]
-    },
-    {
-      "language": "HTML",
-      "file_count": 9,
-      "total_bytes": 22748,
-      "percentage": 5.96,
-      "files": [
-        {
-          "path": "app/templates/comparacao.html",
-          "name": "comparacao.html",
-          "size": 3743,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/lista_professores.html",
-          "name": "lista_professores.html",
-          "size": 3123,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/avaliacao.html",
-          "name": "avaliacao.html",
-          "size": 2964,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/ranking.html",
-          "name": "ranking.html",
-          "size": 2921,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/perfil_professor.html",
-          "name": "perfil_professor.html",
-          "size": 2779,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/cadastro.html",
-          "name": "cadastro.html",
-          "size": 2712,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/perfil.html",
-          "name": "perfil.html",
-          "size": 2225,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/index.html",
-          "name": "index.html",
-          "size": 1320,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/login.html",
-          "name": "login.html",
-          "size": 961,
-          "extension": ".html"
-        }
-      ]
-    },
-    {
       "language": "CSS",
-      "file_count": 7,
-      "total_bytes": 10115,
-      "percentage": 2.65,
+      "file_count": 11,
+      "total_bytes": 35763,
+      "percentage": 7.42,
       "files": [
+        {
+          "path": "app/static/base.css",
+          "name": "base.css",
+          "size": 9975,
+          "extension": ".css"
+        },
+        {
+          "path": "app/static/lista_professores.css",
+          "name": "lista_professores.css",
+          "size": 4565,
+          "extension": ".css"
+        },
+        {
+          "path": "app/static/perfil.css",
+          "name": "perfil.css",
+          "size": 3330,
+          "extension": ".css"
+        },
         {
           "path": "app/static/indicadores.css",
           "name": "indicadores.css",
-          "size": 2605,
+          "size": 2711,
+          "extension": ".css"
+        },
+        {
+          "path": "app/static/perfil_professor.css",
+          "name": "perfil_professor.css",
+          "size": 2702,
+          "extension": ".css"
+        },
+        {
+          "path": "app/static/avaliacao.css",
+          "name": "avaliacao.css",
+          "size": 2619,
           "extension": ".css"
         },
         {
@@ -253,34 +221,122 @@
           "extension": ".css"
         },
         {
-          "path": "app/static/perfil_professor.css",
-          "name": "perfil_professor.css",
-          "size": 1282,
-          "extension": ".css"
-        },
-        {
-          "path": "app/static/perfil.css",
-          "name": "perfil.css",
-          "size": 1176,
-          "extension": ".css"
-        },
-        {
-          "path": "app/static/avaliacao.css",
-          "name": "avaliacao.css",
-          "size": 1090,
-          "extension": ".css"
-        },
-        {
-          "path": "app/static/auth.css",
-          "name": "auth.css",
-          "size": 860,
+          "path": "app/static/comparacao.css",
+          "name": "comparacao.css",
+          "size": 1988,
           "extension": ".css"
         },
         {
           "path": "app/static/index.css",
           "name": "index.css",
-          "size": 544,
+          "size": 1955,
           "extension": ".css"
+        },
+        {
+          "path": "app/static/ranking.css",
+          "name": "ranking.css",
+          "size": 1726,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 11,
+      "total_bytes": 34749,
+      "percentage": 7.21,
+      "files": [
+        {
+          "path": "app/templates/lista_professores.html",
+          "name": "lista_professores.html",
+          "size": 7400,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil_professor.html",
+          "name": "perfil_professor.html",
+          "size": 4971,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/comparacao.html",
+          "name": "comparacao.html",
+          "size": 4127,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil.html",
+          "name": "perfil.html",
+          "size": 3163,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/cadastro.html",
+          "name": "cadastro.html",
+          "size": 3040,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/avaliacao.html",
+          "name": "avaliacao.html",
+          "size": 3032,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/ranking.html",
+          "name": "ranking.html",
+          "size": 2924,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/_topo.html",
+          "name": "_topo.html",
+          "size": 2681,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/index.html",
+          "name": "index.html",
+          "size": 1906,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/login.html",
+          "name": "login.html",
+          "size": 1222,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
+      "language": "SVG Image",
+      "file_count": 4,
+      "total_bytes": 9628,
+      "percentage": 2.0,
+      "files": [
+        {
+          "path": "docs/mockups/comentarios/escrever.svg",
+          "name": "escrever.svg",
+          "size": 2490,
+          "extension": ".svg"
+        },
+        {
+          "path": "docs/mockups/comentarios/listar.svg",
+          "name": "listar.svg",
+          "size": 2465,
+          "extension": ".svg"
+        },
+        {
+          "path": "docs/mockups/comentarios/apagar.svg",
+          "name": "apagar.svg",
+          "size": 2340,
+          "extension": ".svg"
+        },
+        {
+          "path": "docs/mockups/comentarios/editar.svg",
+          "name": "editar.svg",
+          "size": 2333,
+          "extension": ".svg"
         }
       ]
     },
@@ -288,7 +344,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 4434,
-      "percentage": 1.16,
+      "percentage": 0.92,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -301,13 +357,13 @@
     {
       "language": "YAML",
       "file_count": 5,
-      "total_bytes": 3348,
-      "percentage": 0.88,
+      "total_bytes": 3653,
+      "percentage": 0.76,
       "files": [
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 1720,
+          "size": 2025,
           "extension": ".yml"
         },
         {
@@ -337,11 +393,37 @@
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 1,
-      "total_bytes": 570,
-      "percentage": 0.15,
+      "language": "JavaScript",
+      "file_count": 2,
+      "total_bytes": 3662,
+      "percentage": 0.76,
       "files": [
+        {
+          "path": "app/static/campo-busca.js",
+          "name": "campo-busca.js",
+          "size": 3100,
+          "extension": ".js"
+        },
+        {
+          "path": "app/static/topo.js",
+          "name": "topo.js",
+          "size": 562,
+          "extension": ".js"
+        }
+      ]
+    },
+    {
+      "language": "No Extension",
+      "file_count": 2,
+      "total_bytes": 1630,
+      "percentage": 0.34,
+      "files": [
+        {
+          "path": "LICENSE",
+          "name": "LICENSE",
+          "size": 1060,
+          "extension": ""
+        },
         {
           "path": "Dockerfile",
           "name": "Dockerfile",
@@ -351,24 +433,10 @@
       ]
     },
     {
-      "language": "TOML",
-      "file_count": 1,
-      "total_bytes": 256,
-      "percentage": 0.07,
-      "files": [
-        {
-          "path": "pyproject.toml",
-          "name": "pyproject.toml",
-          "size": 256,
-          "extension": ".toml"
-        }
-      ]
-    },
-    {
       "language": "Unknown",
       "file_count": 1,
       "total_bytes": 238,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": ".env.example",
@@ -379,10 +447,24 @@
       ]
     },
     {
+      "language": "TOML",
+      "file_count": 1,
+      "total_bytes": 256,
+      "percentage": 0.05,
+      "files": [
+        {
+          "path": "pyproject.toml",
+          "name": "pyproject.toml",
+          "size": 256,
+          "extension": ".toml"
+        }
+      ]
+    },
+    {
       "language": "Git Ignore",
       "file_count": 1,
       "total_bytes": 181,
-      "percentage": 0.05,
+      "percentage": 0.04,
       "files": [
         {
           "path": ".gitignore",
@@ -396,7 +478,7 @@
       "language": "Text",
       "file_count": 2,
       "total_bytes": 158,
-      "percentage": 0.04,
+      "percentage": 0.03,
       "files": [
         {
           "path": "requirements.txt",
@@ -416,7 +498,7 @@
       "language": "Docker Ignore",
       "file_count": 1,
       "total_bytes": 71,
-      "percentage": 0.02,
+      "percentage": 0.01,
       "files": [
         {
           "path": ".dockerignore",
@@ -428,7 +510,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-09T14:41:12.909932+00:00",
+    "extracted_at": "2026-11-10T14:25:03.581710+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }

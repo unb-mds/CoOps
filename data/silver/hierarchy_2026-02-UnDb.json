@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-09T14:40:08.420182+00:00",
+  "extracted_at": "2026-11-10T14:23:53.521201+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -77,7 +77,7 @@
         "name": "pull-request.yml",
         "type": "file",
         "language": "YAML",
-        "size": 6909,
+        "size": 10561,
         "extension": ".yml",
         "path": ".github/workflows/pull-request.yml"
       },
@@ -85,7 +85,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 110,
+        "size": 161,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -123,7 +123,7 @@
         "name": "CONTRIBUTING.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3302,
+        "size": 6137,
         "extension": ".md",
         "path": "CONTRIBUTING.md"
       },
@@ -131,7 +131,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8439,
+        "size": 10307,
         "extension": ".md",
         "path": "README.md"
       },
@@ -145,7 +145,7 @@
         "name": ".dockerignore",
         "type": "file",
         "language": "Docker Ignore",
-        "size": 113,
+        "size": 123,
         "extension": ".dockerignore",
         "path": "backend/.dockerignore"
       },
@@ -205,7 +205,7 @@
         "name": "20260911_01_create_initial_schema.py",
         "type": "file",
         "language": "Python",
-        "size": 4559,
+        "size": 4581,
         "extension": ".py",
         "path": "backend/alembic/versions/20260911_01_create_initial_schema.py"
       },
@@ -213,7 +213,7 @@
         "name": "20260917_02_identidade_institucional.py",
         "type": "file",
         "language": "Python",
-        "size": 8944,
+        "size": 8814,
         "extension": ".py",
         "path": "backend/alembic/versions/20260917_02_identidade_institucional.py"
       },
@@ -240,6 +240,38 @@
         "size": 1099,
         "extension": ".py",
         "path": "backend/alembic/versions/20260921_01_create_user_sessions.py"
+      },
+      {
+        "name": "20261024_01_create_comentario_versoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1644,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261024_01_create_comentario_versoes.py"
+      },
+      {
+        "name": "20261101_01_moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3165,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261101_01_moderacao.py"
+      },
+      {
+        "name": "20261101_02_denuncias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2174,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261101_02_denuncias.py"
+      },
+      {
+        "name": "20261101_03_retencao_legada.py",
+        "type": "file",
+        "language": "Python",
+        "size": 739,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261101_03_retencao_legada.py"
       },
       {
         "name": "app",
@@ -270,10 +302,18 @@
         "path": "backend/app/commands/__init__.py"
       },
       {
+        "name": "descartar_moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 913,
+        "extension": ".py",
+        "path": "backend/app/commands/descartar_moderacao.py"
+      },
+      {
         "name": "importar_sigaa.py",
         "type": "file",
         "language": "Python",
-        "size": 1436,
+        "size": 1421,
         "extension": ".py",
         "path": "backend/app/commands/importar_sigaa.py"
       },
@@ -281,9 +321,25 @@
         "name": "importar_sigaa_agendado.py",
         "type": "file",
         "language": "Python",
-        "size": 3052,
+        "size": 3046,
         "extension": ".py",
         "path": "backend/app/commands/importar_sigaa_agendado.py"
+      },
+      {
+        "name": "iniciar_servidor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 719,
+        "extension": ".py",
+        "path": "backend/app/commands/iniciar_servidor.py"
+      },
+      {
+        "name": "moderador.py",
+        "type": "file",
+        "language": "Python",
+        "size": 565,
+        "extension": ".py",
+        "path": "backend/app/commands/moderador.py"
       },
       {
         "name": "core",
@@ -303,7 +359,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 2705,
+        "size": 2948,
         "extension": ".py",
         "path": "backend/app/core/auth.py"
       },
@@ -311,7 +367,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 497,
+        "size": 544,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -319,7 +375,7 @@
         "name": "database.py",
         "type": "file",
         "language": "Python",
-        "size": 453,
+        "size": 473,
         "extension": ".py",
         "path": "backend/app/core/database.py"
       },
@@ -349,7 +405,7 @@
         "name": "avaliacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 3371,
+        "size": 3369,
         "extension": ".py",
         "path": "backend/app/domain/avaliacoes.py"
       },
@@ -365,7 +421,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 616,
+        "size": 797,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -379,7 +435,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 613,
+        "size": 870,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -387,9 +443,33 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2503,
+        "size": 2582,
         "extension": ".py",
         "path": "backend/app/models/avaliacao.py"
+      },
+      {
+        "name": "comentario_versao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1744,
+        "extension": ".py",
+        "path": "backend/app/models/comentario_versao.py"
+      },
+      {
+        "name": "decisao_moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1074,
+        "extension": ".py",
+        "path": "backend/app/models/decisao_moderacao.py"
+      },
+      {
+        "name": "denuncia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1834,
+        "extension": ".py",
+        "path": "backend/app/models/denuncia.py"
       },
       {
         "name": "disciplina.py",
@@ -403,7 +483,7 @@
         "name": "enums.py",
         "type": "file",
         "language": "Python",
-        "size": 210,
+        "size": 860,
         "extension": ".py",
         "path": "backend/app/models/enums.py"
       },
@@ -419,7 +499,7 @@
         "name": "professor.py",
         "type": "file",
         "language": "Python",
-        "size": 1049,
+        "size": 1007,
         "extension": ".py",
         "path": "backend/app/models/professor.py"
       },
@@ -443,7 +523,7 @@
         "name": "turma.py",
         "type": "file",
         "language": "Python",
-        "size": 1899,
+        "size": 1926,
         "extension": ".py",
         "path": "backend/app/models/turma.py"
       },
@@ -459,7 +539,7 @@
         "name": "usuario.py",
         "type": "file",
         "language": "Python",
-        "size": 1110,
+        "size": 1224,
         "extension": ".py",
         "path": "backend/app/models/usuario.py"
       },
@@ -486,18 +566,42 @@
         "path": "backend/app/repositories/avaliacao_repository.py"
       },
       {
+        "name": "comentario_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5012,
+        "extension": ".py",
+        "path": "backend/app/repositories/comentario_repository.py"
+      },
+      {
+        "name": "denuncia_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3011,
+        "extension": ".py",
+        "path": "backend/app/repositories/denuncia_repository.py"
+      },
+      {
         "name": "disciplina_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 1726,
+        "size": 1690,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repository.py"
+      },
+      {
+        "name": "moderacao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2308,
+        "extension": ".py",
+        "path": "backend/app/repositories/moderacao_repository.py"
       },
       {
         "name": "professor_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2591,
+        "size": 2577,
         "extension": ".py",
         "path": "backend/app/repositories/professor_repository.py"
       },
@@ -505,7 +609,7 @@
         "name": "sessao_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 465,
+        "size": 451,
         "extension": ".py",
         "path": "backend/app/repositories/sessao_repository.py"
       },
@@ -521,7 +625,7 @@
         "name": "unidade_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2208,
+        "size": 2194,
         "extension": ".py",
         "path": "backend/app/repositories/unidade_repository.py"
       },
@@ -529,7 +633,7 @@
         "name": "usuario_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 734,
+        "size": 730,
         "extension": ".py",
         "path": "backend/app/repositories/usuario_repository.py"
       },
@@ -559,23 +663,47 @@
         "name": "avaliacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 1023,
+        "size": 1100,
         "extension": ".py",
         "path": "backend/app/routers/avaliacoes.py"
+      },
+      {
+        "name": "comentarios.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1835,
+        "extension": ".py",
+        "path": "backend/app/routers/comentarios.py"
+      },
+      {
+        "name": "denuncias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2115,
+        "extension": ".py",
+        "path": "backend/app/routers/denuncias.py"
       },
       {
         "name": "disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 3938,
+        "size": 3916,
         "extension": ".py",
         "path": "backend/app/routers/disciplinas.py"
+      },
+      {
+        "name": "moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1682,
+        "extension": ".py",
+        "path": "backend/app/routers/moderacao.py"
       },
       {
         "name": "professores.py",
         "type": "file",
         "language": "Python",
-        "size": 3538,
+        "size": 4308,
         "extension": ".py",
         "path": "backend/app/routers/professores.py"
       },
@@ -597,7 +725,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 1617,
+        "size": 3024,
         "extension": ".py",
         "path": "backend/app/schemas/auth.py"
       },
@@ -605,9 +733,25 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2850,
+        "size": 3840,
         "extension": ".py",
         "path": "backend/app/schemas/avaliacao.py"
+      },
+      {
+        "name": "comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 947,
+        "extension": ".py",
+        "path": "backend/app/schemas/comentario.py"
+      },
+      {
+        "name": "denuncia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1007,
+        "extension": ".py",
+        "path": "backend/app/schemas/denuncia.py"
       },
       {
         "name": "institucional.py",
@@ -616,6 +760,14 @@
         "size": 866,
         "extension": ".py",
         "path": "backend/app/schemas/institucional.py"
+      },
+      {
+        "name": "moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1190,
+        "extension": ".py",
+        "path": "backend/app/schemas/moderacao.py"
       },
       {
         "name": "scrapers",
@@ -635,7 +787,7 @@
         "name": "sigaa_poc.py",
         "type": "file",
         "language": "Python",
-        "size": 11151,
+        "size": 11267,
         "extension": ".py",
         "path": "backend/app/scrapers/sigaa_poc.py"
       },
@@ -657,7 +809,7 @@
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 4953,
+        "size": 4990,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -665,9 +817,25 @@
         "name": "avaliacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 6651,
+        "size": 7627,
         "extension": ".py",
         "path": "backend/app/services/avaliacao_service.py"
+      },
+      {
+        "name": "comentario_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3145,
+        "extension": ".py",
+        "path": "backend/app/services/comentario_service.py"
+      },
+      {
+        "name": "denuncia_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3157,
+        "extension": ".py",
+        "path": "backend/app/services/denuncia_service.py"
       },
       {
         "name": "email_service.py",
@@ -681,7 +849,7 @@
         "name": "importacao_agendada_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2789,
+        "size": 2713,
         "extension": ".py",
         "path": "backend/app/services/importacao_agendada_service.py"
       },
@@ -689,15 +857,23 @@
         "name": "institucional_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1536,
+        "size": 1530,
         "extension": ".py",
         "path": "backend/app/services/institucional_service.py"
+      },
+      {
+        "name": "moderacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6020,
+        "extension": ".py",
+        "path": "backend/app/services/moderacao_service.py"
       },
       {
         "name": "sigaa_import_service.py",
         "type": "file",
         "language": "Python",
-        "size": 11795,
+        "size": 11664,
         "extension": ".py",
         "path": "backend/app/services/sigaa_import_service.py"
       },
@@ -705,9 +881,33 @@
         "name": "pegar_id.py",
         "type": "file",
         "language": "Python",
-        "size": 527,
+        "size": 656,
         "extension": ".py",
         "path": "backend/pegar_id.py"
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 331,
+        "extension": ".toml",
+        "path": "backend/pyproject.toml"
+      },
+      {
+        "name": "requirements-coverage.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 57,
+        "extension": ".txt",
+        "path": "backend/requirements-coverage.txt"
+      },
+      {
+        "name": "requirements-dev.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 86,
+        "extension": ".txt",
+        "path": "backend/requirements-dev.txt"
       },
       {
         "name": "requirements.txt",
@@ -732,20 +932,68 @@
         "path": "backend/tests/__init__.py"
       },
       {
+        "name": "denuncia_browser_fixture.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2990,
+        "extension": ".py",
+        "path": "backend/tests/denuncia_browser_fixture.py"
+      },
+      {
+        "name": "fluxo_moderacao_check.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2982,
+        "extension": ".py",
+        "path": "backend/tests/fluxo_moderacao_check.py"
+      },
+      {
+        "name": "integration_acesso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8503,
+        "extension": ".py",
+        "path": "backend/tests/integration_acesso.py"
+      },
+      {
         "name": "integration_avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 9824,
+        "size": 12780,
         "extension": ".py",
         "path": "backend/tests/integration_avaliacao.py"
+      },
+      {
+        "name": "integration_moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15268,
+        "extension": ".py",
+        "path": "backend/tests/integration_moderacao.py"
       },
       {
         "name": "migration_legacy_check.py",
         "type": "file",
         "language": "Python",
-        "size": 4502,
+        "size": 4615,
         "extension": ".py",
         "path": "backend/tests/migration_legacy_check.py"
+      },
+      {
+        "name": "migration_moderacao_check.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2233,
+        "extension": ".py",
+        "path": "backend/tests/migration_moderacao_check.py"
+      },
+      {
+        "name": "seed_resultados.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4860,
+        "extension": ".py",
+        "path": "backend/tests/seed_resultados.py"
       },
       {
         "name": "test_agregacao_avaliacoes.py",
@@ -759,7 +1007,7 @@
         "name": "test_api_institucional.py",
         "type": "file",
         "language": "Python",
-        "size": 3242,
+        "size": 3132,
         "extension": ".py",
         "path": "backend/tests/test_api_institucional.py"
       },
@@ -767,7 +1015,7 @@
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 17645,
+        "size": 19471,
         "extension": ".py",
         "path": "backend/tests/test_auth.py"
       },
@@ -775,15 +1023,23 @@
         "name": "test_avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 23864,
+        "size": 30904,
         "extension": ".py",
         "path": "backend/tests/test_avaliacao.py"
+      },
+      {
+        "name": "test_comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 21077,
+        "extension": ".py",
+        "path": "backend/tests/test_comentario.py"
       },
       {
         "name": "test_comparacao_professores.py",
         "type": "file",
         "language": "Python",
-        "size": 4880,
+        "size": 4834,
         "extension": ".py",
         "path": "backend/tests/test_comparacao_professores.py"
       },
@@ -791,9 +1047,17 @@
         "name": "test_consulta_agregada.py",
         "type": "file",
         "language": "Python",
-        "size": 9484,
+        "size": 9447,
         "extension": ".py",
         "path": "backend/tests/test_consulta_agregada.py"
+      },
+      {
+        "name": "test_denuncia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13795,
+        "extension": ".py",
+        "path": "backend/tests/test_denuncia.py"
       },
       {
         "name": "test_fluxo_sigaa_integrado.py",
@@ -807,15 +1071,47 @@
         "name": "test_importacao_agendada_service.py",
         "type": "file",
         "language": "Python",
-        "size": 5748,
+        "size": 5576,
         "extension": ".py",
         "path": "backend/tests/test_importacao_agendada_service.py"
+      },
+      {
+        "name": "test_iniciar_servidor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1884,
+        "extension": ".py",
+        "path": "backend/tests/test_iniciar_servidor.py"
+      },
+      {
+        "name": "test_integration_acesso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1343,
+        "extension": ".py",
+        "path": "backend/tests/test_integration_acesso.py"
+      },
+      {
+        "name": "test_moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11858,
+        "extension": ".py",
+        "path": "backend/tests/test_moderacao.py"
+      },
+      {
+        "name": "test_retorno_busca.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2435,
+        "extension": ".py",
+        "path": "backend/tests/test_retorno_busca.py"
       },
       {
         "name": "test_sigaa_import_service.py",
         "type": "file",
         "language": "Python",
-        "size": 11057,
+        "size": 11409,
         "extension": ".py",
         "path": "backend/tests/test_sigaa_import_service.py"
       },
@@ -823,7 +1119,7 @@
         "name": "test_sigaa_poc_unittest.py",
         "type": "file",
         "language": "Python",
-        "size": 5770,
+        "size": 5839,
         "extension": ".py",
         "path": "backend/tests/test_sigaa_poc_unittest.py"
       },
@@ -831,7 +1127,7 @@
         "name": "validar_issue27.py",
         "type": "file",
         "language": "Python",
-        "size": 1349,
+        "size": 1306,
         "extension": ".py",
         "path": "backend/validar_issue27.py"
       },
@@ -839,7 +1135,7 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1851,
+        "size": 2332,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -848,6 +1144,36 @@
         "type": "directory",
         "path": "docs",
         "children": []
+      },
+      {
+        "name": "adrs",
+        "type": "directory",
+        "path": "docs/adrs",
+        "children": []
+      },
+      {
+        "name": "09-estrategia-qualidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14139,
+        "extension": ".md",
+        "path": "docs/adrs/09-estrategia-qualidade.md"
+      },
+      {
+        "name": "index.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6695,
+        "extension": ".md",
+        "path": "docs/adrs/index.md"
+      },
+      {
+        "name": "template.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1968,
+        "extension": ".md",
+        "path": "docs/adrs/template.md"
       },
       {
         "name": "agent-skills.md",
@@ -861,7 +1187,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 21914,
+        "size": 25456,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -944,6 +1270,46 @@
         "children": []
       },
       {
+        "name": "ajustes-prototipo-jornada-issue-153.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12514,
+        "extension": ".md",
+        "path": "docs/estudos/ajustes-prototipo-jornada-issue-153.md"
+      },
+      {
+        "name": "alinhamento-denuncias-issues-160-161.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 28320,
+        "extension": ".md",
+        "path": "docs/estudos/alinhamento-denuncias-issues-160-161.md"
+      },
+      {
+        "name": "auditoria-requisitos-issue-149.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 29079,
+        "extension": ".md",
+        "path": "docs/estudos/auditoria-requisitos-issue-149.md"
+      },
+      {
+        "name": "cobertura-testes-issue-190.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5854,
+        "extension": ".md",
+        "path": "docs/estudos/cobertura-testes-issue-190.md"
+      },
+      {
+        "name": "denuncia-agradecimentos-issue-193.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6371,
+        "extension": ".md",
+        "path": "docs/estudos/denuncia-agradecimentos-issue-193.md"
+      },
+      {
         "name": "docker.md",
         "type": "file",
         "language": "Markdown",
@@ -956,6 +1322,1518 @@
         "type": "directory",
         "path": "docs/estudos/evidencias",
         "children": []
+      },
+      {
+        "name": "issue-152",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-152",
+        "children": []
+      },
+      {
+        "name": "01-entrada.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 49146,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-152/01-entrada.png"
+      },
+      {
+        "name": "02-busca.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 61135,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-152/02-busca.png"
+      },
+      {
+        "name": "03-resultados.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52210,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-152/03-resultados.png"
+      },
+      {
+        "name": "04-comparacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 105794,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-152/04-comparacao.png"
+      },
+      {
+        "name": "05-avaliacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 86742,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-152/05-avaliacao.png"
+      },
+      {
+        "name": "06-comparacao-mobile-escuro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 122910,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-152/06-comparacao-mobile-escuro.png"
+      },
+      {
+        "name": "issue-155",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-155",
+        "children": []
+      },
+      {
+        "name": "acesso",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-155/acesso",
+        "children": []
+      },
+      {
+        "name": "busca-disciplinas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 41543,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/busca-disciplinas-dark-320.png"
+      },
+      {
+        "name": "busca-disciplinas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 45926,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/busca-disciplinas-light-1280.png"
+      },
+      {
+        "name": "busca-professores-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 72304,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/busca-professores-dark-320.png"
+      },
+      {
+        "name": "busca-professores-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 75503,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/busca-professores-light-1280.png"
+      },
+      {
+        "name": "cadastro-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 28065,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/cadastro-dark-320.png"
+      },
+      {
+        "name": "cadastro-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 31843,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/cadastro-light-1280.png"
+      },
+      {
+        "name": "confirmacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 20655,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/confirmacao-dark-320.png"
+      },
+      {
+        "name": "confirmacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 23336,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/confirmacao-light-1280.png"
+      },
+      {
+        "name": "email-pendente-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 79104,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/email-pendente-dark-320.png"
+      },
+      {
+        "name": "email-pendente-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 85635,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/email-pendente-light-1280.png"
+      },
+      {
+        "name": "formulario-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 69362,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/formulario-dark-320.png"
+      },
+      {
+        "name": "formulario-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 74927,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/formulario-light-1280.png"
+      },
+      {
+        "name": "login-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 23744,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/login-dark-320.png"
+      },
+      {
+        "name": "login-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 27637,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/login-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 6703,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-155/acesso/resultado.json"
+      },
+      {
+        "name": "sucesso-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 77606,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/sucesso-dark-320.png"
+      },
+      {
+        "name": "sucesso-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 84000,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/acesso/sucesso-light-1280.png"
+      },
+      {
+        "name": "resultados",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-155/resultados",
+        "children": []
+      },
+      {
+        "name": "agregado-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 51089,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/agregado-dark-320.png"
+      },
+      {
+        "name": "agregado-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 53646,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/agregado-light-1280.png"
+      },
+      {
+        "name": "busca-disciplinas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 67627,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/busca-disciplinas-dark-320.png"
+      },
+      {
+        "name": "busca-disciplinas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 72547,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/busca-disciplinas-light-1280.png"
+      },
+      {
+        "name": "busca-professores-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 220592,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/busca-professores-dark-320.png"
+      },
+      {
+        "name": "busca-professores-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 224356,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/busca-professores-light-1280.png"
+      },
+      {
+        "name": "comparacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 156747,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/comparacao-dark-320.png"
+      },
+      {
+        "name": "comparacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 138137,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/comparacao-light-1280.png"
+      },
+      {
+        "name": "detalhe-professor-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 51296,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/detalhe-professor-dark-320.png"
+      },
+      {
+        "name": "detalhe-professor-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52561,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/detalhe-professor-light-1280.png"
+      },
+      {
+        "name": "insuficiente-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 48637,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/insuficiente-dark-320.png"
+      },
+      {
+        "name": "insuficiente-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 51683,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/insuficiente-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 6591,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-155/resultados/resultado.json"
+      },
+      {
+        "name": "sem-avaliacoes-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 49321,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/sem-avaliacoes-dark-320.png"
+      },
+      {
+        "name": "sem-avaliacoes-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52279,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/sem-avaliacoes-light-1280.png"
+      },
+      {
+        "name": "sem-turmas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 23207,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/sem-turmas-dark-320.png"
+      },
+      {
+        "name": "sem-turmas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 25991,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-155/resultados/sem-turmas-light-1280.png"
+      },
+      {
+        "name": "issue-157",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-157",
+        "children": []
+      },
+      {
+        "name": "agregado-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 50028,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/agregado-dark-320.png"
+      },
+      {
+        "name": "agregado-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52092,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/agregado-light-1280.png"
+      },
+      {
+        "name": "busca-disciplinas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 47233,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/busca-disciplinas-dark-320.png"
+      },
+      {
+        "name": "busca-disciplinas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 49751,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/busca-disciplinas-light-1280.png"
+      },
+      {
+        "name": "busca-professores-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 201585,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/busca-professores-dark-320.png"
+      },
+      {
+        "name": "busca-professores-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 202952,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/busca-professores-light-1280.png"
+      },
+      {
+        "name": "comparacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 155637,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/comparacao-dark-320.png"
+      },
+      {
+        "name": "comparacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 136719,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/comparacao-light-1280.png"
+      },
+      {
+        "name": "detalhe-professor-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 50262,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/detalhe-professor-dark-320.png"
+      },
+      {
+        "name": "detalhe-professor-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 51118,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/detalhe-professor-light-1280.png"
+      },
+      {
+        "name": "insuficiente-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 47565,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/insuficiente-dark-320.png"
+      },
+      {
+        "name": "insuficiente-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 50380,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/insuficiente-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 6591,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-157/resultado.json"
+      },
+      {
+        "name": "sem-avaliacoes-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 48261,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/sem-avaliacoes-dark-320.png"
+      },
+      {
+        "name": "sem-avaliacoes-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 50955,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/sem-avaliacoes-light-1280.png"
+      },
+      {
+        "name": "sem-turmas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 22037,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/sem-turmas-dark-320.png"
+      },
+      {
+        "name": "sem-turmas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 24499,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-157/sem-turmas-light-1280.png"
+      },
+      {
+        "name": "issue-158",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-158",
+        "children": []
+      },
+      {
+        "name": "cadastro-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 25355,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/cadastro-dark-320.png"
+      },
+      {
+        "name": "cadastro-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 28933,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/cadastro-light-1280.png"
+      },
+      {
+        "name": "confirmacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 19788,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/confirmacao-dark-320.png"
+      },
+      {
+        "name": "confirmacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 22044,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/confirmacao-light-1280.png"
+      },
+      {
+        "name": "email-pendente-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 74711,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/email-pendente-dark-320.png"
+      },
+      {
+        "name": "email-pendente-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 81450,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/email-pendente-light-1280.png"
+      },
+      {
+        "name": "formulario-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 65065,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/formulario-dark-320.png"
+      },
+      {
+        "name": "formulario-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 70344,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/formulario-light-1280.png"
+      },
+      {
+        "name": "login-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 21059,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/login-dark-320.png"
+      },
+      {
+        "name": "login-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 24568,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/login-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 4960,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-158/resultado.json"
+      },
+      {
+        "name": "sucesso-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 73068,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/sucesso-dark-320.png"
+      },
+      {
+        "name": "sucesso-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 79771,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-158/sucesso-light-1280.png"
+      },
+      {
+        "name": "issue-163",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-163",
+        "children": []
+      },
+      {
+        "name": "agradecimento-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 35120,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-163/agradecimento-320-dark.png"
+      },
+      {
+        "name": "moderacao-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 98288,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-163/moderacao-320-dark.png"
+      },
+      {
+        "name": "publico-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 63395,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-163/publico-320-dark.png"
+      },
+      {
+        "name": "issue-186",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-186",
+        "children": []
+      },
+      {
+        "name": "acesso",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-186/acesso",
+        "children": []
+      },
+      {
+        "name": "busca-disciplinas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 57830,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/busca-disciplinas-dark-320.png"
+      },
+      {
+        "name": "busca-disciplinas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 61359,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/busca-disciplinas-light-1280.png"
+      },
+      {
+        "name": "busca-professores-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 95401,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/busca-professores-dark-320.png"
+      },
+      {
+        "name": "busca-professores-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 74766,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/busca-professores-light-1280.png"
+      },
+      {
+        "name": "cadastro-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 34944,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/cadastro-dark-320.png"
+      },
+      {
+        "name": "cadastro-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 38680,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/cadastro-light-1280.png"
+      },
+      {
+        "name": "confirmacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 20809,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/confirmacao-dark-320.png"
+      },
+      {
+        "name": "confirmacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 23336,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/confirmacao-light-1280.png"
+      },
+      {
+        "name": "email-pendente-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 94498,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/email-pendente-dark-320.png"
+      },
+      {
+        "name": "email-pendente-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 101145,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/email-pendente-light-1280.png"
+      },
+      {
+        "name": "entrada-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52658,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/entrada-dark-320.png"
+      },
+      {
+        "name": "entrada-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52371,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/entrada-light-1280.png"
+      },
+      {
+        "name": "formulario-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 83859,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/formulario-dark-320.png"
+      },
+      {
+        "name": "formulario-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 89069,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/formulario-light-1280.png"
+      },
+      {
+        "name": "login-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 30081,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/login-dark-320.png"
+      },
+      {
+        "name": "login-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 34052,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/login-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7422,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-186/acesso/resultado.json"
+      },
+      {
+        "name": "sucesso-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 93031,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/sucesso-dark-320.png"
+      },
+      {
+        "name": "sucesso-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 98735,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/acesso/sucesso-light-1280.png"
+      },
+      {
+        "name": "controlado",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-186/controlado",
+        "children": []
+      },
+      {
+        "name": "01-entrada.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 70480,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/01-entrada.png"
+      },
+      {
+        "name": "02-busca.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 71773,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/02-busca.png"
+      },
+      {
+        "name": "03-resultados.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 72780,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/03-resultados.png"
+      },
+      {
+        "name": "04-comparacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 127869,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/04-comparacao.png"
+      },
+      {
+        "name": "05-avaliacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 118249,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/05-avaliacao.png"
+      },
+      {
+        "name": "06-comparacao-mobile-escuro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 152055,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/06-comparacao-mobile-escuro.png"
+      },
+      {
+        "name": "07-acesso.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 77745,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/07-acesso.png"
+      },
+      {
+        "name": "08-professores-agrupados.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 119550,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/08-professores-agrupados.png"
+      },
+      {
+        "name": "09-professores-mobile.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 135029,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/09-professores-mobile.png"
+      },
+      {
+        "name": "10-acesso-mobile-escuro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 63894,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/10-acesso-mobile-escuro.png"
+      },
+      {
+        "name": "11-conta-confirmada.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 73595,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/11-conta-confirmada.png"
+      },
+      {
+        "name": "12-conta-pendente.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 78041,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/12-conta-pendente.png"
+      },
+      {
+        "name": "13-nota-selecionada.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 117358,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/13-nota-selecionada.png"
+      },
+      {
+        "name": "155-cadastro-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 37343,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-cadastro-1280-dark.png"
+      },
+      {
+        "name": "155-cadastro-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 35977,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-cadastro-1280-light.png"
+      },
+      {
+        "name": "155-cadastro-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 32312,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-cadastro-320-dark.png"
+      },
+      {
+        "name": "155-cadastro-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 31741,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-cadastro-320-light.png"
+      },
+      {
+        "name": "155-disciplinas-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 73292,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-1280-dark.png"
+      },
+      {
+        "name": "155-disciplinas-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 72374,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-1280-light.png"
+      },
+      {
+        "name": "155-disciplinas-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 76224,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-320-dark.png"
+      },
+      {
+        "name": "155-disciplinas-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 75524,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-320-light.png"
+      },
+      {
+        "name": "155-disciplinas-erro-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 44581,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-erro-dark.png"
+      },
+      {
+        "name": "155-disciplinas-erro-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 44788,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-erro-light.png"
+      },
+      {
+        "name": "155-disciplinas-vazio-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42971,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-vazio-1280-dark.png"
+      },
+      {
+        "name": "155-disciplinas-vazio-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42475,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-vazio-1280-light.png"
+      },
+      {
+        "name": "155-disciplinas-vazio-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39546,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-vazio-320-dark.png"
+      },
+      {
+        "name": "155-disciplinas-vazio-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39390,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-disciplinas-vazio-320-light.png"
+      },
+      {
+        "name": "155-entrada-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52859,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-entrada-1280-dark.png"
+      },
+      {
+        "name": "155-entrada-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52371,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-entrada-1280-light.png"
+      },
+      {
+        "name": "155-entrada-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52453,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-entrada-320-dark.png"
+      },
+      {
+        "name": "155-entrada-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 51350,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-entrada-320-light.png"
+      },
+      {
+        "name": "155-login-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 32644,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-login-1280-dark.png"
+      },
+      {
+        "name": "155-login-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 31882,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-login-1280-light.png"
+      },
+      {
+        "name": "155-login-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 27824,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-login-320-dark.png"
+      },
+      {
+        "name": "155-login-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 27400,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-login-320-light.png"
+      },
+      {
+        "name": "155-professores-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 85473,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-1280-dark.png"
+      },
+      {
+        "name": "155-professores-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 84185,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-1280-light.png"
+      },
+      {
+        "name": "155-professores-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 77919,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-320-dark.png"
+      },
+      {
+        "name": "155-professores-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 87475,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-320-light.png"
+      },
+      {
+        "name": "155-professores-erro-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 44534,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-erro-dark.png"
+      },
+      {
+        "name": "155-professores-erro-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 44519,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-erro-light.png"
+      },
+      {
+        "name": "155-professores-vazio-1280-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 43082,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-vazio-1280-dark.png"
+      },
+      {
+        "name": "155-professores-vazio-1280-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42626,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-vazio-1280-light.png"
+      },
+      {
+        "name": "155-professores-vazio-320-dark.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 40062,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-vazio-320-dark.png"
+      },
+      {
+        "name": "155-professores-vazio-320-light.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39582,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/controlado/155-professores-vazio-320-light.png"
+      },
+      {
+        "name": "referencia",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-186/referencia",
+        "children": []
+      },
+      {
+        "name": "acesso-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 73138,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/acesso-dark-320.png"
+      },
+      {
+        "name": "acesso-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 77543,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/acesso-light-1280.png"
+      },
+      {
+        "name": "busca-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 71651,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/busca-dark-320.png"
+      },
+      {
+        "name": "busca-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 71845,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/busca-light-1280.png"
+      },
+      {
+        "name": "comparacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 152055,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/comparacao-dark-320.png"
+      },
+      {
+        "name": "comparacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 127956,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/comparacao-light-1280.png"
+      },
+      {
+        "name": "entrada-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 70290,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/entrada-dark-320.png"
+      },
+      {
+        "name": "entrada-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 70542,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/entrada-light-1280.png"
+      },
+      {
+        "name": "escolha-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 87716,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/escolha-dark-320.png"
+      },
+      {
+        "name": "escolha-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 88749,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/escolha-light-1280.png"
+      },
+      {
+        "name": "formulario-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 109212,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/formulario-dark-320.png"
+      },
+      {
+        "name": "formulario-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 113545,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/formulario-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5075,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-186/referencia/resultado.json"
+      },
+      {
+        "name": "resultados-disciplinas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 69379,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/resultados-disciplinas-dark-320.png"
+      },
+      {
+        "name": "resultados-disciplinas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 72204,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/resultados-disciplinas-light-1280.png"
+      },
+      {
+        "name": "resultados-professores-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 136896,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/resultados-professores-dark-320.png"
+      },
+      {
+        "name": "resultados-professores-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 119624,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/referencia/resultados-professores-light-1280.png"
+      },
+      {
+        "name": "resultados",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-186/resultados",
+        "children": []
+      },
+      {
+        "name": "agregado-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 66795,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/agregado-dark-320.png"
+      },
+      {
+        "name": "agregado-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 68540,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/agregado-light-1280.png"
+      },
+      {
+        "name": "busca-carregando-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42664,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-carregando-dark-320.png"
+      },
+      {
+        "name": "busca-carregando-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 46757,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-carregando-light-1280.png"
+      },
+      {
+        "name": "busca-disciplinas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 95038,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-disciplinas-dark-320.png"
+      },
+      {
+        "name": "busca-disciplinas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 85074,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-disciplinas-light-1280.png"
+      },
+      {
+        "name": "busca-erro-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 50735,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-erro-dark-320.png"
+      },
+      {
+        "name": "busca-erro-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 54978,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-erro-light-1280.png"
+      },
+      {
+        "name": "busca-inicial-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39232,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-inicial-dark-320.png"
+      },
+      {
+        "name": "busca-inicial-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42369,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-inicial-light-1280.png"
+      },
+      {
+        "name": "busca-professores-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 288900,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-professores-dark-320.png"
+      },
+      {
+        "name": "busca-professores-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 239840,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-professores-light-1280.png"
+      },
+      {
+        "name": "busca-vazia-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 48301,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-vazia-dark-320.png"
+      },
+      {
+        "name": "busca-vazia-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52116,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/busca-vazia-light-1280.png"
+      },
+      {
+        "name": "comparacao-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 181247,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/comparacao-dark-320.png"
+      },
+      {
+        "name": "comparacao-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 158299,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/comparacao-light-1280.png"
+      },
+      {
+        "name": "detalhe-professor-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 73935,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/detalhe-professor-dark-320.png"
+      },
+      {
+        "name": "detalhe-professor-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 75939,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/detalhe-professor-light-1280.png"
+      },
+      {
+        "name": "insuficiente-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 63726,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/insuficiente-dark-320.png"
+      },
+      {
+        "name": "insuficiente-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 66913,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/insuficiente-light-1280.png"
+      },
+      {
+        "name": "resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 9643,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-186/resultados/resultado.json"
+      },
+      {
+        "name": "sem-avaliacoes-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 64520,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/sem-avaliacoes-dark-320.png"
+      },
+      {
+        "name": "sem-avaliacoes-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 67552,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/sem-avaliacoes-light-1280.png"
+      },
+      {
+        "name": "sem-turmas-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 36464,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/sem-turmas-dark-320.png"
+      },
+      {
+        "name": "sem-turmas-light-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 38705,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-186/resultados/sem-turmas-light-1280.png"
+      },
+      {
+        "name": "versao.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 8902,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-186/versao.json"
       },
       {
         "name": "issue-37",
@@ -972,12 +2850,76 @@
         "path": "docs/estudos/evidencias/issue-37/Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx"
       },
       {
+        "name": "fila-moderacao-issue-162.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10273,
+        "extension": ".md",
+        "path": "docs/estudos/fila-moderacao-issue-162.md"
+      },
+      {
+        "name": "implementacao-navegacao-issue-155.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 16310,
+        "extension": ".md",
+        "path": "docs/estudos/implementacao-navegacao-issue-155.md"
+      },
+      {
+        "name": "integracao-visual-jornada-issue-186.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 26373,
+        "extension": ".md",
+        "path": "docs/estudos/integracao-visual-jornada-issue-186.md"
+      },
+      {
+        "name": "interface-comentarios-issue-159.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6804,
+        "extension": ".md",
+        "path": "docs/estudos/interface-comentarios-issue-159.md"
+      },
+      {
         "name": "mapeamento-sigaa.md",
         "type": "file",
         "language": "Markdown",
         "size": 36775,
         "extension": ".md",
         "path": "docs/estudos/mapeamento-sigaa.md"
+      },
+      {
+        "name": "observacao-jornada-busca-comparacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 21101,
+        "extension": ".md",
+        "path": "docs/estudos/observacao-jornada-busca-comparacao.md"
+      },
+      {
+        "name": "relato-usabilidade-aluno-01-issue-148.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 17389,
+        "extension": ".md",
+        "path": "docs/estudos/relato-usabilidade-aluno-01-issue-148.md"
+      },
+      {
+        "name": "relato-usabilidade-aluno-02-issue-148.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9705,
+        "extension": ".md",
+        "path": "docs/estudos/relato-usabilidade-aluno-02-issue-148.md"
+      },
+      {
+        "name": "resultados-reteste-jornada-issue-153.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9719,
+        "extension": ".md",
+        "path": "docs/estudos/resultados-reteste-jornada-issue-153.md"
       },
       {
         "name": "sigaa-poc.md",
@@ -996,12 +2938,36 @@
         "path": "docs/estudos/tela-exemplo-api-real.md"
       },
       {
+        "name": "validacao-integrada-issue-163.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12376,
+        "extension": ".md",
+        "path": "docs/estudos/validacao-integrada-issue-163.md"
+      },
+      {
+        "name": "validacao-prototipo-jornada-issue-153.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 19413,
+        "extension": ".md",
+        "path": "docs/estudos/validacao-prototipo-jornada-issue-153.md"
+      },
+      {
         "name": "validacao-release-1-sigaa-2026-09-24.md",
         "type": "file",
         "language": "Markdown",
         "size": 6266,
         "extension": ".md",
         "path": "docs/estudos/validacao-release-1-sigaa-2026-09-24.md"
+      },
+      {
+        "name": "verificacao-acesso-avaliacao-issue-158.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9562,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-acesso-avaliacao-issue-158.md"
       },
       {
         "name": "verificacao-ambiente-completo-issue-37-tiago-vieira.md",
@@ -1052,6 +3018,38 @@
         "path": "docs/estudos/verificacao-formulario-avaliacao.md"
       },
       {
+        "name": "verificacao-lint-tipos-issue-189.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6282,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-lint-tipos-issue-189.md"
+      },
+      {
+        "name": "verificacao-prototipo-jornada-issue-152.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12979,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-prototipo-jornada-issue-152.md"
+      },
+      {
+        "name": "verificacao-requisitos-issue-154.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9928,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-requisitos-issue-154.md"
+      },
+      {
+        "name": "verificacao-resultados-comparacao-issue-157.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8867,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-resultados-comparacao-issue-157.md"
+      },
+      {
         "name": "figma.md",
         "type": "file",
         "language": "Markdown",
@@ -1063,7 +3061,7 @@
         "name": "importacao-sigaa.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5955,
+        "size": 14487,
         "extension": ".md",
         "path": "docs/importacao-sigaa.md"
       },
@@ -1074,6 +3072,14 @@
         "size": 1840,
         "extension": ".md",
         "path": "docs/index.md"
+      },
+      {
+        "name": "inicializacao-render.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2703,
+        "extension": ".md",
+        "path": "docs/inicializacao-render.md"
       },
       {
         "name": "modelos.md",
@@ -1087,9 +3093,855 @@
         "name": "operacao-importacao-sigaa.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5277,
+        "size": 9430,
         "extension": ".md",
         "path": "docs/operacao-importacao-sigaa.md"
+      },
+      {
+        "name": "referencias",
+        "type": "directory",
+        "path": "docs/referencias",
+        "children": []
+      },
+      {
+        "name": "ui-dark",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4754,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/README.md"
+      },
+      {
+        "name": "capturas",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/capturas",
+        "children": []
+      },
+      {
+        "name": "avaliar-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 84679,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/avaliar-1440.png"
+      },
+      {
+        "name": "avaliar-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 75348,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/avaliar-390.png"
+      },
+      {
+        "name": "busca-professores-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 98712,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/busca-professores-1440.png"
+      },
+      {
+        "name": "busca-professores-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 85556,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/busca-professores-390.png"
+      },
+      {
+        "name": "cadastro-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 33217,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/cadastro-1440.png"
+      },
+      {
+        "name": "comparacao-cic-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 79909,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/comparacao-cic-1440.png"
+      },
+      {
+        "name": "comparacao-mds-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 81825,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/comparacao-mds-1440.png"
+      },
+      {
+        "name": "denuncia-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 156328,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/denuncia-390.png"
+      },
+      {
+        "name": "home-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 126597,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/home-1440.png"
+      },
+      {
+        "name": "home-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 73096,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/home-390.png"
+      },
+      {
+        "name": "login-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 28471,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/login-1440.png"
+      },
+      {
+        "name": "moderacao-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 69083,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/moderacao-1440.png"
+      },
+      {
+        "name": "professor-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 103600,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/professor-1440.png"
+      },
+      {
+        "name": "professor-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 53459,
+        "extension": ".png",
+        "path": "docs/referencias/ui-dark/capturas/professor-390.png"
+      },
+      {
+        "name": "issues",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/issues",
+        "children": []
+      },
+      {
+        "name": "202.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1849,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/issues/202.md"
+      },
+      {
+        "name": "203.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2235,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/issues/203.md"
+      },
+      {
+        "name": "204.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1988,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/issues/204.md"
+      },
+      {
+        "name": "205.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2652,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/issues/205.md"
+      },
+      {
+        "name": "206.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2243,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/issues/206.md"
+      },
+      {
+        "name": "207.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1504,
+        "extension": ".md",
+        "path": "docs/referencias/ui-dark/issues/207.md"
+      },
+      {
+        "name": "manifesto-sha256.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 8885,
+        "extension": ".json",
+        "path": "docs/referencias/ui-dark/manifesto-sha256.json"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src",
+        "children": []
+      },
+      {
+        "name": "app",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app",
+        "children": []
+      },
+      {
+        "name": "busca",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/busca",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 584,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/busca/page.tsx"
+      },
+      {
+        "name": "cadastro",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/cadastro",
+        "children": []
+      },
+      {
+        "name": "cadastro-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5058,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/cadastro/cadastro-form.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 661,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/cadastro/page.tsx"
+      },
+      {
+        "name": "confirmar-email",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/confirmar-email",
+        "children": []
+      },
+      {
+        "name": "confirmation-client.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2945,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/confirmar-email/confirmation-client.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 535,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/confirmar-email/page.tsx"
+      },
+      {
+        "name": "departamentos",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/departamentos",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1767,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/departamentos/page.tsx"
+      },
+      {
+        "name": "disciplinas",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/disciplinas",
+        "children": []
+      },
+      {
+        "name": "[id]",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/disciplinas/[id]",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2806,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/disciplinas/[id]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 316,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/disciplinas/page.tsx"
+      },
+      {
+        "name": "error.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 674,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/error.tsx"
+      },
+      {
+        "name": "estados",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/estados",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1261,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/estados/page.tsx"
+      },
+      {
+        "name": "favicon.ico",
+        "type": "file",
+        "language": "Icon",
+        "size": 25931,
+        "extension": ".ico",
+        "path": "docs/referencias/ui-dark/src/app/favicon.ico"
+      },
+      {
+        "name": "globals.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 27127,
+        "extension": ".css",
+        "path": "docs/referencias/ui-dark/src/app/globals.css"
+      },
+      {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1402,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/layout.tsx"
+      },
+      {
+        "name": "login",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/login",
+        "children": []
+      },
+      {
+        "name": "login-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5600,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/login/login-form.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 646,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/login/page.tsx"
+      },
+      {
+        "name": "moderacao",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/moderacao",
+        "children": []
+      },
+      {
+        "name": "detalhe-moderacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9871,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/moderacao/detalhe-moderacao.tsx"
+      },
+      {
+        "name": "fila-moderacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9606,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/moderacao/fila-moderacao.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 671,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/moderacao/page.tsx"
+      },
+      {
+        "name": "not-found.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 791,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/not-found.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1633,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/page.tsx"
+      },
+      {
+        "name": "professores",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/professores",
+        "children": []
+      },
+      {
+        "name": "[id]",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]",
+        "children": []
+      },
+      {
+        "name": "disciplinas",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/disciplinas",
+        "children": []
+      },
+      {
+        "name": "[disciplinaId]",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/disciplinas/[disciplinaId]",
+        "children": []
+      },
+      {
+        "name": "avaliar",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar",
+        "children": []
+      },
+      {
+        "name": "avaliacao-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10842,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3134,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5472,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2190,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/professores/[id]/page.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 316,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/professores/page.tsx"
+      },
+      {
+        "name": "professor-resultado.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2066,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/app/professores/professor-resultado.tsx"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/components",
+        "children": []
+      },
+      {
+        "name": "aviso-agradecimento.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3711,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/aviso-agradecimento.tsx"
+      },
+      {
+        "name": "busca-cabecalho.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1205,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/busca-cabecalho.tsx"
+      },
+      {
+        "name": "busca-hero.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 821,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/busca-hero.tsx"
+      },
+      {
+        "name": "busca-institucional.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4930,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/busca-institucional.tsx"
+      },
+      {
+        "name": "cabecalho.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2725,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/cabecalho.tsx"
+      },
+      {
+        "name": "caminho.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 621,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/caminho.tsx"
+      },
+      {
+        "name": "campo-senha.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1253,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/campo-senha.tsx"
+      },
+      {
+        "name": "catalogo-home.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1777,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/catalogo-home.tsx"
+      },
+      {
+        "name": "comparacao-dark.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4294,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/comparacao-dark.tsx"
+      },
+      {
+        "name": "criterios-agregados.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1390,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/criterios-agregados.tsx"
+      },
+      {
+        "name": "criterios-avaliacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4841,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/criterios-avaliacao.tsx"
+      },
+      {
+        "name": "destino-avaliacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1574,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/destino-avaliacao.tsx"
+      },
+      {
+        "name": "disciplinas-professor.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1235,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/disciplinas-professor.tsx"
+      },
+      {
+        "name": "item-comentario.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1591,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/item-comentario.tsx"
+      },
+      {
+        "name": "meus-comentarios.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2098,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/meus-comentarios.tsx"
+      },
+      {
+        "name": "modal-denuncia.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6833,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/modal-denuncia.tsx"
+      },
+      {
+        "name": "opcoes-acesso.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 734,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/opcoes-acesso.tsx"
+      },
+      {
+        "name": "secao-comentarios.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1266,
+        "extension": ".tsx",
+        "path": "docs/referencias/ui-dark/src/components/secao-comentarios.tsx"
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/lib",
+        "children": []
+      },
+      {
+        "name": "apresentacao-comentario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1767,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/apresentacao-comentario.ts"
+      },
+      {
+        "name": "avaliacao-formulario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4071,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/avaliacao-formulario.ts"
+      },
+      {
+        "name": "contexto-busca.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1834,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/contexto-busca.ts"
+      },
+      {
+        "name": "hooks",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/lib/hooks",
+        "children": []
+      },
+      {
+        "name": "useDebouncedValue.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 477,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/hooks/useDebouncedValue.ts"
+      },
+      {
+        "name": "identificador.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 232,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/identificador.ts"
+      },
+      {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2439,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/moderacao.ts"
+      },
+      {
+        "name": "retorno-avaliacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1452,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/retorno-avaliacao.ts"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/lib/services",
+        "children": []
+      },
+      {
+        "name": "api-client.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2782,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/api-client.ts"
+      },
+      {
+        "name": "auth.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1431,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/auth.ts"
+      },
+      {
+        "name": "avaliacoes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3313,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/avaliacoes.ts"
+      },
+      {
+        "name": "comentarios.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3580,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/comentarios.ts"
+      },
+      {
+        "name": "denuncias.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2554,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/denuncias.ts"
+      },
+      {
+        "name": "disciplinas.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5764,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/disciplinas.ts"
+      },
+      {
+        "name": "http-error.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 391,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/http-error.ts"
+      },
+      {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5171,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/moderacao.ts"
+      },
+      {
+        "name": "professores.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1999,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/services/professores.ts"
+      },
+      {
+        "name": "types",
+        "type": "directory",
+        "path": "docs/referencias/ui-dark/src/lib/types",
+        "children": []
+      },
+      {
+        "name": "avaliacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1619,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/types/avaliacao.ts"
+      },
+      {
+        "name": "comentario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 898,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/types/comentario.ts"
+      },
+      {
+        "name": "denuncia.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 607,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/types/denuncia.ts"
+      },
+      {
+        "name": "institucional.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 825,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/types/institucional.ts"
+      },
+      {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1684,
+        "extension": ".ts",
+        "path": "docs/referencias/ui-dark/src/lib/types/moderacao.ts"
       },
       {
         "name": "relatorio_rf19.md",
@@ -1114,10 +3966,26 @@
         "path": "docs/releases/1.0.0.md"
       },
       {
+        "name": "1.1.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4917,
+        "extension": ".md",
+        "path": "docs/releases/1.1.0.md"
+      },
+      {
+        "name": "2.0.0-planejamento.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8112,
+        "extension": ".md",
+        "path": "docs/releases/2.0.0-planejamento.md"
+      },
+      {
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 21966,
+        "size": 46640,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -1125,7 +3993,7 @@
         "name": "visao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7687,
+        "size": 8796,
         "extension": ".md",
         "path": "docs/visao.md"
       },
@@ -1136,10 +4004,18 @@
         "children": []
       },
       {
+        "name": ".c8rc.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 234,
+        "extension": ".json",
+        "path": "frontend/.c8rc.json"
+      },
+      {
         "name": ".dockerignore",
         "type": "file",
         "language": "Docker Ignore",
-        "size": 101,
+        "size": 116,
         "extension": ".dockerignore",
         "path": "frontend/.dockerignore"
       },
@@ -1155,7 +4031,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 543,
+        "size": 559,
         "extension": ".gitignore",
         "path": "frontend/.gitignore"
       },
@@ -1187,15 +4063,97 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12820,
+        "size": 26059,
         "extension": ".md",
         "path": "frontend/README.md"
+      },
+      {
+        "name": "docs",
+        "type": "directory",
+        "path": "frontend/docs",
+        "children": []
+      },
+      {
+        "name": "capturas",
+        "type": "directory",
+        "path": "frontend/docs/capturas",
+        "children": []
+      },
+      {
+        "name": "issue-203",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-203",
+        "children": []
+      },
+      {
+        "name": "home-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 155519,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-203/home-1440.png"
+      },
+      {
+        "name": "home-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 158815,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-203/home-320.png"
+      },
+      {
+        "name": "professores-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 134518,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-203/professores-1440.png"
+      },
+      {
+        "name": "professores-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 127985,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-203/professores-320.png"
+      },
+      {
+        "name": "ui-busca-203.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3448,
+        "extension": ".md",
+        "path": "frontend/docs/ui-busca-203.md"
+      },
+      {
+        "name": "ui-dark.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3668,
+        "extension": ".md",
+        "path": "frontend/docs/ui-dark.md"
+      },
+      {
+        "name": "verificacao-base-ui-dark-202.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7033,
+        "extension": ".md",
+        "path": "frontend/docs/verificacao-base-ui-dark-202.md"
+      },
+      {
+        "name": "verificacao-ui-busca-203.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7726,
+        "extension": ".md",
+        "path": "frontend/docs/verificacao-ui-busca-203.md"
       },
       {
         "name": "eslint.config.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 465,
+        "size": 555,
         "extension": ".mjs",
         "path": "frontend/eslint.config.mjs"
       },
@@ -1211,7 +4169,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 223971,
+        "size": 243124,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -1219,7 +4177,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 626,
+        "size": 1110,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -1290,16 +4248,38 @@
         "children": []
       },
       {
-        "name": "cadastro",
+        "name": "busca",
         "type": "directory",
-        "path": "frontend/src/app/cadastro",
+        "path": "frontend/src/app/busca",
         "children": []
       },
       {
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4517,
+        "size": 584,
+        "extension": ".tsx",
+        "path": "frontend/src/app/busca/page.tsx"
+      },
+      {
+        "name": "cadastro",
+        "type": "directory",
+        "path": "frontend/src/app/cadastro",
+        "children": []
+      },
+      {
+        "name": "cadastro-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5058,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cadastro/cadastro-form.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 661,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/page.tsx"
       },
@@ -1313,7 +4293,7 @@
         "name": "confirmation-client.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2324,
+        "size": 2945,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/confirmation-client.tsx"
       },
@@ -1321,9 +4301,23 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 339,
+        "size": 535,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/page.tsx"
+      },
+      {
+        "name": "departamentos",
+        "type": "directory",
+        "path": "frontend/src/app/departamentos",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 281,
+        "extension": ".tsx",
+        "path": "frontend/src/app/departamentos/page.tsx"
       },
       {
         "name": "disciplinas",
@@ -1341,7 +4335,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5773,
+        "size": 5774,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[id]/page.tsx"
       },
@@ -1349,7 +4343,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4025,
+        "size": 316,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/page.tsx"
       },
@@ -1373,7 +4367,7 @@
         "name": "globals.css",
         "type": "file",
         "language": "CSS",
-        "size": 912,
+        "size": 5695,
         "extension": ".css",
         "path": "frontend/src/app/globals.css"
       },
@@ -1381,7 +4375,7 @@
         "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1939,
+        "size": 1162,
         "extension": ".tsx",
         "path": "frontend/src/app/layout.tsx"
       },
@@ -1392,12 +4386,50 @@
         "children": []
       },
       {
+        "name": "login-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5600,
+        "extension": ".tsx",
+        "path": "frontend/src/app/login/login-form.tsx"
+      },
+      {
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5110,
+        "size": 646,
         "extension": ".tsx",
         "path": "frontend/src/app/login/page.tsx"
+      },
+      {
+        "name": "moderacao",
+        "type": "directory",
+        "path": "frontend/src/app/moderacao",
+        "children": []
+      },
+      {
+        "name": "detalhe-moderacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9871,
+        "extension": ".tsx",
+        "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx"
+      },
+      {
+        "name": "fila-moderacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9606,
+        "extension": ".tsx",
+        "path": "frontend/src/app/moderacao/fila-moderacao.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 671,
+        "extension": ".tsx",
+        "path": "frontend/src/app/moderacao/page.tsx"
       },
       {
         "name": "not-found.tsx",
@@ -1411,7 +4443,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1323,
+        "size": 1804,
         "extension": ".tsx",
         "path": "frontend/src/app/page.tsx"
       },
@@ -1449,7 +4481,7 @@
         "name": "avaliacao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4413,
+        "size": 10842,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
       },
@@ -1457,7 +4489,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2068,
+        "size": 3493,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
       },
@@ -1465,7 +4497,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4772,
+        "size": 4845,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx"
       },
@@ -1473,7 +4505,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2715,
+        "size": 2481,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/page.tsx"
       },
@@ -1481,15 +4513,275 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3952,
+        "size": 316,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/page.tsx"
+      },
+      {
+        "name": "professor-resultado.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3042,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/professor-resultado.tsx"
+      },
+      {
+        "name": "prototipo",
+        "type": "directory",
+        "path": "frontend/src/app/prototipo",
+        "children": []
+      },
+      {
+        "name": "acesso-demo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6721,
+        "extension": ".tsx",
+        "path": "frontend/src/app/prototipo/acesso-demo.tsx"
+      },
+      {
+        "name": "conta-demo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3263,
+        "extension": ".tsx",
+        "path": "frontend/src/app/prototipo/conta-demo.tsx"
+      },
+      {
+        "name": "dados.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3754,
+        "extension": ".ts",
+        "path": "frontend/src/app/prototipo/dados.ts"
+      },
+      {
+        "name": "formulario-demo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3082,
+        "extension": ".tsx",
+        "path": "frontend/src/app/prototipo/formulario-demo.tsx"
+      },
+      {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 454,
+        "extension": ".tsx",
+        "path": "frontend/src/app/prototipo/layout.tsx"
+      },
+      {
+        "name": "organizar-resultados-demo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1676,
+        "extension": ".tsx",
+        "path": "frontend/src/app/prototipo/organizar-resultados-demo.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 19840,
+        "extension": ".tsx",
+        "path": "frontend/src/app/prototipo/page.tsx"
+      },
+      {
+        "name": "components",
+        "type": "directory",
+        "path": "frontend/src/components",
+        "children": []
+      },
+      {
+        "name": "aviso-agradecimento.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3959,
+        "extension": ".tsx",
+        "path": "frontend/src/components/aviso-agradecimento.tsx"
+      },
+      {
+        "name": "busca-cabecalho.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 682,
+        "extension": ".tsx",
+        "path": "frontend/src/components/busca-cabecalho.tsx"
+      },
+      {
+        "name": "busca-entrada.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 256,
+        "extension": ".tsx",
+        "path": "frontend/src/components/busca-entrada.tsx"
+      },
+      {
+        "name": "busca-institucional.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7418,
+        "extension": ".tsx",
+        "path": "frontend/src/components/busca-institucional.tsx"
+      },
+      {
+        "name": "busca-navegacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1351,
+        "extension": ".tsx",
+        "path": "frontend/src/components/busca-navegacao.tsx"
+      },
+      {
+        "name": "cabecalho.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2044,
+        "extension": ".tsx",
+        "path": "frontend/src/components/cabecalho.tsx"
+      },
+      {
+        "name": "caminho.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 696,
+        "extension": ".tsx",
+        "path": "frontend/src/components/caminho.tsx"
+      },
+      {
+        "name": "campo-senha.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1253,
+        "extension": ".tsx",
+        "path": "frontend/src/components/campo-senha.tsx"
+      },
+      {
+        "name": "catalogo-home.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2587,
+        "extension": ".tsx",
+        "path": "frontend/src/components/catalogo-home.tsx"
+      },
+      {
+        "name": "catalogo-unidades.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2921,
+        "extension": ".tsx",
+        "path": "frontend/src/components/catalogo-unidades.tsx"
+      },
+      {
+        "name": "criterios-agregados.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1268,
+        "extension": ".tsx",
+        "path": "frontend/src/components/criterios-agregados.tsx"
+      },
+      {
+        "name": "criterios-avaliacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4841,
+        "extension": ".tsx",
+        "path": "frontend/src/components/criterios-avaliacao.tsx"
+      },
+      {
+        "name": "destino-avaliacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1574,
+        "extension": ".tsx",
+        "path": "frontend/src/components/destino-avaliacao.tsx"
+      },
+      {
+        "name": "disciplina-catalogo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1135,
+        "extension": ".tsx",
+        "path": "frontend/src/components/disciplina-catalogo.tsx"
+      },
+      {
+        "name": "disciplinas-professor.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2233,
+        "extension": ".tsx",
+        "path": "frontend/src/components/disciplinas-professor.tsx"
+      },
+      {
+        "name": "estado-catalogo.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 963,
+        "extension": ".tsx",
+        "path": "frontend/src/components/estado-catalogo.tsx"
+      },
+      {
+        "name": "item-comentario.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1591,
+        "extension": ".tsx",
+        "path": "frontend/src/components/item-comentario.tsx"
+      },
+      {
+        "name": "meus-comentarios.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2098,
+        "extension": ".tsx",
+        "path": "frontend/src/components/meus-comentarios.tsx"
+      },
+      {
+        "name": "modal-denuncia.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6833,
+        "extension": ".tsx",
+        "path": "frontend/src/components/modal-denuncia.tsx"
+      },
+      {
+        "name": "opcoes-acesso.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 734,
+        "extension": ".tsx",
+        "path": "frontend/src/components/opcoes-acesso.tsx"
+      },
+      {
+        "name": "rodape.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 450,
+        "extension": ".tsx",
+        "path": "frontend/src/components/rodape.tsx"
+      },
+      {
+        "name": "secao-comentarios.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1266,
+        "extension": ".tsx",
+        "path": "frontend/src/components/secao-comentarios.tsx"
       },
       {
         "name": "lib",
         "type": "directory",
         "path": "frontend/src/lib",
         "children": []
+      },
+      {
+        "name": "apresentacao-comentario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1767,
+        "extension": ".ts",
+        "path": "frontend/src/lib/apresentacao-comentario.ts"
       },
       {
         "name": "avaliacao-formulario.ts",
@@ -1500,10 +4792,34 @@
         "path": "frontend/src/lib/avaliacao-formulario.ts"
       },
       {
+        "name": "catalogo.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 503,
+        "extension": ".ts",
+        "path": "frontend/src/lib/catalogo.ts"
+      },
+      {
+        "name": "contexto-busca.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1834,
+        "extension": ".ts",
+        "path": "frontend/src/lib/contexto-busca.ts"
+      },
+      {
         "name": "hooks",
         "type": "directory",
         "path": "frontend/src/lib/hooks",
         "children": []
+      },
+      {
+        "name": "useCatalogo.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1074,
+        "extension": ".ts",
+        "path": "frontend/src/lib/hooks/useCatalogo.ts"
       },
       {
         "name": "useDebouncedValue.ts",
@@ -1522,6 +4838,22 @@
         "path": "frontend/src/lib/identificador.ts"
       },
       {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2439,
+        "extension": ".ts",
+        "path": "frontend/src/lib/moderacao.ts"
+      },
+      {
+        "name": "retorno-avaliacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1452,
+        "extension": ".ts",
+        "path": "frontend/src/lib/retorno-avaliacao.ts"
+      },
+      {
         "name": "services",
         "type": "directory",
         "path": "frontend/src/lib/services",
@@ -1531,7 +4863,7 @@
         "name": "api-client.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2220,
+        "size": 2717,
         "extension": ".ts",
         "path": "frontend/src/lib/services/api-client.ts"
       },
@@ -1539,7 +4871,7 @@
         "name": "auth.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1098,
+        "size": 1431,
         "extension": ".ts",
         "path": "frontend/src/lib/services/auth.ts"
       },
@@ -1547,9 +4879,25 @@
         "name": "avaliacoes.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2559,
+        "size": 3313,
         "extension": ".ts",
         "path": "frontend/src/lib/services/avaliacoes.ts"
+      },
+      {
+        "name": "comentarios.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3580,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/comentarios.ts"
+      },
+      {
+        "name": "denuncias.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2554,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/denuncias.ts"
       },
       {
         "name": "disciplinas.ts",
@@ -1566,6 +4914,14 @@
         "size": 391,
         "extension": ".ts",
         "path": "frontend/src/lib/services/http-error.ts"
+      },
+      {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5171,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/moderacao.ts"
       },
       {
         "name": "professores.ts",
@@ -1585,9 +4941,25 @@
         "name": "avaliacao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1596,
+        "size": 1619,
         "extension": ".ts",
         "path": "frontend/src/lib/types/avaliacao.ts"
+      },
+      {
+        "name": "comentario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 898,
+        "extension": ".ts",
+        "path": "frontend/src/lib/types/comentario.ts"
+      },
+      {
+        "name": "denuncia.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 607,
+        "extension": ".ts",
+        "path": "frontend/src/lib/types/denuncia.ts"
       },
       {
         "name": "institucional.ts",
@@ -1598,16 +4970,32 @@
         "path": "frontend/src/lib/types/institucional.ts"
       },
       {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1684,
+        "extension": ".ts",
+        "path": "frontend/src/lib/types/moderacao.ts"
+      },
+      {
         "name": "tests",
         "type": "directory",
         "path": "frontend/tests",
         "children": []
       },
       {
+        "name": "acesso-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 19622,
+        "extension": ".mjs",
+        "path": "frontend/tests/acesso-browser.mjs"
+      },
+      {
         "name": "avaliacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 21157,
+        "size": 30958,
         "extension": ".mjs",
         "path": "frontend/tests/avaliacao-browser.mjs"
       },
@@ -1615,17 +5003,161 @@
         "name": "avaliacao.test.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 7749,
+        "size": 8453,
         "extension": ".mjs",
         "path": "frontend/tests/avaliacao.test.mjs"
+      },
+      {
+        "name": "browser-contrast.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1523,
+        "extension": ".mjs",
+        "path": "frontend/tests/browser-contrast.mjs"
+      },
+      {
+        "name": "browser-navigation.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 572,
+        "extension": ".mjs",
+        "path": "frontend/tests/browser-navigation.mjs"
+      },
+      {
+        "name": "browser-navigation.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1278,
+        "extension": ".mjs",
+        "path": "frontend/tests/browser-navigation.test.mjs"
+      },
+      {
+        "name": "browser-session.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4086,
+        "extension": ".mjs",
+        "path": "frontend/tests/browser-session.mjs"
+      },
+      {
+        "name": "busca-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 26871,
+        "extension": ".mjs",
+        "path": "frontend/tests/busca-browser.mjs"
+      },
+      {
+        "name": "busca.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 8030,
+        "extension": ".mjs",
+        "path": "frontend/tests/busca.test.mjs"
+      },
+      {
+        "name": "comentarios-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12199,
+        "extension": ".mjs",
+        "path": "frontend/tests/comentarios-browser.mjs"
+      },
+      {
+        "name": "comentarios.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10247,
+        "extension": ".mjs",
+        "path": "frontend/tests/comentarios.test.mjs"
+      },
+      {
+        "name": "denuncia-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 17544,
+        "extension": ".mjs",
+        "path": "frontend/tests/denuncia-browser.mjs"
+      },
+      {
+        "name": "denuncia.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7567,
+        "extension": ".mjs",
+        "path": "frontend/tests/denuncia.test.mjs"
+      },
+      {
+        "name": "fluxo-moderacao-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 11684,
+        "extension": ".mjs",
+        "path": "frontend/tests/fluxo-moderacao-browser.mjs"
+      },
+      {
+        "name": "moderacao-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 19581,
+        "extension": ".mjs",
+        "path": "frontend/tests/moderacao-browser.mjs"
+      },
+      {
+        "name": "moderacao-fixture.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7901,
+        "extension": ".py",
+        "path": "frontend/tests/moderacao-fixture.py"
+      },
+      {
+        "name": "moderacao.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5526,
+        "extension": ".mjs",
+        "path": "frontend/tests/moderacao.test.mjs"
+      },
+      {
+        "name": "prototipo-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 20011,
+        "extension": ".mjs",
+        "path": "frontend/tests/prototipo-browser.mjs"
+      },
+      {
+        "name": "referencia-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7499,
+        "extension": ".mjs",
+        "path": "frontend/tests/referencia-browser.mjs"
+      },
+      {
+        "name": "resultados-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 16762,
+        "extension": ".mjs",
+        "path": "frontend/tests/resultados-browser.mjs"
       },
       {
         "name": "run-tests.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 1315,
+        "size": 1704,
         "extension": ".mjs",
         "path": "frontend/tests/run-tests.mjs"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 372,
+        "extension": ".json",
+        "path": "frontend/tests/tsconfig.json"
       },
       {
         "name": "tsconfig.json",
@@ -1639,7 +5171,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2222,
+        "size": 4610,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -2107,7 +5639,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13515,
+        "size": 24883,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -2192,7 +5724,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-09T14:41:12.842537+00:00",
+    "extracted_at": "2026-11-10T14:25:03.512697+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }
