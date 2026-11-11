@@ -2,54 +2,86 @@
   "repository": "2026-2-AvaliaAiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-10T14:23:49.620545+00:00",
+  "analyzed_at": "2026-11-11T13:30:20.733205+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 102,
-  "total_bytes": 481924,
+  "total_files": 111,
+  "total_bytes": 1245765,
   "languages": [
     {
+      "language": "Unknown",
+      "file_count": 4,
+      "total_bytes": 745464,
+      "percentage": 59.84,
+      "files": [
+        {
+          "path": "docs/backup/turmas_rows.csv",
+          "name": "turmas_rows.csv",
+          "size": 274998,
+          "extension": ".csv"
+        },
+        {
+          "path": "docs/backup/professores_rows.csv",
+          "name": "professores_rows.csv",
+          "size": 266652,
+          "extension": ".csv"
+        },
+        {
+          "path": "docs/backup/disciplinas_rows.csv",
+          "name": "disciplinas_rows.csv",
+          "size": 203269,
+          "extension": ".csv"
+        },
+        {
+          "path": ".env.example",
+          "name": ".env.example",
+          "size": 545,
+          "extension": ".example"
+        }
+      ]
+    },
+    {
       "language": "Python",
-      "file_count": 37,
-      "total_bytes": 162983,
-      "percentage": 33.82,
+      "file_count": 38,
+      "total_bytes": 168329,
+      "percentage": 13.51,
       "files": [
         {
           "path": "tests/test_supabase.py",
           "name": "test_supabase.py",
-          "size": 23285,
+          "size": 26037,
           "extension": ".py"
         },
         {
           "path": "scraper/scraper_sigaa.py",
           "name": "scraper_sigaa.py",
-          "size": 21815,
+          "size": 22147,
           "extension": ".py"
         },
         {
           "path": "app/repositorio.py",
           "name": "repositorio.py",
-          "size": 16712,
+          "size": 17201,
           "extension": ".py"
         },
         {
           "path": "tests/test_seguranca.py",
           "name": "test_seguranca.py",
-          "size": 10031,
-          "extension": ".py"
-        },
-        {
-          "path": "app/seguranca.py",
-          "name": "seguranca.py",
-          "size": 7774,
+          "size": 10155,
           "extension": ".py"
         },
         {
           "path": "tests/fake_supabase.py",
           "name": "fake_supabase.py",
           "size": 7701,
+          "extension": ".py"
+        },
+        {
+          "path": "app/seguranca.py",
+          "name": "seguranca.py",
+          "size": 7605,
           "extension": ".py"
         },
         {
@@ -80,38 +112,38 @@
     },
     {
       "language": "Markdown",
-      "file_count": 20,
-      "total_bytes": 120862,
-      "percentage": 25.08,
+      "file_count": 24,
+      "total_bytes": 133449,
+      "percentage": 10.71,
       "files": [
         {
           "path": "docs/Modelo de Dados.md",
           "name": "Modelo de Dados.md",
-          "size": 19448,
+          "size": 16509,
           "extension": ".md"
         },
         {
           "path": "docs/DOCUMENTO_DE_VISAO.md",
           "name": "DOCUMENTO_DE_VISAO.md",
-          "size": 12458,
+          "size": 13022,
           "extension": ".md"
         },
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 11924,
+          "size": 12195,
           "extension": ".md"
         },
         {
           "path": "docs/BACKEND.md",
           "name": "BACKEND.md",
-          "size": 10270,
+          "size": 10655,
           "extension": ".md"
         },
         {
           "path": "docs/COMENTARIOS.md",
           "name": "COMENTARIOS.md",
-          "size": 9932,
+          "size": 10213,
           "extension": ".md"
         },
         {
@@ -123,25 +155,25 @@
         {
           "path": "docs/FRONTEND.md",
           "name": "FRONTEND.md",
-          "size": 6447,
+          "size": 6647,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/GUIA_DOCUMENTACAO.md",
+          "name": "GUIA_DOCUMENTACAO.md",
+          "size": 5452,
           "extension": ".md"
         },
         {
           "path": "docs/HOSPEDAGEM.md",
           "name": "HOSPEDAGEM.md",
-          "size": 4947,
+          "size": 5229,
           "extension": ".md"
         },
         {
           "path": "docs/CIBERSEGURANCA.md",
           "name": "CIBERSEGURANCA.md",
-          "size": 4839,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/FUNCIONALIDADES.md",
-          "name": "FUNCIONALIDADES.md",
-          "size": 4639,
+          "size": 5177,
           "extension": ".md"
         }
       ]
@@ -150,7 +182,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 103656,
-      "percentage": 21.51,
+      "percentage": 8.32,
       "files": [
         {
           "path": "docs/Diagrama de Componentes da API.png",
@@ -176,7 +208,7 @@
       "language": "CSS",
       "file_count": 11,
       "total_bytes": 35763,
-      "percentage": 7.42,
+      "percentage": 2.87,
       "files": [
         {
           "path": "app/static/base.css",
@@ -243,49 +275,49 @@
     {
       "language": "HTML",
       "file_count": 11,
-      "total_bytes": 34749,
-      "percentage": 7.21,
+      "total_bytes": 34747,
+      "percentage": 2.79,
       "files": [
         {
           "path": "app/templates/lista_professores.html",
           "name": "lista_professores.html",
-          "size": 7400,
+          "size": 7401,
           "extension": ".html"
         },
         {
           "path": "app/templates/perfil_professor.html",
           "name": "perfil_professor.html",
-          "size": 4971,
+          "size": 4972,
           "extension": ".html"
         },
         {
           "path": "app/templates/comparacao.html",
           "name": "comparacao.html",
-          "size": 4127,
+          "size": 4128,
           "extension": ".html"
         },
         {
           "path": "app/templates/perfil.html",
           "name": "perfil.html",
-          "size": 3163,
+          "size": 3160,
           "extension": ".html"
         },
         {
           "path": "app/templates/cadastro.html",
           "name": "cadastro.html",
-          "size": 3040,
+          "size": 3037,
           "extension": ".html"
         },
         {
           "path": "app/templates/avaliacao.html",
           "name": "avaliacao.html",
-          "size": 3032,
+          "size": 3033,
           "extension": ".html"
         },
         {
           "path": "app/templates/ranking.html",
           "name": "ranking.html",
-          "size": 2924,
+          "size": 2925,
           "extension": ".html"
         },
         {
@@ -297,13 +329,13 @@
         {
           "path": "app/templates/index.html",
           "name": "index.html",
-          "size": 1906,
+          "size": 1908,
           "extension": ".html"
         },
         {
           "path": "app/templates/login.html",
           "name": "login.html",
-          "size": 1222,
+          "size": 1219,
           "extension": ".html"
         }
       ]
@@ -312,7 +344,7 @@
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 9628,
-      "percentage": 2.0,
+      "percentage": 0.77,
       "files": [
         {
           "path": "docs/mockups/comentarios/escrever.svg",
@@ -344,7 +376,7 @@
       "language": "SQL",
       "file_count": 1,
       "total_bytes": 4434,
-      "percentage": 0.92,
+      "percentage": 0.36,
       "files": [
         {
           "path": "docs/migrations/001_initial_schema.sql",
@@ -356,20 +388,26 @@
     },
     {
       "language": "YAML",
-      "file_count": 5,
-      "total_bytes": 3653,
-      "percentage": 0.76,
+      "file_count": 6,
+      "total_bytes": 4337,
+      "percentage": 0.35,
       "files": [
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 2025,
+          "size": 2127,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/seguranca.yml",
           "name": "seguranca.yml",
           "size": 623,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/validar-documentacao.yml",
+          "name": "validar-documentacao.yml",
+          "size": 582,
           "extension": ".yml"
         },
         {
@@ -396,7 +434,7 @@
       "language": "JavaScript",
       "file_count": 2,
       "total_bytes": 3662,
-      "percentage": 0.76,
+      "percentage": 0.29,
       "files": [
         {
           "path": "app/static/campo-busca.js",
@@ -416,7 +454,7 @@
       "language": "No Extension",
       "file_count": 2,
       "total_bytes": 1630,
-      "percentage": 0.34,
+      "percentage": 0.13,
       "files": [
         {
           "path": "LICENSE",
@@ -433,64 +471,16 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 1,
-      "total_bytes": 238,
-      "percentage": 0.05,
-      "files": [
-        {
-          "path": ".env.example",
-          "name": ".env.example",
-          "size": 238,
-          "extension": ".example"
-        }
-      ]
-    },
-    {
       "language": "TOML",
       "file_count": 1,
       "total_bytes": 256,
-      "percentage": 0.05,
+      "percentage": 0.02,
       "files": [
         {
           "path": "pyproject.toml",
           "name": "pyproject.toml",
           "size": 256,
           "extension": ".toml"
-        }
-      ]
-    },
-    {
-      "language": "Git Ignore",
-      "file_count": 1,
-      "total_bytes": 181,
-      "percentage": 0.04,
-      "files": [
-        {
-          "path": ".gitignore",
-          "name": ".gitignore",
-          "size": 181,
-          "extension": ".gitignore"
-        }
-      ]
-    },
-    {
-      "language": "Text",
-      "file_count": 2,
-      "total_bytes": 158,
-      "percentage": 0.03,
-      "files": [
-        {
-          "path": "requirements.txt",
-          "name": "requirements.txt",
-          "size": 88,
-          "extension": ".txt"
-        },
-        {
-          "path": "requirements-scraper.txt",
-          "name": "requirements-scraper.txt",
-          "size": 70,
-          "extension": ".txt"
         }
       ]
     },
@@ -507,10 +497,44 @@
           "extension": ".dockerignore"
         }
       ]
+    },
+    {
+      "language": "Git Ignore",
+      "file_count": 1,
+      "total_bytes": 181,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": ".gitignore",
+          "name": ".gitignore",
+          "size": 181,
+          "extension": ".gitignore"
+        }
+      ]
+    },
+    {
+      "language": "Text",
+      "file_count": 2,
+      "total_bytes": 158,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "requirements.txt",
+          "name": "requirements.txt",
+          "size": 88,
+          "extension": ".txt"
+        },
+        {
+          "path": "requirements-scraper.txt",
+          "name": "requirements-scraper.txt",
+          "size": 70,
+          "extension": ".txt"
+        }
+      ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-10T14:25:03.581710+00:00",
+    "extracted_at": "2026-11-11T13:31:40.907414+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaAiUnB.json"
   }
 }

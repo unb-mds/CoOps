@@ -2,7 +2,7 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-10T14:23:54.153121+00:00",
+  "extracted_at": "2026-11-11T13:30:25.254954+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -565,7 +565,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 414,
+        "size": 1252,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -582,6 +582,22 @@
         "type": "directory",
         "path": ".github",
         "children": []
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 169,
+        "extension": ".md",
+        "path": ".github/CONTRIBUTING.md"
+      },
+      {
+        "name": "PULL_REQUEST_TEMPLATE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3463,
+        "extension": ".md",
+        "path": ".github/PULL_REQUEST_TEMPLATE.md"
       },
       {
         "name": "hooks",
@@ -601,7 +617,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2466,
+        "size": 5483,
         "extension": ".yml",
         "path": ".github/mkdocs.yml"
       },
@@ -615,9 +631,17 @@
         "name": "docs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1038,
+        "size": 1055,
         "extension": ".yml",
         "path": ".github/workflows/docs.yml"
+      },
+      {
+        "name": "supabase-ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 668,
+        "extension": ".yml",
+        "path": ".github/workflows/supabase-ci.yml"
       },
       {
         "name": ".gitignore",
@@ -669,7 +693,7 @@
         "name": "Makefile",
         "type": "file",
         "language": "No Extension",
-        "size": 8277,
+        "size": 7684,
         "extension": "",
         "path": "Makefile"
       },
@@ -677,7 +701,7 @@
         "name": "PRODUCT.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2710,
+        "size": 3373,
         "extension": ".md",
         "path": "PRODUCT.md"
       },
@@ -685,7 +709,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 17498,
+        "size": 10248,
         "extension": ".md",
         "path": "README.md"
       },
@@ -715,9 +739,47 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 96,
+        "size": 111,
         "extension": ".txt",
         "path": "backend/requirements.txt"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "backend/scripts",
+        "children": []
+      },
+      {
+        "name": "benchmark_syllabus.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7860,
+        "extension": ".py",
+        "path": "backend/scripts/benchmark_syllabus.py"
+      },
+      {
+        "name": "check_syllabus_privacy.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1242,
+        "extension": ".py",
+        "path": "backend/scripts/check_syllabus_privacy.py"
+      },
+      {
+        "name": "probe_followw_catalog.py",
+        "type": "file",
+        "language": "Python",
+        "size": 789,
+        "extension": ".py",
+        "path": "backend/scripts/probe_followw_catalog.py"
+      },
+      {
+        "name": "test_syllabus_local_http.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4201,
+        "extension": ".py",
+        "path": "backend/scripts/test_syllabus_local_http.py"
       },
       {
         "name": "src",
@@ -740,6 +802,14 @@
         "children": []
       },
       {
+        "name": "check_schema.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1414,
+        "extension": ".py",
+        "path": "backend/src/database/check_schema.py"
+      },
+      {
         "name": "connection.py",
         "type": "file",
         "language": "Python",
@@ -751,7 +821,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 7715,
+        "size": 18592,
         "extension": ".py",
         "path": "backend/src/database/models.py"
       },
@@ -759,7 +829,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 3566,
+        "size": 3679,
         "extension": ".py",
         "path": "backend/src/main.py"
       },
@@ -781,7 +851,7 @@
         "name": "upload_limits.py",
         "type": "file",
         "language": "Python",
-        "size": 2448,
+        "size": 2710,
         "extension": ".py",
         "path": "backend/src/middlewares/upload_limits.py"
       },
@@ -790,6 +860,52 @@
         "type": "directory",
         "path": "backend/src/modules",
         "children": []
+      },
+      {
+        "name": "classes",
+        "type": "directory",
+        "path": "backend/src/modules/classes",
+        "children": []
+      },
+      {
+        "name": "followw.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4997,
+        "extension": ".py",
+        "path": "backend/src/modules/classes/followw.py"
+      },
+      {
+        "name": "router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8301,
+        "extension": ".py",
+        "path": "backend/src/modules/classes/router.py"
+      },
+      {
+        "name": "schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1296,
+        "extension": ".py",
+        "path": "backend/src/modules/classes/schemas.py"
+      },
+      {
+        "name": "services.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2500,
+        "extension": ".py",
+        "path": "backend/src/modules/classes/services.py"
+      },
+      {
+        "name": "sync.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5411,
+        "extension": ".py",
+        "path": "backend/src/modules/classes/sync.py"
       },
       {
         "name": "events",
@@ -828,10 +944,58 @@
         "path": "backend/src/modules/syllabus/__init__.py"
       },
       {
+        "name": "extraction.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6260,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/extraction.py"
+      },
+      {
+        "name": "gemini.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5344,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/gemini.py"
+      },
+      {
+        "name": "preparation.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9547,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/preparation.py"
+      },
+      {
+        "name": "privacy.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4551,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/privacy.py"
+      },
+      {
+        "name": "processing_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4135,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/processing_config.py"
+      },
+      {
+        "name": "processing_task.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4209,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/processing_task.py"
+      },
+      {
         "name": "router.py",
         "type": "file",
         "language": "Python",
-        "size": 10147,
+        "size": 14483,
         "extension": ".py",
         "path": "backend/src/modules/syllabus/router.py"
       },
@@ -839,7 +1003,7 @@
         "name": "schemas.py",
         "type": "file",
         "language": "Python",
-        "size": 4022,
+        "size": 5621,
         "extension": ".py",
         "path": "backend/src/modules/syllabus/schemas.py"
       },
@@ -847,9 +1011,41 @@
         "name": "services.py",
         "type": "file",
         "language": "Python",
-        "size": 7236,
+        "size": 6440,
         "extension": ".py",
         "path": "backend/src/modules/syllabus/services.py"
+      },
+      {
+        "name": "timing.py",
+        "type": "file",
+        "language": "Python",
+        "size": 453,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/timing.py"
+      },
+      {
+        "name": "upload_validation.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2992,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/upload_validation.py"
+      },
+      {
+        "name": "versions.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1022,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/versions.py"
+      },
+      {
+        "name": "worker.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10990,
+        "extension": ".py",
+        "path": "backend/src/modules/syllabus/worker.py"
       },
       {
         "name": "services",
@@ -869,7 +1065,7 @@
         "name": "storage.py",
         "type": "file",
         "language": "Python",
-        "size": 3701,
+        "size": 4685,
         "extension": ".py",
         "path": "backend/src/services/storage.py"
       },
@@ -883,9 +1079,77 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 1591,
+        "size": 2797,
         "extension": ".py",
         "path": "backend/tests/conftest.py"
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "backend/tests/fixtures",
+        "children": []
+      },
+      {
+        "name": "syllabus",
+        "type": "directory",
+        "path": "backend/tests/fixtures/syllabus",
+        "children": []
+      },
+      {
+        "name": "cases.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2604,
+        "extension": ".json",
+        "path": "backend/tests/fixtures/syllabus/cases.json"
+      },
+      {
+        "name": "syllabus_samples.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2300,
+        "extension": ".py",
+        "path": "backend/tests/syllabus_samples.py"
+      },
+      {
+        "name": "syllabus_validation_stubs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 470,
+        "extension": ".py",
+        "path": "backend/tests/syllabus_validation_stubs.py"
+      },
+      {
+        "name": "test_catalog_publication_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3995,
+        "extension": ".py",
+        "path": "backend/tests/test_catalog_publication_database.py"
+      },
+      {
+        "name": "test_catalog_sync_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5936,
+        "extension": ".py",
+        "path": "backend/tests/test_catalog_sync_database.py"
+      },
+      {
+        "name": "test_class_catalog_api.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9882,
+        "extension": ".py",
+        "path": "backend/tests/test_class_catalog_api.py"
+      },
+      {
+        "name": "test_classes_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13496,
+        "extension": ".py",
+        "path": "backend/tests/test_classes_database.py"
       },
       {
         "name": "test_events_api.py",
@@ -899,7 +1163,7 @@
         "name": "test_moderation_database.py",
         "type": "file",
         "language": "Python",
-        "size": 8774,
+        "size": 8747,
         "extension": ".py",
         "path": "backend/tests/test_moderation_database.py"
       },
@@ -910,6 +1174,22 @@
         "size": 5185,
         "extension": ".py",
         "path": "backend/tests/test_saved_events_api.py"
+      },
+      {
+        "name": "test_schema_preflight.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1130,
+        "extension": ".py",
+        "path": "backend/tests/test_schema_preflight.py"
+      },
+      {
+        "name": "test_security_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12292,
+        "extension": ".py",
+        "path": "backend/tests/test_security_database.py"
       },
       {
         "name": "test_storage.py",
@@ -928,26 +1208,82 @@
         "path": "backend/tests/test_suggestions_api.py"
       },
       {
+        "name": "test_syllabus_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16492,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_database.py"
+      },
+      {
+        "name": "test_syllabus_http_integration.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14944,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_http_integration.py"
+      },
+      {
+        "name": "test_syllabus_preparation.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14103,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_preparation.py"
+      },
+      {
+        "name": "test_syllabus_preparation_database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2729,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_preparation_database.py"
+      },
+      {
+        "name": "test_syllabus_processing.py",
+        "type": "file",
+        "language": "Python",
+        "size": 18533,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_processing.py"
+      },
+      {
         "name": "test_syllabus_review_api.py",
         "type": "file",
         "language": "Python",
-        "size": 7457,
+        "size": 8175,
         "extension": ".py",
         "path": "backend/tests/test_syllabus_review_api.py"
+      },
+      {
+        "name": "test_syllabus_task.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2902,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_task.py"
       },
       {
         "name": "test_syllabus_upload.py",
         "type": "file",
         "language": "Python",
-        "size": 16477,
+        "size": 18669,
         "extension": ".py",
         "path": "backend/tests/test_syllabus_upload.py"
+      },
+      {
+        "name": "test_syllabus_upload_validation.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4608,
+        "extension": ".py",
+        "path": "backend/tests/test_syllabus_upload_validation.py"
       },
       {
         "name": "docs.json",
         "type": "file",
         "language": "JSON",
-        "size": 3542,
+        "size": 6531,
         "extension": ".json",
         "path": "docs.json"
       },
@@ -958,34 +1294,10 @@
         "children": []
       },
       {
-        "name": "AI-USAGE.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 6342,
-        "extension": ".md",
-        "path": "docs/AI-USAGE.md"
-      },
-      {
-        "name": "Architecture.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 17641,
-        "extension": ".md",
-        "path": "docs/Architecture.md"
-      },
-      {
-        "name": "CONTRIBUTING.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 8727,
-        "extension": ".md",
-        "path": "docs/CONTRIBUTING.md"
-      },
-      {
         "name": "api-specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 18625,
+        "size": 25238,
         "extension": ".md",
         "path": "docs/api-specs.md"
       },
@@ -996,18 +1308,144 @@
         "children": []
       },
       {
+        "name": "adrs",
+        "type": "directory",
+        "path": "docs/arquitetura/adrs",
+        "children": []
+      },
+      {
+        "name": "adr-001-integracao-fastapi-supabase.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2161,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-001-integracao-fastapi-supabase.md"
+      },
+      {
+        "name": "adr-002-separar-hospedagem-e-ambientes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2067,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-002-separar-hospedagem-e-ambientes.md"
+      },
+      {
+        "name": "adr-003-minimizar-dados-de-planos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2329,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-003-minimizar-dados-de-planos.md"
+      },
+      {
+        "name": "adr-004-api-monolitica.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1851,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-004-api-monolitica.md"
+      },
+      {
+        "name": "adr-005-validacao-de-sessao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1927,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-005-validacao-de-sessao.md"
+      },
+      {
+        "name": "adr-006-autorizacao-em-camadas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2073,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-006-autorizacao-em-camadas.md"
+      },
+      {
+        "name": "adr-007-migracoes-sql.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1900,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-007-migracoes-sql.md"
+      },
+      {
+        "name": "adr-008-vinculos-de-eventos-publicos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1971,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-008-vinculos-de-eventos-publicos.md"
+      },
+      {
+        "name": "adr-009-catalogo-publico-de-turmas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2301,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-009-catalogo-publico-de-turmas.md"
+      },
+      {
+        "name": "adr-010-versoes-e-confirmacao-de-planos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5197,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-010-versoes-e-confirmacao-de-planos.md"
+      },
+      {
+        "name": "adr-011-datas-civis-e-instantes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2236,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-011-datas-civis-e-instantes.md"
+      },
+      {
+        "name": "adr-012-exportacao-google-idempotente.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2358,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-012-exportacao-google-idempotente.md"
+      },
+      {
+        "name": "adr-013-lembretes-persistentes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2226,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/adr-013-lembretes-persistentes.md"
+      },
+      {
+        "name": "index.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5907,
+        "extension": ".md",
+        "path": "docs/arquitetura/adrs/index.md"
+      },
+      {
         "name": "banco-de-dados.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6213,
+        "size": 17648,
         "extension": ".md",
         "path": "docs/arquitetura/banco-de-dados.md"
+      },
+      {
+        "name": "catalogo-de-turmas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11070,
+        "extension": ".md",
+        "path": "docs/arquitetura/catalogo-de-turmas.md"
       },
       {
         "name": "frontend.md",
         "type": "file",
         "language": "Markdown",
-        "size": 15315,
+        "size": 14738,
         "extension": ".md",
         "path": "docs/arquitetura/frontend.md"
       },
@@ -1015,23 +1453,15 @@
         "name": "modelo-de-dados.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2489,
+        "size": 4090,
         "extension": ".md",
         "path": "docs/arquitetura/modelo-de-dados.md"
-      },
-      {
-        "name": "padroes.mdx",
-        "type": "file",
-        "language": "Unknown",
-        "size": 10594,
-        "extension": ".mdx",
-        "path": "docs/arquitetura/padroes.mdx"
       },
       {
         "name": "visao-geral.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13578,
+        "size": 16948,
         "extension": ".md",
         "path": "docs/arquitetura/visao-geral.md"
       },
@@ -1039,39 +1469,93 @@
         "name": "atualizacoes.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4218,
+        "size": 27973,
         "extension": ".md",
         "path": "docs/atualizacoes.md"
       },
       {
-        "name": "documento-de-visao.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 15185,
-        "extension": ".md",
-        "path": "docs/documento-de-visao.md"
+        "name": "benchmarks",
+        "type": "directory",
+        "path": "docs/benchmarks",
+        "children": []
       },
       {
-        "name": "especificacao-banco-de-dados.md",
+        "name": "syllabus-gemini-2026-11-09.json",
         "type": "file",
-        "language": "Markdown",
-        "size": 12257,
-        "extension": ".md",
-        "path": "docs/especificacao-banco-de-dados.md"
+        "language": "JSON",
+        "size": 3896,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-gemini-2026-11-09.json"
       },
       {
-        "name": "especificacao-frontend.md",
+        "name": "syllabus-http-local-2026-11-09.json",
         "type": "file",
-        "language": "Markdown",
-        "size": 14972,
-        "extension": ".md",
-        "path": "docs/especificacao-frontend.md"
+        "language": "JSON",
+        "size": 1215,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-http-local-2026-11-09.json"
+      },
+      {
+        "name": "syllabus-reference-2026-11-09.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3875,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-reference-2026-11-09.json"
+      },
+      {
+        "name": "syllabus-s7-dev-compat-http-local-2026-11-10.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1054,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-s7-dev-compat-http-local-2026-11-10.json"
+      },
+      {
+        "name": "syllabus-s7-dev-compat-reference-2026-11-10.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 4400,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-s7-dev-compat-reference-2026-11-10.json"
+      },
+      {
+        "name": "syllabus-s7-gemini-2026-11-10.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 4423,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-s7-gemini-2026-11-10.json"
+      },
+      {
+        "name": "syllabus-s7-http-local-2026-11-10.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1054,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-s7-http-local-2026-11-10.json"
+      },
+      {
+        "name": "syllabus-s7-reference-2026-11-10.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 4396,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-s7-reference-2026-11-10.json"
+      },
+      {
+        "name": "syllabus-upload-local-2026-11-09.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 912,
+        "extension": ".json",
+        "path": "docs/benchmarks/syllabus-upload-local-2026-11-09.json"
       },
       {
         "name": "eventos-salvos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1984,
+        "size": 2210,
         "extension": ".md",
         "path": "docs/eventos-salvos.md"
       },
@@ -1093,7 +1577,7 @@
         "name": "implantacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12913,
+        "size": 16054,
         "extension": ".md",
         "path": "docs/implantacao.md"
       },
@@ -1101,65 +1585,57 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6766,
+        "size": 5388,
         "extension": ".md",
         "path": "docs/index.md"
       },
       {
-        "name": "introducao.mdx",
-        "type": "file",
-        "language": "Unknown",
-        "size": 4747,
-        "extension": ".mdx",
-        "path": "docs/introducao.mdx"
-      },
-      {
-        "name": "modelo-de-dados.md",
+        "name": "matriz-release-2.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3806,
+        "size": 14006,
         "extension": ".md",
-        "path": "docs/modelo-de-dados.md"
-      },
-      {
-        "name": "padroes.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 9123,
-        "extension": ".md",
-        "path": "docs/padroes.md"
+        "path": "docs/matriz-release-2.md"
       },
       {
         "name": "painel-administrativo.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4023,
+        "size": 4235,
         "extension": ".md",
         "path": "docs/painel-administrativo.md"
-      },
-      {
-        "name": "personas.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 6324,
-        "extension": ".md",
-        "path": "docs/personas.md"
-      },
-      {
-        "name": "planejamento-r2-sprints-7-8.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 64559,
-        "extension": ".md",
-        "path": "docs/planejamento-r2-sprints-7-8.md"
       },
       {
         "name": "planos-de-ensino-frontend.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7542,
+        "size": 10220,
         "extension": ".md",
         "path": "docs/planos-de-ensino-frontend.md"
+      },
+      {
+        "name": "privacidade-planos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12901,
+        "extension": ".md",
+        "path": "docs/privacidade-planos.md"
+      },
+      {
+        "name": "processamento-planos-s7.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12627,
+        "extension": ".md",
+        "path": "docs/processamento-planos-s7.md"
+      },
+      {
+        "name": "processamento-planos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 17168,
+        "extension": ".md",
+        "path": "docs/processamento-planos.md"
       },
       {
         "name": "processo",
@@ -1171,7 +1647,7 @@
         "name": "contribuindo.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7307,
+        "size": 13373,
         "extension": ".md",
         "path": "docs/processo/contribuindo.md"
       },
@@ -1193,7 +1669,7 @@
         "name": "v0-2-0-beta-1.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3136,
+        "size": 3172,
         "extension": ".md",
         "path": "docs/processo/release-notes/v0-2-0-beta-1.md"
       },
@@ -1201,7 +1677,7 @@
         "name": "uso-de-ia.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6471,
+        "size": 30807,
         "extension": ".md",
         "path": "docs/processo/uso-de-ia.md"
       },
@@ -1212,10 +1688,18 @@
         "children": []
       },
       {
+        "name": "padroes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8946,
+        "extension": ".md",
+        "path": "docs/produto/padroes.md"
+      },
+      {
         "name": "personas.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4321,
+        "size": 6320,
         "extension": ".md",
         "path": "docs/produto/personas.md"
       },
@@ -1223,7 +1707,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8753,
+        "size": 10429,
         "extension": ".md",
         "path": "docs/produto/requisitos.md"
       },
@@ -1231,55 +1715,17 @@
         "name": "visao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 15555,
+        "size": 14136,
         "extension": ".md",
         "path": "docs/produto/visao.md"
       },
       {
-        "name": "prototipo-planos-react.md",
+        "name": "s7-b01-validacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3570,
+        "size": 9191,
         "extension": ".md",
-        "path": "docs/prototipo-planos-react.md"
-      },
-      {
-        "name": "quickstart.mdx",
-        "type": "file",
-        "language": "Unknown",
-        "size": 10731,
-        "extension": ".mdx",
-        "path": "docs/quickstart.mdx"
-      },
-      {
-        "name": "release-notes",
-        "type": "directory",
-        "path": "docs/release-notes",
-        "children": []
-      },
-      {
-        "name": "v0.1.0.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 24261,
-        "extension": ".md",
-        "path": "docs/release-notes/v0.1.0.md"
-      },
-      {
-        "name": "requisitos.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 8674,
-        "extension": ".md",
-        "path": "docs/requisitos.md"
-      },
-      {
-        "name": "s6-f02-editor-parcial.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 4146,
-        "extension": ".md",
-        "path": "docs/s6-f02-editor-parcial.md"
+        "path": "docs/s7-b01-validacao.md"
       },
       {
         "name": "sprints",
@@ -1331,7 +1777,7 @@
         "name": "sprint-6.md",
         "type": "file",
         "language": "Markdown",
-        "size": 19075,
+        "size": 19721,
         "extension": ".md",
         "path": "docs/sprints/sprint-6.md"
       },
@@ -1339,7 +1785,7 @@
         "name": "sprint-7.md",
         "type": "file",
         "language": "Markdown",
-        "size": 30003,
+        "size": 32500,
         "extension": ".md",
         "path": "docs/sprints/sprint-7.md"
       },
@@ -1347,7 +1793,7 @@
         "name": "sprint-8.md",
         "type": "file",
         "language": "Markdown",
-        "size": 28077,
+        "size": 30180,
         "extension": ".md",
         "path": "docs/sprints/sprint-8.md"
       },
@@ -1393,7 +1839,7 @@
         "name": "playwright.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 344,
+        "size": 485,
         "extension": ".js",
         "path": "frontend/playwright.config.js"
       },
@@ -1494,6 +1940,22 @@
         "children": []
       },
       {
+        "name": "ClassCatalog.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7297,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ClassCatalog.jsx"
+      },
+      {
+        "name": "ConnectedTeachingPlanJourney.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3381,
+        "extension": ".jsx",
+        "path": "frontend/src/components/ConnectedTeachingPlanJourney.jsx"
+      },
+      {
         "name": "EventCalendar.jsx",
         "type": "file",
         "language": "JavaScript",
@@ -1508,6 +1970,14 @@
         "size": 395,
         "extension": ".jsx",
         "path": "frontend/src/components/EventsLoading.jsx"
+      },
+      {
+        "name": "JourneyPlanReview.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2075,
+        "extension": ".jsx",
+        "path": "frontend/src/components/JourneyPlanReview.jsx"
       },
       {
         "name": "ManagementUI.jsx",
@@ -1534,12 +2004,28 @@
         "path": "frontend/src/components/NotificationBell.jsx"
       },
       {
+        "name": "RealClassCatalog.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 8756,
+        "extension": ".jsx",
+        "path": "frontend/src/components/RealClassCatalog.jsx"
+      },
+      {
         "name": "SaveEventButton.jsx",
         "type": "file",
         "language": "JavaScript",
         "size": 2627,
         "extension": ".jsx",
         "path": "frontend/src/components/SaveEventButton.jsx"
+      },
+      {
+        "name": "SharedClassPlans.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2175,
+        "extension": ".jsx",
+        "path": "frontend/src/components/SharedClassPlans.jsx"
       },
       {
         "name": "SyllabusReviewEditor.jsx",
@@ -1558,10 +2044,18 @@
         "path": "frontend/src/components/SyllabusReviewPanel.jsx"
       },
       {
+        "name": "SyllabusTextReview.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6859,
+        "extension": ".jsx",
+        "path": "frontend/src/components/SyllabusTextReview.jsx"
+      },
+      {
         "name": "TeachingPlanJourney.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 19329,
+        "size": 17432,
         "extension": ".jsx",
         "path": "frontend/src/components/TeachingPlanJourney.jsx"
       },
@@ -1589,7 +2083,7 @@
         "name": "useSyllabusResource.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1956,
+        "size": 1958,
         "extension": ".js",
         "path": "frontend/src/hooks/useSyllabusResource.js"
       },
@@ -1608,6 +2102,22 @@
         "path": "frontend/src/lib/api.js"
       },
       {
+        "name": "approvedText.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 557,
+        "extension": ".js",
+        "path": "frontend/src/lib/approvedText.js"
+      },
+      {
+        "name": "approvedText.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1108,
+        "extension": ".js",
+        "path": "frontend/src/lib/approvedText.test.js"
+      },
+      {
         "name": "calendar.js",
         "type": "file",
         "language": "JavaScript",
@@ -1622,6 +2132,30 @@
         "size": 1363,
         "extension": ".js",
         "path": "frontend/src/lib/calendar.test.js"
+      },
+      {
+        "name": "classCatalogApi.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 751,
+        "extension": ".js",
+        "path": "frontend/src/lib/classCatalogApi.js"
+      },
+      {
+        "name": "classCatalogDemo.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2986,
+        "extension": ".js",
+        "path": "frontend/src/lib/classCatalogDemo.js"
+      },
+      {
+        "name": "classCatalogDemo.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1079,
+        "extension": ".js",
+        "path": "frontend/src/lib/classCatalogDemo.test.js"
       },
       {
         "name": "moderation.js",
@@ -1643,7 +2177,7 @@
         "name": "syllabus.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 4280,
+        "size": 4552,
         "extension": ".js",
         "path": "frontend/src/lib/syllabus.js"
       },
@@ -1659,7 +2193,7 @@
         "name": "syllabusApi.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1492,
+        "size": 2286,
         "extension": ".js",
         "path": "frontend/src/lib/syllabusApi.js"
       },
@@ -1683,7 +2217,7 @@
         "name": "teachingPlanDemo.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 5125,
+        "size": 5932,
         "extension": ".js",
         "path": "frontend/src/lib/teachingPlanDemo.js"
       },
@@ -1691,7 +2225,7 @@
         "name": "teachingPlanDemo.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2702,
+        "size": 3463,
         "extension": ".js",
         "path": "frontend/src/lib/teachingPlanDemo.test.js"
       },
@@ -1745,7 +2279,7 @@
         "name": "TeachingPlanPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 15822,
+        "size": 15439,
         "extension": ".jsx",
         "path": "frontend/src/pages/TeachingPlanPage.jsx"
       },
@@ -1754,6 +2288,14 @@
         "type": "directory",
         "path": "frontend/src/styles",
         "children": []
+      },
+      {
+        "name": "class-catalog.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 3914,
+        "extension": ".css",
+        "path": "frontend/src/styles/class-catalog.css"
       },
       {
         "name": "events-loading.css",
@@ -1767,7 +2309,7 @@
         "name": "global.css",
         "type": "file",
         "language": "CSS",
-        "size": 49636,
+        "size": 47205,
         "extension": ".css",
         "path": "frontend/src/styles/global.css"
       },
@@ -1791,7 +2333,7 @@
         "name": "teaching-plan.css",
         "type": "file",
         "language": "CSS",
-        "size": 8684,
+        "size": 10198,
         "extension": ".css",
         "path": "frontend/src/styles/teaching-plan.css"
       },
@@ -1800,6 +2342,22 @@
         "type": "directory",
         "path": "frontend/tests",
         "children": []
+      },
+      {
+        "name": "class-catalog-real.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 8625,
+        "extension": ".js",
+        "path": "frontend/tests/class-catalog-real.spec.js"
+      },
+      {
+        "name": "syllabus-consent.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7221,
+        "extension": ".js",
+        "path": "frontend/tests/syllabus-consent.spec.js"
       },
       {
         "name": "syllabus-review.spec.js",
@@ -1813,7 +2371,7 @@
         "name": "syllabus.spec.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 13062,
+        "size": 13241,
         "extension": ".js",
         "path": "frontend/tests/syllabus.spec.js"
       },
@@ -1821,7 +2379,7 @@
         "name": "teaching-plan-journey.spec.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 5780,
+        "size": 9585,
         "extension": ".js",
         "path": "frontend/tests/teaching-plan-journey.spec.js"
       },
@@ -1837,9 +2395,39 @@
         "name": "vite.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 281,
+        "size": 319,
         "extension": ".js",
         "path": "frontend/vite.config.js"
+      },
+      {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3712,
+        "extension": ".json",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 56,
+        "extension": ".json",
+        "path": "package.json"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "scripts",
+        "children": []
+      },
+      {
+        "name": "dev.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4809,
+        "extension": ".py",
+        "path": "scripts/dev.py"
       },
       {
         "name": "supabase",
@@ -2038,6 +2626,62 @@
         "path": "supabase/migrations/20261107000000_planos_escrita_via_backend.sql"
       },
       {
+        "name": "20261109110000_fila_processamento_planos.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1232,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261109110000_fila_processamento_planos.sql"
+      },
+      {
+        "name": "20261109113000_privacidade_e_revisao_planos.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 9086,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261109113000_privacidade_e_revisao_planos.sql"
+      },
+      {
+        "name": "20261109120000_turmas_vinculos_versoes.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 16016,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261109120000_turmas_vinculos_versoes.sql"
+      },
+      {
+        "name": "20261109185725_cria_fila_processamento_ia.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1625,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261109185725_cria_fila_processamento_ia.sql"
+      },
+      {
+        "name": "20261110120000_texto_revisado_e_autorizacao_s7.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 10994,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261110120000_texto_revisado_e_autorizacao_s7.sql"
+      },
+      {
+        "name": "20261110142000_catalogo_sincronizacao.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 9121,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261110142000_catalogo_sincronizacao.sql"
+      },
+      {
+        "name": "20261111120000_publicacao_catalogo.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 7116,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261111120000_publicacao_catalogo.sql"
+      },
+      {
         "name": "seed.sql",
         "type": "file",
         "language": "SQL",
@@ -2056,7 +2700,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-10T14:25:03.578986+00:00",
+    "extracted_at": "2026-11-11T13:31:40.904030+00:00",
     "file_path": "data/silver/hierarchy_2026-2-AgendaUnB.json"
   }
 }

@@ -2,11 +2,19 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-10T14:23:57.294819+00:00",
+  "extracted_at": "2026-11-11T13:30:27.886418+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
     "children": [
+      {
+        "name": ".gitattributes",
+        "type": "file",
+        "language": "Unknown",
+        "size": 91,
+        "extension": ".gitattributes",
+        "path": ".gitattributes"
+      },
       {
         "name": ".github",
         "type": "directory",
@@ -125,7 +133,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8385,
+        "size": 8805,
         "extension": ".md",
         "path": "README.md"
       },
@@ -155,7 +163,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9939,
+        "size": 11050,
         "extension": ".md",
         "path": "backend/README.md"
       },
@@ -413,7 +421,7 @@
         "name": "simular_intencoes.py",
         "type": "file",
         "language": "Python",
-        "size": 4226,
+        "size": 4811,
         "extension": ".py",
         "path": "backend/app/db/simular_intencoes.py"
       },
@@ -708,6 +716,14 @@
         "path": "backend/tests/test_migracao_ultima_importacao.py"
       },
       {
+        "name": "test_pdf_referencia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1596,
+        "extension": ".py",
+        "path": "backend/tests/test_pdf_referencia.py"
+      },
+      {
         "name": "test_reclamacao.py",
         "type": "file",
         "language": "Python",
@@ -727,7 +743,7 @@
         "name": "test_simular_intencoes.py",
         "type": "file",
         "language": "Python",
-        "size": 11657,
+        "size": 13221,
         "extension": ".py",
         "path": "backend/tests/test_simular_intencoes.py"
       },
@@ -743,7 +759,7 @@
         "name": "contexto.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10355,
+        "size": 10641,
         "extension": ".md",
         "path": "contexto.md"
       },
@@ -765,7 +781,7 @@
         "name": "Arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 15923,
+        "size": 16821,
         "extension": ".md",
         "path": "docs/Arquitetura.md"
       },
@@ -773,7 +789,7 @@
         "name": "Requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 37270,
+        "size": 37582,
         "extension": ".md",
         "path": "docs/Requisitos.md"
       },
@@ -781,7 +797,7 @@
         "name": "changelog.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12232,
+        "size": 12966,
         "extension": ".md",
         "path": "docs/changelog.md"
       },
@@ -938,6 +954,14 @@
         "path": "docs/evidencias/dados/publicacao-https-2026-10-27.json"
       },
       {
+        "name": "publicacao-https-2026-11-11-utc.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 887,
+        "extension": ".json",
+        "path": "docs/evidencias/dados/publicacao-https-2026-11-11-utc.json"
+      },
+      {
         "name": "sincronizacao-2026-10-27.json",
         "type": "file",
         "language": "JSON",
@@ -981,7 +1005,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4854,
+        "size": 4860,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -1073,7 +1097,7 @@
         "name": "sprint05.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6353,
+        "size": 6701,
         "extension": ".md",
         "path": "docs/scrum/sprint05.md"
       },
@@ -1109,7 +1133,7 @@
         "name": "verificacao-publicacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5604,
+        "size": 6176,
         "extension": ".md",
         "path": "docs/verificacao-publicacao.md"
       },
@@ -1153,7 +1177,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 17022,
+        "size": 17238,
         "extension": ".py",
         "path": "extracao/extracao/main.py"
       },
@@ -1291,9 +1315,25 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 789,
+        "size": 3708,
         "extension": ".md",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/README.md"
+      },
+      {
+        "name": "invalido.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 83,
+        "extension": ".pdf",
+        "path": "extracao/tests/fixtures/publicacao-2026-10-27/invalido.pdf"
+      },
+      {
+        "name": "invalido.pdf.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 81,
+        "extension": ".json",
+        "path": "extracao/tests/fixtures/publicacao-2026-10-27/invalido.pdf.json"
       },
       {
         "name": "links.html",
@@ -1323,7 +1363,7 @@
         "name": "test_regressoes_publicacao.py",
         "type": "file",
         "language": "Python",
-        "size": 3032,
+        "size": 3829,
         "extension": ".py",
         "path": "extracao/tests/test_regressoes_publicacao.py"
       },
@@ -1453,7 +1493,7 @@
         "name": "api.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6686,
+        "size": 6681,
         "extension": ".ts",
         "path": "frontend/src/api.ts"
       },
@@ -1803,7 +1843,7 @@
         "name": "api.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 10634,
+        "size": 10709,
         "extension": ".js",
         "path": "frontend/tests/api.test.js"
       },
@@ -2014,7 +2054,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-10T14:25:03.591927+00:00",
+    "extracted_at": "2026-11-11T13:31:40.917586+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }

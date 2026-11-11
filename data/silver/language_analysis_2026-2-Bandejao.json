@@ -2,19 +2,19 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-10T14:23:57.294819+00:00",
+  "analyzed_at": "2026-11-11T13:30:27.886418+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 219,
-  "total_bytes": 1899352,
+  "total_files": 224,
+  "total_bytes": 1912928,
   "languages": [
     {
       "language": "PDF",
-      "file_count": 5,
-      "total_bytes": 790557,
-      "percentage": 41.62,
+      "file_count": 6,
+      "total_bytes": 790640,
+      "percentage": 41.33,
       "files": [
         {
           "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf",
@@ -45,43 +45,49 @@
           "name": "Fazenda-Semana-02-26-10-a-01-11.pdf",
           "size": 119544,
           "extension": ".pdf"
+        },
+        {
+          "path": "extracao/tests/fixtures/publicacao-2026-10-27/invalido.pdf",
+          "name": "invalido.pdf",
+          "size": 83,
+          "extension": ".pdf"
         }
       ]
     },
     {
       "language": "Markdown",
       "file_count": 48,
-      "total_bytes": 273435,
-      "percentage": 14.4,
+      "total_bytes": 281041,
+      "percentage": 14.69,
       "files": [
         {
           "path": "docs/Requisitos.md",
           "name": "Requisitos.md",
-          "size": 37270,
+          "size": 37582,
           "extension": ".md"
         },
         {
           "path": "docs/Arquitetura.md",
           "name": "Arquitetura.md",
-          "size": 15923,
+          "size": 16821,
           "extension": ".md"
         },
         {
           "path": "docs/changelog.md",
           "name": "changelog.md",
-          "size": 12232,
-          "extension": ".md"
-        },
-        {
-          "path": "contexto.md",
-          "name": "contexto.md",
-          "size": 10355,
+          "size": 12966,
           "extension": ".md"
         },
         {
           "path": "backend/README.md",
           "name": "README.md",
-          "size": 9939,
+          "size": 11050,
+          "extension": ".md"
+        },
+        {
+          "path": "contexto.md",
+          "name": "contexto.md",
+          "size": 10641,
           "extension": ".md"
         },
         {
@@ -103,24 +109,92 @@
           "extension": ".md"
         },
         {
-          "path": "docs/estudos/extracao_dados_pdf.md",
-          "name": "extracao_dados_pdf.md",
-          "size": 8685,
+          "path": "README.md",
+          "name": "README.md",
+          "size": 8805,
           "extension": ".md"
         },
         {
-          "path": "docs/desenvolvimento.md",
-          "name": "desenvolvimento.md",
-          "size": 8431,
+          "path": "docs/estudos/extracao_dados_pdf.md",
+          "name": "extracao_dados_pdf.md",
+          "size": 8685,
           "extension": ".md"
         }
       ]
     },
     {
+      "language": "Python",
+      "file_count": 74,
+      "total_bytes": 229386,
+      "percentage": 11.99,
+      "files": [
+        {
+          "path": "backend/tests/test_cardapio_api.py",
+          "name": "test_cardapio_api.py",
+          "size": 17285,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/extracao/main.py",
+          "name": "main.py",
+          "size": 17238,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_intencao.py",
+          "name": "test_intencao.py",
+          "size": 13293,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_simular_intencoes.py",
+          "name": "test_simular_intencoes.py",
+          "size": 13221,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_reclamacao.py",
+          "name": "test_reclamacao.py",
+          "size": 13135,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_cobertura_total.py",
+          "name": "test_cobertura_total.py",
+          "size": 9993,
+          "extension": ".py"
+        },
+        {
+          "path": "scripts/verificar_publicacao.py",
+          "name": "verificar_publicacao.py",
+          "size": 7613,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_estimativa.py",
+          "name": "test_estimativa.py",
+          "size": 7339,
+          "extension": ".py"
+        },
+        {
+          "path": "extracao/tests/test_main.py",
+          "name": "test_main.py",
+          "size": 6882,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/api/routes/cardapio.py",
+          "name": "cardapio.py",
+          "size": 6055,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
       "language": "JSON",
-      "file_count": 12,
-      "total_bytes": 225399,
-      "percentage": 11.87,
+      "file_count": 14,
+      "total_bytes": 226367,
+      "percentage": 11.83,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -171,92 +245,24 @@
           "extension": ".json"
         },
         {
+          "path": "docs/evidencias/dados/publicacao-https-2026-11-11-utc.json",
+          "name": "publicacao-https-2026-11-11-utc.json",
+          "size": 887,
+          "extension": ".json"
+        },
+        {
           "path": "frontend/package.json",
           "name": "package.json",
           "size": 693,
           "extension": ".json"
-        },
-        {
-          "path": "frontend/tsconfig.json",
-          "name": "tsconfig.json",
-          "size": 600,
-          "extension": ".json"
-        }
-      ]
-    },
-    {
-      "language": "Python",
-      "file_count": 73,
-      "total_bytes": 224628,
-      "percentage": 11.83,
-      "files": [
-        {
-          "path": "backend/tests/test_cardapio_api.py",
-          "name": "test_cardapio_api.py",
-          "size": 17285,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/extracao/main.py",
-          "name": "main.py",
-          "size": 17022,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_intencao.py",
-          "name": "test_intencao.py",
-          "size": 13293,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_reclamacao.py",
-          "name": "test_reclamacao.py",
-          "size": 13135,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_simular_intencoes.py",
-          "name": "test_simular_intencoes.py",
-          "size": 11657,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_cobertura_total.py",
-          "name": "test_cobertura_total.py",
-          "size": 9993,
-          "extension": ".py"
-        },
-        {
-          "path": "scripts/verificar_publicacao.py",
-          "name": "verificar_publicacao.py",
-          "size": 7613,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_estimativa.py",
-          "name": "test_estimativa.py",
-          "size": 7339,
-          "extension": ".py"
-        },
-        {
-          "path": "extracao/tests/test_main.py",
-          "name": "test_main.py",
-          "size": 6882,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/api/routes/cardapio.py",
-          "name": "cardapio.py",
-          "size": 6055,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "TypeScript",
       "file_count": 44,
-      "total_bytes": 166915,
-      "percentage": 8.79,
+      "total_bytes": 166910,
+      "percentage": 8.73,
       "files": [
         {
           "path": "frontend/src/App.tsx",
@@ -297,7 +303,7 @@
         {
           "path": "frontend/src/api.ts",
           "name": "api.ts",
-          "size": 6686,
+          "size": 6681,
           "extension": ".ts"
         },
         {
@@ -324,7 +330,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 149399,
-      "percentage": 7.87,
+      "percentage": 7.81,
       "files": [
         {
           "path": "docs/evidencias/capturas/privacidade-desktop.png",
@@ -350,7 +356,7 @@
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 1.44,
+      "percentage": 1.43,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -431,13 +437,13 @@
     {
       "language": "JavaScript",
       "file_count": 1,
-      "total_bytes": 10634,
+      "total_bytes": 10709,
       "percentage": 0.56,
       "files": [
         {
           "path": "frontend/tests/api.test.js",
           "name": "api.test.js",
-          "size": 10634,
+          "size": 10709,
           "extension": ".js"
         }
       ]
@@ -510,9 +516,9 @@
     },
     {
       "language": "Unknown",
-      "file_count": 3,
-      "total_bytes": 1175,
-      "percentage": 0.06,
+      "file_count": 4,
+      "total_bytes": 1266,
+      "percentage": 0.07,
       "files": [
         {
           "path": "backend/alembic/script.py.mako",
@@ -525,6 +531,12 @@
           "name": ".env.example",
           "size": 500,
           "extension": ".example"
+        },
+        {
+          "path": ".gitattributes",
+          "name": ".gitattributes",
+          "size": 91,
+          "extension": ".gitattributes"
         },
         {
           "path": "frontend/.env.example",
@@ -558,7 +570,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 478,
-      "percentage": 0.03,
+      "percentage": 0.02,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -648,7 +660,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-10T14:25:03.590040+00:00",
+    "extracted_at": "2026-11-11T13:31:40.915808+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }

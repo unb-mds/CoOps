@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-10T14:23:53.521201+00:00",
+  "extracted_at": "2026-11-11T13:30:24.580162+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -82,6 +82,14 @@
         "path": ".github/workflows/pull-request.yml"
       },
       {
+        "name": "sigaa-importacao.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2286,
+        "extension": ".yml",
+        "path": ".github/workflows/sigaa-importacao.yml"
+      },
+      {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
@@ -131,7 +139,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10307,
+        "size": 10571,
         "extension": ".md",
         "path": "README.md"
       },
@@ -153,7 +161,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 1266,
+        "size": 1579,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -183,7 +191,7 @@
         "name": "env.py",
         "type": "file",
         "language": "Python",
-        "size": 1302,
+        "size": 1322,
         "extension": ".py",
         "path": "backend/alembic/env.py"
       },
@@ -302,6 +310,14 @@
         "path": "backend/app/commands/__init__.py"
       },
       {
+        "name": "auditar_importacao_sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1035,
+        "extension": ".py",
+        "path": "backend/app/commands/auditar_importacao_sigaa.py"
+      },
+      {
         "name": "descartar_moderacao.py",
         "type": "file",
         "language": "Python",
@@ -321,7 +337,7 @@
         "name": "importar_sigaa_agendado.py",
         "type": "file",
         "language": "Python",
-        "size": 3046,
+        "size": 3688,
         "extension": ".py",
         "path": "backend/app/commands/importar_sigaa_agendado.py"
       },
@@ -367,7 +383,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 544,
+        "size": 624,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -400,6 +416,14 @@
         "size": 44,
         "extension": ".py",
         "path": "backend/app/domain/__init__.py"
+      },
+      {
+        "name": "auditoria_importacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3790,
+        "extension": ".py",
+        "path": "backend/app/domain/auditoria_importacao.py"
       },
       {
         "name": "avaliacoes.py",
@@ -475,7 +499,7 @@
         "name": "disciplina.py",
         "type": "file",
         "language": "Python",
-        "size": 948,
+        "size": 1385,
         "extension": ".py",
         "path": "backend/app/models/disciplina.py"
       },
@@ -499,7 +523,7 @@
         "name": "professor.py",
         "type": "file",
         "language": "Python",
-        "size": 1007,
+        "size": 1443,
         "extension": ".py",
         "path": "backend/app/models/professor.py"
       },
@@ -588,6 +612,14 @@
         "size": 1690,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repository.py"
+      },
+      {
+        "name": "importacao_execucao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 253,
+        "extension": ".py",
+        "path": "backend/app/repositories/importacao_execucao_repository.py"
       },
       {
         "name": "moderacao_repository.py",
@@ -757,7 +789,7 @@
         "name": "institucional.py",
         "type": "file",
         "language": "Python",
-        "size": 866,
+        "size": 948,
         "extension": ".py",
         "path": "backend/app/schemas/institucional.py"
       },
@@ -806,6 +838,14 @@
         "path": "backend/app/services/__init__.py"
       },
       {
+        "name": "auditoria_importacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1070,
+        "extension": ".py",
+        "path": "backend/app/services/auditoria_importacao_service.py"
+      },
+      {
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
@@ -817,7 +857,7 @@
         "name": "avaliacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 7627,
+        "size": 7876,
         "extension": ".py",
         "path": "backend/app/services/avaliacao_service.py"
       },
@@ -849,7 +889,7 @@
         "name": "importacao_agendada_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2713,
+        "size": 2989,
         "extension": ".py",
         "path": "backend/app/services/importacao_agendada_service.py"
       },
@@ -1012,6 +1052,22 @@
         "path": "backend/tests/test_api_institucional.py"
       },
       {
+        "name": "test_auditoria_importacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6309,
+        "extension": ".py",
+        "path": "backend/tests/test_auditoria_importacao.py"
+      },
+      {
+        "name": "test_auditoria_importacao_cli.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4437,
+        "extension": ".py",
+        "path": "backend/tests/test_auditoria_importacao_cli.py"
+      },
+      {
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
@@ -1039,7 +1095,7 @@
         "name": "test_comparacao_professores.py",
         "type": "file",
         "language": "Python",
-        "size": 4834,
+        "size": 4890,
         "extension": ".py",
         "path": "backend/tests/test_comparacao_professores.py"
       },
@@ -1047,7 +1103,7 @@
         "name": "test_consulta_agregada.py",
         "type": "file",
         "language": "Python",
-        "size": 9447,
+        "size": 9511,
         "extension": ".py",
         "path": "backend/tests/test_consulta_agregada.py"
       },
@@ -1071,7 +1127,7 @@
         "name": "test_importacao_agendada_service.py",
         "type": "file",
         "language": "Python",
-        "size": 5576,
+        "size": 6466,
         "extension": ".py",
         "path": "backend/tests/test_importacao_agendada_service.py"
       },
@@ -1092,12 +1148,28 @@
         "path": "backend/tests/test_integration_acesso.py"
       },
       {
+        "name": "test_migration_connection.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2642,
+        "extension": ".py",
+        "path": "backend/tests/test_migration_connection.py"
+      },
+      {
         "name": "test_moderacao.py",
         "type": "file",
         "language": "Python",
         "size": 11858,
         "extension": ".py",
         "path": "backend/tests/test_moderacao.py"
+      },
+      {
+        "name": "test_nomes_unidades.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6475,
+        "extension": ".py",
+        "path": "backend/tests/test_nomes_unidades.py"
       },
       {
         "name": "test_retorno_busca.py",
@@ -1146,6 +1218,14 @@
         "children": []
       },
       {
+        "name": "acesso-postgresql-api.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6520,
+        "extension": ".md",
+        "path": "docs/acesso-postgresql-api.md"
+      },
+      {
         "name": "adrs",
         "type": "directory",
         "path": "docs/adrs",
@@ -1187,7 +1267,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 25456,
+        "size": 27755,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -1196,6 +1276,282 @@
         "type": "directory",
         "path": "docs/assets",
         "children": []
+      },
+      {
+        "name": "evidencias",
+        "type": "directory",
+        "path": "docs/assets/evidencias",
+        "children": []
+      },
+      {
+        "name": "2026-11-10",
+        "type": "directory",
+        "path": "docs/assets/evidencias/2026-11-10",
+        "children": []
+      },
+      {
+        "name": "214-antes-home-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 152335,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-antes-home-1440.png"
+      },
+      {
+        "name": "214-antes-home-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 157772,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-antes-home-320.png"
+      },
+      {
+        "name": "214-antes-home-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 159089,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-antes-home-390.png"
+      },
+      {
+        "name": "214-antes-home-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 155267,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-antes-home-768.png"
+      },
+      {
+        "name": "214-depois-home-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 157712,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-depois-home-1440.png"
+      },
+      {
+        "name": "214-depois-home-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 160417,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-depois-home-320.png"
+      },
+      {
+        "name": "214-depois-home-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 161433,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-depois-home-390.png"
+      },
+      {
+        "name": "214-depois-home-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 160924,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/214-depois-home-768.png"
+      },
+      {
+        "name": "215-antes-avaliacao-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 151632,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-avaliacao-1440.png"
+      },
+      {
+        "name": "215-antes-avaliacao-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 136873,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-avaliacao-320.png"
+      },
+      {
+        "name": "215-antes-avaliacao-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 135099,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-avaliacao-390.png"
+      },
+      {
+        "name": "215-antes-avaliacao-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 144384,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-avaliacao-768.png"
+      },
+      {
+        "name": "215-antes-login-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 48561,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-login-1440.png"
+      },
+      {
+        "name": "215-antes-login-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 41156,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-login-320.png"
+      },
+      {
+        "name": "215-antes-login-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42063,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-login-390.png"
+      },
+      {
+        "name": "215-antes-login-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 45672,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-login-768.png"
+      },
+      {
+        "name": "215-antes-unidades-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 210758,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-unidades-1440.png"
+      },
+      {
+        "name": "215-antes-unidades-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 416134,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-unidades-320.png"
+      },
+      {
+        "name": "215-antes-unidades-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 420961,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-unidades-390.png"
+      },
+      {
+        "name": "215-antes-unidades-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 270759,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-antes-unidades-768.png"
+      },
+      {
+        "name": "215-depois-avaliacao-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 165112,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-avaliacao-1440.png"
+      },
+      {
+        "name": "215-depois-avaliacao-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 149684,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-avaliacao-320.png"
+      },
+      {
+        "name": "215-depois-avaliacao-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 148282,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-avaliacao-390.png"
+      },
+      {
+        "name": "215-depois-avaliacao-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 160190,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-avaliacao-768.png"
+      },
+      {
+        "name": "215-depois-login-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 48315,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-login-1440.png"
+      },
+      {
+        "name": "215-depois-login-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 42074,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-login-320.png"
+      },
+      {
+        "name": "215-depois-login-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 43182,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-login-390.png"
+      },
+      {
+        "name": "215-depois-login-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 45417,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-login-768.png"
+      },
+      {
+        "name": "215-depois-unidades-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 213733,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-unidades-1440.png"
+      },
+      {
+        "name": "215-depois-unidades-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 365486,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-unidades-320.png"
+      },
+      {
+        "name": "215-depois-unidades-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 356451,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-unidades-390.png"
+      },
+      {
+        "name": "215-depois-unidades-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 266173,
+        "extension": ".png",
+        "path": "docs/assets/evidencias/2026-11-10/215-depois-unidades-768.png"
+      },
+      {
+        "name": "importacao-resumo.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 515,
+        "extension": ".json",
+        "path": "docs/assets/evidencias/2026-11-10/importacao-resumo.json"
       },
       {
         "name": "stylesheets",
@@ -2858,12 +3214,28 @@
         "path": "docs/estudos/fila-moderacao-issue-162.md"
       },
       {
+        "name": "identidade-conta-catalogo-2026-11-10.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5804,
+        "extension": ".md",
+        "path": "docs/estudos/identidade-conta-catalogo-2026-11-10.md"
+      },
+      {
         "name": "implementacao-navegacao-issue-155.md",
         "type": "file",
         "language": "Markdown",
         "size": 16310,
         "extension": ".md",
         "path": "docs/estudos/implementacao-navegacao-issue-155.md"
+      },
+      {
+        "name": "importacao-neon-2026-11-10.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5826,
+        "extension": ".md",
+        "path": "docs/estudos/importacao-neon-2026-11-10.md"
       },
       {
         "name": "integracao-visual-jornada-issue-186.md",
@@ -2922,6 +3294,14 @@
         "path": "docs/estudos/resultados-reteste-jornada-issue-153.md"
       },
       {
+        "name": "revisao-perfil-comparacao-pr-217.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3054,
+        "extension": ".md",
+        "path": "docs/estudos/revisao-perfil-comparacao-pr-217.md"
+      },
+      {
         "name": "sigaa-poc.md",
         "type": "file",
         "language": "Markdown",
@@ -2968,6 +3348,14 @@
         "size": 9562,
         "extension": ".md",
         "path": "docs/estudos/verificacao-acesso-avaliacao-issue-158.md"
+      },
+      {
+        "name": "verificacao-acesso-postgresql-issue-170.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3938,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-acesso-postgresql-issue-170.md"
       },
       {
         "name": "verificacao-ambiente-completo-issue-37-tiago-vieira.md",
@@ -3018,6 +3406,14 @@
         "path": "docs/estudos/verificacao-formulario-avaliacao.md"
       },
       {
+        "name": "verificacao-importacao-sigaa-issue-164.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3841,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-importacao-sigaa-issue-164.md"
+      },
+      {
         "name": "verificacao-lint-tipos-issue-189.md",
         "type": "file",
         "language": "Markdown",
@@ -3058,6 +3454,14 @@
         "path": "docs/figma.md"
       },
       {
+        "name": "hospedagem.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14274,
+        "extension": ".md",
+        "path": "docs/hospedagem.md"
+      },
+      {
         "name": "importacao-sigaa.md",
         "type": "file",
         "language": "Markdown",
@@ -3069,7 +3473,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1840,
+        "size": 2238,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -3077,7 +3481,7 @@
         "name": "inicializacao-render.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2703,
+        "size": 1232,
         "extension": ".md",
         "path": "docs/inicializacao-render.md"
       },
@@ -3093,7 +3497,7 @@
         "name": "operacao-importacao-sigaa.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9430,
+        "size": 15237,
         "extension": ".md",
         "path": "docs/operacao-importacao-sigaa.md"
       },
@@ -3969,17 +4373,33 @@
         "name": "1.1.0.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4917,
+        "size": 3308,
         "extension": ".md",
         "path": "docs/releases/1.1.0.md"
+      },
+      {
+        "name": "1.2.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5680,
+        "extension": ".md",
+        "path": "docs/releases/1.2.0.md"
       },
       {
         "name": "2.0.0-planejamento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8112,
+        "size": 8991,
         "extension": ".md",
         "path": "docs/releases/2.0.0-planejamento.md"
+      },
+      {
+        "name": "2.0.0-reconciliacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12933,
+        "extension": ".md",
+        "path": "docs/releases/2.0.0-reconciliacao.md"
       },
       {
         "name": "requisitos.md",
@@ -3993,7 +4413,7 @@
         "name": "visao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8796,
+        "size": 10766,
         "extension": ".md",
         "path": "docs/visao.md"
       },
@@ -4126,10 +4546,18 @@
         "path": "frontend/docs/ui-busca-203.md"
       },
       {
+        "name": "ui-conta-avaliacao-205.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4557,
+        "extension": ".md",
+        "path": "frontend/docs/ui-conta-avaliacao-205.md"
+      },
+      {
         "name": "ui-dark.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3668,
+        "size": 10166,
         "extension": ".md",
         "path": "frontend/docs/ui-dark.md"
       },
@@ -4177,7 +4605,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1110,
+        "size": 1162,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -4194,6 +4622,20 @@
         "type": "directory",
         "path": "frontend/public",
         "children": []
+      },
+      {
+        "name": "brand",
+        "type": "directory",
+        "path": "frontend/public/brand",
+        "children": []
+      },
+      {
+        "name": "undb-logo.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 70253,
+        "extension": ".png",
+        "path": "frontend/public/brand/undb-logo.png"
       },
       {
         "name": "file.svg",
@@ -4271,7 +4713,7 @@
         "name": "cadastro-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5058,
+        "size": 5145,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/cadastro-form.tsx"
       },
@@ -4293,7 +4735,7 @@
         "name": "confirmation-client.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2945,
+        "size": 2905,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/confirmation-client.tsx"
       },
@@ -4335,7 +4777,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5774,
+        "size": 3576,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[id]/page.tsx"
       },
@@ -4359,7 +4801,7 @@
         "name": "favicon.ico",
         "type": "file",
         "language": "Icon",
-        "size": 25931,
+        "size": 6782,
         "extension": ".ico",
         "path": "frontend/src/app/favicon.ico"
       },
@@ -4367,9 +4809,17 @@
         "name": "globals.css",
         "type": "file",
         "language": "CSS",
-        "size": 5695,
+        "size": 12961,
         "extension": ".css",
         "path": "frontend/src/app/globals.css"
+      },
+      {
+        "name": "icon.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 26228,
+        "extension": ".png",
+        "path": "frontend/src/app/icon.png"
       },
       {
         "name": "layout.tsx",
@@ -4389,7 +4839,7 @@
         "name": "login-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5600,
+        "size": 5498,
         "extension": ".tsx",
         "path": "frontend/src/app/login/login-form.tsx"
       },
@@ -4411,7 +4861,7 @@
         "name": "detalhe-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9871,
+        "size": 9816,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx"
       },
@@ -4419,7 +4869,7 @@
         "name": "fila-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9606,
+        "size": 9638,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/fila-moderacao.tsx"
       },
@@ -4481,7 +4931,7 @@
         "name": "avaliacao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10842,
+        "size": 10835,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
       },
@@ -4489,7 +4939,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3493,
+        "size": 3536,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
       },
@@ -4497,7 +4947,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4845,
+        "size": 8885,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx"
       },
@@ -4505,7 +4955,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2481,
+        "size": 2521,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/page.tsx"
       },
@@ -4521,7 +4971,7 @@
         "name": "professor-resultado.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3042,
+        "size": 3088,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/professor-resultado.tsx"
       },
@@ -4597,7 +5047,7 @@
         "name": "aviso-agradecimento.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3959,
+        "size": 4021,
         "extension": ".tsx",
         "path": "frontend/src/components/aviso-agradecimento.tsx"
       },
@@ -4637,7 +5087,7 @@
         "name": "cabecalho.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2044,
+        "size": 2072,
         "extension": ".tsx",
         "path": "frontend/src/components/cabecalho.tsx"
       },
@@ -4653,7 +5103,7 @@
         "name": "campo-senha.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1253,
+        "size": 1228,
         "extension": ".tsx",
         "path": "frontend/src/components/campo-senha.tsx"
       },
@@ -4661,7 +5111,7 @@
         "name": "catalogo-home.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2587,
+        "size": 2672,
         "extension": ".tsx",
         "path": "frontend/src/components/catalogo-home.tsx"
       },
@@ -4669,15 +5119,23 @@
         "name": "catalogo-unidades.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2921,
+        "size": 3492,
         "extension": ".tsx",
         "path": "frontend/src/components/catalogo-unidades.tsx"
+      },
+      {
+        "name": "comparacao-dark.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7931,
+        "extension": ".tsx",
+        "path": "frontend/src/components/comparacao-dark.tsx"
       },
       {
         "name": "criterios-agregados.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1268,
+        "size": 1706,
         "extension": ".tsx",
         "path": "frontend/src/components/criterios-agregados.tsx"
       },
@@ -4685,7 +5143,7 @@
         "name": "criterios-avaliacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4841,
+        "size": 5228,
         "extension": ".tsx",
         "path": "frontend/src/components/criterios-avaliacao.tsx"
       },
@@ -4693,7 +5151,7 @@
         "name": "destino-avaliacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1574,
+        "size": 1503,
         "extension": ".tsx",
         "path": "frontend/src/components/destino-avaliacao.tsx"
       },
@@ -4701,7 +5159,7 @@
         "name": "disciplina-catalogo.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1135,
+        "size": 1180,
         "extension": ".tsx",
         "path": "frontend/src/components/disciplina-catalogo.tsx"
       },
@@ -4709,7 +5167,7 @@
         "name": "disciplinas-professor.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2233,
+        "size": 2278,
         "extension": ".tsx",
         "path": "frontend/src/components/disciplinas-professor.tsx"
       },
@@ -4725,15 +5183,23 @@
         "name": "item-comentario.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1591,
+        "size": 1807,
         "extension": ".tsx",
         "path": "frontend/src/components/item-comentario.tsx"
+      },
+      {
+        "name": "lista-progressiva.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1512,
+        "extension": ".tsx",
+        "path": "frontend/src/components/lista-progressiva.tsx"
       },
       {
         "name": "meus-comentarios.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2098,
+        "size": 2084,
         "extension": ".tsx",
         "path": "frontend/src/components/meus-comentarios.tsx"
       },
@@ -4741,7 +5207,7 @@
         "name": "modal-denuncia.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6833,
+        "size": 6927,
         "extension": ".tsx",
         "path": "frontend/src/components/modal-denuncia.tsx"
       },
@@ -4749,7 +5215,7 @@
         "name": "opcoes-acesso.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 734,
+        "size": 600,
         "extension": ".tsx",
         "path": "frontend/src/components/opcoes-acesso.tsx"
       },
@@ -4765,7 +5231,7 @@
         "name": "secao-comentarios.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1266,
+        "size": 1305,
         "extension": ".tsx",
         "path": "frontend/src/components/secao-comentarios.tsx"
       },
@@ -4795,7 +5261,7 @@
         "name": "catalogo.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 503,
+        "size": 827,
         "extension": ".ts",
         "path": "frontend/src/lib/catalogo.ts"
       },
@@ -4803,7 +5269,7 @@
         "name": "contexto-busca.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1834,
+        "size": 1910,
         "extension": ".ts",
         "path": "frontend/src/lib/contexto-busca.ts"
       },
@@ -4879,7 +5345,7 @@
         "name": "avaliacoes.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3313,
+        "size": 3826,
         "extension": ".ts",
         "path": "frontend/src/lib/services/avaliacoes.ts"
       },
@@ -4903,7 +5369,7 @@
         "name": "disciplinas.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5764,
+        "size": 6153,
         "extension": ".ts",
         "path": "frontend/src/lib/services/disciplinas.ts"
       },
@@ -4927,7 +5393,7 @@
         "name": "professores.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1999,
+        "size": 2181,
         "extension": ".ts",
         "path": "frontend/src/lib/services/professores.ts"
       },
@@ -4965,7 +5431,7 @@
         "name": "institucional.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 825,
+        "size": 897,
         "extension": ".ts",
         "path": "frontend/src/lib/types/institucional.ts"
       },
@@ -4976,6 +5442,14 @@
         "size": 1684,
         "extension": ".ts",
         "path": "frontend/src/lib/types/moderacao.ts"
+      },
+      {
+        "name": "unidade.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 444,
+        "extension": ".ts",
+        "path": "frontend/src/lib/unidade.ts"
       },
       {
         "name": "tests",
@@ -4995,7 +5469,7 @@
         "name": "avaliacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 30958,
+        "size": 32304,
         "extension": ".mjs",
         "path": "frontend/tests/avaliacao-browser.mjs"
       },
@@ -5043,7 +5517,7 @@
         "name": "busca-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 26871,
+        "size": 27844,
         "extension": ".mjs",
         "path": "frontend/tests/busca-browser.mjs"
       },
@@ -5051,15 +5525,23 @@
         "name": "busca.test.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 8030,
+        "size": 10381,
         "extension": ".mjs",
         "path": "frontend/tests/busca.test.mjs"
+      },
+      {
+        "name": "catalogo-progressivo-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4150,
+        "extension": ".mjs",
+        "path": "frontend/tests/catalogo-progressivo-browser.mjs"
       },
       {
         "name": "comentarios-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 12199,
+        "size": 12203,
         "extension": ".mjs",
         "path": "frontend/tests/comentarios-browser.mjs"
       },
@@ -5072,10 +5554,18 @@
         "path": "frontend/tests/comentarios.test.mjs"
       },
       {
+        "name": "conta-dark-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3970,
+        "extension": ".mjs",
+        "path": "frontend/tests/conta-dark-browser.mjs"
+      },
+      {
         "name": "denuncia-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 17544,
+        "size": 17554,
         "extension": ".mjs",
         "path": "frontend/tests/denuncia-browser.mjs"
       },
@@ -5096,10 +5586,18 @@
         "path": "frontend/tests/fluxo-moderacao-browser.mjs"
       },
       {
+        "name": "identidade-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4567,
+        "extension": ".mjs",
+        "path": "frontend/tests/identidade-browser.mjs"
+      },
+      {
         "name": "moderacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 19581,
+        "size": 19591,
         "extension": ".mjs",
         "path": "frontend/tests/moderacao-browser.mjs"
       },
@@ -5118,6 +5616,22 @@
         "size": 5526,
         "extension": ".mjs",
         "path": "frontend/tests/moderacao.test.mjs"
+      },
+      {
+        "name": "paleta.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2153,
+        "extension": ".mjs",
+        "path": "frontend/tests/paleta.test.mjs"
+      },
+      {
+        "name": "perfil-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 10052,
+        "extension": ".mjs",
+        "path": "frontend/tests/perfil-browser.mjs"
       },
       {
         "name": "prototipo-browser.mjs",
@@ -5139,7 +5653,7 @@
         "name": "resultados-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 16762,
+        "size": 16804,
         "extension": ".mjs",
         "path": "frontend/tests/resultados-browser.mjs"
       },
@@ -5147,7 +5661,7 @@
         "name": "run-tests.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 1704,
+        "size": 1735,
         "extension": ".mjs",
         "path": "frontend/tests/run-tests.mjs"
       },
@@ -5171,7 +5685,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 4610,
+        "size": 5289,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -5199,9 +5713,31 @@
         "name": "sigaa-import.sh",
         "type": "file",
         "language": "Shell",
-        "size": 1613,
+        "size": 1618,
         "extension": ".sh",
         "path": "scripts/cron/sigaa-import.sh"
+      },
+      {
+        "name": "sql",
+        "type": "directory",
+        "path": "scripts/sql",
+        "children": []
+      },
+      {
+        "name": "164-acesso-importador.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 594,
+        "extension": ".sql",
+        "path": "scripts/sql/164-acesso-importador.sql"
+      },
+      {
+        "name": "170-acesso-api.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1310,
+        "extension": ".sql",
+        "path": "scripts/sql/170-acesso-api.sql"
       },
       {
         "name": "skills",
@@ -5639,7 +6175,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 24883,
+        "size": 27146,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -5724,7 +6260,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-10T14:25:03.512697+00:00",
+    "extracted_at": "2026-11-11T13:31:40.839512+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }
