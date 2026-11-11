@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-AvaliaAiUnB",
   "branch": "main",
-  "sha": "1a78c0ad6b660e68447266e57845042fb7507841",
+  "sha": "5d1b1b25f76e0bd821f087e04f1817ed654f4f90",
   "tree": [
     {
       "name": ".dockerignore",
@@ -18,25 +18,53 @@
       "name": ".env.example",
       "path": ".env.example",
       "type": "file",
-      "sha": "e91fc80f9752ba78cff42ea721ef075e72db14b4",
+      "sha": "952b07a1179c3f30489f044ee660d5e7af8b5fe8",
       "mode": "100644",
       "extension": ".example",
-      "size": 238,
+      "size": 545,
       "is_binary": false
     },
     {
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "2a0ecc20057380c5478f8f9328229f9c7af0db51",
+      "sha": "bbca2db0ac52a6a178889866fd547f7b7ec59f12",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "ISSUE_TEMPLATE",
+      "path": ".github/ISSUE_TEMPLATE",
+      "type": "directory",
+      "sha": "b6a66e2160bb39736a0eb4869611df55f608beec",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "tarefa.md",
+      "path": ".github/ISSUE_TEMPLATE/tarefa.md",
+      "type": "file",
+      "sha": "56df4cde69f8b0681411eea43eaca75327724d7e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 923,
+      "is_binary": false
+    },
+    {
+      "name": "PULL_REQUEST_TEMPLATE.md",
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "type": "file",
+      "sha": "7d9439ebdc35f9a2dd312caf3a12dd718c5e64db",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 997,
+      "is_binary": false
     },
     {
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "e15c8b9e32c1a97dec1c0bb5d2e55dac24612554",
+      "sha": "bd2d729b0c9fa0a5fb3f4d95c0722c6c4e9e108b",
       "mode": "040000",
       "children": []
     },
@@ -68,6 +96,16 @@
       "mode": "100644",
       "extension": ".yml",
       "size": 422,
+      "is_binary": false
+    },
+    {
+      "name": "validar-documentacao.yml",
+      "path": ".github/workflows/validar-documentacao.yml",
+      "type": "file",
+      "sha": "5835f453e74cb57887890d1f55090aa467bd7949",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 582,
       "is_binary": false
     },
     {
@@ -114,10 +152,10 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "666e2a8c6455c8807264e264fee991cb30bf6853",
+      "sha": "fa8d89766f6165ae255ea396ad672b767468bd73",
       "mode": "100644",
       "extension": ".md",
-      "size": 11924,
+      "size": 12195,
       "is_binary": false
     },
     {
@@ -144,7 +182,7 @@
       "name": "app",
       "path": "app",
       "type": "directory",
-      "sha": "e154fc2211b431310035423935af3812a7549ce7",
+      "sha": "58551bc8980ca9707f106fcff373cf0bd6e23ca0",
       "mode": "040000",
       "children": []
     },
@@ -152,10 +190,10 @@
       "name": "__init__.py",
       "path": "app/__init__.py",
       "type": "file",
-      "sha": "c2d68d9834a7574d29dea71454d60310271b46a8",
+      "sha": "994fa947e4bde1bbd68fe2f1310ea881d6f67841",
       "mode": "100644",
       "extension": ".py",
-      "size": 1222,
+      "size": 1321,
       "is_binary": false
     },
     {
@@ -210,17 +248,17 @@
       "name": "repositorio.py",
       "path": "app/repositorio.py",
       "type": "file",
-      "sha": "e7f30a55730e123ed12e7c935f1d7ed3cd8ac8bc",
+      "sha": "5e2e1bbef0f3277324b246c9a312bffb9f68cc8b",
       "mode": "100644",
       "extension": ".py",
-      "size": 16712,
+      "size": 17201,
       "is_binary": false
     },
     {
       "name": "routes",
       "path": "app/routes",
       "type": "directory",
-      "sha": "3855a91fec24a481c47fafb7be8d5580cf824b0b",
+      "sha": "d3ee86002fd409c244e1803d05aca0fe94a5094b",
       "mode": "040000",
       "children": []
     },
@@ -228,10 +266,10 @@
       "name": "auth_routes.py",
       "path": "app/routes/auth_routes.py",
       "type": "file",
-      "sha": "9e36d797eb86c10bc050d47d7412324027512be0",
+      "sha": "61e9c9764afbb1623b7a4497089c377505f9323f",
       "mode": "100644",
       "extension": ".py",
-      "size": 3023,
+      "size": 2969,
       "is_binary": false
     },
     {
@@ -248,7 +286,7 @@
       "name": "professor_routes.py",
       "path": "app/routes/professor_routes.py",
       "type": "file",
-      "sha": "909ee9f6e17dc9369a0562f8a8b70fd1c105bc86",
+      "sha": "33f8bd5ddd8c91470dd1c3afda1720fb61786f32",
       "mode": "100644",
       "extension": ".py",
       "size": 5497,
@@ -258,10 +296,10 @@
       "name": "seguranca.py",
       "path": "app/seguranca.py",
       "type": "file",
-      "sha": "2b8f278353f2b4395b06fdf25ffb5290fb4ae8b2",
+      "sha": "fbb46204356b78f25b1c6f2ad9c70d18296b703f",
       "mode": "100644",
       "extension": ".py",
-      "size": 7774,
+      "size": 7605,
       "is_binary": false
     },
     {
@@ -406,7 +444,7 @@
       "name": "templates",
       "path": "app/templates",
       "type": "directory",
-      "sha": "7e69bf9f5b2952e509ebf8ad839bb5feab59ce7e",
+      "sha": "cc42d3c4bf1443aaad0dc46d52a9598967e5995e",
       "mode": "040000",
       "children": []
     },
@@ -434,90 +472,90 @@
       "name": "avaliacao.html",
       "path": "app/templates/avaliacao.html",
       "type": "file",
-      "sha": "3eb3898ca4d0a2538dc1147f3e457ac7a2f397ce",
+      "sha": "2522856d9b07ee0b691dd2ea7f392c1202948a20",
       "mode": "100644",
       "extension": ".html",
-      "size": 3032,
+      "size": 3033,
       "is_binary": false
     },
     {
       "name": "cadastro.html",
       "path": "app/templates/cadastro.html",
       "type": "file",
-      "sha": "b7b303be480bb5388a3ea8d9e7e4f8ffa579a753",
+      "sha": "28031e5e061c78dc8af16c12887a64482a60ce65",
       "mode": "100644",
       "extension": ".html",
-      "size": 3040,
+      "size": 3037,
       "is_binary": false
     },
     {
       "name": "comparacao.html",
       "path": "app/templates/comparacao.html",
       "type": "file",
-      "sha": "b9edc56b035c7fd6ad613a8c23f6845d9724dcf0",
+      "sha": "8ce27a743613f386c6e43fb28087348bdd931c14",
       "mode": "100644",
       "extension": ".html",
-      "size": 4127,
+      "size": 4128,
       "is_binary": false
     },
     {
       "name": "index.html",
       "path": "app/templates/index.html",
       "type": "file",
-      "sha": "8ed6e6a8931b25193d83af9a56732c1c0d962363",
+      "sha": "a09dbab20dc924d537946259d310260528f0bd1f",
       "mode": "100644",
       "extension": ".html",
-      "size": 1906,
+      "size": 1908,
       "is_binary": false
     },
     {
       "name": "lista_professores.html",
       "path": "app/templates/lista_professores.html",
       "type": "file",
-      "sha": "8c82c917d15661874a09ec33c8ac726aa447631a",
+      "sha": "54d811db9a66632dfd5792aecd662a3ef8a537d9",
       "mode": "100644",
       "extension": ".html",
-      "size": 7400,
+      "size": 7401,
       "is_binary": false
     },
     {
       "name": "login.html",
       "path": "app/templates/login.html",
       "type": "file",
-      "sha": "13361f4ce174c1a52e1dc9a2f450dd6bd62b0268",
+      "sha": "81ff6a1fd9c2df8dd66bf0ebcb432a2ce15d9e05",
       "mode": "100644",
       "extension": ".html",
-      "size": 1222,
+      "size": 1219,
       "is_binary": false
     },
     {
       "name": "perfil.html",
       "path": "app/templates/perfil.html",
       "type": "file",
-      "sha": "9f411a8de9fe46e8b3524caa7ebb5cb9f17c7a53",
+      "sha": "da768bf78ff35abf5e3e79fb65fb0293797392bc",
       "mode": "100644",
       "extension": ".html",
-      "size": 3163,
+      "size": 3160,
       "is_binary": false
     },
     {
       "name": "perfil_professor.html",
       "path": "app/templates/perfil_professor.html",
       "type": "file",
-      "sha": "85b21ff2816a6f6ed31c628ddc3a537360c24792",
+      "sha": "1cb8182c6bb4037c8dec38f47a72a9a07a6b1a99",
       "mode": "100644",
       "extension": ".html",
-      "size": 4971,
+      "size": 4972,
       "is_binary": false
     },
     {
       "name": "ranking.html",
       "path": "app/templates/ranking.html",
       "type": "file",
-      "sha": "0cb761710150b15cc0487a3a9cd6a7c5e195af6c",
+      "sha": "673667c0c227ff1051e45d98065a18339c244290",
       "mode": "100644",
       "extension": ".html",
-      "size": 2924,
+      "size": 2925,
       "is_binary": false
     },
     {
@@ -534,10 +572,10 @@
       "name": "validacoes.py",
       "path": "app/validacoes.py",
       "type": "file",
-      "sha": "5906cd4b5018df5dc574acbcaea5f69bbb3bd43a",
+      "sha": "9bf9f57796423ce7f38e78dfb811fc1747e6b768",
       "mode": "100644",
       "extension": ".py",
-      "size": 2319,
+      "size": 2589,
       "is_binary": false
     },
     {
@@ -554,7 +592,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "7d10d7b32a6298742eede411bf3ce5a082606fc5",
+      "sha": "ce7518d1494fd3b37005d65f0a1120e94b888bd6",
       "mode": "040000",
       "children": []
     },
@@ -562,80 +600,80 @@
       "name": "ARQUITETURA.md",
       "path": "docs/ARQUITETURA.md",
       "type": "file",
-      "sha": "58057f6f9bce658c1be31221045aa8ff806f5578",
+      "sha": "8526ec784b37c2e6a91af525cc324ce06c16f829",
       "mode": "100644",
       "extension": ".md",
-      "size": 437,
+      "size": 756,
       "is_binary": false
     },
     {
       "name": "AUDITORIA_SEGURANCA.md",
       "path": "docs/AUDITORIA_SEGURANCA.md",
       "type": "file",
-      "sha": "52c2d828d7fbd541972f6a6f72b15b9c2bd782f1",
+      "sha": "871508f91765dcf73183d11c9b21d29ec820b3af",
       "mode": "100644",
       "extension": ".md",
-      "size": 4118,
+      "size": 4402,
       "is_binary": false
     },
     {
       "name": "BACKEND.md",
       "path": "docs/BACKEND.md",
       "type": "file",
-      "sha": "c8e3c687ec5ce1aeb75f406a9a32f8e529a8490a",
+      "sha": "7330b181c283c20a0b7634d3f1f262f5b1bc1491",
       "mode": "100644",
       "extension": ".md",
-      "size": 10270,
+      "size": 10655,
       "is_binary": false
     },
     {
       "name": "CIBERSEGURANCA.md",
       "path": "docs/CIBERSEGURANCA.md",
       "type": "file",
-      "sha": "c6ca7f3c5b2408e182c01e4b22527650798a92b7",
+      "sha": "a434ca7b7baca32f46953c648687c93304359e87",
       "mode": "100644",
       "extension": ".md",
-      "size": 4839,
+      "size": 5177,
       "is_binary": false
     },
     {
       "name": "COMENTARIOS.md",
       "path": "docs/COMENTARIOS.md",
       "type": "file",
-      "sha": "6e01c203fc218a16b461a00252a085054141cc29",
+      "sha": "d864f7c0d9571784bb25ccd8d0ba55fb04bab3b7",
       "mode": "100644",
       "extension": ".md",
-      "size": 9932,
+      "size": 10213,
       "is_binary": false
     },
     {
       "name": "COMO_USAR_SCRAPER.md",
       "path": "docs/COMO_USAR_SCRAPER.md",
       "type": "file",
-      "sha": "27cceea540d1ba2764fb78a487d235eff057bb1a",
+      "sha": "3a9694405112d5da2242b16c4c82a46582fcb180",
       "mode": "100644",
       "extension": ".md",
-      "size": 4186,
+      "size": 4675,
       "is_binary": false
     },
     {
       "name": "DESIGN_SYSTEM.md",
       "path": "docs/DESIGN_SYSTEM.md",
       "type": "file",
-      "sha": "0b498d2a4d555267e8e8ebe9d8919be2d392062e",
+      "sha": "8d53301ed01e7e945f987ac76caa932633cab14b",
       "mode": "100644",
       "extension": ".md",
-      "size": 4508,
+      "size": 4670,
       "is_binary": false
     },
     {
       "name": "DOCUMENTO_DE_VISAO.md",
       "path": "docs/DOCUMENTO_DE_VISAO.md",
       "type": "file",
-      "sha": "c8f8355ea71ffd9eb78922d274a2aff36ad651db",
+      "sha": "bd434a97d5d4aca7576df878b1520398200130c0",
       "mode": "100644",
       "extension": ".md",
-      "size": 12458,
+      "size": 13022,
       "is_binary": false
     },
     {
@@ -662,30 +700,40 @@
       "name": "FRONTEND.md",
       "path": "docs/FRONTEND.md",
       "type": "file",
-      "sha": "6fa4719f446c0260e1c6a9d453e09afb6f6c24f6",
+      "sha": "cf38d3edf99584b1fcf3d2ca84345d2d789d402d",
       "mode": "100644",
       "extension": ".md",
-      "size": 6447,
+      "size": 6647,
       "is_binary": false
     },
     {
       "name": "FUNCIONALIDADES.md",
       "path": "docs/FUNCIONALIDADES.md",
       "type": "file",
-      "sha": "f88982125462feaf3fc474be2dd66822ce37a0b6",
+      "sha": "538a649c5e6295abfba4b0d1ff55b3afb85804f2",
       "mode": "100644",
       "extension": ".md",
-      "size": 4639,
+      "size": 4735,
+      "is_binary": false
+    },
+    {
+      "name": "GUIA_DOCUMENTACAO.md",
+      "path": "docs/GUIA_DOCUMENTACAO.md",
+      "type": "file",
+      "sha": "54290133ec6f61d89d9efb0096cdac5a68993b1b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5452,
       "is_binary": false
     },
     {
       "name": "HOSPEDAGEM.md",
       "path": "docs/HOSPEDAGEM.md",
       "type": "file",
-      "sha": "1a79ec4c7f5993a1dcb07a98ede69e2459421e7d",
+      "sha": "0eedf1d0635c883740c63dd951ff5572b3f5105d",
       "mode": "100644",
       "extension": ".md",
-      "size": 4947,
+      "size": 5229,
       "is_binary": false
     },
     {
@@ -702,30 +750,78 @@
       "name": "Modelo de Dados.md",
       "path": "docs/Modelo de Dados.md",
       "type": "file",
-      "sha": "174e6b7dc32414ab1d1b0e8ebbd1057ddab9b695",
+      "sha": "c4b6a7716e8fd8fe757d945524fc5f796be195f1",
       "mode": "100644",
       "extension": ".md",
-      "size": 19448,
+      "size": 16509,
+      "is_binary": false
+    },
+    {
+      "name": "PROCESSO_CONTRIBUICAO.md",
+      "path": "docs/PROCESSO_CONTRIBUICAO.md",
+      "type": "file",
+      "sha": "847830053c096e61539dfab805cab801e75abb30",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2717,
       "is_binary": false
     },
     {
       "name": "TELAS_COMENTARIOS.md",
       "path": "docs/TELAS_COMENTARIOS.md",
       "type": "file",
-      "sha": "e248506a141cfdebc6260f2bd9c06788c2345844",
+      "sha": "64a80afd5ca6bd17894b8cb0cdfcb425a86c7509",
       "mode": "100644",
       "extension": ".md",
-      "size": 2180,
+      "size": 2422,
+      "is_binary": false
+    },
+    {
+      "name": "backup",
+      "path": "docs/backup",
+      "type": "directory",
+      "sha": "fc7e928ba17cbc8109f536577a22bda6ca2492f7",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "disciplinas_rows.csv",
+      "path": "docs/backup/disciplinas_rows.csv",
+      "type": "file",
+      "sha": "865c9a1cc0205daf39d6a750b4340f468a98dd85",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 203269,
+      "is_binary": false
+    },
+    {
+      "name": "professores_rows.csv",
+      "path": "docs/backup/professores_rows.csv",
+      "type": "file",
+      "sha": "3b09006938259e387ebcffffb6db30748cddde8f",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 266652,
+      "is_binary": false
+    },
+    {
+      "name": "turmas_rows.csv",
+      "path": "docs/backup/turmas_rows.csv",
+      "type": "file",
+      "sha": "342afd74146d2b0e46ed0e367defdc2c6a150429",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 274998,
       "is_binary": false
     },
     {
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "a01e8c2e100bae850d15128a6e3b8bd2e79abadd",
+      "sha": "d68aa57df898378792a946e476c6fa88587dcbd6",
       "mode": "100644",
       "extension": ".md",
-      "size": 4146,
+      "size": 5000,
       "is_binary": false
     },
     {
@@ -806,10 +902,10 @@
       "name": "pipeline.md",
       "path": "docs/pipeline.md",
       "type": "file",
-      "sha": "e5f09b7fa945be725fabfda1e2b941c51d3ee93e",
+      "sha": "156a0a3dee7d3e1e4d15f35ccec224b13ce1d62f",
       "mode": "100644",
       "extension": ".md",
-      "size": 1148,
+      "size": 1818,
       "is_binary": false
     },
     {
@@ -844,10 +940,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "9b1044d91727e2627b3af5e1a7474f260e299e32",
+      "sha": "b2680943d41a5b6d387ffe76a8b45964f84ec1dd",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2025,
+      "size": 2127,
       "is_binary": false
     },
     {
@@ -884,17 +980,17 @@
       "name": "run.py",
       "path": "run.py",
       "type": "file",
-      "sha": "f9e06efa9bd369acc9345e3f935f54f8a6a31665",
+      "sha": "70b8d4da1c541a3ed3b2afcde1e0af01cac150b5",
       "mode": "100644",
       "extension": ".py",
-      "size": 850,
+      "size": 779,
       "is_binary": false
     },
     {
       "name": "scraper",
       "path": "scraper",
       "type": "directory",
-      "sha": "33f890e8e94c7dc9e307f0af0ccb66f24f21ec35",
+      "sha": "c987bd3fdc22923827443e16c5f0bc2234d6b2dd",
       "mode": "040000",
       "children": []
     },
@@ -952,20 +1048,20 @@
       "name": "scraper_sigaa.py",
       "path": "scraper/scraper_sigaa.py",
       "type": "file",
-      "sha": "33d31749a948ad34dcb88afcb5731dfaf0569b97",
+      "sha": "3ae1fe7015ef34fe738597386c7d3c939ba73a3d",
       "mode": "100644",
       "extension": ".py",
-      "size": 21815,
+      "size": 22147,
       "is_binary": false
     },
     {
       "name": "supabase_client.py",
       "path": "scraper/supabase_client.py",
       "type": "file",
-      "sha": "3cce8127a39bd1466a0997ca31b6bfbc33d53d9e",
+      "sha": "f0aa19c06f6dd56f4c1d6011ee07a6eff6913657",
       "mode": "100644",
       "extension": ".py",
-      "size": 1390,
+      "size": 1328,
       "is_binary": false
     },
     {
@@ -1002,7 +1098,7 @@
       "name": "tests",
       "path": "tests",
       "type": "directory",
-      "sha": "c6103006e31356811b07a8d944a1006d23dff8eb",
+      "sha": "a0c2c86d822983a72a62489e07ca1263b45cc1fd",
       "mode": "040000",
       "children": []
     },
@@ -1034,6 +1130,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 4625,
+      "is_binary": false
+    },
+    {
+      "name": "test_identidade_visual.py",
+      "path": "tests/test_identidade_visual.py",
+      "type": "file",
+      "sha": "3294c9cf08fe3bdff79b1053dfecc5ecbaf8614c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1096,
       "is_binary": false
     },
     {
@@ -1110,47 +1216,47 @@
       "name": "test_seguranca.py",
       "path": "tests/test_seguranca.py",
       "type": "file",
-      "sha": "9102299b1d0a02616e7abb0e71f1395129909363",
+      "sha": "da786fe9183b71799dfa7815c636cbdba208efe1",
       "mode": "100644",
       "extension": ".py",
-      "size": 10031,
+      "size": 10155,
       "is_binary": false
     },
     {
       "name": "test_supabase.py",
       "path": "tests/test_supabase.py",
       "type": "file",
-      "sha": "5da9bd054ff01f6be8ddbe26d920bd5561153f54",
+      "sha": "d7606f8b5d52ca018ed0a98465ac47a76c642ec1",
       "mode": "100644",
       "extension": ".py",
-      "size": 23285,
+      "size": 26037,
       "is_binary": false
     },
     {
       "name": "test_validacoes.py",
       "path": "tests/test_validacoes.py",
       "type": "file",
-      "sha": "8a8e7263417c0f53196c7c0906ce9bc240f1bab0",
+      "sha": "f6da6fd9eace9c27504344b6c583916f37b302a0",
       "mode": "100644",
       "extension": ".py",
-      "size": 2453,
+      "size": 2993,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-10T14:23:49.620545+00:00",
+  "extracted_at": "2026-11-11T13:30:20.733205+00:00",
   "method": "rest",
-  "total_items": 116,
+  "total_items": 127,
   "repository_metadata": {
     "id": 1338350068,
     "full_name": "unb-mds/2026-2-AvaliaAiUnB",
     "description": "Grupo G2 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:56:00Z",
-    "updated_at": "2026-11-10T01:39:56Z",
+    "updated_at": "2026-11-10T22:09:07Z",
     "language": "Python",
-    "size": 3269,
+    "size": 3279,
     "stars": 4,
     "forks": 0,
-    "open_issues": 25
+    "open_issues": 18
   }
 }

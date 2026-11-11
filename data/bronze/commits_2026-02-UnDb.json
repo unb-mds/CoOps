@@ -1,10 +1,872 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-10T14:18:57.405928+00:00",
+      "extracted_at": "2026-11-11T13:25:32.392596+00:00",
       "file_path": "data/bronze/commits_2026-02-UnDb.json",
-      "record_count": 413
+      "record_count": 447
     }
+  },
+  {
+    "sha": "78f88360c99075e3c59f36a889d34cd0d2a50690",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T21:13:22Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T21:13:22Z"
+      },
+      "message": "Merge pull request #220 from unb-mds/release/1.2.0\n\nrelease: promover UnDb 1.2.0 para main"
+    },
+    "parents": [
+      "b4fa7f21b99609302b35f3038893a5f7067d8e6d",
+      "fcc1b7fd4790ec869e71846a5da4e64b0d16e3fa"
+    ],
+    "additions": 3646,
+    "deletions": 449,
+    "total_changes": 4095,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "fcc1b7fd4790ec869e71846a5da4e64b0d16e3fa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:39:54Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:39:54Z"
+      },
+      "message": "release: reconciliar main na candidata 1.2.0"
+    },
+    "parents": [
+      "a7b109c201b1a349f0ff387824c8a5460f89f045",
+      "b4fa7f21b99609302b35f3038893a5f7067d8e6d"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a7b109c201b1a349f0ff387824c8a5460f89f045",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:39:18Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:39:18Z"
+      },
+      "message": "release: preparar versao intermediaria 1.2.0"
+    },
+    "parents": [
+      "1b979a9d8f623ad904ea11974dd9d1b4e1a833ca"
+    ],
+    "additions": 105,
+    "deletions": 8,
+    "total_changes": 113,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1b979a9d8f623ad904ea11974dd9d1b4e1a833ca",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:30:59Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T19:30:59Z"
+      },
+      "message": "Merge pull request #219 from unb-mds/feature/206-comentarios-dark\n\nfeat(ui): integrar comentários e moderação ao tema dark (#206)"
+    },
+    "parents": [
+      "4bb38b4f70045f8141728233970392247655bc2d",
+      "2a6013b247fb2902b09269a2e387118842f89cf5"
+    ],
+    "additions": 28,
+    "deletions": 28,
+    "total_changes": 56,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2a6013b247fb2902b09269a2e387118842f89cf5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:27:09Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T19:27:09Z"
+      },
+      "message": "Merge branch 'develop' into feature/206-comentarios-dark"
+    },
+    "parents": [
+      "5992eadda10533835d5115596fca1e13ca19a6a6",
+      "4bb38b4f70045f8141728233970392247655bc2d"
+    ],
+    "additions": 819,
+    "deletions": 135,
+    "total_changes": 954,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4bb38b4f70045f8141728233970392247655bc2d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:23:16Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T19:23:16Z"
+      },
+      "message": "Merge pull request #217 from unb-mds/feature/204-perfil-criterios-comparacao\n\nFeature/204 perfil criterios comparacao"
+    },
+    "parents": [
+      "b3a79903043ebf60a0a989836048cf594ff766c3",
+      "09983438729f808fdc2223ad97a81061ff12cbff"
+    ],
+    "additions": 819,
+    "deletions": 135,
+    "total_changes": 954,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "09983438729f808fdc2223ad97a81061ff12cbff",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:18:29Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T19:18:29Z"
+      },
+      "message": "fix: preserva desempates e distingue falha na comparacao (#204)"
+    },
+    "parents": [
+      "29f2ac2ccc7828d238526ed1c179f4fcc0a692c8"
+    ],
+    "additions": 231,
+    "deletions": 12,
+    "total_changes": 243,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5992eadda10533835d5115596fca1e13ca19a6a6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-11-10T17:13:51Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-11-10T17:13:51Z"
+      },
+      "message": "feat(ui): integrar comentários ao tema dark (#206)"
+    },
+    "parents": [
+      "b3a79903043ebf60a0a989836048cf594ff766c3"
+    ],
+    "additions": 28,
+    "deletions": 28,
+    "total_changes": 56,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "29f2ac2ccc7828d238526ed1c179f4fcc0a692c8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Medeiros",
+        "date": "2026-11-10T15:21:25Z",
+        "login": "warlleymedeiros",
+        "id": 294646625,
+        "author_email_hash": "dd8c960fa8db537671c1880a99b8184b1257e9e369bd8394c6e1ae2115f18107"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T15:21:25Z"
+      },
+      "message": "Merge branch 'develop' into feature/204-perfil-criterios-comparacao"
+    },
+    "parents": [
+      "a0f711c29f011ea0c8c985fdadc5f5fb3b97f2a1",
+      "b3a79903043ebf60a0a989836048cf594ff766c3"
+    ],
+    "additions": 1011,
+    "deletions": 9,
+    "total_changes": 1020,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a0f711c29f011ea0c8c985fdadc5f5fb3b97f2a1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T15:12:28Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T15:12:28Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/develop' into feature/204-perfil-criterios-comparacao\n\n# Conflicts:\n#\tfrontend/src/app/disciplinas/[id]/page.tsx\n#\tfrontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx\n#\tfrontend/src/app/professores/[id]/page.tsx"
+    },
+    "parents": [
+      "27975f4903f1e25551e72bfc6906f92a12f1129a",
+      "976d93b2f3da110b628d29a61cf6d40fa96c1039"
+    ],
+    "additions": 1713,
+    "deletions": 215,
+    "total_changes": 1928,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b3a79903043ebf60a0a989836048cf594ff766c3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-10T14:01:18Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T14:01:18Z"
+      },
+      "message": "Merge pull request #218 from unb-mds/fix/170-acesso-postgresql\n\nIntegra a preparação da rotina SIGAA e do acesso limitado ao PostgreSQL, incluindo a correção de auditoria revisada.\n\nIssues #164 e #170 permanecem abertas pelas pendências operacionais documentadas."
+    },
+    "parents": [
+      "976d93b2f3da110b628d29a61cf6d40fa96c1039",
+      "0c5bcf635913d7878f656c803f60b6cdbd7ac446"
+    ],
+    "additions": 1011,
+    "deletions": 9,
+    "total_changes": 1020,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0c5bcf635913d7878f656c803f60b6cdbd7ac446",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-10T13:48:02Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-10T13:48:02Z"
+      },
+      "message": "fix(sigaa): rejeitar auditoria sem total confirmado (#164)"
+    },
+    "parents": [
+      "ff7b36dab8c0d520911d8b105335641dadf1660f"
+    ],
+    "additions": 32,
+    "deletions": 4,
+    "total_changes": 36,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ff7b36dab8c0d520911d8b105335641dadf1660f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T13:40:33Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T13:40:33Z"
+      },
+      "message": "feat(infra): preparar acesso PostgreSQL e rotina SIGAA (#164, #170)"
+    },
+    "parents": [
+      "976d93b2f3da110b628d29a61cf6d40fa96c1039"
+    ],
+    "additions": 983,
+    "deletions": 9,
+    "total_changes": 992,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "27975f4903f1e25551e72bfc6906f92a12f1129a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T04:20:24Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T04:20:24Z"
+      },
+      "message": "fix(ui): retirar exemplos sinteticos da aplicacao (#204)"
+    },
+    "parents": [
+      "dc0b59961159c683a0db17908ef1ce921d4073eb"
+    ],
+    "additions": 0,
+    "deletions": 77,
+    "total_changes": 77,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "976d93b2f3da110b628d29a61cf6d40fa96c1039",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T04:19:26Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T04:19:26Z"
+      },
+      "message": "Merge pull request #213 from unb-mds/docs/167-reconciliacao-documental-r2\n\ndocs: consolidar hospedagem, importação e interfaces da R2 (#167)"
+    },
+    "parents": [
+      "f1f0d0044b249eb265c390c321df9a61bce94d1e",
+      "a94cc120bee194924c32e2b19105d7f904c1a9fb"
+    ],
+    "additions": 931,
+    "deletions": 189,
+    "total_changes": 1120,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a94cc120bee194924c32e2b19105d7f904c1a9fb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T04:13:35Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T04:13:35Z"
+      },
+      "message": "docs: consolidar hospedagem, importacao e interfaces da R2 (#167)\n\nAtualiza a branch com develop e revisa a PR #213 em um unico commit adicional. Registra Vercel, Render, Neon, DNS, Resend, limites operacionais, v1.1.0, revisoes #214/#215 e a carga manual concluida. Preserva requisitos e fechamento manual das issues."
+    },
+    "parents": [
+      "083e0fdffc6a345df5086e1de87224600cb3a302",
+      "f1f0d0044b249eb265c390c321df9a61bce94d1e"
+    ],
+    "additions": 1494,
+    "deletions": 185,
+    "total_changes": 1679,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f1f0d0044b249eb265c390c321df9a61bce94d1e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T03:22:07Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T03:22:07Z"
+      },
+      "message": "Merge pull request #215 from unb-mds/feature/205-integrar-conta-avaliacao\n\nfeat: integrar conta dark e aprimorar catálogo de unidades (#205)"
+    },
+    "parents": [
+      "ea7c39c6d1e58c54a2155e3f20f5b534c7f2aec5",
+      "85eab6a9042ea7e5c395c11f9454a5ec99b46d27"
+    ],
+    "additions": 639,
+    "deletions": 92,
+    "total_changes": 731,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "85eab6a9042ea7e5c395c11f9454a5ec99b46d27",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T03:16:46Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T03:16:46Z"
+      },
+      "message": "fix: exibir nomes das unidades e limitar catalogo (#205)"
+    },
+    "parents": [
+      "c4c6a0e04b918d1ab0a3a5fae41ab97d6a88b81f"
+    ],
+    "additions": 429,
+    "deletions": 35,
+    "total_changes": 464,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "dc0b59961159c683a0db17908ef1ce921d4073eb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:42:36Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:42:36Z"
+      },
+      "message": "feat(criterios): diferenciar ausência, insuficiência e registros provisórios por turma (#204)"
+    },
+    "parents": [
+      "82f79797e8ad2fd37875425da12390936b2c5121"
+    ],
+    "additions": 78,
+    "deletions": 0,
+    "total_changes": 78,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "82f79797e8ad2fd37875425da12390936b2c5121",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:31:15Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:31:15Z"
+      },
+      "message": "feat(disciplinas): integrar tabela responsiva de comparação de professores (#204)"
+    },
+    "parents": [
+      "c8fbf52b888c0d8e39a9a0eb531035a1692004e5"
+    ],
+    "additions": 261,
+    "deletions": 60,
+    "total_changes": 321,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c8fbf52b888c0d8e39a9a0eb531035a1692004e5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:28:49Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:28:49Z"
+      },
+      "message": "feat(professores): integrar cartões de critérios e perfil dark do professor (#204)"
+    },
+    "parents": [
+      "9b676c2f55b422a54c11f21b135eeb48e2b062d6"
+    ],
+    "additions": 249,
+    "deletions": 66,
+    "total_changes": 315,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9b676c2f55b422a54c11f21b135eeb48e2b062d6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:18:56Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-10T02:18:56Z"
+      },
+      "message": "style(ui): adicionar tokens e classes da área de perfil e comparação (#204)"
+    },
+    "parents": [
+      "ee28011699d485a64b9a1d27e8a0204abcb629af"
+    ],
+    "additions": 85,
+    "deletions": 0,
+    "total_changes": 85,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c4c6a0e04b918d1ab0a3a5fae41ab97d6a88b81f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T02:14:48Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T02:14:48Z"
+      },
+      "message": "test: verificar conta responsiva e submissão única na avaliação"
+    },
+    "parents": [
+      "f18d826d4d894c43a40bfd527fc8d27275af5b30"
+    ],
+    "additions": 154,
+    "deletions": 3,
+    "total_changes": 157,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f18d826d4d894c43a40bfd527fc8d27275af5b30",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T02:06:46Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T02:06:46Z"
+      },
+      "message": "style: adaptar contexto e campos da avaliação ao tema dark"
+    },
+    "parents": [
+      "b007748d984caf12a81028978fd99e0d9cc7372f"
+    ],
+    "additions": 20,
+    "deletions": 20,
+    "total_changes": 40,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b007748d984caf12a81028978fd99e0d9cc7372f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T02:05:07Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T02:05:07Z"
+      },
+      "message": "style: integrar conta e confirmação aos painéis dark"
+    },
+    "parents": [
+      "ea7c39c6d1e58c54a2155e3f20f5b534c7f2aec5"
+    ],
+    "additions": 40,
+    "deletions": 38,
+    "total_changes": 78,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ea7c39c6d1e58c54a2155e3f20f5b534c7f2aec5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T01:44:25Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-10T01:44:25Z"
+      },
+      "message": "Merge pull request #214 from unb-mds/feature/212-verde-botoes-destaques\n\nstyle: aplicar verde UnB, logo e favicon (#212)"
+    },
+    "parents": [
+      "ee28011699d485a64b9a1d27e8a0204abcb629af",
+      "73a535be8996dd69b03d12a956fa99d076ba0f5d"
+    ],
+    "additions": 238,
+    "deletions": 24,
+    "total_changes": 262,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "73a535be8996dd69b03d12a956fa99d076ba0f5d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T01:39:03Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-10T01:39:03Z"
+      },
+      "message": "style: integrar logo, favicon e verde UnB (#212)"
+    },
+    "parents": [
+      "e27d44400c10fb6ca0c89654205854a1e5b938d3"
+    ],
+    "additions": 75,
+    "deletions": 10,
+    "total_changes": 85,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e27d44400c10fb6ca0c89654205854a1e5b938d3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:59:28Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:59:28Z"
+      },
+      "message": "style: distinguir opção atual também por sublinhado"
+    },
+    "parents": [
+      "e58437155423bdfcddb1d27f14d5dfe42e4806ee"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e58437155423bdfcddb1d27f14d5dfe42e4806ee",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:57:05Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:57:05Z"
+      },
+      "message": "test: proteger contrastes e documentar proposta verde"
+    },
+    "parents": [
+      "551632829eda9fbfbdd7bff61dcdd60b8faf3104"
+    ],
+    "additions": 140,
+    "deletions": 1,
+    "total_changes": 141,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "551632829eda9fbfbdd7bff61dcdd60b8faf3104",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:48:52Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:48:52Z"
+      },
+      "message": "style: unificar ações de acesso e avaliação com a paleta proposta"
+    },
+    "parents": [
+      "2ea845fa15f02582f4ca61783b8def2f4f4c1cf3"
+    ],
+    "additions": 9,
+    "deletions": 9,
+    "total_changes": 18,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2ea845fa15f02582f4ca61783b8def2f4f4c1cf3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:47:59Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:47:59Z"
+      },
+      "message": "style: propor tokens verdes e estados de ações compartilhadas"
+    },
+    "parents": [
+      "ee28011699d485a64b9a1d27e8a0204abcb629af"
+    ],
+    "additions": 17,
+    "deletions": 8,
+    "total_changes": 25,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "083e0fdffc6a345df5086e1de87224600cb3a302",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:36:48Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:36:48Z"
+      },
+      "message": "docs: consolidar evidências e rastreabilidade por release"
+    },
+    "parents": [
+      "e97961978d95d72275fb20606a00c6474768d6d4"
+    ],
+    "additions": 120,
+    "deletions": 4,
+    "total_changes": 124,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e97961978d95d72275fb20606a00c6474768d6d4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:30:39Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:30:39Z"
+      },
+      "message": "docs: refletir conclusão humana do planejamento da issue 151"
+    },
+    "parents": [
+      "12b47cfac21305da46813eb2fbd9b32fa0d840d6"
+    ],
+    "additions": 36,
+    "deletions": 10,
+    "total_changes": 46,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "12b47cfac21305da46813eb2fbd9b32fa0d840d6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:28:38Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-10T00:28:38Z"
+      },
+      "message": "docs: reconciliar derivados com entregas integradas da R2"
+    },
+    "parents": [
+      "ee28011699d485a64b9a1d27e8a0204abcb629af"
+    ],
+    "additions": 72,
+    "deletions": 20,
+    "total_changes": 92,
+    "repo_name": "2026-02-UnDb"
   },
   {
     "sha": "b4fa7f21b99609302b35f3038893a5f7067d8e6d",

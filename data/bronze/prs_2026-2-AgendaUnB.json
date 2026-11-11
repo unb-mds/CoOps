@@ -1,9 +1,9 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-10T13:18:16.712772+00:00",
+      "extracted_at": "2026-11-11T12:28:02.582806+00:00",
       "file_path": "data/bronze/prs_2026-2-AgendaUnB.json",
-      "record_count": 52
+      "record_count": 63
     }
   },
   {
@@ -676,7 +676,7 @@
     "state": "open",
     "title": "Feat/coleta eventos",
     "created_at": "2026-11-10T01:13:03Z",
-    "updated_at": "2026-11-10T01:13:08Z",
+    "updated_at": "2026-11-11T00:38:42Z",
     "closed_at": null,
     "user": {
       "login": "pontesluis",
@@ -688,9 +688,9 @@
   {
     "number": 94,
     "state": "open",
-    "title": "Fix/s8 d02 endurecimento",
+    "title": "fix(seguranca): endurecimento de segurança e autorização (#84 S8-D02)",
     "created_at": "2026-11-10T03:39:21Z",
-    "updated_at": "2026-11-10T03:39:25Z",
+    "updated_at": "2026-11-11T00:38:44Z",
     "closed_at": null,
     "user": {
       "login": "felipecduque7",
@@ -701,11 +701,11 @@
   },
   {
     "number": 95,
-    "state": "open",
+    "state": "closed",
     "title": "Feat/r2 dados eventos",
     "created_at": "2026-11-10T03:42:17Z",
-    "updated_at": "2026-11-10T03:42:39Z",
-    "closed_at": null,
+    "updated_at": "2026-11-10T20:37:25Z",
+    "closed_at": "2026-11-10T20:37:25Z",
     "user": {
       "login": "felipecduque7",
       "id": 293998470
@@ -715,11 +715,11 @@
   },
   {
     "number": 96,
-    "state": "open",
+    "state": "closed",
     "title": "Feat/r2 dados planos",
     "created_at": "2026-11-10T03:45:23Z",
-    "updated_at": "2026-11-10T03:52:57Z",
-    "closed_at": null,
+    "updated_at": "2026-11-10T20:37:36Z",
+    "closed_at": "2026-11-10T20:37:36Z",
     "user": {
       "login": "felipecduque7",
       "id": 293998470
@@ -730,9 +730,9 @@
   {
     "number": 97,
     "state": "open",
-    "title": "Feat/s8 d01 privacidade",
+    "title": "feat(db): privacidade, termos e ciclo de vida dos dados (#83 S8-D01)",
     "created_at": "2026-11-10T03:51:46Z",
-    "updated_at": "2026-11-10T03:53:29Z",
+    "updated_at": "2026-11-11T00:28:03Z",
     "closed_at": null,
     "user": {
       "login": "felipecduque7",
@@ -751,6 +751,160 @@
     "user": {
       "login": "heitormontt",
       "id": 279909515
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 99,
+    "state": "closed",
+    "title": "feat(db): modela ofertas, vínculos e versões de planos",
+    "created_at": "2026-11-10T14:56:53Z",
+    "updated_at": "2026-11-11T00:05:16Z",
+    "closed_at": "2026-11-11T00:05:15Z",
+    "user": {
+      "login": "marrathomaz",
+      "id": 245971482
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 100,
+    "state": "closed",
+    "title": "Feat/s7 b04 validar confirmacao planos",
+    "created_at": "2026-11-10T15:35:50Z",
+    "updated_at": "2026-11-11T00:19:20Z",
+    "closed_at": "2026-11-11T00:19:20Z",
+    "user": {
+      "login": "marrathomaz",
+      "id": 245971482
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 101,
+    "state": "open",
+    "title": "feat(db): datas civis e coleta de eventos (#75 S7-B05)",
+    "created_at": "2026-11-10T20:53:43Z",
+    "updated_at": "2026-11-11T00:38:44Z",
+    "closed_at": null,
+    "user": {
+      "login": "felipecduque7",
+      "id": 293998470
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 102,
+    "state": "open",
+    "title": "feat(db): confirmação idempotente e importação por usuário (#72 S7-B04)",
+    "created_at": "2026-11-10T20:59:07Z",
+    "updated_at": "2026-11-11T00:33:49Z",
+    "closed_at": null,
+    "user": {
+      "login": "felipecduque7",
+      "id": 293998470
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 103,
+    "state": "open",
+    "title": "feat(db): redirecionamento de Conferir evento por clique (#79 S8-B02)",
+    "created_at": "2026-11-10T21:06:48Z",
+    "updated_at": "2026-11-11T00:38:45Z",
+    "closed_at": null,
+    "user": {
+      "login": "felipecduque7",
+      "id": 293998470
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 104,
+    "state": "closed",
+    "title": "feat: catálogo real de turmas do Followw e busca integrada (#70, #71 - S7-B03/S7-F02)",
+    "created_at": "2026-11-10T21:08:06Z",
+    "updated_at": "2026-11-11T03:47:48Z",
+    "closed_at": "2026-11-11T03:47:46Z",
+    "user": {
+      "login": "felipecduque7",
+      "id": 293998470
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 105,
+    "state": "open",
+    "title": "feat(db): lembretes persistentes 24 h antes do início (#81 S8-B03)",
+    "created_at": "2026-11-10T21:09:30Z",
+    "updated_at": "2026-11-11T00:32:04Z",
+    "closed_at": null,
+    "user": {
+      "login": "felipecduque7",
+      "id": 293998470
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 106,
+    "state": "open",
+    "title": "feat(db): compartilhamento, revisões, procedência e votos (#77 S8-B01)",
+    "created_at": "2026-11-10T21:11:29Z",
+    "updated_at": "2026-11-11T00:30:40Z",
+    "closed_at": null,
+    "user": {
+      "login": "felipecduque7",
+      "id": 293998470
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 107,
+    "state": "open",
+    "title": "Feat/s7 f03 plano de ensino ia",
+    "created_at": "2026-11-10T23:57:57Z",
+    "updated_at": "2026-11-11T00:39:26Z",
+    "closed_at": null,
+    "user": {
+      "login": "Bielziin07",
+      "id": 292268055
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 108,
+    "state": "closed",
+    "title": "Merge dev -> main",
+    "created_at": "2026-11-11T00:32:21Z",
+    "updated_at": "2026-11-11T00:38:34Z",
+    "closed_at": "2026-11-11T00:38:27Z",
+    "user": {
+      "login": "Thomas4ugust0",
+      "id": 218616489
+    },
+    "assignee": null,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "number": 109,
+    "state": "closed",
+    "title": "Feat/s7 b03 buscar turmas followw",
+    "created_at": "2026-11-11T03:26:29Z",
+    "updated_at": "2026-11-11T03:28:59Z",
+    "closed_at": "2026-11-11T03:28:57Z",
+    "user": {
+      "login": "Thomas4ugust0",
+      "id": 218616489
     },
     "assignee": null,
     "repo_name": "2026-2-AgendaUnB"
