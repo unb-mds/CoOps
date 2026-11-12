@@ -1,10 +1,591 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-11T13:25:32.392596+00:00",
+      "extracted_at": "2026-11-12T14:18:47.836332+00:00",
       "file_path": "data/bronze/commits_2026-02-UnDb.json",
-      "record_count": 447
+      "record_count": 470
     }
+  },
+  {
+    "sha": "d15ca52b2e6312e149f70b8b4611cec37afd189f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-12T13:07:24Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-12T13:07:24Z"
+      },
+      "message": "Merge pull request #226 from unb-mds/release/1.3.0\n\nrelease: promover UnDb 1.3.0 para main"
+    },
+    "parents": [
+      "78f88360c99075e3c59f36a889d34cd0d2a50690",
+      "8958ec2fb9b59ea99d266da7b98d45978a6af16d"
+    ],
+    "additions": 3592,
+    "deletions": 29,
+    "total_changes": 3621,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8958ec2fb9b59ea99d266da7b98d45978a6af16d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-12T12:46:05Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-12T12:46:05Z"
+      },
+      "message": "release: preparar UnDb 1.3.0 e reconciliar main"
+    },
+    "parents": [
+      "557958bdc73552c0de28a19f3ef259bba322b152",
+      "78f88360c99075e3c59f36a889d34cd0d2a50690"
+    ],
+    "additions": 221,
+    "deletions": 8,
+    "total_changes": 229,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "557958bdc73552c0de28a19f3ef259bba322b152",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-12T10:55:45Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-12T10:55:45Z"
+      },
+      "message": "Merge pull request #225 from unb-mds/fix/207-identidades-moderacao\n\nfeat(sigaa): associar identidades docentes e revisar dúvidas na moderação (#207)"
+    },
+    "parents": [
+      "658de6eee5b8dcbab90540b667079cd065182cf3",
+      "4166040024989d41bc0f1b71ef64062eb259ed1a"
+    ],
+    "additions": 2097,
+    "deletions": 2,
+    "total_changes": 2099,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4166040024989d41bc0f1b71ef64062eb259ed1a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:48:57Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:48:57Z"
+      },
+      "message": "docs(sigaa): registrar findings e validacao da revisao da PR 225 (#207)"
+    },
+    "parents": [
+      "5f6cac7928562933b4f7f773304a56d0a9e4bcce"
+    ],
+    "additions": 142,
+    "deletions": 0,
+    "total_changes": 142,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5f6cac7928562933b4f7f773304a56d0a9e4bcce",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:46:40Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:46:40Z"
+      },
+      "message": "test(moderacao): integrar regressoes de identidade a suite de navegador (#207)"
+    },
+    "parents": [
+      "39c01984dfd766191b725f610ebaf78001223b1a"
+    ],
+    "additions": 15,
+    "deletions": 2,
+    "total_changes": 17,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "39c01984dfd766191b725f610ebaf78001223b1a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:44:32Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:44:32Z"
+      },
+      "message": "fix(moderacao): limitar espera pelo lock de importacao e permitir nova tentativa (#207)"
+    },
+    "parents": [
+      "239cb85a9771d4a4464e07464980d839fbdf4193"
+    ],
+    "additions": 63,
+    "deletions": 0,
+    "total_changes": 63,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "239cb85a9771d4a4464e07464980d839fbdf4193",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:44:25Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:44:25Z"
+      },
+      "message": "fix(moderacao): descartar resposta de decisao apos trocar a fila (#207)"
+    },
+    "parents": [
+      "ffc36858052979ed7b6ebf261dbd4771081a8eba"
+    ],
+    "additions": 107,
+    "deletions": 7,
+    "total_changes": 114,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ffc36858052979ed7b6ebf261dbd4771081a8eba",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:39:00Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:39:00Z"
+      },
+      "message": "fix(sigaa): revalidar todas as identidades antes de unir o grupo (#207)"
+    },
+    "parents": [
+      "8727d17f68e826a40be1fbc4c36bcaf462abe93a"
+    ],
+    "additions": 36,
+    "deletions": 0,
+    "total_changes": 36,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8727d17f68e826a40be1fbc4c36bcaf462abe93a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:35:29Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:35:29Z"
+      },
+      "message": "fix(sigaa): validar origem mesmo com destino institucional existente (#207)"
+    },
+    "parents": [
+      "7b681cb023af0f0809d4a2658a9318db87a841ee"
+    ],
+    "additions": 15,
+    "deletions": 1,
+    "total_changes": 16,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7b681cb023af0f0809d4a2658a9318db87a841ee",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:35:03Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-12T10:35:03Z"
+      },
+      "message": "fix(moderacao): aceitar contagens nulas na previa sem uniao (#207)"
+    },
+    "parents": [
+      "763ef5a5d39cf9c94ea19801ea734abac404ae19"
+    ],
+    "additions": 18,
+    "deletions": 2,
+    "total_changes": 20,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "763ef5a5d39cf9c94ea19801ea734abac404ae19",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-11T21:07:00Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-11T21:07:00Z"
+      },
+      "message": "feat(sigaa): associar identidades docentes e revisar dúvidas na moderação (#207)"
+    },
+    "parents": [
+      "658de6eee5b8dcbab90540b667079cd065182cf3"
+    ],
+    "additions": 1712,
+    "deletions": 1,
+    "total_changes": 1713,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "658de6eee5b8dcbab90540b667079cd065182cf3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-11-11T14:20:40Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-11T14:20:40Z"
+      },
+      "message": "Merge pull request #224 from unb-mds/docs/211-design\n\n[R2][UI] Registra referência visual da issue #211"
+    },
+    "parents": [
+      "60723f2026fb4db0060716498089b749a9c53056",
+      "8bf4a28e7407e23b2ebc9fb79d4f184535414e4d"
+    ],
+    "additions": 7,
+    "deletions": 0,
+    "total_changes": 7,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8bf4a28e7407e23b2ebc9fb79d4f184535414e4d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-11-11T14:18:52Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-11T14:18:52Z"
+      },
+      "message": "Merge branch 'develop' into docs/211-design"
+    },
+    "parents": [
+      "08bd7b926de7f477ba9898487510e80e430ae87a",
+      "60723f2026fb4db0060716498089b749a9c53056"
+    ],
+    "additions": 1362,
+    "deletions": 17,
+    "total_changes": 1379,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "60723f2026fb4db0060716498089b749a9c53056",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-11T12:53:53Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-11T12:53:53Z"
+      },
+      "message": "Merge pull request #223 from unb-mds/fix/207-professores-sessao\n\nfix: reconciliar professores e refletir sessão no cabeçalho"
+    },
+    "parents": [
+      "1b979a9d8f623ad904ea11974dd9d1b4e1a833ca",
+      "860db605741688efefb816025ed0cc00dfdb52a1"
+    ],
+    "additions": 1362,
+    "deletions": 17,
+    "total_changes": 1379,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "860db605741688efefb816025ed0cc00dfdb52a1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:42:03Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:42:03Z"
+      },
+      "message": "docs(sigaa): registrar ensaio de contencao e limites da revisao 223"
+    },
+    "parents": [
+      "7e60db213abc9b139b9e8eb68222523eb25a4969"
+    ],
+    "additions": 38,
+    "deletions": 0,
+    "total_changes": 38,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7e60db213abc9b139b9e8eb68222523eb25a4969",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:41:57Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:41:57Z"
+      },
+      "message": "docs(auth): registrar findings e validacao da revisao da PR 223"
+    },
+    "parents": [
+      "040f13efd5359555858994a30a11d9913a50f7b9"
+    ],
+    "additions": 37,
+    "deletions": 0,
+    "total_changes": 37,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "040f13efd5359555858994a30a11d9913a50f7b9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:41:15Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:41:15Z"
+      },
+      "message": "test(acesso): preservar retorno com o novo seletor de conta (#211)"
+    },
+    "parents": [
+      "87ed409e44b40b3f5be152321c22c4eb2fef4854"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "87ed409e44b40b3f5be152321c22c4eb2fef4854",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:38:52Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:38:52Z"
+      },
+      "message": "test(busca): adaptar verificacao ao cabecalho com sessao (#211)"
+    },
+    "parents": [
+      "5cfe581e82a30c33440c1b307159b88253168828"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5cfe581e82a30c33440c1b307159b88253168828",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:36:30Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:36:30Z"
+      },
+      "message": "test(sigaa): validar timeout e retomada da reconciliacao no PostgreSQL (#207)"
+    },
+    "parents": [
+      "6cbea29bf0cd0886c79f52326e81ebd15e19b604"
+    ],
+    "additions": 29,
+    "deletions": 0,
+    "total_changes": 29,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6cbea29bf0cd0886c79f52326e81ebd15e19b604",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:35:12Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:35:12Z"
+      },
+      "message": "fix(auth): neutralizar cabecalho durante revalidacao da sessao (#211)"
+    },
+    "parents": [
+      "d51da783936b31733d3f13bc3611ed59b1ac4d60"
+    ],
+    "additions": 1,
+    "deletions": 0,
+    "total_changes": 1,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d51da783936b31733d3f13bc3611ed59b1ac4d60",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:32:55Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-11T12:32:55Z"
+      },
+      "message": "test(auth): reproduzir cabecalho autenticado durante revalidacao (#211)"
+    },
+    "parents": [
+      "4f5448e7aed1bd6f131fb0234b0cbb4ae4b7bdc1"
+    ],
+    "additions": 14,
+    "deletions": 0,
+    "total_changes": 14,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4f5448e7aed1bd6f131fb0234b0cbb4ae4b7bdc1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-11T00:28:00Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-11T00:28:00Z"
+      },
+      "message": "fix: reconciliar professores e atualizar conta no cabecalho"
+    },
+    "parents": [
+      "1b979a9d8f623ad904ea11974dd9d1b4e1a833ca"
+    ],
+    "additions": 1239,
+    "deletions": 15,
+    "total_changes": 1254,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "08bd7b926de7f477ba9898487510e80e430ae87a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-11-10T22:50:01Z",
+        "login": "ailoiol",
+        "id": 225410979,
+        "author_email_hash": "addbc96637a59873cceb51b6790060f131da2fe194e449824de4ac52aa206017"
+      },
+      "committer": {
+        "name": "Yasmin de Loiola Araujo",
+        "date": "2026-11-10T22:50:01Z"
+      },
+      "message": "docs(ui): registra referência de design da issue 211"
+    },
+    "parents": [
+      "1b979a9d8f623ad904ea11974dd9d1b4e1a833ca"
+    ],
+    "additions": 7,
+    "deletions": 0,
+    "total_changes": 7,
+    "repo_name": "2026-02-UnDb"
   },
   {
     "sha": "78f88360c99075e3c59f36a889d34cd0d2a50690",
