@@ -2,19 +2,19 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-11T13:30:24.580162+00:00",
+  "analyzed_at": "2026-11-12T14:25:00.097833+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 683,
-  "total_bytes": 21989708,
+  "total_files": 718,
+  "total_bytes": 22823719,
   "languages": [
     {
       "language": "PNG Image",
-      "file_count": 224,
-      "total_bytes": 19441978,
-      "percentage": 88.41,
+      "file_count": 229,
+      "total_bytes": 20097098,
+      "percentage": 88.05,
       "files": [
         {
           "path": "docs/assets/evidencias/2026-11-10/215-antes-unidades-390.png",
@@ -80,14 +80,14 @@
     },
     {
       "language": "Markdown",
-      "file_count": 119,
-      "total_bytes": 1012453,
-      "percentage": 4.6,
+      "file_count": 125,
+      "total_bytes": 1065200,
+      "percentage": 4.67,
       "files": [
         {
           "path": "docs/requisitos.md",
           "name": "requisitos.md",
-          "size": 46640,
+          "size": 48902,
           "extension": ".md"
         },
         {
@@ -103,9 +103,21 @@
           "extension": ".md"
         },
         {
+          "path": "docs/arquitetura.md",
+          "name": "arquitetura.md",
+          "size": 29575,
+          "extension": ".md"
+        },
+        {
           "path": "docs/estudos/auditoria-requisitos-issue-149.md",
           "name": "auditoria-requisitos-issue-149.md",
           "size": 29079,
+          "extension": ".md"
+        },
+        {
+          "path": "specs.md",
+          "name": "specs.md",
+          "size": 29074,
           "extension": ".md"
         },
         {
@@ -115,27 +127,15 @@
           "extension": ".md"
         },
         {
-          "path": "docs/arquitetura.md",
-          "name": "arquitetura.md",
-          "size": 27755,
-          "extension": ".md"
-        },
-        {
-          "path": "specs.md",
-          "name": "specs.md",
-          "size": 27146,
+          "path": "frontend/README.md",
+          "name": "README.md",
+          "size": 27327,
           "extension": ".md"
         },
         {
           "path": "docs/estudos/integracao-visual-jornada-issue-186.md",
           "name": "integracao-visual-jornada-issue-186.md",
           "size": 26373,
-          "extension": ".md"
-        },
-        {
-          "path": "frontend/README.md",
-          "name": "README.md",
-          "size": 26059,
           "extension": ".md"
         },
         {
@@ -148,9 +148,9 @@
     },
     {
       "language": "Python",
-      "file_count": 115,
-      "total_bytes": 418075,
-      "percentage": 1.9,
+      "file_count": 130,
+      "total_bytes": 506784,
+      "percentage": 2.22,
       "files": [
         {
           "path": "backend/tests/test_avaliacao.py",
@@ -168,6 +168,18 @@
           "path": "backend/tests/test_auth.py",
           "name": "test_auth.py",
           "size": 19471,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_reconciliacao_professores.py",
+          "name": "test_reconciliacao_professores.py",
+          "size": 18952,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_identidade_docente.py",
+          "name": "test_identidade_docente.py",
+          "size": 16524,
           "extension": ".py"
         },
         {
@@ -189,36 +201,24 @@
           "extension": ".py"
         },
         {
+          "path": "backend/app/services/sigaa_import_service.py",
+          "name": "sigaa_import_service.py",
+          "size": 12506,
+          "extension": ".py"
+        },
+        {
           "path": "backend/tests/test_moderacao.py",
           "name": "test_moderacao.py",
           "size": 11858,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/services/sigaa_import_service.py",
-          "name": "sigaa_import_service.py",
-          "size": 11664,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_sigaa_import_service.py",
-          "name": "test_sigaa_import_service.py",
-          "size": 11409,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/app/scrapers/sigaa_poc.py",
-          "name": "sigaa_poc.py",
-          "size": 11267,
           "extension": ".py"
         }
       ]
     },
     {
       "language": "TypeScript",
-      "file_count": 142,
-      "total_bytes": 379334,
-      "percentage": 1.73,
+      "file_count": 145,
+      "total_bytes": 396779,
+      "percentage": 1.74,
       "files": [
         {
           "path": "frontend/src/app/prototipo/page.tsx",
@@ -236,6 +236,12 @@
           "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx",
           "name": "avaliacao-form.tsx",
           "size": 10835,
+          "extension": ".tsx"
+        },
+        {
+          "path": "frontend/src/app/moderacao/identidades/fila-identidades.tsx",
+          "name": "fila-identidades.tsx",
+          "size": 10110,
           "extension": ".tsx"
         },
         {
@@ -273,20 +279,82 @@
           "name": "comparacao-dark.tsx",
           "size": 7931,
           "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 35,
+      "total_bytes": 322259,
+      "percentage": 1.41,
+      "files": [
+        {
+          "path": "docs/estudos/evidencias/issue-37/Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
+          "name": "Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
+          "size": 39786,
+          "extension": ".docx"
         },
         {
-          "path": "frontend/src/components/busca-institucional.tsx",
-          "name": "busca-institucional.tsx",
-          "size": 7418,
-          "extension": ".tsx"
+          "path": "frontend/tests/avaliacao-browser.mjs",
+          "name": "avaliacao-browser.mjs",
+          "size": 32304,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/busca-browser.mjs",
+          "name": "busca-browser.mjs",
+          "size": 28078,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/prototipo-browser.mjs",
+          "name": "prototipo-browser.mjs",
+          "size": 20011,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/acesso-browser.mjs",
+          "name": "acesso-browser.mjs",
+          "size": 19852,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/moderacao-browser.mjs",
+          "name": "moderacao-browser.mjs",
+          "size": 19591,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/denuncia-browser.mjs",
+          "name": "denuncia-browser.mjs",
+          "size": 17554,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/resultados-browser.mjs",
+          "name": "resultados-browser.mjs",
+          "size": 16804,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/comentarios-browser.mjs",
+          "name": "comentarios-browser.mjs",
+          "size": 12203,
+          "extension": ".mjs"
+        },
+        {
+          "path": "frontend/tests/fluxo-moderacao-browser.mjs",
+          "name": "fluxo-moderacao-browser.mjs",
+          "size": 11684,
+          "extension": ".mjs"
         }
       ]
     },
     {
       "language": "JSON",
-      "file_count": 18,
-      "total_bytes": 317412,
-      "percentage": 1.44,
+      "file_count": 20,
+      "total_bytes": 318887,
+      "percentage": 1.4,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -351,78 +419,10 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 32,
-      "total_bytes": 304676,
-      "percentage": 1.39,
-      "files": [
-        {
-          "path": "docs/estudos/evidencias/issue-37/Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
-          "name": "Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
-          "size": 39786,
-          "extension": ".docx"
-        },
-        {
-          "path": "frontend/tests/avaliacao-browser.mjs",
-          "name": "avaliacao-browser.mjs",
-          "size": 32304,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/busca-browser.mjs",
-          "name": "busca-browser.mjs",
-          "size": 27844,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/prototipo-browser.mjs",
-          "name": "prototipo-browser.mjs",
-          "size": 20011,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/acesso-browser.mjs",
-          "name": "acesso-browser.mjs",
-          "size": 19622,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/moderacao-browser.mjs",
-          "name": "moderacao-browser.mjs",
-          "size": 19591,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/denuncia-browser.mjs",
-          "name": "denuncia-browser.mjs",
-          "size": 17554,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/resultados-browser.mjs",
-          "name": "resultados-browser.mjs",
-          "size": 16804,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/comentarios-browser.mjs",
-          "name": "comentarios-browser.mjs",
-          "size": 12203,
-          "extension": ".mjs"
-        },
-        {
-          "path": "frontend/tests/fluxo-moderacao-browser.mjs",
-          "name": "fluxo-moderacao-browser.mjs",
-          "size": 11684,
-          "extension": ".mjs"
-        }
-      ]
-    },
-    {
       "language": "CSS",
       "file_count": 3,
       "total_bytes": 40681,
-      "percentage": 0.19,
+      "percentage": 0.18,
       "files": [
         {
           "path": "docs/referencias/ui-dark/src/app/globals.css",
@@ -448,7 +448,7 @@
       "language": "Icon",
       "file_count": 2,
       "total_bytes": 32713,
-      "percentage": 0.15,
+      "percentage": 0.14,
       "files": [
         {
           "path": "docs/referencias/ui-dark/src/app/favicon.ico",
@@ -467,7 +467,7 @@
     {
       "language": "YAML",
       "file_count": 5,
-      "total_bytes": 22251,
+      "total_bytes": 22346,
       "percentage": 0.1,
       "files": [
         {
@@ -479,7 +479,7 @@
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 5289,
+          "size": 5384,
           "extension": ".yml"
         },
         {
@@ -523,10 +523,30 @@
       ]
     },
     {
+      "language": "No Extension",
+      "file_count": 2,
+      "total_bytes": 1274,
+      "percentage": 0.01,
+      "files": [
+        {
+          "path": "frontend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 828,
+          "extension": ""
+        },
+        {
+          "path": "backend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 446,
+          "extension": ""
+        }
+      ]
+    },
+    {
       "language": "SVG Image",
       "file_count": 5,
       "total_bytes": 3314,
-      "percentage": 0.02,
+      "percentage": 0.01,
       "files": [
         {
           "path": "frontend/public/next.svg",
@@ -561,26 +581,6 @@
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 2,
-      "total_bytes": 1274,
-      "percentage": 0.01,
-      "files": [
-        {
-          "path": "frontend/Dockerfile",
-          "name": "Dockerfile",
-          "size": 828,
-          "extension": ""
-        },
-        {
-          "path": "backend/Dockerfile",
-          "name": "Dockerfile",
-          "size": 446,
-          "extension": ""
-        }
-      ]
-    },
-    {
       "language": "Shell",
       "file_count": 1,
       "total_bytes": 1618,
@@ -596,14 +596,20 @@
     },
     {
       "language": "SQL",
-      "file_count": 2,
-      "total_bytes": 1904,
+      "file_count": 3,
+      "total_bytes": 2741,
       "percentage": 0.01,
       "files": [
         {
           "path": "scripts/sql/170-acesso-api.sql",
           "name": "170-acesso-api.sql",
           "size": 1310,
+          "extension": ".sql"
+        },
+        {
+          "path": "scripts/sql/207-acesso-identidades.sql",
+          "name": "207-acesso-identidades.sql",
+          "size": 837,
           "extension": ".sql"
         },
         {
@@ -722,7 +728,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-11T13:31:40.835728+00:00",
+    "extracted_at": "2026-11-12T14:26:04.818828+00:00",
     "file_path": "data/silver/language_analysis_2026-02-UnDb.json"
   }
 }
