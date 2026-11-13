@@ -2,8 +2,28 @@
   "owner": "unb-mds",
   "repository": "2026-2-UnB_Core",
   "branch": "main",
-  "sha": "bce29ecebad76d91742fe63f3a14edaa0e3f22f0",
+  "sha": "711a81ae44fe035049a6cc857a77f677c2526881",
   "tree": [
+    {
+      "name": ".dockerignore",
+      "path": ".dockerignore",
+      "type": "file",
+      "sha": "343072b5a17edd378636c1734f13171f740e762e",
+      "mode": "100644",
+      "extension": ".dockerignore",
+      "size": 89,
+      "is_binary": false
+    },
+    {
+      "name": ".env.example",
+      "path": ".env.example",
+      "type": "file",
+      "sha": "7959f6c9c236bdda3c085f9651fb365a9ee2b5ff",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 278,
+      "is_binary": false
+    },
     {
       "name": ".gitattributes",
       "path": ".gitattributes",
@@ -602,19 +622,39 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "e535606a18d823c2b7534a521038703352aa0de7",
+      "sha": "0c27eeec9a0380a7344582702e91b7c58b846dec",
       "mode": "100644",
       "extension": ".md",
-      "size": 5085,
+      "size": 5597,
       "is_binary": false
     },
     {
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "7da3815ce3889f9edf9fcb5ee47ad6337cca7c06",
+      "sha": "650197ce991631bb3d23aeab71344aaeff85bc88",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": ".dockerignore",
+      "path": "backend/.dockerignore",
+      "type": "file",
+      "sha": "2d9c106e4a11a46a2e867707be34ca62f8f29260",
+      "mode": "100644",
+      "extension": ".dockerignore",
+      "size": 115,
+      "is_binary": false
+    },
+    {
+      "name": "Dockerfile",
+      "path": "backend/Dockerfile",
+      "type": "file",
+      "sha": "ae8fca3bd3595a6cf1694737351d139776d3bb0f",
+      "mode": "100644",
+      "extension": "",
+      "size": 545,
+      "is_binary": false
     },
     {
       "name": "alembic.ini",
@@ -630,7 +670,7 @@
       "name": "alembic",
       "path": "backend/alembic",
       "type": "directory",
-      "sha": "513cf6582305267b87d11c7bc54ad344a934e6a5",
+      "sha": "2fdacbfdb10d8d9690534c4bd5eeca2c7ffdb01d",
       "mode": "040000",
       "children": []
     },
@@ -668,7 +708,7 @@
       "name": "versions",
       "path": "backend/alembic/versions",
       "type": "directory",
-      "sha": "d02b540289825a48f0b96ad706f1707a7b5ed5e8",
+      "sha": "9ef6caf6e51cd7e3e90f89d64832395d77b5c3ac",
       "mode": "040000",
       "children": []
     },
@@ -683,10 +723,30 @@
       "is_binary": false
     },
     {
+      "name": "0002_curso_turno.py",
+      "path": "backend/alembic/versions/0002_curso_turno.py",
+      "type": "file",
+      "sha": "6909d198d052c75d5cf775eb68ee1332db9f60b8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 707,
+      "is_binary": false
+    },
+    {
+      "name": "0003_curso_grau.py",
+      "path": "backend/alembic/versions/0003_curso_grau.py",
+      "type": "file",
+      "sha": "012dc15c161cc776a3effc5b03824f5a7470bcc0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 698,
+      "is_binary": false
+    },
+    {
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "bc34dc8db06dd4b60026498b8d7fa1dcd684f920",
+      "sha": "137b4a547dc6ff97db061db0b90c41c798ca0d30",
       "mode": "040000",
       "children": []
     },
@@ -732,7 +792,7 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "bdafa9ddc5eb50642c6facd51abcbc2df4377aa9",
+      "sha": "5b295c1bd562454357bd1f7e2d601a9c31199fa7",
       "mode": "040000",
       "children": []
     },
@@ -744,84 +804,6 @@
       "mode": "100644",
       "extension": ".py",
       "size": 0,
-      "is_binary": false
-    },
-    {
-      "name": "__pycache__",
-      "path": "backend/app/api/__pycache__",
-      "type": "directory",
-      "sha": "403f8a24f219d36ee28dcfde257be3215a008bc1",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "__init__.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/__init__.cpython-314.pyc",
-      "type": "file",
-      "sha": "9ab82e65261e6da4be0d3cde47f34bd202c565bb",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 197,
-      "is_binary": false
-    },
-    {
-      "name": "auth.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/auth.cpython-314.pyc",
-      "type": "file",
-      "sha": "c7673a90cff9da7469e589477e823938be255530",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 122,
-      "is_binary": false
-    },
-    {
-      "name": "dependencies.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/dependencies.cpython-314.pyc",
-      "type": "file",
-      "sha": "07668ef4ab10166bd72377fe60dacfc7d0ea4cad",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2338,
-      "is_binary": false
-    },
-    {
-      "name": "errors.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/errors.cpython-314.pyc",
-      "type": "file",
-      "sha": "3f5f9c79a2122f2472a4b53445ec0d0c4db5087d",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 13233,
-      "is_binary": false
-    },
-    {
-      "name": "router.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/router.cpython-314.pyc",
-      "type": "file",
-      "sha": "fd7d3b214c17bc605171953ae4d9f4bd2e8a0606",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 908,
-      "is_binary": false
-    },
-    {
-      "name": "search.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/search.cpython-314.pyc",
-      "type": "file",
-      "sha": "799e2a2abaa420e45d7197961115ff978a618df0",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 124,
-      "is_binary": false
-    },
-    {
-      "name": "security.cpython-314.pyc",
-      "path": "backend/app/api/__pycache__/security.cpython-314.pyc",
-      "type": "file",
-      "sha": "027ed0e34c9e7e43c093f83a86190ac05a29eb84",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2381,
       "is_binary": false
     },
     {
@@ -858,7 +840,7 @@
       "name": "routers",
       "path": "backend/app/api/routers",
       "type": "directory",
-      "sha": "dcbb5caf6983cd1d59a4228d0dea79fa8ad2b047",
+      "sha": "67cc76fdc2ae3d0776faa57523701be08b041792",
       "mode": "040000",
       "children": []
     },
@@ -886,10 +868,10 @@
       "name": "contribuicoes.py",
       "path": "backend/app/api/routers/contribuicoes.py",
       "type": "file",
-      "sha": "f48f1a45a3605fe421ec339bc4452bb5ef9f8699",
+      "sha": "cefc33a429a7974c13cb2df27e79b61549568341",
       "mode": "100644",
       "extension": ".py",
-      "size": 1069,
+      "size": 1981,
       "is_binary": false
     },
     {
@@ -916,7 +898,7 @@
       "name": "schema",
       "path": "backend/app/api/schema",
       "type": "directory",
-      "sha": "6f629195b802032ff68b0b7792a3c47eb510fa5f",
+      "sha": "46363e88c391efaff40d40b89e2564d4382d5dd2",
       "mode": "040000",
       "children": []
     },
@@ -928,124 +910,6 @@
       "mode": "100644",
       "extension": ".py",
       "size": 0,
-      "is_binary": false
-    },
-    {
-      "name": "__pycache__",
-      "path": "backend/app/api/schema/__pycache__",
-      "type": "directory",
-      "sha": "7ab7926e76b0b2d21dbf476d364572e58ac967fe",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "ConteudoAcademico.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/ConteudoAcademico.cpython-314.pyc",
-      "type": "file",
-      "sha": "25e759f0dfe46d4afdab15682835800a62e6c5f6",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 1424,
-      "is_binary": false
-    },
-    {
-      "name": "Contribuicao.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/Contribuicao.cpython-314.pyc",
-      "type": "file",
-      "sha": "2a1134798dc3f87d8e94a6182000ef3fcbe32deb",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 4694,
-      "is_binary": false
-    },
-    {
-      "name": "SubmissaoBase.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/SubmissaoBase.cpython-314.pyc",
-      "type": "file",
-      "sha": "022f2d691700b61e0e7a9de6d3d3be4f4989f536",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2150,
-      "is_binary": false
-    },
-    {
-      "name": "__init__.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/__init__.cpython-314.pyc",
-      "type": "file",
-      "sha": "10cc2fa7258e641fca56d2a9b67c51026d593e9a",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 656,
-      "is_binary": false
-    },
-    {
-      "name": "curso.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/curso.cpython-314.pyc",
-      "type": "file",
-      "sha": "c0f342c3ac5eb95b7408586eba4c6acf542e0458",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2249,
-      "is_binary": false
-    },
-    {
-      "name": "denuncia.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/denuncia.cpython-314.pyc",
-      "type": "file",
-      "sha": "17f611d2411f84f2e8ea8225becd4b6ef5853e92",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2551,
-      "is_binary": false
-    },
-    {
-      "name": "disciplina.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/disciplina.cpython-314.pyc",
-      "type": "file",
-      "sha": "40b4635a7afa103a44c17d6dc1fd84e2dcfda86f",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 7129,
-      "is_binary": false
-    },
-    {
-      "name": "fonte_institucional.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/fonte_institucional.cpython-314.pyc",
-      "type": "file",
-      "sha": "499c6c44a19a3cdeee2aaa6db6857cb856e04579",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2920,
-      "is_binary": false
-    },
-    {
-      "name": "publicacao_institucional.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/publicacao_institucional.cpython-314.pyc",
-      "type": "file",
-      "sha": "09012c88a40027feb4f7c3be0c101a1c6a2abf61",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 6667,
-      "is_binary": false
-    },
-    {
-      "name": "testes.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/testes.cpython-314.pyc",
-      "type": "file",
-      "sha": "2c5fc71b71a5f46b4e39177f5a6050e86472cab8",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 6490,
-      "is_binary": false
-    },
-    {
-      "name": "usuario.cpython-314.pyc",
-      "path": "backend/app/api/schema/__pycache__/usuario.cpython-314.pyc",
-      "type": "file",
-      "sha": "d2f9808c06620c81dd0e1365e06f96c355d3a9bc",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 9706,
       "is_binary": false
     },
     {
@@ -1072,7 +936,7 @@
       "name": "schemas",
       "path": "backend/app/api/schemas",
       "type": "directory",
-      "sha": "3a13aad3a40879bb9a3ec4326310b3311f0998ed",
+      "sha": "b4504c26ed0e6f8a59920db4f554a7e331615a29",
       "mode": "040000",
       "children": []
     },
@@ -1087,41 +951,13 @@
       "is_binary": false
     },
     {
-      "name": "__pycache__",
-      "path": "backend/app/api/schemas/__pycache__",
-      "type": "directory",
-      "sha": "1e75f0ddc179269788aa389102834630ceec3726",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "__init__.cpython-314.pyc",
-      "path": "backend/app/api/schemas/__pycache__/__init__.cpython-314.pyc",
-      "type": "file",
-      "sha": "467608968edf5c317def4e0e2fc16d0bcd07f812",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 308,
-      "is_binary": false
-    },
-    {
-      "name": "auth.cpython-314.pyc",
-      "path": "backend/app/api/schemas/__pycache__/auth.cpython-314.pyc",
-      "type": "file",
-      "sha": "c0754a1ca411a3e67512b71641ae99ee604198f1",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 2485,
-      "is_binary": false
-    },
-    {
       "name": "academico.py",
       "path": "backend/app/api/schemas/academico.py",
       "type": "file",
-      "sha": "93cd234c48ec41a22057d33e874932c6f101079b",
+      "sha": "cb3510a3f519237a218a87d67b5ffc1dd2358ad7",
       "mode": "100644",
       "extension": ".py",
-      "size": 731,
+      "size": 762,
       "is_binary": false
     },
     {
@@ -1138,10 +974,10 @@
       "name": "contribuicao.py",
       "path": "backend/app/api/schemas/contribuicao.py",
       "type": "file",
-      "sha": "c6afa46494e2aa2189babdddf996bc790cb876f9",
+      "sha": "75721a90c662a995dfa74d8a8cddd61d41e21823",
       "mode": "100644",
       "extension": ".py",
-      "size": 807,
+      "size": 1083,
       "is_binary": false
     },
     {
@@ -1175,6 +1011,44 @@
       "is_binary": false
     },
     {
+      "name": "crawler",
+      "path": "backend/app/crawler",
+      "type": "directory",
+      "sha": "6c69db224f63c5e61168a90771cb8e8a0e0c0460",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/app/crawler/__init__.py",
+      "type": "file",
+      "sha": "f6d19d1fcbb38160c3f6af1c585718b54a9b75d1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 637,
+      "is_binary": false
+    },
+    {
+      "name": "crawlerDisciplina.py",
+      "path": "backend/app/crawler/crawlerDisciplina.py",
+      "type": "file",
+      "sha": "3674817c8bc26125d363fea2f51c7b95be47d2b4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7328,
+      "is_binary": false
+    },
+    {
+      "name": "crawlercursos.py",
+      "path": "backend/app/crawler/crawlercursos.py",
+      "type": "file",
+      "sha": "dfe6cce0380e9bff55c5e927d99cf4c37030b845",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3349,
+      "is_binary": false
+    },
+    {
       "name": "db.py",
       "path": "backend/app/db.py",
       "type": "file",
@@ -1188,7 +1062,7 @@
       "name": "domain",
       "path": "backend/app/domain",
       "type": "directory",
-      "sha": "dce86f0fd566c52fa84761bd3d8bcaac59b4449b",
+      "sha": "bfb71143f9964b093ecf5473e8ec1fcfc5129760",
       "mode": "040000",
       "children": []
     },
@@ -1196,85 +1070,39 @@
       "name": "__init__.py",
       "path": "backend/app/domain/__init__.py",
       "type": "file",
-      "sha": "4ba4331c9fe48160e9e726ca0903a0deab118c8b",
+      "sha": "5ef12fcbbfc333168ab4a40da7ec418e87e95fea",
       "mode": "100644",
       "extension": ".py",
-      "size": 399,
-      "is_binary": false
-    },
-    {
-      "name": "__pycache__",
-      "path": "backend/app/domain/__pycache__",
-      "type": "directory",
-      "sha": "73cc14e4d1db19f56b7daaf91b5497a6c8e28bda",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "__init__.cpython-314.pyc",
-      "path": "backend/app/domain/__pycache__/__init__.cpython-314.pyc",
-      "type": "file",
-      "sha": "5f9b35ca8d5475e287358c62cab692a178a713bd",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 461,
-      "is_binary": false
-    },
-    {
-      "name": "models.cpython-314.pyc",
-      "path": "backend/app/domain/__pycache__/models.cpython-314.pyc",
-      "type": "file",
-      "sha": "5d8a2f695504a089f9bf36d89684e4f5205fede5",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 6619,
+      "size": 431,
       "is_binary": false
     },
     {
       "name": "models.py",
       "path": "backend/app/domain/models.py",
       "type": "file",
-      "sha": "58d9b9c8b56387a1650c0e3d92e13d68b608a1e8",
+      "sha": "09e7eb780ac4cdd888dabc7d3ad32b19adfa99eb",
       "mode": "100644",
       "extension": ".py",
-      "size": 2720,
+      "size": 2835,
       "is_binary": false
     },
     {
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
-      "sha": "8ba62c0418a533c7cc6225822afec17473ef557f",
+      "sha": "e3dcafb31764f03be6cf8a4afcec3754b286c11a",
       "mode": "100644",
       "extension": ".py",
-      "size": 895,
+      "size": 2575,
       "is_binary": false
     },
     {
       "name": "services",
       "path": "backend/app/services",
       "type": "directory",
-      "sha": "df3c8254e8cee2d47f65694f5d4c852e938c96f1",
+      "sha": "a45b73f37c44cb8acaadc942572301cf350b94bd",
       "mode": "040000",
       "children": []
-    },
-    {
-      "name": "__pycache__",
-      "path": "backend/app/services/__pycache__",
-      "type": "directory",
-      "sha": "59ac12713d637e37a0d5f1a49d4ee19d814c9432",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "publicacao_service.cpython-314.pyc",
-      "path": "backend/app/services/__pycache__/publicacao_service.cpython-314.pyc",
-      "type": "file",
-      "sha": "463229fea472d25ad104af8df9e868058840117c",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 5970,
-      "is_binary": false
     },
     {
       "name": "auth_service.py",
@@ -1300,20 +1128,20 @@
       "name": "contribuicao_service.py",
       "path": "backend/app/services/contribuicao_service.py",
       "type": "file",
-      "sha": "59758d9df6c0a839fc12365a7af4c7039b3aef6d",
+      "sha": "f8c6474269c14f4e16397653cd0cbaedbd85dba1",
       "mode": "100644",
       "extension": ".py",
-      "size": 1192,
+      "size": 1739,
       "is_binary": false
     },
     {
       "name": "curso_service.py",
       "path": "backend/app/services/curso_service.py",
       "type": "file",
-      "sha": "22231e874cc99cd05e4955011544f575e9810f05",
+      "sha": "67c0a30f5cad6fe0d0c616c21461293912d89147",
       "mode": "100644",
       "extension": ".py",
-      "size": 573,
+      "size": 598,
       "is_binary": false
     },
     {
@@ -1340,27 +1168,9 @@
       "name": "settings",
       "path": "backend/app/settings",
       "type": "directory",
-      "sha": "6b665e09f00ed41a9ce17d6c26c22c9d845662ec",
+      "sha": "fd6ac4c6abcb23d284a4ec77b9c7bfac0788779d",
       "mode": "040000",
       "children": []
-    },
-    {
-      "name": "__pycache__",
-      "path": "backend/app/settings/__pycache__",
-      "type": "directory",
-      "sha": "a33525a85ee00abebbd82e6a9c89bf436efa3b30",
-      "mode": "040000",
-      "children": []
-    },
-    {
-      "name": "config.cpython-314.pyc",
-      "path": "backend/app/settings/__pycache__/config.cpython-314.pyc",
-      "type": "file",
-      "sha": "f0c8fd02b30c478561d499d2c8a6c3d60a0e92ad",
-      "mode": "100644",
-      "extension": ".pyc",
-      "size": 1172,
-      "is_binary": false
     },
     {
       "name": "config.py",
@@ -1376,10 +1186,10 @@
       "name": "requirements.txt",
       "path": "backend/requirements.txt",
       "type": "file",
-      "sha": "38bf02fdf4772f4a487c39a95568f6b14c4fc7d3",
+      "sha": "96068fa9971c7cba14f2d67831c32c3c74667b96",
       "mode": "100644",
       "extension": ".txt",
-      "size": 132,
+      "size": 155,
       "is_binary": false
     },
     {
@@ -1404,7 +1214,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "b3a241f3c9bc199c1f9294b97645d2e45e331dfc",
+      "sha": "069fd187ea28955b7121a99a0e82e2330f7a92c5",
       "mode": "040000",
       "children": []
     },
@@ -1430,7 +1240,7 @@
       "name": "integration",
       "path": "backend/tests/integration",
       "type": "directory",
-      "sha": "aa3932d0674925297fc21d9b4f01fe8e01d8cff0",
+      "sha": "7aa66af3f8ac19524780c61e495bfdfbb1a7f131",
       "mode": "040000",
       "children": []
     },
@@ -1448,10 +1258,10 @@
       "name": "test_auth_contribuicoes.py",
       "path": "backend/tests/integration/test_auth_contribuicoes.py",
       "type": "file",
-      "sha": "c6a943aef6615b9ca3e93fd1c99eca60e256d0d4",
+      "sha": "e98e3c4e0bc5ff9c5f72970c3afcf6875a5ac5a5",
       "mode": "100644",
       "extension": ".py",
-      "size": 3524,
+      "size": 5930,
       "is_binary": false
     },
     {
@@ -1498,7 +1308,7 @@
       "name": "unit",
       "path": "backend/tests/unit",
       "type": "directory",
-      "sha": "c4c7d44daab2e8cb0c996220358994b09965c87e",
+      "sha": "c21dcb60a28e700f24f6bfe834ba8f4f82cf5484",
       "mode": "040000",
       "children": []
     },
@@ -1510,6 +1320,16 @@
       "mode": "100644",
       "extension": ".gitkeep",
       "size": 0,
+      "is_binary": false
+    },
+    {
+      "name": "conftest.py",
+      "path": "backend/tests/unit/conftest.py",
+      "type": "file",
+      "sha": "1aaa6a6611266d81a8f97ca89a38f4d5d235b2dd",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1164,
       "is_binary": false
     },
     {
@@ -1546,10 +1366,30 @@
       "name": "test_contribuicao_service.py",
       "path": "backend/tests/unit/test_contribuicao_service.py",
       "type": "file",
-      "sha": "56cc587052b5d299361aac68ad31498d45696fe6",
+      "sha": "9610789f98925bb374bd937a033ac8969032604a",
       "mode": "100644",
       "extension": ".py",
-      "size": 1589,
+      "size": 3582,
+      "is_binary": false
+    },
+    {
+      "name": "test_crawlerDisciplina.py",
+      "path": "backend/tests/unit/test_crawlerDisciplina.py",
+      "type": "file",
+      "sha": "1d9bda5ffd729d767e304c1518881614c3027ff3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1837,
+      "is_binary": false
+    },
+    {
+      "name": "test_crawlercursos.py",
+      "path": "backend/tests/unit/test_crawlercursos.py",
+      "type": "file",
+      "sha": "529b21513da95b9c922e4e642dcf9ccd8663ed94",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1592,
       "is_binary": false
     },
     {
@@ -1613,10 +1453,20 @@
       "is_binary": false
     },
     {
+      "name": "docker-compose.yml",
+      "path": "docker-compose.yml",
+      "type": "file",
+      "sha": "797720c3f9e3797c344904c6051444af09f25405",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 1841,
+      "is_binary": false
+    },
+    {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "5efb6dae4cdce2ada5d38cd6e6caf4a6bb4918ae",
+      "sha": "7d049e876899c8439b039ac19fb29fb24e382a41",
       "mode": "040000",
       "children": []
     },
@@ -1624,9 +1474,49 @@
       "name": "Sprint",
       "path": "docs/Sprint",
       "type": "directory",
-      "sha": "ad05f3669c772bc5a8ecc7dc01ce074a660e98f6",
+      "sha": "021cae19a5c1ac4b081e502796da233c3f0bcfa9",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "Sprint01.md",
+      "path": "docs/Sprint/Sprint01.md",
+      "type": "file",
+      "sha": "73b7cfea85374213a058878d26c8c92c15639759",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1082,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint02.md",
+      "path": "docs/Sprint/Sprint02.md",
+      "type": "file",
+      "sha": "17ebbec4e7cd74a18d71333fc15a30b33084e29e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1215,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint03.md",
+      "path": "docs/Sprint/Sprint03.md",
+      "type": "file",
+      "sha": "fe0de6f6cbe98ed578af5952ec11b59e8c03da8c",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1387,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint04.md",
+      "path": "docs/Sprint/Sprint04.md",
+      "type": "file",
+      "sha": "60dd996f0e12c5e53d11f54c14e88e02af7fcedd",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1349,
+      "is_binary": false
     },
     {
       "name": "Sprint05.md",
@@ -1636,6 +1526,46 @@
       "mode": "100644",
       "extension": ".md",
       "size": 912,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint06.md",
+      "path": "docs/Sprint/Sprint06.md",
+      "type": "file",
+      "sha": "4d6fdec7d575fee4cedd0cde782023f79b2b0a99",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1092,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint07.md",
+      "path": "docs/Sprint/Sprint07.md",
+      "type": "file",
+      "sha": "2487645dde85c17443476f2d7c39892579b8c968",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 927,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint08.md",
+      "path": "docs/Sprint/Sprint08.md",
+      "type": "file",
+      "sha": "a55602022070d0e77cd645723c92910a64985f10",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1046,
+      "is_binary": false
+    },
+    {
+      "name": "Sprint09.md",
+      "path": "docs/Sprint/Sprint09.md",
+      "type": "file",
+      "sha": "8a6f1fba505872cbe55a321b5b7e9b6f8280bbc2",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1267,
       "is_binary": false
     },
     {
@@ -1688,7 +1618,7 @@
       "name": "gitpage",
       "path": "docs/gitpage",
       "type": "directory",
-      "sha": "40e0e9d9680e092ab8956c6b5a28ecdd1c8c0bba",
+      "sha": "4415ae4e1a8bbb25afd4b59f020d9550d99c2f83",
       "mode": "040000",
       "children": []
     },
@@ -1696,20 +1626,20 @@
       "name": "mkdocs.yml",
       "path": "docs/gitpage/mkdocs.yml",
       "type": "file",
-      "sha": "c0e554c84961906edad30ff29e3056e375f8c571",
+      "sha": "f843980e3e1948a91109be653feb372494646d04",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2776,
+      "size": 2630,
       "is_binary": false
     },
     {
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "df684127b57776b70811f797d0f0e5ecdddc8130",
+      "sha": "6adcb2e827fdc2bb70bc076a3c09512ac7f65a0e",
       "mode": "100644",
       "extension": ".md",
-      "size": 2685,
+      "size": 2487,
       "is_binary": false
     },
     {
@@ -1804,9 +1734,29 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "a56abfd87cb811745e1bfd1493eab5dd88f2f8d3",
+      "sha": "7c1bc7e72f020b3e2dd35daaf5170cbef21cba51",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": ".dockerignore",
+      "path": "frontend/.dockerignore",
+      "type": "file",
+      "sha": "1c90e8eafde06b11ddc435749f0bde59b366eee2",
+      "mode": "100644",
+      "extension": ".dockerignore",
+      "size": 95,
+      "is_binary": false
+    },
+    {
+      "name": "Dockerfile",
+      "path": "frontend/Dockerfile",
+      "type": "file",
+      "sha": "6f0aa64b0f569001b6c7b68c1ed47ecf6448394d",
+      "mode": "100644",
+      "extension": "",
+      "size": 201,
+      "is_binary": false
     },
     {
       "name": "eslint.config.js",
@@ -1832,20 +1782,20 @@
       "name": "package-lock.json",
       "path": "frontend/package-lock.json",
       "type": "file",
-      "sha": "0974af986980d94eb3e2809268244385f765235e",
+      "sha": "0bb849ac78e2949bb3c1b1f4dc48cea2e12673ac",
       "mode": "100644",
       "extension": ".json",
-      "size": 229817,
+      "size": 216351,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "frontend/package.json",
       "type": "file",
-      "sha": "5cdbcc29dcf4804dc3075d283ffcc7ef898097eb",
+      "sha": "3493af346e257ad56bc191012556084fc46a5513",
       "mode": "100644",
       "extension": ".json",
-      "size": 750,
+      "size": 751,
       "is_binary": false
     },
     {
@@ -2470,10 +2420,10 @@
       "name": "package-lock.json",
       "path": "package-lock.json",
       "type": "file",
-      "sha": "494804ddf0b0b3a733700c265e48f4917a2d351e",
+      "sha": "c1775469ca5115e0f42c197fd48aa314d6f79aee",
       "mode": "100644",
       "extension": ".json",
-      "size": 11829,
+      "size": 11856,
       "is_binary": false
     },
     {
@@ -2490,7 +2440,7 @@
       "name": "specs",
       "path": "specs",
       "type": "directory",
-      "sha": "cc7650a78612026bca081f2cf2bc99eedbb139f9",
+      "sha": "2afabca0fb270148a509e5e4de9428dac0f328d4",
       "mode": "040000",
       "children": []
     },
@@ -2498,7 +2448,7 @@
       "name": "001-unb-core",
       "path": "specs/001-unb-core",
       "type": "directory",
-      "sha": "534f21cbff20b311b873bc4c73c0908d03a2838a",
+      "sha": "0982c45e97358dd667e4472642392dbeb704f4c3",
       "mode": "040000",
       "children": []
     },
@@ -2572,10 +2522,10 @@
       "name": "plan.md",
       "path": "specs/001-unb-core/plan.md",
       "type": "file",
-      "sha": "08d29fdc3040e83276c3fcb5863998a7343501e9",
+      "sha": "dd9cc69c5f50decd2ba7ad6a38381dc948e740b9",
       "mode": "100644",
       "extension": ".md",
-      "size": 3595,
+      "size": 3614,
       "is_binary": false
     },
     {
@@ -2630,9 +2580,9 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-12T14:24:54.238729+00:00",
+  "extracted_at": "2026-11-13T13:57:35.336677+00:00",
   "method": "rest",
-  "total_items": 277,
+  "total_items": 271,
   "repository_metadata": {
     "id": 1338349828,
     "full_name": "unb-mds/2026-2-UnB_Core",
@@ -2640,9 +2590,9 @@
     "created_at": "2026-08-18T11:55:42Z",
     "updated_at": "2026-11-05T13:53:48Z",
     "language": "Python",
-    "size": 1395,
+    "size": 1407,
     "stars": 2,
     "forks": 2,
-    "open_issues": 16
+    "open_issues": 17
   }
 }
