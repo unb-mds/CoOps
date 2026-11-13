@@ -2,11 +2,27 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-12T14:24:54.238729+00:00",
+  "extracted_at": "2026-11-13T13:57:35.336677+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
     "children": [
+      {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 89,
+        "extension": ".dockerignore",
+        "path": ".dockerignore"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 278,
+        "extension": ".example",
+        "path": ".env.example"
+      },
       {
         "name": ".gitattributes",
         "type": "file",
@@ -477,7 +493,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5085,
+        "size": 5597,
         "extension": ".md",
         "path": "README.md"
       },
@@ -486,6 +502,22 @@
         "type": "directory",
         "path": "backend",
         "children": []
+      },
+      {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 115,
+        "extension": ".dockerignore",
+        "path": "backend/.dockerignore"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 545,
+        "extension": "",
+        "path": "backend/Dockerfile"
       },
       {
         "name": "alembic.ini",
@@ -540,6 +572,22 @@
         "path": "backend/alembic/versions/0001_initial_schema.py"
       },
       {
+        "name": "0002_curso_turno.py",
+        "type": "file",
+        "language": "Python",
+        "size": 707,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0002_curso_turno.py"
+      },
+      {
+        "name": "0003_curso_grau.py",
+        "type": "file",
+        "language": "Python",
+        "size": 698,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0003_curso_grau.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -588,68 +636,6 @@
         "size": 0,
         "extension": ".py",
         "path": "backend/app/api/__init__.py"
-      },
-      {
-        "name": "__pycache__",
-        "type": "directory",
-        "path": "backend/app/api/__pycache__",
-        "children": []
-      },
-      {
-        "name": "__init__.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 197,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/__init__.cpython-314.pyc"
-      },
-      {
-        "name": "auth.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 122,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/auth.cpython-314.pyc"
-      },
-      {
-        "name": "dependencies.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2338,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/dependencies.cpython-314.pyc"
-      },
-      {
-        "name": "errors.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 13233,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/errors.cpython-314.pyc"
-      },
-      {
-        "name": "router.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 908,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/router.cpython-314.pyc"
-      },
-      {
-        "name": "search.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 124,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/search.cpython-314.pyc"
-      },
-      {
-        "name": "security.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2381,
-        "extension": ".pyc",
-        "path": "backend/app/api/__pycache__/security.cpython-314.pyc"
       },
       {
         "name": "dependencies.py",
@@ -701,7 +687,7 @@
         "name": "contribuicoes.py",
         "type": "file",
         "language": "Python",
-        "size": 1069,
+        "size": 1981,
         "extension": ".py",
         "path": "backend/app/api/routers/contribuicoes.py"
       },
@@ -736,100 +722,6 @@
         "path": "backend/app/api/schema/__init__.py"
       },
       {
-        "name": "__pycache__",
-        "type": "directory",
-        "path": "backend/app/api/schema/__pycache__",
-        "children": []
-      },
-      {
-        "name": "ConteudoAcademico.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1424,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/ConteudoAcademico.cpython-314.pyc"
-      },
-      {
-        "name": "Contribuicao.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 4694,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/Contribuicao.cpython-314.pyc"
-      },
-      {
-        "name": "SubmissaoBase.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2150,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/SubmissaoBase.cpython-314.pyc"
-      },
-      {
-        "name": "__init__.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 656,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/__init__.cpython-314.pyc"
-      },
-      {
-        "name": "curso.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2249,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/curso.cpython-314.pyc"
-      },
-      {
-        "name": "denuncia.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2551,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/denuncia.cpython-314.pyc"
-      },
-      {
-        "name": "disciplina.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 7129,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/disciplina.cpython-314.pyc"
-      },
-      {
-        "name": "fonte_institucional.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2920,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/fonte_institucional.cpython-314.pyc"
-      },
-      {
-        "name": "publicacao_institucional.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 6667,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/publicacao_institucional.cpython-314.pyc"
-      },
-      {
-        "name": "testes.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 6490,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/testes.cpython-314.pyc"
-      },
-      {
-        "name": "usuario.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 9706,
-        "extension": ".pyc",
-        "path": "backend/app/api/schema/__pycache__/usuario.cpython-314.pyc"
-      },
-      {
         "name": "categoria.py",
         "type": "file",
         "language": "Python",
@@ -860,32 +752,10 @@
         "path": "backend/app/api/schemas/__init__.py"
       },
       {
-        "name": "__pycache__",
-        "type": "directory",
-        "path": "backend/app/api/schemas/__pycache__",
-        "children": []
-      },
-      {
-        "name": "__init__.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 308,
-        "extension": ".pyc",
-        "path": "backend/app/api/schemas/__pycache__/__init__.cpython-314.pyc"
-      },
-      {
-        "name": "auth.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 2485,
-        "extension": ".pyc",
-        "path": "backend/app/api/schemas/__pycache__/auth.cpython-314.pyc"
-      },
-      {
         "name": "academico.py",
         "type": "file",
         "language": "Python",
-        "size": 731,
+        "size": 762,
         "extension": ".py",
         "path": "backend/app/api/schemas/academico.py"
       },
@@ -901,7 +771,7 @@
         "name": "contribuicao.py",
         "type": "file",
         "language": "Python",
-        "size": 807,
+        "size": 1083,
         "extension": ".py",
         "path": "backend/app/api/schemas/contribuicao.py"
       },
@@ -930,6 +800,36 @@
         "path": "backend/app/api/security.py"
       },
       {
+        "name": "crawler",
+        "type": "directory",
+        "path": "backend/app/crawler",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 637,
+        "extension": ".py",
+        "path": "backend/app/crawler/__init__.py"
+      },
+      {
+        "name": "crawlerDisciplina.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7328,
+        "extension": ".py",
+        "path": "backend/app/crawler/crawlerDisciplina.py"
+      },
+      {
+        "name": "crawlercursos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3349,
+        "extension": ".py",
+        "path": "backend/app/crawler/crawlercursos.py"
+      },
+      {
         "name": "db.py",
         "type": "file",
         "language": "Python",
@@ -947,37 +847,15 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 399,
+        "size": 431,
         "extension": ".py",
         "path": "backend/app/domain/__init__.py"
-      },
-      {
-        "name": "__pycache__",
-        "type": "directory",
-        "path": "backend/app/domain/__pycache__",
-        "children": []
-      },
-      {
-        "name": "__init__.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 461,
-        "extension": ".pyc",
-        "path": "backend/app/domain/__pycache__/__init__.cpython-314.pyc"
-      },
-      {
-        "name": "models.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 6619,
-        "extension": ".pyc",
-        "path": "backend/app/domain/__pycache__/models.cpython-314.pyc"
       },
       {
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 2720,
+        "size": 2835,
         "extension": ".py",
         "path": "backend/app/domain/models.py"
       },
@@ -985,7 +863,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 895,
+        "size": 2575,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -994,20 +872,6 @@
         "type": "directory",
         "path": "backend/app/services",
         "children": []
-      },
-      {
-        "name": "__pycache__",
-        "type": "directory",
-        "path": "backend/app/services/__pycache__",
-        "children": []
-      },
-      {
-        "name": "publicacao_service.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 5970,
-        "extension": ".pyc",
-        "path": "backend/app/services/__pycache__/publicacao_service.cpython-314.pyc"
       },
       {
         "name": "auth_service.py",
@@ -1029,7 +893,7 @@
         "name": "contribuicao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1192,
+        "size": 1739,
         "extension": ".py",
         "path": "backend/app/services/contribuicao_service.py"
       },
@@ -1037,7 +901,7 @@
         "name": "curso_service.py",
         "type": "file",
         "language": "Python",
-        "size": 573,
+        "size": 598,
         "extension": ".py",
         "path": "backend/app/services/curso_service.py"
       },
@@ -1064,20 +928,6 @@
         "children": []
       },
       {
-        "name": "__pycache__",
-        "type": "directory",
-        "path": "backend/app/settings/__pycache__",
-        "children": []
-      },
-      {
-        "name": "config.cpython-314.pyc",
-        "type": "file",
-        "language": "Unknown",
-        "size": 1172,
-        "extension": ".pyc",
-        "path": "backend/app/settings/__pycache__/config.cpython-314.pyc"
-      },
-      {
         "name": "config.py",
         "type": "file",
         "language": "Python",
@@ -1089,7 +939,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 132,
+        "size": 155,
         "extension": ".txt",
         "path": "backend/requirements.txt"
       },
@@ -1145,7 +995,7 @@
         "name": "test_auth_contribuicoes.py",
         "type": "file",
         "language": "Python",
-        "size": 3524,
+        "size": 5930,
         "extension": ".py",
         "path": "backend/tests/integration/test_auth_contribuicoes.py"
       },
@@ -1196,6 +1046,14 @@
         "path": "backend/tests/unit/.gitkeep"
       },
       {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1164,
+        "extension": ".py",
+        "path": "backend/tests/unit/conftest.py"
+      },
+      {
         "name": "test_app_setup.py",
         "type": "file",
         "language": "Python",
@@ -1223,9 +1081,25 @@
         "name": "test_contribuicao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1589,
+        "size": 3582,
         "extension": ".py",
         "path": "backend/tests/unit/test_contribuicao_service.py"
+      },
+      {
+        "name": "test_crawlerDisciplina.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1837,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_crawlerDisciplina.py"
+      },
+      {
+        "name": "test_crawlercursos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1592,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_crawlercursos.py"
       },
       {
         "name": "test_curso_service.py",
@@ -1276,6 +1150,14 @@
         "path": "backend/tests/unit/test_usuario_service.py"
       },
       {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1841,
+        "extension": ".yml",
+        "path": "docker-compose.yml"
+      },
+      {
         "name": "docs",
         "type": "directory",
         "path": "docs",
@@ -1288,12 +1170,76 @@
         "children": []
       },
       {
+        "name": "Sprint01.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1082,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint01.md"
+      },
+      {
+        "name": "Sprint02.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1215,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint02.md"
+      },
+      {
+        "name": "Sprint03.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1387,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint03.md"
+      },
+      {
+        "name": "Sprint04.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1349,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint04.md"
+      },
+      {
         "name": "Sprint05.md",
         "type": "file",
         "language": "Markdown",
         "size": 912,
         "extension": ".md",
         "path": "docs/Sprint/Sprint05.md"
+      },
+      {
+        "name": "Sprint06.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1092,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint06.md"
+      },
+      {
+        "name": "Sprint07.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 927,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint07.md"
+      },
+      {
+        "name": "Sprint08.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1046,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint08.md"
+      },
+      {
+        "name": "Sprint09.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1267,
+        "extension": ".md",
+        "path": "docs/Sprint/Sprint09.md"
       },
       {
         "name": "ai-usage.md",
@@ -1341,7 +1287,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2776,
+        "size": 2630,
         "extension": ".yml",
         "path": "docs/gitpage/mkdocs.yml"
       },
@@ -1349,7 +1295,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2685,
+        "size": 2487,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -1430,6 +1376,22 @@
         "children": []
       },
       {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 95,
+        "extension": ".dockerignore",
+        "path": "frontend/.dockerignore"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 201,
+        "extension": "",
+        "path": "frontend/Dockerfile"
+      },
+      {
         "name": "eslint.config.js",
         "type": "file",
         "language": "JavaScript",
@@ -1449,7 +1411,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 229817,
+        "size": 216351,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -1457,7 +1419,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 750,
+        "size": 751,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -1953,7 +1915,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 11829,
+        "size": 11856,
         "extension": ".json",
         "path": "package-lock.json"
       },
@@ -2033,7 +1995,7 @@
         "name": "plan.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3595,
+        "size": 3614,
         "extension": ".md",
         "path": "specs/001-unb-core/plan.md"
       },
@@ -2080,7 +2042,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-12T14:26:04.928172+00:00",
+    "extracted_at": "2026-11-13T13:58:37.072075+00:00",
     "file_path": "data/silver/hierarchy_2026-2-UnB_Core.json"
   }
 }
