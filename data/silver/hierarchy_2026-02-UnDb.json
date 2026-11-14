@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-13T13:57:40.202901+00:00",
+  "extracted_at": "2026-11-14T12:55:20.619459+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -123,7 +123,7 @@
         "name": "CHANGELOG.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1484,
+        "size": 1987,
         "extension": ".md",
         "path": "CHANGELOG.md"
       },
@@ -306,6 +306,14 @@
         "path": "backend/alembic/versions/20261111_01_identidades_docentes.py"
       },
       {
+        "name": "20261113_01_identidades_locais.py",
+        "type": "file",
+        "language": "Python",
+        "size": 772,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261113_01_identidades_locais.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -353,7 +361,7 @@
         "name": "identidades.py",
         "type": "file",
         "language": "Python",
-        "size": 1464,
+        "size": 2392,
         "extension": ".py",
         "path": "backend/app/commands/identidades.py"
       },
@@ -388,6 +396,14 @@
         "size": 565,
         "extension": ".py",
         "path": "backend/app/commands/moderador.py"
+      },
+      {
+        "name": "reavaliar_identidades.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6358,
+        "extension": ".py",
+        "path": "backend/app/commands/reavaliar_identidades.py"
       },
       {
         "name": "reconciliar_professores.py",
@@ -499,7 +515,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1154,
+        "size": 1235,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -555,7 +571,7 @@
         "name": "identidade_docente.py",
         "type": "file",
         "language": "Python",
-        "size": 2863,
+        "size": 3265,
         "extension": ".py",
         "path": "backend/app/models/identidade_docente.py"
       },
@@ -665,7 +681,7 @@
         "name": "disciplina_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2278,
+        "size": 2320,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repository.py"
       },
@@ -673,7 +689,7 @@
         "name": "identidade_docente_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 3078,
+        "size": 10335,
         "extension": ".py",
         "path": "backend/app/repositories/identidade_docente_repository.py"
       },
@@ -705,7 +721,7 @@
         "name": "reconciliacao_professor_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 6898,
+        "size": 11058,
         "extension": ".py",
         "path": "backend/app/repositories/reconciliacao_professor_repository.py"
       },
@@ -907,7 +923,7 @@
         "name": "docentes.py",
         "type": "file",
         "language": "Python",
-        "size": 11461,
+        "size": 12180,
         "extension": ".py",
         "path": "backend/app/scrapers/docentes.py"
       },
@@ -985,7 +1001,7 @@
         "name": "identidade_docente_service.py",
         "type": "file",
         "language": "Python",
-        "size": 8532,
+        "size": 12772,
         "extension": ".py",
         "path": "backend/app/services/identidade_docente_service.py"
       },
@@ -1001,7 +1017,7 @@
         "name": "institucional_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2174,
+        "size": 2205,
         "extension": ".py",
         "path": "backend/app/services/institucional_service.py"
       },
@@ -1231,7 +1247,7 @@
         "name": "test_destaques.py",
         "type": "file",
         "language": "Python",
-        "size": 2377,
+        "size": 4411,
         "extension": ".py",
         "path": "backend/tests/test_destaques.py"
       },
@@ -1250,6 +1266,14 @@
         "size": 18964,
         "extension": ".py",
         "path": "backend/tests/test_identidade_docente.py"
+      },
+      {
+        "name": "test_identidade_hibrida.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13982,
+        "extension": ".py",
+        "path": "backend/tests/test_identidade_hibrida.py"
       },
       {
         "name": "test_importacao_agendada_service.py",
@@ -1298,6 +1322,14 @@
         "size": 6475,
         "extension": ".py",
         "path": "backend/tests/test_nomes_unidades.py"
+      },
+      {
+        "name": "test_reavaliar_identidades.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3782,
+        "extension": ".py",
+        "path": "backend/tests/test_reavaliar_identidades.py"
       },
       {
         "name": "test_reconciliacao_professores.py",
@@ -1403,7 +1435,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 29575,
+        "size": 30998,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -3490,12 +3522,28 @@
         "path": "docs/estudos/mapeamento-sigaa.md"
       },
       {
+        "name": "modelo-hibrido-issue-207.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5960,
+        "extension": ".md",
+        "path": "docs/estudos/modelo-hibrido-issue-207.md"
+      },
+      {
         "name": "observacao-jornada-busca-comparacao.md",
         "type": "file",
         "language": "Markdown",
         "size": 21101,
         "extension": ".md",
         "path": "docs/estudos/observacao-jornada-busca-comparacao.md"
+      },
+      {
+        "name": "reavaliacao-seletiva-issue-207.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5431,
+        "extension": ".md",
+        "path": "docs/estudos/reavaliacao-seletiva-issue-207.md"
       },
       {
         "name": "reconciliacao-professores-issue-207.md",
@@ -3709,7 +3757,7 @@
         "name": "identidades-docentes.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7328,
+        "size": 13354,
         "extension": ".md",
         "path": "docs/identidades-docentes.md"
       },
@@ -4684,6 +4732,14 @@
         "path": "docs/releases/1.4.0.md"
       },
       {
+        "name": "1.5.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3455,
+        "extension": ".md",
+        "path": "docs/releases/1.5.0.md"
+      },
+      {
         "name": "2.0.0-planejamento.md",
         "type": "file",
         "language": "Markdown",
@@ -4703,7 +4759,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 48902,
+        "size": 50807,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -5010,6 +5066,14 @@
         "path": "frontend/docs/integracao-visual-211.md"
       },
       {
+        "name": "revisao-pr-233.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4662,
+        "extension": ".md",
+        "path": "frontend/docs/revisao-pr-233.md"
+      },
+      {
         "name": "ui-busca-203.md",
         "type": "file",
         "language": "Markdown",
@@ -5085,7 +5149,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1356,
+        "size": 1451,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -5351,7 +5415,7 @@
         "name": "globals.css",
         "type": "file",
         "language": "CSS",
-        "size": 33294,
+        "size": 42662,
         "extension": ".css",
         "path": "frontend/src/app/globals.css"
       },
@@ -5367,7 +5431,7 @@
         "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1162,
+        "size": 1195,
         "extension": ".tsx",
         "path": "frontend/src/app/layout.tsx"
       },
@@ -5425,7 +5489,7 @@
         "name": "fila-identidades.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10110,
+        "size": 10223,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/identidades/fila-identidades.tsx"
       },
@@ -5457,7 +5521,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6203,
+        "size": 4510,
         "extension": ".tsx",
         "path": "frontend/src/app/page.tsx"
       },
@@ -5495,7 +5559,7 @@
         "name": "avaliacao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 11035,
+        "size": 11018,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
       },
@@ -5503,7 +5567,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3926,
+        "size": 3935,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
       },
@@ -5535,7 +5599,7 @@
         "name": "professor-resultado.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2907,
+        "size": 3352,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/professor-resultado.tsx"
       },
@@ -5611,7 +5675,7 @@
         "name": "equipe.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1250,
+        "size": 1289,
         "extension": ".ts",
         "path": "frontend/src/app/sobre/equipe.ts"
       },
@@ -5638,18 +5702,18 @@
         "path": "frontend/src/components/aviso-agradecimento.tsx"
       },
       {
-        "name": "busca-cabecalho.tsx",
+        "name": "botao-buscar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 682,
+        "size": 593,
         "extension": ".tsx",
-        "path": "frontend/src/components/busca-cabecalho.tsx"
+        "path": "frontend/src/components/botao-buscar.tsx"
       },
       {
         "name": "busca-entrada.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 372,
+        "size": 378,
         "extension": ".tsx",
         "path": "frontend/src/components/busca-entrada.tsx"
       },
@@ -5657,7 +5721,7 @@
         "name": "busca-institucional.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7256,
+        "size": 7410,
         "extension": ".tsx",
         "path": "frontend/src/components/busca-institucional.tsx"
       },
@@ -5665,7 +5729,7 @@
         "name": "busca-navegacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2142,
+        "size": 2104,
         "extension": ".tsx",
         "path": "frontend/src/components/busca-navegacao.tsx"
       },
@@ -5673,7 +5737,7 @@
         "name": "cabecalho.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4239,
+        "size": 4661,
         "extension": ".tsx",
         "path": "frontend/src/components/cabecalho.tsx"
       },
@@ -5694,10 +5758,18 @@
         "path": "frontend/src/components/campo-senha.tsx"
       },
       {
+        "name": "cartoes-pilha.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2111,
+        "extension": ".tsx",
+        "path": "frontend/src/components/cartoes-pilha.tsx"
+      },
+      {
         "name": "catalogo-home.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2678,
+        "size": 2830,
         "extension": ".tsx",
         "path": "frontend/src/components/catalogo-home.tsx"
       },
@@ -5705,7 +5777,7 @@
         "name": "catalogo-unidades.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3532,
+        "size": 3670,
         "extension": ".tsx",
         "path": "frontend/src/components/catalogo-unidades.tsx"
       },
@@ -5713,7 +5785,7 @@
         "name": "comparacao-dark.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10712,
+        "size": 10391,
         "extension": ".tsx",
         "path": "frontend/src/components/comparacao-dark.tsx"
       },
@@ -5721,7 +5793,7 @@
         "name": "consulta-selecionada.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3286,
+        "size": 3683,
         "extension": ".tsx",
         "path": "frontend/src/components/consulta-selecionada.tsx"
       },
@@ -5729,7 +5801,7 @@
         "name": "criterios-avaliacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5358,
+        "size": 5246,
         "extension": ".tsx",
         "path": "frontend/src/components/criterios-avaliacao.tsx"
       },
@@ -5737,7 +5809,7 @@
         "name": "destaques-home.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3060,
+        "size": 3624,
         "extension": ".tsx",
         "path": "frontend/src/components/destaques-home.tsx"
       },
@@ -5753,7 +5825,7 @@
         "name": "disciplina-catalogo.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1146,
+        "size": 1574,
         "extension": ".tsx",
         "path": "frontend/src/components/disciplina-catalogo.tsx"
       },
@@ -5761,7 +5833,7 @@
         "name": "disciplinas-professor.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2258,
+        "size": 2344,
         "extension": ".tsx",
         "path": "frontend/src/components/disciplinas-professor.tsx"
       },
@@ -5788,6 +5860,14 @@
         "size": 351,
         "extension": ".tsx",
         "path": "frontend/src/components/fundo-liquido.tsx"
+      },
+      {
+        "name": "fundo-particulas.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4905,
+        "extension": ".tsx",
+        "path": "frontend/src/components/fundo-particulas.tsx"
       },
       {
         "name": "icone-social.tsx",
@@ -5892,6 +5972,14 @@
         "size": 1305,
         "extension": ".tsx",
         "path": "frontend/src/components/secao-comentarios.tsx"
+      },
+      {
+        "name": "transicao-pagina.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1302,
+        "extension": ".tsx",
+        "path": "frontend/src/components/transicao-pagina.tsx"
       },
       {
         "name": "lib",
@@ -6135,7 +6223,7 @@
         "name": "acesso-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 20579,
+        "size": 20564,
         "extension": ".mjs",
         "path": "frontend/tests/acesso-browser.mjs"
       },
@@ -6191,7 +6279,7 @@
         "name": "busca-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 28183,
+        "size": 30178,
         "extension": ".mjs",
         "path": "frontend/tests/busca-browser.mjs"
       },
@@ -6207,7 +6295,7 @@
         "name": "cabecalho-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 8438,
+        "size": 9089,
         "extension": ".mjs",
         "path": "frontend/tests/cabecalho-browser.mjs"
       },
@@ -6364,6 +6452,14 @@
         "path": "frontend/tests/run-tests.mjs"
       },
       {
+        "name": "transicao-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2824,
+        "extension": ".mjs",
+        "path": "frontend/tests/transicao-browser.mjs"
+      },
+      {
         "name": "tsconfig.json",
         "type": "file",
         "language": "JSON",
@@ -6383,7 +6479,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 5560,
+        "size": 5601,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -6441,7 +6537,7 @@
         "name": "207-acesso-identidades.sql",
         "type": "file",
         "language": "SQL",
-        "size": 837,
+        "size": 891,
         "extension": ".sql",
         "path": "scripts/sql/207-acesso-identidades.sql"
       },
@@ -6881,7 +6977,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 29074,
+        "size": 30339,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -6966,7 +7062,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-13T13:58:37.016751+00:00",
+    "extracted_at": "2026-11-14T12:56:16.469838+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }

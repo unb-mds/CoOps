@@ -2,7 +2,7 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-13T13:57:40.895643+00:00",
+  "extracted_at": "2026-11-14T12:55:21.069777+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -565,7 +565,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 1252,
+        "size": 2064,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -628,6 +628,14 @@
         "children": []
       },
       {
+        "name": "app-ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1442,
+        "extension": ".yml",
+        "path": ".github/workflows/app-ci.yml"
+      },
+      {
         "name": "docs.yml",
         "type": "file",
         "language": "YAML",
@@ -636,10 +644,18 @@
         "path": ".github/workflows/docs.yml"
       },
       {
+        "name": "production-jobs.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 3095,
+        "extension": ".yml",
+        "path": ".github/workflows/production-jobs.yml"
+      },
+      {
         "name": "supabase-ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2867,
+        "size": 2241,
         "extension": ".yml",
         "path": ".github/workflows/supabase-ci.yml"
       },
@@ -693,7 +709,7 @@
         "name": "Makefile",
         "type": "file",
         "language": "No Extension",
-        "size": 7684,
+        "size": 7821,
         "extension": "",
         "path": "Makefile"
       },
@@ -720,10 +736,18 @@
         "children": []
       },
       {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 47,
+        "extension": ".dockerignore",
+        "path": "backend/.dockerignore"
+      },
+      {
         "name": "Dockerfile",
         "type": "file",
         "language": "No Extension",
-        "size": 0,
+        "size": 329,
         "extension": "",
         "path": "backend/Dockerfile"
       },
@@ -739,7 +763,7 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 111,
+        "size": 132,
         "extension": ".txt",
         "path": "backend/requirements.txt"
       },
@@ -813,7 +837,7 @@
         "name": "connection.py",
         "type": "file",
         "language": "Python",
-        "size": 552,
+        "size": 664,
         "extension": ".py",
         "path": "backend/src/database/connection.py"
       },
@@ -821,15 +845,23 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 18592,
+        "size": 20595,
         "extension": ".py",
         "path": "backend/src/database/models.py"
+      },
+      {
+        "name": "deployment.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1538,
+        "extension": ".py",
+        "path": "backend/src/deployment.py"
       },
       {
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 3679,
+        "size": 3568,
         "extension": ".py",
         "path": "backend/src/main.py"
       },
@@ -843,7 +875,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 2661,
+        "size": 3178,
         "extension": ".py",
         "path": "backend/src/middlewares/auth.py"
       },
@@ -930,6 +962,44 @@
         "path": "backend/src/modules/events/schemas.py"
       },
       {
+        "name": "google_calendar",
+        "type": "directory",
+        "path": "backend/src/modules/google_calendar",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 60,
+        "extension": ".py",
+        "path": "backend/src/modules/google_calendar/__init__.py"
+      },
+      {
+        "name": "export.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8926,
+        "extension": ".py",
+        "path": "backend/src/modules/google_calendar/export.py"
+      },
+      {
+        "name": "router.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4487,
+        "extension": ".py",
+        "path": "backend/src/modules/google_calendar/router.py"
+      },
+      {
+        "name": "service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14493,
+        "extension": ".py",
+        "path": "backend/src/modules/google_calendar/service.py"
+      },
+      {
         "name": "syllabus",
         "type": "directory",
         "path": "backend/src/modules/syllabus",
@@ -971,7 +1041,7 @@
         "name": "privacy.py",
         "type": "file",
         "language": "Python",
-        "size": 4551,
+        "size": 4673,
         "extension": ".py",
         "path": "backend/src/modules/syllabus/privacy.py"
       },
@@ -1107,7 +1177,7 @@
         "name": "syllabus_samples.py",
         "type": "file",
         "language": "Python",
-        "size": 2300,
+        "size": 2549,
         "extension": ".py",
         "path": "backend/tests/syllabus_samples.py"
       },
@@ -1131,7 +1201,7 @@
         "name": "test_catalog_sync_database.py",
         "type": "file",
         "language": "Python",
-        "size": 5936,
+        "size": 5961,
         "extension": ".py",
         "path": "backend/tests/test_catalog_sync_database.py"
       },
@@ -1147,9 +1217,25 @@
         "name": "test_classes_database.py",
         "type": "file",
         "language": "Python",
-        "size": 13496,
+        "size": 13521,
         "extension": ".py",
         "path": "backend/tests/test_classes_database.py"
+      },
+      {
+        "name": "test_deployment.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1927,
+        "extension": ".py",
+        "path": "backend/tests/test_deployment.py"
+      },
+      {
+        "name": "test_deployment_upload.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1616,
+        "extension": ".py",
+        "path": "backend/tests/test_deployment_upload.py"
       },
       {
         "name": "test_events_api.py",
@@ -1160,10 +1246,18 @@
         "path": "backend/tests/test_events_api.py"
       },
       {
+        "name": "test_google_calendar_auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13217,
+        "extension": ".py",
+        "path": "backend/tests/test_google_calendar_auth.py"
+      },
+      {
         "name": "test_moderation_database.py",
         "type": "file",
         "language": "Python",
-        "size": 8747,
+        "size": 8772,
         "extension": ".py",
         "path": "backend/tests/test_moderation_database.py"
       },
@@ -1187,7 +1281,7 @@
         "name": "test_security_database.py",
         "type": "file",
         "language": "Python",
-        "size": 12292,
+        "size": 15676,
         "extension": ".py",
         "path": "backend/tests/test_security_database.py"
       },
@@ -1195,7 +1289,7 @@
         "name": "test_storage.py",
         "type": "file",
         "language": "Python",
-        "size": 3312,
+        "size": 4278,
         "extension": ".py",
         "path": "backend/tests/test_storage.py"
       },
@@ -1211,7 +1305,7 @@
         "name": "test_syllabus_database.py",
         "type": "file",
         "language": "Python",
-        "size": 16492,
+        "size": 16517,
         "extension": ".py",
         "path": "backend/tests/test_syllabus_database.py"
       },
@@ -1219,7 +1313,7 @@
         "name": "test_syllabus_http_integration.py",
         "type": "file",
         "language": "Python",
-        "size": 15127,
+        "size": 15305,
         "extension": ".py",
         "path": "backend/tests/test_syllabus_http_integration.py"
       },
@@ -1297,7 +1391,7 @@
         "name": "api-specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 26008,
+        "size": 29071,
         "extension": ".md",
         "path": "docs/api-specs.md"
       },
@@ -1405,7 +1499,7 @@
         "name": "adr-012-exportacao-google-idempotente.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2358,
+        "size": 2556,
         "extension": ".md",
         "path": "docs/arquitetura/adrs/adr-012-exportacao-google-idempotente.md"
       },
@@ -1469,7 +1563,7 @@
         "name": "atualizacoes.md",
         "type": "file",
         "language": "Markdown",
-        "size": 27973,
+        "size": 26384,
         "extension": ".md",
         "path": "docs/atualizacoes.md"
       },
@@ -1577,7 +1671,7 @@
         "name": "implantacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 17342,
+        "size": 37876,
         "extension": ".md",
         "path": "docs/implantacao.md"
       },
@@ -1647,9 +1741,17 @@
         "name": "contribuindo.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13373,
+        "size": 13982,
         "extension": ".md",
         "path": "docs/processo/contribuindo.md"
+      },
+      {
+        "name": "privacidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 17528,
+        "extension": ".md",
+        "path": "docs/processo/privacidade.md"
       },
       {
         "name": "release-notes",
@@ -1704,12 +1806,28 @@
         "path": "docs/produto/personas.md"
       },
       {
+        "name": "politica-de-privacidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8170,
+        "extension": ".md",
+        "path": "docs/produto/politica-de-privacidade.md"
+      },
+      {
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10429,
+        "size": 10292,
         "extension": ".md",
         "path": "docs/produto/requisitos.md"
+      },
+      {
+        "name": "termos-de-uso.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3215,
+        "extension": ".md",
+        "path": "docs/produto/termos-de-uso.md"
       },
       {
         "name": "visao.md",
@@ -1829,7 +1947,7 @@
         "name": "index.html",
         "type": "file",
         "language": "HTML",
-        "size": 791,
+        "size": 941,
         "extension": ".html",
         "path": "frontend/index.html"
       },
@@ -1886,6 +2004,14 @@
         "size": 296974,
         "extension": ".png",
         "path": "frontend/public/banner.png"
+      },
+      {
+        "name": "google-calendar-2026.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 3419,
+        "extension": ".svg",
+        "path": "frontend/public/google-calendar-2026.svg"
       },
       {
         "name": "privacidade.html",
@@ -1989,7 +2115,7 @@
         "name": "App.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 26880,
+        "size": 15264,
         "extension": ".jsx",
         "path": "frontend/src/App.jsx"
       },
@@ -1998,6 +2124,14 @@
         "type": "directory",
         "path": "frontend/src/components",
         "children": []
+      },
+      {
+        "name": "AuthDialog.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9385,
+        "extension": ".jsx",
+        "path": "frontend/src/components/AuthDialog.jsx"
       },
       {
         "name": "ClassCatalog.jsx",
@@ -2032,6 +2166,22 @@
         "path": "frontend/src/components/EventsLoading.jsx"
       },
       {
+        "name": "GoogleCalendarConnection.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9830,
+        "extension": ".jsx",
+        "path": "frontend/src/components/GoogleCalendarConnection.jsx"
+      },
+      {
+        "name": "GoogleMark.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 798,
+        "extension": ".jsx",
+        "path": "frontend/src/components/GoogleMark.jsx"
+      },
+      {
         "name": "JourneyPlanReview.jsx",
         "type": "file",
         "language": "JavaScript",
@@ -2062,6 +2212,14 @@
         "size": 5542,
         "extension": ".jsx",
         "path": "frontend/src/components/NotificationBell.jsx"
+      },
+      {
+        "name": "PasswordField.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1307,
+        "extension": ".jsx",
+        "path": "frontend/src/components/PasswordField.jsx"
       },
       {
         "name": "RealClassCatalog.jsx",
@@ -2137,7 +2295,7 @@
         "name": "AuthContext.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 7283,
+        "size": 2409,
         "extension": ".jsx",
         "path": "frontend/src/contexts/AuthContext.jsx"
       },
@@ -2165,7 +2323,7 @@
         "name": "api.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 4725,
+        "size": 5020,
         "extension": ".js",
         "path": "frontend/src/lib/api.js"
       },
@@ -2184,6 +2342,22 @@
         "size": 1882,
         "extension": ".js",
         "path": "frontend/src/lib/approvedText.test.js"
+      },
+      {
+        "name": "auth.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3510,
+        "extension": ".js",
+        "path": "frontend/src/lib/auth.js"
+      },
+      {
+        "name": "authErrors.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 947,
+        "extension": ".js",
+        "path": "frontend/src/lib/authErrors.js"
       },
       {
         "name": "calendar.js",
@@ -2226,6 +2400,22 @@
         "path": "frontend/src/lib/classCatalogDemo.test.js"
       },
       {
+        "name": "deploymentConfig.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1890,
+        "extension": ".js",
+        "path": "frontend/src/lib/deploymentConfig.js"
+      },
+      {
+        "name": "deploymentConfig.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2156,
+        "extension": ".js",
+        "path": "frontend/src/lib/deploymentConfig.test.js"
+      },
+      {
         "name": "moderation.js",
         "type": "file",
         "language": "JavaScript",
@@ -2245,9 +2435,25 @@
         "name": "supabase.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 355,
+        "size": 1922,
         "extension": ".js",
         "path": "frontend/src/lib/supabase.js"
+      },
+      {
+        "name": "supabaseConfig.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1419,
+        "extension": ".js",
+        "path": "frontend/src/lib/supabaseConfig.js"
+      },
+      {
+        "name": "supabaseConfig.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1297,
+        "extension": ".js",
+        "path": "frontend/src/lib/supabaseConfig.test.js"
       },
       {
         "name": "syllabus.js",
@@ -2309,7 +2515,7 @@
         "name": "main.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 1894,
+        "size": 2086,
         "extension": ".jsx",
         "path": "frontend/src/main.jsx"
       },
@@ -2328,6 +2534,14 @@
         "path": "frontend/src/pages/AdminPage.jsx"
       },
       {
+        "name": "AuthReturnPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 8408,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/AuthReturnPage.jsx"
+      },
+      {
         "name": "PaginaDeEvento.jsx",
         "type": "file",
         "language": "JavaScript",
@@ -2339,7 +2553,7 @@
         "name": "SecondPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 42431,
+        "size": 42863,
         "extension": ".jsx",
         "path": "frontend/src/pages/SecondPage.jsx"
       },
@@ -2366,6 +2580,14 @@
         "children": []
       },
       {
+        "name": "auth.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 4052,
+        "extension": ".css",
+        "path": "frontend/src/styles/auth.css"
+      },
+      {
         "name": "class-catalog.css",
         "type": "file",
         "language": "CSS",
@@ -2385,7 +2607,7 @@
         "name": "global.css",
         "type": "file",
         "language": "CSS",
-        "size": 47845,
+        "size": 50151,
         "extension": ".css",
         "path": "frontend/src/styles/global.css"
       },
@@ -2420,12 +2642,28 @@
         "children": []
       },
       {
+        "name": "auth.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 12524,
+        "extension": ".js",
+        "path": "frontend/tests/auth.spec.js"
+      },
+      {
         "name": "class-catalog-real.spec.js",
         "type": "file",
         "language": "JavaScript",
         "size": 8941,
         "extension": ".js",
         "path": "frontend/tests/class-catalog-real.spec.js"
+      },
+      {
+        "name": "deployment.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 997,
+        "extension": ".js",
+        "path": "frontend/tests/deployment.spec.js"
       },
       {
         "name": "syllabus-consent.spec.js",
@@ -2463,7 +2701,7 @@
         "name": "vercel.json",
         "type": "file",
         "language": "JSON",
-        "size": 1150,
+        "size": 1576,
         "extension": ".json",
         "path": "frontend/vercel.json"
       },
@@ -2471,7 +2709,7 @@
         "name": "vite.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 319,
+        "size": 631,
         "extension": ".js",
         "path": "frontend/vite.config.js"
       },
@@ -2492,6 +2730,14 @@
         "path": "package.json"
       },
       {
+        "name": "render.yaml",
+        "type": "file",
+        "language": "YAML",
+        "size": 834,
+        "extension": ".yaml",
+        "path": "render.yaml"
+      },
+      {
         "name": "scripts",
         "type": "directory",
         "path": "scripts",
@@ -2504,6 +2750,22 @@
         "size": 4809,
         "extension": ".py",
         "path": "scripts/dev.py"
+      },
+      {
+        "name": "render_legal.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2941,
+        "extension": ".py",
+        "path": "scripts/render_legal.py"
+      },
+      {
+        "name": "start_supabase.py",
+        "type": "file",
+        "language": "Python",
+        "size": 749,
+        "extension": ".py",
+        "path": "scripts/start_supabase.py"
       },
       {
         "name": "supabase",
@@ -2523,7 +2785,7 @@
         "name": "config.toml",
         "type": "file",
         "language": "TOML",
-        "size": 15903,
+        "size": 16261,
         "extension": ".toml",
         "path": "supabase/config.toml"
       },
@@ -2758,6 +3020,30 @@
         "path": "supabase/migrations/20261111120000_publicacao_catalogo.sql"
       },
       {
+        "name": "20261111150000_s7_f04_auth_calendar_connection.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 9570,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261111150000_s7_f04_auth_calendar_connection.sql"
+      },
+      {
+        "name": "20261113174855_google_calendar_via_google_login.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 332,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261113174855_google_calendar_via_google_login.sql"
+      },
+      {
+        "name": "20261113212429_s7_f04_restore_incremental_calendar.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1203,
+        "extension": ".sql",
+        "path": "supabase/migrations/20261113212429_s7_f04_restore_incremental_calendar.sql"
+      },
+      {
         "name": "seed.sql",
         "type": "file",
         "language": "SQL",
@@ -2766,17 +3052,39 @@
         "path": "supabase/seed.sql"
       },
       {
+        "name": "templates",
+        "type": "directory",
+        "path": "supabase/templates",
+        "children": []
+      },
+      {
+        "name": "confirmation.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 322,
+        "extension": ".html",
+        "path": "supabase/templates/confirmation.html"
+      },
+      {
+        "name": "recovery.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 325,
+        "extension": ".html",
+        "path": "supabase/templates/recovery.html"
+      },
+      {
         "name": "vercel.json",
         "type": "file",
         "language": "JSON",
-        "size": 658,
+        "size": 1621,
         "extension": ".json",
         "path": "vercel.json"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-13T13:58:37.050429+00:00",
+    "extracted_at": "2026-11-14T12:56:16.503047+00:00",
     "file_path": "data/silver/hierarchy_2026-2-AgendaUnB.json"
   }
 }

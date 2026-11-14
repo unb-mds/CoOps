@@ -2,7 +2,7 @@
   "repository": "2026-2-Followw",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-13T13:57:38.304945+00:00",
+  "extracted_at": "2026-11-14T12:55:18.439711+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -144,6 +144,14 @@
         "path": ".env.example"
       },
       {
+        "name": ".gitattributes",
+        "type": "file",
+        "language": "Unknown",
+        "size": 63,
+        "extension": ".gitattributes",
+        "path": ".gitattributes"
+      },
+      {
         "name": ".github",
         "type": "directory",
         "path": ".github",
@@ -197,7 +205,7 @@
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1005,
+        "size": 955,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
       },
@@ -213,7 +221,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 64,
+        "size": 79,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -221,7 +229,7 @@
         "name": ".oxfmtrc.json",
         "type": "file",
         "language": "JSON",
-        "size": 721,
+        "size": 862,
         "extension": ".json",
         "path": ".oxfmtrc.json"
       },
@@ -229,7 +237,7 @@
         "name": ".oxlintrc.json",
         "type": "file",
         "language": "JSON",
-        "size": 2015,
+        "size": 2342,
         "extension": ".json",
         "path": ".oxlintrc.json"
       },
@@ -259,7 +267,7 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2498,
+        "size": 2771,
         "extension": ".md",
         "path": "AGENTS.md"
       },
@@ -275,7 +283,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7086,
+        "size": 7217,
         "extension": ".md",
         "path": "README.md"
       },
@@ -639,7 +647,7 @@
         "name": "edit.py",
         "type": "file",
         "language": "Python",
-        "size": 1220,
+        "size": 1235,
         "extension": ".py",
         "path": "apps/api/api/modules/me/edit.py"
       },
@@ -655,7 +663,7 @@
         "name": "profile.py",
         "type": "file",
         "language": "Python",
-        "size": 2993,
+        "size": 3374,
         "extension": ".py",
         "path": "apps/api/api/modules/me/profile.py"
       },
@@ -1249,7 +1257,7 @@
         "name": "test_perfil.py",
         "type": "file",
         "language": "Python",
-        "size": 10562,
+        "size": 11511,
         "extension": ".py",
         "path": "apps/api/tests/integration/me/test_perfil.py"
       },
@@ -1745,17 +1753,17 @@
         "name": "AGENTS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2394,
+        "size": 2538,
         "extension": ".md",
         "path": "apps/web/AGENTS.md"
       },
       {
-        "name": "bun.lock",
+        "name": "bunfig.toml",
         "type": "file",
-        "language": "Lock File",
-        "size": 246286,
-        "extension": ".lock",
-        "path": "apps/web/bun.lock"
+        "language": "TOML",
+        "size": 38,
+        "extension": ".toml",
+        "path": "apps/web/bunfig.toml"
       },
       {
         "name": "components.json",
@@ -1783,7 +1791,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 2290,
+        "size": 2107,
         "extension": ".json",
         "path": "apps/web/package.json"
       },
@@ -1962,14 +1970,6 @@
         "path": "apps/web/src/assets/followw.svg"
       },
       {
-        "name": "calendar.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2749,
-        "extension": ".ts",
-        "path": "apps/web/src/calendar.ts"
-      },
-      {
         "name": "components",
         "type": "directory",
         "path": "apps/web/src/components",
@@ -1987,7 +1987,7 @@
         "name": "BottomNavigation.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4428,
+        "size": 4482,
         "extension": ".tsx",
         "path": "apps/web/src/components/BottomNavigation.tsx"
       },
@@ -2003,7 +2003,7 @@
         "name": "ErrorPage.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2152,
+        "size": 2167,
         "extension": ".tsx",
         "path": "apps/web/src/components/ErrorPage.tsx"
       },
@@ -2011,7 +2011,7 @@
         "name": "ErrorState.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1947,
+        "size": 1977,
         "extension": ".tsx",
         "path": "apps/web/src/components/ErrorState.tsx"
       },
@@ -2059,7 +2059,7 @@
         "name": "OfflineBanner.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 475,
+        "size": 489,
         "extension": ".tsx",
         "path": "apps/web/src/components/OfflineBanner.tsx"
       },
@@ -2083,7 +2083,7 @@
         "name": "QueryState.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1153,
+        "size": 1169,
         "extension": ".tsx",
         "path": "apps/web/src/components/QueryState.tsx"
       },
@@ -2115,7 +2115,7 @@
         "name": "StatisticsChart.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3866,
+        "size": 3881,
         "extension": ".tsx",
         "path": "apps/web/src/components/StatisticsChart.tsx"
       },
@@ -2139,7 +2139,7 @@
         "name": "WeekDayPicker.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3608,
+        "size": 3623,
         "extension": ".tsx",
         "path": "apps/web/src/components/WeekDayPicker.tsx"
       },
@@ -2161,7 +2161,7 @@
         "name": "LoginSubmitButton.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1678,
+        "size": 1693,
         "extension": ".tsx",
         "path": "apps/web/src/components/auth/LoginSubmitButton.tsx"
       },
@@ -2175,7 +2175,7 @@
         "name": "ClassroomPosts.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 11318,
+        "size": 11371,
         "extension": ".tsx",
         "path": "apps/web/src/components/classroom/ClassroomPosts.tsx"
       },
@@ -2183,7 +2183,7 @@
         "name": "ClassroomStatistics.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2877,
+        "size": 2892,
         "extension": ".tsx",
         "path": "apps/web/src/components/classroom/ClassroomStatistics.tsx"
       },
@@ -2191,7 +2191,7 @@
         "name": "ClassroomSummary.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2189,
+        "size": 2234,
         "extension": ".tsx",
         "path": "apps/web/src/components/classroom/ClassroomSummary.tsx"
       },
@@ -2199,7 +2199,7 @@
         "name": "FrequencyContent.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 17060,
+        "size": 17117,
         "extension": ".tsx",
         "path": "apps/web/src/components/classroom/FrequencyContent.tsx"
       },
@@ -2207,7 +2207,7 @@
         "name": "GradeText.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 458,
+        "size": 473,
         "extension": ".tsx",
         "path": "apps/web/src/components/classroom/GradeText.tsx"
       },
@@ -2221,7 +2221,7 @@
         "name": "Connections.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4036,
+        "size": 4095,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/Connections.tsx"
       },
@@ -2229,7 +2229,7 @@
         "name": "CourseSummary.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3613,
+        "size": 3687,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/CourseSummary.tsx"
       },
@@ -2237,7 +2237,7 @@
         "name": "CurriculumView.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4069,
+        "size": 4141,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/CurriculumView.tsx"
       },
@@ -2245,7 +2245,7 @@
         "name": "Diagram.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8742,
+        "size": 8815,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/Diagram.tsx"
       },
@@ -2253,7 +2253,7 @@
         "name": "Legend.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1008,
+        "size": 1038,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/Legend.tsx"
       },
@@ -2261,7 +2261,7 @@
         "name": "SubjectCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3320,
+        "size": 3381,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/SubjectCard.tsx"
       },
@@ -2269,7 +2269,7 @@
         "name": "SubjectDetails.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4049,
+        "size": 4124,
         "extension": ".tsx",
         "path": "apps/web/src/components/curriculum/SubjectDetails.tsx"
       },
@@ -2283,7 +2283,7 @@
         "name": "ClassCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5161,
+        "size": 5176,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/ClassCard.tsx"
       },
@@ -2291,7 +2291,7 @@
         "name": "LatestNewsSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6509,
+        "size": 6553,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/LatestNewsSection.tsx"
       },
@@ -2307,7 +2307,7 @@
         "name": "PublicInfoSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3497,
+        "size": 3542,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/PublicInfoSection.tsx"
       },
@@ -2315,7 +2315,7 @@
         "name": "TodayClassesSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2281,
+        "size": 2311,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/TodayClassesSection.tsx"
       },
@@ -2323,7 +2323,7 @@
         "name": "TodayDashboard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1980,
+        "size": 2056,
         "extension": ".tsx",
         "path": "apps/web/src/components/home/TodayDashboard.tsx"
       },
@@ -2337,7 +2337,7 @@
         "name": "ProfessorDetailsSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6880,
+        "size": 6922,
         "extension": ".tsx",
         "path": "apps/web/src/components/professor/ProfessorDetailsSection.tsx"
       },
@@ -2345,7 +2345,7 @@
         "name": "ProfessorHeader.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3173,
+        "size": 3218,
         "extension": ".tsx",
         "path": "apps/web/src/components/professor/ProfessorHeader.tsx"
       },
@@ -2356,10 +2356,18 @@
         "children": []
       },
       {
+        "name": "AcademicSimulator.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10971,
+        "extension": ".tsx",
+        "path": "apps/web/src/components/profile/AcademicSimulator.tsx"
+      },
+      {
         "name": "DocumentDownloads.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3931,
+        "size": 3946,
         "extension": ".tsx",
         "path": "apps/web/src/components/profile/DocumentDownloads.tsx"
       },
@@ -2367,7 +2375,7 @@
         "name": "EditProfile.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12921,
+        "size": 12966,
         "extension": ".tsx",
         "path": "apps/web/src/components/profile/EditProfile.tsx"
       },
@@ -2407,7 +2415,7 @@
         "name": "ProfileOverview.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7093,
+        "size": 7424,
         "extension": ".tsx",
         "path": "apps/web/src/components/profile/ProfileOverview.tsx"
       },
@@ -2421,7 +2429,7 @@
         "name": "RestaurantAccount.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 14334,
+        "size": 14439,
         "extension": ".tsx",
         "path": "apps/web/src/components/ru/RestaurantAccount.tsx"
       },
@@ -2429,7 +2437,7 @@
         "name": "RestaurantShareImage.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12287,
+        "size": 12333,
         "extension": ".tsx",
         "path": "apps/web/src/components/ru/RestaurantShareImage.tsx"
       },
@@ -2443,7 +2451,7 @@
         "name": "AddToSchedule.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1231,
+        "size": 1246,
         "extension": ".tsx",
         "path": "apps/web/src/components/schedule/AddToSchedule.tsx"
       },
@@ -2451,7 +2459,7 @@
         "name": "SchedulePreview.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5188,
+        "size": 5218,
         "extension": ".tsx",
         "path": "apps/web/src/components/schedule/SchedulePreview.tsx"
       },
@@ -2459,7 +2467,7 @@
         "name": "WeeklyTable.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4112,
+        "size": 4143,
         "extension": ".tsx",
         "path": "apps/web/src/components/schedule/WeeklyTable.tsx"
       },
@@ -2467,7 +2475,7 @@
         "name": "usePlannedSchedule.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1383,
+        "size": 1454,
         "extension": ".ts",
         "path": "apps/web/src/components/schedule/usePlannedSchedule.ts"
       },
@@ -2481,7 +2489,7 @@
         "name": "CatalogResults.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2221,
+        "size": 2251,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/CatalogResults.tsx"
       },
@@ -2489,7 +2497,7 @@
         "name": "CourseSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2491,
+        "size": 2521,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/CourseSection.tsx"
       },
@@ -2497,7 +2505,7 @@
         "name": "PagedSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2520,
+        "size": 2536,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/PagedSection.tsx"
       },
@@ -2505,7 +2513,7 @@
         "name": "ProfessorCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1613,
+        "size": 1643,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/ProfessorCard.tsx"
       },
@@ -2513,7 +2521,7 @@
         "name": "ProfessorSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1023,
+        "size": 1039,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/ProfessorSection.tsx"
       },
@@ -2521,7 +2529,7 @@
         "name": "RecommendationsSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4212,
+        "size": 4257,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/RecommendationsSection.tsx"
       },
@@ -2529,7 +2537,7 @@
         "name": "RequirementList.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2186,
+        "size": 2217,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/RequirementList.tsx"
       },
@@ -2537,7 +2545,7 @@
         "name": "SearchResults.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4079,
+        "size": 4139,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SearchResults.tsx"
       },
@@ -2545,7 +2553,7 @@
         "name": "Seats.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 741,
+        "size": 772,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/Seats.tsx"
       },
@@ -2561,7 +2569,7 @@
         "name": "SubjectKindBadge.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 425,
+        "size": 456,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SubjectKindBadge.tsx"
       },
@@ -2569,7 +2577,7 @@
         "name": "SubjectResults.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2172,
+        "size": 2187,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SubjectResults.tsx"
       },
@@ -2577,7 +2585,7 @@
         "name": "SubjectSearchLink.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 575,
+        "size": 589,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SubjectSearchLink.tsx"
       },
@@ -2585,7 +2593,7 @@
         "name": "SubjectStatistics.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3213,
+        "size": 3243,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SubjectStatistics.tsx"
       },
@@ -2593,7 +2601,7 @@
         "name": "SubjectSummary.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1930,
+        "size": 1945,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/SubjectSummary.tsx"
       },
@@ -2601,7 +2609,7 @@
         "name": "TurmaCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3862,
+        "size": 3907,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaCard.tsx"
       },
@@ -2609,7 +2617,7 @@
         "name": "TurmaDetails.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4957,
+        "size": 5003,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaDetails.tsx"
       },
@@ -2617,7 +2625,7 @@
         "name": "TurmaSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3634,
+        "size": 3664,
         "extension": ".tsx",
         "path": "apps/web/src/components/search/TurmaSection.tsx"
       },
@@ -2835,7 +2843,7 @@
         "name": "storage.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5887,
+        "size": 5902,
         "extension": ".ts",
         "path": "apps/web/src/integrations/offline/storage.ts"
       },
@@ -2843,7 +2851,7 @@
         "name": "use-offline-support.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2232,
+        "size": 2277,
         "extension": ".ts",
         "path": "apps/web/src/integrations/offline/use-offline-support.ts"
       },
@@ -2871,7 +2879,7 @@
         "name": "root-provider.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1587,
+        "size": 1599,
         "extension": ".tsx",
         "path": "apps/web/src/integrations/tanstack-query/root-provider.tsx"
       },
@@ -2882,28 +2890,20 @@
         "children": []
       },
       {
+        "name": "academic-simulation.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3532,
+        "extension": ".ts",
+        "path": "apps/web/src/lib/academic-simulation.ts"
+      },
+      {
         "name": "chunk-reload.ts",
         "type": "file",
         "language": "TypeScript",
         "size": 1278,
         "extension": ".ts",
         "path": "apps/web/src/lib/chunk-reload.ts"
-      },
-      {
-        "name": "classroom-details.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1586,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/classroom-details.ts"
-      },
-      {
-        "name": "classroom-posts.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1187,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/classroom-posts.ts"
       },
       {
         "name": "classroom-search.ts",
@@ -2914,58 +2914,10 @@
         "path": "apps/web/src/lib/classroom-search.ts"
       },
       {
-        "name": "contact.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 198,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/contact.ts"
-      },
-      {
         "name": "curriculum",
         "type": "directory",
         "path": "apps/web/src/lib/curriculum",
         "children": []
-      },
-      {
-        "name": "format.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1908,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/format.ts"
-      },
-      {
-        "name": "geometry.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 3595,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/geometry.ts"
-      },
-      {
-        "name": "graph.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 803,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/graph.ts"
-      },
-      {
-        "name": "lanes.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 941,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/lanes.ts"
-      },
-      {
-        "name": "model.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2729,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/model.ts"
       },
       {
         "name": "navigation.ts",
@@ -2974,54 +2926,6 @@
         "size": 501,
         "extension": ".ts",
         "path": "apps/web/src/lib/curriculum/navigation.ts"
-      },
-      {
-        "name": "ordering.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 6739,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/ordering.ts"
-      },
-      {
-        "name": "relations.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 3994,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/relations.ts"
-      },
-      {
-        "name": "routing.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 11102,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/routing.ts"
-      },
-      {
-        "name": "segments.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 4628,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/segments.ts"
-      },
-      {
-        "name": "shortcuts.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2101,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/shortcuts.ts"
-      },
-      {
-        "name": "types.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1245,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/curriculum/types.ts"
       },
       {
         "name": "download.ts",
@@ -3035,17 +2939,9 @@
         "name": "local-storage.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4112,
+        "size": 4194,
         "extension": ".ts",
         "path": "apps/web/src/lib/local-storage.ts"
-      },
-      {
-        "name": "login-progress.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 250,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/login-progress.ts"
       },
       {
         "name": "markdown.tsx",
@@ -3056,28 +2952,12 @@
         "path": "apps/web/src/lib/markdown.tsx"
       },
       {
-        "name": "online.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 545,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/online.ts"
-      },
-      {
         "name": "planned-schedule.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3249,
+        "size": 250,
         "extension": ".ts",
         "path": "apps/web/src/lib/planned-schedule.ts"
-      },
-      {
-        "name": "profile.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2702,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/profile.ts"
       },
       {
         "name": "restaurant-image-fonts.server.ts",
@@ -3099,47 +2979,23 @@
         "name": "restaurant-share.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3905,
+        "size": 3995,
         "extension": ".ts",
         "path": "apps/web/src/lib/restaurant-share.ts"
-      },
-      {
-        "name": "restaurant.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 3390,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/restaurant.ts"
       },
       {
         "name": "schedule-image.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7138,
+        "size": 7183,
         "extension": ".ts",
         "path": "apps/web/src/lib/schedule-image.ts"
-      },
-      {
-        "name": "schedule.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 6682,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/schedule.ts"
-      },
-      {
-        "name": "search-categories.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1074,
-        "extension": ".ts",
-        "path": "apps/web/src/lib/search-categories.ts"
       },
       {
         "name": "search-params.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1301,
+        "size": 1315,
         "extension": ".ts",
         "path": "apps/web/src/lib/search-params.ts"
       },
@@ -3182,28 +3038,12 @@
         "children": []
       },
       {
-        "name": "api.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 151,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/api.ts"
-      },
-      {
         "name": "auth.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3958,
+        "size": 4009,
         "extension": ".ts",
         "path": "apps/web/src/queries/auth.ts"
-      },
-      {
-        "name": "classrooms.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2864,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/classrooms.ts"
       },
       {
         "name": "client-ip.server.ts",
@@ -3217,151 +3057,55 @@
         "name": "client.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2331,
+        "size": 1954,
         "extension": ".ts",
         "path": "apps/web/src/queries/client.ts"
-      },
-      {
-        "name": "courses.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 580,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/courses.ts"
-      },
-      {
-        "name": "curriculum.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 623,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/curriculum.ts"
       },
       {
         "name": "documents.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1417,
+        "size": 1447,
         "extension": ".ts",
         "path": "apps/web/src/queries/documents.ts"
-      },
-      {
-        "name": "errors.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1029,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/errors.ts"
-      },
-      {
-        "name": "load.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 642,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/load.ts"
       },
       {
         "name": "me.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1543,
+        "size": 1268,
         "extension": ".ts",
         "path": "apps/web/src/queries/me.ts"
-      },
-      {
-        "name": "pages.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1019,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/pages.ts"
-      },
-      {
-        "name": "posts.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 353,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/posts.ts"
-      },
-      {
-        "name": "professors.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 821,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/professors.ts"
       },
       {
         "name": "profile-edit.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1497,
+        "size": 1512,
         "extension": ".ts",
         "path": "apps/web/src/queries/profile-edit.ts"
-      },
-      {
-        "name": "recommendations.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1435,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/recommendations.ts"
       },
       {
         "name": "refresh.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1689,
+        "size": 708,
         "extension": ".ts",
         "path": "apps/web/src/queries/refresh.ts"
-      },
-      {
-        "name": "restaurant-account.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1912,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/restaurant-account.ts"
       },
       {
         "name": "restaurant-share.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 956,
+        "size": 972,
         "extension": ".ts",
         "path": "apps/web/src/queries/restaurant-share.ts"
-      },
-      {
-        "name": "restaurant.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2210,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/restaurant.ts"
-      },
-      {
-        "name": "schema.gen.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 90116,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/schema.gen.ts"
-      },
-      {
-        "name": "search.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 377,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/search.ts"
       },
       {
         "name": "settings.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1758,
+        "size": 998,
         "extension": ".ts",
         "path": "apps/web/src/queries/settings.ts"
       },
@@ -3374,26 +3118,10 @@
         "path": "apps/web/src/queries/ssr.ts"
       },
       {
-        "name": "subject-statistics.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 401,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/subject-statistics.ts"
-      },
-      {
-        "name": "subjects.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 4219,
-        "extension": ".ts",
-        "path": "apps/web/src/queries/subjects.ts"
-      },
-      {
         "name": "routeTree.gen.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 9617,
+        "size": 10477,
         "extension": ".ts",
         "path": "apps/web/src/routeTree.gen.ts"
       },
@@ -3401,7 +3129,7 @@
         "name": "router.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1158,
+        "size": 1238,
         "extension": ".tsx",
         "path": "apps/web/src/router.tsx"
       },
@@ -3431,7 +3159,7 @@
         "name": "_app.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 471,
+        "size": 486,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app.tsx"
       },
@@ -3445,7 +3173,7 @@
         "name": "buscar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8328,
+        "size": 8457,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/buscar.tsx"
       },
@@ -3453,7 +3181,7 @@
         "name": "cursos.$id.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6068,
+        "size": 6188,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/cursos.$id.tsx"
       },
@@ -3461,7 +3189,7 @@
         "name": "index.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4260,
+        "size": 4320,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/index.tsx"
       },
@@ -3469,15 +3197,23 @@
         "name": "perfil.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5953,
+        "size": 6441,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/perfil.tsx"
+      },
+      {
+        "name": "perfil_.simulador.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2715,
+        "extension": ".tsx",
+        "path": "apps/web/src/routes/_app/perfil_.simulador.tsx"
       },
       {
         "name": "professores_.$siape.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2295,
+        "size": 2355,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/professores_.$siape.tsx"
       },
@@ -3485,7 +3221,7 @@
         "name": "ru.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 18272,
+        "size": 18395,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/ru.tsx"
       },
@@ -3493,7 +3229,7 @@
         "name": "turmas.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4051,
+        "size": 4111,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/turmas.tsx"
       },
@@ -3501,7 +3237,7 @@
         "name": "turmas_.$id.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12032,
+        "size": 12107,
         "extension": ".tsx",
         "path": "apps/web/src/routes/_app/turmas_.$id.tsx"
       },
@@ -3509,7 +3245,7 @@
         "name": "login.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7760,
+        "size": 7805,
         "extension": ".tsx",
         "path": "apps/web/src/routes/login.tsx"
       },
@@ -3517,7 +3253,7 @@
         "name": "privacidade.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9727,
+        "size": 9742,
         "extension": ".tsx",
         "path": "apps/web/src/routes/privacidade.tsx"
       },
@@ -3542,14 +3278,6 @@
         "type": "directory",
         "path": "apps/web/tests",
         "children": []
-      },
-      {
-        "name": "calendar.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1893,
-        "extension": ".ts",
-        "path": "apps/web/tests/calendar.test.ts"
       },
       {
         "name": "components",
@@ -3577,7 +3305,7 @@
         "name": "ErrorPage.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1578,
+        "size": 1593,
         "extension": ".tsx",
         "path": "apps/web/tests/components/ErrorPage.test.tsx"
       },
@@ -3669,7 +3397,7 @@
         "name": "ClassroomPosts.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 11103,
+        "size": 11147,
         "extension": ".tsx",
         "path": "apps/web/tests/components/classroom/ClassroomPosts.test.tsx"
       },
@@ -3677,7 +3405,7 @@
         "name": "ClassroomStatistics.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3266,
+        "size": 3311,
         "extension": ".tsx",
         "path": "apps/web/tests/components/classroom/ClassroomStatistics.test.tsx"
       },
@@ -3685,7 +3413,7 @@
         "name": "ClassroomSummary.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1726,
+        "size": 1741,
         "extension": ".tsx",
         "path": "apps/web/tests/components/classroom/ClassroomSummary.test.tsx"
       },
@@ -3693,7 +3421,7 @@
         "name": "FrequencyContent.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 11463,
+        "size": 11494,
         "extension": ".tsx",
         "path": "apps/web/tests/components/classroom/FrequencyContent.test.tsx"
       },
@@ -3707,7 +3435,7 @@
         "name": "CourseSummary.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6129,
+        "size": 6204,
         "extension": ".tsx",
         "path": "apps/web/tests/components/curriculum/CourseSummary.test.tsx"
       },
@@ -3715,7 +3443,7 @@
         "name": "SubjectDetails.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6987,
+        "size": 7034,
         "extension": ".tsx",
         "path": "apps/web/tests/components/curriculum/SubjectDetails.test.tsx"
       },
@@ -3723,7 +3451,7 @@
         "name": "edit-profile.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 15644,
+        "size": 15674,
         "extension": ".tsx",
         "path": "apps/web/tests/components/edit-profile.test.tsx"
       },
@@ -3745,7 +3473,7 @@
         "name": "LatestNewsSection.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10212,
+        "size": 10242,
         "extension": ".tsx",
         "path": "apps/web/tests/components/home/LatestNewsSection.test.tsx"
       },
@@ -3753,7 +3481,7 @@
         "name": "PublicInfoSection.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2445,
+        "size": 2460,
         "extension": ".tsx",
         "path": "apps/web/tests/components/home/PublicInfoSection.test.tsx"
       },
@@ -3767,7 +3495,7 @@
         "name": "ProfessorDetailsSection.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4078,
+        "size": 4093,
         "extension": ".tsx",
         "path": "apps/web/tests/components/professor/ProfessorDetailsSection.test.tsx"
       },
@@ -3776,6 +3504,14 @@
         "type": "directory",
         "path": "apps/web/tests/components/profile",
         "children": []
+      },
+      {
+        "name": "AcademicSimulator.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3087,
+        "extension": ".tsx",
+        "path": "apps/web/tests/components/profile/AcademicSimulator.test.tsx"
       },
       {
         "name": "DocumentDownloads.test.tsx",
@@ -3797,7 +3533,7 @@
         "name": "ProfileOverview.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5970,
+        "size": 5985,
         "extension": ".tsx",
         "path": "apps/web/tests/components/profile/ProfileOverview.test.tsx"
       },
@@ -3811,7 +3547,7 @@
         "name": "RestaurantAccount.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7883,
+        "size": 7906,
         "extension": ".tsx",
         "path": "apps/web/tests/components/ru/RestaurantAccount.test.tsx"
       },
@@ -3825,7 +3561,7 @@
         "name": "SchedulePreview.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 17275,
+        "size": 17334,
         "extension": ".tsx",
         "path": "apps/web/tests/components/schedule/SchedulePreview.test.tsx"
       },
@@ -3839,7 +3575,7 @@
         "name": "ProfessorCard.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3533,
+        "size": 3548,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/ProfessorCard.test.tsx"
       },
@@ -3847,7 +3583,7 @@
         "name": "RecommendationsSection.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9520,
+        "size": 9549,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/RecommendationsSection.test.tsx"
       },
@@ -3855,7 +3591,7 @@
         "name": "RequirementList.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4048,
+        "size": 4063,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/RequirementList.test.tsx"
       },
@@ -3863,7 +3599,7 @@
         "name": "SubjectSearchLink.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1286,
+        "size": 1301,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/SubjectSearchLink.test.tsx"
       },
@@ -3871,7 +3607,7 @@
         "name": "SubjectStatistics.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5126,
+        "size": 5171,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/SubjectStatistics.test.tsx"
       },
@@ -3879,7 +3615,7 @@
         "name": "SubjectSummary.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2408,
+        "size": 2423,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/SubjectSummary.test.tsx"
       },
@@ -3887,7 +3623,7 @@
         "name": "TurmaCard.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 15271,
+        "size": 15286,
         "extension": ".tsx",
         "path": "apps/web/tests/components/search/TurmaCard.test.tsx"
       },
@@ -3912,14 +3648,6 @@
         "children": []
       },
       {
-        "name": "curriculum.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2276,
-        "extension": ".ts",
-        "path": "apps/web/tests/helpers/curriculum.ts"
-      },
-      {
         "name": "dom.ts",
         "type": "file",
         "language": "TypeScript",
@@ -3939,7 +3667,7 @@
         "name": "professor.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 209,
+        "size": 224,
         "extension": ".ts",
         "path": "apps/web/tests/helpers/professor.ts"
       },
@@ -3983,7 +3711,7 @@
         "name": "storage.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 10175,
+        "size": 10190,
         "extension": ".ts",
         "path": "apps/web/tests/integrations/offline/storage.test.ts"
       },
@@ -3991,7 +3719,7 @@
         "name": "use-offline-support.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4076,
+        "size": 4091,
         "extension": ".tsx",
         "path": "apps/web/tests/integrations/offline/use-offline-support.test.tsx"
       },
@@ -4005,7 +3733,7 @@
         "name": "root-provider.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3250,
+        "size": 3274,
         "extension": ".ts",
         "path": "apps/web/tests/integrations/tanstack-query/root-provider.test.ts"
       },
@@ -4016,90 +3744,20 @@
         "children": []
       },
       {
+        "name": "academic-simulation.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2971,
+        "extension": ".ts",
+        "path": "apps/web/tests/lib/academic-simulation.test.ts"
+      },
+      {
         "name": "chunk-reload.test.ts",
         "type": "file",
         "language": "TypeScript",
         "size": 2030,
         "extension": ".ts",
         "path": "apps/web/tests/lib/chunk-reload.test.ts"
-      },
-      {
-        "name": "classroom-details.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2603,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/classroom-details.test.ts"
-      },
-      {
-        "name": "classroom-posts.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2290,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/classroom-posts.test.ts"
-      },
-      {
-        "name": "curriculum",
-        "type": "directory",
-        "path": "apps/web/tests/lib/curriculum",
-        "children": []
-      },
-      {
-        "name": "format.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 3459,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/format.test.ts"
-      },
-      {
-        "name": "geometry.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 23081,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/geometry.test.ts"
-      },
-      {
-        "name": "lanes.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1178,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/lanes.test.ts"
-      },
-      {
-        "name": "model.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 7687,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/model.test.ts"
-      },
-      {
-        "name": "ordering.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 3311,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/ordering.test.ts"
-      },
-      {
-        "name": "relations.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1281,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/relations.test.ts"
-      },
-      {
-        "name": "segments.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 2642,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/curriculum/segments.test.ts"
       },
       {
         "name": "local-storage.test.ts",
@@ -4110,14 +3768,6 @@
         "path": "apps/web/tests/lib/local-storage.test.ts"
       },
       {
-        "name": "login-progress.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1125,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/login-progress.test.ts"
-      },
-      {
         "name": "markdown.test.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -4126,36 +3776,12 @@
         "path": "apps/web/tests/lib/markdown.test.tsx"
       },
       {
-        "name": "profile.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 3120,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/profile.test.ts"
-      },
-      {
-        "name": "restaurant.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 5177,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/restaurant.test.ts"
-      },
-      {
         "name": "schedule-image.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3695,
+        "size": 3725,
         "extension": ".ts",
         "path": "apps/web/tests/lib/schedule-image.test.ts"
-      },
-      {
-        "name": "schedule.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 4810,
-        "extension": ".ts",
-        "path": "apps/web/tests/lib/schedule.test.ts"
       },
       {
         "name": "search-params.test.ts",
@@ -4183,7 +3809,7 @@
         "name": "auth.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 13527,
+        "size": 13594,
         "extension": ".ts",
         "path": "apps/web/tests/queries/auth.test.ts"
       },
@@ -4191,7 +3817,7 @@
         "name": "classrooms.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4592,
+        "size": 4621,
         "extension": ".ts",
         "path": "apps/web/tests/queries/classrooms.test.ts"
       },
@@ -4207,7 +3833,7 @@
         "name": "client.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6994,
+        "size": 7023,
         "extension": ".ts",
         "path": "apps/web/tests/queries/client.test.ts"
       },
@@ -4215,23 +3841,15 @@
         "name": "documents.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2766,
+        "size": 2796,
         "extension": ".ts",
         "path": "apps/web/tests/queries/documents.test.ts"
-      },
-      {
-        "name": "load.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 1484,
-        "extension": ".ts",
-        "path": "apps/web/tests/queries/load.test.ts"
       },
       {
         "name": "me.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4353,
+        "size": 4383,
         "extension": ".ts",
         "path": "apps/web/tests/queries/me.test.ts"
       },
@@ -4239,7 +3857,7 @@
         "name": "recommendations.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1383,
+        "size": 1413,
         "extension": ".ts",
         "path": "apps/web/tests/queries/recommendations.test.ts"
       },
@@ -4247,7 +3865,7 @@
         "name": "refresh.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3505,
+        "size": 3517,
         "extension": ".ts",
         "path": "apps/web/tests/queries/refresh.test.ts"
       },
@@ -4255,39 +3873,31 @@
         "name": "restaurant-account.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7376,
+        "size": 7451,
         "extension": ".ts",
         "path": "apps/web/tests/queries/restaurant-account.test.ts"
-      },
-      {
-        "name": "restaurant.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 4076,
-        "extension": ".ts",
-        "path": "apps/web/tests/queries/restaurant.test.ts"
       },
       {
         "name": "settings.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2320,
+        "size": 2379,
         "extension": ".ts",
         "path": "apps/web/tests/queries/settings.test.ts"
-      },
-      {
-        "name": "subjects.test.ts",
-        "type": "file",
-        "language": "TypeScript",
-        "size": 5665,
-        "extension": ".ts",
-        "path": "apps/web/tests/queries/subjects.test.ts"
       },
       {
         "name": "routes",
         "type": "directory",
         "path": "apps/web/tests/routes",
         "children": []
+      },
+      {
+        "name": "academic-simulator.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1274,
+        "extension": ".ts",
+        "path": "apps/web/tests/routes/academic-simulator.test.ts"
       },
       {
         "name": "auth-navigation.test.ts",
@@ -4301,7 +3911,7 @@
         "name": "classroom.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5872,
+        "size": 5939,
         "extension": ".ts",
         "path": "apps/web/tests/routes/classroom.test.ts"
       },
@@ -4309,7 +3919,7 @@
         "name": "flow-page.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 29082,
+        "size": 29220,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/flow-page.test.tsx"
       },
@@ -4317,7 +3927,7 @@
         "name": "flow.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5575,
+        "size": 5590,
         "extension": ".ts",
         "path": "apps/web/tests/routes/flow.test.ts"
       },
@@ -4333,7 +3943,7 @@
         "name": "login.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6828,
+        "size": 6884,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/login.test.tsx"
       },
@@ -4341,7 +3951,7 @@
         "name": "not-found.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6925,
+        "size": 6955,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/not-found.test.tsx"
       },
@@ -4357,7 +3967,7 @@
         "name": "professor-profile.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6561,
+        "size": 6620,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/professor-profile.test.tsx"
       },
@@ -4365,7 +3975,7 @@
         "name": "profile.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4532,
+        "size": 4713,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/profile.test.tsx"
       },
@@ -4373,7 +3983,7 @@
         "name": "restaurant-share.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 14808,
+        "size": 14854,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/restaurant-share.test.tsx"
       },
@@ -4389,7 +3999,7 @@
         "name": "ru.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8191,
+        "size": 8221,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/ru.test.tsx"
       },
@@ -4397,7 +4007,7 @@
         "name": "search-page.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 39226,
+        "size": 39285,
         "extension": ".tsx",
         "path": "apps/web/tests/routes/search-page.test.tsx"
       },
@@ -4418,10 +4028,18 @@
         "path": "apps/web/tests/routes/seo.test.ts"
       },
       {
+        "name": "setup.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 77,
+        "extension": ".ts",
+        "path": "apps/web/tests/setup.ts"
+      },
+      {
         "name": "tsconfig.json",
         "type": "file",
         "language": "JSON",
-        "size": 857,
+        "size": 753,
         "extension": ".json",
         "path": "apps/web/tsconfig.json"
       },
@@ -4429,9 +4047,25 @@
         "name": "vite.config.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1242,
+        "size": 1262,
         "extension": ".ts",
         "path": "apps/web/vite.config.ts"
+      },
+      {
+        "name": "bun.lock",
+        "type": "file",
+        "language": "Lock File",
+        "size": 246499,
+        "extension": ".lock",
+        "path": "bun.lock"
+      },
+      {
+        "name": "bunfig.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 29,
+        "extension": ".toml",
+        "path": "bunfig.toml"
       },
       {
         "name": "compose.yml",
@@ -4473,7 +4107,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 15631,
+        "size": 15708,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -4737,7 +4371,7 @@
         "name": "offline.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4634,
+        "size": 4676,
         "extension": ".md",
         "path": "docs/offline.md"
       },
@@ -4844,10 +4478,622 @@
         "path": "docs/sprints/template.md"
       },
       {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 876,
+        "extension": ".json",
+        "path": "package.json"
+      },
+      {
         "name": "packages",
         "type": "directory",
         "path": "packages",
         "children": []
+      },
+      {
+        "name": "core",
+        "type": "directory",
+        "path": "packages/core",
+        "children": []
+      },
+      {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 686,
+        "extension": ".md",
+        "path": "packages/core/AGENTS.md"
+      },
+      {
+        "name": "bunfig.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 38,
+        "extension": ".toml",
+        "path": "packages/core/bunfig.toml"
+      },
+      {
+        "name": "package.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 779,
+        "extension": ".json",
+        "path": "packages/core/package.json"
+      },
+      {
+        "name": "src",
+        "type": "directory",
+        "path": "packages/core/src",
+        "children": []
+      },
+      {
+        "name": "calendar.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2793,
+        "extension": ".ts",
+        "path": "packages/core/src/calendar.ts"
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "path": "packages/core/src/lib",
+        "children": []
+      },
+      {
+        "name": "classroom-details.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1586,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/classroom-details.ts"
+      },
+      {
+        "name": "classroom-posts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1190,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/classroom-posts.ts"
+      },
+      {
+        "name": "contact.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 198,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/contact.ts"
+      },
+      {
+        "name": "curriculum",
+        "type": "directory",
+        "path": "packages/core/src/lib/curriculum",
+        "children": []
+      },
+      {
+        "name": "format.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1903,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/format.ts"
+      },
+      {
+        "name": "geometry.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3559,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/geometry.ts"
+      },
+      {
+        "name": "graph.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 803,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/graph.ts"
+      },
+      {
+        "name": "lanes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 941,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/lanes.ts"
+      },
+      {
+        "name": "model.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2726,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/model.ts"
+      },
+      {
+        "name": "ordering.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6715,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/ordering.ts"
+      },
+      {
+        "name": "relations.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3970,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/relations.ts"
+      },
+      {
+        "name": "routing.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11054,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/routing.ts"
+      },
+      {
+        "name": "segments.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4616,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/segments.ts"
+      },
+      {
+        "name": "shortcuts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2089,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/shortcuts.ts"
+      },
+      {
+        "name": "types.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1252,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/curriculum/types.ts"
+      },
+      {
+        "name": "login-progress.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 250,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/login-progress.ts"
+      },
+      {
+        "name": "online.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 545,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/online.ts"
+      },
+      {
+        "name": "planned-schedule.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3076,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/planned-schedule.ts"
+      },
+      {
+        "name": "profile.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2789,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/profile.ts"
+      },
+      {
+        "name": "restaurant.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3391,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/restaurant.ts"
+      },
+      {
+        "name": "schedule.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6682,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/schedule.ts"
+      },
+      {
+        "name": "search-categories.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1078,
+        "extension": ".ts",
+        "path": "packages/core/src/lib/search-categories.ts"
+      },
+      {
+        "name": "queries",
+        "type": "directory",
+        "path": "packages/core/src/queries",
+        "children": []
+      },
+      {
+        "name": "api.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 143,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/api.ts"
+      },
+      {
+        "name": "classrooms.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2840,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/classrooms.ts"
+      },
+      {
+        "name": "client.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1382,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/client.ts"
+      },
+      {
+        "name": "courses.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 570,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/courses.ts"
+      },
+      {
+        "name": "curriculum.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 613,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/curriculum.ts"
+      },
+      {
+        "name": "errors.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1029,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/errors.ts"
+      },
+      {
+        "name": "load.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 642,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/load.ts"
+      },
+      {
+        "name": "me.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 651,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/me.ts"
+      },
+      {
+        "name": "pages.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1019,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/pages.ts"
+      },
+      {
+        "name": "posts.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 343,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/posts.ts"
+      },
+      {
+        "name": "professors.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 811,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/professors.ts"
+      },
+      {
+        "name": "recommendations.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1425,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/recommendations.ts"
+      },
+      {
+        "name": "refresh.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1572,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/refresh.ts"
+      },
+      {
+        "name": "restaurant-account.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1910,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/restaurant-account.ts"
+      },
+      {
+        "name": "restaurant.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2198,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/restaurant.ts"
+      },
+      {
+        "name": "schema.gen.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 90216,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/schema.gen.ts"
+      },
+      {
+        "name": "search.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 367,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/search.ts"
+      },
+      {
+        "name": "settings.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1026,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/settings.ts"
+      },
+      {
+        "name": "subject-statistics.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 391,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/subject-statistics.ts"
+      },
+      {
+        "name": "subjects.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4199,
+        "extension": ".ts",
+        "path": "packages/core/src/queries/subjects.ts"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "packages/core/tests",
+        "children": []
+      },
+      {
+        "name": "calendar.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1901,
+        "extension": ".ts",
+        "path": "packages/core/tests/calendar.test.ts"
+      },
+      {
+        "name": "helpers",
+        "type": "directory",
+        "path": "packages/core/tests/helpers",
+        "children": []
+      },
+      {
+        "name": "curriculum.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2287,
+        "extension": ".ts",
+        "path": "packages/core/tests/helpers/curriculum.ts"
+      },
+      {
+        "name": "lib",
+        "type": "directory",
+        "path": "packages/core/tests/lib",
+        "children": []
+      },
+      {
+        "name": "classroom-details.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2614,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/classroom-details.test.ts"
+      },
+      {
+        "name": "classroom-posts.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2312,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/classroom-posts.test.ts"
+      },
+      {
+        "name": "curriculum",
+        "type": "directory",
+        "path": "packages/core/tests/lib/curriculum",
+        "children": []
+      },
+      {
+        "name": "format.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3514,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/format.test.ts"
+      },
+      {
+        "name": "geometry.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 23150,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/geometry.test.ts"
+      },
+      {
+        "name": "lanes.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1192,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/lanes.test.ts"
+      },
+      {
+        "name": "model.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7726,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/model.test.ts"
+      },
+      {
+        "name": "ordering.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3338,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/ordering.test.ts"
+      },
+      {
+        "name": "relations.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1309,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/relations.test.ts"
+      },
+      {
+        "name": "segments.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2670,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/curriculum/segments.test.ts"
+      },
+      {
+        "name": "login-progress.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1136,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/login-progress.test.ts"
+      },
+      {
+        "name": "planned-schedule.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1440,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/planned-schedule.test.ts"
+      },
+      {
+        "name": "profile.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3131,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/profile.test.ts"
+      },
+      {
+        "name": "restaurant.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5210,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/restaurant.test.ts"
+      },
+      {
+        "name": "schedule.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4818,
+        "extension": ".ts",
+        "path": "packages/core/tests/lib/schedule.test.ts"
+      },
+      {
+        "name": "queries",
+        "type": "directory",
+        "path": "packages/core/tests/queries",
+        "children": []
+      },
+      {
+        "name": "client.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1845,
+        "extension": ".ts",
+        "path": "packages/core/tests/queries/client.test.ts"
+      },
+      {
+        "name": "load.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1495,
+        "extension": ".ts",
+        "path": "packages/core/tests/queries/load.test.ts"
+      },
+      {
+        "name": "refresh.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3421,
+        "extension": ".ts",
+        "path": "packages/core/tests/queries/refresh.test.ts"
+      },
+      {
+        "name": "restaurant.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4092,
+        "extension": ".ts",
+        "path": "packages/core/tests/queries/restaurant.test.ts"
+      },
+      {
+        "name": "subjects.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5709,
+        "extension": ".ts",
+        "path": "packages/core/tests/queries/subjects.test.ts"
+      },
+      {
+        "name": "setup.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 92,
+        "extension": ".ts",
+        "path": "packages/core/tests/setup.ts"
+      },
+      {
+        "name": "tsconfig.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 584,
+        "extension": ".json",
+        "path": "packages/core/tsconfig.json"
       },
       {
         "name": "sigaa-client",
@@ -5771,14 +6017,14 @@
         "name": "vercel.json",
         "type": "file",
         "language": "JSON",
-        "size": 1031,
+        "size": 1106,
         "extension": ".json",
         "path": "vercel.json"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-13T13:58:37.065640+00:00",
+    "extracted_at": "2026-11-14T12:56:16.517642+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Followw.json"
   }
 }

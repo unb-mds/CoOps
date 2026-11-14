@@ -2,19 +2,19 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-13T13:57:40.895643+00:00",
+  "analyzed_at": "2026-11-14T12:55:21.069777+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 303,
-  "total_bytes": 22523342,
+  "total_files": 340,
+  "total_bytes": 22702700,
   "languages": [
     {
       "language": "Unknown",
       "file_count": 4,
-      "total_bytes": 14721953,
-      "percentage": 65.36,
+      "total_bytes": 14722765,
+      "percentage": 64.85,
       "files": [
         {
           "path": ".agents/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
@@ -25,7 +25,7 @@
         {
           "path": ".env.example",
           "name": ".env.example",
-          "size": 1252,
+          "size": 2064,
           "extension": ".example"
         },
         {
@@ -46,7 +46,7 @@
       "language": "WebM Video",
       "file_count": 2,
       "total_bytes": 3654672,
-      "percentage": 16.23,
+      "percentage": 16.1,
       "files": [
         {
           "path": "frontend/public/shaderopt-light.webm",
@@ -65,8 +65,8 @@
     {
       "language": "JSON",
       "file_count": 23,
-      "total_bytes": 1220975,
-      "percentage": 5.42,
+      "total_bytes": 1222364,
+      "percentage": 5.38,
       "files": [
         {
           "path": ".agents/skills/impeccable/scripts/data/font-index.json",
@@ -132,9 +132,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 99,
-      "total_bytes": 965268,
-      "percentage": 4.29,
+      "file_count": 102,
+      "total_bytes": 1016859,
+      "percentage": 4.48,
       "files": [
         {
           "path": ".agents/skills/impeccable/reference/new-work.md",
@@ -146,6 +146,12 @@
           "path": ".agents/skills/impeccable/reference/critique.md",
           "name": "critique.md",
           "size": 42717,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/implantacao.md",
+          "name": "implantacao.md",
+          "size": 37876,
           "extension": ".md"
         },
         {
@@ -173,9 +179,9 @@
           "extension": ".md"
         },
         {
-          "path": "docs/atualizacoes.md",
-          "name": "atualizacoes.md",
-          "size": 27973,
+          "path": "docs/api-specs.md",
+          "name": "api-specs.md",
+          "size": 29071,
           "extension": ".md"
         },
         {
@@ -185,24 +191,18 @@
           "extension": ".md"
         },
         {
-          "path": "docs/api-specs.md",
-          "name": "api-specs.md",
-          "size": 26008,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/processo/release-notes/v0-1-0.md",
-          "name": "v0-1-0.md",
-          "size": 24281,
+          "path": "docs/atualizacoes.md",
+          "name": "atualizacoes.md",
+          "size": 26384,
           "extension": ".md"
         }
       ]
     },
     {
       "language": "JavaScript",
-      "file_count": 58,
-      "total_bytes": 910569,
-      "percentage": 4.04,
+      "file_count": 71,
+      "total_bytes": 951345,
+      "percentage": 4.19,
       "files": [
         {
           "path": ".agents/skills/impeccable/scripts/live-browser.js",
@@ -213,7 +213,7 @@
         {
           "path": "frontend/src/pages/SecondPage.jsx",
           "name": "SecondPage.jsx",
-          "size": 42431,
+          "size": 42863,
           "extension": ".jsx"
         },
         {
@@ -229,12 +229,6 @@
           "extension": ".js"
         },
         {
-          "path": "frontend/src/App.jsx",
-          "name": "App.jsx",
-          "size": 26880,
-          "extension": ".jsx"
-        },
-        {
           "path": "frontend/src/components/TeachingPlanJourney.jsx",
           "name": "TeachingPlanJourney.jsx",
           "size": 17432,
@@ -247,6 +241,18 @@
           "extension": ".jsx"
         },
         {
+          "path": "frontend/src/App.jsx",
+          "name": "App.jsx",
+          "size": 15264,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/tests/auth.spec.js",
+          "name": "auth.spec.js",
+          "size": 12524,
+          "extension": ".js"
+        },
+        {
           "path": "frontend/src/pages/PaginaDeEvento.jsx",
           "name": "PaginaDeEvento.jsx",
           "size": 12172,
@@ -257,12 +263,74 @@
           "name": "syllabus-consent.spec.js",
           "size": 11612,
           "extension": ".js"
+        }
+      ]
+    },
+    {
+      "language": "Python",
+      "file_count": 68,
+      "total_bytes": 407664,
+      "percentage": 1.8,
+      "files": [
+        {
+          "path": "backend/src/database/models.py",
+          "name": "models.py",
+          "size": 20595,
+          "extension": ".py"
         },
         {
-          "path": ".agents/skills/impeccable/scripts/live-browser-ignores.js",
-          "name": "live-browser-ignores.js",
-          "size": 10346,
-          "extension": ".js"
+          "path": "backend/tests/test_syllabus_upload.py",
+          "name": "test_syllabus_upload.py",
+          "size": 18669,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_syllabus_processing.py",
+          "name": "test_syllabus_processing.py",
+          "size": 18533,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_syllabus_database.py",
+          "name": "test_syllabus_database.py",
+          "size": 16517,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_security_database.py",
+          "name": "test_security_database.py",
+          "size": 15676,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_syllabus_http_integration.py",
+          "name": "test_syllabus_http_integration.py",
+          "size": 15305,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/src/modules/syllabus/router.py",
+          "name": "router.py",
+          "size": 14544,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/src/modules/google_calendar/service.py",
+          "name": "service.py",
+          "size": 14493,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_syllabus_preparation.py",
+          "name": "test_syllabus_preparation.py",
+          "size": 14103,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/src/modules/events/router.py",
+          "name": "router.py",
+          "size": 13717,
+          "extension": ".py"
         }
       ]
     },
@@ -270,7 +338,7 @@
       "language": "PNG Image",
       "file_count": 4,
       "total_bytes": 395548,
-      "percentage": 1.76,
+      "percentage": 1.74,
       "files": [
         {
           "path": "frontend/public/banner.png",
@@ -299,78 +367,10 @@
       ]
     },
     {
-      "language": "Python",
-      "file_count": 58,
-      "total_bytes": 350190,
-      "percentage": 1.55,
-      "files": [
-        {
-          "path": "backend/tests/test_syllabus_upload.py",
-          "name": "test_syllabus_upload.py",
-          "size": 18669,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/src/database/models.py",
-          "name": "models.py",
-          "size": 18592,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_syllabus_processing.py",
-          "name": "test_syllabus_processing.py",
-          "size": 18533,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_syllabus_database.py",
-          "name": "test_syllabus_database.py",
-          "size": 16492,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_syllabus_http_integration.py",
-          "name": "test_syllabus_http_integration.py",
-          "size": 15127,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/src/modules/syllabus/router.py",
-          "name": "router.py",
-          "size": 14544,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_syllabus_preparation.py",
-          "name": "test_syllabus_preparation.py",
-          "size": 14103,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/src/modules/events/router.py",
-          "name": "router.py",
-          "size": 13717,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_classes_database.py",
-          "name": "test_classes_database.py",
-          "size": 13496,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_security_database.py",
-          "name": "test_security_database.py",
-          "size": 12292,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
       "language": "SQL",
-      "file_count": 29,
-      "total_bytes": 118920,
-      "percentage": 0.53,
+      "file_count": 32,
+      "total_bytes": 130025,
+      "percentage": 0.57,
       "files": [
         {
           "path": "supabase/migrations/20261109120000_turmas_vinculos_versoes.sql",
@@ -388,6 +388,12 @@
           "path": "supabase/migrations/20261110120000_texto_revisado_e_autorizacao_s7.sql",
           "name": "20261110120000_texto_revisado_e_autorizacao_s7.sql",
           "size": 10994,
+          "extension": ".sql"
+        },
+        {
+          "path": "supabase/migrations/20261111150000_s7_f04_auth_calendar_connection.sql",
+          "name": "20261111150000_s7_f04_auth_calendar_connection.sql",
+          "size": 9570,
           "extension": ".sql"
         },
         {
@@ -425,25 +431,19 @@
           "name": "20260922195137_profiles.sql",
           "size": 6183,
           "extension": ".sql"
-        },
-        {
-          "path": "supabase/migrations/20261014120000_sugestao_de_eventos_e_contador.sql",
-          "name": "20261014120000_sugestao_de_eventos_e_contador.sql",
-          "size": 3868,
-          "extension": ".sql"
         }
       ]
     },
     {
       "language": "CSS",
-      "file_count": 8,
-      "total_bytes": 105140,
-      "percentage": 0.47,
+      "file_count": 9,
+      "total_bytes": 111498,
+      "percentage": 0.49,
       "files": [
         {
           "path": "frontend/src/styles/global.css",
           "name": "global.css",
-          "size": 47845,
+          "size": 50151,
           "extension": ".css"
         },
         {
@@ -471,6 +471,12 @@
           "extension": ".css"
         },
         {
+          "path": "frontend/src/styles/auth.css",
+          "name": "auth.css",
+          "size": 4052,
+          "extension": ".css"
+        },
+        {
           "path": "frontend/src/styles/class-catalog.css",
           "name": "class-catalog.css",
           "size": 3914,
@@ -492,8 +498,8 @@
     },
     {
       "language": "HTML",
-      "file_count": 4,
-      "total_bytes": 29125,
+      "file_count": 6,
+      "total_bytes": 29922,
       "percentage": 0.13,
       "files": [
         {
@@ -517,7 +523,19 @@
         {
           "path": "frontend/index.html",
           "name": "index.html",
-          "size": 791,
+          "size": 941,
+          "extension": ".html"
+        },
+        {
+          "path": "supabase/templates/recovery.html",
+          "name": "recovery.html",
+          "size": 325,
+          "extension": ".html"
+        },
+        {
+          "path": "supabase/templates/confirmation.html",
+          "name": "confirmation.html",
+          "size": 322,
           "extension": ".html"
         }
       ]
@@ -525,7 +543,7 @@
     {
       "language": "No Extension",
       "file_count": 4,
-      "total_bytes": 16204,
+      "total_bytes": 16670,
       "percentage": 0.07,
       "files": [
         {
@@ -537,7 +555,13 @@
         {
           "path": "Makefile",
           "name": "Makefile",
-          "size": 7684,
+          "size": 7821,
+          "extension": ""
+        },
+        {
+          "path": "backend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 329,
           "extension": ""
         },
         {
@@ -545,26 +569,64 @@
           "name": "VERSION",
           "size": 6,
           "extension": ""
-        },
-        {
-          "path": "backend/Dockerfile",
-          "name": "Dockerfile",
-          "size": 0,
-          "extension": ""
         }
       ]
     },
     {
       "language": "TOML",
       "file_count": 1,
-      "total_bytes": 15903,
+      "total_bytes": 16261,
       "percentage": 0.07,
       "files": [
         {
           "path": "supabase/config.toml",
           "name": "config.toml",
-          "size": 15903,
+          "size": 16261,
           "extension": ".toml"
+        }
+      ]
+    },
+    {
+      "language": "YAML",
+      "file_count": 6,
+      "total_bytes": 14150,
+      "percentage": 0.06,
+      "files": [
+        {
+          "path": ".github/mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 5483,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/production-jobs.yml",
+          "name": "production-jobs.yml",
+          "size": 3095,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/supabase-ci.yml",
+          "name": "supabase-ci.yml",
+          "size": 2241,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/app-ci.yml",
+          "name": "app-ci.yml",
+          "size": 1442,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/docs.yml",
+          "name": "docs.yml",
+          "size": 1055,
+          "extension": ".yml"
+        },
+        {
+          "path": "render.yaml",
+          "name": "render.yaml",
+          "size": 834,
+          "extension": ".yaml"
         }
       ]
     },
@@ -583,28 +645,16 @@
       ]
     },
     {
-      "language": "YAML",
-      "file_count": 3,
-      "total_bytes": 9405,
-      "percentage": 0.04,
+      "language": "SVG Image",
+      "file_count": 1,
+      "total_bytes": 3419,
+      "percentage": 0.02,
       "files": [
         {
-          "path": ".github/mkdocs.yml",
-          "name": "mkdocs.yml",
-          "size": 5483,
-          "extension": ".yml"
-        },
-        {
-          "path": ".github/workflows/supabase-ci.yml",
-          "name": "supabase-ci.yml",
-          "size": 2867,
-          "extension": ".yml"
-        },
-        {
-          "path": ".github/workflows/docs.yml",
-          "name": "docs.yml",
-          "size": 1055,
-          "extension": ".yml"
+          "path": "frontend/public/google-calendar-2026.svg",
+          "name": "google-calendar-2026.svg",
+          "size": 3419,
+          "extension": ".svg"
         }
       ]
     },
@@ -629,15 +679,29 @@
       ]
     },
     {
+      "language": "Docker Ignore",
+      "file_count": 1,
+      "total_bytes": 47,
+      "percentage": 0.0,
+      "files": [
+        {
+          "path": "backend/.dockerignore",
+          "name": ".dockerignore",
+          "size": 47,
+          "extension": ".dockerignore"
+        }
+      ]
+    },
+    {
       "language": "Text",
       "file_count": 3,
-      "total_bytes": 214,
+      "total_bytes": 235,
       "percentage": 0.0,
       "files": [
         {
           "path": "backend/requirements.txt",
           "name": "requirements.txt",
-          "size": 111,
+          "size": 132,
           "extension": ".txt"
         },
         {
@@ -656,7 +720,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-13T13:58:37.049421+00:00",
+    "extracted_at": "2026-11-14T12:56:16.501913+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AgendaUnB.json"
   }
 }
