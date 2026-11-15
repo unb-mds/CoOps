@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-14T12:55:20.619459+00:00",
+  "extracted_at": "2026-11-15T13:26:50.043138+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -147,7 +147,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5359,
+        "size": 5723,
         "extension": ".md",
         "path": "README.md"
       },
@@ -169,7 +169,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 1579,
+        "size": 2124,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -314,6 +314,14 @@
         "path": "backend/alembic/versions/20261113_01_identidades_locais.py"
       },
       {
+        "name": "20261114_01_moderacao_automatica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 714,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261114_01_moderacao_automatica.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -350,6 +358,14 @@
         "path": "backend/app/commands/auditar_importacao_sigaa.py"
       },
       {
+        "name": "avaliar_triagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3380,
+        "extension": ".py",
+        "path": "backend/app/commands/avaliar_triagem.py"
+      },
+      {
         "name": "descartar_moderacao.py",
         "type": "file",
         "language": "Python",
@@ -361,7 +377,7 @@
         "name": "identidades.py",
         "type": "file",
         "language": "Python",
-        "size": 2392,
+        "size": 2604,
         "extension": ".py",
         "path": "backend/app/commands/identidades.py"
       },
@@ -439,7 +455,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 624,
+        "size": 1422,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -458,6 +474,20 @@
         "size": 480,
         "extension": ".py",
         "path": "backend/app/core/security.py"
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "path": "backend/app/data",
+        "children": []
+      },
+      {
+        "name": "termos_moderacao.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7721,
+        "extension": ".json",
+        "path": "backend/app/data/termos_moderacao.json"
       },
       {
         "name": "domain",
@@ -496,6 +526,14 @@
         "size": 343,
         "extension": ".py",
         "path": "backend/app/domain/texto.py"
+      },
+      {
+        "name": "triagem_comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1673,
+        "extension": ".py",
+        "path": "backend/app/domain/triagem_comentario.py"
       },
       {
         "name": "main.py",
@@ -539,7 +577,7 @@
         "name": "decisao_moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 1074,
+        "size": 1080,
         "extension": ".py",
         "path": "backend/app/models/decisao_moderacao.py"
       },
@@ -689,7 +727,7 @@
         "name": "identidade_docente_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 10335,
+        "size": 11875,
         "extension": ".py",
         "path": "backend/app/repositories/identidade_docente_repository.py"
       },
@@ -783,7 +821,7 @@
         "name": "avaliacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 1100,
+        "size": 1180,
         "extension": ".py",
         "path": "backend/app/routers/avaliacoes.py"
       },
@@ -823,7 +861,7 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 1682,
+        "size": 2038,
         "extension": ".py",
         "path": "backend/app/routers/moderacao.py"
       },
@@ -861,7 +899,7 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 3840,
+        "size": 3912,
         "extension": ".py",
         "path": "backend/app/schemas/avaliacao.py"
       },
@@ -901,9 +939,17 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 1190,
+        "size": 1197,
         "extension": ".py",
         "path": "backend/app/schemas/moderacao.py"
+      },
+      {
+        "name": "triagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1851,
+        "extension": ".py",
+        "path": "backend/app/schemas/triagem.py"
       },
       {
         "name": "scrapers",
@@ -969,7 +1015,7 @@
         "name": "avaliacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 8049,
+        "size": 8290,
         "extension": ".py",
         "path": "backend/app/services/avaliacao_service.py"
       },
@@ -1001,7 +1047,7 @@
         "name": "identidade_docente_service.py",
         "type": "file",
         "language": "Python",
-        "size": 12772,
+        "size": 14784,
         "extension": ".py",
         "path": "backend/app/services/identidade_docente_service.py"
       },
@@ -1022,6 +1068,14 @@
         "path": "backend/app/services/institucional_service.py"
       },
       {
+        "name": "moderacao_automatica_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3763,
+        "extension": ".py",
+        "path": "backend/app/services/moderacao_automatica_service.py"
+      },
+      {
         "name": "moderacao_service.py",
         "type": "file",
         "language": "Python",
@@ -1030,12 +1084,28 @@
         "path": "backend/app/services/moderacao_service.py"
       },
       {
+        "name": "openai_triagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2031,
+        "extension": ".py",
+        "path": "backend/app/services/openai_triagem.py"
+      },
+      {
         "name": "sigaa_import_service.py",
         "type": "file",
         "language": "Python",
         "size": 12506,
         "extension": ".py",
         "path": "backend/app/services/sigaa_import_service.py"
+      },
+      {
+        "name": "triagem_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4397,
+        "extension": ".py",
+        "path": "backend/app/services/triagem_service.py"
       },
       {
         "name": "pegar_id.py",
@@ -1098,6 +1168,20 @@
         "size": 2990,
         "extension": ".py",
         "path": "backend/tests/denuncia_browser_fixture.py"
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "backend/tests/fixtures",
+        "children": []
+      },
+      {
+        "name": "triagem_sintetica.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2025,
+        "extension": ".json",
+        "path": "backend/tests/fixtures/triagem_sintetica.json"
       },
       {
         "name": "fluxo_moderacao_check.py",
@@ -1271,7 +1355,7 @@
         "name": "test_identidade_hibrida.py",
         "type": "file",
         "language": "Python",
-        "size": 13982,
+        "size": 18643,
         "extension": ".py",
         "path": "backend/tests/test_identidade_hibrida.py"
       },
@@ -1314,6 +1398,14 @@
         "size": 11858,
         "extension": ".py",
         "path": "backend/tests/test_moderacao.py"
+      },
+      {
+        "name": "test_moderacao_automatica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7709,
+        "extension": ".py",
+        "path": "backend/tests/test_moderacao_automatica.py"
       },
       {
         "name": "test_nomes_unidades.py",
@@ -1364,6 +1456,14 @@
         "path": "backend/tests/test_sigaa_poc_unittest.py"
       },
       {
+        "name": "test_triagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9463,
+        "extension": ".py",
+        "path": "backend/tests/test_triagem.py"
+      },
+      {
         "name": "validar_issue27.py",
         "type": "file",
         "language": "Python",
@@ -1375,7 +1475,7 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2332,
+        "size": 2892,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -1435,7 +1535,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 30998,
+        "size": 32131,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -3538,6 +3638,14 @@
         "path": "docs/estudos/observacao-jornada-busca-comparacao.md"
       },
       {
+        "name": "pendencias-finais-issue-207.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7261,
+        "extension": ".md",
+        "path": "docs/estudos/pendencias-finais-issue-207.md"
+      },
+      {
         "name": "reavaliacao-seletiva-issue-207.md",
         "type": "file",
         "language": "Markdown",
@@ -3757,7 +3865,7 @@
         "name": "identidades-docentes.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13354,
+        "size": 15151,
         "extension": ".md",
         "path": "docs/identidades-docentes.md"
       },
@@ -3792,6 +3900,14 @@
         "size": 583,
         "extension": ".md",
         "path": "docs/modelos.md"
+      },
+      {
+        "name": "moderacao-ia.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12012,
+        "extension": ".md",
+        "path": "docs/moderacao-ia.md"
       },
       {
         "name": "operacao-importacao-sigaa.md",
@@ -4759,7 +4875,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 50807,
+        "size": 52712,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -5058,6 +5174,352 @@
         "path": "frontend/docs/capturas/issue-211/login-390-depois.jpg"
       },
       {
+        "name": "issue-237",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-237",
+        "children": []
+      },
+      {
+        "name": "antes",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-237/antes",
+        "children": []
+      },
+      {
+        "name": "avaliacao-confirmado-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 273553,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-1440.png"
+      },
+      {
+        "name": "avaliacao-confirmado-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 221203,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-320.png"
+      },
+      {
+        "name": "avaliacao-confirmado-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 216260,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-390.png"
+      },
+      {
+        "name": "avaliacao-confirmado-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 238854,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-768.png"
+      },
+      {
+        "name": "avaliacao-pendente-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 269639,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-1440.png"
+      },
+      {
+        "name": "avaliacao-pendente-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 218237,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-320.png"
+      },
+      {
+        "name": "avaliacao-pendente-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 211577,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-390.png"
+      },
+      {
+        "name": "avaliacao-pendente-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 234388,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-768.png"
+      },
+      {
+        "name": "avaliacao-visitante-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 269696,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-1440.png"
+      },
+      {
+        "name": "avaliacao-visitante-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 217224,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-320.png"
+      },
+      {
+        "name": "avaliacao-visitante-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 211910,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-390.png"
+      },
+      {
+        "name": "avaliacao-visitante-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 233009,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-768.png"
+      },
+      {
+        "name": "minha-conta-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 160297,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/minha-conta-1440.png"
+      },
+      {
+        "name": "minha-conta-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 67240,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/minha-conta-320.png"
+      },
+      {
+        "name": "minha-conta-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 69366,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/minha-conta-390.png"
+      },
+      {
+        "name": "minha-conta-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 103077,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/minha-conta-768.png"
+      },
+      {
+        "name": "senha-cadastro-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 190048,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-1440.png"
+      },
+      {
+        "name": "senha-cadastro-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 83003,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-320.png"
+      },
+      {
+        "name": "senha-cadastro-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 84552,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-390.png"
+      },
+      {
+        "name": "senha-cadastro-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 124288,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-768.png"
+      },
+      {
+        "name": "depois",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-237/depois",
+        "children": []
+      },
+      {
+        "name": "avaliacao-confirmado-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 199481,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-1440.png"
+      },
+      {
+        "name": "avaliacao-confirmado-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 185739,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-320.png"
+      },
+      {
+        "name": "avaliacao-confirmado-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 181326,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-390.png"
+      },
+      {
+        "name": "avaliacao-confirmado-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 188411,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-768.png"
+      },
+      {
+        "name": "avaliacao-pendente-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 199666,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-1440.png"
+      },
+      {
+        "name": "avaliacao-pendente-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 187978,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-320.png"
+      },
+      {
+        "name": "avaliacao-pendente-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 183173,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-390.png"
+      },
+      {
+        "name": "avaliacao-pendente-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 191119,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-768.png"
+      },
+      {
+        "name": "avaliacao-visitante-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 196479,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-1440.png"
+      },
+      {
+        "name": "avaliacao-visitante-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 184748,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-320.png"
+      },
+      {
+        "name": "avaliacao-visitante-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 180618,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-390.png"
+      },
+      {
+        "name": "avaliacao-visitante-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 187566,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-768.png"
+      },
+      {
+        "name": "minha-conta-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 148385,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/minha-conta-1440.png"
+      },
+      {
+        "name": "minha-conta-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 61786,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/minha-conta-320.png"
+      },
+      {
+        "name": "minha-conta-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 67199,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/minha-conta-390.png"
+      },
+      {
+        "name": "minha-conta-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 93466,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/minha-conta-768.png"
+      },
+      {
+        "name": "senha-cadastro-1440.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 204851,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-1440.png"
+      },
+      {
+        "name": "senha-cadastro-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 91042,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-320.png"
+      },
+      {
+        "name": "senha-cadastro-390.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 92461,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-390.png"
+      },
+      {
+        "name": "senha-cadastro-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 135198,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-768.png"
+      },
+      {
+        "name": "conta-avaliacao-237.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7225,
+        "extension": ".md",
+        "path": "frontend/docs/conta-avaliacao-237.md"
+      },
+      {
         "name": "integracao-visual-211.md",
         "type": "file",
         "language": "Markdown",
@@ -5149,7 +5611,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1451,
+        "size": 1500,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -5445,7 +5907,7 @@
         "name": "login-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4839,
+        "size": 6778,
         "extension": ".tsx",
         "path": "frontend/src/app/login/login-form.tsx"
       },
@@ -5464,10 +5926,18 @@
         "children": []
       },
       {
+        "name": "apoio-moderacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3752,
+        "extension": ".tsx",
+        "path": "frontend/src/app/moderacao/apoio-moderacao.tsx"
+      },
+      {
         "name": "detalhe-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9816,
+        "size": 10160,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx"
       },
@@ -5489,7 +5959,7 @@
         "name": "fila-identidades.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10223,
+        "size": 10341,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/identidades/fila-identidades.tsx"
       },
@@ -5559,7 +6029,7 @@
         "name": "avaliacao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 11018,
+        "size": 12921,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
       },
@@ -5567,7 +6037,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3935,
+        "size": 3862,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
       },
@@ -5737,7 +6207,7 @@
         "name": "cabecalho.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4661,
+        "size": 4710,
         "extension": ".tsx",
         "path": "frontend/src/components/cabecalho.tsx"
       },
@@ -5753,7 +6223,7 @@
         "name": "campo-senha.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1063,
+        "size": 1261,
         "extension": ".tsx",
         "path": "frontend/src/components/campo-senha.tsx"
       },
@@ -6099,7 +6569,7 @@
         "name": "avaliacoes.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3826,
+        "size": 4146,
         "extension": ".ts",
         "path": "frontend/src/lib/services/avaliacoes.ts"
       },
@@ -6147,7 +6617,7 @@
         "name": "moderacao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5171,
+        "size": 6463,
         "extension": ".ts",
         "path": "frontend/src/lib/services/moderacao.ts"
       },
@@ -6201,7 +6671,7 @@
         "name": "moderacao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1684,
+        "size": 3104,
         "extension": ".ts",
         "path": "frontend/src/lib/types/moderacao.ts"
       },
@@ -6231,7 +6701,7 @@
         "name": "avaliacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 32109,
+        "size": 33623,
         "extension": ".mjs",
         "path": "frontend/tests/avaliacao-browser.mjs"
       },
@@ -6271,7 +6741,7 @@
         "name": "browser-session.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 4086,
+        "size": 4126,
         "extension": ".mjs",
         "path": "frontend/tests/browser-session.mjs"
       },
@@ -6295,7 +6765,7 @@
         "name": "cabecalho-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 9089,
+        "size": 9302,
         "extension": ".mjs",
         "path": "frontend/tests/cabecalho-browser.mjs"
       },
@@ -6311,7 +6781,7 @@
         "name": "comentarios-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 12155,
+        "size": 12612,
         "extension": ".mjs",
         "path": "frontend/tests/comentarios-browser.mjs"
       },
@@ -6322,6 +6792,14 @@
         "size": 10247,
         "extension": ".mjs",
         "path": "frontend/tests/comentarios.test.mjs"
+      },
+      {
+        "name": "conta-avaliacao-sessao-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 13292,
+        "extension": ".mjs",
+        "path": "frontend/tests/conta-avaliacao-sessao-browser.mjs"
       },
       {
         "name": "conta-dark-browser.mjs",
@@ -6383,7 +6861,7 @@
         "name": "moderacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 19591,
+        "size": 20768,
         "extension": ".mjs",
         "path": "frontend/tests/moderacao-browser.mjs"
       },
@@ -6399,7 +6877,7 @@
         "name": "moderacao.test.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 5526,
+        "size": 6791,
         "extension": ".mjs",
         "path": "frontend/tests/moderacao.test.mjs"
       },
@@ -6479,7 +6957,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 5601,
+        "size": 5654,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -6594,6 +7072,50 @@
         "size": 8857,
         "extension": ".md",
         "path": "skills/engineering/implementation/SKILL.md"
+      },
+      {
+        "name": "security-review",
+        "type": "directory",
+        "path": "skills/engineering/security-review",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6671,
+        "extension": ".md",
+        "path": "skills/engineering/security-review/SKILL.md"
+      },
+      {
+        "name": "references",
+        "type": "directory",
+        "path": "skills/engineering/security-review/references",
+        "children": []
+      },
+      {
+        "name": "issue-240.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10234,
+        "extension": ".md",
+        "path": "skills/engineering/security-review/references/issue-240.md"
+      },
+      {
+        "name": "scenarios.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3024,
+        "extension": ".md",
+        "path": "skills/engineering/security-review/references/scenarios.md"
+      },
+      {
+        "name": "validation.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3046,
+        "extension": ".md",
+        "path": "skills/engineering/security-review/references/validation.md"
       },
       {
         "name": "testing",
@@ -6734,6 +7256,20 @@
         "size": 6474,
         "extension": ".md",
         "path": "skills/process/grill-me/SKILL.md"
+      },
+      {
+        "name": "incident-response",
+        "type": "directory",
+        "path": "skills/process/incident-response",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7665,
+        "extension": ".md",
+        "path": "skills/process/incident-response/SKILL.md"
       },
       {
         "name": "meeting-minutes",
@@ -6977,7 +7513,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 30339,
+        "size": 31564,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -7062,7 +7598,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-14T12:56:16.469838+00:00",
+    "extracted_at": "2026-11-15T13:27:59.727258+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }
