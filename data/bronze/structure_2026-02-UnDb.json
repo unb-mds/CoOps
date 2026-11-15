@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-02-UnDb",
   "branch": "main",
-  "sha": "e8c1bf818cb21b058c289f8ea6d502f1c01e420e",
+  "sha": "17d9b62c720a8a4192adef86aff4b4ac8dd27989",
   "tree": [
     {
       "name": ".gitattributes",
@@ -180,17 +180,17 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "c8f99b9fabf5b8566ec68ed257c2291a6f7fd490",
+      "sha": "746013af626ac2dc148ae51113e904bd9b72c4cf",
       "mode": "100644",
       "extension": ".md",
-      "size": 5359,
+      "size": 5723,
       "is_binary": false
     },
     {
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "e2b2e24884e8e2e6ae3fb958c316efa22d1e08c0",
+      "sha": "6b8ba06a68abc3867b7d95e09a14dccc85505eef",
       "mode": "040000",
       "children": []
     },
@@ -208,10 +208,10 @@
       "name": ".env.example",
       "path": "backend/.env.example",
       "type": "file",
-      "sha": "b2cdaea9e88f0115845ae89bea5ea6d9c268204b",
+      "sha": "7b8e8ab797b4be6819b974f7cfb425b59cf6146c",
       "mode": "100644",
       "extension": ".example",
-      "size": 1579,
+      "size": 2124,
       "is_binary": false
     },
     {
@@ -238,7 +238,7 @@
       "name": "alembic",
       "path": "backend/alembic",
       "type": "directory",
-      "sha": "e570a646cdf117e3e0f3ec7864fd549f61320c22",
+      "sha": "a2108533b82d08485992bfc2137312d167458163",
       "mode": "040000",
       "children": []
     },
@@ -266,7 +266,7 @@
       "name": "versions",
       "path": "backend/alembic/versions",
       "type": "directory",
-      "sha": "da6edb1a613bafd75f47b76113534b3a638d61a8",
+      "sha": "c042ef879d7295e4c8ca6b354a490c63d25c2b92",
       "mode": "040000",
       "children": []
     },
@@ -391,10 +391,20 @@
       "is_binary": false
     },
     {
+      "name": "20261114_01_moderacao_automatica.py",
+      "path": "backend/alembic/versions/20261114_01_moderacao_automatica.py",
+      "type": "file",
+      "sha": "e0e17fda96ad21b7649623807ee8eb8708a82ca0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 714,
+      "is_binary": false
+    },
+    {
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "82f345d53b5db7d8f305c017f9102f83bbc17434",
+      "sha": "161fa0e5f6e40b9a9265e748e3db391141a2f21e",
       "mode": "040000",
       "children": []
     },
@@ -412,7 +422,7 @@
       "name": "commands",
       "path": "backend/app/commands",
       "type": "directory",
-      "sha": "69bd1bb0992f6c0f483a49fc35e527528f26871c",
+      "sha": "446922e7d5d52d051271793bf3f23f69b56dda7c",
       "mode": "040000",
       "children": []
     },
@@ -437,6 +447,16 @@
       "is_binary": false
     },
     {
+      "name": "avaliar_triagem.py",
+      "path": "backend/app/commands/avaliar_triagem.py",
+      "type": "file",
+      "sha": "5f86062b59265cea862b01440032acdb72cbc1b4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3380,
+      "is_binary": false
+    },
+    {
       "name": "descartar_moderacao.py",
       "path": "backend/app/commands/descartar_moderacao.py",
       "type": "file",
@@ -450,10 +470,10 @@
       "name": "identidades.py",
       "path": "backend/app/commands/identidades.py",
       "type": "file",
-      "sha": "9b01fd1afb270082ce66586389019efb18009d45",
+      "sha": "127216d0f9be3db954454870ed2c8b426f2cdddf",
       "mode": "100644",
       "extension": ".py",
-      "size": 2392,
+      "size": 2604,
       "is_binary": false
     },
     {
@@ -520,7 +540,7 @@
       "name": "core",
       "path": "backend/app/core",
       "type": "directory",
-      "sha": "f54c2622ef5a1f3203aa3d7c530e33caa2a51666",
+      "sha": "cd1e3e2ebad87bfc4f0ab3162f5d9c7067d43f09",
       "mode": "040000",
       "children": []
     },
@@ -548,10 +568,10 @@
       "name": "config.py",
       "path": "backend/app/core/config.py",
       "type": "file",
-      "sha": "f697a04e146c3c813d3b796bd8949cdf2e6d2466",
+      "sha": "8879a8f48bb065267747c009b034ae54fbf2ad6f",
       "mode": "100644",
       "extension": ".py",
-      "size": 624,
+      "size": 1422,
       "is_binary": false
     },
     {
@@ -575,10 +595,28 @@
       "is_binary": false
     },
     {
+      "name": "data",
+      "path": "backend/app/data",
+      "type": "directory",
+      "sha": "47b854c6eb4b79a9c4bcb71000c94c5451cbca64",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "termos_moderacao.json",
+      "path": "backend/app/data/termos_moderacao.json",
+      "type": "file",
+      "sha": "0c9853d4064ce0ceee819ec56fac0aa634db4b25",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 7721,
+      "is_binary": false
+    },
+    {
       "name": "domain",
       "path": "backend/app/domain",
       "type": "directory",
-      "sha": "3ad805d8e93cb8eeeb33b72248e99d083b9c8094",
+      "sha": "9384569faaeb7d6c5242b0766298147d1e1afe8d",
       "mode": "040000",
       "children": []
     },
@@ -623,6 +661,16 @@
       "is_binary": false
     },
     {
+      "name": "triagem_comentario.py",
+      "path": "backend/app/domain/triagem_comentario.py",
+      "type": "file",
+      "sha": "1f551670277c33afefde87e018213cd9caa0db9a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1673,
+      "is_binary": false
+    },
+    {
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
@@ -636,7 +684,7 @@
       "name": "models",
       "path": "backend/app/models",
       "type": "directory",
-      "sha": "4cfbd5eab0503ccd4465f7035dcb5626f06f63ee",
+      "sha": "9859ad0786039c0d016900604a41b10e826efbfb",
       "mode": "040000",
       "children": []
     },
@@ -674,10 +722,10 @@
       "name": "decisao_moderacao.py",
       "path": "backend/app/models/decisao_moderacao.py",
       "type": "file",
-      "sha": "4fd810883b423f3d89d4227cf88332636b7f33bd",
+      "sha": "000c04207a396441950d5b9cffb897c86564475d",
       "mode": "100644",
       "extension": ".py",
-      "size": 1074,
+      "size": 1080,
       "is_binary": false
     },
     {
@@ -804,7 +852,7 @@
       "name": "repositories",
       "path": "backend/app/repositories",
       "type": "directory",
-      "sha": "4b64adc588505ffed2e00a2f48fd71e62cb3e724",
+      "sha": "f4955b95f88c2ce2eb4808a3eb1d40f9f4963edd",
       "mode": "040000",
       "children": []
     },
@@ -862,10 +910,10 @@
       "name": "identidade_docente_repository.py",
       "path": "backend/app/repositories/identidade_docente_repository.py",
       "type": "file",
-      "sha": "e2c2cf7da6ce5b450f1c5bf99c550826556757c4",
+      "sha": "63546d2ad2fca8056b7a250d5442db7a6f9476b8",
       "mode": "100644",
       "extension": ".py",
-      "size": 10335,
+      "size": 11875,
       "is_binary": false
     },
     {
@@ -952,7 +1000,7 @@
       "name": "routers",
       "path": "backend/app/routers",
       "type": "directory",
-      "sha": "ecb9d491b158416db93664cce2baf51d140eedf4",
+      "sha": "493bcad77320eda10e3c66bc6076081dcc1f20d0",
       "mode": "040000",
       "children": []
     },
@@ -980,10 +1028,10 @@
       "name": "avaliacoes.py",
       "path": "backend/app/routers/avaliacoes.py",
       "type": "file",
-      "sha": "b08f2dd76b4f5bc954804d41ac8ee421f99ce42a",
+      "sha": "8d33fdd013a8c166c41dfb4dc4267d970f339f31",
       "mode": "100644",
       "extension": ".py",
-      "size": 1100,
+      "size": 1180,
       "is_binary": false
     },
     {
@@ -1030,10 +1078,10 @@
       "name": "moderacao.py",
       "path": "backend/app/routers/moderacao.py",
       "type": "file",
-      "sha": "6bbc4eefb3b64e5054ce997e1f59031afa62ac8e",
+      "sha": "08118be4bbc92837a1401c8637c06df5de50ea0a",
       "mode": "100644",
       "extension": ".py",
-      "size": 1682,
+      "size": 2038,
       "is_binary": false
     },
     {
@@ -1050,7 +1098,7 @@
       "name": "schemas",
       "path": "backend/app/schemas",
       "type": "directory",
-      "sha": "fbde60e58d6b536ee6ba6e4db0c5d497d84a8342",
+      "sha": "dd8fd16dcdfeb1370fb305c443017f9e3624e4b3",
       "mode": "040000",
       "children": []
     },
@@ -1078,10 +1126,10 @@
       "name": "avaliacao.py",
       "path": "backend/app/schemas/avaliacao.py",
       "type": "file",
-      "sha": "8f84741c5b66a1291026e642c9d68b63afaa7c52",
+      "sha": "0ea49eda2e15aecbd92e60471bfaeb20203c0d99",
       "mode": "100644",
       "extension": ".py",
-      "size": 3840,
+      "size": 3912,
       "is_binary": false
     },
     {
@@ -1128,10 +1176,20 @@
       "name": "moderacao.py",
       "path": "backend/app/schemas/moderacao.py",
       "type": "file",
-      "sha": "cbb87717bbb92e7c5ee56cc1c3d010f48ad42fd8",
+      "sha": "547c19532e4d5913cfe492012f1fe485af743042",
       "mode": "100644",
       "extension": ".py",
-      "size": 1190,
+      "size": 1197,
+      "is_binary": false
+    },
+    {
+      "name": "triagem.py",
+      "path": "backend/app/schemas/triagem.py",
+      "type": "file",
+      "sha": "eb0baadc5c8d8f952deca0e0c963450092b0519a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1851,
       "is_binary": false
     },
     {
@@ -1176,7 +1234,7 @@
       "name": "services",
       "path": "backend/app/services",
       "type": "directory",
-      "sha": "9a09d3845d6fd6a22cb3c745f5173ffa24a21cdc",
+      "sha": "4d51c1947659198daf5506a8e6e9b8f0c8ee6609",
       "mode": "040000",
       "children": []
     },
@@ -1214,10 +1272,10 @@
       "name": "avaliacao_service.py",
       "path": "backend/app/services/avaliacao_service.py",
       "type": "file",
-      "sha": "0e85cc8719960fb6980b69f37c3073fda6c99bd1",
+      "sha": "a6a1751d52fcaa0da8efe312728c72b9bc377474",
       "mode": "100644",
       "extension": ".py",
-      "size": 8049,
+      "size": 8290,
       "is_binary": false
     },
     {
@@ -1254,10 +1312,10 @@
       "name": "identidade_docente_service.py",
       "path": "backend/app/services/identidade_docente_service.py",
       "type": "file",
-      "sha": "8be50c10cb7039192069e50d185679a9a3d0d898",
+      "sha": "cb77795e78e5bf2f3d71f9a3a18bc9457bccbedf",
       "mode": "100644",
       "extension": ".py",
-      "size": 12772,
+      "size": 14784,
       "is_binary": false
     },
     {
@@ -1281,6 +1339,16 @@
       "is_binary": false
     },
     {
+      "name": "moderacao_automatica_service.py",
+      "path": "backend/app/services/moderacao_automatica_service.py",
+      "type": "file",
+      "sha": "467244ce50bd77670b1aaddbdd20e2025ff92b05",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3763,
+      "is_binary": false
+    },
+    {
       "name": "moderacao_service.py",
       "path": "backend/app/services/moderacao_service.py",
       "type": "file",
@@ -1291,6 +1359,16 @@
       "is_binary": false
     },
     {
+      "name": "openai_triagem.py",
+      "path": "backend/app/services/openai_triagem.py",
+      "type": "file",
+      "sha": "2edbda6dc1bf9c8ae3699fccce559ad745818c23",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2031,
+      "is_binary": false
+    },
+    {
       "name": "sigaa_import_service.py",
       "path": "backend/app/services/sigaa_import_service.py",
       "type": "file",
@@ -1298,6 +1376,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 12506,
+      "is_binary": false
+    },
+    {
+      "name": "triagem_service.py",
+      "path": "backend/app/services/triagem_service.py",
+      "type": "file",
+      "sha": "5f1effacc0377a707dae173981b20ed14249ed1a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4397,
       "is_binary": false
     },
     {
@@ -1354,7 +1442,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "6a7f64c47f666ca9688accb50a085de0c5723d8c",
+      "sha": "3de99784b63635db4a3ac531bef67543ea0b37d0",
       "mode": "040000",
       "children": []
     },
@@ -1376,6 +1464,24 @@
       "mode": "100644",
       "extension": ".py",
       "size": 2990,
+      "is_binary": false
+    },
+    {
+      "name": "fixtures",
+      "path": "backend/tests/fixtures",
+      "type": "directory",
+      "sha": "739d0be56eba940a21a37be72fbe2ab59ba87f68",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "triagem_sintetica.json",
+      "path": "backend/tests/fixtures/triagem_sintetica.json",
+      "type": "file",
+      "sha": "a4ae5505fbaa51669df7177816b413ec29de16cc",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2025,
       "is_binary": false
     },
     {
@@ -1592,10 +1698,10 @@
       "name": "test_identidade_hibrida.py",
       "path": "backend/tests/test_identidade_hibrida.py",
       "type": "file",
-      "sha": "7f894c900651b970d33cfc7b38fb02d2819a5aac",
+      "sha": "41d6bafbaedb64c3d12708ae97315c7cc66e55e3",
       "mode": "100644",
       "extension": ".py",
-      "size": 13982,
+      "size": 18643,
       "is_binary": false
     },
     {
@@ -1646,6 +1752,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 11858,
+      "is_binary": false
+    },
+    {
+      "name": "test_moderacao_automatica.py",
+      "path": "backend/tests/test_moderacao_automatica.py",
+      "type": "file",
+      "sha": "559d1baaa0ff50c80338d9fa1cac7d4f9cba085b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7709,
       "is_binary": false
     },
     {
@@ -1709,6 +1825,16 @@
       "is_binary": false
     },
     {
+      "name": "test_triagem.py",
+      "path": "backend/tests/test_triagem.py",
+      "type": "file",
+      "sha": "d7d9a3f5be9514bd73fce9f6a247f4693a330e5c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9463,
+      "is_binary": false
+    },
+    {
       "name": "validar_issue27.py",
       "path": "backend/validar_issue27.py",
       "type": "file",
@@ -1722,17 +1848,17 @@
       "name": "docker-compose.yml",
       "path": "docker-compose.yml",
       "type": "file",
-      "sha": "af15982ff85f8054d8070a2e04172ed88f1daf28",
+      "sha": "b955fce065d56e5f4e73e0ae457454e815301043",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2332,
+      "size": 2892,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "9201460c8db45db5ddffca072a985f6864cbd1ce",
+      "sha": "e9fa368c8c88753361c81e0726e7f900cd884604",
       "mode": "040000",
       "children": []
     },
@@ -1798,10 +1924,10 @@
       "name": "arquitetura.md",
       "path": "docs/arquitetura.md",
       "type": "file",
-      "sha": "02a61907996abc76ab6c4cc00b8532a34fa3bd22",
+      "sha": "45295848a2fb4e20aa235a5f7c6335a89e77efa0",
       "mode": "100644",
       "extension": ".md",
-      "size": 30998,
+      "size": 32131,
       "is_binary": false
     },
     {
@@ -2256,7 +2382,7 @@
       "name": "estudos",
       "path": "docs/estudos",
       "type": "directory",
-      "sha": "662c64a3aa784f89885fdd5a787a64985a9a426b",
+      "sha": "5bfbf1ae7f205c333394560cda512492b39bd918",
       "mode": "040000",
       "children": []
     },
@@ -4439,6 +4565,16 @@
       "is_binary": false
     },
     {
+      "name": "pendencias-finais-issue-207.md",
+      "path": "docs/estudos/pendencias-finais-issue-207.md",
+      "type": "file",
+      "sha": "28e63a2f0493c9195ec904d865dfe34e721d8646",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7261,
+      "is_binary": false
+    },
+    {
       "name": "reavaliacao-seletiva-issue-207.md",
       "path": "docs/estudos/reavaliacao-seletiva-issue-207.md",
       "type": "file",
@@ -4712,10 +4848,10 @@
       "name": "identidades-docentes.md",
       "path": "docs/identidades-docentes.md",
       "type": "file",
-      "sha": "d59b3daf0d675903067a0e2cc770fb56b300b25b",
+      "sha": "9cfaea8b985fd3aebcf0ffa8b7a203bf49547c5c",
       "mode": "100644",
       "extension": ".md",
-      "size": 13354,
+      "size": 15151,
       "is_binary": false
     },
     {
@@ -4756,6 +4892,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 583,
+      "is_binary": false
+    },
+    {
+      "name": "moderacao-ia.md",
+      "path": "docs/moderacao-ia.md",
+      "type": "file",
+      "sha": "7c793e84764e61d3065660998a8651bd6a769162",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 12012,
       "is_binary": false
     },
     {
@@ -5978,10 +6124,10 @@
       "name": "requisitos.md",
       "path": "docs/requisitos.md",
       "type": "file",
-      "sha": "feccb096812632fcb81edf890388a47a4fc4946f",
+      "sha": "b38451f403bc5dd351d2b40484e4caba05fc899f",
       "mode": "100644",
       "extension": ".md",
-      "size": 50807,
+      "size": 52712,
       "is_binary": false
     },
     {
@@ -5998,7 +6144,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "18fe70930cb46622ce67673e108e828ce256bcbc",
+      "sha": "e717823294fc7056ec7fe574df5b97e5b36e315f",
       "mode": "040000",
       "children": []
     },
@@ -6086,7 +6232,7 @@
       "name": "docs",
       "path": "frontend/docs",
       "type": "directory",
-      "sha": "6e0fd655549676c5b85113861a2fcb94dd822937",
+      "sha": "e8f8370647a22f8fc13c79247d3cffb5945f63e3",
       "mode": "040000",
       "children": []
     },
@@ -6094,7 +6240,7 @@
       "name": "capturas",
       "path": "frontend/docs/capturas",
       "type": "directory",
-      "sha": "9c5b8ce12539a6ada843448df4a8fbcfa374e142",
+      "sha": "f1bfc1f89f011b41ea6e9354686e41f7485b6104",
       "mode": "040000",
       "children": []
     },
@@ -6355,6 +6501,440 @@
       "is_binary": false
     },
     {
+      "name": "issue-237",
+      "path": "frontend/docs/capturas/issue-237",
+      "type": "directory",
+      "sha": "e4664f00c4364ebff81b3ecb459a95857e8dc3b2",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "antes",
+      "path": "frontend/docs/capturas/issue-237/antes",
+      "type": "directory",
+      "sha": "b8ddf1b992830b7a734f580cba1dd0ef4a74221d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "avaliacao-confirmado-1440.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-1440.png",
+      "type": "file",
+      "sha": "675dc735026ccf622d7dd74dc490c0ff7a82a035",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 273553,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-confirmado-320.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-320.png",
+      "type": "file",
+      "sha": "89a41eb780291948156bd15bb85d4895876db56e",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 221203,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-confirmado-390.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-390.png",
+      "type": "file",
+      "sha": "2a5e8810072540271f8e60c611f07b37544f41df",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 216260,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-confirmado-768.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-confirmado-768.png",
+      "type": "file",
+      "sha": "627018fba0d52a5796e46684ab8dabbd07f0145e",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 238854,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-1440.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-1440.png",
+      "type": "file",
+      "sha": "f0b8018cf431ede2e45ed42f84e65a445855a769",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 269639,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-320.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-320.png",
+      "type": "file",
+      "sha": "aabe18e727c27834b7b749afc4e818096c438553",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 218237,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-390.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-390.png",
+      "type": "file",
+      "sha": "364566d2930acd214f2a6d415af93a3003b87cd3",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 211577,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-768.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-pendente-768.png",
+      "type": "file",
+      "sha": "cd322c6eb9315a9daf7d74dc26923e1b3899ff30",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 234388,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-1440.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-1440.png",
+      "type": "file",
+      "sha": "c97a7dd571716e17efca25f669c98900e1b14299",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 269696,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-320.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-320.png",
+      "type": "file",
+      "sha": "86447ac5c53fa255fd31e66bf9f6501c45339174",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 217224,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-390.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-390.png",
+      "type": "file",
+      "sha": "eac4c8da77b8be840328b7b03e803e6f3dba7f03",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 211910,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-768.png",
+      "path": "frontend/docs/capturas/issue-237/antes/avaliacao-visitante-768.png",
+      "type": "file",
+      "sha": "c2165739c6d99ea383d64cd9d2524cd6311d7082",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 233009,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-1440.png",
+      "path": "frontend/docs/capturas/issue-237/antes/minha-conta-1440.png",
+      "type": "file",
+      "sha": "e4af0143616167df452814629a68fa2f7d626929",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 160297,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-320.png",
+      "path": "frontend/docs/capturas/issue-237/antes/minha-conta-320.png",
+      "type": "file",
+      "sha": "8913d88cc4c5d649e65e3f8ce23adb3311422814",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 67240,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-390.png",
+      "path": "frontend/docs/capturas/issue-237/antes/minha-conta-390.png",
+      "type": "file",
+      "sha": "117f8598436134dbbf87d7e794eb95c366c89e96",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 69366,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-768.png",
+      "path": "frontend/docs/capturas/issue-237/antes/minha-conta-768.png",
+      "type": "file",
+      "sha": "970115a84e77d4745331c361981e178782716f4f",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 103077,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-1440.png",
+      "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-1440.png",
+      "type": "file",
+      "sha": "f41818afaa926036b53d56ef2f683496af9ca8fb",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 190048,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-320.png",
+      "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-320.png",
+      "type": "file",
+      "sha": "6a1274fede1c634fc04c756ccb7340853d41b4d5",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 83003,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-390.png",
+      "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-390.png",
+      "type": "file",
+      "sha": "764b3c8636e921f6cf50824f1724184a98a66ada",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 84552,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-768.png",
+      "path": "frontend/docs/capturas/issue-237/antes/senha-cadastro-768.png",
+      "type": "file",
+      "sha": "b0fdf9d026701fb1cbe74a406d561f251c2162dc",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 124288,
+      "is_binary": false
+    },
+    {
+      "name": "depois",
+      "path": "frontend/docs/capturas/issue-237/depois",
+      "type": "directory",
+      "sha": "520ac461730a1e27f40b9aab0da44a3175fa25c7",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "avaliacao-confirmado-1440.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-1440.png",
+      "type": "file",
+      "sha": "dbe84852ab10035af7da5e3cd35a2a2ffd7c6907",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 199481,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-confirmado-320.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-320.png",
+      "type": "file",
+      "sha": "00a2d49c33c3224162c31b9e975c46e6739c30e8",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 185739,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-confirmado-390.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-390.png",
+      "type": "file",
+      "sha": "f96d0ec46b32aee9ab9f8eea8d329db105b2c9d6",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 181326,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-confirmado-768.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-confirmado-768.png",
+      "type": "file",
+      "sha": "1a3af7ca92150eb7d874fefdc6651b270f09e224",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 188411,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-1440.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-1440.png",
+      "type": "file",
+      "sha": "d339e22a2ea901c90c8688f347734a90246aac34",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 199666,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-320.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-320.png",
+      "type": "file",
+      "sha": "e792cdc668d1e1f291888b0102e3d806a03f6139",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 187978,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-390.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-390.png",
+      "type": "file",
+      "sha": "7609b7cfe845f6d51acc30c593288f0c91fa5c7e",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 183173,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-pendente-768.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-pendente-768.png",
+      "type": "file",
+      "sha": "8a5c5fa6ae1d24ad9ced47244a1296d32437c601",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 191119,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-1440.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-1440.png",
+      "type": "file",
+      "sha": "2e5bdf0024e201046b21605768ca7b0e0ba6c47c",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 196479,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-320.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-320.png",
+      "type": "file",
+      "sha": "4d148ee1d657f1bae5d395ebde4014b4c427721a",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 184748,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-390.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-390.png",
+      "type": "file",
+      "sha": "33ceb61198b0e575c129c5d4623ff999db4bb05a",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 180618,
+      "is_binary": false
+    },
+    {
+      "name": "avaliacao-visitante-768.png",
+      "path": "frontend/docs/capturas/issue-237/depois/avaliacao-visitante-768.png",
+      "type": "file",
+      "sha": "046fb7816aaf9386675e10bcc19792ec1656f191",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 187566,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-1440.png",
+      "path": "frontend/docs/capturas/issue-237/depois/minha-conta-1440.png",
+      "type": "file",
+      "sha": "b43c4bb96403efb79a30ad89ec8698b60f4e0d91",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 148385,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-320.png",
+      "path": "frontend/docs/capturas/issue-237/depois/minha-conta-320.png",
+      "type": "file",
+      "sha": "ff19aa650a2d92dd06d7136b2052fce275cd5792",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 61786,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-390.png",
+      "path": "frontend/docs/capturas/issue-237/depois/minha-conta-390.png",
+      "type": "file",
+      "sha": "b5aa8bd7f26fcafd280e4e9cc57c06be32a4767d",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 67199,
+      "is_binary": false
+    },
+    {
+      "name": "minha-conta-768.png",
+      "path": "frontend/docs/capturas/issue-237/depois/minha-conta-768.png",
+      "type": "file",
+      "sha": "2fb55444981d299fbd02ea797bb4c034b8b419f7",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 93466,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-1440.png",
+      "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-1440.png",
+      "type": "file",
+      "sha": "fd0c3e71b9e6169982b17d14797818ca4117289d",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 204851,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-320.png",
+      "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-320.png",
+      "type": "file",
+      "sha": "e5886955adeb1f37908727a7add5029e3489c185",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 91042,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-390.png",
+      "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-390.png",
+      "type": "file",
+      "sha": "ca352e4d2e0d94d49733c369e1afe0679fa37f2d",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 92461,
+      "is_binary": false
+    },
+    {
+      "name": "senha-cadastro-768.png",
+      "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-768.png",
+      "type": "file",
+      "sha": "d502b6be8d3bb8163b743c8915d44bd9144b39e0",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 135198,
+      "is_binary": false
+    },
+    {
+      "name": "conta-avaliacao-237.md",
+      "path": "frontend/docs/conta-avaliacao-237.md",
+      "type": "file",
+      "sha": "f299a150a668ae89ffdc38a781576787f4d8f8b8",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7225,
+      "is_binary": false
+    },
+    {
       "name": "integracao-visual-211.md",
       "path": "frontend/docs/integracao-visual-211.md",
       "type": "file",
@@ -6468,10 +7048,10 @@
       "name": "package.json",
       "path": "frontend/package.json",
       "type": "file",
-      "sha": "790de81f28e66321d68c8a8b46839578d02670d2",
+      "sha": "06afbe6db5e570380527f536d2bffeaf7b24e3f3",
       "mode": "100644",
       "extension": ".json",
-      "size": 1451,
+      "size": 1500,
       "is_binary": false
     },
     {
@@ -6642,7 +7222,7 @@
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "0c0d259b334b1c67d5cf94e1c7b4278d3974bd5d",
+      "sha": "5f4f265751f47520568b7c91e83353dc74e6e9e9",
       "mode": "040000",
       "children": []
     },
@@ -6650,7 +7230,7 @@
       "name": "app",
       "path": "frontend/src/app",
       "type": "directory",
-      "sha": "9b55d31be927367dc0bb5f37867ae1af4ec801e4",
+      "sha": "7b47d47dcc4f00f0cdab068fcb392021da72a933",
       "mode": "040000",
       "children": []
     },
@@ -6836,7 +7416,7 @@
       "name": "login",
       "path": "frontend/src/app/login",
       "type": "directory",
-      "sha": "0d5b8744ff29302f928df478ed595fa38bb651f4",
+      "sha": "6ccb19c0b7934a4460f3d39b31ea4b3b13fa0a3b",
       "mode": "040000",
       "children": []
     },
@@ -6844,10 +7424,10 @@
       "name": "login-form.tsx",
       "path": "frontend/src/app/login/login-form.tsx",
       "type": "file",
-      "sha": "eadfc7db9ff056f80241444b2427ab489228bedb",
+      "sha": "dc008fa26851b8ee81cd9e27e8efc4c897569e80",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4839,
+      "size": 6778,
       "is_binary": false
     },
     {
@@ -6864,18 +7444,28 @@
       "name": "moderacao",
       "path": "frontend/src/app/moderacao",
       "type": "directory",
-      "sha": "ce4866975d10c3044263b8e6683d289649d81a69",
+      "sha": "e753c3fcff026e1a62170a0dc63eb6583a9de16f",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "apoio-moderacao.tsx",
+      "path": "frontend/src/app/moderacao/apoio-moderacao.tsx",
+      "type": "file",
+      "sha": "eb0e0227d6beb1cdc553412e0d70dad6b24ceac9",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 3752,
+      "is_binary": false
     },
     {
       "name": "detalhe-moderacao.tsx",
       "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx",
       "type": "file",
-      "sha": "517edc666ad08b08558fbe918ce40192cca05831",
+      "sha": "144def3d8b78962c82c843305a7a1ec0f0771652",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 9816,
+      "size": 10160,
       "is_binary": false
     },
     {
@@ -6892,7 +7482,7 @@
       "name": "identidades",
       "path": "frontend/src/app/moderacao/identidades",
       "type": "directory",
-      "sha": "9d6823ced27f1f4f8823e7090357e2fda3f46fb7",
+      "sha": "4eb724a16b78295cbd51a9a78f9c0940d3b823f1",
       "mode": "040000",
       "children": []
     },
@@ -6900,10 +7490,10 @@
       "name": "fila-identidades.tsx",
       "path": "frontend/src/app/moderacao/identidades/fila-identidades.tsx",
       "type": "file",
-      "sha": "394bafcc29ccaf1fdf4d2455edc0c839966245f0",
+      "sha": "95faa14495c4e74488b2ce9a814c8afd46633253",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 10223,
+      "size": 10341,
       "is_binary": false
     },
     {
@@ -6950,7 +7540,7 @@
       "name": "professores",
       "path": "frontend/src/app/professores",
       "type": "directory",
-      "sha": "cd5328ceffc42cb492eec6500e7b4a519b4f1867",
+      "sha": "e97069931594916ea7398591b6dd34b55ca96944",
       "mode": "040000",
       "children": []
     },
@@ -6958,7 +7548,7 @@
       "name": "[id]",
       "path": "frontend/src/app/professores/[id]",
       "type": "directory",
-      "sha": "db0f385a3573a90f2237037e7933001e9649e81d",
+      "sha": "17817b87933d9d8811ed77057641c1a58f402179",
       "mode": "040000",
       "children": []
     },
@@ -6966,7 +7556,7 @@
       "name": "disciplinas",
       "path": "frontend/src/app/professores/[id]/disciplinas",
       "type": "directory",
-      "sha": "f1f629ff5a739019d9f1dc41239cc60e1969b044",
+      "sha": "65e75b34922c481434ee72f5a2e3e5694bd15a4c",
       "mode": "040000",
       "children": []
     },
@@ -6974,7 +7564,7 @@
       "name": "[disciplinaId]",
       "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]",
       "type": "directory",
-      "sha": "8e0a8f33aad848e4674b125c59006dd43c9cbff0",
+      "sha": "7ee217ec825b08c8fe01604e94b487f8dbb96f5f",
       "mode": "040000",
       "children": []
     },
@@ -6982,7 +7572,7 @@
       "name": "avaliar",
       "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar",
       "type": "directory",
-      "sha": "75c7c2edb0748c50e1b2628988453de74d7532bc",
+      "sha": "bb314ce5f641bd7feb234e6a159678ee9e79e1c9",
       "mode": "040000",
       "children": []
     },
@@ -6990,20 +7580,20 @@
       "name": "avaliacao-form.tsx",
       "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx",
       "type": "file",
-      "sha": "8f4fccc08714008453b38c0def04ac092269b940",
+      "sha": "884dd6182f85734f983f81c1e067153920cfec8b",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 11018,
+      "size": 12921,
       "is_binary": false
     },
     {
       "name": "page.tsx",
       "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx",
       "type": "file",
-      "sha": "5f898d2619bcb6c41a1395c943b14069ceeb854c",
+      "sha": "ca288a9c116d08018dadc327f096cfb9909a2d00",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3935,
+      "size": 3862,
       "is_binary": false
     },
     {
@@ -7156,7 +7746,7 @@
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "428ac06f1696a393820fd04e12e3e1c466e4431c",
+      "sha": "b909218c2ba600595824df385ddb0a1bf609d837",
       "mode": "040000",
       "children": []
     },
@@ -7214,10 +7804,10 @@
       "name": "cabecalho.tsx",
       "path": "frontend/src/components/cabecalho.tsx",
       "type": "file",
-      "sha": "fc25855697a4ab568210a7743344b5456ddd280f",
+      "sha": "01e432df3e2dc425b7f975c6e0ab3b864daec73c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4661,
+      "size": 4710,
       "is_binary": false
     },
     {
@@ -7234,10 +7824,10 @@
       "name": "campo-senha.tsx",
       "path": "frontend/src/components/campo-senha.tsx",
       "type": "file",
-      "sha": "f4cf3173337146e85053f93f31e66e02bed885d1",
+      "sha": "4f6bfda25d384cd2e4b702189866b2fbff799931",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1063,
+      "size": 1261,
       "is_binary": false
     },
     {
@@ -7524,7 +8114,7 @@
       "name": "lib",
       "path": "frontend/src/lib",
       "type": "directory",
-      "sha": "d629e7f74d96e1d8320453458adc54fac24c5de6",
+      "sha": "8d26f7e825f45f04b4483685462661213a7723bd",
       "mode": "040000",
       "children": []
     },
@@ -7640,7 +8230,7 @@
       "name": "services",
       "path": "frontend/src/lib/services",
       "type": "directory",
-      "sha": "1d498bf1c3f68692eb0d113fb67d72da68cccf96",
+      "sha": "c919df8359a97478ebf1d6c0b47e4a1cb57e0b49",
       "mode": "040000",
       "children": []
     },
@@ -7668,10 +8258,10 @@
       "name": "avaliacoes.ts",
       "path": "frontend/src/lib/services/avaliacoes.ts",
       "type": "file",
-      "sha": "f4686c6941cc5f9a2900f49b19b761c4f1d4b6ea",
+      "sha": "ee73823626a321def8f535f8565cb3c544cdf8be",
       "mode": "100644",
       "extension": ".ts",
-      "size": 3826,
+      "size": 4146,
       "is_binary": false
     },
     {
@@ -7728,10 +8318,10 @@
       "name": "moderacao.ts",
       "path": "frontend/src/lib/services/moderacao.ts",
       "type": "file",
-      "sha": "b28701c38f59170a24c4f31081ad63b74b046cef",
+      "sha": "dbcc85b89d105485d3445a45d1eb08c455fe184a",
       "mode": "100644",
       "extension": ".ts",
-      "size": 5171,
+      "size": 6463,
       "is_binary": false
     },
     {
@@ -7748,7 +8338,7 @@
       "name": "types",
       "path": "frontend/src/lib/types",
       "type": "directory",
-      "sha": "4fff587ab704fadb5429e2887b916efbb1f4c1ff",
+      "sha": "d3e460ae07ccb7d201e25c7b5908fa5b206049ca",
       "mode": "040000",
       "children": []
     },
@@ -7796,10 +8386,10 @@
       "name": "moderacao.ts",
       "path": "frontend/src/lib/types/moderacao.ts",
       "type": "file",
-      "sha": "fca9f723c84b4a246be8611fb410b9e846cb3d33",
+      "sha": "d7206ce707b37c832c6c1c9cca7acd48665c10bc",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1684,
+      "size": 3104,
       "is_binary": false
     },
     {
@@ -7816,7 +8406,7 @@
       "name": "tests",
       "path": "frontend/tests",
       "type": "directory",
-      "sha": "262c157b14e4febb6596315510dd3c1f31b009f6",
+      "sha": "8f3dd25b7fa5d0ed343c2cfb70227ae1a19a0a76",
       "mode": "040000",
       "children": []
     },
@@ -7834,10 +8424,10 @@
       "name": "avaliacao-browser.mjs",
       "path": "frontend/tests/avaliacao-browser.mjs",
       "type": "file",
-      "sha": "ab97b83e84f5d9a400a7e8153f8479df6447c315",
+      "sha": "51495b89c472505fca3d0b93d067ff0957e1b24b",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 32109,
+      "size": 33623,
       "is_binary": false
     },
     {
@@ -7884,10 +8474,10 @@
       "name": "browser-session.mjs",
       "path": "frontend/tests/browser-session.mjs",
       "type": "file",
-      "sha": "fae0f89753fd047bb8af45b39657fc3fa997e3a3",
+      "sha": "d1b91254933eb3d14ac602841a0b3177e65665e2",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 4086,
+      "size": 4126,
       "is_binary": false
     },
     {
@@ -7914,10 +8504,10 @@
       "name": "cabecalho-browser.mjs",
       "path": "frontend/tests/cabecalho-browser.mjs",
       "type": "file",
-      "sha": "5fae3fea79ab381d49274080281d407b1535b3d6",
+      "sha": "f158de135e9d6efc535aa6bc23d2e4cb7a8521e3",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 9089,
+      "size": 9302,
       "is_binary": false
     },
     {
@@ -7934,10 +8524,10 @@
       "name": "comentarios-browser.mjs",
       "path": "frontend/tests/comentarios-browser.mjs",
       "type": "file",
-      "sha": "d7701617d7ce1768ab283855fbf8af6167ecd124",
+      "sha": "b97770161f186a8b0d87324db365184a921566d4",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 12155,
+      "size": 12612,
       "is_binary": false
     },
     {
@@ -7948,6 +8538,16 @@
       "mode": "100644",
       "extension": ".mjs",
       "size": 10247,
+      "is_binary": false
+    },
+    {
+      "name": "conta-avaliacao-sessao-browser.mjs",
+      "path": "frontend/tests/conta-avaliacao-sessao-browser.mjs",
+      "type": "file",
+      "sha": "787ff85c2c31134edb6ccf17c676ac4cb6b511eb",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 13292,
       "is_binary": false
     },
     {
@@ -8024,10 +8624,10 @@
       "name": "moderacao-browser.mjs",
       "path": "frontend/tests/moderacao-browser.mjs",
       "type": "file",
-      "sha": "ccee7ac902a835207874eb7a0ed355973f5c4d35",
+      "sha": "6bf0fba3560cdb3c0df20daf10151abc499d9059",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 19591,
+      "size": 20768,
       "is_binary": false
     },
     {
@@ -8044,10 +8644,10 @@
       "name": "moderacao.test.mjs",
       "path": "frontend/tests/moderacao.test.mjs",
       "type": "file",
-      "sha": "ca51ce969d846289facd60d3cb9d5648a3781ecc",
+      "sha": "17f4b08cd78ea6e99dbb8175d9cc7e9776cac128",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 5526,
+      "size": 6791,
       "is_binary": false
     },
     {
@@ -8144,10 +8744,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "4b1f2c72bc5f62e42a2118a1334fab70efdec236",
+      "sha": "14bf0046e76bd08744bf0c3de5524231d708bdcf",
       "mode": "100644",
       "extension": ".yml",
-      "size": 5601,
+      "size": 5654,
       "is_binary": false
     },
     {
@@ -8228,7 +8828,7 @@
       "name": "skills",
       "path": "skills",
       "type": "directory",
-      "sha": "d238d88ddfd8dfd904d7736d8ecb075c5ef0dceb",
+      "sha": "b99d4b560a77bf8752b086a52ab2104d9df8d52d",
       "mode": "040000",
       "children": []
     },
@@ -8236,7 +8836,7 @@
       "name": "engineering",
       "path": "skills/engineering",
       "type": "directory",
-      "sha": "7c61bd8fed6999ce25e419853a73a7f20b48bb75",
+      "sha": "4b760d0595a2ea01a94d8302c3cd8b91602ab55f",
       "mode": "040000",
       "children": []
     },
@@ -8292,6 +8892,62 @@
       "mode": "100644",
       "extension": ".md",
       "size": 8857,
+      "is_binary": false
+    },
+    {
+      "name": "security-review",
+      "path": "skills/engineering/security-review",
+      "type": "directory",
+      "sha": "76ec3cd8bd35fcfb14c1f1155e54db91cf28ee5f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": "skills/engineering/security-review/SKILL.md",
+      "type": "file",
+      "sha": "bf4285f292d165bdd859390339e8265c886dce69",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6671,
+      "is_binary": false
+    },
+    {
+      "name": "references",
+      "path": "skills/engineering/security-review/references",
+      "type": "directory",
+      "sha": "b74b5b9e5bd867bb8fa45ea64374140d334c4f88",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "issue-240.md",
+      "path": "skills/engineering/security-review/references/issue-240.md",
+      "type": "file",
+      "sha": "78507d030f5dd04a141548917690f09bee6a7c0f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10234,
+      "is_binary": false
+    },
+    {
+      "name": "scenarios.md",
+      "path": "skills/engineering/security-review/references/scenarios.md",
+      "type": "file",
+      "sha": "419c6ac3c2a38a30eb21eca1f3949df8c409e005",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3024,
+      "is_binary": false
+    },
+    {
+      "name": "validation.md",
+      "path": "skills/engineering/security-review/references/validation.md",
+      "type": "file",
+      "sha": "2ceaff5337f3750c2dfaab71741966b15df4adeb",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3046,
       "is_binary": false
     },
     {
@@ -8416,7 +9072,7 @@
       "name": "process",
       "path": "skills/process",
       "type": "directory",
-      "sha": "0fdb4a91ab3ff85222640b382dffb10da72450f0",
+      "sha": "7d6f77de3b32b2104473bd0a1f8c9b080fa62e50",
       "mode": "040000",
       "children": []
     },
@@ -8472,6 +9128,24 @@
       "mode": "100644",
       "extension": ".md",
       "size": 6474,
+      "is_binary": false
+    },
+    {
+      "name": "incident-response",
+      "path": "skills/process/incident-response",
+      "type": "directory",
+      "sha": "a001b64ae42af15a94f1f93b4bf320db111c4819",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": "skills/process/incident-response/SKILL.md",
+      "type": "file",
+      "sha": "80a7fdff15c6654c5a771d9648e1bf00d1b19dbf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7665,
       "is_binary": false
     },
     {
@@ -8782,10 +9456,10 @@
       "name": "specs.md",
       "path": "specs.md",
       "type": "file",
-      "sha": "7b53c2f6aac9576eb0d3043bb3f4b1928cc84e84",
+      "sha": "301f6cc9a2918d2bcb97bc99a7e485fd47d60358",
       "mode": "100644",
       "extension": ".md",
-      "size": 30339,
+      "size": 31564,
       "is_binary": false
     },
     {
@@ -8890,9 +9564,9 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-14T12:55:20.619459+00:00",
+  "extracted_at": "2026-11-15T13:26:50.043138+00:00",
   "method": "rest",
-  "total_items": 916,
+  "total_items": 985,
   "repository_metadata": {
     "id": 1338351549,
     "full_name": "unb-mds/2026-02-UnDb",
@@ -8900,9 +9574,9 @@
     "created_at": "2026-08-18T11:57:41Z",
     "updated_at": "2026-11-12T16:26:16Z",
     "language": "Python",
-    "size": 31221,
+    "size": 40720,
     "stars": 6,
     "forks": 0,
-    "open_issues": 13
+    "open_issues": 12
   }
 }

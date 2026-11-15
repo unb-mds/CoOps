@@ -1,10 +1,621 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-14T12:51:47.316744+00:00",
+      "extracted_at": "2026-11-15T13:23:28.039800+00:00",
       "file_path": "data/bronze/commits_2026-02-UnDb.json",
-      "record_count": 502
+      "record_count": 526
     }
+  },
+  {
+    "sha": "17d9b62c720a8a4192adef86aff4b4ac8dd27989",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T22:18:54Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T22:18:54Z"
+      },
+      "message": "Merge pull request #250 from unb-mds/release/2.0.0-20261114\n\nrelease: promover develop para main via branch de release"
+    },
+    "parents": [
+      "e8c1bf818cb21b058c289f8ea6d502f1c01e420e",
+      "7255cadf9688a5cef43c4f56a2e050dea66c31e4"
+    ],
+    "additions": 2675,
+    "deletions": 124,
+    "total_changes": 2799,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7255cadf9688a5cef43c4f56a2e050dea66c31e4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T22:16:58Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T22:16:58Z"
+      },
+      "message": "Merge branch 'main' into release/2.0.0-20261114"
+    },
+    "parents": [
+      "18c04c445bed813948a6ed64f0fbcdc8a33c4bb7",
+      "e8c1bf818cb21b058c289f8ea6d502f1c01e420e"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "18c04c445bed813948a6ed64f0fbcdc8a33c4bb7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:34:01Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T05:34:01Z"
+      },
+      "message": "Merge pull request #245 from unb-mds/feature/239-triagem-automatica-openai\n\n[R2] Implementar triagem automática de comentários com OpenAI (#239)"
+    },
+    "parents": [
+      "d59e48b0d5f293f5a332e51a0e422f60380327e9",
+      "63cea22810619d3410833f60261459c3ff825beb"
+    ],
+    "additions": 1702,
+    "deletions": 35,
+    "total_changes": 1737,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "63cea22810619d3410833f60261459c3ff825beb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:27:42Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T05:27:42Z"
+      },
+      "message": "Merge branch 'develop' into feature/239-triagem-automatica-openai"
+    },
+    "parents": [
+      "88bb89d5e53819b5717854f8d4b25d888292f666",
+      "d59e48b0d5f293f5a332e51a0e422f60380327e9"
+    ],
+    "additions": 296,
+    "deletions": 0,
+    "total_changes": 296,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d59e48b0d5f293f5a332e51a0e422f60380327e9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:27:29Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T05:27:29Z"
+      },
+      "message": "Merge pull request #244 from unb-mds/docs/240-skills-seguranca-incidentes\n\ndocs: propor skills de segurança e resposta a incidentes (#240)"
+    },
+    "parents": [
+      "cb6af96770e7c37dc76d7e6cc2992606dc7aee8e",
+      "8c92a5dcb5a469a35a1f74e80747adae982e720a"
+    ],
+    "additions": 296,
+    "deletions": 0,
+    "total_changes": 296,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8c92a5dcb5a469a35a1f74e80747adae982e720a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:22:30Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T05:22:30Z"
+      },
+      "message": "Merge branch 'develop' into docs/240-skills-seguranca-incidentes"
+    },
+    "parents": [
+      "ea09d11e852a03dff9a9bc76b6ce29adcdf89aac",
+      "cb6af96770e7c37dc76d7e6cc2992606dc7aee8e"
+    ],
+    "additions": 346,
+    "deletions": 53,
+    "total_changes": 399,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "88bb89d5e53819b5717854f8d4b25d888292f666",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:21:59Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T05:21:59Z"
+      },
+      "message": "Merge branch 'develop' into feature/239-triagem-automatica-openai"
+    },
+    "parents": [
+      "3acf6d352ddbc8278424cbb1dfc21e48d41909b9",
+      "cb6af96770e7c37dc76d7e6cc2992606dc7aee8e"
+    ],
+    "additions": 346,
+    "deletions": 53,
+    "total_changes": 399,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "cb6af96770e7c37dc76d7e6cc2992606dc7aee8e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:20:19Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T05:20:19Z"
+      },
+      "message": "Merge pull request #243 from unb-mds/fix/237-conta-avaliacao-estado-sessao\n\nfix: corrigir apresentação da conta e acesso à avaliação (#237)"
+    },
+    "parents": [
+      "edd4a7beb22fbde74df34fa22f44f35e57ddf642",
+      "942305a6c74c4c654072044ee0b5a7b3e9ce03be"
+    ],
+    "additions": 346,
+    "deletions": 53,
+    "total_changes": 399,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3acf6d352ddbc8278424cbb1dfc21e48d41909b9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:19:56Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:19:56Z"
+      },
+      "message": "feat: implementar triagem automática de comentários com OpenAI (#239)"
+    },
+    "parents": [
+      "edd4a7beb22fbde74df34fa22f44f35e57ddf642"
+    ],
+    "additions": 1702,
+    "deletions": 35,
+    "total_changes": 1737,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "942305a6c74c4c654072044ee0b5a7b3e9ce03be",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:15:41Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:15:41Z"
+      },
+      "message": "fix(test): sincronizar erros da avaliação com API real"
+    },
+    "parents": [
+      "ce34895d291df42bac5f3d5cd5c8cf8854ca3b89"
+    ],
+    "additions": 4,
+    "deletions": 4,
+    "total_changes": 8,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ea09d11e852a03dff9a9bc76b6ce29adcdf89aac",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T05:11:59Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T05:11:59Z"
+      },
+      "message": "docs: propor resposta a incidentes com limites e recuperação"
+    },
+    "parents": [
+      "0ad27780549ee550f1b666c1c9d5f3f38aa9dc74"
+    ],
+    "additions": 79,
+    "deletions": 0,
+    "total_changes": 79,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0ad27780549ee550f1b666c1c9d5f3f38aa9dc74",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T05:11:45Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T05:11:45Z"
+      },
+      "message": "docs: propor revisão de segurança e registrar evidências da #240"
+    },
+    "parents": [
+      "edd4a7beb22fbde74df34fa22f44f35e57ddf642"
+    ],
+    "additions": 217,
+    "deletions": 0,
+    "total_changes": 217,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ce34895d291df42bac5f3d5cd5c8cf8854ca3b89",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:08:05Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:08:05Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/develop' into fix/237-conta-avaliacao-estado-sessao"
+    },
+    "parents": [
+      "550fce68c655fe87f81d4e70c214d485742ce483",
+      "edd4a7beb22fbde74df34fa22f44f35e57ddf642"
+    ],
+    "additions": 331,
+    "deletions": 36,
+    "total_changes": 367,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "550fce68c655fe87f81d4e70c214d485742ce483",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:07:41Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T05:07:41Z"
+      },
+      "message": "fix(test): aguardar resultado do envio da avaliação"
+    },
+    "parents": [
+      "364440cc6d9000bdc928c7f2020a5ee769447eb0"
+    ],
+    "additions": 9,
+    "deletions": 2,
+    "total_changes": 11,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "364440cc6d9000bdc928c7f2020a5ee769447eb0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:39:38Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:39:38Z"
+      },
+      "message": "docs: registrar validação e capturas da revisão de conta"
+    },
+    "parents": [
+      "23316cf070e1dc1d8a4af54b4e9e195c105c64ba"
+    ],
+    "additions": 46,
+    "deletions": 0,
+    "total_changes": 46,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "23316cf070e1dc1d8a4af54b4e9e195c105c64ba",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:39:25Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:39:25Z"
+      },
+      "message": "test: cobrir apresentação de sessão e acesso à avaliação"
+    },
+    "parents": [
+      "06228e212b21e35fb5e011a030af8d1b7779e495"
+    ],
+    "additions": 199,
+    "deletions": 8,
+    "total_changes": 207,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "06228e212b21e35fb5e011a030af8d1b7779e495",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:30:06Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:30:06Z"
+      },
+      "message": "fix: preservar formulário de acesso ao revalidar visitante"
+    },
+    "parents": [
+      "f39fbd32fed0a55981daf41bff5f1e1ac758f7aa"
+    ],
+    "additions": 3,
+    "deletions": 1,
+    "total_changes": 4,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "edd4a7beb22fbde74df34fa22f44f35e57ddf642",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T04:14:06Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-14T04:14:06Z"
+      },
+      "message": "Merge pull request #238 from unb-mds/fix/207-pendencias-finais\n\nfix: tratar pendências revisadas e históricos incompletos (#207)"
+    },
+    "parents": [
+      "97320961fe7b59a0d4b828e6bd0d2d536f6ae09b",
+      "b7fe71a52e3cb72b9e68312104f4a4260a1a7e69"
+    ],
+    "additions": 331,
+    "deletions": 36,
+    "total_changes": 367,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f39fbd32fed0a55981daf41bff5f1e1ac758f7aa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:47Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:47Z"
+      },
+      "message": "fix: manter fundo estático somente na avaliação"
+    },
+    "parents": [
+      "d129ea941897d759a95f27faf5a2ccfb500dbffe"
+    ],
+    "additions": 1,
+    "deletions": 3,
+    "total_changes": 4,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d129ea941897d759a95f27faf5a2ccfb500dbffe",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:46Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:46Z"
+      },
+      "message": "fix: orientar senha exclusiva no cadastro sem novas restrições"
+    },
+    "parents": [
+      "23d1d90fe81495ccd359583d95330df6e667c5b7"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "23d1d90fe81495ccd359583d95330df6e667c5b7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:46Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:46Z"
+      },
+      "message": "fix: adequar orientação da avaliação ao acesso confirmado"
+    },
+    "parents": [
+      "7fad9df004f517a53ef0d7f7365e6c3e3c6f2e2f"
+    ],
+    "additions": 33,
+    "deletions": 5,
+    "total_changes": 38,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7fad9df004f517a53ef0d7f7365e6c3e3c6f2e2f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:46Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-14T04:05:46Z"
+      },
+      "message": "fix: apresentar conta por estado verificado da sessão"
+    },
+    "parents": [
+      "97320961fe7b59a0d4b828e6bd0d2d536f6ae09b"
+    ],
+    "additions": 51,
+    "deletions": 30,
+    "total_changes": 81,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b7fe71a52e3cb72b9e68312104f4a4260a1a7e69",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T01:29:36Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-14T01:29:36Z"
+      },
+      "message": "fix: tratar pendências revisadas e históricos incompletos (#207)"
+    },
+    "parents": [
+      "97320961fe7b59a0d4b828e6bd0d2d536f6ae09b"
+    ],
+    "additions": 331,
+    "deletions": 36,
+    "total_changes": 367,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "97320961fe7b59a0d4b828e6bd0d2d536f6ae09b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-13T23:24:27Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-13T23:24:27Z"
+      },
+      "message": "Merge pull request #236 from unb-mds/release/1.5.0\n\nrelease: retornar ajustes da 1.5.0 para develop"
+    },
+    "parents": [
+      "4881bb92bfb1977f574013d4cc8f78f20c736001",
+      "f6dac4d688cfdbafb4ea660999298dd3a851c4c9"
+    ],
+    "additions": 509,
+    "deletions": 348,
+    "total_changes": 857,
+    "repo_name": "2026-02-UnDb"
   },
   {
     "sha": "e8c1bf818cb21b058c289f8ea6d502f1c01e420e",
