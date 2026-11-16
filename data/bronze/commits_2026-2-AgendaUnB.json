@@ -1,10 +1,973 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-15T13:23:45.920046+00:00",
+      "extracted_at": "2026-11-16T14:27:01.131345+00:00",
       "file_path": "data/bronze/commits_2026-2-AgendaUnB.json",
-      "record_count": 297
+      "record_count": 339
     }
+  },
+  {
+    "sha": "c5f2f81884bd27378da3796a678e39d746f4bc9f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T04:08:51Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T04:08:51Z"
+      },
+      "message": "Merge dev -> main: extrai provas em tabelas Markdown e datas DD/MM/AA"
+    },
+    "parents": [
+      "4205697e895ee42b5dd1b5bcbe2d9a83ea1aba9e",
+      "217850df06e34ead26401bb6c4089133bbd3edc5"
+    ],
+    "additions": 105,
+    "deletions": 24,
+    "total_changes": 129,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "217850df06e34ead26401bb6c4089133bbd3edc5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T04:08:48Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T04:08:48Z"
+      },
+      "message": "feat(syllabus): aceita DD/MM/AA, DD/MM com ano de referencia e tabelas Markdown reordenadas"
+    },
+    "parents": [
+      "80f7a7d5b36a2647eb2763b2ae1d3393b4210d43"
+    ],
+    "additions": 105,
+    "deletions": 24,
+    "total_changes": 129,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "4205697e895ee42b5dd1b5bcbe2d9a83ea1aba9e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:56:15Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:56:15Z"
+      },
+      "message": "Merge dev -> main: horario padrao em provas e trabalho sem horario opcional"
+    },
+    "parents": [
+      "dd7e96ab400284aac0558d5c4be8c578b45a8326",
+      "80f7a7d5b36a2647eb2763b2ae1d3393b4210d43"
+    ],
+    "additions": 180,
+    "deletions": 27,
+    "total_changes": 207,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "80f7a7d5b36a2647eb2763b2ae1d3393b4210d43",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:56:11Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:56:11Z"
+      },
+      "message": "feat(planos): sugere horario padrao unico em provas e permite confirmar trabalho sem horario como dia inteiro"
+    },
+    "parents": [
+      "bae0e47f3779a1d8504be83b5385afce68525d07"
+    ],
+    "additions": 180,
+    "deletions": 27,
+    "total_changes": 207,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "dd7e96ab400284aac0558d5c4be8c578b45a8326",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:35:56Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:35:56Z"
+      },
+      "message": "Merge dev -> main: corrige evidence_mismatch em planos reais"
+    },
+    "parents": [
+      "c695a09e42401615dead8cd4150431cef5179881",
+      "bae0e47f3779a1d8504be83b5385afce68525d07"
+    ],
+    "additions": 116,
+    "deletions": 13,
+    "total_changes": 129,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "bae0e47f3779a1d8504be83b5385afce68525d07",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:35:53Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:35:53Z"
+      },
+      "message": "fix(syllabus): tolera pontuacao, travessoes e tabelas na validacao de trecho_origem"
+    },
+    "parents": [
+      "4d79c7cf5b3a8635cdb4a9e2f215add4087aea3b"
+    ],
+    "additions": 116,
+    "deletions": 13,
+    "total_changes": 129,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "c695a09e42401615dead8cd4150431cef5179881",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:14:11Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:14:11Z"
+      },
+      "message": "Merge dev -> main: detalha erro HTTP 400 do Gemini nos logs"
+    },
+    "parents": [
+      "5e4d9d52cafd3f23e07bc61f6053deb1bd7efec6",
+      "4d79c7cf5b3a8635cdb4a9e2f215add4087aea3b"
+    ],
+    "additions": 41,
+    "deletions": 2,
+    "total_changes": 43,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "4d79c7cf5b3a8635cdb4a9e2f215add4087aea3b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:14:08Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:14:08Z"
+      },
+      "message": "fix(syllabus): detalha razao sanitizada de erro HTTP do Gemini e remove aspas da chave"
+    },
+    "parents": [
+      "bfd54e8d5e8a76352fed05bb7141b44a7c95947d"
+    ],
+    "additions": 41,
+    "deletions": 2,
+    "total_changes": 43,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "5e4d9d52cafd3f23e07bc61f6053deb1bd7efec6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:09:03Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:09:03Z"
+      },
+      "message": "Merge dev -> main: diagnostico sanitizado de falha_ia no worker"
+    },
+    "parents": [
+      "41e1ab4ec5f4aee851de318589a33ba8beb4148d",
+      "bfd54e8d5e8a76352fed05bb7141b44a7c95947d"
+    ],
+    "additions": 33,
+    "deletions": 20,
+    "total_changes": 53,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "bfd54e8d5e8a76352fed05bb7141b44a7c95947d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:08:57Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T03:08:57Z"
+      },
+      "message": "fix(syllabus): adiciona codigo de causa sanitizado aos logs do worker e trim em GEMINI_API_KEY"
+    },
+    "parents": [
+      "dc82219d4ad8485543489d463c308c39bb923227"
+    ],
+    "additions": 33,
+    "deletions": 20,
+    "total_changes": 53,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "41e1ab4ec5f4aee851de318589a33ba8beb4148d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T02:28:49Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T02:28:49Z"
+      },
+      "message": "Merge dev -> main: ativa worker Gemini Free Tier e sugestao de horario"
+    },
+    "parents": [
+      "69fc3707627d9b288baca17161b0f4e71105b07d",
+      "dc82219d4ad8485543489d463c308c39bb923227"
+    ],
+    "additions": 944,
+    "deletions": 1383,
+    "total_changes": 2327,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "dc82219d4ad8485543489d463c308c39bb923227",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T02:28:17Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T02:28:17Z"
+      },
+      "message": "feat(syllabus): ativa worker drain, deduplicacao por hash e backoff 429 para Gemini Free Tier"
+    },
+    "parents": [
+      "92049fa6b7707cd1b18a56d866b9e10333c58a9e"
+    ],
+    "additions": 342,
+    "deletions": 31,
+    "total_changes": 373,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "92049fa6b7707cd1b18a56d866b9e10333c58a9e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas Augusto",
+        "date": "2026-11-16T00:54:02Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T00:54:02Z"
+      },
+      "message": "Merge PR - feat/gemini-api\n\nfeat(planos): sugere o horário das provas na aba Revisar datas"
+    },
+    "parents": [
+      "c3f856412a61b50becdd986a2224c2847f867e58",
+      "bb1451673a906b89cec59c2604b2bb145979d54f"
+    ],
+    "additions": 240,
+    "deletions": 44,
+    "total_changes": 284,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "bb1451673a906b89cec59c2604b2bb145979d54f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-16T00:48:23Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-16T00:48:23Z"
+      },
+      "message": "merge: atualiza feat/gemini-api com origin/dev e consolida regra na ADR-010"
+    },
+    "parents": [
+      "6f82566cf2181d26000d6f7695b6b2306b652c28",
+      "c3f856412a61b50becdd986a2224c2847f867e58"
+    ],
+    "additions": 371,
+    "deletions": 1328,
+    "total_changes": 1699,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "c3f856412a61b50becdd986a2224c2847f867e58",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas Augusto",
+        "date": "2026-11-16T00:37:41Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T00:37:41Z"
+      },
+      "message": "Merge PR - chore/integracao-supabase-cloud\n\ndocs(deploy): registra integração do Supabase Cloud (#68)"
+    },
+    "parents": [
+      "69fc3707627d9b288baca17161b0f4e71105b07d",
+      "31e1d1c18d43d50dc226e1f3f11b3993a6164a8e"
+    ],
+    "additions": 369,
+    "deletions": 1315,
+    "total_changes": 1684,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "6f82566cf2181d26000d6f7695b6b2306b652c28",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:54:00Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:54:00Z"
+      },
+      "message": "docs(planos): registra uso de IA na sugestao de horario"
+    },
+    "parents": [
+      "b15c30c3a8e19647e1f7a4160c4a5a4d7a9cd06a"
+    ],
+    "additions": 9,
+    "deletions": 0,
+    "total_changes": 9,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "b15c30c3a8e19647e1f7a4160c4a5a4d7a9cd06a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:38:53Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:38:53Z"
+      },
+      "message": "test(planos): cobre horario sugerido e confirmacao no navegador"
+    },
+    "parents": [
+      "cf9afbdbff4c5cd0baaa1258da652dcd3c478a1d"
+    ],
+    "additions": 73,
+    "deletions": 7,
+    "total_changes": 80,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "cf9afbdbff4c5cd0baaa1258da652dcd3c478a1d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:37:05Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:37:05Z"
+      },
+      "message": "feat(planos): sugere horarios da turma na revisao de provas"
+    },
+    "parents": [
+      "53085ee77f6342dddcc065066ad2b3f35b8dfb26"
+    ],
+    "additions": 105,
+    "deletions": 37,
+    "total_changes": 142,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "31e1d1c18d43d50dc226e1f3f11b3993a6164a8e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:34:46Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:34:46Z"
+      },
+      "message": "docs(adrs): consolida documentacoes em ADRs e remove arquivos redundantes"
+    },
+    "parents": [
+      "7af6e8d7b61c90ab1259cb8f271c8a3d8c2af9dc"
+    ],
+    "additions": 212,
+    "deletions": 1550,
+    "total_changes": 1762,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "53085ee77f6342dddcc065066ad2b3f35b8dfb26",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:27:58Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:27:58Z"
+      },
+      "message": "feat(turmas): interpreta o horario de aula da oferta"
+    },
+    "parents": [
+      "69fc3707627d9b288baca17161b0f4e71105b07d"
+    ],
+    "additions": 64,
+    "deletions": 0,
+    "total_changes": 64,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "7af6e8d7b61c90ab1259cb8f271c8a3d8c2af9dc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:11:18Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:11:18Z"
+      },
+      "message": "Merge branch 'chore/integracao-supabase-cloud' of https://github.com/unb-mds/2026-2-AgendaUnB into chore/integracao-supabase-cloud\n\n# Conflicts:\n#\tdeploy/README.md\n#\tdeploy/vercel.env.example\n#\tdocs/implantacao.md"
+    },
+    "parents": [
+      "4cbc4d42427a1fdd459269c481f63cf7648b6cb6",
+      "bf62bfd491ca21b3c29d9aafaae0290366b60e09"
+    ],
+    "additions": 19,
+    "deletions": 12,
+    "total_changes": 31,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "bf62bfd491ca21b3c29d9aafaae0290366b60e09",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:07:55Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-15T21:07:55Z"
+      },
+      "message": "merge: atualiza branch do Supabase Cloud com a main"
+    },
+    "parents": [
+      "9176337d3670326322bccb1fd3e6d82d971abc19",
+      "69fc3707627d9b288baca17161b0f4e71105b07d"
+    ],
+    "additions": 8373,
+    "deletions": 1197,
+    "total_changes": 9570,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "4cbc4d42427a1fdd459269c481f63cf7648b6cb6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:06:25Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:06:25Z"
+      },
+      "message": "docs(deploy): alinha guias e templates com main e dev"
+    },
+    "parents": [
+      "dae5aa8aaf247ac3fd6868bfb76ab6a2aa0f4507"
+    ],
+    "additions": 49,
+    "deletions": 31,
+    "total_changes": 80,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "dae5aa8aaf247ac3fd6868bfb76ab6a2aa0f4507",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:00:36Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-15T21:00:36Z"
+      },
+      "message": "Merge remote-tracking branch 'origin/dev' into chore/integracao-supabase-cloud\n\n# Conflicts:\n#\tdocs/implantacao.md"
+    },
+    "parents": [
+      "9176337d3670326322bccb1fd3e6d82d971abc19",
+      "69fc3707627d9b288baca17161b0f4e71105b07d"
+    ],
+    "additions": 8352,
+    "deletions": 1182,
+    "total_changes": 9534,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "69fc3707627d9b288baca17161b0f4e71105b07d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas Augusto",
+        "date": "2026-11-15T19:55:35Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-15T19:55:35Z"
+      },
+      "message": "Merge dev -> main\n\nMerge dev -> main"
+    },
+    "parents": [
+      "150792aa65b1e45c37280a85a1f6ff2a2402dbdb",
+      "245b1db8c4cf3af6355491baa1babae8aa594650"
+    ],
+    "additions": 664,
+    "deletions": 34,
+    "total_changes": 698,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "245b1db8c4cf3af6355491baa1babae8aa594650",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-15T19:53:01Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-15T19:53:01Z"
+      },
+      "message": "fix: corrigir formatação do template de redefinição de senha"
+    },
+    "parents": [
+      "47ee7cbc57bb40e8fd523fdf3876580100a5a19c"
+    ],
+    "additions": 3,
+    "deletions": 3,
+    "total_changes": 6,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "47ee7cbc57bb40e8fd523fdf3876580100a5a19c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thomas",
+        "date": "2026-11-15T19:04:43Z",
+        "login": "Thomas4ugust0",
+        "id": 218616489,
+        "author_email_hash": "95e5deeb6eb764cfce61465dc2f55df5fa4ec197d5d7fb5fe1323eba039732d9"
+      },
+      "committer": {
+        "name": "Thomas",
+        "date": "2026-11-15T19:04:43Z"
+      },
+      "message": "chore: configurar envio de emails de confirmação via SMTP"
+    },
+    "parents": [
+      "97e0d49860a749f9968a491f62a3a5297a1a262c"
+    ],
+    "additions": 141,
+    "deletions": 129,
+    "total_changes": 270,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "97e0d49860a749f9968a491f62a3a5297a1a262c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:46:09Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:46:09Z"
+      },
+      "message": "docs(nav): adiciona validacao da S7-B02 na navegacao de mkdocs, docs.json e index"
+    },
+    "parents": [
+      "c98b960290ca7f99dc9c02c13217f60646641f6a"
+    ],
+    "additions": 3,
+    "deletions": 0,
+    "total_changes": 3,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "c98b960290ca7f99dc9c02c13217f60646641f6a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:45:00Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:45:00Z"
+      },
+      "message": "docs(matriz): registra evidencias de aceite da S7-B02 na matriz da release 2"
+    },
+    "parents": [
+      "d1810db520e0c65dc2097a009da8b83ea86446bd"
+    ],
+    "additions": 2,
+    "deletions": 0,
+    "total_changes": 2,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "d1810db520e0c65dc2097a009da8b83ea86446bd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "docs(sprint-7): atualiza tarefas e criterios de aceite da issue #68"
+    },
+    "parents": [
+      "e5166420773170718f1959437bf4033813f7f218"
+    ],
+    "additions": 12,
+    "deletions": 10,
+    "total_changes": 22,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "e5166420773170718f1959437bf4033813f7f218",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "docs(validacao): cria relatorio tecnico detalhado de validacao da S7-B02"
+    },
+    "parents": [
+      "c9e026966613f49c2befe74b828171c7b3b90dce"
+    ],
+    "additions": 134,
+    "deletions": 0,
+    "total_changes": 134,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "c9e026966613f49c2befe74b828171c7b3b90dce",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "ci(github): estende gatilhos dos workflows para incluir a branch dev"
+    },
+    "parents": [
+      "83023c7a5faf53509eb115b84db028701cd21111"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "83023c7a5faf53509eb115b84db028701cd21111",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "test(deployment): adiciona teste unitario para validacao de SMTP em deployment"
+    },
+    "parents": [
+      "a3cf50180cf304894a4de26159b854acf4409e42"
+    ],
+    "additions": 19,
+    "deletions": 0,
+    "total_changes": 19,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "a3cf50180cf304894a4de26159b854acf4409e42",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "feat(deployment): adiciona verificacao de SMTP no checklist de deployment"
+    },
+    "parents": [
+      "27a5237ba0ca3ec6fc6f6332af46ba934d8f965a"
+    ],
+    "additions": 6,
+    "deletions": 0,
+    "total_changes": 6,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "27a5237ba0ca3ec6fc6f6332af46ba934d8f965a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "chore(config): documenta variaveis SMTP no config.toml e .env.example"
+    },
+    "parents": [
+      "567d056752c022eab552f6089308c3ebb1fb1091"
+    ],
+    "additions": 31,
+    "deletions": 6,
+    "total_changes": 37,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "567d056752c022eab552f6089308c3ebb1fb1091",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "feat(auth): melhora templates HTML responsivos para confirmacao e recuperacao"
+    },
+    "parents": [
+      "5291b056af11c1543ebdf58103d9096a3aa277bf"
+    ],
+    "additions": 136,
+    "deletions": 8,
+    "total_changes": 144,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "5291b056af11c1543ebdf58103d9096a3aa277bf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "test(email): adiciona testes unitarios para servico SMTP"
+    },
+    "parents": [
+      "6a5dd08bc064cd82c3d451f3c3bf00fc408f9946"
+    ],
+    "additions": 168,
+    "deletions": 0,
+    "total_changes": 168,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "6a5dd08bc064cd82c3d451f3c3bf00fc408f9946",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z",
+        "login": "pontesluis",
+        "id": 278402693,
+        "author_email_hash": "c3d33d763c7b01c280f5e99fbe80ad428b4a48bf8cccfd4521421dcfc0750db5"
+      },
+      "committer": {
+        "name": "Luis Davi",
+        "date": "2026-11-15T16:44:59Z"
+      },
+      "message": "feat(email): adiciona servico de configuracao e validacao SMTP"
+    },
+    "parents": [
+      "150792aa65b1e45c37280a85a1f6ff2a2402dbdb"
+    ],
+    "additions": 130,
+    "deletions": 0,
+    "total_changes": 130,
+    "repo_name": "2026-2-AgendaUnB"
   },
   {
     "sha": "150792aa65b1e45c37280a85a1f6ff2a2402dbdb",
@@ -591,6 +1554,57 @@
     "additions": 1953,
     "deletions": 1147,
     "total_changes": 3100,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "9176337d3670326322bccb1fd3e6d82d971abc19",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-13T12:45:23Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-13T12:45:23Z"
+      },
+      "message": "docs(deploy): prepara roteiro de homologacao S7-B02 (#68)"
+    },
+    "parents": [
+      "8d437ef286993c9a05770bf63fecc3748a2d2e92"
+    ],
+    "additions": 82,
+    "deletions": 0,
+    "total_changes": 82,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "8d437ef286993c9a05770bf63fecc3748a2d2e92",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-13T12:26:06Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-13T12:26:06Z"
+      },
+      "message": "merge: sincroniza main e concilia guia do Supabase Cloud"
+    },
+    "parents": [
+      "53a5231a9c8dc22737665eadd600a42b58e2b983",
+      "a1559a7da2cfd729265443c6cb55db38b039ee60"
+    ],
+    "additions": 4582,
+    "deletions": 484,
+    "total_changes": 5066,
     "repo_name": "2026-2-AgendaUnB"
   },
   {
@@ -1953,6 +2967,56 @@
     "additions": 121,
     "deletions": 1,
     "total_changes": 122,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "53a5231a9c8dc22737665eadd600a42b58e2b983",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-10T16:02:33Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-10T16:02:33Z"
+      },
+      "message": "docs(deploy): registra migracao e validacao do Supabase Cloud"
+    },
+    "parents": [
+      "dbc3c4edcaa6b848044d7e4ac90536abd3621d26"
+    ],
+    "additions": 158,
+    "deletions": 1,
+    "total_changes": 159,
+    "repo_name": "2026-2-AgendaUnB"
+  },
+  {
+    "sha": "dbc3c4edcaa6b848044d7e4ac90536abd3621d26",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-10T16:02:24Z",
+        "login": "heitormontt",
+        "id": 279909515,
+        "author_email_hash": "999fd0dafaae380d1b42716b68af8f79fa1141730e90ef99162b995e88a7f4bb"
+      },
+      "committer": {
+        "name": "Heitor Gomes Monteiro",
+        "date": "2026-11-10T16:02:24Z"
+      },
+      "message": "chore(deploy): prepara configuracao Supabase Cloud para Render e Vercel"
+    },
+    "parents": [
+      "5f72423d3e98bac43c885fb9d9c68e5224fcd358"
+    ],
+    "additions": 125,
+    "deletions": 0,
+    "total_changes": 125,
     "repo_name": "2026-2-AgendaUnB"
   },
   {
