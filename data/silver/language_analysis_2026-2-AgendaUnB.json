@@ -2,19 +2,19 @@
   "repository": "2026-2-AgendaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-15T13:26:50.686409+00:00",
+  "analyzed_at": "2026-11-16T14:32:16.507688+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 350,
-  "total_bytes": 22894957,
+  "total_files": 352,
+  "total_bytes": 22931059,
   "languages": [
     {
       "language": "Unknown",
-      "file_count": 4,
-      "total_bytes": 14722759,
-      "percentage": 64.31,
+      "file_count": 6,
+      "total_bytes": 14726223,
+      "percentage": 64.22,
       "files": [
         {
           "path": ".agents/skills/impeccable/scripts/bin/windows-x64/impeccable.exe",
@@ -25,7 +25,19 @@
         {
           "path": ".env.example",
           "name": ".env.example",
-          "size": 2064,
+          "size": 3397,
+          "extension": ".example"
+        },
+        {
+          "path": "deploy/render.env.example",
+          "name": "render.env.example",
+          "size": 1697,
+          "extension": ".example"
+        },
+        {
+          "path": "deploy/vercel.env.example",
+          "name": "vercel.env.example",
+          "size": 434,
           "extension": ".example"
         },
         {
@@ -46,7 +58,7 @@
       "language": "WebM Video",
       "file_count": 2,
       "total_bytes": 3654672,
-      "percentage": 15.96,
+      "percentage": 15.94,
       "files": [
         {
           "path": "frontend/public/shaderopt-light.webm",
@@ -65,8 +77,8 @@
     {
       "language": "JSON",
       "file_count": 23,
-      "total_bytes": 1224428,
-      "percentage": 5.35,
+      "total_bytes": 1224437,
+      "percentage": 5.34,
       "files": [
         {
           "path": ".agents/skills/impeccable/scripts/data/font-index.json",
@@ -89,7 +101,7 @@
         {
           "path": "docs/docs.json",
           "name": "docs.json",
-          "size": 6386,
+          "size": 6395,
           "extension": ".json"
         },
         {
@@ -132,9 +144,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 104,
-      "total_bytes": 1039287,
-      "percentage": 4.54,
+      "file_count": 100,
+      "total_bytes": 1006693,
+      "percentage": 4.39,
       "files": [
         {
           "path": ".agents/skills/impeccable/reference/new-work.md",
@@ -149,9 +161,15 @@
           "extension": ".md"
         },
         {
+          "path": "docs/processo/uso-de-ia.md",
+          "name": "uso-de-ia.md",
+          "size": 38625,
+          "extension": ".md"
+        },
+        {
           "path": "docs/implantacao.md",
           "name": "implantacao.md",
-          "size": 37876,
+          "size": 38330,
           "extension": ".md"
         },
         {
@@ -161,27 +179,21 @@
           "extension": ".md"
         },
         {
-          "path": "docs/processo/uso-de-ia.md",
-          "name": "uso-de-ia.md",
-          "size": 34802,
+          "path": "docs/sprints/sprint-7.md",
+          "name": "sprint-7.md",
+          "size": 33153,
           "extension": ".md"
         },
         {
-          "path": "docs/sprints/sprint-7.md",
-          "name": "sprint-7.md",
-          "size": 32500,
+          "path": "docs/api-specs.md",
+          "name": "api-specs.md",
+          "size": 30241,
           "extension": ".md"
         },
         {
           "path": "docs/sprints/sprint-8.md",
           "name": "sprint-8.md",
           "size": 30180,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/api-specs.md",
-          "name": "api-specs.md",
-          "size": 29974,
           "extension": ".md"
         },
         {
@@ -193,16 +205,16 @@
         {
           "path": "docs/atualizacoes.md",
           "name": "atualizacoes.md",
-          "size": 26384,
+          "size": 26595,
           "extension": ".md"
         }
       ]
     },
     {
       "language": "JavaScript",
-      "file_count": 73,
-      "total_bytes": 962831,
-      "percentage": 4.21,
+      "file_count": 75,
+      "total_bytes": 977116,
+      "percentage": 4.26,
       "files": [
         {
           "path": ".agents/skills/impeccable/scripts/live-browser.js",
@@ -219,7 +231,7 @@
         {
           "path": "frontend/tests/syllabus.spec.js",
           "name": "syllabus.spec.js",
-          "size": 31510,
+          "size": 34748,
           "extension": ".js"
         },
         {
@@ -237,7 +249,7 @@
         {
           "path": "frontend/src/pages/TeachingPlanPage.jsx",
           "name": "TeachingPlanPage.jsx",
-          "size": 15777,
+          "size": 16699,
           "extension": ".jsx"
         },
         {
@@ -268,14 +280,20 @@
     },
     {
       "language": "Python",
-      "file_count": 70,
-      "total_bytes": 468421,
-      "percentage": 2.05,
+      "file_count": 72,
+      "total_bytes": 507754,
+      "percentage": 2.21,
       "files": [
         {
           "path": "backend/src/modules/syllabus/router.py",
           "name": "router.py",
-          "size": 26813,
+          "size": 28228,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_syllabus_processing.py",
+          "name": "test_syllabus_processing.py",
+          "size": 28140,
           "extension": ".py"
         },
         {
@@ -297,9 +315,9 @@
           "extension": ".py"
         },
         {
-          "path": "backend/tests/test_syllabus_processing.py",
-          "name": "test_syllabus_processing.py",
-          "size": 18533,
+          "path": "backend/src/modules/syllabus/worker.py",
+          "name": "worker.py",
+          "size": 17979,
           "extension": ".py"
         },
         {
@@ -324,12 +342,6 @@
           "path": "backend/tests/test_syllabus_http_integration.py",
           "name": "test_syllabus_http_integration.py",
           "size": 15305,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/src/modules/google_calendar/service.py",
-          "name": "service.py",
-          "size": 14493,
           "extension": ".py"
         }
       ]
@@ -505,8 +517,8 @@
     {
       "language": "HTML",
       "file_count": 6,
-      "total_bytes": 29922,
-      "percentage": 0.13,
+      "total_bytes": 40813,
+      "percentage": 0.18,
       "files": [
         {
           "path": "frontend/public/prototipo-plano-de-ensino/index.html",
@@ -521,6 +533,18 @@
           "extension": ".html"
         },
         {
+          "path": "supabase/templates/confirmation.html",
+          "name": "confirmation.html",
+          "size": 5796,
+          "extension": ".html"
+        },
+        {
+          "path": "supabase/templates/recovery.html",
+          "name": "recovery.html",
+          "size": 5742,
+          "extension": ".html"
+        },
+        {
           "path": "frontend/public/termos.html",
           "name": "termos.html",
           "size": 4379,
@@ -531,25 +555,13 @@
           "name": "index.html",
           "size": 941,
           "extension": ".html"
-        },
-        {
-          "path": "supabase/templates/recovery.html",
-          "name": "recovery.html",
-          "size": 325,
-          "extension": ".html"
-        },
-        {
-          "path": "supabase/templates/confirmation.html",
-          "name": "confirmation.html",
-          "size": 322,
-          "extension": ".html"
         }
       ]
     },
     {
       "language": "No Extension",
       "file_count": 4,
-      "total_bytes": 16670,
+      "total_bytes": 16537,
       "percentage": 0.07,
       "files": [
         {
@@ -561,7 +573,7 @@
         {
           "path": "Makefile",
           "name": "Makefile",
-          "size": 7821,
+          "size": 7688,
           "extension": ""
         },
         {
@@ -581,13 +593,13 @@
     {
       "language": "TOML",
       "file_count": 1,
-      "total_bytes": 16261,
+      "total_bytes": 16978,
       "percentage": 0.07,
       "files": [
         {
           "path": "supabase/config.toml",
           "name": "config.toml",
-          "size": 16261,
+          "size": 16978,
           "extension": ".toml"
         }
       ]
@@ -595,31 +607,31 @@
     {
       "language": "YAML",
       "file_count": 6,
-      "total_bytes": 14256,
+      "total_bytes": 14386,
       "percentage": 0.06,
       "files": [
         {
           "path": ".github/mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 5589,
+          "size": 5578,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/production-jobs.yml",
           "name": "production-jobs.yml",
-          "size": 3095,
+          "size": 3111,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/supabase-ci.yml",
           "name": "supabase-ci.yml",
-          "size": 2241,
+          "size": 2253,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/app-ci.yml",
           "name": "app-ci.yml",
-          "size": 1442,
+          "size": 1447,
           "extension": ".yml"
         },
         {
@@ -631,7 +643,7 @@
         {
           "path": "render.yaml",
           "name": "render.yaml",
-          "size": 834,
+          "size": 942,
           "extension": ".yaml"
         }
       ]
@@ -726,7 +738,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-15T13:27:59.790893+00:00",
+    "extracted_at": "2026-11-16T14:33:34.359028+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AgendaUnB.json"
   }
 }

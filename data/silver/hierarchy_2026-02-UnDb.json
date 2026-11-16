@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-15T13:26:50.043138+00:00",
+  "extracted_at": "2026-11-16T14:32:15.712849+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -123,7 +123,7 @@
         "name": "CHANGELOG.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1987,
+        "size": 2808,
         "extension": ".md",
         "path": "CHANGELOG.md"
       },
@@ -320,6 +320,14 @@
         "size": 714,
         "extension": ".py",
         "path": "backend/alembic/versions/20261114_01_moderacao_automatica.py"
+      },
+      {
+        "name": "20261115_01_password_reset_tokens.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1186,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261115_01_password_reset_tokens.py"
       },
       {
         "name": "app",
@@ -553,7 +561,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1235,
+        "size": 1333,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -652,6 +660,14 @@
         "size": 1002,
         "extension": ".py",
         "path": "backend/app/models/token_confirmacao_email.py"
+      },
+      {
+        "name": "token_recuperacao_senha.py",
+        "type": "file",
+        "language": "Python",
+        "size": 967,
+        "extension": ".py",
+        "path": "backend/app/models/token_recuperacao_senha.py"
       },
       {
         "name": "turma.py",
@@ -764,6 +780,14 @@
         "path": "backend/app/repositories/reconciliacao_professor_repository.py"
       },
       {
+        "name": "recuperacao_senha_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1533,
+        "extension": ".py",
+        "path": "backend/app/repositories/recuperacao_senha_repository.py"
+      },
+      {
         "name": "sessao_repository.py",
         "type": "file",
         "language": "Python",
@@ -791,7 +815,7 @@
         "name": "usuario_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 730,
+        "size": 1117,
         "extension": ".py",
         "path": "backend/app/repositories/usuario_repository.py"
       },
@@ -813,7 +837,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 3050,
+        "size": 4337,
         "extension": ".py",
         "path": "backend/app/routers/auth.py"
       },
@@ -891,7 +915,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 3024,
+        "size": 3422,
         "extension": ".py",
         "path": "backend/app/schemas/auth.py"
       },
@@ -1007,7 +1031,7 @@
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 4990,
+        "size": 7131,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -1039,7 +1063,7 @@
         "name": "email_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1930,
+        "size": 3104,
         "extension": ".py",
         "path": "backend/app/services/email_service.py"
       },
@@ -1430,6 +1454,14 @@
         "size": 18952,
         "extension": ".py",
         "path": "backend/tests/test_reconciliacao_professores.py"
+      },
+      {
+        "name": "test_recuperacao_senha.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9594,
+        "extension": ".py",
+        "path": "backend/tests/test_recuperacao_senha.py"
       },
       {
         "name": "test_retorno_busca.py",
@@ -1918,12 +1950,28 @@
         "path": "docs/estudos/alinhamento-denuncias-issues-160-161.md"
       },
       {
+        "name": "auditoria-pr248.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13225,
+        "extension": ".md",
+        "path": "docs/estudos/auditoria-pr248.md"
+      },
+      {
         "name": "auditoria-requisitos-issue-149.md",
         "type": "file",
         "language": "Markdown",
         "size": 29079,
         "extension": ".md",
         "path": "docs/estudos/auditoria-requisitos-issue-149.md"
+      },
+      {
+        "name": "avaliacao-busca-autocomplete-issue-251.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 60362,
+        "extension": ".md",
+        "path": "docs/estudos/avaliacao-busca-autocomplete-issue-251.md"
       },
       {
         "name": "cabecalho-sessao-issue-211.md",
@@ -3552,6 +3600,68 @@
         "path": "docs/estudos/evidencias/issue-207/cabecalho-visitante-320-dark.png"
       },
       {
+        "name": "issue-251",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-251",
+        "children": []
+      },
+      {
+        "name": "dataset.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 44316,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-251/dataset.json"
+      },
+      {
+        "name": "medir.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 13332,
+        "extension": ".mjs",
+        "path": "docs/estudos/evidencias/issue-251/medir.mjs"
+      },
+      {
+        "name": "preparar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7836,
+        "extension": ".py",
+        "path": "docs/estudos/evidencias/issue-251/preparar.py"
+      },
+      {
+        "name": "reproducao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7282,
+        "extension": ".md",
+        "path": "docs/estudos/evidencias/issue-251/reproducao.md"
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 171750,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-251/resultados.json"
+      },
+      {
+        "name": "resultados.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9333,
+        "extension": ".md",
+        "path": "docs/estudos/evidencias/issue-251/resultados.md"
+      },
+      {
+        "name": "resumir.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5885,
+        "extension": ".py",
+        "path": "docs/estudos/evidencias/issue-251/resumir.py"
+      },
+      {
         "name": "issue-37",
         "type": "directory",
         "path": "docs/estudos/evidencias/issue-37",
@@ -3944,6 +4054,96 @@
         "size": 631,
         "extension": ".md",
         "path": "docs/referencias/issue-211-design/README.md"
+      },
+      {
+        "name": "preview-compartilhamento",
+        "type": "directory",
+        "path": "docs/referencias/preview-compartilhamento",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4085,
+        "extension": ".md",
+        "path": "docs/referencias/preview-compartilhamento/README.md"
+      },
+      {
+        "name": "undb-preview-final.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 263984,
+        "extension": ".png",
+        "path": "docs/referencias/preview-compartilhamento/undb-preview-final.png"
+      },
+      {
+        "name": "telas-jornada-247",
+        "type": "directory",
+        "path": "docs/referencias/telas-jornada-247",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14425,
+        "extension": ".md",
+        "path": "docs/referencias/telas-jornada-247/README.md"
+      },
+      {
+        "name": "capturas",
+        "type": "directory",
+        "path": "docs/referencias/telas-jornada-247/capturas",
+        "children": []
+      },
+      {
+        "name": "cadastro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 994207,
+        "extension": ".png",
+        "path": "docs/referencias/telas-jornada-247/capturas/cadastro.png"
+      },
+      {
+        "name": "confirmacao-email.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 967447,
+        "extension": ".png",
+        "path": "docs/referencias/telas-jornada-247/capturas/confirmacao-email.png"
+      },
+      {
+        "name": "login.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 991285,
+        "extension": ".png",
+        "path": "docs/referencias/telas-jornada-247/capturas/login.png"
+      },
+      {
+        "name": "moderacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 1058598,
+        "extension": ".png",
+        "path": "docs/referencias/telas-jornada-247/capturas/moderacao.png"
+      },
+      {
+        "name": "pagina-404.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 1004100,
+        "extension": ".png",
+        "path": "docs/referencias/telas-jornada-247/capturas/pagina-404.png"
+      },
+      {
+        "name": "sucesso-avaliacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 977673,
+        "extension": ".png",
+        "path": "docs/referencias/telas-jornada-247/capturas/sucesso-avaliacao.png"
       },
       {
         "name": "ui-dark",
@@ -4856,6 +5056,14 @@
         "path": "docs/releases/1.5.0.md"
       },
       {
+        "name": "1.7.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5420,
+        "extension": ".md",
+        "path": "docs/releases/1.7.0.md"
+      },
+      {
         "name": "2.0.0-planejamento.md",
         "type": "file",
         "language": "Markdown",
@@ -4875,7 +5083,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 52712,
+        "size": 53813,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -4953,7 +5161,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 22026,
+        "size": 23045,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -5512,6 +5720,386 @@
         "path": "frontend/docs/capturas/issue-237/depois/senha-cadastro-768.png"
       },
       {
+        "name": "issue-242",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-242",
+        "children": []
+      },
+      {
+        "name": "antes",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-242/antes",
+        "children": []
+      },
+      {
+        "name": "destaques-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 268940,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-242/antes/destaques-1280.png"
+      },
+      {
+        "name": "destaques-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 283029,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-242/antes/destaques-320.png"
+      },
+      {
+        "name": "destaques-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 269028,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-242/antes/destaques-768.png"
+      },
+      {
+        "name": "depois",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-242/depois",
+        "children": []
+      },
+      {
+        "name": "destaques-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 116217,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-242/depois/destaques-1280.png"
+      },
+      {
+        "name": "destaques-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 137981,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-242/depois/destaques-320.png"
+      },
+      {
+        "name": "destaques-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 126101,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-242/depois/destaques-768.png"
+      },
+      {
+        "name": "medidas.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2884,
+        "extension": ".json",
+        "path": "frontend/docs/capturas/issue-242/medidas.json"
+      },
+      {
+        "name": "issue-247",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-247",
+        "children": []
+      },
+      {
+        "name": "antes",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-247/antes",
+        "children": []
+      },
+      {
+        "name": "cadastro-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 220275,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/cadastro-1280.png"
+      },
+      {
+        "name": "cadastro-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 104037,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/cadastro-320.png"
+      },
+      {
+        "name": "cadastro-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 151410,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/cadastro-768.png"
+      },
+      {
+        "name": "confirmacao-email-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 45930,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/confirmacao-email-1280.png"
+      },
+      {
+        "name": "confirmacao-email-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 36108,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/confirmacao-email-320.png"
+      },
+      {
+        "name": "confirmacao-email-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39171,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/confirmacao-email-768.png"
+      },
+      {
+        "name": "login-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 194719,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/login-1280.png"
+      },
+      {
+        "name": "login-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 88704,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/login-320.png"
+      },
+      {
+        "name": "login-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 132300,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/login-768.png"
+      },
+      {
+        "name": "moderacao-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 159277,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/moderacao-1280.png"
+      },
+      {
+        "name": "moderacao-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 140132,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/moderacao-320.png"
+      },
+      {
+        "name": "moderacao-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 143008,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/moderacao-768.png"
+      },
+      {
+        "name": "pagina-404-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 46611,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/pagina-404-1280.png"
+      },
+      {
+        "name": "pagina-404-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 36097,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/pagina-404-320.png"
+      },
+      {
+        "name": "pagina-404-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39055,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/pagina-404-768.png"
+      },
+      {
+        "name": "sucesso-avaliacao-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 217969,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/sucesso-avaliacao-1280.png"
+      },
+      {
+        "name": "sucesso-avaliacao-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 207530,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/sucesso-avaliacao-320.png"
+      },
+      {
+        "name": "sucesso-avaliacao-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 208816,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/antes/sucesso-avaliacao-768.png"
+      },
+      {
+        "name": "depois",
+        "type": "directory",
+        "path": "frontend/docs/capturas/issue-247/depois",
+        "children": []
+      },
+      {
+        "name": "cadastro-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 239500,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/cadastro-1280.png"
+      },
+      {
+        "name": "cadastro-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 116855,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/cadastro-320.png"
+      },
+      {
+        "name": "cadastro-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 170675,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/cadastro-768.png"
+      },
+      {
+        "name": "confirmacao-email-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 53480,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/confirmacao-email-1280.png"
+      },
+      {
+        "name": "confirmacao-email-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 41810,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/confirmacao-email-320.png"
+      },
+      {
+        "name": "confirmacao-email-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 46507,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/confirmacao-email-768.png"
+      },
+      {
+        "name": "login-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 214764,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/login-1280.png"
+      },
+      {
+        "name": "login-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 99652,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/login-320.png"
+      },
+      {
+        "name": "login-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 152604,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/login-768.png"
+      },
+      {
+        "name": "moderacao-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 172191,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/moderacao-1280.png"
+      },
+      {
+        "name": "moderacao-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 155416,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/moderacao-320.png"
+      },
+      {
+        "name": "moderacao-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 162400,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/moderacao-768.png"
+      },
+      {
+        "name": "pagina-404-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 56762,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/pagina-404-1280.png"
+      },
+      {
+        "name": "pagina-404-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 41836,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/pagina-404-320.png"
+      },
+      {
+        "name": "pagina-404-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 47099,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/pagina-404-768.png"
+      },
+      {
+        "name": "sucesso-avaliacao-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 121184,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/sucesso-avaliacao-1280.png"
+      },
+      {
+        "name": "sucesso-avaliacao-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 105586,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/sucesso-avaliacao-320.png"
+      },
+      {
+        "name": "sucesso-avaliacao-768.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 109483,
+        "extension": ".png",
+        "path": "frontend/docs/capturas/issue-247/depois/sucesso-avaliacao-768.png"
+      },
+      {
         "name": "conta-avaliacao-237.md",
         "type": "file",
         "language": "Markdown",
@@ -5528,12 +6116,44 @@
         "path": "frontend/docs/integracao-visual-211.md"
       },
       {
+        "name": "jornada-247.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12527,
+        "extension": ".md",
+        "path": "frontend/docs/jornada-247.md"
+      },
+      {
+        "name": "recuperacao-senha.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2975,
+        "extension": ".md",
+        "path": "frontend/docs/recuperacao-senha.md"
+      },
+      {
+        "name": "refinamento-destaques-242.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8499,
+        "extension": ".md",
+        "path": "frontend/docs/refinamento-destaques-242.md"
+      },
+      {
         "name": "revisao-pr-233.md",
         "type": "file",
         "language": "Markdown",
         "size": 4662,
         "extension": ".md",
         "path": "frontend/docs/revisao-pr-233.md"
+      },
+      {
+        "name": "seo-254.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7256,
+        "extension": ".md",
+        "path": "frontend/docs/seo-254.md"
       },
       {
         "name": "ui-busca-203.md",
@@ -5595,7 +6215,7 @@
         "name": "next.config.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 260,
+        "size": 362,
         "extension": ".ts",
         "path": "frontend/next.config.ts"
       },
@@ -5611,7 +6231,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1500,
+        "size": 1737,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -5653,17 +6273,17 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 394,
+        "size": 1135,
         "extension": ".md",
         "path": "frontend/public/equipe/README.md"
       },
       {
-        "name": "TiagoVieira-596.png",
+        "name": "TiagoVieira-596.jpg",
         "type": "file",
-        "language": "PNG Image",
-        "size": 63048,
-        "extension": ".png",
-        "path": "frontend/public/equipe/TiagoVieira-596.png"
+        "language": "JPEG Image",
+        "size": 20683,
+        "extension": ".jpg",
+        "path": "frontend/public/equipe/TiagoVieira-596.jpg"
       },
       {
         "name": "ViniGvdo.png",
@@ -5730,6 +6350,14 @@
         "path": "frontend/public/next.svg"
       },
       {
+        "name": "undb-preview.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 263984,
+        "extension": ".png",
+        "path": "frontend/public/undb-preview.png"
+      },
+      {
         "name": "vercel.svg",
         "type": "file",
         "language": "SVG Image",
@@ -5764,6 +6392,14 @@
         "children": []
       },
       {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 200,
+        "extension": ".tsx",
+        "path": "frontend/src/app/busca/layout.tsx"
+      },
+      {
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -5781,9 +6417,17 @@
         "name": "cadastro-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4311,
+        "size": 4678,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/cadastro-form.tsx"
+      },
+      {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 200,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cadastro/layout.tsx"
       },
       {
         "name": "page.tsx",
@@ -5792,6 +6436,32 @@
         "size": 661,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/page.tsx"
+      },
+      {
+        "name": "catalogo",
+        "type": "directory",
+        "path": "frontend/src/app/catalogo",
+        "children": []
+      },
+      {
+        "name": "[tipo]",
+        "type": "directory",
+        "path": "frontend/src/app/catalogo/[tipo]",
+        "children": []
+      },
+      {
+        "name": "[pagina]",
+        "type": "directory",
+        "path": "frontend/src/app/catalogo/[tipo]/[pagina]",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1460,
+        "extension": ".tsx",
+        "path": "frontend/src/app/catalogo/[tipo]/[pagina]/page.tsx"
       },
       {
         "name": "confirmar-email",
@@ -5803,9 +6473,17 @@
         "name": "confirmation-client.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2905,
+        "size": 3709,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/confirmation-client.tsx"
+      },
+      {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 200,
+        "extension": ".tsx",
+        "path": "frontend/src/app/confirmar-email/layout.tsx"
       },
       {
         "name": "page.tsx",
@@ -5825,7 +6503,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 281,
+        "size": 498,
         "extension": ".tsx",
         "path": "frontend/src/app/departamentos/page.tsx"
       },
@@ -5845,7 +6523,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3809,
+        "size": 4150,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[id]/page.tsx"
       },
@@ -5853,7 +6531,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 316,
+        "size": 1248,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/page.tsx"
       },
@@ -5864,6 +6542,28 @@
         "size": 674,
         "extension": ".tsx",
         "path": "frontend/src/app/error.tsx"
+      },
+      {
+        "name": "esqueci-senha",
+        "type": "directory",
+        "path": "frontend/src/app/esqueci-senha",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 230,
+        "extension": ".tsx",
+        "path": "frontend/src/app/esqueci-senha/page.tsx"
+      },
+      {
+        "name": "recuperacao-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2174,
+        "extension": ".tsx",
+        "path": "frontend/src/app/esqueci-senha/recuperacao-form.tsx"
       },
       {
         "name": "favicon.ico",
@@ -5893,7 +6593,7 @@
         "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1195,
+        "size": 1141,
         "extension": ".tsx",
         "path": "frontend/src/app/layout.tsx"
       },
@@ -5904,10 +6604,18 @@
         "children": []
       },
       {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 200,
+        "extension": ".tsx",
+        "path": "frontend/src/app/login/layout.tsx"
+      },
+      {
         "name": "login-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6778,
+        "size": 7102,
         "extension": ".tsx",
         "path": "frontend/src/app/login/login-form.tsx"
       },
@@ -5937,7 +6645,7 @@
         "name": "detalhe-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10160,
+        "size": 10390,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx"
       },
@@ -5945,7 +6653,7 @@
         "name": "fila-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 9638,
+        "size": 10939,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/fila-moderacao.tsx"
       },
@@ -5972,10 +6680,18 @@
         "path": "frontend/src/app/moderacao/identidades/page.tsx"
       },
       {
+        "name": "layout.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 200,
+        "extension": ".tsx",
+        "path": "frontend/src/app/moderacao/layout.tsx"
+      },
+      {
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 900,
+        "size": 1016,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/page.tsx"
       },
@@ -5983,7 +6699,7 @@
         "name": "not-found.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 791,
+        "size": 977,
         "extension": ".tsx",
         "path": "frontend/src/app/not-found.tsx"
       },
@@ -5991,7 +6707,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4510,
+        "size": 4837,
         "extension": ".tsx",
         "path": "frontend/src/app/page.tsx"
       },
@@ -6029,23 +6745,39 @@
         "name": "avaliacao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12921,
+        "size": 13536,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/avaliacao-form.tsx"
       },
       {
-        "name": "page.tsx",
+        "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3862,
+        "size": 200,
         "extension": ".tsx",
-        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/layout.tsx"
       },
       {
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 11290,
+        "size": 4060,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/page.tsx"
+      },
+      {
+        "name": "resultado-avaliacao.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2127,
+        "extension": ".tsx",
+        "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/avaliar/resultado-avaliacao.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11692,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx"
       },
@@ -6053,7 +6785,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2733,
+        "size": 3042,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/page.tsx"
       },
@@ -6061,7 +6793,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 316,
+        "size": 1248,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/page.tsx"
       },
@@ -6115,7 +6847,7 @@
         "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 454,
+        "size": 523,
         "extension": ".tsx",
         "path": "frontend/src/app/prototipo/layout.tsx"
       },
@@ -6136,6 +6868,76 @@
         "path": "frontend/src/app/prototipo/page.tsx"
       },
       {
+        "name": "redefinir-senha",
+        "type": "directory",
+        "path": "frontend/src/app/redefinir-senha",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 561,
+        "extension": ".tsx",
+        "path": "frontend/src/app/redefinir-senha/page.tsx"
+      },
+      {
+        "name": "redefinicao-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2773,
+        "extension": ".tsx",
+        "path": "frontend/src/app/redefinir-senha/redefinicao-form.tsx"
+      },
+      {
+        "name": "robots.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 312,
+        "extension": ".ts",
+        "path": "frontend/src/app/robots.ts"
+      },
+      {
+        "name": "sitemap.xml",
+        "type": "directory",
+        "path": "frontend/src/app/sitemap.xml",
+        "children": []
+      },
+      {
+        "name": "route.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 952,
+        "extension": ".ts",
+        "path": "frontend/src/app/sitemap.xml/route.ts"
+      },
+      {
+        "name": "sitemaps",
+        "type": "directory",
+        "path": "frontend/src/app/sitemaps",
+        "children": []
+      },
+      {
+        "name": "[tipo]",
+        "type": "directory",
+        "path": "frontend/src/app/sitemaps/[tipo]",
+        "children": []
+      },
+      {
+        "name": "[pagina]",
+        "type": "directory",
+        "path": "frontend/src/app/sitemaps/[tipo]/[pagina]",
+        "children": []
+      },
+      {
+        "name": "route.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1412,
+        "extension": ".ts",
+        "path": "frontend/src/app/sitemaps/[tipo]/[pagina]/route.ts"
+      },
+      {
         "name": "sobre",
         "type": "directory",
         "path": "frontend/src/app/sobre",
@@ -6145,7 +6947,7 @@
         "name": "equipe.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1289,
+        "size": 1469,
         "extension": ".ts",
         "path": "frontend/src/app/sobre/equipe.ts"
       },
@@ -6153,7 +6955,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7639,
+        "size": 8054,
         "extension": ".tsx",
         "path": "frontend/src/app/sobre/page.tsx"
       },
@@ -6223,7 +7025,7 @@
         "name": "campo-senha.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1261,
+        "size": 1359,
         "extension": ".tsx",
         "path": "frontend/src/components/campo-senha.tsx"
       },
@@ -6242,6 +7044,14 @@
         "size": 2830,
         "extension": ".tsx",
         "path": "frontend/src/components/catalogo-home.tsx"
+      },
+      {
+        "name": "catalogo-links.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1525,
+        "extension": ".tsx",
+        "path": "frontend/src/components/catalogo-links.tsx"
       },
       {
         "name": "catalogo-unidades.tsx",
@@ -6279,7 +7089,7 @@
         "name": "destaques-home.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3624,
+        "size": 3658,
         "extension": ".tsx",
         "path": "frontend/src/components/destaques-home.tsx"
       },
@@ -6338,6 +7148,14 @@
         "size": 4905,
         "extension": ".tsx",
         "path": "frontend/src/components/fundo-particulas.tsx"
+      },
+      {
+        "name": "icone-resultado.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 720,
+        "extension": ".tsx",
+        "path": "frontend/src/components/icone-resultado.tsx"
       },
       {
         "name": "icone-social.tsx",
@@ -6407,7 +7225,7 @@
         "name": "moldura-conta.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1306,
+        "size": 1737,
         "extension": ".tsx",
         "path": "frontend/src/components/moldura-conta.tsx"
       },
@@ -6415,7 +7233,7 @@
         "name": "opcoes-acesso.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 600,
+        "size": 865,
         "extension": ".tsx",
         "path": "frontend/src/components/opcoes-acesso.tsx"
       },
@@ -6482,6 +7300,14 @@
         "path": "frontend/src/lib/catalogo.ts"
       },
       {
+        "name": "consultas-publicas.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1519,
+        "extension": ".ts",
+        "path": "frontend/src/lib/consultas-publicas.ts"
+      },
+      {
         "name": "contexto-busca.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6528,6 +7354,14 @@
         "path": "frontend/src/lib/iniciais.ts"
       },
       {
+        "name": "metadados-compartilhamento.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1281,
+        "extension": ".ts",
+        "path": "frontend/src/lib/metadados-compartilhamento.ts"
+      },
+      {
         "name": "moderacao.ts",
         "type": "file",
         "language": "TypeScript",
@@ -6542,6 +7376,14 @@
         "size": 1452,
         "extension": ".ts",
         "path": "frontend/src/lib/retorno-avaliacao.ts"
+      },
+      {
+        "name": "seo.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1609,
+        "extension": ".ts",
+        "path": "frontend/src/lib/seo.ts"
       },
       {
         "name": "services",
@@ -6561,7 +7403,7 @@
         "name": "auth.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1458,
+        "size": 1924,
         "extension": ".ts",
         "path": "frontend/src/lib/services/auth.ts"
       },
@@ -6749,7 +7591,7 @@
         "name": "busca-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 30178,
+        "size": 30182,
         "extension": ".mjs",
         "path": "frontend/tests/busca-browser.mjs"
       },
@@ -6781,7 +7623,7 @@
         "name": "comentarios-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 12612,
+        "size": 12613,
         "extension": ".mjs",
         "path": "frontend/tests/comentarios-browser.mjs"
       },
@@ -6826,6 +7668,22 @@
         "path": "frontend/tests/denuncia.test.mjs"
       },
       {
+        "name": "destaques-home-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7349,
+        "extension": ".mjs",
+        "path": "frontend/tests/destaques-home-browser.mjs"
+      },
+      {
+        "name": "equipe-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1924,
+        "extension": ".mjs",
+        "path": "frontend/tests/equipe-browser.mjs"
+      },
+      {
         "name": "fluxo-moderacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
@@ -6858,6 +7716,14 @@
         "path": "frontend/tests/identidades.test.mjs"
       },
       {
+        "name": "jornada-247-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 14476,
+        "extension": ".mjs",
+        "path": "frontend/tests/jornada-247-browser.mjs"
+      },
+      {
         "name": "moderacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
@@ -6885,7 +7751,7 @@
         "name": "paleta.test.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 2153,
+        "size": 2779,
         "extension": ".mjs",
         "path": "frontend/tests/paleta.test.mjs"
       },
@@ -6898,12 +7764,28 @@
         "path": "frontend/tests/perfil-browser.mjs"
       },
       {
+        "name": "preview-compartilhamento-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5319,
+        "extension": ".mjs",
+        "path": "frontend/tests/preview-compartilhamento-browser.mjs"
+      },
+      {
         "name": "prototipo-browser.mjs",
         "type": "file",
         "language": "Unknown",
         "size": 20788,
         "extension": ".mjs",
         "path": "frontend/tests/prototipo-browser.mjs"
+      },
+      {
+        "name": "recuperacao-senha-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5567,
+        "extension": ".mjs",
+        "path": "frontend/tests/recuperacao-senha-browser.mjs"
       },
       {
         "name": "referencia-browser.mjs",
@@ -6925,9 +7807,25 @@
         "name": "run-tests.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 1771,
+        "size": 1799,
         "extension": ".mjs",
         "path": "frontend/tests/run-tests.mjs"
+      },
+      {
+        "name": "seo-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7062,
+        "extension": ".mjs",
+        "path": "frontend/tests/seo-browser.mjs"
+      },
+      {
+        "name": "seo.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1729,
+        "extension": ".mjs",
+        "path": "frontend/tests/seo.test.mjs"
       },
       {
         "name": "transicao-browser.mjs",
@@ -6957,7 +7855,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 5654,
+        "size": 5995,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -7007,7 +7905,7 @@
         "name": "170-acesso-api.sql",
         "type": "file",
         "language": "SQL",
-        "size": 1310,
+        "size": 1351,
         "extension": ".sql",
         "path": "scripts/sql/170-acesso-api.sql"
       },
@@ -7513,7 +8411,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 31564,
+        "size": 32842,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -7598,7 +8496,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-15T13:27:59.727258+00:00",
+    "extracted_at": "2026-11-16T14:33:34.308377+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }

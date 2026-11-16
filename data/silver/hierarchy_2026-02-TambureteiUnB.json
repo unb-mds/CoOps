@@ -2,7 +2,7 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-15T13:26:51.124047+00:00",
+  "extracted_at": "2026-11-16T14:32:17.245551+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -121,7 +121,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 445,
+        "size": 543,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -200,18 +200,10 @@
         "children": []
       },
       {
-        "name": "backend-cursos.yml",
-        "type": "file",
-        "language": "YAML",
-        "size": 1654,
-        "extension": ".yml",
-        "path": ".github/workflows/backend-cursos.yml"
-      },
-      {
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1782,
+        "size": 8713,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
       },
@@ -227,7 +219,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 410,
+        "size": 475,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -243,7 +235,7 @@
         "name": "PROJECT_CONTEXT.md",
         "type": "file",
         "language": "Markdown",
-        "size": 14058,
+        "size": 13982,
         "extension": ".md",
         "path": "PROJECT_CONTEXT.md"
       },
@@ -273,7 +265,7 @@
         "name": "Dockerfile",
         "type": "file",
         "language": "No Extension",
-        "size": 499,
+        "size": 510,
         "extension": "",
         "path": "backend/Dockerfile"
       },
@@ -386,6 +378,30 @@
         "path": "backend/alembic/versions/009_add_arquivos_conteudos.py"
       },
       {
+        "name": "010_add_curadorias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1866,
+        "extension": ".py",
+        "path": "backend/alembic/versions/010_add_curadorias.py"
+      },
+      {
+        "name": "011_add_denuncias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3529,
+        "extension": ".py",
+        "path": "backend/alembic/versions/011_add_denuncias.py"
+      },
+      {
+        "name": "012_add_estatisticas_consolidadas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1828,
+        "extension": ".py",
+        "path": "backend/alembic/versions/012_add_estatisticas_consolidadas.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -455,25 +471,49 @@
         "name": "comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 1863,
+        "size": 2620,
         "extension": ".py",
         "path": "backend/app/api/routers/comentarios.py"
+      },
+      {
+        "name": "comunidade.py",
+        "type": "file",
+        "language": "Python",
+        "size": 852,
+        "extension": ".py",
+        "path": "backend/app/api/routers/comunidade.py"
       },
       {
         "name": "cursos.py",
         "type": "file",
         "language": "Python",
-        "size": 794,
+        "size": 1098,
         "extension": ".py",
         "path": "backend/app/api/routers/cursos.py"
+      },
+      {
+        "name": "dashboard.py",
+        "type": "file",
+        "language": "Python",
+        "size": 637,
+        "extension": ".py",
+        "path": "backend/app/api/routers/dashboard.py"
       },
       {
         "name": "disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 2248,
+        "size": 3297,
         "extension": ".py",
         "path": "backend/app/api/routers/disciplinas.py"
+      },
+      {
+        "name": "estatisticas_consolidadas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1518,
+        "extension": ".py",
+        "path": "backend/app/api/routers/estatisticas_consolidadas.py"
       },
       {
         "name": "materiais.py",
@@ -482,6 +522,14 @@
         "size": 2845,
         "extension": ".py",
         "path": "backend/app/api/routers/materiais.py"
+      },
+      {
+        "name": "moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3077,
+        "extension": ".py",
+        "path": "backend/app/api/routers/moderacao.py"
       },
       {
         "name": "professores.py",
@@ -495,7 +543,7 @@
         "name": "turmas.py",
         "type": "file",
         "language": "Python",
-        "size": 2131,
+        "size": 2650,
         "extension": ".py",
         "path": "backend/app/api/routers/turmas.py"
       },
@@ -517,23 +565,47 @@
         "name": "comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 2451,
+        "size": 3114,
         "extension": ".py",
         "path": "backend/app/api/schemas/comentario.py"
+      },
+      {
+        "name": "curadoria.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1939,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/curadoria.py"
       },
       {
         "name": "curso.py",
         "type": "file",
         "language": "Python",
-        "size": 1812,
+        "size": 2170,
         "extension": ".py",
         "path": "backend/app/api/schemas/curso.py"
+      },
+      {
+        "name": "dashboard.py",
+        "type": "file",
+        "language": "Python",
+        "size": 487,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/dashboard.py"
+      },
+      {
+        "name": "denuncia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6193,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/denuncia.py"
       },
       {
         "name": "disciplina.py",
         "type": "file",
         "language": "Python",
-        "size": 1945,
+        "size": 1974,
         "extension": ".py",
         "path": "backend/app/api/schemas/disciplina.py"
       },
@@ -546,10 +618,18 @@
         "path": "backend/app/api/schemas/doacao.py"
       },
       {
+        "name": "estatistica_consolidada.py",
+        "type": "file",
+        "language": "Python",
+        "size": 420,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/estatistica_consolidada.py"
+      },
+      {
         "name": "material.py",
         "type": "file",
         "language": "Python",
-        "size": 890,
+        "size": 956,
         "extension": ".py",
         "path": "backend/app/api/schemas/material.py"
       },
@@ -560,6 +640,14 @@
         "size": 851,
         "extension": ".py",
         "path": "backend/app/api/schemas/professor.py"
+      },
+      {
+        "name": "quorum.py",
+        "type": "file",
+        "language": "Python",
+        "size": 628,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/quorum.py"
       },
       {
         "name": "turma.py",
@@ -595,7 +683,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 1962,
+        "size": 2482,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -630,6 +718,14 @@
         "path": "backend/app/domain/__init__.py"
       },
       {
+        "name": "denuncias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4640,
+        "extension": ".py",
+        "path": "backend/app/domain/denuncias.py"
+      },
+      {
         "name": "materiais.py",
         "type": "file",
         "language": "Python",
@@ -638,10 +734,26 @@
         "path": "backend/app/domain/materiais.py"
       },
       {
+        "name": "quorum.py",
+        "type": "file",
+        "language": "Python",
+        "size": 919,
+        "extension": ".py",
+        "path": "backend/app/domain/quorum.py"
+      },
+      {
+        "name": "semestre.py",
+        "type": "file",
+        "language": "Python",
+        "size": 147,
+        "extension": ".py",
+        "path": "backend/app/domain/semestre.py"
+      },
+      {
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1159,
+        "size": 1412,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -655,7 +767,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 897,
+        "size": 1115,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -676,12 +788,28 @@
         "path": "backend/app/models/conteudo.py"
       },
       {
+        "name": "curadoria.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1479,
+        "extension": ".py",
+        "path": "backend/app/models/curadoria.py"
+      },
+      {
         "name": "curso.py",
         "type": "file",
         "language": "Python",
         "size": 3785,
         "extension": ".py",
         "path": "backend/app/models/curso.py"
+      },
+      {
+        "name": "denuncia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2850,
+        "extension": ".py",
+        "path": "backend/app/models/denuncia.py"
       },
       {
         "name": "disciplina.py",
@@ -698,6 +826,14 @@
         "size": 2609,
         "extension": ".py",
         "path": "backend/app/models/doacao.py"
+      },
+      {
+        "name": "estatistica_consolidada.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1811,
+        "extension": ".py",
+        "path": "backend/app/models/estatistica_consolidada.py"
       },
       {
         "name": "metrica.py",
@@ -1045,7 +1181,7 @@
         "name": "comentario_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1913,
+        "size": 2300,
         "extension": ".py",
         "path": "backend/app/repositories/comentario_repo.py"
       },
@@ -1058,12 +1194,36 @@
         "path": "backend/app/repositories/conteudo_repo.py"
       },
       {
+        "name": "curadoria_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1725,
+        "extension": ".py",
+        "path": "backend/app/repositories/curadoria_repo.py"
+      },
+      {
         "name": "curso_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1182,
+        "size": 1510,
         "extension": ".py",
         "path": "backend/app/repositories/curso_repo.py"
+      },
+      {
+        "name": "dashboard_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 869,
+        "extension": ".py",
+        "path": "backend/app/repositories/dashboard_repo.py"
+      },
+      {
+        "name": "denuncia_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4853,
+        "extension": ".py",
+        "path": "backend/app/repositories/denuncia_repo.py"
       },
       {
         "name": "disciplina_repo.py",
@@ -1077,9 +1237,17 @@
         "name": "doacao_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1139,
+        "size": 4340,
         "extension": ".py",
         "path": "backend/app/repositories/doacao_repo.py"
+      },
+      {
+        "name": "estatistica_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2721,
+        "extension": ".py",
+        "path": "backend/app/repositories/estatistica_repo.py"
       },
       {
         "name": "material_repo.py",
@@ -1155,7 +1323,7 @@
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2749,
+        "size": 2760,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -1163,23 +1331,47 @@
         "name": "comentario_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3757,
+        "size": 5397,
         "extension": ".py",
         "path": "backend/app/services/comentario_service.py"
+      },
+      {
+        "name": "curadoria_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3477,
+        "extension": ".py",
+        "path": "backend/app/services/curadoria_service.py"
       },
       {
         "name": "curso_service.py",
         "type": "file",
         "language": "Python",
-        "size": 620,
+        "size": 1405,
         "extension": ".py",
         "path": "backend/app/services/curso_service.py"
+      },
+      {
+        "name": "dashboard_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2050,
+        "extension": ".py",
+        "path": "backend/app/services/dashboard_service.py"
+      },
+      {
+        "name": "denuncia_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10833,
+        "extension": ".py",
+        "path": "backend/app/services/denuncia_service.py"
       },
       {
         "name": "disciplina_service.py",
         "type": "file",
         "language": "Python",
-        "size": 4884,
+        "size": 4914,
         "extension": ".py",
         "path": "backend/app/services/disciplina_service.py"
       },
@@ -1187,7 +1379,7 @@
         "name": "doacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1699,
+        "size": 7719,
         "extension": ".py",
         "path": "backend/app/services/doacao_service.py"
       },
@@ -1227,17 +1419,9 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 206,
+        "size": 560,
         "extension": ".toml",
         "path": "backend/pyproject.toml"
-      },
-      {
-        "name": "pytest.ini",
-        "type": "file",
-        "language": "INI",
-        "size": 76,
-        "extension": ".ini",
-        "path": "backend/pytest.ini"
       },
       {
         "name": "requirements-dev.txt",
@@ -1254,6 +1438,14 @@
         "size": 385,
         "extension": ".txt",
         "path": "backend/requirements.txt"
+      },
+      {
+        "name": "setup.cfg",
+        "type": "file",
+        "language": "Config",
+        "size": 396,
+        "extension": ".cfg",
+        "path": "backend/setup.cfg"
       },
       {
         "name": "tests",
@@ -1309,9 +1501,23 @@
         "name": "test_cursos.py",
         "type": "file",
         "language": "Python",
-        "size": 4203,
+        "size": 6784,
         "extension": ".py",
         "path": "backend/tests/integration/cursos/test_cursos.py"
+      },
+      {
+        "name": "dashboard",
+        "type": "directory",
+        "path": "backend/tests/integration/dashboard",
+        "children": []
+      },
+      {
+        "name": "test_dashboard.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3429,
+        "extension": ".py",
+        "path": "backend/tests/integration/dashboard/test_dashboard.py"
       },
       {
         "name": "test_auth.py",
@@ -1325,15 +1531,31 @@
         "name": "test_conteudos_arquivos.py",
         "type": "file",
         "language": "Python",
-        "size": 4767,
+        "size": 4932,
         "extension": ".py",
         "path": "backend/tests/integration/test_conteudos_arquivos.py"
+      },
+      {
+        "name": "test_curadoria.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10796,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_curadoria.py"
+      },
+      {
+        "name": "test_denuncias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8956,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_denuncias.py"
       },
       {
         "name": "test_disciplina_service.py",
         "type": "file",
         "language": "Python",
-        "size": 7373,
+        "size": 7318,
         "extension": ".py",
         "path": "backend/tests/integration/test_disciplina_service.py"
       },
@@ -1346,10 +1568,18 @@
         "path": "backend/tests/integration/test_doacao_service.py"
       },
       {
+        "name": "test_estatistica_consolidada.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4926,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_estatistica_consolidada.py"
+      },
+      {
         "name": "test_materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 13379,
+        "size": 14811,
         "extension": ".py",
         "path": "backend/tests/integration/test_materiais.py"
       },
@@ -1365,7 +1595,7 @@
         "name": "test_migracao_material.py",
         "type": "file",
         "language": "Python",
-        "size": 4563,
+        "size": 4840,
         "extension": ".py",
         "path": "backend/tests/integration/test_migracao_material.py"
       },
@@ -1376,6 +1606,14 @@
         "size": 2143,
         "extension": ".py",
         "path": "backend/tests/integration/test_professor_service.py"
+      },
+      {
+        "name": "test_quorum_doacoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8240,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_quorum_doacoes.py"
       },
       {
         "name": "test_turma_service.py",
@@ -1395,7 +1633,7 @@
         "name": "materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 2744,
+        "size": 4105,
         "extension": ".py",
         "path": "backend/tests/smoke/materiais.py"
       },
@@ -1403,7 +1641,7 @@
         "name": "test_comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 6177,
+        "size": 7202,
         "extension": ".py",
         "path": "backend/tests/test_comentarios.py"
       },
@@ -1441,9 +1679,33 @@
         "name": "test_curso_disciplina_schemas.py",
         "type": "file",
         "language": "Python",
-        "size": 2526,
+        "size": 3422,
         "extension": ".py",
         "path": "backend/tests/unit/test_curso_disciplina_schemas.py"
+      },
+      {
+        "name": "test_dashboard_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1501,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_dashboard_schemas.py"
+      },
+      {
+        "name": "test_denuncia_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3122,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_denuncia_schemas.py"
+      },
+      {
+        "name": "test_denuncias_domain.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5487,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_denuncias_domain.py"
       },
       {
         "name": "test_doacao_schemas.py",
@@ -1452,6 +1714,22 @@
         "size": 3770,
         "extension": ".py",
         "path": "backend/tests/unit/test_doacao_schemas.py"
+      },
+      {
+        "name": "test_domain_quorum.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1345,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_domain_quorum.py"
+      },
+      {
+        "name": "test_estatistica_consolidada.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9936,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_estatistica_consolidada.py"
       },
       {
         "name": "test_materiais.py",
@@ -1484,6 +1762,14 @@
         "size": 1271,
         "extension": ".py",
         "path": "backend/tests/unit/test_professor_schemas.py"
+      },
+      {
+        "name": "test_quorum.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2370,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_quorum.py"
       },
       {
         "name": "test_turma_schemas.py",
@@ -1524,10 +1810,32 @@
         "path": "docs/arquitetura.md"
       },
       {
+        "name": "assets",
+        "type": "directory",
+        "path": "docs/assets",
+        "children": []
+      },
+      {
+        "name": "moderacao-desktop.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 133858,
+        "extension": ".png",
+        "path": "docs/assets/moderacao-desktop.png"
+      },
+      {
+        "name": "moderacao-mobile.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 122245,
+        "extension": ".png",
+        "path": "docs/assets/moderacao-mobile.png"
+      },
+      {
         "name": "banco_de_dados.md",
         "type": "file",
         "language": "Markdown",
-        "size": 25165,
+        "size": 27529,
         "extension": ".md",
         "path": "docs/banco_de_dados.md"
       },
@@ -1543,7 +1851,7 @@
         "name": "feature_5_2_materiais.md",
         "type": "file",
         "language": "Markdown",
-        "size": 15615,
+        "size": 15455,
         "extension": ".md",
         "path": "docs/feature_5_2_materiais.md"
       },
@@ -1559,7 +1867,7 @@
         "name": "historias_usuario_database.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12246,
+        "size": 12210,
         "extension": ".md",
         "path": "docs/historias_usuario_database.md"
       },
@@ -1575,7 +1883,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3575,
+        "size": 4364,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -1586,6 +1894,14 @@
         "size": 4865,
         "extension": ".md",
         "path": "docs/issue_turmas_nao_listadas.md"
+      },
+      {
+        "name": "moderacao_curadoria.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9504,
+        "extension": ".md",
+        "path": "docs/moderacao_curadoria.md"
       },
       {
         "name": "pipeline_etl.md",
@@ -1607,7 +1923,7 @@
         "name": "regras_negocio.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4213,
+        "size": 4410,
         "extension": ".md",
         "path": "docs/regras_negocio.md"
       },
@@ -1624,6 +1940,30 @@
         "size": 3299,
         "extension": ".md",
         "path": "docs/releases/v0.6.0.md"
+      },
+      {
+        "name": "v0.7.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3870,
+        "extension": ".md",
+        "path": "docs/releases/v0.7.0.md"
+      },
+      {
+        "name": "v0.8.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2527,
+        "extension": ".md",
+        "path": "docs/releases/v0.8.0.md"
+      },
+      {
+        "name": "v0.9.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2032,
+        "extension": ".md",
+        "path": "docs/releases/v0.9.0.md"
       },
       {
         "name": "requisitos.md",
@@ -1705,7 +2045,7 @@
         "name": "ComentariosFrontend.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10122,
+        "size": 25633,
         "extension": ".tsx",
         "path": "frontend/components/ComentariosFrontend.tsx"
       },
@@ -1716,6 +2056,14 @@
         "size": 78,
         "extension": ".tsx",
         "path": "frontend/components/LoginForm.tsx"
+      },
+      {
+        "name": "MateriaisApoio.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12765,
+        "extension": ".tsx",
+        "path": "frontend/components/MateriaisApoio.tsx"
       },
       {
         "name": "StoolLogo.tsx",
@@ -1895,7 +2243,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 44605,
+        "size": 46592,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[slug]/page.tsx"
       },
@@ -1944,6 +2292,20 @@
         "size": 12059,
         "extension": ".tsx",
         "path": "frontend/src/app/login/page.tsx"
+      },
+      {
+        "name": "moderacao",
+        "type": "directory",
+        "path": "frontend/src/app/moderacao",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 17404,
+        "extension": ".tsx",
+        "path": "frontend/src/app/moderacao/page.tsx"
       },
       {
         "name": "page.tsx",
@@ -2008,6 +2370,22 @@
         "path": "frontend/src/components/ClassFilters.tsx"
       },
       {
+        "name": "DenunciaModerationCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4980,
+        "extension": ".tsx",
+        "path": "frontend/src/components/DenunciaModerationCard.tsx"
+      },
+      {
+        "name": "DificuldadesPanel.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 19817,
+        "extension": ".tsx",
+        "path": "frontend/src/components/DificuldadesPanel.tsx"
+      },
+      {
         "name": "Footer.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -2035,15 +2413,31 @@
         "name": "MaterialModal.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 32298,
+        "size": 32322,
         "extension": ".tsx",
         "path": "frontend/src/components/MaterialModal.tsx"
+      },
+      {
+        "name": "ModerationActionModal.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6304,
+        "extension": ".tsx",
+        "path": "frontend/src/components/ModerationActionModal.tsx"
+      },
+      {
+        "name": "ModerationCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2991,
+        "extension": ".tsx",
+        "path": "frontend/src/components/ModerationCard.tsx"
       },
       {
         "name": "Navbar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 16115,
+        "size": 16494,
         "extension": ".tsx",
         "path": "frontend/src/components/Navbar.tsx"
       },
@@ -2284,12 +2678,28 @@
         "children": []
       },
       {
+        "name": "difficultyService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5872,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/difficultyService.test.ts"
+      },
+      {
         "name": "materialService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5473,
+        "size": 3484,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/materialService.test.ts"
+      },
+      {
+        "name": "moderacaoService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7318,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/moderacaoService.test.ts"
       },
       {
         "name": "authService.ts",
@@ -2306,6 +2716,14 @@
         "size": 1024,
         "extension": ".ts",
         "path": "frontend/src/services/courseService.ts"
+      },
+      {
+        "name": "difficultyService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8267,
+        "extension": ".ts",
+        "path": "frontend/src/services/difficultyService.ts"
       },
       {
         "name": "disciplineService.ts",
@@ -2327,7 +2745,7 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1271,
+        "size": 1530,
         "extension": ".ts",
         "path": "frontend/src/services/index.ts"
       },
@@ -2335,9 +2753,17 @@
         "name": "materialService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7505,
+        "size": 5794,
         "extension": ".ts",
         "path": "frontend/src/services/materialService.ts"
+      },
+      {
+        "name": "moderacaoService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5276,
+        "extension": ".ts",
+        "path": "frontend/src/services/moderacaoService.ts"
       },
       {
         "name": "types",
@@ -2362,6 +2788,14 @@
         "path": "frontend/src/types/curso.ts"
       },
       {
+        "name": "dificuldade.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11743,
+        "extension": ".ts",
+        "path": "frontend/src/types/dificuldade.ts"
+      },
+      {
         "name": "disciplina.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2373,9 +2807,17 @@
         "name": "material.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 832,
+        "size": 1296,
         "extension": ".ts",
         "path": "frontend/src/types/material.ts"
+      },
+      {
+        "name": "moderacao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2593,
+        "extension": ".ts",
+        "path": "frontend/src/types/moderacao.ts"
       },
       {
         "name": "turma.ts",
@@ -2425,7 +2867,7 @@
         "name": "init.sql",
         "type": "file",
         "language": "SQL",
-        "size": 15244,
+        "size": 18008,
         "extension": ".sql",
         "path": "init.sql"
       },
@@ -2433,7 +2875,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1684,
+        "size": 1898,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -2461,9 +2903,31 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6663,
+        "size": 6594,
         "extension": ".md",
         "path": "skills/tamburetei-dev/SKILL.md"
+      },
+      {
+        "name": "tamburetei-tdd",
+        "type": "directory",
+        "path": "skills/tamburetei-tdd",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5124,
+        "extension": ".md",
+        "path": "skills/tamburetei-tdd/SKILL.md"
+      },
+      {
+        "name": "sonar-project.properties",
+        "type": "file",
+        "language": "Unknown",
+        "size": 654,
+        "extension": ".properties",
+        "path": "sonar-project.properties"
       },
       {
         "name": "specs",
@@ -2482,7 +2946,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-15T13:27:59.715430+00:00",
+    "extracted_at": "2026-11-16T14:33:34.299441+00:00",
     "file_path": "data/silver/hierarchy_2026-02-TambureteiUnB.json"
   }
 }

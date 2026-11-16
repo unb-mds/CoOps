@@ -2,30 +2,98 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-15T13:26:48.227140+00:00",
+  "analyzed_at": "2026-11-16T14:32:12.442556+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 152,
-  "total_bytes": 1660799,
+  "total_files": 295,
+  "total_bytes": 3232637,
   "languages": [
+    {
+      "language": "Python",
+      "file_count": 109,
+      "total_bytes": 1191583,
+      "percentage": 36.86,
+      "files": [
+        {
+          "path": "Back/app/modules/scraper/hub.py",
+          "name": "hub.py",
+          "size": 68669,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/parser.py",
+          "name": "parser.py",
+          "size": 40648,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/tests/test_expansao_portais_fase2_scrapers.py",
+          "name": "test_expansao_portais_fase2_scrapers.py",
+          "size": 39825,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/pipeline.py",
+          "name": "pipeline.py",
+          "size": 38808,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/fal.py",
+          "name": "fal.py",
+          "size": 37042,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/tests/test_hub_fal_scrapers.py",
+          "name": "test_hub_fal_scrapers.py",
+          "size": 33746,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/ocean.py",
+          "name": "ocean.py",
+          "size": 33420,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/tests/test_summarizer.py",
+          "name": "test_summarizer.py",
+          "size": 31345,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/cel.py",
+          "name": "cel.py",
+          "size": 30852,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/fup.py",
+          "name": "fup.py",
+          "size": 28342,
+          "extension": ".py"
+        }
+      ]
+    },
     {
       "language": "PNG Image",
       "file_count": 9,
-      "total_bytes": 1089661,
-      "percentage": 65.61,
+      "total_bytes": 959600,
+      "percentage": 29.68,
       "files": [
-        {
-          "path": "docs/RealiseNotes/img/Front.png",
-          "name": "Front.png",
-          "size": 266188,
-          "extension": ".png"
-        },
         {
           "path": "docs/Requisitos/imagens/requisitos_board.png",
           "name": "requisitos_board.png",
           "size": 257676,
+          "extension": ".png"
+        },
+        {
+          "path": "docs/assets/img/Diagrama de conteiner1.drawio.png",
+          "name": "Diagrama de conteiner1.drawio.png",
+          "size": 147657,
           "extension": ".png"
         },
         {
@@ -41,15 +109,15 @@
           "extension": ".png"
         },
         {
-          "path": "docs/RealiseNotes/img/API.png",
-          "name": "API.png",
-          "size": 83435,
-          "extension": ".png"
-        },
-        {
           "path": "docs/Requisitos/imagens/storymap_epico3.png",
           "name": "storymap_epico3.png",
           "size": 75244,
+          "extension": ".png"
+        },
+        {
+          "path": "docs/assets/img/Diagrama de Contexto.drawio.png",
+          "name": "Diagrama de Contexto.drawio.png",
+          "size": 71905,
           "extension": ".png"
         },
         {
@@ -74,82 +142,88 @@
     },
     {
       "language": "Markdown",
-      "file_count": 60,
-      "total_bytes": 240713,
-      "percentage": 14.49,
+      "file_count": 105,
+      "total_bytes": 801382,
+      "percentage": 24.79,
       "files": [
         {
-          "path": "docs/Requisitos/produto/backlog.md",
-          "name": "backlog.md",
-          "size": 15427,
+          "path": ".github/skills/neon-functions/SKILL.md",
+          "name": "SKILL.md",
+          "size": 55088,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon/SKILL.md",
+          "name": "SKILL.md",
+          "size": 37402,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-realtime/references/ssr.md",
+          "name": "ssr.md",
+          "size": 33425,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-realtime/references/mutations.md",
+          "name": "mutations.md",
+          "size": 33218,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-realtime/references/subscribing.md",
+          "name": "subscribing.md",
+          "size": 25930,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-realtime/references/queries.md",
+          "name": "queries.md",
+          "size": 24628,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-ai-gateway/SKILL.md",
+          "name": "SKILL.md",
+          "size": 24430,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-realtime/references/reactivity.md",
+          "name": "reactivity.md",
+          "size": 20168,
+          "extension": ".md"
+        },
+        {
+          "path": ".github/skills/neon-postgres/SKILL.md",
+          "name": "SKILL.md",
+          "size": 19382,
           "extension": ".md"
         },
         {
           "path": "docs/fontes-de-dados.md",
           "name": "fontes-de-dados.md",
-          "size": 12234,
-          "extension": ".md"
-        },
-        {
-          "path": ".github/skills/ask-matt/SKILL.md",
-          "name": "SKILL.md",
-          "size": 11417,
-          "extension": ".md"
-        },
-        {
-          "path": "Back/README.md",
-          "name": "README.md",
-          "size": 11336,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/agents/skills/README.md",
-          "name": "README.md",
-          "size": 10487,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/Requisitos/produto/personas.md",
-          "name": "personas.md",
-          "size": 8915,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/Requisitos/StoryMap.md",
-          "name": "StoryMap.md",
-          "size": 8021,
-          "extension": ".md"
-        },
-        {
-          "path": ".github/skills/triage/AGENT-BRIEF.md",
-          "name": "AGENT-BRIEF.md",
-          "size": 7942,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/Estudos/sprint00/agentes_IA.md",
-          "name": "agentes_IA.md",
-          "size": 7728,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/RealiseNotes/release-1.md",
-          "name": "release-1.md",
-          "size": 7693,
+          "size": 15965,
           "extension": ".md"
         }
       ]
     },
     {
       "language": "JSON",
-      "file_count": 5,
-      "total_bytes": 126520,
-      "percentage": 7.62,
+      "file_count": 7,
+      "total_bytes": 148502,
+      "percentage": 4.59,
       "files": [
         {
           "path": "Front/package-lock.json",
           "name": "package-lock.json",
           "size": 124638,
+          "extension": ".json"
+        },
+        {
+          "path": "package-lock.json",
+          "name": "package-lock.json",
+          "size": 21868,
           "extension": ".json"
         },
         {
@@ -171,78 +245,84 @@
           "extension": ".json"
         },
         {
-          "path": "package-lock.json",
-          "name": "package-lock.json",
-          "size": 88,
+          "path": "package.json",
+          "name": "package.json",
+          "size": 106,
+          "extension": ".json"
+        },
+        {
+          "path": "Front/vercel.json",
+          "name": "vercel.json",
+          "size": 96,
           "extension": ".json"
         }
       ]
     },
     {
-      "language": "Python",
-      "file_count": 29,
-      "total_bytes": 66427,
-      "percentage": 4.0,
+      "language": "TypeScript",
+      "file_count": 30,
+      "total_bytes": 52052,
+      "percentage": 1.61,
       "files": [
         {
-          "path": "Back/app/modules/editais/service.py",
-          "name": "service.py",
-          "size": 10470,
-          "extension": ".py"
+          "path": "Front/src/pages/EditalDetailPage.tsx",
+          "name": "EditalDetailPage.tsx",
+          "size": 7136,
+          "extension": ".tsx"
         },
         {
-          "path": "Back/app/modules/editais/router.py",
-          "name": "router.py",
-          "size": 7303,
-          "extension": ".py"
+          "path": "Front/src/components/GoogleSignInButton.tsx",
+          "name": "GoogleSignInButton.tsx",
+          "size": 3755,
+          "extension": ".tsx"
         },
         {
-          "path": "Back/app/core/database.py",
-          "name": "database.py",
-          "size": 6606,
-          "extension": ".py"
+          "path": "Front/src/pages/__tests__/EditalDetailPage.test.tsx",
+          "name": "EditalDetailPage.test.tsx",
+          "size": 3337,
+          "extension": ".tsx"
         },
         {
-          "path": "Back/app/modules/scraper/deg.py",
-          "name": "deg.py",
-          "size": 5354,
-          "extension": ".py"
+          "path": "Front/src/components/Header.tsx",
+          "name": "Header.tsx",
+          "size": 3179,
+          "extension": ".tsx"
         },
         {
-          "path": "Back/app/modules/scraper/service.py",
-          "name": "service.py",
-          "size": 5277,
-          "extension": ".py"
+          "path": "Front/src/services/authService.ts",
+          "name": "authService.ts",
+          "size": 3026,
+          "extension": ".ts"
         },
         {
-          "path": "Back/migrations/versions/0001_initial_schema.py",
-          "name": "0001_initial_schema.py",
-          "size": 4713,
-          "extension": ".py"
+          "path": "Front/src/pages/HomePage.tsx",
+          "name": "HomePage.tsx",
+          "size": 2950,
+          "extension": ".tsx"
         },
         {
-          "path": "Back/tests/test_base_scraper.py",
-          "name": "test_base_scraper.py",
-          "size": 4606,
-          "extension": ".py"
+          "path": "Front/src/pages/RegisterPage.tsx",
+          "name": "RegisterPage.tsx",
+          "size": 2253,
+          "extension": ".tsx"
         },
         {
-          "path": "Back/tests/test_scraper.py",
-          "name": "test_scraper.py",
-          "size": 3471,
-          "extension": ".py"
+          "path": "Front/src/contexts/AuthContext.tsx",
+          "name": "AuthContext.tsx",
+          "size": 2143,
+          "extension": ".tsx"
         },
         {
-          "path": ".github/skills/doc-to-markdown/scripts/convert.py",
-          "name": "convert.py",
-          "size": 3000,
-          "extension": ".py"
+          "path": "Front/src/utils/editalDisplay.ts",
+          "name": "editalDisplay.ts",
+          "size": 2128,
+          "extension": ".ts"
         },
         {
-          "path": "Back/tests/test_database_schema.py",
-          "name": "test_database_schema.py",
-          "size": 2927,
-          "extension": ".py"
+          "path": "Front/src/components/__tests__/FavoriteButton.test.tsx",
+          "name": "FavoriteButton.test.tsx",
+          "size": 2105,
+          "extension": ".tsx"
         }
       ]
     },
@@ -250,7 +330,7 @@
       "language": "WebP Image",
       "file_count": 1,
       "total_bytes": 46900,
-      "percentage": 2.82,
+      "percentage": 1.45,
       "files": [
         {
           "path": "docs/assets/img/pattern-swirls.webp",
@@ -261,133 +341,15 @@
       ]
     },
     {
-      "language": "Unknown",
-      "file_count": 7,
-      "total_bytes": 45358,
-      "percentage": 2.73,
-      "files": [
-        {
-          "path": "Front/tsconfig.node.tsbuildinfo",
-          "name": "tsconfig.node.tsbuildinfo",
-          "size": 43045,
-          "extension": ".tsbuildinfo"
-        },
-        {
-          "path": "Front/.eslintrc.cjs",
-          "name": ".eslintrc.cjs",
-          "size": 611,
-          "extension": ".cjs"
-        },
-        {
-          "path": "Back/migrations/script.py.mako",
-          "name": "script.py.mako",
-          "size": 593,
-          "extension": ".mako"
-        },
-        {
-          "path": "Back/.env.example",
-          "name": ".env.example",
-          "size": 477,
-          "extension": ".example"
-        },
-        {
-          "path": "Front/tsconfig.tsbuildinfo",
-          "name": "tsconfig.tsbuildinfo",
-          "size": 459,
-          "extension": ".tsbuildinfo"
-        },
-        {
-          "path": "Front/.prettierrc",
-          "name": ".prettierrc",
-          "size": 133,
-          "extension": ".prettierrc"
-        },
-        {
-          "path": "Front/.env.example",
-          "name": ".env.example",
-          "size": 40,
-          "extension": ".example"
-        }
-      ]
-    },
-    {
-      "language": "TypeScript",
-      "file_count": 18,
-      "total_bytes": 19090,
-      "percentage": 1.15,
-      "files": [
-        {
-          "path": "Front/src/pages/HomePage.tsx",
-          "name": "HomePage.tsx",
-          "size": 2950,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/pages/EditalDetailPage.tsx",
-          "name": "EditalDetailPage.tsx",
-          "size": 2181,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/utils/editalDisplay.ts",
-          "name": "editalDisplay.ts",
-          "size": 2128,
-          "extension": ".ts"
-        },
-        {
-          "path": "Front/src/components/Hero.tsx",
-          "name": "Hero.tsx",
-          "size": 2053,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/components/EditalCard.tsx",
-          "name": "EditalCard.tsx",
-          "size": 1586,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/components/FilterBar.tsx",
-          "name": "FilterBar.tsx",
-          "size": 1457,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/components/Header.tsx",
-          "name": "Header.tsx",
-          "size": 1457,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/components/Footer.tsx",
-          "name": "Footer.tsx",
-          "size": 955,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/services/searchEditais.ts",
-          "name": "searchEditais.ts",
-          "size": 945,
-          "extension": ".ts"
-        },
-        {
-          "path": "Front/src/components/FavoriteButton.tsx",
-          "name": "FavoriteButton.tsx",
-          "size": 937,
-          "extension": ".tsx"
-        }
-      ]
-    },
-    {
       "language": "CSS",
       "file_count": 2,
-      "total_bytes": 15973,
-      "percentage": 0.96,
+      "total_bytes": 16696,
+      "percentage": 0.52,
       "files": [
         {
           "path": "Front/src/index.css",
           "name": "index.css",
-          "size": 10696,
+          "size": 11419,
           "extension": ".css"
         },
         {
@@ -400,20 +362,26 @@
     },
     {
       "language": "YAML",
-      "file_count": 14,
-      "total_bytes": 6814,
-      "percentage": 0.41,
+      "file_count": 16,
+      "total_bytes": 10828,
+      "percentage": 0.33,
       "files": [
-        {
-          "path": "mkdocs.yml",
-          "name": "mkdocs.yml",
-          "size": 2423,
-          "extension": ".yml"
-        },
         {
           "path": ".github/workflows/pipeline.yml",
           "name": "pipeline.yml",
-          "size": 1064,
+          "size": 2992,
+          "extension": ".yml"
+        },
+        {
+          "path": "mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 2749,
+          "extension": ".yml"
+        },
+        {
+          "path": "docker-compose.yml",
+          "name": "docker-compose.yml",
+          "size": 1314,
           "extension": ".yml"
         },
         {
@@ -427,6 +395,12 @@
           "name": "deploy-docs.yml",
           "size": 1001,
           "extension": ".yml"
+        },
+        {
+          "path": "render.yaml",
+          "name": "render.yaml",
+          "size": 446,
+          "extension": ".yaml"
         },
         {
           "path": ".github/skills/setup-matt-pocock-skills/agents/openai.yaml",
@@ -451,26 +425,84 @@
           "name": "openai.yaml",
           "size": 139,
           "extension": ".yaml"
+        }
+      ]
+    },
+    {
+      "language": "Unknown",
+      "file_count": 6,
+      "total_bytes": 1433,
+      "percentage": 0.04,
+      "files": [
+        {
+          "path": "Front/.eslintrc.cjs",
+          "name": ".eslintrc.cjs",
+          "size": 611,
+          "extension": ".cjs"
         },
         {
-          "path": ".github/skills/ask-matt/agents/openai.yaml",
-          "name": "openai.yaml",
-          "size": 137,
-          "extension": ".yaml"
+          "path": "Back/migrations/script.py.mako",
+          "name": "script.py.mako",
+          "size": 593,
+          "extension": ".mako"
         },
         {
-          "path": ".github/skills/to-spec/agents/openai.yaml",
-          "name": "openai.yaml",
-          "size": 135,
-          "extension": ".yaml"
+          "path": "Front/.prettierrc",
+          "name": ".prettierrc",
+          "size": 133,
+          "extension": ".prettierrc"
+        },
+        {
+          "path": "Front/.env.production",
+          "name": ".env.production",
+          "size": 96,
+          "extension": ".production"
+        },
+        {
+          "path": "Back/test.db",
+          "name": "test.db",
+          "size": 0,
+          "extension": ".db"
+        },
+        {
+          "path": "test.db",
+          "name": "test.db",
+          "size": 0,
+          "extension": ".db"
+        }
+      ]
+    },
+    {
+      "language": "INI",
+      "file_count": 3,
+      "total_bytes": 1013,
+      "percentage": 0.03,
+      "files": [
+        {
+          "path": "Back/alembic.ini",
+          "name": "alembic.ini",
+          "size": 675,
+          "extension": ".ini"
+        },
+        {
+          "path": "Back/pytest.ini",
+          "name": "pytest.ini",
+          "size": 198,
+          "extension": ".ini"
+        },
+        {
+          "path": "pytest.ini",
+          "name": "pytest.ini",
+          "size": 140,
+          "extension": ".ini"
         }
       ]
     },
     {
       "language": "Git Ignore",
-      "file_count": 2,
-      "total_bytes": 626,
-      "percentage": 0.04,
+      "file_count": 3,
+      "total_bytes": 741,
+      "percentage": 0.02,
       "files": [
         {
           "path": "Back/.gitignore",
@@ -483,34 +515,26 @@
           "name": ".gitignore",
           "size": 164,
           "extension": ".gitignore"
+        },
+        {
+          "path": ".gitignore",
+          "name": ".gitignore",
+          "size": 115,
+          "extension": ".gitignore"
         }
       ]
     },
     {
       "language": "No Extension",
       "file_count": 1,
-      "total_bytes": 629,
-      "percentage": 0.04,
+      "total_bytes": 652,
+      "percentage": 0.02,
       "files": [
         {
           "path": "Back/Dockerfile",
           "name": "Dockerfile",
-          "size": 629,
+          "size": 652,
           "extension": ""
-        }
-      ]
-    },
-    {
-      "language": "INI",
-      "file_count": 1,
-      "total_bytes": 675,
-      "percentage": 0.04,
-      "files": [
-        {
-          "path": "Back/alembic.ini",
-          "name": "alembic.ini",
-          "size": 675,
-          "extension": ".ini"
         }
       ]
     },
@@ -518,7 +542,7 @@
       "language": "HTML",
       "file_count": 1,
       "total_bytes": 698,
-      "percentage": 0.04,
+      "percentage": 0.02,
       "files": [
         {
           "path": "Front/index.html",
@@ -531,34 +555,34 @@
     {
       "language": "Text",
       "file_count": 1,
-      "total_bytes": 381,
-      "percentage": 0.02,
+      "total_bytes": 466,
+      "percentage": 0.01,
       "files": [
         {
           "path": "Back/requirements.txt",
           "name": "requirements.txt",
-          "size": 381,
+          "size": 466,
           "extension": ".txt"
         }
       ]
     },
     {
-      "language": "JavaScript",
+      "language": "Docker Ignore",
       "file_count": 1,
-      "total_bytes": 334,
-      "percentage": 0.02,
+      "total_bytes": 91,
+      "percentage": 0.0,
       "files": [
         {
-          "path": "Front/vite.config.js",
-          "name": "vite.config.js",
-          "size": 334,
-          "extension": ".js"
+          "path": "Back/.dockerignore",
+          "name": ".dockerignore",
+          "size": 91,
+          "extension": ".dockerignore"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-15T13:27:59.867486+00:00",
+    "extracted_at": "2026-11-16T14:33:34.411929+00:00",
     "file_path": "data/silver/language_analysis_Fique-de-Olho.json"
   }
 }
