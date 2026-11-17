@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Bandejao",
   "branch": "main",
-  "sha": "fb961286ed03e103232ceeb3c74c208487f4e2ac",
+  "sha": "b5b345d7690c8b543dac44f7929a315925da0911",
   "tree": [
     {
       "name": ".gitattributes",
@@ -18,7 +18,7 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "64e81e2f074dcad171d4e7a55d1b06dc17e1c9a0",
+      "sha": "819a461f281f9606db6a330d1f43a25864dd5008",
       "mode": "040000",
       "children": []
     },
@@ -74,7 +74,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "48968ea0e57c6292bfa2ca0dfab175b5654a62fe",
+      "sha": "21190838835f4a1bac3e8e9721ab637af5579659",
       "mode": "040000",
       "children": []
     },
@@ -82,10 +82,10 @@
       "name": "ci.yml",
       "path": ".github/workflows/ci.yml",
       "type": "file",
-      "sha": "09cd355508af9d989e207949fad3bc0bc30a574f",
+      "sha": "a275f91faee6db63fa5a145b0873e56bd9fc6218",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2134,
+      "size": 2735,
       "is_binary": false
     },
     {
@@ -172,7 +172,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "3491f3e958fb7c5e4b338ea746693e031a983920",
+      "sha": "4b703649e0e5ee9329176bcc74930ae98cf3d2c6",
       "mode": "040000",
       "children": []
     },
@@ -326,7 +326,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "510b1fbe4b6cf6a3ae88dac34bb0af874c823e1f",
+      "sha": "fd89d490eea07f7dd1fafcab23c23e6eb83dd63b",
       "mode": "040000",
       "children": []
     },
@@ -334,7 +334,7 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "52af0aa9e60c4453daa98ec8eebe75b58d427aa7",
+      "sha": "06ba62ef5320eb0df05627f333e7146c1bafcb48",
       "mode": "040000",
       "children": []
     },
@@ -352,7 +352,7 @@
       "name": "routes",
       "path": "backend/app/api/routes",
       "type": "directory",
-      "sha": "faed119b4f7d7884ee7afabb9793b419f0123207",
+      "sha": "81079268d2cc7737ee756957e033600ac601547b",
       "mode": "040000",
       "children": []
     },
@@ -360,10 +360,10 @@
       "name": "avaliacao.py",
       "path": "backend/app/api/routes/avaliacao.py",
       "type": "file",
-      "sha": "a51266ba1a49fbcc8ccc6de116f2f8c5e1c8f4bb",
+      "sha": "75a8ab27962cd555f384b0a33897f1de7cfdc36c",
       "mode": "100644",
       "extension": ".py",
-      "size": 2133,
+      "size": 2845,
       "is_binary": false
     },
     {
@@ -742,10 +742,10 @@
       "name": "pyproject.toml",
       "path": "backend/pyproject.toml",
       "type": "file",
-      "sha": "3f1f6ee6de26845a791fa2044a6a27b4ce78d39e",
+      "sha": "723bd2b0e1e90f8318fcda7a98a7104895469538",
       "mode": "100644",
       "extension": ".toml",
-      "size": 148,
+      "size": 215,
       "is_binary": false
     },
     {
@@ -762,7 +762,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "b397212de9f86ee7d2d2183d7215a602b876b718",
+      "sha": "109295d9d8e0ba6c0f562a168b51c32fcb9f1246",
       "mode": "040000",
       "children": []
     },
@@ -780,10 +780,10 @@
       "name": "conftest.py",
       "path": "backend/tests/conftest.py",
       "type": "file",
-      "sha": "8c50ca6d7514abb28f1698b34033b12c8d6ba2f0",
+      "sha": "5841b06c2aad98b610c13640b2eddd5200247327",
       "mode": "100644",
       "extension": ".py",
-      "size": 1912,
+      "size": 2129,
       "is_binary": false
     },
     {
@@ -817,6 +817,16 @@
       "is_binary": false
     },
     {
+      "name": "test_concorrencia.py",
+      "path": "backend/tests/test_concorrencia.py",
+      "type": "file",
+      "sha": "43d4716adc156a5b4263e0d1adaabc2ee2adbaa2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6782,
+      "is_binary": false
+    },
+    {
       "name": "test_estimativa.py",
       "path": "backend/tests/test_estimativa.py",
       "type": "file",
@@ -824,6 +834,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 7339,
+      "is_binary": false
+    },
+    {
+      "name": "test_falhas_sincronizacao.py",
+      "path": "backend/tests/test_falhas_sincronizacao.py",
+      "type": "file",
+      "sha": "fb5213f07c22fc2c415274250554a7b96e98113c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6072,
       "is_binary": false
     },
     {
@@ -907,13 +927,33 @@
       "is_binary": false
     },
     {
+      "name": "test_postgres.py",
+      "path": "backend/tests/test_postgres.py",
+      "type": "file",
+      "sha": "d291a4b222e9ca3264322704e8d90a96207e1407",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2720,
+      "is_binary": false
+    },
+    {
+      "name": "test_privacidade.py",
+      "path": "backend/tests/test_privacidade.py",
+      "type": "file",
+      "sha": "92d8f6ece07676a1c816de43acd0251594ec6958",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4508,
+      "is_binary": false
+    },
+    {
       "name": "test_reclamacao.py",
       "path": "backend/tests/test_reclamacao.py",
       "type": "file",
-      "sha": "15f5dd9336341d5e375a1046af42a6d45d0c3858",
+      "sha": "c85db70c53aa01422774166b2b1127c9ce239d6f",
       "mode": "100644",
       "extension": ".py",
-      "size": 13135,
+      "size": 13479,
       "is_binary": false
     },
     {
@@ -970,7 +1010,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "5131712b53bec966dfa9d20a0fe679ef60341dd5",
+      "sha": "d28061e994d54fe64fc1cfb1c64ca1f7c8674508",
       "mode": "040000",
       "children": []
     },
@@ -988,20 +1028,20 @@
       "name": "Requisitos.md",
       "path": "docs/Requisitos.md",
       "type": "file",
-      "sha": "5beab8b0fcaf8c5b161f9af55748685320c7e698",
+      "sha": "107fd794e4b7405c946a0922e77e7466b0294e59",
       "mode": "100644",
       "extension": ".md",
-      "size": 37582,
+      "size": 40648,
       "is_binary": false
     },
     {
       "name": "changelog.md",
       "path": "docs/changelog.md",
       "type": "file",
-      "sha": "f8eb02380779ff8f38fb283bd6190ab0c8738941",
+      "sha": "cf2ad1f5bd87661ae8e7a573f1f7ca5bd91898c3",
       "mode": "100644",
       "extension": ".md",
-      "size": 12966,
+      "size": 14428,
       "is_binary": false
     },
     {
@@ -1136,7 +1176,7 @@
       "name": "evidencias",
       "path": "docs/evidencias",
       "type": "directory",
-      "sha": "9451ba634c52e5adbd85f09982204aa4eaa353b4",
+      "sha": "a12b795d89bc707ff00dded8111cc9d73f5878e3",
       "mode": "040000",
       "children": []
     },
@@ -1214,6 +1254,36 @@
       "mode": "100644",
       "extension": ".json",
       "size": 3066,
+      "is_binary": false
+    },
+    {
+      "name": "divergencias.md",
+      "path": "docs/evidencias/divergencias.md",
+      "type": "file",
+      "sha": "5b8a51de529def2900bbe9f3ad8903b5797a906d",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4740,
+      "is_binary": false
+    },
+    {
+      "name": "falhas-sincronizacao-2026-11-17.md",
+      "path": "docs/evidencias/falhas-sincronizacao-2026-11-17.md",
+      "type": "file",
+      "sha": "5beedae1541ba7d6b780146e58679cdfb270c90c",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2432,
+      "is_binary": false
+    },
+    {
+      "name": "roteiro-ponta-a-ponta-2026-11-17.md",
+      "path": "docs/evidencias/roteiro-ponta-a-ponta-2026-11-17.md",
+      "type": "file",
+      "sha": "9c9a21f0c92b3e3cd51eeb6fab4e3a376fff7fdb",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3946,
       "is_binary": false
     },
     {
@@ -1432,7 +1502,7 @@
       "name": "extracao",
       "path": "extracao",
       "type": "directory",
-      "sha": "33afd7c561043d50876099dbee99802c7bb0e4ef",
+      "sha": "4f06e1a84cb23f6fd7ad679025c807248e7a979e",
       "mode": "040000",
       "children": []
     },
@@ -1460,7 +1530,7 @@
       "name": "extracao",
       "path": "extracao/extracao",
       "type": "directory",
-      "sha": "a88f6c40b60a2398affce8641c6f355e0312a47b",
+      "sha": "2be3e6531c8e6c29bb9663e5d8ff60cb44eb519f",
       "mode": "040000",
       "children": []
     },
@@ -1478,10 +1548,10 @@
       "name": "main.py",
       "path": "extracao/extracao/main.py",
       "type": "file",
-      "sha": "bdd93215bafb101cc1cba1f53df61893af61ac2a",
+      "sha": "63900eafe189c30de999b7230b26654e860464d8",
       "mode": "100644",
       "extension": ".py",
-      "size": 17238,
+      "size": 20311,
       "is_binary": false
     },
     {
@@ -1518,7 +1588,7 @@
       "name": "tests",
       "path": "extracao/tests",
       "type": "directory",
-      "sha": "7ccefaf5b9c085869c06c10ffe6d1fb1cc77294d",
+      "sha": "a8cdb1ee3c45d752942ab59e68febd54cf57ebfc",
       "mode": "040000",
       "children": []
     },
@@ -1536,7 +1606,7 @@
       "name": "fixtures",
       "path": "extracao/tests/fixtures",
       "type": "directory",
-      "sha": "112ee7c71fffe72a0f614694283166fb67dea846",
+      "sha": "8fa651a639a8ccdda3063dee18f4288e92f2ad53",
       "mode": "040000",
       "children": []
     },
@@ -1544,7 +1614,7 @@
       "name": "publicacao-2026-10-27",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27",
       "type": "directory",
-      "sha": "dbbd22447a84801c1461cff245228bfb24ca8a8e",
+      "sha": "7402dd36ddaef340be6d1b74b150a6f84f044dcf",
       "mode": "040000",
       "children": []
     },
@@ -1562,10 +1632,10 @@
       "name": "Ceilandia-Semana-02-26-10-a-01-11-1.pdf.json",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27/Ceilandia-Semana-02-26-10-a-01-11-1.pdf.json",
       "type": "file",
-      "sha": "ff34e61dff75f5cb75a9f3f367c1403d6c015ccf",
+      "sha": "f49e5f0f6a3f57cf986dfe8b7949d69aea032ab3",
       "mode": "100644",
       "extension": ".json",
-      "size": 28552,
+      "size": 29399,
       "is_binary": false
     },
     {
@@ -1582,10 +1652,10 @@
       "name": "Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf.json",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf.json",
       "type": "file",
-      "sha": "0f86f7bc73aef5b1802dfe1ed4aba805adaf5451",
+      "sha": "a9f8cb48874ac538b0f92d946a7ed2e7b1369bab",
       "mode": "100644",
       "extension": ".json",
-      "size": 35290,
+      "size": 36465,
       "is_binary": false
     },
     {
@@ -1602,10 +1672,10 @@
       "name": "Fazenda-Semana-02-26-10-a-01-11.pdf.json",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27/Fazenda-Semana-02-26-10-a-01-11.pdf.json",
       "type": "file",
-      "sha": "cbb5b043dc4de110e1bc60f809d00e7abc9dd20a",
+      "sha": "7d95018d111a7dbb3660c6ffe8c795d521a88eab",
       "mode": "100644",
       "extension": ".json",
-      "size": 15682,
+      "size": 16094,
       "is_binary": false
     },
     {
@@ -1622,10 +1692,10 @@
       "name": "Gama-Semana-02-26-10-a-01-11-1.pdf.json",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27/Gama-Semana-02-26-10-a-01-11-1.pdf.json",
       "type": "file",
-      "sha": "8b5492fcaf0fcf292bf5d48647ffb42a9f4a44cd",
+      "sha": "9e281b5cc563b976cb2b46395251df1af6ab742c",
       "mode": "100644",
       "extension": ".json",
-      "size": 25618,
+      "size": 26353,
       "is_binary": false
     },
     {
@@ -1642,20 +1712,20 @@
       "name": "Planaltina-Semana-02-26-10-a-01-11-1.pdf.json",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27/Planaltina-Semana-02-26-10-a-01-11-1.pdf.json",
       "type": "file",
-      "sha": "958924e859c0dedbb17cddc371ffb1d7fe8b9976",
+      "sha": "a8c39859ecd3c615558e83734ad8335396282ae4",
       "mode": "100644",
       "extension": ".json",
-      "size": 35282,
+      "size": 36457,
       "is_binary": false
     },
     {
       "name": "README.md",
       "path": "extracao/tests/fixtures/publicacao-2026-10-27/README.md",
       "type": "file",
-      "sha": "c72eba4c0bac601ce53661d4577a46daab3777b4",
+      "sha": "d5081ce40859f7ae7f8f959cd71266cd73bbe892",
       "mode": "100644",
       "extension": ".md",
-      "size": 3708,
+      "size": 3802,
       "is_binary": false
     },
     {
@@ -1692,10 +1762,10 @@
       "name": "test_cobertura_total.py",
       "path": "extracao/tests/test_cobertura_total.py",
       "type": "file",
-      "sha": "4030e5c66b7969c92814163b97fa4750d93c4077",
+      "sha": "9519117ee961f3c55b579233c4ebc15e0af84e14",
       "mode": "100644",
       "extension": ".py",
-      "size": 9993,
+      "size": 11879,
       "is_binary": false
     },
     {
@@ -1712,10 +1782,10 @@
       "name": "test_regressoes_publicacao.py",
       "path": "extracao/tests/test_regressoes_publicacao.py",
       "type": "file",
-      "sha": "894b5e14727dea83bce9e02f242a09c52d4ab167",
+      "sha": "fe4d5a13a1e0f293745ab54de90dd23ac138e11f",
       "mode": "100644",
       "extension": ".py",
-      "size": 3829,
+      "size": 5124,
       "is_binary": false
     },
     {
@@ -2406,10 +2476,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "ee602e852e082c57fcbe1628bd7df988966bbd64",
+      "sha": "86eacc1060f98dee7428ce0ba8dd90030839355c",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2477,
+      "size": 2653,
       "is_binary": false
     },
     {
@@ -2579,12 +2649,86 @@
       "extension": ".md",
       "size": 1637,
       "is_binary": false
+    },
+    {
+      "name": "testes",
+      "path": "testes",
+      "type": "directory",
+      "sha": "ae5490cd66eace6f6c1ee4d7aae93f2485898ab1",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "carga",
+      "path": "testes/carga",
+      "type": "directory",
+      "sha": "fe105b63907482c45d54d95efb9ffc8b55c2cdf5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": ".gitignore",
+      "path": "testes/carga/.gitignore",
+      "type": "file",
+      "sha": "e83e1b937aad305aba9a04a3305ee7d1b7767bc4",
+      "mode": "100644",
+      "extension": ".gitignore",
+      "size": 59,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "testes/carga/README.md",
+      "type": "file",
+      "sha": "c0e7a101e4cc5640888072ee35ee9bbb66640bb7",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2432,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio.js",
+      "path": "testes/carga/cardapio.js",
+      "type": "file",
+      "sha": "22e77435fb4010dd296c4ca2d8932490332f2eb6",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3281,
+      "is_binary": false
+    },
+    {
+      "name": "gerar_massa.py",
+      "path": "testes/carga/gerar_massa.py",
+      "type": "file",
+      "sha": "3b07fe270975bd869a685ee7b4cc1a48426102bf",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3841,
+      "is_binary": false
+    },
+    {
+      "name": "roteiros",
+      "path": "testes/roteiros",
+      "type": "directory",
+      "sha": "e6134be447452ea8a36b7415acbc30680e476980",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "roteiro-ponta-a-ponta.md",
+      "path": "testes/roteiros/roteiro-ponta-a-ponta.md",
+      "type": "file",
+      "sha": "1315c54fb0be3081959eea38870fdf60bba0983f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4117,
+      "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-16T14:32:19.962035+00:00",
+  "extracted_at": "2026-11-17T15:18:01.810131+00:00",
   "method": "rest",
-  "total_items": 266,
+  "total_items": 281,
   "repository_metadata": {
     "id": 1338353011,
     "full_name": "unb-mds/2026-2-Bandejao",
@@ -2592,9 +2736,9 @@
     "created_at": "2026-08-18T11:59:18Z",
     "updated_at": "2026-11-11T14:28:47Z",
     "language": "Python",
-    "size": 1802,
+    "size": 1843,
     "stars": 1,
     "forks": 0,
-    "open_issues": 13
+    "open_issues": 5
   }
 }

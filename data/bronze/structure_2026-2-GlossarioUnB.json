@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-GlossarioUnB",
   "branch": "main",
-  "sha": "e6c236ea41a282c10922e693c306cf763a7815d6",
+  "sha": "e383d125abe15f29296cd6d10e3184eb22b8a683",
   "tree": [
     {
       "name": ".github",
@@ -179,10 +179,28 @@
       "is_binary": false
     },
     {
+      "name": "coleta",
+      "path": "coleta",
+      "type": "directory",
+      "sha": "108b9b729bc25d5f1d3a3f26d1c6e887d6b91304",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "deduplicar.js",
+      "path": "coleta/deduplicar.js",
+      "type": "file",
+      "sha": "eb71269ee89050d8ef5171077306d172703bf9c7",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 7666,
+      "is_binary": false
+    },
+    {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "f1863c89f4799a5bd5b00f368791cc52bcbaa26b",
+      "sha": "0cc20d57a80d922d96abf1339576e2a37b5af2f3",
       "mode": "040000",
       "children": []
     },
@@ -190,10 +208,10 @@
       "name": "ARQUITETURA.md",
       "path": "docs/ARQUITETURA.md",
       "type": "file",
-      "sha": "648deb0c32edd93c560beaa42a7d3574fee8b020",
+      "sha": "6f3a71e45c09b16888a2c98e1bd4edfb8a00bff8",
       "mode": "100644",
       "extension": ".md",
-      "size": 2850,
+      "size": 3511,
       "is_binary": false
     },
     {
@@ -240,17 +258,17 @@
       "name": "REQUISITOS.md",
       "path": "docs/REQUISITOS.md",
       "type": "file",
-      "sha": "14ac4a2ea5903d59ad1c8d97e49fa6fac5f35611",
+      "sha": "74529c791ca28eacd528dd13981eed4c9e718886",
       "mode": "100644",
       "extension": ".md",
-      "size": 2435,
+      "size": 2657,
       "is_binary": false
     },
     {
       "name": "adr",
       "path": "docs/adr",
       "type": "directory",
-      "sha": "c8a92037e424c0ff7cb70ad18ee906844236296a",
+      "sha": "221166f807a51c30c8ec8475ad0d1621f25fc287",
       "mode": "040000",
       "children": []
     },
@@ -268,20 +286,20 @@
       "name": "0001-termos-em-json-estatico.md",
       "path": "docs/adr/0001-termos-em-json-estatico.md",
       "type": "file",
-      "sha": "3da64d4b25c71b7daa2979321f166f09646d29a7",
+      "sha": "1c77e01404aa5afa8744e43199c923d33b65cf0a",
       "mode": "100644",
       "extension": ".md",
-      "size": 2756,
+      "size": 3190,
       "is_binary": false
     },
     {
       "name": "0002-frontend-sem-framework.md",
       "path": "docs/adr/0002-frontend-sem-framework.md",
       "type": "file",
-      "sha": "154b056bb5d444da91bfa07b7257b91aa5eb3ae3",
+      "sha": "eeea5fa41c49df696b65fb9122b107f351ce360f",
       "mode": "100644",
       "extension": ".md",
-      "size": 2257,
+      "size": 2462,
       "is_binary": false
     },
     {
@@ -342,6 +360,26 @@
       "mode": "100644",
       "extension": ".md",
       "size": 3380,
+      "is_binary": false
+    },
+    {
+      "name": "0009-coleta-automatizada-por-pipeline.md",
+      "path": "docs/adr/0009-coleta-automatizada-por-pipeline.md",
+      "type": "file",
+      "sha": "775bef3c539c33552947a83127dd302af694047e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3952,
+      "is_binary": false
+    },
+    {
+      "name": "0010-bibliotecas-nos-scripts-do-robo.md",
+      "path": "docs/adr/0010-bibliotecas-nos-scripts-do-robo.md",
+      "type": "file",
+      "sha": "fc7084f1d6d63db687f470181a279e847f6799c4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3123,
       "is_binary": false
     },
     {
@@ -798,7 +836,7 @@
       "name": "tests",
       "path": "tests",
       "type": "directory",
-      "sha": "3141e868604d94be17503c76805864867e1beac4",
+      "sha": "b9a35cbc2d3ee98faa8f22adec0a5e833e32a946",
       "mode": "040000",
       "children": []
     },
@@ -810,6 +848,16 @@
       "mode": "100644",
       "extension": ".js",
       "size": 525,
+      "is_binary": false
+    },
+    {
+      "name": "deduplicar.test.js",
+      "path": "tests/deduplicar.test.js",
+      "type": "file",
+      "sha": "f08e21b66645749c63d73e67baf47e36fe3d015c",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 8717,
       "is_binary": false
     },
     {
@@ -834,19 +882,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-16T14:32:18.442600+00:00",
+  "extracted_at": "2026-11-17T15:18:00.211763+00:00",
   "method": "rest",
-  "total_items": 86,
+  "total_items": 91,
   "repository_metadata": {
     "id": 1338352433,
     "full_name": "unb-mds/2026-2-GlossarioUnB",
     "description": "Grupo G10 - Metodos de Desenvolvimento de Software 2026/2",
     "created_at": "2026-08-18T11:58:42Z",
-    "updated_at": "2026-11-10T03:17:54Z",
-    "language": "HTML",
-    "size": 546,
+    "updated_at": "2026-11-17T02:03:49Z",
+    "language": "JavaScript",
+    "size": 932,
     "stars": 0,
     "forks": 0,
-    "open_issues": 67
+    "open_issues": 75
   }
 }
