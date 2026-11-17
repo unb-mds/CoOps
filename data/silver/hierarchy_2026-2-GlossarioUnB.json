@@ -2,7 +2,7 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-16T14:32:18.442600+00:00",
+  "extracted_at": "2026-11-17T15:18:00.211763+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -146,6 +146,20 @@
         "path": "README.md"
       },
       {
+        "name": "coleta",
+        "type": "directory",
+        "path": "coleta",
+        "children": []
+      },
+      {
+        "name": "deduplicar.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7666,
+        "extension": ".js",
+        "path": "coleta/deduplicar.js"
+      },
+      {
         "name": "docs",
         "type": "directory",
         "path": "docs",
@@ -155,7 +169,7 @@
         "name": "ARQUITETURA.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2850,
+        "size": 3511,
         "extension": ".md",
         "path": "docs/ARQUITETURA.md"
       },
@@ -195,7 +209,7 @@
         "name": "REQUISITOS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2435,
+        "size": 2657,
         "extension": ".md",
         "path": "docs/REQUISITOS.md"
       },
@@ -217,7 +231,7 @@
         "name": "0001-termos-em-json-estatico.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2756,
+        "size": 3190,
         "extension": ".md",
         "path": "docs/adr/0001-termos-em-json-estatico.md"
       },
@@ -225,7 +239,7 @@
         "name": "0002-frontend-sem-framework.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2257,
+        "size": 2462,
         "extension": ".md",
         "path": "docs/adr/0002-frontend-sem-framework.md"
       },
@@ -276,6 +290,22 @@
         "size": 3380,
         "extension": ".md",
         "path": "docs/adr/0008-interface-com-css-puro-e-tokens.md"
+      },
+      {
+        "name": "0009-coleta-automatizada-por-pipeline.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3952,
+        "extension": ".md",
+        "path": "docs/adr/0009-coleta-automatizada-por-pipeline.md"
+      },
+      {
+        "name": "0010-bibliotecas-nos-scripts-do-robo.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3123,
+        "extension": ".md",
+        "path": "docs/adr/0010-bibliotecas-nos-scripts-do-robo.md"
       },
       {
         "name": "estudos",
@@ -648,6 +678,14 @@
         "path": "tests/dados.test.js"
       },
       {
+        "name": "deduplicar.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 8717,
+        "extension": ".js",
+        "path": "tests/deduplicar.test.js"
+      },
+      {
         "name": "termos.test.js",
         "type": "file",
         "language": "JavaScript",
@@ -666,7 +704,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-16T14:33:34.386422+00:00",
+    "extracted_at": "2026-11-17T15:19:11.220635+00:00",
     "file_path": "data/silver/hierarchy_2026-2-GlossarioUnB.json"
   }
 }

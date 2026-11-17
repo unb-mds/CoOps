@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-16T14:32:19.962035+00:00",
+  "extracted_at": "2026-11-17T15:18:01.810131+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -69,7 +69,7 @@
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2134,
+        "size": 2735,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
       },
@@ -289,7 +289,7 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2133,
+        "size": 2845,
         "extension": ".py",
         "path": "backend/app/api/routes/avaliacao.py"
       },
@@ -593,7 +593,7 @@
         "name": "pyproject.toml",
         "type": "file",
         "language": "TOML",
-        "size": 148,
+        "size": 215,
         "extension": ".toml",
         "path": "backend/pyproject.toml"
       },
@@ -623,7 +623,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 1912,
+        "size": 2129,
         "extension": ".py",
         "path": "backend/tests/conftest.py"
       },
@@ -652,12 +652,28 @@
         "path": "backend/tests/test_comando_simulacao.py"
       },
       {
+        "name": "test_concorrencia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6782,
+        "extension": ".py",
+        "path": "backend/tests/test_concorrencia.py"
+      },
+      {
         "name": "test_estimativa.py",
         "type": "file",
         "language": "Python",
         "size": 7339,
         "extension": ".py",
         "path": "backend/tests/test_estimativa.py"
+      },
+      {
+        "name": "test_falhas_sincronizacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6072,
+        "extension": ".py",
+        "path": "backend/tests/test_falhas_sincronizacao.py"
       },
       {
         "name": "test_health.py",
@@ -724,10 +740,26 @@
         "path": "backend/tests/test_pdf_referencia.py"
       },
       {
+        "name": "test_postgres.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2720,
+        "extension": ".py",
+        "path": "backend/tests/test_postgres.py"
+      },
+      {
+        "name": "test_privacidade.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4508,
+        "extension": ".py",
+        "path": "backend/tests/test_privacidade.py"
+      },
+      {
         "name": "test_reclamacao.py",
         "type": "file",
         "language": "Python",
-        "size": 13135,
+        "size": 13479,
         "extension": ".py",
         "path": "backend/tests/test_reclamacao.py"
       },
@@ -789,7 +821,7 @@
         "name": "Requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 37582,
+        "size": 40648,
         "extension": ".md",
         "path": "docs/Requisitos.md"
       },
@@ -797,7 +829,7 @@
         "name": "changelog.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12966,
+        "size": 14428,
         "extension": ".md",
         "path": "docs/changelog.md"
       },
@@ -968,6 +1000,30 @@
         "size": 3066,
         "extension": ".json",
         "path": "docs/evidencias/dados/sincronizacao-2026-10-27.json"
+      },
+      {
+        "name": "divergencias.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4740,
+        "extension": ".md",
+        "path": "docs/evidencias/divergencias.md"
+      },
+      {
+        "name": "falhas-sincronizacao-2026-11-17.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2432,
+        "extension": ".md",
+        "path": "docs/evidencias/falhas-sincronizacao-2026-11-17.md"
+      },
+      {
+        "name": "roteiro-ponta-a-ponta-2026-11-17.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3946,
+        "extension": ".md",
+        "path": "docs/evidencias/roteiro-ponta-a-ponta-2026-11-17.md"
       },
       {
         "name": "sast-issue-60.md",
@@ -1177,7 +1233,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 17238,
+        "size": 20311,
         "extension": ".py",
         "path": "extracao/extracao/main.py"
       },
@@ -1243,7 +1299,7 @@
         "name": "Ceilandia-Semana-02-26-10-a-01-11-1.pdf.json",
         "type": "file",
         "language": "JSON",
-        "size": 28552,
+        "size": 29399,
         "extension": ".json",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/Ceilandia-Semana-02-26-10-a-01-11-1.pdf.json"
       },
@@ -1259,7 +1315,7 @@
         "name": "Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf.json",
         "type": "file",
         "language": "JSON",
-        "size": 35290,
+        "size": 36465,
         "extension": ".json",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf.json"
       },
@@ -1275,7 +1331,7 @@
         "name": "Fazenda-Semana-02-26-10-a-01-11.pdf.json",
         "type": "file",
         "language": "JSON",
-        "size": 15682,
+        "size": 16094,
         "extension": ".json",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/Fazenda-Semana-02-26-10-a-01-11.pdf.json"
       },
@@ -1291,7 +1347,7 @@
         "name": "Gama-Semana-02-26-10-a-01-11-1.pdf.json",
         "type": "file",
         "language": "JSON",
-        "size": 25618,
+        "size": 26353,
         "extension": ".json",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/Gama-Semana-02-26-10-a-01-11-1.pdf.json"
       },
@@ -1307,7 +1363,7 @@
         "name": "Planaltina-Semana-02-26-10-a-01-11-1.pdf.json",
         "type": "file",
         "language": "JSON",
-        "size": 35282,
+        "size": 36457,
         "extension": ".json",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/Planaltina-Semana-02-26-10-a-01-11-1.pdf.json"
       },
@@ -1315,7 +1371,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3708,
+        "size": 3802,
         "extension": ".md",
         "path": "extracao/tests/fixtures/publicacao-2026-10-27/README.md"
       },
@@ -1347,7 +1403,7 @@
         "name": "test_cobertura_total.py",
         "type": "file",
         "language": "Python",
-        "size": 9993,
+        "size": 11879,
         "extension": ".py",
         "path": "extracao/tests/test_cobertura_total.py"
       },
@@ -1363,7 +1419,7 @@
         "name": "test_regressoes_publicacao.py",
         "type": "file",
         "language": "Python",
-        "size": 3829,
+        "size": 5124,
         "extension": ".py",
         "path": "extracao/tests/test_regressoes_publicacao.py"
       },
@@ -1915,7 +1971,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2477,
+        "size": 2653,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -2050,11 +2106,69 @@
         "size": 1637,
         "extension": ".md",
         "path": "skills/frontend-componente/SKILL.md"
+      },
+      {
+        "name": "testes",
+        "type": "directory",
+        "path": "testes",
+        "children": []
+      },
+      {
+        "name": "carga",
+        "type": "directory",
+        "path": "testes/carga",
+        "children": []
+      },
+      {
+        "name": ".gitignore",
+        "type": "file",
+        "language": "Git Ignore",
+        "size": 59,
+        "extension": ".gitignore",
+        "path": "testes/carga/.gitignore"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2432,
+        "extension": ".md",
+        "path": "testes/carga/README.md"
+      },
+      {
+        "name": "cardapio.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3281,
+        "extension": ".js",
+        "path": "testes/carga/cardapio.js"
+      },
+      {
+        "name": "gerar_massa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3841,
+        "extension": ".py",
+        "path": "testes/carga/gerar_massa.py"
+      },
+      {
+        "name": "roteiros",
+        "type": "directory",
+        "path": "testes/roteiros",
+        "children": []
+      },
+      {
+        "name": "roteiro-ponta-a-ponta.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4117,
+        "extension": ".md",
+        "path": "testes/roteiros/roteiro-ponta-a-ponta.md"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-16T14:33:34.370053+00:00",
+    "extracted_at": "2026-11-17T15:19:11.192920+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao.json"
   }
 }

@@ -2,19 +2,19 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-16T14:32:18.442600+00:00",
+  "analyzed_at": "2026-11-17T15:18:00.211763+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 70,
-  "total_bytes": 701263,
+  "total_files": 74,
+  "total_bytes": 726243,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 6,
       "total_bytes": 393263,
-      "percentage": 56.08,
+      "percentage": 54.15,
       "files": [
         {
           "path": "docs/storymap/story-map.png",
@@ -56,9 +56,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 33,
-      "total_bytes": 98711,
-      "percentage": 14.08,
+      "file_count": 35,
+      "total_bytes": 107308,
+      "percentage": 14.78,
       "files": [
         {
           "path": "docs/scrum/sprint-planning.md",
@@ -103,6 +103,12 @@
           "extension": ".md"
         },
         {
+          "path": "docs/adr/0009-coleta-automatizada-por-pipeline.md",
+          "name": "0009-coleta-automatizada-por-pipeline.md",
+          "size": 3952,
+          "extension": ".md"
+        },
+        {
           "path": "docs/adr/0007-github-pages-e-ci-com-actions.md",
           "name": "0007-github-pages-e-ci-com-actions.md",
           "size": 3628,
@@ -113,12 +119,6 @@
           "name": "0004-schema-unico-do-termo.md",
           "size": 3551,
           "extension": ".md"
-        },
-        {
-          "path": "docs/skills/github-actions-e-testes.md",
-          "name": "github-actions-e-testes.md",
-          "size": 3522,
-          "extension": ".md"
         }
       ]
     },
@@ -126,7 +126,7 @@
       "language": "PDF",
       "file_count": 3,
       "total_bytes": 66609,
-      "percentage": 9.5,
+      "percentage": 9.17,
       "files": [
         {
           "path": "docs/estudos/Frontend-react-vue.pdf",
@@ -149,53 +149,27 @@
       ]
     },
     {
-      "language": "HTML",
-      "file_count": 5,
-      "total_bytes": 44584,
-      "percentage": 6.36,
-      "files": [
-        {
-          "path": "sobre/index.html",
-          "name": "index.html",
-          "size": 34725,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 3642,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/termo.html",
-          "name": "termo.html",
-          "size": 2822,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/todas-siglas.html",
-          "name": "todas-siglas.html",
-          "size": 2796,
-          "extension": ".html"
-        },
-        {
-          "path": "index.html",
-          "name": "index.html",
-          "size": 599,
-          "extension": ".html"
-        }
-      ]
-    },
-    {
       "language": "JavaScript",
-      "file_count": 7,
-      "total_bytes": 33994,
-      "percentage": 4.85,
+      "file_count": 9,
+      "total_bytes": 50377,
+      "percentage": 6.94,
       "files": [
         {
           "path": "frontend/js/app.js",
           "name": "app.js",
           "size": 16462,
+          "extension": ".js"
+        },
+        {
+          "path": "tests/deduplicar.test.js",
+          "name": "deduplicar.test.js",
+          "size": 8717,
+          "extension": ".js"
+        },
+        {
+          "path": "coleta/deduplicar.js",
+          "name": "deduplicar.js",
+          "size": 7666,
           "extension": ".js"
         },
         {
@@ -237,10 +211,48 @@
       ]
     },
     {
+      "language": "HTML",
+      "file_count": 5,
+      "total_bytes": 44584,
+      "percentage": 6.14,
+      "files": [
+        {
+          "path": "sobre/index.html",
+          "name": "index.html",
+          "size": 34725,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 3642,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/termo.html",
+          "name": "termo.html",
+          "size": 2822,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/todas-siglas.html",
+          "name": "todas-siglas.html",
+          "size": 2796,
+          "extension": ".html"
+        },
+        {
+          "path": "index.html",
+          "name": "index.html",
+          "size": 599,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
       "language": "CSS",
       "file_count": 2,
       "total_bytes": 29237,
-      "percentage": 4.17,
+      "percentage": 4.03,
       "files": [
         {
           "path": "frontend/styles.css",
@@ -260,7 +272,7 @@
       "language": "JSON",
       "file_count": 3,
       "total_bytes": 17141,
-      "percentage": 2.44,
+      "percentage": 2.36,
       "files": [
         {
           "path": "frontend/data/termos.json",
@@ -286,7 +298,7 @@
       "language": "SVG Image",
       "file_count": 1,
       "total_bytes": 11042,
-      "percentage": 1.57,
+      "percentage": 1.52,
       "files": [
         {
           "path": "frontend/icon-source.svg",
@@ -300,7 +312,7 @@
       "language": "Unknown",
       "file_count": 4,
       "total_bytes": 3280,
-      "percentage": 0.47,
+      "percentage": 0.45,
       "files": [
         {
           "path": "scripts/servidor-local.mjs",
@@ -332,7 +344,7 @@
       "language": "YAML",
       "file_count": 3,
       "total_bytes": 2025,
-      "percentage": 0.29,
+      "percentage": 0.28,
       "files": [
         {
           "path": ".github/workflows/pages.yml",
@@ -358,7 +370,7 @@
       "language": "No Extension",
       "file_count": 1,
       "total_bytes": 1116,
-      "percentage": 0.16,
+      "percentage": 0.15,
       "files": [
         {
           "path": "LICENSE",
@@ -398,7 +410,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-16T14:33:34.385439+00:00",
+    "extracted_at": "2026-11-17T15:19:11.219696+00:00",
     "file_path": "data/silver/language_analysis_2026-2-GlossarioUnB.json"
   }
 }
