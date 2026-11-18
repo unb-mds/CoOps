@@ -2,24 +2,36 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-17T15:18:00.211763+00:00",
+  "analyzed_at": "2026-11-18T14:48:11.651056+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 74,
-  "total_bytes": 726243,
+  "total_files": 96,
+  "total_bytes": 1300805,
   "languages": [
     {
       "language": "PNG Image",
-      "file_count": 6,
-      "total_bytes": 393263,
-      "percentage": 54.15,
+      "file_count": 8,
+      "total_bytes": 756233,
+      "percentage": 58.14,
       "files": [
         {
           "path": "docs/storymap/story-map.png",
           "name": "story-map.png",
           "size": 334859,
+          "extension": ".png"
+        },
+        {
+          "path": "docs/scrum/sprints/img/sprint-05-quadro.png",
+          "name": "sprint-05-quadro.png",
+          "size": 282406,
+          "extension": ".png"
+        },
+        {
+          "path": "docs/scrum/sprints/img/sprint-05-commits.png",
+          "name": "sprint-05-commits.png",
+          "size": 80564,
           "extension": ".png"
         },
         {
@@ -55,15 +67,65 @@
       ]
     },
     {
+      "language": "HTML",
+      "file_count": 7,
+      "total_bytes": 143086,
+      "percentage": 11.0,
+      "files": [
+        {
+          "path": "tests/fixtures/unb-decanatos.html",
+          "name": "unb-decanatos.html",
+          "size": 75898,
+          "extension": ".html"
+        },
+        {
+          "path": "tests/fixtures/unb-secretarias.html",
+          "name": "unb-secretarias.html",
+          "size": 40447,
+          "extension": ".html"
+        },
+        {
+          "path": "sobre/index.html",
+          "name": "index.html",
+          "size": 16882,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 3642,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/termo.html",
+          "name": "termo.html",
+          "size": 2822,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/todas-siglas.html",
+          "name": "todas-siglas.html",
+          "size": 2796,
+          "extension": ".html"
+        },
+        {
+          "path": "index.html",
+          "name": "index.html",
+          "size": 599,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
       "language": "Markdown",
-      "file_count": 35,
-      "total_bytes": 107308,
-      "percentage": 14.78,
+      "file_count": 37,
+      "total_bytes": 129588,
+      "percentage": 9.96,
       "files": [
         {
           "path": "docs/scrum/sprint-planning.md",
           "name": "sprint-planning.md",
-          "size": 9584,
+          "size": 19942,
           "extension": ".md"
         },
         {
@@ -97,28 +159,96 @@
           "extension": ".md"
         },
         {
+          "path": "docs/REQUISITOS.md",
+          "name": "REQUISITOS.md",
+          "size": 4731,
+          "extension": ".md"
+        },
+        {
+          "path": "AI-USAGE.md",
+          "name": "AI-USAGE.md",
+          "size": 4578,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/scrum/sprints/sprint-05.md",
+          "name": "sprint-05.md",
+          "size": 4475,
+          "extension": ".md"
+        },
+        {
           "path": "CONTRIBUTING.md",
           "name": "CONTRIBUTING.md",
           "size": 4025,
           "extension": ".md"
+        }
+      ]
+    },
+    {
+      "language": "JavaScript",
+      "file_count": 17,
+      "total_bytes": 104557,
+      "percentage": 8.04,
+      "files": [
+        {
+          "path": "frontend/js/app.js",
+          "name": "app.js",
+          "size": 16462,
+          "extension": ".js"
         },
         {
-          "path": "docs/adr/0009-coleta-automatizada-por-pipeline.md",
-          "name": "0009-coleta-automatizada-por-pipeline.md",
-          "size": 3952,
-          "extension": ".md"
+          "path": "tests/coletor-html.test.js",
+          "name": "coletor-html.test.js",
+          "size": 14791,
+          "extension": ".js"
         },
         {
-          "path": "docs/adr/0007-github-pages-e-ci-com-actions.md",
-          "name": "0007-github-pages-e-ci-com-actions.md",
-          "size": 3628,
-          "extension": ".md"
+          "path": "tests/classificador.test.js",
+          "name": "classificador.test.js",
+          "size": 14379,
+          "extension": ".js"
         },
         {
-          "path": "docs/adr/0004-schema-unico-do-termo.md",
-          "name": "0004-schema-unico-do-termo.md",
-          "size": 3551,
-          "extension": ".md"
+          "path": "tests/deduplicar.test.js",
+          "name": "deduplicar.test.js",
+          "size": 8717,
+          "extension": ".js"
+        },
+        {
+          "path": "coleta/deduplicar.js",
+          "name": "deduplicar.js",
+          "size": 7666,
+          "extension": ".js"
+        },
+        {
+          "path": "coleta/coletor-html.js",
+          "name": "coletor-html.js",
+          "size": 7363,
+          "extension": ".js"
+        },
+        {
+          "path": "coleta/classificador.js",
+          "name": "classificador.js",
+          "size": 6620,
+          "extension": ".js"
+        },
+        {
+          "path": "coleta/fontes.js",
+          "name": "fontes.js",
+          "size": 4682,
+          "extension": ".js"
+        },
+        {
+          "path": "tests/termos.test.js",
+          "name": "termos.test.js",
+          "size": 4137,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/sw.js",
+          "name": "sw.js",
+          "size": 3768,
+          "extension": ".js"
         }
       ]
     },
@@ -126,7 +256,7 @@
       "language": "PDF",
       "file_count": 3,
       "total_bytes": 66609,
-      "percentage": 9.17,
+      "percentage": 5.12,
       "files": [
         {
           "path": "docs/estudos/Frontend-react-vue.pdf",
@@ -149,135 +279,33 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "file_count": 9,
-      "total_bytes": 50377,
-      "percentage": 6.94,
-      "files": [
-        {
-          "path": "frontend/js/app.js",
-          "name": "app.js",
-          "size": 16462,
-          "extension": ".js"
-        },
-        {
-          "path": "tests/deduplicar.test.js",
-          "name": "deduplicar.test.js",
-          "size": 8717,
-          "extension": ".js"
-        },
-        {
-          "path": "coleta/deduplicar.js",
-          "name": "deduplicar.js",
-          "size": 7666,
-          "extension": ".js"
-        },
-        {
-          "path": "tests/termos.test.js",
-          "name": "termos.test.js",
-          "size": 4137,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/sw.js",
-          "name": "sw.js",
-          "size": 3768,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/js/validacao-termo.js",
-          "name": "validacao-termo.js",
-          "size": 3231,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/js/termos.js",
-          "name": "termos.js",
-          "size": 2994,
-          "extension": ".js"
-        },
-        {
-          "path": "tests/validacao-termo.test.js",
-          "name": "validacao-termo.test.js",
-          "size": 2877,
-          "extension": ".js"
-        },
-        {
-          "path": "tests/dados.test.js",
-          "name": "dados.test.js",
-          "size": 525,
-          "extension": ".js"
-        }
-      ]
-    },
-    {
-      "language": "HTML",
-      "file_count": 5,
-      "total_bytes": 44584,
-      "percentage": 6.14,
-      "files": [
-        {
-          "path": "sobre/index.html",
-          "name": "index.html",
-          "size": 34725,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 3642,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/termo.html",
-          "name": "termo.html",
-          "size": 2822,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/todas-siglas.html",
-          "name": "todas-siglas.html",
-          "size": 2796,
-          "extension": ".html"
-        },
-        {
-          "path": "index.html",
-          "name": "index.html",
-          "size": 599,
-          "extension": ".html"
-        }
-      ]
-    },
-    {
-      "language": "CSS",
-      "file_count": 2,
-      "total_bytes": 29237,
-      "percentage": 4.03,
-      "files": [
-        {
-          "path": "frontend/styles.css",
-          "name": "styles.css",
-          "size": 14970,
-          "extension": ".css"
-        },
-        {
-          "path": "sobre/estilo.css",
-          "name": "estilo.css",
-          "size": 14267,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
       "language": "JSON",
-      "file_count": 3,
-      "total_bytes": 17141,
-      "percentage": 2.36,
+      "file_count": 6,
+      "total_bytes": 48674,
+      "percentage": 3.74,
       "files": [
+        {
+          "path": "package-lock.json",
+          "name": "package-lock.json",
+          "size": 29053,
+          "extension": ".json"
+        },
         {
           "path": "frontend/data/termos.json",
           "name": "termos.json",
           "size": 16181,
+          "extension": ".json"
+        },
+        {
+          "path": "coleta/categorias.json",
+          "name": "categorias.json",
+          "size": 1416,
+          "extension": ".json"
+        },
+        {
+          "path": "coleta/fontes.json",
+          "name": "fontes.json",
+          "size": 885,
           "extension": ".json"
         },
         {
@@ -289,8 +317,28 @@
         {
           "path": "package.json",
           "name": "package.json",
-          "size": 373,
+          "size": 552,
           "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 2,
+      "total_bytes": 28644,
+      "percentage": 2.2,
+      "files": [
+        {
+          "path": "frontend/styles.css",
+          "name": "styles.css",
+          "size": 14970,
+          "extension": ".css"
+        },
+        {
+          "path": "sobre/estilo.css",
+          "name": "estilo.css",
+          "size": 13674,
+          "extension": ".css"
         }
       ]
     },
@@ -298,7 +346,7 @@
       "language": "SVG Image",
       "file_count": 1,
       "total_bytes": 11042,
-      "percentage": 1.52,
+      "percentage": 0.85,
       "files": [
         {
           "path": "frontend/icon-source.svg",
@@ -310,9 +358,9 @@
     },
     {
       "language": "Unknown",
-      "file_count": 4,
-      "total_bytes": 3280,
-      "percentage": 0.45,
+      "file_count": 8,
+      "total_bytes": 7277,
+      "percentage": 0.56,
       "files": [
         {
           "path": "scripts/servidor-local.mjs",
@@ -321,10 +369,34 @@
           "extension": ".mjs"
         },
         {
+          "path": "scripts/classificar.mjs",
+          "name": "classificar.mjs",
+          "size": 2459,
+          "extension": ".mjs"
+        },
+        {
+          "path": "scripts/coletar.mjs",
+          "name": "coletar.mjs",
+          "size": 992,
+          "extension": ".mjs"
+        },
+        {
+          "path": "sonar-project.properties",
+          "name": "sonar-project.properties",
+          "size": 481,
+          "extension": ".properties"
+        },
+        {
           "path": ".gitmessage",
           "name": ".gitmessage",
           "size": 320,
           "extension": ".gitmessage"
+        },
+        {
+          "path": ".env.example",
+          "name": ".env.example",
+          "size": 65,
+          "extension": ".example"
         },
         {
           "path": ".github/workflows/.gitkeep",
@@ -342,20 +414,26 @@
     },
     {
       "language": "YAML",
-      "file_count": 3,
-      "total_bytes": 2025,
+      "file_count": 4,
+      "total_bytes": 3654,
       "percentage": 0.28,
       "files": [
         {
           "path": ".github/workflows/pages.yml",
           "name": "pages.yml",
-          "size": 1317,
+          "size": 1486,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/sonar.yml",
+          "name": "sonar.yml",
+          "size": 1331,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/ci.yml",
           "name": "ci.yml",
-          "size": 431,
+          "size": 560,
           "extension": ".yml"
         },
         {
@@ -370,7 +448,7 @@
       "language": "No Extension",
       "file_count": 1,
       "total_bytes": 1116,
-      "percentage": 0.15,
+      "percentage": 0.09,
       "files": [
         {
           "path": "LICENSE",
@@ -383,13 +461,13 @@
     {
       "language": "Git Ignore",
       "file_count": 1,
-      "total_bytes": 119,
-      "percentage": 0.02,
+      "total_bytes": 183,
+      "percentage": 0.01,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 119,
+          "size": 183,
           "extension": ".gitignore"
         }
       ]
@@ -398,7 +476,7 @@
       "language": "Text",
       "file_count": 1,
       "total_bytes": 142,
-      "percentage": 0.02,
+      "percentage": 0.01,
       "files": [
         {
           "path": "docs/storymap/link_figma.txt",
@@ -410,7 +488,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-17T15:19:11.219696+00:00",
+    "extracted_at": "2026-11-18T14:49:24.901309+00:00",
     "file_path": "data/silver/language_analysis_2026-2-GlossarioUnB.json"
   }
 }

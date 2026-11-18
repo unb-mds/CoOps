@@ -2,11 +2,19 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-17T15:18:00.211763+00:00",
+  "extracted_at": "2026-11-18T14:48:11.651056+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
     "children": [
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 65,
+        "extension": ".example",
+        "path": ".env.example"
+      },
       {
         "name": ".github",
         "type": "directory",
@@ -85,7 +93,7 @@
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 431,
+        "size": 560,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
       },
@@ -93,15 +101,23 @@
         "name": "pages.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1317,
+        "size": 1486,
         "extension": ".yml",
         "path": ".github/workflows/pages.yml"
+      },
+      {
+        "name": "sonar.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 1331,
+        "extension": ".yml",
+        "path": ".github/workflows/sonar.yml"
       },
       {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 119,
+        "size": 183,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -117,7 +133,7 @@
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1745,
+        "size": 4578,
         "extension": ".md",
         "path": "AI-USAGE.md"
       },
@@ -141,7 +157,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2201,
+        "size": 2324,
         "extension": ".md",
         "path": "README.md"
       },
@@ -152,12 +168,74 @@
         "children": []
       },
       {
+        "name": "categorias.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1416,
+        "extension": ".json",
+        "path": "coleta/categorias.json"
+      },
+      {
+        "name": "classificador.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6620,
+        "extension": ".js",
+        "path": "coleta/classificador.js"
+      },
+      {
+        "name": "cliente-gemini.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1175,
+        "extension": ".js",
+        "path": "coleta/cliente-gemini.js"
+      },
+      {
+        "name": "coletor-html.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7363,
+        "extension": ".js",
+        "path": "coleta/coletor-html.js"
+      },
+      {
         "name": "deduplicar.js",
         "type": "file",
         "language": "JavaScript",
         "size": 7666,
         "extension": ".js",
         "path": "coleta/deduplicar.js"
+      },
+      {
+        "name": "fontes.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4682,
+        "extension": ".js",
+        "path": "coleta/fontes.js"
+      },
+      {
+        "name": "fontes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 885,
+        "extension": ".json",
+        "path": "coleta/fontes.json"
+      },
+      {
+        "name": "prompts",
+        "type": "directory",
+        "path": "coleta/prompts",
+        "children": []
+      },
+      {
+        "name": "classificar-v1.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1179,
+        "extension": ".md",
+        "path": "coleta/prompts/classificar-v1.md"
       },
       {
         "name": "docs",
@@ -209,7 +287,7 @@
         "name": "REQUISITOS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2657,
+        "size": 4731,
         "extension": ".md",
         "path": "docs/REQUISITOS.md"
       },
@@ -231,7 +309,7 @@
         "name": "0001-termos-em-json-estatico.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3190,
+        "size": 3202,
         "extension": ".md",
         "path": "docs/adr/0001-termos-em-json-estatico.md"
       },
@@ -247,7 +325,7 @@
         "name": "0003-pwa-com-service-worker-proprio.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2350,
+        "size": 2385,
         "extension": ".md",
         "path": "docs/adr/0003-pwa-com-service-worker-proprio.md"
       },
@@ -279,7 +357,7 @@
         "name": "0007-github-pages-e-ci-com-actions.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3628,
+        "size": 3598,
         "extension": ".md",
         "path": "docs/adr/0007-github-pages-e-ci-com-actions.md"
       },
@@ -287,7 +365,7 @@
         "name": "0008-interface-com-css-puro-e-tokens.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3380,
+        "size": 3370,
         "extension": ".md",
         "path": "docs/adr/0008-interface-com-css-puro-e-tokens.md"
       },
@@ -379,7 +457,7 @@
         "name": "dailies.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2384,
+        "size": 3615,
         "extension": ".md",
         "path": "docs/scrum/dailies.md"
       },
@@ -403,9 +481,45 @@
         "name": "sprint-planning.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9584,
+        "size": 19942,
         "extension": ".md",
         "path": "docs/scrum/sprint-planning.md"
+      },
+      {
+        "name": "sprints",
+        "type": "directory",
+        "path": "docs/scrum/sprints",
+        "children": []
+      },
+      {
+        "name": "img",
+        "type": "directory",
+        "path": "docs/scrum/sprints/img",
+        "children": []
+      },
+      {
+        "name": "sprint-05-commits.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 80564,
+        "extension": ".png",
+        "path": "docs/scrum/sprints/img/sprint-05-commits.png"
+      },
+      {
+        "name": "sprint-05-quadro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 282406,
+        "extension": ".png",
+        "path": "docs/scrum/sprints/img/sprint-05-quadro.png"
+      },
+      {
+        "name": "sprint-05.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4475,
+        "extension": ".md",
+        "path": "docs/scrum/sprints/sprint-05.md"
       },
       {
         "name": "skills",
@@ -604,10 +718,18 @@
         "path": "index.html"
       },
       {
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 29053,
+        "extension": ".json",
+        "path": "package-lock.json"
+      },
+      {
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 373,
+        "size": 552,
         "extension": ".json",
         "path": "package.json"
       },
@@ -616,6 +738,22 @@
         "type": "directory",
         "path": "scripts",
         "children": []
+      },
+      {
+        "name": "classificar.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2459,
+        "extension": ".mjs",
+        "path": "scripts/classificar.mjs"
+      },
+      {
+        "name": "coletar.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 992,
+        "extension": ".mjs",
+        "path": "scripts/coletar.mjs"
       },
       {
         "name": "servidor-local.mjs",
@@ -635,7 +773,7 @@
         "name": "estilo.css",
         "type": "file",
         "language": "CSS",
-        "size": 14267,
+        "size": 13674,
         "extension": ".css",
         "path": "sobre/estilo.css"
       },
@@ -659,15 +797,39 @@
         "name": "index.html",
         "type": "file",
         "language": "HTML",
-        "size": 34725,
+        "size": 16882,
         "extension": ".html",
         "path": "sobre/index.html"
+      },
+      {
+        "name": "sonar-project.properties",
+        "type": "file",
+        "language": "Unknown",
+        "size": 481,
+        "extension": ".properties",
+        "path": "sonar-project.properties"
       },
       {
         "name": "tests",
         "type": "directory",
         "path": "tests",
         "children": []
+      },
+      {
+        "name": "classificador.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 14379,
+        "extension": ".js",
+        "path": "tests/classificador.test.js"
+      },
+      {
+        "name": "coletor-html.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 14791,
+        "extension": ".js",
+        "path": "tests/coletor-html.test.js"
       },
       {
         "name": "dados.test.js",
@@ -684,6 +846,44 @@
         "size": 8717,
         "extension": ".js",
         "path": "tests/deduplicar.test.js"
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "tests/fixtures",
+        "children": []
+      },
+      {
+        "name": "unb-decanatos.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 75898,
+        "extension": ".html",
+        "path": "tests/fixtures/unb-decanatos.html"
+      },
+      {
+        "name": "unb-secretarias.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 40447,
+        "extension": ".html",
+        "path": "tests/fixtures/unb-secretarias.html"
+      },
+      {
+        "name": "fronteira-dependencias.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2047,
+        "extension": ".js",
+        "path": "tests/fronteira-dependencias.test.js"
+      },
+      {
+        "name": "sobre.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3123,
+        "extension": ".js",
+        "path": "tests/sobre.test.js"
       },
       {
         "name": "termos.test.js",
@@ -704,7 +904,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-17T15:19:11.220635+00:00",
+    "extracted_at": "2026-11-18T14:49:24.902409+00:00",
     "file_path": "data/silver/hierarchy_2026-2-GlossarioUnB.json"
   }
 }

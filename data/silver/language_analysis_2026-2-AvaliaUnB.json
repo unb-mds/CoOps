@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-17T15:17:53.236273+00:00",
+  "analyzed_at": "2026-11-18T14:48:04.434090+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 142,
-  "total_bytes": 1576100,
+  "total_files": 146,
+  "total_bytes": 1597642,
   "languages": [
     {
       "language": "Unknown",
       "file_count": 4,
       "total_bytes": 745684,
-      "percentage": 47.31,
+      "percentage": 46.67,
       "files": [
         {
           "path": "docs/backup/turmas_rows.csv",
@@ -43,10 +43,78 @@
       ]
     },
     {
+      "language": "Python",
+      "file_count": 50,
+      "total_bytes": 216421,
+      "percentage": 13.55,
+      "files": [
+        {
+          "path": "tests/test_supabase.py",
+          "name": "test_supabase.py",
+          "size": 23777,
+          "extension": ".py"
+        },
+        {
+          "path": "scraper/scraper_sigaa.py",
+          "name": "scraper_sigaa.py",
+          "size": 22147,
+          "extension": ".py"
+        },
+        {
+          "path": "app/repositorio.py",
+          "name": "repositorio.py",
+          "size": 20352,
+          "extension": ".py"
+        },
+        {
+          "path": "tests/test_seguranca.py",
+          "name": "test_seguranca.py",
+          "size": 9777,
+          "extension": ".py"
+        },
+        {
+          "path": "tests/fake_supabase.py",
+          "name": "fake_supabase.py",
+          "size": 9208,
+          "extension": ".py"
+        },
+        {
+          "path": "tests/test_comparacao.py",
+          "name": "test_comparacao.py",
+          "size": 8471,
+          "extension": ".py"
+        },
+        {
+          "path": "app/controllers/professor_controller.py",
+          "name": "professor_controller.py",
+          "size": 7896,
+          "extension": ".py"
+        },
+        {
+          "path": "app/seguranca.py",
+          "name": "seguranca.py",
+          "size": 7426,
+          "extension": ".py"
+        },
+        {
+          "path": "tests/test_login_google.py",
+          "name": "test_login_google.py",
+          "size": 6204,
+          "extension": ".py"
+        },
+        {
+          "path": "app/routes/auth_routes.py",
+          "name": "auth_routes.py",
+          "size": 6141,
+          "extension": ".py"
+        }
+      ]
+    },
+    {
       "language": "PNG Image",
       "file_count": 4,
       "total_bytes": 207280,
-      "percentage": 13.15,
+      "percentage": 12.97,
       "files": [
         {
           "path": "docs/logo/teste-fundos.png",
@@ -75,78 +143,10 @@
       ]
     },
     {
-      "language": "Python",
-      "file_count": 48,
-      "total_bytes": 205474,
-      "percentage": 13.04,
-      "files": [
-        {
-          "path": "tests/test_supabase.py",
-          "name": "test_supabase.py",
-          "size": 23510,
-          "extension": ".py"
-        },
-        {
-          "path": "scraper/scraper_sigaa.py",
-          "name": "scraper_sigaa.py",
-          "size": 22147,
-          "extension": ".py"
-        },
-        {
-          "path": "app/repositorio.py",
-          "name": "repositorio.py",
-          "size": 20352,
-          "extension": ".py"
-        },
-        {
-          "path": "tests/test_seguranca.py",
-          "name": "test_seguranca.py",
-          "size": 9777,
-          "extension": ".py"
-        },
-        {
-          "path": "tests/fake_supabase.py",
-          "name": "fake_supabase.py",
-          "size": 9208,
-          "extension": ".py"
-        },
-        {
-          "path": "app/seguranca.py",
-          "name": "seguranca.py",
-          "size": 7426,
-          "extension": ".py"
-        },
-        {
-          "path": "app/controllers/professor_controller.py",
-          "name": "professor_controller.py",
-          "size": 7245,
-          "extension": ".py"
-        },
-        {
-          "path": "tests/test_comparacao.py",
-          "name": "test_comparacao.py",
-          "size": 6743,
-          "extension": ".py"
-        },
-        {
-          "path": "tests/test_login_google.py",
-          "name": "test_login_google.py",
-          "size": 6204,
-          "extension": ".py"
-        },
-        {
-          "path": "tests/test_scraper_texto.py",
-          "name": "test_scraper_texto.py",
-          "size": 5643,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
       "language": "Markdown",
-      "file_count": 26,
-      "total_bytes": 185912,
-      "percentage": 11.8,
+      "file_count": 27,
+      "total_bytes": 190741,
+      "percentage": 11.94,
       "files": [
         {
           "path": "docs/DESIGN_SYSTEM.md",
@@ -181,7 +181,7 @@
         {
           "path": "README.md",
           "name": "README.md",
-          "size": 12149,
+          "size": 12480,
           "extension": ".md"
         },
         {
@@ -214,7 +214,7 @@
       "language": "CSS",
       "file_count": 12,
       "total_bytes": 61442,
-      "percentage": 3.9,
+      "percentage": 3.85,
       "files": [
         {
           "path": "app/static/base.css",
@@ -280,14 +280,14 @@
     },
     {
       "language": "HTML",
-      "file_count": 14,
-      "total_bytes": 49284,
-      "percentage": 3.13,
+      "file_count": 15,
+      "total_bytes": 55050,
+      "percentage": 3.45,
       "files": [
         {
           "path": "app/templates/comparacao.html",
           "name": "comparacao.html",
-          "size": 7929,
+          "size": 8045,
           "extension": ".html"
         },
         {
@@ -300,6 +300,12 @@
           "path": "app/templates/perfil_professor.html",
           "name": "perfil_professor.html",
           "size": 5529,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/privacidade.html",
+          "name": "privacidade.html",
+          "size": 5357,
           "extension": ".html"
         },
         {
@@ -337,12 +343,6 @@
           "name": "_topo.html",
           "size": 2728,
           "extension": ".html"
-        },
-        {
-          "path": "app/templates/login.html",
-          "name": "login.html",
-          "size": 2504,
-          "extension": ".html"
         }
       ]
     },
@@ -350,7 +350,7 @@
       "language": "WOFF2 Font",
       "file_count": 1,
       "total_bytes": 48256,
-      "percentage": 3.06,
+      "percentage": 3.02,
       "files": [
         {
           "path": "app/static/fonts/inter-latin-wght-normal.woff2",
@@ -364,7 +364,7 @@
       "language": "SVG Image",
       "file_count": 12,
       "total_bytes": 36241,
-      "percentage": 2.3,
+      "percentage": 2.27,
       "files": [
         {
           "path": "docs/logo/teste-fundos.svg",
@@ -432,7 +432,7 @@
       "language": "JavaScript",
       "file_count": 3,
       "total_bytes": 16045,
-      "percentage": 1.02,
+      "percentage": 1.0,
       "files": [
         {
           "path": "app/static/fundo-animado.js",
@@ -510,7 +510,7 @@
       "language": "YAML",
       "file_count": 6,
       "total_bytes": 4377,
-      "percentage": 0.28,
+      "percentage": 0.27,
       "files": [
         {
           "path": "mkdocs.yml",
@@ -620,7 +620,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-17T15:19:11.182297+00:00",
+    "extracted_at": "2026-11-18T14:49:24.863837+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaUnB.json"
   }
 }
