@@ -2,13 +2,23 @@
   "owner": "unb-mds",
   "repository": "2026-2-GlossarioUnB",
   "branch": "main",
-  "sha": "e383d125abe15f29296cd6d10e3184eb22b8a683",
+  "sha": "74d1256d1418bca8af2b2cf0d382546551bcde5e",
   "tree": [
+    {
+      "name": ".env.example",
+      "path": ".env.example",
+      "type": "file",
+      "sha": "0435fe9e1f1b4cb039134fd4911785faf355df7d",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 65,
+      "is_binary": false
+    },
     {
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "072dc84cdf54e9692e1d2252a128cd394a54183f",
+      "sha": "483f1d84c2141fc9e0d1dcb489433ec9da5d55b0",
       "mode": "040000",
       "children": []
     },
@@ -84,7 +94,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "c25fe49f9d1f8b9957902983aee4e43515bc2795",
+      "sha": "4b901437e2b3f2277c188e527bd8679b5253a231",
       "mode": "040000",
       "children": []
     },
@@ -102,30 +112,40 @@
       "name": "ci.yml",
       "path": ".github/workflows/ci.yml",
       "type": "file",
-      "sha": "bfe2577aab573fdbe52a01d59fd9bc6eef3b09a8",
+      "sha": "e760840e65258b9e5dc62a1b02ee27bb33fda4d5",
       "mode": "100644",
       "extension": ".yml",
-      "size": 431,
+      "size": 560,
       "is_binary": false
     },
     {
       "name": "pages.yml",
       "path": ".github/workflows/pages.yml",
       "type": "file",
-      "sha": "c8184fb0ecc53cd07f494bb9e3dd574275e3d111",
+      "sha": "e84ee139481ba776f4134651ebad0683440948a7",
       "mode": "100644",
       "extension": ".yml",
-      "size": 1317,
+      "size": 1486,
+      "is_binary": false
+    },
+    {
+      "name": "sonar.yml",
+      "path": ".github/workflows/sonar.yml",
+      "type": "file",
+      "sha": "ea925de0579864e9381c02aef5f16b19a8f4ec8b",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 1331,
       "is_binary": false
     },
     {
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "f5af61c6ea7ac476d39d398f56fd6faaebed2579",
+      "sha": "6353aa6bbe95146077cd984fdd95ee66ca3580ed",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 119,
+      "size": 183,
       "is_binary": false
     },
     {
@@ -142,10 +162,10 @@
       "name": "AI-USAGE.md",
       "path": "AI-USAGE.md",
       "type": "file",
-      "sha": "8eea4ae8896b961fad63ac60da46e380c8d5a577",
+      "sha": "f8a49bc42b4b8393d34cacd96d8a293fd8f5304e",
       "mode": "100644",
       "extension": ".md",
-      "size": 1745,
+      "size": 4578,
       "is_binary": false
     },
     {
@@ -172,19 +192,59 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "83201095be3d6abd3fe81a061d65ea822ab2958c",
+      "sha": "d0124ccf9bb0174b3f09774e386c981567a20e94",
       "mode": "100644",
       "extension": ".md",
-      "size": 2201,
+      "size": 2324,
       "is_binary": false
     },
     {
       "name": "coleta",
       "path": "coleta",
       "type": "directory",
-      "sha": "108b9b729bc25d5f1d3a3f26d1c6e887d6b91304",
+      "sha": "374434b7c370582caf9bca7fee360dc161678a80",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "categorias.json",
+      "path": "coleta/categorias.json",
+      "type": "file",
+      "sha": "47185efcae6874a7647753e042c2264f5fc8560e",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1416,
+      "is_binary": false
+    },
+    {
+      "name": "classificador.js",
+      "path": "coleta/classificador.js",
+      "type": "file",
+      "sha": "61c8ffce7ed8bb932dd576ad17de7a5db28e5b81",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 6620,
+      "is_binary": false
+    },
+    {
+      "name": "cliente-gemini.js",
+      "path": "coleta/cliente-gemini.js",
+      "type": "file",
+      "sha": "3ad89376495e4351c072b6660e704652063e42a6",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1175,
+      "is_binary": false
+    },
+    {
+      "name": "coletor-html.js",
+      "path": "coleta/coletor-html.js",
+      "type": "file",
+      "sha": "f3a076ac17b2220b08a7dc2b952f6a09d57b5f22",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 7363,
+      "is_binary": false
     },
     {
       "name": "deduplicar.js",
@@ -197,10 +257,48 @@
       "is_binary": false
     },
     {
+      "name": "fontes.js",
+      "path": "coleta/fontes.js",
+      "type": "file",
+      "sha": "31e871eb1b2c08bc59d5d9022bbae61df7721124",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4682,
+      "is_binary": false
+    },
+    {
+      "name": "fontes.json",
+      "path": "coleta/fontes.json",
+      "type": "file",
+      "sha": "b406b3c48d3c53e843ede480dc59e37baf197216",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 885,
+      "is_binary": false
+    },
+    {
+      "name": "prompts",
+      "path": "coleta/prompts",
+      "type": "directory",
+      "sha": "6b3763a958644e956e01935b4bfce85d296bddbf",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "classificar-v1.md",
+      "path": "coleta/prompts/classificar-v1.md",
+      "type": "file",
+      "sha": "65a87d9385254d32197c93283a1f010a5193de70",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1179,
+      "is_binary": false
+    },
+    {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "0cc20d57a80d922d96abf1339576e2a37b5af2f3",
+      "sha": "27ac81af39d8b998d7429ca55aae25ea3e5ba25d",
       "mode": "040000",
       "children": []
     },
@@ -258,17 +356,17 @@
       "name": "REQUISITOS.md",
       "path": "docs/REQUISITOS.md",
       "type": "file",
-      "sha": "74529c791ca28eacd528dd13981eed4c9e718886",
+      "sha": "97f13b49bd4a92e8a76f395d7e7dd7da3c477b77",
       "mode": "100644",
       "extension": ".md",
-      "size": 2657,
+      "size": 4731,
       "is_binary": false
     },
     {
       "name": "adr",
       "path": "docs/adr",
       "type": "directory",
-      "sha": "221166f807a51c30c8ec8475ad0d1621f25fc287",
+      "sha": "ceaf5f75d9f9db08ad780c1508ba5dd469fd7194",
       "mode": "040000",
       "children": []
     },
@@ -286,10 +384,10 @@
       "name": "0001-termos-em-json-estatico.md",
       "path": "docs/adr/0001-termos-em-json-estatico.md",
       "type": "file",
-      "sha": "1c77e01404aa5afa8744e43199c923d33b65cf0a",
+      "sha": "3a8ab241e513a3e2f1d6c72d5942f3a926d11fa9",
       "mode": "100644",
       "extension": ".md",
-      "size": 3190,
+      "size": 3202,
       "is_binary": false
     },
     {
@@ -306,10 +404,10 @@
       "name": "0003-pwa-com-service-worker-proprio.md",
       "path": "docs/adr/0003-pwa-com-service-worker-proprio.md",
       "type": "file",
-      "sha": "c5792f5be9e6f8133b73031bff638397d074a276",
+      "sha": "60caddcb9feb9f206d05edc7b46243b6fc75d97b",
       "mode": "100644",
       "extension": ".md",
-      "size": 2350,
+      "size": 2385,
       "is_binary": false
     },
     {
@@ -346,20 +444,20 @@
       "name": "0007-github-pages-e-ci-com-actions.md",
       "path": "docs/adr/0007-github-pages-e-ci-com-actions.md",
       "type": "file",
-      "sha": "463469ff2cbe64dc56bc63c0eebf3cb737f1fb75",
+      "sha": "86730affc33f42be3b6c72585582579719412601",
       "mode": "100644",
       "extension": ".md",
-      "size": 3628,
+      "size": 3598,
       "is_binary": false
     },
     {
       "name": "0008-interface-com-css-puro-e-tokens.md",
       "path": "docs/adr/0008-interface-com-css-puro-e-tokens.md",
       "type": "file",
-      "sha": "11be12fc9bd76a2bcc5560a00d8d100730fda71a",
+      "sha": "5af296bf4f4c0dfc5c631f87be0620dbefba6089",
       "mode": "100644",
       "extension": ".md",
-      "size": 3380,
+      "size": 3370,
       "is_binary": false
     },
     {
@@ -464,7 +562,7 @@
       "name": "scrum",
       "path": "docs/scrum",
       "type": "directory",
-      "sha": "996914c9e439185b52d532a45fe04d3d1954b051",
+      "sha": "8b4b932813ce648b127b88ed8490cb58b7a53cbe",
       "mode": "040000",
       "children": []
     },
@@ -472,10 +570,10 @@
       "name": "dailies.md",
       "path": "docs/scrum/dailies.md",
       "type": "file",
-      "sha": "7b305f5bbff33de030761808183847e33ec18791",
+      "sha": "3ee42730afa27a8934083d06ba66224da4d533ba",
       "mode": "100644",
       "extension": ".md",
-      "size": 2384,
+      "size": 3615,
       "is_binary": false
     },
     {
@@ -502,10 +600,56 @@
       "name": "sprint-planning.md",
       "path": "docs/scrum/sprint-planning.md",
       "type": "file",
-      "sha": "a4da37bca11ef430c73e9e0a37159d186a6795c5",
+      "sha": "aa59b298cdeecca53aa8844bae7a709070eef2e1",
       "mode": "100644",
       "extension": ".md",
-      "size": 9584,
+      "size": 19942,
+      "is_binary": false
+    },
+    {
+      "name": "sprints",
+      "path": "docs/scrum/sprints",
+      "type": "directory",
+      "sha": "c8e323e9c0a95b2ffb1cc641e282bb686ea4e7eb",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "img",
+      "path": "docs/scrum/sprints/img",
+      "type": "directory",
+      "sha": "cef2a48acac8738739c39bbc3b7cad0b0c1fd7b0",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "sprint-05-commits.png",
+      "path": "docs/scrum/sprints/img/sprint-05-commits.png",
+      "type": "file",
+      "sha": "2175fb6e1f647573891ca8743eed4c411e7156f4",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 80564,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-05-quadro.png",
+      "path": "docs/scrum/sprints/img/sprint-05-quadro.png",
+      "type": "file",
+      "sha": "d8415ee000601596e8f9e1b2477c72f346d274cd",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 282406,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-05.md",
+      "path": "docs/scrum/sprints/sprint-05.md",
+      "type": "file",
+      "sha": "309b1cbd704136824bb606b1d7961cb0d8b63d8e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4475,
       "is_binary": false
     },
     {
@@ -757,22 +901,52 @@
       "is_binary": false
     },
     {
+      "name": "package-lock.json",
+      "path": "package-lock.json",
+      "type": "file",
+      "sha": "720740766aa788ecf374fa3e31619d221d7aeaba",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 29053,
+      "is_binary": false
+    },
+    {
       "name": "package.json",
       "path": "package.json",
       "type": "file",
-      "sha": "694602e8e61fc769deda62ed5b024b52d4bba71e",
+      "sha": "5fec7824b9c069ab3c36928dc5bed77db9038c87",
       "mode": "100644",
       "extension": ".json",
-      "size": 373,
+      "size": 552,
       "is_binary": false
     },
     {
       "name": "scripts",
       "path": "scripts",
       "type": "directory",
-      "sha": "1556a9405c0b6b8f13d6e2e9ecf0b0958c0c6d2d",
+      "sha": "76acb3ce0842479a172d1363cdbe9470976080d7",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "classificar.mjs",
+      "path": "scripts/classificar.mjs",
+      "type": "file",
+      "sha": "41b948769faf5b48c68d78c66b68da4d5a3f2c41",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 2459,
+      "is_binary": false
+    },
+    {
+      "name": "coletar.mjs",
+      "path": "scripts/coletar.mjs",
+      "type": "file",
+      "sha": "a4542089411e79298a812ebbee190aac1b9f3c87",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 992,
+      "is_binary": false
     },
     {
       "name": "servidor-local.mjs",
@@ -788,7 +962,7 @@
       "name": "sobre",
       "path": "sobre",
       "type": "directory",
-      "sha": "33c1ffc6e177e6f7bf141a38c2fc897c73e69e85",
+      "sha": "23cc27e5ee0476e6f876df98e0a153bf547f0fcb",
       "mode": "040000",
       "children": []
     },
@@ -796,10 +970,10 @@
       "name": "estilo.css",
       "path": "sobre/estilo.css",
       "type": "file",
-      "sha": "7f2e268bd87c66dd4a290af6ffb7a39ddbd732da",
+      "sha": "3dc7a2afeb792c08b244e16e9dcf4257a169c0a8",
       "mode": "100644",
       "extension": ".css",
-      "size": 14267,
+      "size": 13674,
       "is_binary": false
     },
     {
@@ -826,19 +1000,49 @@
       "name": "index.html",
       "path": "sobre/index.html",
       "type": "file",
-      "sha": "4340964a7b611e7a02948f1ccf3b8cce5bb583f2",
+      "sha": "472b0cd7ced700463657a9b1ff773d8f6f890a46",
       "mode": "100644",
       "extension": ".html",
-      "size": 34725,
+      "size": 16882,
+      "is_binary": false
+    },
+    {
+      "name": "sonar-project.properties",
+      "path": "sonar-project.properties",
+      "type": "file",
+      "sha": "6a2539eada14cf90203fcbb8710cea43bcb8de30",
+      "mode": "100644",
+      "extension": ".properties",
+      "size": 481,
       "is_binary": false
     },
     {
       "name": "tests",
       "path": "tests",
       "type": "directory",
-      "sha": "b9a35cbc2d3ee98faa8f22adec0a5e833e32a946",
+      "sha": "4f09f34708af7336189d554226fe7462e2579808",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "classificador.test.js",
+      "path": "tests/classificador.test.js",
+      "type": "file",
+      "sha": "f17becd598f6e3d9d8c61f0176febbe84206f1fe",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 14379,
+      "is_binary": false
+    },
+    {
+      "name": "coletor-html.test.js",
+      "path": "tests/coletor-html.test.js",
+      "type": "file",
+      "sha": "6901994905a30609673c14ae29b4ccd3182d3bac",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 14791,
+      "is_binary": false
     },
     {
       "name": "dados.test.js",
@@ -858,6 +1062,54 @@
       "mode": "100644",
       "extension": ".js",
       "size": 8717,
+      "is_binary": false
+    },
+    {
+      "name": "fixtures",
+      "path": "tests/fixtures",
+      "type": "directory",
+      "sha": "afbc915b2c8c330214062ed64c623eb122de0720",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "unb-decanatos.html",
+      "path": "tests/fixtures/unb-decanatos.html",
+      "type": "file",
+      "sha": "49504ecf05dfcf81678fb5893ce17044ab5bdea3",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 75898,
+      "is_binary": false
+    },
+    {
+      "name": "unb-secretarias.html",
+      "path": "tests/fixtures/unb-secretarias.html",
+      "type": "file",
+      "sha": "cfd84b20335b5850b71bb5b88d73fcbd624a8f27",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 40447,
+      "is_binary": false
+    },
+    {
+      "name": "fronteira-dependencias.test.js",
+      "path": "tests/fronteira-dependencias.test.js",
+      "type": "file",
+      "sha": "1771c0961fe2a688c05924783c9cb50edec08308",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2047,
+      "is_binary": false
+    },
+    {
+      "name": "sobre.test.js",
+      "path": "tests/sobre.test.js",
+      "type": "file",
+      "sha": "78023488a9554d416fe89585bfe6d6daaf909eb8",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3123,
       "is_binary": false
     },
     {
@@ -882,9 +1134,9 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-17T15:18:00.211763+00:00",
+  "extracted_at": "2026-11-18T14:48:11.651056+00:00",
   "method": "rest",
-  "total_items": 91,
+  "total_items": 117,
   "repository_metadata": {
     "id": 1338352433,
     "full_name": "unb-mds/2026-2-GlossarioUnB",
@@ -892,9 +1144,9 @@
     "created_at": "2026-08-18T11:58:42Z",
     "updated_at": "2026-11-17T02:03:49Z",
     "language": "JavaScript",
-    "size": 932,
+    "size": 1001,
     "stars": 0,
     "forks": 0,
-    "open_issues": 75
+    "open_issues": 66
   }
 }

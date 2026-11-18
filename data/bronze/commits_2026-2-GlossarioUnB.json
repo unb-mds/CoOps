@@ -1,10 +1,312 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-17T15:13:00.518374+00:00",
+      "extracted_at": "2026-11-18T14:44:14.458843+00:00",
       "file_path": "data/bronze/commits_2026-2-GlossarioUnB.json",
-      "record_count": 42
+      "record_count": 56
     }
+  },
+  {
+    "sha": "74d1256d1418bca8af2b2cf0d382546551bcde5e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-18T02:55:17Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T02:55:17Z"
+      },
+      "message": "Merge pull request #107 from unb-mds/chore/issue-106-sonarqube-ci\n\nchore(ci): SonarQube Cloud no CI, com cobertura"
+    },
+    "parents": [
+      "ab347894539bebc68e0bd4dbeab87af4109ad3ba",
+      "c49a6f58a003180102584cae7dc044349ac4cc84"
+    ],
+    "additions": 47,
+    "deletions": 0,
+    "total_changes": 47,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "ab347894539bebc68e0bd4dbeab87af4109ad3ba",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-18T02:46:19Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T02:46:19Z"
+      },
+      "message": "Merge pull request #109 from unb-mds/docs/issue-89-sprint-05\n\ndocs(scrum): documentação da Sprint 05"
+    },
+    "parents": [
+      "cdee812eaec12e6819c66aa93fd7f8c9d987f79a",
+      "f06b07bec79bdcfda404c3f5afdf7f0521de22f2"
+    ],
+    "additions": 84,
+    "deletions": 0,
+    "total_changes": 84,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "f06b07bec79bdcfda404c3f5afdf7f0521de22f2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T02:34:05Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T02:34:05Z"
+      },
+      "message": "docs(scrum): aponta as atas para o dailies.md\n\nA pasta docs/scrum/atas/ não existe. As atas do grupo ficam em docs/scrum/dailies.md. Apontado pelo Ítalo na revisão do #109."
+    },
+    "parents": [
+      "d89d08970a3e32c933e1c6e25b0bf465ae4d427a"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "cdee812eaec12e6819c66aa93fd7f8c9d987f79a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T02:25:21Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T02:25:21Z"
+      },
+      "message": "feat(coleta): adiciona a categorização e a redação assistidas por LLM (#104)\n\nClassifica cada candidato do coletor com o Gemini: a categoria, o tipo, um rascunho da definição e do exemplo de uso e um nível de confiança. O LLM só propõe, e quem escreve o texto final é o revisor do PR do robô (ADR 0009).\n\n- coleta/classificador.js monta o prompt e valida a resposta por schema. O cliente chega por parâmetro, então os testes rodam sem a API\n- coleta/cliente-gemini.js pede a resposta em JSON presa ao schema, com a temperatura no padrão que o Google recomenda para o Gemini 3\n- As categorias são provisórias até a taxonomia (#63)\n- scripts/classificar.mjs é o comando que o workflow da #59 vai chamar\n- Revisão do Allan: caminho do script no Windows e remoção da temperatura 0\n\nCloses #58\nCo-authored-by: MrD4ntas <[email removed]>"
+    },
+    "parents": [
+      "ae60d4ae7fc75c9677e4adf0a4e08a125f869320"
+    ],
+    "additions": 587,
+    "deletions": 0,
+    "total_changes": 587,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "ae60d4ae7fc75c9677e4adf0a4e08a125f869320",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-18T01:53:27Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T01:53:27Z"
+      },
+      "message": "feat(coleta): coletor genérico de páginas HTML configurado por fontes.json (#111)\n\n* feat(coleta): adiciona o coletor genérico de páginas HTML com cheerio e robots-parser\n\nCloses #56\n\n* fix(coleta): troca as duas expressões regulares que o SonarQube apontou como lentas\n\n* fix(testes): corrige o caminho do teste de fronteira no Windows\n\n* fix(coleta): bloqueia a fonte quando o robots.txt responde 5xx\n\n---------\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "f064566b8896cbb8bce5c9701797f49460380d09"
+    ],
+    "additions": 2717,
+    "deletions": 1,
+    "total_changes": 2718,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "f064566b8896cbb8bce5c9701797f49460380d09",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T00:40:41Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T00:40:41Z"
+      },
+      "message": "feat(sobre): reescreve a página Sobre como página de produto (#105)\n\nCloses #75"
+    },
+    "parents": [
+      "2fbd7d4afdd3fb6a925517fad9bb0cbfce01b0f0"
+    ],
+    "additions": 493,
+    "deletions": 692,
+    "total_changes": 1185,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "2fbd7d4afdd3fb6a925517fad9bb0cbfce01b0f0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-18T00:16:20Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T00:16:20Z"
+      },
+      "message": "docs(dailies): registra ata do encontro de 11/11 (#115)\n\n* docs(dailies) ata_11/11.md\n\n* docs(dailies): corrige formatação da ata de 11/11\n\n---------\n\nCo-authored-by: MrD4ntas <[email removed]>"
+    },
+    "parents": [
+      "b7297ff6eed9e463ef8408793d59df01316765ea"
+    ],
+    "additions": 19,
+    "deletions": 0,
+    "total_changes": 19,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "b7297ff6eed9e463ef8408793d59df01316765ea",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-18T00:05:26Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T00:05:26Z"
+      },
+      "message": "docs: atualiza planejamento das sprints (#117)"
+    },
+    "parents": [
+      "a71f545a093b924da5ab1f13aa12e189ab4dddc2"
+    ],
+    "additions": 127,
+    "deletions": 21,
+    "total_changes": 148,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "a71f545a093b924da5ab1f13aa12e189ab4dddc2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-17T23:37:47Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T23:37:47Z"
+      },
+      "message": "docs(requisitos): detalha os RNF com métrica e critério de aceitação (#112)\n\n* docs(requisitos): detalha os RNF com métrica e critério de aceitação\n\n* docs(requisitos): preenche a forma de verificação do RNF01 (#77)\n\n---------\n\nCo-authored-by: MrD4ntas <[email removed]>"
+    },
+    "parents": [
+      "eebc1a95c06e5f4cb1c5a52a2b4ed4bcc53570e1"
+    ],
+    "additions": 17,
+    "deletions": 9,
+    "total_changes": 26,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "eebc1a95c06e5f4cb1c5a52a2b4ed4bcc53570e1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-17T23:08:42Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T23:08:42Z"
+      },
+      "message": "docs(ai-usage): registra os usos de IA do Pedro na R1 e na R2 (#110)\n\nCloses #86"
+    },
+    "parents": [
+      "20c5f772fed9c85cdf28a88047498b77f0099158"
+    ],
+    "additions": 12,
+    "deletions": 0,
+    "total_changes": 12,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "20c5f772fed9c85cdf28a88047498b77f0099158",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-17T22:48:06Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T22:48:06Z"
+      },
+      "message": "consertando RF06 em REQUISITOS.md (#41)\n\n* consertando RF06 em REQUISITOS.md\n\n* docs: alinha RF06 do REQUISITOS.md com a página Sobre"
+    },
+    "parents": [
+      "9b6ad4c729d927dfbc362e3b80c848c58c3c797b"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "9b6ad4c729d927dfbc362e3b80c848c58c3c797b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-17T22:47:29Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T22:47:29Z"
+      },
+      "message": "chore: adiciona .env.example e configura .gitignore para proteger dad… (#45)\n\n* chore: adiciona .env.example e configura .gitignore para proteger dados sensiveis\n\n* chore: simplifica .env.example e carrega .env no servidor local"
+    },
+    "parents": [
+      "e383d125abe15f29296cd6d10e3184eb22b8a683"
+    ],
+    "additions": 11,
+    "deletions": 3,
+    "total_changes": 14,
+    "repo_name": "2026-2-GlossarioUnB"
   },
   {
     "sha": "e383d125abe15f29296cd6d10e3184eb22b8a683",
@@ -54,6 +356,56 @@
     "additions": 339,
     "deletions": 0,
     "total_changes": 339,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "d89d08970a3e32c933e1c6e25b0bf465ae4d427a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro",
+        "date": "2026-11-16T15:56:43Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "Pedro",
+        "date": "2026-11-16T15:56:43Z"
+      },
+      "message": "docs(scrum): registra a Sprint 05 com planning, review, retrospectiva e métricas\n\nCloses #89"
+    },
+    "parents": [
+      "e6c236ea41a282c10922e693c306cf763a7815d6"
+    ],
+    "additions": 84,
+    "deletions": 0,
+    "total_changes": 84,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "c49a6f58a003180102584cae7dc044349ac4cc84",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro",
+        "date": "2026-11-16T15:46:20Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "Pedro",
+        "date": "2026-11-16T15:46:20Z"
+      },
+      "message": "chore(ci): adiciona a análise do SonarQube Cloud com cobertura\n\nCloses #106"
+    },
+    "parents": [
+      "e6c236ea41a282c10922e693c306cf763a7815d6"
+    ],
+    "additions": 47,
+    "deletions": 0,
+    "total_changes": 47,
     "repo_name": "2026-2-GlossarioUnB"
   },
   {
