@@ -1,10 +1,211 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-18T14:44:14.458843+00:00",
+      "extracted_at": "2026-11-19T15:09:47.209033+00:00",
       "file_path": "data/bronze/commits_2026-2-GlossarioUnB.json",
-      "record_count": 56
+      "record_count": 64
     }
+  },
+  {
+    "sha": "7101a889fd4f56a42b0df4a9e1e82ed5c02e4949",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-19T01:21:31Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-19T01:21:31Z"
+      },
+      "message": "docs(scrum): registra a retrospectiva da R1 e o planejamento da R2 (#127)\n\nRegistra em docs/scrum/retro-r1.md a retrospectiva da Release 1 (o que funcionou, o que não funcionou e as ações combinadas) e o planejamento da Release 2 até 25/11/2026, e a regra correspondente no docs/PROCESSO.md.\n\nCloses #87\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "c818f747a307eff4d8379458eaac001ad6edbae3"
+    ],
+    "additions": 94,
+    "deletions": 0,
+    "total_changes": 94,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "c818f747a307eff4d8379458eaac001ad6edbae3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-18T23:09:19Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T23:09:19Z"
+      },
+      "message": "docs(dailies): registra a ata do encontro de 16/11 (#126)\n\nAta do encontro do G10 de segunda (16/11/2026) em docs/scrum/dailies.md: presentes, progresso, pendências e próximos passos.\n\nCloses #114"
+    },
+    "parents": [
+      "89dcee3f3cfc4bf266e6756caae6327fe1eeae5e"
+    ],
+    "additions": 16,
+    "deletions": 1,
+    "total_changes": 17,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "89dcee3f3cfc4bf266e6756caae6327fe1eeae5e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T23:08:54Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T23:08:54Z"
+      },
+      "message": "docs(adr): ADR 0013 (análise de qualidade com o SonarQube Cloud) (#133)\n\nRegistra como ADR 0013 a decisão do SonarQube Cloud, que entrou no CI pelo #107: organização p-magno com projeto público, SONAR_TOKEN nos segredos do repositório, check de aviso (o obrigatório continua o da ADR 0007) e o quality gate \"Sonar way\" no código novo.\n\n- docs/ARQUITETURA.md e sobre/index.html: ADR 0013 na lista de ADRs\n- AI-USAGE.md: linha de 18/11 na tabela da Release 2\n\nCloses #132"
+    },
+    "parents": [
+      "fe07eda71fa5811dd60fe62f39f2a57f0badeac0"
+    ],
+    "additions": 39,
+    "deletions": 0,
+    "total_changes": 39,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "fe07eda71fa5811dd60fe62f39f2a57f0badeac0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T22:54:32Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T22:54:32Z"
+      },
+      "message": "docs(adr): ADR 0010 libera as bibliotecas de teste e de qualidade (devDependencies) (#131)\n\nA ADR 0010 ganha uma segunda lista fechada, só em devDependencies: @playwright/test e @axe-core/playwright (E2E e acessibilidade, #78), @stryker-mutator/core (teste de mutação, #82) e eslint, @eslint/js e globals (lint, #120). O front continua sem dependência (ADR 0002 e 0008), e a lista do robô não muda.\n\n- tests/fronteira-dependencias.test.js: aceita só essas bibliotecas em devDependencies\n- AI-USAGE.md: as linhas de 18/11 (#128 e este PR) ficam na tabela da Release 2\n\nCloses #130"
+    },
+    "parents": [
+      "4ba850343cda430581d9b362c29b136323b17799"
+    ],
+    "additions": 45,
+    "deletions": 6,
+    "total_changes": 51,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "4ba850343cda430581d9b362c29b136323b17799",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T22:19:55Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T22:19:55Z"
+      },
+      "message": "feat(inicio): trilha \"Primeiros passos na UnB\" na página inicial (#124)\n\nSeção na página inicial com 17 termos em 5 grupos, cada um com link para a página do termo. A lista fica em frontend/data/trilha-calouro.json, com os grupos e os ids dos termos (ADR 0011).\n\n- frontend/data/termos.json: 15 termos novos, com fonte oficial e categoria\n- frontend/js/trilha.js: funções puras (validarTrilha, montarTrilha, fonteOficial)\n- tests/trilha.test.js: integridade referencial entre a trilha e o termos.json\n- frontend/sw.js: a trilha é tratada como dado e funciona offline (cache v14)\n\nCloses #70"
+    },
+    "parents": [
+      "00f47e96e4d2ed0bfa5a4052f7e168a00775f8c8"
+    ],
+    "additions": 519,
+    "deletions": 10,
+    "total_changes": 529,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "00f47e96e4d2ed0bfa5a4052f7e168a00775f8c8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-18T22:19:17Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T22:19:17Z"
+      },
+      "message": "fix(servidor): destino do redirecionamento sai da lista de pastas (SonarQube S5146) (#128)\n\nO destino do redirecionamento de /frontend para /frontend/ passa a vir da lista fixa de pastas, e não do endereço pedido. Isso tira o redirecionamento aberto (jssecurity:S5146) que o SonarQube apontou em scripts/servidor-local.mjs.\n\n- tests/servidor-local.test.js: testes do redirecionamento correto, de endereços maliciosos (inclusive barras codificadas antes da pasta), de nada fora das pastas publicadas e do 400 para endereço que não decodifica\n- frontend/termo.html: crossorigin=\"anonymous\" nas tags do Leaflet (Web:S5725, ADR 0005)\n- frontend/sw.js: cache de v13 para v14\n\nRelacionado a #83."
+    },
+    "parents": [
+      "2528b988ce181a610437e8bb456b271c1f291b9e"
+    ],
+    "additions": 81,
+    "deletions": 11,
+    "total_changes": 92,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "2528b988ce181a610437e8bb456b271c1f291b9e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-18T21:50:38Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T21:50:38Z"
+      },
+      "message": "Merge pull request #135 from unb-mds/docs/issue-134-rnf-privacidade-e-coleta\n\ndocs(requisitos): RNF08 (privacidade), RNF09 (coleta responsável) e a equipe atualizada"
+    },
+    "parents": [
+      "74d1256d1418bca8af2b2cf0d382546551bcde5e",
+      "7503dfa48df0c78904d28e8010c0f5b8ef4a98a6"
+    ],
+    "additions": 7,
+    "deletions": 3,
+    "total_changes": 10,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "7503dfa48df0c78904d28e8010c0f5b8ef4a98a6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro",
+        "date": "2026-11-18T20:18:00Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "Pedro",
+        "date": "2026-11-18T20:18:00Z"
+      },
+      "message": "docs(requisitos): registra o RNF08 e o RNF09 e atualiza a equipe\n\nCloses #134"
+    },
+    "parents": [
+      "74d1256d1418bca8af2b2cf0d382546551bcde5e"
+    ],
+    "additions": 7,
+    "deletions": 3,
+    "total_changes": 10,
+    "repo_name": "2026-2-GlossarioUnB"
   },
   {
     "sha": "74d1256d1418bca8af2b2cf0d382546551bcde5e",

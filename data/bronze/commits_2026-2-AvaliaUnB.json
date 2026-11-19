@@ -1,10 +1,1903 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-18T14:42:15.717766+00:00",
+      "extracted_at": "2026-11-19T15:07:51.680420+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaUnB.json",
-      "record_count": 375
+      "record_count": 450
     }
+  },
+  {
+    "sha": "e62ab2d4a523ba0a4e123d7e5899291a4ebbff45",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-18T22:25:00Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T22:25:00Z"
+      },
+      "message": "Merge pull request #243 from unb-mds/feat/239-selecao-professores-comparacao\n\nfeat(comparacao): seleção de professores digitável e filtro por departamento no modo livre (#239)"
+    },
+    "parents": [
+      "1617c424ca3c3756078b86c1c286f6b27cdda2bc",
+      "1f5c616bee1448ce1cda19fca20fdb846df0ce19"
+    ],
+    "additions": 540,
+    "deletions": 7,
+    "total_changes": 547,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "1f5c616bee1448ce1cda19fca20fdb846df0ce19",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T22:19:16Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T22:19:16Z"
+      },
+      "message": "feat(comparacao): campo digitável para escolher professores no modo livre (#239)"
+    },
+    "parents": [
+      "2ae7478b4db906baee151f11c6abae9a0ca222fe"
+    ],
+    "additions": 284,
+    "deletions": 5,
+    "total_changes": 289,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2ae7478b4db906baee151f11c6abae9a0ca222fe",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T22:12:08Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T22:12:08Z"
+      },
+      "message": "feat(comparacao): busca de professores por nome ou disciplina e filtro por departamento (#239)"
+    },
+    "parents": [
+      "1617c424ca3c3756078b86c1c286f6b27cdda2bc"
+    ],
+    "additions": 257,
+    "deletions": 3,
+    "total_changes": 260,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "1617c424ca3c3756078b86c1c286f6b27cdda2bc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T21:53:08Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T21:53:08Z"
+      },
+      "message": "Merge pull request #241 from unb-mds/feat/225-automatizar-scraper-semestre\n\nci(scraper): atualização semestral dos dados do SIGAA pelo GitHub Actions (#225)"
+    },
+    "parents": [
+      "ac7c0508984a7be80546159da427fbe7c019cf00",
+      "bce36ccf214861c5f7a4e6967e2a75a70c43c371"
+    ],
+    "additions": 523,
+    "deletions": 9,
+    "total_changes": 532,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "bce36ccf214861c5f7a4e6967e2a75a70c43c371",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T21:51:20Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T21:51:20Z"
+      },
+      "message": "fix(scraper): fixa navegador e versão do driver no Actions (#225)"
+    },
+    "parents": [
+      "7b5505c11f0ca4b172c07d02b11e5214cab5dbd0"
+    ],
+    "additions": 90,
+    "deletions": 26,
+    "total_changes": 116,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7b5505c11f0ca4b172c07d02b11e5214cab5dbd0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T21:24:46Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T21:24:46Z"
+      },
+      "message": "docs(scraper): documenta a atualização semestral pelo GitHub Actions (#225)"
+    },
+    "parents": [
+      "c1d774223cb128228641e6292b89106a49a4f61e"
+    ],
+    "additions": 148,
+    "deletions": 3,
+    "total_changes": 151,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "c1d774223cb128228641e6292b89106a49a4f61e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T21:21:17Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T21:21:17Z"
+      },
+      "message": "ci(scraper): teste de fumaça do scraper em PR e Chrome atualizado no runner (#225)"
+    },
+    "parents": [
+      "f4583dc986246b9b23c3add526d89e2b31b7b00b"
+    ],
+    "additions": 84,
+    "deletions": 0,
+    "total_changes": 84,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "f4583dc986246b9b23c3add526d89e2b31b7b00b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T21:16:48Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T21:16:48Z"
+      },
+      "message": "ci(scraper): workflow manual para atualizar dados do SIGAA (#225)"
+    },
+    "parents": [
+      "ac7c0508984a7be80546159da427fbe7c019cf00"
+    ],
+    "additions": 221,
+    "deletions": 0,
+    "total_changes": 221,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ac7c0508984a7be80546159da427fbe7c019cf00",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T21:03:28Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T21:03:28Z"
+      },
+      "message": "Merge pull request #240 from unb-mds/feat/201-dificuldade-e-comentarios-na-consulta\n\nFeat/201 dificuldade e comentarios na consulta"
+    },
+    "parents": [
+      "bd70680fe9d8317b75cbcf487c187d9df2626645",
+      "0ea5f95b2cc07e8abeb40236c8a6bb75cfda8308"
+    ],
+    "additions": 1032,
+    "deletions": 23,
+    "total_changes": 1055,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "0ea5f95b2cc07e8abeb40236c8a6bb75cfda8308",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:35:34Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:35:34Z"
+      },
+      "message": "docs(consulta): documentar a dificuldade por disciplina e os atalhos de comentários\n\nRegistra na documentação a dificuldade média e a quantidade de avaliações em cada disciplina do cartão da lista de Consulta, a ordem e o agrupamento das disciplinas com o Ver mais, o botão Comentários e os atalhos no perfil e na tela de avaliar, além das funções de backend e dos arquivos de estilo envolvidos. Refs #201"
+    },
+    "parents": [
+      "80a5b124eab7a8cd66dd26d73207c1ec2bc55a51"
+    ],
+    "additions": 42,
+    "deletions": 0,
+    "total_changes": 42,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "80a5b124eab7a8cd66dd26d73207c1ec2bc55a51",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:32:02Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:32:02Z"
+      },
+      "message": "style(consulta): estilo das disciplinas do cartão e dos atalhos de comentários\n\nOrganiza as disciplinas do cartão em linhas alinhadas, com a barra de dificuldade compacta, o Ver mais N disciplinas e o botão Comentários, e estiliza o link de comentários no perfil e o convite na tela de avaliar, nos temas escuro e claro e no celular. A barra compacta passa a ser decorativa para leitores de tela, porque o texto ao lado já informa o valor. Refs #201"
+    },
+    "parents": [
+      "3287dfd0406318c0eb67cdcb1aea7b39977109e9"
+    ],
+    "additions": 185,
+    "deletions": 10,
+    "total_changes": 195,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "3287dfd0406318c0eb67cdcb1aea7b39977109e9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:18:14Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:18:14Z"
+      },
+      "message": "feat(consulta): ordenar as disciplinas do cartão e agrupar as excedentes em Ver mais\n\nAs disciplinas do cartão passam a aparecer com as mais avaliadas primeiro, depois as sem avaliações, e por nome em caso de empate. Professores com até 5 disciplinas mostram todas; com mais de 5, as 4 primeiras ficam visíveis e as demais ficam em um Ver mais N disciplinas dentro do cartão, sem JavaScript. Nenhuma disciplina deixa de aparecer. Inclui testes. Refs #201"
+    },
+    "parents": [
+      "d3411892f5b80f96ceb3e3dafa995f8645e54699"
+    ],
+    "additions": 206,
+    "deletions": 24,
+    "total_changes": 230,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "d3411892f5b80f96ceb3e3dafa995f8645e54699",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:13:07Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:13:07Z"
+      },
+      "message": "feat(comentarios): atalhos para os comentários no perfil e na tela de avaliar\n\nO perfil do professor ganha, logo abaixo do departamento, um link Comentários que pula para a seção. A tela de avaliar ganha, fora do formulário de notas, um convite para escrever um comentário que leva ao perfil na seção de comentários, preservando o retorno. O envio da avaliação não muda. Inclui testes. Refs #201"
+    },
+    "parents": [
+      "c0c5225ff67ee791fc0971cb80154c7e61a3e6a1"
+    ],
+    "additions": 134,
+    "deletions": 0,
+    "total_changes": 134,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "c0c5225ff67ee791fc0971cb80154c7e61a3e6a1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:08:02Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-18T19:08:02Z"
+      },
+      "message": "feat(consulta): mostrar dificuldade por disciplina e botão de comentários na lista\n\nCada disciplina do cartão passa a mostrar a dificuldade média (com a barra compacta) e a quantidade de avaliações, ou a indicação de que ainda não há avaliações. O cartão ganha o botão Comentários, que leva direto à seção de comentários do perfil. A paginação passa a usar o cálculo do controller em vez de repetir a fórmula no template. Inclui testes. Refs #201"
+    },
+    "parents": [
+      "ee01a59f9232cd4ec0bcc4496caae4aaa84787c1"
+    ],
+    "additions": 244,
+    "deletions": 16,
+    "total_changes": 260,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ee01a59f9232cd4ec0bcc4496caae4aaa84787c1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T18:54:20Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-18T18:54:20Z"
+      },
+      "message": "feat(consulta): calcular dificuldade média e quantidade de avaliações por disciplina\n\nAdiciona uma consulta agrupada que devolve, para os professores da página da lista, a dificuldade média e a quantidade de avaliações de cada disciplina, reaproveitando a regra que já alimenta a página do professor. A lista passa a receber os valores e os textos prontos (por exemplo, Dificuldade 2,3/5 e 5 avaliações). O número de consultas não cresce com o número de professores da página. Inclui testes. Refs #201"
+    },
+    "parents": [
+      "bd70680fe9d8317b75cbcf487c187d9df2626645"
+    ],
+    "additions": 249,
+    "deletions": 1,
+    "total_changes": 250,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "bd70680fe9d8317b75cbcf487c187d9df2626645",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T18:27:44Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T18:27:44Z"
+      },
+      "message": "Merge pull request #238 from unb-mds/fix/235-duplicatas-professores\n\nfix(banco): mescla professores duplicados por unidade e gera novo backup (#235)"
+    },
+    "parents": [
+      "dd03911826036940a36343c4a0fbc52aea3a1f8e",
+      "46dd49442563accf90f25158aee1b920e90a3c1d"
+    ],
+    "additions": 706,
+    "deletions": 342,
+    "total_changes": 1048,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "dd03911826036940a36343c4a0fbc52aea3a1f8e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-18T18:27:18Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T18:27:18Z"
+      },
+      "message": "Merge pull request #237 from unb-mds/feat/220-busca-unificada\n\nfeat(busca): busca unificada com autocompletar (professor, disciplina e departamento)"
+    },
+    "parents": [
+      "416c6d3aeffae4140c36716d12dfea2835628065",
+      "3e8cfcf6f94849cd2c90f0b3362c313b5b7b0e04"
+    ],
+    "additions": 740,
+    "deletions": 65,
+    "total_changes": 805,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "3e8cfcf6f94849cd2c90f0b3362c313b5b7b0e04",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:56:06Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:56:06Z"
+      },
+      "message": "merge: integra main (ranking por departamento, destaques e comparação livre) na busca unificada"
+    },
+    "parents": [
+      "5f686e64a736e51fc630ed257b64b102889328d6",
+      "416c6d3aeffae4140c36716d12dfea2835628065"
+    ],
+    "additions": 646,
+    "deletions": 94,
+    "total_changes": 740,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "416c6d3aeffae4140c36716d12dfea2835628065",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:55:23Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T16:55:23Z"
+      },
+      "message": "Merge pull request #233 from unb-mds/feat/218-comparar-professores-disciplinas-diferentes\n\nFeat/218 comparar professores disciplinas diferentes"
+    },
+    "parents": [
+      "63e99e35d656fe2746c493a88cddf98e1b7adc5e",
+      "7fc7b0eef045a22c80dd9d6671c6d2316b43e4f6"
+    ],
+    "additions": 277,
+    "deletions": 25,
+    "total_changes": 302,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "63e99e35d656fe2746c493a88cddf98e1b7adc5e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:53:49Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T16:53:49Z"
+      },
+      "message": "Merge pull request #232 from unb-mds/feat/219-destacar-melhor-desempenho-comparacao\n\nFeat/219 destacar melhor desempenho comparacao"
+    },
+    "parents": [
+      "9d7312e1078218d15c8d933b89f2505fd06d88e3",
+      "5dd70ac166f0fc7c342b8419926a43e954087684"
+    ],
+    "additions": 152,
+    "deletions": 14,
+    "total_changes": 166,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7fc7b0eef045a22c80dd9d6671c6d2316b43e4f6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:53:13Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:53:13Z"
+      },
+      "message": "Merge branch 'main' into feat/218-comparar-professores-disciplinas-diferentes\n\nIntegra o destaque de melhor desempenho (#219) com a comparação livre (#218): os destaques valem nos três modos e usam _calcular_media_geral. Inclui teste do destaque no modo livre e remove título duplicado na documentação."
+    },
+    "parents": [
+      "ca0ce61c0b52277794efdabd133b2dfc9ce4ae78",
+      "5dd70ac166f0fc7c342b8419926a43e954087684"
+    ],
+    "additions": 3002,
+    "deletions": 231,
+    "total_changes": 3233,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9d7312e1078218d15c8d933b89f2505fd06d88e3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:52:17Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T16:52:17Z"
+      },
+      "message": "Merge pull request #234 from unb-mds/feat/222-filtrar-ranking-por-departamento\n\nFeat/222 filtrar ranking por departamento"
+    },
+    "parents": [
+      "7da42046c83554748acb28ab23ed438456f4e110",
+      "2198fdf252dc3548292b9be644a9204785ab9f13"
+    ],
+    "additions": 120,
+    "deletions": 10,
+    "total_changes": 130,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "5dd70ac166f0fc7c342b8419926a43e954087684",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:51:25Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:51:25Z"
+      },
+      "message": "Merge branch 'main' into feat/219-destacar-melhor-desempenho-comparacao\n\nResolve conflito de imports no professor_controller com comentários (#167) e ranking por departamento (#222)."
+    },
+    "parents": [
+      "74cc3132c9fff7dd67261ff9e039fce73d1196a8",
+      "2198fdf252dc3548292b9be644a9204785ab9f13"
+    ],
+    "additions": 2842,
+    "deletions": 198,
+    "total_changes": 3040,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2198fdf252dc3548292b9be644a9204785ab9f13",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:50:57Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:50:57Z"
+      },
+      "message": "Merge branch 'main' into feat/222-filtrar-ranking-por-departamento\n\nResolve conflito de imports no professor_controller."
+    },
+    "parents": [
+      "7b1f0d4fb1ad49cd570cf9f329d939c6a7bb7c55",
+      "7da42046c83554748acb28ab23ed438456f4e110"
+    ],
+    "additions": 2722,
+    "deletions": 188,
+    "total_changes": 2910,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7da42046c83554748acb28ab23ed438456f4e110",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:50:31Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T16:50:31Z"
+      },
+      "message": "Merge pull request #230 from unb-mds/feat/196-link-repositorio-sobre\n\nFeat/196 link repositorio sobre"
+    },
+    "parents": [
+      "8c8ce2ae901551231fdc0515130a2a0439dc21bd",
+      "ebbb15ace9f16180eb473c282b4a5ace70305c48"
+    ],
+    "additions": 42,
+    "deletions": 0,
+    "total_changes": 42,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "8c8ce2ae901551231fdc0515130a2a0439dc21bd",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:50:02Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T16:50:02Z"
+      },
+      "message": "Merge pull request #228 from unb-mds/docs/209-atualizar-links-repositorio\n\nDocs/209 atualizar links repositorio"
+    },
+    "parents": [
+      "b7acb3cca47ccb83acc74afbd79ec6d3540c045e",
+      "c7426832325bb653bbabd9719966bac386c46c5d"
+    ],
+    "additions": 54,
+    "deletions": 54,
+    "total_changes": 108,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "c7426832325bb653bbabd9719966bac386c46c5d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:48:31Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:48:31Z"
+      },
+      "message": "Merge branch 'main' into docs/209-atualizar-links-repositorio\n\nResolve conflitos com a main mantendo o texto atual e o novo nome do repositório."
+    },
+    "parents": [
+      "e398eb6da85d01e994e500a7eadedcf313506980",
+      "b7acb3cca47ccb83acc74afbd79ec6d3540c045e"
+    ],
+    "additions": 2628,
+    "deletions": 137,
+    "total_changes": 2765,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "46dd49442563accf90f25158aee1b920e90a3c1d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:42:34Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:42:34Z"
+      },
+      "message": "novo backup"
+    },
+    "parents": [
+      "bc206c8e221a2965f413e1c5912dfeaee217eceb"
+    ],
+    "additions": 155,
+    "deletions": 301,
+    "total_changes": 456,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "bc206c8e221a2965f413e1c5912dfeaee217eceb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:42:34Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:42:34Z"
+      },
+      "message": "migrations professores duplicados"
+    },
+    "parents": [
+      "b7acb3cca47ccb83acc74afbd79ec6d3540c045e"
+    ],
+    "additions": 551,
+    "deletions": 41,
+    "total_changes": 592,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "5f686e64a736e51fc630ed257b64b102889328d6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:21:17Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:21:17Z"
+      },
+      "message": "feat(perfil): nome do professor nas minhas avaliações leva ao perfil dele"
+    },
+    "parents": [
+      "9c0d6049c5706b964b31a4490ae20097e2e4f8b7"
+    ],
+    "additions": 8,
+    "deletions": 1,
+    "total_changes": 9,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9c0d6049c5706b964b31a4490ae20097e2e4f8b7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:15:23Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:15:23Z"
+      },
+      "message": "refactor(busca): remove o formulário antigo de filtros da Consulta (#220)"
+    },
+    "parents": [
+      "1c966b7b90f67fcd5c3b64504f08c62af0691608"
+    ],
+    "additions": 29,
+    "deletions": 68,
+    "total_changes": 97,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "1c966b7b90f67fcd5c3b64504f08c62af0691608",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:11:07Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:11:07Z"
+      },
+      "message": "feat(busca): busca unificada na Comparação, testes e docs (#220)"
+    },
+    "parents": [
+      "488c14445fbde45ff2e9ff095a41318d74bd0bad"
+    ],
+    "additions": 148,
+    "deletions": 11,
+    "total_changes": 159,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "488c14445fbde45ff2e9ff095a41318d74bd0bad",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:08:36Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:08:36Z"
+      },
+      "message": "feat(busca): autocompletar acessível da busca unificada na Consulta (#220)"
+    },
+    "parents": [
+      "84ac72d3d33bf0be4df5ead123b596e638af8b95"
+    ],
+    "additions": 344,
+    "deletions": 0,
+    "total_changes": 344,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "84ac72d3d33bf0be4df5ead123b596e638af8b95",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T16:06:12Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T16:06:12Z"
+      },
+      "message": "feat(busca): rota de sugestões da busca unificada (#220)"
+    },
+    "parents": [
+      "b7acb3cca47ccb83acc74afbd79ec6d3540c045e"
+    ],
+    "additions": 233,
+    "deletions": 17,
+    "total_changes": 250,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "b7acb3cca47ccb83acc74afbd79ec6d3540c045e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-18T15:12:43Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T15:12:43Z"
+      },
+      "message": "Merge pull request #229 from unb-mds/docs/210-atualizar-claude-e-legado-sqlite\n\nDocs/210 atualizar claude e legado sqlite"
+    },
+    "parents": [
+      "6bd702d1fc19afd5f971d8bf74ffc83d80a79bc4",
+      "c9b3730985387f23c2debea14ef0016a5acb57a9"
+    ],
+    "additions": 21,
+    "deletions": 10,
+    "total_changes": 31,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "6bd702d1fc19afd5f971d8bf74ffc83d80a79bc4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-18T15:11:47Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T15:11:47Z"
+      },
+      "message": "Merge pull request #231 from unb-mds/docs/207-renomear-release-v1-0-1\n\nDocs/207 renomear release v1 0 1"
+    },
+    "parents": [
+      "a63a965e52178b52077d064334a0dfdd7be7e256",
+      "7983fb3de96bf60a2592ef121089c086bc67d3de"
+    ],
+    "additions": 4,
+    "deletions": 4,
+    "total_changes": 8,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "a63a965e52178b52077d064334a0dfdd7be7e256",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-18T15:10:06Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-18T15:10:06Z"
+      },
+      "message": "Merge pull request #227 from unb-mds/feat/167-comentarios-no-perfil\n\nfeat(comentarios): mostrar, publicar, editar e excluir comentários no perfil do professor"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d",
+      "2a21777f4729e98306b9529e8dc52dca49e8ad14"
+    ],
+    "additions": 2603,
+    "deletions": 123,
+    "total_changes": 2726,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7b1f0d4fb1ad49cd570cf9f329d939c6a7bb7c55",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:55:18Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:55:18Z"
+      },
+      "message": "test(ranking): cobre seletor, filtro na rota e estado vazio por departamento (#222)"
+    },
+    "parents": [
+      "0dc76d60f7f162acca26e5e74bb0c786e902dfff"
+    ],
+    "additions": 25,
+    "deletions": 0,
+    "total_changes": 25,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "0dc76d60f7f162acca26e5e74bb0c786e902dfff",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:54:22Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:54:22Z"
+      },
+      "message": "test(ranking): cobre filtragem por departamento e minimo de avaliacoes no repositorio (#222)"
+    },
+    "parents": [
+      "9b64becd3c40b3a07e2852abebc7dba091b208c7"
+    ],
+    "additions": 17,
+    "deletions": 0,
+    "total_changes": 17,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9b64becd3c40b3a07e2852abebc7dba091b208c7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:52:38Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:52:38Z"
+      },
+      "message": "docs: documenta filtro por departamento no ranking (#222)"
+    },
+    "parents": [
+      "e0fab2a75d94f228df69b33888b6632d54038c5a"
+    ],
+    "additions": 6,
+    "deletions": 2,
+    "total_changes": 8,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e0fab2a75d94f228df69b33888b6632d54038c5a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:51:40Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:51:40Z"
+      },
+      "message": "style(ranking): estiliza seletor de departamento com tokens do design system (#222)"
+    },
+    "parents": [
+      "b0971de640742442dad2f863cc1b7141c7255397"
+    ],
+    "additions": 25,
+    "deletions": 0,
+    "total_changes": 25,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "b0971de640742442dad2f863cc1b7141c7255397",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:50:56Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:50:56Z"
+      },
+      "message": "feat(ranking): adiciona seletor de departamento e mensagens contextuais na tela (#222)"
+    },
+    "parents": [
+      "9c149efdf58bcae167e01f650bad06d16870b209"
+    ],
+    "additions": 24,
+    "deletions": 2,
+    "total_changes": 26,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9c149efdf58bcae167e01f650bad06d16870b209",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:49:35Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:49:35Z"
+      },
+      "message": "feat(ranking): integra parametro de departamento e lista de opcoes na rota /ranking (#222)"
+    },
+    "parents": [
+      "9f7cb0e89fe5cf5b5ef4dc6636426abc36e74e6f"
+    ],
+    "additions": 19,
+    "deletions": 5,
+    "total_changes": 24,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9f7cb0e89fe5cf5b5ef4dc6636426abc36e74e6f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:39:04Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:39:04Z"
+      },
+      "message": "feat(ranking): aceita filtro por departamento em ProfessorRepository.ranking (#222)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 4,
+    "deletions": 2,
+    "total_changes": 6,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ca0ce61c0b52277794efdabd133b2dfc9ce4ae78",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:28:22Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:28:22Z"
+      },
+      "message": "test: cobre comparacao entre disciplinas diferentes, modo livre e validacoes (#218)"
+    },
+    "parents": [
+      "164924f8c05d57d089b30b3ae7d8802147b014b3"
+    ],
+    "additions": 38,
+    "deletions": 0,
+    "total_changes": 38,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "164924f8c05d57d089b30b3ae7d8802147b014b3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:27:04Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:27:04Z"
+      },
+      "message": "docs: documenta comparacao livre entre professores de disciplinas diferentes (#218)"
+    },
+    "parents": [
+      "43a993262f80b5bdd85058b462a478f7ab43e9ad"
+    ],
+    "additions": 17,
+    "deletions": 7,
+    "total_changes": 24,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "43a993262f80b5bdd85058b462a478f7ab43e9ad",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:25:18Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:25:18Z"
+      },
+      "message": "style: estiliza alternador de modo, aviso e lista de disciplinas na comparacao (#218)"
+    },
+    "parents": [
+      "2f360d4090cf130a77bea7440db61bd38e258ae0"
+    ],
+    "additions": 50,
+    "deletions": 0,
+    "total_changes": 50,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2f360d4090cf130a77bea7440db61bd38e258ae0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:24:02Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:24:02Z"
+      },
+      "message": "feat: exibe selecao livre, disciplinas e aviso na tela de comparacao (#218)"
+    },
+    "parents": [
+      "9fea928eb5c8879678b300184d157ec5c29bcc02"
+    ],
+    "additions": 79,
+    "deletions": 2,
+    "total_changes": 81,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9fea928eb5c8879678b300184d157ec5c29bcc02",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:22:48Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:22:48Z"
+      },
+      "message": "feat: suporta selecao livre de professores sem disciplina em comum no controller (#218)"
+    },
+    "parents": [
+      "7f42b57c8f00df7c2043ba0308fa94f349fdd1ed"
+    ],
+    "additions": 71,
+    "deletions": 10,
+    "total_changes": 81,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7f42b57c8f00df7c2043ba0308fa94f349fdd1ed",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:16:09Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-18T12:16:09Z"
+      },
+      "message": "feat: adiciona calculo de media geral e deteccao de disciplinas diferentes (#218)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 33,
+    "deletions": 7,
+    "total_changes": 40,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "74cc3132c9fff7dd67261ff9e039fce73d1196a8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:56:18Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:56:18Z"
+      },
+      "message": "test: testa destaque geral, por criterio e regra inversa de dificuldade (#219)"
+    },
+    "parents": [
+      "c4a7716cf1fd8321dfe72aad1936ea6248a0b1af"
+    ],
+    "additions": 41,
+    "deletions": 1,
+    "total_changes": 42,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "c4a7716cf1fd8321dfe72aad1936ea6248a0b1af",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:54:14Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:54:14Z"
+      },
+      "message": "docs: documenta regra de destaque e minimo de avaliacoes na comparacao (#219)"
+    },
+    "parents": [
+      "e2455dcd817874ef25fad04d69951e880aed56f9"
+    ],
+    "additions": 7,
+    "deletions": 0,
+    "total_changes": 7,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e2455dcd817874ef25fad04d69951e880aed56f9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:54:04Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:54:04Z"
+      },
+      "message": "style: estiliza colunas e selos de destaque com tokens do design system (#219)"
+    },
+    "parents": [
+      "46043a750c1a7f5c67a8a5980358c87de3a927cf"
+    ],
+    "additions": 33,
+    "deletions": 0,
+    "total_changes": 33,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "46043a750c1a7f5c67a8a5980358c87de3a927cf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:53:54Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:53:54Z"
+      },
+      "message": "feat: adiciona selos de destaque e regra na tabela de comparacao (#219)"
+    },
+    "parents": [
+      "d78f2c45a1a875254fe0a870473ed94f8c5a0ccf"
+    ],
+    "additions": 18,
+    "deletions": 3,
+    "total_changes": 21,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "d78f2c45a1a875254fe0a870473ed94f8c5a0ccf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:53:37Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:53:37Z"
+      },
+      "message": "feat: calcula destaque geral e por criterio na comparacao (#219)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 51,
+    "deletions": 9,
+    "total_changes": 60,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7983fb3de96bf60a2592ef121089c086bc67d3de",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:17:28Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:17:28Z"
+      },
+      "message": "docs: ajusta titulo e texto introdutorio para v1.0.1 (#207)"
+    },
+    "parents": [
+      "e786d4d452bc5248386bf551117526dd91f6b0db"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e786d4d452bc5248386bf551117526dd91f6b0db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:16:49Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:16:49Z"
+      },
+      "message": "docs: atualiza links de release para v1.0.1 no README e guia (#207)"
+    },
+    "parents": [
+      "68287071ae426fbbcc175718b8fd7a7e8afed7a7"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "68287071ae426fbbcc175718b8fd7a7e8afed7a7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:16:41Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:16:41Z"
+      },
+      "message": "docs: renomeia RELEASE-v2.0.0.md para RELEASE-v1.0.1.md (#207)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ebbb15ace9f16180eb473c282b4a5ace70305c48",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:05:50Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:05:50Z"
+      },
+      "message": "test: valida link do repositorio e atributos de nova aba na pagina Sobre (#196)"
+    },
+    "parents": [
+      "9e8b25f4a0d70c73cd6610820d1d6993c93075ff"
+    ],
+    "additions": 14,
+    "deletions": 0,
+    "total_changes": 14,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9e8b25f4a0d70c73cd6610820d1d6993c93075ff",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:05:41Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T23:05:41Z"
+      },
+      "message": "feat: adiciona link do repositorio na pagina Sobre (#196)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 28,
+    "deletions": 0,
+    "total_changes": 28,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "c9b3730985387f23c2debea14ef0016a5acb57a9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:30:45Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:30:45Z"
+      },
+      "message": "docs: reforca aviso de arquivamento historico do prototipo SQLite (#210)"
+    },
+    "parents": [
+      "fbc0cf9f5cedfe4e7b951c5f31fe290004d03623"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "fbc0cf9f5cedfe4e7b951c5f31fe290004d03623",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:30:36Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:30:36Z"
+      },
+      "message": "docs: atualiza CLAUDE.md com nome AvaliaUnB, migracoes 001-003 e tabela comentarios (#210)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 20,
+    "deletions": 9,
+    "total_changes": 29,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e398eb6da85d01e994e500a7eadedcf313506980",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:15:18Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:15:18Z"
+      },
+      "message": "test: atualiza assercoes de url do repositorio no teste do README (#209)"
+    },
+    "parents": [
+      "f0210e69b0c83a71be71abdb42548a3cdd887907"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "f0210e69b0c83a71be71abdb42548a3cdd887907",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:15:07Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:15:07Z"
+      },
+      "message": "docs: atualiza links para o novo nome do repositorio 2026-2-AvaliaUnB (#209)"
+    },
+    "parents": [
+      "83932c9c703392bcc7cbcc157515e403fdeb92ad"
+    ],
+    "additions": 49,
+    "deletions": 49,
+    "total_changes": 98,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "83932c9c703392bcc7cbcc157515e403fdeb92ad",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:14:58Z",
+        "login": "lgalencar25",
+        "id": 317712896,
+        "author_email_hash": "051547a5830cfdbc67b93d4e7f4d9c47a54acafa1456a34937e5109356bf223a"
+      },
+      "committer": {
+        "name": "Luiz Guilherme de Alencar Magalhães",
+        "date": "2026-11-17T22:14:58Z"
+      },
+      "message": "chore: atualiza nome do repositorio no workflow e mkdocs (#209)"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 3,
+    "deletions": 3,
+    "total_changes": 6,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2a21777f4729e98306b9529e8dc52dca49e8ad14",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T22:04:40Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T22:04:40Z"
+      },
+      "message": "docs(privacidade): incluir os comentários na política e nos termos\n\nInforma que os comentários são públicos e mostram o nome de usuário, nunca o e-mail nem o nome completo, que comentários e notas são independentes, as regras para comentar e como editar ou excluir os próprios comentários. Refs #167"
+    },
+    "parents": [
+      "69f47049c16104aabb7e75a006716f5f0ce40e1b"
+    ],
+    "additions": 32,
+    "deletions": 2,
+    "total_changes": 34,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "69f47049c16104aabb7e75a006716f5f0ce40e1b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:56:44Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:56:44Z"
+      },
+      "message": "docs(backend): documentar rotas, repositório e limite dos comentários\n\nAcrescenta ao BACKEND.md as rotas de publicar, editar e excluir comentários, o ComentarioRepository, a validação do texto e o limite de 10 envios por hora, com a observação de que as checagens de autoria são feitas no servidor porque a service key ignora a RLS. Refs #167"
+    },
+    "parents": [
+      "0c705f27e2c4e15b40b6d03f45a11e654b151408"
+    ],
+    "additions": 86,
+    "deletions": 11,
+    "total_changes": 97,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "0c705f27e2c4e15b40b6d03f45a11e654b151408",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:53:47Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:53:47Z"
+      },
+      "message": "docs: atualizar README, visão, guia, hospedagem e modelo de dados com os comentários\n\nPassa a descrever os comentários como implementados no perfil do professor, sem exibição de e-mail e sem exigir verificação, com a tabela comentarios e o limite de 10 envios por hora. Reações, ordenação escolhida pela pessoa, filtro automático, denúncia e moderação seguem como propostas. Refs #167"
+    },
+    "parents": [
+      "dd812138fde78086aff3baf6598aa4861a2e39d7"
+    ],
+    "additions": 39,
+    "deletions": 29,
+    "total_changes": 68,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "dd812138fde78086aff3baf6598aa4861a2e39d7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:49:50Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:49:50Z"
+      },
+      "message": "docs(comentarios): atualizar regras e telas conforme a implementação\n\nAjusta os documentos de comentários ao que foi decidido e implementado: o autor aparece só pelo nome de usuário, sem e-mail; não se exige e-mail verificado; a listagem mostra os 50 mais recentes, com filtro por disciplina; há limite de 10 envios por hora; e editar e excluir valem só para o próprio comentário. Registra o estilo e as páginas novas na documentação do front-end. Refs #167"
+    },
+    "parents": [
+      "9f7b5e419db553573f6ce3e104a1c5c986aec636"
+    ],
+    "additions": 135,
+    "deletions": 59,
+    "total_changes": 194,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9f7b5e419db553573f6ce3e104a1c5c986aec636",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:39:41Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:39:41Z"
+      },
+      "message": "style(comentarios): estilo da seção de comentários nos dois temas\n\nEstiliza a listagem, o formulário e as páginas de editar e excluir com os tokens do design system, nos temas escuro e claro e no celular. O botão de excluir usa o estilo destrutivo existente e o Cancelar fica em destaque. Sem JS novo. Refs #167"
+    },
+    "parents": [
+      "dd4f2a3bac4b2c238d3361b249396488eefe8710"
+    ],
+    "additions": 293,
+    "deletions": 12,
+    "total_changes": 305,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "dd4f2a3bac4b2c238d3361b249396488eefe8710",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:29:42Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:29:42Z"
+      },
+      "message": "feat(comentarios): editar e excluir o próprio comentário\n\nO autor pode editar o texto e a disciplina do próprio comentário e excluí-lo depois de uma página de confirmação. Comentário de outra pessoa ou inexistente responde 404, e professor, autor e data de criação nunca mudam. Os links Editar e Excluir aparecem só nos comentários do próprio usuário. Inclui testes. Refs #167"
+    },
+    "parents": [
+      "2346dfcbe152e281050f300b3e180667649064fc"
+    ],
+    "additions": 571,
+    "deletions": 0,
+    "total_changes": 571,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2346dfcbe152e281050f300b3e180667649064fc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:22:30Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:22:30Z"
+      },
+      "message": "feat(comentarios): publicar comentário no perfil do professor\n\nUsuários logados podem comentar escolhendo uma das disciplinas do professor. O autor vem sempre da sessão, o texto é validado no servidor (2 a 1.000 caracteres) e erros devolvem 400 preservando o que foi digitado. O formulário avisa que o nome de usuário aparece junto do comentário, e visitantes veem um convite para entrar, com retorno ao perfil. O envio usa o limite de 10 por hora. Inclui testes. Refs #167"
+    },
+    "parents": [
+      "98667e6fafa090f61dc9560a8b24f00e68107ccc"
+    ],
+    "additions": 481,
+    "deletions": 22,
+    "total_changes": 503,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "98667e6fafa090f61dc9560a8b24f00e68107ccc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:11:32Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:11:32Z"
+      },
+      "message": "feat(seguranca): limitar comentários a 10 por hora por usuário\n\nAdiciona o decorator limitar_comentario, com contador próprio, separado do limite das avaliações, e testes. Ele ainda não está aplicado a nenhuma rota; entra na publicação de comentários. Refs #167"
+    },
+    "parents": [
+      "9cced1f003b7cb901fce1a2896bfa0e6a286f7f4"
+    ],
+    "additions": 117,
+    "deletions": 0,
+    "total_changes": 117,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9cced1f003b7cb901fce1a2896bfa0e6a286f7f4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:01:40Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T21:01:40Z"
+      },
+      "message": "feat(comentarios): listar comentários no perfil do professor com filtro por disciplina\n\nA seção Comentários do perfil mostra os 50 mais recentes, com nome de usuário, disciplina, data no horário de Brasília e indicação de edição, e permite filtrar por disciplina (filtro inválido volta a todas, sem 404). Falha na consulta mostra um aviso e não derruba o resto do perfil. Inclui testes das rotas. Refs #167"
+    },
+    "parents": [
+      "0f8f2e93de9e916bce54c8fa967f7d8efb2841ef"
+    ],
+    "additions": 344,
+    "deletions": 4,
+    "total_changes": 348,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "0f8f2e93de9e916bce54c8fa967f7d8efb2841ef",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-17T20:52:34Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-17T20:52:34Z"
+      },
+      "message": "feat(comentarios): validação e repositório de comentários\n\nAdiciona validar_comentario (2 a 1.000 caracteres, texto simples) e o ComentarioRepository, com listagem limitada aos 50 mais recentes e aviso de que há mais, busca, criação, edição e exclusão. Autoria e vínculo entre professor e disciplina são conferidos no servidor, e a listagem expõe só o nome de usuário, nunca o e-mail. Inclui testes e a ampliação do fake do Supabase. Refs #167"
+    },
+    "parents": [
+      "838d459035640a9a3f23c8478a129131d9fad22d"
+    ],
+    "additions": 527,
+    "deletions": 6,
+    "total_changes": 533,
+    "repo_name": "2026-2-AvaliaUnB"
   },
   {
     "sha": "838d459035640a9a3f23c8478a129131d9fad22d",
