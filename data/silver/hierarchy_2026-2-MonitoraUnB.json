@@ -2,16 +2,24 @@
   "repository": "2026-2-MonitoraUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-18T14:48:12.222678+00:00",
+  "extracted_at": "2026-11-19T15:13:41.382992+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
     "children": [
       {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 673,
+        "extension": ".example",
+        "path": ".env.example"
+      },
+      {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 52,
+        "size": 125,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -19,9 +27,457 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5515,
+        "size": 5857,
         "extension": ".md",
         "path": "README.md"
+      },
+      {
+        "name": "backend",
+        "type": "directory",
+        "path": "backend",
+        "children": []
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 330,
+        "extension": "",
+        "path": "backend/Dockerfile"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/__init__.py"
+      },
+      {
+        "name": "config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1397,
+        "extension": ".py",
+        "path": "backend/config.py"
+      },
+      {
+        "name": "database",
+        "type": "directory",
+        "path": "backend/database",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/database/__init__.py"
+      },
+      {
+        "name": "database.py",
+        "type": "file",
+        "language": "Python",
+        "size": 631,
+        "extension": ".py",
+        "path": "backend/database/database.py"
+      },
+      {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3017,
+        "extension": ".py",
+        "path": "backend/database/models.py"
+      },
+      {
+        "name": "sql",
+        "type": "directory",
+        "path": "backend/database/sql",
+        "children": []
+      },
+      {
+        "name": "01_schema.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 13227,
+        "extension": ".sql",
+        "path": "backend/database/sql/01_schema.sql"
+      },
+      {
+        "name": "02_seed.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1,
+        "extension": ".sql",
+        "path": "backend/database/sql/02_seed.sql"
+      },
+      {
+        "name": "03_setup_usuarios.sql",
+        "type": "file",
+        "language": "SQL",
+        "size": 1348,
+        "extension": ".sql",
+        "path": "backend/database/sql/03_setup_usuarios.sql"
+      },
+      {
+        "name": "dependencies",
+        "type": "directory",
+        "path": "backend/dependencies",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/dependencies/__init__.py"
+      },
+      {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 579,
+        "extension": ".py",
+        "path": "backend/dependencies/auth.py"
+      },
+      {
+        "name": "main.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2002,
+        "extension": ".py",
+        "path": "backend/main.py"
+      },
+      {
+        "name": "requirements",
+        "type": "directory",
+        "path": "backend/requirements",
+        "children": []
+      },
+      {
+        "name": "database.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 45,
+        "extension": ".txt",
+        "path": "backend/requirements/database.txt"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 48,
+        "extension": ".txt",
+        "path": "backend/requirements/requirements.txt"
+      },
+      {
+        "name": "rest-pdf.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 59,
+        "extension": ".txt",
+        "path": "backend/requirements/rest-pdf.txt"
+      },
+      {
+        "name": "scraping.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 194,
+        "extension": ".txt",
+        "path": "backend/requirements/scraping.txt"
+      },
+      {
+        "name": "setup.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 7,
+        "extension": ".txt",
+        "path": "backend/requirements/setup.txt"
+      },
+      {
+        "name": "routers",
+        "type": "directory",
+        "path": "backend/routers",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/routers/__init__.py"
+      },
+      {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1809,
+        "extension": ".py",
+        "path": "backend/routers/auth.py"
+      },
+      {
+        "name": "departamentos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2008,
+        "extension": ".py",
+        "path": "backend/routers/departamentos.py"
+      },
+      {
+        "name": "disciplinas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2976,
+        "extension": ".py",
+        "path": "backend/routers/disciplinas.py"
+      },
+      {
+        "name": "historico.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4196,
+        "extension": ".py",
+        "path": "backend/routers/historico.py"
+      },
+      {
+        "name": "inscricoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1266,
+        "extension": ".py",
+        "path": "backend/routers/inscricoes.py"
+      },
+      {
+        "name": "schemas",
+        "type": "directory",
+        "path": "backend/schemas",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1,
+        "extension": ".py",
+        "path": "backend/schemas/__init__.py"
+      },
+      {
+        "name": "auth.py",
+        "type": "file",
+        "language": "Python",
+        "size": 499,
+        "extension": ".py",
+        "path": "backend/schemas/auth.py"
+      },
+      {
+        "name": "inscricoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 959,
+        "extension": ".py",
+        "path": "backend/schemas/inscricoes.py"
+      },
+      {
+        "name": "schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2655,
+        "extension": ".py",
+        "path": "backend/schemas/schemas.py"
+      },
+      {
+        "name": "scraping",
+        "type": "directory",
+        "path": "backend/scraping",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/scraping/__init__.py"
+      },
+      {
+        "name": "sigaa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16703,
+        "extension": ".py",
+        "path": "backend/scraping/sigaa.py"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "backend/scripts",
+        "children": []
+      },
+      {
+        "name": "gerar_hash_senha.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1624,
+        "extension": ".py",
+        "path": "backend/scripts/gerar_hash_senha.py"
+      },
+      {
+        "name": "services",
+        "type": "directory",
+        "path": "backend/services",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/services/__init__.py"
+      },
+      {
+        "name": "auth_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1511,
+        "extension": ".py",
+        "path": "backend/services/auth_service.py"
+      },
+      {
+        "name": "email_notifications.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1774,
+        "extension": ".py",
+        "path": "backend/services/email_notifications.py"
+      },
+      {
+        "name": "email_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1352,
+        "extension": ".py",
+        "path": "backend/services/email_service.py"
+      },
+      {
+        "name": "historico",
+        "type": "directory",
+        "path": "backend/services/historico",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/services/historico/__init__.py"
+      },
+      {
+        "name": "calcular_coeficiente.py",
+        "type": "file",
+        "language": "Python",
+        "size": 282,
+        "extension": ".py",
+        "path": "backend/services/historico/calcular_coeficiente.py"
+      },
+      {
+        "name": "leitura_creditos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6100,
+        "extension": ".py",
+        "path": "backend/services/historico/leitura_creditos.py"
+      },
+      {
+        "name": "leiturapdf.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1586,
+        "extension": ".py",
+        "path": "backend/services/historico/leiturapdf.py"
+      },
+      {
+        "name": "teste_python_scripts.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1217,
+        "extension": ".py",
+        "path": "backend/services/historico/teste_python_scripts.py"
+      },
+      {
+        "name": "teste_tabela.py",
+        "type": "file",
+        "language": "Python",
+        "size": 311,
+        "extension": ".py",
+        "path": "backend/services/historico/teste_tabela.py"
+      },
+      {
+        "name": "inscricoes_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1435,
+        "extension": ".py",
+        "path": "backend/services/inscricoes_service.py"
+      },
+      {
+        "name": "spreadsheet_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 548,
+        "extension": ".py",
+        "path": "backend/services/spreadsheet_service.py"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/tests",
+        "children": []
+      },
+      {
+        "name": "test_email_notifications.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1699,
+        "extension": ".py",
+        "path": "backend/tests/test_email_notifications.py"
+      },
+      {
+        "name": "test_email_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4336,
+        "extension": ".py",
+        "path": "backend/tests/test_email_service.py"
+      },
+      {
+        "name": "test_spreadsheet_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2093,
+        "extension": ".py",
+        "path": "backend/tests/test_spreadsheet_service.py"
+      },
+      {
+        "name": "como_executar_api.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6093,
+        "extension": ".md",
+        "path": "como_executar_api.md"
+      },
+      {
+        "name": "compose.yaml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2766,
+        "extension": ".yaml",
+        "path": "compose.yaml"
       },
       {
         "name": "docs",
@@ -78,18 +534,18 @@
         "path": "docs/Documento_de_visao.md"
       },
       {
-        "name": "_coverpage.md",
+        "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 195,
+        "size": 3700,
         "extension": ".md",
-        "path": "docs/_coverpage.md"
+        "path": "docs/README.md"
       },
       {
         "name": "_sidebar.md",
         "type": "file",
         "language": "Markdown",
-        "size": 331,
+        "size": 182,
         "extension": ".md",
         "path": "docs/_sidebar.md"
       },
@@ -288,10 +744,32 @@
         "children": []
       },
       {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 586,
+        "extension": "",
+        "path": "front-end/Dockerfile"
+      },
+      {
+        "name": "nginx",
+        "type": "directory",
+        "path": "front-end/nginx",
+        "children": []
+      },
+      {
+        "name": "default.conf",
+        "type": "file",
+        "language": "Config",
+        "size": 527,
+        "extension": ".conf",
+        "path": "front-end/nginx/default.conf"
+      },
+      {
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 726,
+        "size": 9296,
         "extension": ".json",
         "path": "front-end/package-lock.json"
       },
@@ -299,7 +777,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 201,
+        "size": 255,
         "extension": ".json",
         "path": "front-end/package.json"
       },
@@ -310,36 +788,60 @@
         "children": []
       },
       {
+        "name": "inicio.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 1069,
+        "extension": ".html",
+        "path": "front-end/pages/inicio.html"
+      },
+      {
         "name": "inscricao.html",
         "type": "file",
         "language": "HTML",
-        "size": 2851,
+        "size": 3289,
         "extension": ".html",
         "path": "front-end/pages/inscricao.html"
       },
       {
-        "name": "portal.html",
+        "name": "login-professor.html",
         "type": "file",
         "language": "HTML",
-        "size": 758,
+        "size": 1897,
         "extension": ".html",
-        "path": "front-end/pages/portal.html"
+        "path": "front-end/pages/login-professor.html"
+      },
+      {
+        "name": "nao-apto.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 1697,
+        "extension": ".html",
+        "path": "front-end/pages/nao-apto.html"
+      },
+      {
+        "name": "ranking.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 3383,
+        "extension": ".html",
+        "path": "front-end/pages/ranking.html"
       },
       {
         "name": "revisao.html",
         "type": "file",
         "language": "HTML",
-        "size": 2962,
+        "size": 3142,
         "extension": ".html",
         "path": "front-end/pages/revisao.html"
       },
       {
-        "name": "solicitacao.html",
+        "name": "solicitacao-registrada.html",
         "type": "file",
         "language": "HTML",
-        "size": 1218,
+        "size": 1656,
         "extension": ".html",
-        "path": "front-end/pages/solicitacao.html"
+        "path": "front-end/pages/solicitacao-registrada.html"
       },
       {
         "name": "src",
@@ -354,18 +856,50 @@
         "children": []
       },
       {
-        "name": "inscricao.ts",
+        "name": "formulario-inscricao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2258,
+        "size": 3948,
         "extension": ".ts",
-        "path": "front-end/src/pages/inscricao.ts"
+        "path": "front-end/src/pages/formulario-inscricao.ts"
+      },
+      {
+        "name": "login-professor.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1525,
+        "extension": ".ts",
+        "path": "front-end/src/pages/login-professor.ts"
+      },
+      {
+        "name": "nao-apto.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 197,
+        "extension": ".ts",
+        "path": "front-end/src/pages/nao-apto.ts"
+      },
+      {
+        "name": "ranking-guard.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 909,
+        "extension": ".ts",
+        "path": "front-end/src/pages/ranking-guard.ts"
+      },
+      {
+        "name": "ranking.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7022,
+        "extension": ".ts",
+        "path": "front-end/src/pages/ranking.ts"
       },
       {
         "name": "revisao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1449,
+        "size": 1647,
         "extension": ".ts",
         "path": "front-end/src/pages/revisao.ts"
       },
@@ -384,10 +918,26 @@
         "children": []
       },
       {
+        "name": "auth.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1811,
+        "extension": ".ts",
+        "path": "front-end/src/services/auth.ts"
+      },
+      {
+        "name": "inscricao-service.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2107,
+        "extension": ".ts",
+        "path": "front-end/src/services/inscricao-service.ts"
+      },
+      {
         "name": "inscricao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 779,
+        "size": 2016,
         "extension": ".ts",
         "path": "front-end/src/services/inscricao.ts"
       },
@@ -398,12 +948,12 @@
         "children": []
       },
       {
-        "name": "inscricao.ts",
+        "name": "dados-inscricao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 545,
+        "size": 992,
         "extension": ".ts",
-        "path": "front-end/src/types/inscricao.ts"
+        "path": "front-end/src/types/dados-inscricao.ts"
       },
       {
         "name": "utils",
@@ -415,7 +965,7 @@
         "name": "storage.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 683,
+        "size": 1027,
         "extension": ".ts",
         "path": "front-end/src/utils/storage.ts"
       },
@@ -437,41 +987,65 @@
         "name": "global.css",
         "type": "file",
         "language": "CSS",
-        "size": 197,
+        "size": 6420,
         "extension": ".css",
         "path": "front-end/styles/global.css"
+      },
+      {
+        "name": "inicio.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 710,
+        "extension": ".css",
+        "path": "front-end/styles/inicio.css"
       },
       {
         "name": "inscricao.css",
         "type": "file",
         "language": "CSS",
-        "size": 2401,
+        "size": 1022,
         "extension": ".css",
         "path": "front-end/styles/inscricao.css"
       },
       {
-        "name": "portal.css",
+        "name": "login-professor.css",
         "type": "file",
         "language": "CSS",
-        "size": 1614,
+        "size": 739,
         "extension": ".css",
-        "path": "front-end/styles/portal.css"
+        "path": "front-end/styles/login-professor.css"
+      },
+      {
+        "name": "nao-apto.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 682,
+        "extension": ".css",
+        "path": "front-end/styles/nao-apto.css"
+      },
+      {
+        "name": "ranking.css",
+        "type": "file",
+        "language": "CSS",
+        "size": 4191,
+        "extension": ".css",
+        "path": "front-end/styles/ranking.css"
       },
       {
         "name": "revisao.css",
         "type": "file",
         "language": "CSS",
-        "size": 2512,
+        "size": 1083,
         "extension": ".css",
         "path": "front-end/styles/revisao.css"
       },
       {
-        "name": "solicitacao.css",
+        "name": "solicitacao-registrada.css",
         "type": "file",
         "language": "CSS",
-        "size": 4251,
+        "size": 753,
         "extension": ".css",
-        "path": "front-end/styles/solicitacao.css"
+        "path": "front-end/styles/solicitacao-registrada.css"
       },
       {
         "name": "tsconfig.json",
@@ -482,39 +1056,39 @@
         "path": "front-end/tsconfig.json"
       },
       {
-        "name": "python_scripts",
+        "name": "package-lock.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 97,
+        "extension": ".json",
+        "path": "package-lock.json"
+      },
+      {
+        "name": "requirements.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 138,
+        "extension": ".txt",
+        "path": "requirements.txt"
+      },
+      {
+        "name": "scripts",
         "type": "directory",
-        "path": "python_scripts",
+        "path": "scripts",
         "children": []
       },
       {
-        "name": "leitura_creditos.py",
+        "name": "setup.sh",
         "type": "file",
-        "language": "Python",
-        "size": 287,
-        "extension": ".py",
-        "path": "python_scripts/leitura_creditos.py"
-      },
-      {
-        "name": "leiturapdf.py",
-        "type": "file",
-        "language": "Python",
-        "size": 1608,
-        "extension": ".py",
-        "path": "python_scripts/leiturapdf.py"
-      },
-      {
-        "name": "main.py",
-        "type": "file",
-        "language": "Python",
-        "size": 92,
-        "extension": ".py",
-        "path": "python_scripts/main.py"
+        "language": "Shell",
+        "size": 4823,
+        "extension": ".sh",
+        "path": "scripts/setup.sh"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-18T14:49:24.904516+00:00",
+    "extracted_at": "2026-11-19T15:14:44.805097+00:00",
     "file_path": "data/silver/hierarchy_2026-2-MonitoraUnB.json"
   }
 }
