@@ -1,10 +1,160 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-19T15:09:47.209033+00:00",
+      "extracted_at": "2026-11-20T14:50:17.755863+00:00",
       "file_path": "data/bronze/commits_2026-2-GlossarioUnB.json",
-      "record_count": 64
+      "record_count": 70
     }
+  },
+  {
+    "sha": "c76fa259fba5609373f3f120accbd49108c61cd0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-20T02:19:01Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T02:19:01Z"
+      },
+      "message": "docs: AGENTS.md conciso na raiz do repositório (#108)\n\nAdiciona o AGENTS.md na raiz, com cerca de 40 linhas: os comandos, onde está cada coisa, as 5 regras que o agente não pode quebrar (schema do termo, sem framework no front e biblioteca só pelas listas fechadas da ADR 0010, sem segredo no front, Conventional Commits e registro no AI-USAGE) e os padrões de código do ARQUITETURA.md.\n\nCloses #95"
+    },
+    "parents": [
+      "c5faa08bcf3825b96da0850704132276de28e524"
+    ],
+    "additions": 41,
+    "deletions": 0,
+    "total_changes": 41,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "c5faa08bcf3825b96da0850704132276de28e524",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-20T02:18:19Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T02:18:19Z"
+      },
+      "message": "refactor(coleta): reduz a complexidade da coletar e o laço do idLivre (avisos do SonarQube) (#129)\n\nResolve 2 avisos de manutenção do SonarQube sem mudar o comportamento:\n\n- coleta/coletor-html.js: a coletar (complexidade cognitiva 18, limite 15) ganha duas funções, lerRobots e coletarFonte, e fica só com o laço, a espera entre pedidos e a lista de erros\n- coleta/deduplicar.js: o for do idLivre vira um while com o contador explícito\n\nRelacionado a #50."
+    },
+    "parents": [
+      "7349dfc43bcf2f5d4c08be6067c690ebcb022e8f"
+    ],
+    "additions": 30,
+    "deletions": 18,
+    "total_changes": 48,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "7349dfc43bcf2f5d4c08be6067c690ebcb022e8f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-20T02:17:45Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T02:17:45Z"
+      },
+      "message": "test(coleta): remove import sem uso no teste do classificador (#125)\n\nRemove o import de promisify da linha 8 do tests/classificador.test.js, que não é usado no arquivo e entrou com o #104. Era o único erro que o ESLint do #120 acha na main (no-unused-vars).\n\nRelacionado a #79."
+    },
+    "parents": [
+      "7b8e2220dc722f4f824db415c1d8596c5ee8fa60"
+    ],
+    "additions": 0,
+    "deletions": 1,
+    "total_changes": 1,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "7b8e2220dc722f4f824db415c1d8596c5ee8fa60",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-20T02:16:38Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T02:16:38Z"
+      },
+      "message": "docs: catálogo das fontes de dados de termos da UnB (#122)\n\nCria o docs/FONTES-DE-DADOS.md com 14 fontes de termos, cada uma com endereço, formato, número estimado de termos, data, o que o robots.txt permite, se o robô coleta sozinho e a prioridade, e como o robô lê cada tipo de fonte (lista com padrão fixo, texto corrido com o Gemini e revisão no PR, PDF depois do leitor da #55). Entre elas, o glossário de siglas do TermiTraDiCo, a lista do PDI 2023–2028, o Manual do Calouro 2026/2 e as páginas da UnB das gírias do campus.\n\n- README.md e docs/REQUISITOS.md: links para o catálogo\n- AI-USAGE.md: linhas de 17/11 (#52, #69 e #70)\n\nCloses #52"
+    },
+    "parents": [
+      "85ec9a8bfaa156a0c98d3477e6a70ed54d299846"
+    ],
+    "additions": 180,
+    "deletions": 1,
+    "total_changes": 181,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "85ec9a8bfaa156a0c98d3477e6a70ed54d299846",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-20T02:16:15Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T02:16:15Z"
+      },
+      "message": "docs: termos da trilha do calouro (Primeiros passos na UnB) (#123)\n\nCria o docs/TRILHA-CALOURO.md com os 20 termos da trilha \"Primeiros passos na UnB\" em 6 grupos (onde comer e onde estudar, notas, sistemas, matrícula e trancamento, apoio estudantil e gírias do campus), cada um com fonte da UnB, quase todos do Manual do Calouro 2026/2 do DEG. Ficaram de fora o PPAES (o nome não aparece no Manual do Calouro) e o Udefinho (sem página da UnB que o robô consiga ler).\n\nParte da #69 (a issue fecha depois da validação com calouros ou veteranos)."
+    },
+    "parents": [
+      "d857dc89f36d017489772c111f6fc02212e843c5"
+    ],
+    "additions": 50,
+    "deletions": 0,
+    "total_changes": 50,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "d857dc89f36d017489772c111f6fc02212e843c5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-20T02:15:46Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T02:15:46Z"
+      },
+      "message": "refactor(frontend): regras de cada página em módulos com teste (busca, lista, ficha, tema) (#138)\n\nAs regras de cada página saem do frontend/js/app.js para módulos sem DOM, com teste no Node: busca.js (início, incluindo a trilha do calouro), lista.js (todas as siglas), ficha.js (termo) e tema.js. O app.js fica só com a tela. Nada muda para quem usa o site (fotos do DOM iguais em 41 situações).\n\n- tests/busca.test.js, lista.test.js, ficha.test.js e tema.test.js: 26 testes, os 4 módulos com 100% de cobertura\n- frontend/sw.js: os módulos no app shell e o cache na v15\n- tests/sabotagens/tela.json: 6 defeitos para o teste de sabotagem\n- docs/ARQUITETURA.md e frontend/README.md: a pasta js/ lista os módulos\n\nRelacionado a #50."
+    },
+    "parents": [
+      "7101a889fd4f56a42b0df4a9e1e82ed5c02e4949"
+    ],
+    "additions": 476,
+    "deletions": 94,
+    "total_changes": 570,
+    "repo_name": "2026-2-GlossarioUnB"
   },
   {
     "sha": "7101a889fd4f56a42b0df4a9e1e82ed5c02e4949",

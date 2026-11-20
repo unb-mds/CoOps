@@ -1,10 +1,86 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-19T15:07:51.680420+00:00",
+      "extracted_at": "2026-11-20T14:48:20.877437+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaUnB.json",
-      "record_count": 450
+      "record_count": 453
     }
+  },
+  {
+    "sha": "bfda00b8c229b70c613117a99182f1b2e4379101",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-20T00:40:11Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T00:40:11Z"
+      },
+      "message": "Merge pull request #247 from unb-mds/feat/mesclar-nova-interface\n\nfeat(interface): nova interface editorial com ajustes do grupo (#245)"
+    },
+    "parents": [
+      "e62ab2d4a523ba0a4e123d7e5899291a4ebbff45",
+      "e98c0991f5fab939855a5435d3030575a29f1d74"
+    ],
+    "additions": 2162,
+    "deletions": 892,
+    "total_changes": 3054,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e98c0991f5fab939855a5435d3030575a29f1d74",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-19T22:43:14Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-19T22:43:14Z"
+      },
+      "message": "feat(interface): mescla a nova interface do #246 com ajustes do grupo\n\nTraz do PR #246 a home, a paleta (fundo preto com verde; tema claro\nverde), o topo, o rodapé, as fontes, o ranking, o comparador e a\npágina Sobre da nova interface editorial.\n\nAjustes pedidos pelo grupo:\n- Logo: capelo branco novo no tema escuro; no claro, o desenho antigo\n  com o azul trocado pelo verde da paleta.\n- Consulta e perfil: voltam as cinco estrelas amarelas preenchidas\n  conforme a média e a barra de dificuldade por disciplina.\n- Botões Avaliar, Comentários e Comparar sempre visíveis, no estilo\n  novo (.btn e .btn.ghost).\n- Página e link de denúncia (#215) adaptados ao novo visual.\n\nFica de fora: reações nos comentários (rota, repositório e migração\n005_reacoes, que conflitava com 005_denuncias) e a documentação do\n#246. Arquivos mantidos com fim de linha LF.\n\nRefs #245, #246\n\nCo-authored-by: Geovanaduartee <[email removed]>\nCo-Authored-By: Claude Opus 5.5 <[email removed]>"
+    },
+    "parents": [
+      "7d821856214aaf9c3da0690ec0fb69b90a987829"
+    ],
+    "additions": 1475,
+    "deletions": 881,
+    "total_changes": 2356,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "7d821856214aaf9c3da0690ec0fb69b90a987829",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-18T22:45:29Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-18T22:45:29Z"
+      },
+      "message": "feat(comentarios): denúncia privada de comentários (#215)"
+    },
+    "parents": [
+      "e62ab2d4a523ba0a4e123d7e5899291a4ebbff45"
+    ],
+    "additions": 692,
+    "deletions": 16,
+    "total_changes": 708,
+    "repo_name": "2026-2-AvaliaUnB"
   },
   {
     "sha": "e62ab2d4a523ba0a4e123d7e5899291a4ebbff45",
