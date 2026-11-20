@@ -2,19 +2,19 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-19T15:13:36.536318+00:00",
+  "analyzed_at": "2026-11-20T14:53:53.123466+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 295,
-  "total_bytes": 3232637,
+  "total_files": 318,
+  "total_bytes": 3450056,
   "languages": [
     {
       "language": "Python",
-      "file_count": 109,
-      "total_bytes": 1191583,
-      "percentage": 36.86,
+      "file_count": 111,
+      "total_bytes": 1254951,
+      "percentage": 36.37,
       "files": [
         {
           "path": "Back/app/modules/scraper/hub.py",
@@ -25,19 +25,19 @@
         {
           "path": "Back/app/modules/scraper/parser.py",
           "name": "parser.py",
-          "size": 40648,
+          "size": 46244,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/scraper/pipeline.py",
+          "name": "pipeline.py",
+          "size": 40649,
           "extension": ".py"
         },
         {
           "path": "Back/tests/test_expansao_portais_fase2_scrapers.py",
           "name": "test_expansao_portais_fase2_scrapers.py",
           "size": 39825,
-          "extension": ".py"
-        },
-        {
-          "path": "Back/app/modules/scraper/pipeline.py",
-          "name": "pipeline.py",
-          "size": 38808,
           "extension": ".py"
         },
         {
@@ -82,7 +82,7 @@
       "language": "PNG Image",
       "file_count": 9,
       "total_bytes": 959600,
-      "percentage": 29.68,
+      "percentage": 27.81,
       "files": [
         {
           "path": "docs/Requisitos/imagens/requisitos_board.png",
@@ -142,9 +142,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 105,
-      "total_bytes": 801382,
-      "percentage": 24.79,
+      "file_count": 108,
+      "total_bytes": 818536,
+      "percentage": 23.73,
       "files": [
         {
           "path": ".github/skills/neon-functions/SKILL.md",
@@ -210,14 +210,14 @@
     },
     {
       "language": "JSON",
-      "file_count": 7,
-      "total_bytes": 148502,
-      "percentage": 4.59,
+      "file_count": 8,
+      "total_bytes": 192542,
+      "percentage": 5.58,
       "files": [
         {
           "path": "Front/package-lock.json",
           "name": "package-lock.json",
-          "size": 124638,
+          "size": 168125,
           "extension": ".json"
         },
         {
@@ -229,13 +229,19 @@
         {
           "path": "Front/package.json",
           "name": "package.json",
-          "size": 952,
+          "size": 1166,
           "extension": ".json"
         },
         {
           "path": "Front/tsconfig.json",
           "name": "tsconfig.json",
           "size": 629,
+          "extension": ".json"
+        },
+        {
+          "path": "skills-lock.json",
+          "name": "skills-lock.json",
+          "size": 339,
           "extension": ".json"
         },
         {
@@ -260,33 +266,57 @@
     },
     {
       "language": "TypeScript",
-      "file_count": 30,
-      "total_bytes": 52052,
-      "percentage": 1.61,
+      "file_count": 37,
+      "total_bytes": 84183,
+      "percentage": 2.44,
       "files": [
         {
           "path": "Front/src/pages/EditalDetailPage.tsx",
           "name": "EditalDetailPage.tsx",
-          "size": 7136,
+          "size": 7562,
           "extension": ".tsx"
         },
         {
-          "path": "Front/src/components/GoogleSignInButton.tsx",
-          "name": "GoogleSignInButton.tsx",
-          "size": 3755,
+          "path": "Front/src/pages/HomePage.tsx",
+          "name": "HomePage.tsx",
+          "size": 6943,
+          "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/pages/LoginPage.tsx",
+          "name": "LoginPage.tsx",
+          "size": 4632,
+          "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/components/AlertButton.tsx",
+          "name": "AlertButton.tsx",
+          "size": 3847,
           "extension": ".tsx"
         },
         {
           "path": "Front/src/pages/__tests__/EditalDetailPage.test.tsx",
           "name": "EditalDetailPage.test.tsx",
-          "size": 3337,
+          "size": 3826,
           "extension": ".tsx"
         },
         {
-          "path": "Front/src/components/Header.tsx",
-          "name": "Header.tsx",
-          "size": 3179,
+          "path": "Front/src/components/GoogleSignInButton.tsx",
+          "name": "GoogleSignInButton.tsx",
+          "size": 3752,
           "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/pages/__tests__/HomePage.test.tsx",
+          "name": "HomePage.test.tsx",
+          "size": 3640,
+          "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/services/notificacoesService.ts",
+          "name": "notificacoesService.ts",
+          "size": 3322,
+          "extension": ".ts"
         },
         {
           "path": "Front/src/services/authService.ts",
@@ -295,34 +325,42 @@
           "extension": ".ts"
         },
         {
-          "path": "Front/src/pages/HomePage.tsx",
-          "name": "HomePage.tsx",
-          "size": 2950,
-          "extension": ".tsx"
-        },
-        {
           "path": "Front/src/pages/RegisterPage.tsx",
           "name": "RegisterPage.tsx",
-          "size": 2253,
+          "size": 2989,
           "extension": ".tsx"
+        }
+      ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 4,
+      "total_bytes": 54563,
+      "percentage": 1.58,
+      "files": [
+        {
+          "path": "Front/src/theme.css",
+          "name": "theme.css",
+          "size": 34499,
+          "extension": ".css"
         },
         {
-          "path": "Front/src/contexts/AuthContext.tsx",
-          "name": "AuthContext.tsx",
-          "size": 2143,
-          "extension": ".tsx"
+          "path": "Front/src/index.css",
+          "name": "index.css",
+          "size": 14190,
+          "extension": ".css"
         },
         {
-          "path": "Front/src/utils/editalDisplay.ts",
-          "name": "editalDisplay.ts",
-          "size": 2128,
-          "extension": ".ts"
+          "path": "docs/stylesheets/extra.css",
+          "name": "extra.css",
+          "size": 5277,
+          "extension": ".css"
         },
         {
-          "path": "Front/src/components/__tests__/FavoriteButton.test.tsx",
-          "name": "FavoriteButton.test.tsx",
-          "size": 2105,
-          "extension": ".tsx"
+          "path": "Front/src/styles/tokens.css",
+          "name": "tokens.css",
+          "size": 597,
+          "extension": ".css"
         }
       ]
     },
@@ -330,7 +368,7 @@
       "language": "WebP Image",
       "file_count": 1,
       "total_bytes": 46900,
-      "percentage": 1.45,
+      "percentage": 1.36,
       "files": [
         {
           "path": "docs/assets/img/pattern-swirls.webp",
@@ -341,35 +379,15 @@
       ]
     },
     {
-      "language": "CSS",
-      "file_count": 2,
-      "total_bytes": 16696,
-      "percentage": 0.52,
-      "files": [
-        {
-          "path": "Front/src/index.css",
-          "name": "index.css",
-          "size": 11419,
-          "extension": ".css"
-        },
-        {
-          "path": "docs/stylesheets/extra.css",
-          "name": "extra.css",
-          "size": 5277,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
       "language": "YAML",
       "file_count": 16,
-      "total_bytes": 10828,
-      "percentage": 0.33,
+      "total_bytes": 12204,
+      "percentage": 0.35,
       "files": [
         {
           "path": ".github/workflows/pipeline.yml",
           "name": "pipeline.yml",
-          "size": 2992,
+          "size": 3548,
           "extension": ".yml"
         },
         {
@@ -381,7 +399,7 @@
         {
           "path": "docker-compose.yml",
           "name": "docker-compose.yml",
-          "size": 1314,
+          "size": 1842,
           "extension": ".yml"
         },
         {
@@ -399,7 +417,7 @@
         {
           "path": "render.yaml",
           "name": "render.yaml",
-          "size": 446,
+          "size": 738,
           "extension": ".yaml"
         },
         {
@@ -425,6 +443,72 @@
           "name": "openai.yaml",
           "size": 139,
           "extension": ".yaml"
+        }
+      ]
+    },
+    {
+      "language": "Text",
+      "file_count": 2,
+      "total_bytes": 10640,
+      "percentage": 0.31,
+      "files": [
+        {
+          "path": ".agents/skills/frontend-design/LICENSE.txt",
+          "name": "LICENSE.txt",
+          "size": 10174,
+          "extension": ".txt"
+        },
+        {
+          "path": "Back/requirements.txt",
+          "name": "requirements.txt",
+          "size": 466,
+          "extension": ".txt"
+        }
+      ]
+    },
+    {
+      "language": "SQL",
+      "file_count": 3,
+      "total_bytes": 7177,
+      "percentage": 0.21,
+      "files": [
+        {
+          "path": "db/migrations/001_initial_schema.sql",
+          "name": "001_initial_schema.sql",
+          "size": 4360,
+          "extension": ".sql"
+        },
+        {
+          "path": "db/migrations/003_seed_editais.sql",
+          "name": "003_seed_editais.sql",
+          "size": 2560,
+          "extension": ".sql"
+        },
+        {
+          "path": "db/migrations/002_seed_catalogos.sql",
+          "name": "002_seed_catalogos.sql",
+          "size": 257,
+          "extension": ".sql"
+        }
+      ]
+    },
+    {
+      "language": "SVG Image",
+      "file_count": 2,
+      "total_bytes": 3887,
+      "percentage": 0.11,
+      "files": [
+        {
+          "path": "Front/public/assets/af98f.svg",
+          "name": "af98f.svg",
+          "size": 1987,
+          "extension": ".svg"
+        },
+        {
+          "path": "Front/public/assets/790c2.svg",
+          "name": "790c2.svg",
+          "size": 1900,
+          "extension": ".svg"
         }
       ]
     },
@@ -501,7 +585,7 @@
     {
       "language": "Git Ignore",
       "file_count": 3,
-      "total_bytes": 741,
+      "total_bytes": 818,
       "percentage": 0.02,
       "files": [
         {
@@ -513,7 +597,7 @@
         {
           "path": "Front/.gitignore",
           "name": ".gitignore",
-          "size": 164,
+          "size": 241,
           "extension": ".gitignore"
         },
         {
@@ -526,14 +610,20 @@
     },
     {
       "language": "No Extension",
-      "file_count": 1,
-      "total_bytes": 652,
+      "file_count": 2,
+      "total_bytes": 797,
       "percentage": 0.02,
       "files": [
         {
           "path": "Back/Dockerfile",
           "name": "Dockerfile",
           "size": 652,
+          "extension": ""
+        },
+        {
+          "path": "Front/Dockerfile",
+          "name": "Dockerfile",
+          "size": 145,
           "extension": ""
         }
       ]
@@ -553,23 +643,9 @@
       ]
     },
     {
-      "language": "Text",
-      "file_count": 1,
-      "total_bytes": 466,
-      "percentage": 0.01,
-      "files": [
-        {
-          "path": "Back/requirements.txt",
-          "name": "requirements.txt",
-          "size": 466,
-          "extension": ".txt"
-        }
-      ]
-    },
-    {
       "language": "Docker Ignore",
-      "file_count": 1,
-      "total_bytes": 91,
+      "file_count": 2,
+      "total_bytes": 114,
       "percentage": 0.0,
       "files": [
         {
@@ -577,12 +653,18 @@
           "name": ".dockerignore",
           "size": 91,
           "extension": ".dockerignore"
+        },
+        {
+          "path": "Front/.dockerignore",
+          "name": ".dockerignore",
+          "size": 23,
+          "extension": ".dockerignore"
         }
       ]
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-19T15:14:44.839891+00:00",
+    "extracted_at": "2026-11-20T14:55:01.988648+00:00",
     "file_path": "data/silver/language_analysis_Fique-de-Olho.json"
   }
 }

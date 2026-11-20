@@ -2,19 +2,19 @@
   "repository": "2026-2-Bandejao",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-19T15:13:41.999702+00:00",
+  "analyzed_at": "2026-11-20T14:53:58.024961+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 236,
-  "total_bytes": 1975248,
+  "total_files": 243,
+  "total_bytes": 2007523,
   "languages": [
     {
       "language": "PDF",
       "file_count": 6,
       "total_bytes": 790640,
-      "percentage": 40.03,
+      "percentage": 39.38,
       "files": [
         {
           "path": "extracao/tests/fixtures/publicacao-2026-10-27/Darcy-Ribeiro-Semana-02-26-10-a-01-11-2.pdf",
@@ -56,14 +56,14 @@
     },
     {
       "language": "Markdown",
-      "file_count": 53,
-      "total_bytes": 303383,
-      "percentage": 15.36,
+      "file_count": 57,
+      "total_bytes": 325593,
+      "percentage": 16.22,
       "files": [
         {
           "path": "docs/Requisitos.md",
           "name": "Requisitos.md",
-          "size": 40648,
+          "size": 42340,
           "extension": ".md"
         },
         {
@@ -75,7 +75,13 @@
         {
           "path": "docs/changelog.md",
           "name": "changelog.md",
-          "size": 14428,
+          "size": 16540,
+          "extension": ".md"
+        },
+        {
+          "path": "contexto.md",
+          "name": "contexto.md",
+          "size": 11502,
           "extension": ".md"
         },
         {
@@ -85,9 +91,9 @@
           "extension": ".md"
         },
         {
-          "path": "contexto.md",
-          "name": "contexto.md",
-          "size": 10641,
+          "path": "README.md",
+          "name": "README.md",
+          "size": 10339,
           "extension": ".md"
         },
         {
@@ -109,12 +115,6 @@
           "extension": ".md"
         },
         {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 8858,
-          "extension": ".md"
-        },
-        {
           "path": "docs/estudos/extracao_dados_pdf.md",
           "name": "extracao_dados_pdf.md",
           "size": 8685,
@@ -126,7 +126,7 @@
       "language": "Python",
       "file_count": 79,
       "total_bytes": 260836,
-      "percentage": 13.21,
+      "percentage": 12.99,
       "files": [
         {
           "path": "extracao/extracao/main.py",
@@ -192,9 +192,9 @@
     },
     {
       "language": "JSON",
-      "file_count": 14,
-      "total_bytes": 230711,
-      "percentage": 11.68,
+      "file_count": 15,
+      "total_bytes": 232649,
+      "percentage": 11.59,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -239,6 +239,12 @@
           "extension": ".json"
         },
         {
+          "path": "docs/evidencias/dados/publicacao-release2-2026-11-19.json",
+          "name": "publicacao-release2-2026-11-19.json",
+          "size": 1938,
+          "extension": ".json"
+        },
+        {
           "path": "docs/evidencias/dados/publicacao-https-2026-10-27.json",
           "name": "publicacao-https-2026-10-27.json",
           "size": 887,
@@ -249,31 +255,25 @@
           "name": "publicacao-https-2026-11-11-utc.json",
           "size": 887,
           "extension": ".json"
-        },
-        {
-          "path": "frontend/package.json",
-          "name": "package.json",
-          "size": 693,
-          "extension": ".json"
         }
       ]
     },
     {
       "language": "TypeScript",
-      "file_count": 44,
-      "total_bytes": 166910,
-      "percentage": 8.45,
+      "file_count": 46,
+      "total_bytes": 174664,
+      "percentage": 8.7,
       "files": [
         {
           "path": "frontend/src/App.tsx",
           "name": "App.tsx",
-          "size": 23179,
+          "size": 23299,
           "extension": ".tsx"
         },
         {
           "path": "frontend/src/screens/CardapioTab.tsx",
           "name": "CardapioTab.tsx",
-          "size": 12135,
+          "size": 11940,
           "extension": ".tsx"
         },
         {
@@ -330,7 +330,7 @@
       "language": "PNG Image",
       "file_count": 3,
       "total_bytes": 149399,
-      "percentage": 7.56,
+      "percentage": 7.44,
       "files": [
         {
           "path": "docs/evidencias/capturas/privacidade-desktop.png",
@@ -356,7 +356,7 @@
       "language": "SVG Image",
       "file_count": 4,
       "total_bytes": 27388,
-      "percentage": 1.39,
+      "percentage": 1.36,
       "files": [
         {
           "path": "frontend/public/favicon.svg",
@@ -387,8 +387,8 @@
     {
       "language": "YAML",
       "file_count": 7,
-      "total_bytes": 16423,
-      "percentage": 0.83,
+      "total_bytes": 16796,
+      "percentage": 0.84,
       "files": [
         {
           "path": ".github/workflows/sincronizacao.yml",
@@ -399,19 +399,19 @@
         {
           "path": ".github/workflows/ci.yml",
           "name": "ci.yml",
-          "size": 2735,
+          "size": 2973,
+          "extension": ".yml"
+        },
+        {
+          "path": "mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 2788,
           "extension": ".yml"
         },
         {
           "path": ".github/workflows/sast.yml",
           "name": "sast.yml",
           "size": 2712,
-          "extension": ".yml"
-        },
-        {
-          "path": "mkdocs.yml",
-          "name": "mkdocs.yml",
-          "size": 2653,
           "extension": ".yml"
         },
         {
@@ -438,7 +438,7 @@
       "language": "JavaScript",
       "file_count": 2,
       "total_bytes": 13990,
-      "percentage": 0.71,
+      "percentage": 0.7,
       "files": [
         {
           "path": "frontend/tests/api.test.js",
@@ -458,7 +458,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 6061,
-      "percentage": 0.31,
+      "percentage": 0.3,
       "files": [
         {
           "path": "frontend/src/index.css",
@@ -672,7 +672,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-19T15:14:44.774301+00:00",
+    "extracted_at": "2026-11-20T14:55:01.935990+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Bandejao.json"
   }
 }

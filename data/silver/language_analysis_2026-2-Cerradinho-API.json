@@ -2,19 +2,19 @@
   "repository": "2026-2-Cerradinho-API",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-19T15:13:35.982049+00:00",
+  "analyzed_at": "2026-11-20T14:53:52.560059+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 242,
-  "total_bytes": 3010945,
+  "total_files": 243,
+  "total_bytes": 3292217,
   "languages": [
     {
       "language": "PDF",
-      "file_count": 5,
-      "total_bytes": 1799767,
-      "percentage": 59.77,
+      "file_count": 6,
+      "total_bytes": 2082415,
+      "percentage": 63.25,
       "files": [
         {
           "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-09-28.pdf",
@@ -35,6 +35,12 @@
           "extension": ".pdf"
         },
         {
+          "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-11-16.pdf",
+          "name": "cardapio_darcy_2026-11-16.pdf",
+          "size": 282648,
+          "extension": ".pdf"
+        },
+        {
           "path": "backend/tests/scrapers/fixtures/cardapio_darcy_2026-09-21.pdf",
           "name": "cardapio_darcy_2026-09-21.pdf",
           "size": 281109,
@@ -52,7 +58,7 @@
       "language": "HTML",
       "file_count": 2,
       "total_bytes": 363910,
-      "percentage": 12.09,
+      "percentage": 11.05,
       "files": [
         {
           "path": "backend/tests/scrapers/fixtures/turmas_fcte_gama_2026_2.html",
@@ -72,7 +78,7 @@
       "language": "Markdown",
       "file_count": 95,
       "total_bytes": 355094,
-      "percentage": 11.79,
+      "percentage": 10.79,
       "files": [
         {
           "path": "AI-USAGE.md",
@@ -140,7 +146,7 @@
       "language": "JSON",
       "file_count": 3,
       "total_bytes": 243451,
-      "percentage": 8.09,
+      "percentage": 7.39,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -165,8 +171,8 @@
     {
       "language": "Python",
       "file_count": 77,
-      "total_bytes": 168407,
-      "percentage": 5.59,
+      "total_bytes": 167031,
+      "percentage": 5.07,
       "files": [
         {
           "path": "backend/app/domain/disciplinas.py",
@@ -183,7 +189,7 @@
         {
           "path": "backend/app/scrapers/cardapio/parser.py",
           "name": "parser.py",
-          "size": 11263,
+          "size": 9162,
           "extension": ".py"
         },
         {
@@ -193,15 +199,15 @@
           "extension": ".py"
         },
         {
-          "path": "backend/app/scrapers/disciplinas/scraper.py",
-          "name": "scraper.py",
-          "size": 5799,
+          "path": "backend/tests/scrapers/test_cardapio_parser.py",
+          "name": "test_cardapio_parser.py",
+          "size": 5929,
           "extension": ".py"
         },
         {
-          "path": "backend/tests/scrapers/test_cardapio_parser.py",
-          "name": "test_cardapio_parser.py",
-          "size": 5204,
+          "path": "backend/app/scrapers/disciplinas/scraper.py",
+          "name": "scraper.py",
+          "size": 5799,
           "extension": ".py"
         },
         {
@@ -234,7 +240,7 @@
       "language": "TypeScript",
       "file_count": 26,
       "total_bytes": 51391,
-      "percentage": 1.71,
+      "percentage": 1.56,
       "files": [
         {
           "path": "frontend/app/disciplinas/page.tsx",
@@ -302,7 +308,7 @@
       "language": "SVG Image",
       "file_count": 6,
       "total_bytes": 13149,
-      "percentage": 0.44,
+      "percentage": 0.4,
       "files": [
         {
           "path": "frontend/app/icon.svg",
@@ -346,7 +352,7 @@
       "language": "YAML",
       "file_count": 5,
       "total_bytes": 9128,
-      "percentage": 0.3,
+      "percentage": 0.28,
       "files": [
         {
           "path": "mkdocs.yml",
@@ -384,7 +390,7 @@
       "language": "CSS",
       "file_count": 1,
       "total_bytes": 2021,
-      "percentage": 0.07,
+      "percentage": 0.06,
       "files": [
         {
           "path": "frontend/app/globals.css",
@@ -486,7 +492,7 @@
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 756,
-      "percentage": 0.03,
+      "percentage": 0.02,
       "files": [
         {
           "path": "frontend/.gitignore",
@@ -526,7 +532,7 @@
       "language": "Text",
       "file_count": 3,
       "total_bytes": 486,
-      "percentage": 0.02,
+      "percentage": 0.01,
       "files": [
         {
           "path": "backend/requirements.txt",
@@ -584,7 +590,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-19T15:14:44.779915+00:00",
+    "extracted_at": "2026-11-20T14:55:01.940276+00:00",
     "file_path": "data/silver/language_analysis_2026-2-Cerradinho-API.json"
   }
 }

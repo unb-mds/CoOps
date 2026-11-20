@@ -2,19 +2,19 @@
   "repository": "2026-2-AvaliaUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-19T15:13:35.311046+00:00",
+  "analyzed_at": "2026-11-20T14:53:52.016157+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 165,
-  "total_bytes": 1875428,
+  "total_files": 174,
+  "total_bytes": 2031396,
   "languages": [
     {
       "language": "Unknown",
       "file_count": 4,
       "total_bytes": 730515,
-      "percentage": 38.95,
+      "percentage": 35.96,
       "files": [
         {
           "path": "docs/backup/turmas_rows.csv",
@@ -44,20 +44,20 @@
     },
     {
       "language": "Python",
-      "file_count": 63,
-      "total_bytes": 395853,
-      "percentage": 21.11,
+      "file_count": 64,
+      "total_bytes": 420999,
+      "percentage": 20.72,
       "files": [
         {
           "path": "app/repositorio.py",
           "name": "repositorio.py",
-          "size": 36019,
+          "size": 38714,
           "extension": ".py"
         },
         {
           "path": "app/controllers/professor_controller.py",
           "name": "professor_controller.py",
-          "size": 24878,
+          "size": 26005,
           "extension": ".py"
         },
         {
@@ -75,7 +75,7 @@
         {
           "path": "tests/test_comentarios_editar_excluir.py",
           "name": "test_comentarios_editar_excluir.py",
-          "size": 19471,
+          "size": 19547,
           "extension": ".py"
         },
         {
@@ -85,15 +85,21 @@
           "extension": ".py"
         },
         {
-          "path": "tests/test_comparacao.py",
-          "name": "test_comparacao.py",
-          "size": 13646,
+          "path": "app/routes/professor_routes.py",
+          "name": "professor_routes.py",
+          "size": 15957,
           "extension": ".py"
         },
         {
-          "path": "app/routes/professor_routes.py",
-          "name": "professor_routes.py",
-          "size": 13554,
+          "path": "tests/test_denuncias_comentarios.py",
+          "name": "test_denuncias_comentarios.py",
+          "size": 14935,
+          "extension": ".py"
+        },
+        {
+          "path": "tests/test_comparacao.py",
+          "name": "test_comparacao.py",
+          "size": 14496,
           "extension": ".py"
         },
         {
@@ -101,20 +107,14 @@
           "name": "test_comentarios.py",
           "size": 13053,
           "extension": ".py"
-        },
-        {
-          "path": "tests/test_comentarios_rotas.py",
-          "name": "test_comentarios_rotas.py",
-          "size": 11687,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "Markdown",
       "file_count": 27,
-      "total_bytes": 224192,
-      "percentage": 11.95,
+      "total_bytes": 227464,
+      "percentage": 11.2,
       "files": [
         {
           "path": "docs/DESIGN_SYSTEM.md",
@@ -125,19 +125,19 @@
         {
           "path": "docs/Modelo de Dados.md",
           "name": "Modelo de Dados.md",
-          "size": 19028,
+          "size": 21444,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/COMENTARIOS.md",
+          "name": "COMENTARIOS.md",
+          "size": 18470,
           "extension": ".md"
         },
         {
           "path": "docs/BACKEND.md",
           "name": "BACKEND.md",
           "size": 18049,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/COMENTARIOS.md",
-          "name": "COMENTARIOS.md",
-          "size": 17871,
           "extension": ".md"
         },
         {
@@ -180,9 +180,9 @@
     },
     {
       "language": "PNG Image",
-      "file_count": 4,
-      "total_bytes": 207280,
-      "percentage": 11.05,
+      "file_count": 5,
+      "total_bytes": 215817,
+      "percentage": 10.62,
       "files": [
         {
           "path": "docs/logo/teste-fundos.png",
@@ -207,87 +207,43 @@
           "name": "teck stack.png",
           "size": 20174,
           "extension": ".png"
-        }
-      ]
-    },
-    {
-      "language": "HTML",
-      "file_count": 17,
-      "total_bytes": 82006,
-      "percentage": 4.37,
-      "files": [
-        {
-          "path": "app/templates/comparacao.html",
-          "name": "comparacao.html",
-          "size": 16896,
-          "extension": ".html"
         },
         {
-          "path": "app/templates/perfil_professor.html",
-          "name": "perfil_professor.html",
-          "size": 12180,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/lista_professores.html",
-          "name": "lista_professores.html",
-          "size": 9898,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/privacidade.html",
-          "name": "privacidade.html",
-          "size": 6810,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/ranking.html",
-          "name": "ranking.html",
-          "size": 4643,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/avaliacao.html",
-          "name": "avaliacao.html",
-          "size": 4364,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/perfil.html",
-          "name": "perfil.html",
-          "size": 4130,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/sobre.html",
-          "name": "sobre.html",
-          "size": 3932,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/editar_comentario.html",
-          "name": "editar_comentario.html",
-          "size": 3526,
-          "extension": ".html"
-        },
-        {
-          "path": "app/templates/index.html",
-          "name": "index.html",
-          "size": 2913,
-          "extension": ".html"
+          "path": "app/static/logo-chapeu-modelo.png",
+          "name": "logo-chapeu-modelo.png",
+          "size": 8537,
+          "extension": ".png"
         }
       ]
     },
     {
       "language": "CSS",
-      "file_count": 13,
-      "total_bytes": 79635,
-      "percentage": 4.25,
+      "file_count": 15,
+      "total_bytes": 136841,
+      "percentage": 6.74,
       "files": [
+        {
+          "path": "app/static/modelo-editorial.css",
+          "name": "modelo-editorial.css",
+          "size": 31419,
+          "extension": ".css"
+        },
+        {
+          "path": "app/static/integracao-editorial.css",
+          "name": "integracao-editorial.css",
+          "size": 23379,
+          "extension": ".css"
+        },
         {
           "path": "app/static/base.css",
           "name": "base.css",
-          "size": 24202,
+          "size": 19931,
+          "extension": ".css"
+        },
+        {
+          "path": "app/static/index.css",
+          "name": "index.css",
+          "size": 11305,
           "extension": ".css"
         },
         {
@@ -297,21 +253,21 @@
           "extension": ".css"
         },
         {
+          "path": "app/static/comentarios.css",
+          "name": "comentarios.css",
+          "size": 7453,
+          "extension": ".css"
+        },
+        {
           "path": "app/static/comparacao.css",
           "name": "comparacao.css",
           "size": 7133,
           "extension": ".css"
         },
         {
-          "path": "app/static/comentarios.css",
-          "name": "comentarios.css",
-          "size": 6658,
-          "extension": ".css"
-        },
-        {
           "path": "app/static/avaliacao.css",
           "name": "avaliacao.css",
-          "size": 5380,
+          "size": 5001,
           "extension": ".css"
         },
         {
@@ -321,42 +277,130 @@
           "extension": ".css"
         },
         {
-          "path": "app/static/index.css",
-          "name": "index.css",
-          "size": 4424,
-          "extension": ".css"
-        },
-        {
           "path": "app/static/auth.css",
           "name": "auth.css",
           "size": 4176,
-          "extension": ".css"
-        },
-        {
-          "path": "app/static/indicadores.css",
-          "name": "indicadores.css",
-          "size": 3532,
-          "extension": ".css"
-        },
-        {
-          "path": "app/static/ranking.css",
-          "name": "ranking.css",
-          "size": 3165,
           "extension": ".css"
         }
       ]
     },
     {
       "language": "WOFF2 Font",
-      "file_count": 1,
-      "total_bytes": 48256,
-      "percentage": 2.57,
+      "file_count": 2,
+      "total_bytes": 93128,
+      "percentage": 4.58,
       "files": [
         {
           "path": "app/static/fonts/inter-latin-wght-normal.woff2",
           "name": "inter-latin-wght-normal.woff2",
           "size": 48256,
           "extension": ".woff2"
+        },
+        {
+          "path": "app/static/fonts/inter-tight-latin.woff2",
+          "name": "inter-tight-latin.woff2",
+          "size": 44872,
+          "extension": ".woff2"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 18,
+      "total_bytes": 89502,
+      "percentage": 4.41,
+      "files": [
+        {
+          "path": "app/templates/comparacao.html",
+          "name": "comparacao.html",
+          "size": 18539,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil_professor.html",
+          "name": "perfil_professor.html",
+          "size": 12577,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/lista_professores.html",
+          "name": "lista_professores.html",
+          "size": 10234,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/privacidade.html",
+          "name": "privacidade.html",
+          "size": 6730,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/index.html",
+          "name": "index.html",
+          "size": 4482,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/avaliacao.html",
+          "name": "avaliacao.html",
+          "size": 4279,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/perfil.html",
+          "name": "perfil.html",
+          "size": 3968,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/denunciar_comentario.html",
+          "name": "denunciar_comentario.html",
+          "size": 3873,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/ranking.html",
+          "name": "ranking.html",
+          "size": 3824,
+          "extension": ".html"
+        },
+        {
+          "path": "app/templates/sobre.html",
+          "name": "sobre.html",
+          "size": 3648,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
+      "language": "JavaScript",
+      "file_count": 4,
+      "total_bytes": 37178,
+      "percentage": 1.83,
+      "files": [
+        {
+          "path": "app/static/campo-busca.js",
+          "name": "campo-busca.js",
+          "size": 21097,
+          "extension": ".js"
+        },
+        {
+          "path": "app/static/fundo-animado.js",
+          "name": "fundo-animado.js",
+          "size": 10813,
+          "extension": ".js"
+        },
+        {
+          "path": "app/static/editorial.js",
+          "name": "editorial.js",
+          "size": 3191,
+          "extension": ".js"
+        },
+        {
+          "path": "app/static/tema.js",
+          "name": "tema.js",
+          "size": 2077,
+          "extension": ".js"
         }
       ]
     },
@@ -364,7 +408,7 @@
       "language": "SVG Image",
       "file_count": 12,
       "total_bytes": 36241,
-      "percentage": 1.93,
+      "percentage": 1.78,
       "files": [
         {
           "path": "docs/logo/teste-fundos.svg",
@@ -429,36 +473,10 @@
       ]
     },
     {
-      "language": "JavaScript",
-      "file_count": 3,
-      "total_bytes": 34042,
-      "percentage": 1.82,
-      "files": [
-        {
-          "path": "app/static/campo-busca.js",
-          "name": "campo-busca.js",
-          "size": 21097,
-          "extension": ".js"
-        },
-        {
-          "path": "app/static/fundo-animado.js",
-          "name": "fundo-animado.js",
-          "size": 10813,
-          "extension": ".js"
-        },
-        {
-          "path": "app/static/tema.js",
-          "name": "tema.js",
-          "size": 2132,
-          "extension": ".js"
-        }
-      ]
-    },
-    {
       "language": "YAML",
       "file_count": 8,
       "total_bytes": 16276,
-      "percentage": 0.87,
+      "percentage": 0.8,
       "files": [
         {
           "path": ".github/workflows/atualizar-dados-sigaa.yml",
@@ -512,9 +530,9 @@
     },
     {
       "language": "SQL",
-      "file_count": 4,
-      "total_bytes": 13151,
-      "percentage": 0.7,
+      "file_count": 5,
+      "total_bytes": 15071,
+      "percentage": 0.74,
       "files": [
         {
           "path": "docs/migrations/004_professores_unicos.sql",
@@ -535,6 +553,12 @@
           "extension": ".sql"
         },
         {
+          "path": "docs/migrations/005_denuncias_comentarios.sql",
+          "name": "005_denuncias_comentarios.sql",
+          "size": 1920,
+          "extension": ".sql"
+        },
+        {
           "path": "docs/migrations/003_emails_verificados.sql",
           "name": "003_emails_verificados.sql",
           "size": 433,
@@ -544,14 +568,20 @@
     },
     {
       "language": "Text",
-      "file_count": 3,
-      "total_bytes": 4774,
-      "percentage": 0.25,
+      "file_count": 4,
+      "total_bytes": 9157,
+      "percentage": 0.45,
       "files": [
         {
           "path": "app/static/fonts/OFL.txt",
           "name": "OFL.txt",
           "size": 4477,
+          "extension": ".txt"
+        },
+        {
+          "path": "app/static/fonts/OFL-Inter-Tight.txt",
+          "name": "OFL-Inter-Tight.txt",
+          "size": 4383,
           "extension": ".txt"
         },
         {
@@ -572,7 +602,7 @@
       "language": "No Extension",
       "file_count": 3,
       "total_bytes": 2699,
-      "percentage": 0.14,
+      "percentage": 0.13,
       "files": [
         {
           "path": ".agents/skills/logo-design/LICENSE",
@@ -638,7 +668,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-19T15:14:44.764836+00:00",
+    "extracted_at": "2026-11-20T14:55:01.928978+00:00",
     "file_path": "data/silver/language_analysis_2026-2-AvaliaUnB.json"
   }
 }

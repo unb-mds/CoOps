@@ -2,7 +2,7 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-19T15:13:40.729360+00:00",
+  "extracted_at": "2026-11-20T14:53:57.049495+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -130,10 +130,18 @@
         "path": ".gitmessage"
       },
       {
+        "name": "AGENTS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3084,
+        "extension": ".md",
+        "path": "AGENTS.md"
+      },
+      {
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5633,
+        "size": 6949,
         "extension": ".md",
         "path": "AI-USAGE.md"
       },
@@ -157,7 +165,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2324,
+        "size": 2379,
         "extension": ".md",
         "path": "README.md"
       },
@@ -195,7 +203,7 @@
         "name": "coletor-html.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 7363,
+        "size": 7783,
         "extension": ".js",
         "path": "coleta/coletor-html.js"
       },
@@ -203,7 +211,7 @@
         "name": "deduplicar.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 7666,
+        "size": 7684,
         "extension": ".js",
         "path": "coleta/deduplicar.js"
       },
@@ -247,7 +255,7 @@
         "name": "ARQUITETURA.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3795,
+        "size": 3876,
         "extension": ".md",
         "path": "docs/ARQUITETURA.md"
       },
@@ -266,6 +274,14 @@
         "size": 6643,
         "extension": ".md",
         "path": "docs/CONVENCAO-GIT.md"
+      },
+      {
+        "name": "FONTES-DE-DADOS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 15886,
+        "extension": ".md",
+        "path": "docs/FONTES-DE-DADOS.md"
       },
       {
         "name": "GUIA-FLUXO-DE-TRABALHO.md",
@@ -287,9 +303,17 @@
         "name": "REQUISITOS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5765,
+        "size": 5916,
         "extension": ".md",
         "path": "docs/REQUISITOS.md"
+      },
+      {
+        "name": "TRILHA-CALOURO.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6132,
+        "extension": ".md",
+        "path": "docs/TRILHA-CALOURO.md"
       },
       {
         "name": "adr",
@@ -599,7 +623,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5096,
+        "size": 5741,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -681,9 +705,41 @@
         "name": "app.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 18332,
+        "size": 16767,
         "extension": ".js",
         "path": "frontend/js/app.js"
+      },
+      {
+        "name": "busca.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2643,
+        "extension": ".js",
+        "path": "frontend/js/busca.js"
+      },
+      {
+        "name": "ficha.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1202,
+        "extension": ".js",
+        "path": "frontend/js/ficha.js"
+      },
+      {
+        "name": "lista.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1924,
+        "extension": ".js",
+        "path": "frontend/js/lista.js"
+      },
+      {
+        "name": "tema.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1133,
+        "extension": ".js",
+        "path": "frontend/js/tema.js"
       },
       {
         "name": "termos.js",
@@ -729,7 +785,7 @@
         "name": "sw.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3960,
+        "size": 4027,
         "extension": ".js",
         "path": "frontend/sw.js"
       },
@@ -856,10 +912,18 @@
         "children": []
       },
       {
+        "name": "busca.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3647,
+        "extension": ".js",
+        "path": "tests/busca.test.js"
+      },
+      {
         "name": "classificador.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 14379,
+        "size": 14340,
         "extension": ".js",
         "path": "tests/classificador.test.js"
       },
@@ -886,6 +950,14 @@
         "size": 8929,
         "extension": ".js",
         "path": "tests/deduplicar.test.js"
+      },
+      {
+        "name": "ficha.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1535,
+        "extension": ".js",
+        "path": "tests/ficha.test.js"
       },
       {
         "name": "fixtures",
@@ -918,6 +990,28 @@
         "path": "tests/fronteira-dependencias.test.js"
       },
       {
+        "name": "lista.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3476,
+        "extension": ".js",
+        "path": "tests/lista.test.js"
+      },
+      {
+        "name": "sabotagens",
+        "type": "directory",
+        "path": "tests/sabotagens",
+        "children": []
+      },
+      {
+        "name": "tela.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1720,
+        "extension": ".json",
+        "path": "tests/sabotagens/tela.json"
+      },
+      {
         "name": "servidor-local.test.js",
         "type": "file",
         "language": "JavaScript",
@@ -932,6 +1026,14 @@
         "size": 3123,
         "extension": ".js",
         "path": "tests/sobre.test.js"
+      },
+      {
+        "name": "tema.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1350,
+        "extension": ".js",
+        "path": "tests/tema.test.js"
       },
       {
         "name": "termos.test.js",
@@ -960,7 +1062,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-19T15:14:44.801975+00:00",
+    "extracted_at": "2026-11-20T14:55:01.960466+00:00",
     "file_path": "data/silver/hierarchy_2026-2-GlossarioUnB.json"
   }
 }
