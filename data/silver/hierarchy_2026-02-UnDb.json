@@ -2,7 +2,7 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-20T14:53:55.014835+00:00",
+  "extracted_at": "2026-11-21T14:16:36.025828+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -77,7 +77,7 @@
         "name": "pull-request.yml",
         "type": "file",
         "language": "YAML",
-        "size": 10561,
+        "size": 11780,
         "extension": ".yml",
         "path": ".github/workflows/pull-request.yml"
       },
@@ -93,7 +93,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 161,
+        "size": 168,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -118,6 +118,14 @@
         "size": 1450,
         "extension": ".md",
         "path": "AGENTS.md"
+      },
+      {
+        "name": "AI_USAGE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7053,
+        "extension": ".md",
+        "path": "AI_USAGE.md"
       },
       {
         "name": "CHANGELOG.md",
@@ -147,7 +155,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5723,
+        "size": 7760,
         "extension": ".md",
         "path": "README.md"
       },
@@ -169,7 +177,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 2124,
+        "size": 5230,
         "extension": ".example",
         "path": "backend/.env.example"
       },
@@ -199,7 +207,7 @@
         "name": "env.py",
         "type": "file",
         "language": "Python",
-        "size": 1322,
+        "size": 1668,
         "extension": ".py",
         "path": "backend/alembic/env.py"
       },
@@ -330,6 +338,70 @@
         "path": "backend/alembic/versions/20261115_01_password_reset_tokens.py"
       },
       {
+        "name": "20261115_02_canal_titulares.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2035,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261115_02_canal_titulares.py"
+      },
+      {
+        "name": "20261117_01_contadores_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1461,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_01_contadores_abuso.py"
+      },
+      {
+        "name": "20261117_02_ciencia_termos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 996,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_02_ciencia_termos.py"
+      },
+      {
+        "name": "20261117_02_retencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3804,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_02_retencao.py"
+      },
+      {
+        "name": "20261117_03_registros_acesso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1213,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_03_registros_acesso.py"
+      },
+      {
+        "name": "20261117_03_votos_comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1063,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_03_votos_comentario.py"
+      },
+      {
+        "name": "20261117_04_reconciliar_266_269.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1363,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_04_reconciliar_266_269.py"
+      },
+      {
+        "name": "20261117_05_reconciliar_votos_acessos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1316,
+        "extension": ".py",
+        "path": "backend/alembic/versions/20261117_05_reconciliar_votos_acessos.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -369,7 +441,7 @@
         "name": "avaliar_triagem.py",
         "type": "file",
         "language": "Python",
-        "size": 3380,
+        "size": 3418,
         "extension": ".py",
         "path": "backend/app/commands/avaliar_triagem.py"
       },
@@ -377,7 +449,7 @@
         "name": "descartar_moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 913,
+        "size": 1325,
         "extension": ".py",
         "path": "backend/app/commands/descartar_moderacao.py"
       },
@@ -412,6 +484,14 @@
         "size": 719,
         "extension": ".py",
         "path": "backend/app/commands/iniciar_servidor.py"
+      },
+      {
+        "name": "limpar_contadores_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1077,
+        "extension": ".py",
+        "path": "backend/app/commands/limpar_contadores_abuso.py"
       },
       {
         "name": "moderador.py",
@@ -455,7 +535,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 2948,
+        "size": 3075,
         "extension": ".py",
         "path": "backend/app/core/auth.py"
       },
@@ -463,7 +543,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 1422,
+        "size": 7704,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -471,9 +551,73 @@
         "name": "database.py",
         "type": "file",
         "language": "Python",
-        "size": 473,
+        "size": 495,
         "extension": ".py",
         "path": "backend/app/core/database.py"
+      },
+      {
+        "name": "dependencia_auth_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 487,
+        "extension": ".py",
+        "path": "backend/app/core/dependencia_auth_abuso.py"
+      },
+      {
+        "name": "dependencia_limite_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1580,
+        "extension": ".py",
+        "path": "backend/app/core/dependencia_limite_abuso.py"
+      },
+      {
+        "name": "http_errors.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2494,
+        "extension": ".py",
+        "path": "backend/app/core/http_errors.py"
+      },
+      {
+        "name": "limite_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2890,
+        "extension": ".py",
+        "path": "backend/app/core/limite_abuso.py"
+      },
+      {
+        "name": "origins.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2477,
+        "extension": ".py",
+        "path": "backend/app/core/origins.py"
+      },
+      {
+        "name": "protecao_fluxos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3486,
+        "extension": ".py",
+        "path": "backend/app/core/protecao_fluxos.py"
+      },
+      {
+        "name": "registros_acesso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3807,
+        "extension": ".py",
+        "path": "backend/app/core/registros_acesso.py"
+      },
+      {
+        "name": "safe_logging.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3967,
+        "extension": ".py",
+        "path": "backend/app/core/safe_logging.py"
       },
       {
         "name": "security.py",
@@ -523,9 +667,41 @@
         "name": "avaliacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 3369,
+        "size": 3793,
         "extension": ".py",
         "path": "backend/app/domain/avaliacoes.py"
+      },
+      {
+        "name": "email.py",
+        "type": "file",
+        "language": "Python",
+        "size": 253,
+        "extension": ".py",
+        "path": "backend/app/domain/email.py"
+      },
+      {
+        "name": "filtro_moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3592,
+        "extension": ".py",
+        "path": "backend/app/domain/filtro_moderacao.py"
+      },
+      {
+        "name": "limite_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2791,
+        "extension": ".py",
+        "path": "backend/app/domain/limite_abuso.py"
+      },
+      {
+        "name": "termos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 107,
+        "extension": ".py",
+        "path": "backend/app/domain/termos.py"
       },
       {
         "name": "texto.py",
@@ -539,7 +715,7 @@
         "name": "triagem_comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 1673,
+        "size": 1695,
         "extension": ".py",
         "path": "backend/app/domain/triagem_comentario.py"
       },
@@ -547,7 +723,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 867,
+        "size": 3022,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -561,7 +737,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1333,
+        "size": 1691,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
       },
@@ -569,7 +745,7 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2582,
+        "size": 2757,
         "extension": ".py",
         "path": "backend/app/models/avaliacao.py"
       },
@@ -580,6 +756,14 @@
         "size": 1744,
         "extension": ".py",
         "path": "backend/app/models/comentario_versao.py"
+      },
+      {
+        "name": "contador_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1298,
+        "extension": ".py",
+        "path": "backend/app/models/contador_abuso.py"
       },
       {
         "name": "decisao_moderacao.py",
@@ -593,7 +777,7 @@
         "name": "denuncia.py",
         "type": "file",
         "language": "Python",
-        "size": 1834,
+        "size": 2070,
         "extension": ".py",
         "path": "backend/app/models/denuncia.py"
       },
@@ -646,12 +830,28 @@
         "path": "backend/app/models/professor_correspondencia.py"
       },
       {
+        "name": "registro_acesso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 930,
+        "extension": ".py",
+        "path": "backend/app/models/registro_acesso.py"
+      },
+      {
         "name": "sessao_usuario.py",
         "type": "file",
         "language": "Python",
         "size": 874,
         "extension": ".py",
         "path": "backend/app/models/sessao_usuario.py"
+      },
+      {
+        "name": "solicitacao_titular.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2097,
+        "extension": ".py",
+        "path": "backend/app/models/solicitacao_titular.py"
       },
       {
         "name": "token_confirmacao_email.py",
@@ -689,9 +889,17 @@
         "name": "usuario.py",
         "type": "file",
         "language": "Python",
-        "size": 1356,
+        "size": 2050,
         "extension": ".py",
         "path": "backend/app/models/usuario.py"
+      },
+      {
+        "name": "voto_comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 865,
+        "extension": ".py",
+        "path": "backend/app/models/voto_comentario.py"
       },
       {
         "name": "repositories",
@@ -711,7 +919,7 @@
         "name": "avaliacao_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2916,
+        "size": 5688,
         "extension": ".py",
         "path": "backend/app/repositories/avaliacao_repository.py"
       },
@@ -719,7 +927,7 @@
         "name": "comentario_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 5012,
+        "size": 5184,
         "extension": ".py",
         "path": "backend/app/repositories/comentario_repository.py"
       },
@@ -727,7 +935,7 @@
         "name": "denuncia_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 3011,
+        "size": 3293,
         "extension": ".py",
         "path": "backend/app/repositories/denuncia_repository.py"
       },
@@ -735,7 +943,7 @@
         "name": "disciplina_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2320,
+        "size": 2368,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repository.py"
       },
@@ -756,10 +964,18 @@
         "path": "backend/app/repositories/importacao_execucao_repository.py"
       },
       {
+        "name": "limite_abuso_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3020,
+        "extension": ".py",
+        "path": "backend/app/repositories/limite_abuso_repository.py"
+      },
+      {
         "name": "moderacao_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 2308,
+        "size": 2328,
         "extension": ".py",
         "path": "backend/app/repositories/moderacao_repository.py"
       },
@@ -788,12 +1004,36 @@
         "path": "backend/app/repositories/recuperacao_senha_repository.py"
       },
       {
+        "name": "registro_acesso_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 378,
+        "extension": ".py",
+        "path": "backend/app/repositories/registro_acesso_repository.py"
+      },
+      {
+        "name": "retencao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4794,
+        "extension": ".py",
+        "path": "backend/app/repositories/retencao_repository.py"
+      },
+      {
         "name": "sessao_repository.py",
         "type": "file",
         "language": "Python",
         "size": 451,
         "extension": ".py",
         "path": "backend/app/repositories/sessao_repository.py"
+      },
+      {
+        "name": "solicitacao_titular_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 735,
+        "extension": ".py",
+        "path": "backend/app/repositories/solicitacao_titular_repository.py"
       },
       {
         "name": "turma_repository.py",
@@ -820,6 +1060,14 @@
         "path": "backend/app/repositories/usuario_repository.py"
       },
       {
+        "name": "voto_comentario_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1840,
+        "extension": ".py",
+        "path": "backend/app/repositories/voto_comentario_repository.py"
+      },
+      {
         "name": "routers",
         "type": "directory",
         "path": "backend/app/routers",
@@ -837,7 +1085,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 4337,
+        "size": 6236,
         "extension": ".py",
         "path": "backend/app/routers/auth.py"
       },
@@ -845,7 +1093,7 @@
         "name": "avaliacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 1180,
+        "size": 1700,
         "extension": ".py",
         "path": "backend/app/routers/avaliacoes.py"
       },
@@ -853,7 +1101,7 @@
         "name": "comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 1835,
+        "size": 3213,
         "extension": ".py",
         "path": "backend/app/routers/comentarios.py"
       },
@@ -861,7 +1109,7 @@
         "name": "denuncias.py",
         "type": "file",
         "language": "Python",
-        "size": 2115,
+        "size": 2285,
         "extension": ".py",
         "path": "backend/app/routers/denuncias.py"
       },
@@ -877,7 +1125,7 @@
         "name": "identidade_docente.py",
         "type": "file",
         "language": "Python",
-        "size": 2541,
+        "size": 2905,
         "extension": ".py",
         "path": "backend/app/routers/identidade_docente.py"
       },
@@ -885,7 +1133,7 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2038,
+        "size": 2898,
         "extension": ".py",
         "path": "backend/app/routers/moderacao.py"
       },
@@ -896,6 +1144,22 @@
         "size": 4308,
         "extension": ".py",
         "path": "backend/app/routers/professores.py"
+      },
+      {
+        "name": "retencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1351,
+        "extension": ".py",
+        "path": "backend/app/routers/retencao.py"
+      },
+      {
+        "name": "solicitacoes_titulares.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3289,
+        "extension": ".py",
+        "path": "backend/app/routers/solicitacoes_titulares.py"
       },
       {
         "name": "schemas",
@@ -915,7 +1179,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 3422,
+        "size": 4402,
         "extension": ".py",
         "path": "backend/app/schemas/auth.py"
       },
@@ -923,7 +1187,7 @@
         "name": "avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 3912,
+        "size": 4293,
         "extension": ".py",
         "path": "backend/app/schemas/avaliacao.py"
       },
@@ -931,7 +1195,7 @@
         "name": "comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 947,
+        "size": 1266,
         "extension": ".py",
         "path": "backend/app/schemas/comentario.py"
       },
@@ -966,6 +1230,14 @@
         "size": 1197,
         "extension": ".py",
         "path": "backend/app/schemas/moderacao.py"
+      },
+      {
+        "name": "solicitacao_titular.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2032,
+        "extension": ".py",
+        "path": "backend/app/schemas/solicitacao_titular.py"
       },
       {
         "name": "triagem.py",
@@ -1028,10 +1300,18 @@
         "path": "backend/app/services/auditoria_importacao_service.py"
       },
       {
+        "name": "auth_abuso_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4691,
+        "extension": ".py",
+        "path": "backend/app/services/auth_abuso_service.py"
+      },
+      {
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 7131,
+        "size": 9315,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -1039,7 +1319,7 @@
         "name": "avaliacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 8290,
+        "size": 10336,
         "extension": ".py",
         "path": "backend/app/services/avaliacao_service.py"
       },
@@ -1063,7 +1343,7 @@
         "name": "email_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3104,
+        "size": 3304,
         "extension": ".py",
         "path": "backend/app/services/email_service.py"
       },
@@ -1079,7 +1359,7 @@
         "name": "importacao_agendada_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2989,
+        "size": 2997,
         "extension": ".py",
         "path": "backend/app/services/importacao_agendada_service.py"
       },
@@ -1092,10 +1372,18 @@
         "path": "backend/app/services/institucional_service.py"
       },
       {
+        "name": "limite_abuso_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6882,
+        "extension": ".py",
+        "path": "backend/app/services/limite_abuso_service.py"
+      },
+      {
         "name": "moderacao_automatica_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3763,
+        "size": 4245,
         "extension": ".py",
         "path": "backend/app/services/moderacao_automatica_service.py"
       },
@@ -1103,7 +1391,7 @@
         "name": "moderacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 6020,
+        "size": 6321,
         "extension": ".py",
         "path": "backend/app/services/moderacao_service.py"
       },
@@ -1116,20 +1404,44 @@
         "path": "backend/app/services/openai_triagem.py"
       },
       {
+        "name": "retencao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2204,
+        "extension": ".py",
+        "path": "backend/app/services/retencao_service.py"
+      },
+      {
         "name": "sigaa_import_service.py",
         "type": "file",
         "language": "Python",
-        "size": 12506,
+        "size": 12545,
         "extension": ".py",
         "path": "backend/app/services/sigaa_import_service.py"
+      },
+      {
+        "name": "solicitacao_titular_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2777,
+        "extension": ".py",
+        "path": "backend/app/services/solicitacao_titular_service.py"
       },
       {
         "name": "triagem_service.py",
         "type": "file",
         "language": "Python",
-        "size": 4397,
+        "size": 4923,
         "extension": ".py",
         "path": "backend/app/services/triagem_service.py"
+      },
+      {
+        "name": "voto_comentario_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1972,
+        "extension": ".py",
+        "path": "backend/app/services/voto_comentario_service.py"
       },
       {
         "name": "pegar_id.py",
@@ -1159,7 +1471,7 @@
         "name": "requirements-dev.txt",
         "type": "file",
         "language": "Text",
-        "size": 86,
+        "size": 197,
         "extension": ".txt",
         "path": "backend/requirements-dev.txt"
       },
@@ -1184,6 +1496,30 @@
         "size": 25,
         "extension": ".py",
         "path": "backend/tests/__init__.py"
+      },
+      {
+        "name": "acesso_servidor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1321,
+        "extension": ".py",
+        "path": "backend/tests/acesso_servidor.py"
+      },
+      {
+        "name": "auth_abuso_fixtures.py",
+        "type": "file",
+        "language": "Python",
+        "size": 682,
+        "extension": ".py",
+        "path": "backend/tests/auth_abuso_fixtures.py"
+      },
+      {
+        "name": "auth_http_fixtures.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2825,
+        "extension": ".py",
+        "path": "backend/tests/auth_http_fixtures.py"
       },
       {
         "name": "denuncia_browser_fixture.py",
@@ -1211,7 +1547,7 @@
         "name": "fluxo_moderacao_check.py",
         "type": "file",
         "language": "Python",
-        "size": 2982,
+        "size": 3083,
         "extension": ".py",
         "path": "backend/tests/fluxo_moderacao_check.py"
       },
@@ -1219,7 +1555,7 @@
         "name": "integration_acesso.py",
         "type": "file",
         "language": "Python",
-        "size": 8503,
+        "size": 9319,
         "extension": ".py",
         "path": "backend/tests/integration_acesso.py"
       },
@@ -1227,15 +1563,23 @@
         "name": "integration_avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 12780,
+        "size": 13279,
         "extension": ".py",
         "path": "backend/tests/integration_avaliacao.py"
+      },
+      {
+        "name": "integration_conflito_migracoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6134,
+        "extension": ".py",
+        "path": "backend/tests/integration_conflito_migracoes.py"
       },
       {
         "name": "integration_moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 15268,
+        "size": 15638,
         "extension": ".py",
         "path": "backend/tests/integration_moderacao.py"
       },
@@ -1243,9 +1587,25 @@
         "name": "integration_reconciliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 4875,
+        "size": 4910,
         "extension": ".py",
         "path": "backend/tests/integration_reconciliacao.py"
+      },
+      {
+        "name": "integration_retencao_migracao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2072,
+        "extension": ".py",
+        "path": "backend/tests/integration_retencao_migracao.py"
+      },
+      {
+        "name": "integration_termos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6738,
+        "extension": ".py",
+        "path": "backend/tests/integration_termos.py"
       },
       {
         "name": "migration_legacy_check.py",
@@ -1262,6 +1622,14 @@
         "size": 2233,
         "extension": ".py",
         "path": "backend/tests/migration_moderacao_check.py"
+      },
+      {
+        "name": "recovery_scenario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 24632,
+        "extension": ".py",
+        "path": "backend/tests/recovery_scenario.py"
       },
       {
         "name": "seed_resultados.py",
@@ -1307,15 +1675,39 @@
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 19471,
+        "size": 20437,
         "extension": ".py",
         "path": "backend/tests/test_auth.py"
+      },
+      {
+        "name": "test_auth_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4045,
+        "extension": ".py",
+        "path": "backend/tests/test_auth_abuso.py"
+      },
+      {
+        "name": "test_auth_abuso_http.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11720,
+        "extension": ".py",
+        "path": "backend/tests/test_auth_abuso_http.py"
+      },
+      {
+        "name": "test_auth_abuso_postgres.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13549,
+        "extension": ".py",
+        "path": "backend/tests/test_auth_abuso_postgres.py"
       },
       {
         "name": "test_avaliacao.py",
         "type": "file",
         "language": "Python",
-        "size": 30904,
+        "size": 31285,
         "extension": ".py",
         "path": "backend/tests/test_avaliacao.py"
       },
@@ -1323,7 +1715,7 @@
         "name": "test_comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 21077,
+        "size": 21398,
         "extension": ".py",
         "path": "backend/tests/test_comentario.py"
       },
@@ -1331,7 +1723,7 @@
         "name": "test_comparacao_professores.py",
         "type": "file",
         "language": "Python",
-        "size": 4890,
+        "size": 7143,
         "extension": ".py",
         "path": "backend/tests/test_comparacao_professores.py"
       },
@@ -1339,7 +1731,7 @@
         "name": "test_consulta_agregada.py",
         "type": "file",
         "language": "Python",
-        "size": 9511,
+        "size": 13127,
         "extension": ".py",
         "path": "backend/tests/test_consulta_agregada.py"
       },
@@ -1387,7 +1779,7 @@
         "name": "test_importacao_agendada_service.py",
         "type": "file",
         "language": "Python",
-        "size": 6466,
+        "size": 6576,
         "extension": ".py",
         "path": "backend/tests/test_importacao_agendada_service.py"
       },
@@ -1408,18 +1800,42 @@
         "path": "backend/tests/test_integration_acesso.py"
       },
       {
+        "name": "test_limite_abuso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9806,
+        "extension": ".py",
+        "path": "backend/tests/test_limite_abuso.py"
+      },
+      {
+        "name": "test_limite_abuso_postgres.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16687,
+        "extension": ".py",
+        "path": "backend/tests/test_limite_abuso_postgres.py"
+      },
+      {
         "name": "test_migration_connection.py",
         "type": "file",
         "language": "Python",
-        "size": 2642,
+        "size": 2738,
         "extension": ".py",
         "path": "backend/tests/test_migration_connection.py"
+      },
+      {
+        "name": "test_minhas_avaliacoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6068,
+        "extension": ".py",
+        "path": "backend/tests/test_minhas_avaliacoes.py"
       },
       {
         "name": "test_moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 11858,
+        "size": 14168,
         "extension": ".py",
         "path": "backend/tests/test_moderacao.py"
       },
@@ -1427,7 +1843,7 @@
         "name": "test_moderacao_automatica.py",
         "type": "file",
         "language": "Python",
-        "size": 7709,
+        "size": 15742,
         "extension": ".py",
         "path": "backend/tests/test_moderacao_automatica.py"
       },
@@ -1438,6 +1854,38 @@
         "size": 6475,
         "extension": ".py",
         "path": "backend/tests/test_nomes_unidades.py"
+      },
+      {
+        "name": "test_ofensas_disfarcadas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8608,
+        "extension": ".py",
+        "path": "backend/tests/test_ofensas_disfarcadas.py"
+      },
+      {
+        "name": "test_politica_moderacao_e_titulares.py",
+        "type": "file",
+        "language": "Python",
+        "size": 28372,
+        "extension": ".py",
+        "path": "backend/tests/test_politica_moderacao_e_titulares.py"
+      },
+      {
+        "name": "test_privacidade_revisao_265.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8144,
+        "extension": ".py",
+        "path": "backend/tests/test_privacidade_revisao_265.py"
+      },
+      {
+        "name": "test_protecao_fluxos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8589,
+        "extension": ".py",
+        "path": "backend/tests/test_protecao_fluxos.py"
       },
       {
         "name": "test_reavaliar_identidades.py",
@@ -1459,23 +1907,47 @@
         "name": "test_recuperacao_senha.py",
         "type": "file",
         "language": "Python",
-        "size": 9594,
+        "size": 10277,
         "extension": ".py",
         "path": "backend/tests/test_recuperacao_senha.py"
+      },
+      {
+        "name": "test_registros_acesso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3461,
+        "extension": ".py",
+        "path": "backend/tests/test_registros_acesso.py"
+      },
+      {
+        "name": "test_retencao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16619,
+        "extension": ".py",
+        "path": "backend/tests/test_retencao.py"
       },
       {
         "name": "test_retorno_busca.py",
         "type": "file",
         "language": "Python",
-        "size": 2435,
+        "size": 2545,
         "extension": ".py",
         "path": "backend/tests/test_retorno_busca.py"
+      },
+      {
+        "name": "test_seguranca_266.py",
+        "type": "file",
+        "language": "Python",
+        "size": 18984,
+        "extension": ".py",
+        "path": "backend/tests/test_seguranca_266.py"
       },
       {
         "name": "test_sigaa_import_service.py",
         "type": "file",
         "language": "Python",
-        "size": 11409,
+        "size": 11487,
         "extension": ".py",
         "path": "backend/tests/test_sigaa_import_service.py"
       },
@@ -1488,12 +1960,44 @@
         "path": "backend/tests/test_sigaa_poc_unittest.py"
       },
       {
+        "name": "test_solicitacoes_titulares.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7536,
+        "extension": ".py",
+        "path": "backend/tests/test_solicitacoes_titulares.py"
+      },
+      {
+        "name": "test_termos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5496,
+        "extension": ".py",
+        "path": "backend/tests/test_termos.py"
+      },
+      {
         "name": "test_triagem.py",
         "type": "file",
         "language": "Python",
-        "size": 9463,
+        "size": 13085,
         "extension": ".py",
         "path": "backend/tests/test_triagem.py"
+      },
+      {
+        "name": "test_voto_comentario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11659,
+        "extension": ".py",
+        "path": "backend/tests/test_voto_comentario.py"
+      },
+      {
+        "name": "test_voto_comentario_postgres.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7344,
+        "extension": ".py",
+        "path": "backend/tests/test_voto_comentario_postgres.py"
       },
       {
         "name": "validar_issue27.py",
@@ -1507,7 +2011,7 @@
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2892,
+        "size": 3325,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -1567,7 +2071,7 @@
         "name": "arquitetura.md",
         "type": "file",
         "language": "Markdown",
-        "size": 32131,
+        "size": 37709,
         "extension": ".md",
         "path": "docs/arquitetura.md"
       },
@@ -1854,6 +2358,20 @@
         "path": "docs/assets/evidencias/2026-11-10/importacao-resumo.json"
       },
       {
+        "name": "images",
+        "type": "directory",
+        "path": "docs/assets/images",
+        "children": []
+      },
+      {
+        "name": "como-funciona.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 2377,
+        "extension": ".svg",
+        "path": "docs/assets/images/como-funciona.svg"
+      },
+      {
         "name": "stylesheets",
         "type": "directory",
         "path": "docs/assets/stylesheets",
@@ -1874,12 +2392,68 @@
         "children": []
       },
       {
+        "name": "2026-09-14.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3157,
+        "extension": ".md",
+        "path": "docs/atas/2026-09-14.md"
+      },
+      {
         "name": "2026-09-17.md",
         "type": "file",
         "language": "Markdown",
         "size": 2202,
         "extension": ".md",
         "path": "docs/atas/2026-09-17.md"
+      },
+      {
+        "name": "2026-10-05-a-11.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3625,
+        "extension": ".md",
+        "path": "docs/atas/2026-10-05-a-11.md"
+      },
+      {
+        "name": "2026-10-12-a-18.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3166,
+        "extension": ".md",
+        "path": "docs/atas/2026-10-12-a-18.md"
+      },
+      {
+        "name": "2026-10-26-a-11-01.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3830,
+        "extension": ".md",
+        "path": "docs/atas/2026-10-26-a-11-01.md"
+      },
+      {
+        "name": "2026-11-02-a-08.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3345,
+        "extension": ".md",
+        "path": "docs/atas/2026-11-02-a-08.md"
+      },
+      {
+        "name": "2026-11-16.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4465,
+        "extension": ".md",
+        "path": "docs/atas/2026-11-16.md"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2767,
+        "extension": ".md",
+        "path": "docs/atas/README.md"
       },
       {
         "name": "template-ata-reuniao.md",
@@ -1890,12 +2464,36 @@
         "path": "docs/atas/template-ata-reuniao.md"
       },
       {
+        "name": "canal-titulares.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 23458,
+        "extension": ".md",
+        "path": "docs/canal-titulares.md"
+      },
+      {
+        "name": "continuidade-operacional.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 23493,
+        "extension": ".md",
+        "path": "docs/continuidade-operacional.md"
+      },
+      {
         "name": "desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6436,
+        "size": 7584,
         "extension": ".md",
         "path": "docs/desenvolvimento.md"
+      },
+      {
+        "name": "design-system.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4554,
+        "extension": ".md",
+        "path": "docs/design-system.md"
       },
       {
         "name": "diagramas",
@@ -1932,6 +2530,14 @@
         "type": "directory",
         "path": "docs/estudos",
         "children": []
+      },
+      {
+        "name": "aceite-complementar-pr277.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6574,
+        "extension": ".md",
+        "path": "docs/estudos/aceite-complementar-pr277.md"
       },
       {
         "name": "ajustes-prototipo-jornada-issue-153.md",
@@ -1974,12 +2580,28 @@
         "path": "docs/estudos/avaliacao-busca-autocomplete-issue-251.md"
       },
       {
+        "name": "avaliacao-ofensas-disfarcadas-issue-252.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 23629,
+        "extension": ".md",
+        "path": "docs/estudos/avaliacao-ofensas-disfarcadas-issue-252.md"
+      },
+      {
         "name": "cabecalho-sessao-issue-211.md",
         "type": "file",
         "language": "Markdown",
         "size": 5080,
         "extension": ".md",
         "path": "docs/estudos/cabecalho-sessao-issue-211.md"
+      },
+      {
+        "name": "casos-juridicos-pr277.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13591,
+        "extension": ".md",
+        "path": "docs/estudos/casos-juridicos-pr277.md"
       },
       {
         "name": "cobertura-testes-issue-190.md",
@@ -3662,6 +4284,264 @@
         "path": "docs/estudos/evidencias/issue-251/resumir.py"
       },
       {
+        "name": "issue-252",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-252",
+        "children": []
+      },
+      {
+        "name": "autorizacao-etapa1.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7073,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/autorizacao-etapa1.json"
+      },
+      {
+        "name": "avaliar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13596,
+        "extension": ".py",
+        "path": "docs/estudos/evidencias/issue-252/avaliar.py"
+      },
+      {
+        "name": "avaliar_leet.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6351,
+        "extension": ".py",
+        "path": "docs/estudos/evidencias/issue-252/avaliar_leet.py"
+      },
+      {
+        "name": "casos-leet.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2754,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/casos-leet.json"
+      },
+      {
+        "name": "casos.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 8921,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/casos.json"
+      },
+      {
+        "name": "desempenho-etapa1.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 17653,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/desempenho-etapa1.json"
+      },
+      {
+        "name": "fontes-github.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 21836,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/fontes-github.json"
+      },
+      {
+        "name": "medir_limites.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2375,
+        "extension": ".py",
+        "path": "docs/estudos/evidencias/issue-252/medir_limites.py"
+      },
+      {
+        "name": "reproducao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6077,
+        "extension": ".md",
+        "path": "docs/estudos/evidencias/issue-252/reproducao.md"
+      },
+      {
+        "name": "resultados-etapa1.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 151826,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/resultados-etapa1.json"
+      },
+      {
+        "name": "resultados-etapa1.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10058,
+        "extension": ".md",
+        "path": "docs/estudos/evidencias/issue-252/resultados-etapa1.md"
+      },
+      {
+        "name": "resultados-leet.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 139031,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/resultados-leet.json"
+      },
+      {
+        "name": "resultados-leet.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9507,
+        "extension": ".md",
+        "path": "docs/estudos/evidencias/issue-252/resultados-leet.md"
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 109985,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-252/resultados.json"
+      },
+      {
+        "name": "resultados.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7914,
+        "extension": ".md",
+        "path": "docs/estudos/evidencias/issue-252/resultados.md"
+      },
+      {
+        "name": "test_avaliacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1831,
+        "extension": ".py",
+        "path": "docs/estudos/evidencias/issue-252/test_avaliacao.py"
+      },
+      {
+        "name": "issue-269",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-269",
+        "children": []
+      },
+      {
+        "name": "cadastro-dark-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 158959,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-269/cadastro-dark-1280.png"
+      },
+      {
+        "name": "fontes-sha256.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 988,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-269/fontes-sha256.json"
+      },
+      {
+        "name": "privacidade-dark-1280.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 137662,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-269/privacidade-dark-1280.png"
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1125,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-269/resultados.json"
+      },
+      {
+        "name": "termos-de-uso-dark-320.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 68880,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-269/termos-de-uso-dark-320.png"
+      },
+      {
+        "name": "issue-278",
+        "type": "directory",
+        "path": "docs/estudos/evidencias/issue-278",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 6404,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-278/resultados.json"
+      },
+      {
+        "name": "sha256.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 796,
+        "extension": ".json",
+        "path": "docs/estudos/evidencias/issue-278/sha256.json"
+      },
+      {
+        "name": "votos-1440-selecionado-foco.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 118375,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-1440-selecionado-foco.png"
+      },
+      {
+        "name": "votos-320-selecionado-foco.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 55688,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-320-selecionado-foco.png"
+      },
+      {
+        "name": "votos-390-selecionado-foco.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 61591,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-390-selecionado-foco.png"
+      },
+      {
+        "name": "votos-768-selecionado-foco.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 82758,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-768-selecionado-foco.png"
+      },
+      {
+        "name": "votos-carregando-401.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 117873,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-carregando-401.png"
+      },
+      {
+        "name": "votos-erro-403.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 120183,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-erro-403.png"
+      },
+      {
+        "name": "votos-falha-leitura.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 111223,
+        "extension": ".png",
+        "path": "docs/estudos/evidencias/issue-278/votos-falha-leitura.png"
+      },
+      {
         "name": "issue-37",
         "type": "directory",
         "path": "docs/estudos/evidencias/issue-37",
@@ -3700,6 +4580,22 @@
         "path": "docs/estudos/implementacao-navegacao-issue-155.md"
       },
       {
+        "name": "implementacao-ofensas-disfarcadas-issue-252.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11770,
+        "extension": ".md",
+        "path": "docs/estudos/implementacao-ofensas-disfarcadas-issue-252.md"
+      },
+      {
+        "name": "implementacao-substituicoes-issue-252.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7017,
+        "extension": ".md",
+        "path": "docs/estudos/implementacao-substituicoes-issue-252.md"
+      },
+      {
         "name": "importacao-neon-2026-11-10.md",
         "type": "file",
         "language": "Markdown",
@@ -3716,12 +4612,28 @@
         "path": "docs/estudos/integracao-visual-jornada-issue-186.md"
       },
       {
+        "name": "integridade-notas-issue-270.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 23110,
+        "extension": ".md",
+        "path": "docs/estudos/integridade-notas-issue-270.md"
+      },
+      {
         "name": "interface-comentarios-issue-159.md",
         "type": "file",
         "language": "Markdown",
         "size": 6804,
         "extension": ".md",
         "path": "docs/estudos/interface-comentarios-issue-159.md"
+      },
+      {
+        "name": "inventario-tecnico-pr277.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13187,
+        "extension": ".md",
+        "path": "docs/estudos/inventario-tecnico-pr277.md"
       },
       {
         "name": "mapeamento-sigaa.md",
@@ -3756,6 +4668,14 @@
         "path": "docs/estudos/pendencias-finais-issue-207.md"
       },
       {
+        "name": "privacidade-apis-265-revisao-final.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8765,
+        "extension": ".md",
+        "path": "docs/estudos/privacidade-apis-265-revisao-final.md"
+      },
+      {
         "name": "reavaliacao-seletiva-issue-207.md",
         "type": "file",
         "language": "Markdown",
@@ -3770,6 +4690,14 @@
         "size": 18155,
         "extension": ".md",
         "path": "docs/estudos/reconciliacao-professores-issue-207.md"
+      },
+      {
+        "name": "registro-issue-241.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4204,
+        "extension": ".md",
+        "path": "docs/estudos/registro-issue-241.md"
       },
       {
         "name": "relato-usabilidade-aluno-01-issue-148.md",
@@ -3796,6 +4724,30 @@
         "path": "docs/estudos/resultados-reteste-jornada-issue-153.md"
       },
       {
+        "name": "revisao-final-local-2026-11-18.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12018,
+        "extension": ".md",
+        "path": "docs/estudos/revisao-final-local-2026-11-18.md"
+      },
+      {
+        "name": "revisao-geral-implementacao-2026-11-20.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6902,
+        "extension": ".md",
+        "path": "docs/estudos/revisao-geral-implementacao-2026-11-20.md"
+      },
+      {
+        "name": "revisao-juridica-preliminar-pr277.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 18846,
+        "extension": ".md",
+        "path": "docs/estudos/revisao-juridica-preliminar-pr277.md"
+      },
+      {
         "name": "revisao-perfil-comparacao-pr-217.md",
         "type": "file",
         "language": "Markdown",
@@ -3812,6 +4764,14 @@
         "path": "docs/estudos/revisao-pr-225.md"
       },
       {
+        "name": "revisao-pr277.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 19440,
+        "extension": ".md",
+        "path": "docs/estudos/revisao-pr277.md"
+      },
+      {
         "name": "sigaa-poc.md",
         "type": "file",
         "language": "Markdown",
@@ -3826,6 +4786,14 @@
         "size": 2910,
         "extension": ".md",
         "path": "docs/estudos/tela-exemplo-api-real.md"
+      },
+      {
+        "name": "transparencia-issue-269.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7142,
+        "extension": ".md",
+        "path": "docs/estudos/transparencia-issue-269.md"
       },
       {
         "name": "validacao-integrada-issue-163.md",
@@ -3932,6 +4900,14 @@
         "path": "docs/estudos/verificacao-lint-tipos-issue-189.md"
       },
       {
+        "name": "verificacao-pendencias-pr277.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 19933,
+        "extension": ".md",
+        "path": "docs/estudos/verificacao-pendencias-pr277.md"
+      },
+      {
         "name": "verificacao-prototipo-jornada-issue-152.md",
         "type": "file",
         "language": "Markdown",
@@ -3956,6 +4932,14 @@
         "path": "docs/estudos/verificacao-resultados-comparacao-issue-157.md"
       },
       {
+        "name": "votos-utilidade-issue-278.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11443,
+        "extension": ".md",
+        "path": "docs/estudos/votos-utilidade-issue-278.md"
+      },
+      {
         "name": "figma.md",
         "type": "file",
         "language": "Markdown",
@@ -3967,7 +4951,7 @@
         "name": "hospedagem.md",
         "type": "file",
         "language": "Markdown",
-        "size": 14274,
+        "size": 15553,
         "extension": ".md",
         "path": "docs/hospedagem.md"
       },
@@ -3978,6 +4962,22 @@
         "size": 15151,
         "extension": ".md",
         "path": "docs/identidades-docentes.md"
+      },
+      {
+        "name": "implantacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3488,
+        "extension": ".md",
+        "path": "docs/implantacao.md"
+      },
+      {
+        "name": "implementando-com-ia.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5449,
+        "extension": ".md",
+        "path": "docs/implementando-com-ia.md"
       },
       {
         "name": "importacao-sigaa.md",
@@ -3991,7 +4991,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2790,
+        "size": 3355,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -4007,7 +5007,7 @@
         "name": "modelos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 583,
+        "size": 1129,
         "extension": ".md",
         "path": "docs/modelos.md"
       },
@@ -4015,7 +5015,7 @@
         "name": "moderacao-ia.md",
         "type": "file",
         "language": "Markdown",
-        "size": 12012,
+        "size": 14993,
         "extension": ".md",
         "path": "docs/moderacao-ia.md"
       },
@@ -4026,6 +5026,52 @@
         "size": 15237,
         "extension": ".md",
         "path": "docs/operacao-importacao-sigaa.md"
+      },
+      {
+        "name": "operacao",
+        "type": "directory",
+        "path": "docs/operacao",
+        "children": []
+      },
+      {
+        "name": "incidentes-recuperacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11194,
+        "extension": ".md",
+        "path": "docs/operacao/incidentes-recuperacao.md"
+      },
+      {
+        "name": "manutencao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10375,
+        "extension": ".md",
+        "path": "docs/operacao/manutencao.md"
+      },
+      {
+        "name": "orientacoes-2026-11-17.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4120,
+        "extension": ".md",
+        "path": "docs/orientacoes-2026-11-17.md"
+      },
+      {
+        "name": "para-desenvolvedores.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2718,
+        "extension": ".md",
+        "path": "docs/para-desenvolvedores.md"
+      },
+      {
+        "name": "politica-moderacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8507,
+        "extension": ".md",
+        "path": "docs/politica-moderacao.md"
       },
       {
         "name": "qualidade.md",
@@ -5072,6 +6118,14 @@
         "path": "docs/releases/2.0.0-planejamento.md"
       },
       {
+        "name": "2.0.0-rc.1.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4016,
+        "extension": ".md",
+        "path": "docs/releases/2.0.0-rc.1.md"
+      },
+      {
         "name": "2.0.0-reconciliacao.md",
         "type": "file",
         "language": "Markdown",
@@ -5080,18 +6134,502 @@
         "path": "docs/releases/2.0.0-reconciliacao.md"
       },
       {
+        "name": "2.0.0-resumo-revisao-168.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12322,
+        "extension": ".md",
+        "path": "docs/releases/2.0.0-resumo-revisao-168.md"
+      },
+      {
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 53813,
+        "size": 80219,
         "extension": ".md",
         "path": "docs/requisitos.md"
+      },
+      {
+        "name": "seguranca",
+        "type": "directory",
+        "path": "docs/seguranca",
+        "children": []
+      },
+      {
+        "name": "acessos-bloco-6.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3455,
+        "extension": ".md",
+        "path": "docs/seguranca/acessos-bloco-6.md"
+      },
+      {
+        "name": "dependencias-issue-266.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13781,
+        "extension": ".md",
+        "path": "docs/seguranca/dependencias-issue-266.md"
+      },
+      {
+        "name": "evidencias",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias",
+        "children": []
+      },
+      {
+        "name": "issue-266",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266",
+        "children": []
+      },
+      {
+        "name": "advisories-npm.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 11018,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/advisories-npm.json"
+      },
+      {
+        "name": "bloco-1",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-1",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3035,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-1/resultados.json"
+      },
+      {
+        "name": "bloco-2",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-2",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2806,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-2/resultados.json"
+      },
+      {
+        "name": "bloco-3",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-3",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1270,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-3/resultados.json"
+      },
+      {
+        "name": "bloco-4",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-4",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2728,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-4/resultados.json"
+      },
+      {
+        "name": "bloco-5",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-5",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3702,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-5/resultados.json"
+      },
+      {
+        "name": "bloco-6",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-6",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1328,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-6/resultados.json"
+      },
+      {
+        "name": "bloco-7",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-7",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 10915,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-7/resultados.json"
+      },
+      {
+        "name": "bloco-8",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-8",
+        "children": []
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3036,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/bloco-8/resultados.json"
+      },
+      {
+        "name": "continuidade",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6269,
+        "extension": ".md",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/README.md"
+      },
+      {
+        "name": "advisories-npm.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 11683,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/advisories-npm.json"
+      },
+      {
+        "name": "frontend-resolvido.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 56674,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/frontend-resolvido.json"
+      },
+      {
+        "name": "hashes-fontes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 398,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/hashes-fontes.json"
+      },
+      {
+        "name": "npm-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 14905,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/npm-audit.json"
+      },
+      {
+        "name": "postgres-resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1074,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/postgres-resultados.json"
+      },
+      {
+        "name": "python-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2038,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/python-audit.json"
+      },
+      {
+        "name": "python-resolvido.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1025,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/python-resolvido.json"
+      },
+      {
+        "name": "python-resolvido.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 641,
+        "extension": ".txt",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/python-resolvido.txt"
+      },
+      {
+        "name": "rastreabilidade.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1257,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/rastreabilidade.json"
+      },
+      {
+        "name": "segredos-resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 197,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/segredos-resultado.json"
+      },
+      {
+        "name": "verificacoes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3748,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/continuidade/verificacoes.json"
+      },
+      {
+        "name": "frontend-resolvido.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 56674,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/frontend-resolvido.json"
+      },
+      {
+        "name": "hashes-fontes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 398,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/hashes-fontes.json"
+      },
+      {
+        "name": "homologar_postgres.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12199,
+        "extension": ".py",
+        "path": "docs/seguranca/evidencias/issue-266/homologar_postgres.py"
+      },
+      {
+        "name": "inventariar_dependencias.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2033,
+        "extension": ".py",
+        "path": "docs/seguranca/evidencias/issue-266/inventariar_dependencias.py"
+      },
+      {
+        "name": "npm-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 14374,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/npm-audit.json"
+      },
+      {
+        "name": "python-audit.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2038,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/python-audit.json"
+      },
+      {
+        "name": "python-resolvido.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1024,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/python-resolvido.json"
+      },
+      {
+        "name": "python-resolvido.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 641,
+        "extension": ".txt",
+        "path": "docs/seguranca/evidencias/issue-266/python-resolvido.txt"
+      },
+      {
+        "name": "rastreabilidade.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2135,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/rastreabilidade.json"
+      },
+      {
+        "name": "reconciliacao",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-266/reconciliacao",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4480,
+        "extension": ".md",
+        "path": "docs/seguranca/evidencias/issue-266/reconciliacao/README.md"
+      },
+      {
+        "name": "segredos-resultado.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 197,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/segredos-resultado.json"
+      },
+      {
+        "name": "verificacoes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3799,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-266/verificacoes.json"
+      },
+      {
+        "name": "verificar_segredos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2236,
+        "extension": ".py",
+        "path": "docs/seguranca/evidencias/issue-266/verificar_segredos.py"
+      },
+      {
+        "name": "issue-267",
+        "type": "directory",
+        "path": "docs/seguranca/evidencias/issue-267",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11855,
+        "extension": ".md",
+        "path": "docs/seguranca/evidencias/issue-267/README.md"
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5604,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-267/resultados.json"
+      },
+      {
+        "name": "tentativas.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7004,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-267/tentativas.json"
+      },
+      {
+        "name": "verificacoes.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 5581,
+        "extension": ".json",
+        "path": "docs/seguranca/evidencias/issue-267/verificacoes.json"
+      },
+      {
+        "name": "limitador-abuso-bloco-1.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10504,
+        "extension": ".md",
+        "path": "docs/seguranca/limitador-abuso-bloco-1.md"
+      },
+      {
+        "name": "limitador-auth-bloco-2.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6068,
+        "extension": ".md",
+        "path": "docs/seguranca/limitador-auth-bloco-2.md"
+      },
+      {
+        "name": "limitador-fluxos-blocos-3-4.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7572,
+        "extension": ".md",
+        "path": "docs/seguranca/limitador-fluxos-blocos-3-4.md"
+      },
+      {
+        "name": "retencao-bloco-5.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9210,
+        "extension": ".md",
+        "path": "docs/seguranca/retencao-bloco-5.md"
+      },
+      {
+        "name": "revisao-sessoes-abuso-logs-issue-266.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 67044,
+        "extension": ".md",
+        "path": "docs/seguranca/revisao-sessoes-abuso-logs-issue-266.md"
+      },
+      {
+        "name": "validacoes-pendentes-266.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12101,
+        "extension": ".md",
+        "path": "docs/seguranca/validacoes-pendentes-266.md"
+      },
+      {
+        "name": "transparencia.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11479,
+        "extension": ".md",
+        "path": "docs/transparencia.md"
+      },
+      {
+        "name": "tutorial-uso.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5080,
+        "extension": ".md",
+        "path": "docs/tutorial-uso.md"
+      },
+      {
+        "name": "uso-ia.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1411,
+        "extension": ".md",
+        "path": "docs/uso-ia.md"
       },
       {
         "name": "visao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10766,
+        "size": 13475,
         "extension": ".md",
         "path": "docs/visao.md"
       },
@@ -5161,7 +6699,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 23045,
+        "size": 25862,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -6215,7 +7753,7 @@
         "name": "next.config.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 362,
+        "size": 656,
         "extension": ".ts",
         "path": "frontend/next.config.ts"
       },
@@ -6223,7 +7761,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 243124,
+        "size": 247822,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -6231,7 +7769,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1737,
+        "size": 2079,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -6386,6 +7924,28 @@
         "children": []
       },
       {
+        "name": "atendimento",
+        "type": "directory",
+        "path": "frontend/src/app/atendimento",
+        "children": []
+      },
+      {
+        "name": "fila.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6249,
+        "extension": ".tsx",
+        "path": "frontend/src/app/atendimento/fila.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 461,
+        "extension": ".tsx",
+        "path": "frontend/src/app/atendimento/page.tsx"
+      },
+      {
         "name": "busca",
         "type": "directory",
         "path": "frontend/src/app/busca",
@@ -6417,7 +7977,7 @@
         "name": "cadastro-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4678,
+        "size": 6322,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/cadastro-form.tsx"
       },
@@ -6473,7 +8033,7 @@
         "name": "confirmation-client.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3709,
+        "size": 3973,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/confirmation-client.tsx"
       },
@@ -6481,7 +8041,7 @@
         "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 200,
+        "size": 225,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/layout.tsx"
       },
@@ -6492,6 +8052,28 @@
         "size": 535,
         "extension": ".tsx",
         "path": "frontend/src/app/confirmar-email/page.tsx"
+      },
+      {
+        "name": "contato",
+        "type": "directory",
+        "path": "frontend/src/app/contato",
+        "children": []
+      },
+      {
+        "name": "canal.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5964,
+        "extension": ".tsx",
+        "path": "frontend/src/app/contato/canal.tsx"
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 763,
+        "extension": ".tsx",
+        "path": "frontend/src/app/contato/page.tsx"
       },
       {
         "name": "departamentos",
@@ -6523,7 +8105,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4150,
+        "size": 4159,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[id]/page.tsx"
       },
@@ -6531,7 +8113,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1248,
+        "size": 1289,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/page.tsx"
       },
@@ -6561,7 +8143,7 @@
         "name": "recuperacao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2174,
+        "size": 2283,
         "extension": ".tsx",
         "path": "frontend/src/app/esqueci-senha/recuperacao-form.tsx"
       },
@@ -6615,7 +8197,7 @@
         "name": "login-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7102,
+        "size": 7542,
         "extension": ".tsx",
         "path": "frontend/src/app/login/login-form.tsx"
       },
@@ -6637,7 +8219,7 @@
         "name": "apoio-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3752,
+        "size": 4030,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/apoio-moderacao.tsx"
       },
@@ -6645,7 +8227,7 @@
         "name": "detalhe-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10390,
+        "size": 10679,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx"
       },
@@ -6653,7 +8235,7 @@
         "name": "fila-moderacao.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 10939,
+        "size": 10963,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/fila-moderacao.tsx"
       },
@@ -6707,9 +8289,23 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4837,
+        "size": 5029,
         "extension": ".tsx",
         "path": "frontend/src/app/page.tsx"
+      },
+      {
+        "name": "privacidade",
+        "type": "directory",
+        "path": "frontend/src/app/privacidade",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 11663,
+        "extension": ".tsx",
+        "path": "frontend/src/app/privacidade/page.tsx"
       },
       {
         "name": "professores",
@@ -6785,7 +8381,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3042,
+        "size": 3110,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/[id]/page.tsx"
       },
@@ -6793,7 +8389,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1248,
+        "size": 1289,
         "extension": ".tsx",
         "path": "frontend/src/app/professores/page.tsx"
       },
@@ -6885,9 +8481,31 @@
         "name": "redefinicao-form.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2773,
+        "size": 2830,
         "extension": ".tsx",
         "path": "frontend/src/app/redefinir-senha/redefinicao-form.tsx"
+      },
+      {
+        "name": "reenviar-confirmacao",
+        "type": "directory",
+        "path": "frontend/src/app/reenviar-confirmacao",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 509,
+        "extension": ".tsx",
+        "path": "frontend/src/app/reenviar-confirmacao/page.tsx"
+      },
+      {
+        "name": "reenvio-form.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2375,
+        "extension": ".tsx",
+        "path": "frontend/src/app/reenviar-confirmacao/reenvio-form.tsx"
       },
       {
         "name": "robots.ts",
@@ -6955,9 +8573,23 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8054,
+        "size": 13338,
         "extension": ".tsx",
         "path": "frontend/src/app/sobre/page.tsx"
+      },
+      {
+        "name": "termos-de-uso",
+        "type": "directory",
+        "path": "frontend/src/app/termos-de-uso",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8130,
+        "extension": ".tsx",
+        "path": "frontend/src/app/termos-de-uso/page.tsx"
       },
       {
         "name": "components",
@@ -6993,7 +8625,7 @@
         "name": "busca-institucional.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7410,
+        "size": 7543,
         "extension": ".tsx",
         "path": "frontend/src/components/busca-institucional.tsx"
       },
@@ -7049,7 +8681,7 @@
         "name": "catalogo-links.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1525,
+        "size": 3652,
         "extension": ".tsx",
         "path": "frontend/src/components/catalogo-links.tsx"
       },
@@ -7089,7 +8721,7 @@
         "name": "destaques-home.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3658,
+        "size": 3602,
         "extension": ".tsx",
         "path": "frontend/src/components/destaques-home.tsx"
       },
@@ -7113,9 +8745,17 @@
         "name": "disciplinas-professor.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2344,
+        "size": 2721,
         "extension": ".tsx",
         "path": "frontend/src/components/disciplinas-professor.tsx"
+      },
+      {
+        "name": "documento-publico.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2339,
+        "extension": ".tsx",
+        "path": "frontend/src/components/documento-publico.tsx"
       },
       {
         "name": "estado-catalogo.tsx",
@@ -7177,7 +8817,7 @@
         "name": "item-comentario.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1807,
+        "size": 1925,
         "extension": ".tsx",
         "path": "frontend/src/components/item-comentario.tsx"
       },
@@ -7214,6 +8854,14 @@
         "path": "frontend/src/components/meus-comentarios.tsx"
       },
       {
+        "name": "minhas-avaliacoes.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5267,
+        "extension": ".tsx",
+        "path": "frontend/src/components/minhas-avaliacoes.tsx"
+      },
+      {
         "name": "modal-denuncia.tsx",
         "type": "file",
         "language": "TypeScript",
@@ -7225,7 +8873,7 @@
         "name": "moldura-conta.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1737,
+        "size": 1809,
         "extension": ".tsx",
         "path": "frontend/src/components/moldura-conta.tsx"
       },
@@ -7249,7 +8897,7 @@
         "name": "rodape.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 786,
+        "size": 1021,
         "extension": ".tsx",
         "path": "frontend/src/components/rodape.tsx"
       },
@@ -7270,6 +8918,14 @@
         "path": "frontend/src/components/transicao-pagina.tsx"
       },
       {
+        "name": "utilidade-comentario.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4116,
+        "extension": ".tsx",
+        "path": "frontend/src/components/utilidade-comentario.tsx"
+      },
+      {
         "name": "lib",
         "type": "directory",
         "path": "frontend/src/lib",
@@ -7287,7 +8943,7 @@
         "name": "avaliacao-formulario.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4071,
+        "size": 4143,
         "extension": ".ts",
         "path": "frontend/src/lib/avaliacao-formulario.ts"
       },
@@ -7365,7 +9021,7 @@
         "name": "moderacao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2439,
+        "size": 2511,
         "extension": ".ts",
         "path": "frontend/src/lib/moderacao.ts"
       },
@@ -7381,7 +9037,7 @@
         "name": "seo.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1609,
+        "size": 1642,
         "extension": ".ts",
         "path": "frontend/src/lib/seo.ts"
       },
@@ -7395,7 +9051,7 @@
         "name": "api-client.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2717,
+        "size": 2860,
         "extension": ".ts",
         "path": "frontend/src/lib/services/api-client.ts"
       },
@@ -7403,7 +9059,7 @@
         "name": "auth.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1924,
+        "size": 2267,
         "extension": ".ts",
         "path": "frontend/src/lib/services/auth.ts"
       },
@@ -7432,6 +9088,14 @@
         "path": "frontend/src/lib/services/denuncias.ts"
       },
       {
+        "name": "destaques.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1346,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/destaques.ts"
+      },
+      {
         "name": "disciplinas.ts",
         "type": "file",
         "language": "TypeScript",
@@ -7443,7 +9107,7 @@
         "name": "http-error.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 391,
+        "size": 1863,
         "extension": ".ts",
         "path": "frontend/src/lib/services/http-error.ts"
       },
@@ -7454,6 +9118,14 @@
         "size": 4490,
         "extension": ".ts",
         "path": "frontend/src/lib/services/identidades.ts"
+      },
+      {
+        "name": "minhas-avaliacoes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2734,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/minhas-avaliacoes.ts"
       },
       {
         "name": "moderacao.ts",
@@ -7470,6 +9142,30 @@
         "size": 2181,
         "extension": ".ts",
         "path": "frontend/src/lib/services/professores.ts"
+      },
+      {
+        "name": "solicitacoes.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 672,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/solicitacoes.ts"
+      },
+      {
+        "name": "votos-comentario.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1448,
+        "extension": ".ts",
+        "path": "frontend/src/lib/services/votos-comentario.ts"
+      },
+      {
+        "name": "termos.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 191,
+        "extension": ".ts",
+        "path": "frontend/src/lib/termos.ts"
       },
       {
         "name": "types",
@@ -7489,7 +9185,7 @@
         "name": "comentario.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 898,
+        "size": 1061,
         "extension": ".ts",
         "path": "frontend/src/lib/types/comentario.ts"
       },
@@ -7532,10 +9228,18 @@
         "children": []
       },
       {
+        "name": "abuso.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 2377,
+        "extension": ".mjs",
+        "path": "frontend/tests/abuso.test.mjs"
+      },
+      {
         "name": "acesso-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 20564,
+        "size": 20651,
         "extension": ".mjs",
         "path": "frontend/tests/acesso-browser.mjs"
       },
@@ -7543,7 +9247,7 @@
         "name": "avaliacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 33623,
+        "size": 34289,
         "extension": ".mjs",
         "path": "frontend/tests/avaliacao-browser.mjs"
       },
@@ -7551,7 +9255,7 @@
         "name": "avaliacao.test.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 8495,
+        "size": 8555,
         "extension": ".mjs",
         "path": "frontend/tests/avaliacao.test.mjs"
       },
@@ -7583,7 +9287,7 @@
         "name": "browser-session.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 4126,
+        "size": 4149,
         "extension": ".mjs",
         "path": "frontend/tests/browser-session.mjs"
       },
@@ -7607,7 +9311,7 @@
         "name": "cabecalho-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 9302,
+        "size": 9504,
         "extension": ".mjs",
         "path": "frontend/tests/cabecalho-browser.mjs"
       },
@@ -7623,7 +9327,7 @@
         "name": "comentarios-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 12613,
+        "size": 12798,
         "extension": ".mjs",
         "path": "frontend/tests/comentarios-browser.mjs"
       },
@@ -7631,7 +9335,7 @@
         "name": "comentarios.test.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 10247,
+        "size": 11951,
         "extension": ".mjs",
         "path": "frontend/tests/comentarios.test.mjs"
       },
@@ -7655,7 +9359,7 @@
         "name": "denuncia-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 17554,
+        "size": 17914,
         "extension": ".mjs",
         "path": "frontend/tests/denuncia-browser.mjs"
       },
@@ -7671,7 +9375,7 @@
         "name": "destaques-home-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 7349,
+        "size": 7336,
         "extension": ".mjs",
         "path": "frontend/tests/destaques-home-browser.mjs"
       },
@@ -7719,7 +9423,7 @@
         "name": "jornada-247-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 14476,
+        "size": 14568,
         "extension": ".mjs",
         "path": "frontend/tests/jornada-247-browser.mjs"
       },
@@ -7727,7 +9431,7 @@
         "name": "moderacao-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 20768,
+        "size": 21132,
         "extension": ".mjs",
         "path": "frontend/tests/moderacao-browser.mjs"
       },
@@ -7783,7 +9487,7 @@
         "name": "recuperacao-senha-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 5567,
+        "size": 6509,
         "extension": ".mjs",
         "path": "frontend/tests/recuperacao-senha-browser.mjs"
       },
@@ -7804,18 +9508,42 @@
         "path": "frontend/tests/resultados-browser.mjs"
       },
       {
+        "name": "revisao-final-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 7813,
+        "extension": ".mjs",
+        "path": "frontend/tests/revisao-final-browser.mjs"
+      },
+      {
+        "name": "revisao-final.test.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 3590,
+        "extension": ".mjs",
+        "path": "frontend/tests/revisao-final.test.mjs"
+      },
+      {
         "name": "run-tests.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 1799,
+        "size": 1867,
         "extension": ".mjs",
         "path": "frontend/tests/run-tests.mjs"
+      },
+      {
+        "name": "seguranca-266-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1698,
+        "extension": ".mjs",
+        "path": "frontend/tests/seguranca-266-browser.mjs"
       },
       {
         "name": "seo-browser.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 7062,
+        "size": 7606,
         "extension": ".mjs",
         "path": "frontend/tests/seo-browser.mjs"
       },
@@ -7826,6 +9554,22 @@
         "size": 1729,
         "extension": ".mjs",
         "path": "frontend/tests/seo.test.mjs"
+      },
+      {
+        "name": "solicitacoes-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 5840,
+        "extension": ".mjs",
+        "path": "frontend/tests/solicitacoes-browser.mjs"
+      },
+      {
+        "name": "termos-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6941,
+        "extension": ".mjs",
+        "path": "frontend/tests/termos-browser.mjs"
       },
       {
         "name": "transicao-browser.mjs",
@@ -7844,6 +9588,14 @@
         "path": "frontend/tests/tsconfig.json"
       },
       {
+        "name": "votos-comentario-browser.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 11184,
+        "extension": ".mjs",
+        "path": "frontend/tests/votos-comentario-browser.mjs"
+      },
+      {
         "name": "tsconfig.json",
         "type": "file",
         "language": "JSON",
@@ -7855,7 +9607,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 5995,
+        "size": 9190,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -7888,6 +9640,22 @@
         "path": "scripts/cron/sigaa-import.sh"
       },
       {
+        "name": "recovery.Dockerfile",
+        "type": "file",
+        "language": "Unknown",
+        "size": 463,
+        "extension": ".Dockerfile",
+        "path": "scripts/recovery.Dockerfile"
+      },
+      {
+        "name": "recovery_drill.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12585,
+        "extension": ".py",
+        "path": "scripts/recovery_drill.py"
+      },
+      {
         "name": "sql",
         "type": "directory",
         "path": "scripts/sql",
@@ -7916,6 +9684,14 @@
         "size": 891,
         "extension": ".sql",
         "path": "scripts/sql/207-acesso-identidades.sql"
+      },
+      {
+        "name": "test_recovery_drill.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3276,
+        "extension": ".py",
+        "path": "scripts/test_recovery_drill.py"
       },
       {
         "name": "skills",
@@ -8411,7 +10187,7 @@
         "name": "specs.md",
         "type": "file",
         "language": "Markdown",
-        "size": 32842,
+        "size": 47441,
         "extension": ".md",
         "path": "specs.md"
       },
@@ -8489,14 +10265,14 @@
         "name": "ata-reuniao-2026-09-14.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2908,
+        "size": 207,
         "extension": ".md",
         "path": "sprints/sprint03/ata-reuniao-2026-09-14.md"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-20T14:55:01.871226+00:00",
+    "extracted_at": "2026-11-21T14:17:48.486284+00:00",
     "file_path": "data/silver/hierarchy_2026-02-UnDb.json"
   }
 }

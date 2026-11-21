@@ -2,19 +2,19 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-20T14:53:51.499867+00:00",
+  "analyzed_at": "2026-11-21T14:16:32.040923+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 209,
-  "total_bytes": 880304,
+  "total_files": 235,
+  "total_bytes": 1013753,
   "languages": [
     {
       "language": "Markdown",
       "file_count": 56,
       "total_bytes": 266742,
-      "percentage": 30.3,
+      "percentage": 26.31,
       "files": [
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
@@ -82,7 +82,7 @@
       "language": "JSON",
       "file_count": 10,
       "total_bytes": 232733,
-      "percentage": 26.44,
+      "percentage": 22.96,
       "files": [
         {
           "path": "frontend/package-lock.json",
@@ -148,20 +148,20 @@
     },
     {
       "language": "Python",
-      "file_count": 58,
-      "total_bytes": 140182,
-      "percentage": 15.92,
+      "file_count": 66,
+      "total_bytes": 189001,
+      "percentage": 18.64,
       "files": [
-        {
-          "path": "backend/app/crawler/crawlerDisciplina.py",
-          "name": "crawlerDisciplina.py",
-          "size": 7995,
-          "extension": ".py"
-        },
         {
           "path": "backend/app/crawler/crawlerCurriculo.py",
           "name": "crawlerCurriculo.py",
-          "size": 7830,
+          "size": 9587,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/crawler/crawlerDisciplina.py",
+          "name": "crawlerDisciplina.py",
+          "size": 8575,
           "extension": ".py"
         },
         {
@@ -171,113 +171,113 @@
           "extension": ".py"
         },
         {
+          "path": "backend/tests/unit/test_crawlerCurriculo.py",
+          "name": "test_crawlerCurriculo.py",
+          "size": 6789,
+          "extension": ".py"
+        },
+        {
           "path": "backend/alembic/versions/0001_initial_schema.py",
           "name": "0001_initial_schema.py",
           "size": 6547,
           "extension": ".py"
         },
         {
-          "path": "backend/tests/unit/test_crawlerCurriculo.py",
-          "name": "test_crawlerCurriculo.py",
-          "size": 6252,
+          "path": "backend/tests/unit/test_migracao_unificar_disciplinas.py",
+          "name": "test_migracao_unificar_disciplinas.py",
+          "size": 6409,
           "extension": ".py"
         },
         {
           "path": "backend/tests/integration/test_auth_contribuicoes.py",
           "name": "test_auth_contribuicoes.py",
-          "size": 5930,
+          "size": 5999,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_conteudos_filtros.py",
+          "name": "test_conteudos_filtros.py",
+          "size": 5887,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/alembic/versions/0005_unificar_disciplinas_repetidas.py",
+          "name": "0005_unificar_disciplinas_repetidas.py",
+          "size": 5666,
           "extension": ".py"
         },
         {
           "path": "backend/tests/unit/test_routers.py",
           "name": "test_routers.py",
-          "size": 4979,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_errors.py",
-          "name": "test_errors.py",
-          "size": 4425,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_perfil_usuario.py",
-          "name": "test_perfil_usuario.py",
-          "size": 4366,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_moderacao.py",
-          "name": "test_moderacao.py",
-          "size": 4239,
+          "size": 5171,
           "extension": ".py"
         }
       ]
     },
     {
       "language": "JavaScript",
-      "file_count": 35,
-      "total_bytes": 79022,
-      "percentage": 8.98,
+      "file_count": 50,
+      "total_bytes": 147387,
+      "percentage": 14.54,
       "files": [
         {
-          "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
-          "name": "MinhasContribuicoesPage.jsx",
-          "size": 8996,
+          "path": "frontend/src/pages/ConhecimentoPage.jsx",
+          "name": "ConhecimentoPage.jsx",
+          "size": 10102,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/components/conteudos/DisciplinaBusca.jsx",
+          "name": "DisciplinaBusca.jsx",
+          "size": 8932,
           "extension": ".jsx"
         },
         {
           "path": "frontend/src/pages/ContribuicaoPage.jsx",
           "name": "ContribuicaoPage.jsx",
-          "size": 8418,
+          "size": 8305,
           "extension": ".jsx"
         },
         {
-          "path": "frontend/src/pages/ConhecimentoPage.jsx",
-          "name": "ConhecimentoPage.jsx",
-          "size": 6857,
+          "path": "frontend/src/pages/HomePage.jsx",
+          "name": "HomePage.jsx",
+          "size": 7651,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/MinhaContribuicaoPage.jsx",
+          "name": "MinhaContribuicaoPage.jsx",
+          "size": 7475,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
+          "name": "MinhasContribuicoesPage.jsx",
+          "size": 7317,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/HomePage.test.jsx",
+          "name": "HomePage.test.jsx",
+          "size": 6408,
           "extension": ".jsx"
         },
         {
           "path": "frontend/src/pages/PerfilPage.jsx",
           "name": "PerfilPage.jsx",
-          "size": 5720,
+          "size": 5629,
           "extension": ".jsx"
         },
         {
-          "path": "frontend/src/pages/AdminPage.jsx",
-          "name": "AdminPage.jsx",
-          "size": 4679,
+          "path": "frontend/src/pages/ConteudoPage.jsx",
+          "name": "ConteudoPage.jsx",
+          "size": 5137,
           "extension": ".jsx"
         },
         {
-          "path": "frontend/src/pages/AdminUsuariosPage.jsx",
-          "name": "AdminUsuariosPage.jsx",
-          "size": 4368,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/ModeracaoPage.jsx",
-          "name": "ModeracaoPage.jsx",
-          "size": 4037,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/GuiaContribuicaoPage.jsx",
-          "name": "GuiaContribuicaoPage.jsx",
-          "size": 3893,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/services/api.js",
-          "name": "api.js",
-          "size": 3120,
-          "extension": ".js"
-        },
-        {
-          "path": "frontend/src/App.jsx",
-          "name": "App.jsx",
-          "size": 2929,
+          "path": "frontend/src/pages/ConhecimentoPage.test.jsx",
+          "name": "ConhecimentoPage.test.jsx",
+          "size": 5063,
           "extension": ".jsx"
         }
       ]
@@ -286,7 +286,7 @@
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 6.94,
+      "percentage": 6.03,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -327,10 +327,78 @@
       ]
     },
     {
+      "language": "CSS",
+      "file_count": 15,
+      "total_bytes": 42942,
+      "percentage": 4.24,
+      "files": [
+        {
+          "path": "frontend/src/components/ui/ui.css",
+          "name": "ui.css",
+          "size": 5905,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/HomePage.css",
+          "name": "HomePage.css",
+          "size": 5691,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/components/conteudos/conteudos.css",
+          "name": "conteudos.css",
+          "size": 4741,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/components/layout/layout.css",
+          "name": "layout.css",
+          "size": 4528,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/AuthPage.css",
+          "name": "AuthPage.css",
+          "size": 3710,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "name": "index.css",
+          "size": 3689,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/ContribuicaoPage.css",
+          "name": "ContribuicaoPage.css",
+          "size": 3395,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/MinhasContribuicoesPage.css",
+          "name": "MinhasContribuicoesPage.css",
+          "size": 2557,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/components/conteudos/DisciplinaBusca.css",
+          "name": "DisciplinaBusca.css",
+          "size": 2190,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/pages/governance.css",
+          "name": "governance.css",
+          "size": 2119,
+          "extension": ".css"
+        }
+      ]
+    },
+    {
       "language": "Unknown",
       "file_count": 12,
       "total_bytes": 37117,
-      "percentage": 4.22,
+      "percentage": 3.66,
       "files": [
         {
           "path": "unb_core.db",
@@ -395,78 +463,10 @@
       ]
     },
     {
-      "language": "CSS",
-      "file_count": 12,
-      "total_bytes": 27287,
-      "percentage": 3.1,
-      "files": [
-        {
-          "path": "frontend/src/components/ui/ui.css",
-          "name": "ui.css",
-          "size": 4824,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/ContribuicaoPage.css",
-          "name": "ContribuicaoPage.css",
-          "size": 3754,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/AuthPage.css",
-          "name": "AuthPage.css",
-          "size": 3559,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/MinhasContribuicoesPage.css",
-          "name": "MinhasContribuicoesPage.css",
-          "size": 2744,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/components/conteudos/conteudos.css",
-          "name": "conteudos.css",
-          "size": 2725,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/ConhecimentoPage.css",
-          "name": "ConhecimentoPage.css",
-          "size": 2169,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/GuiaContribuicaoPage.css",
-          "name": "GuiaContribuicaoPage.css",
-          "size": 2065,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/governance.css",
-          "name": "governance.css",
-          "size": 2055,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "name": "index.css",
-          "size": 1671,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/pages/PerfilPage.css",
-          "name": "PerfilPage.css",
-          "size": 874,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
       "language": "No Extension",
       "file_count": 6,
       "total_bytes": 10974,
-      "percentage": 1.25,
+      "percentage": 1.08,
       "files": [
         {
           "path": "git status",
@@ -510,7 +510,7 @@
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 1.14,
+      "percentage": 0.99,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -530,7 +530,7 @@
       "language": "YAML",
       "file_count": 4,
       "total_bytes": 8809,
-      "percentage": 1.0,
+      "percentage": 0.87,
       "files": [
         {
           "path": "docs/gitpage/mkdocs.yml",
@@ -562,7 +562,7 @@
       "language": "INI",
       "file_count": 1,
       "total_bytes": 5009,
-      "percentage": 0.57,
+      "percentage": 0.49,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -573,10 +573,24 @@
       ]
     },
     {
+      "language": "HTML",
+      "file_count": 1,
+      "total_bytes": 958,
+      "percentage": 0.09,
+      "files": [
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 958,
+          "extension": ".html"
+        }
+      ]
+    },
+    {
       "language": "Git Ignore",
       "file_count": 2,
       "total_bytes": 493,
-      "percentage": 0.06,
+      "percentage": 0.05,
       "files": [
         {
           "path": ".specify/.gitignore",
@@ -589,20 +603,6 @@
           "name": ".gitignore",
           "size": 109,
           "extension": ".gitignore"
-        }
-      ]
-    },
-    {
-      "language": "HTML",
-      "file_count": 1,
-      "total_bytes": 348,
-      "percentage": 0.04,
-      "files": [
-        {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 348,
-          "extension": ".html"
         }
       ]
     },
@@ -648,7 +648,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-20T14:55:01.964649+00:00",
+    "extracted_at": "2026-11-21T14:17:48.611235+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }

@@ -2,19 +2,19 @@
   "repository": "2026-02-UnDb",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-20T14:53:55.014835+00:00",
+  "analyzed_at": "2026-11-21T14:16:36.025828+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 937,
-  "total_bytes": 45622783,
+  "total_files": 1141,
+  "total_bytes": 48523713,
   "languages": [
     {
       "language": "PNG Image",
-      "file_count": 324,
-      "total_bytes": 39071114,
-      "percentage": 85.64,
+      "file_count": 334,
+      "total_bytes": 40104306,
+      "percentage": 82.65,
       "files": [
         {
           "path": "docs/referencias/telas-jornada-247/capturas/moderacao.png",
@@ -82,7 +82,7 @@
       "language": "JPEG Image",
       "file_count": 21,
       "total_bytes": 2995539,
-      "percentage": 6.57,
+      "percentage": 6.17,
       "files": [
         {
           "path": "frontend/docs/capturas/issue-211/home-390-depois.jpg",
@@ -148,10 +148,22 @@
     },
     {
       "language": "Markdown",
-      "file_count": 157,
-      "total_bytes": 1331642,
-      "percentage": 2.92,
+      "file_count": 211,
+      "total_bytes": 1946144,
+      "percentage": 4.01,
       "files": [
+        {
+          "path": "docs/requisitos.md",
+          "name": "requisitos.md",
+          "size": 80219,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/seguranca/revisao-sessoes-abuso-logs-issue-266.md",
+          "name": "revisao-sessoes-abuso-logs-issue-266.md",
+          "size": 67044,
+          "extension": ".md"
+        },
         {
           "path": "docs/estudos/avaliacao-busca-autocomplete-issue-251.md",
           "name": "avaliacao-busca-autocomplete-issue-251.md",
@@ -159,9 +171,9 @@
           "extension": ".md"
         },
         {
-          "path": "docs/requisitos.md",
-          "name": "requisitos.md",
-          "size": 53813,
+          "path": "specs.md",
+          "name": "specs.md",
+          "size": 47441,
           "extension": ".md"
         },
         {
@@ -171,21 +183,15 @@
           "extension": ".md"
         },
         {
+          "path": "docs/arquitetura.md",
+          "name": "arquitetura.md",
+          "size": 37709,
+          "extension": ".md"
+        },
+        {
           "path": "docs/estudos/mapeamento-sigaa.md",
           "name": "mapeamento-sigaa.md",
           "size": 36775,
-          "extension": ".md"
-        },
-        {
-          "path": "specs.md",
-          "name": "specs.md",
-          "size": 32842,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/arquitetura.md",
-          "name": "arquitetura.md",
-          "size": 32131,
           "extension": ".md"
         },
         {
@@ -205,37 +211,117 @@
           "name": "integracao-visual-jornada-issue-186.md",
           "size": 26373,
           "extension": ".md"
+        }
+      ]
+    },
+    {
+      "language": "JSON",
+      "file_count": 67,
+      "total_bytes": 1253061,
+      "percentage": 2.58,
+      "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 247822,
+          "extension": ".json"
         },
         {
-          "path": "frontend/README.md",
-          "name": "README.md",
-          "size": 23045,
-          "extension": ".md"
+          "path": "docs/estudos/evidencias/issue-251/resultados.json",
+          "name": "resultados.json",
+          "size": 171750,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/estudos/evidencias/issue-252/resultados-etapa1.json",
+          "name": "resultados-etapa1.json",
+          "size": 151826,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/estudos/evidencias/issue-252/resultados-leet.json",
+          "name": "resultados-leet.json",
+          "size": 139031,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/estudos/evidencias/issue-252/resultados.json",
+          "name": "resultados.json",
+          "size": 109985,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/seguranca/evidencias/issue-266/continuidade/frontend-resolvido.json",
+          "name": "frontend-resolvido.json",
+          "size": 56674,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/seguranca/evidencias/issue-266/frontend-resolvido.json",
+          "name": "frontend-resolvido.json",
+          "size": 56674,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/estudos/evidencias/issue-251/dataset.json",
+          "name": "dataset.json",
+          "size": 44316,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/estudos/evidencias/issue-252/fontes-github.json",
+          "name": "fontes-github.json",
+          "size": 21836,
+          "extension": ".json"
+        },
+        {
+          "path": "docs/estudos/evidencias/issue-252/desempenho-etapa1.json",
+          "name": "desempenho-etapa1.json",
+          "size": 17653,
+          "extension": ".json"
         }
       ]
     },
     {
       "language": "Python",
-      "file_count": 150,
-      "total_bytes": 635575,
-      "percentage": 1.39,
+      "file_count": 221,
+      "total_bytes": 1058204,
+      "percentage": 2.18,
       "files": [
         {
           "path": "backend/tests/test_avaliacao.py",
           "name": "test_avaliacao.py",
-          "size": 30904,
+          "size": 31285,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_politica_moderacao_e_titulares.py",
+          "name": "test_politica_moderacao_e_titulares.py",
+          "size": 28372,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/recovery_scenario.py",
+          "name": "recovery_scenario.py",
+          "size": 24632,
           "extension": ".py"
         },
         {
           "path": "backend/tests/test_comentario.py",
           "name": "test_comentario.py",
-          "size": 21077,
+          "size": 21398,
           "extension": ".py"
         },
         {
           "path": "backend/tests/test_auth.py",
           "name": "test_auth.py",
-          "size": 19471,
+          "size": 20437,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/test_seguranca_266.py",
+          "name": "test_seguranca_266.py",
+          "size": 18984,
           "extension": ".py"
         },
         {
@@ -257,104 +343,18 @@
           "extension": ".py"
         },
         {
-          "path": "backend/tests/integration_moderacao.py",
-          "name": "integration_moderacao.py",
-          "size": 15268,
+          "path": "backend/tests/test_limite_abuso_postgres.py",
+          "name": "test_limite_abuso_postgres.py",
+          "size": 16687,
           "extension": ".py"
-        },
-        {
-          "path": "backend/app/services/identidade_docente_service.py",
-          "name": "identidade_docente_service.py",
-          "size": 14784,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_denuncia.py",
-          "name": "test_denuncia.py",
-          "size": 13795,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration_avaliacao.py",
-          "name": "integration_avaliacao.py",
-          "size": 12780,
-          "extension": ".py"
-        }
-      ]
-    },
-    {
-      "language": "JSON",
-      "file_count": 25,
-      "total_bytes": 547964,
-      "percentage": 1.2,
-      "files": [
-        {
-          "path": "frontend/package-lock.json",
-          "name": "package-lock.json",
-          "size": 243124,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-251/resultados.json",
-          "name": "resultados.json",
-          "size": 171750,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-251/dataset.json",
-          "name": "dataset.json",
-          "size": 44316,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-186/resultados/resultado.json",
-          "name": "resultado.json",
-          "size": 9643,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-186/versao.json",
-          "name": "versao.json",
-          "size": 8902,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/referencias/ui-dark/manifesto-sha256.json",
-          "name": "manifesto-sha256.json",
-          "size": 8885,
-          "extension": ".json"
-        },
-        {
-          "path": "backend/app/data/termos_moderacao.json",
-          "name": "termos_moderacao.json",
-          "size": 7721,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-186/acesso/resultado.json",
-          "name": "resultado.json",
-          "size": 7422,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-155/acesso/resultado.json",
-          "name": "resultado.json",
-          "size": 6703,
-          "extension": ".json"
-        },
-        {
-          "path": "docs/estudos/evidencias/issue-155/resultados/resultado.json",
-          "name": "resultado.json",
-          "size": 6591,
-          "extension": ".json"
         }
       ]
     },
     {
       "language": "TypeScript",
-      "file_count": 181,
-      "total_bytes": 486936,
-      "percentage": 1.07,
+      "file_count": 197,
+      "total_bytes": 555526,
+      "percentage": 1.14,
       "files": [
         {
           "path": "frontend/src/app/prototipo/page.tsx",
@@ -369,15 +369,27 @@
           "extension": ".tsx"
         },
         {
+          "path": "frontend/src/app/sobre/page.tsx",
+          "name": "page.tsx",
+          "size": 13338,
+          "extension": ".tsx"
+        },
+        {
           "path": "frontend/src/app/professores/[id]/disciplinas/[disciplinaId]/page.tsx",
           "name": "page.tsx",
           "size": 11692,
           "extension": ".tsx"
         },
         {
+          "path": "frontend/src/app/privacidade/page.tsx",
+          "name": "page.tsx",
+          "size": 11663,
+          "extension": ".tsx"
+        },
+        {
           "path": "frontend/src/app/moderacao/fila-moderacao.tsx",
           "name": "fila-moderacao.tsx",
-          "size": 10939,
+          "size": 10963,
           "extension": ".tsx"
         },
         {
@@ -387,15 +399,15 @@
           "extension": ".tsx"
         },
         {
-          "path": "frontend/src/components/comparacao-dark.tsx",
-          "name": "comparacao-dark.tsx",
-          "size": 10391,
+          "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx",
+          "name": "detalhe-moderacao.tsx",
+          "size": 10679,
           "extension": ".tsx"
         },
         {
-          "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx",
-          "name": "detalhe-moderacao.tsx",
-          "size": 10390,
+          "path": "frontend/src/components/comparacao-dark.tsx",
+          "name": "comparacao-dark.tsx",
+          "size": 10391,
           "extension": ".tsx"
         },
         {
@@ -403,26 +415,14 @@
           "name": "fila-identidades.tsx",
           "size": 10341,
           "extension": ".tsx"
-        },
-        {
-          "path": "docs/referencias/ui-dark/src/app/moderacao/detalhe-moderacao.tsx",
-          "name": "detalhe-moderacao.tsx",
-          "size": 9871,
-          "extension": ".tsx"
-        },
-        {
-          "path": "docs/referencias/ui-dark/src/app/moderacao/fila-moderacao.tsx",
-          "name": "fila-moderacao.tsx",
-          "size": 9606,
-          "extension": ".tsx"
         }
       ]
     },
     {
       "language": "Unknown",
-      "file_count": 45,
-      "total_bytes": 406334,
-      "percentage": 0.89,
+      "file_count": 53,
+      "total_bytes": 454630,
+      "percentage": 0.94,
       "files": [
         {
           "path": "docs/estudos/evidencias/issue-37/Relatorio_Issue_37_Validacao_Ambiente_Completo_TiagoVieira.docx",
@@ -433,7 +433,7 @@
         {
           "path": "frontend/tests/avaliacao-browser.mjs",
           "name": "avaliacao-browser.mjs",
-          "size": 33623,
+          "size": 34289,
           "extension": ".mjs"
         },
         {
@@ -443,27 +443,27 @@
           "extension": ".mjs"
         },
         {
+          "path": "frontend/tests/moderacao-browser.mjs",
+          "name": "moderacao-browser.mjs",
+          "size": 21132,
+          "extension": ".mjs"
+        },
+        {
           "path": "frontend/tests/prototipo-browser.mjs",
           "name": "prototipo-browser.mjs",
           "size": 20788,
           "extension": ".mjs"
         },
         {
-          "path": "frontend/tests/moderacao-browser.mjs",
-          "name": "moderacao-browser.mjs",
-          "size": 20768,
-          "extension": ".mjs"
-        },
-        {
           "path": "frontend/tests/acesso-browser.mjs",
           "name": "acesso-browser.mjs",
-          "size": 20564,
+          "size": 20651,
           "extension": ".mjs"
         },
         {
           "path": "frontend/tests/denuncia-browser.mjs",
           "name": "denuncia-browser.mjs",
-          "size": 17554,
+          "size": 17914,
           "extension": ".mjs"
         },
         {
@@ -475,7 +475,7 @@
         {
           "path": "frontend/tests/jornada-247-browser.mjs",
           "name": "jornada-247-browser.mjs",
-          "size": 14476,
+          "size": 14568,
           "extension": ".mjs"
         },
         {
@@ -535,25 +535,25 @@
     {
       "language": "YAML",
       "file_count": 5,
-      "total_bytes": 23517,
-      "percentage": 0.05,
+      "total_bytes": 28364,
+      "percentage": 0.06,
       "files": [
         {
           "path": ".github/workflows/pull-request.yml",
           "name": "pull-request.yml",
-          "size": 10561,
+          "size": 11780,
           "extension": ".yml"
         },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 5995,
+          "size": 9190,
           "extension": ".yml"
         },
         {
           "path": "docker-compose.yml",
           "name": "docker-compose.yml",
-          "size": 2892,
+          "size": 3325,
           "extension": ".yml"
         },
         {
@@ -592,10 +592,16 @@
     },
     {
       "language": "SVG Image",
-      "file_count": 5,
-      "total_bytes": 3314,
+      "file_count": 6,
+      "total_bytes": 5691,
       "percentage": 0.01,
       "files": [
+        {
+          "path": "docs/assets/images/como-funciona.svg",
+          "name": "como-funciona.svg",
+          "size": 2377,
+          "extension": ".svg"
+        },
         {
           "path": "frontend/public/next.svg",
           "name": "next.svg",
@@ -657,7 +663,7 @@
     {
       "language": "Git Ignore",
       "file_count": 3,
-      "total_bytes": 948,
+      "total_bytes": 955,
       "percentage": 0.0,
       "files": [
         {
@@ -675,7 +681,7 @@
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 161,
+          "size": 168,
           "extension": ".gitignore"
         }
       ]
@@ -750,20 +756,32 @@
     },
     {
       "language": "Text",
-      "file_count": 4,
-      "total_bytes": 272,
+      "file_count": 6,
+      "total_bytes": 1665,
       "percentage": 0.0,
       "files": [
         {
-          "path": "backend/requirements.txt",
-          "name": "requirements.txt",
-          "size": 108,
+          "path": "docs/seguranca/evidencias/issue-266/continuidade/python-resolvido.txt",
+          "name": "python-resolvido.txt",
+          "size": 641,
+          "extension": ".txt"
+        },
+        {
+          "path": "docs/seguranca/evidencias/issue-266/python-resolvido.txt",
+          "name": "python-resolvido.txt",
+          "size": 641,
           "extension": ".txt"
         },
         {
           "path": "backend/requirements-dev.txt",
           "name": "requirements-dev.txt",
-          "size": 86,
+          "size": 197,
+          "extension": ".txt"
+        },
+        {
+          "path": "backend/requirements.txt",
+          "name": "requirements.txt",
+          "size": 108,
           "extension": ".txt"
         },
         {
@@ -796,7 +814,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-20T14:55:01.867398+00:00",
+    "extracted_at": "2026-11-21T14:17:48.480764+00:00",
     "file_path": "data/silver/language_analysis_2026-02-UnDb.json"
   }
 }
