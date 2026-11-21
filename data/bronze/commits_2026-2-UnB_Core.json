@@ -1,10 +1,671 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-20T14:47:56.252641+00:00",
+      "extracted_at": "2026-11-21T14:10:35.713024+00:00",
       "file_path": "data/bronze/commits_2026-2-UnB_Core.json",
-      "record_count": 232
+      "record_count": 258
     }
+  },
+  {
+    "sha": "ffb10722284a73d1d7bc0bd7dceb17c90fbcb1af",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:22:12Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T21:22:12Z"
+      },
+      "message": "Merge pull request #168 from unb-mds/task/padronizar-layout\n\nfeat: padronizar o layout das páginas e alinhar o conteúdo ao menu"
+    },
+    "parents": [
+      "19fb8c2295ddb882c15b37ab61976c79ccfe8c17",
+      "a2d1c9bcc522c92bf9b675bb39f2bfa1812bc1db"
+    ],
+    "additions": 934,
+    "deletions": 595,
+    "total_changes": 1529,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "a2d1c9bcc522c92bf9b675bb39f2bfa1812bc1db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:19:51Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:19:51Z"
+      },
+      "message": "refactor: padronizar todas as páginas com o layout comum\n\n- Base de conhecimento: filtros dentro da faixa do cabeçalho e cards em\n  3 colunas.\n- Home: topo azul e \"Como funciona\" viram faixas de largura total;\n  recentes em 3 colunas.\n- Conteúdo: título no cabeçalho e lateral com a disciplina e \"Mais desta\n  disciplina\".\n- Contribuir: lateral com as dicas do guia; depois do envio, opções de\n  acompanhar em Minhas contribuições, enviar outra ou voltar à base.\n- Minhas contribuições: botão de enviar no cabeçalho e lateral com o\n  resumo por estado.\n- Detalhe da contribuição: lateral explicando a situação e a revisão.\n- Guia: lateral com atalho para começar a contribuir.\n- Moderação: lateral com a fila e boas práticas.\n- Usuários: lista na coluna principal e formulário de novo usuário na\n  lateral; acesso restrito agora mostra menu e rodapé.\n- Meu perfil: resumo da conta na lateral.\n- Remove as cascas, larguras e cabeçalhos antigos de cada página e\n  unifica as classes de mensagens vazias e de carregamento."
+    },
+    "parents": [
+      "939d9afefef9d81d4da43fe72638b761fd1e1113"
+    ],
+    "additions": 714,
+    "deletions": 593,
+    "total_changes": 1307,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "939d9afefef9d81d4da43fe72638b761fd1e1113",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:19:51Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:19:51Z"
+      },
+      "message": "feat: criar layout padrão das páginas alinhado ao menu\n\n- Tokens --layout-max (1200px) e --layout-gutter: menu, rodapé e páginas\n  usam a mesma margem lateral, então o conteúdo começa e termina nas\n  mesmas linhas do menu.\n- Componente PageLayout: faixa de cabeçalho de largura total (voltar,\n  eyebrow, título, descrição, ações e conteúdo extra), corpo alinhado ao\n  menu e coluna lateral opcional de 320px, que vai para baixo do\n  conteúdo em telas estreitas. AsideCard para os cartões da lateral.\n- Classes comuns: .cards-grid (3 colunas na largura do site, 2 em telas\n  médias, 1 no celular), .page-narrow (largura de leitura),\n  .aside-stats, .page-status e .empty-state__action.\n- Testes do PageLayout."
+    },
+    "parents": [
+      "19fb8c2295ddb882c15b37ab61976c79ccfe8c17"
+    ],
+    "additions": 220,
+    "deletions": 2,
+    "total_changes": 222,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "19fb8c2295ddb882c15b37ab61976c79ccfe8c17",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:02:37Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T21:02:37Z"
+      },
+      "message": "Merge pull request #164 from unb-mds/fix/menu-pagina-ativa\n\nfix: acender no menu o item da página atual"
+    },
+    "parents": [
+      "fd30f2bfa033e3fe3f8757fac04a4884f0ff2ed1",
+      "d2513f6a9586082798164aac02b3ae300fd0f50f"
+    ],
+    "additions": 95,
+    "deletions": 55,
+    "total_changes": 150,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "fd30f2bfa033e3fe3f8757fac04a4884f0ff2ed1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:02:20Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T21:02:20Z"
+      },
+      "message": "Merge pull request #167 from unb-mds/fix/home-como-funciona\n\nstyle: reorganizar a seção \"Como funciona\" da home"
+    },
+    "parents": [
+      "0a34e787cfbe6adf5afe659942e4e7e392fc28cc",
+      "f93a9c414e03b0012f2dd66986a6a84253583c03"
+    ],
+    "additions": 30,
+    "deletions": 16,
+    "total_changes": 46,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "0a34e787cfbe6adf5afe659942e4e7e392fc28cc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T21:00:10Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T21:00:10Z"
+      },
+      "message": "Merge pull request #162 from unb-mds/task/base-conhecimento-filtros\n\nfeat: listar e filtrar todos os conteúdos na base de conhecimento"
+    },
+    "parents": [
+      "d5ba6f9e210e3df4360be4f03d21120f06b7af35",
+      "13a9e48305ee5fffcdb276b85aa64733714a45aa"
+    ],
+    "additions": 534,
+    "deletions": 79,
+    "total_changes": 613,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "f93a9c414e03b0012f2dd66986a6a84253583c03",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:57:42Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:57:42Z"
+      },
+      "message": "style: reorganizar a seção \"Como funciona\" da home\n\n- Título, frase de apoio, cartões e link do guia centralizados.\n- Os três cartões ficam alinhados entre si (subgrid): número, título e\n  texto começam na mesma altura, mesmo quando um título ocupa duas\n  linhas. Em uma coluna (até 900px) cada cartão volta a ter altura\n  própria.\n- Tipos de conteúdo viram etiquetas de contorno que quebram bem, em vez\n  da lista com \"·\" que deixava separadores sobrando no fim da linha.\n- Link do guia sai do canto do título e vai para baixo dos cartões.\n- Textos dos passos revisados para ficarem mais curtos e diretos."
+    },
+    "parents": [
+      "d5ba6f9e210e3df4360be4f03d21120f06b7af35"
+    ],
+    "additions": 30,
+    "deletions": 16,
+    "total_changes": 46,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "d2513f6a9586082798164aac02b3ae300fd0f50f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:55:36Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:55:36Z"
+      },
+      "message": "fix: acender no menu o item da página atual\n\nSó Início, Base de conhecimento e Meu perfil tinham estado ativo, e\nquase todas as páginas informavam \"conhecimento\". Por isso, em\nContribuir, Minhas contribuições, Moderação e Usuários, a barra azul\nficava em \"Base de conhecimento\".\n\n- O item ativo passa a vir do endereço da página (secaoAtiva), e todos\n  os links do menu têm estado ativo.\n- Páginas internas acendem a seção a que pertencem: /conteudos/{id} acende\n  Base de conhecimento, /minhas-contribuicoes/{id} acende Minhas\n  contribuições e o Guia de contribuição acende Contribuir.\n- O link ativo recebe aria-current=\"page\" para leitores de tela.\n- A prop active das páginas deixa de ser usada, sem precisar mudar as\n  páginas.\n- Testes do item ativo para cada endereço."
+    },
+    "parents": [
+      "d5ba6f9e210e3df4360be4f03d21120f06b7af35"
+    ],
+    "additions": 95,
+    "deletions": 55,
+    "total_changes": 150,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "13a9e48305ee5fffcdb276b85aa64733714a45aa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:53:39Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:53:39Z"
+      },
+      "message": "feat: listar e filtrar todos os conteúdos na base de conhecimento\n\nBackend:\n- GET /api/v1/conteudos passa a aceitar filtros opcionais (curso_id,\n  disciplina_id, tipo), ordem (recentes, antigos, titulo) e paginação\n  (limite até 50, pagina), e devolve o total junto com os itens.\n- O filtro de curso usa os vínculos de curso_disciplina, então inclui\n  disciplinas compartilhadas entre cursos.\n- A home continua usando a mesma rota sem filtros.\n\nFrontend:\n- A base de conhecimento mostra todos os conteúdos publicados ao abrir,\n  sem exigir curso ou disciplina.\n- Filtros opcionais de curso, disciplina e tipo, ordenação, contador de\n  resultados, \"Limpar filtros\" e \"Carregar mais\" (12 por vez).\n- Ao trocar filtros, a lista anterior fica esmaecida até a nova chegar.\n- O card abre a página do conteúdo, em vez do painel no fim da lista.\n- Testes de componente da página e de integração da rota."
+    },
+    "parents": [
+      "d5ba6f9e210e3df4360be4f03d21120f06b7af35"
+    ],
+    "additions": 534,
+    "deletions": 79,
+    "total_changes": 613,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "d5ba6f9e210e3df4360be4f03d21120f06b7af35",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:40:48Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T20:40:48Z"
+      },
+      "message": "Merge pull request #160 from unb-mds/task/tema-escuro-e-usabilidade\n\nfeat: tema escuro, correção dos formulários e melhorias de usabilidade"
+    },
+    "parents": [
+      "2a65a2ec1ef1a29385bd0bb5c80eecc631874e44",
+      "60446fe15535ec65f26ae3ec54bfb80389620597"
+    ],
+    "additions": 352,
+    "deletions": 49,
+    "total_changes": 401,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "60446fe15535ec65f26ae3ec54bfb80389620597",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:37:40Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:37:40Z"
+      },
+      "message": "style: destacar campos de texto e seleção no tema escuro\n\n- Novos tokens --color-field e --color-field-border para o fundo e a\n  borda dos campos. No tema claro têm os mesmos valores de antes; no\n  escuro o fundo fica mais claro que os cartões e a borda mais visível.\n- Aplicados em todos os campos: formulários, filtros da base de\n  conhecimento, busca de disciplina, chips de tipo, login/cadastro e\n  janelas de moderação.\n- Placeholder com cor própria no escuro (contraste 4,6:1)."
+    },
+    "parents": [
+      "4dcaa0424cf337a63d1925c90f7dad2b6ea20618"
+    ],
+    "additions": 15,
+    "deletions": 7,
+    "total_changes": 22,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "4dcaa0424cf337a63d1925c90f7dad2b6ea20618",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:31:58Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:31:58Z"
+      },
+      "message": "feat: adicionar tema escuro\n\n- Tokens de cor com versão escura em :root[data-theme=\"dark\"], com\n  contraste de texto acima de 4,5:1 (WCAG AA).\n- Novos tokens para cores que não devem mudar com o tema: fundos da\n  marca (--color-brand, --color-brand-deep), texto sobre botões\n  (--color-on-primary, --color-on-accent) e texto de campos com fundo\n  claro fixo (--color-ink). As cores fixas no CSS passaram a usá-los.\n- Botão de tema no menu (sol/lua), visível também no celular. A escolha\n  fica salva no navegador; sem escolha salva, o site segue o tema do\n  sistema, inclusive se ele mudar com a página aberta.\n- Script no index.html aplica o tema antes de a página aparecer, para\n  não piscar em branco.\n- color-scheme ajusta controles nativos (selects, barras de rolagem) e a\n  cor da barra do navegador acompanha o tema.\n- Testes do botão de tema e da escolha inicial."
+    },
+    "parents": [
+      "66f13a28d73e85b56f75ccec25341db2bbabe27b"
+    ],
+    "additions": 214,
+    "deletions": 9,
+    "total_changes": 223,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "66f13a28d73e85b56f75ccec25341db2bbabe27b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:29:36Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:29:36Z"
+      },
+      "message": "fix: melhorar a usabilidade da home e da busca de disciplina\n\n- Enter na busca de disciplina escolhe o primeiro resultado; se a busca\n  ainda estiver carregando, escolhe assim que o resultado chegar.\n- A busca vira o destaque do topo da home (campo maior) e os outros\n  botões do topo passam a ser de contorno.\n- Título dos cards de conteúdo vira link para /conteudos/{id}: clique\n  normal continua abrindo pelo próprio site, Ctrl/botão do meio abre em\n  outra aba. Na home, os títulos dos cards passam a ser h3.\n- Tipos de conteúdo em \"Como funciona\" viram lista simples, sem\n  parecer botões.\n- Rótulo do tipo por extenso em Minhas contribuições e na Moderação\n  (antes aparecia \"Implementacao\", sem acento). O .badge deixa de usar\n  text-transform: capitalize.\n- Botão principal azul em fundos claros; o ciano fica para fundos\n  escuros.\n- Botões com altura mínima de 40px, botão de limpar a busca maior,\n  badges com 12px e títulos de seção do guia no mesmo tamanho da home."
+    },
+    "parents": [
+      "6cfa928213c663e297c2ec505559233b4e54303e"
+    ],
+    "additions": 118,
+    "deletions": 32,
+    "total_changes": 150,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "6cfa928213c663e297c2ec505559233b4e54303e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:24:50Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T20:24:50Z"
+      },
+      "message": "fix: alinhar rótulos e campos dos formulários\n\n- O \"*\" e as dicas dos rótulos ficavam numa linha separada, porque o\n  label usava display: grid. Agora o texto, o \"*\" e a dica ficam na\n  mesma linha e o campo vai para a linha de baixo.\n- Campos lado a lado ficam alinhados mesmo quando um rótulo é maior.\n- O texto digitado nos campos e nos selects não herda mais o negrito\n  do rótulo.\n- Dentro do formulário de contribuição, o texto da busca de disciplina\n  não passa mais por baixo do botão de limpar."
+    },
+    "parents": [
+      "2a65a2ec1ef1a29385bd0bb5c80eecc631874e44"
+    ],
+    "additions": 9,
+    "deletions": 5,
+    "total_changes": 14,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2a65a2ec1ef1a29385bd0bb5c80eecc631874e44",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:22:39Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T19:22:39Z"
+      },
+      "message": "Merge pull request #159 from unb-mds/task/home-page\n\nfeat: criar a página inicial"
+    },
+    "parents": [
+      "7a6b36d5c5b60817bcf97dc83941698c84e66a6d",
+      "5687738b0c99b463ba924626885604b9a2d1e358"
+    ],
+    "additions": 518,
+    "deletions": 17,
+    "total_changes": 535,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "5687738b0c99b463ba924626885604b9a2d1e358",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:21:05Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:21:05Z"
+      },
+      "message": "feat: criar a página inicial\n\nBackend:\n- Nova rota GET /api/v1/conteudos?limite= com os últimos conteúdos\n  publicados de todas as disciplinas (padrão 6, máximo 20), no mesmo\n  formato das outras listas de conteúdo.\n\nFrontend:\n- A rota \"/\" passa a abrir a página inicial; a base de conhecimento\n  continua em /base-de-conhecimentos.\n- Página inicial com busca de disciplina, conteúdos publicados\n  recentemente, \"como funciona\" e chamada para criar conta ou contribuir\n  (muda quando a pessoa está logada).\n- Escolher uma disciplina na busca abre a base de conhecimento com ela\n  selecionada (via history.state, que também mantém a escolha ao\n  recarregar a página).\n- Link \"Início\" no menu.\n- Cards de conteúdo mostram um trecho do texto, o rótulo do tipo e,\n  opcionalmente, a disciplina.\n- Testes de componente da página inicial e de integração da rota nova."
+    },
+    "parents": [
+      "7a6b36d5c5b60817bcf97dc83941698c84e66a6d"
+    ],
+    "additions": 518,
+    "deletions": 17,
+    "total_changes": 535,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "7a6b36d5c5b60817bcf97dc83941698c84e66a6d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:14:02Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T19:14:02Z"
+      },
+      "message": "Merge pull request #156 from unb-mds/task/pagina-contribuicao\n\nfeat: página própria para cada conteúdo publicado e cada contribuição"
+    },
+    "parents": [
+      "23a43aecff89aa8ad227be464d4fca0fe5850042",
+      "656b82c687c67826b58990e24f0ffe6afedebe18"
+    ],
+    "additions": 845,
+    "deletions": 125,
+    "total_changes": 970,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "656b82c687c67826b58990e24f0ffe6afedebe18",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:11:36Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:11:36Z"
+      },
+      "message": "feat: página própria para cada conteúdo publicado e cada contribuição\n\nBackend:\n- Nova rota GET /api/v1/contribuicoes/minhas/{id_contribuicao} para o\n  autor consultar uma contribuição.\n- Respostas de conteúdo passam a trazer disciplina_codigo,\n  disciplina_nome e autor_nome; respostas de contribuição trazem\n  disciplina_codigo e disciplina_nome. Os nomes vêm de relacionamentos\n  nos models, sem mudança no banco nem nas rotas existentes.\n\nFrontend:\n- Página /conteudos/{id}, com link copiável, aberta a partir do painel\n  de detalhes da base de conhecimento.\n- Página /minhas-contribuicoes/{id}, com estado, orientação da\n  moderação, edição e link para a versão publicada.\n- \"Ver detalhes\" e disciplina nos cards de Minhas contribuições.\n- O painel de detalhes passa a mostrar o texto do conteúdo\n  (corpo_ou_url), que antes nunca aparecia, e links http(s).\n- Formulário de edição extraído para componente reutilizável.\n- Testes de componente das páginas novas (vitest + Testing Library) e\n  testes de integração das respostas da API."
+    },
+    "parents": [
+      "23a43aecff89aa8ad227be464d4fca0fe5850042"
+    ],
+    "additions": 845,
+    "deletions": 125,
+    "total_changes": 970,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "23a43aecff89aa8ad227be464d4fca0fe5850042",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T19:04:25Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T19:04:25Z"
+      },
+      "message": "Merge pull request #155 from unb-mds/fix/copia-na-edicao\n\nfix: reaprovar contribuição editada atualiza o conteúdo em vez de criar cópia"
+    },
+    "parents": [
+      "f224ad9cbdeebb49a6b5e6912561ce098cac7300",
+      "460cb3384e2274332edef996c98f4f2581fafd86"
+    ],
+    "additions": 138,
+    "deletions": 0,
+    "total_changes": 138,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "460cb3384e2274332edef996c98f4f2581fafd86",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:28:19Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:28:19Z"
+      },
+      "message": "fix: reaprovar contribuição editada atualiza o conteúdo em vez de criar cópia\n\nAo aprovar uma contribuição nova, publicar_conteudo criava o conteúdo mas\nnão gravava o conteudo_id na contribuição. Quando o autor editava a\ncontribuição aprovada e ela era aprovada de novo, um segundo conteúdo era\ncriado e o antigo continuava publicado.\n\nAgora a contribuição fica ligada ao conteúdo criado, e a reaprovação\natualiza esse mesmo conteúdo. Enquanto a edição está pendente, a versão\naprovada continua visível.\n\nInclui teste de integração do fluxo aprovar, editar e aprovar de novo."
+    },
+    "parents": [
+      "f224ad9cbdeebb49a6b5e6912561ce098cac7300"
+    ],
+    "additions": 138,
+    "deletions": 0,
+    "total_changes": 138,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "f224ad9cbdeebb49a6b5e6912561ce098cac7300",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:25:06Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T18:25:06Z"
+      },
+      "message": "Merge pull request #152 from unb-mds/task/unificar-disciplinas\n\nfix: unificar disciplinas repetidas e corrigir a tabela de vínculo co…"
+    },
+    "parents": [
+      "f136bd7a62af730fa73208147eadc808b428f3f6",
+      "1c0f290273b46ccebbd4712f4722b3617ca8b309"
+    ],
+    "additions": 339,
+    "deletions": 0,
+    "total_changes": 339,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "1c0f290273b46ccebbd4712f4722b3617ca8b309",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:17:53Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:17:53Z"
+      },
+      "message": "fix: unificar disciplinas repetidas e corrigir a tabela de vínculo com cursos\n\n- Model CursoDisciplina passa a usar a tabela \"curso_disciplina\", criada\n  pela migration 0004. Sem __tablename__, o SQLModel usava\n  \"cursodisciplina\": o create_all() criava essa tabela vazia ao iniciar a\n  API e, em bancos migrados, todos os cursos ficavam sem disciplinas.\n- Migration 0005: move os vínculos gravados em \"cursodisciplina\" para\n  \"curso_disciplina\" e remove a tabela errada.\n- Migration 0005: mantém um registro por código de disciplina e passa os\n  vínculos com cursos, conteúdos e contribuições das cópias para ele.\n  Assim um conteúdo da disciplina aparece em todos os cursos que a\n  oferecem.\n- Testes da migration com SQLite em memória."
+    },
+    "parents": [
+      "f136bd7a62af730fa73208147eadc808b428f3f6"
+    ],
+    "additions": 339,
+    "deletions": 0,
+    "total_changes": 339,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "f136bd7a62af730fa73208147eadc808b428f3f6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:13:05Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T18:13:05Z"
+      },
+      "message": "Merge pull request #151 from unb-mds/task/disciplina-sem-curso\n\nfeat: permitir escolher a disciplina sem selecionar o curso"
+    },
+    "parents": [
+      "631b43de89bb0f815b313f356de72b5817dde2a0",
+      "cbdad1b6ba8f4a047e3974a0a2fdefaf00cc3631"
+    ],
+    "additions": 460,
+    "deletions": 94,
+    "total_changes": 554,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "cbdad1b6ba8f4a047e3974a0a2fdefaf00cc3631",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:10:32Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-20T18:10:32Z"
+      },
+      "message": "feat: permitir escolher a disciplina sem selecionar o curso\n\n- Nova rota GET /api/v1/disciplinas?busca=&limite= que busca disciplinas\n  ativas pelo código ou nome, sem acento e sem diferenciar maiúsculas.\n  Cada termo precisa ser o começo de uma palavra (\"calc 2\" encontra\n  CÁLCULO 2). Retorna o mesmo formato de /cursos/{id}/disciplinas.\n- Novo componente DisciplinaBusca: com curso, filtra as disciplinas do\n  curso; sem curso, busca na API. Mostra os cursos de cada disciplina.\n- Base de conhecimento e formulário de contribuição: o curso passa a ser\n  um filtro opcional (\"Todos os cursos\") e a disciplina é escolhida pela\n  busca. Trocar o curso mantém a disciplina quando o curso a oferece.\n- Testes de integração da busca."
+    },
+    "parents": [
+      "631b43de89bb0f815b313f356de72b5817dde2a0"
+    ],
+    "additions": 460,
+    "deletions": 94,
+    "total_changes": 554,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "631b43de89bb0f815b313f356de72b5817dde2a0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-20T15:50:08Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T15:50:08Z"
+      },
+      "message": "Merge pull request #149 from unb-mds/backend\n\nfeat: implementar relação muitos-para-muitos entre cursos e disciplinas"
+    },
+    "parents": [
+      "7d4fbbac747dd1256f10be121399158ef35d2f14",
+      "7901b9071ee2b23118ee6b71a419b7fccc6ea73f"
+    ],
+    "additions": 265,
+    "deletions": 65,
+    "total_changes": 330,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "7901b9071ee2b23118ee6b71a419b7fccc6ea73f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-20T15:45:09Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "6ad51db337e477dbf726b046818de3bdf811f50b9df32ced87d34635428b9b52"
+      },
+      "committer": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-20T15:45:09Z"
+      },
+      "message": "feat: implementar relação muitos-para-muitos entre cursos e disciplinas\n\n- Adicionar tabela de associação curso_disciplina\n- Permitir que disciplinas pertençam a vários cursos\n- Atualizar API, serviços, crawler e testes\n- Retornar os IDs dos cursos como uma lista"
+    },
+    "parents": [
+      "7d4fbbac747dd1256f10be121399158ef35d2f14"
+    ],
+    "additions": 265,
+    "deletions": 65,
+    "total_changes": 330,
+    "repo_name": "2026-2-UnB_Core"
   },
   {
     "sha": "7d4fbbac747dd1256f10be121399158ef35d2f14",

@@ -1,10 +1,2859 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-20T14:49:26.786014+00:00",
+      "extracted_at": "2026-11-21T14:12:03.476870+00:00",
       "file_path": "data/bronze/commits_2026-02-UnDb.json",
-      "record_count": 553
+      "record_count": 666
     }
+  },
+  {
+    "sha": "5999d941baf27334a9f938f65b76471050009fca",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-21T03:31:58Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T03:31:58Z"
+      },
+      "message": "Merge pull request #291 from unb-mds/hotfix/289-otimizar-comparacao-professores\n\nHotfix: reduzir consultas na comparação de professores"
+    },
+    "parents": [
+      "ca9d56b1930b42d9a2585fa6e707c36e545deda3",
+      "d07c990af0e8dd38d099144146fe43be98e656ca"
+    ],
+    "additions": 229,
+    "deletions": 78,
+    "total_changes": 307,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d07c990af0e8dd38d099144146fe43be98e656ca",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-21T03:20:22Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-21T03:20:22Z"
+      },
+      "message": "test: aguardar liberação do formulário entre envios"
+    },
+    "parents": [
+      "2126d70b544d2149567b7ed555fa7af7c4b62dcf"
+    ],
+    "additions": 4,
+    "deletions": 0,
+    "total_changes": 4,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2126d70b544d2149567b7ed555fa7af7c4b62dcf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-21T03:10:54Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-21T03:10:54Z"
+      },
+      "message": "fix: reduzir consultas na comparação de professores (#289)\n\n(cherry picked from commit d78dcb51295dfdbc0f6d0318d6417fb6e11096ad)"
+    },
+    "parents": [
+      "ca9d56b1930b42d9a2585fa6e707c36e545deda3"
+    ],
+    "additions": 225,
+    "deletions": 78,
+    "total_changes": 303,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ca9d56b1930b42d9a2585fa6e707c36e545deda3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T16:38:00Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T16:38:00Z"
+      },
+      "message": "Merge pull request #287 from unb-mds/release/2.0.0-rc.1\n\nrelease: UnDb 2.0.0-rc.1"
+    },
+    "parents": [
+      "a3afa44b0522e29485e4d7f724c7a35d9b399118",
+      "976db3b39e2818c30f88480f663ff1a4b23e5216"
+    ],
+    "additions": 46278,
+    "deletions": 588,
+    "total_changes": 46866,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "976db3b39e2818c30f88480f663ff1a4b23e5216",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T16:06:58Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T16:06:58Z"
+      },
+      "message": "chore(release): preparar candidata 2.0.0-rc.1"
+    },
+    "parents": [
+      "5cf2afe522ffd01e8aa2a12864bf4b5c6dbd6499"
+    ],
+    "additions": 67,
+    "deletions": 3,
+    "total_changes": 70,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5cf2afe522ffd01e8aa2a12864bf4b5c6dbd6499",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T16:04:42Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T16:04:42Z"
+      },
+      "message": "Merge pull request #286 from unb-mds/feature/168-revisao-geral-final\n\nfeat: concluir implementação da revisão geral e privacidade (#168, #265)"
+    },
+    "parents": [
+      "18179192250b80c4534784697972021cd2e89a64",
+      "b2683df4e1445a7ec137bbd142936aa10cb81b1b"
+    ],
+    "additions": 1674,
+    "deletions": 314,
+    "total_changes": 1988,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b2683df4e1445a7ec137bbd142936aa10cb81b1b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:54:47Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:54:47Z"
+      },
+      "message": "fix(168): compatibilizar teste de migracao com SQLAlchemy 2.1"
+    },
+    "parents": [
+      "be049f6479af9c10e6cf0e51ccfecbf42cecbc7a"
+    ],
+    "additions": 3,
+    "deletions": 2,
+    "total_changes": 5,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "be049f6479af9c10e6cf0e51ccfecbf42cecbc7a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z"
+      },
+      "message": "fix(265): revalidar atendimento e consolidar revisao de privacidade"
+    },
+    "parents": [
+      "3692d6f066be0c578d95787f1faa080614737756"
+    ],
+    "additions": 702,
+    "deletions": 13,
+    "total_changes": 715,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3692d6f066be0c578d95787f1faa080614737756",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z"
+      },
+      "message": "feat(168): revisar home catalogo e navegacao mobile"
+    },
+    "parents": [
+      "f84b19e656cc467bde55dd0760df127cd9c9f33d"
+    ],
+    "additions": 256,
+    "deletions": 104,
+    "total_changes": 360,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f84b19e656cc467bde55dd0760df127cd9c9f33d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z"
+      },
+      "message": "feat(168): permitir reenvio e consulta das proprias avaliacoes"
+    },
+    "parents": [
+      "5ef295d24bee052942dc68116e2ef84fd787e45d"
+    ],
+    "additions": 372,
+    "deletions": 10,
+    "total_changes": 382,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5ef295d24bee052942dc68116e2ef84fd787e45d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-20T15:48:34Z"
+      },
+      "message": "chore(168): atualizar Next e corrigir ambiente de testes"
+    },
+    "parents": [
+      "18179192250b80c4534784697972021cd2e89a64"
+    ],
+    "additions": 341,
+    "deletions": 185,
+    "total_changes": 526,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "18179192250b80c4534784697972021cd2e89a64",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T19:26:20Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T19:26:20Z"
+      },
+      "message": "Merge pull request #285 from unb-mds/feature/263-concluir-contato-moderacao-r2\n\nfeat: concluir contato, titulares e moderação (#263)"
+    },
+    "parents": [
+      "553a6ae6b68bc6ace3e191ad05916ca3a5c1f26d",
+      "021f7d5ba7f73140f213c28f9fa93f6d0bcf0484"
+    ],
+    "additions": 1188,
+    "deletions": 110,
+    "total_changes": 1298,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "021f7d5ba7f73140f213c28f9fa93f6d0bcf0484",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T19:21:51Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T19:21:51Z"
+      },
+      "message": "merge: conciliar develop com contato e moderacao (#263)"
+    },
+    "parents": [
+      "7d40c175aab9e11a57e3a50639858973b25c9f9b",
+      "553a6ae6b68bc6ace3e191ad05916ca3a5c1f26d"
+    ],
+    "additions": 2077,
+    "deletions": 13,
+    "total_changes": 2090,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7d40c175aab9e11a57e3a50639858973b25c9f9b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T19:17:02Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T19:17:02Z"
+      },
+      "message": "fix: alinhar atendimento e retencao aos fluxos reais (#263)"
+    },
+    "parents": [
+      "74bde7561df557ee12836441a92cdeb370b6115e"
+    ],
+    "additions": 199,
+    "deletions": 23,
+    "total_changes": 222,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "553a6ae6b68bc6ace3e191ad05916ca3a5c1f26d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T18:58:41Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T18:58:41Z"
+      },
+      "message": "Merge pull request #284 from unb-mds/fix/267-incidentes-recuperacao\n\nfeat: comprovar recuperação isolada e registrar incidentes (#267)"
+    },
+    "parents": [
+      "cea7d6bdd01aedce51ce8db857377a483ed72e49",
+      "ecd78ac7797a54df2ea1fe3a3d4d05aaa9183aea"
+    ],
+    "additions": 2077,
+    "deletions": 15,
+    "total_changes": 2092,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ecd78ac7797a54df2ea1fe3a3d4d05aaa9183aea",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T18:55:04Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T18:55:04Z"
+      },
+      "message": "fix: respeitar contexto Docker e fixar socket no ensaio (#267)"
+    },
+    "parents": [
+      "506b1b77c2baf94bc9ac1c34018982402aa7be9a"
+    ],
+    "additions": 122,
+    "deletions": 1,
+    "total_changes": 123,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "74bde7561df557ee12836441a92cdeb370b6115e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T17:10:42Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T17:10:42Z"
+      },
+      "message": "docs: registrar validacao da revisao #168"
+    },
+    "parents": [
+      "46c448a9bca0984dac804197b01ec8f6068b76e5"
+    ],
+    "additions": 10,
+    "deletions": 2,
+    "total_changes": 12,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "46c448a9bca0984dac804197b01ec8f6068b76e5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T17:09:59Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T17:09:59Z"
+      },
+      "message": "test: isolar fixtures e validar fluxos da #263"
+    },
+    "parents": [
+      "e9b8ab9ba3c930cce6041acc055e661b80efbe38"
+    ],
+    "additions": 6,
+    "deletions": 2,
+    "total_changes": 8,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e9b8ab9ba3c930cce6041acc055e661b80efbe38",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:31Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:31Z"
+      },
+      "message": "test: validar titulares e isolamento dos votos #263"
+    },
+    "parents": [
+      "e8601ce983ae20cd57f891a3d889f18d84504058"
+    ],
+    "additions": 45,
+    "deletions": 7,
+    "total_changes": 52,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e8601ce983ae20cd57f891a3d889f18d84504058",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:31Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:31Z"
+      },
+      "message": "test: preservar codificacao da url de migration #263"
+    },
+    "parents": [
+      "58be10e2b2455cb364a04e9a800524f622a887f5"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "58be10e2b2455cb364a04e9a800524f622a887f5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:21Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:21Z"
+      },
+      "message": "docs: preparar resumo da revisao geral #263"
+    },
+    "parents": [
+      "b7281833349e5cfc13f56c20196e1a55e75628df"
+    ],
+    "additions": 42,
+    "deletions": 0,
+    "total_changes": 42,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b7281833349e5cfc13f56c20196e1a55e75628df",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:21Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:21Z"
+      },
+      "message": "docs: alinhar privacidade e termos com fluxo de titulares #263"
+    },
+    "parents": [
+      "882df181c5249ddb2663d94cf92fcbebc619cd76"
+    ],
+    "additions": 7,
+    "deletions": 7,
+    "total_changes": 14,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "882df181c5249ddb2663d94cf92fcbebc619cd76",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:11Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:57:11Z"
+      },
+      "message": "docs: reconciliar RF25 com retencao e moderacao #263"
+    },
+    "parents": [
+      "c14ca7848891e8a94436e231033cdcdca2351cd4"
+    ],
+    "additions": 300,
+    "deletions": 122,
+    "total_changes": 422,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c14ca7848891e8a94436e231033cdcdca2351cd4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-17T16:42:55Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:42:55Z"
+      },
+      "message": "test(backend): validar contato titulares moderacao e isolamento de votos (#263)"
+    },
+    "parents": [
+      "ab6f99a6ac6097409af8d4810cbbff32fd7be1a4"
+    ],
+    "additions": 545,
+    "deletions": 1,
+    "total_changes": 546,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ab6f99a6ac6097409af8d4810cbbff32fd7be1a4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "warlleymedeiros",
+        "date": "2026-11-17T16:42:55Z",
+        "login": "warlleydias",
+        "id": 202718970,
+        "author_email_hash": "1dc88ee3b37df87e2ac931fd6f86721f7457d5061484708e64e572af40af7b80"
+      },
+      "committer": {
+        "name": "Warlley Dias",
+        "date": "2026-11-17T16:42:55Z"
+      },
+      "message": "docs: atualizar RF25 e especificacao de contato titulares e moderacao (#263)"
+    },
+    "parents": [
+      "cea7d6bdd01aedce51ce8db857377a483ed72e49"
+    ],
+    "additions": 107,
+    "deletions": 21,
+    "total_changes": 128,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "506b1b77c2baf94bc9ac1c34018982402aa7be9a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-17T15:41:14Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-17T15:41:14Z"
+      },
+      "message": "feat: validar recuperação isolada e roteiro de incidentes (#267)"
+    },
+    "parents": [
+      "cea7d6bdd01aedce51ce8db857377a483ed72e49"
+    ],
+    "additions": 1956,
+    "deletions": 15,
+    "total_changes": 1971,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "cea7d6bdd01aedce51ce8db857377a483ed72e49",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-17T14:03:14Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T14:03:14Z"
+      },
+      "message": "Merge pull request #280 from unb-mds/fix/266-sessoes-abuso-logs\n\n[#266][blocos 1-8] Consolidar seguranca retencao e manutencao"
+    },
+    "parents": [
+      "9dcb3300c76c81575eba843d6f17ff430da31ecc",
+      "4b91fcb388d9e74fc03c965a55b79cdc721ea5cf"
+    ],
+    "additions": 6433,
+    "deletions": 284,
+    "total_changes": 6717,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4b91fcb388d9e74fc03c965a55b79cdc721ea5cf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-17T13:55:25Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-17T13:55:25Z"
+      },
+      "message": "[#266] Configurar conexao do ensaio de migracoes no CI"
+    },
+    "parents": [
+      "acd079f30e73ed07531f3a3305ff548e84d2a1ab"
+    ],
+    "additions": 2,
+    "deletions": 0,
+    "total_changes": 2,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "acd079f30e73ed07531f3a3305ff548e84d2a1ab",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-17T13:52:05Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-17T13:52:05Z"
+      },
+      "message": "[#266] Reconciliar develop preservando votos retencao e acessos\n\nIntegra a #278 sem cancelar a purga corrigida na #280. Concilia o identificador Alembic 20261117_03, preserva os historicos existentes e testa cinco origens com dados sinteticos, exclusao de votos e escrita apos exclusao de conta."
+    },
+    "parents": [
+      "771440433bec0f1f9bc0962e7136e46366d6277a",
+      "9dcb3300c76c81575eba843d6f17ff430da31ecc"
+    ],
+    "additions": 1736,
+    "deletions": 15,
+    "total_changes": 1751,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "771440433bec0f1f9bc0962e7136e46366d6277a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-17T13:31:09Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-17T13:31:09Z"
+      },
+      "message": "[#266] Corrigir segredo no Compose e purga de versoes substituidas\n\nRepassa ABUSO_HMAC_SECRET ao backend e exercita o login pelo Compose no CI. Preserva o prazo de descarte de comentarios removidos apos substituicao, com regressao de fronteira e cascata compartilhada entre SQLite e PostgreSQL."
+    },
+    "parents": [
+      "2ab605c25e25ba31745267f51477cb264b1bfec7"
+    ],
+    "additions": 86,
+    "deletions": 3,
+    "total_changes": 89,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9dcb3300c76c81575eba843d6f17ff430da31ecc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T13:23:45Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T13:23:45Z"
+      },
+      "message": "Merge pull request #283 from unb-mds/feature/278-comentario-util\n\n[#278] Adicionar votos de utilidade por versão de comentário"
+    },
+    "parents": [
+      "8a2bb752becb7c769728200eaa11fc4fbc1c5b3c",
+      "f8e90ffa59f128b1373d5d919c935c1690302a64"
+    ],
+    "additions": 1544,
+    "deletions": 5,
+    "total_changes": 1549,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f8e90ffa59f128b1373d5d919c935c1690302a64",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T13:12:33Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T13:12:33Z"
+      },
+      "message": "Merge branch 'develop' into feature/278-comentario-util"
+    },
+    "parents": [
+      "6aae3afa9f0cfb55000db53c088cd3a84498d204",
+      "8a2bb752becb7c769728200eaa11fc4fbc1c5b3c"
+    ],
+    "additions": 1067,
+    "deletions": 102,
+    "total_changes": 1169,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "6aae3afa9f0cfb55000db53c088cd3a84498d204",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T04:19:58Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T04:19:58Z"
+      },
+      "message": "test: sincroniza observacao das escritas de votos #278"
+    },
+    "parents": [
+      "5b798edbf8d6413073880ec572d7ed1a5fe80013"
+    ],
+    "additions": 3,
+    "deletions": 0,
+    "total_changes": 3,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5b798edbf8d6413073880ec572d7ed1a5fe80013",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T04:18:07Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T04:18:07Z"
+      },
+      "message": "fix: preserva foco nos votos e comprova acessibilidade #278"
+    },
+    "parents": [
+      "47f24730b7999e7d48089aa2536cd9b0ba7a0349"
+    ],
+    "additions": 496,
+    "deletions": 49,
+    "total_changes": 545,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2ab605c25e25ba31745267f51477cb264b1bfec7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T04:12:57Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T04:12:57Z"
+      },
+      "message": "[#266] Reconciliar develop preservando termos retencao e protecao contra abuso"
+    },
+    "parents": [
+      "0423191ee60107f1be411d38c267008cf36ecbce",
+      "8a2bb752becb7c769728200eaa11fc4fbc1c5b3c"
+    ],
+    "additions": 2246,
+    "deletions": 138,
+    "total_changes": 2384,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0423191ee60107f1be411d38c267008cf36ecbce",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:56:12Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:56:12Z"
+      },
+      "message": "[#266][bloco 8] Atualizar informacoes factuais de exclusao e acesso no Sobre"
+    },
+    "parents": [
+      "268666fb081f8933260f307087488f5a680d88a7"
+    ],
+    "additions": 1,
+    "deletions": 0,
+    "total_changes": 1,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "268666fb081f8933260f307087488f5a680d88a7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:56:12Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:56:12Z"
+      },
+      "message": "[#266][bloco 8] Consolidar pendencias manutencao arquitetura e evidencias"
+    },
+    "parents": [
+      "2362f925dac0f3f4e0ca9ab2d0374938112e4c0a"
+    ],
+    "additions": 405,
+    "deletions": 15,
+    "total_changes": 420,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "2362f925dac0f3f4e0ca9ab2d0374938112e4c0a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:55:28Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:55:28Z"
+      },
+      "message": "[#266][bloco 8] Isolar atomicidade dos timeouts curtos no ensaio concorrente"
+    },
+    "parents": [
+      "c02396ce048642194a1aa96f06490581c7de9787"
+    ],
+    "additions": 18,
+    "deletions": 6,
+    "total_changes": 24,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "47f24730b7999e7d48089aa2536cd9b0ba7a0349",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:53:57Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:53:57Z"
+      },
+      "message": "docs: sincroniza derivados e registra evidencias e limites #278"
+    },
+    "parents": [
+      "3aa4b79a347e0633c53e4229675cce7b9bbd5ded"
+    ],
+    "additions": 131,
+    "deletions": 4,
+    "total_changes": 135,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8a2bb752becb7c769728200eaa11fc4fbc1c5b3c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T03:53:11Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T03:53:11Z"
+      },
+      "message": "Merge pull request #282 from unb-mds/docs/241-atas-uso-ia\n\n[DOCS] Consolidar atas, uso de IA e documentação do projeto (#241)"
+    },
+    "parents": [
+      "df854bfda6d934747b5689ff04a4d50fe1821dc5",
+      "5730f51a6949a7859070aa637a90077e7db0dfac"
+    ],
+    "additions": 1067,
+    "deletions": 102,
+    "total_changes": 1169,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3aa4b79a347e0633c53e4229675cce7b9bbd5ded",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z"
+      },
+      "message": "feat: integra controles acessiveis de utilidade e regressoes #278"
+    },
+    "parents": [
+      "a05b7b63cef8b2ccc1c6d6ba3d1fa41224028993"
+    ],
+    "additions": 222,
+    "deletions": 1,
+    "total_changes": 223,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a05b7b63cef8b2ccc1c6d6ba3d1fa41224028993",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z"
+      },
+      "message": "test: cobre autorizacao privacidade e concorrencia de votos #278"
+    },
+    "parents": [
+      "68082348345a80cacfb8d35f8d872a206edae760"
+    ],
+    "additions": 479,
+    "deletions": 0,
+    "total_changes": 479,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "68082348345a80cacfb8d35f8d872a206edae760",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z"
+      },
+      "message": "feat: implementa votos e descarte no ciclo da versao #278"
+    },
+    "parents": [
+      "f4853fe2a2f483e335a02898393ee3aea38e66c5"
+    ],
+    "additions": 156,
+    "deletions": 1,
+    "total_changes": 157,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f4853fe2a2f483e335a02898393ee3aea38e66c5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:49:19Z"
+      },
+      "message": "feat: persiste votos unicos por conta e versao #278"
+    },
+    "parents": [
+      "8631fafb079b5bd5e721d0c34b19209a5b90cbac"
+    ],
+    "additions": 61,
+    "deletions": 0,
+    "total_changes": 61,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5730f51a6949a7859070aa637a90077e7db0dfac",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T03:45:13Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T03:45:13Z"
+      },
+      "message": "docs: consolidar atas e registro de uso de IA (#241)"
+    },
+    "parents": [
+      "df854bfda6d934747b5689ff04a4d50fe1821dc5"
+    ],
+    "additions": 1067,
+    "deletions": 102,
+    "total_changes": 1169,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8631fafb079b5bd5e721d0c34b19209a5b90cbac",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:40:15Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-17T03:40:15Z"
+      },
+      "message": "docs: define requisitos e contratos de utilidade #278"
+    },
+    "parents": [
+      "df854bfda6d934747b5689ff04a4d50fe1821dc5"
+    ],
+    "additions": 46,
+    "deletions": 0,
+    "total_changes": 46,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c02396ce048642194a1aa96f06490581c7de9787",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:39:38Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:39:38Z"
+      },
+      "message": "[#266][bloco 7] Corrigir patches auditados e registrar ensaio sintetico de restauracao\n\nsource-map-js 1.2.1 para 1.2.2 e zod 4.6.5 para 4.6.6; npm ci, lint, typecheck, 91 testes e build passaram. Glob e minimatch sem upgrade: proposta major e risco residual registrados. Audit apos: 12 avisos, 2 de producao (Next/sharp), sem alegar correcoes completas. pg_dump/pg_restore em dois bancos sinteticos locais comparou 25 tabelas com retorno zero; arquivo temporario e bancos removidos. Sem backup de dados reais ou acesso a producao. Plano automatico diario/semestral permanece planejado; validacoes operacionais e juridicas pendentes."
+    },
+    "parents": [
+      "0c1f237b5212d802d283170ffb0e51828ddbd9b7"
+    ],
+    "additions": 296,
+    "deletions": 6,
+    "total_changes": 302,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0c1f237b5212d802d283170ffb0e51828ddbd9b7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:39:38Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:39:38Z"
+      },
+      "message": "[#266][bloco 6] Registrar evidencias de migracao e retencao privada"
+    },
+    "parents": [
+      "22073f8afe99edf29ed8928cbca7c7d85a6b9538"
+    ],
+    "additions": 70,
+    "deletions": 0,
+    "total_changes": 70,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "22073f8afe99edf29ed8928cbca7c7d85a6b9538",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:37:44Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:37:44Z"
+      },
+      "message": "[#266][bloco 6] Registrar acessos em tabela privada com purga por meses corridos"
+    },
+    "parents": [
+      "4585912546dffffb28c6f11e770c40a5189e55a1"
+    ],
+    "additions": 339,
+    "deletions": 3,
+    "total_changes": 342,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "df854bfda6d934747b5689ff04a4d50fe1821dc5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T03:32:16Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T03:32:16Z"
+      },
+      "message": "Merge pull request #281 from unb-mds/feature/269-transparencia-termos\n\n[R2] Publicar transparência, Privacidade e Termos de Uso (#269)"
+    },
+    "parents": [
+      "62faab9308c8d66a7516e621a8cc522927efc553",
+      "c38458f2e721c641accdb44d187291b3695b8f16"
+    ],
+    "additions": 996,
+    "deletions": 16,
+    "total_changes": 1012,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4585912546dffffb28c6f11e770c40a5189e55a1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:27:14Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:27:14Z"
+      },
+      "message": "[#266][bloco 5] Alinhar invariante de CI a preservacao de denuncias encerradas"
+    },
+    "parents": [
+      "553af5bb220561723fa0540e61f7fac8e379e749"
+    ],
+    "additions": 11,
+    "deletions": 1,
+    "total_changes": 12,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "553af5bb220561723fa0540e61f7fac8e379e749",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:24:19Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:24:19Z"
+      },
+      "message": "[#266][bloco 5] Consolidar evidencias e alinhar expectativa de CI para 503"
+    },
+    "parents": [
+      "b955912e78cbff23b7ebef6c1f27471d69e6a1ee"
+    ],
+    "additions": 113,
+    "deletions": 1,
+    "total_changes": 114,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b955912e78cbff23b7ebef6c1f27471d69e6a1ee",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:22:28Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:22:28Z"
+      },
+      "message": "[#266][bloco 5] Implementar exclusao logica e purga transacional de conteudo"
+    },
+    "parents": [
+      "751fbe7456f4e5e5c7676aa5981bce89e57d9682"
+    ],
+    "additions": 928,
+    "deletions": 34,
+    "total_changes": 962,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c38458f2e721c641accdb44d187291b3695b8f16",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T03:18:04Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-17T03:18:04Z"
+      },
+      "message": "feat: publicar transparência e ciência dos Termos (#269)"
+    },
+    "parents": [
+      "62faab9308c8d66a7516e621a8cc522927efc553"
+    ],
+    "additions": 996,
+    "deletions": 16,
+    "total_changes": 1012,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "751fbe7456f4e5e5c7676aa5981bce89e57d9682",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:03:49Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:03:49Z"
+      },
+      "message": "[#266][bloco 4] Tratar espera HTTP sem perder formularios e consolidar regressoes"
+    },
+    "parents": [
+      "03eab1cd44ef0ba257787bec913d3262c94c6226"
+    ],
+    "additions": 324,
+    "deletions": 34,
+    "total_changes": 358,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "03eab1cd44ef0ba257787bec913d3262c94c6226",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:00:35Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T03:00:35Z"
+      },
+      "message": "[#266][bloco 3] Ajustar ensaios integrados ao limitador e remover configuracao antiga"
+    },
+    "parents": [
+      "85c421d3b5333dc05ae07c279b0856f6c6acf72c"
+    ],
+    "additions": 14,
+    "deletions": 6,
+    "total_changes": 20,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "85c421d3b5333dc05ae07c279b0856f6c6acf72c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:48:10Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:48:10Z"
+      },
+      "message": "[#266][bloco 3] Proteger fluxos de escrita e moderacao com matriz de falha"
+    },
+    "parents": [
+      "cfdb01746277b1fde5ecff125d3ea5ccace18806"
+    ],
+    "additions": 597,
+    "deletions": 119,
+    "total_changes": 716,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "cfdb01746277b1fde5ecff125d3ea5ccace18806",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:36:17Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:36:17Z"
+      },
+      "message": "[#266][bloco 2] Registrar evidencias locais de autenticacao"
+    },
+    "parents": [
+      "b1ed84ac41a713cf3a089652ad6103a8982071a9"
+    ],
+    "additions": 113,
+    "deletions": 0,
+    "total_changes": 113,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b1ed84ac41a713cf3a089652ad6103a8982071a9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:35:38Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:35:38Z"
+      },
+      "message": "[#266][bloco 2] Integrar limites aos fluxos de autenticacao e reenvio"
+    },
+    "parents": [
+      "c31c7fe5ed031cfa3962f0eb0a37a764c68b1eeb"
+    ],
+    "additions": 1012,
+    "deletions": 59,
+    "total_changes": 1071,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c31c7fe5ed031cfa3962f0eb0a37a764c68b1eeb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:06:16Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T02:06:16Z"
+      },
+      "message": "[#266][bloco 2] Definir politicas de autenticacao e orcamento diario UTC"
+    },
+    "parents": [
+      "509797f868b81c5c5d5f8353b779ddf3bf119458"
+    ],
+    "additions": 303,
+    "deletions": 5,
+    "total_changes": 308,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "509797f868b81c5c5d5f8353b779ddf3bf119458",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T01:45:12Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T01:45:12Z"
+      },
+      "message": "[#266][bloco 1] Registrar verificacoes locais e continuidade na PR 280"
+    },
+    "parents": [
+      "c896d5a6ca6b4d7014eb633431710727c95d8f89"
+    ],
+    "additions": 115,
+    "deletions": 2,
+    "total_changes": 117,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c896d5a6ca6b4d7014eb633431710727c95d8f89",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T01:42:07Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-17T01:42:07Z"
+      },
+      "message": "[#266][bloco 1] Implementar nucleo compartilhado do limitador PostgreSQL"
+    },
+    "parents": [
+      "f8efeffdd57906a3af4202a5583672533ce690d2"
+    ],
+    "additions": 1352,
+    "deletions": 1,
+    "total_changes": 1353,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "62faab9308c8d66a7516e621a8cc522927efc553",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-17T00:19:32Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-17T00:19:32Z"
+      },
+      "message": "Merge pull request #279 from unb-mds/fix/266-sessoes-abuso-logs\n\nfix: revisar sessões, proteção entre origens e logs (#266)"
+    },
+    "parents": [
+      "757b12cdeaa7d6c061cb40181e346a0bb32063f4",
+      "f8efeffdd57906a3af4202a5583672533ce690d2"
+    ],
+    "additions": 9264,
+    "deletions": 28,
+    "total_changes": 9292,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f8efeffdd57906a3af4202a5583672533ce690d2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-16T23:52:05Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-16T23:52:05Z"
+      },
+      "message": "test: alinhar avaliação integrada ao erro 422 sanitizado (#266)"
+    },
+    "parents": [
+      "d697e7314255a30c83b0d62673b7d471537acea6"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d697e7314255a30c83b0d62673b7d471537acea6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T22:05:59Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T22:05:59Z"
+      },
+      "message": "test(seguranca): registrar homologacao e pendencias da retomada 266"
+    },
+    "parents": [
+      "9a186d22018c6e2af3a7b67fda290b9670b6de05"
+    ],
+    "additions": 4279,
+    "deletions": 3,
+    "total_changes": 4282,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "9a186d22018c6e2af3a7b67fda290b9670b6de05",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T21:56:32Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T21:56:32Z"
+      },
+      "message": "fix(testes): corrigir encoding e isolamento nas regressoes da issue 266"
+    },
+    "parents": [
+      "3a1d46d3ab7d42d9a39fdf9b7d739e9256e7caa7"
+    ],
+    "additions": 55,
+    "deletions": 7,
+    "total_changes": 62,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3a1d46d3ab7d42d9a39fdf9b7d739e9256e7caa7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T21:41:17Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T21:41:17Z"
+      },
+      "message": "merge: conciliar cache privado da develop com protecoes da issue 266"
+    },
+    "parents": [
+      "dbde8205c811b7ec00331b9297a9be842079c32e",
+      "757b12cdeaa7d6c061cb40181e346a0bb32063f4"
+    ],
+    "additions": 1563,
+    "deletions": 16,
+    "total_changes": 1579,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "757b12cdeaa7d6c061cb40181e346a0bb32063f4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:52:35Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T17:52:35Z"
+      },
+      "message": "Merge pull request #277 from unb-mds/docs/271-transparencia-metodologia\n\nfix: alinhar transparência e proteger respostas privadas (#271)"
+    },
+    "parents": [
+      "8c6a5ab38fd330809e9c39f8f2e30e1ff3797c15",
+      "27bf7554e825c3c396a0e0c4ce97feba2ad8ba00"
+    ],
+    "additions": 1244,
+    "deletions": 15,
+    "total_changes": 1259,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "27bf7554e825c3c396a0e0c4ce97feba2ad8ba00",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:47:30Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:47:30Z"
+      },
+      "message": "chore: atualizar branch da PR 277 com develop"
+    },
+    "parents": [
+      "ee6f47ca2cb055088a0aa35e5e9cf94214eee589",
+      "8c6a5ab38fd330809e9c39f8f2e30e1ff3797c15"
+    ],
+    "additions": 0,
+    "deletions": 0,
+    "total_changes": 0,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "ee6f47ca2cb055088a0aa35e5e9cf94214eee589",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:46:51Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:46:51Z"
+      },
+      "message": "docs: separar insercoes de navegacao para evitar conflito"
+    },
+    "parents": [
+      "581daf2835434f0529ec21bbf6990ea331aff677"
+    ],
+    "additions": 7,
+    "deletions": 7,
+    "total_changes": 14,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "581daf2835434f0529ec21bbf6990ea331aff677",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:46:16Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:46:16Z"
+      },
+      "message": "docs: conciliar navegacao dos estudos das PRs 276 e 277"
+    },
+    "parents": [
+      "da9f47cfce22578e46132b7c172ce04f9edb4fd7"
+    ],
+    "additions": 261,
+    "deletions": 0,
+    "total_changes": 261,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8c6a5ab38fd330809e9c39f8f2e30e1ff3797c15",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T17:42:10Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T17:42:10Z"
+      },
+      "message": "Merge pull request #276 from unb-mds/feature/270-reduzir-manipulacao-notas\n\ndocs: registrar controles e decisões pendentes de integridade (#270)"
+    },
+    "parents": [
+      "d99916e93186864c2769ae95ea577bba477b4e17",
+      "833004d7662860a8369a6acc649856b003d775e3"
+    ],
+    "additions": 261,
+    "deletions": 0,
+    "total_changes": 261,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "833004d7662860a8369a6acc649856b003d775e3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-16T15:24:21Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T15:24:21Z"
+      },
+      "message": "Merge branch 'develop' into feature/270-reduzir-manipulacao-notas"
+    },
+    "parents": [
+      "31b463f17a0856ee271e718c3860a33b46f21693",
+      "d99916e93186864c2769ae95ea577bba477b4e17"
+    ],
+    "additions": 1029,
+    "deletions": 3,
+    "total_changes": 1032,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "da9f47cfce22578e46132b7c172ce04f9edb4fd7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T14:09:50Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T14:09:50Z"
+      },
+      "message": "docs: registrar aceite editorial E1–E6 (#271)"
+    },
+    "parents": [
+      "772aac7231b452541aa142360cffffe3518af8ac"
+    ],
+    "additions": 17,
+    "deletions": 10,
+    "total_changes": 27,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "772aac7231b452541aa142360cffffe3518af8ac",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T14:06:01Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T14:06:01Z"
+      },
+      "message": "docs: delimitar aceite editorial complementar (#271)"
+    },
+    "parents": [
+      "c69e6603760a1fce447ea9ae402f5aa18bd7ca3b"
+    ],
+    "additions": 144,
+    "deletions": 0,
+    "total_changes": 144,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c69e6603760a1fce447ea9ae402f5aa18bd7ca3b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:51:04Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:51:04Z"
+      },
+      "message": "docs: registrar verificações e pendências com Nicolas (#271)"
+    },
+    "parents": [
+      "83b4c9604866f9b929e68342abfd13ecb4b65802"
+    ],
+    "additions": 234,
+    "deletions": 2,
+    "total_changes": 236,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "83b4c9604866f9b929e68342abfd13ecb4b65802",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:50:29Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:50:29Z"
+      },
+      "message": "docs: mapear tratamentos e retenção observável (#261)"
+    },
+    "parents": [
+      "8ca99fbffb3634bf83d54bb09a9022792e7cce62"
+    ],
+    "additions": 97,
+    "deletions": 0,
+    "total_changes": 97,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8ca99fbffb3634bf83d54bb09a9022792e7cce62",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:45:24Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:45:24Z"
+      },
+      "message": "fix: impedir cache de respostas privadas (#265)"
+    },
+    "parents": [
+      "794be686016fee87845eccdb0fce9372ad7240a4"
+    ],
+    "additions": 51,
+    "deletions": 2,
+    "total_changes": 53,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "794be686016fee87845eccdb0fce9372ad7240a4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:27:41Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:27:41Z"
+      },
+      "message": "docs: integrar preparação jurídica à revisão (#271)"
+    },
+    "parents": [
+      "5d0632c7fdef45c71ffc2c58234183684adf7dad"
+    ],
+    "additions": 29,
+    "deletions": 1,
+    "total_changes": 30,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5d0632c7fdef45c71ffc2c58234183684adf7dad",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:26:52Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:26:52Z"
+      },
+      "message": "docs: preparar 36 casos de validação jurídica (#271)"
+    },
+    "parents": [
+      "38012faa19571870ac5ea518043e0e6e66911619"
+    ],
+    "additions": 95,
+    "deletions": 0,
+    "total_changes": 95,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "38012faa19571870ac5ea518043e0e6e66911619",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:26:44Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:26:44Z"
+      },
+      "message": "docs: preparar análise jurídica preliminar (#271)"
+    },
+    "parents": [
+      "3708fdc62de80038999339667a76b806e280304c"
+    ],
+    "additions": 210,
+    "deletions": 0,
+    "total_changes": 210,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3708fdc62de80038999339667a76b806e280304c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:11:20Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:11:20Z"
+      },
+      "message": "docs: confirmar responsáveis pela retomada (#271)"
+    },
+    "parents": [
+      "80ea62cb3e0d2c8d6b43c1555a5e64e5cdd55668"
+    ],
+    "additions": 20,
+    "deletions": 3,
+    "total_changes": 23,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "80ea62cb3e0d2c8d6b43c1555a5e64e5cdd55668",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:07:41Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:07:41Z"
+      },
+      "message": "docs: encaminhar episódio FGA para entrega futura (#271)"
+    },
+    "parents": [
+      "f50be9be090646a25f6ae4a8937a1381584b7a1d"
+    ],
+    "additions": 19,
+    "deletions": 4,
+    "total_changes": 23,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f50be9be090646a25f6ae4a8937a1381584b7a1d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:04:39Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:04:39Z"
+      },
+      "message": "docs: registrar aceite das fórmulas e comparação (#271)"
+    },
+    "parents": [
+      "1e381bf84103f97608f010bb1a77613f2df70c64"
+    ],
+    "additions": 22,
+    "deletions": 1,
+    "total_changes": 23,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1e381bf84103f97608f010bb1a77613f2df70c64",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:01:21Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T13:01:21Z"
+      },
+      "message": "docs: registrar aceite da comunicação de moderação (#271)"
+    },
+    "parents": [
+      "3eac97ca8d4e88106c3bb37f6db7889bb7503064"
+    ],
+    "additions": 17,
+    "deletions": 1,
+    "total_changes": 18,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "3eac97ca8d4e88106c3bb37f6db7889bb7503064",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:40:05Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:40:05Z"
+      },
+      "message": "docs: registrar aceite do mínimo de avaliações (#271)"
+    },
+    "parents": [
+      "e7b2172851a090e4f5cc7fd037d5c46a1da2617e"
+    ],
+    "additions": 17,
+    "deletions": 1,
+    "total_changes": 18,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "e7b2172851a090e4f5cc7fd037d5c46a1da2617e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:36:39Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:36:39Z"
+      },
+      "message": "docs: registrar aceite dos limites das avaliações (#271)"
+    },
+    "parents": [
+      "84c2a791ba2f6ba6bbc32bb00ab7140da833eade"
+    ],
+    "additions": 17,
+    "deletions": 1,
+    "total_changes": 18,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "84c2a791ba2f6ba6bbc32bb00ab7140da833eade",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:23:28Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:23:28Z"
+      },
+      "message": "docs: registrar aceite da comunicação de autoria pública (#271)"
+    },
+    "parents": [
+      "d660af78a5a1e45b8d8c448e6c25af9b62dff13f"
+    ],
+    "additions": 15,
+    "deletions": 1,
+    "total_changes": 16,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d660af78a5a1e45b8d8c448e6c25af9b62dff13f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:19:49Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:19:49Z"
+      },
+      "message": "docs: registrar aceite da redação de independência do UnDb (#271)"
+    },
+    "parents": [
+      "37cc6f2830cddefef6bd023d879116ccf0f11df3"
+    ],
+    "additions": 22,
+    "deletions": 1,
+    "total_changes": 23,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "37cc6f2830cddefef6bd023d879116ccf0f11df3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:04:41Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:04:41Z"
+      },
+      "message": "docs: registrar validação técnica e visual da PR 277 (#271)"
+    },
+    "parents": [
+      "4ee63f68bd43b245d69bd91cdd6fbe7acc6d0e9b"
+    ],
+    "additions": 54,
+    "deletions": 0,
+    "total_changes": 54,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "4ee63f68bd43b245d69bd91cdd6fbe7acc6d0e9b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:01:52Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T12:01:52Z"
+      },
+      "message": "docs: vincular retomada da metodologia às entregas fornecedoras (#271)"
+    },
+    "parents": [
+      "7f57c3eb3a87de27c026a0b5c6edb8c8d3d04e25"
+    ],
+    "additions": 48,
+    "deletions": 0,
+    "total_changes": 48,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "31b463f17a0856ee271e718c3860a33b46f21693",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T11:52:23Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T11:52:23Z"
+      },
+      "message": "docs: registrar evidências da revisão da PR 276 (#270)"
+    },
+    "parents": [
+      "d49c732c58b298676b53b12a3d7c03021a3f21ce"
+    ],
+    "additions": 20,
+    "deletions": 1,
+    "total_changes": 21,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d49c732c58b298676b53b12a3d7c03021a3f21ce",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Gabriel",
+        "date": "2026-11-16T11:51:34Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "Gabriel",
+        "date": "2026-11-16T11:51:34Z"
+      },
+      "message": "docs: vincular retomada da integridade às issues fornecedoras (#270)"
+    },
+    "parents": [
+      "c2725ec25573ffdff74d0b375095ae64f25252b3"
+    ],
+    "additions": 26,
+    "deletions": 27,
+    "total_changes": 53,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "dbde8205c811b7ec00331b9297a9be842079c32e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T04:05:51Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T04:05:51Z"
+      },
+      "message": "docs(seguranca): registrar auditoria e pendencias da issue 266"
+    },
+    "parents": [
+      "5e5ab50bb8d2e1dca4852a962869a7e799f5ff9b"
+    ],
+    "additions": 4195,
+    "deletions": 0,
+    "total_changes": 4195,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5e5ab50bb8d2e1dca4852a962869a7e799f5ff9b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T03:59:54Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-16T03:59:54Z"
+      },
+      "message": "fix(seguranca): proteger origens e sanitizar erros e logs (#266)"
+    },
+    "parents": [
+      "d99916e93186864c2769ae95ea577bba477b4e17"
+    ],
+    "additions": 684,
+    "deletions": 25,
+    "total_changes": 709,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7f57c3eb3a87de27c026a0b5c6edb8c8d3d04e25",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-16T03:10:40Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-16T03:10:40Z"
+      },
+      "message": "test: confrontar metodologia com respostas HTTP sintéticas (#271)"
+    },
+    "parents": [
+      "65b1809843b7cead90d98d168d3b8a9e68714f4b"
+    ],
+    "additions": 81,
+    "deletions": 0,
+    "total_changes": 81,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "65b1809843b7cead90d98d168d3b8a9e68714f4b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-16T03:10:40Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-16T03:10:40Z"
+      },
+      "message": "docs: alinhar visão e especificação à metodologia vigente (#271)"
+    },
+    "parents": [
+      "a50174fb88884cfdaa834911e14276a8ec405151"
+    ],
+    "additions": 35,
+    "deletions": 5,
+    "total_changes": 40,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a50174fb88884cfdaa834911e14276a8ec405151",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-16T03:10:40Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-16T03:10:40Z"
+      },
+      "message": "fix: esclarecer metodologia e limites nas páginas públicas (#271)"
+    },
+    "parents": [
+      "d99916e93186864c2769ae95ea577bba477b4e17"
+    ],
+    "additions": 26,
+    "deletions": 8,
+    "total_changes": 34,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "c2725ec25573ffdff74d0b375095ae64f25252b3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-16T02:45:49Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-16T02:45:49Z"
+      },
+      "message": "docs: conciliar contrato integrado de contestação (#270)"
+    },
+    "parents": [
+      "1af64782f72834405661efcd9cbf4c2d673d94ec"
+    ],
+    "additions": 25,
+    "deletions": 13,
+    "total_changes": 38,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "1af64782f72834405661efcd9cbf4c2d673d94ec",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Tiago",
+        "date": "2026-11-16T02:43:26Z",
+        "login": "TiagoVieira-596",
+        "id": 158865980,
+        "author_email_hash": "f3e946a05674c9ec345b6da82da6bb7ec826a151c6d506d8812e38f98a4008cd"
+      },
+      "committer": {
+        "name": "Tiago",
+        "date": "2026-11-16T02:43:26Z"
+      },
+      "message": "docs: registrar controles e decisões pendentes de integridade (#270)"
+    },
+    "parents": [
+      "0717614820cb14e31bc928ec0d5ce739d028cf98"
+    ],
+    "additions": 231,
+    "deletions": 0,
+    "total_changes": 231,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "d99916e93186864c2769ae95ea577bba477b4e17",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T02:41:12Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T02:41:12Z"
+      },
+      "message": "Merge pull request #275 from unb-mds/feature/263-canal-titulares\n\nfeat: implementar canal de solicitações de titulares (#263)"
+    },
+    "parents": [
+      "0717614820cb14e31bc928ec0d5ce739d028cf98",
+      "7b7058737ad5093208eb0abb676a911df3b94d36"
+    ],
+    "additions": 1029,
+    "deletions": 3,
+    "total_changes": 1032,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7b7058737ad5093208eb0abb676a911df3b94d36",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T02:32:33Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T02:32:33Z"
+      },
+      "message": "feat: implementar canal de solicitações de titulares (#263)"
+    },
+    "parents": [
+      "0717614820cb14e31bc928ec0d5ce739d028cf98"
+    ],
+    "additions": 1029,
+    "deletions": 3,
+    "total_changes": 1032,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "0717614820cb14e31bc928ec0d5ce739d028cf98",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T02:02:30Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T02:02:30Z"
+      },
+      "message": "Merge pull request #274 from unb-mds/docs/issue-260-continuity\n\ndocs: registrar responsáveis e continuidade operacional (#260)"
+    },
+    "parents": [
+      "8cbfb2a52f6d9b9f2925ebc98503091c2b82f62b",
+      "337a2d134e5711cb60bf63636ee3d4d66cebfde6"
+    ],
+    "additions": 253,
+    "deletions": 0,
+    "total_changes": 253,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "337a2d134e5711cb60bf63636ee3d4d66cebfde6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T01:52:20Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T01:52:20Z"
+      },
+      "message": "docs: registrar responsáveis e continuidade operacional (#260)"
+    },
+    "parents": [
+      "8cbfb2a52f6d9b9f2925ebc98503091c2b82f62b"
+    ],
+    "additions": 253,
+    "deletions": 0,
+    "total_changes": 253,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "8cbfb2a52f6d9b9f2925ebc98503091c2b82f62b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-16T00:51:40Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-16T00:51:40Z"
+      },
+      "message": "Merge pull request #259 from unb-mds/feature/252-deteccao-ofensas\n\n[MODERAÇÃO] Detectar ofensas disfarçadas e substituições numéricas (#252)"
+    },
+    "parents": [
+      "7b0bd73f18815b337249a56901e272e2723d6718",
+      "b863abfe052c3918f3c8e9ad4e0e909d3b553cb2"
+    ],
+    "additions": 13991,
+    "deletions": 21,
+    "total_changes": 14012,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b863abfe052c3918f3c8e9ad4e0e909d3b553cb2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:24:38Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:24:38Z"
+      },
+      "message": "docs(moderacao): avaliar e documentar substituicoes numericas (#252)"
+    },
+    "parents": [
+      "910bdf6b0d5fa369a7819e50a72aa0e583307ad8"
+    ],
+    "additions": 5972,
+    "deletions": 2,
+    "total_changes": 5974,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "910bdf6b0d5fa369a7819e50a72aa0e583307ad8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:23:44Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:23:44Z"
+      },
+      "message": "feat(moderacao): detectar substituicoes numericas em termos (#252)"
+    },
+    "parents": [
+      "b383ea8de5899d8f0a5f4acd51642a42169d2623"
+    ],
+    "additions": 211,
+    "deletions": 8,
+    "total_changes": 219,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "b383ea8de5899d8f0a5f4acd51642a42169d2623",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:09:45Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:09:45Z"
+      },
+      "message": "docs(moderacao): registrar validacao e reversao da etapa inicial (#252)"
+    },
+    "parents": [
+      "5a983c6b6f3b993d4a8b44b8639acd457d9ab705"
+    ],
+    "additions": 7380,
+    "deletions": 15,
+    "total_changes": 7395,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "5a983c6b6f3b993d4a8b44b8639acd457d9ab705",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:07:56Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T22:07:56Z"
+      },
+      "message": "feat(moderacao): adicionar deteccao complementar opcional (#252)"
+    },
+    "parents": [
+      "7b0bd73f18815b337249a56901e272e2723d6718"
+    ],
+    "additions": 438,
+    "deletions": 6,
+    "total_changes": 444,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "7b0bd73f18815b337249a56901e272e2723d6718",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gabrielrdaraujo",
+        "date": "2026-11-15T21:17:43Z",
+        "login": "gabrielrdaraujo",
+        "id": 202958432,
+        "author_email_hash": "d984f16b1ec5e5aaac79765fee202b8031a62c4cf39004ecffe8b41bc07466f1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-15T21:17:43Z"
+      },
+      "message": "Merge pull request #258 from unb-mds/docs/252-proposta-ofensas\n\nIntegra estudo e bancada offline de detecção de ofensas disfarçadas. Implementação funcional em PR posterior; ajuste obrigatório e limitações preservados no parecer da #258. Não encerra a #252 nem ativa regras de produção."
+    },
+    "parents": [
+      "f24bcacadc6b9bafa567ec170de16ba2b216ff66",
+      "a6f6b9ee17486b20f1a00a86c88010e2831a9d0f"
+    ],
+    "additions": 5518,
+    "deletions": 0,
+    "total_changes": 5518,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "a6f6b9ee17486b20f1a00a86c88010e2831a9d0f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T20:02:34Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T20:02:34Z"
+      },
+      "message": "docs(moderacao): registrar avaliacao e decisoes pendentes da issue 252"
+    },
+    "parents": [
+      "13892b7ccff6260713b823d01269b25a49820953"
+    ],
+    "additions": 5131,
+    "deletions": 0,
+    "total_changes": 5131,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "13892b7ccff6260713b823d01269b25a49820953",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T20:02:34Z",
+        "login": "ViniGvdo",
+        "id": 198657137,
+        "author_email_hash": "4fb7286ca17ea735a76784f37ca775b06beea00f8a479822c13ba79d145810ba"
+      },
+      "committer": {
+        "name": "ViniGvdo",
+        "date": "2026-11-15T20:02:34Z"
+      },
+      "message": "test(moderacao): preparar corpus e bancada offline da issue 252"
+    },
+    "parents": [
+      "f24bcacadc6b9bafa567ec170de16ba2b216ff66"
+    ],
+    "additions": 387,
+    "deletions": 0,
+    "total_changes": 387,
+    "repo_name": "2026-02-UnDb"
+  },
+  {
+    "sha": "f24bcacadc6b9bafa567ec170de16ba2b216ff66",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Nicolas Zanin",
+        "date": "2026-11-15T19:44:59Z",
+        "login": "nicolaszanin06",
+        "id": 213249676,
+        "author_email_hash": "6ec024f120440b73442c168fbc6fedd1a1208f950f0ca0a58c5a55aff4a0d192"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-15T19:44:59Z"
+      },
+      "message": "Merge pull request #257 from unb-mds/release/1.7.0-sync-main-develop\n\nchore: sincronizar main v1.7.0 de volta à develop"
+    },
+    "parents": [
+      "22d3ce89073ff9aab42327b507570adacbe854f3",
+      "a3afa44b0522e29485e4d7f724c7a35d9b399118"
+    ],
+    "additions": 110,
+    "deletions": 6,
+    "total_changes": 116,
+    "repo_name": "2026-02-UnDb"
   },
   {
     "sha": "a3afa44b0522e29485e4d7f724c7a35d9b399118",

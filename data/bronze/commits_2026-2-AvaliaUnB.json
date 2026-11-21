@@ -1,10 +1,137 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-20T14:48:20.877437+00:00",
+      "extracted_at": "2026-11-21T14:10:58.109994+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaUnB.json",
-      "record_count": 453
+      "record_count": 458
     }
+  },
+  {
+    "sha": "a6e48a1d4b854d26bc37723af88c6a634b7a75e5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-20T20:25:15Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T20:25:15Z"
+      },
+      "message": "Merge pull request #249 from unb-mds/fix/setas-mobile\n\nPadronizar setas no celular e notebook"
+    },
+    "parents": [
+      "e256189e5042b48522cad6d35f53e95d4e9044f5",
+      "f17532021c0bbafe106e7c61fb0cc8001d53ea5b"
+    ],
+    "additions": 22,
+    "deletions": 16,
+    "total_changes": 38,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e256189e5042b48522cad6d35f53e95d4e9044f5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-20T20:23:10Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-20T20:23:10Z"
+      },
+      "message": "Merge pull request #248 from unb-mds/fix/filtro-departamentos-consulta\n\nFiltrar professores pelos departamentos reais"
+    },
+    "parents": [
+      "bfda00b8c229b70c613117a99182f1b2e4379101",
+      "ec84b83ae298e8f916f4239e8618ca8c5d3b7da2"
+    ],
+    "additions": 130,
+    "deletions": 14,
+    "total_changes": 144,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "f17532021c0bbafe106e7c61fb0cc8001d53ea5b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-20T18:23:35Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-20T18:23:35Z"
+      },
+      "message": "fix: preservar o formato original da seta em texto\n\nMantém o símbolo do notebook com apresentação de texto e evita a variante emoji."
+    },
+    "parents": [
+      "b959250f18386fcea1ba38c521676273198cbaa9"
+    ],
+    "additions": 2,
+    "deletions": 3,
+    "total_changes": 5,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "b959250f18386fcea1ba38c521676273198cbaa9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-20T18:11:42Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-20T18:11:42Z"
+      },
+      "message": "fix: manter setas em contorno no celular e notebook\n\nSubstitui o caractere convertido em emoji por um SVG compartilhado.\nPreserva a seta do botão de conta em telas pequenas e as cores dos temas."
+    },
+    "parents": [
+      "bfda00b8c229b70c613117a99182f1b2e4379101"
+    ],
+    "additions": 23,
+    "deletions": 16,
+    "total_changes": 39,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ec84b83ae298e8f916f4239e8618ca8c5d3b7da2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-20T17:42:02Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-20T17:42:02Z"
+      },
+      "message": "fix: filtrar consulta pelos departamentos reais\n\nSubstitui os atalhos fixos por um seletor do catálogo e preserva a busca e a paginação.\nInclui testes dos filtros combinados e documentação."
+    },
+    "parents": [
+      "bfda00b8c229b70c613117a99182f1b2e4379101"
+    ],
+    "additions": 130,
+    "deletions": 14,
+    "total_changes": 144,
+    "repo_name": "2026-2-AvaliaUnB"
   },
   {
     "sha": "bfda00b8c229b70c613117a99182f1b2e4379101",

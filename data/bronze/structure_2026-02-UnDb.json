@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-02-UnDb",
   "branch": "main",
-  "sha": "a3afa44b0522e29485e4d7f724c7a35d9b399118",
+  "sha": "5999d941baf27334a9f938f65b76471050009fca",
   "tree": [
     {
       "name": ".gitattributes",
@@ -18,7 +18,7 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "5db07c512eace68842ac85b84062a7d5efa974f5",
+      "sha": "a590a8a2620ee57911b9ddd6155edbdc1d81a044",
       "mode": "040000",
       "children": []
     },
@@ -74,7 +74,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "c2106a0fe2a0ff10ac5c847bc6b6a2bbab8a2107",
+      "sha": "944e6314bb4744d40c8c04c4b95de4c83eabbff8",
       "mode": "040000",
       "children": []
     },
@@ -92,10 +92,10 @@
       "name": "pull-request.yml",
       "path": ".github/workflows/pull-request.yml",
       "type": "file",
-      "sha": "1db7be4c80c4b429547a741f0c3809b5e3f2c63c",
+      "sha": "095adfc7157bbecb0e96e238b910d7868a2a8552",
       "mode": "100644",
       "extension": ".yml",
-      "size": 10561,
+      "size": 11780,
       "is_binary": false
     },
     {
@@ -112,10 +112,10 @@
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "a85c8048fb9acaab107a402c4272c9728504d2c4",
+      "sha": "a1b8d8ff84e14bd0002ebbfa5dd8b13490def691",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 161,
+      "size": 168,
       "is_binary": false
     },
     {
@@ -144,6 +144,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 1450,
+      "is_binary": false
+    },
+    {
+      "name": "AI_USAGE.md",
+      "path": "AI_USAGE.md",
+      "type": "file",
+      "sha": "0b6ff3289c92f2eba75b958bf86bdc2cf82311da",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7053,
       "is_binary": false
     },
     {
@@ -180,17 +190,17 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "746013af626ac2dc148ae51113e904bd9b72c4cf",
+      "sha": "aa4a7995083a32f2405d26030ea8943b30ed46c6",
       "mode": "100644",
       "extension": ".md",
-      "size": 5723,
+      "size": 7760,
       "is_binary": false
     },
     {
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "22f58490e91aa430c8acec1ebe61a24e7ef3be58",
+      "sha": "884aa4c434c05b721b1fa428b1e863a19682a3c1",
       "mode": "040000",
       "children": []
     },
@@ -208,10 +218,10 @@
       "name": ".env.example",
       "path": "backend/.env.example",
       "type": "file",
-      "sha": "7b8e8ab797b4be6819b974f7cfb425b59cf6146c",
+      "sha": "1ab848f3d786854d3662123c395bbfee0cb219c8",
       "mode": "100644",
       "extension": ".example",
-      "size": 2124,
+      "size": 5230,
       "is_binary": false
     },
     {
@@ -238,7 +248,7 @@
       "name": "alembic",
       "path": "backend/alembic",
       "type": "directory",
-      "sha": "9a6875554e526979fb9d7b3eeece2809e0fdd240",
+      "sha": "51ab0ed04276fa4c678235fa1ef68df87720de22",
       "mode": "040000",
       "children": []
     },
@@ -246,10 +256,10 @@
       "name": "env.py",
       "path": "backend/alembic/env.py",
       "type": "file",
-      "sha": "34e088ce716564e6db74fc421434cf8f390741c3",
+      "sha": "312bce1adb821c3c11e91bc7093e70b4f5be87ee",
       "mode": "100644",
       "extension": ".py",
-      "size": 1322,
+      "size": 1668,
       "is_binary": false
     },
     {
@@ -266,7 +276,7 @@
       "name": "versions",
       "path": "backend/alembic/versions",
       "type": "directory",
-      "sha": "6f8da1b651cdcf16953ed6ca126e20035aab9df1",
+      "sha": "ffda7fde26c5feadc0edd5c636e19e59dcfae5d3",
       "mode": "040000",
       "children": []
     },
@@ -411,10 +421,90 @@
       "is_binary": false
     },
     {
+      "name": "20261115_02_canal_titulares.py",
+      "path": "backend/alembic/versions/20261115_02_canal_titulares.py",
+      "type": "file",
+      "sha": "3a020dcb8c97157c17f6c9d37c86cb54f4776c45",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2035,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_01_contadores_abuso.py",
+      "path": "backend/alembic/versions/20261117_01_contadores_abuso.py",
+      "type": "file",
+      "sha": "998ff0cbc7a3719511585e1423d9b64abff4281b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1461,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_02_ciencia_termos.py",
+      "path": "backend/alembic/versions/20261117_02_ciencia_termos.py",
+      "type": "file",
+      "sha": "3974b9f3b9a5ff5646e6948f2598be03fb821150",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 996,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_02_retencao.py",
+      "path": "backend/alembic/versions/20261117_02_retencao.py",
+      "type": "file",
+      "sha": "e2ee87bc5e51af3ea7b4dd1c703113d09a6106c5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3804,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_03_registros_acesso.py",
+      "path": "backend/alembic/versions/20261117_03_registros_acesso.py",
+      "type": "file",
+      "sha": "596ac6c9c206d3ca8b2a978ac21ff0fd57180c47",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1213,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_03_votos_comentario.py",
+      "path": "backend/alembic/versions/20261117_03_votos_comentario.py",
+      "type": "file",
+      "sha": "8d7fcce942e49af1f9148a4318509c10f87b76ba",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1063,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_04_reconciliar_266_269.py",
+      "path": "backend/alembic/versions/20261117_04_reconciliar_266_269.py",
+      "type": "file",
+      "sha": "00264baf3ddcc0cbc225cf7ed101b7ee490d0d64",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1363,
+      "is_binary": false
+    },
+    {
+      "name": "20261117_05_reconciliar_votos_acessos.py",
+      "path": "backend/alembic/versions/20261117_05_reconciliar_votos_acessos.py",
+      "type": "file",
+      "sha": "665cb582e419b059266f20678196d2f90dfff75e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1316,
+      "is_binary": false
+    },
+    {
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "d600099b4dade9663f164566be077c0a5cf41e45",
+      "sha": "4b159655e6c30be5e09942f69571207856b341c2",
       "mode": "040000",
       "children": []
     },
@@ -432,7 +522,7 @@
       "name": "commands",
       "path": "backend/app/commands",
       "type": "directory",
-      "sha": "446922e7d5d52d051271793bf3f23f69b56dda7c",
+      "sha": "f7d49a1735a3ad327db1639f5f945e9bba392dab",
       "mode": "040000",
       "children": []
     },
@@ -460,20 +550,20 @@
       "name": "avaliar_triagem.py",
       "path": "backend/app/commands/avaliar_triagem.py",
       "type": "file",
-      "sha": "5f86062b59265cea862b01440032acdb72cbc1b4",
+      "sha": "6abafd40eb1b53401e200bb64a196090804dd839",
       "mode": "100644",
       "extension": ".py",
-      "size": 3380,
+      "size": 3418,
       "is_binary": false
     },
     {
       "name": "descartar_moderacao.py",
       "path": "backend/app/commands/descartar_moderacao.py",
       "type": "file",
-      "sha": "baec23f2d24af128f0e229ddb6c869a5bdd18591",
+      "sha": "a360be4d2960365977452820b800abd313a3015d",
       "mode": "100644",
       "extension": ".py",
-      "size": 913,
+      "size": 1325,
       "is_binary": false
     },
     {
@@ -517,6 +607,16 @@
       "is_binary": false
     },
     {
+      "name": "limpar_contadores_abuso.py",
+      "path": "backend/app/commands/limpar_contadores_abuso.py",
+      "type": "file",
+      "sha": "b137a6b726725d07d03822af9bafc05b39985883",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1077,
+      "is_binary": false
+    },
+    {
       "name": "moderador.py",
       "path": "backend/app/commands/moderador.py",
       "type": "file",
@@ -550,7 +650,7 @@
       "name": "core",
       "path": "backend/app/core",
       "type": "directory",
-      "sha": "cd1e3e2ebad87bfc4f0ab3162f5d9c7067d43f09",
+      "sha": "ec05310b8ce3fc7a1814f85acf1d587d8069afed",
       "mode": "040000",
       "children": []
     },
@@ -568,30 +668,110 @@
       "name": "auth.py",
       "path": "backend/app/core/auth.py",
       "type": "file",
-      "sha": "36a326bbb302d40e78b79610f0f8305c5a4af1fa",
+      "sha": "e72a5d5e341fae78713a3c2bf83e1a45876b18ac",
       "mode": "100644",
       "extension": ".py",
-      "size": 2948,
+      "size": 3075,
       "is_binary": false
     },
     {
       "name": "config.py",
       "path": "backend/app/core/config.py",
       "type": "file",
-      "sha": "8879a8f48bb065267747c009b034ae54fbf2ad6f",
+      "sha": "3cfc07ab140ef7f8760e776d7731352389593b49",
       "mode": "100644",
       "extension": ".py",
-      "size": 1422,
+      "size": 7704,
       "is_binary": false
     },
     {
       "name": "database.py",
       "path": "backend/app/core/database.py",
       "type": "file",
-      "sha": "71e02692a14004ccb999a9fc418ff196f2d79280",
+      "sha": "4239632dd003f5dd930306dcf47b511e986b7a6f",
       "mode": "100644",
       "extension": ".py",
-      "size": 473,
+      "size": 495,
+      "is_binary": false
+    },
+    {
+      "name": "dependencia_auth_abuso.py",
+      "path": "backend/app/core/dependencia_auth_abuso.py",
+      "type": "file",
+      "sha": "73afaf8db7451ee04a4a3e5d0e1fad5cf443191f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 487,
+      "is_binary": false
+    },
+    {
+      "name": "dependencia_limite_abuso.py",
+      "path": "backend/app/core/dependencia_limite_abuso.py",
+      "type": "file",
+      "sha": "ab3ad9c2b05fb1b713f141d15e3c3f5673f2f99c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1580,
+      "is_binary": false
+    },
+    {
+      "name": "http_errors.py",
+      "path": "backend/app/core/http_errors.py",
+      "type": "file",
+      "sha": "5d5c6b10b3b9c175b6a18d00ae6b26a589c295f5",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2494,
+      "is_binary": false
+    },
+    {
+      "name": "limite_abuso.py",
+      "path": "backend/app/core/limite_abuso.py",
+      "type": "file",
+      "sha": "aa6f65ab6d7cce5ff078b2122fc52e402e1a0f96",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2890,
+      "is_binary": false
+    },
+    {
+      "name": "origins.py",
+      "path": "backend/app/core/origins.py",
+      "type": "file",
+      "sha": "c5f711ba92ee84f40e4b311c10635f22e8ee0ebe",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2477,
+      "is_binary": false
+    },
+    {
+      "name": "protecao_fluxos.py",
+      "path": "backend/app/core/protecao_fluxos.py",
+      "type": "file",
+      "sha": "b3315b5519b8d2297f37f8122afd176dfe610cf2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3486,
+      "is_binary": false
+    },
+    {
+      "name": "registros_acesso.py",
+      "path": "backend/app/core/registros_acesso.py",
+      "type": "file",
+      "sha": "56165d3e02aca95b6d676dedd004e8908ede631f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3807,
+      "is_binary": false
+    },
+    {
+      "name": "safe_logging.py",
+      "path": "backend/app/core/safe_logging.py",
+      "type": "file",
+      "sha": "45dd76f78765395496715b9f6809e5e3888eea4c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3967,
       "is_binary": false
     },
     {
@@ -626,7 +806,7 @@
       "name": "domain",
       "path": "backend/app/domain",
       "type": "directory",
-      "sha": "9384569faaeb7d6c5242b0766298147d1e1afe8d",
+      "sha": "f25ececcf5ea98a978eaa6b22c2b3eda66fa6cf0",
       "mode": "040000",
       "children": []
     },
@@ -654,10 +834,50 @@
       "name": "avaliacoes.py",
       "path": "backend/app/domain/avaliacoes.py",
       "type": "file",
-      "sha": "81b62543aa428f4c274b7559da8d291aaf4b7bed",
+      "sha": "53c4dcdb1f9231ca2e69989e6fe17ccf5489bfd9",
       "mode": "100644",
       "extension": ".py",
-      "size": 3369,
+      "size": 3793,
+      "is_binary": false
+    },
+    {
+      "name": "email.py",
+      "path": "backend/app/domain/email.py",
+      "type": "file",
+      "sha": "d978edf18c8ee238203a9dcbfb7a2d42c0339cc1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 253,
+      "is_binary": false
+    },
+    {
+      "name": "filtro_moderacao.py",
+      "path": "backend/app/domain/filtro_moderacao.py",
+      "type": "file",
+      "sha": "454bc413076954c9a0e895462d0b4da5db983287",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3592,
+      "is_binary": false
+    },
+    {
+      "name": "limite_abuso.py",
+      "path": "backend/app/domain/limite_abuso.py",
+      "type": "file",
+      "sha": "5cd526bcd7f5b285cf39454d91f6d8f9c166b7ac",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2791,
+      "is_binary": false
+    },
+    {
+      "name": "termos.py",
+      "path": "backend/app/domain/termos.py",
+      "type": "file",
+      "sha": "9c0f171b5f37186f13018093d4f65159564347e6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 107,
       "is_binary": false
     },
     {
@@ -674,27 +894,27 @@
       "name": "triagem_comentario.py",
       "path": "backend/app/domain/triagem_comentario.py",
       "type": "file",
-      "sha": "1f551670277c33afefde87e018213cd9caa0db9a",
+      "sha": "29878fbee921aff1c74410112a767d31bf6a3f2c",
       "mode": "100644",
       "extension": ".py",
-      "size": 1673,
+      "size": 1695,
       "is_binary": false
     },
     {
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
-      "sha": "5ef51cc212564a4fabad8ae0645bcf11a8edbf5f",
+      "sha": "5e7e5ac79951ffa82e90c1cd61015a15f321f552",
       "mode": "100644",
       "extension": ".py",
-      "size": 867,
+      "size": 3022,
       "is_binary": false
     },
     {
       "name": "models",
       "path": "backend/app/models",
       "type": "directory",
-      "sha": "56a6e03494295ba9366779d0c8ddbcae93c7d3df",
+      "sha": "9dd1e311b79d3c2aa27ce30bd5716d728aeaac95",
       "mode": "040000",
       "children": []
     },
@@ -702,20 +922,20 @@
       "name": "__init__.py",
       "path": "backend/app/models/__init__.py",
       "type": "file",
-      "sha": "2f2478003818c40d9e2ed48648332bcc5de9fe47",
+      "sha": "5520f682ff1960fb2faca67d6cbe9e3f83f793ef",
       "mode": "100644",
       "extension": ".py",
-      "size": 1333,
+      "size": 1691,
       "is_binary": false
     },
     {
       "name": "avaliacao.py",
       "path": "backend/app/models/avaliacao.py",
       "type": "file",
-      "sha": "c3b5fa8cb1c03960f93d8c376013821582b788ba",
+      "sha": "36212aaa85ff42f6d7e7bc9522e7e8731751dfdd",
       "mode": "100644",
       "extension": ".py",
-      "size": 2582,
+      "size": 2757,
       "is_binary": false
     },
     {
@@ -726,6 +946,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 1744,
+      "is_binary": false
+    },
+    {
+      "name": "contador_abuso.py",
+      "path": "backend/app/models/contador_abuso.py",
+      "type": "file",
+      "sha": "e7229e203d071bad6d719cb156b45459ce1d57b0",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1298,
       "is_binary": false
     },
     {
@@ -742,10 +972,10 @@
       "name": "denuncia.py",
       "path": "backend/app/models/denuncia.py",
       "type": "file",
-      "sha": "967b9e57882b959c12bd9fe46e2051305acc3963",
+      "sha": "93f2dd3241bfbba8b51368b0608b669f6d3f80f1",
       "mode": "100644",
       "extension": ".py",
-      "size": 1834,
+      "size": 2070,
       "is_binary": false
     },
     {
@@ -809,6 +1039,16 @@
       "is_binary": false
     },
     {
+      "name": "registro_acesso.py",
+      "path": "backend/app/models/registro_acesso.py",
+      "type": "file",
+      "sha": "490e5ba6be4a1297662940f9018dd27b4858c3ad",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 930,
+      "is_binary": false
+    },
+    {
       "name": "sessao_usuario.py",
       "path": "backend/app/models/sessao_usuario.py",
       "type": "file",
@@ -816,6 +1056,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 874,
+      "is_binary": false
+    },
+    {
+      "name": "solicitacao_titular.py",
+      "path": "backend/app/models/solicitacao_titular.py",
+      "type": "file",
+      "sha": "e78200fc1b97c717da516006610dd860600ab8f6",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2097,
       "is_binary": false
     },
     {
@@ -862,17 +1112,27 @@
       "name": "usuario.py",
       "path": "backend/app/models/usuario.py",
       "type": "file",
-      "sha": "853e16c875f044c019e10b966932dc0ffa42cd27",
+      "sha": "42e0162be9899e5b9ec744402fb79ccf8d5ad3c7",
       "mode": "100644",
       "extension": ".py",
-      "size": 1356,
+      "size": 2050,
+      "is_binary": false
+    },
+    {
+      "name": "voto_comentario.py",
+      "path": "backend/app/models/voto_comentario.py",
+      "type": "file",
+      "sha": "cfefa9ae6bf40db03dcdc116d5d5f2b18595514d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 865,
       "is_binary": false
     },
     {
       "name": "repositories",
       "path": "backend/app/repositories",
       "type": "directory",
-      "sha": "f732e10bbc18afd80f469172c9d5b673502dedd9",
+      "sha": "57e0fe1d4692eedeef0d1ebba9ce48567afe3349",
       "mode": "040000",
       "children": []
     },
@@ -890,40 +1150,40 @@
       "name": "avaliacao_repository.py",
       "path": "backend/app/repositories/avaliacao_repository.py",
       "type": "file",
-      "sha": "a2ba68dbc58d665f00c870f761a5bd0f03121971",
+      "sha": "88a14f4603466f332a36db69d8925347ec077c32",
       "mode": "100644",
       "extension": ".py",
-      "size": 2916,
+      "size": 5688,
       "is_binary": false
     },
     {
       "name": "comentario_repository.py",
       "path": "backend/app/repositories/comentario_repository.py",
       "type": "file",
-      "sha": "2c1a89b37b92c35aa734ee48341551cf291362e0",
+      "sha": "f38e0399c7c21eb98683307bd02a453e6d9879e2",
       "mode": "100644",
       "extension": ".py",
-      "size": 5012,
+      "size": 5184,
       "is_binary": false
     },
     {
       "name": "denuncia_repository.py",
       "path": "backend/app/repositories/denuncia_repository.py",
       "type": "file",
-      "sha": "184a958e75bd1ae3213200d105964864be9ab86f",
+      "sha": "c8ad43485db59cbfb50fefeda22b96faf5fa1ee9",
       "mode": "100644",
       "extension": ".py",
-      "size": 3011,
+      "size": 3293,
       "is_binary": false
     },
     {
       "name": "disciplina_repository.py",
       "path": "backend/app/repositories/disciplina_repository.py",
       "type": "file",
-      "sha": "d303ee06e61e6d38034bee996a429b2f391c22af",
+      "sha": "0fc71ec1d19316f03bc44d9f7c3e6a806f37e5a3",
       "mode": "100644",
       "extension": ".py",
-      "size": 2320,
+      "size": 2368,
       "is_binary": false
     },
     {
@@ -947,13 +1207,23 @@
       "is_binary": false
     },
     {
+      "name": "limite_abuso_repository.py",
+      "path": "backend/app/repositories/limite_abuso_repository.py",
+      "type": "file",
+      "sha": "a02ea7e65b4c7a70e4a8bc777a0b127aafb9291b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3020,
+      "is_binary": false
+    },
+    {
       "name": "moderacao_repository.py",
       "path": "backend/app/repositories/moderacao_repository.py",
       "type": "file",
-      "sha": "78d3ce2498ef10cc20880eabdc75ab13d1e8030a",
+      "sha": "807104babc644505f5327cdf39ab1aff4c022250",
       "mode": "100644",
       "extension": ".py",
-      "size": 2308,
+      "size": 2328,
       "is_binary": false
     },
     {
@@ -987,6 +1257,26 @@
       "is_binary": false
     },
     {
+      "name": "registro_acesso_repository.py",
+      "path": "backend/app/repositories/registro_acesso_repository.py",
+      "type": "file",
+      "sha": "82e470285039c1a8061bffe3bfa42f557ca6ae6d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 378,
+      "is_binary": false
+    },
+    {
+      "name": "retencao_repository.py",
+      "path": "backend/app/repositories/retencao_repository.py",
+      "type": "file",
+      "sha": "6b459d01515ca4f5f0ba7306966c7e4ed4f83f82",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4794,
+      "is_binary": false
+    },
+    {
       "name": "sessao_repository.py",
       "path": "backend/app/repositories/sessao_repository.py",
       "type": "file",
@@ -994,6 +1284,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 451,
+      "is_binary": false
+    },
+    {
+      "name": "solicitacao_titular_repository.py",
+      "path": "backend/app/repositories/solicitacao_titular_repository.py",
+      "type": "file",
+      "sha": "7e787ef03306532a4f401e69dac5900abc1a04af",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 735,
       "is_binary": false
     },
     {
@@ -1027,10 +1327,20 @@
       "is_binary": false
     },
     {
+      "name": "voto_comentario_repository.py",
+      "path": "backend/app/repositories/voto_comentario_repository.py",
+      "type": "file",
+      "sha": "693ab251ce92507bd463b96ccfbb9b66e8fd3502",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1840,
+      "is_binary": false
+    },
+    {
       "name": "routers",
       "path": "backend/app/routers",
       "type": "directory",
-      "sha": "7c0c5739a717c31060031c1d4c21d4b73f4cd4d1",
+      "sha": "d564592775d7a9b15734ca6f7def64edecd72849",
       "mode": "040000",
       "children": []
     },
@@ -1048,40 +1358,40 @@
       "name": "auth.py",
       "path": "backend/app/routers/auth.py",
       "type": "file",
-      "sha": "2259ed1dd5d4b922acc56a79c095711c973809d2",
+      "sha": "8e7e1ebecdcfd3998f50960f70c9653c5131c7d6",
       "mode": "100644",
       "extension": ".py",
-      "size": 4337,
+      "size": 6236,
       "is_binary": false
     },
     {
       "name": "avaliacoes.py",
       "path": "backend/app/routers/avaliacoes.py",
       "type": "file",
-      "sha": "8d33fdd013a8c166c41dfb4dc4267d970f339f31",
+      "sha": "bed884de3e3165bb5276009133c20b3ea7509e15",
       "mode": "100644",
       "extension": ".py",
-      "size": 1180,
+      "size": 1700,
       "is_binary": false
     },
     {
       "name": "comentarios.py",
       "path": "backend/app/routers/comentarios.py",
       "type": "file",
-      "sha": "f559496beb073c3492a01f425b486921ca32007c",
+      "sha": "30639fd7a7b49a2bfab6104cb816b2f6957f3ace",
       "mode": "100644",
       "extension": ".py",
-      "size": 1835,
+      "size": 3213,
       "is_binary": false
     },
     {
       "name": "denuncias.py",
       "path": "backend/app/routers/denuncias.py",
       "type": "file",
-      "sha": "8e45986b2d7b2ff796c01f066ae54af2e278c6c3",
+      "sha": "fcf649f5a2cd5eb507614daa8a73274aee1a856a",
       "mode": "100644",
       "extension": ".py",
-      "size": 2115,
+      "size": 2285,
       "is_binary": false
     },
     {
@@ -1098,20 +1408,20 @@
       "name": "identidade_docente.py",
       "path": "backend/app/routers/identidade_docente.py",
       "type": "file",
-      "sha": "6a0b7b5be8a12c70f12c7455f36669c8dec60b2e",
+      "sha": "4588a78d087185c57afc3a3275e10cf5e804ce17",
       "mode": "100644",
       "extension": ".py",
-      "size": 2541,
+      "size": 2905,
       "is_binary": false
     },
     {
       "name": "moderacao.py",
       "path": "backend/app/routers/moderacao.py",
       "type": "file",
-      "sha": "08118be4bbc92837a1401c8637c06df5de50ea0a",
+      "sha": "298c2c170d7a0b5fba6ff01b7e1ec5b25177f6a7",
       "mode": "100644",
       "extension": ".py",
-      "size": 2038,
+      "size": 2898,
       "is_binary": false
     },
     {
@@ -1125,10 +1435,30 @@
       "is_binary": false
     },
     {
+      "name": "retencao.py",
+      "path": "backend/app/routers/retencao.py",
+      "type": "file",
+      "sha": "f85ba1734df202cceb4b37ab5440d0ddd6b74a10",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1351,
+      "is_binary": false
+    },
+    {
+      "name": "solicitacoes_titulares.py",
+      "path": "backend/app/routers/solicitacoes_titulares.py",
+      "type": "file",
+      "sha": "fc4eaef8674c342643bd3b360895803723b24913",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3289,
+      "is_binary": false
+    },
+    {
       "name": "schemas",
       "path": "backend/app/schemas",
       "type": "directory",
-      "sha": "f1830a4620742fd3038f19a9fd79c419c5bb5aa5",
+      "sha": "41a1528f439d0811a33550cf542201221fc08115",
       "mode": "040000",
       "children": []
     },
@@ -1146,30 +1476,30 @@
       "name": "auth.py",
       "path": "backend/app/schemas/auth.py",
       "type": "file",
-      "sha": "c24929c00728d2444bca7fb9aba37a91081fa514",
+      "sha": "d310d5fd01d5fe3bee9c8f3b76c721eac5f13876",
       "mode": "100644",
       "extension": ".py",
-      "size": 3422,
+      "size": 4402,
       "is_binary": false
     },
     {
       "name": "avaliacao.py",
       "path": "backend/app/schemas/avaliacao.py",
       "type": "file",
-      "sha": "0ea49eda2e15aecbd92e60471bfaeb20203c0d99",
+      "sha": "d603b81e2a79aa2bf82c1716faf56b1e724892d3",
       "mode": "100644",
       "extension": ".py",
-      "size": 3912,
+      "size": 4293,
       "is_binary": false
     },
     {
       "name": "comentario.py",
       "path": "backend/app/schemas/comentario.py",
       "type": "file",
-      "sha": "9a280ed6bf14a8a2660d5d3861bf76a262f3dc80",
+      "sha": "82ae32bd60512372bb99f267948c9ef5636116de",
       "mode": "100644",
       "extension": ".py",
-      "size": 947,
+      "size": 1266,
       "is_binary": false
     },
     {
@@ -1210,6 +1540,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 1197,
+      "is_binary": false
+    },
+    {
+      "name": "solicitacao_titular.py",
+      "path": "backend/app/schemas/solicitacao_titular.py",
+      "type": "file",
+      "sha": "d91e37a8ab28f8295dc2a04893c3caf64d55b3b9",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2032,
       "is_binary": false
     },
     {
@@ -1264,7 +1604,7 @@
       "name": "services",
       "path": "backend/app/services",
       "type": "directory",
-      "sha": "5b29533211781317f330e866d09d6c42590b7463",
+      "sha": "9dd948d4ead4f7b41a1c08917e3290f571b719b2",
       "mode": "040000",
       "children": []
     },
@@ -1289,23 +1629,33 @@
       "is_binary": false
     },
     {
+      "name": "auth_abuso_service.py",
+      "path": "backend/app/services/auth_abuso_service.py",
+      "type": "file",
+      "sha": "e6effaad74df0abd349bdaa4405a6c5eebb62380",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4691,
+      "is_binary": false
+    },
+    {
       "name": "auth_service.py",
       "path": "backend/app/services/auth_service.py",
       "type": "file",
-      "sha": "6984ed9b65a2c483a0d2fec19b244813f3d4950c",
+      "sha": "fd05c1e7da0e4e1ed7ba05f0269b1cd7386b03f3",
       "mode": "100644",
       "extension": ".py",
-      "size": 7131,
+      "size": 9315,
       "is_binary": false
     },
     {
       "name": "avaliacao_service.py",
       "path": "backend/app/services/avaliacao_service.py",
       "type": "file",
-      "sha": "a6a1751d52fcaa0da8efe312728c72b9bc377474",
+      "sha": "5a43537dcc45c37fd18316dcdd851f063019a677",
       "mode": "100644",
       "extension": ".py",
-      "size": 8290,
+      "size": 10336,
       "is_binary": false
     },
     {
@@ -1332,10 +1682,10 @@
       "name": "email_service.py",
       "path": "backend/app/services/email_service.py",
       "type": "file",
-      "sha": "7af9ff5627b2ffe7be073f982f43c82e18e125ae",
+      "sha": "ad346e9ea9f3b2c365893327f0bcbe5998213155",
       "mode": "100644",
       "extension": ".py",
-      "size": 3104,
+      "size": 3304,
       "is_binary": false
     },
     {
@@ -1352,10 +1702,10 @@
       "name": "importacao_agendada_service.py",
       "path": "backend/app/services/importacao_agendada_service.py",
       "type": "file",
-      "sha": "cb9ecc1a298a89c39bfd7dcc681c4ad4ea88e488",
+      "sha": "56d4691aea81de2e364ef87efe27395f4a3284dd",
       "mode": "100644",
       "extension": ".py",
-      "size": 2989,
+      "size": 2997,
       "is_binary": false
     },
     {
@@ -1369,23 +1719,33 @@
       "is_binary": false
     },
     {
+      "name": "limite_abuso_service.py",
+      "path": "backend/app/services/limite_abuso_service.py",
+      "type": "file",
+      "sha": "8ad364cf37c8267fb0b98496993b35bf7ab82e6d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6882,
+      "is_binary": false
+    },
+    {
       "name": "moderacao_automatica_service.py",
       "path": "backend/app/services/moderacao_automatica_service.py",
       "type": "file",
-      "sha": "467244ce50bd77670b1aaddbdd20e2025ff92b05",
+      "sha": "01e5b2b5b5018d1b12841acdcca05edd4eabec90",
       "mode": "100644",
       "extension": ".py",
-      "size": 3763,
+      "size": 4245,
       "is_binary": false
     },
     {
       "name": "moderacao_service.py",
       "path": "backend/app/services/moderacao_service.py",
       "type": "file",
-      "sha": "4364fcbb98a7448295184f1e99eb82abbd1fb09a",
+      "sha": "0b0d625e49ae7a109bfed80e1c8d12f0682d8a04",
       "mode": "100644",
       "extension": ".py",
-      "size": 6020,
+      "size": 6321,
       "is_binary": false
     },
     {
@@ -1399,23 +1759,53 @@
       "is_binary": false
     },
     {
+      "name": "retencao_service.py",
+      "path": "backend/app/services/retencao_service.py",
+      "type": "file",
+      "sha": "925c854eb940fafbc3f8738a138c14445978c85a",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2204,
+      "is_binary": false
+    },
+    {
       "name": "sigaa_import_service.py",
       "path": "backend/app/services/sigaa_import_service.py",
       "type": "file",
-      "sha": "daf184364dcdc12b06a0d709ab0f576253551ef5",
+      "sha": "c61432efb7a6a1b5e2b989d20f9ebac1637ee66b",
       "mode": "100644",
       "extension": ".py",
-      "size": 12506,
+      "size": 12545,
+      "is_binary": false
+    },
+    {
+      "name": "solicitacao_titular_service.py",
+      "path": "backend/app/services/solicitacao_titular_service.py",
+      "type": "file",
+      "sha": "1e4a6e2a5c52daa53c8b9e574f950b509af57284",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2777,
       "is_binary": false
     },
     {
       "name": "triagem_service.py",
       "path": "backend/app/services/triagem_service.py",
       "type": "file",
-      "sha": "5f1effacc0377a707dae173981b20ed14249ed1a",
+      "sha": "e1dbc1fd7f0f6a99662c78d71db7fe73834206b6",
       "mode": "100644",
       "extension": ".py",
-      "size": 4397,
+      "size": 4923,
+      "is_binary": false
+    },
+    {
+      "name": "voto_comentario_service.py",
+      "path": "backend/app/services/voto_comentario_service.py",
+      "type": "file",
+      "sha": "fdaa82292fad1cba7a48828fddad91430dcf8c4d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1972,
       "is_binary": false
     },
     {
@@ -1452,10 +1842,10 @@
       "name": "requirements-dev.txt",
       "path": "backend/requirements-dev.txt",
       "type": "file",
-      "sha": "868b94933ebf002ac410b8fd607c002ec743fab2",
+      "sha": "cd14eeae5f07f1194738f8d4b4d87fc981c47c92",
       "mode": "100644",
       "extension": ".txt",
-      "size": 86,
+      "size": 197,
       "is_binary": false
     },
     {
@@ -1472,7 +1862,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "d86ee2c6d2a708f2666a8d910d8c4c8e64b8b85f",
+      "sha": "e7897c1052dcaa560a1f273f974b4686cc352289",
       "mode": "040000",
       "children": []
     },
@@ -1484,6 +1874,36 @@
       "mode": "100644",
       "extension": ".py",
       "size": 25,
+      "is_binary": false
+    },
+    {
+      "name": "acesso_servidor.py",
+      "path": "backend/tests/acesso_servidor.py",
+      "type": "file",
+      "sha": "e374badd1f0a0616a2bcd64cc192b80fa85bf1b8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1321,
+      "is_binary": false
+    },
+    {
+      "name": "auth_abuso_fixtures.py",
+      "path": "backend/tests/auth_abuso_fixtures.py",
+      "type": "file",
+      "sha": "93dd17e1ad447bdb1b41ad067607b7f5e470db2c",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 682,
+      "is_binary": false
+    },
+    {
+      "name": "auth_http_fixtures.py",
+      "path": "backend/tests/auth_http_fixtures.py",
+      "type": "file",
+      "sha": "78cb6b3402d6cb6bb784f1dd9afbfb00bed4b8b1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2825,
       "is_binary": false
     },
     {
@@ -1518,50 +1938,80 @@
       "name": "fluxo_moderacao_check.py",
       "path": "backend/tests/fluxo_moderacao_check.py",
       "type": "file",
-      "sha": "fc62b4a9825e406c65955a25c47a7f64ba696a6c",
+      "sha": "a004370d01e467718615ce02027d936f0287c16f",
       "mode": "100644",
       "extension": ".py",
-      "size": 2982,
+      "size": 3083,
       "is_binary": false
     },
     {
       "name": "integration_acesso.py",
       "path": "backend/tests/integration_acesso.py",
       "type": "file",
-      "sha": "064621d83b16348dec365d1ccdf5f677e8497ff3",
+      "sha": "581d83ca54e16a851f927d81325094233c23a4a0",
       "mode": "100644",
       "extension": ".py",
-      "size": 8503,
+      "size": 9319,
       "is_binary": false
     },
     {
       "name": "integration_avaliacao.py",
       "path": "backend/tests/integration_avaliacao.py",
       "type": "file",
-      "sha": "7753edefd4d66810a0791e2c23d35e716ab23776",
+      "sha": "99ab8a276d113c997a3435a6e12d93b503a88ff4",
       "mode": "100644",
       "extension": ".py",
-      "size": 12780,
+      "size": 13279,
+      "is_binary": false
+    },
+    {
+      "name": "integration_conflito_migracoes.py",
+      "path": "backend/tests/integration_conflito_migracoes.py",
+      "type": "file",
+      "sha": "aa1e26d0eee8f3befe7794b60c00c44a84c290ea",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6134,
       "is_binary": false
     },
     {
       "name": "integration_moderacao.py",
       "path": "backend/tests/integration_moderacao.py",
       "type": "file",
-      "sha": "c98051f128e28496fd9267f9f116e04ff442f9e4",
+      "sha": "c3d14f75659d451a14aeebb0d1fc79ad14296a08",
       "mode": "100644",
       "extension": ".py",
-      "size": 15268,
+      "size": 15638,
       "is_binary": false
     },
     {
       "name": "integration_reconciliacao.py",
       "path": "backend/tests/integration_reconciliacao.py",
       "type": "file",
-      "sha": "78d3557a26848bedd0df8cff232c58237ff0cb60",
+      "sha": "b858ffccebab1bc9577613cbcfbcfa4fd1bb0c7b",
       "mode": "100644",
       "extension": ".py",
-      "size": 4875,
+      "size": 4910,
+      "is_binary": false
+    },
+    {
+      "name": "integration_retencao_migracao.py",
+      "path": "backend/tests/integration_retencao_migracao.py",
+      "type": "file",
+      "sha": "11e7871a19f69ccfd2e2634cbc36a0013e5288c8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2072,
+      "is_binary": false
+    },
+    {
+      "name": "integration_termos.py",
+      "path": "backend/tests/integration_termos.py",
+      "type": "file",
+      "sha": "a7fcad41d231143e00c09348dadbc6935b869b03",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6738,
       "is_binary": false
     },
     {
@@ -1582,6 +2032,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 2233,
+      "is_binary": false
+    },
+    {
+      "name": "recovery_scenario.py",
+      "path": "backend/tests/recovery_scenario.py",
+      "type": "file",
+      "sha": "2fd86430e1b9de9e80093d1e699885a5323dc109",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 24632,
       "is_binary": false
     },
     {
@@ -1638,50 +2098,80 @@
       "name": "test_auth.py",
       "path": "backend/tests/test_auth.py",
       "type": "file",
-      "sha": "ec37e3ac673c6667b5f16150250977f52358e610",
+      "sha": "371bc2982495ff4e7807cbe7b27af42f00b6ce62",
       "mode": "100644",
       "extension": ".py",
-      "size": 19471,
+      "size": 20437,
+      "is_binary": false
+    },
+    {
+      "name": "test_auth_abuso.py",
+      "path": "backend/tests/test_auth_abuso.py",
+      "type": "file",
+      "sha": "3b557068f3ca8dfed02cc68f07dab13ae504c164",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 4045,
+      "is_binary": false
+    },
+    {
+      "name": "test_auth_abuso_http.py",
+      "path": "backend/tests/test_auth_abuso_http.py",
+      "type": "file",
+      "sha": "405b79338acefa4026ded3c63a2fbd5e4fe4c7ce",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 11720,
+      "is_binary": false
+    },
+    {
+      "name": "test_auth_abuso_postgres.py",
+      "path": "backend/tests/test_auth_abuso_postgres.py",
+      "type": "file",
+      "sha": "15b8030125a6a1da0474f3eb2e8b6a46919745d2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 13549,
       "is_binary": false
     },
     {
       "name": "test_avaliacao.py",
       "path": "backend/tests/test_avaliacao.py",
       "type": "file",
-      "sha": "7119a1f38a7beee9d073a1924426654fe56e2ac5",
+      "sha": "a3e55e82626e748d304057cb626f1a2625b75469",
       "mode": "100644",
       "extension": ".py",
-      "size": 30904,
+      "size": 31285,
       "is_binary": false
     },
     {
       "name": "test_comentario.py",
       "path": "backend/tests/test_comentario.py",
       "type": "file",
-      "sha": "7c40c71d727b1ca2ff418337d5cd611668437a2d",
+      "sha": "d61d423dedff5ae8f3d13c650be21a023bc5a799",
       "mode": "100644",
       "extension": ".py",
-      "size": 21077,
+      "size": 21398,
       "is_binary": false
     },
     {
       "name": "test_comparacao_professores.py",
       "path": "backend/tests/test_comparacao_professores.py",
       "type": "file",
-      "sha": "253beb514ce630e0e074a3e1497a6a8d01b9fa02",
+      "sha": "87db554a5ca179e5339116aff08950925595db55",
       "mode": "100644",
       "extension": ".py",
-      "size": 4890,
+      "size": 7143,
       "is_binary": false
     },
     {
       "name": "test_consulta_agregada.py",
       "path": "backend/tests/test_consulta_agregada.py",
       "type": "file",
-      "sha": "b48d23ef984c66a4d6d92fda024d4452900d024c",
+      "sha": "bca05621ea57915e0b38c610e25b5d3b031519f0",
       "mode": "100644",
       "extension": ".py",
-      "size": 9511,
+      "size": 13127,
       "is_binary": false
     },
     {
@@ -1738,10 +2228,10 @@
       "name": "test_importacao_agendada_service.py",
       "path": "backend/tests/test_importacao_agendada_service.py",
       "type": "file",
-      "sha": "225cc8f3d9886a3e8e3763ce985ee90281203cec",
+      "sha": "523d185c3665e52963ccb9f8deac09b91d9cfe98",
       "mode": "100644",
       "extension": ".py",
-      "size": 6466,
+      "size": 6576,
       "is_binary": false
     },
     {
@@ -1765,33 +2255,63 @@
       "is_binary": false
     },
     {
+      "name": "test_limite_abuso.py",
+      "path": "backend/tests/test_limite_abuso.py",
+      "type": "file",
+      "sha": "8dbd2a2510b1cbd517d3c2dde667f9dbe5c5fc6b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9806,
+      "is_binary": false
+    },
+    {
+      "name": "test_limite_abuso_postgres.py",
+      "path": "backend/tests/test_limite_abuso_postgres.py",
+      "type": "file",
+      "sha": "265e6f9ace11447e7588fcc65f5c5c1fc2bc2f25",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 16687,
+      "is_binary": false
+    },
+    {
       "name": "test_migration_connection.py",
       "path": "backend/tests/test_migration_connection.py",
       "type": "file",
-      "sha": "a6da57289011f62d5f2809734383013c80f43b56",
+      "sha": "86f9041131a8c42fe30f9ef7b4aa4f3626533a9f",
       "mode": "100644",
       "extension": ".py",
-      "size": 2642,
+      "size": 2738,
+      "is_binary": false
+    },
+    {
+      "name": "test_minhas_avaliacoes.py",
+      "path": "backend/tests/test_minhas_avaliacoes.py",
+      "type": "file",
+      "sha": "59223fecb5f063a6dea4f9d4ece2c1f3a2e10a3b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6068,
       "is_binary": false
     },
     {
       "name": "test_moderacao.py",
       "path": "backend/tests/test_moderacao.py",
       "type": "file",
-      "sha": "72969e19ca8576e1e884c0b6f9319dc9976f0f51",
+      "sha": "98b190e0662511d38099ca01dcdb902c4ae2d453",
       "mode": "100644",
       "extension": ".py",
-      "size": 11858,
+      "size": 14168,
       "is_binary": false
     },
     {
       "name": "test_moderacao_automatica.py",
       "path": "backend/tests/test_moderacao_automatica.py",
       "type": "file",
-      "sha": "559d1baaa0ff50c80338d9fa1cac7d4f9cba085b",
+      "sha": "f4b7ed53c2659e41cb02a9c007c7c32eb86f9a91",
       "mode": "100644",
       "extension": ".py",
-      "size": 7709,
+      "size": 15742,
       "is_binary": false
     },
     {
@@ -1802,6 +2322,46 @@
       "mode": "100644",
       "extension": ".py",
       "size": 6475,
+      "is_binary": false
+    },
+    {
+      "name": "test_ofensas_disfarcadas.py",
+      "path": "backend/tests/test_ofensas_disfarcadas.py",
+      "type": "file",
+      "sha": "e4213bdda45126f95c7f2894e53549d66e40e9c3",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 8608,
+      "is_binary": false
+    },
+    {
+      "name": "test_politica_moderacao_e_titulares.py",
+      "path": "backend/tests/test_politica_moderacao_e_titulares.py",
+      "type": "file",
+      "sha": "21b2921a15818d1397bb4cef247689c3f3f68052",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 28372,
+      "is_binary": false
+    },
+    {
+      "name": "test_privacidade_revisao_265.py",
+      "path": "backend/tests/test_privacidade_revisao_265.py",
+      "type": "file",
+      "sha": "d524e509cb10e6e46f44819d43bbd0900b6cc8b9",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 8144,
+      "is_binary": false
+    },
+    {
+      "name": "test_protecao_fluxos.py",
+      "path": "backend/tests/test_protecao_fluxos.py",
+      "type": "file",
+      "sha": "847aa8ad7d498a77205685ab0fc71b3813b4f060",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 8589,
       "is_binary": false
     },
     {
@@ -1828,30 +2388,60 @@
       "name": "test_recuperacao_senha.py",
       "path": "backend/tests/test_recuperacao_senha.py",
       "type": "file",
-      "sha": "9eaf375092ed4eb92ff61032f3ed1feb70f964e9",
+      "sha": "0b39ba40add91b85e073e6c28c9c175988d51065",
       "mode": "100644",
       "extension": ".py",
-      "size": 9594,
+      "size": 10277,
+      "is_binary": false
+    },
+    {
+      "name": "test_registros_acesso.py",
+      "path": "backend/tests/test_registros_acesso.py",
+      "type": "file",
+      "sha": "7809dc7e7ff188f85625bd5605fbcefaa98df144",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3461,
+      "is_binary": false
+    },
+    {
+      "name": "test_retencao.py",
+      "path": "backend/tests/test_retencao.py",
+      "type": "file",
+      "sha": "7b746a15a385c4402bca5158b060d18b3a3bc6a4",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 16619,
       "is_binary": false
     },
     {
       "name": "test_retorno_busca.py",
       "path": "backend/tests/test_retorno_busca.py",
       "type": "file",
-      "sha": "48a8afd646db2a18b3fcbe8b4816ec722c606893",
+      "sha": "ca21fb9a9833137810d9659984e1ba8c25902b1e",
       "mode": "100644",
       "extension": ".py",
-      "size": 2435,
+      "size": 2545,
+      "is_binary": false
+    },
+    {
+      "name": "test_seguranca_266.py",
+      "path": "backend/tests/test_seguranca_266.py",
+      "type": "file",
+      "sha": "1a3d36a457363b62c619e115e853b4e05370781b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 18984,
       "is_binary": false
     },
     {
       "name": "test_sigaa_import_service.py",
       "path": "backend/tests/test_sigaa_import_service.py",
       "type": "file",
-      "sha": "2c112cec9bad0e0386b939656d752ea1615f8954",
+      "sha": "b02501d0aca2cd5a68e2f5fe262fe450d0dcff06",
       "mode": "100644",
       "extension": ".py",
-      "size": 11409,
+      "size": 11487,
       "is_binary": false
     },
     {
@@ -1865,13 +2455,53 @@
       "is_binary": false
     },
     {
+      "name": "test_solicitacoes_titulares.py",
+      "path": "backend/tests/test_solicitacoes_titulares.py",
+      "type": "file",
+      "sha": "278df4fb31d733f7ebbe2dc6bec5af64d0089e99",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7536,
+      "is_binary": false
+    },
+    {
+      "name": "test_termos.py",
+      "path": "backend/tests/test_termos.py",
+      "type": "file",
+      "sha": "f6cff37ce259201803156cabe13ba01ec0c80168",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5496,
+      "is_binary": false
+    },
+    {
       "name": "test_triagem.py",
       "path": "backend/tests/test_triagem.py",
       "type": "file",
-      "sha": "d7d9a3f5be9514bd73fce9f6a247f4693a330e5c",
+      "sha": "af4a829844663bb2459ba7ef423d63b344e49c65",
       "mode": "100644",
       "extension": ".py",
-      "size": 9463,
+      "size": 13085,
+      "is_binary": false
+    },
+    {
+      "name": "test_voto_comentario.py",
+      "path": "backend/tests/test_voto_comentario.py",
+      "type": "file",
+      "sha": "bd058e8937b11a2a2247cf89ce989bc2c0fc7d23",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 11659,
+      "is_binary": false
+    },
+    {
+      "name": "test_voto_comentario_postgres.py",
+      "path": "backend/tests/test_voto_comentario_postgres.py",
+      "type": "file",
+      "sha": "7d7742a2f2e170b81ebc3e79c823bc53b19a1dca",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7344,
       "is_binary": false
     },
     {
@@ -1888,17 +2518,17 @@
       "name": "docker-compose.yml",
       "path": "docker-compose.yml",
       "type": "file",
-      "sha": "b955fce065d56e5f4e73e0ae457454e815301043",
+      "sha": "c8d20c3392e5673b8cfa953f38cc57a17e324b48",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2892,
+      "size": 3325,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "3bbc051fba9db11159aedb082df47ade06061e22",
+      "sha": "ccedb58e6aecafa1eea01f4c39031c81ea1c8c95",
       "mode": "040000",
       "children": []
     },
@@ -1964,17 +2594,17 @@
       "name": "arquitetura.md",
       "path": "docs/arquitetura.md",
       "type": "file",
-      "sha": "45295848a2fb4e20aa235a5f7c6335a89e77efa0",
+      "sha": "ce6ff15282054621e2aa3e8ff15b14a32dc02a00",
       "mode": "100644",
       "extension": ".md",
-      "size": 32131,
+      "size": 37709,
       "is_binary": false
     },
     {
       "name": "assets",
       "path": "docs/assets",
       "type": "directory",
-      "sha": "8242c77229a2a5ea3e68aa0c6f506b98812353a8",
+      "sha": "7c5ac8109064b6720df5518b27ef623089daaeaa",
       "mode": "040000",
       "children": []
     },
@@ -2325,6 +2955,24 @@
       "is_binary": false
     },
     {
+      "name": "images",
+      "path": "docs/assets/images",
+      "type": "directory",
+      "sha": "e17cb13a19f7555671bff6283742e0b4816437ff",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "como-funciona.svg",
+      "path": "docs/assets/images/como-funciona.svg",
+      "type": "file",
+      "sha": "850cbbd42c1a0cad0a78a77a7df9b75ca17829e5",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 2377,
+      "is_binary": false
+    },
+    {
       "name": "stylesheets",
       "path": "docs/assets/stylesheets",
       "type": "directory",
@@ -2346,9 +2994,19 @@
       "name": "atas",
       "path": "docs/atas",
       "type": "directory",
-      "sha": "7b2fccc792fde8d3f5abc0c3caf74c22fd500b72",
+      "sha": "d74020a81d62243e308c8e93fb42750975d530e1",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "2026-09-14.md",
+      "path": "docs/atas/2026-09-14.md",
+      "type": "file",
+      "sha": "8db90cedc94e385fe170c12305b8f0b685cc286a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3157,
+      "is_binary": false
     },
     {
       "name": "2026-09-17.md",
@@ -2358,6 +3016,66 @@
       "mode": "100644",
       "extension": ".md",
       "size": 2202,
+      "is_binary": false
+    },
+    {
+      "name": "2026-10-05-a-11.md",
+      "path": "docs/atas/2026-10-05-a-11.md",
+      "type": "file",
+      "sha": "28dde8fe70738964bbff59de5b05270f6b9b369b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3625,
+      "is_binary": false
+    },
+    {
+      "name": "2026-10-12-a-18.md",
+      "path": "docs/atas/2026-10-12-a-18.md",
+      "type": "file",
+      "sha": "fe5ee2a0a165db182965dfcc0e09b66e345dd6fc",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3166,
+      "is_binary": false
+    },
+    {
+      "name": "2026-10-26-a-11-01.md",
+      "path": "docs/atas/2026-10-26-a-11-01.md",
+      "type": "file",
+      "sha": "b44ced5e595cfd5974f6b319a0184925e29e8b1a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3830,
+      "is_binary": false
+    },
+    {
+      "name": "2026-11-02-a-08.md",
+      "path": "docs/atas/2026-11-02-a-08.md",
+      "type": "file",
+      "sha": "c49420d76104f7535fb02d2348354fabcb7e85d4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3345,
+      "is_binary": false
+    },
+    {
+      "name": "2026-11-16.md",
+      "path": "docs/atas/2026-11-16.md",
+      "type": "file",
+      "sha": "7d825c734e742c74985eeaee2d71f082ab976089",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4465,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "docs/atas/README.md",
+      "type": "file",
+      "sha": "762234326aaf43f3406d62dc117792307167c267",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2767,
       "is_binary": false
     },
     {
@@ -2371,13 +3089,43 @@
       "is_binary": false
     },
     {
+      "name": "canal-titulares.md",
+      "path": "docs/canal-titulares.md",
+      "type": "file",
+      "sha": "5584c7f1e4c549fe3ff134a6ee1f6bdc245713a0",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 23458,
+      "is_binary": false
+    },
+    {
+      "name": "continuidade-operacional.md",
+      "path": "docs/continuidade-operacional.md",
+      "type": "file",
+      "sha": "faf5b9faf5a8d0ceb4609ac2441b3d6736f1f726",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 23493,
+      "is_binary": false
+    },
+    {
       "name": "desenvolvimento.md",
       "path": "docs/desenvolvimento.md",
       "type": "file",
-      "sha": "1b6550a01c41cb84fe84d8f5e2b0d8b42353ec03",
+      "sha": "581277be2c114c136c1026ff3277146ca0f597c3",
       "mode": "100644",
       "extension": ".md",
-      "size": 6436,
+      "size": 7584,
+      "is_binary": false
+    },
+    {
+      "name": "design-system.md",
+      "path": "docs/design-system.md",
+      "type": "file",
+      "sha": "e4d8085f3b59bcb1bd59f4f520f231193862a046",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4554,
       "is_binary": false
     },
     {
@@ -2422,9 +3170,19 @@
       "name": "estudos",
       "path": "docs/estudos",
       "type": "directory",
-      "sha": "5529409fa282ad7a3dbeee18ba213b7fc219fc5c",
+      "sha": "2a8fc94a9a438da1cd28d8df47528545f1c24210",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "aceite-complementar-pr277.md",
+      "path": "docs/estudos/aceite-complementar-pr277.md",
+      "type": "file",
+      "sha": "6132f9637bbeb3874247e94b12708d3ca87894ab",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6574,
+      "is_binary": false
     },
     {
       "name": "ajustes-prototipo-jornada-issue-153.md",
@@ -2477,6 +3235,16 @@
       "is_binary": false
     },
     {
+      "name": "avaliacao-ofensas-disfarcadas-issue-252.md",
+      "path": "docs/estudos/avaliacao-ofensas-disfarcadas-issue-252.md",
+      "type": "file",
+      "sha": "70bb45e525888f7232b256ab1678678e54fdd4d5",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 23629,
+      "is_binary": false
+    },
+    {
       "name": "cabecalho-sessao-issue-211.md",
       "path": "docs/estudos/cabecalho-sessao-issue-211.md",
       "type": "file",
@@ -2484,6 +3252,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 5080,
+      "is_binary": false
+    },
+    {
+      "name": "casos-juridicos-pr277.md",
+      "path": "docs/estudos/casos-juridicos-pr277.md",
+      "type": "file",
+      "sha": "de537dbc8baf26a583de12b26b2e384851873c21",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 13591,
       "is_binary": false
     },
     {
@@ -2530,7 +3308,7 @@
       "name": "evidencias",
       "path": "docs/estudos/evidencias",
       "type": "directory",
-      "sha": "46e6ea319b57f8b485cf54251ac62823980ae093",
+      "sha": "4ceeb02360a989c061391c93b101e6a2cd626746",
       "mode": "040000",
       "children": []
     },
@@ -4595,6 +5373,330 @@
       "is_binary": false
     },
     {
+      "name": "issue-252",
+      "path": "docs/estudos/evidencias/issue-252",
+      "type": "directory",
+      "sha": "db36fdbf63d7892152c026deb53e899b08e749e0",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "autorizacao-etapa1.json",
+      "path": "docs/estudos/evidencias/issue-252/autorizacao-etapa1.json",
+      "type": "file",
+      "sha": "3ff360665119ce22a2861925ce8d466abf0c8c23",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 7073,
+      "is_binary": false
+    },
+    {
+      "name": "avaliar.py",
+      "path": "docs/estudos/evidencias/issue-252/avaliar.py",
+      "type": "file",
+      "sha": "d2dd280d4a17918f31d21c26ff2a5b47901a2641",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 13596,
+      "is_binary": false
+    },
+    {
+      "name": "avaliar_leet.py",
+      "path": "docs/estudos/evidencias/issue-252/avaliar_leet.py",
+      "type": "file",
+      "sha": "c907a62410230285957ac5d62b62ae2d65d42c34",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6351,
+      "is_binary": false
+    },
+    {
+      "name": "casos-leet.json",
+      "path": "docs/estudos/evidencias/issue-252/casos-leet.json",
+      "type": "file",
+      "sha": "9f409e343f4f5ea1c93241471d28d9f5f0e2b59d",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2754,
+      "is_binary": false
+    },
+    {
+      "name": "casos.json",
+      "path": "docs/estudos/evidencias/issue-252/casos.json",
+      "type": "file",
+      "sha": "a113d5236c1c86873e60d22bd5cfb753975fc204",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 8921,
+      "is_binary": false
+    },
+    {
+      "name": "desempenho-etapa1.json",
+      "path": "docs/estudos/evidencias/issue-252/desempenho-etapa1.json",
+      "type": "file",
+      "sha": "d596e68990ef04a68fb40a0fcd8e85dabd11c0dc",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 17653,
+      "is_binary": false
+    },
+    {
+      "name": "fontes-github.json",
+      "path": "docs/estudos/evidencias/issue-252/fontes-github.json",
+      "type": "file",
+      "sha": "cda16ac29a75a84841431004ef564fe7337a6d34",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 21836,
+      "is_binary": false
+    },
+    {
+      "name": "medir_limites.py",
+      "path": "docs/estudos/evidencias/issue-252/medir_limites.py",
+      "type": "file",
+      "sha": "26a14076c99f29741a772a7c27362bb6ae014286",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2375,
+      "is_binary": false
+    },
+    {
+      "name": "reproducao.md",
+      "path": "docs/estudos/evidencias/issue-252/reproducao.md",
+      "type": "file",
+      "sha": "fd684a5b4b3d1e15d676a260ed7a0a848eb57f20",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6077,
+      "is_binary": false
+    },
+    {
+      "name": "resultados-etapa1.json",
+      "path": "docs/estudos/evidencias/issue-252/resultados-etapa1.json",
+      "type": "file",
+      "sha": "7d162571c9be3d04f1e2034cfad12983afd567a6",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 151826,
+      "is_binary": false
+    },
+    {
+      "name": "resultados-etapa1.md",
+      "path": "docs/estudos/evidencias/issue-252/resultados-etapa1.md",
+      "type": "file",
+      "sha": "d2f8cbf22fe3832e8713d89aefe11b8c5f54d517",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10058,
+      "is_binary": false
+    },
+    {
+      "name": "resultados-leet.json",
+      "path": "docs/estudos/evidencias/issue-252/resultados-leet.json",
+      "type": "file",
+      "sha": "d7f1bca355918713799c5ffd7cac8b79644d1d13",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 139031,
+      "is_binary": false
+    },
+    {
+      "name": "resultados-leet.md",
+      "path": "docs/estudos/evidencias/issue-252/resultados-leet.md",
+      "type": "file",
+      "sha": "5e1fb3e98ce2d541f20c865a0ea4a72ccb90a3f6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9507,
+      "is_binary": false
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/estudos/evidencias/issue-252/resultados.json",
+      "type": "file",
+      "sha": "2c17ded0ba72144e1eb57b83ce57c9977ba7acc4",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 109985,
+      "is_binary": false
+    },
+    {
+      "name": "resultados.md",
+      "path": "docs/estudos/evidencias/issue-252/resultados.md",
+      "type": "file",
+      "sha": "8f6e5cac07b3a7fe151c792eb1eddbd08fa40436",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7914,
+      "is_binary": false
+    },
+    {
+      "name": "test_avaliacao.py",
+      "path": "docs/estudos/evidencias/issue-252/test_avaliacao.py",
+      "type": "file",
+      "sha": "3f22afb314d230a9cd030951ed9437e9c3ccf291",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1831,
+      "is_binary": false
+    },
+    {
+      "name": "issue-269",
+      "path": "docs/estudos/evidencias/issue-269",
+      "type": "directory",
+      "sha": "4f15ac736f63f6b2fea6d5a523a987c7287a9d03",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "cadastro-dark-1280.png",
+      "path": "docs/estudos/evidencias/issue-269/cadastro-dark-1280.png",
+      "type": "file",
+      "sha": "430a5eb02c4a2fc1d7598c157585249dfb047351",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 158959,
+      "is_binary": false
+    },
+    {
+      "name": "fontes-sha256.json",
+      "path": "docs/estudos/evidencias/issue-269/fontes-sha256.json",
+      "type": "file",
+      "sha": "c63ef51a68c4e5664a39371ec3f5891942115fa5",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 988,
+      "is_binary": false
+    },
+    {
+      "name": "privacidade-dark-1280.png",
+      "path": "docs/estudos/evidencias/issue-269/privacidade-dark-1280.png",
+      "type": "file",
+      "sha": "2a1fd363999f7b785bfbb730f4df630486f1a548",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 137662,
+      "is_binary": false
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/estudos/evidencias/issue-269/resultados.json",
+      "type": "file",
+      "sha": "e49d82b5e2389a696030f803d0c340b4740b7745",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1125,
+      "is_binary": false
+    },
+    {
+      "name": "termos-de-uso-dark-320.png",
+      "path": "docs/estudos/evidencias/issue-269/termos-de-uso-dark-320.png",
+      "type": "file",
+      "sha": "69fef3fc3077c5abe6f1784e5fb99cdeb6b693f7",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 68880,
+      "is_binary": false
+    },
+    {
+      "name": "issue-278",
+      "path": "docs/estudos/evidencias/issue-278",
+      "type": "directory",
+      "sha": "6dc9f32aee4ccba228cadc416939489b57630149",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/estudos/evidencias/issue-278/resultados.json",
+      "type": "file",
+      "sha": "7847eea719861daa2234659e06016289e72e40b4",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 6404,
+      "is_binary": false
+    },
+    {
+      "name": "sha256.json",
+      "path": "docs/estudos/evidencias/issue-278/sha256.json",
+      "type": "file",
+      "sha": "8bea37c103a17d8fba7f2c58380c7db0fdd0521a",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 796,
+      "is_binary": false
+    },
+    {
+      "name": "votos-1440-selecionado-foco.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-1440-selecionado-foco.png",
+      "type": "file",
+      "sha": "f5fc659213b19e5e598514bfc124e84afefaad5e",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 118375,
+      "is_binary": false
+    },
+    {
+      "name": "votos-320-selecionado-foco.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-320-selecionado-foco.png",
+      "type": "file",
+      "sha": "02e1d92924f6445498000f46c069ccc7f8262850",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 55688,
+      "is_binary": false
+    },
+    {
+      "name": "votos-390-selecionado-foco.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-390-selecionado-foco.png",
+      "type": "file",
+      "sha": "56f7af95c2cb889fb317e03a6d9e5959e5cab6d0",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 61591,
+      "is_binary": false
+    },
+    {
+      "name": "votos-768-selecionado-foco.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-768-selecionado-foco.png",
+      "type": "file",
+      "sha": "1e890e76047586fbfd7aa03394c9822144aeb684",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 82758,
+      "is_binary": false
+    },
+    {
+      "name": "votos-carregando-401.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-carregando-401.png",
+      "type": "file",
+      "sha": "ef553d3a35aa97b165d37c5d74cb56d03e7891be",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 117873,
+      "is_binary": false
+    },
+    {
+      "name": "votos-erro-403.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-erro-403.png",
+      "type": "file",
+      "sha": "78de10b583dfadea52d7f3e5e970f3ed036939ee",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 120183,
+      "is_binary": false
+    },
+    {
+      "name": "votos-falha-leitura.png",
+      "path": "docs/estudos/evidencias/issue-278/votos-falha-leitura.png",
+      "type": "file",
+      "sha": "7aee143ca3c9ecd58306b90a78280c12983d87cb",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 111223,
+      "is_binary": false
+    },
+    {
       "name": "issue-37",
       "path": "docs/estudos/evidencias/issue-37",
       "type": "directory",
@@ -4643,6 +5745,26 @@
       "is_binary": false
     },
     {
+      "name": "implementacao-ofensas-disfarcadas-issue-252.md",
+      "path": "docs/estudos/implementacao-ofensas-disfarcadas-issue-252.md",
+      "type": "file",
+      "sha": "8a276bbb815ed096bff11460c677e5705f416ff4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11770,
+      "is_binary": false
+    },
+    {
+      "name": "implementacao-substituicoes-issue-252.md",
+      "path": "docs/estudos/implementacao-substituicoes-issue-252.md",
+      "type": "file",
+      "sha": "1213d4de667cbafc7f16471856ef090c08b56ed6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7017,
+      "is_binary": false
+    },
+    {
       "name": "importacao-neon-2026-11-10.md",
       "path": "docs/estudos/importacao-neon-2026-11-10.md",
       "type": "file",
@@ -4663,6 +5785,16 @@
       "is_binary": false
     },
     {
+      "name": "integridade-notas-issue-270.md",
+      "path": "docs/estudos/integridade-notas-issue-270.md",
+      "type": "file",
+      "sha": "4da936f2a202c4502743982d9024eb2be4be8f07",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 23110,
+      "is_binary": false
+    },
+    {
       "name": "interface-comentarios-issue-159.md",
       "path": "docs/estudos/interface-comentarios-issue-159.md",
       "type": "file",
@@ -4670,6 +5802,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 6804,
+      "is_binary": false
+    },
+    {
+      "name": "inventario-tecnico-pr277.md",
+      "path": "docs/estudos/inventario-tecnico-pr277.md",
+      "type": "file",
+      "sha": "d90c1b56adfdf7acc5c8c72f2df4be383d44c220",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 13187,
       "is_binary": false
     },
     {
@@ -4713,6 +5855,16 @@
       "is_binary": false
     },
     {
+      "name": "privacidade-apis-265-revisao-final.md",
+      "path": "docs/estudos/privacidade-apis-265-revisao-final.md",
+      "type": "file",
+      "sha": "952dfce1df3d1a5e7a079336c231cb34ff5f59c1",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8765,
+      "is_binary": false
+    },
+    {
       "name": "reavaliacao-seletiva-issue-207.md",
       "path": "docs/estudos/reavaliacao-seletiva-issue-207.md",
       "type": "file",
@@ -4730,6 +5882,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 18155,
+      "is_binary": false
+    },
+    {
+      "name": "registro-issue-241.md",
+      "path": "docs/estudos/registro-issue-241.md",
+      "type": "file",
+      "sha": "17acb8b2298b7f092e1edae4f3efaa2d5a9c4951",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4204,
       "is_binary": false
     },
     {
@@ -4763,6 +5925,36 @@
       "is_binary": false
     },
     {
+      "name": "revisao-final-local-2026-11-18.md",
+      "path": "docs/estudos/revisao-final-local-2026-11-18.md",
+      "type": "file",
+      "sha": "fdfd0c1b282715333442a0e1daed08c22b7106a8",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 12018,
+      "is_binary": false
+    },
+    {
+      "name": "revisao-geral-implementacao-2026-11-20.md",
+      "path": "docs/estudos/revisao-geral-implementacao-2026-11-20.md",
+      "type": "file",
+      "sha": "7f61b920d3a2067f6b1ac415776cea752f62a5c2",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6902,
+      "is_binary": false
+    },
+    {
+      "name": "revisao-juridica-preliminar-pr277.md",
+      "path": "docs/estudos/revisao-juridica-preliminar-pr277.md",
+      "type": "file",
+      "sha": "a159c5e26fad59c72efe97cc0e5e61a6cb2d2673",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 18846,
+      "is_binary": false
+    },
+    {
       "name": "revisao-perfil-comparacao-pr-217.md",
       "path": "docs/estudos/revisao-perfil-comparacao-pr-217.md",
       "type": "file",
@@ -4783,6 +5975,16 @@
       "is_binary": false
     },
     {
+      "name": "revisao-pr277.md",
+      "path": "docs/estudos/revisao-pr277.md",
+      "type": "file",
+      "sha": "2261f05207bf197792b71adfa855b88338b2376e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 19440,
+      "is_binary": false
+    },
+    {
       "name": "sigaa-poc.md",
       "path": "docs/estudos/sigaa-poc.md",
       "type": "file",
@@ -4800,6 +6002,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 2910,
+      "is_binary": false
+    },
+    {
+      "name": "transparencia-issue-269.md",
+      "path": "docs/estudos/transparencia-issue-269.md",
+      "type": "file",
+      "sha": "991079e7181e107d9ed2211e38b9d1511bc23e3e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7142,
       "is_binary": false
     },
     {
@@ -4933,6 +6145,16 @@
       "is_binary": false
     },
     {
+      "name": "verificacao-pendencias-pr277.md",
+      "path": "docs/estudos/verificacao-pendencias-pr277.md",
+      "type": "file",
+      "sha": "e9d959256b81288b8300e5198ea6328b634c711f",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 19933,
+      "is_binary": false
+    },
+    {
       "name": "verificacao-prototipo-jornada-issue-152.md",
       "path": "docs/estudos/verificacao-prototipo-jornada-issue-152.md",
       "type": "file",
@@ -4963,6 +6185,16 @@
       "is_binary": false
     },
     {
+      "name": "votos-utilidade-issue-278.md",
+      "path": "docs/estudos/votos-utilidade-issue-278.md",
+      "type": "file",
+      "sha": "16953c4ffb15d143e9fdc1258ea775b9a404c669",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11443,
+      "is_binary": false
+    },
+    {
       "name": "figma.md",
       "path": "docs/figma.md",
       "type": "file",
@@ -4976,10 +6208,10 @@
       "name": "hospedagem.md",
       "path": "docs/hospedagem.md",
       "type": "file",
-      "sha": "188113466bc80168517275624ff35a8d409eeae4",
+      "sha": "5cfe537ddab273abcba8b2a92d900570d3670d44",
       "mode": "100644",
       "extension": ".md",
-      "size": 14274,
+      "size": 15553,
       "is_binary": false
     },
     {
@@ -4990,6 +6222,26 @@
       "mode": "100644",
       "extension": ".md",
       "size": 15151,
+      "is_binary": false
+    },
+    {
+      "name": "implantacao.md",
+      "path": "docs/implantacao.md",
+      "type": "file",
+      "sha": "09b2a89abb4d36bdeb44079f5ce8877556ad8e57",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3488,
+      "is_binary": false
+    },
+    {
+      "name": "implementando-com-ia.md",
+      "path": "docs/implementando-com-ia.md",
+      "type": "file",
+      "sha": "3077bdba958015f37c541cc3418a680bd9d948d4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5449,
       "is_binary": false
     },
     {
@@ -5006,10 +6258,10 @@
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "6cd6c7fa5c221eec18708ffd735966a42fcb8c61",
+      "sha": "6110f0d6c483a93f3bdc6fd45dfb2707470561b1",
       "mode": "100644",
       "extension": ".md",
-      "size": 2790,
+      "size": 3355,
       "is_binary": false
     },
     {
@@ -5026,20 +6278,20 @@
       "name": "modelos.md",
       "path": "docs/modelos.md",
       "type": "file",
-      "sha": "3d433ac8b10fb686d718c5895ee94209bebd2f88",
+      "sha": "b01f50db9f4360301a2fc889ac8e6011a6797f51",
       "mode": "100644",
       "extension": ".md",
-      "size": 583,
+      "size": 1129,
       "is_binary": false
     },
     {
       "name": "moderacao-ia.md",
       "path": "docs/moderacao-ia.md",
       "type": "file",
-      "sha": "7c793e84764e61d3065660998a8651bd6a769162",
+      "sha": "f90dc36056f922f7fd6390311481e3934031b1ea",
       "mode": "100644",
       "extension": ".md",
-      "size": 12012,
+      "size": 14993,
       "is_binary": false
     },
     {
@@ -5050,6 +6302,64 @@
       "mode": "100644",
       "extension": ".md",
       "size": 15237,
+      "is_binary": false
+    },
+    {
+      "name": "operacao",
+      "path": "docs/operacao",
+      "type": "directory",
+      "sha": "03e47f37f589cc2e447b6b80fa70917a6f484bc6",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "incidentes-recuperacao.md",
+      "path": "docs/operacao/incidentes-recuperacao.md",
+      "type": "file",
+      "sha": "7dbc61558035b3cdc0b5d430976aad49b43e1153",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11194,
+      "is_binary": false
+    },
+    {
+      "name": "manutencao.md",
+      "path": "docs/operacao/manutencao.md",
+      "type": "file",
+      "sha": "97a32a6b4486b305048a41af31feb2b9e89458cc",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10375,
+      "is_binary": false
+    },
+    {
+      "name": "orientacoes-2026-11-17.md",
+      "path": "docs/orientacoes-2026-11-17.md",
+      "type": "file",
+      "sha": "cb96f0c7b513639af8e7389779f0e85801de6b8a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4120,
+      "is_binary": false
+    },
+    {
+      "name": "para-desenvolvedores.md",
+      "path": "docs/para-desenvolvedores.md",
+      "type": "file",
+      "sha": "be581fe65fdf3373e6f8eed1962e0bd8aa52bd6b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2718,
+      "is_binary": false
+    },
+    {
+      "name": "politica-moderacao.md",
+      "path": "docs/politica-moderacao.md",
+      "type": "file",
+      "sha": "2c10753f4c2538e54c077dc038578ad79d03b353",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8507,
       "is_binary": false
     },
     {
@@ -6278,7 +7588,7 @@
       "name": "releases",
       "path": "docs/releases",
       "type": "directory",
-      "sha": "59fd880afd496439ac9a6144dc5ae041ae9808d2",
+      "sha": "1b8934c17bde7dd3875e79af071ac9dd22be00c6",
       "mode": "040000",
       "children": []
     },
@@ -6373,6 +7683,16 @@
       "is_binary": false
     },
     {
+      "name": "2.0.0-rc.1.md",
+      "path": "docs/releases/2.0.0-rc.1.md",
+      "type": "file",
+      "sha": "8ec486996f2cc55fd2f0b38caa44b4cf464cfae4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4016,
+      "is_binary": false
+    },
+    {
       "name": "2.0.0-reconciliacao.md",
       "path": "docs/releases/2.0.0-reconciliacao.md",
       "type": "file",
@@ -6383,30 +7703,642 @@
       "is_binary": false
     },
     {
+      "name": "2.0.0-resumo-revisao-168.md",
+      "path": "docs/releases/2.0.0-resumo-revisao-168.md",
+      "type": "file",
+      "sha": "0f47d2ed708b8b5424f962c303303c03717083d5",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 12322,
+      "is_binary": false
+    },
+    {
       "name": "requisitos.md",
       "path": "docs/requisitos.md",
       "type": "file",
-      "sha": "fe9eaf138d108cbfe59949956854d624faed6fee",
+      "sha": "7b5abdc52ba4304e1c1aedf6dafa19c7c434d620",
       "mode": "100644",
       "extension": ".md",
-      "size": 53813,
+      "size": 80219,
+      "is_binary": false
+    },
+    {
+      "name": "seguranca",
+      "path": "docs/seguranca",
+      "type": "directory",
+      "sha": "39701e7887088f747aca9fda2525afeaffdefc34",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "acessos-bloco-6.md",
+      "path": "docs/seguranca/acessos-bloco-6.md",
+      "type": "file",
+      "sha": "47e6dc3166346155ebf39968866695aa45bfd5f0",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3455,
+      "is_binary": false
+    },
+    {
+      "name": "dependencias-issue-266.md",
+      "path": "docs/seguranca/dependencias-issue-266.md",
+      "type": "file",
+      "sha": "8cfa27c37226343e7ea16372bc14e760dae26ead",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 13781,
+      "is_binary": false
+    },
+    {
+      "name": "evidencias",
+      "path": "docs/seguranca/evidencias",
+      "type": "directory",
+      "sha": "8ca546e09ea1a68b99a3b8a08907f37d89847602",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "issue-266",
+      "path": "docs/seguranca/evidencias/issue-266",
+      "type": "directory",
+      "sha": "d03879e798201df8ea2a21b31167f46a377ac40d",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "advisories-npm.json",
+      "path": "docs/seguranca/evidencias/issue-266/advisories-npm.json",
+      "type": "file",
+      "sha": "df8ab1863be58e6f34366a156cc0f7e92bca41a6",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 11018,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-1",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-1",
+      "type": "directory",
+      "sha": "75ecacd3f10f52463c766167227598ecffe2d86f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-1/resultados.json",
+      "type": "file",
+      "sha": "087187cf7e65aa99c4f090a15477c110023608cd",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 3035,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-2",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-2",
+      "type": "directory",
+      "sha": "60961b44d2b5d5dea39fc8a64938e563c9d8fb8f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-2/resultados.json",
+      "type": "file",
+      "sha": "43a41d91c4c44e958be7eae08ebed0668cceefd5",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2806,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-3",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-3",
+      "type": "directory",
+      "sha": "bf3ba0b38b5421b76f25adb33a810c5bf7e75a53",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-3/resultados.json",
+      "type": "file",
+      "sha": "d84a90bfd1338b08cd9552dbeeac1775f7bd0862",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1270,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-4",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-4",
+      "type": "directory",
+      "sha": "935054c93e09397ac187b59009dc6ff1fb3c3288",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-4/resultados.json",
+      "type": "file",
+      "sha": "1c01989bd9b4f38a5597f63d386f9d6a86c938a2",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2728,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-5",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-5",
+      "type": "directory",
+      "sha": "381f3f399c470c6b3f1b179e04479b75b594d18f",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-5/resultados.json",
+      "type": "file",
+      "sha": "47d7b1d29c5a5da554bd5082c8fa30e8c5225ddb",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 3702,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-6",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-6",
+      "type": "directory",
+      "sha": "e7e5a148ed9fa89944014a3a32eed56f63d74a9b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-6/resultados.json",
+      "type": "file",
+      "sha": "e1adc12ee2ef9e4dd8a1037eb693e4323dea2a93",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1328,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-7",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-7",
+      "type": "directory",
+      "sha": "d0687e12ddb3f6e00a0981a9e4f45abf1f85675e",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-7/resultados.json",
+      "type": "file",
+      "sha": "c9cda2d71b749d04004e8f279ddbd89b4a07d567",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 10915,
+      "is_binary": false
+    },
+    {
+      "name": "bloco-8",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-8",
+      "type": "directory",
+      "sha": "29877a63908dabdfafc935da9805ba5f95de5c95",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/bloco-8/resultados.json",
+      "type": "file",
+      "sha": "102c5cf29decc5e4746ba084d43cac60d4b1f9b7",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 3036,
+      "is_binary": false
+    },
+    {
+      "name": "continuidade",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade",
+      "type": "directory",
+      "sha": "942984fe48b6815261bd686462f2597516bc6ced",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/README.md",
+      "type": "file",
+      "sha": "22e18f926d8b439229297c87ee6d2046a373520d",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6269,
+      "is_binary": false
+    },
+    {
+      "name": "advisories-npm.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/advisories-npm.json",
+      "type": "file",
+      "sha": "ee67a641eaadaf47bbdd46f38941b6b15051fe0a",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 11683,
+      "is_binary": false
+    },
+    {
+      "name": "frontend-resolvido.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/frontend-resolvido.json",
+      "type": "file",
+      "sha": "03852499a66bd0f9c3001556ff3f89f355044694",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 56674,
+      "is_binary": false
+    },
+    {
+      "name": "hashes-fontes.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/hashes-fontes.json",
+      "type": "file",
+      "sha": "b1b664b26fab881ce0882a127b58c42c8c44e055",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 398,
+      "is_binary": false
+    },
+    {
+      "name": "npm-audit.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/npm-audit.json",
+      "type": "file",
+      "sha": "053726d6263f895fc31406215f599bf675b491e1",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 14905,
+      "is_binary": false
+    },
+    {
+      "name": "postgres-resultados.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/postgres-resultados.json",
+      "type": "file",
+      "sha": "b1e897bc1ea5c68b9c7ca6d65c338b21da20cfa9",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1074,
+      "is_binary": false
+    },
+    {
+      "name": "python-audit.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/python-audit.json",
+      "type": "file",
+      "sha": "d2842179f2afb830f871e06a455309432e64278d",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2038,
+      "is_binary": false
+    },
+    {
+      "name": "python-resolvido.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/python-resolvido.json",
+      "type": "file",
+      "sha": "da7eeb17139da67170bc7355e2ac83ff7af5e2d1",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1025,
+      "is_binary": false
+    },
+    {
+      "name": "python-resolvido.txt",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/python-resolvido.txt",
+      "type": "file",
+      "sha": "e031ea0356c4209662890273a26dcd18f72270f7",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 641,
+      "is_binary": false
+    },
+    {
+      "name": "rastreabilidade.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/rastreabilidade.json",
+      "type": "file",
+      "sha": "35e2ba7fb1c4aae17fc62c51444138ae9013cc13",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1257,
+      "is_binary": false
+    },
+    {
+      "name": "segredos-resultado.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/segredos-resultado.json",
+      "type": "file",
+      "sha": "ae60ace0de93c6a449bb2e5d98b531efe5e854d5",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 197,
+      "is_binary": false
+    },
+    {
+      "name": "verificacoes.json",
+      "path": "docs/seguranca/evidencias/issue-266/continuidade/verificacoes.json",
+      "type": "file",
+      "sha": "5ceded9db46bd3f3fb1364648f0bf82eda73b89c",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 3748,
+      "is_binary": false
+    },
+    {
+      "name": "frontend-resolvido.json",
+      "path": "docs/seguranca/evidencias/issue-266/frontend-resolvido.json",
+      "type": "file",
+      "sha": "03852499a66bd0f9c3001556ff3f89f355044694",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 56674,
+      "is_binary": false
+    },
+    {
+      "name": "hashes-fontes.json",
+      "path": "docs/seguranca/evidencias/issue-266/hashes-fontes.json",
+      "type": "file",
+      "sha": "b1b664b26fab881ce0882a127b58c42c8c44e055",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 398,
+      "is_binary": false
+    },
+    {
+      "name": "homologar_postgres.py",
+      "path": "docs/seguranca/evidencias/issue-266/homologar_postgres.py",
+      "type": "file",
+      "sha": "daa90b6a335feb995a93d977d246873ac24ccc77",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 12199,
+      "is_binary": false
+    },
+    {
+      "name": "inventariar_dependencias.py",
+      "path": "docs/seguranca/evidencias/issue-266/inventariar_dependencias.py",
+      "type": "file",
+      "sha": "0c6688c4639b9fe6080b9e8783620cda0032a876",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2033,
+      "is_binary": false
+    },
+    {
+      "name": "npm-audit.json",
+      "path": "docs/seguranca/evidencias/issue-266/npm-audit.json",
+      "type": "file",
+      "sha": "c53a2b4b19ef510cc07f96b18f7869f3bb2f0e39",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 14374,
+      "is_binary": false
+    },
+    {
+      "name": "python-audit.json",
+      "path": "docs/seguranca/evidencias/issue-266/python-audit.json",
+      "type": "file",
+      "sha": "602d41bab50f8c2e3a45717ca4b3647208f917d3",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2038,
+      "is_binary": false
+    },
+    {
+      "name": "python-resolvido.json",
+      "path": "docs/seguranca/evidencias/issue-266/python-resolvido.json",
+      "type": "file",
+      "sha": "ab508bcd49efed214357108030e19637170ac283",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1024,
+      "is_binary": false
+    },
+    {
+      "name": "python-resolvido.txt",
+      "path": "docs/seguranca/evidencias/issue-266/python-resolvido.txt",
+      "type": "file",
+      "sha": "4567a0d4e57748086e9de166e300e6e07e3f6c9c",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 641,
+      "is_binary": false
+    },
+    {
+      "name": "rastreabilidade.json",
+      "path": "docs/seguranca/evidencias/issue-266/rastreabilidade.json",
+      "type": "file",
+      "sha": "7dbce5402a1e936349bd992cbc97606889e3e73d",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2135,
+      "is_binary": false
+    },
+    {
+      "name": "reconciliacao",
+      "path": "docs/seguranca/evidencias/issue-266/reconciliacao",
+      "type": "directory",
+      "sha": "8498aed84ad4fca041cc84cfc2baa60d4f5311b4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "docs/seguranca/evidencias/issue-266/reconciliacao/README.md",
+      "type": "file",
+      "sha": "eee6b3e8fdbbe93a98894f5312733668ee94010e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4480,
+      "is_binary": false
+    },
+    {
+      "name": "segredos-resultado.json",
+      "path": "docs/seguranca/evidencias/issue-266/segredos-resultado.json",
+      "type": "file",
+      "sha": "4608d0a88ff22ab5a0a72776435b8935ab197d31",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 197,
+      "is_binary": false
+    },
+    {
+      "name": "verificacoes.json",
+      "path": "docs/seguranca/evidencias/issue-266/verificacoes.json",
+      "type": "file",
+      "sha": "db00668548587c6ebfbc38864406f4a0c0ff2863",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 3799,
+      "is_binary": false
+    },
+    {
+      "name": "verificar_segredos.py",
+      "path": "docs/seguranca/evidencias/issue-266/verificar_segredos.py",
+      "type": "file",
+      "sha": "4d76a7c1fd25610b0a41c8060ef6d8cf8c1b598e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2236,
+      "is_binary": false
+    },
+    {
+      "name": "issue-267",
+      "path": "docs/seguranca/evidencias/issue-267",
+      "type": "directory",
+      "sha": "59e5bf6b047df811629a74e3416fcfbf63932285",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "docs/seguranca/evidencias/issue-267/README.md",
+      "type": "file",
+      "sha": "c9cd702f6abcbd5cd0662fc5a65c25f6735e1b20",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11855,
+      "is_binary": false
+    },
+    {
+      "name": "resultados.json",
+      "path": "docs/seguranca/evidencias/issue-267/resultados.json",
+      "type": "file",
+      "sha": "5f84cdd01cb877a49a8ac4481c8468e3473138c0",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 5604,
+      "is_binary": false
+    },
+    {
+      "name": "tentativas.json",
+      "path": "docs/seguranca/evidencias/issue-267/tentativas.json",
+      "type": "file",
+      "sha": "067410e035f344137373db7ad604f30518fbab11",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 7004,
+      "is_binary": false
+    },
+    {
+      "name": "verificacoes.json",
+      "path": "docs/seguranca/evidencias/issue-267/verificacoes.json",
+      "type": "file",
+      "sha": "3839cf2d2728a2439c91fcfa78df0ceb21b6df01",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 5581,
+      "is_binary": false
+    },
+    {
+      "name": "limitador-abuso-bloco-1.md",
+      "path": "docs/seguranca/limitador-abuso-bloco-1.md",
+      "type": "file",
+      "sha": "1b2c2ab8948525dfe539922cce2eed1d23acd99a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 10504,
+      "is_binary": false
+    },
+    {
+      "name": "limitador-auth-bloco-2.md",
+      "path": "docs/seguranca/limitador-auth-bloco-2.md",
+      "type": "file",
+      "sha": "7eaa418e70fe339e2826e9fb922cf4617ab82c94",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 6068,
+      "is_binary": false
+    },
+    {
+      "name": "limitador-fluxos-blocos-3-4.md",
+      "path": "docs/seguranca/limitador-fluxos-blocos-3-4.md",
+      "type": "file",
+      "sha": "5a22715fa7727799edb343ed9cf36e4cd7bcce3b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7572,
+      "is_binary": false
+    },
+    {
+      "name": "retencao-bloco-5.md",
+      "path": "docs/seguranca/retencao-bloco-5.md",
+      "type": "file",
+      "sha": "6d85f71570d20a6734658b31abc2ec8a1009a79a",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9210,
+      "is_binary": false
+    },
+    {
+      "name": "revisao-sessoes-abuso-logs-issue-266.md",
+      "path": "docs/seguranca/revisao-sessoes-abuso-logs-issue-266.md",
+      "type": "file",
+      "sha": "4824f6fba2565149ef4ec14fb9e7f1577a2c0b48",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 67044,
+      "is_binary": false
+    },
+    {
+      "name": "validacoes-pendentes-266.md",
+      "path": "docs/seguranca/validacoes-pendentes-266.md",
+      "type": "file",
+      "sha": "7f5dadc39c04db243840e09d4486c7547e064a43",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 12101,
+      "is_binary": false
+    },
+    {
+      "name": "transparencia.md",
+      "path": "docs/transparencia.md",
+      "type": "file",
+      "sha": "7edb38a821043d750128c4e6cfe126ccad9161c3",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11479,
+      "is_binary": false
+    },
+    {
+      "name": "tutorial-uso.md",
+      "path": "docs/tutorial-uso.md",
+      "type": "file",
+      "sha": "b21691068e6c2e3452d0b2309550323d30747df0",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5080,
+      "is_binary": false
+    },
+    {
+      "name": "uso-ia.md",
+      "path": "docs/uso-ia.md",
+      "type": "file",
+      "sha": "8fc8097ab993bbc9da525c528da825e8f0c41393",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1411,
       "is_binary": false
     },
     {
       "name": "visao.md",
       "path": "docs/visao.md",
       "type": "file",
-      "sha": "59cb466e652d2a48c3cbb6eb943f8b5b65f7e54b",
+      "sha": "1a7ed1e6492ca9d773fe62ff8e446c8a8beba817",
       "mode": "100644",
       "extension": ".md",
-      "size": 10766,
+      "size": 13475,
       "is_binary": false
     },
     {
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "37d24d0a93de3c17930053283a041df8861e668a",
+      "sha": "7a32369b83d25358af3a7f9fca05350648458820",
       "mode": "040000",
       "children": []
     },
@@ -6484,10 +8416,10 @@
       "name": "README.md",
       "path": "frontend/README.md",
       "type": "file",
-      "sha": "978baa57d91e09a1c614c99ee0afb419c7134edb",
+      "sha": "f41a64f1a9e7ec9b1298b329bdcbe62a0e369375",
       "mode": "100644",
       "extension": ".md",
-      "size": 23045,
+      "size": 25862,
       "is_binary": false
     },
     {
@@ -7808,30 +9740,30 @@
       "name": "next.config.ts",
       "path": "frontend/next.config.ts",
       "type": "file",
-      "sha": "0c387786c72ebae20181b84456c1819466111bd8",
+      "sha": "e3037cafb450374989fe1e2c3ac54954dcc91ddc",
       "mode": "100644",
       "extension": ".ts",
-      "size": 362,
+      "size": 656,
       "is_binary": false
     },
     {
       "name": "package-lock.json",
       "path": "frontend/package-lock.json",
       "type": "file",
-      "sha": "7f447d4e2ee8405a9009829605520c79d1ff9192",
+      "sha": "8c065621a434205b11cae7b53a6c686efacc819f",
       "mode": "100644",
       "extension": ".json",
-      "size": 243124,
+      "size": 247822,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "frontend/package.json",
       "type": "file",
-      "sha": "661ec566260fdab7b33847df20889b38d3151baa",
+      "sha": "e8ca8bcd5c87741f8a99e89998df1ad0a8de1eb9",
       "mode": "100644",
       "extension": ".json",
-      "size": 1737,
+      "size": 2079,
       "is_binary": false
     },
     {
@@ -8012,7 +9944,7 @@
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "5af19221c7d749cab72c6ea8e79f1b9a1a187a39",
+      "sha": "b19991450c8e1f1a3d849800c732e91fc3b69fb6",
       "mode": "040000",
       "children": []
     },
@@ -8020,9 +9952,37 @@
       "name": "app",
       "path": "frontend/src/app",
       "type": "directory",
-      "sha": "608f218242cef1091f473c50d95ae24bf43e8bee",
+      "sha": "75892df8aca2d0dcf1cb8248d39533cb5ab54bc2",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "atendimento",
+      "path": "frontend/src/app/atendimento",
+      "type": "directory",
+      "sha": "5d1fae73b530d0d3795f195e9bde88f3d5db761c",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "fila.tsx",
+      "path": "frontend/src/app/atendimento/fila.tsx",
+      "type": "file",
+      "sha": "974ca1369c612c9b947990da2e4ca433d225f954",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 6249,
+      "is_binary": false
+    },
+    {
+      "name": "page.tsx",
+      "path": "frontend/src/app/atendimento/page.tsx",
+      "type": "file",
+      "sha": "e47d52c3d4eb5d0fe11127c0c00b872f71130121",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 461,
+      "is_binary": false
     },
     {
       "name": "busca",
@@ -8056,7 +10016,7 @@
       "name": "cadastro",
       "path": "frontend/src/app/cadastro",
       "type": "directory",
-      "sha": "d3fa2b6d9fdb42b1138403b2506c516696996498",
+      "sha": "d3213bda5d67b9662c95b7dbedfe923215a03ca9",
       "mode": "040000",
       "children": []
     },
@@ -8064,10 +10024,10 @@
       "name": "cadastro-form.tsx",
       "path": "frontend/src/app/cadastro/cadastro-form.tsx",
       "type": "file",
-      "sha": "a37fcd1231819cca10d547aee23da33c5b206b25",
+      "sha": "9b93582c5a122aa17aa8a7dae3a7817db59aabfa",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4678,
+      "size": 6322,
       "is_binary": false
     },
     {
@@ -8128,7 +10088,7 @@
       "name": "confirmar-email",
       "path": "frontend/src/app/confirmar-email",
       "type": "directory",
-      "sha": "fb710f7e2530c97e83de079c3da87ca028654282",
+      "sha": "156b577a3947ac14ec61846ddad0e3a63fe8a69a",
       "mode": "040000",
       "children": []
     },
@@ -8136,20 +10096,20 @@
       "name": "confirmation-client.tsx",
       "path": "frontend/src/app/confirmar-email/confirmation-client.tsx",
       "type": "file",
-      "sha": "e5878e85b02d6325812f68c768164279da5cbc11",
+      "sha": "3a64e134e64c511d7d49ccf9ce22bec206b3396c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3709,
+      "size": 3973,
       "is_binary": false
     },
     {
       "name": "layout.tsx",
       "path": "frontend/src/app/confirmar-email/layout.tsx",
       "type": "file",
-      "sha": "962b4998f294428153e513aa9ef917c056bff211",
+      "sha": "b46140f7f9035bed8c02d87d7df9af1f5a3d57f0",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 200,
+      "size": 225,
       "is_binary": false
     },
     {
@@ -8160,6 +10120,34 @@
       "mode": "100644",
       "extension": ".tsx",
       "size": 535,
+      "is_binary": false
+    },
+    {
+      "name": "contato",
+      "path": "frontend/src/app/contato",
+      "type": "directory",
+      "sha": "b92771c863a6e57f082d858164995f6c485c19b4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "canal.tsx",
+      "path": "frontend/src/app/contato/canal.tsx",
+      "type": "file",
+      "sha": "72a0577fbcef8eb0a3ea5b034faae1c0887abfb6",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 5964,
+      "is_binary": false
+    },
+    {
+      "name": "page.tsx",
+      "path": "frontend/src/app/contato/page.tsx",
+      "type": "file",
+      "sha": "63f91383381c6b6f17a74af1a3b1fc82899d9b47",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 763,
       "is_binary": false
     },
     {
@@ -8184,7 +10172,7 @@
       "name": "disciplinas",
       "path": "frontend/src/app/disciplinas",
       "type": "directory",
-      "sha": "acd256cba7f752c59aa5e41c2648d0b18f365b76",
+      "sha": "e031bdc9202ccf77b1d9bd07935b4049d3e5eb10",
       "mode": "040000",
       "children": []
     },
@@ -8192,7 +10180,7 @@
       "name": "[id]",
       "path": "frontend/src/app/disciplinas/[id]",
       "type": "directory",
-      "sha": "f5890096da6574b3526802befffa2fb7c93a4153",
+      "sha": "717931882e6a28a84613f1efccd5ba1105f517ce",
       "mode": "040000",
       "children": []
     },
@@ -8200,20 +10188,20 @@
       "name": "page.tsx",
       "path": "frontend/src/app/disciplinas/[id]/page.tsx",
       "type": "file",
-      "sha": "9bddad518497ceddb6c7358d4b4df98fa8afbf64",
+      "sha": "1d6690750f82f76b4ccadc8b7a83984fcadf4330",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4150,
+      "size": 4159,
       "is_binary": false
     },
     {
       "name": "page.tsx",
       "path": "frontend/src/app/disciplinas/page.tsx",
       "type": "file",
-      "sha": "c248ff8602b80782f03bc6c48c769737c5f38147",
+      "sha": "13ce23fdfdb711be37c53880d4f64ce24ee4087e",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1248,
+      "size": 1289,
       "is_binary": false
     },
     {
@@ -8230,7 +10218,7 @@
       "name": "esqueci-senha",
       "path": "frontend/src/app/esqueci-senha",
       "type": "directory",
-      "sha": "e85c1d4ab637b52d79bd931b8c0701a67f9ac0c0",
+      "sha": "a6d46ccf9d56cd96096c6db6e306f8dad7f720a2",
       "mode": "040000",
       "children": []
     },
@@ -8248,10 +10236,10 @@
       "name": "recuperacao-form.tsx",
       "path": "frontend/src/app/esqueci-senha/recuperacao-form.tsx",
       "type": "file",
-      "sha": "5fb8cf71aeb8f6d1eae34cf2c3a64e6a62cbcc31",
+      "sha": "7391eaac302adcd90e0ad3873c1d54e68b990632",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2174,
+      "size": 2283,
       "is_binary": false
     },
     {
@@ -8298,7 +10286,7 @@
       "name": "login",
       "path": "frontend/src/app/login",
       "type": "directory",
-      "sha": "fea25285877c1528b2a89a5d8d114d05ac564ff5",
+      "sha": "b5418b7568f59b17734a3ae43f9753d3fde89496",
       "mode": "040000",
       "children": []
     },
@@ -8316,10 +10304,10 @@
       "name": "login-form.tsx",
       "path": "frontend/src/app/login/login-form.tsx",
       "type": "file",
-      "sha": "d578c551ac59a09983302c5865271aadc7d47996",
+      "sha": "1266c3c160c65a87b30f4ddf8e11c5ea93950433",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 7102,
+      "size": 7542,
       "is_binary": false
     },
     {
@@ -8336,7 +10324,7 @@
       "name": "moderacao",
       "path": "frontend/src/app/moderacao",
       "type": "directory",
-      "sha": "9334655aa4323b9f25aac487e9fa68dc54f9b46c",
+      "sha": "4ffc9025c546c07df96ce6fb4b9cc39f4ca9718e",
       "mode": "040000",
       "children": []
     },
@@ -8344,30 +10332,30 @@
       "name": "apoio-moderacao.tsx",
       "path": "frontend/src/app/moderacao/apoio-moderacao.tsx",
       "type": "file",
-      "sha": "eb0e0227d6beb1cdc553412e0d70dad6b24ceac9",
+      "sha": "7d50b325bbb5fe5588c7953c9eb17e07cc6e0def",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3752,
+      "size": 4030,
       "is_binary": false
     },
     {
       "name": "detalhe-moderacao.tsx",
       "path": "frontend/src/app/moderacao/detalhe-moderacao.tsx",
       "type": "file",
-      "sha": "67dc0b4c1b9a45b983052ede33cca44e72887012",
+      "sha": "b0c9144eefbb4314cb6728263bd167261969a8a7",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 10390,
+      "size": 10679,
       "is_binary": false
     },
     {
       "name": "fila-moderacao.tsx",
       "path": "frontend/src/app/moderacao/fila-moderacao.tsx",
       "type": "file",
-      "sha": "4fcba19e963d6ef46b32f3cac3141714d524d721",
+      "sha": "17345b7bd2fdf95ffaa9419723b0f2a2b5735bbe",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 10939,
+      "size": 10963,
       "is_binary": false
     },
     {
@@ -8432,17 +10420,35 @@
       "name": "page.tsx",
       "path": "frontend/src/app/page.tsx",
       "type": "file",
-      "sha": "35c5a679436b7f839434756d00a75c808c92267d",
+      "sha": "55bb8bdf2f742769e0a2401a1423f9412aab02dc",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4837,
+      "size": 5029,
+      "is_binary": false
+    },
+    {
+      "name": "privacidade",
+      "path": "frontend/src/app/privacidade",
+      "type": "directory",
+      "sha": "1847f38eb38c53e12c85b0135d4c01a23ce78060",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "page.tsx",
+      "path": "frontend/src/app/privacidade/page.tsx",
+      "type": "file",
+      "sha": "ed930f1adaa17b2b53e6d6c7f4c7fe1b7ec9662f",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 11663,
       "is_binary": false
     },
     {
       "name": "professores",
       "path": "frontend/src/app/professores",
       "type": "directory",
-      "sha": "a6a87c810da65eb770dde3ec51479d830c9c4441",
+      "sha": "157a56b4eb4cf45d0ee2dc4241e6aa0be30381cf",
       "mode": "040000",
       "children": []
     },
@@ -8450,7 +10456,7 @@
       "name": "[id]",
       "path": "frontend/src/app/professores/[id]",
       "type": "directory",
-      "sha": "fdf49b505bada1cb2232ed1e7bdc9b5e2735db5c",
+      "sha": "b8175b4f2e1dd4f5e49cbdd7fdf00d5e9557a1da",
       "mode": "040000",
       "children": []
     },
@@ -8532,20 +10538,20 @@
       "name": "page.tsx",
       "path": "frontend/src/app/professores/[id]/page.tsx",
       "type": "file",
-      "sha": "b9ebc2da9761bda5fe2513ca4b9f70f710aa80a5",
+      "sha": "dfb8c5d496a0c8bdbb4a0b1220d0c07b7bf5adaa",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3042,
+      "size": 3110,
       "is_binary": false
     },
     {
       "name": "page.tsx",
       "path": "frontend/src/app/professores/page.tsx",
       "type": "file",
-      "sha": "920f920d34072ba764609f88e7974d4c51026b46",
+      "sha": "e7a2a725ac2c33afeb773b5aade643e9d70d4783",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1248,
+      "size": 1289,
       "is_binary": false
     },
     {
@@ -8640,7 +10646,7 @@
       "name": "redefinir-senha",
       "path": "frontend/src/app/redefinir-senha",
       "type": "directory",
-      "sha": "712aef11d4e0e14de822b58219cc575d203fc77c",
+      "sha": "5db43c334d64a03c42a2b2cec998ab20f122841a",
       "mode": "040000",
       "children": []
     },
@@ -8658,10 +10664,38 @@
       "name": "redefinicao-form.tsx",
       "path": "frontend/src/app/redefinir-senha/redefinicao-form.tsx",
       "type": "file",
-      "sha": "9d2a01f4b0eae5ae18594a177a9ac2dd8dc347ba",
+      "sha": "9d5ac81d1d5eda1bf3de0a4034abebccc21eb903",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2773,
+      "size": 2830,
+      "is_binary": false
+    },
+    {
+      "name": "reenviar-confirmacao",
+      "path": "frontend/src/app/reenviar-confirmacao",
+      "type": "directory",
+      "sha": "729cae51587aaac7a62606a086c09dc6101f7b05",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "page.tsx",
+      "path": "frontend/src/app/reenviar-confirmacao/page.tsx",
+      "type": "file",
+      "sha": "9a05be197932d3dcc6a20fd83419bdeee0b0b4ae",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 509,
+      "is_binary": false
+    },
+    {
+      "name": "reenvio-form.tsx",
+      "path": "frontend/src/app/reenviar-confirmacao/reenvio-form.tsx",
+      "type": "file",
+      "sha": "6dd85dfdb0c3718f8cae9c5c5a093ea8ea882c6d",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 2375,
       "is_binary": false
     },
     {
@@ -8730,7 +10764,7 @@
       "name": "sobre",
       "path": "frontend/src/app/sobre",
       "type": "directory",
-      "sha": "b3fcf4f4b536b088fc7a8d96d164975206ceac00",
+      "sha": "e8f29780444eb3690fd54f416fef317399477efa",
       "mode": "040000",
       "children": []
     },
@@ -8748,17 +10782,35 @@
       "name": "page.tsx",
       "path": "frontend/src/app/sobre/page.tsx",
       "type": "file",
-      "sha": "bac29c451321c602633bf016e6217fb62bba1aa0",
+      "sha": "68fd5f3037ab07255f2633f59a742ebedffd18ec",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 8054,
+      "size": 13338,
+      "is_binary": false
+    },
+    {
+      "name": "termos-de-uso",
+      "path": "frontend/src/app/termos-de-uso",
+      "type": "directory",
+      "sha": "33424522060587b43671f130143c30b8e87f673b",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "page.tsx",
+      "path": "frontend/src/app/termos-de-uso/page.tsx",
+      "type": "file",
+      "sha": "0268c293095a448dff901e4a5113d0f19a84bc54",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 8130,
       "is_binary": false
     },
     {
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "674d6e5fa6fe80aaff71bc0a1ef90a28434bdc29",
+      "sha": "03dce06026c47d798e3fb1addd87ece7bb3c7092",
       "mode": "040000",
       "children": []
     },
@@ -8796,10 +10848,10 @@
       "name": "busca-institucional.tsx",
       "path": "frontend/src/components/busca-institucional.tsx",
       "type": "file",
-      "sha": "8856b5cfe169a6a2987dba2bce006e1ba6acd5f8",
+      "sha": "e13e943c5abfdb1322cbe8624a86822742c6f2e2",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 7410,
+      "size": 7543,
       "is_binary": false
     },
     {
@@ -8866,10 +10918,10 @@
       "name": "catalogo-links.tsx",
       "path": "frontend/src/components/catalogo-links.tsx",
       "type": "file",
-      "sha": "3e57764d5902f3ce6b0ad7037bc6213143ad27ae",
+      "sha": "9bafd8acde1bc9abd242b7dadc7c0f773e151af0",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1525,
+      "size": 3652,
       "is_binary": false
     },
     {
@@ -8916,10 +10968,10 @@
       "name": "destaques-home.tsx",
       "path": "frontend/src/components/destaques-home.tsx",
       "type": "file",
-      "sha": "e223d6aef794035d994c9763dd924cae74663b29",
+      "sha": "e4c99bbc1cdfb802638f8c1a6ad85ef58bd92d0d",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3658,
+      "size": 3602,
       "is_binary": false
     },
     {
@@ -8946,10 +10998,20 @@
       "name": "disciplinas-professor.tsx",
       "path": "frontend/src/components/disciplinas-professor.tsx",
       "type": "file",
-      "sha": "3bfcc3d1c83d957a9caef5cfd17fb9fd187deabd",
+      "sha": "d95ce326f10bed85899ea1d297345a1af924b379",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2344,
+      "size": 2721,
+      "is_binary": false
+    },
+    {
+      "name": "documento-publico.tsx",
+      "path": "frontend/src/components/documento-publico.tsx",
+      "type": "file",
+      "sha": "7a6f896600186d06aac2b21f0f257659745a3c7c",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 2339,
       "is_binary": false
     },
     {
@@ -9026,10 +11088,10 @@
       "name": "item-comentario.tsx",
       "path": "frontend/src/components/item-comentario.tsx",
       "type": "file",
-      "sha": "523598edad3d7f5f254871480fd693db48ac06df",
+      "sha": "905012c71323226caea50c2218275c1bef3a818d",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1807,
+      "size": 1925,
       "is_binary": false
     },
     {
@@ -9073,6 +11135,16 @@
       "is_binary": false
     },
     {
+      "name": "minhas-avaliacoes.tsx",
+      "path": "frontend/src/components/minhas-avaliacoes.tsx",
+      "type": "file",
+      "sha": "5a9e54e7424fb18ae424dfe687fd780d948d4ca5",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 5267,
+      "is_binary": false
+    },
+    {
       "name": "modal-denuncia.tsx",
       "path": "frontend/src/components/modal-denuncia.tsx",
       "type": "file",
@@ -9086,10 +11158,10 @@
       "name": "moldura-conta.tsx",
       "path": "frontend/src/components/moldura-conta.tsx",
       "type": "file",
-      "sha": "bf84b42c7e05f00c4a59c4e3c8cd66ed0bfe36bc",
+      "sha": "19cb75fad4ad681f274e003ff12561d66248560f",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 1737,
+      "size": 1809,
       "is_binary": false
     },
     {
@@ -9116,10 +11188,10 @@
       "name": "rodape.tsx",
       "path": "frontend/src/components/rodape.tsx",
       "type": "file",
-      "sha": "59044800d352f9d23ce8abaac60e50209ae7abbb",
+      "sha": "dd42335d80c270edde6f0ef1f8bd0df7e6299953",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 786,
+      "size": 1021,
       "is_binary": false
     },
     {
@@ -9143,10 +11215,20 @@
       "is_binary": false
     },
     {
+      "name": "utilidade-comentario.tsx",
+      "path": "frontend/src/components/utilidade-comentario.tsx",
+      "type": "file",
+      "sha": "d355b72f15a13700ec65d503bbf9f15de174e145",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 4116,
+      "is_binary": false
+    },
+    {
       "name": "lib",
       "path": "frontend/src/lib",
       "type": "directory",
-      "sha": "adc4b79c3a21246283d26f728c7a46aad1da5c8d",
+      "sha": "3a0fde33f4bf8982d5ac7d6e398e7bc728527bed",
       "mode": "040000",
       "children": []
     },
@@ -9164,10 +11246,10 @@
       "name": "avaliacao-formulario.ts",
       "path": "frontend/src/lib/avaliacao-formulario.ts",
       "type": "file",
-      "sha": "3e1195a723c36f546012542ef8d9a8df1fb6e3ca",
+      "sha": "bb12d58dadbb19815bdfd605328a704691b20936",
       "mode": "100644",
       "extension": ".ts",
-      "size": 4071,
+      "size": 4143,
       "is_binary": false
     },
     {
@@ -9262,10 +11344,10 @@
       "name": "moderacao.ts",
       "path": "frontend/src/lib/moderacao.ts",
       "type": "file",
-      "sha": "8011633723db2fa9c3f42e5f57d9ba3fc33b82a6",
+      "sha": "802863528ecc98b0735954238015ede65e43999d",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2439,
+      "size": 2511,
       "is_binary": false
     },
     {
@@ -9282,17 +11364,17 @@
       "name": "seo.ts",
       "path": "frontend/src/lib/seo.ts",
       "type": "file",
-      "sha": "f12387688eb21699ec514f73bd37c49b5b20a7e4",
+      "sha": "1c49232f3d040c55ba997df90d1501cf00537e75",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1609,
+      "size": 1642,
       "is_binary": false
     },
     {
       "name": "services",
       "path": "frontend/src/lib/services",
       "type": "directory",
-      "sha": "c7f269d482893a1eaf7f92ab002f94f007fabd54",
+      "sha": "ce63599751274cae3d55dc116107f9ceeac4a1cf",
       "mode": "040000",
       "children": []
     },
@@ -9300,20 +11382,20 @@
       "name": "api-client.ts",
       "path": "frontend/src/lib/services/api-client.ts",
       "type": "file",
-      "sha": "e8491ce8a38f939311700e5ba0793d2f85f72e45",
+      "sha": "2f47139626f7298538b8284ef7c58c7d0e0d3d41",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2717,
+      "size": 2860,
       "is_binary": false
     },
     {
       "name": "auth.ts",
       "path": "frontend/src/lib/services/auth.ts",
       "type": "file",
-      "sha": "9995bdc3ef5d38cbb2f22181d25eed627074fd58",
+      "sha": "a2628a631cc34840eb14e5a0ff3b2254c3268a69",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1924,
+      "size": 2267,
       "is_binary": false
     },
     {
@@ -9347,6 +11429,16 @@
       "is_binary": false
     },
     {
+      "name": "destaques.ts",
+      "path": "frontend/src/lib/services/destaques.ts",
+      "type": "file",
+      "sha": "b0c252958f6cad8d24d2f0e1c2f2d829db121646",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1346,
+      "is_binary": false
+    },
+    {
       "name": "disciplinas.ts",
       "path": "frontend/src/lib/services/disciplinas.ts",
       "type": "file",
@@ -9360,10 +11452,10 @@
       "name": "http-error.ts",
       "path": "frontend/src/lib/services/http-error.ts",
       "type": "file",
-      "sha": "79dbe6898857d49e9a7170cbe74d64ca31c201fc",
+      "sha": "dfb5759127d32b6ab0135c72fcce52a95da76b50",
       "mode": "100644",
       "extension": ".ts",
-      "size": 391,
+      "size": 1863,
       "is_binary": false
     },
     {
@@ -9374,6 +11466,16 @@
       "mode": "100644",
       "extension": ".ts",
       "size": 4490,
+      "is_binary": false
+    },
+    {
+      "name": "minhas-avaliacoes.ts",
+      "path": "frontend/src/lib/services/minhas-avaliacoes.ts",
+      "type": "file",
+      "sha": "f70140d1ff7c0ffd3af751e8b0fe094d14953b9c",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 2734,
       "is_binary": false
     },
     {
@@ -9397,10 +11499,40 @@
       "is_binary": false
     },
     {
+      "name": "solicitacoes.ts",
+      "path": "frontend/src/lib/services/solicitacoes.ts",
+      "type": "file",
+      "sha": "cbde9529f85a2911204d3a5bbfc2af3e46ae2d75",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 672,
+      "is_binary": false
+    },
+    {
+      "name": "votos-comentario.ts",
+      "path": "frontend/src/lib/services/votos-comentario.ts",
+      "type": "file",
+      "sha": "7815f7cad73adb7e24977946400285894dd2b687",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1448,
+      "is_binary": false
+    },
+    {
+      "name": "termos.ts",
+      "path": "frontend/src/lib/termos.ts",
+      "type": "file",
+      "sha": "fc2368a828c80c49916f91ac9848795b249a14bb",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 191,
+      "is_binary": false
+    },
+    {
       "name": "types",
       "path": "frontend/src/lib/types",
       "type": "directory",
-      "sha": "d3e460ae07ccb7d201e25c7b5908fa5b206049ca",
+      "sha": "69a52d0fcf7376083eda33523c373b95f8d9a9d8",
       "mode": "040000",
       "children": []
     },
@@ -9418,10 +11550,10 @@
       "name": "comentario.ts",
       "path": "frontend/src/lib/types/comentario.ts",
       "type": "file",
-      "sha": "487fc075a189291abea222aaabc351da68a7dd34",
+      "sha": "0812ebb19010807787734d168b0ae869efed390f",
       "mode": "100644",
       "extension": ".ts",
-      "size": 898,
+      "size": 1061,
       "is_binary": false
     },
     {
@@ -9468,38 +11600,48 @@
       "name": "tests",
       "path": "frontend/tests",
       "type": "directory",
-      "sha": "b14122f27be3d4ab58439174e6b6ed410c2d907f",
+      "sha": "1cfeddb642382383f715de6a174f606b7388c3de",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "abuso.test.mjs",
+      "path": "frontend/tests/abuso.test.mjs",
+      "type": "file",
+      "sha": "6f829b1f64207c4e351207734d06b2cb93436067",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 2377,
+      "is_binary": false
     },
     {
       "name": "acesso-browser.mjs",
       "path": "frontend/tests/acesso-browser.mjs",
       "type": "file",
-      "sha": "d80eaedb22e34e95a294874e66b180638880852f",
+      "sha": "ac98325aa6b816b48a8cdecf032b53e122558c66",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 20564,
+      "size": 20651,
       "is_binary": false
     },
     {
       "name": "avaliacao-browser.mjs",
       "path": "frontend/tests/avaliacao-browser.mjs",
       "type": "file",
-      "sha": "51495b89c472505fca3d0b93d067ff0957e1b24b",
+      "sha": "0ff35c044da2bed3db13e9f0221ada89cad645af",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 33623,
+      "size": 34289,
       "is_binary": false
     },
     {
       "name": "avaliacao.test.mjs",
       "path": "frontend/tests/avaliacao.test.mjs",
       "type": "file",
-      "sha": "bbaebbe0e6769e5d61179fe6dc5dc5042357f49d",
+      "sha": "0989d643e3bdf8396fe3c5a8848a926ba6af02e9",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 8495,
+      "size": 8555,
       "is_binary": false
     },
     {
@@ -9536,10 +11678,10 @@
       "name": "browser-session.mjs",
       "path": "frontend/tests/browser-session.mjs",
       "type": "file",
-      "sha": "d1b91254933eb3d14ac602841a0b3177e65665e2",
+      "sha": "8741f9c258c6fd61866bd0a053fd7657460cec73",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 4126,
+      "size": 4149,
       "is_binary": false
     },
     {
@@ -9566,10 +11708,10 @@
       "name": "cabecalho-browser.mjs",
       "path": "frontend/tests/cabecalho-browser.mjs",
       "type": "file",
-      "sha": "f158de135e9d6efc535aa6bc23d2e4cb7a8521e3",
+      "sha": "c097be7b48d6ede2c79b538d174a1eeb97815878",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 9302,
+      "size": 9504,
       "is_binary": false
     },
     {
@@ -9586,20 +11728,20 @@
       "name": "comentarios-browser.mjs",
       "path": "frontend/tests/comentarios-browser.mjs",
       "type": "file",
-      "sha": "8708bd7871d42f945a67f5bd9fd84d3ec89ba329",
+      "sha": "8242603d65c4f6988ab3036aa14fcd2cc4a078b3",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 12613,
+      "size": 12798,
       "is_binary": false
     },
     {
       "name": "comentarios.test.mjs",
       "path": "frontend/tests/comentarios.test.mjs",
       "type": "file",
-      "sha": "335bacc7284ddfba0303788e96dee86850d966d0",
+      "sha": "8fdac2363ddb9c15eb61120c100556dccd6c63c3",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 10247,
+      "size": 11951,
       "is_binary": false
     },
     {
@@ -9626,10 +11768,10 @@
       "name": "denuncia-browser.mjs",
       "path": "frontend/tests/denuncia-browser.mjs",
       "type": "file",
-      "sha": "728b2a555e5fcb94e36b5cb7ed614f7252c9040c",
+      "sha": "abdced506c3c9bc8d84adccaffbc534221bc76cb",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 17554,
+      "size": 17914,
       "is_binary": false
     },
     {
@@ -9646,10 +11788,10 @@
       "name": "destaques-home-browser.mjs",
       "path": "frontend/tests/destaques-home-browser.mjs",
       "type": "file",
-      "sha": "457323c4b692f5987e2e7d9888bdbc1eb33bfc1f",
+      "sha": "a7403fa95d8fbc29d66db011ae1fa605e2c60937",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 7349,
+      "size": 7336,
       "is_binary": false
     },
     {
@@ -9706,20 +11848,20 @@
       "name": "jornada-247-browser.mjs",
       "path": "frontend/tests/jornada-247-browser.mjs",
       "type": "file",
-      "sha": "1e7dfa24a3e3ff5958e2c6add7e4da1ae20cec8a",
+      "sha": "a91a6c7fcd29fa9c0dfd5a023b85636e1959d63b",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 14476,
+      "size": 14568,
       "is_binary": false
     },
     {
       "name": "moderacao-browser.mjs",
       "path": "frontend/tests/moderacao-browser.mjs",
       "type": "file",
-      "sha": "6bf0fba3560cdb3c0df20daf10151abc499d9059",
+      "sha": "07b2816346be376ca0ccea1e142a20224860bcc2",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 20768,
+      "size": 21132,
       "is_binary": false
     },
     {
@@ -9786,10 +11928,10 @@
       "name": "recuperacao-senha-browser.mjs",
       "path": "frontend/tests/recuperacao-senha-browser.mjs",
       "type": "file",
-      "sha": "2e2c506bf648ad192dece7dd6d718773b34eab01",
+      "sha": "c5ca96f4db4e92eca8c004cea15e153c11c4bd7d",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 5567,
+      "size": 6509,
       "is_binary": false
     },
     {
@@ -9813,23 +11955,53 @@
       "is_binary": false
     },
     {
+      "name": "revisao-final-browser.mjs",
+      "path": "frontend/tests/revisao-final-browser.mjs",
+      "type": "file",
+      "sha": "a2bc1e6fb4bbc4c7a6f98db434001cdb70764f8e",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 7813,
+      "is_binary": false
+    },
+    {
+      "name": "revisao-final.test.mjs",
+      "path": "frontend/tests/revisao-final.test.mjs",
+      "type": "file",
+      "sha": "0ededc48f073f904de7db8bcd73f5e7b9deb382d",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 3590,
+      "is_binary": false
+    },
+    {
       "name": "run-tests.mjs",
       "path": "frontend/tests/run-tests.mjs",
       "type": "file",
-      "sha": "8e9b488eb13cb2cd4d84bb1a9897ff20a07f3ff4",
+      "sha": "f1b8b744c8630f10e7798f59ef13c28be875f657",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 1799,
+      "size": 1867,
+      "is_binary": false
+    },
+    {
+      "name": "seguranca-266-browser.mjs",
+      "path": "frontend/tests/seguranca-266-browser.mjs",
+      "type": "file",
+      "sha": "4a529fe6f4c0119d7c5c31aab417d44161bce432",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 1698,
       "is_binary": false
     },
     {
       "name": "seo-browser.mjs",
       "path": "frontend/tests/seo-browser.mjs",
       "type": "file",
-      "sha": "6afe9ea5e292b502511843fccd81e6249497b7c1",
+      "sha": "6a62bd945928b0500c8a20db77694b97c09a9ef2",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 7062,
+      "size": 7606,
       "is_binary": false
     },
     {
@@ -9840,6 +12012,26 @@
       "mode": "100644",
       "extension": ".mjs",
       "size": 1729,
+      "is_binary": false
+    },
+    {
+      "name": "solicitacoes-browser.mjs",
+      "path": "frontend/tests/solicitacoes-browser.mjs",
+      "type": "file",
+      "sha": "246b25d4a038d3ac8c2286d4dbfdf457e24415d1",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 5840,
+      "is_binary": false
+    },
+    {
+      "name": "termos-browser.mjs",
+      "path": "frontend/tests/termos-browser.mjs",
+      "type": "file",
+      "sha": "e551891909a240cc5f259e998c14b1133e26d6a5",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 6941,
       "is_binary": false
     },
     {
@@ -9863,6 +12055,16 @@
       "is_binary": false
     },
     {
+      "name": "votos-comentario-browser.mjs",
+      "path": "frontend/tests/votos-comentario-browser.mjs",
+      "type": "file",
+      "sha": "c67dc4508aae8e3ec98cf57c29300b17c1cdc488",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 11184,
+      "is_binary": false
+    },
+    {
       "name": "tsconfig.json",
       "path": "frontend/tsconfig.json",
       "type": "file",
@@ -9876,10 +12078,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "433cdf317a44868e7c0a49fd8cc3ea3f33e6e53c",
+      "sha": "b48a63d8c1cde55fdce26f71f397cd700e6f8924",
       "mode": "100644",
       "extension": ".yml",
-      "size": 5995,
+      "size": 9190,
       "is_binary": false
     },
     {
@@ -9896,7 +12098,7 @@
       "name": "scripts",
       "path": "scripts",
       "type": "directory",
-      "sha": "52fbda4d34a61159a4cc2c4f7afe38c1c0d90a89",
+      "sha": "d531ffa3578a1d1975d555f8250bb8a1e3d03150",
       "mode": "040000",
       "children": []
     },
@@ -9916,6 +12118,26 @@
       "mode": "100755",
       "extension": ".sh",
       "size": 1618,
+      "is_binary": false
+    },
+    {
+      "name": "recovery.Dockerfile",
+      "path": "scripts/recovery.Dockerfile",
+      "type": "file",
+      "sha": "9656370cf71f370cbb378245b72897327621491d",
+      "mode": "100644",
+      "extension": ".Dockerfile",
+      "size": 463,
+      "is_binary": false
+    },
+    {
+      "name": "recovery_drill.py",
+      "path": "scripts/recovery_drill.py",
+      "type": "file",
+      "sha": "771d5e09f01356663c90c1627be30c96963573e2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 12585,
       "is_binary": false
     },
     {
@@ -9954,6 +12176,16 @@
       "mode": "100644",
       "extension": ".sql",
       "size": 891,
+      "is_binary": false
+    },
+    {
+      "name": "test_recovery_drill.py",
+      "path": "scripts/test_recovery_drill.py",
+      "type": "file",
+      "sha": "74a5991e6d04a1e826cc84b71e7ee0b2c12ae30e",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3276,
       "is_binary": false
     },
     {
@@ -10588,17 +12820,17 @@
       "name": "specs.md",
       "path": "specs.md",
       "type": "file",
-      "sha": "00b5d370f3a158ed3d8a33853eedb65eeac69394",
+      "sha": "0c7bb5ef7ce7d65bf669b20cc0674d768184be20",
       "mode": "100644",
       "extension": ".md",
-      "size": 32842,
+      "size": 47441,
       "is_binary": false
     },
     {
       "name": "sprints",
       "path": "sprints",
       "type": "directory",
-      "sha": "8d762d25183da37842e0f11cae8f8a01ed1cf4a6",
+      "sha": "de1eb674a6e9e828e74f82aa1f7deb559f78d3ee",
       "mode": "040000",
       "children": []
     },
@@ -10680,7 +12912,7 @@
       "name": "sprint03",
       "path": "sprints/sprint03",
       "type": "directory",
-      "sha": "28ddd898b448ba6acc661fb377d71cc7c60e4025",
+      "sha": "91835e7343e8ccf4c2babd352c0fb45d324534dd",
       "mode": "040000",
       "children": []
     },
@@ -10688,17 +12920,17 @@
       "name": "ata-reuniao-2026-09-14.md",
       "path": "sprints/sprint03/ata-reuniao-2026-09-14.md",
       "type": "file",
-      "sha": "6d788df2d392420fec447e010062e80653eec5fc",
+      "sha": "ed16e2a55ff1bc4bee4dcc98e7e0db835a63c7bb",
       "mode": "100644",
       "extension": ".md",
-      "size": 2908,
+      "size": 207,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-20T14:53:55.014835+00:00",
+  "extracted_at": "2026-11-21T14:16:36.025828+00:00",
   "method": "rest",
-  "total_items": 1102,
+  "total_items": 1330,
   "repository_metadata": {
     "id": 1338351549,
     "full_name": "unb-mds/2026-02-UnDb",
@@ -10706,9 +12938,9 @@
     "created_at": "2026-08-18T11:57:41Z",
     "updated_at": "2026-11-18T14:00:48Z",
     "language": "Python",
-    "size": 42553,
+    "size": 42554,
     "stars": 7,
     "forks": 0,
-    "open_issues": 4
+    "open_issues": 0
   }
 }
