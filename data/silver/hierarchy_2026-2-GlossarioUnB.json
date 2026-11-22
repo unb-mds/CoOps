@@ -2,7 +2,7 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-21T14:16:37.707967+00:00",
+  "extracted_at": "2026-11-22T14:10:00.883715+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -11,7 +11,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 65,
+        "size": 208,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -93,9 +93,17 @@
         "name": "ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 560,
+        "size": 717,
         "extension": ".yml",
         "path": ".github/workflows/ci.yml"
+      },
+      {
+        "name": "coleta.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2504,
+        "extension": ".yml",
+        "path": ".github/workflows/coleta.yml"
       },
       {
         "name": "pages.yml",
@@ -117,7 +125,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 183,
+        "size": 214,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -141,7 +149,7 @@
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6949,
+        "size": 9044,
         "extension": ".md",
         "path": "AI-USAGE.md"
       },
@@ -165,7 +173,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2379,
+        "size": 3955,
         "extension": ".md",
         "path": "README.md"
       },
@@ -174,6 +182,14 @@
         "type": "directory",
         "path": "coleta",
         "children": []
+      },
+      {
+        "name": "atualizar-termos.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3159,
+        "extension": ".js",
+        "path": "coleta/atualizar-termos.js"
       },
       {
         "name": "categorias.json",
@@ -187,7 +203,7 @@
         "name": "classificador.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 6620,
+        "size": 7807,
         "extension": ".js",
         "path": "coleta/classificador.js"
       },
@@ -195,7 +211,7 @@
         "name": "cliente-gemini.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1175,
+        "size": 3021,
         "extension": ".js",
         "path": "coleta/cliente-gemini.js"
       },
@@ -208,12 +224,42 @@
         "path": "coleta/coletor-html.js"
       },
       {
+        "name": "coletores",
+        "type": "directory",
+        "path": "coleta/coletores",
+        "children": []
+      },
+      {
+        "name": "dpo.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7411,
+        "extension": ".js",
+        "path": "coleta/coletores/dpo.js"
+      },
+      {
         "name": "deduplicar.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 7684,
+        "size": 7879,
         "extension": ".js",
         "path": "coleta/deduplicar.js"
+      },
+      {
+        "name": "filtro-de-termos.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4030,
+        "extension": ".js",
+        "path": "coleta/filtro-de-termos.js"
+      },
+      {
+        "name": "filtro-de-termos.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 3675,
+        "extension": ".json",
+        "path": "coleta/filtro-de-termos.json"
       },
       {
         "name": "fontes.js",
@@ -227,9 +273,17 @@
         "name": "fontes.json",
         "type": "file",
         "language": "JSON",
-        "size": 885,
+        "size": 2734,
         "extension": ".json",
         "path": "coleta/fontes.json"
+      },
+      {
+        "name": "pipeline.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 908,
+        "extension": ".js",
+        "path": "coleta/pipeline.js"
       },
       {
         "name": "prompts",
@@ -246,6 +300,30 @@
         "path": "coleta/prompts/classificar-v1.md"
       },
       {
+        "name": "classificar-v2.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1999,
+        "extension": ".md",
+        "path": "coleta/prompts/classificar-v2.md"
+      },
+      {
+        "name": "relatorio.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9251,
+        "extension": ".js",
+        "path": "coleta/relatorio.js"
+      },
+      {
+        "name": "relatorio.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 331458,
+        "extension": ".json",
+        "path": "coleta/relatorio.json"
+      },
+      {
         "name": "docs",
         "type": "directory",
         "path": "docs",
@@ -255,7 +333,7 @@
         "name": "ARQUITETURA.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3876,
+        "size": 3986,
         "extension": ".md",
         "path": "docs/ARQUITETURA.md"
       },
@@ -274,6 +352,14 @@
         "size": 6643,
         "extension": ".md",
         "path": "docs/CONVENCAO-GIT.md"
+      },
+      {
+        "name": "FILTRO-DE-TERMOS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2574,
+        "extension": ".md",
+        "path": "docs/FILTRO-DE-TERMOS.md"
       },
       {
         "name": "FONTES-DE-DADOS.md",
@@ -306,6 +392,14 @@
         "size": 5916,
         "extension": ".md",
         "path": "docs/REQUISITOS.md"
+      },
+      {
+        "name": "TESTE-DE-SABOTAGEM.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4133,
+        "extension": ".md",
+        "path": "docs/TESTE-DE-SABOTAGEM.md"
       },
       {
         "name": "TRILHA-CALOURO.md",
@@ -405,7 +499,7 @@
         "name": "0010-bibliotecas-nos-scripts-do-robo.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5806,
+        "size": 5906,
         "extension": ".md",
         "path": "docs/adr/0010-bibliotecas-nos-scripts-do-robo.md"
       },
@@ -424,6 +518,14 @@
         "size": 4904,
         "extension": ".md",
         "path": "docs/adr/0013-analise-de-qualidade-com-sonarqube-cloud.md"
+      },
+      {
+        "name": "0014-filtro-de-termos-do-robo.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3540,
+        "extension": ".md",
+        "path": "docs/adr/0014-filtro-de-termos-do-robo.md"
       },
       {
         "name": "estudos",
@@ -486,6 +588,14 @@
         "size": 6321,
         "extension": ".md",
         "path": "docs/estudos/estudo-pwa.md"
+      },
+      {
+        "name": "spike-bot-siglas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9376,
+        "extension": ".md",
+        "path": "docs/estudos/spike-bot-siglas.md"
       },
       {
         "name": "scrum",
@@ -562,12 +672,60 @@
         "path": "docs/scrum/sprints/img/sprint-05-quadro.png"
       },
       {
+        "name": "sprint-06-commits.PNG",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 19762,
+        "extension": ".PNG",
+        "path": "docs/scrum/sprints/img/sprint-06-commits.PNG"
+      },
+      {
+        "name": "sprint-06-quadro.PNG",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 56347,
+        "extension": ".PNG",
+        "path": "docs/scrum/sprints/img/sprint-06-quadro.PNG"
+      },
+      {
+        "name": "sprint-07-commits.PNG",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 17069,
+        "extension": ".PNG",
+        "path": "docs/scrum/sprints/img/sprint-07-commits.PNG"
+      },
+      {
+        "name": "sprint-07-quadro.PNG",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 52389,
+        "extension": ".PNG",
+        "path": "docs/scrum/sprints/img/sprint-07-quadro.PNG"
+      },
+      {
         "name": "sprint-05.md",
         "type": "file",
         "language": "Markdown",
         "size": 4475,
         "extension": ".md",
         "path": "docs/scrum/sprints/sprint-05.md"
+      },
+      {
+        "name": "sprint-06.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5119,
+        "extension": ".md",
+        "path": "docs/scrum/sprints/sprint-06.md"
+      },
+      {
+        "name": "sprint-07.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4806,
+        "extension": ".md",
+        "path": "docs/scrum/sprints/sprint-07.md"
       },
       {
         "name": "skills",
@@ -637,7 +795,7 @@
         "name": "termos.json",
         "type": "file",
         "language": "JSON",
-        "size": 24507,
+        "size": 67330,
         "extension": ".json",
         "path": "frontend/data/termos.json"
       },
@@ -645,7 +803,7 @@
         "name": "trilha-calouro.json",
         "type": "file",
         "language": "JSON",
-        "size": 664,
+        "size": 799,
         "extension": ".json",
         "path": "frontend/data/trilha-calouro.json"
       },
@@ -817,7 +975,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 29053,
+        "size": 37631,
         "extension": ".json",
         "path": "package-lock.json"
       },
@@ -825,7 +983,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 552,
+        "size": 772,
         "extension": ".json",
         "path": "package.json"
       },
@@ -839,9 +997,25 @@
         "name": "classificar.mjs",
         "type": "file",
         "language": "Unknown",
-        "size": 2459,
+        "size": 2766,
         "extension": ".mjs",
         "path": "scripts/classificar.mjs"
+      },
+      {
+        "name": "coleta-automatica.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6925,
+        "extension": ".mjs",
+        "path": "scripts/coleta-automatica.mjs"
+      },
+      {
+        "name": "coletar-dpo.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 434,
+        "extension": ".mjs",
+        "path": "scripts/coletar-dpo.mjs"
       },
       {
         "name": "coletar.mjs",
@@ -850,6 +1024,14 @@
         "size": 992,
         "extension": ".mjs",
         "path": "scripts/coletar.mjs"
+      },
+      {
+        "name": "sabotagem.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6401,
+        "extension": ".mjs",
+        "path": "scripts/sabotagem.mjs"
       },
       {
         "name": "servidor-local.mjs",
@@ -912,6 +1094,14 @@
         "children": []
       },
       {
+        "name": "atualizar-termos.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6086,
+        "extension": ".js",
+        "path": "tests/atualizar-termos.test.js"
+      },
+      {
         "name": "busca.test.js",
         "type": "file",
         "language": "JavaScript",
@@ -923,15 +1113,43 @@
         "name": "classificador.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 14340,
+        "size": 21744,
         "extension": ".js",
         "path": "tests/classificador.test.js"
+      },
+      {
+        "name": "coleta",
+        "type": "directory",
+        "path": "tests/coleta",
+        "children": []
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "tests/coleta/fixtures",
+        "children": []
+      },
+      {
+        "name": "dpo-paginas-5-8.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 95303,
+        "extension": ".pdf",
+        "path": "tests/coleta/fixtures/dpo-paginas-5-8.pdf"
+      },
+      {
+        "name": "coletor-dpo.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 12189,
+        "extension": ".js",
+        "path": "tests/coletor-dpo.test.js"
       },
       {
         "name": "coletor-html.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 14791,
+        "size": 14802,
         "extension": ".js",
         "path": "tests/coletor-html.test.js"
       },
@@ -947,7 +1165,7 @@
         "name": "deduplicar.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 8929,
+        "size": 9569,
         "extension": ".js",
         "path": "tests/deduplicar.test.js"
       },
@@ -960,10 +1178,34 @@
         "path": "tests/ficha.test.js"
       },
       {
+        "name": "filtro-de-termos.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6415,
+        "extension": ".js",
+        "path": "tests/filtro-de-termos.test.js"
+      },
+      {
         "name": "fixtures",
         "type": "directory",
         "path": "tests/fixtures",
         "children": []
+      },
+      {
+        "name": "ceplan-campus-darcy-ribeiro.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 4550,
+        "extension": ".html",
+        "path": "tests/fixtures/ceplan-campus-darcy-ribeiro.html"
+      },
+      {
+        "name": "noticias-ceubinho.html",
+        "type": "file",
+        "language": "HTML",
+        "size": 827,
+        "extension": ".html",
+        "path": "tests/fixtures/noticias-ceubinho.html"
       },
       {
         "name": "unb-decanatos.html",
@@ -982,10 +1224,18 @@
         "path": "tests/fixtures/unb-secretarias.html"
       },
       {
+        "name": "fontes-girias.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3918,
+        "extension": ".js",
+        "path": "tests/fontes-girias.test.js"
+      },
+      {
         "name": "fronteira-dependencias.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2429,
+        "size": 2443,
         "extension": ".js",
         "path": "tests/fronteira-dependencias.test.js"
       },
@@ -998,10 +1248,58 @@
         "path": "tests/lista.test.js"
       },
       {
+        "name": "pipeline.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3028,
+        "extension": ".js",
+        "path": "tests/pipeline.test.js"
+      },
+      {
+        "name": "relatorio.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 10896,
+        "extension": ".js",
+        "path": "tests/relatorio.test.js"
+      },
+      {
+        "name": "sabotagem.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 5193,
+        "extension": ".js",
+        "path": "tests/sabotagem.test.js"
+      },
+      {
         "name": "sabotagens",
         "type": "directory",
         "path": "tests/sabotagens",
         "children": []
+      },
+      {
+        "name": "dominio.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2796,
+        "extension": ".json",
+        "path": "tests/sabotagens/dominio.json"
+      },
+      {
+        "name": "robo.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1800,
+        "extension": ".json",
+        "path": "tests/sabotagens/robo.json"
+      },
+      {
+        "name": "servidor.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 473,
+        "extension": ".json",
+        "path": "tests/sabotagens/servidor.json"
       },
       {
         "name": "tela.json",
@@ -1058,11 +1356,19 @@
         "size": 2877,
         "extension": ".js",
         "path": "tests/validacao-termo.test.js"
+      },
+      {
+        "name": "workflow-coleta.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1981,
+        "extension": ".js",
+        "path": "tests/workflow-coleta.test.js"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-21T14:17:48.605827+00:00",
+    "extracted_at": "2026-11-22T14:11:11.854618+00:00",
     "file_path": "data/silver/hierarchy_2026-2-GlossarioUnB.json"
   }
 }
