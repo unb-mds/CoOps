@@ -1,10 +1,291 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-21T14:10:58.109994+00:00",
+      "extracted_at": "2026-11-22T14:03:18.470763+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaUnB.json",
-      "record_count": 458
+      "record_count": 469
     }
+  },
+  {
+    "sha": "308691cbecd46f9ed358667ebf9fe2e60795175d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Miguel Cardoso",
+        "date": "2026-11-21T23:59:56Z",
+        "login": "MiguelCardoso28",
+        "id": 237799277,
+        "author_email_hash": "e49d37e1a39543dd6f8a624bc6b3e858052b059da05d0072e1029c64f1411a60"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T23:59:56Z"
+      },
+      "message": "Merge pull request #254 from unb-mds/docs/211-decisoes-comentarios\n\ndocs(comentarios): registra as decisões C01 a C11 da equipe"
+    },
+    "parents": [
+      "2913e2ee8371f0dcf016048fce2d37a58add57d0",
+      "969b0eded5c93279618af975760b8e411d3da5c9"
+    ],
+    "additions": 49,
+    "deletions": 25,
+    "total_changes": 74,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "969b0eded5c93279618af975760b8e411d3da5c9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-21T21:20:53Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-21T21:20:53Z"
+      },
+      "message": "docs(comentarios): registra as decisões C01 a C11 da equipe\n\nAtualiza a tabela de decisões e os trechos que dependiam delas: comentários anônimos para o público (C05), moderação somente dos comentários denunciados e aberta a toda a equipe (C08), regras do filtro automático no envio (C10) e ordem da lista (C11). C03 e C04 foram verificadas no código. Os pontos ainda a confirmar pelo grupo estão indicados no documento. Refs #211"
+    },
+    "parents": [
+      "2913e2ee8371f0dcf016048fce2d37a58add57d0"
+    ],
+    "additions": 49,
+    "deletions": 25,
+    "total_changes": 74,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2913e2ee8371f0dcf016048fce2d37a58add57d0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-21T19:34:47Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T19:34:47Z"
+      },
+      "message": "Merge pull request #253 from unb-mds/feat/252-semestre-avaliacao\n\nfeat(avaliacao): escolher a turma cursada e filtrar médias por semestre (#252)"
+    },
+    "parents": [
+      "94f08193c0fa277e083a26f9f57b79594804fa7b",
+      "07ac6ca5a29c73b35cedea1146221c44b8ffd49f"
+    ],
+    "additions": 512,
+    "deletions": 72,
+    "total_changes": 584,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "07ac6ca5a29c73b35cedea1146221c44b8ffd49f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-21T19:33:28Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-21T19:33:28Z"
+      },
+      "message": "merge: atualiza com a main (favoritos #250 e gráfico #251) e resolve conflitos"
+    },
+    "parents": [
+      "46ffa956e90be7c6189fb81fa7a6e3e6769068bc",
+      "94f08193c0fa277e083a26f9f57b79594804fa7b"
+    ],
+    "additions": 432,
+    "deletions": 12,
+    "total_changes": 444,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "94f08193c0fa277e083a26f9f57b79594804fa7b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-21T19:30:36Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T19:30:36Z"
+      },
+      "message": "Merge pull request #251 from unb-mds/feat/224-evolucao-notas\n\nfeat(perfil): gráfico de evolução das notas por semestre (#224)"
+    },
+    "parents": [
+      "ccbc9a5e82ff61ffaf798752b6307f638f1dc0a0",
+      "1a38717d8240c0495b264f8933c575a1b5d02d5a"
+    ],
+    "additions": 506,
+    "deletions": 7,
+    "total_changes": 513,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "1a38717d8240c0495b264f8933c575a1b5d02d5a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-21T19:29:47Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-21T19:29:47Z"
+      },
+      "message": "merge: atualiza com a main (favoritos #250) e resolve conflitos"
+    },
+    "parents": [
+      "9e591542cef7e4c826f5898c67c716ff334a1089",
+      "ccbc9a5e82ff61ffaf798752b6307f638f1dc0a0"
+    ],
+    "additions": 431,
+    "deletions": 11,
+    "total_changes": 442,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "46ffa956e90be7c6189fb81fa7a6e3e6769068bc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-21T19:26:15Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-21T19:26:15Z"
+      },
+      "message": "feat(avaliacao): escolher a turma cursada e filtrar médias por semestre (#252)\n\nO formulário de avaliação passa a pedir a turma (semestre) cursada, com uma avaliação por semestre; o perfil do professor ganha filtro de semestre nas médias, mantendo a média geral de todos os semestres. Migração 007 troca a chave única de avaliacoes para incluir ano e período."
+    },
+    "parents": [
+      "9e591542cef7e4c826f5898c67c716ff334a1089"
+    ],
+    "additions": 512,
+    "deletions": 72,
+    "total_changes": 584,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9e591542cef7e4c826f5898c67c716ff334a1089",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-21T19:10:45Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-21T19:10:45Z"
+      },
+      "message": "docs: documenta como o semestre da avaliação funciona hoje (#224)"
+    },
+    "parents": [
+      "64c58b653d00f752f2342e3c530ae81a21b002db"
+    ],
+    "additions": 97,
+    "deletions": 3,
+    "total_changes": 100,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "64c58b653d00f752f2342e3c530ae81a21b002db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-21T18:52:04Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-21T18:52:04Z"
+      },
+      "message": "feat(perfil): gráfico de evolução das notas por semestre (#224)"
+    },
+    "parents": [
+      "a6e48a1d4b854d26bc37723af88c6a634b7a75e5"
+    ],
+    "additions": 409,
+    "deletions": 4,
+    "total_changes": 413,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ccbc9a5e82ff61ffaf798752b6307f638f1dc0a0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-21T18:45:50Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T18:45:50Z"
+      },
+      "message": "Merge pull request #250 from unb-mds/feat/223-favoritar-professores\n\nfeat(favoritos)"
+    },
+    "parents": [
+      "a6e48a1d4b854d26bc37723af88c6a634b7a75e5",
+      "8075fa5b62b49b75294824c0207a66cd24228737"
+    ],
+    "additions": 431,
+    "deletions": 11,
+    "total_changes": 442,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "8075fa5b62b49b75294824c0207a66cd24228737",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-21T18:28:34Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "d83632737eed56626eca81f6168bf50dc4ad0caf1e129d88c5bf76ece6ae9523"
+      },
+      "committer": {
+        "name": "Caio",
+        "date": "2026-11-21T18:28:34Z"
+      },
+      "message": "feat(favoritos)"
+    },
+    "parents": [
+      "e98c0991f5fab939855a5435d3030575a29f1d74"
+    ],
+    "additions": 431,
+    "deletions": 11,
+    "total_changes": 442,
+    "repo_name": "2026-2-AvaliaUnB"
   },
   {
     "sha": "a6e48a1d4b854d26bc37723af88c6a634b7a75e5",

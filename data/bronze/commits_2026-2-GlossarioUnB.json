@@ -1,10 +1,465 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-21T14:12:49.979489+00:00",
+      "extracted_at": "2026-11-22T14:05:17.455924+00:00",
       "file_path": "data/bronze/commits_2026-2-GlossarioUnB.json",
-      "record_count": 70
+      "record_count": 91
     }
+  },
+  {
+    "sha": "4698ef1ce96f8e282020a6158c35292c39f9e206",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eterno-calouro[bot]",
+        "date": "2026-11-22T05:59:24Z",
+        "login": "eterno-calouro[bot]",
+        "id": 358390510,
+        "author_email_hash": "4fd3118dc42c2580bd4c9f85c4c6915d626575df2bd535715cfa4fa81ead9ff1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-22T05:59:24Z"
+      },
+      "message": "feat(dados): primeira coleta real, com 82 termos conferidos nas fontes (#162)\n\nPrimeira coleta real do robô, com os termos conferidos nas fontes oficiais.\n\n- 82 termos novos: 62 com definição baseada em frase oficial do PDI ou do site do órgão e 20 que explicam só o que o nome informa\n- O campo fonte aponta para a página de cada definição\n- Corrige siglas e nomes errados na lista do PDI (CBDU, CGD, Codim, CPLAD, CDT, A3M)\n- Atualiza o significado de CEAD, CEAM e DPO\n- coleta/filtro-de-termos.json barra o que não é da universidade e os erros da fonte\n\nParte da #62"
+    },
+    "parents": [
+      "bab79b5fa979e53407ca656c4aaba2ebe1926ee6"
+    ],
+    "additions": 8478,
+    "deletions": 8,
+    "total_changes": 8486,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "bab79b5fa979e53407ca656c4aaba2ebe1926ee6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-22T04:15:46Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-22T04:15:46Z"
+      },
+      "message": "test(ci): teste de sabotagem nos módulos críticos (#146)\n\nPõe no CI o teste de sabotagem que o plano de ensino pede em 100% dos módulos críticos: a suíte precisa quebrar quando alguém introduz um defeito de propósito.\n\n- scripts/sabotagem.mjs (npm run test:sabotagem): troca um trecho do código pelo defeito, roda a suíte e desfaz sempre. Sem biblioteca (ADR 0010)\n- 23 defeitos nos módulos críticos de hoje (10 no domínio, 6 no robô, 1 no servidor local e 6 nas páginas), e os 23 quebram a suíte\n- O CI falha se algum defeito passar ou se o trecho de algum item não existir mais no código, e a tabela aparece no resumo da execução\n- tests/sabotagem.test.js (6 testes do próprio script)\n- docs/TESTE-DE-SABOTAGEM.md: como funciona, módulos críticos, como adicionar uma sabotagem e o que fica de fora\n\nCloses #145"
+    },
+    "parents": [
+      "764c6727025649ad3caa4c3843661d27ad1ed394"
+    ],
+    "additions": 499,
+    "deletions": 0,
+    "total_changes": 499,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "764c6727025649ad3caa4c3843661d27ad1ed394",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-22T04:08:19Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-22T04:08:19Z"
+      },
+      "message": "feat(coleta): filtro de termos fora da universidade e correção do texto do PDF (#161)\n\nImpede que siglas de fora da universidade entrem no glossário, com lista fixa, avaliação do Gemini e revisão humana no PR do robô (ADR 0014).\n\n- coleta/filtro-de-termos.json barra 54 siglas gerais, como Covid-19, IPCA e TCU\n- O prompt classificar-v2 avalia a pertinência e, na dúvida, deixa o termo passar\n- Com 503 ou 429 no modelo principal, a rodada continua no modelo reserva\n- Corrige os acentos quebrados do PDF da DPO e recusa os nomes errados da FAV e da FACE\n- A data da coleta dentro do termo não abre mais PR semanal sem mudança nas fontes\n- docs/FILTRO-DE-TERMOS.md\n\nCloses #160\nParte da #62"
+    },
+    "parents": [
+      "832e5f6bb4e95fa6a8083453dc1ba0799aeb0bb7"
+    ],
+    "additions": 818,
+    "deletions": 26,
+    "total_changes": 844,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "832e5f6bb4e95fa6a8083453dc1ba0799aeb0bb7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-21T18:47:59Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T18:47:59Z"
+      },
+      "message": "test(coleta): testes da DPO sem depender do termos.json real (#159)\n\nDois testes de deduplicar.test.js liam o termos.json real e quebravam quando o robô atualizava a DPO. Agora usam uma base pequena, com o mesmo cenário.\n\nParte da #59"
+    },
+    "parents": [
+      "24aa2e410554854ca5c7194e5825abb16cdb40c1"
+    ],
+    "additions": 11,
+    "deletions": 7,
+    "total_changes": 18,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "24aa2e410554854ca5c7194e5825abb16cdb40c1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T17:43:16Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T17:43:16Z"
+      },
+      "message": "Merge pull request #144 from unb-mds/feat/issue-59-workflow-coleta\n\nFeat/issue 59 workflow coleta"
+    },
+    "parents": [
+      "2e88dae050d1a2199e31d53f4e04f56a237a7e58",
+      "f7ba86c1147ced938407301801ff5e040e3755d3"
+    ],
+    "additions": 1021,
+    "deletions": 8,
+    "total_changes": 1029,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "2e88dae050d1a2199e31d53f4e04f56a237a7e58",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-21T16:57:25Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:57:25Z"
+      },
+      "message": "feat(dados): gírias do campus na trilha, com fonte da UnB e confirmação pelo robô (#140)\n\nPõe as gírias do campus na trilha \"Primeiros passos na UnB\": Ceubinho, Minhocão e Beijódromo, num grupo novo, \"Gírias do campus\". Cada gíria tem uma página da UnB como fonte (ADR 0011).\n\n- Ceubinho corrigido: a fonte passa a ser a UnB Notícias e a definição segue a página (o vão da ala norte do ICC)\n- Minhocão e Beijódromo novos, com a página do CEPLAN sobre o campus Darcy Ribeiro, como gíria na categoria locais-campus\n- 3 fontes novas no coleta/fontes.json, com o padrão regex do coletor (#56), para a coleta real confirmar as gírias da base\n- tests/fontes-girias.test.js (7 testes, com trechos das páginas reais em tests/fixtures/)\n- tests/coletor-html.test.js ajustado: o teste \"um robots.txt por site\" agora coleta só as duas fontes do portal\n- O Udefinho ficou de fora: a única fonte achada não dá para o robô confirmar\n\nCloses #139\nRelacionado a #69 e #70."
+    },
+    "parents": [
+      "bd7f070d55041d3d96355e1d905067a3ca6999f5"
+    ],
+    "additions": 174,
+    "deletions": 4,
+    "total_changes": 178,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "f7ba86c1147ced938407301801ff5e040e3755d3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:53:10Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:53:10Z"
+      },
+      "message": "Merge branch 'main' into feat/issue-59-workflow-coleta"
+    },
+    "parents": [
+      "2c0d4d47650831f506ac091cc573e10054974875",
+      "bd7f070d55041d3d96355e1d905067a3ca6999f5"
+    ],
+    "additions": 1012,
+    "deletions": 128,
+    "total_changes": 1140,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "bd7f070d55041d3d96355e1d905067a3ca6999f5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:51:26Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:51:26Z"
+      },
+      "message": "Merge pull request #142 from unb-mds/feat/issue-55-coletor-siglas-dpo\n\nfeat(coleta): adiciona o coletor da Lista de Siglas da DPO em PDF"
+    },
+    "parents": [
+      "acfd627c6202f77ae91c3596f99033de9696be00",
+      "cb2d951945f0dbad6eeefb613ab563ed9812242a"
+    ],
+    "additions": 778,
+    "deletions": 4,
+    "total_changes": 782,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "cb2d951945f0dbad6eeefb613ab563ed9812242a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:49:04Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:49:04Z"
+      },
+      "message": "Merge branch 'main' into feat/issue-55-coletor-siglas-dpo"
+    },
+    "parents": [
+      "51f948ed450bdcda262840cca140b4cbd27e5bd6",
+      "acfd627c6202f77ae91c3596f99033de9696be00"
+    ],
+    "additions": 896,
+    "deletions": 115,
+    "total_changes": 1011,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "2c0d4d47650831f506ac091cc573e10054974875",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:18:42Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:18:42Z"
+      },
+      "message": "Update scripts/coleta-automatica.mjs\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "4730ee980cb12af86fa0b375c5100c4b0a96ae69"
+    ],
+    "additions": 3,
+    "deletions": 1,
+    "total_changes": 4,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "4730ee980cb12af86fa0b375c5100c4b0a96ae69",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:18:19Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:18:19Z"
+      },
+      "message": "Update coleta/atualizar-termos.js\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "29a631f480d9fbc7bed1143f449255786367fa3c"
+    ],
+    "additions": 4,
+    "deletions": 0,
+    "total_changes": 4,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "29a631f480d9fbc7bed1143f449255786367fa3c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:18:05Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:18:05Z"
+      },
+      "message": "Update coleta/atualizar-termos.js\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "8db5e3bd6ecd3d7b6cae66b5fdf078bb42860f6e"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "acfd627c6202f77ae91c3596f99033de9696be00",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T16:16:32Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T16:16:32Z"
+      },
+      "message": "Merge pull request #141 from unb-mds/docs/issue-54-spike-bot-siglas\n\ndocs: adiciona spike sobre o bot de siglas (#54)"
+    },
+    "parents": [
+      "c76fa259fba5609373f3f120accbd49108c61cd0",
+      "3ca3763a01d0746061814873b071dd4988a9aef9"
+    ],
+    "additions": 118,
+    "deletions": 0,
+    "total_changes": 118,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "8db5e3bd6ecd3d7b6cae66b5fdf078bb42860f6e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-21T02:47:30Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-21T02:47:30Z"
+      },
+      "message": "feat(coleta): adiciona pipeline de coleta e relatório para o workflow semanal (#59)"
+    },
+    "parents": [
+      "caedf0a53fa7924d402e1e34f8a746767486924b"
+    ],
+    "additions": 221,
+    "deletions": 21,
+    "total_changes": 242,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "caedf0a53fa7924d402e1e34f8a746767486924b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T02:18:49Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T02:18:49Z"
+      },
+      "message": "Update .github/workflows/coleta.yml\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "6479f4f33b1ea0730fc630d505df3e093a33d34b"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "51f948ed450bdcda262840cca140b4cbd27e5bd6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-21T02:15:22Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-21T02:15:22Z"
+      },
+      "message": "feat(coleta): correcao (#55)"
+    },
+    "parents": [
+      "d79e15c32a0b9a24938ad56a4a26a844b2c04f85"
+    ],
+    "additions": 114,
+    "deletions": 11,
+    "total_changes": 125,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "d79e15c32a0b9a24938ad56a4a26a844b2c04f85",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T01:44:33Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T01:44:33Z"
+      },
+      "message": "Update coleta/coletores/dpo.js\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "123a10c27c0220db24509c4275c2b9b7bc101e79"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "123a10c27c0220db24509c4275c2b9b7bc101e79",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-21T01:43:45Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-21T01:43:45Z"
+      },
+      "message": "Update coleta/coletores/dpo.js\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "ee916f6454d474ebaa9ae3b3e825e6fd3d87636f"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-GlossarioUnB"
   },
   {
     "sha": "c76fa259fba5609373f3f120accbd49108c61cd0",
@@ -154,6 +609,81 @@
     "additions": 476,
     "deletions": 94,
     "total_changes": 570,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "6479f4f33b1ea0730fc630d505df3e093a33d34b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-19T20:32:43Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-19T20:32:43Z"
+      },
+      "message": "feat(coleta): adiciona workflow semanal que abre PR com termos coletados (#59)"
+    },
+    "parents": [
+      "ee916f6454d474ebaa9ae3b3e825e6fd3d87636f"
+    ],
+    "additions": 815,
+    "deletions": 8,
+    "total_changes": 823,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "ee916f6454d474ebaa9ae3b3e825e6fd3d87636f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-19T08:47:17Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-19T08:47:17Z"
+      },
+      "message": "feat(coleta): adiciona o coletor da Lista de Siglas da DPO em PDF"
+    },
+    "parents": [
+      "7101a889fd4f56a42b0df4a9e1e82ed5c02e4949"
+    ],
+    "additions": 675,
+    "deletions": 4,
+    "total_changes": 679,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "3ca3763a01d0746061814873b071dd4988a9aef9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-19T08:10:01Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "Italo Souza Moura",
+        "date": "2026-11-19T08:10:01Z"
+      },
+      "message": "docs: adiciona spike sobre o bot de siglas (#54)"
+    },
+    "parents": [
+      "7101a889fd4f56a42b0df4a9e1e82ed5c02e4949"
+    ],
+    "additions": 118,
+    "deletions": 0,
+    "total_changes": 118,
     "repo_name": "2026-2-GlossarioUnB"
   },
   {

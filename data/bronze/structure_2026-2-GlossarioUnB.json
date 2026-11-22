@@ -2,23 +2,23 @@
   "owner": "unb-mds",
   "repository": "2026-2-GlossarioUnB",
   "branch": "main",
-  "sha": "c76fa259fba5609373f3f120accbd49108c61cd0",
+  "sha": "96c06c249f6318c89c37b9c272555a921435fb04",
   "tree": [
     {
       "name": ".env.example",
       "path": ".env.example",
       "type": "file",
-      "sha": "0435fe9e1f1b4cb039134fd4911785faf355df7d",
+      "sha": "91617345c354c350dc577a2e54aa973a1d237477",
       "mode": "100644",
       "extension": ".example",
-      "size": 65,
+      "size": 208,
       "is_binary": false
     },
     {
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "483f1d84c2141fc9e0d1dcb489433ec9da5d55b0",
+      "sha": "de126f35cf46a92cc261aa9df10c1a104986f33f",
       "mode": "040000",
       "children": []
     },
@@ -94,7 +94,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "4b901437e2b3f2277c188e527bd8679b5253a231",
+      "sha": "07847cf2ec9bfb30f2329068e7058ec828fb1508",
       "mode": "040000",
       "children": []
     },
@@ -112,10 +112,20 @@
       "name": "ci.yml",
       "path": ".github/workflows/ci.yml",
       "type": "file",
-      "sha": "e760840e65258b9e5dc62a1b02ee27bb33fda4d5",
+      "sha": "8d4d2c3179017c56c8677748cdd0820556f674c8",
       "mode": "100644",
       "extension": ".yml",
-      "size": 560,
+      "size": 717,
+      "is_binary": false
+    },
+    {
+      "name": "coleta.yml",
+      "path": ".github/workflows/coleta.yml",
+      "type": "file",
+      "sha": "5b1c0ff93f473b41496da46dee65560ed7e10454",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 2504,
       "is_binary": false
     },
     {
@@ -142,10 +152,10 @@
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "6353aa6bbe95146077cd984fdd95ee66ca3580ed",
+      "sha": "d9f81ef6cc4484242485b8c54f9a1c7535277c91",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 183,
+      "size": 214,
       "is_binary": false
     },
     {
@@ -172,10 +182,10 @@
       "name": "AI-USAGE.md",
       "path": "AI-USAGE.md",
       "type": "file",
-      "sha": "cba01e19df2ca2d5326efdc4aeb2e931d6ac0d09",
+      "sha": "e71d1fd678747ee9cd8bb01a76834ca7ce6dab85",
       "mode": "100644",
       "extension": ".md",
-      "size": 6949,
+      "size": 9044,
       "is_binary": false
     },
     {
@@ -202,19 +212,29 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "b0e025e4c5fdda7aab33819f8d5cb7b2704325c7",
+      "sha": "ac075eaeb4ea451e0e2c1051322cc811ba913426",
       "mode": "100644",
       "extension": ".md",
-      "size": 2379,
+      "size": 3955,
       "is_binary": false
     },
     {
       "name": "coleta",
       "path": "coleta",
       "type": "directory",
-      "sha": "5394f6f37dd92f2cccb771367cf14c6886693789",
+      "sha": "947d7497213f26be59a077ee31d7de85a9fdd900",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "atualizar-termos.js",
+      "path": "coleta/atualizar-termos.js",
+      "type": "file",
+      "sha": "bc6c3990ddce09b6f21698f31104219d6466f9ea",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3159,
+      "is_binary": false
     },
     {
       "name": "categorias.json",
@@ -230,20 +250,20 @@
       "name": "classificador.js",
       "path": "coleta/classificador.js",
       "type": "file",
-      "sha": "61c8ffce7ed8bb932dd576ad17de7a5db28e5b81",
+      "sha": "5bb6443a69dae72d752f8ddc5d0a0772cad390c9",
       "mode": "100644",
       "extension": ".js",
-      "size": 6620,
+      "size": 7807,
       "is_binary": false
     },
     {
       "name": "cliente-gemini.js",
       "path": "coleta/cliente-gemini.js",
       "type": "file",
-      "sha": "3ad89376495e4351c072b6660e704652063e42a6",
+      "sha": "0805b09ee72c46f895732e588092428db1dc5698",
       "mode": "100644",
       "extension": ".js",
-      "size": 1175,
+      "size": 3021,
       "is_binary": false
     },
     {
@@ -257,13 +277,51 @@
       "is_binary": false
     },
     {
+      "name": "coletores",
+      "path": "coleta/coletores",
+      "type": "directory",
+      "sha": "a7b9089ebbd30d89583c645a2a93cf3145a0f6fe",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "dpo.js",
+      "path": "coleta/coletores/dpo.js",
+      "type": "file",
+      "sha": "0e0e723bbe0a1f510a97b02179c4afeab155b3de",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 7411,
+      "is_binary": false
+    },
+    {
       "name": "deduplicar.js",
       "path": "coleta/deduplicar.js",
       "type": "file",
-      "sha": "2666219ee89e7e365280066dbeab713e1053e491",
+      "sha": "20c90092da1915e0d8c9dcaa8efe6365d844279f",
       "mode": "100644",
       "extension": ".js",
-      "size": 7684,
+      "size": 7879,
+      "is_binary": false
+    },
+    {
+      "name": "filtro-de-termos.js",
+      "path": "coleta/filtro-de-termos.js",
+      "type": "file",
+      "sha": "dbbb223fecf9f5d7c79bf244fe619c1bd1893f7a",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4030,
+      "is_binary": false
+    },
+    {
+      "name": "filtro-de-termos.json",
+      "path": "coleta/filtro-de-termos.json",
+      "type": "file",
+      "sha": "fbed3d75341ceeb338564d43826f76a7f580da63",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 3675,
       "is_binary": false
     },
     {
@@ -280,17 +338,27 @@
       "name": "fontes.json",
       "path": "coleta/fontes.json",
       "type": "file",
-      "sha": "b406b3c48d3c53e843ede480dc59e37baf197216",
+      "sha": "61505162081a2dba2de1ae04e9685c5c44af2ab0",
       "mode": "100644",
       "extension": ".json",
-      "size": 885,
+      "size": 2734,
+      "is_binary": false
+    },
+    {
+      "name": "pipeline.js",
+      "path": "coleta/pipeline.js",
+      "type": "file",
+      "sha": "c8e918b623fe7727f1f0009c35983dd40fd929a5",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 908,
       "is_binary": false
     },
     {
       "name": "prompts",
       "path": "coleta/prompts",
       "type": "directory",
-      "sha": "6b3763a958644e956e01935b4bfce85d296bddbf",
+      "sha": "75dedfa88015121c53719b191af142f77443bc14",
       "mode": "040000",
       "children": []
     },
@@ -305,10 +373,40 @@
       "is_binary": false
     },
     {
+      "name": "classificar-v2.md",
+      "path": "coleta/prompts/classificar-v2.md",
+      "type": "file",
+      "sha": "8d4dfcda4a346dac00fed76cbdc7eb9c6964a568",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 1999,
+      "is_binary": false
+    },
+    {
+      "name": "relatorio.js",
+      "path": "coleta/relatorio.js",
+      "type": "file",
+      "sha": "e2b01854cef175dcc5fe52b69419824197f6de14",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 9251,
+      "is_binary": false
+    },
+    {
+      "name": "relatorio.json",
+      "path": "coleta/relatorio.json",
+      "type": "file",
+      "sha": "729315a93220975bef5d9bb19d267facf482ad58",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 331458,
+      "is_binary": false
+    },
+    {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "af47de5605195f6dd202dc6e1819c824016a97b0",
+      "sha": "d531dd24965a347b88d59e04ab28e27824f4710c",
       "mode": "040000",
       "children": []
     },
@@ -316,10 +414,10 @@
       "name": "ARQUITETURA.md",
       "path": "docs/ARQUITETURA.md",
       "type": "file",
-      "sha": "8c36660b5a46d10b6d5ad5110cc844eb05c77f75",
+      "sha": "7af89ff7a27fddde8b78ccc994caaf8b5b50aa06",
       "mode": "100644",
       "extension": ".md",
-      "size": 3876,
+      "size": 3986,
       "is_binary": false
     },
     {
@@ -340,6 +438,16 @@
       "mode": "100644",
       "extension": ".md",
       "size": 6643,
+      "is_binary": false
+    },
+    {
+      "name": "FILTRO-DE-TERMOS.md",
+      "path": "docs/FILTRO-DE-TERMOS.md",
+      "type": "file",
+      "sha": "4bb2a4a6199419c6aabc9746c24d4d502b5c57f1",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2574,
       "is_binary": false
     },
     {
@@ -383,6 +491,16 @@
       "is_binary": false
     },
     {
+      "name": "TESTE-DE-SABOTAGEM.md",
+      "path": "docs/TESTE-DE-SABOTAGEM.md",
+      "type": "file",
+      "sha": "36cdcf879ac879344d619ae49f319eda38537ec6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4133,
+      "is_binary": false
+    },
+    {
       "name": "TRILHA-CALOURO.md",
       "path": "docs/TRILHA-CALOURO.md",
       "type": "file",
@@ -396,7 +514,7 @@
       "name": "adr",
       "path": "docs/adr",
       "type": "directory",
-      "sha": "57242e354248de8786758b098ea5aed6edc2dbc5",
+      "sha": "b1f3b59f6a92617982c1c89a14d8b188105a971b",
       "mode": "040000",
       "children": []
     },
@@ -504,10 +622,10 @@
       "name": "0010-bibliotecas-nos-scripts-do-robo.md",
       "path": "docs/adr/0010-bibliotecas-nos-scripts-do-robo.md",
       "type": "file",
-      "sha": "6832d6dc72e2db0ab9bfd6297d5f85b21b59115b",
+      "sha": "4a0c168675b07b092e860d8c4133e43f05836a11",
       "mode": "100644",
       "extension": ".md",
-      "size": 5806,
+      "size": 5906,
       "is_binary": false
     },
     {
@@ -531,10 +649,20 @@
       "is_binary": false
     },
     {
+      "name": "0014-filtro-de-termos-do-robo.md",
+      "path": "docs/adr/0014-filtro-de-termos-do-robo.md",
+      "type": "file",
+      "sha": "1b1c66030cc2988cf8a5271dfed153dbce3bd052",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3540,
+      "is_binary": false
+    },
+    {
       "name": "estudos",
       "path": "docs/estudos",
       "type": "directory",
-      "sha": "9b2a1427843bff639da1fb72e733438026726e26",
+      "sha": "d69cc3d955ba04cabd7196276671151e55f8fa8e",
       "mode": "040000",
       "children": []
     },
@@ -609,10 +737,20 @@
       "is_binary": false
     },
     {
+      "name": "spike-bot-siglas.md",
+      "path": "docs/estudos/spike-bot-siglas.md",
+      "type": "file",
+      "sha": "ec9f14b264580ee962819db47d1787f95968bda6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9376,
+      "is_binary": false
+    },
+    {
       "name": "scrum",
       "path": "docs/scrum",
       "type": "directory",
-      "sha": "2a4d50c3bb1c2e4eae62d037c1830ea4a3772288",
+      "sha": "6c2aace0d8b1c713c9e7d73dcfa8abca8580b8f3",
       "mode": "040000",
       "children": []
     },
@@ -670,7 +808,7 @@
       "name": "sprints",
       "path": "docs/scrum/sprints",
       "type": "directory",
-      "sha": "c8e323e9c0a95b2ffb1cc641e282bb686ea4e7eb",
+      "sha": "4f122e74eadb08cc553cfb3e6dcdd842cbd6715f",
       "mode": "040000",
       "children": []
     },
@@ -678,7 +816,7 @@
       "name": "img",
       "path": "docs/scrum/sprints/img",
       "type": "directory",
-      "sha": "cef2a48acac8738739c39bbc3b7cad0b0c1fd7b0",
+      "sha": "b80fab6962aa91567a18f3654e0dbf0b6de1de7d",
       "mode": "040000",
       "children": []
     },
@@ -703,6 +841,46 @@
       "is_binary": false
     },
     {
+      "name": "sprint-06-commits.PNG",
+      "path": "docs/scrum/sprints/img/sprint-06-commits.PNG",
+      "type": "file",
+      "sha": "166407ccc42f1cbff686ed724d9b826b2cb0c4f1",
+      "mode": "100644",
+      "extension": ".PNG",
+      "size": 19762,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-06-quadro.PNG",
+      "path": "docs/scrum/sprints/img/sprint-06-quadro.PNG",
+      "type": "file",
+      "sha": "327009a4d976dc58664f917b991bd388153a0e00",
+      "mode": "100644",
+      "extension": ".PNG",
+      "size": 56347,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-07-commits.PNG",
+      "path": "docs/scrum/sprints/img/sprint-07-commits.PNG",
+      "type": "file",
+      "sha": "beba6bf54ffe149eb0190ed26261a70eb9be353a",
+      "mode": "100644",
+      "extension": ".PNG",
+      "size": 17069,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-07-quadro.PNG",
+      "path": "docs/scrum/sprints/img/sprint-07-quadro.PNG",
+      "type": "file",
+      "sha": "3e39cec142b8c83ed70ba26a528e181ee6e96a70",
+      "mode": "100644",
+      "extension": ".PNG",
+      "size": 52389,
+      "is_binary": false
+    },
+    {
       "name": "sprint-05.md",
       "path": "docs/scrum/sprints/sprint-05.md",
       "type": "file",
@@ -710,6 +888,26 @@
       "mode": "100644",
       "extension": ".md",
       "size": 4475,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-06.md",
+      "path": "docs/scrum/sprints/sprint-06.md",
+      "type": "file",
+      "sha": "925ade7f53293400bab884df785b37281033a7c4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5119,
+      "is_binary": false
+    },
+    {
+      "name": "sprint-07.md",
+      "path": "docs/scrum/sprints/sprint-07.md",
+      "type": "file",
+      "sha": "d3dc2b366bbc6d96500f8bce647647ba135319d6",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 4806,
       "is_binary": false
     },
     {
@@ -772,7 +970,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "4ee13d490af6c09fd52631c387885bd8f4a4ce38",
+      "sha": "2b6cc24d6f1de33ddc8e83d111ac43d47c889e68",
       "mode": "040000",
       "children": []
     },
@@ -790,7 +988,7 @@
       "name": "data",
       "path": "frontend/data",
       "type": "directory",
-      "sha": "fad50cd1b33293379e8157e3ae20b90f31b46ef2",
+      "sha": "a2f3eee96779b618ea992de851ac87b95baf80f6",
       "mode": "040000",
       "children": []
     },
@@ -798,20 +996,20 @@
       "name": "termos.json",
       "path": "frontend/data/termos.json",
       "type": "file",
-      "sha": "78b3abecee7a53352e338a7def09601bb34d3e4a",
+      "sha": "d0c30b4862e03edbb8223766a835b1ba342302b6",
       "mode": "100644",
       "extension": ".json",
-      "size": 24507,
+      "size": 67330,
       "is_binary": false
     },
     {
       "name": "trilha-calouro.json",
       "path": "frontend/data/trilha-calouro.json",
       "type": "file",
-      "sha": "49681731d2b3196ec3da0eff29c0ae1d597c44a7",
+      "sha": "7dd62ecf4bddd1e5e3b312145c8204aa4a59faf9",
       "mode": "100644",
       "extension": ".json",
-      "size": 664,
+      "size": 799,
       "is_binary": false
     },
     {
@@ -1024,27 +1222,27 @@
       "name": "package-lock.json",
       "path": "package-lock.json",
       "type": "file",
-      "sha": "720740766aa788ecf374fa3e31619d221d7aeaba",
+      "sha": "0600a1c593e5e341598b471f5341a69fd722c399",
       "mode": "100644",
       "extension": ".json",
-      "size": 29053,
+      "size": 37631,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "package.json",
       "type": "file",
-      "sha": "5fec7824b9c069ab3c36928dc5bed77db9038c87",
+      "sha": "803d34393e59bd394315f27d0578482ce8ccb7b1",
       "mode": "100644",
       "extension": ".json",
-      "size": 552,
+      "size": 772,
       "is_binary": false
     },
     {
       "name": "scripts",
       "path": "scripts",
       "type": "directory",
-      "sha": "69198d0672683f80173ff5694cfa147bb5c686b5",
+      "sha": "dcf3f70a657ba302e8c535d1703a27a64e0ef00e",
       "mode": "040000",
       "children": []
     },
@@ -1052,10 +1250,30 @@
       "name": "classificar.mjs",
       "path": "scripts/classificar.mjs",
       "type": "file",
-      "sha": "41b948769faf5b48c68d78c66b68da4d5a3f2c41",
+      "sha": "320c19de44b3fa1d2618315a1fdb34e961ea6b28",
       "mode": "100644",
       "extension": ".mjs",
-      "size": 2459,
+      "size": 2766,
+      "is_binary": false
+    },
+    {
+      "name": "coleta-automatica.mjs",
+      "path": "scripts/coleta-automatica.mjs",
+      "type": "file",
+      "sha": "21dd3656fee8be44abf1ad353a0562be8ece8a27",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 6925,
+      "is_binary": false
+    },
+    {
+      "name": "coletar-dpo.mjs",
+      "path": "scripts/coletar-dpo.mjs",
+      "type": "file",
+      "sha": "e005f785d86be8dacda9decb1f18fffb140d8a37",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 434,
       "is_binary": false
     },
     {
@@ -1066,6 +1284,16 @@
       "mode": "100644",
       "extension": ".mjs",
       "size": 992,
+      "is_binary": false
+    },
+    {
+      "name": "sabotagem.mjs",
+      "path": "scripts/sabotagem.mjs",
+      "type": "file",
+      "sha": "1ea3b78a40441eefc186c526fdac2df67c42ea5d",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 6401,
       "is_binary": false
     },
     {
@@ -1140,9 +1368,19 @@
       "name": "tests",
       "path": "tests",
       "type": "directory",
-      "sha": "dd91a5052bfc3370429785ef53952fabd129ac1a",
+      "sha": "8092d77d368a6e99b985eae775ae3d05c7fd16f6",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "atualizar-termos.test.js",
+      "path": "tests/atualizar-termos.test.js",
+      "type": "file",
+      "sha": "0eae90d3d3fc88ce11cf244797624920301a43d7",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 6086,
+      "is_binary": false
     },
     {
       "name": "busca.test.js",
@@ -1158,20 +1396,56 @@
       "name": "classificador.test.js",
       "path": "tests/classificador.test.js",
       "type": "file",
-      "sha": "497c7e49169fb29ea33df7befeb1942e47d84678",
+      "sha": "50fe91df7478252ade550050b3fbb321285411a9",
       "mode": "100644",
       "extension": ".js",
-      "size": 14340,
+      "size": 21744,
+      "is_binary": false
+    },
+    {
+      "name": "coleta",
+      "path": "tests/coleta",
+      "type": "directory",
+      "sha": "55c1e9b95dd99e9438fa32b54e6ec51336481238",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "fixtures",
+      "path": "tests/coleta/fixtures",
+      "type": "directory",
+      "sha": "65ec4a54a9bac6bfc86554f21108a2e525ecc9b4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "dpo-paginas-5-8.pdf",
+      "path": "tests/coleta/fixtures/dpo-paginas-5-8.pdf",
+      "type": "file",
+      "sha": "62d13f8e9b8f9b92e2ed6d958f1abb228911ef47",
+      "mode": "100644",
+      "extension": ".pdf",
+      "size": 95303,
+      "is_binary": false
+    },
+    {
+      "name": "coletor-dpo.test.js",
+      "path": "tests/coletor-dpo.test.js",
+      "type": "file",
+      "sha": "4ff45edcb9354673551220dd14a0cf76f89619f1",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 12189,
       "is_binary": false
     },
     {
       "name": "coletor-html.test.js",
       "path": "tests/coletor-html.test.js",
       "type": "file",
-      "sha": "6901994905a30609673c14ae29b4ccd3182d3bac",
+      "sha": "53491418e696381691c556399062f7488b8e020c",
       "mode": "100644",
       "extension": ".js",
-      "size": 14791,
+      "size": 14802,
       "is_binary": false
     },
     {
@@ -1188,10 +1462,10 @@
       "name": "deduplicar.test.js",
       "path": "tests/deduplicar.test.js",
       "type": "file",
-      "sha": "14efa2872fcb67bb0483662cbd8794ff6372ee51",
+      "sha": "504ac76d3d0ed938364ff9c8b5e918b225936388",
       "mode": "100644",
       "extension": ".js",
-      "size": 8929,
+      "size": 9569,
       "is_binary": false
     },
     {
@@ -1205,12 +1479,42 @@
       "is_binary": false
     },
     {
+      "name": "filtro-de-termos.test.js",
+      "path": "tests/filtro-de-termos.test.js",
+      "type": "file",
+      "sha": "a11bce440f2a1a1183883a6b67850de355602f7f",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 6415,
+      "is_binary": false
+    },
+    {
       "name": "fixtures",
       "path": "tests/fixtures",
       "type": "directory",
-      "sha": "afbc915b2c8c330214062ed64c623eb122de0720",
+      "sha": "4f5068d3b883caa0199b517569150332cc059569",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "ceplan-campus-darcy-ribeiro.html",
+      "path": "tests/fixtures/ceplan-campus-darcy-ribeiro.html",
+      "type": "file",
+      "sha": "483545a868db58014792944a9c08ed4b6bd2ddbf",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 4550,
+      "is_binary": false
+    },
+    {
+      "name": "noticias-ceubinho.html",
+      "path": "tests/fixtures/noticias-ceubinho.html",
+      "type": "file",
+      "sha": "fd3f21ca9b268d17dca672c5bb99f94b4f4f641e",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 827,
+      "is_binary": false
     },
     {
       "name": "unb-decanatos.html",
@@ -1233,13 +1537,23 @@
       "is_binary": false
     },
     {
+      "name": "fontes-girias.test.js",
+      "path": "tests/fontes-girias.test.js",
+      "type": "file",
+      "sha": "2a2d94edb6c67aa0e34018cd9861a9ff0ad7fd55",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3918,
+      "is_binary": false
+    },
+    {
       "name": "fronteira-dependencias.test.js",
       "path": "tests/fronteira-dependencias.test.js",
       "type": "file",
-      "sha": "935f4d1e0d8f4f9686a605a6fc71329a533128f5",
+      "sha": "6f8cbb6919340963075dffb983104c9f7e2a9158",
       "mode": "100644",
       "extension": ".js",
-      "size": 2429,
+      "size": 2443,
       "is_binary": false
     },
     {
@@ -1253,12 +1567,72 @@
       "is_binary": false
     },
     {
+      "name": "pipeline.test.js",
+      "path": "tests/pipeline.test.js",
+      "type": "file",
+      "sha": "43ab854ea9120df27630873fc1ef2df630858a0f",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 3028,
+      "is_binary": false
+    },
+    {
+      "name": "relatorio.test.js",
+      "path": "tests/relatorio.test.js",
+      "type": "file",
+      "sha": "2867ca07e0e8e13e862b0a0909248ebf4c1a3c9c",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 10896,
+      "is_binary": false
+    },
+    {
+      "name": "sabotagem.test.js",
+      "path": "tests/sabotagem.test.js",
+      "type": "file",
+      "sha": "84801fb9fa176ff0d0f1d203b999c3682c6faaba",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 5193,
+      "is_binary": false
+    },
+    {
       "name": "sabotagens",
       "path": "tests/sabotagens",
       "type": "directory",
-      "sha": "1b9208974da787ebae4e9eb87450c695efc205f2",
+      "sha": "6843e6a6622662410b4f24b4dde9d0744440d5f9",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "dominio.json",
+      "path": "tests/sabotagens/dominio.json",
+      "type": "file",
+      "sha": "fca131ed4bb6ff110c0817ad39d107945ed843f8",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 2796,
+      "is_binary": false
+    },
+    {
+      "name": "robo.json",
+      "path": "tests/sabotagens/robo.json",
+      "type": "file",
+      "sha": "4d7bfdc19b0f883583f4e01dd3673978e09a075c",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 1800,
+      "is_binary": false
+    },
+    {
+      "name": "servidor.json",
+      "path": "tests/sabotagens/servidor.json",
+      "type": "file",
+      "sha": "ed5af87554cc07fcd1744d58a8b8fdcab5f61ffb",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 473,
+      "is_binary": false
     },
     {
       "name": "tela.json",
@@ -1329,12 +1703,22 @@
       "extension": ".js",
       "size": 2877,
       "is_binary": false
+    },
+    {
+      "name": "workflow-coleta.test.js",
+      "path": "tests/workflow-coleta.test.js",
+      "type": "file",
+      "sha": "a2cabb624dd2ddec6caddffb178a14da234972c1",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1981,
+      "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-21T14:16:37.707967+00:00",
+  "extracted_at": "2026-11-22T14:10:00.883715+00:00",
   "method": "rest",
-  "total_items": 137,
+  "total_items": 176,
   "repository_metadata": {
     "id": 1338352433,
     "full_name": "unb-mds/2026-2-GlossarioUnB",
@@ -1342,9 +1726,9 @@
     "created_at": "2026-08-18T11:58:42Z",
     "updated_at": "2026-11-17T02:03:49Z",
     "language": "JavaScript",
-    "size": 1401,
+    "size": 1647,
     "stars": 0,
     "forks": 0,
-    "open_issues": 74
+    "open_issues": 68
   }
 }
