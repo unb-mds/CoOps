@@ -1,9 +1,9 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-22T13:07:56.265913+00:00",
+      "extracted_at": "2026-11-23T15:40:12.814186+00:00",
       "file_path": "data/bronze/prs_2026-2-Bandejao-UnB.json",
-      "record_count": 91
+      "record_count": 115
     }
   },
   {
@@ -1250,11 +1250,11 @@
   },
   {
     "number": 225,
-    "state": "open",
+    "state": "closed",
     "title": "feat(cadastro): exclusão de conta (BD-12)",
     "created_at": "2026-11-22T00:42:42Z",
-    "updated_at": "2026-11-22T01:38:51Z",
-    "closed_at": null,
+    "updated_at": "2026-11-23T03:05:27Z",
+    "closed_at": "2026-11-23T03:05:27Z",
     "user": {
       "login": "LuisFelipe311",
       "id": 230936353
@@ -1267,7 +1267,7 @@
     "state": "open",
     "title": "docs(operacao): monitor de disponibilidade (BD-09)",
     "created_at": "2026-11-22T01:37:42Z",
-    "updated_at": "2026-11-22T01:41:20Z",
+    "updated_at": "2026-11-23T13:47:25Z",
     "closed_at": null,
     "user": {
       "login": "LuisFelipe311",
@@ -1281,7 +1281,7 @@
     "state": "open",
     "title": "feat(deploy): backup diário do banco com rotação de 7 dias (BD-15)",
     "created_at": "2026-11-22T01:51:27Z",
-    "updated_at": "2026-11-22T02:39:37Z",
+    "updated_at": "2026-11-22T14:03:03Z",
     "closed_at": null,
     "user": {
       "login": "LuisFelipe311",
@@ -1292,14 +1292,350 @@
   },
   {
     "number": 228,
-    "state": "open",
+    "state": "closed",
     "title": "feat(frontend): canal de contato visível na tela do campus (#170)",
     "created_at": "2026-11-22T02:57:32Z",
-    "updated_at": "2026-11-22T12:35:54Z",
-    "closed_at": null,
+    "updated_at": "2026-11-22T13:50:43Z",
+    "closed_at": "2026-11-22T13:50:43Z",
     "user": {
       "login": "alanafeitosa-ui",
       "id": 269747096
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 230,
+    "state": "closed",
+    "title": "feat(backend): avaliação — POST, comentários e resumo do dia (BE-13, #140)",
+    "created_at": "2026-11-22T13:29:05Z",
+    "updated_at": "2026-11-22T14:25:48Z",
+    "closed_at": "2026-11-22T14:25:48Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 231,
+    "state": "closed",
+    "title": "FE-10: gamificacaoStore e PontosAviso",
+    "created_at": "2026-11-22T14:29:39Z",
+    "updated_at": "2026-11-22T15:33:02Z",
+    "closed_at": "2026-11-22T15:33:01Z",
+    "user": {
+      "login": "corinaxc",
+      "id": 284761417
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 232,
+    "state": "closed",
+    "title": "#205: reenvio responde o mesmo 200 quando dá erro inesperado",
+    "created_at": "2026-11-22T15:03:18Z",
+    "updated_at": "2026-11-22T16:16:45Z",
+    "closed_at": "2026-11-22T16:16:45Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 233,
+    "state": "closed",
+    "title": "fix(frontend): cardápio mostra o domingo (seg–dom) (#229)",
+    "created_at": "2026-11-22T15:08:21Z",
+    "updated_at": "2026-11-22T19:38:59Z",
+    "closed_at": "2026-11-22T19:38:59Z",
+    "user": {
+      "login": "alanafeitosa-ui",
+      "id": 269747096
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 234,
+    "state": "closed",
+    "title": "FE-11: FilaPrevisao na tela do campus",
+    "created_at": "2026-11-22T15:46:22Z",
+    "updated_at": "2026-11-22T20:54:55Z",
+    "closed_at": "2026-11-22T20:54:55Z",
+    "user": {
+      "login": "corinaxc",
+      "id": 284761417
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 235,
+    "state": "closed",
+    "title": "BE-14: pontuação de check-in e avaliação",
+    "created_at": "2026-11-22T15:56:38Z",
+    "updated_at": "2026-11-22T18:24:50Z",
+    "closed_at": "2026-11-22T18:24:50Z",
+    "user": {
+      "login": "Poviovsky",
+      "id": 290768263
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 236,
+    "state": "closed",
+    "title": "BE-15: previsão da fila (GET /api/fila/previsao/)",
+    "created_at": "2026-11-22T19:01:59Z",
+    "updated_at": "2026-11-22T19:52:14Z",
+    "closed_at": "2026-11-22T19:52:14Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 237,
+    "state": "closed",
+    "title": "BE-16: progresso (patente) e adesão ao ranking",
+    "created_at": "2026-11-22T20:38:59Z",
+    "updated_at": "2026-11-22T21:22:07Z",
+    "closed_at": "2026-11-22T21:22:07Z",
+    "user": {
+      "login": "Poviovsky",
+      "id": 290768263
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 238,
+    "state": "closed",
+    "title": "FE-12: ProgressoView (Meu progresso)",
+    "created_at": "2026-11-22T21:14:43Z",
+    "updated_at": "2026-11-23T01:05:50Z",
+    "closed_at": "2026-11-23T01:05:50Z",
+    "user": {
+      "login": "corinaxc",
+      "id": 284761417
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 239,
+    "state": "closed",
+    "title": "feat(gamificacao): ranking por campus (BE-17)",
+    "created_at": "2026-11-22T21:53:51Z",
+    "updated_at": "2026-11-23T00:51:49Z",
+    "closed_at": "2026-11-23T00:51:49Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 241,
+    "state": "closed",
+    "title": "CD: deploy automático na VM a cada push na main (#240)",
+    "created_at": "2026-11-22T22:13:44Z",
+    "updated_at": "2026-11-23T01:26:22Z",
+    "closed_at": "2026-11-23T01:26:22Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 242,
+    "state": "closed",
+    "title": "feat(frontend): RankingView com SeletorCampus, LinhaRanking e RankingVazio (#174)",
+    "created_at": "2026-11-23T00:42:24Z",
+    "updated_at": "2026-11-23T15:34:12Z",
+    "closed_at": "2026-11-23T15:34:12Z",
+    "user": {
+      "login": "alanafeitosa-ui",
+      "id": 269747096
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 243,
+    "state": "closed",
+    "title": "Release R2: develop → main",
+    "created_at": "2026-11-23T01:36:06Z",
+    "updated_at": "2026-11-23T01:46:33Z",
+    "closed_at": "2026-11-23T01:46:33Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 244,
+    "state": "open",
+    "title": "feat(banco): teste de carga do cardápio e da previsão (BD-14)",
+    "created_at": "2026-11-23T01:51:32Z",
+    "updated_at": "2026-11-23T13:43:30Z",
+    "closed_at": null,
+    "user": {
+      "login": "eusojj",
+      "id": 227901692
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 245,
+    "state": "closed",
+    "title": "chore: main → develop depois da release R2 (README)",
+    "created_at": "2026-11-23T01:59:14Z",
+    "updated_at": "2026-11-23T02:07:35Z",
+    "closed_at": "2026-11-23T02:07:35Z",
+    "user": {
+      "login": "AlvaroBento12",
+      "id": 209044765
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 246,
+    "state": "open",
+    "title": "ci(banco): job MySQL com o usuário restrito de produção (#209)",
+    "created_at": "2026-11-23T02:51:40Z",
+    "updated_at": "2026-11-23T15:36:48Z",
+    "closed_at": null,
+    "user": {
+      "login": "eusojj",
+      "id": 227901692
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 247,
+    "state": "closed",
+    "title": "BE-10: HSTS, tzdata e log de acesso sem token (#137)",
+    "created_at": "2026-11-23T02:58:05Z",
+    "updated_at": "2026-11-23T03:53:06Z",
+    "closed_at": "2026-11-23T03:53:06Z",
+    "user": {
+      "login": "Poviovsky",
+      "id": 290768263
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 248,
+    "state": "closed",
+    "title": "NÃO MESCLAR: prova do #209 (migration com TRIGGER)",
+    "created_at": "2026-11-23T03:00:59Z",
+    "updated_at": "2026-11-23T03:16:42Z",
+    "closed_at": "2026-11-23T03:16:35Z",
+    "user": {
+      "login": "eusojj",
+      "id": 227901692
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 249,
+    "state": "closed",
+    "title": "Release: exclusão de conta (BD-12)",
+    "created_at": "2026-11-23T03:10:09Z",
+    "updated_at": "2026-11-23T03:21:05Z",
+    "closed_at": "2026-11-23T03:21:05Z",
+    "user": {
+      "login": "LuisFelipe311",
+      "id": 230936353
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 252,
+    "state": "closed",
+    "title": "Release: develop → main (BE-10 deploy do M2)",
+    "created_at": "2026-11-23T04:06:17Z",
+    "updated_at": "2026-11-23T04:14:58Z",
+    "closed_at": "2026-11-23T04:14:57Z",
+    "user": {
+      "login": "Poviovsky",
+      "id": 290768263
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 254,
+    "state": "closed",
+    "title": "Prova/186 mutacao vermelha [NÃO MESCLAR]",
+    "created_at": "2026-11-23T06:09:29Z",
+    "updated_at": "2026-11-23T06:40:45Z",
+    "closed_at": "2026-11-23T06:40:45Z",
+    "user": {
+      "login": "Poviovsky",
+      "id": 290768263
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 255,
+    "state": "open",
+    "title": "BE-19: Feature/186 be 19 mutacao ci",
+    "created_at": "2026-11-23T06:43:51Z",
+    "updated_at": "2026-11-23T15:05:30Z",
+    "closed_at": null,
+    "user": {
+      "login": "Poviovsky",
+      "id": 290768263
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 257,
+    "state": "open",
+    "title": "fix: Início mostra o Cardápio de hoje pelo GET /api/cardapio/ (#251)",
+    "created_at": "2026-11-23T14:54:43Z",
+    "updated_at": "2026-11-23T15:17:40Z",
+    "closed_at": null,
+    "user": {
+      "login": "corinaxc",
+      "id": 284761417
+    },
+    "assignee": null,
+    "repo_name": "2026-2-Bandejao-UnB"
+  },
+  {
+    "number": 258,
+    "state": "open",
+    "title": "fix: mock do GET /api/cardapio/ com o 404 campus_nao_encontrado do backend (#224)",
+    "created_at": "2026-11-23T15:05:51Z",
+    "updated_at": "2026-11-23T15:07:06Z",
+    "closed_at": null,
+    "user": {
+      "login": "corinaxc",
+      "id": 284761417
     },
     "assignee": null,
     "repo_name": "2026-2-Bandejao-UnB"

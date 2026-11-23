@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-AgendaUnB",
   "branch": "main",
-  "sha": "183908f72e310a690cb02bc29ec1e565e552225e",
+  "sha": "862a9f57274e8736dd140074c94aef04911ce075",
   "tree": [
     {
       "name": ".agents",
@@ -958,10 +958,10 @@
       "name": "DESIGN.md",
       "path": "DESIGN.md",
       "type": "file",
-      "sha": "634fada7c80629d41896964122e84a9456dd3dc8",
+      "sha": "fe93d2de7839e5b4402532a790283528353ef541",
       "mode": "100644",
       "extension": ".md",
-      "size": 8834,
+      "size": 10040,
       "is_binary": false
     },
     {
@@ -998,10 +998,10 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "52f20272043d08becf3aa1f765c4726c8299c984",
+      "sha": "47b9e178dbb38b7e9434ec0dc47dab6348be96ad",
       "mode": "100644",
       "extension": ".md",
-      "size": 7463,
+      "size": 7612,
       "is_binary": false
     },
     {
@@ -1018,7 +1018,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "00764b3961ca081ca8b25f849d38170e69a1dbce",
+      "sha": "07076baf7c4836acb40b4c4a9e6221d3b622d021",
       "mode": "040000",
       "children": []
     },
@@ -1134,7 +1134,7 @@
       "name": "src",
       "path": "backend/src",
       "type": "directory",
-      "sha": "5112b7b186efe414744dc80c85afbf10fdbc86c0",
+      "sha": "5d42ad4e8c0323f9b8249c7519f6729d849fa904",
       "mode": "040000",
       "children": []
     },
@@ -1152,7 +1152,7 @@
       "name": "database",
       "path": "backend/src/database",
       "type": "directory",
-      "sha": "919a077317d13dcf1d49d676f56c2b185e53254e",
+      "sha": "60cf62f13fa4cb60fd78e60790331a8bf723579f",
       "mode": "040000",
       "children": []
     },
@@ -1180,10 +1180,10 @@
       "name": "models.py",
       "path": "backend/src/database/models.py",
       "type": "file",
-      "sha": "64afb5da20b1747278da8d413eb2a6f584a549fa",
+      "sha": "087654961d2c89de55c70e5369f561487081ae65",
       "mode": "100644",
       "extension": ".py",
-      "size": 34823,
+      "size": 34965,
       "is_binary": false
     },
     {
@@ -1248,7 +1248,7 @@
       "name": "modules",
       "path": "backend/src/modules",
       "type": "directory",
-      "sha": "9d5416199d29a801a8c2764c1babfbb45421ffb9",
+      "sha": "6125bb17c79d67661c9973bd1c9f2a19049b478b",
       "mode": "040000",
       "children": []
     },
@@ -1496,7 +1496,7 @@
       "name": "syllabus",
       "path": "backend/src/modules/syllabus",
       "type": "directory",
-      "sha": "b25d9532e7f1a8a3dc3f2f88e1238eccfb59b6bb",
+      "sha": "247df0622acbefa8ed6e70b125eff038083b3e8b",
       "mode": "040000",
       "children": []
     },
@@ -1511,23 +1511,33 @@
       "is_binary": false
     },
     {
+      "name": "class_schedule.py",
+      "path": "backend/src/modules/syllabus/class_schedule.py",
+      "type": "file",
+      "sha": "c54a6ad4826cf4f050d332791952c74c52d7ed26",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2378,
+      "is_binary": false
+    },
+    {
       "name": "extraction.py",
       "path": "backend/src/modules/syllabus/extraction.py",
       "type": "file",
-      "sha": "841ccbd328449c356aeb6bc01bb98ef07cd5d448",
+      "sha": "8c48a16cd4fd719401bbb76a013ad28fbc779fa3",
       "mode": "100644",
       "extension": ".py",
-      "size": 19444,
+      "size": 30495,
       "is_binary": false
     },
     {
       "name": "gemini.py",
       "path": "backend/src/modules/syllabus/gemini.py",
       "type": "file",
-      "sha": "2cc9839360712e53e8c767cafec0cf618c72d429",
+      "sha": "147e7142b2102d207701b28f48e73a3438895883",
       "mode": "100644",
       "extension": ".py",
-      "size": 10330,
+      "size": 10780,
       "is_binary": false
     },
     {
@@ -1544,10 +1554,10 @@
       "name": "preparation.py",
       "path": "backend/src/modules/syllabus/preparation.py",
       "type": "file",
-      "sha": "3c2511194094cf839e9e437a9a1deb1be16131c2",
+      "sha": "5e7d0a65638791058625d2e9a7c5198179e4d9ea",
       "mode": "100644",
       "extension": ".py",
-      "size": 9656,
+      "size": 9712,
       "is_binary": false
     },
     {
@@ -1564,30 +1574,30 @@
       "name": "processing_config.py",
       "path": "backend/src/modules/syllabus/processing_config.py",
       "type": "file",
-      "sha": "856f74a556f8584fae6c82844555d484fb43a784",
+      "sha": "599f5d884dacf38b709001d2e3ccdbf4cf3f89c3",
       "mode": "100644",
       "extension": ".py",
-      "size": 5027,
+      "size": 5068,
       "is_binary": false
     },
     {
       "name": "processing_task.py",
       "path": "backend/src/modules/syllabus/processing_task.py",
       "type": "file",
-      "sha": "55d2733e50ec6c8adbfc72a0df2d3344687f02b5",
+      "sha": "33eb1624dd96c9997b82642a093dda16a27dd2b6",
       "mode": "100644",
       "extension": ".py",
-      "size": 4720,
+      "size": 4797,
       "is_binary": false
     },
     {
       "name": "router.py",
       "path": "backend/src/modules/syllabus/router.py",
       "type": "file",
-      "sha": "a04493969a90923f974c97e5dc0e9b5cdbd00622",
+      "sha": "a35fadfe8114aca06597f07d5ccae4be00dfa1e9",
       "mode": "100644",
       "extension": ".py",
-      "size": 67569,
+      "size": 70422,
       "is_binary": false
     },
     {
@@ -1644,10 +1654,10 @@
       "name": "worker.py",
       "path": "backend/src/modules/syllabus/worker.py",
       "type": "file",
-      "sha": "6463b8c4a3a50c7dccc2b8d87b02b7bca06511f7",
+      "sha": "cc4e7126092d6477a0ec545992a9b9c7a753542a",
       "mode": "100644",
       "extension": ".py",
-      "size": 18324,
+      "size": 18562,
       "is_binary": false
     },
     {
@@ -1682,7 +1692,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "09d8b9d3fcc737d05f1f721f3abc8659052001a7",
+      "sha": "de3bc82f777886441f1dbd6e17410236d708ad68",
       "mode": "040000",
       "children": []
     },
@@ -1896,10 +1906,10 @@
       "name": "test_plan_sharing_database.py",
       "path": "backend/tests/test_plan_sharing_database.py",
       "type": "file",
-      "sha": "1f12e6b69c695e57f69e1566a6a42e125bad1de5",
+      "sha": "136c6a03b388dc5d19b2947c4a9985ec2b94a521",
       "mode": "100644",
       "extension": ".py",
-      "size": 20577,
+      "size": 24170,
       "is_binary": false
     },
     {
@@ -2026,10 +2036,10 @@
       "name": "test_syllabus_preparation.py",
       "path": "backend/tests/test_syllabus_preparation.py",
       "type": "file",
-      "sha": "a31bbab2ef5bfcb32efa47753b20e7f0c86414cb",
+      "sha": "55cc35c7abc8b2188ed4f072ac3270c78c85a65e",
       "mode": "100644",
       "extension": ".py",
-      "size": 21826,
+      "size": 24693,
       "is_binary": false
     },
     {
@@ -2046,10 +2056,10 @@
       "name": "test_syllabus_processing.py",
       "path": "backend/tests/test_syllabus_processing.py",
       "type": "file",
-      "sha": "6543660ccbb50eff7fd7584bed0fb32cf9813a54",
+      "sha": "eabb6f7b43bda6b983ba0ab8281d50a4f6657fad",
       "mode": "100644",
       "extension": ".py",
-      "size": 43001,
+      "size": 52556,
       "is_binary": false
     },
     {
@@ -2134,7 +2144,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "6e1ae32fe5d04c3ed45d4a01b29605a809aa8eab",
+      "sha": "78fb8423afcebfe08db6296786a2f22b09b02b37",
       "mode": "040000",
       "children": []
     },
@@ -2152,17 +2162,17 @@
       "name": "api-specs.md",
       "path": "docs/api-specs.md",
       "type": "file",
-      "sha": "e96d336dc8661724f58aaf22cf1983fac688f8f5",
+      "sha": "ac5198270f46cc61050c3ac50c1a01a7d56e5936",
       "mode": "100644",
       "extension": ".md",
-      "size": 27981,
+      "size": 28349,
       "is_binary": false
     },
     {
       "name": "arquitetura",
       "path": "docs/arquitetura",
       "type": "directory",
-      "sha": "b1e8e39161a5ade8e878ddedca0769ef1fe15561",
+      "sha": "b4520a5623d3b9549cf6f584580259a19d4b078c",
       "mode": "040000",
       "children": []
     },
@@ -2170,7 +2180,7 @@
       "name": "adrs",
       "path": "docs/arquitetura/adrs",
       "type": "directory",
-      "sha": "47cc29c7778b929675ce21ff12cf64c96733f072",
+      "sha": "7508ab7a189bf1c11437e410f17ce1a801db50a4",
       "mode": "040000",
       "children": []
     },
@@ -2308,10 +2318,10 @@
       "name": "adr-014-processamento-assincrono-planos-ia.md",
       "path": "docs/arquitetura/adrs/adr-014-processamento-assincrono-planos-ia.md",
       "type": "file",
-      "sha": "412636ddbec82ca515fa04ae6d587c7d4c13371c",
+      "sha": "4b7591b36fb74e4ccc7473f82d83624cfc4ecc69",
       "mode": "100644",
       "extension": ".md",
-      "size": 7355,
+      "size": 8426,
       "is_binary": false
     },
     {
@@ -2368,10 +2378,10 @@
       "name": "dados-de-planos.md",
       "path": "docs/arquitetura/dados-de-planos.md",
       "type": "file",
-      "sha": "9406c47a209c51af29d0177370cd3fc4f06e317b",
+      "sha": "8b51530367fd095c937e0e4221dac203e4c44bd6",
       "mode": "100644",
       "extension": ".md",
-      "size": 12605,
+      "size": 13065,
       "is_binary": false
     },
     {
@@ -2662,7 +2672,7 @@
       "name": "produto",
       "path": "docs/produto",
       "type": "directory",
-      "sha": "cbedcb8ceb829543561cbbf2c0df333fb99c80b8",
+      "sha": "9fa0bc1d4a88b77c3045b72b5248f2502a3945ba",
       "mode": "040000",
       "children": []
     },
@@ -2700,10 +2710,10 @@
       "name": "requisitos.md",
       "path": "docs/produto/requisitos.md",
       "type": "file",
-      "sha": "95e7d3405278d1c234f25c7e2421d44dcdc8fb11",
+      "sha": "f89d750e902bde9df19ec3090d568a024320c5cf",
       "mode": "100644",
       "extension": ".md",
-      "size": 9788,
+      "size": 9956,
       "is_binary": false
     },
     {
@@ -2828,7 +2838,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "d80f3ab79202aa5b5bd976c2af9ded5bcf73701e",
+      "sha": "a3215aeb2ab52cb4752169e2468237491a62e428",
       "mode": "040000",
       "children": []
     },
@@ -2894,7 +2904,7 @@
       "name": "public",
       "path": "frontend/public",
       "type": "directory",
-      "sha": "0f16883edc534f84ec6fd3eaf31342da676e8110",
+      "sha": "f10c6aa3594853e0a5b3ffaf987a9f9e7af32d7f",
       "mode": "040000",
       "children": []
     },
@@ -2922,10 +2932,20 @@
       "name": "agendaunb-mobile.png",
       "path": "frontend/public/agendaunb-mobile.png",
       "type": "file",
-      "sha": "7dd2e82567a9590575c3bad71c541db84d4e1431",
+      "sha": "875d480f49a326afa369c2e953275b749fd85418",
       "mode": "100644",
       "extension": ".png",
-      "size": 896645,
+      "size": 950291,
+      "is_binary": false
+    },
+    {
+      "name": "apple-calendar.png",
+      "path": "frontend/public/apple-calendar.png",
+      "type": "file",
+      "sha": "22a25fb7b94fea3b783d2a003e3da55ff06cb204",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 620,
       "is_binary": false
     },
     {
@@ -2946,6 +2966,16 @@
       "mode": "100644",
       "extension": ".svg",
       "size": 3419,
+      "is_binary": false
+    },
+    {
+      "name": "outlook-calendar.png",
+      "path": "frontend/public/outlook-calendar.png",
+      "type": "file",
+      "sha": "a213c194b16aa29e3805b6597c242a27bc88a844",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 2179,
       "is_binary": false
     },
     {
@@ -3030,7 +3060,7 @@
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "0802bbff0c68d586f274f4dd7cf5947fdbf18277",
+      "sha": "d21c8d12efd5fcbb152636e980d3e286fef88cdd",
       "mode": "040000",
       "children": []
     },
@@ -3048,7 +3078,7 @@
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "94e1d24e0464df5b5156f6c7f836bf852ea1b1de",
+      "sha": "61d7669f995b9c6454e04d8a573eeff20725c9ca",
       "mode": "040000",
       "children": []
     },
@@ -3066,10 +3096,10 @@
       "name": "CustomSelect.jsx",
       "path": "frontend/src/components/CustomSelect.jsx",
       "type": "file",
-      "sha": "ce06030f93f8142804d63ad9c022b84b3c0b7995",
+      "sha": "173efd243170bc7b845dc957eae1c7aa1047a357",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 5828,
+      "size": 5711,
       "is_binary": false
     },
     {
@@ -3096,10 +3126,10 @@
       "name": "GoogleCalendarConnection.jsx",
       "path": "frontend/src/components/GoogleCalendarConnection.jsx",
       "type": "file",
-      "sha": "950212214d0bc15431640e14cd88e24cb723f788",
+      "sha": "9251748e68b6698b181df2e756f7772389dd6610",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 27351,
+      "size": 26138,
       "is_binary": false
     },
     {
@@ -3136,20 +3166,20 @@
       "name": "ManagementUI.jsx",
       "path": "frontend/src/components/ManagementUI.jsx",
       "type": "file",
-      "sha": "25ed8d276fdd9748a9b257649adf374e767569df",
+      "sha": "a1aa9ba0664d20c586add05568b55f2086f2ae98",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 6865,
+      "size": 7096,
       "is_binary": false
     },
     {
       "name": "NavBar.jsx",
       "path": "frontend/src/components/NavBar.jsx",
       "type": "file",
-      "sha": "516f6f5781900840dbe52d25a52cde96fd0b3cf4",
+      "sha": "e8971292405ad97b24534e23047e97c35fc11a6e",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 4466,
+      "size": 4581,
       "is_binary": false
     },
     {
@@ -3236,27 +3266,27 @@
       "name": "SemesterReview.jsx",
       "path": "frontend/src/components/SemesterReview.jsx",
       "type": "file",
-      "sha": "7b47552e021b7bc7c527f57cee4c4803933df62e",
+      "sha": "39edce2a1e9aa5960d2dc23a0e050bcf8ffa3e5d",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 16583,
+      "size": 16621,
       "is_binary": false
     },
     {
       "name": "SharedClassPlans.jsx",
       "path": "frontend/src/components/SharedClassPlans.jsx",
       "type": "file",
-      "sha": "ce1c9b08306ea9fef470c375cd0adf5f7e33a3e0",
+      "sha": "038f6f934ccc8300bf39015f5aca3eb81de9649b",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 32986,
+      "size": 33062,
       "is_binary": false
     },
     {
       "name": "contexts",
       "path": "frontend/src/contexts",
       "type": "directory",
-      "sha": "764f3f0c1a57da5d7578178ce7350b702d2e686a",
+      "sha": "ad7100111fc146eb1bbd64200f22bd75b1278dbf",
       "mode": "040000",
       "children": []
     },
@@ -3274,10 +3304,10 @@
       "name": "SemesterPlansContext.jsx",
       "path": "frontend/src/contexts/SemesterPlansContext.jsx",
       "type": "file",
-      "sha": "3a57613d3729e1d0e2304723f7a137dcbaf67922",
+      "sha": "974aed6e6322f2b5f0aa06db16f5def42f956ee8",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 16707,
+      "size": 16144,
       "is_binary": false
     },
     {
@@ -3302,7 +3332,7 @@
       "name": "lib",
       "path": "frontend/src/lib",
       "type": "directory",
-      "sha": "5903efbde891171590a90519bf7e91213ae173d7",
+      "sha": "87be55a5926e48c04d174dd3eb8aedfb0bec9ee1",
       "mode": "040000",
       "children": []
     },
@@ -3630,30 +3660,30 @@
       "name": "syllabusApi.js",
       "path": "frontend/src/lib/syllabusApi.js",
       "type": "file",
-      "sha": "99bed1e0a1f2feaca6bfb35d3a6fc5738a286528",
+      "sha": "fde01edac8b88ab1acc2b07f1d967a048dc91a59",
       "mode": "100644",
       "extension": ".js",
-      "size": 5654,
+      "size": 5651,
       "is_binary": false
     },
     {
       "name": "syllabusReview.js",
       "path": "frontend/src/lib/syllabusReview.js",
       "type": "file",
-      "sha": "5e2e29ea94d9610f745d8df2025a2e6d64a6df9b",
+      "sha": "97222bc4e8e8a277195ebe2c41bda2310830a58b",
       "mode": "100644",
       "extension": ".js",
-      "size": 6418,
+      "size": 6541,
       "is_binary": false
     },
     {
       "name": "syllabusReview.test.js",
       "path": "frontend/src/lib/syllabusReview.test.js",
       "type": "file",
-      "sha": "fd3262489f7d4400151643dfcd75cd946a7e2c6c",
+      "sha": "db72a197d45f16367b74f2122540597029bd094d",
       "mode": "100644",
       "extension": ".js",
-      "size": 7840,
+      "size": 7979,
       "is_binary": false
     },
     {
@@ -3670,7 +3700,7 @@
       "name": "pages",
       "path": "frontend/src/pages",
       "type": "directory",
-      "sha": "d5b01f2706122704128256b5260fecfea9da7a55",
+      "sha": "5e8087db4e1f3cc1d1e5c8e53988a11025449c55",
       "mode": "040000",
       "children": []
     },
@@ -3708,10 +3738,10 @@
       "name": "SecondPage.jsx",
       "path": "frontend/src/pages/SecondPage.jsx",
       "type": "file",
-      "sha": "3de4f653d3cbe6c9e4128cdcb7dc2b6004c4d671",
+      "sha": "f656cc1bd6430915c65d2f38634124dc01f1c4ee",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 53995,
+      "size": 52448,
       "is_binary": false
     },
     {
@@ -3738,17 +3768,17 @@
       "name": "TeachingPlanPage.jsx",
       "path": "frontend/src/pages/TeachingPlanPage.jsx",
       "type": "file",
-      "sha": "5dfcc79077a9d81203b2c96addecb19f464df846",
+      "sha": "90f886d9f97e496a0f9304323c6a35d60f0888fe",
       "mode": "100644",
       "extension": ".jsx",
-      "size": 38560,
+      "size": 39139,
       "is_binary": false
     },
     {
       "name": "styles",
       "path": "frontend/src/styles",
       "type": "directory",
-      "sha": "d074876ca2270ffb83537471977b5e99e4d75f57",
+      "sha": "0865268748f1766e195a128f7183a30ac86faee1",
       "mode": "040000",
       "children": []
     },
@@ -3756,10 +3786,10 @@
       "name": "auth.css",
       "path": "frontend/src/styles/auth.css",
       "type": "file",
-      "sha": "a79580cbc980e008ba529722d8a3267997025869",
+      "sha": "b11c51144fe8dad77bd024e8fc8c869f7a5fd079",
       "mode": "100644",
       "extension": ".css",
-      "size": 4876,
+      "size": 4787,
       "is_binary": false
     },
     {
@@ -3786,37 +3816,37 @@
       "name": "global.css",
       "path": "frontend/src/styles/global.css",
       "type": "file",
-      "sha": "7f4d60bd933de3cb88b8a688c272af195ea033af",
+      "sha": "4991c32f2fb79f3e749a9f5b219534af3675d36f",
       "mode": "100644",
       "extension": ".css",
-      "size": 47482,
+      "size": 51244,
       "is_binary": false
     },
     {
       "name": "management.css",
       "path": "frontend/src/styles/management.css",
       "type": "file",
-      "sha": "9466f10ffa65ac641001bbcef001380f668b963c",
+      "sha": "7518021572ecbe6156a119e9242fc6c68a45aa21",
       "mode": "100644",
       "extension": ".css",
-      "size": 31106,
+      "size": 31454,
       "is_binary": false
     },
     {
       "name": "semester-plans.css",
       "path": "frontend/src/styles/semester-plans.css",
       "type": "file",
-      "sha": "ee8540c6ccc0e7f9ad3f34847738a499ee9fb7b8",
+      "sha": "acc0a8c7c385b1eeb01149f18717219d11ffb8a4",
       "mode": "100644",
       "extension": ".css",
-      "size": 38296,
+      "size": 39271,
       "is_binary": false
     },
     {
       "name": "tests",
       "path": "frontend/tests",
       "type": "directory",
-      "sha": "394f52fcd2ef4015531ccdd2f1ac0693fab908e2",
+      "sha": "0cf7a9e08d5d2ff31c30950759236986423e9a58",
       "mode": "040000",
       "children": []
     },
@@ -3824,20 +3854,20 @@
       "name": "auth.spec.js",
       "path": "frontend/tests/auth.spec.js",
       "type": "file",
-      "sha": "406fb52f7af742f93953d32cc61bf2db66f1f5af",
+      "sha": "017366429baa7af0c41d175df85d7623b84b0e01",
       "mode": "100644",
       "extension": ".js",
-      "size": 27950,
+      "size": 31491,
       "is_binary": false
     },
     {
       "name": "class-catalog-real.spec.js",
       "path": "frontend/tests/class-catalog-real.spec.js",
       "type": "file",
-      "sha": "6f39b0d1799bc67677bac0690a4eded2c7dbd158",
+      "sha": "4436d1cb6acbdc88649e466b40942d8411d5d311",
       "mode": "100644",
       "extension": ".js",
-      "size": 9895,
+      "size": 10012,
       "is_binary": false
     },
     {
@@ -3872,10 +3902,10 @@
       "name": "privacy-account.spec.js",
       "path": "frontend/tests/privacy-account.spec.js",
       "type": "file",
-      "sha": "405f5ac1d8a59ab15118ae9b5354ba4bbeb2f7f2",
+      "sha": "19c598ae796d90368b8fcbaf8d0bdd189db20e7b",
       "mode": "100644",
       "extension": ".js",
-      "size": 20718,
+      "size": 20256,
       "is_binary": false
     },
     {
@@ -3902,20 +3932,20 @@
       "name": "syllabus.spec.js",
       "path": "frontend/tests/syllabus.spec.js",
       "type": "file",
-      "sha": "6a706f86554c50e4cdc9b45b732bc0f7ce74b5bf",
+      "sha": "aafece5ca653be550d9d19ba33500853a4f72a76",
       "mode": "100644",
       "extension": ".js",
-      "size": 18468,
+      "size": 20206,
       "is_binary": false
     },
     {
       "name": "teaching-plan-journey.spec.js",
       "path": "frontend/tests/teaching-plan-journey.spec.js",
       "type": "file",
-      "sha": "470ce5643f0c40e75162b6321cac7316876c1954",
+      "sha": "ba206bfe2965024b16cc635e416879378b93bd11",
       "mode": "100644",
       "extension": ".js",
-      "size": 17883,
+      "size": 18747,
       "is_binary": false
     },
     {
@@ -4010,7 +4040,7 @@
       "name": "supabase",
       "path": "supabase",
       "type": "directory",
-      "sha": "04dd7e39e5e8fb187e2ead91461c1287c9321728",
+      "sha": "2e7c908b6c7287010809f38137551508c4d9a232",
       "mode": "040000",
       "children": []
     },
@@ -4038,7 +4068,7 @@
       "name": "migrations",
       "path": "supabase/migrations",
       "type": "directory",
-      "sha": "787071a631a80b5f12df8318b49487052217e40a",
+      "sha": "dbfaadc1c470533b76b51d740713851d4929be7f",
       "mode": "040000",
       "children": []
     },
@@ -4533,6 +4563,16 @@
       "is_binary": false
     },
     {
+      "name": "20261122210527_exclui_envios_de_planos.sql",
+      "path": "supabase/migrations/20261122210527_exclui_envios_de_planos.sql",
+      "type": "file",
+      "sha": "b73dd64240f1eb1ef95f807eedd395a76522e0ec",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 318,
+      "is_binary": false
+    },
+    {
       "name": "seed.sql",
       "path": "supabase/seed.sql",
       "type": "file",
@@ -4590,19 +4630,19 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-22T14:09:59.487350+00:00",
+  "extracted_at": "2026-11-23T16:44:06.410795+00:00",
   "method": "rest",
-  "total_items": 471,
+  "total_items": 475,
   "repository_metadata": {
     "id": 1338351818,
     "full_name": "unb-mds/2026-2-AgendaUnB",
     "description": "Grupo G8 - MDS 2026/2  -  O Agenda UnB é uma plataforma que reúne e organiza os eventos da UnB em um único lugar.",
     "created_at": "2026-08-18T11:58:00Z",
-    "updated_at": "2026-11-19T16:16:38Z",
+    "updated_at": "2026-11-23T03:37:04Z",
     "language": "JavaScript",
-    "size": 48572,
+    "size": 49562,
     "stars": 4,
     "forks": 0,
-    "open_issues": 1
+    "open_issues": 0
   }
 }

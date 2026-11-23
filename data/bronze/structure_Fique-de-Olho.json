@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "Fique-de-Olho",
   "branch": "main",
-  "sha": "664e27dafed2dc630c4f8d8cfeffa018c6016fff",
+  "sha": "eab2750ff80dfc2a7398eee74f1717fbb0b63a65",
   "tree": [
     {
       "name": ".agents",
@@ -1094,17 +1094,17 @@
       "name": ".gitignore",
       "path": ".gitignore",
       "type": "file",
-      "sha": "ce2119d557305c8a12e3989097e412fb8abe50fb",
+      "sha": "ac72d15bfd4104f9f9439453bb0750ac59bea901",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 115,
+      "size": 121,
       "is_binary": false
     },
     {
       "name": "Back",
       "path": "Back",
       "type": "directory",
-      "sha": "3a355b903bfdbf2d27b958c1213464143554a883",
+      "sha": "56506a1eef868958f93bff756fa4494a29d12b28",
       "mode": "040000",
       "children": []
     },
@@ -1116,6 +1116,16 @@
       "mode": "100644",
       "extension": ".dockerignore",
       "size": 91,
+      "is_binary": false
+    },
+    {
+      "name": ".env.example",
+      "path": "Back/.env.example",
+      "type": "file",
+      "sha": "743febbb6ab082f7aa0bd871c0595d2b777f0611",
+      "mode": "100644",
+      "extension": ".example",
+      "size": 1292,
       "is_binary": false
     },
     {
@@ -1162,7 +1172,7 @@
       "name": "app",
       "path": "Back/app",
       "type": "directory",
-      "sha": "767c525221a9228a5750fd16b9dc5634bca863e6",
+      "sha": "a50d41157c40fc8533d2e35ab534d15299c0ae1d",
       "mode": "040000",
       "children": []
     },
@@ -1180,7 +1190,7 @@
       "name": "core",
       "path": "Back/app/core",
       "type": "directory",
-      "sha": "b745eef1d040eccd43c96e49286bb715c70468ef",
+      "sha": "a2913c21df837b972fa5df412bcee05933a29a54",
       "mode": "040000",
       "children": []
     },
@@ -1198,37 +1208,37 @@
       "name": "config.py",
       "path": "Back/app/core/config.py",
       "type": "file",
-      "sha": "6af9045c5264d747b17d89d54131c39626536481",
+      "sha": "ece05d796a78c552c132502ba3565230e2b516ae",
       "mode": "100644",
       "extension": ".py",
-      "size": 2641,
+      "size": 3100,
       "is_binary": false
     },
     {
       "name": "database.py",
       "path": "Back/app/core/database.py",
       "type": "file",
-      "sha": "63a910ee9e860e886b456b9eb4d3dc895aa3a77a",
+      "sha": "e39dc8b8bcc61ec2b6d0596b1191e05e38d19615",
       "mode": "100644",
       "extension": ".py",
-      "size": 9825,
+      "size": 10248,
       "is_binary": false
     },
     {
       "name": "main.py",
       "path": "Back/app/main.py",
       "type": "file",
-      "sha": "613ba53527b7af25166f4640ce9e9303f441ec2c",
+      "sha": "4835a5c0de441853b7889ea0cb98cb0026a4c91d",
       "mode": "100644",
       "extension": ".py",
-      "size": 4219,
+      "size": 4380,
       "is_binary": false
     },
     {
       "name": "modules",
       "path": "Back/app/modules",
       "type": "directory",
-      "sha": "2182ae10c98672dbfb10c9a514a723a07138fe60",
+      "sha": "ec198f4fc07b8b5fd0bf268ca0baa126b5433b19",
       "mode": "040000",
       "children": []
     },
@@ -1246,7 +1256,7 @@
       "name": "editais",
       "path": "Back/app/modules/editais",
       "type": "directory",
-      "sha": "5d49b4843acdf47a5015714bc227730d178766ad",
+      "sha": "15734366e5f1a110194abf9547d328a91f868d58",
       "mode": "040000",
       "children": []
     },
@@ -1274,10 +1284,10 @@
       "name": "router.py",
       "path": "Back/app/modules/editais/router.py",
       "type": "file",
-      "sha": "08dc146b57cc452ab04761c665e0b239c198aef4",
+      "sha": "9aaf2c880f796c7a16c7837030b162d0bc189f89",
       "mode": "100644",
       "extension": ".py",
-      "size": 10845,
+      "size": 10841,
       "is_binary": false
     },
     {
@@ -1294,10 +1304,10 @@
       "name": "service.py",
       "path": "Back/app/modules/editais/service.py",
       "type": "file",
-      "sha": "f49c78be5554137f058f85d871fd2380cea05b69",
+      "sha": "9313593600368f57b287c5588eeabd020f94f694",
       "mode": "100644",
       "extension": ".py",
-      "size": 19962,
+      "size": 30049,
       "is_binary": false
     },
     {
@@ -1329,10 +1339,38 @@
       "is_binary": false
     },
     {
+      "name": "feedback",
+      "path": "Back/app/modules/feedback",
+      "type": "directory",
+      "sha": "68aac8e75bcb6261e5ce7dd9c15c2c6db7cc34be",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "Back/app/modules/feedback/__init__.py",
+      "type": "file",
+      "sha": "a91e84d3f46a1bb31410b3c24c50eeb03d79d1a8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 48,
+      "is_binary": false
+    },
+    {
+      "name": "router.py",
+      "path": "Back/app/modules/feedback/router.py",
+      "type": "file",
+      "sha": "d59f1fbb977b73e3331d56bf213ae3282e226668",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5072,
+      "is_binary": false
+    },
+    {
       "name": "notificacoes",
       "path": "Back/app/modules/notificacoes",
       "type": "directory",
-      "sha": "65cf8e0a2e53a220ec54f89b0b9c7a9ec64b96e6",
+      "sha": "f89ae78cc750a604fca0f2535f556331db061b4d",
       "mode": "040000",
       "children": []
     },
@@ -1380,10 +1418,10 @@
       "name": "scheduler.py",
       "path": "Back/app/modules/notificacoes/scheduler.py",
       "type": "file",
-      "sha": "11e6f83738fbfb2cf183d5e39118712dbd28a3a3",
+      "sha": "a79084cfada431170661a8baf4b4f5c37f953df8",
       "mode": "100644",
       "extension": ".py",
-      "size": 1736,
+      "size": 1868,
       "is_binary": false
     },
     {
@@ -1410,7 +1448,7 @@
       "name": "scraper",
       "path": "Back/app/modules/scraper",
       "type": "directory",
-      "sha": "eceffe290431bd1ee3f0d62fa37a480831ee59ac",
+      "sha": "525173f408d6176cbcd4117a0ed3d101d57f2371",
       "mode": "040000",
       "children": []
     },
@@ -1428,10 +1466,10 @@
       "name": "backfill_titles_summaries.py",
       "path": "Back/app/modules/scraper/backfill_titles_summaries.py",
       "type": "file",
-      "sha": "368cf8e5d54a02713e6cc085bd15623450768dba",
+      "sha": "31779c7e76c1c8ec3a61bbb0e920dfef129633cb",
       "mode": "100644",
       "extension": ".py",
-      "size": 4760,
+      "size": 9880,
       "is_binary": false
     },
     {
@@ -1548,10 +1586,10 @@
       "name": "deg.py",
       "path": "Back/app/modules/scraper/deg.py",
       "type": "file",
-      "sha": "f6d90f5f1ad9d6af868568b5767b2bc52e03e16f",
+      "sha": "cc17a97b72b3eecb69f3f95110efd29210fb6ede",
       "mode": "100644",
       "extension": ".py",
-      "size": 5354,
+      "size": 5402,
       "is_binary": false
     },
     {
@@ -1658,10 +1696,10 @@
       "name": "fup.py",
       "path": "Back/app/modules/scraper/fup.py",
       "type": "file",
-      "sha": "c4adaf04a5e16e3c331240c93f8eac0d6c927a91",
+      "sha": "6d57a7ade836a1f92a982ac1843332768969cc4a",
       "mode": "100644",
       "extension": ".py",
-      "size": 28342,
+      "size": 28843,
       "is_binary": false
     },
     {
@@ -1678,10 +1716,10 @@
       "name": "int_scraper.py",
       "path": "Back/app/modules/scraper/int_scraper.py",
       "type": "file",
-      "sha": "99a5d81cbe0cccbfecbc80c7d3cc89780f6c4ab8",
+      "sha": "c08e6c26c05bc9edff21eb50af8f4a903e601397",
       "mode": "100644",
       "extension": ".py",
-      "size": 3691,
+      "size": 7170,
       "is_binary": false
     },
     {
@@ -1698,10 +1736,10 @@
       "name": "parser.py",
       "path": "Back/app/modules/scraper/parser.py",
       "type": "file",
-      "sha": "d22c8ad674b8a5e15642282ef36cda79e95ff916",
+      "sha": "4d8f299f5efe8e51a2adf2e7fb07d034fbd049ec",
       "mode": "100644",
       "extension": ".py",
-      "size": 46244,
+      "size": 58620,
       "is_binary": false
     },
     {
@@ -1718,20 +1756,20 @@
       "name": "pdf.py",
       "path": "Back/app/modules/scraper/pdf.py",
       "type": "file",
-      "sha": "fbf50c6b6382943ecfdf9dd6b47cb8ce24f3456c",
+      "sha": "f50c4f13c7c4fa64ce5bf504dc3c79c5e2d29699",
       "mode": "100644",
       "extension": ".py",
-      "size": 7933,
+      "size": 9081,
       "is_binary": false
     },
     {
       "name": "pipeline.py",
       "path": "Back/app/modules/scraper/pipeline.py",
       "type": "file",
-      "sha": "430ac845c926abb917f4a92c4cfd5b9fbc28eada",
+      "sha": "2cddc017de8b0203cb6d93947f9db2f5111539aa",
       "mode": "100644",
       "extension": ".py",
-      "size": 40649,
+      "size": 44386,
       "is_binary": false
     },
     {
@@ -1758,10 +1796,10 @@
       "name": "prc.py",
       "path": "Back/app/modules/scraper/prc.py",
       "type": "file",
-      "sha": "63aeadbdfc5e5f1150fbb37d4d0f661cea569fb5",
+      "sha": "abec977ed1b659e82c9d1ae4dd2b07c253919f6b",
       "mode": "100644",
       "extension": ".py",
-      "size": 23166,
+      "size": 24307,
       "is_binary": false
     },
     {
@@ -1778,20 +1816,20 @@
       "name": "scheduler.py",
       "path": "Back/app/modules/scraper/scheduler.py",
       "type": "file",
-      "sha": "729969e383a88f0ef272853412251fee4ded0a3d",
+      "sha": "8b01e282bffab35dace2951abdb39e9206eee72c",
       "mode": "100644",
       "extension": ".py",
-      "size": 2569,
+      "size": 2873,
       "is_binary": false
     },
     {
       "name": "service.py",
       "path": "Back/app/modules/scraper/service.py",
       "type": "file",
-      "sha": "01e227631e75153aebd6eef0ad0f16c583517d93",
+      "sha": "a336b3eb18c97bda8faef0fa5eb0484080655f4a",
       "mode": "100644",
       "extension": ".py",
-      "size": 12199,
+      "size": 12294,
       "is_binary": false
     },
     {
@@ -1808,10 +1846,10 @@
       "name": "summarizer.py",
       "path": "Back/app/modules/scraper/summarizer.py",
       "type": "file",
-      "sha": "f3e77a3a2bcba095b58742602b6c438d6160448b",
+      "sha": "d6bbaccea52a02e29cc135a61b09887aca95856e",
       "mode": "100644",
       "extension": ".py",
-      "size": 18559,
+      "size": 30523,
       "is_binary": false
     },
     {
@@ -1926,7 +1964,7 @@
       "name": "migrations",
       "path": "Back/migrations",
       "type": "directory",
-      "sha": "736d1b35657f408842107dc485b2eb186c84431b",
+      "sha": "cdf9f6ed41b20d319d6451a7275b2e7af89a7ae6",
       "mode": "040000",
       "children": []
     },
@@ -1954,7 +1992,7 @@
       "name": "versions",
       "path": "Back/migrations/versions",
       "type": "directory",
-      "sha": "0257d59b4a744f7dc8373751fea01d7b49daccdf",
+      "sha": "dda88046c2260ca307372a4fc6f1103d89cd66a0",
       "mode": "040000",
       "children": []
     },
@@ -2019,6 +2057,16 @@
       "is_binary": false
     },
     {
+      "name": "0006_feedbacks.py",
+      "path": "Back/migrations/versions/0006_feedbacks.py",
+      "type": "file",
+      "sha": "0dac797307f172884fee2b017004d26cdbd532b1",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 983,
+      "is_binary": false
+    },
+    {
       "name": "pytest.ini",
       "path": "Back/pytest.ini",
       "type": "file",
@@ -2052,7 +2100,7 @@
       "name": "tests",
       "path": "Back/tests",
       "type": "directory",
-      "sha": "1349f9e42de0214e7009e1c98e3dd58905b892e2",
+      "sha": "299c8aeb9be5fc0043eb63a03ebaf14f319d0664",
       "mode": "040000",
       "children": []
     },
@@ -2160,10 +2208,10 @@
       "name": "test_editais_filtros.py",
       "path": "Back/tests/test_editais_filtros.py",
       "type": "file",
-      "sha": "01854b316e3ac6d3c2a84b8ad615c7e9c07b043b",
+      "sha": "6ef16ed8bcb0c635dde41d7d467aa48b418086f4",
       "mode": "100644",
       "extension": ".py",
-      "size": 5193,
+      "size": 14345,
       "is_binary": false
     },
     {
@@ -2217,6 +2265,16 @@
       "is_binary": false
     },
     {
+      "name": "test_feedback.py",
+      "path": "Back/tests/test_feedback.py",
+      "type": "file",
+      "sha": "34600e8d1a362576b63b5e63cdaa186904546a2b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 2886,
+      "is_binary": false
+    },
+    {
       "name": "test_google_auth.py",
       "path": "Back/tests/test_google_auth.py",
       "type": "file",
@@ -2230,10 +2288,10 @@
       "name": "test_health.py",
       "path": "Back/tests/test_health.py",
       "type": "file",
-      "sha": "439af61ccd37fd35a0152af71672ccb6027c9f29",
+      "sha": "8565bca0e2167ac88dd7470dbac1a504c07079f5",
       "mode": "100644",
       "extension": ".py",
-      "size": 1501,
+      "size": 1621,
       "is_binary": false
     },
     {
@@ -2254,6 +2312,26 @@
       "mode": "100644",
       "extension": ".py",
       "size": 23644,
+      "is_binary": false
+    },
+    {
+      "name": "test_issue_119_ingestao.py",
+      "path": "Back/tests/test_issue_119_ingestao.py",
+      "type": "file",
+      "sha": "fcb20bb7ab27a8b56b768f8c7ade0c66102b5369",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 8328,
+      "is_binary": false
+    },
+    {
+      "name": "test_issue_125_datas_ia.py",
+      "path": "Back/tests/test_issue_125_datas_ia.py",
+      "type": "file",
+      "sha": "db4d1546b0b882d21a0c0bbbcb1bc0d0de85f94f",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 16253,
       "is_binary": false
     },
     {
@@ -2310,10 +2388,10 @@
       "name": "test_novos_scrapers.py",
       "path": "Back/tests/test_novos_scrapers.py",
       "type": "file",
-      "sha": "ad9c2a35167bcf9aa735a4b63c61eef1f71b6cd7",
+      "sha": "91524694cd89f322c8cadf8a6b73b6175052610f",
       "mode": "100644",
       "extension": ".py",
-      "size": 11936,
+      "size": 13815,
       "is_binary": false
     },
     {
@@ -2390,27 +2468,27 @@
       "name": "test_summarizer.py",
       "path": "Back/tests/test_summarizer.py",
       "type": "file",
-      "sha": "267c7bdbb2732253d85404f5f7d6b760af36e8d7",
+      "sha": "3ce5927a590f97c5888dcc948cbd31fdc213b9ae",
       "mode": "100644",
       "extension": ".py",
-      "size": 31345,
+      "size": 39429,
       "is_binary": false
     },
     {
       "name": "CONTEXT.md",
       "path": "CONTEXT.md",
       "type": "file",
-      "sha": "c147c7f8d5221d598fc722d2bacf01665567dbd5",
+      "sha": "029d151ec329662200e005004e949302ada80683",
       "mode": "100644",
       "extension": ".md",
-      "size": 2995,
+      "size": 2771,
       "is_binary": false
     },
     {
       "name": "Front",
       "path": "Front",
       "type": "directory",
-      "sha": "499ac6ffdfb978385e67218d53353f95442af665",
+      "sha": "38190683a413e0ae39e04527833885aca039c2b2",
       "mode": "040000",
       "children": []
     },
@@ -2488,10 +2566,10 @@
       "name": "index.html",
       "path": "Front/index.html",
       "type": "file",
-      "sha": "8a7c0d58f4861bfd283f95502901d4110c4c9b1f",
+      "sha": "a49d1cf57880b8c245853627b2d7c99e994c3934",
       "mode": "100644",
       "extension": ".html",
-      "size": 698,
+      "size": 786,
       "is_binary": false
     },
     {
@@ -2554,7 +2632,7 @@
       "name": "src",
       "path": "Front/src",
       "type": "directory",
-      "sha": "0f80650f7627ae6fe97a2f3a607ff7bc591abef6",
+      "sha": "5bff569fde98793d8930e7176ad097b854278868",
       "mode": "040000",
       "children": []
     },
@@ -2562,17 +2640,17 @@
       "name": "App.tsx",
       "path": "Front/src/App.tsx",
       "type": "file",
-      "sha": "ee4487aa2e21b601c110ec77c914325e797e6326",
+      "sha": "de9f663ee3808af8e0e7c8fdbab81eac21227550",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 158,
+      "size": 262,
       "is_binary": false
     },
     {
       "name": "components",
       "path": "Front/src/components",
       "type": "directory",
-      "sha": "4d6ff3ac77e9668baf88a71626778ce7563feee3",
+      "sha": "6dc5e4d7913f07e428bb73827435d92942187812",
       "mode": "040000",
       "children": []
     },
@@ -2610,10 +2688,10 @@
       "name": "FilterBar.tsx",
       "path": "Front/src/components/FilterBar.tsx",
       "type": "file",
-      "sha": "ecc1a0a2f5c665b5303155696a63154baef76b10",
+      "sha": "413a3a0cc7d48c256b57884df8328607ac464e2c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2535,
+      "size": 4536,
       "is_binary": false
     },
     {
@@ -2657,6 +2735,16 @@
       "is_binary": false
     },
     {
+      "name": "HelpAndFeedbackButton.tsx",
+      "path": "Front/src/components/HelpAndFeedbackButton.tsx",
+      "type": "file",
+      "sha": "c1ba757654614a82053b8ba57ac0c923ce3212d3",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 10044,
+      "is_binary": false
+    },
+    {
       "name": "Hero.tsx",
       "path": "Front/src/components/Hero.tsx",
       "type": "file",
@@ -2680,7 +2768,7 @@
       "name": "__tests__",
       "path": "Front/src/components/__tests__",
       "type": "directory",
-      "sha": "6e9ce82e05c7359a294c853e07065e96fb1e125e",
+      "sha": "7a9d57af786e881bbd3f539a451ddf903ea1accc",
       "mode": "040000",
       "children": []
     },
@@ -2718,17 +2806,27 @@
       "name": "FilterBar.test.tsx",
       "path": "Front/src/components/__tests__/FilterBar.test.tsx",
       "type": "file",
-      "sha": "943827b2cd624b145c5982c7b84b9ad7c7b3211d",
+      "sha": "c7bb787403f8dcc4b7f452174a8c652fda8bc579",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 881,
+      "size": 1673,
+      "is_binary": false
+    },
+    {
+      "name": "HelpAndFeedbackButton.test.tsx",
+      "path": "Front/src/components/__tests__/HelpAndFeedbackButton.test.tsx",
+      "type": "file",
+      "sha": "91973ba9d76803817b48095bc63d2953c07f0593",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 2536,
       "is_binary": false
     },
     {
       "name": "contexts",
       "path": "Front/src/contexts",
       "type": "directory",
-      "sha": "9b5527c1f2736bfc428ea7fbab78b3b75537e2ce",
+      "sha": "3a7503559221eec4400d7714a48cf364aad0b559",
       "mode": "040000",
       "children": []
     },
@@ -2736,10 +2834,10 @@
       "name": "AuthContext.tsx",
       "path": "Front/src/contexts/AuthContext.tsx",
       "type": "file",
-      "sha": "d79a8d4dee0450ad92143105265429a64d8a0234",
+      "sha": "b5f1d7ec66963f847393989ab9aac02d41647072",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 2238,
+      "size": 2334,
       "is_binary": false
     },
     {
@@ -2784,7 +2882,7 @@
       "name": "pages",
       "path": "Front/src/pages",
       "type": "directory",
-      "sha": "99700f626974ddb30fd41c4549c6e529f2e44601",
+      "sha": "82d2e9351baa126f0e64ee44c9f6b3dc6661ce68",
       "mode": "040000",
       "children": []
     },
@@ -2812,10 +2910,10 @@
       "name": "HomePage.tsx",
       "path": "Front/src/pages/HomePage.tsx",
       "type": "file",
-      "sha": "c63f49468d9d8cf2a7a09ea0834a7466c2dcc1d2",
+      "sha": "b94fffee75700b33cbe7161f3607790f0d350655",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 6943,
+      "size": 7845,
       "is_binary": false
     },
     {
@@ -2898,7 +2996,7 @@
       "name": "services",
       "path": "Front/src/services",
       "type": "directory",
-      "sha": "6a2af12c2cca3063df073f9e845b3a1bbbbbd79d",
+      "sha": "ec610b78b50d4ecbca3d6a81a49c86c048f5b468",
       "mode": "040000",
       "children": []
     },
@@ -2916,20 +3014,30 @@
       "name": "editaisService.ts",
       "path": "Front/src/services/editaisService.ts",
       "type": "file",
-      "sha": "b95b5b2202ba358aa3b6180f784ffc70aaa2bed8",
+      "sha": "f0a33b330fe75ec24bb18ed1b24f8276c914d4b1",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1657,
+      "size": 4146,
       "is_binary": false
     },
     {
       "name": "favoritosService.ts",
       "path": "Front/src/services/favoritosService.ts",
       "type": "file",
-      "sha": "9630ed5c9d568a9c743521ccd11b91ffd40edc83",
+      "sha": "b462b22ac7c1924280990bac6aea45a299541f77",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1368,
+      "size": 2488,
+      "is_binary": false
+    },
+    {
+      "name": "feedbackService.ts",
+      "path": "Front/src/services/feedbackService.ts",
+      "type": "file",
+      "sha": "2dba948c05fc42467737036d7f6de3dda892482b",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1329,
       "is_binary": false
     },
     {
@@ -2992,17 +3100,17 @@
       "name": "theme.css",
       "path": "Front/src/theme.css",
       "type": "file",
-      "sha": "eb27a92ca2588ab4407ef203e027a32ab0a748ad",
+      "sha": "30779ed7f353b72073c8cc5dcc71278b36f6dca2",
       "mode": "100644",
       "extension": ".css",
-      "size": 34499,
+      "size": 39700,
       "is_binary": false
     },
     {
       "name": "utils",
       "path": "Front/src/utils",
       "type": "directory",
-      "sha": "230b4f44ed890285d1a2d9c81f388270bddb1a66",
+      "sha": "227f6d96b6002eb2c5e4bdda6a0f5314fffb927a",
       "mode": "040000",
       "children": []
     },
@@ -3010,10 +3118,10 @@
       "name": "editalDisplay.ts",
       "path": "Front/src/utils/editalDisplay.ts",
       "type": "file",
-      "sha": "08a05f981eddb59f5b52f78b70185afabd33b0d0",
+      "sha": "711de15647a10cefece456fffeb9cac543f94d79",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2588,
+      "size": 2784,
       "is_binary": false
     },
     {
@@ -3070,10 +3178,10 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "b89cd85dc8ea9bb646178d363a31e7da28f04a8b",
+      "sha": "395e5de9dc013169316da65d4240c1588e42b8de",
       "mode": "100644",
       "extension": ".md",
-      "size": 8476,
+      "size": 8137,
       "is_binary": false
     },
     {
@@ -3146,7 +3254,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "a74cb359681966c3f38da0d2cb31ce15b9816ed3",
+      "sha": "9b8252b9966d6a2ffa1fa8b26d81d52c75f53a69",
       "mode": "040000",
       "children": []
     },
@@ -3154,10 +3262,10 @@
       "name": "Arquitetura.md",
       "path": "docs/Arquitetura.md",
       "type": "file",
-      "sha": "103b46681c8698ecbbcbf5c50568e50d7dc2688b",
+      "sha": "25cdb02ca289608cccfedc035029e71420377f82",
       "mode": "100644",
       "extension": ".md",
-      "size": 8767,
+      "size": 9025,
       "is_binary": false
     },
     {
@@ -3270,7 +3378,7 @@
       "name": "Estudos",
       "path": "docs/Estudos",
       "type": "directory",
-      "sha": "31ca861bdd56417aa7ba51788ffaab0a5035b428",
+      "sha": "61d8cb31d3644c7bad8a55ec2376fb3b95a4e2f0",
       "mode": "040000",
       "children": []
     },
@@ -3285,13 +3393,23 @@
       "is_binary": false
     },
     {
+      "name": "guia_keep_awake_uptimerobot_e_ping.md",
+      "path": "docs/Estudos/guia_keep_awake_uptimerobot_e_ping.md",
+      "type": "file",
+      "sha": "826594e5e52ea1ff209e3f460d0e02904eb95216",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7400,
+      "is_binary": false
+    },
+    {
       "name": "relatorio_decisoes_infraestrutura_deploy.md",
       "path": "docs/Estudos/relatorio_decisoes_infraestrutura_deploy.md",
       "type": "file",
-      "sha": "9a74ab299870efa29242001b3693c2b43fa3a18e",
+      "sha": "c46662108d49ed6060dedd3730aa6c4e5c033131",
       "mode": "100644",
       "extension": ".md",
-      "size": 9607,
+      "size": 11127,
       "is_binary": false
     },
     {
@@ -3386,7 +3504,7 @@
       "name": "Requisitos",
       "path": "docs/Requisitos",
       "type": "directory",
-      "sha": "8a9ce9674adf03e4e85a59971de2907ae81729e1",
+      "sha": "8269e7af538351396c4fef23a1c36a22012695ff",
       "mode": "040000",
       "children": []
     },
@@ -3394,10 +3512,10 @@
       "name": "Criterios de aceitacao.md",
       "path": "docs/Requisitos/Criterios de aceitacao.md",
       "type": "file",
-      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha": "a11458ea3e7b7ad3fc544e15cee00c43678fe7c5",
       "mode": "100644",
       "extension": ".md",
-      "size": 0,
+      "size": 7390,
       "is_binary": false
     },
     {
@@ -3414,10 +3532,10 @@
       "name": "Requisitos.md",
       "path": "docs/Requisitos/Requisitos.md",
       "type": "file",
-      "sha": "fd32371c344a2d3c788ecdfb11cb2e0d201c192c",
+      "sha": "56222808cb41c975937aa1864f7e8b238da881bd",
       "mode": "100644",
       "extension": ".md",
-      "size": 6548,
+      "size": 7190,
       "is_binary": false
     },
     {
@@ -3550,7 +3668,7 @@
       "name": "adr",
       "path": "docs/adr",
       "type": "directory",
-      "sha": "6bb78ff91e967bb7d34b9d09d63dc31fc5db2edc",
+      "sha": "cb15e6abfefab73eab5e7b99e277f0428390d366",
       "mode": "040000",
       "children": []
     },
@@ -3612,6 +3730,26 @@
       "mode": "100644",
       "extension": ".md",
       "size": 5748,
+      "is_binary": false
+    },
+    {
+      "name": "0005-enriquecimento-hibrido-camada1-gemini.md",
+      "path": "docs/adr/0005-enriquecimento-hibrido-camada1-gemini.md",
+      "type": "file",
+      "sha": "315887d2b703db154a6ef94c478cd8f4ea6cd21e",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2060,
+      "is_binary": false
+    },
+    {
+      "name": "0006-evolucao-schema-catalogos-alertas-notificacoes.md",
+      "path": "docs/adr/0006-evolucao-schema-catalogos-alertas-notificacoes.md",
+      "type": "file",
+      "sha": "2fe9c4e8e0b36749942e2b5e3dd2d5f8edde4872",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2030,
       "is_binary": false
     },
     {
@@ -3730,10 +3868,68 @@
       "name": "back.md",
       "path": "docs/back.md",
       "type": "file",
-      "sha": "076d56bf2c6e03452e57bf0a96a9d57deeaa37a6",
+      "sha": "d0a7c046f88a5c695e96c8db2885ce33d29c6de7",
       "mode": "100644",
       "extension": ".md",
-      "size": 2365,
+      "size": 594,
+      "is_binary": false
+    },
+    {
+      "name": "backend",
+      "path": "docs/backend",
+      "type": "directory",
+      "sha": "c9ad071c9dfc135dd6c46c4ce303d1254c53f849",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "api.md",
+      "path": "docs/backend/api.md",
+      "type": "file",
+      "sha": "a61ddf3a4458b20669827dc9b2c4e7bde5753d46",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 11570,
+      "is_binary": false
+    },
+    {
+      "name": "banco-de-dados.md",
+      "path": "docs/backend/banco-de-dados.md",
+      "type": "file",
+      "sha": "7b71e5d4fa7812f7f680feab90573fff217861cf",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8279,
+      "is_binary": false
+    },
+    {
+      "name": "coleta-e-ia.md",
+      "path": "docs/backend/coleta-e-ia.md",
+      "type": "file",
+      "sha": "eef4a76bf949fa4e8bc231c3a0b2011efe1dd5e3",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 7071,
+      "is_binary": false
+    },
+    {
+      "name": "index.md",
+      "path": "docs/backend/index.md",
+      "type": "file",
+      "sha": "b1ca99401fbb80880c2b78db38cb2952869e6a13",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8710,
+      "is_binary": false
+    },
+    {
+      "name": "operacao-e-deploy.md",
+      "path": "docs/backend/operacao-e-deploy.md",
+      "type": "file",
+      "sha": "3354230e3108255b71cce1d5453458c45e5d9038",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 5940,
       "is_binary": false
     },
     {
@@ -3760,10 +3956,10 @@
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "af1ed94a256f72446c20d97e9e0002482627d40f",
+      "sha": "a5e731a29ca69a258f6250370734407ae401eba0",
       "mode": "100644",
       "extension": ".md",
-      "size": 4587,
+      "size": 5533,
       "is_binary": false
     },
     {
@@ -3788,10 +3984,10 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "507b91fbe50598cc796bb964e6eb1233c303b779",
+      "sha": "17013cae9f8416264880fda5481a4aec16cd9e0b",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2749,
+      "size": 3598,
       "is_binary": false
     },
     {
@@ -3838,10 +4034,10 @@
       "name": "render.yaml",
       "path": "render.yaml",
       "type": "file",
-      "sha": "23fd79f218791bbabcfc4016a6e8479f4a5b88f0",
+      "sha": "7597330a7fa2c243e61455ae874646f0a51d4663",
       "mode": "100644",
       "extension": ".yaml",
-      "size": 738,
+      "size": 924,
       "is_binary": false
     },
     {
@@ -3866,9 +4062,9 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-22T14:09:55.960502+00:00",
+  "extracted_at": "2026-11-23T16:44:03.672986+00:00",
   "method": "rest",
-  "total_items": 403,
+  "total_items": 423,
   "repository_metadata": {
     "id": 1338350642,
     "full_name": "unb-mds/Fique-de-Olho",
@@ -3879,6 +4075,6 @@
     "size": 3363,
     "stars": 1,
     "forks": 0,
-    "open_issues": 7
+    "open_issues": 4
   }
 }

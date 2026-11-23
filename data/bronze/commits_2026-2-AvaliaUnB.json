@@ -1,10 +1,969 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-22T14:03:18.470763+00:00",
+      "extracted_at": "2026-11-23T16:37:13.190577+00:00",
       "file_path": "data/bronze/commits_2026-2-AvaliaUnB.json",
-      "record_count": 469
+      "record_count": 507
     }
+  },
+  {
+    "sha": "bbde847051066cb8de193f61811c628ea2813349",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-23T15:47:51Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T15:47:51Z"
+      },
+      "message": "Merge pull request #264 from unb-mds/fix/263-favicon-nova-interface\n\nAtualizar o ícone da aba para a nova interface"
+    },
+    "parents": [
+      "56eab9a6a74937bea9072d1f37fd5d1ab9926b71",
+      "4965028bc4eb65a6148df3484ac0fa455d235d54"
+    ],
+    "additions": 8,
+    "deletions": 3,
+    "total_changes": 11,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "56eab9a6a74937bea9072d1f37fd5d1ab9926b71",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-23T15:21:42Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T15:21:42Z"
+      },
+      "message": "Merge pull request #267 from unb-mds/feat/212-reacoes-comentarios\n\nfeat: adiciona reações aos comentários"
+    },
+    "parents": [
+      "e289bd13b471e2e4e17ee1dd9fa8d499c7f04871",
+      "251ac8831c73877ce1d6d95d9e2c7441f127768d"
+    ],
+    "additions": 264,
+    "deletions": 42,
+    "total_changes": 306,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "251ac8831c73877ce1d6d95d9e2c7441f127768d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-23T15:20:41Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T15:20:41Z"
+      },
+      "message": "Merge branch 'main' into feat/212-reacoes-comentarios"
+    },
+    "parents": [
+      "4dfbed0984ce644dd278ab79340031676ddd35db",
+      "e289bd13b471e2e4e17ee1dd9fa8d499c7f04871"
+    ],
+    "additions": 2148,
+    "deletions": 98,
+    "total_changes": 2246,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "e289bd13b471e2e4e17ee1dd9fa8d499c7f04871",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-23T05:05:13Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T05:05:13Z"
+      },
+      "message": "Merge pull request #266 from unb-mds/docs/182-seguranca-correcoes\n\ndocs: atualiza documentação das correções"
+    },
+    "parents": [
+      "70543d5e42d2b8c859c3e0e84505b7116356f0db",
+      "b46253d17ccf03708a936b41ecf5567ea7d1b2db"
+    ],
+    "additions": 22,
+    "deletions": 20,
+    "total_changes": 42,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "70543d5e42d2b8c859c3e0e84505b7116356f0db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-23T05:04:02Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T05:04:02Z"
+      },
+      "message": "Merge pull request #265 from unb-mds/feat/236-nomes-grafia-comum\n\nfeat(scraper): converte nomes em CAIXA ALTA para a grafia comum"
+    },
+    "parents": [
+      "13bd88c22e95652c2fc986fafc16c8b8849d928c",
+      "8a247b99e007f00f3750a23cd251b1ce06571502"
+    ],
+    "additions": 1415,
+    "deletions": 50,
+    "total_changes": 1465,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "13bd88c22e95652c2fc986fafc16c8b8849d928c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Caio",
+        "date": "2026-11-23T05:03:45Z",
+        "login": "caiionog",
+        "id": 78627883,
+        "author_email_hash": "2a4955f451af2adb66f3171064dcdefbca61dafc27f17c801a4e134720a922eb"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T05:03:45Z"
+      },
+      "message": "Merge pull request #262 from unb-mds/feat/214-filtro-comentarios\n\nfeat(comentarios): filtra o texto dos comentários antes de publicar e editar"
+    },
+    "parents": [
+      "59ff7442eabf86348dcc27365b8c5ed05d83f7e8",
+      "a240eee10ea26eb90499e5091f0d6552998af44e"
+    ],
+    "additions": 708,
+    "deletions": 25,
+    "total_changes": 733,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "4dfbed0984ce644dd278ab79340031676ddd35db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:50:38Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:50:38Z"
+      },
+      "message": "test(comentarios): cobre reacoes, permissao e renderizacao (#212)"
+    },
+    "parents": [
+      "91a795168cd3542a98ef13de32938e8c9d308fb9"
+    ],
+    "additions": 78,
+    "deletions": 0,
+    "total_changes": 78,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "91a795168cd3542a98ef13de32938e8c9d308fb9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:49:43Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:49:43Z"
+      },
+      "message": "docs: sincroniza guias e funcionalidades com reacoes (#212)"
+    },
+    "parents": [
+      "6f2667bb2cc7787c70429e654bb634ff9637c5db"
+    ],
+    "additions": 25,
+    "deletions": 16,
+    "total_changes": 41,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "6f2667bb2cc7787c70429e654bb634ff9637c5db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:49:43Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:49:43Z"
+      },
+      "message": "docs(comentarios): detalha regras e migracao de reacoes (#212)"
+    },
+    "parents": [
+      "62be10ec76c2878595cbbb9d57b99d00ed08fa48"
+    ],
+    "additions": 25,
+    "deletions": 22,
+    "total_changes": 47,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "62be10ec76c2878595cbbb9d57b99d00ed08fa48",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:48:31Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:48:31Z"
+      },
+      "message": "feat(ui): exibe reacoes acessiveis nos comentarios (#212)"
+    },
+    "parents": [
+      "758ab8750a029c3ff393c6f908fdaf06f805eec5"
+    ],
+    "additions": 53,
+    "deletions": 0,
+    "total_changes": 53,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "758ab8750a029c3ff393c6f908fdaf06f805eec5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:48:01Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:48:01Z"
+      },
+      "message": "feat(comentarios): adiciona rota autenticada e contagens (#212)"
+    },
+    "parents": [
+      "2ef2cd6f1ff828b8c0b897a3eb133610a1511639"
+    ],
+    "additions": 25,
+    "deletions": 0,
+    "total_changes": 25,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "2ef2cd6f1ff828b8c0b897a3eb133610a1511639",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:42Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:42Z"
+      },
+      "message": "feat(repo): persiste e agrega reacoes por comentario (#212)"
+    },
+    "parents": [
+      "45c9ae90f21b8345d8e5f5733c4f6d7817d585a2"
+    ],
+    "additions": 44,
+    "deletions": 3,
+    "total_changes": 47,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "45c9ae90f21b8345d8e5f5733c4f6d7817d585a2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:42Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:42Z"
+      },
+      "message": "feat(db): versiona tabela privada de reacoes (#212)"
+    },
+    "parents": [
+      "59ff7442eabf86348dcc27365b8c5ed05d83f7e8"
+    ],
+    "additions": 13,
+    "deletions": 0,
+    "total_changes": 13,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "b46253d17ccf03708a936b41ecf5567ea7d1b2db",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:08Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:08Z"
+      },
+      "message": "docs(db): registra adiamento da migracao e logout corrigido (#182)"
+    },
+    "parents": [
+      "280cc61701235e1462c691ad096e31db09ccf4b7"
+    ],
+    "additions": 7,
+    "deletions": 4,
+    "total_changes": 11,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "280cc61701235e1462c691ad096e31db09ccf4b7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:08Z",
+        "login": "giiicostaa",
+        "id": 289751025,
+        "author_email_hash": "16c7d4673a1e969ad4880a8fddfa69511849e6a2edb4a621e3ccc125037c9963"
+      },
+      "committer": {
+        "name": "giiicostaa",
+        "date": "2026-11-23T00:47:08Z"
+      },
+      "message": "docs(seguranca): atualiza situacao das correcoes (#182)"
+    },
+    "parents": [
+      "59ff7442eabf86348dcc27365b8c5ed05d83f7e8"
+    ],
+    "additions": 15,
+    "deletions": 16,
+    "total_changes": 31,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "8a247b99e007f00f3750a23cd251b1ce06571502",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T21:04:58Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T21:04:58Z"
+      },
+      "message": "feat(app): ajusta ordenação e avatar à grafia comum e documenta a conversão dos nomes\n\nOrdena professores e disciplinas por nome sem diferenciar caixa e acento, para que preposições em minúsculo não alterem a ordem, e cria o filtro iniciais para o avatar, que ignora partículas como de e da. Documenta a regra da grafia comum, o subcomando converter-nomes, a trava do importador e o passo a passo para converter o banco antes de usar o importador novo, e atualiza os exemplos que ainda mostravam nomes em CAIXA ALTA. Refs #236"
+    },
+    "parents": [
+      "95fd92022fcbbf32c0d7e31e6903ba7de3a42573"
+    ],
+    "additions": 237,
+    "deletions": 15,
+    "total_changes": 252,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "4965028bc4eb65a6148df3484ac0fa455d235d54",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T20:54:58Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T20:54:58Z"
+      },
+      "message": "fix: deixar o favicon com fundo transparente"
+    },
+    "parents": [
+      "6424f2cff76159da19364c9820ad51e844aae8d3"
+    ],
+    "additions": 2,
+    "deletions": 3,
+    "total_changes": 5,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "6424f2cff76159da19364c9820ad51e844aae8d3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T20:50:16Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T20:50:16Z"
+      },
+      "message": "fix: atualizar favicon para a nova interface"
+    },
+    "parents": [
+      "59ff7442eabf86348dcc27365b8c5ed05d83f7e8"
+    ],
+    "additions": 9,
+    "deletions": 3,
+    "total_changes": 12,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "95fd92022fcbbf32c0d7e31e6903ba7de3a42573",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:48:53Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:48:53Z"
+      },
+      "message": "feat(scraper): bloqueia a importação se o banco ainda tem nomes em caixa alta\n\nAntes de gravar qualquer coisa, o importador confere se há professores no banco ainda em CAIXA ALTA que corresponderiam aos nomes que seriam gravados em grafia comum. Se houver, interrompe com uma mensagem que mostra exemplos e manda rodar converter-nomes --gravar, sai com código 2 e não grava nada, evitando a duplicação de professores. Banco vazio ou já convertido segue normalmente e o dry-run não é afetado. Inclui os testes da regra de conflito, do fluxo de gravação e da função main. Refs #236"
+    },
+    "parents": [
+      "4c0c9cb9bc27722b43c4189db95516f6eacf187a"
+    ],
+    "additions": 295,
+    "deletions": 6,
+    "total_changes": 301,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "4c0c9cb9bc27722b43c4189db95516f6eacf187a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:42:25Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:42:25Z"
+      },
+      "message": "test(scraper): testa o subcomando converter-nomes\n\nCobre a simulação sem gravação, a conversão por id de professores e disciplinas, a idempotência, o bloqueio por colisão (exata, sem acento e entre nomes convertidos), a paginação acima de mil registros, a falha no meio da gravação com relato do progresso e a preservação do código da disciplina. Refs #236"
+    },
+    "parents": [
+      "1f7ae3ae17bbc6ecb436a461e5b4347721691d90"
+    ],
+    "additions": 242,
+    "deletions": 0,
+    "total_changes": 242,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "1f7ae3ae17bbc6ecb436a461e5b4347721691d90",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:42:13Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:42:13Z"
+      },
+      "message": "feat(scraper): adiciona o subcomando converter-nomes ao manutencao_banco\n\nConverte para a grafia comum os nomes de professores, os departamentos e os nomes de disciplinas já gravados no banco. Por padrão faz uma simulação com totais e exemplos e só grava com --gravar. A atualização é feita por id, apenas nos campos que mudam, conferindo o valor lido antes de gravar, e é idempotente. Aborta sem gravar se algum nome de professor colidir com outro após a conversão. Refs #236"
+    },
+    "parents": [
+      "63378633092691ec3fb6847d94de78569ca65cf7"
+    ],
+    "additions": 187,
+    "deletions": 1,
+    "total_changes": 188,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "63378633092691ec3fb6847d94de78569ca65cf7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:34:58Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:34:58Z"
+      },
+      "message": "test(scraper): testa a consistência dos nomes convertidos na importação\n\nVerifica que o nome da turma, a chave do dicionário de professores, o nome enviado ao upsert e o mapa de professores são o mesmo texto, que o placeholder A DEFINIR DOCENTE continua descartado, que professor já em grafia comum não muda, que disciplina e departamento chegam convertidos sem alterar o código da disciplina e que rodar duas vezes não duplica registros. Refs #236"
+    },
+    "parents": [
+      "91129bfba45be42ba81082f776ae1ca8f802616a"
+    ],
+    "additions": 126,
+    "deletions": 0,
+    "total_changes": 126,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "91129bfba45be42ba81082f776ae1ca8f802616a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:34:47Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:34:47Z"
+      },
+      "message": "feat(scraper): grava os nomes em grafia comum na importação do SIGAA\n\nConverte uma única vez, na extração, o nome do professor, o nome da disciplina e o departamento com grafia_comum, e usa o valor convertido em todo o fluxo para que a chave do dicionário de professores, o professor_nome das turmas, o mapa de professores e o upsert por nome enxerguem o mesmo texto. A seleção da unidade no SIGAA continua usando o texto cru. O descarte de A DEFINIR DOCENTE continua funcionando. Move o laço de registro dos docentes para uma função pura em turmas_sigaa.py, testável sem selenium. Refs #236"
+    },
+    "parents": [
+      "902a1054707103a47cc124c444c931db4b6ac564"
+    ],
+    "additions": 69,
+    "deletions": 28,
+    "total_changes": 97,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "902a1054707103a47cc124c444c931db4b6ac564",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:29:17Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:29:17Z"
+      },
+      "message": "test(scraper): testa a função de grafia comum\n\nCobre nomes de professor, disciplina e departamento, preposições e partículas, siglas (inclusive depois de barra em departamento), algarismos romanos apenas em disciplina, hífen, apóstrofo, idempotência, texto vazio ou None e tipo inválido. Refs #236"
+    },
+    "parents": [
+      "b8a5f5a8e91642420e5f55c0bf03ff958ff7921f"
+    ],
+    "additions": 167,
+    "deletions": 0,
+    "total_changes": 167,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "b8a5f5a8e91642420e5f55c0bf03ff958ff7921f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:28:27Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T20:28:27Z"
+      },
+      "message": "feat(scraper): cria a função de grafia comum para nomes\n\nAdiciona grafia_comum(texto, tipo) em texto_sigaa.py para converter nomes em CAIXA ALTA (professor, disciplina e departamento) para a grafia comum. Mantém os acentos, deixa preposições em minúsculo, preserva siglas e algarismos romanos em maiúsculas (romanos só em disciplina) e capitaliza hífen e apóstrofo. Só converte textos 100% em caixa alta, então a função é idempotente e preserva nomes que já estão corretos. As listas de partículas e siglas ficam em constantes no topo do módulo. Refs #236"
+    },
+    "parents": [
+      "59ff7442eabf86348dcc27365b8c5ed05d83f7e8"
+    ],
+    "additions": 92,
+    "deletions": 0,
+    "total_changes": 92,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "a240eee10ea26eb90499e5091f0d6552998af44e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:58:45Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:58:45Z"
+      },
+      "message": "docs(seguranca): documenta o filtro de comentários e os limites de requisição\n\nAcrescenta a seção Filtro de comentários em CIBERSEGURANCA.md (objetivo, onde roda, ausência de registro do texto bloqueado, contagem no limite por hora, limitações e revisão da lista de termos pelo grupo) e atualiza a tabela de mecanismos para incluir os limites de publicação de comentários e de denúncias, de 10 por hora por usuário. Refs #214"
+    },
+    "parents": [
+      "fcb6463a03b7129018dd885904477f78225f8cce"
+    ],
+    "additions": 20,
+    "deletions": 1,
+    "total_changes": 21,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "fcb6463a03b7129018dd885904477f78225f8cce",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:58:36Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:58:36Z"
+      },
+      "message": "docs(comentarios): documenta o filtro automático dos comentários\n\nAtualiza COMENTARIOS.md com as regras implementadas do filtro (dados pessoais, links e termos bloqueados, comparação por palavra inteira, bloqueio sem salvar e com texto preservado, validação ao publicar e ao editar, limite por hora e limitações conhecidas) e corrige os trechos que ainda descreviam o filtro como proposta, com estados de indisponibilidade e de análise que não existem. FUNCIONALIDADES.md e TELAS_COMENTARIOS.md passam a refletir que o filtro já existe e o comportamento real da tela. Refs #214"
+    },
+    "parents": [
+      "ad25dc0aae51ea8f7ba34eca56f97de5bf9b3c15"
+    ],
+    "additions": 76,
+    "deletions": 21,
+    "total_changes": 97,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ad25dc0aae51ea8f7ba34eca56f97de5bf9b3c15",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:46Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:46Z"
+      },
+      "message": "test(comentarios): testa o bloqueio nas rotas de publicar e editar\n\nVerifica que o comentário bloqueado não é gravado nem altera o original na edição, que o texto digitado é preservado no formulário, que a mensagem não revela o trecho bloqueado, que textos permitidos continuam sendo publicados e editados e que o envio bloqueado conta no limite por hora. Refs #214"
+    },
+    "parents": [
+      "4cf1b867723b5bb0c6087cd501edeba652244822"
+    ],
+    "additions": 138,
+    "deletions": 0,
+    "total_changes": 138,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "4cf1b867723b5bb0c6087cd501edeba652244822",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:37Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:37Z"
+      },
+      "message": "test(comentarios): testa as regras do filtro de texto\n\nCobre cada categoria bloqueada com variações de grafia, as evasões simples (maiúsculas, acentos, letras repetidas, caracteres invisíveis) e os falsos positivos mais prováveis: semestres, notas, porcentagens, turmas, números curtos separados por espaço, datas e palavras que apenas contêm termos da lista. Refs #214"
+    },
+    "parents": [
+      "f1e0cef6c03dd2a2a500dba5dfda219d38e9662f"
+    ],
+    "additions": 147,
+    "deletions": 0,
+    "total_changes": 147,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "f1e0cef6c03dd2a2a500dba5dfda219d38e9662f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:29Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:29Z"
+      },
+      "message": "feat(comentarios): aplica o filtro ao publicar e ao editar\n\nO controller passa a chamar o filtro depois da validação de tamanho e antes de gravar. Quando o texto é bloqueado, a rota responde 400 com o formulário e o texto preservados e uma mensagem junto ao campo que informa só a categoria, sem revelar o trecho nem a lista. Na edição, o comentário original permanece intacto. O limite de 10 envios por hora continua valendo, inclusive para envios bloqueados. Refs #214"
+    },
+    "parents": [
+      "77f1555c7384bd7e57fdeceb15a53838f08c4810"
+    ],
+    "additions": 12,
+    "deletions": 3,
+    "total_changes": 15,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "77f1555c7384bd7e57fdeceb15a53838f08c4810",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:07Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:48:07Z"
+      },
+      "message": "feat(comentarios): cria o módulo de filtro do texto dos comentários\n\nAdiciona app/filtro_comentarios.py, que verifica o texto antes de publicar ou editar e devolve a categoria bloqueada: e-mail, telefone, CPF, matrícula (8 ou mais dígitos), links e termos da lista. O texto é normalizado antes da comparação (Unicode, caracteres invisíveis, maiúsculas, acentos, letras repetidas e trocas simples de letras por símbolos) e os termos são comparados por palavra inteira, para não barrar palavras comuns que os contenham. Números curtos, notas, semestres e datas continuam permitidos. Refs #214"
+    },
+    "parents": [
+      "348337655967d80461ce44ef097fbe71c5617535"
+    ],
+    "additions": 160,
+    "deletions": 0,
+    "total_changes": 160,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "348337655967d80461ce44ef097fbe71c5617535",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:47:53Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:47:53Z"
+      },
+      "message": "feat(comentarios): adiciona a lista inicial de termos bloqueados\n\nCria app/dados/termos_bloqueados.txt com os palavrões e as ofensas claramente inadequados que o filtro de comentários deve barrar (decisão C10). O arquivo é texto simples, com um termo por linha, para que o grupo possa revisar e atualizar a lista sem mexer no código. Refs #214"
+    },
+    "parents": [
+      "59ff7442eabf86348dcc27365b8c5ed05d83f7e8"
+    ],
+    "additions": 155,
+    "deletions": 0,
+    "total_changes": 155,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "59ff7442eabf86348dcc27365b8c5ed05d83f7e8",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:20:06Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-22T19:20:06Z"
+      },
+      "message": "Merge pull request #261 from unb-mds/feat/260-editar-comentarios\n\nFacilitar a edição dos próprios comentários"
+    },
+    "parents": [
+      "ca8afe5debd2aaae2af48e7851ed05851b4f805e",
+      "1e20be91174dd2a3ca8729b3c19a4618f5351ab6"
+    ],
+    "additions": 244,
+    "deletions": 9,
+    "total_changes": 253,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "ca8afe5debd2aaae2af48e7851ed05851b4f805e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:17:11Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-22T19:17:11Z"
+      },
+      "message": "Merge pull request #259 from unb-mds/feat/258-comentarios-sem-identificacao\n\nComentários sem identificação pública"
+    },
+    "parents": [
+      "9228d88739fda69d5f0c1205b4c36c83e56fe519",
+      "d596bd5c281afa7dfbf0c58f3415fcbe89de9281"
+    ],
+    "additions": 186,
+    "deletions": 74,
+    "total_changes": 260,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "9228d88739fda69d5f0c1205b4c36c83e56fe519",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "gsm22",
+        "date": "2026-11-22T19:14:58Z",
+        "login": "gsm22",
+        "id": 277538111,
+        "author_email_hash": "632ce81c18f8e1519b120e43d05a7200246c48387e830d00bcffff126156ff95"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-22T19:14:58Z"
+      },
+      "message": "Merge pull request #257 from unb-mds/fix/brilho-laterais-home\n\nRemover faixas laterais do brilho na tela inicial"
+    },
+    "parents": [
+      "308691cbecd46f9ed358667ebf9fe2e60795175d",
+      "a0070125fcfae5f4911f0933af7c27b9166148ee"
+    ],
+    "additions": 16,
+    "deletions": 5,
+    "total_changes": 21,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "1e20be91174dd2a3ca8729b3c19a4618f5351ab6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T16:28:54Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T16:28:54Z"
+      },
+      "message": "feat: facilitar a edição dos próprios comentários"
+    },
+    "parents": [
+      "308691cbecd46f9ed358667ebf9fe2e60795175d"
+    ],
+    "additions": 245,
+    "deletions": 10,
+    "total_changes": 255,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "d596bd5c281afa7dfbf0c58f3415fcbe89de9281",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T16:07:50Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T16:07:50Z"
+      },
+      "message": "feat: ocultar a identificação pública dos comentários"
+    },
+    "parents": [
+      "308691cbecd46f9ed358667ebf9fe2e60795175d"
+    ],
+    "additions": 186,
+    "deletions": 74,
+    "total_changes": 260,
+    "repo_name": "2026-2-AvaliaUnB"
+  },
+  {
+    "sha": "a0070125fcfae5f4911f0933af7c27b9166148ee",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T15:40:40Z",
+        "login": "Geovanaduartee",
+        "id": 302299188,
+        "author_email_hash": "e7493ed927a61956b96d254ab5f0995d318cc72499f1294415989c722c63db66"
+      },
+      "committer": {
+        "name": "Geovanaduartee",
+        "date": "2026-11-22T15:40:40Z"
+      },
+      "message": "fix: remover recorte lateral do brilho na tela inicial\n\nMove o efeito de luz para uma camada com a largura da página e mantém o conteúdo centralizado nos temas claro e escuro."
+    },
+    "parents": [
+      "308691cbecd46f9ed358667ebf9fe2e60795175d"
+    ],
+    "additions": 16,
+    "deletions": 5,
+    "total_changes": 21,
+    "repo_name": "2026-2-AvaliaUnB"
   },
   {
     "sha": "308691cbecd46f9ed358667ebf9fe2e60795175d",
