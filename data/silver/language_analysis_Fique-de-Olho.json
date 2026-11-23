@@ -2,19 +2,19 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-22T14:09:55.960502+00:00",
+  "analyzed_at": "2026-11-23T16:44:03.672986+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 318,
-  "total_bytes": 3450056,
+  "total_files": 336,
+  "total_bytes": 3644745,
   "languages": [
     {
       "language": "Python",
-      "file_count": 111,
-      "total_bytes": 1254951,
-      "percentage": 36.37,
+      "file_count": 117,
+      "total_bytes": 1358927,
+      "percentage": 37.28,
       "files": [
         {
           "path": "Back/app/modules/scraper/hub.py",
@@ -25,19 +25,25 @@
         {
           "path": "Back/app/modules/scraper/parser.py",
           "name": "parser.py",
-          "size": 46244,
+          "size": 58620,
           "extension": ".py"
         },
         {
           "path": "Back/app/modules/scraper/pipeline.py",
           "name": "pipeline.py",
-          "size": 40649,
+          "size": 44386,
           "extension": ".py"
         },
         {
           "path": "Back/tests/test_expansao_portais_fase2_scrapers.py",
           "name": "test_expansao_portais_fase2_scrapers.py",
           "size": 39825,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/tests/test_summarizer.py",
+          "name": "test_summarizer.py",
+          "size": 39429,
           "extension": ".py"
         },
         {
@@ -59,21 +65,15 @@
           "extension": ".py"
         },
         {
-          "path": "Back/tests/test_summarizer.py",
-          "name": "test_summarizer.py",
-          "size": 31345,
-          "extension": ".py"
-        },
-        {
           "path": "Back/app/modules/scraper/cel.py",
           "name": "cel.py",
           "size": 30852,
           "extension": ".py"
         },
         {
-          "path": "Back/app/modules/scraper/fup.py",
-          "name": "fup.py",
-          "size": 28342,
+          "path": "Back/app/modules/scraper/summarizer.py",
+          "name": "summarizer.py",
+          "size": 30523,
           "extension": ".py"
         }
       ]
@@ -82,7 +82,7 @@
       "language": "PNG Image",
       "file_count": 9,
       "total_bytes": 959600,
-      "percentage": 27.81,
+      "percentage": 26.33,
       "files": [
         {
           "path": "docs/Requisitos/imagens/requisitos_board.png",
@@ -142,9 +142,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 108,
-      "total_bytes": 818536,
-      "percentage": 23.73,
+      "file_count": 116,
+      "total_bytes": 880018,
+      "percentage": 24.14,
       "files": [
         {
           "path": ".github/skills/neon-functions/SKILL.md",
@@ -212,7 +212,7 @@
       "language": "JSON",
       "file_count": 8,
       "total_bytes": 192542,
-      "percentage": 5.58,
+      "percentage": 5.28,
       "files": [
         {
           "path": "Front/package-lock.json",
@@ -266,10 +266,22 @@
     },
     {
       "language": "TypeScript",
-      "file_count": 37,
-      "total_bytes": 84183,
-      "percentage": 2.44,
+      "file_count": 40,
+      "total_bytes": 105792,
+      "percentage": 2.9,
       "files": [
+        {
+          "path": "Front/src/components/HelpAndFeedbackButton.tsx",
+          "name": "HelpAndFeedbackButton.tsx",
+          "size": 10044,
+          "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/pages/HomePage.tsx",
+          "name": "HomePage.tsx",
+          "size": 7845,
+          "extension": ".tsx"
+        },
         {
           "path": "Front/src/pages/EditalDetailPage.tsx",
           "name": "EditalDetailPage.tsx",
@@ -277,16 +289,22 @@
           "extension": ".tsx"
         },
         {
-          "path": "Front/src/pages/HomePage.tsx",
-          "name": "HomePage.tsx",
-          "size": 6943,
-          "extension": ".tsx"
-        },
-        {
           "path": "Front/src/pages/LoginPage.tsx",
           "name": "LoginPage.tsx",
           "size": 4632,
           "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/components/FilterBar.tsx",
+          "name": "FilterBar.tsx",
+          "size": 4536,
+          "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/services/editaisService.ts",
+          "name": "editaisService.ts",
+          "size": 4146,
+          "extension": ".ts"
         },
         {
           "path": "Front/src/components/AlertButton.tsx",
@@ -311,37 +329,19 @@
           "name": "HomePage.test.tsx",
           "size": 3640,
           "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/services/notificacoesService.ts",
-          "name": "notificacoesService.ts",
-          "size": 3322,
-          "extension": ".ts"
-        },
-        {
-          "path": "Front/src/services/authService.ts",
-          "name": "authService.ts",
-          "size": 3026,
-          "extension": ".ts"
-        },
-        {
-          "path": "Front/src/pages/RegisterPage.tsx",
-          "name": "RegisterPage.tsx",
-          "size": 2989,
-          "extension": ".tsx"
         }
       ]
     },
     {
       "language": "CSS",
       "file_count": 4,
-      "total_bytes": 54563,
-      "percentage": 1.58,
+      "total_bytes": 59764,
+      "percentage": 1.64,
       "files": [
         {
           "path": "Front/src/theme.css",
           "name": "theme.css",
-          "size": 34499,
+          "size": 39700,
           "extension": ".css"
         },
         {
@@ -368,7 +368,7 @@
       "language": "WebP Image",
       "file_count": 1,
       "total_bytes": 46900,
-      "percentage": 1.36,
+      "percentage": 1.29,
       "files": [
         {
           "path": "docs/assets/img/pattern-swirls.webp",
@@ -381,19 +381,19 @@
     {
       "language": "YAML",
       "file_count": 16,
-      "total_bytes": 12204,
-      "percentage": 0.35,
+      "total_bytes": 13239,
+      "percentage": 0.36,
       "files": [
+        {
+          "path": "mkdocs.yml",
+          "name": "mkdocs.yml",
+          "size": 3598,
+          "extension": ".yml"
+        },
         {
           "path": ".github/workflows/pipeline.yml",
           "name": "pipeline.yml",
           "size": 3548,
-          "extension": ".yml"
-        },
-        {
-          "path": "mkdocs.yml",
-          "name": "mkdocs.yml",
-          "size": 2749,
           "extension": ".yml"
         },
         {
@@ -417,7 +417,7 @@
         {
           "path": "render.yaml",
           "name": "render.yaml",
-          "size": 738,
+          "size": 924,
           "extension": ".yaml"
         },
         {
@@ -450,7 +450,7 @@
       "language": "Text",
       "file_count": 2,
       "total_bytes": 10640,
-      "percentage": 0.31,
+      "percentage": 0.29,
       "files": [
         {
           "path": ".agents/skills/frontend-design/LICENSE.txt",
@@ -470,7 +470,7 @@
       "language": "SQL",
       "file_count": 3,
       "total_bytes": 7177,
-      "percentage": 0.21,
+      "percentage": 0.2,
       "files": [
         {
           "path": "db/migrations/001_initial_schema.sql",
@@ -514,10 +514,16 @@
     },
     {
       "language": "Unknown",
-      "file_count": 6,
-      "total_bytes": 1433,
-      "percentage": 0.04,
+      "file_count": 7,
+      "total_bytes": 2725,
+      "percentage": 0.07,
       "files": [
+        {
+          "path": "Back/.env.example",
+          "name": ".env.example",
+          "size": 1292,
+          "extension": ".example"
+        },
         {
           "path": "Front/.eslintrc.cjs",
           "name": ".eslintrc.cjs",
@@ -585,7 +591,7 @@
     {
       "language": "Git Ignore",
       "file_count": 3,
-      "total_bytes": 818,
+      "total_bytes": 824,
       "percentage": 0.02,
       "files": [
         {
@@ -603,7 +609,7 @@
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 115,
+          "size": 121,
           "extension": ".gitignore"
         }
       ]
@@ -631,13 +637,13 @@
     {
       "language": "HTML",
       "file_count": 1,
-      "total_bytes": 698,
+      "total_bytes": 786,
       "percentage": 0.02,
       "files": [
         {
           "path": "Front/index.html",
           "name": "index.html",
-          "size": 698,
+          "size": 786,
           "extension": ".html"
         }
       ]
@@ -664,7 +670,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-22T14:11:11.889023+00:00",
+    "extracted_at": "2026-11-23T16:45:06.789206+00:00",
     "file_path": "data/silver/language_analysis_Fique-de-Olho.json"
   }
 }

@@ -2,11 +2,19 @@
   "repository": "2026-2-Bandejao-UnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-22T14:09:57.537491+00:00",
+  "extracted_at": "2026-11-23T16:44:04.975764+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
     "children": [
+      {
+        "name": ".gitattributes",
+        "type": "file",
+        "language": "Unknown",
+        "size": 343,
+        "extension": ".gitattributes",
+        "path": ".gitattributes"
+      },
       {
         "name": ".github",
         "type": "directory",
@@ -60,26 +68,80 @@
         "path": ".github/PULL_REQUEST_TEMPLATE.md"
       },
       {
+        "name": "workflows",
+        "type": "directory",
+        "path": ".github/workflows",
+        "children": []
+      },
+      {
+        "name": "backend-ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 15271,
+        "extension": ".yml",
+        "path": ".github/workflows/backend-ci.yml"
+      },
+      {
+        "name": "backend-mutacao-semanal.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 6743,
+        "extension": ".yml",
+        "path": ".github/workflows/backend-mutacao-semanal.yml"
+      },
+      {
+        "name": "deploy.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 4420,
+        "extension": ".yml",
+        "path": ".github/workflows/deploy.yml"
+      },
+      {
+        "name": "frontend-ci.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2301,
+        "extension": ".yml",
+        "path": ".github/workflows/frontend-ci.yml"
+      },
+      {
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 85,
+        "size": 336,
         "extension": ".gitignore",
         "path": ".gitignore"
+      },
+      {
+        "name": "AI-USAGE.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 157281,
+        "extension": ".md",
+        "path": "AI-USAGE.md"
       },
       {
         "name": "CONTEXT.md",
         "type": "file",
         "language": "Markdown",
-        "size": 5316,
+        "size": 5454,
         "extension": ".md",
         "path": "CONTEXT.md"
+      },
+      {
+        "name": "Caddyfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1590,
+        "extension": "",
+        "path": "Caddyfile"
       },
       {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13558,
+        "size": 15098,
         "extension": ".md",
         "path": "README.md"
       },
@@ -93,9 +155,77 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 1024,
+        "size": 1673,
         "extension": ".md",
         "path": "SKILLS/README.md"
+      },
+      {
+        "name": "USO-DAS-SKILLS.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7644,
+        "extension": ".md",
+        "path": "SKILLS/USO-DAS-SKILLS.md"
+      },
+      {
+        "name": "c4-architecture",
+        "type": "directory",
+        "path": "SKILLS/c4-architecture",
+        "children": []
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1072,
+        "extension": "",
+        "path": "SKILLS/c4-architecture/LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7220,
+        "extension": ".md",
+        "path": "SKILLS/c4-architecture/README.md"
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10575,
+        "extension": ".md",
+        "path": "SKILLS/c4-architecture/SKILL.md"
+      },
+      {
+        "name": "references",
+        "type": "directory",
+        "path": "SKILLS/c4-architecture/references",
+        "children": []
+      },
+      {
+        "name": "advanced-patterns.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 18346,
+        "extension": ".md",
+        "path": "SKILLS/c4-architecture/references/advanced-patterns.md"
+      },
+      {
+        "name": "c4-syntax.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14564,
+        "extension": ".md",
+        "path": "SKILLS/c4-architecture/references/c4-syntax.md"
+      },
+      {
+        "name": "common-mistakes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 12441,
+        "extension": ".md",
+        "path": "SKILLS/c4-architecture/references/common-mistakes.md"
       },
       {
         "name": "domain-modeling",
@@ -154,10 +284,160 @@
         "path": "SKILLS/grilling/SKILL.md"
       },
       {
+        "name": "pr-review-toolkit",
+        "type": "directory",
+        "path": "SKILLS/pr-review-toolkit",
+        "children": []
+      },
+      {
+        "name": ".claude-plugin",
+        "type": "directory",
+        "path": "SKILLS/pr-review-toolkit/.claude-plugin",
+        "children": []
+      },
+      {
+        "name": "plugin.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 288,
+        "extension": ".json",
+        "path": "SKILLS/pr-review-toolkit/.claude-plugin/plugin.json"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "language": "No Extension",
+        "size": 11358,
+        "extension": "",
+        "path": "SKILLS/pr-review-toolkit/LICENSE"
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7528,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/README.md"
+      },
+      {
+        "name": "agents",
+        "type": "directory",
+        "path": "SKILLS/pr-review-toolkit/agents",
+        "children": []
+      },
+      {
+        "name": "code-reviewer.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3635,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/agents/code-reviewer.md"
+      },
+      {
+        "name": "code-simplifier.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5292,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/agents/code-simplifier.md"
+      },
+      {
+        "name": "comment-analyzer.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4925,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/agents/comment-analyzer.md"
+      },
+      {
+        "name": "pr-test-analyzer.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4560,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/agents/pr-test-analyzer.md"
+      },
+      {
+        "name": "silent-failure-hunter.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7807,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/agents/silent-failure-hunter.md"
+      },
+      {
+        "name": "type-design-analyzer.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4999,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/agents/type-design-analyzer.md"
+      },
+      {
+        "name": "commands",
+        "type": "directory",
+        "path": "SKILLS/pr-review-toolkit/commands",
+        "children": []
+      },
+      {
+        "name": "review-pr.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4997,
+        "extension": ".md",
+        "path": "SKILLS/pr-review-toolkit/commands/review-pr.md"
+      },
+      {
+        "name": "review-status",
+        "type": "directory",
+        "path": "SKILLS/review-status",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1233,
+        "extension": ".md",
+        "path": "SKILLS/review-status/SKILL.md"
+      },
+      {
         "name": "backend",
         "type": "directory",
         "path": "backend",
         "children": []
+      },
+      {
+        "name": ".coveragerc",
+        "type": "file",
+        "language": "Unknown",
+        "size": 46,
+        "extension": ".coveragerc",
+        "path": "backend/.coveragerc"
+      },
+      {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 180,
+        "extension": ".dockerignore",
+        "path": "backend/.dockerignore"
+      },
+      {
+        "name": ".env.example",
+        "type": "file",
+        "language": "Unknown",
+        "size": 4301,
+        "extension": ".example",
+        "path": "backend/.env.example"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1426,
+        "extension": "",
+        "path": "backend/Dockerfile"
       },
       {
         "name": "apps",
@@ -174,9 +454,9 @@
         "path": "backend/apps/__init__.py"
       },
       {
-        "name": "avaliacoes",
+        "name": "avaliacao",
         "type": "directory",
-        "path": "backend/apps/avaliacoes",
+        "path": "backend/apps/avaliacao",
         "children": []
       },
       {
@@ -185,28 +465,122 @@
         "language": "Python",
         "size": 0,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/__init__.py"
+        "path": "backend/apps/avaliacao/__init__.py"
       },
       {
         "name": "admin.py",
         "type": "file",
         "language": "Python",
-        "size": 63,
+        "size": 58,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/admin.py"
+        "path": "backend/apps/avaliacao/admin.py"
       },
       {
         "name": "apps.py",
         "type": "file",
         "language": "Python",
-        "size": 100,
+        "size": 98,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/apps.py"
+        "path": "backend/apps/avaliacao/apps.py"
+      },
+      {
+        "name": "avaliacao_publica_mapper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1339,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/avaliacao_publica_mapper.py"
+      },
+      {
+        "name": "avaliacao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5194,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/avaliacao_repository.py"
+      },
+      {
+        "name": "avaliacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4264,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/avaliacao_service.py"
+      },
+      {
+        "name": "comentario_validator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1501,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/comentario_validator.py"
+      },
+      {
+        "name": "erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 596,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/erros.py"
+      },
+      {
+        "name": "janela_avaliacao_validator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 915,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/janela_avaliacao_validator.py"
       },
       {
         "name": "migrations",
         "type": "directory",
-        "path": "backend/apps/avaliacoes/migrations",
+        "path": "backend/apps/avaliacao/migrations",
+        "children": []
+      },
+      {
+        "name": "0001_initial.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2978,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/migrations/0001_initial.py"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/migrations/__init__.py"
+      },
+      {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2354,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/models.py"
+      },
+      {
+        "name": "nota_validator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 599,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/nota_validator.py"
+      },
+      {
+        "name": "serializers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2827,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/serializers.py"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/apps/avaliacao/tests",
         "children": []
       },
       {
@@ -215,31 +589,549 @@
         "language": "Python",
         "size": 0,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/migrations/__init__.py"
+        "path": "backend/apps/avaliacao/tests/__init__.py"
       },
       {
-        "name": "models.py",
+        "name": "apoio.py",
         "type": "file",
         "language": "Python",
-        "size": 875,
+        "size": 705,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/models.py"
+        "path": "backend/apps/avaliacao/tests/apoio.py"
       },
       {
-        "name": "tests.py",
+        "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 60,
+        "size": 1441,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/tests.py"
+        "path": "backend/apps/avaliacao/tests/conftest.py"
+      },
+      {
+        "name": "test_app_avaliacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 637,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_app_avaliacao.py"
+      },
+      {
+        "name": "test_avaliacao_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8305,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_avaliacao_endpoint.py"
+      },
+      {
+        "name": "test_avaliacao_publica_mapper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2004,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_avaliacao_publica_mapper.py"
+      },
+      {
+        "name": "test_avaliacao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5593,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_avaliacao_repository.py"
+      },
+      {
+        "name": "test_avaliacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12468,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_avaliacao_service.py"
+      },
+      {
+        "name": "test_consultas_avaliacao_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7969,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_consultas_avaliacao_endpoint.py"
+      },
+      {
+        "name": "test_models_avaliacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4964,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_models_avaliacao.py"
+      },
+      {
+        "name": "test_validadores_avaliacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5203,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/tests/test_validadores_avaliacao.py"
+      },
+      {
+        "name": "urls.py",
+        "type": "file",
+        "language": "Python",
+        "size": 543,
+        "extension": ".py",
+        "path": "backend/apps/avaliacao/urls.py"
       },
       {
         "name": "views.py",
         "type": "file",
         "language": "Python",
-        "size": 63,
+        "size": 12542,
         "extension": ".py",
-        "path": "backend/apps/avaliacoes/views.py"
+        "path": "backend/apps/avaliacao/views.py"
+      },
+      {
+        "name": "cadastro",
+        "type": "directory",
+        "path": "backend/apps/cadastro",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/__init__.py"
+      },
+      {
+        "name": "admin.py",
+        "type": "file",
+        "language": "Python",
+        "size": 57,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/admin.py"
+      },
+      {
+        "name": "apelido_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4532,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/apelido_resolver.py"
+      },
+      {
+        "name": "apps.py",
+        "type": "file",
+        "language": "Python",
+        "size": 96,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/apps.py"
+      },
+      {
+        "name": "autenticacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3038,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/autenticacao.py"
+      },
+      {
+        "name": "aviso_privacidade_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1274,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/aviso_privacidade_service.py"
+      },
+      {
+        "name": "cadastro_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8761,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/cadastro_service.py"
+      },
+      {
+        "name": "confirmacao_email_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10642,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/confirmacao_email_service.py"
+      },
+      {
+        "name": "conta_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5282,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/conta_repository.py"
+      },
+      {
+        "name": "dados_cadastro.py",
+        "type": "file",
+        "language": "Python",
+        "size": 755,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/dados_cadastro.py"
+      },
+      {
+        "name": "erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3069,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/erros.py"
+      },
+      {
+        "name": "identificador_extractor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2075,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/identificador_extractor.py"
+      },
+      {
+        "name": "limite_de_taxa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7373,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/limite_de_taxa.py"
+      },
+      {
+        "name": "login_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3827,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/login_service.py"
+      },
+      {
+        "name": "management",
+        "type": "directory",
+        "path": "backend/apps/cadastro/management",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/management/__init__.py"
+      },
+      {
+        "name": "commands",
+        "type": "directory",
+        "path": "backend/apps/cadastro/management/commands",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/management/commands/__init__.py"
+      },
+      {
+        "name": "excluir_cadastros_pendentes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2398,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/management/commands/excluir_cadastros_pendentes.py"
+      },
+      {
+        "name": "remover_conta.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1496,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/management/commands/remover_conta.py"
+      },
+      {
+        "name": "migrations",
+        "type": "directory",
+        "path": "backend/apps/cadastro/migrations",
+        "children": []
+      },
+      {
+        "name": "0001_initial.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4579,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/migrations/0001_initial.py"
+      },
+      {
+        "name": "0002_usuario_primeira_falha_login_em.py",
+        "type": "file",
+        "language": "Python",
+        "size": 404,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/migrations/0002_usuario_primeira_falha_login_em.py"
+      },
+      {
+        "name": "0003_tabela_do_cache.py",
+        "type": "file",
+        "language": "Python",
+        "size": 840,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/migrations/0003_tabela_do_cache.py"
+      },
+      {
+        "name": "0004_remove_status_removido_bd12.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2070,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/migrations/0004_remove_status_removido_bd12.py"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/migrations/__init__.py"
+      },
+      {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9690,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/models.py"
+      },
+      {
+        "name": "remover_conta_command.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3896,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/remover_conta_command.py"
+      },
+      {
+        "name": "serializers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4949,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/serializers.py"
+      },
+      {
+        "name": "sessoes_da_conta.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1818,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/sessoes_da_conta.py"
+      },
+      {
+        "name": "tentativa_login_tracker.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2808,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tentativa_login_tracker.py"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/apps/cadastro/tests",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/__init__.py"
+      },
+      {
+        "name": "test_apelido_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5549,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_apelido_resolver.py"
+      },
+      {
+        "name": "test_app_cadastro.py",
+        "type": "file",
+        "language": "Python",
+        "size": 631,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_app_cadastro.py"
+      },
+      {
+        "name": "test_aviso_privacidade.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5202,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_aviso_privacidade.py"
+      },
+      {
+        "name": "test_cadastro_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 13217,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_cadastro_endpoint.py"
+      },
+      {
+        "name": "test_cadastro_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12252,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_cadastro_service.py"
+      },
+      {
+        "name": "test_comando_remover_conta.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2644,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_comando_remover_conta.py"
+      },
+      {
+        "name": "test_confirmacao_email_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15566,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_confirmacao_email_endpoint.py"
+      },
+      {
+        "name": "test_confirmacao_email_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14175,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_confirmacao_email_service.py"
+      },
+      {
+        "name": "test_conta_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4351,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_conta_repository.py"
+      },
+      {
+        "name": "test_exclusao_cadastro_pendente_job.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8449,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_exclusao_cadastro_pendente_job.py"
+      },
+      {
+        "name": "test_identificador_extractor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2466,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_identificador_extractor.py"
+      },
+      {
+        "name": "test_limite_de_taxa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 23908,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_limite_de_taxa.py"
+      },
+      {
+        "name": "test_login_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10836,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_login_service.py"
+      },
+      {
+        "name": "test_migration_remove_removido_bd12.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3416,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_migration_remove_removido_bd12.py"
+      },
+      {
+        "name": "test_models_cadastro.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9954,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_models_cadastro.py"
+      },
+      {
+        "name": "test_remover_conta.py",
+        "type": "file",
+        "language": "Python",
+        "size": 18074,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_remover_conta.py"
+      },
+      {
+        "name": "test_serializers_cadastro.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1986,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_serializers_cadastro.py"
+      },
+      {
+        "name": "test_sessao_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14283,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_sessao_endpoint.py"
+      },
+      {
+        "name": "test_tentativa_login_tracker.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5392,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_tentativa_login_tracker.py"
+      },
+      {
+        "name": "test_validadores.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5841,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/tests/test_validadores.py"
+      },
+      {
+        "name": "urls.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1032,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/urls.py"
+      },
+      {
+        "name": "validadores.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3662,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/validadores.py"
+      },
+      {
+        "name": "views.py",
+        "type": "file",
+        "language": "Python",
+        "size": 17443,
+        "extension": ".py",
+        "path": "backend/apps/cadastro/views.py"
       },
       {
         "name": "cardapio",
@@ -259,7 +1151,7 @@
         "name": "admin.py",
         "type": "file",
         "language": "Python",
-        "size": 63,
+        "size": 57,
         "extension": ".py",
         "path": "backend/apps/cardapio/admin.py"
       },
@@ -267,9 +1159,193 @@
         "name": "apps.py",
         "type": "file",
         "language": "Python",
-        "size": 94,
+        "size": 96,
         "extension": ".py",
         "path": "backend/apps/cardapio/apps.py"
+      },
+      {
+        "name": "cardapio_filtrado.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1926,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/cardapio_filtrado.py"
+      },
+      {
+        "name": "cardapio_query_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8235,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/cardapio_query_service.py"
+      },
+      {
+        "name": "dieta_selecionada.py",
+        "type": "file",
+        "language": "Python",
+        "size": 576,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/dieta_selecionada.py"
+      },
+      {
+        "name": "filtro_dieta_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2223,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/filtro_dieta_service.py"
+      },
+      {
+        "name": "filtro_marcador_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2849,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/filtro_marcador_service.py"
+      },
+      {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "backend/apps/cardapio/fixtures",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3187,
+        "extension": ".md",
+        "path": "backend/apps/cardapio/fixtures/README.md"
+      },
+      {
+        "name": "campi.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 2215,
+        "extension": ".json",
+        "path": "backend/apps/cardapio/fixtures/campi.json"
+      },
+      {
+        "name": "marcadores.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 911,
+        "extension": ".json",
+        "path": "backend/apps/cardapio/fixtures/marcadores.json"
+      },
+      {
+        "name": "horario_refeicao_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4828,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/horario_refeicao_resolver.py"
+      },
+      {
+        "name": "leitor",
+        "type": "directory",
+        "path": "backend/apps/cardapio/leitor",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 64,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/__init__.py"
+      },
+      {
+        "name": "alerta_equipe_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9251,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/alerta_equipe_service.py"
+      },
+      {
+        "name": "cardapio_downloader.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11258,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/cardapio_downloader.py"
+      },
+      {
+        "name": "cardapio_pdf_parser.py",
+        "type": "file",
+        "language": "Python",
+        "size": 35054,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/cardapio_pdf_parser.py"
+      },
+      {
+        "name": "cardapio_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6509,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/cardapio_repository.py"
+      },
+      {
+        "name": "fonte_cardapio_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1032,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/fonte_cardapio_config.py"
+      },
+      {
+        "name": "leitor_cardapio_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14712,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/leitor/leitor_cardapio_service.py"
+      },
+      {
+        "name": "localizacao_campus_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 962,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/localizacao_campus_config.py"
+      },
+      {
+        "name": "management",
+        "type": "directory",
+        "path": "backend/apps/cardapio/management",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/management/__init__.py"
+      },
+      {
+        "name": "commands",
+        "type": "directory",
+        "path": "backend/apps/cardapio/management/commands",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/management/commands/__init__.py"
+      },
+      {
+        "name": "ler_cardapio.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5447,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/management/commands/ler_cardapio.py"
       },
       {
         "name": "migrations",
@@ -281,9 +1357,41 @@
         "name": "0001_initial.py",
         "type": "file",
         "language": "Python",
-        "size": 1716,
+        "size": 6700,
         "extension": ".py",
         "path": "backend/apps/cardapio/migrations/0001_initial.py"
+      },
+      {
+        "name": "0002_campus_confirmacao_ativa.py",
+        "type": "file",
+        "language": "Python",
+        "size": 394,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/migrations/0002_campus_confirmacao_ativa.py"
+      },
+      {
+        "name": "0003_campus_constraints_bd03.py",
+        "type": "file",
+        "language": "Python",
+        "size": 976,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/migrations/0003_campus_constraints_bd03.py"
+      },
+      {
+        "name": "0004_origem_cardapio_bd16.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3957,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/migrations/0004_origem_cardapio_bd16.py"
+      },
+      {
+        "name": "0005_alerta_email_enviado_em.py",
+        "type": "file",
+        "language": "Python",
+        "size": 424,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/migrations/0005_alerta_email_enviado_em.py"
       },
       {
         "name": "__init__.py",
@@ -297,30 +1405,46 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 1047,
+        "size": 10683,
         "extension": ".py",
         "path": "backend/apps/cardapio/models.py"
       },
       {
-        "name": "tests.py",
+        "name": "parametros_consulta.py",
         "type": "file",
         "language": "Python",
-        "size": 60,
+        "size": 3738,
         "extension": ".py",
-        "path": "backend/apps/cardapio/tests.py"
+        "path": "backend/apps/cardapio/parametros_consulta.py"
       },
       {
-        "name": "views.py",
+        "name": "refeicao_repository.py",
         "type": "file",
         "language": "Python",
-        "size": 63,
+        "size": 2693,
         "extension": ".py",
-        "path": "backend/apps/cardapio/views.py"
+        "path": "backend/apps/cardapio/refeicao_repository.py"
       },
       {
-        "name": "core",
+        "name": "semana_cardapio_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1692,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/semana_cardapio_resolver.py"
+      },
+      {
+        "name": "serializers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2344,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/serializers.py"
+      },
+      {
+        "name": "tests",
         "type": "directory",
-        "path": "backend/apps/core",
+        "path": "backend/apps/cardapio/tests",
         "children": []
       },
       {
@@ -329,150 +1453,310 @@
         "language": "Python",
         "size": 0,
         "extension": ".py",
-        "path": "backend/apps/core/__init__.py"
+        "path": "backend/apps/cardapio/tests/__init__.py"
       },
       {
-        "name": "admin.py",
+        "name": "apoio_cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 63,
+        "size": 3677,
         "extension": ".py",
-        "path": "backend/apps/core/admin.py"
+        "path": "backend/apps/cardapio/tests/apoio_cardapio.py"
       },
       {
-        "name": "apps.py",
+        "name": "apoio_leitor.py",
         "type": "file",
         "language": "Python",
-        "size": 86,
+        "size": 4405,
         "extension": ".py",
-        "path": "backend/apps/core/apps.py"
+        "path": "backend/apps/cardapio/tests/apoio_leitor.py"
       },
       {
-        "name": "migrations",
+        "name": "fixtures",
         "type": "directory",
-        "path": "backend/apps/core/migrations",
+        "path": "backend/apps/cardapio/tests/fixtures",
         "children": []
       },
       {
-        "name": "0001_initial.py",
-        "type": "file",
-        "language": "Python",
-        "size": 1135,
-        "extension": ".py",
-        "path": "backend/apps/core/migrations/0001_initial.py"
-      },
-      {
-        "name": "__init__.py",
-        "type": "file",
-        "language": "Python",
-        "size": 0,
-        "extension": ".py",
-        "path": "backend/apps/core/migrations/__init__.py"
-      },
-      {
-        "name": "models.py",
-        "type": "file",
-        "language": "Python",
-        "size": 549,
-        "extension": ".py",
-        "path": "backend/apps/core/models.py"
-      },
-      {
-        "name": "tests.py",
-        "type": "file",
-        "language": "Python",
-        "size": 60,
-        "extension": ".py",
-        "path": "backend/apps/core/tests.py"
-      },
-      {
-        "name": "views.py",
-        "type": "file",
-        "language": "Python",
-        "size": 63,
-        "extension": ".py",
-        "path": "backend/apps/core/views.py"
-      },
-      {
-        "name": "status",
+        "name": "cardapios",
         "type": "directory",
-        "path": "backend/apps/status",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios",
         "children": []
       },
       {
-        "name": "__init__.py",
+        "name": "Ceilandia-Semana-04-09-11-a-15-11.pdf",
         "type": "file",
-        "language": "Python",
-        "size": 0,
-        "extension": ".py",
-        "path": "backend/apps/status/__init__.py"
+        "language": "PDF",
+        "size": 173693,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Ceilandia-Semana-04-09-11-a-15-11.pdf"
       },
       {
-        "name": "admin.py",
+        "name": "Darcy-Ribeiro-Semana-04-09-11-a-15-11.pdf",
         "type": "file",
-        "language": "Python",
-        "size": 63,
-        "extension": ".py",
-        "path": "backend/apps/status/admin.py"
+        "language": "PDF",
+        "size": 184583,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Darcy-Ribeiro-Semana-04-09-11-a-15-11.pdf"
       },
       {
-        "name": "apps.py",
+        "name": "Fazenda-Semana-01-16-11-a-20-11-2.pdf",
         "type": "file",
-        "language": "Python",
-        "size": 149,
-        "extension": ".py",
-        "path": "backend/apps/status/apps.py"
+        "language": "PDF",
+        "size": 219205,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Fazenda-Semana-01-16-11-a-20-11-2.pdf"
       },
       {
-        "name": "migrations",
+        "name": "Gama-Semana-01-16-11-a-20-11-1.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 251735,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Gama-Semana-01-16-11-a-20-11-1.pdf"
+      },
+      {
+        "name": "Gama-Semana-01-21-9-a-27-9.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 596392,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Gama-Semana-01-21-9-a-27-9.pdf"
+      },
+      {
+        "name": "Gama-Semana-02-23-11-a-29-11.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 243826,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Gama-Semana-02-23-11-a-29-11.pdf"
+      },
+      {
+        "name": "Planaltina-Semana-02-23-11-a-29-11.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 264302,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/Planaltina-Semana-02-23-11-a-29-11.pdf"
+      },
+      {
+        "name": "pdf-sem-paginas.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 233,
+        "extension": ".pdf",
+        "path": "backend/apps/cardapio/tests/fixtures/cardapios/pdf-sem-paginas.pdf"
+      },
+      {
+        "name": "pagina_ru",
         "type": "directory",
-        "path": "backend/apps/status/migrations",
+        "path": "backend/apps/cardapio/tests/fixtures/pagina_ru",
         "children": []
       },
       {
-        "name": "__init__.py",
+        "name": "cardapio-refeitorio-2026-11-21.html",
         "type": "file",
-        "language": "Python",
-        "size": 0,
-        "extension": ".py",
-        "path": "backend/apps/status/migrations/__init__.py"
+        "language": "HTML",
+        "size": 153176,
+        "extension": ".html",
+        "path": "backend/apps/cardapio/tests/fixtures/pagina_ru/cardapio-refeitorio-2026-11-21.html"
       },
       {
-        "name": "models.py",
+        "name": "test_alerta_equipe_service.py",
         "type": "file",
         "language": "Python",
-        "size": 57,
+        "size": 14319,
         "extension": ".py",
-        "path": "backend/apps/status/models.py"
+        "path": "backend/apps/cardapio/tests/test_alerta_equipe_service.py"
       },
       {
-        "name": "tests.py",
+        "name": "test_app_cardapio.py",
         "type": "file",
         "language": "Python",
-        "size": 60,
+        "size": 869,
         "extension": ".py",
-        "path": "backend/apps/status/tests.py"
+        "path": "backend/apps/cardapio/tests/test_app_cardapio.py"
+      },
+      {
+        "name": "test_campi_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12615,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_campi_endpoint.py"
+      },
+      {
+        "name": "test_cardapio_downloader.py",
+        "type": "file",
+        "language": "Python",
+        "size": 21937,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_cardapio_downloader.py"
+      },
+      {
+        "name": "test_cardapio_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 21518,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_cardapio_endpoint.py"
+      },
+      {
+        "name": "test_cardapio_query_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 24705,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_cardapio_query_service.py"
+      },
+      {
+        "name": "test_cardapio_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 17972,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_cardapio_repository.py"
+      },
+      {
+        "name": "test_confirmacao_campus_bd03.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3224,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_confirmacao_campus_bd03.py"
+      },
+      {
+        "name": "test_filtro_dieta_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6560,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_filtro_dieta_service.py"
+      },
+      {
+        "name": "test_filtro_marcador_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7474,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_filtro_marcador_service.py"
+      },
+      {
+        "name": "test_fixtures_bd03.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2930,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_fixtures_bd03.py"
+      },
+      {
+        "name": "test_horario_refeicao_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9318,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_horario_refeicao_resolver.py"
+      },
+      {
+        "name": "test_leitor_cardapio_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 30481,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_leitor_cardapio_service.py"
+      },
+      {
+        "name": "test_leitor_pdf.py",
+        "type": "file",
+        "language": "Python",
+        "size": 37653,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_leitor_pdf.py"
+      },
+      {
+        "name": "test_leitor_pdf_novembro.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9308,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_leitor_pdf_novembro.py"
+      },
+      {
+        "name": "test_leitor_ponta_a_ponta.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4120,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_leitor_ponta_a_ponta.py"
+      },
+      {
+        "name": "test_ler_cardapio_command.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8667,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_ler_cardapio_command.py"
+      },
+      {
+        "name": "test_localizacao_campus_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1583,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_localizacao_campus_config.py"
+      },
+      {
+        "name": "test_models_cardapio.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14206,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_models_cardapio.py"
+      },
+      {
+        "name": "test_origem_cardapio_bd16.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8412,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_origem_cardapio_bd16.py"
+      },
+      {
+        "name": "test_refeicao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7141,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_refeicao_repository.py"
+      },
+      {
+        "name": "test_semana_cardapio_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2838,
+        "extension": ".py",
+        "path": "backend/apps/cardapio/tests/test_semana_cardapio_resolver.py"
       },
       {
         "name": "urls.py",
         "type": "file",
         "language": "Python",
-        "size": 129,
+        "size": 357,
         "extension": ".py",
-        "path": "backend/apps/status/urls.py"
+        "path": "backend/apps/cardapio/urls.py"
       },
       {
         "name": "views.py",
         "type": "file",
         "language": "Python",
-        "size": 177,
+        "size": 15069,
         "extension": ".py",
-        "path": "backend/apps/status/views.py"
+        "path": "backend/apps/cardapio/views.py"
       },
       {
-        "name": "usuarios",
+        "name": "fila",
         "type": "directory",
-        "path": "backend/apps/usuarios",
+        "path": "backend/apps/fila",
         "children": []
       },
       {
@@ -481,37 +1765,161 @@
         "language": "Python",
         "size": 0,
         "extension": ".py",
-        "path": "backend/apps/usuarios/__init__.py"
+        "path": "backend/apps/fila/__init__.py"
       },
       {
         "name": "admin.py",
         "type": "file",
         "language": "Python",
-        "size": 63,
+        "size": 53,
         "extension": ".py",
-        "path": "backend/apps/usuarios/admin.py"
+        "path": "backend/apps/fila/admin.py"
       },
       {
         "name": "apps.py",
         "type": "file",
         "language": "Python",
-        "size": 94,
+        "size": 88,
         "extension": ".py",
-        "path": "backend/apps/usuarios/apps.py"
+        "path": "backend/apps/fila/apps.py"
+      },
+      {
+        "name": "checkin_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6123,
+        "extension": ".py",
+        "path": "backend/apps/fila/checkin_repository.py"
+      },
+      {
+        "name": "checkin_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4726,
+        "extension": ".py",
+        "path": "backend/apps/fila/checkin_service.py"
+      },
+      {
+        "name": "classificador_nivel_fila.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1026,
+        "extension": ".py",
+        "path": "backend/apps/fila/classificador_nivel_fila.py"
+      },
+      {
+        "name": "confirmacao_localizacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1239,
+        "extension": ".py",
+        "path": "backend/apps/fila/confirmacao_localizacao_service.py"
+      },
+      {
+        "name": "distancia_geografica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1204,
+        "extension": ".py",
+        "path": "backend/apps/fila/distancia_geografica.py"
+      },
+      {
+        "name": "erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1359,
+        "extension": ".py",
+        "path": "backend/apps/fila/erros.py"
+      },
+      {
+        "name": "faixa_horario_generator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1273,
+        "extension": ".py",
+        "path": "backend/apps/fila/faixa_horario_generator.py"
+      },
+      {
+        "name": "janela_checkin_validator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1061,
+        "extension": ".py",
+        "path": "backend/apps/fila/janela_checkin_validator.py"
+      },
+      {
+        "name": "janela_historico_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 941,
+        "extension": ".py",
+        "path": "backend/apps/fila/janela_historico_resolver.py"
+      },
+      {
+        "name": "localizacao_ru_config.py",
+        "type": "file",
+        "language": "Python",
+        "size": 936,
+        "extension": ".py",
+        "path": "backend/apps/fila/localizacao_ru_config.py"
+      },
+      {
+        "name": "management",
+        "type": "directory",
+        "path": "backend/apps/fila/management",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/fila/management/__init__.py"
+      },
+      {
+        "name": "commands",
+        "type": "directory",
+        "path": "backend/apps/fila/management/commands",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/fila/management/commands/__init__.py"
+      },
+      {
+        "name": "desvincular_registros_fila.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1831,
+        "extension": ".py",
+        "path": "backend/apps/fila/management/commands/desvincular_registros_fila.py"
+      },
+      {
+        "name": "media_por_faixa_calculator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 782,
+        "extension": ".py",
+        "path": "backend/apps/fila/media_por_faixa_calculator.py"
       },
       {
         "name": "migrations",
         "type": "directory",
-        "path": "backend/apps/usuarios/migrations",
+        "path": "backend/apps/fila/migrations",
         "children": []
       },
       {
         "name": "0001_initial.py",
         "type": "file",
         "language": "Python",
-        "size": 644,
+        "size": 10128,
         "extension": ".py",
-        "path": "backend/apps/usuarios/migrations/0001_initial.py"
+        "path": "backend/apps/fila/migrations/0001_initial.py"
       },
       {
         "name": "__init__.py",
@@ -519,31 +1927,519 @@
         "language": "Python",
         "size": 0,
         "extension": ".py",
-        "path": "backend/apps/usuarios/migrations/__init__.py"
+        "path": "backend/apps/fila/migrations/__init__.py"
       },
       {
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 358,
+        "size": 7903,
         "extension": ".py",
-        "path": "backend/apps/usuarios/models.py"
+        "path": "backend/apps/fila/models.py"
       },
       {
-        "name": "tests.py",
+        "name": "previsao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 60,
+        "size": 3504,
         "extension": ".py",
-        "path": "backend/apps/usuarios/tests.py"
+        "path": "backend/apps/fila/previsao_service.py"
+      },
+      {
+        "name": "retencao_fila_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1660,
+        "extension": ".py",
+        "path": "backend/apps/fila/retencao_fila_service.py"
+      },
+      {
+        "name": "serializers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2850,
+        "extension": ".py",
+        "path": "backend/apps/fila/serializers.py"
+      },
+      {
+        "name": "suficiencia_dados_validator.py",
+        "type": "file",
+        "language": "Python",
+        "size": 744,
+        "extension": ".py",
+        "path": "backend/apps/fila/suficiencia_dados_validator.py"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/apps/fila/tests",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/__init__.py"
+      },
+      {
+        "name": "apoio.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1560,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/apoio.py"
+      },
+      {
+        "name": "apoio_previsao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1716,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/apoio_previsao.py"
+      },
+      {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 850,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/conftest.py"
+      },
+      {
+        "name": "test_app_fila.py",
+        "type": "file",
+        "language": "Python",
+        "size": 607,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_app_fila.py"
+      },
+      {
+        "name": "test_checkin_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9416,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_checkin_endpoint.py"
+      },
+      {
+        "name": "test_checkin_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12985,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_checkin_service.py"
+      },
+      {
+        "name": "test_confirmacao_localizacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4564,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_confirmacao_localizacao.py"
+      },
+      {
+        "name": "test_janela_checkin.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2509,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_janela_checkin.py"
+      },
+      {
+        "name": "test_models_fila.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9326,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_models_fila.py"
+      },
+      {
+        "name": "test_passos_previsao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8149,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_passos_previsao.py"
+      },
+      {
+        "name": "test_previsao_endpoint.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8163,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_previsao_endpoint.py"
+      },
+      {
+        "name": "test_previsao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10127,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_previsao_service.py"
+      },
+      {
+        "name": "test_retencao_fila.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16243,
+        "extension": ".py",
+        "path": "backend/apps/fila/tests/test_retencao_fila.py"
+      },
+      {
+        "name": "urls.py",
+        "type": "file",
+        "language": "Python",
+        "size": 283,
+        "extension": ".py",
+        "path": "backend/apps/fila/urls.py"
       },
       {
         "name": "views.py",
         "type": "file",
         "language": "Python",
-        "size": 645,
+        "size": 11009,
         "extension": ".py",
-        "path": "backend/apps/usuarios/views.py"
+        "path": "backend/apps/fila/views.py"
+      },
+      {
+        "name": "gamificacao",
+        "type": "directory",
+        "path": "backend/apps/gamificacao",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/__init__.py"
+      },
+      {
+        "name": "admin.py",
+        "type": "file",
+        "language": "Python",
+        "size": 60,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/admin.py"
+      },
+      {
+        "name": "apps.py",
+        "type": "file",
+        "language": "Python",
+        "size": 102,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/apps.py"
+      },
+      {
+        "name": "contribuicao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1113,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/contribuicao.py"
+      },
+      {
+        "name": "erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 718,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/erros.py"
+      },
+      {
+        "name": "migrations",
+        "type": "directory",
+        "path": "backend/apps/gamificacao/migrations",
+        "children": []
+      },
+      {
+        "name": "0001_initial.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4119,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/migrations/0001_initial.py"
+      },
+      {
+        "name": "0002_inicializar_pontuacao_usuarios.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1235,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/migrations/0002_inicializar_pontuacao_usuarios.py"
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/migrations/__init__.py"
+      },
+      {
+        "name": "models.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3083,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/models.py"
+      },
+      {
+        "name": "origem_contribuicao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3163,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/origem_contribuicao_repository.py"
+      },
+      {
+        "name": "patente.py",
+        "type": "file",
+        "language": "Python",
+        "size": 529,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/patente.py"
+      },
+      {
+        "name": "patente_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2135,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/patente_resolver.py"
+      },
+      {
+        "name": "pontuacao_policy.py",
+        "type": "file",
+        "language": "Python",
+        "size": 832,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/pontuacao_policy.py"
+      },
+      {
+        "name": "pontuacao_repository.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5482,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/pontuacao_repository.py"
+      },
+      {
+        "name": "pontuacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6172,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/pontuacao_service.py"
+      },
+      {
+        "name": "progresso.py",
+        "type": "file",
+        "language": "Python",
+        "size": 596,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/progresso.py"
+      },
+      {
+        "name": "progresso_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1623,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/progresso_service.py"
+      },
+      {
+        "name": "ranking.py",
+        "type": "file",
+        "language": "Python",
+        "size": 769,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/ranking.py"
+      },
+      {
+        "name": "ranking_publico_mapper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1037,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/ranking_publico_mapper.py"
+      },
+      {
+        "name": "ranking_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2323,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/ranking_service.py"
+      },
+      {
+        "name": "semestre_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1987,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/semestre_resolver.py"
+      },
+      {
+        "name": "serializers.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2497,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/serializers.py"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/apps/gamificacao/tests",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 0,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/__init__.py"
+      },
+      {
+        "name": "apoio_ranking.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1521,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/apoio_ranking.py"
+      },
+      {
+        "name": "test_adesao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5751,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_adesao.py"
+      },
+      {
+        "name": "test_app_gamificacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 649,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_app_gamificacao.py"
+      },
+      {
+        "name": "test_migration_pontuacao_bd03.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3915,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_migration_pontuacao_bd03.py"
+      },
+      {
+        "name": "test_models_gamificacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4924,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_models_gamificacao.py"
+      },
+      {
+        "name": "test_patente_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4351,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_patente_resolver.py"
+      },
+      {
+        "name": "test_pontuacao_concorrencia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11336,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_pontuacao_concorrencia.py"
+      },
+      {
+        "name": "test_pontuacao_endpoints.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3534,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_pontuacao_endpoints.py"
+      },
+      {
+        "name": "test_pontuacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 19435,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_pontuacao_service.py"
+      },
+      {
+        "name": "test_progresso_endpoints.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5847,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_progresso_endpoints.py"
+      },
+      {
+        "name": "test_progresso_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5443,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_progresso_service.py"
+      },
+      {
+        "name": "test_ranking_endpoints.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5658,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_ranking_endpoints.py"
+      },
+      {
+        "name": "test_ranking_publico_mapper.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1823,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_ranking_publico_mapper.py"
+      },
+      {
+        "name": "test_ranking_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6104,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_ranking_service.py"
+      },
+      {
+        "name": "test_semestre_resolver.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3128,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/tests/test_semestre_resolver.py"
+      },
+      {
+        "name": "urls.py",
+        "type": "file",
+        "language": "Python",
+        "size": 461,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/urls.py"
+      },
+      {
+        "name": "views.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4751,
+        "extension": ".py",
+        "path": "backend/apps/gamificacao/views.py"
       },
       {
         "name": "config",
@@ -568,10 +2464,50 @@
         "path": "backend/config/asgi.py"
       },
       {
+        "name": "erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2159,
+        "extension": ".py",
+        "path": "backend/config/erros.py"
+      },
+      {
+        "name": "excecoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4307,
+        "extension": ".py",
+        "path": "backend/config/excecoes.py"
+      },
+      {
+        "name": "log_gunicorn.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1199,
+        "extension": ".py",
+        "path": "backend/config/log_gunicorn.py"
+      },
+      {
+        "name": "logs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 995,
+        "extension": ".py",
+        "path": "backend/config/logs.py"
+      },
+      {
+        "name": "parametros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5817,
+        "extension": ".py",
+        "path": "backend/config/parametros.py"
+      },
+      {
         "name": "settings.py",
         "type": "file",
         "language": "Python",
-        "size": 4164,
+        "size": 18642,
         "extension": ".py",
         "path": "backend/config/settings.py"
       },
@@ -579,7 +2515,7 @@
         "name": "urls.py",
         "type": "file",
         "language": "Python",
-        "size": 377,
+        "size": 453,
         "extension": ".py",
         "path": "backend/config/urls.py"
       },
@@ -592,20 +2528,452 @@
         "path": "backend/config/wsgi.py"
       },
       {
+        "name": "conftest.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4607,
+        "extension": ".py",
+        "path": "backend/conftest.py"
+      },
+      {
+        "name": "entrypoint.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 2819,
+        "extension": ".sh",
+        "path": "backend/entrypoint.sh"
+      },
+      {
         "name": "manage.py",
         "type": "file",
         "language": "Python",
-        "size": 662,
+        "size": 663,
         "extension": ".py",
         "path": "backend/manage.py"
+      },
+      {
+        "name": "openapi.yaml",
+        "type": "file",
+        "language": "YAML",
+        "size": 46076,
+        "extension": ".yaml",
+        "path": "backend/openapi.yaml"
+      },
+      {
+        "name": "pytest.ini",
+        "type": "file",
+        "language": "INI",
+        "size": 1061,
+        "extension": ".ini",
+        "path": "backend/pytest.ini"
+      },
+      {
+        "name": "requirements-ci-mysql.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 197,
+        "extension": ".txt",
+        "path": "backend/requirements-ci-mysql.txt"
+      },
+      {
+        "name": "requirements-dev.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 430,
+        "extension": ".txt",
+        "path": "backend/requirements-dev.txt"
+      },
+      {
+        "name": "requirements-prod.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 383,
+        "extension": ".txt",
+        "path": "backend/requirements-prod.txt"
       },
       {
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 95,
+        "size": 531,
         "extension": ".txt",
         "path": "backend/requirements.txt"
+      },
+      {
+        "name": "ruff.toml",
+        "type": "file",
+        "language": "TOML",
+        "size": 119,
+        "extension": ".toml",
+        "path": "backend/ruff.toml"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "backend/scripts",
+        "children": []
+      },
+      {
+        "name": "mutacao_incremental.py",
+        "type": "file",
+        "language": "Python",
+        "size": 21031,
+        "extension": ".py",
+        "path": "backend/scripts/mutacao_incremental.py"
+      },
+      {
+        "name": "setup.cfg",
+        "type": "file",
+        "language": "Config",
+        "size": 1217,
+        "extension": ".cfg",
+        "path": "backend/setup.cfg"
+      },
+      {
+        "name": "tests",
+        "type": "directory",
+        "path": "backend/tests",
+        "children": []
+      },
+      {
+        "name": "rotas_do_contrato.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1905,
+        "extension": ".py",
+        "path": "backend/tests/rotas_do_contrato.py"
+      },
+      {
+        "name": "test_acesso_contrato.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2230,
+        "extension": ".py",
+        "path": "backend/tests/test_acesso_contrato.py"
+      },
+      {
+        "name": "test_banco_ci.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2651,
+        "extension": ".py",
+        "path": "backend/tests/test_banco_ci.py"
+      },
+      {
+        "name": "test_ci_usuario_restrito.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3909,
+        "extension": ".py",
+        "path": "backend/tests/test_ci_usuario_restrito.py"
+      },
+      {
+        "name": "test_config_mysql_producao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7339,
+        "extension": ".py",
+        "path": "backend/tests/test_config_mysql_producao.py"
+      },
+      {
+        "name": "test_confirmacao_config_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1859,
+        "extension": ".py",
+        "path": "backend/tests/test_confirmacao_config_bd04.py"
+      },
+      {
+        "name": "test_contrato_openapi.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3809,
+        "extension": ".py",
+        "path": "backend/tests/test_contrato_openapi.py"
+      },
+      {
+        "name": "test_contrato_regras.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9098,
+        "extension": ".py",
+        "path": "backend/tests/test_contrato_regras.py"
+      },
+      {
+        "name": "test_cron_producao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 19642,
+        "extension": ".py",
+        "path": "backend/tests/test_cron_producao.py"
+      },
+      {
+        "name": "test_csrf_rotas_reais.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6309,
+        "extension": ".py",
+        "path": "backend/tests/test_csrf_rotas_reais.py"
+      },
+      {
+        "name": "test_deploy_be10.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10686,
+        "extension": ".py",
+        "path": "backend/tests/test_deploy_be10.py"
+      },
+      {
+        "name": "test_deploy_cd.py",
+        "type": "file",
+        "language": "Python",
+        "size": 32306,
+        "extension": ".py",
+        "path": "backend/tests/test_deploy_cd.py"
+      },
+      {
+        "name": "test_email_settings.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8246,
+        "extension": ".py",
+        "path": "backend/tests/test_email_settings.py"
+      },
+      {
+        "name": "test_envio_email_smtp.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2492,
+        "extension": ".py",
+        "path": "backend/tests/test_envio_email_smtp.py"
+      },
+      {
+        "name": "test_estrutura.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1885,
+        "extension": ".py",
+        "path": "backend/tests/test_estrutura.py"
+      },
+      {
+        "name": "test_formato_de_erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11919,
+        "extension": ".py",
+        "path": "backend/tests/test_formato_de_erros.py"
+      },
+      {
+        "name": "test_fuso_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1223,
+        "extension": ".py",
+        "path": "backend/tests/test_fuso_bd04.py"
+      },
+      {
+        "name": "test_horarios_config_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 709,
+        "extension": ".py",
+        "path": "backend/tests/test_horarios_config_bd04.py"
+      },
+      {
+        "name": "test_indices_bd10.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15434,
+        "extension": ".py",
+        "path": "backend/tests/test_indices_bd10.py"
+      },
+      {
+        "name": "test_login_config_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3005,
+        "extension": ".py",
+        "path": "backend/tests/test_login_config_bd04.py"
+      },
+      {
+        "name": "test_matricula_config_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 568,
+        "extension": ".py",
+        "path": "backend/tests/test_matricula_config_bd04.py"
+      },
+      {
+        "name": "test_mutacao_incremental.py",
+        "type": "file",
+        "language": "Python",
+        "size": 32942,
+        "extension": ".py",
+        "path": "backend/tests/test_mutacao_incremental.py"
+      },
+      {
+        "name": "test_parametros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2452,
+        "extension": ".py",
+        "path": "backend/tests/test_parametros.py"
+      },
+      {
+        "name": "test_parametros_cadastro_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 941,
+        "extension": ".py",
+        "path": "backend/tests/test_parametros_cadastro_bd04.py"
+      },
+      {
+        "name": "test_parametros_complementares_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2088,
+        "extension": ".py",
+        "path": "backend/tests/test_parametros_complementares_bd04.py"
+      },
+      {
+        "name": "test_parametros_fila_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 911,
+        "extension": ".py",
+        "path": "backend/tests/test_parametros_fila_bd04.py"
+      },
+      {
+        "name": "test_parametros_gamificacao_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2437,
+        "extension": ".py",
+        "path": "backend/tests/test_parametros_gamificacao_bd04.py"
+      },
+      {
+        "name": "test_parametros_sessao_bd04.py",
+        "type": "file",
+        "language": "Python",
+        "size": 821,
+        "extension": ".py",
+        "path": "backend/tests/test_parametros_sessao_bd04.py"
+      },
+      {
+        "name": "test_seguranca_sessao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 8331,
+        "extension": ".py",
+        "path": "backend/tests/test_seguranca_sessao.py"
+      },
+      {
+        "name": "test_settings_producao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7584,
+        "extension": ".py",
+        "path": "backend/tests/test_settings_producao.py"
+      },
+      {
+        "name": "urls_csrf.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2282,
+        "extension": ".py",
+        "path": "backend/tests/urls_csrf.py"
+      },
+      {
+        "name": "db",
+        "type": "directory",
+        "path": "db",
+        "children": []
+      },
+      {
+        "name": "conf.d",
+        "type": "directory",
+        "path": "db/conf.d",
+        "children": []
+      },
+      {
+        "name": "bandejao.cnf",
+        "type": "file",
+        "language": "Unknown",
+        "size": 897,
+        "extension": ".cnf",
+        "path": "db/conf.d/bandejao.cnf"
+      },
+      {
+        "name": "init",
+        "type": "directory",
+        "path": "db/init",
+        "children": []
+      },
+      {
+        "name": "10-usuarios.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 4833,
+        "extension": ".sh",
+        "path": "db/init/10-usuarios.sh"
+      },
+      {
+        "name": "deploy",
+        "type": "directory",
+        "path": "deploy",
+        "children": []
+      },
+      {
+        "name": "cd",
+        "type": "directory",
+        "path": "deploy/cd",
+        "children": []
+      },
+      {
+        "name": "deploy.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 14734,
+        "extension": ".sh",
+        "path": "deploy/cd/deploy.sh"
+      },
+      {
+        "name": "cron",
+        "type": "directory",
+        "path": "deploy/cron",
+        "children": []
+      },
+      {
+        "name": "bandejao",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1630,
+        "extension": "",
+        "path": "deploy/cron/bandejao"
+      },
+      {
+        "name": "logrotate",
+        "type": "file",
+        "language": "No Extension",
+        "size": 723,
+        "extension": "",
+        "path": "deploy/cron/logrotate"
+      },
+      {
+        "name": "rodar-comando.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 4758,
+        "extension": ".sh",
+        "path": "deploy/cron/rodar-comando.sh"
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 3353,
+        "extension": ".yml",
+        "path": "docker-compose.yml"
       },
       {
         "name": "docs",
@@ -633,7 +3001,7 @@
         "name": "_sidebar.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2961,
+        "size": 4342,
         "extension": ".md",
         "path": "docs/_sidebar.md"
       },
@@ -653,7 +3021,7 @@
         "name": "0001-escolha-stack-backend.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3442,
+        "size": 3526,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0001-escolha-stack-backend.md"
       },
@@ -661,7 +3029,7 @@
         "name": "0002-matricula-apelido-extraidos-do-email.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3033,
+        "size": 5549,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0002-matricula-apelido-extraidos-do-email.md"
       },
@@ -669,7 +3037,7 @@
         "name": "0003-leitor-pdf-como-modulo-do-backend.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4664,
+        "size": 6168,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0003-leitor-pdf-como-modulo-do-backend.md"
       },
@@ -677,7 +3045,7 @@
         "name": "0004-acesso-direto-da-equipe-ao-banco.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4757,
+        "size": 9932,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0004-acesso-direto-da-equipe-ao-banco.md"
       },
@@ -685,7 +3053,7 @@
         "name": "0005-filtros-de-marcador-e-dieta-no-backend.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4124,
+        "size": 4157,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0005-filtros-de-marcador-e-dieta-no-backend.md"
       },
@@ -693,7 +3061,7 @@
         "name": "0006-alerta-de-falha-do-leitor-por-email.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4752,
+        "size": 7416,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0006-alerta-de-falha-do-leitor-por-email.md"
       },
@@ -701,7 +3069,7 @@
         "name": "0007-sessao-autenticada-por-cookie-httponly.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4719,
+        "size": 5483,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0007-sessao-autenticada-por-cookie-httponly.md"
       },
@@ -709,9 +3077,73 @@
         "name": "0008-matricula-siape-em-texto-claro.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4427,
+        "size": 5542,
         "extension": ".md",
         "path": "docs/arquitetura/adr/0008-matricula-siape-em-texto-claro.md"
+      },
+      {
+        "name": "0009-deteccao-de-campus-no-aparelho.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6181,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0009-deteccao-de-campus-no-aparelho.md"
+      },
+      {
+        "name": "0010-nivel-por-chegadas-com-espera-estimada.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5837,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0010-nivel-por-chegadas-com-espera-estimada.md"
+      },
+      {
+        "name": "0011-contadores-de-gamificacao-alem-da-janela-de-retencao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5215,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0011-contadores-de-gamificacao-alem-da-janela-de-retencao.md"
+      },
+      {
+        "name": "0012-hospedagem-e-servico-de-email.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11236,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0012-hospedagem-e-servico-de-email.md"
+      },
+      {
+        "name": "0013-estrategia-de-testes-e-portas-de-qualidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5371,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0013-estrategia-de-testes-e-portas-de-qualidade.md"
+      },
+      {
+        "name": "0014-descoberta-do-pdf-de-cada-campus.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14547,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0014-descoberta-do-pdf-de-cada-campus.md"
+      },
+      {
+        "name": "0015-permissoes-de-agentes-de-ia-no-repositorio.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3880,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0015-permissoes-de-agentes-de-ia-no-repositorio.md"
+      },
+      {
+        "name": "0016-login-com-email-institucional.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5740,
+        "extension": ".md",
+        "path": "docs/arquitetura/adr/0016-login-com-email-institucional.md"
       },
       {
         "name": "backend",
@@ -723,7 +3155,7 @@
         "name": "c4-nivel-3-backend.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8160,
+        "size": 20664,
         "extension": ".md",
         "path": "docs/arquitetura/backend/c4-nivel-3-backend.md"
       },
@@ -731,7 +3163,7 @@
         "name": "c4-nivel-4-avaliacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7576,
+        "size": 17422,
         "extension": ".md",
         "path": "docs/arquitetura/backend/c4-nivel-4-avaliacao.md"
       },
@@ -739,7 +3171,7 @@
         "name": "c4-nivel-4-cadastro-autenticacao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 10821,
+        "size": 37371,
         "extension": ".md",
         "path": "docs/arquitetura/backend/c4-nivel-4-cadastro-autenticacao.md"
       },
@@ -747,7 +3179,7 @@
         "name": "c4-nivel-4-exposicao-cardapio.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8185,
+        "size": 23473,
         "extension": ".md",
         "path": "docs/arquitetura/backend/c4-nivel-4-exposicao-cardapio.md"
       },
@@ -755,17 +3187,33 @@
         "name": "c4-nivel-4-fila.md",
         "type": "file",
         "language": "Markdown",
-        "size": 11684,
+        "size": 37881,
         "extension": ".md",
         "path": "docs/arquitetura/backend/c4-nivel-4-fila.md"
+      },
+      {
+        "name": "c4-nivel-4-gamificacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 33739,
+        "extension": ".md",
+        "path": "docs/arquitetura/backend/c4-nivel-4-gamificacao.md"
       },
       {
         "name": "c4-nivel-4-leitor-cardapio.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8545,
+        "size": 32727,
         "extension": ".md",
         "path": "docs/arquitetura/backend/c4-nivel-4-leitor-cardapio.md"
+      },
+      {
+        "name": "teste-leitor-pdf-be-04.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14533,
+        "extension": ".md",
+        "path": "docs/arquitetura/backend/teste-leitor-pdf-be-04.md"
       },
       {
         "name": "banco-de-dados",
@@ -774,18 +3222,34 @@
         "children": []
       },
       {
-        "name": "C4-niveis-3-4-banco-de-dados-bandejao.md",
+        "name": "C4-nivel-3-banco-de-dados-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 28975,
+        "size": 6884,
         "extension": ".md",
-        "path": "docs/arquitetura/banco-de-dados/C4-niveis-3-4-banco-de-dados-bandejao.md"
+        "path": "docs/arquitetura/banco-de-dados/C4-nivel-3-banco-de-dados-bandejao.md"
+      },
+      {
+        "name": "C4-nivel-4-banco-de-dados-bandejao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 57440,
+        "extension": ".md",
+        "path": "docs/arquitetura/banco-de-dados/C4-nivel-4-banco-de-dados-bandejao.md"
+      },
+      {
+        "name": "indices-bd10.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8847,
+        "extension": ".md",
+        "path": "docs/arquitetura/banco-de-dados/indices-bd10.md"
       },
       {
         "name": "c4-niveis-1-2.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8764,
+        "size": 16998,
         "extension": ".md",
         "path": "docs/arquitetura/c4-niveis-1-2.md"
       },
@@ -799,7 +3263,7 @@
         "name": "c4-niveis-3-4-frontend-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 22120,
+        "size": 60074,
         "extension": ".md",
         "path": "docs/arquitetura/front-end/c4-niveis-3-4-frontend-bandejao.md"
       },
@@ -864,6 +3328,20 @@
         "size": 502,
         "extension": ".md",
         "path": "docs/atas-reunioes/README.md"
+      },
+      {
+        "name": "deploy",
+        "type": "directory",
+        "path": "docs/deploy",
+        "children": []
+      },
+      {
+        "name": "deploy-producao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 34069,
+        "extension": ".md",
+        "path": "docs/deploy/deploy-producao.md"
       },
       {
         "name": "estudos",
@@ -1000,6 +3478,20 @@
         "path": "docs/index.html"
       },
       {
+        "name": "qualidade",
+        "type": "directory",
+        "path": "docs/qualidade",
+        "children": []
+      },
+      {
+        "name": "plano-de-testes.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 29293,
+        "extension": ".md",
+        "path": "docs/qualidade/plano-de-testes.md"
+      },
+      {
         "name": "requisitos",
         "type": "directory",
         "path": "docs/requisitos",
@@ -1009,15 +3501,23 @@
         "name": "CONTEXT-DOMINIO.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4647,
+        "size": 8622,
         "extension": ".md",
         "path": "docs/requisitos/CONTEXT-DOMINIO.md"
+      },
+      {
+        "name": "aviso-de-privacidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9757,
+        "extension": ".md",
+        "path": "docs/requisitos/aviso-de-privacidade.md"
       },
       {
         "name": "backlog.md",
         "type": "file",
         "language": "Markdown",
-        "size": 55819,
+        "size": 49609,
         "extension": ".md",
         "path": "docs/requisitos/backlog.md"
       },
@@ -1025,7 +3525,7 @@
         "name": "documento-de-requisitos-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 46007,
+        "size": 108882,
         "extension": ".md",
         "path": "docs/requisitos/documento-de-requisitos-bandejao.md"
       },
@@ -1033,7 +3533,7 @@
         "name": "documento-de-visao-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 37345,
+        "size": 58844,
         "extension": ".md",
         "path": "docs/requisitos/documento-de-visao-bandejao.md"
       },
@@ -1050,6 +3550,14 @@
         "size": 22,
         "extension": ".md",
         "path": "docs/reviews-sprints/README.md"
+      },
+      {
+        "name": "sprint_review_mds.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13720,
+        "extension": ".md",
+        "path": "docs/reviews-sprints/sprint_review_mds.md"
       },
       {
         "name": "double-diamond",
@@ -1198,6 +3706,14 @@
         "children": []
       },
       {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 84,
+        "extension": ".dockerignore",
+        "path": "frontend/.dockerignore"
+      },
+      {
         "name": ".editorconfig",
         "type": "file",
         "language": "Unknown",
@@ -1238,10 +3754,18 @@
         "path": "frontend/.prettierrc.json"
       },
       {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 628,
+        "extension": "",
+        "path": "frontend/Dockerfile"
+      },
+      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6344,
+        "size": 8844,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -1249,7 +3773,7 @@
         "name": "eslint.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 828,
+        "size": 1395,
         "extension": ".js",
         "path": "frontend/eslint.config.js"
       },
@@ -1273,7 +3797,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 194516,
+        "size": 206390,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -1281,7 +3805,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1098,
+        "size": 1261,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -1327,7 +3851,7 @@
         "name": "manifest.webmanifest",
         "type": "file",
         "language": "Unknown",
-        "size": 646,
+        "size": 617,
         "extension": ".webmanifest",
         "path": "frontend/public/manifest.webmanifest"
       },
@@ -1349,7 +3873,7 @@
         "name": "App.vue",
         "type": "file",
         "language": "Vue",
-        "size": 493,
+        "size": 1521,
         "extension": ".vue",
         "path": "frontend/src/App.vue"
       },
@@ -1363,7 +3887,7 @@
         "name": "base.css",
         "type": "file",
         "language": "CSS",
-        "size": 2785,
+        "size": 3115,
         "extension": ".css",
         "path": "frontend/src/assets/base.css"
       },
@@ -1371,7 +3895,7 @@
         "name": "main.css",
         "type": "file",
         "language": "CSS",
-        "size": 5112,
+        "size": 6242,
         "extension": ".css",
         "path": "frontend/src/assets/main.css"
       },
@@ -1382,6 +3906,14 @@
         "children": []
       },
       {
+        "name": "AbasSemana.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 1421,
+        "extension": ".vue",
+        "path": "frontend/src/components/AbasSemana.vue"
+      },
+      {
         "name": "AppLogo.vue",
         "type": "file",
         "language": "Vue",
@@ -1390,12 +3922,68 @@
         "path": "frontend/src/components/AppLogo.vue"
       },
       {
+        "name": "AvaliacaoWidget.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 25983,
+        "extension": ".js",
+        "path": "frontend/src/components/AvaliacaoWidget.test.js"
+      },
+      {
         "name": "AvaliacaoWidget.vue",
         "type": "file",
         "language": "Vue",
-        "size": 6015,
+        "size": 20112,
         "extension": ".vue",
         "path": "frontend/src/components/AvaliacaoWidget.vue"
+      },
+      {
+        "name": "AvisoExecutivo.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 409,
+        "extension": ".vue",
+        "path": "frontend/src/components/AvisoExecutivo.vue"
+      },
+      {
+        "name": "AvisoLocalizacao.integracao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3203,
+        "extension": ".js",
+        "path": "frontend/src/components/AvisoLocalizacao.integracao.test.js"
+      },
+      {
+        "name": "AvisoLocalizacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 15936,
+        "extension": ".js",
+        "path": "frontend/src/components/AvisoLocalizacao.test.js"
+      },
+      {
+        "name": "AvisoLocalizacao.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 14138,
+        "extension": ".vue",
+        "path": "frontend/src/components/AvisoLocalizacao.vue"
+      },
+      {
+        "name": "AvisoPrivacidade.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 3430,
+        "extension": ".vue",
+        "path": "frontend/src/components/AvisoPrivacidade.vue"
+      },
+      {
+        "name": "BotaoSair.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 975,
+        "extension": ".vue",
+        "path": "frontend/src/components/BotaoSair.vue"
       },
       {
         "name": "BotaoVoltar.vue",
@@ -1409,7 +3997,7 @@
         "name": "CabecalhoFormulario.vue",
         "type": "file",
         "language": "Vue",
-        "size": 548,
+        "size": 561,
         "extension": ".vue",
         "path": "frontend/src/components/CabecalhoFormulario.vue"
       },
@@ -1430,6 +4018,38 @@
         "path": "frontend/src/components/CampoTexto.vue"
       },
       {
+        "name": "CheckinBotao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 17809,
+        "extension": ".js",
+        "path": "frontend/src/components/CheckinBotao.test.js"
+      },
+      {
+        "name": "CheckinBotao.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 9232,
+        "extension": ".vue",
+        "path": "frontend/src/components/CheckinBotao.vue"
+      },
+      {
+        "name": "ContatoEquipe.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1173,
+        "extension": ".js",
+        "path": "frontend/src/components/ContatoEquipe.test.js"
+      },
+      {
+        "name": "ContatoEquipe.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 908,
+        "extension": ".vue",
+        "path": "frontend/src/components/ContatoEquipe.vue"
+      },
+      {
         "name": "ConviteLogin.vue",
         "type": "file",
         "language": "Vue",
@@ -1446,10 +4066,26 @@
         "path": "frontend/src/components/EstrelasNota.vue"
       },
       {
+        "name": "FilaPrevisao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 10501,
+        "extension": ".js",
+        "path": "frontend/src/components/FilaPrevisao.test.js"
+      },
+      {
+        "name": "FilaPrevisao.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 6495,
+        "extension": ".vue",
+        "path": "frontend/src/components/FilaPrevisao.vue"
+      },
+      {
         "name": "FiltroCardapio.vue",
         "type": "file",
         "language": "Vue",
-        "size": 6863,
+        "size": 6882,
         "extension": ".vue",
         "path": "frontend/src/components/FiltroCardapio.vue"
       },
@@ -1460,6 +4096,14 @@
         "size": 4069,
         "extension": ".vue",
         "path": "frontend/src/components/IconeSvg.vue"
+      },
+      {
+        "name": "LinhaRanking.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 1677,
+        "extension": ".vue",
+        "path": "frontend/src/components/LinhaRanking.vue"
       },
       {
         "name": "LinkSimulado.vue",
@@ -1473,9 +4117,127 @@
         "name": "NavegacaoInferior.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2012,
+        "size": 1781,
         "extension": ".vue",
         "path": "frontend/src/components/NavegacaoInferior.vue"
+      },
+      {
+        "name": "NavegacaoTopo.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 2246,
+        "extension": ".vue",
+        "path": "frontend/src/components/NavegacaoTopo.vue"
+      },
+      {
+        "name": "PontosAviso.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4804,
+        "extension": ".js",
+        "path": "frontend/src/components/PontosAviso.test.js"
+      },
+      {
+        "name": "PontosAviso.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 2626,
+        "extension": ".vue",
+        "path": "frontend/src/components/PontosAviso.vue"
+      },
+      {
+        "name": "RankingAdesaoToggle.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 2391,
+        "extension": ".vue",
+        "path": "frontend/src/components/RankingAdesaoToggle.vue"
+      },
+      {
+        "name": "RankingVazio.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 867,
+        "extension": ".vue",
+        "path": "frontend/src/components/RankingVazio.vue"
+      },
+      {
+        "name": "RefeicaoEncerrada.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 1100,
+        "extension": ".vue",
+        "path": "frontend/src/components/RefeicaoEncerrada.vue"
+      },
+      {
+        "name": "SeletorCampus.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9105,
+        "extension": ".js",
+        "path": "frontend/src/components/SeletorCampus.test.js"
+      },
+      {
+        "name": "SeletorCampus.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 5701,
+        "extension": ".vue",
+        "path": "frontend/src/components/SeletorCampus.vue"
+      },
+      {
+        "name": "SeletorRefeicao.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 1459,
+        "extension": ".vue",
+        "path": "frontend/src/components/SeletorRefeicao.vue"
+      },
+      {
+        "name": "navegacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7522,
+        "extension": ".js",
+        "path": "frontend/src/components/navegacao.test.js"
+      },
+      {
+        "name": "composables",
+        "type": "directory",
+        "path": "frontend/src/composables",
+        "children": []
+      },
+      {
+        "name": "avisoLocalizacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1406,
+        "extension": ".js",
+        "path": "frontend/src/composables/avisoLocalizacao.js"
+      },
+      {
+        "name": "avisoLocalizacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1518,
+        "extension": ".js",
+        "path": "frontend/src/composables/avisoLocalizacao.test.js"
+      },
+      {
+        "name": "sair.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1135,
+        "extension": ".js",
+        "path": "frontend/src/composables/sair.js"
+      },
+      {
+        "name": "sair.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2600,
+        "extension": ".js",
+        "path": "frontend/src/composables/sair.test.js"
       },
       {
         "name": "constants",
@@ -1487,15 +4249,23 @@
         "name": "campi.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 920,
+        "size": 661,
         "extension": ".js",
         "path": "frontend/src/constants/campi.js"
+      },
+      {
+        "name": "campi.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1153,
+        "extension": ".js",
+        "path": "frontend/src/constants/campi.test.js"
       },
       {
         "name": "contato.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 146,
+        "size": 437,
         "extension": ".js",
         "path": "frontend/src/constants/contato.js"
       },
@@ -1503,23 +4273,55 @@
         "name": "dietas.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 645,
+        "size": 460,
         "extension": ".js",
         "path": "frontend/src/constants/dietas.js"
+      },
+      {
+        "name": "localizacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1022,
+        "extension": ".js",
+        "path": "frontend/src/constants/localizacao.js"
       },
       {
         "name": "marcadores.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 671,
+        "size": 779,
         "extension": ".js",
         "path": "frontend/src/constants/marcadores.js"
+      },
+      {
+        "name": "navegacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1370,
+        "extension": ".js",
+        "path": "frontend/src/constants/navegacao.js"
+      },
+      {
+        "name": "patentes.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 842,
+        "extension": ".js",
+        "path": "frontend/src/constants/patentes.js"
+      },
+      {
+        "name": "patentes.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 841,
+        "extension": ".js",
+        "path": "frontend/src/constants/patentes.test.js"
       },
       {
         "name": "refeicoes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1162,
+        "size": 1758,
         "extension": ".js",
         "path": "frontend/src/constants/refeicoes.js"
       },
@@ -1549,7 +4351,7 @@
         "name": "index.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3727,
+        "size": 5483,
         "extension": ".js",
         "path": "frontend/src/router/index.js"
       },
@@ -1557,7 +4359,7 @@
         "name": "index.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 6848,
+        "size": 11918,
         "extension": ".js",
         "path": "frontend/src/router/index.test.js"
       },
@@ -1571,9 +4373,33 @@
         "name": "apiClient.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2755,
+        "size": 8061,
         "extension": ".js",
         "path": "frontend/src/services/apiClient.js"
+      },
+      {
+        "name": "apiClient.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 13628,
+        "extension": ".js",
+        "path": "frontend/src/services/apiClient.test.js"
+      },
+      {
+        "name": "leituraPosicao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2895,
+        "extension": ".js",
+        "path": "frontend/src/services/leituraPosicao.js"
+      },
+      {
+        "name": "leituraPosicao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 5438,
+        "extension": ".js",
+        "path": "frontend/src/services/leituraPosicao.test.js"
       },
       {
         "name": "mock",
@@ -1585,7 +4411,7 @@
         "name": "banco.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1857,
+        "size": 2005,
         "extension": ".js",
         "path": "frontend/src/services/mock/banco.js"
       },
@@ -1593,15 +4419,39 @@
         "name": "cardapios.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 10877,
+        "size": 11913,
         "extension": ".js",
         "path": "frontend/src/services/mock/cardapios.js"
+      },
+      {
+        "name": "gamificacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2787,
+        "extension": ".js",
+        "path": "frontend/src/services/mock/gamificacao.js"
+      },
+      {
+        "name": "gamificacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 491,
+        "extension": ".js",
+        "path": "frontend/src/services/mock/gamificacao.test.js"
+      },
+      {
+        "name": "previsao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1129,
+        "extension": ".js",
+        "path": "frontend/src/services/mock/previsao.js"
       },
       {
         "name": "sementes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 4328,
+        "size": 4279,
         "extension": ".js",
         "path": "frontend/src/services/mock/sementes.js"
       },
@@ -1609,7 +4459,7 @@
         "name": "servidor.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 16273,
+        "size": 39892,
         "extension": ".js",
         "path": "frontend/src/services/mock/servidor.js"
       },
@@ -1617,7 +4467,7 @@
         "name": "servidor.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 9529,
+        "size": 47608,
         "extension": ".js",
         "path": "frontend/src/services/mock/servidor.test.js"
       },
@@ -1625,7 +4475,7 @@
         "name": "validacoes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2942,
+        "size": 3213,
         "extension": ".js",
         "path": "frontend/src/services/mock/validacoes.js"
       },
@@ -1633,9 +4483,25 @@
         "name": "validacoes.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2695,
+        "size": 3087,
         "extension": ".js",
         "path": "frontend/src/services/mock/validacoes.test.js"
+      },
+      {
+        "name": "permissaoLocalizacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3663,
+        "extension": ".js",
+        "path": "frontend/src/services/permissaoLocalizacao.js"
+      },
+      {
+        "name": "permissaoLocalizacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6944,
+        "extension": ".js",
+        "path": "frontend/src/services/permissaoLocalizacao.test.js"
       },
       {
         "name": "stores",
@@ -1647,33 +4513,97 @@
         "name": "auth.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1802,
+        "size": 6565,
         "extension": ".js",
         "path": "frontend/src/stores/auth.js"
+      },
+      {
+        "name": "auth.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 15444,
+        "extension": ".js",
+        "path": "frontend/src/stores/auth.test.js"
       },
       {
         "name": "avaliacoes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1696,
+        "size": 10874,
         "extension": ".js",
         "path": "frontend/src/stores/avaliacoes.js"
+      },
+      {
+        "name": "avaliacoes.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 22210,
+        "extension": ".js",
+        "path": "frontend/src/stores/avaliacoes.test.js"
       },
       {
         "name": "cardapio.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1155,
+        "size": 6986,
         "extension": ".js",
         "path": "frontend/src/stores/cardapio.js"
+      },
+      {
+        "name": "cardapio.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 14125,
+        "extension": ".js",
+        "path": "frontend/src/stores/cardapio.test.js"
+      },
+      {
+        "name": "fila.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9301,
+        "extension": ".js",
+        "path": "frontend/src/stores/fila.js"
+      },
+      {
+        "name": "fila.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 21158,
+        "extension": ".js",
+        "path": "frontend/src/stores/fila.test.js"
+      },
+      {
+        "name": "gamificacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 10821,
+        "extension": ".js",
+        "path": "frontend/src/stores/gamificacao.js"
+      },
+      {
+        "name": "gamificacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 30176,
+        "extension": ".js",
+        "path": "frontend/src/stores/gamificacao.test.js"
       },
       {
         "name": "preferencias.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3035,
+        "size": 5166,
         "extension": ".js",
         "path": "frontend/src/stores/preferencias.js"
+      },
+      {
+        "name": "preferencias.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7127,
+        "extension": ".js",
+        "path": "frontend/src/stores/preferencias.test.js"
       },
       {
         "name": "utils",
@@ -1682,10 +4612,26 @@
         "children": []
       },
       {
+        "name": "avaliacao.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1272,
+        "extension": ".js",
+        "path": "frontend/src/utils/avaliacao.js"
+      },
+      {
+        "name": "avaliacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2666,
+        "extension": ".js",
+        "path": "frontend/src/utils/avaliacao.test.js"
+      },
+      {
         "name": "cardapio.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3336,
+        "size": 3030,
         "extension": ".js",
         "path": "frontend/src/utils/cardapio.js"
       },
@@ -1693,7 +4639,7 @@
         "name": "cardapio.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 5331,
+        "size": 4733,
         "extension": ".js",
         "path": "frontend/src/utils/cardapio.test.js"
       },
@@ -1701,7 +4647,7 @@
         "name": "datas.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2688,
+        "size": 2789,
         "extension": ".js",
         "path": "frontend/src/utils/datas.js"
       },
@@ -1712,10 +4658,18 @@
         "children": []
       },
       {
+        "name": "AvaliacoesView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 3507,
+        "extension": ".js",
+        "path": "frontend/src/views/AvaliacoesView.test.js"
+      },
+      {
         "name": "AvaliacoesView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 7130,
+        "size": 3044,
         "extension": ".vue",
         "path": "frontend/src/views/AvaliacoesView.vue"
       },
@@ -1723,7 +4677,7 @@
         "name": "BoasVindasView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2507,
+        "size": 2520,
         "extension": ".vue",
         "path": "frontend/src/views/BoasVindasView.vue"
       },
@@ -1731,23 +4685,39 @@
         "name": "CadastroView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 8178,
+        "size": 8605,
         "extension": ".vue",
         "path": "frontend/src/views/CadastroView.vue"
+      },
+      {
+        "name": "CampusView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 21752,
+        "extension": ".js",
+        "path": "frontend/src/views/CampusView.test.js"
       },
       {
         "name": "CampusView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2669,
+        "size": 5962,
         "extension": ".vue",
         "path": "frontend/src/views/CampusView.vue"
+      },
+      {
+        "name": "CardapioView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 16284,
+        "extension": ".js",
+        "path": "frontend/src/views/CardapioView.test.js"
       },
       {
         "name": "CardapioView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 13907,
+        "size": 13881,
         "extension": ".vue",
         "path": "frontend/src/views/CardapioView.vue"
       },
@@ -1755,7 +4725,7 @@
         "name": "ConfirmarEmailView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 5933,
+        "size": 7100,
         "extension": ".vue",
         "path": "frontend/src/views/ConfirmarEmailView.vue"
       },
@@ -1763,15 +4733,23 @@
         "name": "FilaView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 4140,
+        "size": 2432,
         "extension": ".vue",
         "path": "frontend/src/views/FilaView.vue"
+      },
+      {
+        "name": "HomeView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4344,
+        "extension": ".js",
+        "path": "frontend/src/views/HomeView.test.js"
       },
       {
         "name": "HomeView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 15246,
+        "size": 16995,
         "extension": ".vue",
         "path": "frontend/src/views/HomeView.vue"
       },
@@ -1779,7 +4757,7 @@
         "name": "LoginView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 4334,
+        "size": 5169,
         "extension": ".vue",
         "path": "frontend/src/views/LoginView.vue"
       },
@@ -1787,15 +4765,47 @@
         "name": "NotFoundView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 798,
+        "size": 811,
         "extension": ".vue",
         "path": "frontend/src/views/NotFoundView.vue"
+      },
+      {
+        "name": "ProgressoView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 16149,
+        "extension": ".js",
+        "path": "frontend/src/views/ProgressoView.test.js"
+      },
+      {
+        "name": "ProgressoView.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 5840,
+        "extension": ".vue",
+        "path": "frontend/src/views/ProgressoView.vue"
+      },
+      {
+        "name": "RankingView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 16110,
+        "extension": ".js",
+        "path": "frontend/src/views/RankingView.test.js"
+      },
+      {
+        "name": "RankingView.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 5673,
+        "extension": ".vue",
+        "path": "frontend/src/views/RankingView.vue"
       },
       {
         "name": "RecuperarSenhaView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2420,
+        "size": 2516,
         "extension": ".vue",
         "path": "frontend/src/views/RecuperarSenhaView.vue"
       },
@@ -1803,15 +4813,23 @@
         "name": "RedefinirSenhaView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 3123,
+        "size": 3201,
         "extension": ".vue",
         "path": "frontend/src/views/RedefinirSenhaView.vue"
+      },
+      {
+        "name": "fluxoConta.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 14562,
+        "extension": ".js",
+        "path": "frontend/src/views/fluxoConta.test.js"
       },
       {
         "name": "vite.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 380,
+        "size": 657,
         "extension": ".js",
         "path": "frontend/vite.config.js"
       },
@@ -1819,14 +4837,14 @@
         "name": "vitest.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 385,
+        "size": 1377,
         "extension": ".js",
         "path": "frontend/vitest.config.js"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-22T14:11:11.826798+00:00",
+    "extracted_at": "2026-11-23T16:45:06.748807+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao-UnB.json"
   }
 }

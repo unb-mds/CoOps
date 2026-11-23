@@ -2,19 +2,19 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-22T14:10:00.883715+00:00",
+  "analyzed_at": "2026-11-23T16:44:07.605705+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 151,
-  "total_bytes": 2169085,
+  "total_files": 161,
+  "total_bytes": 2047507,
   "languages": [
     {
       "language": "PNG Image",
       "file_count": 12,
       "total_bytes": 901800,
-      "percentage": 41.58,
+      "percentage": 44.04,
       "files": [
         {
           "path": "docs/storymap/story-map.png",
@@ -80,20 +80,20 @@
     },
     {
       "language": "JSON",
-      "file_count": 13,
-      "total_bytes": 453191,
-      "percentage": 20.89,
+      "file_count": 14,
+      "total_bytes": 273209,
+      "percentage": 13.34,
       "files": [
-        {
-          "path": "coleta/relatorio.json",
-          "name": "relatorio.json",
-          "size": 331458,
-          "extension": ".json"
-        },
         {
           "path": "frontend/data/termos.json",
           "name": "termos.json",
-          "size": 67330,
+          "size": 133287,
+          "extension": ".json"
+        },
+        {
+          "path": "coleta/relatorio.json",
+          "name": "relatorio.json",
+          "size": 82784,
           "extension": ".json"
         },
         {
@@ -105,7 +105,7 @@
         {
           "path": "coleta/filtro-de-termos.json",
           "name": "filtro-de-termos.json",
-          "size": 3675,
+          "size": 5279,
           "extension": ".json"
         },
         {
@@ -139,18 +139,86 @@
           "extension": ".json"
         },
         {
-          "path": "frontend/data/trilha-calouro.json",
-          "name": "trilha-calouro.json",
-          "size": 799,
+          "path": "lighthouserc.json",
+          "name": "lighthouserc.json",
+          "size": 1131,
           "extension": ".json"
         }
       ]
     },
     {
+      "language": "Markdown",
+      "file_count": 54,
+      "total_bytes": 252662,
+      "percentage": 12.34,
+      "files": [
+        {
+          "path": "docs/scrum/sprint-planning.md",
+          "name": "sprint-planning.md",
+          "size": 19942,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/estrategia-de-testes.md",
+          "name": "estrategia-de-testes.md",
+          "size": 16092,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/FONTES-DE-DADOS.md",
+          "name": "FONTES-DE-DADOS.md",
+          "size": 15886,
+          "extension": ".md"
+        },
+        {
+          "path": "AI-USAGE.md",
+          "name": "AI-USAGE.md",
+          "size": 10910,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/estudos/spike-bot-siglas.md",
+          "name": "spike-bot-siglas.md",
+          "size": 9376,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/SEGURANCA.md",
+          "name": "SEGURANCA.md",
+          "size": 8802,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/estudos/estudo-git-github.md",
+          "name": "estudo-git-github.md",
+          "size": 8284,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/scrum/retro-r1.md",
+          "name": "retro-r1.md",
+          "size": 7023,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/CONVENCAO-GIT.md",
+          "name": "CONVENCAO-GIT.md",
+          "size": 6643,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/estudos/estudo-pwa.md",
+          "name": "estudo-pwa.md",
+          "size": 6321,
+          "extension": ".md"
+        }
+      ]
+    },
+    {
       "language": "JavaScript",
-      "file_count": 41,
-      "total_bytes": 217739,
-      "percentage": 10.04,
+      "file_count": 44,
+      "total_bytes": 233024,
+      "percentage": 11.38,
       "files": [
         {
           "path": "tests/classificador.test.js",
@@ -161,7 +229,7 @@
         {
           "path": "frontend/js/app.js",
           "name": "app.js",
-          "size": 16767,
+          "size": 16913,
           "extension": ".js"
         },
         {
@@ -195,6 +263,12 @@
           "extension": ".js"
         },
         {
+          "path": "tests/seguranca.test.js",
+          "name": "seguranca.test.js",
+          "size": 7985,
+          "extension": ".js"
+        },
+        {
           "path": "coleta/deduplicar.js",
           "name": "deduplicar.js",
           "size": 7879,
@@ -205,80 +279,6 @@
           "name": "classificador.js",
           "size": 7807,
           "extension": ".js"
-        },
-        {
-          "path": "coleta/coletor-html.js",
-          "name": "coletor-html.js",
-          "size": 7783,
-          "extension": ".js"
-        }
-      ]
-    },
-    {
-      "language": "Markdown",
-      "file_count": 50,
-      "total_bytes": 213768,
-      "percentage": 9.86,
-      "files": [
-        {
-          "path": "docs/scrum/sprint-planning.md",
-          "name": "sprint-planning.md",
-          "size": 19942,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/FONTES-DE-DADOS.md",
-          "name": "FONTES-DE-DADOS.md",
-          "size": 15886,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/spike-bot-siglas.md",
-          "name": "spike-bot-siglas.md",
-          "size": 9376,
-          "extension": ".md"
-        },
-        {
-          "path": "AI-USAGE.md",
-          "name": "AI-USAGE.md",
-          "size": 9044,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-git-github.md",
-          "name": "estudo-git-github.md",
-          "size": 8284,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/scrum/retro-r1.md",
-          "name": "retro-r1.md",
-          "size": 7023,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/CONVENCAO-GIT.md",
-          "name": "CONVENCAO-GIT.md",
-          "size": 6643,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-pwa.md",
-          "name": "estudo-pwa.md",
-          "size": 6321,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/GUIA-FLUXO-DE-TRABALHO.md",
-          "name": "GUIA-FLUXO-DE-TRABALHO.md",
-          "size": 6169,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/TRILHA-CALOURO.md",
-          "name": "TRILHA-CALOURO.md",
-          "size": 6132,
-          "extension": ".md"
         }
       ]
     },
@@ -286,7 +286,7 @@
       "language": "PDF",
       "file_count": 4,
       "total_bytes": 161912,
-      "percentage": 7.46,
+      "percentage": 7.91,
       "files": [
         {
           "path": "tests/coleta/fixtures/dpo-paginas-5-8.pdf",
@@ -316,9 +316,9 @@
     },
     {
       "language": "HTML",
-      "file_count": 9,
-      "total_bytes": 149617,
-      "percentage": 6.9,
+      "file_count": 10,
+      "total_bytes": 150218,
+      "percentage": 7.34,
       "files": [
         {
           "path": "tests/fixtures/unb-decanatos.html",
@@ -347,19 +347,19 @@
         {
           "path": "frontend/index.html",
           "name": "index.html",
-          "size": 3999,
+          "size": 3992,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/todas-siglas.html",
+          "name": "todas-siglas.html",
+          "size": 2866,
           "extension": ".html"
         },
         {
           "path": "frontend/termo.html",
           "name": "termo.html",
           "size": 2840,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/todas-siglas.html",
-          "name": "todas-siglas.html",
-          "size": 2796,
           "extension": ".html"
         },
         {
@@ -373,19 +373,25 @@
           "name": "index.html",
           "size": 599,
           "extension": ".html"
+        },
+        {
+          "path": "tests/fixtures/pagina-maliciosa.html",
+          "name": "pagina-maliciosa.html",
+          "size": 538,
+          "extension": ".html"
         }
       ]
     },
     {
       "language": "CSS",
       "file_count": 2,
-      "total_bytes": 30195,
-      "percentage": 1.39,
+      "total_bytes": 30991,
+      "percentage": 1.51,
       "files": [
         {
           "path": "frontend/styles.css",
           "name": "styles.css",
-          "size": 16521,
+          "size": 17317,
           "extension": ".css"
         },
         {
@@ -399,8 +405,8 @@
     {
       "language": "Unknown",
       "file_count": 11,
-      "total_bytes": 22034,
-      "percentage": 1.02,
+      "total_bytes": 22527,
+      "percentage": 1.1,
       "files": [
         {
           "path": "scripts/coleta-automatica.mjs",
@@ -417,7 +423,7 @@
         {
           "path": "scripts/servidor-local.mjs",
           "name": "servidor-local.mjs",
-          "size": 3507,
+          "size": 4000,
           "extension": ".mjs"
         },
         {
@@ -468,7 +474,7 @@
       "language": "SVG Image",
       "file_count": 1,
       "total_bytes": 11042,
-      "percentage": 0.51,
+      "percentage": 0.54,
       "files": [
         {
           "path": "frontend/icon-source.svg",
@@ -480,14 +486,20 @@
     },
     {
       "language": "YAML",
-      "file_count": 5,
-      "total_bytes": 6315,
-      "percentage": 0.29,
+      "file_count": 6,
+      "total_bytes": 8635,
+      "percentage": 0.42,
       "files": [
         {
           "path": ".github/workflows/coleta.yml",
           "name": "coleta.yml",
           "size": 2504,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/workflows/lighthouse.yml",
+          "name": "lighthouse.yml",
+          "size": 2168,
           "extension": ".yml"
         },
         {
@@ -505,7 +517,7 @@
         {
           "path": ".github/workflows/ci.yml",
           "name": "ci.yml",
-          "size": 717,
+          "size": 869,
           "extension": ".yml"
         },
         {
@@ -533,13 +545,13 @@
     {
       "language": "Git Ignore",
       "file_count": 1,
-      "total_bytes": 214,
+      "total_bytes": 229,
       "percentage": 0.01,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 214,
+          "size": 229,
           "extension": ".gitignore"
         }
       ]
@@ -560,7 +572,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-22T14:11:11.853253+00:00",
+    "extracted_at": "2026-11-23T16:45:06.767575+00:00",
     "file_path": "data/silver/language_analysis_2026-2-GlossarioUnB.json"
   }
 }
