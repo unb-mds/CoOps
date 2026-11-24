@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao-UnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-23T16:44:04.975764+00:00",
+  "extracted_at": "2026-11-24T16:47:45.078759+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -77,7 +77,7 @@
         "name": "backend-ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 15271,
+        "size": 17176,
         "extension": ".yml",
         "path": ".github/workflows/backend-ci.yml"
       },
@@ -85,9 +85,17 @@
         "name": "backend-mutacao-semanal.yml",
         "type": "file",
         "language": "YAML",
-        "size": 6743,
+        "size": 6403,
         "extension": ".yml",
         "path": ".github/workflows/backend-mutacao-semanal.yml"
+      },
+      {
+        "name": "carga.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 6122,
+        "extension": ".yml",
+        "path": ".github/workflows/carga.yml"
       },
       {
         "name": "deploy.yml",
@@ -98,12 +106,28 @@
         "path": ".github/workflows/deploy.yml"
       },
       {
+        "name": "e2e.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2335,
+        "extension": ".yml",
+        "path": ".github/workflows/e2e.yml"
+      },
+      {
         "name": "frontend-ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2301,
+        "size": 7483,
         "extension": ".yml",
         "path": ".github/workflows/frontend-ci.yml"
+      },
+      {
+        "name": "frontend-mutacao-semanal.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 3056,
+        "extension": ".yml",
+        "path": ".github/workflows/frontend-mutacao-semanal.yml"
       },
       {
         "name": ".gitignore",
@@ -117,7 +141,7 @@
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 157281,
+        "size": 186127,
         "extension": ".md",
         "path": "AI-USAGE.md"
       },
@@ -411,7 +435,7 @@
         "name": ".coveragerc",
         "type": "file",
         "language": "Unknown",
-        "size": 46,
+        "size": 230,
         "extension": ".coveragerc",
         "path": "backend/.coveragerc"
       },
@@ -419,7 +443,7 @@
         "name": ".dockerignore",
         "type": "file",
         "language": "Docker Ignore",
-        "size": 180,
+        "size": 283,
         "extension": ".dockerignore",
         "path": "backend/.dockerignore"
       },
@@ -2442,6 +2466,52 @@
         "path": "backend/apps/gamificacao/views.py"
       },
       {
+        "name": "carga",
+        "type": "directory",
+        "path": "backend/carga",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 109,
+        "extension": ".py",
+        "path": "backend/carga/__init__.py"
+      },
+      {
+        "name": "avaliar.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5349,
+        "extension": ".py",
+        "path": "backend/carga/avaliar.py"
+      },
+      {
+        "name": "cenario.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1617,
+        "extension": ".py",
+        "path": "backend/carga/cenario.py"
+      },
+      {
+        "name": "dados.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7667,
+        "extension": ".py",
+        "path": "backend/carga/dados.py"
+      },
+      {
+        "name": "locustfile.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1968,
+        "extension": ".py",
+        "path": "backend/carga/locustfile.py"
+      },
+      {
         "name": "config",
         "type": "directory",
         "path": "backend/config",
@@ -2568,6 +2638,14 @@
         "path": "backend/pytest.ini"
       },
       {
+        "name": "requirements-carga.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 159,
+        "extension": ".txt",
+        "path": "backend/requirements-carga.txt"
+      },
+      {
         "name": "requirements-ci-mysql.txt",
         "type": "file",
         "language": "Text",
@@ -2579,7 +2657,7 @@
         "name": "requirements-dev.txt",
         "type": "file",
         "language": "Text",
-        "size": 430,
+        "size": 630,
         "extension": ".txt",
         "path": "backend/requirements-dev.txt"
       },
@@ -2636,6 +2714,20 @@
         "children": []
       },
       {
+        "name": "fixtures",
+        "type": "directory",
+        "path": "backend/tests/fixtures",
+        "children": []
+      },
+      {
+        "name": "carga_stats_locust_2_46_7.csv",
+        "type": "file",
+        "language": "Unknown",
+        "size": 643,
+        "extension": ".csv",
+        "path": "backend/tests/fixtures/carga_stats_locust_2_46_7.csv"
+      },
+      {
         "name": "rotas_do_contrato.py",
         "type": "file",
         "language": "Python",
@@ -2658,6 +2750,14 @@
         "size": 2651,
         "extension": ".py",
         "path": "backend/tests/test_banco_ci.py"
+      },
+      {
+        "name": "test_carga_bd14.py",
+        "type": "file",
+        "language": "Python",
+        "size": 18346,
+        "extension": ".py",
+        "path": "backend/tests/test_carga_bd14.py"
       },
       {
         "name": "test_ci_usuario_restrito.py",
@@ -3001,7 +3101,7 @@
         "name": "_sidebar.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4342,
+        "size": 4405,
         "extension": ".md",
         "path": "docs/_sidebar.md"
       },
@@ -3263,7 +3363,7 @@
         "name": "c4-niveis-3-4-frontend-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 60074,
+        "size": 60293,
         "extension": ".md",
         "path": "docs/arquitetura/front-end/c4-niveis-3-4-frontend-bandejao.md"
       },
@@ -3487,9 +3587,17 @@
         "name": "plano-de-testes.md",
         "type": "file",
         "language": "Markdown",
-        "size": 29293,
+        "size": 39315,
         "extension": ".md",
         "path": "docs/qualidade/plano-de-testes.md"
+      },
+      {
+        "name": "teste-de-carga-bd14.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9360,
+        "extension": ".md",
+        "path": "docs/qualidade/teste-de-carga-bd14.md"
       },
       {
         "name": "requisitos",
@@ -3709,7 +3817,7 @@
         "name": ".dockerignore",
         "type": "file",
         "language": "Docker Ignore",
-        "size": 84,
+        "size": 205,
         "extension": ".dockerignore",
         "path": "frontend/.dockerignore"
       },
@@ -3733,7 +3841,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 396,
+        "size": 564,
         "extension": ".gitignore",
         "path": "frontend/.gitignore"
       },
@@ -3765,15 +3873,145 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 8844,
+        "size": 11333,
         "extension": ".md",
         "path": "frontend/README.md"
+      },
+      {
+        "name": "e2e",
+        "type": "directory",
+        "path": "frontend/e2e",
+        "children": []
+      },
+      {
+        "name": "Caddyfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 689,
+        "extension": "",
+        "path": "frontend/e2e/Caddyfile"
+      },
+      {
+        "name": "apoio",
+        "type": "directory",
+        "path": "frontend/e2e/apoio",
+        "children": []
+      },
+      {
+        "name": "contas.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1585,
+        "extension": ".js",
+        "path": "frontend/e2e/apoio/contas.js"
+      },
+      {
+        "name": "mailpit.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1343,
+        "extension": ".js",
+        "path": "frontend/e2e/apoio/mailpit.js"
+      },
+      {
+        "name": "preparar.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1372,
+        "extension": ".js",
+        "path": "frontend/e2e/apoio/preparar.js"
+      },
+      {
+        "name": "teste.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1472,
+        "extension": ".js",
+        "path": "frontend/e2e/apoio/teste.js"
+      },
+      {
+        "name": "dados",
+        "type": "directory",
+        "path": "frontend/e2e/dados",
+        "children": []
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2162,
+        "extension": ".md",
+        "path": "frontend/e2e/dados/README.md"
+      },
+      {
+        "name": "cardapio.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 70907,
+        "extension": ".json",
+        "path": "frontend/e2e/dados/cardapio.json"
+      },
+      {
+        "name": "contas.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 7531,
+        "extension": ".json",
+        "path": "frontend/e2e/dados/contas.json"
+      },
+      {
+        "name": "historico-fila.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 52881,
+        "extension": ".json",
+        "path": "frontend/e2e/dados/historico-fila.json"
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 6531,
+        "extension": ".yml",
+        "path": "frontend/e2e/docker-compose.yml"
+      },
+      {
+        "name": "m1-cadastro-e-login.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2859,
+        "extension": ".js",
+        "path": "frontend/e2e/m1-cadastro-e-login.spec.js"
+      },
+      {
+        "name": "m2-checkin.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2689,
+        "extension": ".js",
+        "path": "frontend/e2e/m2-checkin.spec.js"
+      },
+      {
+        "name": "m3-cardapio-e-avaliacao.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4434,
+        "extension": ".js",
+        "path": "frontend/e2e/m3-cardapio-e-avaliacao.spec.js"
+      },
+      {
+        "name": "m4-previsao-progresso-e-ranking.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2377,
+        "extension": ".js",
+        "path": "frontend/e2e/m4-previsao-progresso-e-ranking.spec.js"
       },
       {
         "name": "eslint.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1395,
+        "size": 1760,
         "extension": ".js",
         "path": "frontend/eslint.config.js"
       },
@@ -3781,7 +4019,7 @@
         "name": "index.html",
         "type": "file",
         "language": "HTML",
-        "size": 1044,
+        "size": 1317,
         "extension": ".html",
         "path": "frontend/index.html"
       },
@@ -3797,7 +4035,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 206390,
+        "size": 291492,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -3805,9 +4043,17 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 1261,
+        "size": 2084,
         "extension": ".json",
         "path": "frontend/package.json"
+      },
+      {
+        "name": "playwright.config.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1504,
+        "extension": ".js",
+        "path": "frontend/playwright.config.js"
       },
       {
         "name": "public",
@@ -3816,12 +4062,42 @@
         "children": []
       },
       {
+        "name": "capturas",
+        "type": "directory",
+        "path": "frontend/public/capturas",
+        "children": []
+      },
+      {
+        "name": "tela-celular.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 134539,
+        "extension": ".png",
+        "path": "frontend/public/capturas/tela-celular.png"
+      },
+      {
+        "name": "tela-desktop.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 63687,
+        "extension": ".png",
+        "path": "frontend/public/capturas/tela-desktop.png"
+      },
+      {
         "name": "favicon.ico",
         "type": "file",
         "language": "Icon",
         "size": 4286,
         "extension": ".ico",
         "path": "frontend/public/favicon.ico"
+      },
+      {
+        "name": "icone-180.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 22135,
+        "extension": ".png",
+        "path": "frontend/public/icone-180.png"
       },
       {
         "name": "icone-192.png",
@@ -3851,7 +4127,7 @@
         "name": "manifest.webmanifest",
         "type": "file",
         "language": "Unknown",
-        "size": 617,
+        "size": 1148,
         "extension": ".webmanifest",
         "path": "frontend/public/manifest.webmanifest"
       },
@@ -3862,6 +4138,44 @@
         "size": 1570,
         "extension": ".js",
         "path": "frontend/public/sw.js"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "frontend/scripts",
+        "children": []
+      },
+      {
+        "name": "cobertura.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 6329,
+        "extension": ".mjs",
+        "path": "frontend/scripts/cobertura.mjs"
+      },
+      {
+        "name": "cobertura.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 10684,
+        "extension": ".js",
+        "path": "frontend/scripts/cobertura.test.js"
+      },
+      {
+        "name": "mutacao.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 12993,
+        "extension": ".mjs",
+        "path": "frontend/scripts/mutacao.mjs"
+      },
+      {
+        "name": "mutacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 13491,
+        "extension": ".js",
+        "path": "frontend/scripts/mutacao.test.js"
       },
       {
         "name": "src",
@@ -4029,7 +4343,7 @@
         "name": "CheckinBotao.vue",
         "type": "file",
         "language": "Vue",
-        "size": 9232,
+        "size": 9524,
         "extension": ".vue",
         "path": "frontend/src/components/CheckinBotao.vue"
       },
@@ -4077,7 +4391,7 @@
         "name": "FilaPrevisao.vue",
         "type": "file",
         "language": "Vue",
-        "size": 6495,
+        "size": 6787,
         "extension": ".vue",
         "path": "frontend/src/components/FilaPrevisao.vue"
       },
@@ -4334,12 +4648,28 @@
         "path": "frontend/src/main.js"
       },
       {
+        "name": "pwa.instalavel.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4604,
+        "extension": ".js",
+        "path": "frontend/src/pwa.instalavel.test.js"
+      },
+      {
         "name": "pwa.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 500,
+        "size": 617,
         "extension": ".js",
         "path": "frontend/src/pwa.js"
+      },
+      {
+        "name": "pwa.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2267,
+        "extension": ".js",
+        "path": "frontend/src/pwa.test.js"
       },
       {
         "name": "router",
@@ -4419,7 +4749,7 @@
         "name": "cardapios.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 11913,
+        "size": 11971,
         "extension": ".js",
         "path": "frontend/src/services/mock/cardapios.js"
       },
@@ -4459,7 +4789,7 @@
         "name": "servidor.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 39892,
+        "size": 39760,
         "extension": ".js",
         "path": "frontend/src/services/mock/servidor.js"
       },
@@ -4467,7 +4797,7 @@
         "name": "servidor.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 47608,
+        "size": 48573,
         "extension": ".js",
         "path": "frontend/src/services/mock/servidor.test.js"
       },
@@ -4529,7 +4859,7 @@
         "name": "avaliacoes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 10874,
+        "size": 11117,
         "extension": ".js",
         "path": "frontend/src/stores/avaliacoes.js"
       },
@@ -4537,7 +4867,7 @@
         "name": "avaliacoes.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 22210,
+        "size": 22686,
         "extension": ".js",
         "path": "frontend/src/stores/avaliacoes.test.js"
       },
@@ -4545,7 +4875,7 @@
         "name": "cardapio.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 6986,
+        "size": 5203,
         "extension": ".js",
         "path": "frontend/src/stores/cardapio.js"
       },
@@ -4553,7 +4883,7 @@
         "name": "cardapio.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 14125,
+        "size": 11893,
         "extension": ".js",
         "path": "frontend/src/stores/cardapio.test.js"
       },
@@ -4606,6 +4936,14 @@
         "path": "frontend/src/stores/preferencias.test.js"
       },
       {
+        "name": "sw.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6377,
+        "extension": ".js",
+        "path": "frontend/src/sw.test.js"
+      },
+      {
         "name": "utils",
         "type": "directory",
         "path": "frontend/src/utils",
@@ -4631,15 +4969,23 @@
         "name": "cardapio.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3030,
+        "size": 3671,
         "extension": ".js",
         "path": "frontend/src/utils/cardapio.js"
+      },
+      {
+        "name": "cardapio.propriedades.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2726,
+        "extension": ".js",
+        "path": "frontend/src/utils/cardapio.propriedades.test.js"
       },
       {
         "name": "cardapio.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 4733,
+        "size": 5871,
         "extension": ".js",
         "path": "frontend/src/utils/cardapio.test.js"
       },
@@ -4741,7 +5087,7 @@
         "name": "HomeView.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 4344,
+        "size": 11911,
         "extension": ".js",
         "path": "frontend/src/views/HomeView.test.js"
       },
@@ -4749,7 +5095,7 @@
         "name": "HomeView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 16995,
+        "size": 17412,
         "extension": ".vue",
         "path": "frontend/src/views/HomeView.vue"
       },
@@ -4826,6 +5172,14 @@
         "path": "frontend/src/views/fluxoConta.test.js"
       },
       {
+        "name": "stryker.config.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1061,
+        "extension": ".mjs",
+        "path": "frontend/stryker.config.mjs"
+      },
+      {
         "name": "vite.config.js",
         "type": "file",
         "language": "JavaScript",
@@ -4837,14 +5191,14 @@
         "name": "vitest.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1377,
+        "size": 1649,
         "extension": ".js",
         "path": "frontend/vitest.config.js"
       }
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-23T16:45:06.748807+00:00",
+    "extracted_at": "2026-11-24T16:49:56.219577+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao-UnB.json"
   }
 }

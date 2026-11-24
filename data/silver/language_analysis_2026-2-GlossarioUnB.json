@@ -2,19 +2,19 @@
   "repository": "2026-2-GlossarioUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-23T16:44:07.605705+00:00",
+  "analyzed_at": "2026-11-24T16:47:49.080917+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 161,
-  "total_bytes": 2047507,
+  "total_files": 210,
+  "total_bytes": 3774795,
   "languages": [
     {
       "language": "PNG Image",
-      "file_count": 12,
-      "total_bytes": 901800,
-      "percentage": 44.04,
+      "file_count": 15,
+      "total_bytes": 1267578,
+      "percentage": 33.58,
       "files": [
         {
           "path": "docs/storymap/story-map.png",
@@ -29,9 +29,21 @@
           "extension": ".png"
         },
         {
+          "path": "docs/scrum/sprints/img/sprint-08-quadro.png",
+          "name": "sprint-08-quadro.png",
+          "size": 247110,
+          "extension": ".png"
+        },
+        {
           "path": "docs/scrum/sprints/img/sprint-05-commits.png",
           "name": "sprint-05-commits.png",
           "size": 80564,
+          "extension": ".png"
+        },
+        {
+          "path": "docs/scrum/sprints/img/sprint-08-commits.png",
+          "name": "sprint-08-commits.png",
+          "size": 69893,
           "extension": ".png"
         },
         {
@@ -47,6 +59,12 @@
           "extension": ".PNG"
         },
         {
+          "path": "docs/ci-verde-r2.png",
+          "name": "ci-verde-r2.png",
+          "size": 48775,
+          "extension": ".png"
+        },
+        {
           "path": "frontend/icons/icon-512.png",
           "name": "icon-512.png",
           "size": 21644,
@@ -57,67 +75,129 @@
           "name": "sprint-06-commits.PNG",
           "size": 19762,
           "extension": ".PNG"
+        }
+      ]
+    },
+    {
+      "language": "HTML",
+      "file_count": 19,
+      "total_bytes": 997856,
+      "percentage": 26.43,
+      "files": [
+        {
+          "path": "playwright-report/index.html",
+          "name": "index.html",
+          "size": 824122,
+          "extension": ".html"
         },
         {
-          "path": "docs/scrum/sprints/img/sprint-07-commits.PNG",
-          "name": "sprint-07-commits.PNG",
-          "size": 17069,
-          "extension": ".PNG"
+          "path": "tests/fixtures/unb-decanatos.html",
+          "name": "unb-decanatos.html",
+          "size": 75898,
+          "extension": ".html"
         },
         {
-          "path": "frontend/icons/icon-192.png",
-          "name": "icon-192.png",
-          "size": 11592,
-          "extension": ".png"
+          "path": "tests/fixtures/unb-secretarias.html",
+          "name": "unb-secretarias.html",
+          "size": 40447,
+          "extension": ".html"
         },
         {
-          "path": "sobre/icone.png",
-          "name": "icone.png",
-          "size": 11592,
-          "extension": ".png"
+          "path": "sobre/index.html",
+          "name": "index.html",
+          "size": 17858,
+          "extension": ".html"
+        },
+        {
+          "path": "tests/fixtures/fcte-laboratorios.html",
+          "name": "fcte-laboratorios.html",
+          "size": 7797,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/origem-dos-dados.html",
+          "name": "origem-dos-dados.html",
+          "size": 4659,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/index.html",
+          "name": "index.html",
+          "size": 4602,
+          "extension": ".html"
+        },
+        {
+          "path": "tests/fixtures/ceplan-campus-darcy-ribeiro.html",
+          "name": "ceplan-campus-darcy-ribeiro.html",
+          "size": 4550,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/todas-siglas.html",
+          "name": "todas-siglas.html",
+          "size": 3111,
+          "extension": ".html"
+        },
+        {
+          "path": "frontend/termo.html",
+          "name": "termo.html",
+          "size": 2892,
+          "extension": ".html"
         }
       ]
     },
     {
       "language": "JSON",
-      "file_count": 14,
-      "total_bytes": 273209,
-      "percentage": 13.34,
+      "file_count": 20,
+      "total_bytes": 527377,
+      "percentage": 13.97,
       "files": [
+        {
+          "path": "package-lock.json",
+          "name": "package-lock.json",
+          "size": 178586,
+          "extension": ".json"
+        },
         {
           "path": "frontend/data/termos.json",
           "name": "termos.json",
-          "size": 133287,
+          "size": 169816,
           "extension": ".json"
         },
         {
           "path": "coleta/relatorio.json",
           "name": "relatorio.json",
-          "size": 82784,
+          "size": 90704,
           "extension": ".json"
         },
         {
-          "path": "package-lock.json",
-          "name": "package-lock.json",
-          "size": 37631,
-          "extension": ".json"
-        },
-        {
-          "path": "coleta/filtro-de-termos.json",
-          "name": "filtro-de-termos.json",
-          "size": 5279,
-          "extension": ".json"
-        },
-        {
-          "path": "tests/sabotagens/dominio.json",
-          "name": "dominio.json",
-          "size": 2796,
+          "path": "frontend/data/planta-fcte.json",
+          "name": "planta-fcte.json",
+          "size": 53720,
           "extension": ".json"
         },
         {
           "path": "coleta/fontes.json",
           "name": "fontes.json",
-          "size": 2734,
+          "size": 9264,
+          "extension": ".json"
+        },
+        {
+          "path": "coleta/filtro-de-termos.json",
+          "name": "filtro-de-termos.json",
+          "size": 5685,
+          "extension": ".json"
+        },
+        {
+          "path": "tests/sabotagens/dominio.json",
+          "name": "dominio.json",
+          "size": 5133,
+          "extension": ".json"
+        },
+        {
+          "path": "tests/fixtures/planta-mini.json",
+          "name": "planta-mini.json",
+          "size": 2412,
           "extension": ".json"
         },
         {
@@ -131,105 +211,37 @@
           "name": "tela.json",
           "size": 1720,
           "extension": ".json"
-        },
-        {
-          "path": "coleta/categorias.json",
-          "name": "categorias.json",
-          "size": 1416,
-          "extension": ".json"
-        },
-        {
-          "path": "lighthouserc.json",
-          "name": "lighthouserc.json",
-          "size": 1131,
-          "extension": ".json"
-        }
-      ]
-    },
-    {
-      "language": "Markdown",
-      "file_count": 54,
-      "total_bytes": 252662,
-      "percentage": 12.34,
-      "files": [
-        {
-          "path": "docs/scrum/sprint-planning.md",
-          "name": "sprint-planning.md",
-          "size": 19942,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estrategia-de-testes.md",
-          "name": "estrategia-de-testes.md",
-          "size": 16092,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/FONTES-DE-DADOS.md",
-          "name": "FONTES-DE-DADOS.md",
-          "size": 15886,
-          "extension": ".md"
-        },
-        {
-          "path": "AI-USAGE.md",
-          "name": "AI-USAGE.md",
-          "size": 10910,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/spike-bot-siglas.md",
-          "name": "spike-bot-siglas.md",
-          "size": 9376,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/SEGURANCA.md",
-          "name": "SEGURANCA.md",
-          "size": 8802,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-git-github.md",
-          "name": "estudo-git-github.md",
-          "size": 8284,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/scrum/retro-r1.md",
-          "name": "retro-r1.md",
-          "size": 7023,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/CONVENCAO-GIT.md",
-          "name": "CONVENCAO-GIT.md",
-          "size": 6643,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-pwa.md",
-          "name": "estudo-pwa.md",
-          "size": 6321,
-          "extension": ".md"
         }
       ]
     },
     {
       "language": "JavaScript",
-      "file_count": 44,
-      "total_bytes": 233024,
-      "percentage": 11.38,
+      "file_count": 60,
+      "total_bytes": 360637,
+      "percentage": 9.55,
       "files": [
-        {
-          "path": "tests/classificador.test.js",
-          "name": "classificador.test.js",
-          "size": 21744,
-          "extension": ".js"
-        },
         {
           "path": "frontend/js/app.js",
           "name": "app.js",
-          "size": 16913,
+          "size": 29130,
+          "extension": ".js"
+        },
+        {
+          "path": "tests/classificador.test.js",
+          "name": "classificador.test.js",
+          "size": 21990,
+          "extension": ".js"
+        },
+        {
+          "path": "frontend/js/planta.js",
+          "name": "planta.js",
+          "size": 19682,
+          "extension": ".js"
+        },
+        {
+          "path": "tests/planta.test.js",
+          "name": "planta.test.js",
+          "size": 18257,
           "extension": ".js"
         },
         {
@@ -245,9 +257,21 @@
           "extension": ".js"
         },
         {
+          "path": "tests/trilha.test.js",
+          "name": "trilha.test.js",
+          "size": 10956,
+          "extension": ".js"
+        },
+        {
           "path": "tests/relatorio.test.js",
           "name": "relatorio.test.js",
           "size": 10896,
+          "extension": ".js"
+        },
+        {
+          "path": "tests/validacao-termo.test.js",
+          "name": "validacao-termo.test.js",
+          "size": 10219,
           "extension": ".js"
         },
         {
@@ -255,30 +279,74 @@
           "name": "deduplicar.test.js",
           "size": 9569,
           "extension": ".js"
+        }
+      ]
+    },
+    {
+      "language": "Markdown",
+      "file_count": 62,
+      "total_bytes": 357531,
+      "percentage": 9.47,
+      "files": [
+        {
+          "path": "docs/scrum/sprint-planning.md",
+          "name": "sprint-planning.md",
+          "size": 19986,
+          "extension": ".md"
         },
         {
-          "path": "coleta/relatorio.js",
-          "name": "relatorio.js",
-          "size": 9251,
-          "extension": ".js"
+          "path": "docs/VISAO-DE-PRODUTO.md",
+          "name": "VISAO-DE-PRODUTO.md",
+          "size": 17253,
+          "extension": ".md"
         },
         {
-          "path": "tests/seguranca.test.js",
-          "name": "seguranca.test.js",
-          "size": 7985,
-          "extension": ".js"
+          "path": "docs/estrategia-de-testes.md",
+          "name": "estrategia-de-testes.md",
+          "size": 16782,
+          "extension": ".md"
         },
         {
-          "path": "coleta/deduplicar.js",
-          "name": "deduplicar.js",
-          "size": 7879,
-          "extension": ".js"
+          "path": "AI-USAGE.md",
+          "name": "AI-USAGE.md",
+          "size": 16034,
+          "extension": ".md"
         },
         {
-          "path": "coleta/classificador.js",
-          "name": "classificador.js",
-          "size": 7807,
-          "extension": ".js"
+          "path": "docs/FONTES-DE-DADOS.md",
+          "name": "FONTES-DE-DADOS.md",
+          "size": 15886,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/REQUISITOS.md",
+          "name": "REQUISITOS.md",
+          "size": 13093,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/ARQUITETURA.md",
+          "name": "ARQUITETURA.md",
+          "size": 10922,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/RASTREABILIDADE.md",
+          "name": "RASTREABILIDADE.md",
+          "size": 9704,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/modelo-conceitual-dados.md",
+          "name": "modelo-conceitual-dados.md",
+          "size": 9480,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/estudos/spike-bot-siglas.md",
+          "name": "spike-bot-siglas.md",
+          "size": 9376,
+          "extension": ".md"
         }
       ]
     },
@@ -286,7 +354,7 @@
       "language": "PDF",
       "file_count": 4,
       "total_bytes": 161912,
-      "percentage": 7.91,
+      "percentage": 4.29,
       "files": [
         {
           "path": "tests/coleta/fixtures/dpo-paginas-5-8.pdf",
@@ -315,83 +383,15 @@
       ]
     },
     {
-      "language": "HTML",
-      "file_count": 10,
-      "total_bytes": 150218,
-      "percentage": 7.34,
-      "files": [
-        {
-          "path": "tests/fixtures/unb-decanatos.html",
-          "name": "unb-decanatos.html",
-          "size": 75898,
-          "extension": ".html"
-        },
-        {
-          "path": "tests/fixtures/unb-secretarias.html",
-          "name": "unb-secretarias.html",
-          "size": 40447,
-          "extension": ".html"
-        },
-        {
-          "path": "sobre/index.html",
-          "name": "index.html",
-          "size": 17661,
-          "extension": ".html"
-        },
-        {
-          "path": "tests/fixtures/ceplan-campus-darcy-ribeiro.html",
-          "name": "ceplan-campus-darcy-ribeiro.html",
-          "size": 4550,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/index.html",
-          "name": "index.html",
-          "size": 3992,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/todas-siglas.html",
-          "name": "todas-siglas.html",
-          "size": 2866,
-          "extension": ".html"
-        },
-        {
-          "path": "frontend/termo.html",
-          "name": "termo.html",
-          "size": 2840,
-          "extension": ".html"
-        },
-        {
-          "path": "tests/fixtures/noticias-ceubinho.html",
-          "name": "noticias-ceubinho.html",
-          "size": 827,
-          "extension": ".html"
-        },
-        {
-          "path": "index.html",
-          "name": "index.html",
-          "size": 599,
-          "extension": ".html"
-        },
-        {
-          "path": "tests/fixtures/pagina-maliciosa.html",
-          "name": "pagina-maliciosa.html",
-          "size": 538,
-          "extension": ".html"
-        }
-      ]
-    },
-    {
       "language": "CSS",
       "file_count": 2,
-      "total_bytes": 30991,
-      "percentage": 1.51,
+      "total_bytes": 41463,
+      "percentage": 1.1,
       "files": [
         {
           "path": "frontend/styles.css",
           "name": "styles.css",
-          "size": 17317,
+          "size": 27789,
           "extension": ".css"
         },
         {
@@ -404,9 +404,9 @@
     },
     {
       "language": "Unknown",
-      "file_count": 11,
-      "total_bytes": 22527,
-      "percentage": 1.1,
+      "file_count": 15,
+      "total_bytes": 30735,
+      "percentage": 0.81,
       "files": [
         {
           "path": "scripts/coleta-automatica.mjs",
@@ -423,13 +423,31 @@
         {
           "path": "scripts/servidor-local.mjs",
           "name": "servidor-local.mjs",
-          "size": 4000,
+          "size": 4253,
           "extension": ".mjs"
+        },
+        {
+          "path": "tests/aceitacao/passos.js.antes-137",
+          "name": "passos.js.antes-137",
+          "size": 3386,
+          "extension": ".antes-137"
         },
         {
           "path": "scripts/classificar.mjs",
           "name": "classificar.mjs",
           "size": 2766,
+          "extension": ".mjs"
+        },
+        {
+          "path": "tests/aceitacao/busca.feature",
+          "name": "busca.feature",
+          "size": 2082,
+          "extension": ".feature"
+        },
+        {
+          "path": "scripts/verificar-mutacao.mjs",
+          "name": "verificar-mutacao.mjs",
+          "size": 1761,
           "extension": ".mjs"
         },
         {
@@ -439,57 +457,37 @@
           "extension": ".mjs"
         },
         {
+          "path": "tests/aceitacao/trilha-do-calouro.feature",
+          "name": "trilha-do-calouro.feature",
+          "size": 726,
+          "extension": ".feature"
+        },
+        {
           "path": "sonar-project.properties",
           "name": "sonar-project.properties",
           "size": 481,
           "extension": ".properties"
-        },
-        {
-          "path": "scripts/coletar-dpo.mjs",
-          "name": "coletar-dpo.mjs",
-          "size": 434,
-          "extension": ".mjs"
-        },
-        {
-          "path": ".gitmessage",
-          "name": ".gitmessage",
-          "size": 320,
-          "extension": ".gitmessage"
-        },
-        {
-          "path": ".env.example",
-          "name": ".env.example",
-          "size": 208,
-          "extension": ".example"
-        },
-        {
-          "path": ".github/workflows/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        }
-      ]
-    },
-    {
-      "language": "SVG Image",
-      "file_count": 1,
-      "total_bytes": 11042,
-      "percentage": 0.54,
-      "files": [
-        {
-          "path": "frontend/icon-source.svg",
-          "name": "icon-source.svg",
-          "size": 11042,
-          "extension": ".svg"
         }
       ]
     },
     {
       "language": "YAML",
-      "file_count": 6,
-      "total_bytes": 8635,
-      "percentage": 0.42,
+      "file_count": 9,
+      "total_bytes": 17031,
+      "percentage": 0.45,
       "files": [
+        {
+          "path": ".github/ISSUE_TEMPLATE/adicionar-termo.yml",
+          "name": "adicionar-termo.yml",
+          "size": 3310,
+          "extension": ".yml"
+        },
+        {
+          "path": ".github/ISSUE_TEMPLATE/corrigir-definicao.yml",
+          "name": "corrigir-definicao.yml",
+          "size": 3061,
+          "extension": ".yml"
+        },
         {
           "path": ".github/workflows/coleta.yml",
           "name": "coleta.yml",
@@ -503,9 +501,15 @@
           "extension": ".yml"
         },
         {
+          "path": ".github/workflows/ci.yml",
+          "name": "ci.yml",
+          "size": 1947,
+          "extension": ".yml"
+        },
+        {
           "path": ".github/workflows/pages.yml",
           "name": "pages.yml",
-          "size": 1486,
+          "size": 1618,
           "extension": ".yml"
         },
         {
@@ -515,16 +519,30 @@
           "extension": ".yml"
         },
         {
-          "path": ".github/workflows/ci.yml",
-          "name": "ci.yml",
-          "size": 869,
+          "path": ".github/workflows/mutacao.yml",
+          "name": "mutacao.yml",
+          "size": 803,
           "extension": ".yml"
         },
         {
           "path": ".github/ISSUE_TEMPLATE/config.yml",
           "name": "config.yml",
-          "size": 277,
+          "size": 289,
           "extension": ".yml"
+        }
+      ]
+    },
+    {
+      "language": "SVG Image",
+      "file_count": 1,
+      "total_bytes": 11042,
+      "percentage": 0.29,
+      "files": [
+        {
+          "path": "frontend/icon-source.svg",
+          "name": "icon-source.svg",
+          "size": 11042,
+          "extension": ".svg"
         }
       ]
     },
@@ -532,7 +550,7 @@
       "language": "No Extension",
       "file_count": 1,
       "total_bytes": 1116,
-      "percentage": 0.05,
+      "percentage": 0.03,
       "files": [
         {
           "path": "LICENSE",
@@ -545,13 +563,13 @@
     {
       "language": "Git Ignore",
       "file_count": 1,
-      "total_bytes": 229,
+      "total_bytes": 375,
       "percentage": 0.01,
       "files": [
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 229,
+          "size": 375,
           "extension": ".gitignore"
         }
       ]
@@ -560,7 +578,7 @@
       "language": "Text",
       "file_count": 1,
       "total_bytes": 142,
-      "percentage": 0.01,
+      "percentage": 0.0,
       "files": [
         {
           "path": "docs/storymap/link_figma.txt",
@@ -572,7 +590,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-23T16:45:06.767575+00:00",
+    "extracted_at": "2026-11-24T16:49:56.250534+00:00",
     "file_path": "data/silver/language_analysis_2026-2-GlossarioUnB.json"
   }
 }
