@@ -1,10 +1,635 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-23T16:40:03.957138+00:00",
+      "extracted_at": "2026-11-24T16:42:20.308262+00:00",
       "file_path": "data/bronze/commits_2026-2-GlossarioUnB.json",
-      "record_count": 114
+      "record_count": 139
     }
+  },
+  {
+    "sha": "62a5a74309334f9d1da2295b502d88d3e22173af",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T16:36:33Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T16:36:33Z"
+      },
+      "message": "fix(qualidade): corrige alertas do SonarQube (S9383 e S8786) (#185)"
+    },
+    "parents": [
+      "90d7fd363cc9335616b404fd2c687a29db993ab9"
+    ],
+    "additions": 15,
+    "deletions": 7,
+    "total_changes": 22,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "90d7fd363cc9335616b404fd2c687a29db993ab9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T15:08:32Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T15:08:32Z"
+      },
+      "message": "test(aceitacao): cenários Gherkin executáveis com playwright-bdd (#81) (#183)"
+    },
+    "parents": [
+      "7b536e38c2de8ce33c310fa3dd6531878de894e3"
+    ],
+    "additions": 672,
+    "deletions": 4,
+    "total_changes": 676,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "7b536e38c2de8ce33c310fa3dd6531878de894e3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T15:07:24Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T15:07:24Z"
+      },
+      "message": "docs(git): registra o squash como forma padrão de merge dos PRs (#182)\n\nO time já fazia squash na maioria dos PRs, mas a regra não estava escrita. Explica onde ficam os commits de cada pessoa (aba Commits do PR e Co-authored-by)."
+    },
+    "parents": [
+      "aff54d0c5eb190d2ae06125571c4938efebb0056"
+    ],
+    "additions": 2,
+    "deletions": 1,
+    "total_changes": 3,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "aff54d0c5eb190d2ae06125571c4938efebb0056",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T15:07:17Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T15:07:17Z"
+      },
+      "message": "docs(comunidade): CODE_OF_CONDUCT e SECURITY, com links no README e no CONTRIBUTING (#94) (#176)"
+    },
+    "parents": [
+      "a898bb05efa7cb860cf772ff203028fd878dccf0"
+    ],
+    "additions": 116,
+    "deletions": 0,
+    "total_changes": 116,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "a898bb05efa7cb860cf772ff203028fd878dccf0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T15:06:37Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T15:06:37Z"
+      },
+      "message": "feat(dados): marcador no mapa para 33 lugares da UnB (#184)\n\nCada localizacao vem de um elemento do OpenStreetMap conferido pelo nome (ADR 0005), como a do Ceubinho. Ficam de fora o que existe em vários campi (RU, CEU, ULEG, UED, UEP) e o que não tem elemento próprio no mapa."
+    },
+    "parents": [
+      "6ede7f70b84030c1e44797c1ffad2a0c2e2104bc"
+    ],
+    "additions": 198,
+    "deletions": 33,
+    "total_changes": 231,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "6ede7f70b84030c1e44797c1ffad2a0c2e2104bc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T15:01:20Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T15:01:20Z"
+      },
+      "message": "feat(termos): filtro por categoria, sinônimos e Veja também (#180)\n\n* feat(lista): filtro por categoria em Todas as siglas\n\nTerceiro seletor no mesmo modelo dos filtros de tipo e campus, com ?categoria= no endereço. Só aparecem as categorias que têm termo. Parte da #66.\n\n* feat(busca): sinônimos na busca, no validador e na página do termo\n\nA busca acha o termo pelo nome e pelos sinônimos, com o nome antes do sinônimo, e a sugestão mostra qual sinônimo combinou. A página do termo ganha o bloco \"Também conhecido como\". O validador confere o campo e recusa sinônimo igual ao nome de outro termo, porque o robô acha os termos pelo nome e pelos sinônimos. Reaproveita o código do #98 (só o campo sinonimos). Parte da #64.\n\nCo-authored-by: José Gabriel <[email removed]>\n\n* feat(dados): sinônimos com fonte na FCTS, na FCTE e no Auxílio Socioeconômico\n\nFCE e Faculdade UnB Ceilândia (fcts.unb.br/institucional/historico e fcte.unb.br/memoria-fga), Faculdade UnB Gama (fcte.unb.br/memoria-fga), PASeUnB (Manual do Calouro 2026/2, p. 86) e assistência econômica, que um calouro digitou no teste da #76. Parte da #64.\n\n* feat(termo): bloco \"Veja também\" com as ligações conferidas\n\nO campo opcional relacionados guarda ids de outros termos, e a página do termo mostra um link por termo, com a sigla e o nome. O validador recusa id que não existe, id repetido e ligação para o próprio termo. A ADR 0004 e o CONTRIBUTING explicam que só entra ligação conferida por uma pessoa (decisão 57 = C1). A validação reaproveita a do #98. VERSAO_CACHE v19. Parte da #64 e da #66.\n\nCo-authored-by: José Gabriel <[email removed]>\n\n* feat(dados): Veja também com 148 ligações conferidas e DSO como sinônimo da DSQVT\n\nAs ligações vêm das siglas e nomes que cada definição cita, e cada par foi lido antes de entrar (decisão 57 = C1). Ficaram de fora FUB → UnB, que não ajuda o calouro, e E-mail institucional → Matrícula, porque ali \"número de matrícula\" é o número do estudante. DSO é o nome que a página de contatos do DGP (dgp.unb.br/contatos) dá hoje à diretoria. Parte da #64 e da #66.\n\n* fix(termo): reserva a altura da ficha para o rodapé não descer quando o termo chega\n\nMesmo padrão da lista de termos (#155) e do PR da planta: o rodapé nasce abaixo da primeira tela. Num termo com \"Veja também\", o CLS ia a 0,219 e o desempenho a 88 no Lighthouse (limite 90, RNF02).\n\n* test(sabotagem): mantém troca de pontuacao em termos.js após merge da main\n\n---------\n\nCo-authored-by: José Gabriel <[email removed]>"
+    },
+    "parents": [
+      "87794850f7eaf8b9952779cf539c89d6276f692b"
+    ],
+    "additions": 4381,
+    "deletions": 3607,
+    "total_changes": 7988,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "87794850f7eaf8b9952779cf539c89d6276f692b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "eterno-calouro[bot]",
+        "date": "2026-11-24T14:30:46Z",
+        "login": "eterno-calouro[bot]",
+        "id": 358390510,
+        "author_email_hash": "4fd3118dc42c2580bd4c9f85c4c6915d626575df2bd535715cfa4fa81ead9ff1"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T14:30:46Z"
+      },
+      "message": "feat(dados): coleta semanal de termos (#181)\n\n* feat(dados): termos coletados em 24/11/2026\n\n* fix(dados): confere os termos da coleta de 24/11 e recusa a mudança do TGM\n\n50 termos propostos pelo robô entram com definição tirada só das páginas oficiais: 34 laboratórios e a UAC (página de laboratórios e de infraestrutura da FCTE), 7 coordenações e o trancamento, a média ponderada, a empresa júnior, a COEST e a DAIA (páginas da SAA), e o CAREL-UnB (PDI, p. 97). O Gemini não classificou nenhum (a chave respondeu 401), então a pertinência foi conferida por uma pessoa.\n\nO TGM mantém o nome do Manual do Calouro 2026/2, e a mudança para 'Automático' entra em alteracoes_recusadas.\n\n* chore(coleta): relatório da coleta depois da conferência\n\nRodada local sem a chave do Gemini sobre os termos conferidos: 0 novos, 0 alterados, 18 conflitos e a mudança do TGM recusada. Assim a próxima rodada só abre PR se uma fonte mudar.\n\n---------\n\nCo-authored-by: eterno-calouro[bot] <358390510+eterno-calouro[bot]@users.noreply.github.com>\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "7d7aae4d1998b056dbf436b760e31cf0054f54a2"
+    ],
+    "additions": 836,
+    "deletions": 132,
+    "total_changes": 968,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "7d7aae4d1998b056dbf436b760e31cf0054f54a2",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T13:46:44Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T13:46:44Z"
+      },
+      "message": "feat(trilha): trilha por momento do semestre, com 25 termos e progresso no aparelho (#179)\n\n* feat(trilha): trilha por momento do semestre, com 25 termos e progresso no aparelho\n\nOs grupos seguem a ordem em que o calouro precisa de cada termo, conforme o Manual do Calouro 2026/2: antes da primeira aula, na primeira semana, durante o semestre, para o próximo semestre, quando precisar de apoio e gírias do campus. Entram CEU, DCE, CA, SEI e DEG, que já estavam no glossário; o DEG ganha a categoria administracao, a mesma do #136.\n\nO termo aberto ganha uma marca na trilha, que mostra quantos a pessoa já viu e tem o botão Recomeçar. Fica só em localStorage, neste aparelho, e sem armazenamento a trilha funciona igual. A reserva de altura da trilha foi medida de novo para os 25 termos (decisão 58, ADR 0011).\n\n* chore(pwa): sobe o VERSAO_CACHE para v19\n\nA main já está em v18, e este PR muda arquivos do app shell."
+    },
+    "parents": [
+      "7ca6939020e1b51714ffe64b8be511860c8ba41d"
+    ],
+    "additions": 451,
+    "deletions": 63,
+    "total_changes": 514,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "7ca6939020e1b51714ffe64b8be511860c8ba41d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T13:41:55Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T13:41:55Z"
+      },
+      "message": "feat(frontend): página De onde vêm os dados, com o boletim do robô (#178)\n\n* feat(frontend): página De onde vêm os dados, com o boletim do robô\n\nA página mostra o caminho de um termo, a última coleta com novidades, as siglas lidas e barradas e os termos por fonte e por categoria. Os números vêm de coleta/relatorio.json e do termos.json. A publicação e o npm run dev passam a servir só esse arquivo da pasta coleta/, e o service worker o guarda para o modo sem internet.\n\nParte da #74\n\n* fix(frontend): a página diz que o robô está agendado, sem afirmar que já rodou sozinho\n\nO agendamento semanal ainda não disparou: as execuções até aqui foram manuais.\n\nParte da #74\n\n* chore(pwa): sobe o VERSAO_CACHE para v19\n\nA main já está em v18, e este PR muda arquivos do app shell."
+    },
+    "parents": [
+      "e7cd8c935d11a90660597ba9b204e885dfea06d5"
+    ],
+    "additions": 498,
+    "deletions": 6,
+    "total_changes": 504,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "e7cd8c935d11a90660597ba9b204e885dfea06d5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T13:05:00Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T13:05:00Z"
+      },
+      "message": "feat(planta): bloco \"Onde fica\" com a planta 2D da FCTE na página do termo (#174)"
+    },
+    "parents": [
+      "c19adcde39de31ff117578e7a2266298e36afd38"
+    ],
+    "additions": 4706,
+    "deletions": 11,
+    "total_changes": 4717,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "c19adcde39de31ff117578e7a2266298e36afd38",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "josegabriel-iw",
+        "date": "2026-11-24T05:20:32Z",
+        "login": "josegabriel-iw",
+        "id": 158627845,
+        "author_email_hash": "8d97cef12a7e5e7301ae35d45c985175e187cfd577d956b33d22539c4d1a65db"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T05:20:32Z"
+      },
+      "message": "docs: corrige inconsistências da documentação e fecha Status das ADRs (#149)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "2860e2d41a449d0d014305509da03b960fae1e1b"
+    ],
+    "additions": 195,
+    "deletions": 16,
+    "total_changes": 211,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "2860e2d41a449d0d014305509da03b960fae1e1b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T05:15:53Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T05:15:53Z"
+      },
+      "message": "docs(arquitetura): adiciona diagramas C4 de contexto e contêineres (#121)\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "3ec8c60caf561e8eb97d1f94da98e1c8fef66aef"
+    ],
+    "additions": 115,
+    "deletions": 28,
+    "total_changes": 143,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "3ec8c60caf561e8eb97d1f94da98e1c8fef66aef",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T05:11:31Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T05:11:31Z"
+      },
+      "message": "test(e2e): adiciona testes E2E e auditoria de acessibilidade no CI (#153)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "82c65ee6890d4f979281614991b486fa87cfef1b"
+    ],
+    "additions": 385,
+    "deletions": 5,
+    "total_changes": 390,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "82c65ee6890d4f979281614991b486fa87cfef1b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T05:07:14Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T05:07:14Z"
+      },
+      "message": "chore(ci): adiciona lint e cobertura mínima no CI (#120)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "12006254e77ffdaa1e7a5dfe26813fa1d438d1bc"
+    ],
+    "additions": 991,
+    "deletions": 21,
+    "total_changes": 1012,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "12006254e77ffdaa1e7a5dfe26813fa1d438d1bc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T05:02:47Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T05:02:47Z"
+      },
+      "message": "test(mutacao): StrykerJS nos módulos de domínio, 14 testes novos e do… (#157)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "abd304c674840bb27ee0e82f2692962c69054bfa"
+    ],
+    "additions": 2872,
+    "deletions": 48,
+    "total_changes": 2920,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "abd304c674840bb27ee0e82f2692962c69054bfa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T04:59:15Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T04:59:15Z"
+      },
+      "message": "docs(produto): adiciona visão de produto e histórias de usuário (#119)\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "aa95fb692324dac5fd4e770d1f67f7be46781503"
+    ],
+    "additions": 241,
+    "deletions": 1,
+    "total_changes": 242,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "aa95fb692324dac5fd4e770d1f67f7be46781503",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T04:55:44Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T04:55:44Z"
+      },
+      "message": "docs(requisitos): RF em verbo e objeto, regras de negocio e matriz de… (#156)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "036004c1da74d1bcc771c4206b3acbe2c717cb97"
+    ],
+    "additions": 139,
+    "deletions": 12,
+    "total_changes": 151,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "036004c1da74d1bcc771c4206b3acbe2c717cb97",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Allan",
+        "date": "2026-11-24T04:52:28Z",
+        "login": "MrD4ntas",
+        "id": 174073859,
+        "author_email_hash": "bb329754a273da37b3fd7f118e4314410905df7358f59e72bbd5354a07e12552"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T04:52:28Z"
+      },
+      "message": "docs(testes): relatório de testes e cobertura para a R2 (#84) (#165)\n\nCo-authored-by: Pedro Magno Rabelo Teles <[email removed]>"
+    },
+    "parents": [
+      "609de9872458a7f5493377b9134016379eb0e0cb"
+    ],
+    "additions": 137,
+    "deletions": 0,
+    "total_changes": 137,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "609de9872458a7f5493377b9134016379eb0e0cb",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T04:29:32Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T04:29:32Z"
+      },
+      "message": "fix(dados): definições com fonte oficial para 45 termos e nomes de Mespt, PAINT e RAINT (#177)"
+    },
+    "parents": [
+      "685dc6b9e23ac4cf1255e1c62566cdd88a90611f"
+    ],
+    "additions": 98,
+    "deletions": 96,
+    "total_changes": 194,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "685dc6b9e23ac4cf1255e1c62566cdd88a90611f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Pedro Magno Rabelo Teles",
+        "date": "2026-11-24T04:29:19Z",
+        "login": "p-magno",
+        "id": 199936221,
+        "author_email_hash": "68ce8b82489d2dd2bfafd9f63cc38cfbea600d5911844ce0745c5e201f610a65"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T04:29:19Z"
+      },
+      "message": "feat(coleta): 12 fontes HTML da SAA e das unidades da FCTE com fixtures e testes (#61) (#175)"
+    },
+    "parents": [
+      "42ccf919fe4457ceeb59fffdb45a67fcedeeb6ab"
+    ],
+    "additions": 379,
+    "deletions": 0,
+    "total_changes": 379,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "42ccf919fe4457ceeb59fffdb45a67fcedeeb6ab",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "josegabriel-iw",
+        "date": "2026-11-23T17:21:33Z",
+        "login": "josegabriel-iw",
+        "id": 158627845,
+        "author_email_hash": "8d97cef12a7e5e7301ae35d45c985175e187cfd577d956b33d22539c4d1a65db"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T17:21:33Z"
+      },
+      "message": "fix(dados): corrige campus, redação, fonte HTTPS e coordenadas dos te… (#150)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "cc62ed8c1d5b51036f51f938a15438d34c2eb80e"
+    ],
+    "additions": 48,
+    "deletions": 15,
+    "total_changes": 63,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "cc62ed8c1d5b51036f51f938a15438d34c2eb80e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "josegabriel-iw",
+        "date": "2026-11-23T17:16:03Z",
+        "login": "josegabriel-iw",
+        "id": 158627845,
+        "author_email_hash": "8d97cef12a7e5e7301ae35d45c985175e187cfd577d956b33d22539c4d1a65db"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T17:16:03Z"
+      },
+      "message": "feat(dados): define taxonomia fechada de categorias e classifica todo… (#136)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "8c2d05343ab1abc716ea80a52802a91ac5ee3187"
+    ],
+    "additions": 131,
+    "deletions": 51,
+    "total_changes": 182,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "8c2d05343ab1abc716ea80a52802a91ac5ee3187",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "josegabriel-iw",
+        "date": "2026-11-23T17:12:30Z",
+        "login": "josegabriel-iw",
+        "id": 158627845,
+        "author_email_hash": "8d97cef12a7e5e7301ae35d45c985175e187cfd577d956b33d22539c4d1a65db"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T17:12:30Z"
+      },
+      "message": "chore(github): migra templates de contribuicao para Issue Forms YAML (#137)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "9b39a03b456807770befbed8eca0e93116dcc51a"
+    ],
+    "additions": 319,
+    "deletions": 51,
+    "total_changes": 370,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "9b39a03b456807770befbed8eca0e93116dcc51a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "josegabriel-iw",
+        "date": "2026-11-23T17:08:46Z",
+        "login": "josegabriel-iw",
+        "id": 158627845,
+        "author_email_hash": "8d97cef12a7e5e7301ae35d45c985175e187cfd577d956b33d22539c4d1a65db"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T17:08:46Z"
+      },
+      "message": "docs(scrum): registra a Sprint 08 com planning, review, retrospectiva… (#147)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "899a373b983e9880e3f2721773dd1c7d8354e1c0"
+    ],
+    "additions": 105,
+    "deletions": 0,
+    "total_changes": 105,
+    "repo_name": "2026-2-GlossarioUnB"
+  },
+  {
+    "sha": "899a373b983e9880e3f2721773dd1c7d8354e1c0",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "monoez",
+        "date": "2026-11-23T17:04:45Z",
+        "login": "smitalo",
+        "id": 173753454,
+        "author_email_hash": "e0077b583c4f484535d5a843a70611cfa1ea47104b8e2c6373acc8cd3b5d60af"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-23T17:04:45Z"
+      },
+      "message": "docs: documenta modelo de dados e disponibilidade das fontes (#67) (#143)\n\nCo-authored-by: Pedro <[email removed]>"
+    },
+    "parents": [
+      "9bdd4b501cd574c276178718e5782ea5caee3aee"
+    ],
+    "additions": 194,
+    "deletions": 0,
+    "total_changes": 194,
+    "repo_name": "2026-2-GlossarioUnB"
   },
   {
     "sha": "9bdd4b501cd574c276178718e5782ea5caee3aee",

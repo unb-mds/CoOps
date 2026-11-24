@@ -2,7 +2,7 @@
   "owner": "unb-mds",
   "repository": "2026-2-Bandejao-UnB",
   "branch": "main",
-  "sha": "93ffec2d3a66bbfba663ca52d088d693b391f2bc",
+  "sha": "6dd0b74f4b17f25701f3a53f06a29edb10637de6",
   "tree": [
     {
       "name": ".gitattributes",
@@ -18,7 +18,7 @@
       "name": ".github",
       "path": ".github",
       "type": "directory",
-      "sha": "dca5758b768f552184998cb2d9c3a8c8d9e4a58b",
+      "sha": "3526e7386866a971ffb2dd24b224233e427747bb",
       "mode": "040000",
       "children": []
     },
@@ -84,7 +84,7 @@
       "name": "workflows",
       "path": ".github/workflows",
       "type": "directory",
-      "sha": "25bac1f14b2c7fa191b5498f1cefb2100af3c25f",
+      "sha": "4c37e02574d15e547cf624b28a8c32ba56295fc7",
       "mode": "040000",
       "children": []
     },
@@ -92,20 +92,30 @@
       "name": "backend-ci.yml",
       "path": ".github/workflows/backend-ci.yml",
       "type": "file",
-      "sha": "3ae192d2394d0c331242bb1c50e521654afb8cf8",
+      "sha": "2eb9ea815e6c936fe5aa0efa969ae3db02a15a60",
       "mode": "100644",
       "extension": ".yml",
-      "size": 15271,
+      "size": 17176,
       "is_binary": false
     },
     {
       "name": "backend-mutacao-semanal.yml",
       "path": ".github/workflows/backend-mutacao-semanal.yml",
       "type": "file",
-      "sha": "7677cfd0638f8b5601b10fcfc47bfd003426c46a",
+      "sha": "08289ce7eb6d48099109e0e1e69654165a004fea",
       "mode": "100644",
       "extension": ".yml",
-      "size": 6743,
+      "size": 6403,
+      "is_binary": false
+    },
+    {
+      "name": "carga.yml",
+      "path": ".github/workflows/carga.yml",
+      "type": "file",
+      "sha": "4b377aeccc851d695a08b1ab0cf10979de2d9ac5",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 6122,
       "is_binary": false
     },
     {
@@ -119,13 +129,33 @@
       "is_binary": false
     },
     {
+      "name": "e2e.yml",
+      "path": ".github/workflows/e2e.yml",
+      "type": "file",
+      "sha": "fc9c46a1b7acead6c413cc8f7060cdf1ce74e93c",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 2335,
+      "is_binary": false
+    },
+    {
       "name": "frontend-ci.yml",
       "path": ".github/workflows/frontend-ci.yml",
       "type": "file",
-      "sha": "5b0aed3b39e6e3253d314c23549c6e17da748a0c",
+      "sha": "e040038370525c50e61d00c59d4e295ae6d1d640",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2301,
+      "size": 7483,
+      "is_binary": false
+    },
+    {
+      "name": "frontend-mutacao-semanal.yml",
+      "path": ".github/workflows/frontend-mutacao-semanal.yml",
+      "type": "file",
+      "sha": "84c3678e994de8ab755106be6feb473f3d15cab5",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 3056,
       "is_binary": false
     },
     {
@@ -142,10 +172,10 @@
       "name": "AI-USAGE.md",
       "path": "AI-USAGE.md",
       "type": "file",
-      "sha": "03f001a2d8972ef410d6cd6ad58bb56e5ddc9d75",
+      "sha": "acc794efe52683edcf7bf0c904d827c6c2c6ea2c",
       "mode": "100644",
       "extension": ".md",
-      "size": 157281,
+      "size": 186127,
       "is_binary": false
     },
     {
@@ -508,7 +538,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "4bfd244d637672449135132aaf04d901d58a5127",
+      "sha": "a9e8cda4adc088da6af1a0c2bb9739939a1d2ba3",
       "mode": "040000",
       "children": []
     },
@@ -516,20 +546,20 @@
       "name": ".coveragerc",
       "path": "backend/.coveragerc",
       "type": "file",
-      "sha": "bcb874e19434625204f9bee8184ebfd9003c65a4",
+      "sha": "9451b57af8fd5889c94224d0f1fe99331f9ec62b",
       "mode": "100644",
       "extension": ".coveragerc",
-      "size": 46,
+      "size": 230,
       "is_binary": false
     },
     {
       "name": ".dockerignore",
       "path": "backend/.dockerignore",
       "type": "file",
-      "sha": "21c594f0d2fc69ae5f20e74600b2b752621fb716",
+      "sha": "cbd91f3a60666fe6a3804c8be270c31ad73ca7a4",
       "mode": "100644",
       "extension": ".dockerignore",
-      "size": 180,
+      "size": 283,
       "is_binary": false
     },
     {
@@ -3069,6 +3099,64 @@
       "is_binary": false
     },
     {
+      "name": "carga",
+      "path": "backend/carga",
+      "type": "directory",
+      "sha": "07bdb425c240522e10001be07c6749b167659ac9",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "__init__.py",
+      "path": "backend/carga/__init__.py",
+      "type": "file",
+      "sha": "cdc1ba7c8577c68ea8705830f6eeb9d21dec4df2",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 109,
+      "is_binary": false
+    },
+    {
+      "name": "avaliar.py",
+      "path": "backend/carga/avaliar.py",
+      "type": "file",
+      "sha": "ff1b4ba518effb024d3cbda5d26397645d7ffc42",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5349,
+      "is_binary": false
+    },
+    {
+      "name": "cenario.py",
+      "path": "backend/carga/cenario.py",
+      "type": "file",
+      "sha": "4f8654e87daaa8d628265007cbdf31627260e98d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1617,
+      "is_binary": false
+    },
+    {
+      "name": "dados.py",
+      "path": "backend/carga/dados.py",
+      "type": "file",
+      "sha": "36acdd7a6cb3308757ef6d815a6ec4949fa1b08b",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 7667,
+      "is_binary": false
+    },
+    {
+      "name": "locustfile.py",
+      "path": "backend/carga/locustfile.py",
+      "type": "file",
+      "sha": "789c474e95132a7f6c1f057338f7fde554288f32",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1968,
+      "is_binary": false
+    },
+    {
       "name": "config",
       "path": "backend/config",
       "type": "directory",
@@ -3227,6 +3315,16 @@
       "is_binary": false
     },
     {
+      "name": "requirements-carga.txt",
+      "path": "backend/requirements-carga.txt",
+      "type": "file",
+      "sha": "e83ac3f75669d52c88a8ae792130db449e426183",
+      "mode": "100644",
+      "extension": ".txt",
+      "size": 159,
+      "is_binary": false
+    },
+    {
       "name": "requirements-ci-mysql.txt",
       "path": "backend/requirements-ci-mysql.txt",
       "type": "file",
@@ -3240,10 +3338,10 @@
       "name": "requirements-dev.txt",
       "path": "backend/requirements-dev.txt",
       "type": "file",
-      "sha": "53d073658242d09d7a0c1f14d35fd8288f5af3ad",
+      "sha": "4d95f544095ab1216a82405dbf24e0a967d9caca",
       "mode": "100644",
       "extension": ".txt",
-      "size": 430,
+      "size": 630,
       "is_binary": false
     },
     {
@@ -3260,7 +3358,7 @@
       "name": "requirements.txt",
       "path": "backend/requirements.txt",
       "type": "file",
-      "sha": "f969060791d89feb3b184272a50e5a344ce7aae1",
+      "sha": "2a1ebb951a30d31c154019baa73863f3e4b4e160",
       "mode": "100644",
       "extension": ".txt",
       "size": 531,
@@ -3308,9 +3406,27 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "6d8ab97144c504a1707744046b74b6eb61502d32",
+      "sha": "da1c864c83cf080566f8bb81b824efb019fe128a",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "fixtures",
+      "path": "backend/tests/fixtures",
+      "type": "directory",
+      "sha": "104a5dcc172bf21564483bf59608d554e5eb5eff",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "carga_stats_locust_2_46_7.csv",
+      "path": "backend/tests/fixtures/carga_stats_locust_2_46_7.csv",
+      "type": "file",
+      "sha": "da2ef446d4a2882dbfd92c6442bcaf07a13d046b",
+      "mode": "100644",
+      "extension": ".csv",
+      "size": 643,
+      "is_binary": false
     },
     {
       "name": "rotas_do_contrato.py",
@@ -3340,6 +3456,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 2651,
+      "is_binary": false
+    },
+    {
+      "name": "test_carga_bd14.py",
+      "path": "backend/tests/test_carga_bd14.py",
+      "type": "file",
+      "sha": "4107a21249257488c2ca2805dbc1e36d82269160",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 18346,
       "is_binary": false
     },
     {
@@ -3744,7 +3870,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "199801c32caa4092ae1aa8d5cd321986aa862f15",
+      "sha": "65e6ee718fb50124c4319c4470a03cbb99013d3f",
       "mode": "040000",
       "children": []
     },
@@ -3772,17 +3898,17 @@
       "name": "_sidebar.md",
       "path": "docs/_sidebar.md",
       "type": "file",
-      "sha": "c0bf4281ae3935706f97bdbe7084ea384f01e91c",
+      "sha": "e581b05462b8e4af6a658dcb94b797eb2ad1bc52",
       "mode": "100644",
       "extension": ".md",
-      "size": 4342,
+      "size": 4405,
       "is_binary": false
     },
     {
       "name": "arquitetura",
       "path": "docs/arquitetura",
       "type": "directory",
-      "sha": "18cace9ab8d9276fe91eb1808e705643a914e487",
+      "sha": "1dd246243180a5d81d294665643293c4418a4d32",
       "mode": "040000",
       "children": []
     },
@@ -4094,7 +4220,7 @@
       "name": "front-end",
       "path": "docs/arquitetura/front-end",
       "type": "directory",
-      "sha": "e0771e53d1d353c35c595e95085168956392d72e",
+      "sha": "19d3d72b946ffcc7da714920333503d84f458fb7",
       "mode": "040000",
       "children": []
     },
@@ -4102,10 +4228,10 @@
       "name": "c4-niveis-3-4-frontend-bandejao.md",
       "path": "docs/arquitetura/front-end/c4-niveis-3-4-frontend-bandejao.md",
       "type": "file",
-      "sha": "09b62f6bb3e565a4af7c1cafd79eacf221b5b463",
+      "sha": "934ccff70009d7052244adc4a3d729d61c192ee3",
       "mode": "100644",
       "extension": ".md",
-      "size": 60074,
+      "size": 60293,
       "is_binary": false
     },
     {
@@ -4376,7 +4502,7 @@
       "name": "qualidade",
       "path": "docs/qualidade",
       "type": "directory",
-      "sha": "a6060f9a975cf099d32cdd7c9ff587c1b7128252",
+      "sha": "daefa1dcf6c1830dbf9d93456ce30f158bf87078",
       "mode": "040000",
       "children": []
     },
@@ -4384,10 +4510,20 @@
       "name": "plano-de-testes.md",
       "path": "docs/qualidade/plano-de-testes.md",
       "type": "file",
-      "sha": "492c2d266a4a91e7b9742b3ad958ed9822e73f01",
+      "sha": "b0e599413ee00eaa9dd3fd6f82e9d43a8673462a",
       "mode": "100644",
       "extension": ".md",
-      "size": 29293,
+      "size": 39315,
+      "is_binary": false
+    },
+    {
+      "name": "teste-de-carga-bd14.md",
+      "path": "docs/qualidade/teste-de-carga-bd14.md",
+      "type": "file",
+      "sha": "d79f1c55ca89f82a44a64760654927151caa52a5",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 9360,
       "is_binary": false
     },
     {
@@ -4656,7 +4792,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "8922426d8f2d4c96500d086ea2985f204cbab15e",
+      "sha": "1cc7d3f574766cb6be80284f8241d8aafb4aa071",
       "mode": "040000",
       "children": []
     },
@@ -4664,10 +4800,10 @@
       "name": ".dockerignore",
       "path": "frontend/.dockerignore",
       "type": "file",
-      "sha": "2f093b627a7ec145429daa5228ee37e10ca9a6b0",
+      "sha": "d18f9f87fa02cec70f07f42121baf0a716fec2fc",
       "mode": "100644",
       "extension": ".dockerignore",
-      "size": 84,
+      "size": 205,
       "is_binary": false
     },
     {
@@ -4694,10 +4830,10 @@
       "name": ".gitignore",
       "path": "frontend/.gitignore",
       "type": "file",
-      "sha": "cd68f14023e4fc491710683f9b4b2f8f1455b6b1",
+      "sha": "7bc82bef0db2b99d16824dfeb5653710e7578405",
       "mode": "100644",
       "extension": ".gitignore",
-      "size": 396,
+      "size": 564,
       "is_binary": false
     },
     {
@@ -4734,30 +4870,194 @@
       "name": "README.md",
       "path": "frontend/README.md",
       "type": "file",
-      "sha": "de90d703d399e3c0de95cee7b4cf6177dd419bb8",
+      "sha": "125e1d37bb655a9c66cb1020a74cd9ab53f9803e",
       "mode": "100644",
       "extension": ".md",
-      "size": 8844,
+      "size": 11333,
+      "is_binary": false
+    },
+    {
+      "name": "e2e",
+      "path": "frontend/e2e",
+      "type": "directory",
+      "sha": "8964afc73352a9c8df8cc745ac965a3b743139df",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "Caddyfile",
+      "path": "frontend/e2e/Caddyfile",
+      "type": "file",
+      "sha": "68a9b83879ef2613d0664efa1e0adf5b83c9bdf1",
+      "mode": "100644",
+      "extension": "",
+      "size": 689,
+      "is_binary": false
+    },
+    {
+      "name": "apoio",
+      "path": "frontend/e2e/apoio",
+      "type": "directory",
+      "sha": "8c418faa9a9429987307545c60633f858a94165e",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "contas.js",
+      "path": "frontend/e2e/apoio/contas.js",
+      "type": "file",
+      "sha": "2397b4c84e1e645880fc78b3f98c11c3266b1519",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1585,
+      "is_binary": false
+    },
+    {
+      "name": "mailpit.js",
+      "path": "frontend/e2e/apoio/mailpit.js",
+      "type": "file",
+      "sha": "38cad21886c54563e7c8d18a37aa08be078d84f7",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1343,
+      "is_binary": false
+    },
+    {
+      "name": "preparar.js",
+      "path": "frontend/e2e/apoio/preparar.js",
+      "type": "file",
+      "sha": "bb2abbe2438119ba389cc9aec8c03d9cd5c066ff",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1372,
+      "is_binary": false
+    },
+    {
+      "name": "teste.js",
+      "path": "frontend/e2e/apoio/teste.js",
+      "type": "file",
+      "sha": "c32f7aa6f5d3cd8db19768935cb39d9c483d20d1",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1472,
+      "is_binary": false
+    },
+    {
+      "name": "dados",
+      "path": "frontend/e2e/dados",
+      "type": "directory",
+      "sha": "c72dafd554cfd5e6356b9835a8b590dad46d8828",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "README.md",
+      "path": "frontend/e2e/dados/README.md",
+      "type": "file",
+      "sha": "12910f9a774433b033098ce6aec024c135d6441d",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 2162,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio.json",
+      "path": "frontend/e2e/dados/cardapio.json",
+      "type": "file",
+      "sha": "cb2d60e8c3c2d47c972de6a9f61f78563bfcf302",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 70907,
+      "is_binary": false
+    },
+    {
+      "name": "contas.json",
+      "path": "frontend/e2e/dados/contas.json",
+      "type": "file",
+      "sha": "36d37682f52cdc225628967e2a67f927835e0370",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 7531,
+      "is_binary": false
+    },
+    {
+      "name": "historico-fila.json",
+      "path": "frontend/e2e/dados/historico-fila.json",
+      "type": "file",
+      "sha": "3eba980bc53fb105285e5138cbb30233ff64bda9",
+      "mode": "100644",
+      "extension": ".json",
+      "size": 52881,
+      "is_binary": false
+    },
+    {
+      "name": "docker-compose.yml",
+      "path": "frontend/e2e/docker-compose.yml",
+      "type": "file",
+      "sha": "16fc50204007a2403bcb18500f74e6debe302d44",
+      "mode": "100644",
+      "extension": ".yml",
+      "size": 6531,
+      "is_binary": false
+    },
+    {
+      "name": "m1-cadastro-e-login.spec.js",
+      "path": "frontend/e2e/m1-cadastro-e-login.spec.js",
+      "type": "file",
+      "sha": "d6a3b4489567a01fe61baaa775b7d16fdf904fb9",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2859,
+      "is_binary": false
+    },
+    {
+      "name": "m2-checkin.spec.js",
+      "path": "frontend/e2e/m2-checkin.spec.js",
+      "type": "file",
+      "sha": "7a1dcdf10ef056f25ec6c53c1ee97945656fb216",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2689,
+      "is_binary": false
+    },
+    {
+      "name": "m3-cardapio-e-avaliacao.spec.js",
+      "path": "frontend/e2e/m3-cardapio-e-avaliacao.spec.js",
+      "type": "file",
+      "sha": "37167fdc0a0fef86a336a924c69274571ca0fe46",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4434,
+      "is_binary": false
+    },
+    {
+      "name": "m4-previsao-progresso-e-ranking.spec.js",
+      "path": "frontend/e2e/m4-previsao-progresso-e-ranking.spec.js",
+      "type": "file",
+      "sha": "e0fdf24e3f3422b5f7260e3b1eef89f524811549",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2377,
       "is_binary": false
     },
     {
       "name": "eslint.config.js",
       "path": "frontend/eslint.config.js",
       "type": "file",
-      "sha": "ad0f23c0fdc0f6eef86ed48635ba2fc86075ab3a",
+      "sha": "4fa6fdf85f4dd3da0371ed907d008f1e8dd4bbe6",
       "mode": "100644",
       "extension": ".js",
-      "size": 1395,
+      "size": 1760,
       "is_binary": false
     },
     {
       "name": "index.html",
       "path": "frontend/index.html",
       "type": "file",
-      "sha": "9f33c7b5139ef66beed6190790da946ee194c964",
+      "sha": "32399b697580b8bcc2bc493b958ea352fee4a60b",
       "mode": "100644",
       "extension": ".html",
-      "size": 1044,
+      "size": 1317,
       "is_binary": false
     },
     {
@@ -4774,29 +5074,67 @@
       "name": "package-lock.json",
       "path": "frontend/package-lock.json",
       "type": "file",
-      "sha": "b6e9263bc32e37965664e7e9b68766f83d4b793f",
+      "sha": "b49ed41a8f74055d99ffcafe6bb1f9d1ba016c91",
       "mode": "100644",
       "extension": ".json",
-      "size": 206390,
+      "size": 291492,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "frontend/package.json",
       "type": "file",
-      "sha": "9e956a9533260bd510bbaa86fe60b02610eed0ad",
+      "sha": "85f602eb003e4fbf3fd818e650b8bd28797d598e",
       "mode": "100644",
       "extension": ".json",
-      "size": 1261,
+      "size": 2084,
+      "is_binary": false
+    },
+    {
+      "name": "playwright.config.js",
+      "path": "frontend/playwright.config.js",
+      "type": "file",
+      "sha": "88d0b957822a6fcc7a8bc1b33ffe625e7ea20f45",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 1504,
       "is_binary": false
     },
     {
       "name": "public",
       "path": "frontend/public",
       "type": "directory",
-      "sha": "f1b467b93fb2bb0aa4d191c1950a7f9f437009b5",
+      "sha": "be95777f393dbf677c689b777d9bef7cb76fe296",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "capturas",
+      "path": "frontend/public/capturas",
+      "type": "directory",
+      "sha": "f702dec8953731d309c6a57c887a84e0be76fda4",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "tela-celular.png",
+      "path": "frontend/public/capturas/tela-celular.png",
+      "type": "file",
+      "sha": "e0bd1fbea05a08ab5190a03974ed8405e977ebb3",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 134539,
+      "is_binary": false
+    },
+    {
+      "name": "tela-desktop.png",
+      "path": "frontend/public/capturas/tela-desktop.png",
+      "type": "file",
+      "sha": "ee0f46935b67ede5906587422780c5a460549eec",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 63687,
+      "is_binary": false
     },
     {
       "name": "favicon.ico",
@@ -4806,6 +5144,16 @@
       "mode": "100644",
       "extension": ".ico",
       "size": 4286,
+      "is_binary": false
+    },
+    {
+      "name": "icone-180.png",
+      "path": "frontend/public/icone-180.png",
+      "type": "file",
+      "sha": "78faa8aa566a6ebde210654e7dd262b1a1dbddc3",
+      "mode": "100644",
+      "extension": ".png",
+      "size": 22135,
       "is_binary": false
     },
     {
@@ -4842,10 +5190,10 @@
       "name": "manifest.webmanifest",
       "path": "frontend/public/manifest.webmanifest",
       "type": "file",
-      "sha": "11d12fb6ed4e027c902bf12c1b4cdd6ce2a23b78",
+      "sha": "d79d4a1a69bc353e3e594d781dbdc86aead859d5",
       "mode": "100644",
       "extension": ".webmanifest",
-      "size": 617,
+      "size": 1148,
       "is_binary": false
     },
     {
@@ -4859,10 +5207,58 @@
       "is_binary": false
     },
     {
+      "name": "scripts",
+      "path": "frontend/scripts",
+      "type": "directory",
+      "sha": "694f241aad6fcbe1342f950d853eadaeda062e42",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "cobertura.mjs",
+      "path": "frontend/scripts/cobertura.mjs",
+      "type": "file",
+      "sha": "c767174ece977dbfc4f811b54eb0366e8d342c9b",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 6329,
+      "is_binary": false
+    },
+    {
+      "name": "cobertura.test.js",
+      "path": "frontend/scripts/cobertura.test.js",
+      "type": "file",
+      "sha": "47d498a16534243e0812b7bc245e546001163226",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 10684,
+      "is_binary": false
+    },
+    {
+      "name": "mutacao.mjs",
+      "path": "frontend/scripts/mutacao.mjs",
+      "type": "file",
+      "sha": "c0d85090f55aef2efe31c2c845631a386aade6a6",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 12993,
+      "is_binary": false
+    },
+    {
+      "name": "mutacao.test.js",
+      "path": "frontend/scripts/mutacao.test.js",
+      "type": "file",
+      "sha": "79a186b8fb0245dfb4aacd83b7956bf1c7991c31",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 13491,
+      "is_binary": false
+    },
+    {
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "9b2285c5c8f93a1cfae2118be6035eaea18d6c6e",
+      "sha": "e44dca400d9a7b0478d1f28d1b186255a0869aff",
       "mode": "040000",
       "children": []
     },
@@ -4908,7 +5304,7 @@
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "9ce0a9852eb13b1673f263c663c6e1eacb4c499e",
+      "sha": "1a5d8eb7e0e4d61c4c9ff2ff886d4060eb2a17a6",
       "mode": "040000",
       "children": []
     },
@@ -5066,10 +5462,10 @@
       "name": "CheckinBotao.vue",
       "path": "frontend/src/components/CheckinBotao.vue",
       "type": "file",
-      "sha": "bee4e343e4d3508c62a540e135845c0c8f0732a2",
+      "sha": "cab95b39ea789cf40290927af995147649c6e68a",
       "mode": "100644",
       "extension": ".vue",
-      "size": 9232,
+      "size": 9524,
       "is_binary": false
     },
     {
@@ -5126,10 +5522,10 @@
       "name": "FilaPrevisao.vue",
       "path": "frontend/src/components/FilaPrevisao.vue",
       "type": "file",
-      "sha": "115bb954f5a4fb074c56aea507161def4b0408ac",
+      "sha": "c30eb84059c2841d861e747e427217abfa5c41d4",
       "mode": "100644",
       "extension": ".vue",
-      "size": 6495,
+      "size": 6787,
       "is_binary": false
     },
     {
@@ -5449,13 +5845,33 @@
       "is_binary": false
     },
     {
+      "name": "pwa.instalavel.test.js",
+      "path": "frontend/src/pwa.instalavel.test.js",
+      "type": "file",
+      "sha": "0011f1851c143a7a6db00236a0e44a69be2bc7cf",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 4604,
+      "is_binary": false
+    },
+    {
       "name": "pwa.js",
       "path": "frontend/src/pwa.js",
       "type": "file",
-      "sha": "6f5c72577d1f5f147dccd02e64f9092aadd56fc6",
+      "sha": "331a991a665550a5962a12115492349234da1b18",
       "mode": "100644",
       "extension": ".js",
-      "size": 500,
+      "size": 617,
+      "is_binary": false
+    },
+    {
+      "name": "pwa.test.js",
+      "path": "frontend/src/pwa.test.js",
+      "type": "file",
+      "sha": "7d9a3c117f42d8eb6d623f1b1ab64d2c11db39c7",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2267,
       "is_binary": false
     },
     {
@@ -5490,7 +5906,7 @@
       "name": "services",
       "path": "frontend/src/services",
       "type": "directory",
-      "sha": "22a7637359759e6629e2569667e4673939946a27",
+      "sha": "ef9ed8585cc21942dd5335c61a3811ed91563af4",
       "mode": "040000",
       "children": []
     },
@@ -5538,7 +5954,7 @@
       "name": "mock",
       "path": "frontend/src/services/mock",
       "type": "directory",
-      "sha": "e194f99375c5caf658bf259711162a2b15a8f257",
+      "sha": "f1da874af2ce18460d0d68d524bc2ddeaf854ff6",
       "mode": "040000",
       "children": []
     },
@@ -5556,10 +5972,10 @@
       "name": "cardapios.js",
       "path": "frontend/src/services/mock/cardapios.js",
       "type": "file",
-      "sha": "706ab61d96a790af0bc566158b25d747d71df3fa",
+      "sha": "57c45db4bb6afff0fed558e45ff6f6be2fed7f85",
       "mode": "100644",
       "extension": ".js",
-      "size": 11913,
+      "size": 11971,
       "is_binary": false
     },
     {
@@ -5606,20 +6022,20 @@
       "name": "servidor.js",
       "path": "frontend/src/services/mock/servidor.js",
       "type": "file",
-      "sha": "180ac20ac6eb4e0688fd05ea781b700d8f61784e",
+      "sha": "415266b07fdc443d1a04272ac6169aef9f90e281",
       "mode": "100644",
       "extension": ".js",
-      "size": 39892,
+      "size": 39760,
       "is_binary": false
     },
     {
       "name": "servidor.test.js",
       "path": "frontend/src/services/mock/servidor.test.js",
       "type": "file",
-      "sha": "b104eb88c6dc5fe291c98a160e70c0923c80f971",
+      "sha": "08023d79c324e7ea45452a4da6374e15fabc518e",
       "mode": "100644",
       "extension": ".js",
-      "size": 47608,
+      "size": 48573,
       "is_binary": false
     },
     {
@@ -5666,7 +6082,7 @@
       "name": "stores",
       "path": "frontend/src/stores",
       "type": "directory",
-      "sha": "ab2e13315e6721126eedc379caba4925fb8d9ecb",
+      "sha": "c1bd72ae311cfa3fba96c5d4004e92b1e957be13",
       "mode": "040000",
       "children": []
     },
@@ -5694,40 +6110,40 @@
       "name": "avaliacoes.js",
       "path": "frontend/src/stores/avaliacoes.js",
       "type": "file",
-      "sha": "0d562a7ea0f395ccba2fc4ae8a1f0a1c0818ae6a",
+      "sha": "8f35ba43a24bccc1938057960b3e4f93c917c335",
       "mode": "100644",
       "extension": ".js",
-      "size": 10874,
+      "size": 11117,
       "is_binary": false
     },
     {
       "name": "avaliacoes.test.js",
       "path": "frontend/src/stores/avaliacoes.test.js",
       "type": "file",
-      "sha": "c9dd3be96d3a8716a093ff023ca09462c0448a95",
+      "sha": "7fdacc69b7ecc88781930ecc613ee646cd91e024",
       "mode": "100644",
       "extension": ".js",
-      "size": 22210,
+      "size": 22686,
       "is_binary": false
     },
     {
       "name": "cardapio.js",
       "path": "frontend/src/stores/cardapio.js",
       "type": "file",
-      "sha": "2a1a9226ae118ac5e5230fe74b72bd958a623fdb",
+      "sha": "c26d2441703dc3eabd8bbc489ebe196096177871",
       "mode": "100644",
       "extension": ".js",
-      "size": 6986,
+      "size": 5203,
       "is_binary": false
     },
     {
       "name": "cardapio.test.js",
       "path": "frontend/src/stores/cardapio.test.js",
       "type": "file",
-      "sha": "ca56ab1d01b9faed1d202427bbcfd1ea200e38dc",
+      "sha": "993bd0dc357116af3fd4807b29ebcfe5772d9a93",
       "mode": "100644",
       "extension": ".js",
-      "size": 14125,
+      "size": 11893,
       "is_binary": false
     },
     {
@@ -5791,10 +6207,20 @@
       "is_binary": false
     },
     {
+      "name": "sw.test.js",
+      "path": "frontend/src/sw.test.js",
+      "type": "file",
+      "sha": "edbb6115ba9063a8e9077fb1ff9cebe04323d7ca",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 6377,
+      "is_binary": false
+    },
+    {
       "name": "utils",
       "path": "frontend/src/utils",
       "type": "directory",
-      "sha": "be1dca1311f4ab1ac0786dfe8805bdc044e62b72",
+      "sha": "02c22385a07d8fc03fa6ce3f0bc7690482636125",
       "mode": "040000",
       "children": []
     },
@@ -5822,20 +6248,30 @@
       "name": "cardapio.js",
       "path": "frontend/src/utils/cardapio.js",
       "type": "file",
-      "sha": "da5e94ef5a2035ff818ede2cd22ec2dd06b753b8",
+      "sha": "36c8eff3eebf0f2f30bfffbafd62c947837aecb2",
       "mode": "100644",
       "extension": ".js",
-      "size": 3030,
+      "size": 3671,
+      "is_binary": false
+    },
+    {
+      "name": "cardapio.propriedades.test.js",
+      "path": "frontend/src/utils/cardapio.propriedades.test.js",
+      "type": "file",
+      "sha": "9d0b9c0217387d03b73268d031349dad2554a4d6",
+      "mode": "100644",
+      "extension": ".js",
+      "size": 2726,
       "is_binary": false
     },
     {
       "name": "cardapio.test.js",
       "path": "frontend/src/utils/cardapio.test.js",
       "type": "file",
-      "sha": "9e4c1d1bfa2b685636a9e5e97af948e5732e800a",
+      "sha": "2f239afd78d1af1623786e5c0639926a86f4a171",
       "mode": "100644",
       "extension": ".js",
-      "size": 4733,
+      "size": 5871,
       "is_binary": false
     },
     {
@@ -5852,7 +6288,7 @@
       "name": "views",
       "path": "frontend/src/views",
       "type": "directory",
-      "sha": "24abad6ad1bf1ec92f467971a40190856e05f62e",
+      "sha": "41d484dc60021d2350000476a2f73bfb448e513d",
       "mode": "040000",
       "children": []
     },
@@ -5960,20 +6396,20 @@
       "name": "HomeView.test.js",
       "path": "frontend/src/views/HomeView.test.js",
       "type": "file",
-      "sha": "7f1fd3f76a85f8db2f456f0c16ce0f135085b3ec",
+      "sha": "a19ca4176648f50ca30ebc018b6448efd3dc2d5e",
       "mode": "100644",
       "extension": ".js",
-      "size": 4344,
+      "size": 11911,
       "is_binary": false
     },
     {
       "name": "HomeView.vue",
       "path": "frontend/src/views/HomeView.vue",
       "type": "file",
-      "sha": "00f67e7f1779ccfed215110d55c8c3e5906d1acf",
+      "sha": "6cb336ab42d3b8d4a52a0882fbfe44db086db435",
       "mode": "100644",
       "extension": ".vue",
-      "size": 16995,
+      "size": 17412,
       "is_binary": false
     },
     {
@@ -6067,6 +6503,16 @@
       "is_binary": false
     },
     {
+      "name": "stryker.config.mjs",
+      "path": "frontend/stryker.config.mjs",
+      "type": "file",
+      "sha": "af0b9f355790b52e713031da2017c9f9145f83af",
+      "mode": "100644",
+      "extension": ".mjs",
+      "size": 1061,
+      "is_binary": false
+    },
+    {
       "name": "vite.config.js",
       "path": "frontend/vite.config.js",
       "type": "file",
@@ -6080,17 +6526,17 @@
       "name": "vitest.config.js",
       "path": "frontend/vitest.config.js",
       "type": "file",
-      "sha": "5337b8fb52540b80ecd71c447759beda4a50ad8c",
+      "sha": "748763e3171a9ca24daea3ecc01a88260947566d",
       "mode": "100644",
       "extension": ".js",
-      "size": 1377,
+      "size": 1649,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-23T16:44:04.975764+00:00",
+  "extracted_at": "2026-11-24T16:47:45.078759+00:00",
   "method": "rest",
-  "total_items": 624,
+  "total_items": 670,
   "repository_metadata": {
     "id": 1338351277,
     "full_name": "unb-mds/2026-2-Bandejao-UnB",
@@ -6098,9 +6544,9 @@
     "created_at": "2026-08-18T11:57:21Z",
     "updated_at": "2026-11-23T02:47:46Z",
     "language": "Python",
-    "size": 9794,
+    "size": 10915,
     "stars": 2,
     "forks": 0,
-    "open_issues": 45
+    "open_issues": 36
   }
 }
