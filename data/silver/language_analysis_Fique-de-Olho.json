@@ -2,19 +2,19 @@
   "repository": "Fique-de-Olho",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-24T16:47:43.336467+00:00",
+  "analyzed_at": "2026-11-25T16:24:23.589995+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 351,
-  "total_bytes": 3769633,
+  "total_files": 353,
+  "total_bytes": 4136663,
   "languages": [
     {
       "language": "Python",
       "file_count": 118,
-      "total_bytes": 1405511,
-      "percentage": 37.29,
+      "total_bytes": 1425688,
+      "percentage": 34.46,
       "files": [
         {
           "path": "Back/app/modules/scraper/hub.py",
@@ -37,7 +37,7 @@
         {
           "path": "Back/app/modules/scraper/pipeline.py",
           "name": "pipeline.py",
-          "size": 45217,
+          "size": 45309,
           "extension": ".py"
         },
         {
@@ -53,6 +53,18 @@
           "extension": ".py"
         },
         {
+          "path": "Back/app/modules/scraper/summarizer.py",
+          "name": "summarizer.py",
+          "size": 35132,
+          "extension": ".py"
+        },
+        {
+          "path": "Back/app/modules/editais/service.py",
+          "name": "service.py",
+          "size": 33877,
+          "extension": ".py"
+        },
+        {
           "path": "Back/tests/test_hub_fal_scrapers.py",
           "name": "test_hub_fal_scrapers.py",
           "size": 33746,
@@ -63,27 +75,21 @@
           "name": "ocean.py",
           "size": 33420,
           "extension": ".py"
-        },
-        {
-          "path": "Back/app/modules/editais/service.py",
-          "name": "service.py",
-          "size": 33356,
-          "extension": ".py"
-        },
-        {
-          "path": "Back/app/modules/scraper/summarizer.py",
-          "name": "summarizer.py",
-          "size": 32937,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "PNG Image",
-      "file_count": 9,
-      "total_bytes": 959600,
-      "percentage": 25.46,
+      "file_count": 10,
+      "total_bytes": 1251509,
+      "percentage": 30.25,
       "files": [
+        {
+          "path": "docs/assets/img/screenshot-home.png",
+          "name": "screenshot-home.png",
+          "size": 291909,
+          "extension": ".png"
+        },
         {
           "path": "docs/Requisitos/imagens/requisitos_board.png",
           "name": "requisitos_board.png",
@@ -142,9 +148,9 @@
     },
     {
       "language": "Markdown",
-      "file_count": 117,
-      "total_bytes": 893830,
-      "percentage": 23.71,
+      "file_count": 118,
+      "total_bytes": 934238,
+      "percentage": 22.58,
       "files": [
         {
           "path": ".github/skills/neon-functions/SKILL.md",
@@ -189,6 +195,12 @@
           "extension": ".md"
         },
         {
+          "path": "docs/front.md",
+          "name": "front.md",
+          "size": 23395,
+          "extension": ".md"
+        },
+        {
           "path": ".github/skills/neon-realtime/references/reactivity.md",
           "name": "reactivity.md",
           "size": 20168,
@@ -199,12 +211,6 @@
           "name": "SKILL.md",
           "size": 19382,
           "extension": ".md"
-        },
-        {
-          "path": "docs/fontes-de-dados.md",
-          "name": "fontes-de-dados.md",
-          "size": 15965,
-          "extension": ".md"
         }
       ]
     },
@@ -212,7 +218,7 @@
       "language": "JSON",
       "file_count": 8,
       "total_bytes": 192542,
-      "percentage": 5.11,
+      "percentage": 4.65,
       "files": [
         {
           "path": "Front/package-lock.json",
@@ -266,14 +272,14 @@
     },
     {
       "language": "TypeScript",
-      "file_count": 52,
-      "total_bytes": 156471,
-      "percentage": 4.15,
+      "file_count": 53,
+      "total_bytes": 160271,
+      "percentage": 3.87,
       "files": [
         {
           "path": "Front/src/pages/HomePage.tsx",
           "name": "HomePage.tsx",
-          "size": 10083,
+          "size": 10420,
           "extension": ".tsx"
         },
         {
@@ -285,7 +291,7 @@
         {
           "path": "Front/src/pages/EditalDetailPage.tsx",
           "name": "EditalDetailPage.tsx",
-          "size": 9285,
+          "size": 9375,
           "extension": ".tsx"
         },
         {
@@ -307,9 +313,21 @@
           "extension": ".tsx"
         },
         {
+          "path": "Front/src/services/editaisService.ts",
+          "name": "editaisService.ts",
+          "size": 5487,
+          "extension": ".ts"
+        },
+        {
           "path": "Front/src/pages/__tests__/HomePage.test.tsx",
           "name": "HomePage.test.tsx",
-          "size": 5288,
+          "size": 5404,
+          "extension": ".tsx"
+        },
+        {
+          "path": "Front/src/pages/__tests__/EditalDetailPage.test.tsx",
+          "name": "EditalDetailPage.test.tsx",
+          "size": 5099,
           "extension": ".tsx"
         },
         {
@@ -317,31 +335,19 @@
           "name": "LoginPage.tsx",
           "size": 4865,
           "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/pages/__tests__/EditalDetailPage.test.tsx",
-          "name": "EditalDetailPage.test.tsx",
-          "size": 4731,
-          "extension": ".tsx"
-        },
-        {
-          "path": "Front/src/services/editaisService.ts",
-          "name": "editaisService.ts",
-          "size": 4730,
-          "extension": ".ts"
         }
       ]
     },
     {
       "language": "CSS",
       "file_count": 4,
-      "total_bytes": 68481,
-      "percentage": 1.82,
+      "total_bytes": 69768,
+      "percentage": 1.69,
       "files": [
         {
           "path": "Front/src/theme.css",
           "name": "theme.css",
-          "size": 48417,
+          "size": 49704,
           "extension": ".css"
         },
         {
@@ -368,7 +374,7 @@
       "language": "WebP Image",
       "file_count": 1,
       "total_bytes": 46900,
-      "percentage": 1.24,
+      "percentage": 1.13,
       "files": [
         {
           "path": "docs/assets/img/pattern-swirls.webp",
@@ -381,19 +387,19 @@
     {
       "language": "YAML",
       "file_count": 17,
-      "total_bytes": 18345,
-      "percentage": 0.49,
+      "total_bytes": 19575,
+      "percentage": 0.47,
       "files": [
         {
           "path": ".github/workflows/sync-editais.yml",
           "name": "sync-editais.yml",
-          "size": 5027,
+          "size": 6234,
           "extension": ".yml"
         },
         {
           "path": "mkdocs.yml",
           "name": "mkdocs.yml",
-          "size": 3677,
+          "size": 3700,
           "extension": ".yml"
         },
         {
@@ -447,10 +453,36 @@
       ]
     },
     {
+      "language": "SVG Image",
+      "file_count": 3,
+      "total_bytes": 12106,
+      "percentage": 0.29,
+      "files": [
+        {
+          "path": "docs/assets/img/logo.svg",
+          "name": "logo.svg",
+          "size": 8219,
+          "extension": ".svg"
+        },
+        {
+          "path": "Front/public/assets/af98f.svg",
+          "name": "af98f.svg",
+          "size": 1987,
+          "extension": ".svg"
+        },
+        {
+          "path": "Front/public/assets/790c2.svg",
+          "name": "790c2.svg",
+          "size": 1900,
+          "extension": ".svg"
+        }
+      ]
+    },
+    {
       "language": "Text",
       "file_count": 2,
       "total_bytes": 10640,
-      "percentage": 0.28,
+      "percentage": 0.26,
       "files": [
         {
           "path": ".agents/skills/frontend-design/LICENSE.txt",
@@ -470,7 +502,7 @@
       "language": "SQL",
       "file_count": 3,
       "total_bytes": 7177,
-      "percentage": 0.19,
+      "percentage": 0.17,
       "files": [
         {
           "path": "db/migrations/001_initial_schema.sql",
@@ -493,28 +525,8 @@
       ]
     },
     {
-      "language": "SVG Image",
-      "file_count": 2,
-      "total_bytes": 3887,
-      "percentage": 0.1,
-      "files": [
-        {
-          "path": "Front/public/assets/af98f.svg",
-          "name": "af98f.svg",
-          "size": 1987,
-          "extension": ".svg"
-        },
-        {
-          "path": "Front/public/assets/790c2.svg",
-          "name": "790c2.svg",
-          "size": 1900,
-          "extension": ".svg"
-        }
-      ]
-    },
-    {
       "language": "Unknown",
-      "file_count": 7,
+      "file_count": 5,
       "total_bytes": 2725,
       "percentage": 0.07,
       "files": [
@@ -547,44 +559,6 @@
           "name": ".env.production",
           "size": 96,
           "extension": ".production"
-        },
-        {
-          "path": "Back/test.db",
-          "name": "test.db",
-          "size": 0,
-          "extension": ".db"
-        },
-        {
-          "path": "test.db",
-          "name": "test.db",
-          "size": 0,
-          "extension": ".db"
-        }
-      ]
-    },
-    {
-      "language": "INI",
-      "file_count": 3,
-      "total_bytes": 1013,
-      "percentage": 0.03,
-      "files": [
-        {
-          "path": "Back/alembic.ini",
-          "name": "alembic.ini",
-          "size": 675,
-          "extension": ".ini"
-        },
-        {
-          "path": "Back/pytest.ini",
-          "name": "pytest.ini",
-          "size": 198,
-          "extension": ".ini"
-        },
-        {
-          "path": "pytest.ini",
-          "name": "pytest.ini",
-          "size": 140,
-          "extension": ".ini"
         }
       ]
     },
@@ -635,6 +609,32 @@
       ]
     },
     {
+      "language": "INI",
+      "file_count": 3,
+      "total_bytes": 1013,
+      "percentage": 0.02,
+      "files": [
+        {
+          "path": "Back/alembic.ini",
+          "name": "alembic.ini",
+          "size": 675,
+          "extension": ".ini"
+        },
+        {
+          "path": "Back/pytest.ini",
+          "name": "pytest.ini",
+          "size": 198,
+          "extension": ".ini"
+        },
+        {
+          "path": "pytest.ini",
+          "name": "pytest.ini",
+          "size": 140,
+          "extension": ".ini"
+        }
+      ]
+    },
+    {
       "language": "HTML",
       "file_count": 1,
       "total_bytes": 776,
@@ -670,7 +670,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-24T16:49:56.282598+00:00",
+    "extracted_at": "2026-11-25T16:25:27.098851+00:00",
     "file_path": "data/silver/language_analysis_Fique-de-Olho.json"
   }
 }

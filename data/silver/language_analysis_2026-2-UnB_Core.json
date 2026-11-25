@@ -2,24 +2,104 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-24T16:47:40.777492+00:00",
+  "analyzed_at": "2026-11-25T16:24:21.811212+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 237,
-  "total_bytes": 1034139,
+  "total_files": 269,
+  "total_bytes": 1377234,
   "languages": [
     {
-      "language": "Markdown",
-      "file_count": 56,
-      "total_bytes": 270130,
-      "percentage": 26.12,
+      "language": "JSON",
+      "file_count": 12,
+      "total_bytes": 360738,
+      "percentage": 26.19,
       "files": [
+        {
+          "path": "frontend/package-lock.json",
+          "name": "package-lock.json",
+          "size": 315465,
+          "extension": ".json"
+        },
+        {
+          "path": "backend/app/seeds/conteudos_demonstracao.json",
+          "name": "conteudos_demonstracao.json",
+          "size": 28481,
+          "extension": ".json"
+        },
+        {
+          "path": "package-lock.json",
+          "name": "package-lock.json",
+          "size": 11856,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integrations/speckit.manifest.json",
+          "name": "speckit.manifest.json",
+          "size": 1516,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integrations/copilot.manifest.json",
+          "name": "copilot.manifest.json",
+          "size": 1285,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/package.json",
+          "name": "package.json",
+          "size": 914,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/workflows/workflow-registry.json",
+          "name": "workflow-registry.json",
+          "size": 369,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/integration.json",
+          "name": "integration.json",
+          "size": 279,
+          "extension": ".json"
+        },
+        {
+          "path": "frontend/vercel.json",
+          "name": "vercel.json",
+          "size": 247,
+          "extension": ".json"
+        },
+        {
+          "path": ".specify/init-options.json",
+          "name": "init-options.json",
+          "size": 172,
+          "extension": ".json"
+        }
+      ]
+    },
+    {
+      "language": "Markdown",
+      "file_count": 59,
+      "total_bytes": 303073,
+      "percentage": 22.01,
+      "files": [
+        {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 23248,
+          "extension": ".md"
+        },
         {
           "path": ".github/skills/speckit-checklist/SKILL.md",
           "name": "SKILL.md",
           "size": 22287,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/requisitos.md",
+          "name": "requisitos.md",
+          "size": 19533,
           "extension": ".md"
         },
         {
@@ -35,21 +115,9 @@
           "extension": ".md"
         },
         {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 14495,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/requisitos.md",
-          "name": "requisitos.md",
-          "size": 13519,
-          "extension": ".md"
-        },
-        {
           "path": "specs/001-unb-core/spec.md",
           "name": "spec.md",
-          "size": 13149,
+          "size": 16696,
           "extension": ".md"
         },
         {
@@ -79,78 +147,10 @@
       ]
     },
     {
-      "language": "JSON",
-      "file_count": 10,
-      "total_bytes": 232733,
-      "percentage": 22.51,
-      "files": [
-        {
-          "path": "frontend/package-lock.json",
-          "name": "package-lock.json",
-          "size": 216351,
-          "extension": ".json"
-        },
-        {
-          "path": "package-lock.json",
-          "name": "package-lock.json",
-          "size": 11856,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/integrations/speckit.manifest.json",
-          "name": "speckit.manifest.json",
-          "size": 1516,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/integrations/copilot.manifest.json",
-          "name": "copilot.manifest.json",
-          "size": 1285,
-          "extension": ".json"
-        },
-        {
-          "path": "frontend/package.json",
-          "name": "package.json",
-          "size": 751,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/workflows/workflow-registry.json",
-          "name": "workflow-registry.json",
-          "size": 369,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/integration.json",
-          "name": "integration.json",
-          "size": 279,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/init-options.json",
-          "name": "init-options.json",
-          "size": 172,
-          "extension": ".json"
-        },
-        {
-          "path": ".specify/memory/.constitution-template.json",
-          "name": ".constitution-template.json",
-          "size": 103,
-          "extension": ".json"
-        },
-        {
-          "path": "package.json",
-          "name": "package.json",
-          "size": 51,
-          "extension": ".json"
-        }
-      ]
-    },
-    {
       "language": "Python",
-      "file_count": 67,
-      "total_bytes": 202007,
-      "percentage": 19.53,
+      "file_count": 80,
+      "total_bytes": 281415,
+      "percentage": 20.43,
       "files": [
         {
           "path": "backend/app/crawler/crawlerCurriculo.py",
@@ -165,9 +165,39 @@
           "extension": ".py"
         },
         {
+          "path": "scripts/teste_sabotagem.py",
+          "name": "teste_sabotagem.py",
+          "size": 10368,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_exclusao_contribuicoes.py",
+          "name": "test_exclusao_contribuicoes.py",
+          "size": 9709,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/services/usuario_service.py",
+          "name": "usuario_service.py",
+          "size": 9648,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/tests/integration/test_gestao_usuarios.py",
+          "name": "test_gestao_usuarios.py",
+          "size": 9497,
+          "extension": ".py"
+        },
+        {
           "path": "backend/app/crawler/crawlerDisciplina.py",
           "name": "crawlerDisciplina.py",
           "size": 8575,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/app/scripts/importar_conteudos.py",
+          "name": "importar_conteudos.py",
+          "size": 7815,
           "extension": ".py"
         },
         {
@@ -181,49 +211,37 @@
           "name": "0001_initial_schema.py",
           "size": 6547,
           "extension": ".py"
-        },
-        {
-          "path": "backend/tests/unit/test_migracao_unificar_disciplinas.py",
-          "name": "test_migracao_unificar_disciplinas.py",
-          "size": 6409,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_auth_contribuicoes.py",
-          "name": "test_auth_contribuicoes.py",
-          "size": 5999,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/integration/test_conteudos_filtros.py",
-          "name": "test_conteudos_filtros.py",
-          "size": 5887,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/alembic/versions/0005_unificar_disciplinas_repetidas.py",
-          "name": "0005_unificar_disciplinas_repetidas.py",
-          "size": 5666,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/unit/test_routers.py",
-          "name": "test_routers.py",
-          "size": 5171,
-          "extension": ".py"
         }
       ]
     },
     {
       "language": "JavaScript",
-      "file_count": 51,
-      "total_bytes": 147965,
-      "percentage": 14.31,
+      "file_count": 63,
+      "total_bytes": 244705,
+      "percentage": 17.77,
       "files": [
+        {
+          "path": "frontend/src/pages/AdminUsuariosPage.jsx",
+          "name": "AdminUsuariosPage.jsx",
+          "size": 14313,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/pages/MinhaContribuicaoPage.jsx",
+          "name": "MinhaContribuicaoPage.jsx",
+          "size": 11306,
+          "extension": ".jsx"
+        },
         {
           "path": "frontend/src/pages/ConhecimentoPage.jsx",
           "name": "ConhecimentoPage.jsx",
           "size": 10102,
+          "extension": ".jsx"
+        },
+        {
+          "path": "frontend/src/components/conteudos/DisciplinaBusca.test.jsx",
+          "name": "DisciplinaBusca.test.jsx",
+          "size": 9097,
           "extension": ".jsx"
         },
         {
@@ -233,51 +251,33 @@
           "extension": ".jsx"
         },
         {
+          "path": "frontend/src/pages/ModeracaoContribuicaoPage.jsx",
+          "name": "ModeracaoContribuicaoPage.jsx",
+          "size": 8896,
+          "extension": ".jsx"
+        },
+        {
           "path": "frontend/src/pages/ContribuicaoPage.jsx",
           "name": "ContribuicaoPage.jsx",
-          "size": 8305,
+          "size": 8578,
           "extension": ".jsx"
         },
         {
           "path": "frontend/src/pages/HomePage.jsx",
           "name": "HomePage.jsx",
-          "size": 7651,
+          "size": 7663,
           "extension": ".jsx"
         },
         {
-          "path": "frontend/src/pages/MinhaContribuicaoPage.jsx",
-          "name": "MinhaContribuicaoPage.jsx",
-          "size": 7475,
+          "path": "frontend/src/pages/ContribuicaoPage.test.jsx",
+          "name": "ContribuicaoPage.test.jsx",
+          "size": 7573,
           "extension": ".jsx"
         },
         {
           "path": "frontend/src/pages/MinhasContribuicoesPage.jsx",
           "name": "MinhasContribuicoesPage.jsx",
-          "size": 7317,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/HomePage.test.jsx",
-          "name": "HomePage.test.jsx",
-          "size": 6408,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/PerfilPage.jsx",
-          "name": "PerfilPage.jsx",
-          "size": 5629,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/ConteudoPage.jsx",
-          "name": "ConteudoPage.jsx",
-          "size": 5137,
-          "extension": ".jsx"
-        },
-        {
-          "path": "frontend/src/pages/ConhecimentoPage.test.jsx",
-          "name": "ConhecimentoPage.test.jsx",
-          "size": 5063,
+          "size": 7530,
           "extension": ".jsx"
         }
       ]
@@ -286,7 +286,7 @@
       "language": "PowerShell",
       "file_count": 6,
       "total_bytes": 61101,
-      "percentage": 5.91,
+      "percentage": 4.44,
       "files": [
         {
           "path": ".specify/scripts/powershell/common.ps1",
@@ -329,13 +329,13 @@
     {
       "language": "CSS",
       "file_count": 15,
-      "total_bytes": 42942,
-      "percentage": 4.15,
+      "total_bytes": 46765,
+      "percentage": 3.4,
       "files": [
         {
           "path": "frontend/src/components/ui/ui.css",
           "name": "ui.css",
-          "size": 5905,
+          "size": 7513,
           "extension": ".css"
         },
         {
@@ -347,7 +347,13 @@
         {
           "path": "frontend/src/components/conteudos/conteudos.css",
           "name": "conteudos.css",
-          "size": 4741,
+          "size": 5119,
+          "extension": ".css"
+        },
+        {
+          "path": "frontend/src/index.css",
+          "name": "index.css",
+          "size": 5091,
           "extension": ".css"
         },
         {
@@ -359,25 +365,19 @@
         {
           "path": "frontend/src/pages/AuthPage.css",
           "name": "AuthPage.css",
-          "size": 3710,
-          "extension": ".css"
-        },
-        {
-          "path": "frontend/src/index.css",
-          "name": "index.css",
-          "size": 3689,
+          "size": 4083,
           "extension": ".css"
         },
         {
           "path": "frontend/src/pages/ContribuicaoPage.css",
           "name": "ContribuicaoPage.css",
-          "size": 3395,
+          "size": 4027,
           "extension": ".css"
         },
         {
           "path": "frontend/src/pages/MinhasContribuicoesPage.css",
           "name": "MinhasContribuicoesPage.css",
-          "size": 2557,
+          "size": 2412,
           "extension": ".css"
         },
         {
@@ -387,18 +387,18 @@
           "extension": ".css"
         },
         {
-          "path": "frontend/src/pages/governance.css",
-          "name": "governance.css",
-          "size": 2119,
+          "path": "frontend/src/pages/GuiaContribuicaoPage.css",
+          "name": "GuiaContribuicaoPage.css",
+          "size": 1872,
           "extension": ".css"
         }
       ]
     },
     {
       "language": "Unknown",
-      "file_count": 12,
-      "total_bytes": 37117,
-      "percentage": 3.59,
+      "file_count": 14,
+      "total_bytes": 39155,
+      "percentage": 2.84,
       "files": [
         {
           "path": "unb_core.db",
@@ -419,6 +419,12 @@
           "extension": ".pyc"
         },
         {
+          "path": "frontend/stryker.config.mjs",
+          "name": "stryker.config.mjs",
+          "size": 1700,
+          "extension": ".mjs"
+        },
+        {
           "path": "backend/app/__pycache__/db.cpython-314.pyc",
           "name": "db.cpython-314.pyc",
           "size": 1523,
@@ -433,8 +439,14 @@
         {
           "path": ".env.example",
           "name": ".env.example",
-          "size": 438,
+          "size": 590,
           "extension": ".example"
+        },
+        {
+          "path": "frontend/.npmrc",
+          "name": ".npmrc",
+          "size": 186,
+          "extension": ".npmrc"
         },
         {
           "path": ".gitattributes",
@@ -447,18 +459,6 @@
           "name": ".gitkeep",
           "size": 0,
           "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/tests/integration/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
-        },
-        {
-          "path": "backend/tests/unit/.gitkeep",
-          "name": ".gitkeep",
-          "size": 0,
-          "extension": ".gitkeep"
         }
       ]
     },
@@ -466,7 +466,7 @@
       "language": "YAML",
       "file_count": 4,
       "total_bytes": 12214,
-      "percentage": 1.18,
+      "percentage": 0.89,
       "files": [
         {
           "path": "docker-compose.yml",
@@ -497,8 +497,8 @@
     {
       "language": "No Extension",
       "file_count": 6,
-      "total_bytes": 10974,
-      "percentage": 1.06,
+      "total_bytes": 11071,
+      "percentage": 0.8,
       "files": [
         {
           "path": "git status",
@@ -521,13 +521,13 @@
         {
           "path": "backend/Dockerfile",
           "name": "Dockerfile",
-          "size": 545,
+          "size": 626,
           "extension": ""
         },
         {
           "path": "frontend/Dockerfile",
           "name": "Dockerfile",
-          "size": 201,
+          "size": 217,
           "extension": ""
         },
         {
@@ -542,7 +542,7 @@
       "language": "SVG Image",
       "file_count": 2,
       "total_bytes": 10033,
-      "percentage": 0.97,
+      "percentage": 0.73,
       "files": [
         {
           "path": "frontend/src/assets/vite.svg",
@@ -562,7 +562,7 @@
       "language": "INI",
       "file_count": 1,
       "total_bytes": 5009,
-      "percentage": 0.48,
+      "percentage": 0.36,
       "files": [
         {
           "path": "backend/alembic.ini",
@@ -576,7 +576,7 @@
       "language": "HTML",
       "file_count": 1,
       "total_bytes": 958,
-      "percentage": 0.09,
+      "percentage": 0.07,
       "files": [
         {
           "path": "frontend/index.html",
@@ -589,8 +589,8 @@
     {
       "language": "Git Ignore",
       "file_count": 2,
-      "total_bytes": 502,
-      "percentage": 0.05,
+      "total_bytes": 543,
+      "percentage": 0.04,
       "files": [
         {
           "path": ".specify/.gitignore",
@@ -601,7 +601,7 @@
         {
           "path": ".gitignore",
           "name": ".gitignore",
-          "size": 118,
+          "size": 159,
           "extension": ".gitignore"
         }
       ]
@@ -610,7 +610,7 @@
       "language": "Docker Ignore",
       "file_count": 3,
       "total_bytes": 299,
-      "percentage": 0.03,
+      "percentage": 0.02,
       "files": [
         {
           "path": "backend/.dockerignore",
@@ -648,7 +648,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-24T16:49:56.257217+00:00",
+    "extracted_at": "2026-11-25T16:25:27.082451+00:00",
     "file_path": "data/silver/language_analysis_2026-2-UnB_Core.json"
   }
 }

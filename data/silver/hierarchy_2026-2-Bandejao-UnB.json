@@ -2,7 +2,7 @@
   "repository": "2026-2-Bandejao-UnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-24T16:47:45.078759+00:00",
+  "extracted_at": "2026-11-25T16:24:25.213971+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -39,7 +39,7 @@
         "name": "config.yml",
         "type": "file",
         "language": "YAML",
-        "size": 239,
+        "size": 508,
         "extension": ".yml",
         "path": ".github/ISSUE_TEMPLATE/config.yml"
       },
@@ -77,7 +77,7 @@
         "name": "backend-ci.yml",
         "type": "file",
         "language": "YAML",
-        "size": 17176,
+        "size": 18954,
         "extension": ".yml",
         "path": ".github/workflows/backend-ci.yml"
       },
@@ -93,7 +93,7 @@
         "name": "carga.yml",
         "type": "file",
         "language": "YAML",
-        "size": 6122,
+        "size": 6116,
         "extension": ".yml",
         "path": ".github/workflows/carga.yml"
       },
@@ -141,7 +141,7 @@
         "name": "AI-USAGE.md",
         "type": "file",
         "language": "Markdown",
-        "size": 186127,
+        "size": 281272,
         "extension": ".md",
         "path": "AI-USAGE.md"
       },
@@ -152,6 +152,14 @@
         "size": 5454,
         "extension": ".md",
         "path": "CONTEXT.md"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 16716,
+        "extension": ".md",
+        "path": "CONTRIBUTING.md"
       },
       {
         "name": "Caddyfile",
@@ -165,7 +173,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 15098,
+        "size": 24923,
         "extension": ".md",
         "path": "README.md"
       },
@@ -187,7 +195,7 @@
         "name": "USO-DAS-SKILLS.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7644,
+        "size": 9537,
         "extension": ".md",
         "path": "SKILLS/USO-DAS-SKILLS.md"
       },
@@ -2507,7 +2515,7 @@
         "name": "locustfile.py",
         "type": "file",
         "language": "Python",
-        "size": 1968,
+        "size": 1967,
         "extension": ".py",
         "path": "backend/carga/locustfile.py"
       },
@@ -2744,10 +2752,18 @@
         "path": "backend/tests/test_acesso_contrato.py"
       },
       {
+        "name": "test_backup_producao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 44644,
+        "extension": ".py",
+        "path": "backend/tests/test_backup_producao.py"
+      },
+      {
         "name": "test_banco_ci.py",
         "type": "file",
         "language": "Python",
-        "size": 2651,
+        "size": 4633,
         "extension": ".py",
         "path": "backend/tests/test_banco_ci.py"
       },
@@ -2755,7 +2771,7 @@
         "name": "test_carga_bd14.py",
         "type": "file",
         "language": "Python",
-        "size": 18346,
+        "size": 18344,
         "extension": ".py",
         "path": "backend/tests/test_carga_bd14.py"
       },
@@ -2763,7 +2779,7 @@
         "name": "test_ci_usuario_restrito.py",
         "type": "file",
         "language": "Python",
-        "size": 3909,
+        "size": 5177,
         "extension": ".py",
         "path": "backend/tests/test_ci_usuario_restrito.py"
       },
@@ -2771,7 +2787,7 @@
         "name": "test_config_mysql_producao.py",
         "type": "file",
         "language": "Python",
-        "size": 7339,
+        "size": 9896,
         "extension": ".py",
         "path": "backend/tests/test_config_mysql_producao.py"
       },
@@ -2803,7 +2819,7 @@
         "name": "test_cron_producao.py",
         "type": "file",
         "language": "Python",
-        "size": 19642,
+        "size": 21659,
         "extension": ".py",
         "path": "backend/tests/test_cron_producao.py"
       },
@@ -2878,6 +2894,14 @@
         "size": 709,
         "extension": ".py",
         "path": "backend/tests/test_horarios_config_bd04.py"
+      },
+      {
+        "name": "test_indicadores_adesao_bd_e5.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11305,
+        "extension": ".py",
+        "path": "backend/tests/test_indicadores_adesao_bd_e5.py"
       },
       {
         "name": "test_indices_bd10.py",
@@ -3013,7 +3037,7 @@
         "name": "10-usuarios.sh",
         "type": "file",
         "language": "Shell",
-        "size": 4833,
+        "size": 5548,
         "extension": ".sh",
         "path": "db/init/10-usuarios.sh"
       },
@@ -3022,6 +3046,36 @@
         "type": "directory",
         "path": "deploy",
         "children": []
+      },
+      {
+        "name": "backup",
+        "type": "directory",
+        "path": "deploy/backup",
+        "children": []
+      },
+      {
+        "name": "backup-banco.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 11390,
+        "extension": ".sh",
+        "path": "deploy/backup/backup-banco.sh"
+      },
+      {
+        "name": "bandejao-backup",
+        "type": "file",
+        "language": "No Extension",
+        "size": 980,
+        "extension": "",
+        "path": "deploy/backup/bandejao-backup"
+      },
+      {
+        "name": "testar-restauracao.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 7322,
+        "extension": ".sh",
+        "path": "deploy/backup/testar-restauracao.sh"
       },
       {
         "name": "cd",
@@ -3063,7 +3117,7 @@
         "name": "rodar-comando.sh",
         "type": "file",
         "language": "Shell",
-        "size": 4758,
+        "size": 5308,
         "extension": ".sh",
         "path": "deploy/cron/rodar-comando.sh"
       },
@@ -3101,7 +3155,7 @@
         "name": "_sidebar.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4405,
+        "size": 4915,
         "extension": ".md",
         "path": "docs/_sidebar.md"
       },
@@ -3333,9 +3387,17 @@
         "name": "C4-nivel-4-banco-de-dados-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 57440,
+        "size": 57524,
         "extension": ".md",
         "path": "docs/arquitetura/banco-de-dados/C4-nivel-4-banco-de-dados-bandejao.md"
+      },
+      {
+        "name": "indicadores-adesao-bd-e5.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7392,
+        "extension": ".md",
+        "path": "docs/arquitetura/banco-de-dados/indicadores-adesao-bd-e5.md"
       },
       {
         "name": "indices-bd10.md",
@@ -3363,7 +3425,7 @@
         "name": "c4-niveis-3-4-frontend-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 60293,
+        "size": 63373,
         "extension": ".md",
         "path": "docs/arquitetura/front-end/c4-niveis-3-4-frontend-bandejao.md"
       },
@@ -3380,6 +3442,30 @@
         "size": 68678,
         "extension": ".pdf",
         "path": "docs/atas-reunioes/Ata_Reuniao_0_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_10_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 55209,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_10_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_11_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 51474,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_11_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_12_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 52961,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_12_Bandejao.pdf"
       },
       {
         "name": "Ata_Reuniao_1_Bandejao.pdf",
@@ -3414,6 +3500,46 @@
         "path": "docs/atas-reunioes/Ata_Reuniao_4_Bandejao.pdf"
       },
       {
+        "name": "Ata_Reuniao_5_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 56282,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_5_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_6_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 55056,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_6_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_7_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 56541,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_7_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_8_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 54587,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_8_Bandejao.pdf"
+      },
+      {
+        "name": "Ata_Reuniao_9_Bandejao.pdf",
+        "type": "file",
+        "language": "PDF",
+        "size": 57230,
+        "extension": ".pdf",
+        "path": "docs/atas-reunioes/Ata_Reuniao_9_Bandejao.pdf"
+      },
+      {
         "name": "Ata_preenchimento_figma_bandejao.pdf",
         "type": "file",
         "language": "PDF",
@@ -3436,10 +3562,18 @@
         "children": []
       },
       {
+        "name": "backup-banco.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 11101,
+        "extension": ".md",
+        "path": "docs/deploy/backup-banco.md"
+      },
+      {
         "name": "deploy-producao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 34069,
+        "size": 39289,
         "extension": ".md",
         "path": "docs/deploy/deploy-producao.md"
       },
@@ -3570,6 +3704,14 @@
         "path": "docs/estudos/semana03-c4-model.md"
       },
       {
+        "name": "guia-do-usuario.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 20440,
+        "extension": ".md",
+        "path": "docs/guia-do-usuario.md"
+      },
+      {
         "name": "index.html",
         "type": "file",
         "language": "HTML",
@@ -3578,16 +3720,54 @@
         "path": "docs/index.html"
       },
       {
+        "name": "operacao",
+        "type": "directory",
+        "path": "docs/operacao",
+        "children": []
+      },
+      {
+        "name": "monitor-disponibilidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8851,
+        "extension": ".md",
+        "path": "docs/operacao/monitor-disponibilidade.md"
+      },
+      {
+        "name": "relatorio-disponibilidade-parcial.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5644,
+        "extension": ".md",
+        "path": "docs/operacao/relatorio-disponibilidade-parcial.md"
+      },
+      {
+        "name": "roteiro-de-moderacao.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 18553,
+        "extension": ".md",
+        "path": "docs/operacao/roteiro-de-moderacao.md"
+      },
+      {
         "name": "qualidade",
         "type": "directory",
         "path": "docs/qualidade",
         "children": []
       },
       {
+        "name": "checklist-qualidade-front.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8687,
+        "extension": ".md",
+        "path": "docs/qualidade/checklist-qualidade-front.md"
+      },
+      {
         "name": "plano-de-testes.md",
         "type": "file",
         "language": "Markdown",
-        "size": 39315,
+        "size": 39829,
         "extension": ".md",
         "path": "docs/qualidade/plano-de-testes.md"
       },
@@ -3595,7 +3775,7 @@
         "name": "teste-de-carga-bd14.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9360,
+        "size": 9530,
         "extension": ".md",
         "path": "docs/qualidade/teste-de-carga-bd14.md"
       },
@@ -3633,7 +3813,7 @@
         "name": "documento-de-requisitos-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 108882,
+        "size": 109429,
         "extension": ".md",
         "path": "docs/requisitos/documento-de-requisitos-bandejao.md"
       },
@@ -3641,7 +3821,7 @@
         "name": "documento-de-visao-bandejao.md",
         "type": "file",
         "language": "Markdown",
-        "size": 58844,
+        "size": 58950,
         "extension": ".md",
         "path": "docs/requisitos/documento-de-visao-bandejao.md"
       },
@@ -3663,7 +3843,7 @@
         "name": "sprint_review_mds.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13720,
+        "size": 33313,
         "extension": ".md",
         "path": "docs/reviews-sprints/sprint_review_mds.md"
       },
@@ -3873,7 +4053,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 11333,
+        "size": 11529,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -3979,7 +4159,7 @@
         "name": "m1-cadastro-e-login.spec.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2859,
+        "size": 3122,
         "extension": ".js",
         "path": "frontend/e2e/m1-cadastro-e-login.spec.js"
       },
@@ -3995,7 +4175,7 @@
         "name": "m3-cardapio-e-avaliacao.spec.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 4434,
+        "size": 4943,
         "extension": ".js",
         "path": "frontend/e2e/m3-cardapio-e-avaliacao.spec.js"
       },
@@ -4003,9 +4183,17 @@
         "name": "m4-previsao-progresso-e-ranking.spec.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2377,
+        "size": 2944,
         "extension": ".js",
         "path": "frontend/e2e/m4-previsao-progresso-e-ranking.spec.js"
+      },
+      {
+        "name": "qualidade.spec.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9480,
+        "extension": ".js",
+        "path": "frontend/e2e/qualidade.spec.js"
       },
       {
         "name": "eslint.config.js",
@@ -4051,7 +4239,7 @@
         "name": "playwright.config.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1504,
+        "size": 1690,
         "extension": ".js",
         "path": "frontend/playwright.config.js"
       },
@@ -4071,7 +4259,7 @@
         "name": "tela-celular.png",
         "type": "file",
         "language": "PNG Image",
-        "size": 134539,
+        "size": 173379,
         "extension": ".png",
         "path": "frontend/public/capturas/tela-celular.png"
       },
@@ -4079,7 +4267,7 @@
         "name": "tela-desktop.png",
         "type": "file",
         "language": "PNG Image",
-        "size": 63687,
+        "size": 182190,
         "extension": ".png",
         "path": "frontend/public/capturas/tela-desktop.png"
       },
@@ -4087,7 +4275,7 @@
         "name": "favicon.ico",
         "type": "file",
         "language": "Icon",
-        "size": 4286,
+        "size": 4778,
         "extension": ".ico",
         "path": "frontend/public/favicon.ico"
       },
@@ -4095,7 +4283,7 @@
         "name": "icone-180.png",
         "type": "file",
         "language": "PNG Image",
-        "size": 22135,
+        "size": 11884,
         "extension": ".png",
         "path": "frontend/public/icone-180.png"
       },
@@ -4103,7 +4291,7 @@
         "name": "icone-192.png",
         "type": "file",
         "language": "PNG Image",
-        "size": 22740,
+        "size": 13224,
         "extension": ".png",
         "path": "frontend/public/icone-192.png"
       },
@@ -4111,7 +4299,7 @@
         "name": "icone-512.png",
         "type": "file",
         "language": "PNG Image",
-        "size": 110963,
+        "size": 57396,
         "extension": ".png",
         "path": "frontend/public/icone-512.png"
       },
@@ -4119,7 +4307,7 @@
         "name": "icone.svg",
         "type": "file",
         "language": "SVG Image",
-        "size": 3649,
+        "size": 36849,
         "extension": ".svg",
         "path": "frontend/public/icone.svg"
       },
@@ -4187,7 +4375,7 @@
         "name": "App.vue",
         "type": "file",
         "language": "Vue",
-        "size": 1521,
+        "size": 3148,
         "extension": ".vue",
         "path": "frontend/src/App.vue"
       },
@@ -4201,17 +4389,69 @@
         "name": "base.css",
         "type": "file",
         "language": "CSS",
-        "size": 3115,
+        "size": 4368,
         "extension": ".css",
         "path": "frontend/src/assets/base.css"
+      },
+      {
+        "name": "guiaDeEstilo.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 5225,
+        "extension": ".js",
+        "path": "frontend/src/assets/guiaDeEstilo.test.js"
       },
       {
         "name": "main.css",
         "type": "file",
         "language": "CSS",
-        "size": 6242,
+        "size": 10180,
         "extension": ".css",
         "path": "frontend/src/assets/main.css"
+      },
+      {
+        "name": "marca",
+        "type": "directory",
+        "path": "frontend/src/assets/marca",
+        "children": []
+      },
+      {
+        "name": "bandejao-logo.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 86516,
+        "extension": ".png",
+        "path": "frontend/src/assets/marca/bandejao-logo.png"
+      },
+      {
+        "name": "refeicoes",
+        "type": "directory",
+        "path": "frontend/src/assets/refeicoes",
+        "children": []
+      },
+      {
+        "name": "almoco.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 174985,
+        "extension": ".png",
+        "path": "frontend/src/assets/refeicoes/almoco.png"
+      },
+      {
+        "name": "cafe.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 175796,
+        "extension": ".png",
+        "path": "frontend/src/assets/refeicoes/cafe.png"
+      },
+      {
+        "name": "jantar.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 176158,
+        "extension": ".png",
+        "path": "frontend/src/assets/refeicoes/jantar.png"
       },
       {
         "name": "components",
@@ -4223,7 +4463,7 @@
         "name": "AbasSemana.vue",
         "type": "file",
         "language": "Vue",
-        "size": 1421,
+        "size": 2197,
         "extension": ".vue",
         "path": "frontend/src/components/AbasSemana.vue"
       },
@@ -4231,9 +4471,17 @@
         "name": "AppLogo.vue",
         "type": "file",
         "language": "Vue",
-        "size": 4753,
+        "size": 673,
         "extension": ".vue",
         "path": "frontend/src/components/AppLogo.vue"
+      },
+      {
+        "name": "AsideConta.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 2731,
+        "extension": ".vue",
+        "path": "frontend/src/components/AsideConta.vue"
       },
       {
         "name": "AvaliacaoWidget.test.js",
@@ -4247,7 +4495,7 @@
         "name": "AvaliacaoWidget.vue",
         "type": "file",
         "language": "Vue",
-        "size": 20112,
+        "size": 21642,
         "extension": ".vue",
         "path": "frontend/src/components/AvaliacaoWidget.vue"
       },
@@ -4279,7 +4527,7 @@
         "name": "AvisoLocalizacao.vue",
         "type": "file",
         "language": "Vue",
-        "size": 14138,
+        "size": 14130,
         "extension": ".vue",
         "path": "frontend/src/components/AvisoLocalizacao.vue"
       },
@@ -4290,6 +4538,22 @@
         "size": 3430,
         "extension": ".vue",
         "path": "frontend/src/components/AvisoPrivacidade.vue"
+      },
+      {
+        "name": "BarraLateral.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 8091,
+        "extension": ".js",
+        "path": "frontend/src/components/BarraLateral.test.js"
+      },
+      {
+        "name": "BarraLateral.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 8215,
+        "extension": ".vue",
+        "path": "frontend/src/components/BarraLateral.vue"
       },
       {
         "name": "BotaoSair.vue",
@@ -4303,7 +4567,7 @@
         "name": "BotaoVoltar.vue",
         "type": "file",
         "language": "Vue",
-        "size": 1255,
+        "size": 1598,
         "extension": ".vue",
         "path": "frontend/src/components/BotaoVoltar.vue"
       },
@@ -4383,7 +4647,7 @@
         "name": "FilaPrevisao.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 10501,
+        "size": 10919,
         "extension": ".js",
         "path": "frontend/src/components/FilaPrevisao.test.js"
       },
@@ -4391,7 +4655,7 @@
         "name": "FilaPrevisao.vue",
         "type": "file",
         "language": "Vue",
-        "size": 6787,
+        "size": 9266,
         "extension": ".vue",
         "path": "frontend/src/components/FilaPrevisao.vue"
       },
@@ -4399,7 +4663,7 @@
         "name": "FiltroCardapio.vue",
         "type": "file",
         "language": "Vue",
-        "size": 6882,
+        "size": 6902,
         "extension": ".vue",
         "path": "frontend/src/components/FiltroCardapio.vue"
       },
@@ -4407,15 +4671,23 @@
         "name": "IconeSvg.vue",
         "type": "file",
         "language": "Vue",
-        "size": 4069,
+        "size": 4249,
         "extension": ".vue",
         "path": "frontend/src/components/IconeSvg.vue"
+      },
+      {
+        "name": "IlustracaoRefeicao.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 1182,
+        "extension": ".vue",
+        "path": "frontend/src/components/IlustracaoRefeicao.vue"
       },
       {
         "name": "LinhaRanking.vue",
         "type": "file",
         "language": "Vue",
-        "size": 1677,
+        "size": 1686,
         "extension": ".vue",
         "path": "frontend/src/components/LinhaRanking.vue"
       },
@@ -4431,7 +4703,7 @@
         "name": "NavegacaoInferior.vue",
         "type": "file",
         "language": "Vue",
-        "size": 1781,
+        "size": 1774,
         "extension": ".vue",
         "path": "frontend/src/components/NavegacaoInferior.vue"
       },
@@ -4439,7 +4711,7 @@
         "name": "NavegacaoTopo.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2246,
+        "size": 2273,
         "extension": ".vue",
         "path": "frontend/src/components/NavegacaoTopo.vue"
       },
@@ -4455,7 +4727,7 @@
         "name": "PontosAviso.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2626,
+        "size": 2628,
         "extension": ".vue",
         "path": "frontend/src/components/PontosAviso.vue"
       },
@@ -4463,7 +4735,7 @@
         "name": "RankingAdesaoToggle.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2391,
+        "size": 2400,
         "extension": ".vue",
         "path": "frontend/src/components/RankingAdesaoToggle.vue"
       },
@@ -4495,7 +4767,7 @@
         "name": "SeletorCampus.vue",
         "type": "file",
         "language": "Vue",
-        "size": 5701,
+        "size": 8456,
         "extension": ".vue",
         "path": "frontend/src/components/SeletorCampus.vue"
       },
@@ -4503,7 +4775,7 @@
         "name": "SeletorRefeicao.vue",
         "type": "file",
         "language": "Vue",
-        "size": 1459,
+        "size": 2155,
         "extension": ".vue",
         "path": "frontend/src/components/SeletorRefeicao.vue"
       },
@@ -4511,7 +4783,7 @@
         "name": "navegacao.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 7522,
+        "size": 9091,
         "extension": ".js",
         "path": "frontend/src/components/navegacao.test.js"
       },
@@ -4536,6 +4808,14 @@
         "size": 1518,
         "extension": ".js",
         "path": "frontend/src/composables/avisoLocalizacao.test.js"
+      },
+      {
+        "name": "filaDoCampus.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2063,
+        "extension": ".js",
+        "path": "frontend/src/composables/filaDoCampus.js"
       },
       {
         "name": "sair.js",
@@ -4611,7 +4891,7 @@
         "name": "navegacao.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1370,
+        "size": 1293,
         "extension": ".js",
         "path": "frontend/src/constants/navegacao.js"
       },
@@ -4635,7 +4915,7 @@
         "name": "refeicoes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1758,
+        "size": 1765,
         "extension": ".js",
         "path": "frontend/src/constants/refeicoes.js"
       },
@@ -4681,7 +4961,7 @@
         "name": "index.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 5483,
+        "size": 5646,
         "extension": ".js",
         "path": "frontend/src/router/index.js"
       },
@@ -4689,7 +4969,7 @@
         "name": "index.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 11918,
+        "size": 12199,
         "extension": ".js",
         "path": "frontend/src/router/index.test.js"
       },
@@ -4789,7 +5069,7 @@
         "name": "servidor.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 39760,
+        "size": 38647,
         "extension": ".js",
         "path": "frontend/src/services/mock/servidor.js"
       },
@@ -4797,7 +5077,7 @@
         "name": "servidor.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 48573,
+        "size": 50622,
         "extension": ".js",
         "path": "frontend/src/services/mock/servidor.test.js"
       },
@@ -4859,7 +5139,7 @@
         "name": "avaliacoes.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 11117,
+        "size": 14322,
         "extension": ".js",
         "path": "frontend/src/stores/avaliacoes.js"
       },
@@ -4867,7 +5147,7 @@
         "name": "avaliacoes.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 22686,
+        "size": 28489,
         "extension": ".js",
         "path": "frontend/src/stores/avaliacoes.test.js"
       },
@@ -4969,7 +5249,7 @@
         "name": "cardapio.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3671,
+        "size": 5437,
         "extension": ".js",
         "path": "frontend/src/utils/cardapio.js"
       },
@@ -4985,7 +5265,7 @@
         "name": "cardapio.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 5871,
+        "size": 10188,
         "extension": ".js",
         "path": "frontend/src/utils/cardapio.test.js"
       },
@@ -4993,9 +5273,17 @@
         "name": "datas.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 2789,
+        "size": 3262,
         "extension": ".js",
         "path": "frontend/src/utils/datas.js"
+      },
+      {
+        "name": "datas.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 957,
+        "extension": ".js",
+        "path": "frontend/src/utils/datas.test.js"
       },
       {
         "name": "views",
@@ -5015,15 +5303,23 @@
         "name": "AvaliacoesView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 3044,
+        "size": 3138,
         "extension": ".vue",
         "path": "frontend/src/views/AvaliacoesView.vue"
+      },
+      {
+        "name": "BoasVindasView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7632,
+        "extension": ".js",
+        "path": "frontend/src/views/BoasVindasView.test.js"
       },
       {
         "name": "BoasVindasView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2520,
+        "size": 11543,
         "extension": ".vue",
         "path": "frontend/src/views/BoasVindasView.vue"
       },
@@ -5031,7 +5327,7 @@
         "name": "CadastroView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 8605,
+        "size": 8728,
         "extension": ".vue",
         "path": "frontend/src/views/CadastroView.vue"
       },
@@ -5039,7 +5335,7 @@
         "name": "CampusView.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 21752,
+        "size": 21870,
         "extension": ".js",
         "path": "frontend/src/views/CampusView.test.js"
       },
@@ -5047,7 +5343,7 @@
         "name": "CampusView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 5962,
+        "size": 4839,
         "extension": ".vue",
         "path": "frontend/src/views/CampusView.vue"
       },
@@ -5055,7 +5351,7 @@
         "name": "CardapioView.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 16284,
+        "size": 19718,
         "extension": ".js",
         "path": "frontend/src/views/CardapioView.test.js"
       },
@@ -5063,7 +5359,7 @@
         "name": "CardapioView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 13881,
+        "size": 18792,
         "extension": ".vue",
         "path": "frontend/src/views/CardapioView.vue"
       },
@@ -5076,10 +5372,26 @@
         "path": "frontend/src/views/ConfirmarEmailView.vue"
       },
       {
+        "name": "FilaTelaView.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4424,
+        "extension": ".js",
+        "path": "frontend/src/views/FilaTelaView.test.js"
+      },
+      {
+        "name": "FilaTelaView.vue",
+        "type": "file",
+        "language": "Vue",
+        "size": 3406,
+        "extension": ".vue",
+        "path": "frontend/src/views/FilaTelaView.vue"
+      },
+      {
         "name": "FilaView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 2432,
+        "size": 3172,
         "extension": ".vue",
         "path": "frontend/src/views/FilaView.vue"
       },
@@ -5087,7 +5399,7 @@
         "name": "HomeView.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 11911,
+        "size": 23035,
         "extension": ".js",
         "path": "frontend/src/views/HomeView.test.js"
       },
@@ -5095,7 +5407,7 @@
         "name": "HomeView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 17412,
+        "size": 25104,
         "extension": ".vue",
         "path": "frontend/src/views/HomeView.vue"
       },
@@ -5119,7 +5431,7 @@
         "name": "ProgressoView.test.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 16149,
+        "size": 16158,
         "extension": ".js",
         "path": "frontend/src/views/ProgressoView.test.js"
       },
@@ -5127,7 +5439,7 @@
         "name": "ProgressoView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 5840,
+        "size": 8475,
         "extension": ".vue",
         "path": "frontend/src/views/ProgressoView.vue"
       },
@@ -5143,7 +5455,7 @@
         "name": "RankingView.vue",
         "type": "file",
         "language": "Vue",
-        "size": 5673,
+        "size": 6049,
         "extension": ".vue",
         "path": "frontend/src/views/RankingView.vue"
       },
@@ -5198,7 +5510,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-24T16:49:56.219577+00:00",
+    "extracted_at": "2026-11-25T16:25:27.056165+00:00",
     "file_path": "data/silver/hierarchy_2026-2-Bandejao-UnB.json"
   }
 }

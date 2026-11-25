@@ -2,44 +2,42 @@
   "repository": "2026-2-MonitoraUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "analyzed_at": "2026-11-24T16:47:49.832316+00:00",
+  "analyzed_at": "2026-11-25T16:24:28.299138+00:00",
   "sample_config": {
     "max_files_per_language": 10,
     "strategy": "largest"
   },
-  "total_files": 117,
-  "total_bytes": 485921,
+  "total_files": 143,
+  "total_bytes": 732363,
   "languages": [
     {
-      "language": "PDF",
-      "file_count": 2,
-      "total_bytes": 185760,
-      "percentage": 38.23,
-      "files": [
-        {
-          "path": "docs/estudos/HTML_parte1_.pdf",
-          "name": "HTML_parte1_.pdf",
-          "size": 103495,
-          "extension": ".pdf"
-        },
-        {
-          "path": "docs/estudos/HTML_parte2_.pdf",
-          "name": "HTML_parte2_.pdf",
-          "size": 82265,
-          "extension": ".pdf"
-        }
-      ]
-    },
-    {
       "language": "Markdown",
-      "file_count": 26,
-      "total_bytes": 135043,
-      "percentage": 27.79,
+      "file_count": 28,
+      "total_bytes": 188415,
+      "percentage": 25.73,
       "files": [
         {
           "path": "docs/Documento_de_requisitos.md",
           "name": "Documento_de_requisitos.md",
-          "size": 26298,
+          "size": 29640,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/arquitetura.md",
+          "name": "arquitetura.md",
+          "size": 24857,
+          "extension": ".md"
+        },
+        {
+          "path": "README.md",
+          "name": "README.md",
+          "size": 19365,
+          "extension": ".md"
+        },
+        {
+          "path": "docs/inicio.md",
+          "name": "inicio.md",
+          "size": 17048,
           "extension": ".md"
         },
         {
@@ -51,7 +49,7 @@
         {
           "path": "docs/Documento_banco.md",
           "name": "Documento_banco.md",
-          "size": 11708,
+          "size": 12232,
           "extension": ".md"
         },
         {
@@ -73,41 +71,85 @@
           "extension": ".md"
         },
         {
-          "path": "como_executar_api.md",
-          "name": "como_executar_api.md",
-          "size": 6093,
-          "extension": ".md"
-        },
-        {
-          "path": "README.md",
-          "name": "README.md",
-          "size": 5857,
-          "extension": ".md"
-        },
-        {
           "path": "docs/estudos/estudo-api.md",
           "name": "estudo-api.md",
           "size": 5355,
-          "extension": ".md"
-        },
-        {
-          "path": "docs/estudos/estudo-web-scraping.md",
-          "name": "estudo-web-scraping.md",
-          "size": 5291,
           "extension": ".md"
         }
       ]
     },
     {
+      "language": "PDF",
+      "file_count": 2,
+      "total_bytes": 185760,
+      "percentage": 25.36,
+      "files": [
+        {
+          "path": "docs/estudos/HTML_parte1_.pdf",
+          "name": "HTML_parte1_.pdf",
+          "size": 103495,
+          "extension": ".pdf"
+        },
+        {
+          "path": "docs/estudos/HTML_parte2_.pdf",
+          "name": "HTML_parte2_.pdf",
+          "size": 82265,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    {
       "language": "Python",
-      "file_count": 36,
-      "total_bytes": 66566,
-      "percentage": 13.7,
+      "file_count": 43,
+      "total_bytes": 153589,
+      "percentage": 20.97,
       "files": [
         {
           "path": "backend/scraping/sigaa.py",
           "name": "sigaa.py",
-          "size": 16703,
+          "size": 24239,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/routers/scraping.py",
+          "name": "scraping.py",
+          "size": 19364,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/database/models.py",
+          "name": "models.py",
+          "size": 10771,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/scripts/criar_processo_seletivo.py",
+          "name": "criar_processo_seletivo.py",
+          "size": 10289,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/services/scraping_service.py",
+          "name": "scraping_service.py",
+          "size": 10015,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/services/inscricoes_service.py",
+          "name": "inscricoes_service.py",
+          "size": 9383,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/routers/inscricoes.py",
+          "name": "inscricoes.py",
+          "size": 7001,
+          "extension": ".py"
+        },
+        {
+          "path": "backend/routers/rotas_botao.py",
+          "name": "rotas_botao.py",
+          "size": 6816,
           "extension": ".py"
         },
         {
@@ -117,71 +159,103 @@
           "extension": ".py"
         },
         {
-          "path": "backend/tests/test_email_service.py",
-          "name": "test_email_service.py",
-          "size": 4336,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/routers/historico.py",
-          "name": "historico.py",
-          "size": 4196,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/database/models.py",
-          "name": "models.py",
-          "size": 3017,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/routers/disciplinas.py",
-          "name": "disciplinas.py",
-          "size": 2976,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/schemas/schemas.py",
-          "name": "schemas.py",
-          "size": 2655,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/tests/test_spreadsheet_service.py",
-          "name": "test_spreadsheet_service.py",
-          "size": 2093,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/routers/departamentos.py",
-          "name": "departamentos.py",
-          "size": 2008,
-          "extension": ".py"
-        },
-        {
-          "path": "backend/main.py",
-          "name": "main.py",
-          "size": 2002,
+          "path": "backend/database/setup_db.py",
+          "name": "setup_db.py",
+          "size": 5415,
           "extension": ".py"
         }
       ]
     },
     {
-      "language": "TypeScript",
-      "file_count": 13,
-      "total_bytes": 23684,
-      "percentage": 4.87,
+      "language": "SQL",
+      "file_count": 8,
+      "total_bytes": 50073,
+      "percentage": 6.84,
       "files": [
+        {
+          "path": "backend/database/sql/01_schema(new).sql",
+          "name": "01_schema(new).sql",
+          "size": 16407,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/testes.sql",
+          "name": "testes.sql",
+          "size": 11262,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/migrations/001_criar_inscricao.sql",
+          "name": "001_criar_inscricao.sql",
+          "size": 10118,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/migrations/002_integrar_dados_scraping.sql",
+          "name": "002_integrar_dados_scraping.sql",
+          "size": 4499,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/03_setup_usuarionew.sql",
+          "name": "03_setup_usuarionew.sql",
+          "size": 3650,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/02_seed_desenvolvimento.sql",
+          "name": "02_seed_desenvolvimento.sql",
+          "size": 3093,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/04_primeiro_admin.sql",
+          "name": "04_primeiro_admin.sql",
+          "size": 1043,
+          "extension": ".sql"
+        },
+        {
+          "path": "backend/database/sql/02_seed.sql",
+          "name": "02_seed.sql",
+          "size": 1,
+          "extension": ".sql"
+        }
+      ]
+    },
+    {
+      "language": "TypeScript",
+      "file_count": 16,
+      "total_bytes": 44538,
+      "percentage": 6.08,
+      "files": [
+        {
+          "path": "front-end/src/pages/iniciar_processo.ts",
+          "name": "iniciar_processo.ts",
+          "size": 10734,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/pages/admin.ts",
+          "name": "admin.ts",
+          "size": 7477,
+          "extension": ".ts"
+        },
         {
           "path": "front-end/src/pages/ranking.ts",
           "name": "ranking.ts",
-          "size": 7022,
+          "size": 7174,
+          "extension": ".ts"
+        },
+        {
+          "path": "front-end/src/services/inscricao.ts",
+          "name": "inscricao.ts",
+          "size": 4014,
           "extension": ".ts"
         },
         {
           "path": "front-end/src/pages/formulario-inscricao.ts",
           "name": "formulario-inscricao.ts",
-          "size": 3948,
+          "size": 3992,
           "extension": ".ts"
         },
         {
@@ -191,15 +265,9 @@
           "extension": ".ts"
         },
         {
-          "path": "front-end/src/services/inscricao.ts",
-          "name": "inscricao.ts",
-          "size": 2016,
-          "extension": ".ts"
-        },
-        {
           "path": "front-end/src/services/auth.ts",
           "name": "auth.ts",
-          "size": 1811,
+          "size": 1944,
           "extension": ".ts"
         },
         {
@@ -219,31 +287,93 @@
           "name": "storage.ts",
           "size": 1027,
           "extension": ".ts"
+        }
+      ]
+    },
+    {
+      "language": "CSS",
+      "file_count": 12,
+      "total_bytes": 28958,
+      "percentage": 3.95,
+      "files": [
+        {
+          "path": "front-end/styles/global.css",
+          "name": "global.css",
+          "size": 6420,
+          "extension": ".css"
         },
         {
-          "path": "front-end/src/types/dados-inscricao.ts",
-          "name": "dados-inscricao.ts",
-          "size": 992,
-          "extension": ".ts"
+          "path": "docs/assets/tema.css",
+          "name": "tema.css",
+          "size": 5404,
+          "extension": ".css"
         },
         {
-          "path": "front-end/src/pages/ranking-guard.ts",
-          "name": "ranking-guard.ts",
-          "size": 909,
-          "extension": ".ts"
+          "path": "front-end/styles/ranking.css",
+          "name": "ranking.css",
+          "size": 4216,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/botao.css",
+          "name": "botao.css",
+          "size": 3643,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/processo-admin.css",
+          "name": "processo-admin.css",
+          "size": 2664,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/processo_admin.css",
+          "name": "processo_admin.css",
+          "size": 1622,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/revisao.css",
+          "name": "revisao.css",
+          "size": 1083,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/inscricao.css",
+          "name": "inscricao.css",
+          "size": 1022,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/solicitacao-registrada.css",
+          "name": "solicitacao-registrada.css",
+          "size": 753,
+          "extension": ".css"
+        },
+        {
+          "path": "front-end/styles/login-professor.css",
+          "name": "login-professor.css",
+          "size": 739,
+          "extension": ".css"
         }
       ]
     },
     {
       "language": "HTML",
-      "file_count": 8,
-      "total_bytes": 18041,
-      "percentage": 3.71,
+      "file_count": 10,
+      "total_bytes": 27610,
+      "percentage": 3.77,
       "files": [
+        {
+          "path": "docs/index.html",
+          "name": "index.html",
+          "size": 5598,
+          "extension": ".html"
+        },
         {
           "path": "front-end/pages/ranking.html",
           "name": "ranking.html",
-          "size": 3383,
+          "size": 5195,
           "extension": ".html"
         },
         {
@@ -259,9 +389,15 @@
           "extension": ".html"
         },
         {
-          "path": "docs/index.html",
-          "name": "index.html",
-          "size": 1908,
+          "path": "front-end/pages/botao_admin.html",
+          "name": "botao_admin.html",
+          "size": 2043,
+          "extension": ".html"
+        },
+        {
+          "path": "backend/database/sql/Admin_botao.html",
+          "name": "Admin_botao.html",
+          "size": 2024,
           "extension": ".html"
         },
         {
@@ -291,84 +427,16 @@
       ]
     },
     {
-      "language": "CSS",
-      "file_count": 8,
-      "total_bytes": 15600,
-      "percentage": 3.21,
+      "language": "SVG Image",
+      "file_count": 1,
+      "total_bytes": 17173,
+      "percentage": 2.34,
       "files": [
         {
-          "path": "front-end/styles/global.css",
-          "name": "global.css",
-          "size": 6420,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/ranking.css",
-          "name": "ranking.css",
-          "size": 4191,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/revisao.css",
-          "name": "revisao.css",
-          "size": 1083,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/inscricao.css",
-          "name": "inscricao.css",
-          "size": 1022,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/solicitacao-registrada.css",
-          "name": "solicitacao-registrada.css",
-          "size": 753,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/login-professor.css",
-          "name": "login-professor.css",
-          "size": 739,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/inicio.css",
-          "name": "inicio.css",
-          "size": 710,
-          "extension": ".css"
-        },
-        {
-          "path": "front-end/styles/nao-apto.css",
-          "name": "nao-apto.css",
-          "size": 682,
-          "extension": ".css"
-        }
-      ]
-    },
-    {
-      "language": "SQL",
-      "file_count": 3,
-      "total_bytes": 14576,
-      "percentage": 3.0,
-      "files": [
-        {
-          "path": "backend/database/sql/01_schema.sql",
-          "name": "01_schema.sql",
-          "size": 13227,
-          "extension": ".sql"
-        },
-        {
-          "path": "backend/database/sql/03_setup_usuarios.sql",
-          "name": "03_setup_usuarios.sql",
-          "size": 1348,
-          "extension": ".sql"
-        },
-        {
-          "path": "backend/database/sql/02_seed.sql",
-          "name": "02_seed.sql",
-          "size": 1,
-          "extension": ".sql"
+          "path": "docs/assets/banner.svg",
+          "name": "banner.svg",
+          "size": 17173,
+          "extension": ".svg"
         }
       ]
     },
@@ -376,7 +444,7 @@
       "language": "JSON",
       "file_count": 4,
       "total_bytes": 9900,
-      "percentage": 2.04,
+      "percentage": 1.35,
       "files": [
         {
           "path": "front-end/package-lock.json",
@@ -405,24 +473,70 @@
       ]
     },
     {
+      "language": "Batch",
+      "file_count": 1,
+      "total_bytes": 6691,
+      "percentage": 0.91,
+      "files": [
+        {
+          "path": "scripts/setup.bat",
+          "name": "setup.bat",
+          "size": 6691,
+          "extension": ".bat"
+        }
+      ]
+    },
+    {
       "language": "Shell",
       "file_count": 1,
-      "total_bytes": 4823,
-      "percentage": 0.99,
+      "total_bytes": 5947,
+      "percentage": 0.81,
       "files": [
         {
           "path": "scripts/setup.sh",
           "name": "setup.sh",
-          "size": 4823,
+          "size": 5947,
           "extension": ".sh"
+        }
+      ]
+    },
+    {
+      "language": "No Extension",
+      "file_count": 4,
+      "total_bytes": 5234,
+      "percentage": 0.71,
+      "files": [
+        {
+          "path": "docs/estudos/leitura do histórico",
+          "name": "leitura do histórico",
+          "size": 2827,
+          "extension": ""
+        },
+        {
+          "path": "LICENSE",
+          "name": "LICENSE",
+          "size": 1060,
+          "extension": ""
+        },
+        {
+          "path": "backend/Dockerfile",
+          "name": "Dockerfile",
+          "size": 761,
+          "extension": ""
+        },
+        {
+          "path": "front-end/Dockerfile",
+          "name": "Dockerfile",
+          "size": 586,
+          "extension": ""
         }
       ]
     },
     {
       "language": "Text",
       "file_count": 8,
-      "total_bytes": 3941,
-      "percentage": 0.81,
+      "total_bytes": 3950,
+      "percentage": 0.54,
       "files": [
         {
           "path": "docs/estudos/estudo fast api e django.txt",
@@ -451,7 +565,7 @@
         {
           "path": "backend/requirements/rest-pdf.txt",
           "name": "rest-pdf.txt",
-          "size": 59,
+          "size": 68,
           "extension": ".txt"
         },
         {
@@ -475,55 +589,43 @@
       ]
     },
     {
-      "language": "No Extension",
-      "file_count": 3,
-      "total_bytes": 3743,
-      "percentage": 0.77,
-      "files": [
-        {
-          "path": "docs/estudos/leitura do histórico",
-          "name": "leitura do histórico",
-          "size": 2827,
-          "extension": ""
-        },
-        {
-          "path": "front-end/Dockerfile",
-          "name": "Dockerfile",
-          "size": 586,
-          "extension": ""
-        },
-        {
-          "path": "backend/Dockerfile",
-          "name": "Dockerfile",
-          "size": 330,
-          "extension": ""
-        }
-      ]
-    },
-    {
       "language": "YAML",
       "file_count": 1,
-      "total_bytes": 2766,
-      "percentage": 0.57,
+      "total_bytes": 2824,
+      "percentage": 0.39,
       "files": [
         {
           "path": "compose.yaml",
           "name": "compose.yaml",
-          "size": 2766,
+          "size": 2824,
           "extension": ".yaml"
+        }
+      ]
+    },
+    {
+      "language": "Config",
+      "file_count": 1,
+      "total_bytes": 959,
+      "percentage": 0.13,
+      "files": [
+        {
+          "path": "front-end/nginx/default.conf",
+          "name": "default.conf",
+          "size": 959,
+          "extension": ".conf"
         }
       ]
     },
     {
       "language": "Unknown",
       "file_count": 2,
-      "total_bytes": 826,
-      "percentage": 0.17,
+      "total_bytes": 617,
+      "percentage": 0.08,
       "files": [
         {
           "path": ".env.example",
           "name": ".env.example",
-          "size": 673,
+          "size": 464,
           "extension": ".example"
         },
         {
@@ -535,24 +637,10 @@
       ]
     },
     {
-      "language": "Config",
-      "file_count": 1,
-      "total_bytes": 527,
-      "percentage": 0.11,
-      "files": [
-        {
-          "path": "front-end/nginx/default.conf",
-          "name": "default.conf",
-          "size": 527,
-          "extension": ".conf"
-        }
-      ]
-    },
-    {
       "language": "Git Ignore",
       "file_count": 1,
       "total_bytes": 125,
-      "percentage": 0.03,
+      "percentage": 0.02,
       "files": [
         {
           "path": ".gitignore",
@@ -564,7 +652,7 @@
     }
   ],
   "_metadata": {
-    "extracted_at": "2026-11-24T16:49:56.254142+00:00",
+    "extracted_at": "2026-11-25T16:25:27.080272+00:00",
     "file_path": "data/silver/language_analysis_2026-2-MonitoraUnB.json"
   }
 }

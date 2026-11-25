@@ -2,7 +2,7 @@
   "repository": "2026-2-UnB_Core",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-24T16:47:40.777492+00:00",
+  "extracted_at": "2026-11-25T16:24:21.811212+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -19,7 +19,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 438,
+        "size": 590,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -269,7 +269,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 118,
+        "size": 159,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -482,6 +482,22 @@
         "path": ".specify/workflows/workflow-registry.json"
       },
       {
+        "name": "CODE_OF_CONDUCT.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5976,
+        "extension": ".md",
+        "path": "CODE_OF_CONDUCT.md"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2421,
+        "extension": ".md",
+        "path": "CONTRIBUTING.md"
+      },
+      {
         "name": "LICENSE",
         "type": "file",
         "language": "No Extension",
@@ -493,9 +509,17 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 14495,
+        "size": 23248,
         "extension": ".md",
         "path": "README.md"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1097,
+        "extension": ".md",
+        "path": "SECURITY.md"
       },
       {
         "name": "backend",
@@ -515,7 +539,7 @@
         "name": "Dockerfile",
         "type": "file",
         "language": "No Extension",
-        "size": 545,
+        "size": 626,
         "extension": "",
         "path": "backend/Dockerfile"
       },
@@ -602,6 +626,22 @@
         "size": 5666,
         "extension": ".py",
         "path": "backend/alembic/versions/0005_unificar_disciplinas_repetidas.py"
+      },
+      {
+        "name": "0006_pedido_exclusao_contribuicao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 928,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0006_pedido_exclusao_contribuicao.py"
+      },
+      {
+        "name": "0007_recuperacao_senha.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1242,
+        "extension": ".py",
+        "path": "backend/alembic/versions/0007_recuperacao_senha.py"
       },
       {
         "name": "app",
@@ -695,7 +735,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 1549,
+        "size": 2094,
         "extension": ".py",
         "path": "backend/app/api/routers/auth.py"
       },
@@ -703,7 +743,7 @@
         "name": "contribuicoes.py",
         "type": "file",
         "language": "Python",
-        "size": 2307,
+        "size": 3705,
         "extension": ".py",
         "path": "backend/app/api/routers/contribuicoes.py"
       },
@@ -711,7 +751,7 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 1119,
+        "size": 2606,
         "extension": ".py",
         "path": "backend/app/api/routers/moderacao.py"
       },
@@ -719,7 +759,7 @@
         "name": "usuarios.py",
         "type": "file",
         "language": "Python",
-        "size": 1440,
+        "size": 3612,
         "extension": ".py",
         "path": "backend/app/api/routers/usuarios.py"
       },
@@ -779,7 +819,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 898,
+        "size": 1427,
         "extension": ".py",
         "path": "backend/app/api/schemas/auth.py"
       },
@@ -787,7 +827,7 @@
         "name": "contribuicao.py",
         "type": "file",
         "language": "Python",
-        "size": 1429,
+        "size": 1682,
         "extension": ".py",
         "path": "backend/app/api/schemas/contribuicao.py"
       },
@@ -795,7 +835,7 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 823,
+        "size": 1571,
         "extension": ".py",
         "path": "backend/app/api/schemas/moderacao.py"
       },
@@ -803,7 +843,7 @@
         "name": "usuarios.py",
         "type": "file",
         "language": "Python",
-        "size": 699,
+        "size": 1442,
         "extension": ".py",
         "path": "backend/app/api/schemas/usuarios.py"
       },
@@ -879,7 +919,7 @@
         "name": "models.py",
         "type": "file",
         "language": "Python",
-        "size": 3479,
+        "size": 4004,
         "extension": ".py",
         "path": "backend/app/domain/models.py"
       },
@@ -887,9 +927,45 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 4343,
+        "size": 5457,
         "extension": ".py",
         "path": "backend/app/main.py"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "backend/app/scripts",
+        "children": []
+      },
+      {
+        "name": "__init__.py",
+        "type": "file",
+        "language": "Python",
+        "size": 85,
+        "extension": ".py",
+        "path": "backend/app/scripts/__init__.py"
+      },
+      {
+        "name": "importar_conteudos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7815,
+        "extension": ".py",
+        "path": "backend/app/scripts/importar_conteudos.py"
+      },
+      {
+        "name": "seeds",
+        "type": "directory",
+        "path": "backend/app/seeds",
+        "children": []
+      },
+      {
+        "name": "conteudos_demonstracao.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 28481,
+        "extension": ".json",
+        "path": "backend/app/seeds/conteudos_demonstracao.json"
       },
       {
         "name": "services",
@@ -901,7 +977,7 @@
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3145,
+        "size": 4077,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -917,7 +993,7 @@
         "name": "contribuicao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1739,
+        "size": 3400,
         "extension": ".py",
         "path": "backend/app/services/contribuicao_service.py"
       },
@@ -933,7 +1009,7 @@
         "name": "moderacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3742,
+        "size": 6369,
         "extension": ".py",
         "path": "backend/app/services/moderacao_service.py"
       },
@@ -941,7 +1017,7 @@
         "name": "usuario_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2960,
+        "size": 9648,
         "extension": ".py",
         "path": "backend/app/services/usuario_service.py"
       },
@@ -955,7 +1031,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 356,
+        "size": 1019,
         "extension": ".py",
         "path": "backend/app/settings/config.py"
       },
@@ -1064,6 +1140,22 @@
         "path": "backend/tests/integration/test_errors.py"
       },
       {
+        "name": "test_exclusao_contribuicoes.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9709,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_exclusao_contribuicoes.py"
+      },
+      {
+        "name": "test_gestao_usuarios.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9497,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_gestao_usuarios.py"
+      },
+      {
         "name": "test_moderacao.py",
         "type": "file",
         "language": "Python",
@@ -1094,6 +1186,22 @@
         "size": 4366,
         "extension": ".py",
         "path": "backend/tests/integration/test_perfil_usuario.py"
+      },
+      {
+        "name": "test_recuperacao_senha.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5076,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_recuperacao_senha.py"
+      },
+      {
+        "name": "test_resiliencia_erros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2945,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_resiliencia_erros.py"
       },
       {
         "name": "test_usuarios_admin.py",
@@ -1142,6 +1250,14 @@
         "path": "backend/tests/unit/test_auth_service.py"
       },
       {
+        "name": "test_config_url_banco.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1061,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_config_url_banco.py"
+      },
+      {
         "name": "test_conteudo_service.py",
         "type": "file",
         "language": "Python",
@@ -1156,6 +1272,14 @@
         "size": 3582,
         "extension": ".py",
         "path": "backend/tests/unit/test_contribuicao_service.py"
+      },
+      {
+        "name": "test_cors_publicacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1562,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_cors_publicacao.py"
       },
       {
         "name": "test_crawlerCurriculo.py",
@@ -1214,6 +1338,14 @@
         "path": "backend/tests/unit/test_errors.py"
       },
       {
+        "name": "test_importar_conteudos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 5142,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_importar_conteudos.py"
+      },
+      {
         "name": "test_migracao_unificar_disciplinas.py",
         "type": "file",
         "language": "Python",
@@ -1236,6 +1368,14 @@
         "size": 5171,
         "extension": ".py",
         "path": "backend/tests/unit/test_routers.py"
+      },
+      {
+        "name": "test_token_seguranca.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1893,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_token_seguranca.py"
       },
       {
         "name": "test_usuario_service.py",
@@ -1341,7 +1481,7 @@
         "name": "ai-usage.md",
         "type": "file",
         "language": "Markdown",
-        "size": 83,
+        "size": 5218,
         "extension": ".md",
         "path": "docs/ai-usage.md"
       },
@@ -1399,7 +1539,7 @@
         "name": "requisitos.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13519,
+        "size": 19533,
         "extension": ".md",
         "path": "docs/requisitos.md"
       },
@@ -1480,10 +1620,18 @@
         "path": "frontend/.dockerignore"
       },
       {
+        "name": ".npmrc",
+        "type": "file",
+        "language": "Unknown",
+        "size": 186,
+        "extension": ".npmrc",
+        "path": "frontend/.npmrc"
+      },
+      {
         "name": "Dockerfile",
         "type": "file",
         "language": "No Extension",
-        "size": 201,
+        "size": 217,
         "extension": "",
         "path": "frontend/Dockerfile"
       },
@@ -1507,7 +1655,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 216351,
+        "size": 315465,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -1515,7 +1663,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 751,
+        "size": 914,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -1543,7 +1691,7 @@
         "name": "App.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 3999,
+        "size": 4210,
         "extension": ".jsx",
         "path": "frontend/src/App.jsx"
       },
@@ -1587,7 +1735,7 @@
         "name": "Navigation.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 4590,
+        "size": 4578,
         "extension": ".jsx",
         "path": "frontend/src/components/Navigation.jsx"
       },
@@ -1595,7 +1743,7 @@
         "name": "Navigation.test.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 2800,
+        "size": 2911,
         "extension": ".jsx",
         "path": "frontend/src/components/Navigation.test.jsx"
       },
@@ -1614,28 +1762,6 @@
         "size": 334,
         "extension": ".jsx",
         "path": "frontend/src/components/SiteHeader.jsx"
-      },
-      {
-        "name": "admin",
-        "type": "directory",
-        "path": "frontend/src/components/admin",
-        "children": []
-      },
-      {
-        "name": "EntidadeFormModal.jsx",
-        "type": "file",
-        "language": "JavaScript",
-        "size": 1437,
-        "extension": ".jsx",
-        "path": "frontend/src/components/admin/EntidadeFormModal.jsx"
-      },
-      {
-        "name": "TabelaEntidades.jsx",
-        "type": "file",
-        "language": "JavaScript",
-        "size": 1148,
-        "extension": ".jsx",
-        "path": "frontend/src/components/admin/TabelaEntidades.jsx"
       },
       {
         "name": "auth",
@@ -1677,7 +1803,7 @@
         "name": "ConteudoCard.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 2505,
+        "size": 2539,
         "extension": ".jsx",
         "path": "frontend/src/components/conteudos/ConteudoCard.jsx"
       },
@@ -1693,7 +1819,7 @@
         "name": "ConteudoDetalhe.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 3014,
+        "size": 2999,
         "extension": ".jsx",
         "path": "frontend/src/components/conteudos/ConteudoDetalhe.jsx"
       },
@@ -1714,10 +1840,34 @@
         "path": "frontend/src/components/conteudos/DisciplinaBusca.jsx"
       },
       {
+        "name": "DisciplinaBusca.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 9097,
+        "extension": ".jsx",
+        "path": "frontend/src/components/conteudos/DisciplinaBusca.test.jsx"
+      },
+      {
+        "name": "TipoBadge.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1582,
+        "extension": ".jsx",
+        "path": "frontend/src/components/conteudos/TipoBadge.jsx"
+      },
+      {
+        "name": "TipoBadge.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1405,
+        "extension": ".jsx",
+        "path": "frontend/src/components/conteudos/TipoBadge.test.jsx"
+      },
+      {
         "name": "conteudos.css",
         "type": "file",
         "language": "CSS",
-        "size": 4741,
+        "size": 5119,
         "extension": ".css",
         "path": "frontend/src/components/conteudos/conteudos.css"
       },
@@ -1725,9 +1875,17 @@
         "name": "formatacao.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 924,
+        "size": 1464,
         "extension": ".js",
         "path": "frontend/src/components/conteudos/formatacao.js"
+      },
+      {
+        "name": "formatacao.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2999,
+        "extension": ".js",
+        "path": "frontend/src/components/conteudos/formatacao.test.js"
       },
       {
         "name": "contribuicoes",
@@ -1804,20 +1962,6 @@
         "path": "frontend/src/components/moderacao/StatusBadge.jsx"
       },
       {
-        "name": "publicacoes",
-        "type": "directory",
-        "path": "frontend/src/components/publicacoes",
-        "children": []
-      },
-      {
-        "name": "DenunciaForm.jsx",
-        "type": "file",
-        "language": "JavaScript",
-        "size": 2651,
-        "extension": ".jsx",
-        "path": "frontend/src/components/publicacoes/DenunciaForm.jsx"
-      },
-      {
         "name": "ui",
         "type": "directory",
         "path": "frontend/src/components/ui",
@@ -1859,7 +2003,7 @@
         "name": "ui.css",
         "type": "file",
         "language": "CSS",
-        "size": 5905,
+        "size": 7513,
         "extension": ".css",
         "path": "frontend/src/components/ui/ui.css"
       },
@@ -1867,7 +2011,7 @@
         "name": "index.css",
         "type": "file",
         "language": "CSS",
-        "size": 3689,
+        "size": 5091,
         "extension": ".css",
         "path": "frontend/src/index.css"
       },
@@ -1886,26 +2030,26 @@
         "children": []
       },
       {
-        "name": "AdminPage.jsx",
-        "type": "file",
-        "language": "JavaScript",
-        "size": 4679,
-        "extension": ".jsx",
-        "path": "frontend/src/pages/AdminPage.jsx"
-      },
-      {
         "name": "AdminUsuariosPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 4243,
+        "size": 14313,
         "extension": ".jsx",
         "path": "frontend/src/pages/AdminUsuariosPage.jsx"
+      },
+      {
+        "name": "AdminUsuariosPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 5452,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/AdminUsuariosPage.test.jsx"
       },
       {
         "name": "AuthPage.css",
         "type": "file",
         "language": "CSS",
-        "size": 3710,
+        "size": 4083,
         "extension": ".css",
         "path": "frontend/src/pages/AuthPage.css"
       },
@@ -1916,6 +2060,14 @@
         "size": 1481,
         "extension": ".jsx",
         "path": "frontend/src/pages/CadastroPage.jsx"
+      },
+      {
+        "name": "CadastroPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 2929,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/CadastroPage.test.jsx"
       },
       {
         "name": "ConhecimentoPage.css",
@@ -1945,7 +2097,7 @@
         "name": "ConteudoPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 5137,
+        "size": 5307,
         "extension": ".jsx",
         "path": "frontend/src/pages/ConteudoPage.jsx"
       },
@@ -1961,7 +2113,7 @@
         "name": "ContribuicaoPage.css",
         "type": "file",
         "language": "CSS",
-        "size": 3395,
+        "size": 4027,
         "extension": ".css",
         "path": "frontend/src/pages/ContribuicaoPage.css"
       },
@@ -1969,15 +2121,31 @@
         "name": "ContribuicaoPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 8305,
+        "size": 8578,
         "extension": ".jsx",
         "path": "frontend/src/pages/ContribuicaoPage.jsx"
+      },
+      {
+        "name": "ContribuicaoPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7573,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/ContribuicaoPage.test.jsx"
+      },
+      {
+        "name": "ExclusaoContribuicoes.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6769,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/ExclusaoContribuicoes.test.jsx"
       },
       {
         "name": "GuiaContribuicaoPage.css",
         "type": "file",
         "language": "CSS",
-        "size": 1445,
+        "size": 1872,
         "extension": ".css",
         "path": "frontend/src/pages/GuiaContribuicaoPage.css"
       },
@@ -1985,9 +2153,17 @@
         "name": "GuiaContribuicaoPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 3706,
+        "size": 3802,
         "extension": ".jsx",
         "path": "frontend/src/pages/GuiaContribuicaoPage.jsx"
+      },
+      {
+        "name": "GuiaContribuicaoPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 1355,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/GuiaContribuicaoPage.test.jsx"
       },
       {
         "name": "HomePage.css",
@@ -2001,7 +2177,7 @@
         "name": "HomePage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 7651,
+        "size": 7663,
         "extension": ".jsx",
         "path": "frontend/src/pages/HomePage.jsx"
       },
@@ -2017,15 +2193,23 @@
         "name": "LoginPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 1779,
+        "size": 5073,
         "extension": ".jsx",
         "path": "frontend/src/pages/LoginPage.jsx"
+      },
+      {
+        "name": "LoginPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6698,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/LoginPage.test.jsx"
       },
       {
         "name": "MinhaContribuicaoPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 7475,
+        "size": 11306,
         "extension": ".jsx",
         "path": "frontend/src/pages/MinhaContribuicaoPage.jsx"
       },
@@ -2041,7 +2225,7 @@
         "name": "MinhasContribuicoesPage.css",
         "type": "file",
         "language": "CSS",
-        "size": 2557,
+        "size": 2412,
         "extension": ".css",
         "path": "frontend/src/pages/MinhasContribuicoesPage.css"
       },
@@ -2049,17 +2233,41 @@
         "name": "MinhasContribuicoesPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 7317,
+        "size": 7530,
         "extension": ".jsx",
         "path": "frontend/src/pages/MinhasContribuicoesPage.jsx"
+      },
+      {
+        "name": "MinhasContribuicoesPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 6864,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/MinhasContribuicoesPage.test.jsx"
+      },
+      {
+        "name": "ModeracaoContribuicaoPage.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 8896,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/ModeracaoContribuicaoPage.jsx"
       },
       {
         "name": "ModeracaoPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 4695,
+        "size": 7291,
         "extension": ".jsx",
         "path": "frontend/src/pages/ModeracaoPage.jsx"
+      },
+      {
+        "name": "ModeracaoPage.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 5133,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/ModeracaoPage.test.jsx"
       },
       {
         "name": "PerfilPage.css",
@@ -2073,15 +2281,23 @@
         "name": "PerfilPage.jsx",
         "type": "file",
         "language": "JavaScript",
-        "size": 5629,
+        "size": 6085,
         "extension": ".jsx",
         "path": "frontend/src/pages/PerfilPage.jsx"
+      },
+      {
+        "name": "RecuperacaoSenha.test.jsx",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4490,
+        "extension": ".jsx",
+        "path": "frontend/src/pages/RecuperacaoSenha.test.jsx"
       },
       {
         "name": "governance.css",
         "type": "file",
         "language": "CSS",
-        "size": 2119,
+        "size": 1267,
         "extension": ".css",
         "path": "frontend/src/pages/governance.css"
       },
@@ -2095,9 +2311,17 @@
         "name": "api.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 3120,
+        "size": 3645,
         "extension": ".js",
         "path": "frontend/src/services/api.js"
+      },
+      {
+        "name": "api.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 4046,
+        "extension": ".js",
+        "path": "frontend/src/services/api.test.js"
       },
       {
         "name": "cursos.js",
@@ -2117,9 +2341,17 @@
         "name": "auth.js",
         "type": "file",
         "language": "JavaScript",
-        "size": 1363,
+        "size": 2954,
         "extension": ".js",
         "path": "frontend/src/state/auth.js"
+      },
+      {
+        "name": "auth.test.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 7371,
+        "extension": ".js",
+        "path": "frontend/src/state/auth.test.js"
       },
       {
         "name": "theme.js",
@@ -2128,6 +2360,14 @@
         "size": 1923,
         "extension": ".js",
         "path": "frontend/src/state/theme.js"
+      },
+      {
+        "name": "stryker.config.mjs",
+        "type": "file",
+        "language": "Unknown",
+        "size": 1700,
+        "extension": ".mjs",
+        "path": "frontend/stryker.config.mjs"
       },
       {
         "name": "tests",
@@ -2172,6 +2412,14 @@
         "path": "frontend/tests/unit/.gitkeep"
       },
       {
+        "name": "vercel.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 247,
+        "extension": ".json",
+        "path": "frontend/vercel.json"
+      },
+      {
         "name": "vite.config.js",
         "type": "file",
         "language": "JavaScript",
@@ -2210,6 +2458,20 @@
         "size": 51,
         "extension": ".json",
         "path": "package.json"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "scripts",
+        "children": []
+      },
+      {
+        "name": "teste_sabotagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 10368,
+        "extension": ".py",
+        "path": "scripts/teste_sabotagem.py"
       },
       {
         "name": "specs",
@@ -2303,7 +2565,7 @@
         "name": "spec.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13149,
+        "size": 16696,
         "extension": ".md",
         "path": "specs/001-unb-core/spec.md"
       },
@@ -2326,7 +2588,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-24T16:49:56.258739+00:00",
+    "extracted_at": "2026-11-25T16:25:27.083475+00:00",
     "file_path": "data/silver/hierarchy_2026-2-UnB_Core.json"
   }
 }

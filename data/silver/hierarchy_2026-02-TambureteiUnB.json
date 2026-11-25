@@ -2,7 +2,7 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-24T16:47:48.249074+00:00",
+  "extracted_at": "2026-11-25T16:24:27.110126+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -99,7 +99,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6350,
+        "size": 6659,
         "extension": ".md",
         "path": ".agents/skills/tamburetei-dev/SKILL.md"
       },
@@ -121,7 +121,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 543,
+        "size": 1778,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -166,10 +166,32 @@
         "children": []
       },
       {
+        "name": "ISSUE_TEMPLATE",
+        "type": "directory",
+        "path": ".github/ISSUE_TEMPLATE",
+        "children": []
+      },
+      {
+        "name": "bug_report.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1050,
+        "extension": ".md",
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md"
+      },
+      {
+        "name": "user_story.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1087,
+        "extension": ".md",
+        "path": ".github/ISSUE_TEMPLATE/user_story.md"
+      },
+      {
         "name": "pull_request_template.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2176,
+        "size": 2187,
         "extension": ".md",
         "path": ".github/pull_request_template.md"
       },
@@ -211,7 +233,7 @@
         "name": "deploy-docs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1143,
+        "size": 1282,
         "extension": ".yml",
         "path": ".github/workflows/deploy-docs.yml"
       },
@@ -219,7 +241,7 @@
         "name": ".gitignore",
         "type": "file",
         "language": "Git Ignore",
-        "size": 475,
+        "size": 561,
         "extension": ".gitignore",
         "path": ".gitignore"
       },
@@ -232,10 +254,42 @@
         "path": "AGENTS.md"
       },
       {
+        "name": "CHANGELOG.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5777,
+        "extension": ".md",
+        "path": "CHANGELOG.md"
+      },
+      {
+        "name": "CODE_OF_CONDUCT.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2207,
+        "extension": ".md",
+        "path": "CODE_OF_CONDUCT.md"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6526,
+        "extension": ".md",
+        "path": "CONTRIBUTING.md"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file",
+        "language": "No Extension",
+        "size": 1094,
+        "extension": "",
+        "path": "LICENSE"
+      },
+      {
         "name": "PROJECT_CONTEXT.md",
         "type": "file",
         "language": "Markdown",
-        "size": 13982,
+        "size": 15401,
         "extension": ".md",
         "path": "PROJECT_CONTEXT.md"
       },
@@ -243,17 +297,17 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 9526,
+        "size": 28251,
         "extension": ".md",
         "path": "README.md"
       },
       {
-        "name": "RELEASE_NOTES_v0.6.0.md",
+        "name": "SECURITY.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3299,
+        "size": 1603,
         "extension": ".md",
-        "path": "RELEASE_NOTES_v0.6.0.md"
+        "path": "SECURITY.md"
       },
       {
         "name": "backend",
@@ -265,7 +319,7 @@
         "name": "Dockerfile",
         "type": "file",
         "language": "No Extension",
-        "size": 510,
+        "size": 498,
         "extension": "",
         "path": "backend/Dockerfile"
       },
@@ -402,6 +456,94 @@
         "path": "backend/alembic/versions/012_add_estatisticas_consolidadas.py"
       },
       {
+        "name": "013_add_disciplina_semestre_index_estatisticas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1627,
+        "extension": ".py",
+        "path": "backend/alembic/versions/013_add_disciplina_semestre_index_estatisticas.py"
+      },
+      {
+        "name": "014_create_mv_evasao_campus.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1075,
+        "extension": ".py",
+        "path": "backend/alembic/versions/014_create_mv_evasao_campus.py"
+      },
+      {
+        "name": "015_add_moderacao_ia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2093,
+        "extension": ".py",
+        "path": "backend/alembic/versions/015_add_moderacao_ia.py"
+      },
+      {
+        "name": "016_widen_turma_horario_to_text.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1204,
+        "extension": ".py",
+        "path": "backend/alembic/versions/016_widen_turma_horario_to_text.py"
+      },
+      {
+        "name": "017_widen_metricas_cursos_taxas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1341,
+        "extension": ".py",
+        "path": "backend/alembic/versions/017_widen_metricas_cursos_taxas.py"
+      },
+      {
+        "name": "018_add_curso_matriz.py",
+        "type": "file",
+        "language": "Python",
+        "size": 947,
+        "extension": ".py",
+        "path": "backend/alembic/versions/018_add_curso_matriz.py"
+      },
+      {
+        "name": "019_add_historico_amostras.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4746,
+        "extension": ".py",
+        "path": "backend/alembic/versions/019_add_historico_amostras.py"
+      },
+      {
+        "name": "020_limpar_professores_poluidos.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4514,
+        "extension": ".py",
+        "path": "backend/alembic/versions/020_limpar_professores_poluidos.py"
+      },
+      {
+        "name": "021_add_pizza_moderacao_imagem.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7208,
+        "extension": ".py",
+        "path": "backend/alembic/versions/021_add_pizza_moderacao_imagem.py"
+      },
+      {
+        "name": "022_preservar_taxas_pizza.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1709,
+        "extension": ".py",
+        "path": "backend/alembic/versions/022_preservar_taxas_pizza.py"
+      },
+      {
+        "name": "325da4c00b26_permite_reenvio_apos_recusa_e_adiciona_.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3083,
+        "extension": ".py",
+        "path": "backend/alembic/versions/325da4c00b26_permite_reenvio_apos_recusa_e_adiciona_.py"
+      },
+      {
         "name": "app",
         "type": "directory",
         "path": "backend/app",
@@ -433,7 +575,7 @@
         "name": "deps.py",
         "type": "file",
         "language": "Python",
-        "size": 2121,
+        "size": 3331,
         "extension": ".py",
         "path": "backend/app/api/deps.py"
       },
@@ -455,7 +597,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 1598,
+        "size": 2663,
         "extension": ".py",
         "path": "backend/app/api/routers/auth.py"
       },
@@ -463,7 +605,7 @@
         "name": "catalogo.py",
         "type": "file",
         "language": "Python",
-        "size": 974,
+        "size": 1854,
         "extension": ".py",
         "path": "backend/app/api/routers/catalogo.py"
       },
@@ -471,7 +613,7 @@
         "name": "comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 2620,
+        "size": 4063,
         "extension": ".py",
         "path": "backend/app/api/routers/comentarios.py"
       },
@@ -487,7 +629,7 @@
         "name": "cursos.py",
         "type": "file",
         "language": "Python",
-        "size": 1098,
+        "size": 1239,
         "extension": ".py",
         "path": "backend/app/api/routers/cursos.py"
       },
@@ -495,7 +637,7 @@
         "name": "dashboard.py",
         "type": "file",
         "language": "Python",
-        "size": 637,
+        "size": 1398,
         "extension": ".py",
         "path": "backend/app/api/routers/dashboard.py"
       },
@@ -503,7 +645,7 @@
         "name": "disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 3297,
+        "size": 3992,
         "extension": ".py",
         "path": "backend/app/api/routers/disciplinas.py"
       },
@@ -519,7 +661,7 @@
         "name": "materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 2845,
+        "size": 4601,
         "extension": ".py",
         "path": "backend/app/api/routers/materiais.py"
       },
@@ -527,9 +669,17 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 3077,
+        "size": 5136,
         "extension": ".py",
         "path": "backend/app/api/routers/moderacao.py"
+      },
+      {
+        "name": "perfil.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2963,
+        "extension": ".py",
+        "path": "backend/app/api/routers/perfil.py"
       },
       {
         "name": "professores.py",
@@ -540,10 +690,18 @@
         "path": "backend/app/api/routers/professores.py"
       },
       {
+        "name": "relatos_bugs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1392,
+        "extension": ".py",
+        "path": "backend/app/api/routers/relatos_bugs.py"
+      },
+      {
         "name": "turmas.py",
         "type": "file",
         "language": "Python",
-        "size": 2650,
+        "size": 4034,
         "extension": ".py",
         "path": "backend/app/api/routers/turmas.py"
       },
@@ -565,7 +723,7 @@
         "name": "comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 3114,
+        "size": 3694,
         "extension": ".py",
         "path": "backend/app/api/schemas/comentario.py"
       },
@@ -573,7 +731,7 @@
         "name": "curadoria.py",
         "type": "file",
         "language": "Python",
-        "size": 1939,
+        "size": 3707,
         "extension": ".py",
         "path": "backend/app/api/schemas/curadoria.py"
       },
@@ -581,7 +739,7 @@
         "name": "curso.py",
         "type": "file",
         "language": "Python",
-        "size": 2170,
+        "size": 2500,
         "extension": ".py",
         "path": "backend/app/api/schemas/curso.py"
       },
@@ -589,7 +747,7 @@
         "name": "dashboard.py",
         "type": "file",
         "language": "Python",
-        "size": 487,
+        "size": 4243,
         "extension": ".py",
         "path": "backend/app/api/schemas/dashboard.py"
       },
@@ -605,7 +763,7 @@
         "name": "disciplina.py",
         "type": "file",
         "language": "Python",
-        "size": 1974,
+        "size": 2096,
         "extension": ".py",
         "path": "backend/app/api/schemas/disciplina.py"
       },
@@ -613,7 +771,7 @@
         "name": "doacao.py",
         "type": "file",
         "language": "Python",
-        "size": 3155,
+        "size": 6975,
         "extension": ".py",
         "path": "backend/app/api/schemas/doacao.py"
       },
@@ -621,15 +779,23 @@
         "name": "estatistica_consolidada.py",
         "type": "file",
         "language": "Python",
-        "size": 420,
+        "size": 1031,
         "extension": ".py",
         "path": "backend/app/api/schemas/estatistica_consolidada.py"
+      },
+      {
+        "name": "historico.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2858,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/historico.py"
       },
       {
         "name": "material.py",
         "type": "file",
         "language": "Python",
-        "size": 956,
+        "size": 2321,
         "extension": ".py",
         "path": "backend/app/api/schemas/material.py"
       },
@@ -650,10 +816,18 @@
         "path": "backend/app/api/schemas/quorum.py"
       },
       {
+        "name": "relato_bug.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2050,
+        "extension": ".py",
+        "path": "backend/app/api/schemas/relato_bug.py"
+      },
+      {
         "name": "turma.py",
         "type": "file",
         "language": "Python",
-        "size": 2576,
+        "size": 5056,
         "extension": ".py",
         "path": "backend/app/api/schemas/turma.py"
       },
@@ -661,7 +835,7 @@
         "name": "usuario.py",
         "type": "file",
         "language": "Python",
-        "size": 4037,
+        "size": 7239,
         "extension": ".py",
         "path": "backend/app/api/schemas/usuario.py"
       },
@@ -683,7 +857,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 2482,
+        "size": 5658,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -699,7 +873,7 @@
         "name": "security.py",
         "type": "file",
         "language": "Python",
-        "size": 1009,
+        "size": 2178,
         "extension": ".py",
         "path": "backend/app/core/security.py"
       },
@@ -718,6 +892,14 @@
         "path": "backend/app/domain/__init__.py"
       },
       {
+        "name": "dashboard.py",
+        "type": "file",
+        "language": "Python",
+        "size": 724,
+        "extension": ".py",
+        "path": "backend/app/domain/dashboard.py"
+      },
+      {
         "name": "denuncias.py",
         "type": "file",
         "language": "Python",
@@ -734,6 +916,14 @@
         "path": "backend/app/domain/materiais.py"
       },
       {
+        "name": "moderacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14533,
+        "extension": ".py",
+        "path": "backend/app/domain/moderacao.py"
+      },
+      {
         "name": "quorum.py",
         "type": "file",
         "language": "Python",
@@ -745,7 +935,7 @@
         "name": "semestre.py",
         "type": "file",
         "language": "Python",
-        "size": 147,
+        "size": 990,
         "extension": ".py",
         "path": "backend/app/domain/semestre.py"
       },
@@ -753,7 +943,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1412,
+        "size": 1829,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -767,15 +957,23 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 1115,
+        "size": 1258,
         "extension": ".py",
         "path": "backend/app/models/__init__.py"
+      },
+      {
+        "name": "amostra_historico.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1914,
+        "extension": ".py",
+        "path": "backend/app/models/amostra_historico.py"
       },
       {
         "name": "comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 1853,
+        "size": 2279,
         "extension": ".py",
         "path": "backend/app/models/comentario.py"
       },
@@ -783,7 +981,7 @@
         "name": "conteudo.py",
         "type": "file",
         "language": "Python",
-        "size": 3229,
+        "size": 3651,
         "extension": ".py",
         "path": "backend/app/models/conteudo.py"
       },
@@ -791,7 +989,7 @@
         "name": "curadoria.py",
         "type": "file",
         "language": "Python",
-        "size": 1479,
+        "size": 1485,
         "extension": ".py",
         "path": "backend/app/models/curadoria.py"
       },
@@ -799,7 +997,7 @@
         "name": "curso.py",
         "type": "file",
         "language": "Python",
-        "size": 3785,
+        "size": 4118,
         "extension": ".py",
         "path": "backend/app/models/curso.py"
       },
@@ -815,7 +1013,7 @@
         "name": "disciplina.py",
         "type": "file",
         "language": "Python",
-        "size": 1789,
+        "size": 2031,
         "extension": ".py",
         "path": "backend/app/models/disciplina.py"
       },
@@ -823,7 +1021,7 @@
         "name": "doacao.py",
         "type": "file",
         "language": "Python",
-        "size": 2609,
+        "size": 3985,
         "extension": ".py",
         "path": "backend/app/models/doacao.py"
       },
@@ -831,9 +1029,17 @@
         "name": "estatistica_consolidada.py",
         "type": "file",
         "language": "Python",
-        "size": 1811,
+        "size": 2812,
         "extension": ".py",
         "path": "backend/app/models/estatistica_consolidada.py"
+      },
+      {
+        "name": "evasao_campus_view.py",
+        "type": "file",
+        "language": "Python",
+        "size": 425,
+        "extension": ".py",
+        "path": "backend/app/models/evasao_campus_view.py"
       },
       {
         "name": "metrica.py",
@@ -852,6 +1058,14 @@
         "path": "backend/app/models/professor.py"
       },
       {
+        "name": "relato_bug.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1388,
+        "extension": ".py",
+        "path": "backend/app/models/relato_bug.py"
+      },
+      {
         "name": "situacao.py",
         "type": "file",
         "language": "Python",
@@ -863,7 +1077,7 @@
         "name": "turma.py",
         "type": "file",
         "language": "Python",
-        "size": 1964,
+        "size": 2364,
         "extension": ".py",
         "path": "backend/app/models/turma.py"
       },
@@ -871,7 +1085,7 @@
         "name": "usuario.py",
         "type": "file",
         "language": "Python",
-        "size": 1359,
+        "size": 1445,
         "extension": ".py",
         "path": "backend/app/models/usuario.py"
       },
@@ -909,7 +1123,7 @@
         "name": "cli.py",
         "type": "file",
         "language": "Python",
-        "size": 5065,
+        "size": 6336,
         "extension": ".py",
         "path": "backend/app/pipeline/cli.py"
       },
@@ -917,7 +1131,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 3918,
+        "size": 3914,
         "extension": ".py",
         "path": "backend/app/pipeline/config.py"
       },
@@ -1005,7 +1219,7 @@
         "name": "__init__.py",
         "type": "file",
         "language": "Python",
-        "size": 276,
+        "size": 381,
         "extension": ".py",
         "path": "backend/app/pipeline/extractors/__init__.py"
       },
@@ -1016,6 +1230,14 @@
         "size": 1171,
         "extension": ".py",
         "path": "backend/app/pipeline/extractors/base.py"
+      },
+      {
+        "name": "dpo_anuario_extractor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 20625,
+        "extension": ".py",
+        "path": "backend/app/pipeline/extractors/dpo_anuario_extractor.py"
       },
       {
         "name": "dpo_inep_extractor.py",
@@ -1029,7 +1251,7 @@
         "name": "sigaa_extractor.py",
         "type": "file",
         "language": "Python",
-        "size": 52005,
+        "size": 54367,
         "extension": ".py",
         "path": "backend/app/pipeline/extractors/sigaa_extractor.py"
       },
@@ -1059,7 +1281,7 @@
         "name": "db_loader.py",
         "type": "file",
         "language": "Python",
-        "size": 26649,
+        "size": 28083,
         "extension": ".py",
         "path": "backend/app/pipeline/loaders/db_loader.py"
       },
@@ -1075,7 +1297,7 @@
         "name": "runner.py",
         "type": "file",
         "language": "Python",
-        "size": 8050,
+        "size": 11207,
         "extension": ".py",
         "path": "backend/app/pipeline/runner.py"
       },
@@ -1181,7 +1403,7 @@
         "name": "comentario_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 2300,
+        "size": 4626,
         "extension": ".py",
         "path": "backend/app/repositories/comentario_repo.py"
       },
@@ -1197,7 +1419,7 @@
         "name": "curadoria_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1725,
+        "size": 3036,
         "extension": ".py",
         "path": "backend/app/repositories/curadoria_repo.py"
       },
@@ -1205,7 +1427,7 @@
         "name": "curso_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1510,
+        "size": 1676,
         "extension": ".py",
         "path": "backend/app/repositories/curso_repo.py"
       },
@@ -1213,7 +1435,7 @@
         "name": "dashboard_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 869,
+        "size": 2765,
         "extension": ".py",
         "path": "backend/app/repositories/dashboard_repo.py"
       },
@@ -1229,7 +1451,7 @@
         "name": "disciplina_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 2556,
+        "size": 5835,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repo.py"
       },
@@ -1237,7 +1459,7 @@
         "name": "doacao_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 4340,
+        "size": 5066,
         "extension": ".py",
         "path": "backend/app/repositories/doacao_repo.py"
       },
@@ -1245,7 +1467,7 @@
         "name": "estatistica_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 2721,
+        "size": 4473,
         "extension": ".py",
         "path": "backend/app/repositories/estatistica_repo.py"
       },
@@ -1253,7 +1475,7 @@
         "name": "material_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1649,
+        "size": 2112,
         "extension": ".py",
         "path": "backend/app/repositories/material_repo.py"
       },
@@ -1274,6 +1496,14 @@
         "path": "backend/app/repositories/professor_repo.py"
       },
       {
+        "name": "relato_bug_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 865,
+        "extension": ".py",
+        "path": "backend/app/repositories/relato_bug_repo.py"
+      },
+      {
         "name": "situacao_repo.py",
         "type": "file",
         "language": "Python",
@@ -1285,7 +1515,7 @@
         "name": "turma_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 1476,
+        "size": 1765,
         "extension": ".py",
         "path": "backend/app/repositories/turma_repo.py"
       },
@@ -1296,6 +1526,14 @@
         "size": 691,
         "extension": ".py",
         "path": "backend/app/repositories/usuario_repo.py"
+      },
+      {
+        "name": "voto_repo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2254,
+        "extension": ".py",
+        "path": "backend/app/repositories/voto_repo.py"
       },
       {
         "name": "services",
@@ -1323,7 +1561,7 @@
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2760,
+        "size": 6169,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -1331,7 +1569,7 @@
         "name": "comentario_service.py",
         "type": "file",
         "language": "Python",
-        "size": 5397,
+        "size": 8420,
         "extension": ".py",
         "path": "backend/app/services/comentario_service.py"
       },
@@ -1339,7 +1577,7 @@
         "name": "curadoria_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3477,
+        "size": 5818,
         "extension": ".py",
         "path": "backend/app/services/curadoria_service.py"
       },
@@ -1347,7 +1585,7 @@
         "name": "curso_service.py",
         "type": "file",
         "language": "Python",
-        "size": 1405,
+        "size": 1510,
         "extension": ".py",
         "path": "backend/app/services/curso_service.py"
       },
@@ -1355,7 +1593,7 @@
         "name": "dashboard_service.py",
         "type": "file",
         "language": "Python",
-        "size": 2050,
+        "size": 8325,
         "extension": ".py",
         "path": "backend/app/services/dashboard_service.py"
       },
@@ -1363,7 +1601,7 @@
         "name": "denuncia_service.py",
         "type": "file",
         "language": "Python",
-        "size": 10833,
+        "size": 11046,
         "extension": ".py",
         "path": "backend/app/services/denuncia_service.py"
       },
@@ -1371,7 +1609,7 @@
         "name": "disciplina_service.py",
         "type": "file",
         "language": "Python",
-        "size": 4914,
+        "size": 5770,
         "extension": ".py",
         "path": "backend/app/services/disciplina_service.py"
       },
@@ -1379,17 +1617,57 @@
         "name": "doacao_service.py",
         "type": "file",
         "language": "Python",
-        "size": 7719,
+        "size": 33035,
         "extension": ".py",
         "path": "backend/app/services/doacao_service.py"
+      },
+      {
+        "name": "email_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7428,
+        "extension": ".py",
+        "path": "backend/app/services/email_service.py"
+      },
+      {
+        "name": "estatistica_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2127,
+        "extension": ".py",
+        "path": "backend/app/services/estatistica_service.py"
+      },
+      {
+        "name": "historico_importacao_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 22518,
+        "extension": ".py",
+        "path": "backend/app/services/historico_importacao_service.py"
+      },
+      {
+        "name": "historico_parser_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 27633,
+        "extension": ".py",
+        "path": "backend/app/services/historico_parser_service.py"
       },
       {
         "name": "material_service.py",
         "type": "file",
         "language": "Python",
-        "size": 5158,
+        "size": 9411,
         "extension": ".py",
         "path": "backend/app/services/material_service.py"
+      },
+      {
+        "name": "moderacao_ia_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 11509,
+        "extension": ".py",
+        "path": "backend/app/services/moderacao_ia_service.py"
       },
       {
         "name": "professor_service.py",
@@ -1400,10 +1678,18 @@
         "path": "backend/app/services/professor_service.py"
       },
       {
+        "name": "relato_bug_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1680,
+        "extension": ".py",
+        "path": "backend/app/services/relato_bug_service.py"
+      },
+      {
         "name": "turma_service.py",
         "type": "file",
         "language": "Python",
-        "size": 3416,
+        "size": 3522,
         "extension": ".py",
         "path": "backend/app/services/turma_service.py"
       },
@@ -1435,15 +1721,29 @@
         "name": "requirements.txt",
         "type": "file",
         "language": "Text",
-        "size": 385,
+        "size": 398,
         "extension": ".txt",
         "path": "backend/requirements.txt"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "backend/scripts",
+        "children": []
+      },
+      {
+        "name": "demonstrar_bugs.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7718,
+        "extension": ".py",
+        "path": "backend/scripts/demonstrar_bugs.py"
       },
       {
         "name": "setup.cfg",
         "type": "file",
         "language": "Config",
-        "size": 396,
+        "size": 470,
         "extension": ".cfg",
         "path": "backend/setup.cfg"
       },
@@ -1465,7 +1765,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 5027,
+        "size": 5084,
         "extension": ".py",
         "path": "backend/tests/conftest.py"
       },
@@ -1515,7 +1815,7 @@
         "name": "test_dashboard.py",
         "type": "file",
         "language": "Python",
-        "size": 3429,
+        "size": 12021,
         "extension": ".py",
         "path": "backend/tests/integration/dashboard/test_dashboard.py"
       },
@@ -1523,15 +1823,23 @@
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 4476,
+        "size": 7303,
         "extension": ".py",
         "path": "backend/tests/integration/test_auth.py"
+      },
+      {
+        "name": "test_comentario_vinculo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1313,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_comentario_vinculo.py"
       },
       {
         "name": "test_conteudos_arquivos.py",
         "type": "file",
         "language": "Python",
-        "size": 4932,
+        "size": 5018,
         "extension": ".py",
         "path": "backend/tests/integration/test_conteudos_arquivos.py"
       },
@@ -1539,7 +1847,7 @@
         "name": "test_curadoria.py",
         "type": "file",
         "language": "Python",
-        "size": 10796,
+        "size": 13052,
         "extension": ".py",
         "path": "backend/tests/integration/test_curadoria.py"
       },
@@ -1547,7 +1855,7 @@
         "name": "test_denuncias.py",
         "type": "file",
         "language": "Python",
-        "size": 8956,
+        "size": 11100,
         "extension": ".py",
         "path": "backend/tests/integration/test_denuncias.py"
       },
@@ -1555,7 +1863,7 @@
         "name": "test_disciplina_service.py",
         "type": "file",
         "language": "Python",
-        "size": 7318,
+        "size": 12877,
         "extension": ".py",
         "path": "backend/tests/integration/test_disciplina_service.py"
       },
@@ -1571,15 +1879,31 @@
         "name": "test_estatistica_consolidada.py",
         "type": "file",
         "language": "Python",
-        "size": 4926,
+        "size": 20051,
         "extension": ".py",
         "path": "backend/tests/integration/test_estatistica_consolidada.py"
+      },
+      {
+        "name": "test_grade_ofertas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3020,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_grade_ofertas.py"
+      },
+      {
+        "name": "test_historico_importacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 16593,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_historico_importacao.py"
       },
       {
         "name": "test_materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 14811,
+        "size": 18618,
         "extension": ".py",
         "path": "backend/tests/integration/test_materiais.py"
       },
@@ -1592,12 +1916,28 @@
         "path": "backend/tests/integration/test_material_integridade.py"
       },
       {
+        "name": "test_material_paginacao.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2585,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_material_paginacao.py"
+      },
+      {
         "name": "test_migracao_material.py",
         "type": "file",
         "language": "Python",
-        "size": 4840,
+        "size": 6192,
         "extension": ".py",
         "path": "backend/tests/integration/test_migracao_material.py"
+      },
+      {
+        "name": "test_moderacao_ia.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12284,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_moderacao_ia.py"
       },
       {
         "name": "test_professor_service.py",
@@ -1611,15 +1951,39 @@
         "name": "test_quorum_doacoes.py",
         "type": "file",
         "language": "Python",
-        "size": 8240,
+        "size": 8375,
         "extension": ".py",
         "path": "backend/tests/integration/test_quorum_doacoes.py"
+      },
+      {
+        "name": "test_relato_bug.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2988,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_relato_bug.py"
+      },
+      {
+        "name": "test_serie_historica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6014,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_serie_historica.py"
+      },
+      {
+        "name": "test_turma_estatistica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2786,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_turma_estatistica.py"
       },
       {
         "name": "test_turma_service.py",
         "type": "file",
         "language": "Python",
-        "size": 6186,
+        "size": 7830,
         "extension": ".py",
         "path": "backend/tests/integration/test_turma_service.py"
       },
@@ -1633,7 +1997,7 @@
         "name": "materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 4105,
+        "size": 4189,
         "extension": ".py",
         "path": "backend/tests/smoke/materiais.py"
       },
@@ -1641,7 +2005,7 @@
         "name": "test_comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 7202,
+        "size": 10837,
         "extension": ".py",
         "path": "backend/tests/test_comentarios.py"
       },
@@ -1676,6 +2040,22 @@
         "path": "backend/tests/unit/test_banco_testes.py"
       },
       {
+        "name": "test_comentario_vinculo.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2515,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_comentario_vinculo.py"
+      },
+      {
+        "name": "test_config_seguranca.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1195,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_config_seguranca.py"
+      },
+      {
         "name": "test_curso_disciplina_schemas.py",
         "type": "file",
         "language": "Python",
@@ -1684,12 +2064,28 @@
         "path": "backend/tests/unit/test_curso_disciplina_schemas.py"
       },
       {
+        "name": "test_dashboard_domain.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2625,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_dashboard_domain.py"
+      },
+      {
         "name": "test_dashboard_schemas.py",
         "type": "file",
         "language": "Python",
-        "size": 1501,
+        "size": 8381,
         "extension": ".py",
         "path": "backend/tests/unit/test_dashboard_schemas.py"
+      },
+      {
+        "name": "test_dashboard_service.py",
+        "type": "file",
+        "language": "Python",
+        "size": 3734,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_dashboard_service.py"
       },
       {
         "name": "test_denuncia_schemas.py",
@@ -1711,7 +2107,7 @@
         "name": "test_doacao_schemas.py",
         "type": "file",
         "language": "Python",
-        "size": 3770,
+        "size": 4838,
         "extension": ".py",
         "path": "backend/tests/unit/test_doacao_schemas.py"
       },
@@ -1724,12 +2120,28 @@
         "path": "backend/tests/unit/test_domain_quorum.py"
       },
       {
+        "name": "test_dpo_anuario_extractor.py",
+        "type": "file",
+        "language": "Python",
+        "size": 7855,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_dpo_anuario_extractor.py"
+      },
+      {
         "name": "test_estatistica_consolidada.py",
         "type": "file",
         "language": "Python",
         "size": 9936,
         "extension": ".py",
         "path": "backend/tests/unit/test_estatistica_consolidada.py"
+      },
+      {
+        "name": "test_historico_parser.py",
+        "type": "file",
+        "language": "Python",
+        "size": 15200,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_historico_parser.py"
       },
       {
         "name": "test_materiais.py",
@@ -1740,6 +2152,14 @@
         "path": "backend/tests/unit/test_materiais.py"
       },
       {
+        "name": "test_material_filtros.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1345,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_material_filtros.py"
+      },
+      {
         "name": "test_material_schema.py",
         "type": "file",
         "language": "Python",
@@ -1748,10 +2168,18 @@
         "path": "backend/tests/unit/test_material_schema.py"
       },
       {
+        "name": "test_moderacao_domain.py",
+        "type": "file",
+        "language": "Python",
+        "size": 14437,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_moderacao_domain.py"
+      },
+      {
         "name": "test_pipeline.py",
         "type": "file",
         "language": "Python",
-        "size": 45811,
+        "size": 49123,
         "extension": ".py",
         "path": "backend/tests/unit/test_pipeline.py"
       },
@@ -1772,6 +2200,30 @@
         "path": "backend/tests/unit/test_quorum.py"
       },
       {
+        "name": "test_relato_bug_schemas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 1157,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_relato_bug_schemas.py"
+      },
+      {
+        "name": "test_serie_historica.py",
+        "type": "file",
+        "language": "Python",
+        "size": 4224,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_serie_historica.py"
+      },
+      {
+        "name": "test_turma_estatistica_schema.py",
+        "type": "file",
+        "language": "Python",
+        "size": 918,
+        "extension": ".py",
+        "path": "backend/tests/unit/test_turma_estatistica_schema.py"
+      },
+      {
         "name": "test_turma_schemas.py",
         "type": "file",
         "language": "Python",
@@ -1788,10 +2240,18 @@
         "path": "backend/tests/unit/test_usuario_schemas.py"
       },
       {
+        "name": "docker-compose.prod.yml",
+        "type": "file",
+        "language": "YAML",
+        "size": 2707,
+        "extension": ".yml",
+        "path": "docker-compose.prod.yml"
+      },
+      {
         "name": "docker-compose.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1073,
+        "size": 2064,
         "extension": ".yml",
         "path": "docker-compose.yml"
       },
@@ -1802,18 +2262,154 @@
         "children": []
       },
       {
-        "name": "arquitetura.md",
+        "name": "ai",
+        "type": "directory",
+        "path": "docs/ai",
+        "children": []
+      },
+      {
+        "name": "ai_usage.md",
         "type": "file",
         "language": "Markdown",
-        "size": 46045,
+        "size": 2558,
         "extension": ".md",
-        "path": "docs/arquitetura.md"
+        "path": "docs/ai/ai_usage.md"
       },
       {
         "name": "assets",
         "type": "directory",
         "path": "docs/assets",
         "children": []
+      },
+      {
+        "name": "arquitetura-readme.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 147596,
+        "extension": ".png",
+        "path": "docs/assets/arquitetura-readme.png"
+      },
+      {
+        "name": "banner-readme.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 1347,
+        "extension": ".svg",
+        "path": "docs/assets/banner-readme.svg"
+      },
+      {
+        "name": "correcao-inicio",
+        "type": "directory",
+        "path": "docs/assets/correcao-inicio",
+        "children": []
+      },
+      {
+        "name": "card-escuro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 19865,
+        "extension": ".png",
+        "path": "docs/assets/correcao-inicio/card-escuro.png"
+      },
+      {
+        "name": "paginacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 8707,
+        "extension": ".png",
+        "path": "docs/assets/correcao-inicio/paginacao.png"
+      },
+      {
+        "name": "correcao-metricas",
+        "type": "directory",
+        "path": "docs/assets/correcao-metricas",
+        "children": []
+      },
+      {
+        "name": "historico-real.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 10932,
+        "extension": ".png",
+        "path": "docs/assets/correcao-metricas/historico-real.png"
+      },
+      {
+        "name": "zero-corrigido.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 6300,
+        "extension": ".png",
+        "path": "docs/assets/correcao-metricas/zero-corrigido.png"
+      },
+      {
+        "name": "diagnostico-bugs",
+        "type": "directory",
+        "path": "docs/assets/diagnostico-bugs",
+        "children": []
+      },
+      {
+        "name": "download.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 9627,
+        "extension": ".png",
+        "path": "docs/assets/diagnostico-bugs/download.png"
+      },
+      {
+        "name": "erro.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 10876,
+        "extension": ".png",
+        "path": "docs/assets/diagnostico-bugs/erro.png"
+      },
+      {
+        "name": "historico.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 39725,
+        "extension": ".png",
+        "path": "docs/assets/diagnostico-bugs/historico.png"
+      },
+      {
+        "name": "materiais-corrigidos.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 30262,
+        "extension": ".png",
+        "path": "docs/assets/diagnostico-bugs/materiais-corrigidos.png"
+      },
+      {
+        "name": "paginacao.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 8412,
+        "extension": ".png",
+        "path": "docs/assets/diagnostico-bugs/paginacao.png"
+      },
+      {
+        "name": "resultados.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 1522,
+        "extension": ".json",
+        "path": "docs/assets/diagnostico-bugs/resultados.json"
+      },
+      {
+        "name": "zero.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 8117,
+        "extension": ".png",
+        "path": "docs/assets/diagnostico-bugs/zero.png"
+      },
+      {
+        "name": "logo.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 889,
+        "extension": ".svg",
+        "path": "docs/assets/logo.svg"
       },
       {
         "name": "moderacao-desktop.png",
@@ -1832,100 +2428,330 @@
         "path": "docs/assets/moderacao-mobile.png"
       },
       {
-        "name": "banco_de_dados.md",
+        "name": "ocupacao-turmas-desktop.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 49231,
+        "extension": ".png",
+        "path": "docs/assets/ocupacao-turmas-desktop.png"
+      },
+      {
+        "name": "ocupacao-turmas-mobile.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 79339,
+        "extension": ".png",
+        "path": "docs/assets/ocupacao-turmas-mobile.png"
+      },
+      {
+        "name": "showcase.png",
+        "type": "file",
+        "language": "PNG Image",
+        "size": 356142,
+        "extension": ".png",
+        "path": "docs/assets/showcase.png"
+      },
+      {
+        "name": "comecando",
+        "type": "directory",
+        "path": "docs/comecando",
+        "children": []
+      },
+      {
+        "name": "como_contribuir.md",
         "type": "file",
         "language": "Markdown",
-        "size": 27529,
+        "size": 5688,
         "extension": ".md",
-        "path": "docs/banco_de_dados.md"
+        "path": "docs/comecando/como_contribuir.md"
       },
       {
         "name": "desenvolvimento.md",
         "type": "file",
         "language": "Markdown",
-        "size": 7254,
+        "size": 7874,
         "extension": ".md",
-        "path": "docs/desenvolvimento.md"
-      },
-      {
-        "name": "feature_5_2_materiais.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 15455,
-        "extension": ".md",
-        "path": "docs/feature_5_2_materiais.md"
-      },
-      {
-        "name": "historias_usuario_backend.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 29122,
-        "extension": ".md",
-        "path": "docs/historias_usuario_backend.md"
-      },
-      {
-        "name": "historias_usuario_database.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 12210,
-        "extension": ".md",
-        "path": "docs/historias_usuario_database.md"
-      },
-      {
-        "name": "historias_usuario_frontend.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 12562,
-        "extension": ".md",
-        "path": "docs/historias_usuario_frontend.md"
-      },
-      {
-        "name": "index.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 4364,
-        "extension": ".md",
-        "path": "docs/index.md"
-      },
-      {
-        "name": "issue_turmas_nao_listadas.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 4865,
-        "extension": ".md",
-        "path": "docs/issue_turmas_nao_listadas.md"
-      },
-      {
-        "name": "moderacao_curadoria.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 9504,
-        "extension": ".md",
-        "path": "docs/moderacao_curadoria.md"
-      },
-      {
-        "name": "pipeline_etl.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 9219,
-        "extension": ".md",
-        "path": "docs/pipeline_etl.md"
+        "path": "docs/comecando/desenvolvimento.md"
       },
       {
         "name": "popular_banco_de_dados.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6257,
+        "size": 6633,
         "extension": ".md",
-        "path": "docs/popular_banco_de_dados.md"
+        "path": "docs/comecando/popular_banco_de_dados.md"
+      },
+      {
+        "name": "engenharia",
+        "type": "directory",
+        "path": "docs/engenharia",
+        "children": []
+      },
+      {
+        "name": "arquitetura.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 49979,
+        "extension": ".md",
+        "path": "docs/engenharia/arquitetura.md"
+      },
+      {
+        "name": "arquitetura_ui.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3861,
+        "extension": ".md",
+        "path": "docs/engenharia/arquitetura_ui.md"
+      },
+      {
+        "name": "autenticacao_comunidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7109,
+        "extension": ".md",
+        "path": "docs/engenharia/autenticacao_comunidade.md"
+      },
+      {
+        "name": "banco_de_dados.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 37391,
+        "extension": ".md",
+        "path": "docs/engenharia/banco_de_dados.md"
+      },
+      {
+        "name": "cores_indicadores.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1731,
+        "extension": ".md",
+        "path": "docs/engenharia/cores_indicadores.md"
+      },
+      {
+        "name": "dashboard_institucional.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7731,
+        "extension": ".md",
+        "path": "docs/engenharia/dashboard_institucional.md"
+      },
+      {
+        "name": "deploy.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6979,
+        "extension": ".md",
+        "path": "docs/engenharia/deploy.md"
+      },
+      {
+        "name": "feature_5_2_materiais.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 15466,
+        "extension": ".md",
+        "path": "docs/engenharia/feature_5_2_materiais.md"
+      },
+      {
+        "name": "moderacao_curadoria.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 10072,
+        "extension": ".md",
+        "path": "docs/engenharia/moderacao_curadoria.md"
+      },
+      {
+        "name": "notas_corte_pas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3797,
+        "extension": ".md",
+        "path": "docs/engenharia/notas_corte_pas.md"
+      },
+      {
+        "name": "ocupacao_turmas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3034,
+        "extension": ".md",
+        "path": "docs/engenharia/ocupacao_turmas.md"
+      },
+      {
+        "name": "pipeline_etl.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 9398,
+        "extension": ".md",
+        "path": "docs/engenharia/pipeline_etl.md"
+      },
+      {
+        "name": "identidade_email_smtp.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5082,
+        "extension": ".md",
+        "path": "docs/identidade_email_smtp.md"
+      },
+      {
+        "name": "index.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 6858,
+        "extension": ".md",
+        "path": "docs/index.md"
+      },
+      {
+        "name": "javascripts",
+        "type": "directory",
+        "path": "docs/javascripts",
+        "children": []
+      },
+      {
+        "name": "extra.js",
+        "type": "file",
+        "language": "JavaScript",
+        "size": 12007,
+        "extension": ".js",
+        "path": "docs/javascripts/extra.js"
+      },
+      {
+        "name": "produto",
+        "type": "directory",
+        "path": "docs/produto",
+        "children": []
+      },
+      {
+        "name": "gestao_agil.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5798,
+        "extension": ".md",
+        "path": "docs/produto/gestao_agil.md"
+      },
+      {
+        "name": "historias_usuario_backend.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 29233,
+        "extension": ".md",
+        "path": "docs/produto/historias_usuario_backend.md"
+      },
+      {
+        "name": "historias_usuario_database.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13326,
+        "extension": ".md",
+        "path": "docs/produto/historias_usuario_database.md"
+      },
+      {
+        "name": "historias_usuario_frontend.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 14216,
+        "extension": ".md",
+        "path": "docs/produto/historias_usuario_frontend.md"
       },
       {
         "name": "regras_negocio.md",
         "type": "file",
         "language": "Markdown",
-        "size": 4410,
+        "size": 5405,
         "extension": ".md",
-        "path": "docs/regras_negocio.md"
+        "path": "docs/produto/regras_negocio.md"
+      },
+      {
+        "name": "relatorio_final.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8223,
+        "extension": ".md",
+        "path": "docs/produto/relatorio_final.md"
+      },
+      {
+        "name": "requisitos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 7876,
+        "extension": ".md",
+        "path": "docs/produto/requisitos.md"
+      },
+      {
+        "name": "qualidade",
+        "type": "directory",
+        "path": "docs/qualidade",
+        "children": []
+      },
+      {
+        "name": "correcao_inicio_cursos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2163,
+        "extension": ".md",
+        "path": "docs/qualidade/correcao_inicio_cursos.md"
+      },
+      {
+        "name": "correcao_materiais_publicos.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2432,
+        "extension": ".md",
+        "path": "docs/qualidade/correcao_materiais_publicos.md"
+      },
+      {
+        "name": "correcao_metricas_disciplina.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1475,
+        "extension": ".md",
+        "path": "docs/qualidade/correcao_metricas_disciplina.md"
+      },
+      {
+        "name": "correcao_vinculo_comentarios.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 1420,
+        "extension": ".md",
+        "path": "docs/qualidade/correcao_vinculo_comentarios.md"
+      },
+      {
+        "name": "diagnostico_bugs_funcionais.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 13639,
+        "extension": ".md",
+        "path": "docs/qualidade/diagnostico_bugs_funcionais.md"
+      },
+      {
+        "name": "issue_turmas_nao_listadas.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4833,
+        "extension": ".md",
+        "path": "docs/qualidade/issue_turmas_nao_listadas.md"
+      },
+      {
+        "name": "relatorio_qualidade.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4514,
+        "extension": ".md",
+        "path": "docs/qualidade/relatorio_qualidade.md"
+      },
+      {
+        "name": "revisao_integracao_materiais.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5092,
+        "extension": ".md",
+        "path": "docs/qualidade/revisao_integracao_materiais.md"
+      },
+      {
+        "name": "revisao_pr95.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 4970,
+        "extension": ".md",
+        "path": "docs/qualidade/revisao_pr95.md"
       },
       {
         "name": "releases",
@@ -1934,10 +2760,34 @@
         "children": []
       },
       {
+        "name": "Release-2.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 5252,
+        "extension": ".md",
+        "path": "docs/releases/Release-2.md"
+      },
+      {
+        "name": "v0.10.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 2121,
+        "extension": ".md",
+        "path": "docs/releases/v0.10.0.md"
+      },
+      {
+        "name": "v0.11.0.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 3031,
+        "extension": ".md",
+        "path": "docs/releases/v0.11.0.md"
+      },
+      {
         "name": "v0.6.0.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3299,
+        "size": 3274,
         "extension": ".md",
         "path": "docs/releases/v0.6.0.md"
       },
@@ -1961,33 +2811,23 @@
         "name": "v0.9.0.md",
         "type": "file",
         "language": "Markdown",
-        "size": 2032,
+        "size": 2114,
         "extension": ".md",
         "path": "docs/releases/v0.9.0.md"
       },
       {
-        "name": "requisitos.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 6569,
-        "extension": ".md",
-        "path": "docs/requisitos.md"
+        "name": "stylesheets",
+        "type": "directory",
+        "path": "docs/stylesheets",
+        "children": []
       },
       {
-        "name": "revisao_integracao_materiais.md",
+        "name": "extra.css",
         "type": "file",
-        "language": "Markdown",
-        "size": 5092,
-        "extension": ".md",
-        "path": "docs/revisao_integracao_materiais.md"
-      },
-      {
-        "name": "revisao_pr95.md",
-        "type": "file",
-        "language": "Markdown",
-        "size": 4970,
-        "extension": ".md",
-        "path": "docs/revisao_pr95.md"
+        "language": "CSS",
+        "size": 32293,
+        "extension": ".css",
+        "path": "docs/stylesheets/extra.css"
       },
       {
         "name": "frontend",
@@ -1996,10 +2836,18 @@
         "children": []
       },
       {
+        "name": ".dockerignore",
+        "type": "file",
+        "language": "Docker Ignore",
+        "size": 75,
+        "extension": ".dockerignore",
+        "path": "frontend/.dockerignore"
+      },
+      {
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 86,
+        "size": 418,
         "extension": ".example",
         "path": "frontend/.env.example"
       },
@@ -2028,10 +2876,18 @@
         "path": "frontend/CLAUDE.md"
       },
       {
+        "name": "Dockerfile",
+        "type": "file",
+        "language": "No Extension",
+        "size": 632,
+        "extension": "",
+        "path": "frontend/Dockerfile"
+      },
+      {
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 3704,
+        "size": 10076,
         "extension": ".md",
         "path": "frontend/README.md"
       },
@@ -2045,7 +2901,7 @@
         "name": "ComentariosFrontend.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 25633,
+        "size": 35888,
         "extension": ".tsx",
         "path": "frontend/components/ComentariosFrontend.tsx"
       },
@@ -2061,7 +2917,7 @@
         "name": "MateriaisApoio.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12765,
+        "size": 25751,
         "extension": ".tsx",
         "path": "frontend/components/MateriaisApoio.tsx"
       },
@@ -2107,7 +2963,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 236718,
+        "size": 260631,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -2115,7 +2971,7 @@
         "name": "package.json",
         "type": "file",
         "language": "JSON",
-        "size": 627,
+        "size": 784,
         "extension": ".json",
         "path": "frontend/package.json"
       },
@@ -2186,16 +3042,56 @@
         "children": []
       },
       {
+        "name": "api",
+        "type": "directory",
+        "path": "frontend/src/app/api",
+        "children": []
+      },
+      {
+        "name": "auth",
+        "type": "directory",
+        "path": "frontend/src/app/api/auth",
+        "children": []
+      },
+      {
+        "name": "esqueci-senha",
+        "type": "directory",
+        "path": "frontend/src/app/api/auth/esqueci-senha",
+        "children": []
+      },
+      {
+        "name": "route.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2727,
+        "extension": ".ts",
+        "path": "frontend/src/app/api/auth/esqueci-senha/route.ts"
+      },
+      {
         "name": "cadastro",
         "type": "directory",
         "path": "frontend/src/app/cadastro",
         "children": []
       },
       {
+        "name": "__tests__",
+        "type": "directory",
+        "path": "frontend/src/app/cadastro/__tests__",
+        "children": []
+      },
+      {
+        "name": "page.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1843,
+        "extension": ".tsx",
+        "path": "frontend/src/app/cadastro/__tests__/page.test.tsx"
+      },
+      {
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 16693,
+        "size": 16695,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/page.tsx"
       },
@@ -2215,7 +3111,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 28893,
+        "size": 38902,
         "extension": ".tsx",
         "path": "frontend/src/app/cursos/[slug]/page.tsx"
       },
@@ -2223,7 +3119,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 16945,
+        "size": 11115,
         "extension": ".tsx",
         "path": "frontend/src/app/cursos/page.tsx"
       },
@@ -2243,7 +3139,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 46592,
+        "size": 63988,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[slug]/page.tsx"
       },
@@ -2251,15 +3147,29 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 19542,
+        "size": 22230,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/page.tsx"
+      },
+      {
+        "name": "esqueci-senha",
+        "type": "directory",
+        "path": "frontend/src/app/esqueci-senha",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4698,
+        "extension": ".tsx",
+        "path": "frontend/src/app/esqueci-senha/page.tsx"
       },
       {
         "name": "favicon.ico",
         "type": "file",
         "language": "Icon",
-        "size": 25931,
+        "size": 4601,
         "extension": ".ico",
         "path": "frontend/src/app/favicon.ico"
       },
@@ -2267,15 +3177,23 @@
         "name": "globals.css",
         "type": "file",
         "language": "CSS",
-        "size": 1442,
+        "size": 16547,
         "extension": ".css",
         "path": "frontend/src/app/globals.css"
+      },
+      {
+        "name": "icon.svg",
+        "type": "file",
+        "language": "SVG Image",
+        "size": 1023,
+        "extension": ".svg",
+        "path": "frontend/src/app/icon.svg"
       },
       {
         "name": "layout.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 922,
+        "size": 1603,
         "extension": ".tsx",
         "path": "frontend/src/app/layout.tsx"
       },
@@ -2289,9 +3207,23 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 12059,
+        "size": 12548,
         "extension": ".tsx",
         "path": "frontend/src/app/login/page.tsx"
+      },
+      {
+        "name": "minha-grade",
+        "type": "directory",
+        "path": "frontend/src/app/minha-grade",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 27809,
+        "extension": ".tsx",
+        "path": "frontend/src/app/minha-grade/page.tsx"
       },
       {
         "name": "moderacao",
@@ -2303,7 +3235,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 17404,
+        "size": 31429,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/page.tsx"
       },
@@ -2311,15 +3243,75 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 14935,
+        "size": 15813,
         "extension": ".tsx",
         "path": "frontend/src/app/page.tsx"
+      },
+      {
+        "name": "perfil",
+        "type": "directory",
+        "path": "frontend/src/app/perfil",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 16355,
+        "extension": ".tsx",
+        "path": "frontend/src/app/perfil/page.tsx"
+      },
+      {
+        "name": "redefinir-senha",
+        "type": "directory",
+        "path": "frontend/src/app/redefinir-senha",
+        "children": []
+      },
+      {
+        "name": "page.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6273,
+        "extension": ".tsx",
+        "path": "frontend/src/app/redefinir-senha/page.tsx"
       },
       {
         "name": "components",
         "type": "directory",
         "path": "frontend/src/components",
         "children": []
+      },
+      {
+        "name": "AcademicProfileDashboard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 36451,
+        "extension": ".tsx",
+        "path": "frontend/src/components/AcademicProfileDashboard.tsx"
+      },
+      {
+        "name": "ApprovalBadge.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 939,
+        "extension": ".ts",
+        "path": "frontend/src/components/ApprovalBadge.ts"
+      },
+      {
+        "name": "BugReportButton.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3975,
+        "extension": ".tsx",
+        "path": "frontend/src/components/BugReportButton.tsx"
+      },
+      {
+        "name": "BugReportsPanel.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4287,
+        "extension": ".tsx",
+        "path": "frontend/src/components/BugReportsPanel.tsx"
       },
       {
         "name": "Button.tsx",
@@ -2330,10 +3322,18 @@
         "path": "frontend/src/components/Button.tsx"
       },
       {
+        "name": "CatalogYearFilter.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3359,
+        "extension": ".tsx",
+        "path": "frontend/src/components/CatalogYearFilter.tsx"
+      },
+      {
         "name": "ClassCard.stories.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 5296,
+        "size": 5442,
         "extension": ".tsx",
         "path": "frontend/src/components/ClassCard.stories.tsx"
       },
@@ -2341,7 +3341,7 @@
         "name": "ClassCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 7092,
+        "size": 8985,
         "extension": ".tsx",
         "path": "frontend/src/components/ClassCard.tsx"
       },
@@ -2365,9 +3365,41 @@
         "name": "ClassFilters.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4729,
+        "size": 8807,
         "extension": ".tsx",
         "path": "frontend/src/components/ClassFilters.tsx"
+      },
+      {
+        "name": "ClassPerformancePieForm.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9434,
+        "extension": ".tsx",
+        "path": "frontend/src/components/ClassPerformancePieForm.tsx"
+      },
+      {
+        "name": "CommentModerationCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3946,
+        "extension": ".tsx",
+        "path": "frontend/src/components/CommentModerationCard.tsx"
+      },
+      {
+        "name": "CourseCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9643,
+        "extension": ".tsx",
+        "path": "frontend/src/components/CourseCard.tsx"
+      },
+      {
+        "name": "DataCollectionBanner.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4996,
+        "extension": ".tsx",
+        "path": "frontend/src/components/DataCollectionBanner.tsx"
       },
       {
         "name": "DenunciaModerationCard.tsx",
@@ -2381,25 +3413,49 @@
         "name": "DificuldadesPanel.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 19817,
+        "size": 25063,
         "extension": ".tsx",
         "path": "frontend/src/components/DificuldadesPanel.tsx"
+      },
+      {
+        "name": "DisciplineCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10735,
+        "extension": ".tsx",
+        "path": "frontend/src/components/DisciplineCard.tsx"
       },
       {
         "name": "Footer.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 1784,
+        "size": 3580,
         "extension": ".tsx",
         "path": "frontend/src/components/Footer.tsx"
+      },
+      {
+        "name": "GradeCalendar.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 9365,
+        "extension": ".tsx",
+        "path": "frontend/src/components/GradeCalendar.tsx"
       },
       {
         "name": "GuestBanner.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3968,
+        "size": 4869,
         "extension": ".tsx",
         "path": "frontend/src/components/GuestBanner.tsx"
+      },
+      {
+        "name": "HistoricoTipoAviso.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4621,
+        "extension": ".tsx",
+        "path": "frontend/src/components/HistoricoTipoAviso.tsx"
       },
       {
         "name": "Input.tsx",
@@ -2410,12 +3466,36 @@
         "path": "frontend/src/components/Input.tsx"
       },
       {
+        "name": "InstitutionalMetrics.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2936,
+        "extension": ".tsx",
+        "path": "frontend/src/components/InstitutionalMetrics.tsx"
+      },
+      {
         "name": "MaterialModal.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 32322,
+        "size": 33393,
         "extension": ".tsx",
         "path": "frontend/src/components/MaterialModal.tsx"
+      },
+      {
+        "name": "MaterialPreviewModal.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8462,
+        "extension": ".tsx",
+        "path": "frontend/src/components/MaterialPreviewModal.tsx"
+      },
+      {
+        "name": "MinhaGraduacaoSection.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 24814,
+        "extension": ".tsx",
+        "path": "frontend/src/components/MinhaGraduacaoSection.tsx"
       },
       {
         "name": "ModerationActionModal.tsx",
@@ -2429,7 +3509,7 @@
         "name": "ModerationCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 2991,
+        "size": 6655,
         "extension": ".tsx",
         "path": "frontend/src/components/ModerationCard.tsx"
       },
@@ -2437,9 +3517,17 @@
         "name": "Navbar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 16494,
+        "size": 10751,
         "extension": ".tsx",
         "path": "frontend/src/components/Navbar.tsx"
+      },
+      {
+        "name": "OpenDataExportBar.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4973,
+        "extension": ".tsx",
+        "path": "frontend/src/components/OpenDataExportBar.tsx"
       },
       {
         "name": "Pagination.tsx",
@@ -2450,12 +3538,272 @@
         "path": "frontend/src/components/Pagination.tsx"
       },
       {
+        "name": "PasAdmissionCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 10457,
+        "extension": ".tsx",
+        "path": "frontend/src/components/PasAdmissionCard.tsx"
+      },
+      {
+        "name": "PizzaModerationCard.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 13469,
+        "extension": ".tsx",
+        "path": "frontend/src/components/PizzaModerationCard.tsx"
+      },
+      {
+        "name": "PreRequisitosSection.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3428,
+        "extension": ".tsx",
+        "path": "frontend/src/components/PreRequisitosSection.tsx"
+      },
+      {
+        "name": "SecurityTabContent.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3762,
+        "extension": ".tsx",
+        "path": "frontend/src/components/SecurityTabContent.tsx"
+      },
+      {
         "name": "StoolIllustration.tsx",
         "type": "file",
         "language": "TypeScript",
         "size": 2182,
         "extension": ".tsx",
         "path": "frontend/src/components/StoolIllustration.tsx"
+      },
+      {
+        "name": "ThemeProvider.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1387,
+        "extension": ".tsx",
+        "path": "frontend/src/components/ThemeProvider.tsx"
+      },
+      {
+        "name": "ThemeSelector.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2203,
+        "extension": ".tsx",
+        "path": "frontend/src/components/ThemeSelector.tsx"
+      },
+      {
+        "name": "TurmaEstatisticaModal.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 25693,
+        "extension": ".tsx",
+        "path": "frontend/src/components/TurmaEstatisticaModal.tsx"
+      },
+      {
+        "name": "UserMenuDropdown.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7660,
+        "extension": ".tsx",
+        "path": "frontend/src/components/UserMenuDropdown.tsx"
+      },
+      {
+        "name": "__tests__",
+        "type": "directory",
+        "path": "frontend/src/components/__tests__",
+        "children": []
+      },
+      {
+        "name": "AcademicProfileDashboard.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8707,
+        "extension": ".ts",
+        "path": "frontend/src/components/__tests__/AcademicProfileDashboard.test.ts"
+      },
+      {
+        "name": "ApprovalBadge.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1237,
+        "extension": ".ts",
+        "path": "frontend/src/components/__tests__/ApprovalBadge.test.ts"
+      },
+      {
+        "name": "ClassCard.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6797,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/ClassCard.test.tsx"
+      },
+      {
+        "name": "ClassPerformancePieForm.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2561,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/ClassPerformancePieForm.test.tsx"
+      },
+      {
+        "name": "ClickableCards.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2451,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/ClickableCards.test.tsx"
+      },
+      {
+        "name": "ComentariosFrontend.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1338,
+        "extension": ".ts",
+        "path": "frontend/src/components/__tests__/ComentariosFrontend.test.ts"
+      },
+      {
+        "name": "DataCollectionBanner.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1115,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/DataCollectionBanner.test.tsx"
+      },
+      {
+        "name": "Footer.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1496,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/Footer.test.tsx"
+      },
+      {
+        "name": "HistoricoTipoAviso.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 924,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/HistoricoTipoAviso.test.tsx"
+      },
+      {
+        "name": "MateriaisEDificuldadesAuth.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1893,
+        "extension": ".ts",
+        "path": "frontend/src/components/__tests__/MateriaisEDificuldadesAuth.test.ts"
+      },
+      {
+        "name": "MinhaGraduacaoSection.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4163,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/MinhaGraduacaoSection.test.tsx"
+      },
+      {
+        "name": "Navbar.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 783,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/Navbar.test.tsx"
+      },
+      {
+        "name": "PreRequisitosSection.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1609,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/PreRequisitosSection.test.tsx"
+      },
+      {
+        "name": "UIFlows.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3734,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/UIFlows.test.tsx"
+      },
+      {
+        "name": "UserMenuDropdown.test.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1544,
+        "extension": ".tsx",
+        "path": "frontend/src/components/__tests__/UserMenuDropdown.test.tsx"
+      },
+      {
+        "name": "data",
+        "type": "directory",
+        "path": "frontend/src/data",
+        "children": []
+      },
+      {
+        "name": "curriculo-software.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 14151,
+        "extension": ".json",
+        "path": "frontend/src/data/curriculo-software.json"
+      },
+      {
+        "name": "curriculos-cursos.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 84212,
+        "extension": ".json",
+        "path": "frontend/src/data/curriculos-cursos.json"
+      },
+      {
+        "name": "pas-2018-2020.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 134033,
+        "extension": ".json",
+        "path": "frontend/src/data/pas-2018-2020.json"
+      },
+      {
+        "name": "pas-2019-2021.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 123719,
+        "extension": ".json",
+        "path": "frontend/src/data/pas-2019-2021.json"
+      },
+      {
+        "name": "pas-2020-2022.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 123391,
+        "extension": ".json",
+        "path": "frontend/src/data/pas-2020-2022.json"
+      },
+      {
+        "name": "pas-2021-2023.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 122346,
+        "extension": ".json",
+        "path": "frontend/src/data/pas-2021-2023.json"
+      },
+      {
+        "name": "pas-2022-2024.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 67352,
+        "extension": ".json",
+        "path": "frontend/src/data/pas-2022-2024.json"
+      },
+      {
+        "name": "pas-2023-2025.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 118428,
+        "extension": ".json",
+        "path": "frontend/src/data/pas-2023-2025.json"
       },
       {
         "name": "figma-export",
@@ -2666,6 +4014,28 @@
         "path": "frontend/src/figma-export/vite.config.ts"
       },
       {
+        "name": "hooks",
+        "type": "directory",
+        "path": "frontend/src/hooks",
+        "children": []
+      },
+      {
+        "name": "useAsyncList.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 716,
+        "extension": ".ts",
+        "path": "frontend/src/hooks/useAsyncList.ts"
+      },
+      {
+        "name": "useDisciplineApprovalMetrics.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2272,
+        "extension": ".ts",
+        "path": "frontend/src/hooks/useDisciplineApprovalMetrics.ts"
+      },
+      {
         "name": "services",
         "type": "directory",
         "path": "frontend/src/services",
@@ -2678,18 +4048,58 @@
         "children": []
       },
       {
+        "name": "authService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8305,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/authService.test.ts"
+      },
+      {
         "name": "difficultyService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5872,
+        "size": 6609,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/difficultyService.test.ts"
+      },
+      {
+        "name": "gradeOffers.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 998,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/gradeOffers.test.ts"
+      },
+      {
+        "name": "historicoService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4057,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/historicoService.test.ts"
+      },
+      {
+        "name": "materialDownload.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2386,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/materialDownload.test.ts"
+      },
+      {
+        "name": "materialQuery.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 823,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/materialQuery.test.ts"
       },
       {
         "name": "materialService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3484,
+        "size": 6768,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/materialService.test.ts"
       },
@@ -2697,15 +4107,47 @@
         "name": "moderacaoService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7318,
+        "size": 15141,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/moderacaoService.test.ts"
+      },
+      {
+        "name": "openDataService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 15555,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/openDataService.test.ts"
+      },
+      {
+        "name": "relatoBugService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1567,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/relatoBugService.test.ts"
+      },
+      {
+        "name": "theme.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 647,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/theme.test.ts"
+      },
+      {
+        "name": "turmaEstatisticaService.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5499,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/turmaEstatisticaService.test.ts"
       },
       {
         "name": "authService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3003,
+        "size": 6131,
         "extension": ".ts",
         "path": "frontend/src/services/authService.ts"
       },
@@ -2721,7 +4163,7 @@
         "name": "difficultyService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8267,
+        "size": 8611,
         "extension": ".ts",
         "path": "frontend/src/services/difficultyService.ts"
       },
@@ -2729,15 +4171,39 @@
         "name": "disciplineService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4272,
+        "size": 4624,
         "extension": ".ts",
         "path": "frontend/src/services/disciplineService.ts"
+      },
+      {
+        "name": "emailService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3361,
+        "extension": ".ts",
+        "path": "frontend/src/services/emailService.ts"
+      },
+      {
+        "name": "gradePdfService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1387,
+        "extension": ".ts",
+        "path": "frontend/src/services/gradePdfService.ts"
+      },
+      {
+        "name": "historicoService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3959,
+        "extension": ".ts",
+        "path": "frontend/src/services/historicoService.ts"
       },
       {
         "name": "httpClient.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3386,
+        "size": 3641,
         "extension": ".ts",
         "path": "frontend/src/services/httpClient.ts"
       },
@@ -2745,7 +4211,7 @@
         "name": "index.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1530,
+        "size": 1951,
         "extension": ".ts",
         "path": "frontend/src/services/index.ts"
       },
@@ -2753,7 +4219,7 @@
         "name": "materialService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5794,
+        "size": 7196,
         "extension": ".ts",
         "path": "frontend/src/services/materialService.ts"
       },
@@ -2761,9 +4227,41 @@
         "name": "moderacaoService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 5276,
+        "size": 12176,
         "extension": ".ts",
         "path": "frontend/src/services/moderacaoService.ts"
+      },
+      {
+        "name": "openDataService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 23258,
+        "extension": ".ts",
+        "path": "frontend/src/services/openDataService.ts"
+      },
+      {
+        "name": "relatoBugService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 971,
+        "extension": ".ts",
+        "path": "frontend/src/services/relatoBugService.ts"
+      },
+      {
+        "name": "theme.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1457,
+        "extension": ".ts",
+        "path": "frontend/src/services/theme.ts"
+      },
+      {
+        "name": "turmaEstatisticaService.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4002,
+        "extension": ".ts",
+        "path": "frontend/src/services/turmaEstatisticaService.ts"
       },
       {
         "name": "types",
@@ -2772,10 +4270,32 @@
         "children": []
       },
       {
+        "name": "__tests__",
+        "type": "directory",
+        "path": "frontend/src/types/__tests__",
+        "children": []
+      },
+      {
+        "name": "disciplina.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2071,
+        "extension": ".ts",
+        "path": "frontend/src/types/__tests__/disciplina.test.ts"
+      },
+      {
+        "name": "turma.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5215,
+        "extension": ".ts",
+        "path": "frontend/src/types/__tests__/turma.test.ts"
+      },
+      {
         "name": "auth.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 359,
+        "size": 666,
         "extension": ".ts",
         "path": "frontend/src/types/auth.ts"
       },
@@ -2783,7 +4303,7 @@
         "name": "curso.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1451,
+        "size": 1815,
         "extension": ".ts",
         "path": "frontend/src/types/curso.ts"
       },
@@ -2791,7 +4311,7 @@
         "name": "dificuldade.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 11743,
+        "size": 12006,
         "extension": ".ts",
         "path": "frontend/src/types/dificuldade.ts"
       },
@@ -2799,15 +4319,23 @@
         "name": "disciplina.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7382,
+        "size": 8915,
         "extension": ".ts",
         "path": "frontend/src/types/disciplina.ts"
+      },
+      {
+        "name": "historico.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1769,
+        "extension": ".ts",
+        "path": "frontend/src/types/historico.ts"
       },
       {
         "name": "material.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1296,
+        "size": 1518,
         "extension": ".ts",
         "path": "frontend/src/types/material.ts"
       },
@@ -2815,17 +4343,33 @@
         "name": "moderacao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2593,
+        "size": 4783,
         "extension": ".ts",
         "path": "frontend/src/types/moderacao.ts"
+      },
+      {
+        "name": "openData.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2364,
+        "extension": ".ts",
+        "path": "frontend/src/types/openData.ts"
       },
       {
         "name": "turma.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8862,
+        "size": 13274,
         "extension": ".ts",
         "path": "frontend/src/types/turma.ts"
+      },
+      {
+        "name": "turmaEstatisticaSubmissao.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 819,
+        "extension": ".ts",
+        "path": "frontend/src/types/turmaEstatisticaSubmissao.ts"
       },
       {
         "name": "utils",
@@ -2840,6 +4384,118 @@
         "children": []
       },
       {
+        "name": "academicMetrics.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1208,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/academicMetrics.test.ts"
+      },
+      {
+        "name": "accessibilityValidator.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6619,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/accessibilityValidator.test.ts"
+      },
+      {
+        "name": "catalogYearFilter.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3340,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/catalogYearFilter.test.ts"
+      },
+      {
+        "name": "classPagination.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1640,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/classPagination.test.ts"
+      },
+      {
+        "name": "courseCatalog.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3510,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/courseCatalog.test.ts"
+      },
+      {
+        "name": "courseCurriculum.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2503,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/courseCurriculum.test.ts"
+      },
+      {
+        "name": "courseMetrics.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3663,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/courseMetrics.test.ts"
+      },
+      {
+        "name": "courseSemesters.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1976,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/courseSemesters.test.ts"
+      },
+      {
+        "name": "disciplineAreas.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1074,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/disciplineAreas.test.ts"
+      },
+      {
+        "name": "disciplineCampuses.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1074,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/disciplineCampuses.test.ts"
+      },
+      {
+        "name": "disciplineDepartments.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 646,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/disciplineDepartments.test.ts"
+      },
+      {
+        "name": "disciplineFilter.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2282,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/disciplineFilter.test.ts"
+      },
+      {
+        "name": "disciplinePeriodMetrics.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2582,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/disciplinePeriodMetrics.test.ts"
+      },
+      {
+        "name": "disciplineSorting.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4656,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/disciplineSorting.test.ts"
+      },
+      {
         "name": "fileValidation.test.ts",
         "type": "file",
         "language": "TypeScript",
@@ -2848,12 +4504,188 @@
         "path": "frontend/src/utils/__tests__/fileValidation.test.ts"
       },
       {
+        "name": "gradePlanner.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 4719,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/gradePlanner.test.ts"
+      },
+      {
+        "name": "gradeTimeline.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1098,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/gradeTimeline.test.ts"
+      },
+      {
+        "name": "landingPageAcessibilidade.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5148,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/landingPageAcessibilidade.test.ts"
+      },
+      {
+        "name": "pasAdmission.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7522,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/pasAdmission.test.ts"
+      },
+      {
+        "name": "preRequisitos.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1643,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/preRequisitos.test.ts"
+      },
+      {
+        "name": "search.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1122,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/search.test.ts"
+      },
+      {
+        "name": "academicMetrics.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2393,
+        "extension": ".ts",
+        "path": "frontend/src/utils/academicMetrics.ts"
+      },
+      {
+        "name": "accessibilityValidator.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 14736,
+        "extension": ".ts",
+        "path": "frontend/src/utils/accessibilityValidator.ts"
+      },
+      {
+        "name": "catalogYearFilter.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 6233,
+        "extension": ".ts",
+        "path": "frontend/src/utils/catalogYearFilter.ts"
+      },
+      {
+        "name": "classPagination.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 541,
+        "extension": ".ts",
+        "path": "frontend/src/utils/classPagination.ts"
+      },
+      {
+        "name": "courseCatalog.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 3394,
+        "extension": ".ts",
+        "path": "frontend/src/utils/courseCatalog.ts"
+      },
+      {
+        "name": "courseCurriculum.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 18521,
+        "extension": ".ts",
+        "path": "frontend/src/utils/courseCurriculum.ts"
+      },
+      {
+        "name": "disciplineAreas.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 935,
+        "extension": ".ts",
+        "path": "frontend/src/utils/disciplineAreas.ts"
+      },
+      {
+        "name": "disciplineCampuses.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 937,
+        "extension": ".ts",
+        "path": "frontend/src/utils/disciplineCampuses.ts"
+      },
+      {
+        "name": "disciplineDepartments.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 348,
+        "extension": ".ts",
+        "path": "frontend/src/utils/disciplineDepartments.ts"
+      },
+      {
+        "name": "disciplinePeriodMetrics.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7659,
+        "extension": ".ts",
+        "path": "frontend/src/utils/disciplinePeriodMetrics.ts"
+      },
+      {
+        "name": "disciplineSorting.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2618,
+        "extension": ".ts",
+        "path": "frontend/src/utils/disciplineSorting.ts"
+      },
+      {
         "name": "fileValidation.ts",
         "type": "file",
         "language": "TypeScript",
         "size": 4711,
         "extension": ".ts",
         "path": "frontend/src/utils/fileValidation.ts"
+      },
+      {
+        "name": "gradePlanner.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5756,
+        "extension": ".ts",
+        "path": "frontend/src/utils/gradePlanner.ts"
+      },
+      {
+        "name": "gradeTimeline.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2305,
+        "extension": ".ts",
+        "path": "frontend/src/utils/gradeTimeline.ts"
+      },
+      {
+        "name": "pasAdmission.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 5719,
+        "extension": ".ts",
+        "path": "frontend/src/utils/pasAdmission.ts"
+      },
+      {
+        "name": "preRequisitos.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2327,
+        "extension": ".ts",
+        "path": "frontend/src/utils/preRequisitos.ts"
+      },
+      {
+        "name": "search.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 499,
+        "extension": ".ts",
+        "path": "frontend/src/utils/search.ts"
       },
       {
         "name": "tsconfig.json",
@@ -2867,7 +4699,7 @@
         "name": "init.sql",
         "type": "file",
         "language": "SQL",
-        "size": 18008,
+        "size": 20581,
         "extension": ".sql",
         "path": "init.sql"
       },
@@ -2875,9 +4707,55 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 1898,
+        "size": 7521,
         "extension": ".yml",
         "path": "mkdocs.yml"
+      },
+      {
+        "name": "scripts",
+        "type": "directory",
+        "path": "scripts",
+        "children": []
+      },
+      {
+        "name": "backup_prod.sh",
+        "type": "file",
+        "language": "Shell",
+        "size": 1925,
+        "extension": ".sh",
+        "path": "scripts/backup_prod.sh"
+      },
+      {
+        "name": "extract_pas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 12902,
+        "extension": ".py",
+        "path": "scripts/extract_pas.py"
+      },
+      {
+        "name": "pas-sources.json",
+        "type": "file",
+        "language": "JSON",
+        "size": 701,
+        "extension": ".json",
+        "path": "scripts/pas-sources.json"
+      },
+      {
+        "name": "requirements-pas.txt",
+        "type": "file",
+        "language": "Text",
+        "size": 19,
+        "extension": ".txt",
+        "path": "scripts/requirements-pas.txt"
+      },
+      {
+        "name": "test_extract_pas.py",
+        "type": "file",
+        "language": "Python",
+        "size": 2249,
+        "extension": ".py",
+        "path": "scripts/test_extract_pas.py"
       },
       {
         "name": "skills-lock.json",
@@ -2903,7 +4781,7 @@
         "name": "SKILL.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6594,
+        "size": 6727,
         "extension": ".md",
         "path": "skills/tamburetei-dev/SKILL.md"
       },
@@ -2946,7 +4824,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-24T16:49:56.129584+00:00",
+    "extracted_at": "2026-11-25T16:25:27.001783+00:00",
     "file_path": "data/silver/hierarchy_2026-02-TambureteiUnB.json"
   }
 }
