@@ -1,10 +1,893 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-24T16:38:35.574917+00:00",
+      "extracted_at": "2026-11-25T16:16:10.760489+00:00",
       "file_path": "data/bronze/commits_2026-2-UnB_Core.json",
-      "record_count": 263
+      "record_count": 298
     }
+  },
+  {
+    "sha": "c4355c4ebae9dffdb90a333a63a7722ffb4305ae",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Joao-vithor-1",
+        "date": "2026-11-25T15:54:16Z",
+        "login": "Joao-vithor-1",
+        "id": 133594979,
+        "author_email_hash": "bee572710a47425e06e8a41ae9a57f26e813f5f6e3a0b317a8e6a3354c521aad"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T15:54:16Z"
+      },
+      "message": "Update README.md"
+    },
+    "parents": [
+      "23ced8c0959be26024ac0e5fcff8e865e57b7ea9"
+    ],
+    "additions": 0,
+    "deletions": 91,
+    "total_changes": 91,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "23ced8c0959be26024ac0e5fcff8e865e57b7ea9",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:26:16Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T05:26:16Z"
+      },
+      "message": "Merge pull request #182 from unb-mds/task/documentacao-readme-ai-requisitos\n\ndocs: README, declaração de uso de IA e requisitos atualizados"
+    },
+    "parents": [
+      "2e6f83457b83602a82629347a6fe46247a4d9046",
+      "8a15b0298e23ca9a2921cde76d9e9245add77278"
+    ],
+    "additions": 239,
+    "deletions": 91,
+    "total_changes": 330,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "8a15b0298e23ca9a2921cde76d9e9245add77278",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:22:24Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:22:24Z"
+      },
+      "message": "docs: README, declaração de uso de IA e requisitos atualizados\n\n- README: links para a especificação, a declaração de uso de IA, os\n  testes e a publicação; aviso sobre a porta 5432 no Docker; nova seção\n  de testes do backend; instalação do front com o .npmrc; texto do\n  escopo atualizado para os cursos de graduação da UnB; Node 22 para o\n  Stryker.\n- docs/ai-usage.md: ferramenta, período, como a IA foi usada, lista dos\n  PRs feitos com apoio de IA, conteúdos de demonstração e cuidados.\n- docs/requisitos.md: estado do sistema publicado. Cursos de toda a UnB\n  (ampliação de 21/11, commit e5a8a7c), RF-020 a RF-023 (exclusão de\n  contribuições, perfil, recuperação de senha e expiração da sessão),\n  gestão de usuários por moderadores, metas de sabotagem e mutação,\n  cenário de recuperação de acesso, questão em aberto sobre o tipo\n  \"prova\" e correspondência com a especificação.\n- specs/001-unb-core/spec.md: esclarecimentos de 25/11, FR-022 revisto,\n  FR-026 a FR-031, SC-006 e SC-007, entidades e premissas atualizadas."
+    },
+    "parents": [
+      "eddc3c053e95788c74bf9aa98a829a8f60800cba"
+    ],
+    "additions": 235,
+    "deletions": 90,
+    "total_changes": 325,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "eddc3c053e95788c74bf9aa98a829a8f60800cba",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:22:24Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:22:24Z"
+      },
+      "message": "fix: npm ci voltar a funcionar no frontend\n\nO package-lock.json foi gerado com legacy-peer-deps desde a instalação do\nStryker (PR #181). Sem esse modo, o npm ci falhava dizendo que o\npackage.json e o lock estavam fora de sincronia, para quem seguisse o\nREADME e no Docker do front. O Vercel não foi afetado, porque o\nvercel.json já usa o modo.\n- frontend/.npmrc liga legacy-peer-deps para todos.\n- frontend/Dockerfile copia o .npmrc antes do npm ci.\n\nConferido: npm ci numa pasta limpa e build da imagem Docker do front."
+    },
+    "parents": [
+      "2e6f83457b83602a82629347a6fe46247a4d9046"
+    ],
+    "additions": 4,
+    "deletions": 1,
+    "total_changes": 5,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2e6f83457b83602a82629347a6fe46247a4d9046",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:13:34Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T05:13:34Z"
+      },
+      "message": "Merge pull request #181 from unb-mds/task/teste-sabotagem\n\ntest: teste de sabotagem dos módulos críticos e escore de mutação"
+    },
+    "parents": [
+      "475e5ceea74650134bd5c69730d248209e5a09e7",
+      "1bdaf7d8ffa233eed50824f85704720b3e5251fa"
+    ],
+    "additions": 4080,
+    "deletions": 722,
+    "total_changes": 4802,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "1bdaf7d8ffa233eed50824f85704720b3e5251fa",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:09:25Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:09:25Z"
+      },
+      "message": "test: teste de sabotagem dos módulos críticos e testes reforçados\n\nTeste de sabotagem (scripts/teste_sabotagem.py): planta um defeito\nproposital em cada um dos 19 módulos críticos (8 do backend e 11 do\nfrontend), roda a suíte e confere se ela quebra; depois devolve o\narquivo original. Resultado: 19 de 19 (100%).\n\nO teste revelou dois buracos, agora cobertos:\n- Nenhum teste conferia a assinatura do token: um token assinado com\n  outra chave passaria. Novos testes de token forjado, sem assinatura,\n  vencido, sem usuário e inválido.\n- O teste da autoexclusão passava por acaso (a regra do último\n  administrador também devolvia 422). Agora confere a mensagem e o caso\n  com dois administradores.\n\nTestes novos para subir o escore de mutação do frontend de 62,6% para\n75,8%: formatação (datas, links, trechos), sessão (entrar, sair, limite\ndo token, modo sem login só no desenvolvimento), tela de login e busca de\ndisciplina (estados, teclado, Enter durante a busca).\n\nREADME: seções de teste de mutação e de teste de sabotagem."
+    },
+    "parents": [
+      "9d65b0075bf89b7ca864d376917c2455bbacc866"
+    ],
+    "additions": 828,
+    "deletions": 4,
+    "total_changes": 832,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "9d65b0075bf89b7ca864d376917c2455bbacc866",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:09:17Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T05:09:17Z"
+      },
+      "message": "chore: teste de mutação do frontend com o Stryker\n\n- Stryker Mutator 10.1.1 e o runner do Vitest como dependências de\n  desenvolvimento; o comando npm run test:mutacao gera o relatório em\n  frontend/reports/mutacao/index.html.\n- stryker.config.mjs: analisa os 10 arquivos com as regras e os fluxos\n  principais do front.\n- @testing-library/dom declarado como dependência de desenvolvimento: o\n  @testing-library/react precisa dele, e a instalação com\n  --legacy-peer-deps o tirava do package-lock.\n- .gitignore: relatório e pasta temporária do Stryker.\n\nConferido num Linux com Node 22, como o Vercel: npm ci\n--legacy-peer-deps, build e npm audit --omit=dev sem vulnerabilidades."
+    },
+    "parents": [
+      "475e5ceea74650134bd5c69730d248209e5a09e7"
+    ],
+    "additions": 3252,
+    "deletions": 718,
+    "total_changes": 3970,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "475e5ceea74650134bd5c69730d248209e5a09e7",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T04:25:02Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T04:25:02Z"
+      },
+      "message": "Merge pull request #180 from unb-mds/fix/texto-home-unb\n\nfix: texto da página inicial fala da UnB"
+    },
+    "parents": [
+      "b3d4413237ea8eab245277593397cf7a26aa41be",
+      "70b82a86e9ca77ef837a7576e8cdbf7abd51d974"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "70b82a86e9ca77ef837a7576e8cdbf7abd51d974",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T04:22:02Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T04:22:02Z"
+      },
+      "message": "fix: texto da página inicial fala da UnB\n\nO topo da página inicial dizia \"FCTE · Campus Gama\" e \"O conhecimento da\nFCTE\". Passa a dizer \"UNB · Universidade de Brasília\" e \"O conhecimento\nda UnB, organizado por disciplina\"."
+    },
+    "parents": [
+      "b3d4413237ea8eab245277593397cf7a26aa41be"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "b3d4413237ea8eab245277593397cf7a26aa41be",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T04:17:26Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T04:17:26Z"
+      },
+      "message": "Merge pull request #179 from unb-mds/task/readme-site-publicado\n\ndocs: README com o site publicado e o status atual"
+    },
+    "parents": [
+      "8c8567d2a3ad1f10e1a55278d9e2e90ee35cbb45",
+      "6e5e0eb9cc79c44fe207c117ccc64a1e1d0d9ccc"
+    ],
+    "additions": 16,
+    "deletions": 4,
+    "total_changes": 20,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "6e5e0eb9cc79c44fe207c117ccc64a1e1d0d9ccc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T04:16:22Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T04:16:22Z"
+      },
+      "message": "docs: README com o site publicado e o status atual\n\n- Links do site (Vercel) e da documentação da API (Render) no topo,\n  com o aviso de que a API demora cerca de 1 minuto para acordar.\n- Lista de funcionalidades atualizada: filtros da base, moderação com\n  ajustes e exclusão, gestão de usuários e recuperação de senha.\n- Status do projeto: publicado para a apresentação de 25/11/2026, com o\n  resumo do backend, do frontend e dos testes.\n- Stack: testes e serviços de publicação."
+    },
+    "parents": [
+      "8c8567d2a3ad1f10e1a55278d9e2e90ee35cbb45"
+    ],
+    "additions": 16,
+    "deletions": 4,
+    "total_changes": 20,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "8c8567d2a3ad1f10e1a55278d9e2e90ee35cbb45",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T03:52:41Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T03:52:41Z"
+      },
+      "message": "Merge pull request #178 from unb-mds/task/preparar-publicacao\n\nchore: preparar a publicação no Vercel, Render e Neon"
+    },
+    "parents": [
+      "39ff7d49009ddc47b0318d2120e5a7afd8e7c1ff",
+      "a5155e34d632f93354418c96fbd432e6539f2c25"
+    ],
+    "additions": 228,
+    "deletions": 4,
+    "total_changes": 232,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "a5155e34d632f93354418c96fbd432e6539f2c25",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T03:50:29Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T03:50:29Z"
+      },
+      "message": "fix: aceitar a URL do Neon sem indicar o driver do banco\n\nO Neon e o Render entregam a URL como \"postgresql://...\". No SQLAlchemy\n2.1, esse formato usa o driver psycopg (versão 3), que o projeto não\ninstala, e a API não subia no Render: ModuleNotFoundError: No module\nnamed 'psycopg'.\n- As URLs \"postgresql://\" e \"postgres://\" passam a indicar o psycopg2,\n  que já está no requirements. URLs com driver e SQLite não mudam.\n- README: orienta a usar \"postgresql+psycopg2://\" no DATABASE_URL e\n  explica o erro.\n- Testes da conversão."
+    },
+    "parents": [
+      "dfa11a56f8329d1582b953971ff1cf81eb3aa52a"
+    ],
+    "additions": 52,
+    "deletions": 3,
+    "total_changes": 55,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "dfa11a56f8329d1582b953971ff1cf81eb3aa52a",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T02:52:44Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T02:52:44Z"
+      },
+      "message": "chore: preparar a publicação no Vercel, Render e Neon\n\n- API: os endereços liberados no CORS vêm da variável CORS_ORIGINS\n  (separados por vírgula). Sem ela, vale o front local, como antes.\n- Dockerfile: a API escuta na porta da variável PORT, que o Render\n  informa; localmente continua na 8000.\n- Front: vercel.json com a instalação (npm ci --legacy-peer-deps), o\n  build e o redirecionamento das rotas para o index.html, para recarregar\n  páginas como /conteudos/7 sem erro 404.\n- README: passo a passo da publicação, com a cópia do banco local para\n  o Neon, as variáveis de cada serviço e os problemas comuns.\n- .env.example: CORS_ORIGINS.\n- Testes do CORS com e sem a variável."
+    },
+    "parents": [
+      "00e39f437d68fb76bc4821a7e440e42cef0b47ae"
+    ],
+    "additions": 177,
+    "deletions": 2,
+    "total_changes": 179,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "39ff7d49009ddc47b0318d2120e5a7afd8e7c1ff",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-25T01:33:39Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T01:33:39Z"
+      },
+      "message": "docs: link de redirecionamento para releases no label de versão atual."
+    },
+    "parents": [
+      "4e2e59bb5c13db0f06218c3b46da24b5d3500abc"
+    ],
+    "additions": 2,
+    "deletions": 2,
+    "total_changes": 4,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "4e2e59bb5c13db0f06218c3b46da24b5d3500abc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-25T01:26:43Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T01:26:43Z"
+      },
+      "message": "docs: adiciona política de segurança.\n\nAdded security policy for reporting vulnerabilities and disclosure practices."
+    },
+    "parents": [
+      "3fed063ee161f1a750dab5b0a1c699909c462079"
+    ],
+    "additions": 28,
+    "deletions": 0,
+    "total_changes": 28,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "3fed063ee161f1a750dab5b0a1c699909c462079",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-25T01:02:52Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T01:02:52Z"
+      },
+      "message": "docs: Correct terms in Code of Conduct"
+    },
+    "parents": [
+      "ca5d33534d2410fe895ed0a7440c57334fa80aaf"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "ca5d33534d2410fe895ed0a7440c57334fa80aaf",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-25T00:01:01Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-25T00:01:01Z"
+      },
+      "message": "Merge pull request #177 from unb-mds/task/remover-admin-denuncia\n\nchore: remover a página /admin e o formulário de denúncia"
+    },
+    "parents": [
+      "00e39f437d68fb76bc4821a7e440e42cef0b47ae",
+      "2796b57937e664c9f939b410a9be98f57777863b"
+    ],
+    "additions": 7,
+    "deletions": 246,
+    "total_changes": 253,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2796b57937e664c9f939b410a9be98f57777863b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:59:13Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:59:13Z"
+      },
+      "message": "chore: remover a página /admin e o formulário de denúncia\n\nAs duas telas chamavam rotas que não existem no backend\n(/administracao/* e /publicacoes/{id}/denuncias), sobras do escopo\nantigo de publicações, e não funcionavam.\n- Remove AdminPage e os componentes usados só por ela\n  (TabelaEntidades e EntidadeFormModal), e a rota /admin. O endereço\n  passa a abrir a Base de Conhecimento, como qualquer endereço\n  desconhecido.\n- Remove DenunciaForm, que não era usado em nenhuma tela.\n- Remove as classes CSS que só essas telas usavam.\n- O item \"Usuários\" do menu acende só em /admin/usuarios."
+    },
+    "parents": [
+      "00e39f437d68fb76bc4821a7e440e42cef0b47ae"
+    ],
+    "additions": 7,
+    "deletions": 246,
+    "total_changes": 253,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "00e39f437d68fb76bc4821a7e440e42cef0b47ae",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-24T23:57:13Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T23:57:13Z"
+      },
+      "message": "docs: adiciona link para código de conduta"
+    },
+    "parents": [
+      "1f7827b952eeed6ec436ddc206c724139c1a3ad6"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "1f7827b952eeed6ec436ddc206c724139c1a3ad6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-24T23:56:41Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T23:56:41Z"
+      },
+      "message": "docs: adiciona código de conduta"
+    },
+    "parents": [
+      "6445eeb9844aa15d1a57f8befc35fa64bfd5b483"
+    ],
+    "additions": 97,
+    "deletions": 0,
+    "total_changes": 97,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "6445eeb9844aa15d1a57f8befc35fa64bfd5b483",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:28:14Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T23:28:14Z"
+      },
+      "message": "Merge pull request #176 from unb-mds/fix/ajustes-apresentacao\n\nfeat: ajustes para a apresentação (exclusões, usuários, recuperação de senha, cores e testes)"
+    },
+    "parents": [
+      "2825064acb1a5ebf043cca8773cba7e26c7c42ec",
+      "9d2e252da12750fa6f225a121fbd6f0ccba4e81f"
+    ],
+    "additions": 3611,
+    "deletions": 140,
+    "total_changes": 3751,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2825064acb1a5ebf043cca8773cba7e26c7c42ec",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:27:38Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T23:27:38Z"
+      },
+      "message": "Merge pull request #173 from unb-mds/task/conteudos-demonstracao\n\nfeat: adicionar conteúdos de demonstração e script de importação"
+    },
+    "parents": [
+      "e12a5bda4e1ce86f29609e7fbf69a5e4d03952a4",
+      "78a7f8dd8eaf1ebad824259e441d9d3c21042457"
+    ],
+    "additions": 628,
+    "deletions": 0,
+    "total_changes": 628,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "9d2e252da12750fa6f225a121fbd6f0ccba4e81f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:20:03Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:20:03Z"
+      },
+      "message": "test: testes do frontend para os fluxos que faltavam\n\n- Contribuir: campos obrigatórios, escolha do tipo, envio com texto ou\n  só com link, erro da API, \"Enviar outra\" e o filtro por curso.\n- Cadastro: validação de nome, e-mail e senha, sucesso e erro da API.\n- Minhas contribuições: lista com estados e orientação da moderação,\n  resumo lateral, lista vazia, erro e edição na própria lista.\n- Moderação: acesso por perfil, aprovação, justificativa obrigatória\n  para ajustes e rejeição, cancelar, Esc e erro ao decidir.\n- Busca de disciplina: mínimo de letras, busca sem acento, teclado,\n  limpar e filtro local quando há curso.\n- Cliente da API: token, corpo JSON, formato de erro, falha de conexão,\n  cancelamento e resposta sem corpo.\n- Guia de contribuição: tipos com cor e botão para começar.\n- README: como rodar e escrever os testes do frontend."
+    },
+    "parents": [
+      "bb46bad200e68b8fb3483256843c64d2701aaa7c"
+    ],
+    "additions": 851,
+    "deletions": 0,
+    "total_changes": 851,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "bb46bad200e68b8fb3483256843c64d2701aaa7c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:08:18Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T23:08:18Z"
+      },
+      "message": "feat: cores e ícones por tipo de conteúdo\n\n- Cada tipo (resumo, dica, dificuldade, prova, implementação e link) tem\n  texto, fundo e faixa próprios, nos temas claro e escuro, fora das cores\n  de status. Texto acima de 6,5:1 e faixa acima de 3:1 de contraste.\n- Novo TipoBadge com o nome do tipo e um ícone decorativo, usado nos\n  cards, na página do conteúdo, em Minhas contribuições e na Moderação.\n- A faixa lateral dos cards da Base de Conhecimento e do Guia de\n  contribuição tem a cor do tipo.\n- As opções de tipo no formulário de contribuição mostram o ícone, e a\n  escolhida ganha a cor do tipo e aria-pressed."
+    },
+    "parents": [
+      "7398f5adcac7bb3d5f016ce759d00637f3719c03"
+    ],
+    "additions": 197,
+    "deletions": 25,
+    "total_changes": 222,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "e12a5bda4e1ce86f29609e7fbf69a5e4d03952a4",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-24T23:02:39Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T23:02:39Z"
+      },
+      "message": "docs: adiciona link para o guia de contribuição."
+    },
+    "parents": [
+      "7cc20db1ba4ea9b8cfba51cae5df1178e602a0f1"
+    ],
+    "additions": 1,
+    "deletions": 1,
+    "total_changes": 2,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "7cc20db1ba4ea9b8cfba51cae5df1178e602a0f1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Arthur Vinicius Morais de Lima",
+        "date": "2026-11-24T23:00:28Z",
+        "login": "arthurhc3",
+        "id": 103784982,
+        "author_email_hash": "f3359abce29912faf08d8ea9e037e8b4029c330da351044c48c8e95df3ca6610"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-24T23:00:28Z"
+      },
+      "message": "docs: adiciona documento de contribuição."
+    },
+    "parents": [
+      "b1e7d7d88a1937add48325b761f3f24f2972df1b"
+    ],
+    "additions": 31,
+    "deletions": 0,
+    "total_changes": 31,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "7398f5adcac7bb3d5f016ce759d00637f3719c03",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:57:24Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:57:24Z"
+      },
+      "message": "feat: recuperação de senha pela tela de login\n\n- \"Esqueceu a senha?\" abre um formulário que registra o pedido com um\n  contato opcional; a resposta é a mesma para e-mail cadastrado ou não.\n- Administradores veem os pedidos na aba \"Pedidos de senha\" de Usuários\n  e atendem definindo uma senha temporária.\n- Quem entra com a senha temporária vai para Meu perfil, com um aviso\n  para escolher uma senha nova.\n- Migration 0007 adiciona os campos do pedido e o \"trocar_senha\"."
+    },
+    "parents": [
+      "80b6093a0b7e2f7509e631fe0b972d8085b50c0c"
+    ],
+    "additions": 489,
+    "deletions": 14,
+    "total_changes": 503,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "80b6093a0b7e2f7509e631fe0b972d8085b50c0c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:41:12Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:41:12Z"
+      },
+      "message": "fix: encerrar a sessão quando o login expira\n\nO token de login vale 30 minutos, mas o front não tratava a expiração:\na sessão antiga continuava guardada, o menu de quem está logado\ncontinuava aparecendo e as páginas protegidas (Usuários, Moderação,\nMinhas contribuições) falhavam sem explicação.\n\n- Ao abrir o site, uma sessão com token vencido é descartada.\n- Se a API recusar o token (401) durante o uso, a sessão é encerrada em\n  todas as telas e as páginas protegidas levam ao login, que mostra\n  \"Sua sessão expirou. Entre de novo para continuar.\"\n- A tela de Usuários também leva ao login quando não há sessão.\n- \"Esqueceu a senha?\" passa a orientar a pedir uma senha temporária a um\n  administrador (antes não fazia nada).\n- API: a duração do login pode ser ajustada pela variável\n  ACCESS_TOKEN_EXPIRE_MINUTES (padrão 30), documentada no README.\n- Testes da sessão."
+    },
+    "parents": [
+      "2043cfeb60c792c1397c21b4f5ff4fd9b9c09988"
+    ],
+    "additions": 176,
+    "deletions": 6,
+    "total_changes": 182,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2043cfeb60c792c1397c21b4f5ff4fd9b9c09988",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:35:28Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:35:28Z"
+      },
+      "message": "feat: gestão de usuários com exclusão de contas\n\nAPI:\n- GET /usuarios/gestao (moderador ou administrador), com busca e filtros\n  de perfil (usuario, moderador, administrador, equipe) e situação, e o\n  total de contribuições de cada conta. Moderadores recebem só usuários\n  comuns e sem e-mail.\n- PATCH /usuarios/{id}/situacao: ativa ou desativa a conta. Moderadores\n  só agem sobre usuários comuns.\n- DELETE /usuarios/{id}: exclui a conta de vez. Os conteúdos publicados\n  continuam na base com o autor \"Usuário removido\" (conta de sistema\n  desativada) e as contribuições da pessoa são apagadas. Ninguém exclui\n  a própria conta, nem o último administrador ativo.\n- POST /usuarios/{id}/senha-temporaria (só administradores): define uma\n  senha nova sem ler a anterior. Nenhuma rota devolve senha.\n- As rotas existentes de /usuarios continuam iguais.\n\nTela de Usuários:\n- Administradores: abas \"Equipe\" (moderadores e administradores, com o\n  formulário de nova conta) e \"Todos os usuários\" (busca, filtros, mudar\n  perfil, ativar/desativar, senha temporária e excluir).\n- Moderadores: só os usuários comuns, para desativar, reativar ou\n  excluir; o link \"Usuários\" do menu passa a aparecer para eles.\n- Cada conta mostra perfil, situação, data de cadastro e contribuições;\n  a própria conta não tem ações.\n- Testes de integração e de componente."
+    },
+    "parents": [
+      "323486073fa06e966089bbe38bb5f5299056f3b3"
+    ],
+    "additions": 745,
+    "deletions": 60,
+    "total_changes": 805,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "78a7f8dd8eaf1ebad824259e441d9d3c21042457",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:25:06Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:25:06Z"
+      },
+      "message": "fix: e-mail válido para a conta de demonstração\n\nO e-mail [email removed] usa um domínio reservado (.local),\nque o EmailStr recusa. Com essa conta no banco, a lista de usuários da\nAPI quebrava (a página Usuários mostrava erro de conexão).\n\n- A conta passa a usar [email removed] (.example é reservado\n  para exemplos e aceito pelo validador).\n- O importador reconhece a conta criada com o e-mail antigo\n  (autor.emails_antigos) e atualiza o e-mail, em vez de criar outra.\n- O arquivo é recusado se o e-mail do autor não passar na mesma\n  validação do cadastro."
+    },
+    "parents": [
+      "2ab21e21df697a3baf28ef3640f167f61a67d08d"
+    ],
+    "additions": 55,
+    "deletions": 6,
+    "total_changes": 61,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "323486073fa06e966089bbe38bb5f5299056f3b3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:24:17Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:24:17Z"
+      },
+      "message": "fix: página de Usuários dava erro de conexão\n\nA lista de usuários quebrava com um único cadastro de e-mail fora do\npadrão (domínio reservado .local, da conta de demonstração): a resposta\nrevalidava o e-mail com EmailStr e a API devolvia 500. Como o tratamento\nde erros ficava fora do CORS, o navegador bloqueava o 500 e o front\nmostrava \"Não foi possível conectar à API\".\n\n- Respostas de usuário (UsuarioPublico, UsuarioAdminPublico) usam str no\n  e-mail; a validação continua na entrada (cadastro, perfil e criação).\n- Middleware converte erros inesperados na resposta 500 padrão dentro do\n  CORS, então qualquer erro interno chega ao front com a mensagem certa,\n  sem expor detalhes da exceção.\n- Testes de integração dos dois casos."
+    },
+    "parents": [
+      "3c4e6fff62ae719985553f2b507e5e3b290b6e92"
+    ],
+    "additions": 104,
+    "deletions": 3,
+    "total_changes": 107,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "3c4e6fff62ae719985553f2b507e5e3b290b6e92",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:19:08Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:19:08Z"
+      },
+      "message": "feat: exclusão de contribuições e página de detalhe na moderação\n\nAutor:\n- Exclui na hora uma contribuição própria ainda não publicada\n  (DELETE /contribuicoes/minhas/{id}).\n- Para uma contribuição já publicada, pede a exclusão à moderação com um\n  motivo (POST /contribuicoes/minhas/{id}/pedido-exclusao) e pode\n  cancelar o pedido (DELETE no mesmo endereço).\n\nModeração:\n- Lista com filtro: revisar (padrão, como antes), exclusao e todas\n  (GET /moderacao/contribuicoes?filtro=).\n- Detalhe de uma contribuição (GET /moderacao/contribuicoes/{id}), com\n  disciplina, autor e o pedido de exclusão.\n- Exclui de vez a contribuição e o conteúdo publicado\n  (DELETE /moderacao/contribuicoes/{id}).\n- Recusa um pedido de exclusão com justificativa, que o autor vê\n  (POST /moderacao/contribuicoes/{id}/recusar-exclusao).\n\nBanco: migration 0006 com as colunas exclusao_solicitada_em e\nmotivo_exclusao em contribuicao (só acrescenta colunas).\n\nFrontend:\n- Moderação com abas \"Para revisar\", \"Pedidos de exclusão\" e \"Todas\";\n  cards com disciplina, autor, data, trecho e motivo do pedido; \"Tomar\n  decisão\" só para pendentes.\n- Nova página /moderacao/contribuicoes/{id} com o texto completo,\n  decisão, recusar pedido, ver publicação e \"Excluir de vez\" (com\n  confirmação).\n- Detalhe da contribuição do autor com \"Excluir contribuição\" ou\n  \"Pedir exclusão\" e o aviso do pedido em andamento; badge \"Exclusão\n  solicitada\" em Minhas contribuições.\n- Botão de perigo (variante danger) para ações de excluir.\n- Testes de integração e de componente."
+    },
+    "parents": [
+      "2dd3140715f3d6e6018486898ec3daab373edb68"
+    ],
+    "additions": 1061,
+    "deletions": 42,
+    "total_changes": 1103,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2dd3140715f3d6e6018486898ec3daab373edb68",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:09:11Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T22:09:11Z"
+      },
+      "message": "fix: destacar os cartões de tipos no Guia de contribuição\n\nOs cartões de \"O que você pode contribuir\" tinham borda, mas não fundo, e\nficavam apagados sobre o cinza da página.\n\n- Fundo de superfície e sombra, como os demais cartões (também no tema\n  escuro).\n- Etiqueta do tipo com o badge padrão (12px, cor de destaque) no lugar\n  do contorno de 10px.\n- Cartões em duas colunas quando houver espaço.\n- Remove as classes .tag e .tag-outline, que ficaram sem uso."
+    },
+    "parents": [
+      "b1e7d7d88a1937add48325b761f3f24f2972df1b"
+    ],
+    "additions": 5,
+    "deletions": 7,
+    "total_changes": 12,
+    "repo_name": "2026-2-UnB_Core"
+  },
+  {
+    "sha": "2ab21e21df697a3baf28ef3640f167f61a67d08d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T20:55:15Z",
+        "login": "DanielAlmeidaFrota",
+        "id": 244839088,
+        "author_email_hash": "2924392eaa5c1e791ca5120c156addbca2d570d3e9c463bb2c8a9f64f8042034"
+      },
+      "committer": {
+        "name": "Daniel Almeida",
+        "date": "2026-11-24T20:55:15Z"
+      },
+      "message": "feat: adicionar conteúdos de demonstração e script de importação\n\n- backend/app/seeds/conteudos_demonstracao.json: 33 conteúdos publicados\n  e 3 contribuições pendentes em 21 disciplinas da FCTE (Cálculo, APC,\n  Física, Probabilidade, Compiladores, Estruturas de Dados, Banco de\n  Dados, MDS, Requisitos, Testes, SO, Eletrônica Digital, Circuitos,\n  Sinais e Sistemas, Mecânica dos Fluidos, Termodinâmica, entre outras).\n  Textos escritos com apoio de IA, sem conteúdos do tipo \"Prova\".\n- Script python -m backend.app.scripts.importar_conteudos (com\n  --simular): encontra a disciplina pelo código, cria publicados e\n  pendentes, não duplica ao rodar de novo e nunca altera ou apaga dados.\n  O autor é a conta desativada \"Equipe UnB Core (demonstração)\", e a\n  fonte de cada conteúdo identifica que é material de demonstração.\n- Validação do arquivo antes de gravar e testes do script.\n- docs/ai-usage.md registra o uso de IA; README explica a importação."
+    },
+    "parents": [
+      "b1e7d7d88a1937add48325b761f3f24f2972df1b"
+    ],
+    "additions": 579,
+    "deletions": 0,
+    "total_changes": 579,
+    "repo_name": "2026-2-UnB_Core"
   },
   {
     "sha": "b1e7d7d88a1937add48325b761f3f24f2972df1b",

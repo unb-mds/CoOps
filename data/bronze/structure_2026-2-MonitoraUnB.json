@@ -2,16 +2,16 @@
   "owner": "unb-mds",
   "repository": "2026-2-MonitoraUnB",
   "branch": "main",
-  "sha": "3728c6bb5991315cc487e6725a0cba21573bb3c7",
+  "sha": "4917f8b8896d9119b9c8b50069ee01fd2d651e32",
   "tree": [
     {
       "name": ".env.example",
       "path": ".env.example",
       "type": "file",
-      "sha": "092c34e5f05c83b6714c59d221d7668a1ed30807",
+      "sha": "e22c30679561ea1485e9b65a38ad7375ee305f73",
       "mode": "100644",
       "extension": ".example",
-      "size": 673,
+      "size": 464,
       "is_binary": false
     },
     {
@@ -25,20 +25,30 @@
       "is_binary": false
     },
     {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "type": "file",
+      "sha": "675c19ec0ecdd2613794ad67040a9a3c51d2b67a",
+      "mode": "100644",
+      "extension": "",
+      "size": 1060,
+      "is_binary": false
+    },
+    {
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "296de30e8872ae6b315b421e30253431a4d73764",
+      "sha": "548cf53f780a820a6d7455aa1b7d35b111703891",
       "mode": "100644",
       "extension": ".md",
-      "size": 5857,
+      "size": 19365,
       "is_binary": false
     },
     {
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "13e816e12faa8b2ac9f8c8d3f295cc564a04d92d",
+      "sha": "5bb6c5f5fb1e4b3a30d398d93fac2d45bdee2bb1",
       "mode": "040000",
       "children": []
     },
@@ -46,10 +56,10 @@
       "name": "Dockerfile",
       "path": "backend/Dockerfile",
       "type": "file",
-      "sha": "d9722d12927525818b61fef23cd10f852b7688ea",
+      "sha": "6a5b699c6e9c3c022610f15bfef3d4b236574d0b",
       "mode": "100644",
       "extension": "",
-      "size": 330,
+      "size": 761,
       "is_binary": false
     },
     {
@@ -66,17 +76,17 @@
       "name": "config.py",
       "path": "backend/config.py",
       "type": "file",
-      "sha": "132720feacdc0749bd07aa053aafba172d195a5a",
+      "sha": "5ca7170470ddd3fd2da00550562a41daba2d6afe",
       "mode": "100644",
       "extension": ".py",
-      "size": 1397,
+      "size": 1485,
       "is_binary": false
     },
     {
       "name": "database",
       "path": "backend/database",
       "type": "directory",
-      "sha": "b8ad3ee924f529ad4a371f22c68bec1c8468a21b",
+      "sha": "2b9fa21a83a1d3b2125973eeae5216da71dbda49",
       "mode": "040000",
       "children": []
     },
@@ -94,38 +104,48 @@
       "name": "database.py",
       "path": "backend/database/database.py",
       "type": "file",
-      "sha": "dc37960d528a1771236ed0c668ebf4cbec976c8f",
+      "sha": "c1cdf319f3b08cf04368020d3d7a3fdf72e8242e",
       "mode": "100644",
       "extension": ".py",
-      "size": 631,
+      "size": 740,
       "is_binary": false
     },
     {
       "name": "models.py",
       "path": "backend/database/models.py",
       "type": "file",
-      "sha": "13bd57ef26d70d02ef6da4ae3dfbd81e90888f44",
+      "sha": "8fcab21417c928b982fb1855e8d434e6091eee8b",
       "mode": "100644",
       "extension": ".py",
-      "size": 3017,
+      "size": 10771,
+      "is_binary": false
+    },
+    {
+      "name": "setup_db.py",
+      "path": "backend/database/setup_db.py",
+      "type": "file",
+      "sha": "a9b2dfd354bbd5c0f3540945bfc00357d7df20aa",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 5415,
       "is_binary": false
     },
     {
       "name": "sql",
       "path": "backend/database/sql",
       "type": "directory",
-      "sha": "e7b70da8a429d51eef612876605f65821e012c98",
+      "sha": "552b2c6f1bfebb723351e068024759d996cad221",
       "mode": "040000",
       "children": []
     },
     {
-      "name": "01_schema.sql",
-      "path": "backend/database/sql/01_schema.sql",
+      "name": "01_schema(new).sql",
+      "path": "backend/database/sql/01_schema(new).sql",
       "type": "file",
-      "sha": "d9ea2423bb701988b04de54f315c7879cd5edd2e",
+      "sha": "2ca5c887b95118184cbe53f80d7999ec76ddcbd6",
       "mode": "100644",
       "extension": ".sql",
-      "size": 13227,
+      "size": 16407,
       "is_binary": false
     },
     {
@@ -139,13 +159,91 @@
       "is_binary": false
     },
     {
-      "name": "03_setup_usuarios.sql",
-      "path": "backend/database/sql/03_setup_usuarios.sql",
+      "name": "02_seed_desenvolvimento.sql",
+      "path": "backend/database/sql/02_seed_desenvolvimento.sql",
       "type": "file",
-      "sha": "3e522a88185a72a6318faf961770e9b08cb599ff",
+      "sha": "80d2bb8ae9ab65f7b34baff9dbf1d44669dee90e",
       "mode": "100644",
       "extension": ".sql",
-      "size": 1348,
+      "size": 3093,
+      "is_binary": false
+    },
+    {
+      "name": "03_setup_usuarionew.sql",
+      "path": "backend/database/sql/03_setup_usuarionew.sql",
+      "type": "file",
+      "sha": "f8e492eb451ca082f57552bb329cac3a6f9691e3",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 3650,
+      "is_binary": false
+    },
+    {
+      "name": "04_primeiro_admin.sql",
+      "path": "backend/database/sql/04_primeiro_admin.sql",
+      "type": "file",
+      "sha": "7492634a8fbf9a4b0d99cac65c178719e3e6f552",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 1043,
+      "is_binary": false
+    },
+    {
+      "name": "Admin_botao.html",
+      "path": "backend/database/sql/Admin_botao.html",
+      "type": "file",
+      "sha": "a882994cb989dd18b3112e15004c55e62092cfe8",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 2024,
+      "is_binary": false
+    },
+    {
+      "name": "README.md",
+      "path": "backend/database/sql/README.md",
+      "type": "file",
+      "sha": "6c79579bac9a4dc3fbd9b82819813ea723100001",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 3676,
+      "is_binary": false
+    },
+    {
+      "name": "migrations",
+      "path": "backend/database/sql/migrations",
+      "type": "directory",
+      "sha": "5aeacb0b0621ef8debb4c59b93a3f9851a2443b5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "001_criar_inscricao.sql",
+      "path": "backend/database/sql/migrations/001_criar_inscricao.sql",
+      "type": "file",
+      "sha": "a5dc3f05e292d57294e3c088c8b3250d56176e9f",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 10118,
+      "is_binary": false
+    },
+    {
+      "name": "002_integrar_dados_scraping.sql",
+      "path": "backend/database/sql/migrations/002_integrar_dados_scraping.sql",
+      "type": "file",
+      "sha": "bd401bad0ce426f8b1d438153d01ab864716be95",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 4499,
+      "is_binary": false
+    },
+    {
+      "name": "testes.sql",
+      "path": "backend/database/sql/testes.sql",
+      "type": "file",
+      "sha": "8eab0f0afc32681d953fc65d27a4ae5b4e71f519",
+      "mode": "100644",
+      "extension": ".sql",
+      "size": 11262,
       "is_binary": false
     },
     {
@@ -180,17 +278,17 @@
       "name": "main.py",
       "path": "backend/main.py",
       "type": "file",
-      "sha": "7169d3481edb185314194946f52ee18097d4f2d7",
+      "sha": "3a1d0162ca7a18108e023c3e34e21307dbbc30ee",
       "mode": "100644",
       "extension": ".py",
-      "size": 2002,
+      "size": 2165,
       "is_binary": false
     },
     {
       "name": "requirements",
       "path": "backend/requirements",
       "type": "directory",
-      "sha": "270545d46f71ce662135d6a440281ea1ba7bf1d8",
+      "sha": "5096e9231eb2f071dd11191f62921ec2dda58b2d",
       "mode": "040000",
       "children": []
     },
@@ -218,17 +316,17 @@
       "name": "rest-pdf.txt",
       "path": "backend/requirements/rest-pdf.txt",
       "type": "file",
-      "sha": "f60426831b5c90e70203268ab84e0f3fbe6f90c2",
+      "sha": "e56fb47c32c2b178a8f3e87212a0ba52ddb43c39",
       "mode": "100644",
       "extension": ".txt",
-      "size": 59,
+      "size": 68,
       "is_binary": false
     },
     {
       "name": "scraping.txt",
       "path": "backend/requirements/scraping.txt",
       "type": "file",
-      "sha": "248c02c9a66408349b2bf258709a24e6d7ec91c2",
+      "sha": "a330ddc09b20af19c4df9f8fe86437c86cedeba3",
       "mode": "100644",
       "extension": ".txt",
       "size": 194,
@@ -248,7 +346,7 @@
       "name": "routers",
       "path": "backend/routers",
       "type": "directory",
-      "sha": "cab4109159ef05bf5d69e7170aa7c9ce4aad25ed",
+      "sha": "a33c2999235f992a874b2e372af07c1f02e39654",
       "mode": "040000",
       "children": []
     },
@@ -276,20 +374,20 @@
       "name": "departamentos.py",
       "path": "backend/routers/departamentos.py",
       "type": "file",
-      "sha": "ab047b5ac0fa9fb80ae891da22b3a5b69f87691d",
+      "sha": "47f848d617f2e0373ca11d957bb3ea8e874cfc2f",
       "mode": "100644",
       "extension": ".py",
-      "size": 2008,
+      "size": 2018,
       "is_binary": false
     },
     {
       "name": "disciplinas.py",
       "path": "backend/routers/disciplinas.py",
       "type": "file",
-      "sha": "25c41c69ec6323dfa0f500e8db7b534bfcd2426b",
+      "sha": "4d49a516eff4556171450a624730adda5e2ec0f8",
       "mode": "100644",
       "extension": ".py",
-      "size": 2976,
+      "size": 2702,
       "is_binary": false
     },
     {
@@ -306,17 +404,37 @@
       "name": "inscricoes.py",
       "path": "backend/routers/inscricoes.py",
       "type": "file",
-      "sha": "73279db6d3fea9a29f8e726ba5750b821db3429f",
+      "sha": "ad6b10d4fa19d8cefd02e022bbac0ae60e578161",
       "mode": "100644",
       "extension": ".py",
-      "size": 1266,
+      "size": 7001,
+      "is_binary": false
+    },
+    {
+      "name": "rotas_botao.py",
+      "path": "backend/routers/rotas_botao.py",
+      "type": "file",
+      "sha": "6ef60b0737a6d991031eb7fc7786019fac09ac88",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6816,
+      "is_binary": false
+    },
+    {
+      "name": "scraping.py",
+      "path": "backend/routers/scraping.py",
+      "type": "file",
+      "sha": "1de37203af02d4feda4dcab879e7577c65eadaac",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 19364,
       "is_binary": false
     },
     {
       "name": "schemas",
       "path": "backend/schemas",
       "type": "directory",
-      "sha": "25281062441ce91da5a475520e7b17ddacf0b860",
+      "sha": "280746b514b3aa1ea90c4d42d8bbaea8ec023a21",
       "mode": "040000",
       "children": []
     },
@@ -344,10 +462,10 @@
       "name": "inscricoes.py",
       "path": "backend/schemas/inscricoes.py",
       "type": "file",
-      "sha": "edb7591eb311740817399e90b9c1a16b59d6beb0",
+      "sha": "f35b5761178856e98006527151ec180fa36cba5d",
       "mode": "100644",
       "extension": ".py",
-      "size": 959,
+      "size": 1493,
       "is_binary": false
     },
     {
@@ -361,10 +479,20 @@
       "is_binary": false
     },
     {
+      "name": "scraping.py",
+      "path": "backend/schemas/scraping.py",
+      "type": "file",
+      "sha": "076c7c347a7e6ebfec0c0cc6733d7f52a5267dc8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 3921,
+      "is_binary": false
+    },
+    {
       "name": "scraping",
       "path": "backend/scraping",
       "type": "directory",
-      "sha": "e347ee333da3a9693c86a8377d5d4dd37dd84102",
+      "sha": "24072b259ddbb570abcede07ba91e86e10adfe45",
       "mode": "040000",
       "children": []
     },
@@ -382,35 +510,45 @@
       "name": "sigaa.py",
       "path": "backend/scraping/sigaa.py",
       "type": "file",
-      "sha": "0af5c58889a943bd7656c82a0dc8788e82bda308",
+      "sha": "96cafc31004673d55553492a82147b132c512c25",
       "mode": "100644",
       "extension": ".py",
-      "size": 16703,
+      "size": 24239,
       "is_binary": false
     },
     {
       "name": "scripts",
       "path": "backend/scripts",
       "type": "directory",
-      "sha": "179fb2b5d2d970ff97eb3e1d4569bc30bb0cc38c",
+      "sha": "88c5230c2dbdc7ec77cf8c9dd851e1f167e5a854",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "criar_processo_seletivo.py",
+      "path": "backend/scripts/criar_processo_seletivo.py",
+      "type": "file",
+      "sha": "ac5887b436be1b4674796aa230b55c650dd7455e",
+      "mode": "100755",
+      "extension": ".py",
+      "size": 10289,
+      "is_binary": false
     },
     {
       "name": "gerar_hash_senha.py",
       "path": "backend/scripts/gerar_hash_senha.py",
       "type": "file",
-      "sha": "19b5adf30a281bd836599053f62eade34164bac7",
+      "sha": "b612bad7c6297e0b381120b8889b02255b6ca8f9",
       "mode": "100644",
       "extension": ".py",
-      "size": 1624,
+      "size": 1996,
       "is_binary": false
     },
     {
       "name": "services",
       "path": "backend/services",
       "type": "directory",
-      "sha": "9d62ffc82e64e47589eb386240c34d812790e4e3",
+      "sha": "12f4bdc6868f30cc111ec9a733106747e193de94",
       "mode": "040000",
       "children": []
     },
@@ -526,10 +664,20 @@
       "name": "inscricoes_service.py",
       "path": "backend/services/inscricoes_service.py",
       "type": "file",
-      "sha": "9a0266c1ec85ce7daa3f6407c41dff95fe5b2c8c",
+      "sha": "f19b99bedde101dc27dc7eb48ed4a105f8b7309b",
       "mode": "100644",
       "extension": ".py",
-      "size": 1435,
+      "size": 9383,
+      "is_binary": false
+    },
+    {
+      "name": "scraping_service.py",
+      "path": "backend/services/scraping_service.py",
+      "type": "file",
+      "sha": "cdcf0bb781fc770beceeb6600add55c00101bf21",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 10015,
       "is_binary": false
     },
     {
@@ -581,30 +729,20 @@
       "is_binary": false
     },
     {
-      "name": "como_executar_api.md",
-      "path": "como_executar_api.md",
-      "type": "file",
-      "sha": "58f6e0788ddd081770f35de2476cffbe450de62b",
-      "mode": "100644",
-      "extension": ".md",
-      "size": 6093,
-      "is_binary": false
-    },
-    {
       "name": "compose.yaml",
       "path": "compose.yaml",
       "type": "file",
-      "sha": "f9337e60eb6d0982cbae59257c5d91797a92de33",
+      "sha": "ef0851cab6fcee8feeaf9515bcedd518b7b39e7b",
       "mode": "100644",
       "extension": ".yaml",
-      "size": 2766,
+      "size": 2824,
       "is_binary": false
     },
     {
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "567e219c677307267a20122847e214d393edeaa9",
+      "sha": "8e3e2a505bb054a81dd7e0d4e9ad6547d14d9115",
       "mode": "040000",
       "children": []
     },
@@ -642,20 +780,20 @@
       "name": "Documento_banco.md",
       "path": "docs/Documento_banco.md",
       "type": "file",
-      "sha": "7c305db5a7dd3985c00509961a2a29be376a68de",
+      "sha": "b018a599f3f2a816e869f841c02f66e7f04f2ab4",
       "mode": "100644",
       "extension": ".md",
-      "size": 11708,
+      "size": 12232,
       "is_binary": false
     },
     {
       "name": "Documento_de_requisitos.md",
       "path": "docs/Documento_de_requisitos.md",
       "type": "file",
-      "sha": "cf25216b1e075afef3d1096122dac2f14b956df9",
+      "sha": "d0d38012ac67b10028651e31d7a3a6dbbff1e207",
       "mode": "100644",
       "extension": ".md",
-      "size": 26298,
+      "size": 29640,
       "is_binary": false
     },
     {
@@ -679,23 +817,61 @@
       "is_binary": false
     },
     {
+      "name": "_coverpage.md",
+      "path": "docs/_coverpage.md",
+      "type": "file",
+      "sha": "ae8e03e5ccf9059c38df9b6c86a2c3522b1435d4",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 285,
+      "is_binary": false
+    },
+    {
       "name": "_sidebar.md",
       "path": "docs/_sidebar.md",
       "type": "file",
-      "sha": "d70b1d39bbc0ab1e4dd2569bc1165b5b9b95f123",
+      "sha": "1c37c5320ed47735f3b4c6afaa81951464bdc0ea",
       "mode": "100644",
       "extension": ".md",
-      "size": 182,
+      "size": 549,
       "is_binary": false
     },
     {
       "name": "arquitetura.md",
       "path": "docs/arquitetura.md",
       "type": "file",
-      "sha": "1d68ee525ed2319f298f916112a29c59c6504f59",
+      "sha": "2b36a0adbe3e602437cbe3b61fe94a5ef87c7f9e",
       "mode": "100644",
       "extension": ".md",
-      "size": 4142,
+      "size": 24857,
+      "is_binary": false
+    },
+    {
+      "name": "assets",
+      "path": "docs/assets",
+      "type": "directory",
+      "sha": "899a99cedae1ea27840f12f42c82b1a228eb8b85",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "banner.svg",
+      "path": "docs/assets/banner.svg",
+      "type": "file",
+      "sha": "2754447d6a6e5f9c83c61ccf5875a01097c0a829",
+      "mode": "100644",
+      "extension": ".svg",
+      "size": 17173,
+      "is_binary": false
+    },
+    {
+      "name": "tema.css",
+      "path": "docs/assets/tema.css",
+      "type": "file",
+      "sha": "252d99b6e22a6af9d452df44277e07c0ed7d8590",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 5404,
       "is_binary": false
     },
     {
@@ -850,10 +1026,20 @@
       "name": "index.html",
       "path": "docs/index.html",
       "type": "file",
-      "sha": "a23ac893abdb013e7e6f8eec2a13f947f1cd1a72",
+      "sha": "18806ec7025e19db0f7899c189af854ec27cf6e5",
       "mode": "100644",
       "extension": ".html",
-      "size": 1908,
+      "size": 5598,
+      "is_binary": false
+    },
+    {
+      "name": "inicio.md",
+      "path": "docs/inicio.md",
+      "type": "file",
+      "sha": "19cb7bb5e75667dc45a022ef6fda818934f1ec76",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 17048,
       "is_binary": false
     },
     {
@@ -938,7 +1124,7 @@
       "name": "front-end",
       "path": "front-end",
       "type": "directory",
-      "sha": "f75c0effbb4be97ee9ce695322401c62945de8a0",
+      "sha": "58a3512212ce19fefe0a3db4cdf70dad053442c8",
       "mode": "040000",
       "children": []
     },
@@ -956,7 +1142,7 @@
       "name": "nginx",
       "path": "front-end/nginx",
       "type": "directory",
-      "sha": "f3718e6a3e9095944006804dea02d347481cbfac",
+      "sha": "2e31426717e1f1ed15fc2d68c0ae7aa1b4ccf0fc",
       "mode": "040000",
       "children": []
     },
@@ -964,10 +1150,10 @@
       "name": "default.conf",
       "path": "front-end/nginx/default.conf",
       "type": "file",
-      "sha": "523ea9f5f2872390afd8e3da6e62f56eebc4c4f7",
+      "sha": "5843762da5a1dbcefbbf2e491bafb7a5c014a527",
       "mode": "100644",
       "extension": ".conf",
-      "size": 527,
+      "size": 959,
       "is_binary": false
     },
     {
@@ -994,9 +1180,19 @@
       "name": "pages",
       "path": "front-end/pages",
       "type": "directory",
-      "sha": "36deec4e51f90028b5c5130650477afe9e71f9df",
+      "sha": "e5262b65be0f988689a3d4ad0b6228a1d8771af5",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "botao_admin.html",
+      "path": "front-end/pages/botao_admin.html",
+      "type": "file",
+      "sha": "bb95dfc2f6d142ab81fce2667b254db70c809543",
+      "mode": "100644",
+      "extension": ".html",
+      "size": 2043,
+      "is_binary": false
     },
     {
       "name": "inicio.html",
@@ -1042,10 +1238,10 @@
       "name": "ranking.html",
       "path": "front-end/pages/ranking.html",
       "type": "file",
-      "sha": "f0e797fd14d548a15e88488531a518c6706e11ce",
+      "sha": "80385a3ebbff1b7e64cd05c9dcec2470f66e423f",
       "mode": "100644",
       "extension": ".html",
-      "size": 3383,
+      "size": 5195,
       "is_binary": false
     },
     {
@@ -1072,7 +1268,7 @@
       "name": "src",
       "path": "front-end/src",
       "type": "directory",
-      "sha": "1c2fd6efd11b12070e7d0855d3f0b3c70bbcbd7f",
+      "sha": "a1c7a3421bf8e6802505bca73f318a1fd4658353",
       "mode": "040000",
       "children": []
     },
@@ -1080,18 +1276,38 @@
       "name": "pages",
       "path": "front-end/src/pages",
       "type": "directory",
-      "sha": "cd32c0296534af4b80718f2b2b848c5270107a46",
+      "sha": "dc08c4ff0911c1012c5a1b951d7dd3e61c01c4a9",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "admin.ts",
+      "path": "front-end/src/pages/admin.ts",
+      "type": "file",
+      "sha": "d11168aea90e440e75eb0857fba5673c228d5f71",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 7477,
+      "is_binary": false
     },
     {
       "name": "formulario-inscricao.ts",
       "path": "front-end/src/pages/formulario-inscricao.ts",
       "type": "file",
-      "sha": "7df88938aea2491f37c8e4514db4e680a638a97f",
+      "sha": "8339f5ab9b7d9674a10f8f2d2a3b8fa0ac911116",
       "mode": "100644",
       "extension": ".ts",
-      "size": 3948,
+      "size": 3992,
+      "is_binary": false
+    },
+    {
+      "name": "iniciar_processo.ts",
+      "path": "front-end/src/pages/iniciar_processo.ts",
+      "type": "file",
+      "sha": "08cce46281c61688b0a633cfda7b185c129a8ab7",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 10734,
       "is_binary": false
     },
     {
@@ -1128,10 +1344,10 @@
       "name": "ranking.ts",
       "path": "front-end/src/pages/ranking.ts",
       "type": "file",
-      "sha": "8402623ec20f1cf83d10578485fb96ed3ac162be",
+      "sha": "ce050b233e3a78da80b7a2fd44806f22d4111d8f",
       "mode": "100644",
       "extension": ".ts",
-      "size": 7022,
+      "size": 7174,
       "is_binary": false
     },
     {
@@ -1158,7 +1374,7 @@
       "name": "services",
       "path": "front-end/src/services",
       "type": "directory",
-      "sha": "8980f9185bbcb09fd747d91fddb7a321707542a5",
+      "sha": "fa4149b641d33711a70fc729e24cc95d65d75273",
       "mode": "040000",
       "children": []
     },
@@ -1166,10 +1382,10 @@
       "name": "auth.ts",
       "path": "front-end/src/services/auth.ts",
       "type": "file",
-      "sha": "e4d1a6708b1944b0709ff1f619847e2eee95d261",
+      "sha": "29e92e28acbcd792dd7f15b5f4640ac3b9175e98",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1811,
+      "size": 1944,
       "is_binary": false
     },
     {
@@ -1186,17 +1402,17 @@
       "name": "inscricao.ts",
       "path": "front-end/src/services/inscricao.ts",
       "type": "file",
-      "sha": "ac37add13044df1f3540f17a3fb237777345f2d9",
+      "sha": "8eab13a9146c3d7c556b6545c54133449541ab52",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2016,
+      "size": 4014,
       "is_binary": false
     },
     {
       "name": "types",
       "path": "front-end/src/types",
       "type": "directory",
-      "sha": "b33664468b2466f32b2cdee9815727875345476c",
+      "sha": "14aeb84b0589162e7fff03e2c0f2f569121b5535",
       "mode": "040000",
       "children": []
     },
@@ -1208,6 +1424,16 @@
       "mode": "100644",
       "extension": ".ts",
       "size": 992,
+      "is_binary": false
+    },
+    {
+      "name": "inscricao-ranking.ts",
+      "path": "front-end/src/types/inscricao-ranking.ts",
+      "type": "file",
+      "sha": "9fbe26942a8a65743ec248c018993305169cdd75",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 316,
       "is_binary": false
     },
     {
@@ -1242,9 +1468,19 @@
       "name": "styles",
       "path": "front-end/styles",
       "type": "directory",
-      "sha": "cb68635780360c79aba7c77ae61ae8b4e0de3d58",
+      "sha": "b91a0f090cd3d15b3784d4ae32064d63f995e311",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "botao.css",
+      "path": "front-end/styles/botao.css",
+      "type": "file",
+      "sha": "4d388a54edc1b5fd0c91f5cb8cd0cceee9e1f9bf",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 3643,
+      "is_binary": false
     },
     {
       "name": "global.css",
@@ -1297,13 +1533,33 @@
       "is_binary": false
     },
     {
+      "name": "processo-admin.css",
+      "path": "front-end/styles/processo-admin.css",
+      "type": "file",
+      "sha": "4692b1d448dae8d86430bc9fac42d53e6b4bbc0e",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 2664,
+      "is_binary": false
+    },
+    {
+      "name": "processo_admin.css",
+      "path": "front-end/styles/processo_admin.css",
+      "type": "file",
+      "sha": "9c999123165edae2ef06a5c21725084e052f654c",
+      "mode": "100644",
+      "extension": ".css",
+      "size": 1622,
+      "is_binary": false
+    },
+    {
       "name": "ranking.css",
       "path": "front-end/styles/ranking.css",
       "type": "file",
-      "sha": "fa32fe0a0a32cc5e6aa382e9b1a8875c7466eba8",
+      "sha": "09c6a08796eeba3a286aa0e59d6c75419f095645",
       "mode": "100644",
       "extension": ".css",
-      "size": 4191,
+      "size": 4216,
       "is_binary": false
     },
     {
@@ -1337,6 +1593,16 @@
       "is_binary": false
     },
     {
+      "name": "main.py",
+      "path": "main.py",
+      "type": "file",
+      "sha": "0a8ae234b5b22b1dd09add1552d7fc5f3dda39a7",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 1228,
+      "is_binary": false
+    },
+    {
       "name": "package-lock.json",
       "path": "package-lock.json",
       "type": "file",
@@ -1360,25 +1626,35 @@
       "name": "scripts",
       "path": "scripts",
       "type": "directory",
-      "sha": "e41bc9f344c58975b009150abdfc72a9d32bf0b3",
+      "sha": "4cbe7311a99a5182adebcb8e0003e92c07697521",
       "mode": "040000",
       "children": []
+    },
+    {
+      "name": "setup.bat",
+      "path": "scripts/setup.bat",
+      "type": "file",
+      "sha": "9bdbff7735684d02103e42257e0270a67e7b2898",
+      "mode": "100644",
+      "extension": ".bat",
+      "size": 6691,
+      "is_binary": false
     },
     {
       "name": "setup.sh",
       "path": "scripts/setup.sh",
       "type": "file",
-      "sha": "792b6d31f95e76ba27405812b7f97eccbcb6deea",
+      "sha": "acc86f4a1553b1fcc4ef33d0740dd266368a4cac",
       "mode": "100755",
       "extension": ".sh",
-      "size": 4823,
+      "size": 5947,
       "is_binary": false
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-24T16:47:49.832316+00:00",
+  "extracted_at": "2026-11-25T16:24:28.299138+00:00",
   "method": "rest",
-  "total_items": 142,
+  "total_items": 170,
   "repository_metadata": {
     "id": 1338352709,
     "full_name": "unb-mds/2026-2-MonitoraUnB",
@@ -1386,9 +1662,9 @@
     "created_at": "2026-08-18T11:59:00Z",
     "updated_at": "2026-11-19T03:23:06Z",
     "language": "Python",
-    "size": 927,
+    "size": 1020,
     "stars": 4,
     "forks": 0,
-    "open_issues": 2
+    "open_issues": 0
   }
 }
