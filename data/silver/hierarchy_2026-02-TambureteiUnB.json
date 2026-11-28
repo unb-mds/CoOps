@@ -2,7 +2,7 @@
   "repository": "2026-02-TambureteiUnB",
   "owner": "unb-mds",
   "branch": "main",
-  "extracted_at": "2026-11-27T15:53:36.035579+00:00",
+  "extracted_at": "2026-11-28T14:58:22.484217+00:00",
   "hierarchy": {
     "name": "root",
     "type": "directory",
@@ -104,6 +104,20 @@
         "path": ".agents/skills/tamburetei-dev/SKILL.md"
       },
       {
+        "name": "tamburetei-prevencao-regressoes",
+        "type": "directory",
+        "path": ".agents/skills/tamburetei-prevencao-regressoes",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8713,
+        "extension": ".md",
+        "path": ".agents/skills/tamburetei-prevencao-regressoes/SKILL.md"
+      },
+      {
         "name": "tamburetei-sprint",
         "type": "directory",
         "path": ".agents/skills/tamburetei-sprint",
@@ -121,7 +135,7 @@
         "name": ".env.example",
         "type": "file",
         "language": "Unknown",
-        "size": 1778,
+        "size": 1964,
         "extension": ".example",
         "path": ".env.example"
       },
@@ -150,6 +164,20 @@
         "size": 6350,
         "extension": ".md",
         "path": ".gemini/skills/tamburetei-dev/SKILL.md"
+      },
+      {
+        "name": "tamburetei-prevencao-regressoes",
+        "type": "directory",
+        "path": ".gemini/skills/tamburetei-prevencao-regressoes",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8713,
+        "extension": ".md",
+        "path": ".gemini/skills/tamburetei-prevencao-regressoes/SKILL.md"
       },
       {
         "name": ".gitattributes",
@@ -297,7 +325,7 @@
         "name": "README.md",
         "type": "file",
         "language": "Markdown",
-        "size": 28251,
+        "size": 7117,
         "extension": ".md",
         "path": "README.md"
       },
@@ -536,6 +564,14 @@
         "path": "backend/alembic/versions/022_preservar_taxas_pizza.py"
       },
       {
+        "name": "023_add_comentario_updated_at.py",
+        "type": "file",
+        "language": "Python",
+        "size": 686,
+        "extension": ".py",
+        "path": "backend/alembic/versions/023_add_comentario_updated_at.py"
+      },
+      {
         "name": "325da4c00b26_permite_reenvio_apos_recusa_e_adiciona_.py",
         "type": "file",
         "language": "Python",
@@ -597,7 +633,7 @@
         "name": "auth.py",
         "type": "file",
         "language": "Python",
-        "size": 2663,
+        "size": 5558,
         "extension": ".py",
         "path": "backend/app/api/routers/auth.py"
       },
@@ -605,7 +641,7 @@
         "name": "catalogo.py",
         "type": "file",
         "language": "Python",
-        "size": 1854,
+        "size": 1901,
         "extension": ".py",
         "path": "backend/app/api/routers/catalogo.py"
       },
@@ -613,7 +649,7 @@
         "name": "comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 4063,
+        "size": 4713,
         "extension": ".py",
         "path": "backend/app/api/routers/comentarios.py"
       },
@@ -621,7 +657,7 @@
         "name": "comunidade.py",
         "type": "file",
         "language": "Python",
-        "size": 852,
+        "size": 1266,
         "extension": ".py",
         "path": "backend/app/api/routers/comunidade.py"
       },
@@ -629,7 +665,7 @@
         "name": "cursos.py",
         "type": "file",
         "language": "Python",
-        "size": 1239,
+        "size": 1863,
         "extension": ".py",
         "path": "backend/app/api/routers/cursos.py"
       },
@@ -637,7 +673,7 @@
         "name": "dashboard.py",
         "type": "file",
         "language": "Python",
-        "size": 1398,
+        "size": 1947,
         "extension": ".py",
         "path": "backend/app/api/routers/dashboard.py"
       },
@@ -645,7 +681,7 @@
         "name": "disciplinas.py",
         "type": "file",
         "language": "Python",
-        "size": 3992,
+        "size": 4722,
         "extension": ".py",
         "path": "backend/app/api/routers/disciplinas.py"
       },
@@ -653,7 +689,7 @@
         "name": "estatisticas_consolidadas.py",
         "type": "file",
         "language": "Python",
-        "size": 1518,
+        "size": 1682,
         "extension": ".py",
         "path": "backend/app/api/routers/estatisticas_consolidadas.py"
       },
@@ -661,7 +697,7 @@
         "name": "materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 4601,
+        "size": 7682,
         "extension": ".py",
         "path": "backend/app/api/routers/materiais.py"
       },
@@ -669,7 +705,7 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 5136,
+        "size": 6836,
         "extension": ".py",
         "path": "backend/app/api/routers/moderacao.py"
       },
@@ -677,7 +713,7 @@
         "name": "perfil.py",
         "type": "file",
         "language": "Python",
-        "size": 2963,
+        "size": 4169,
         "extension": ".py",
         "path": "backend/app/api/routers/perfil.py"
       },
@@ -685,7 +721,7 @@
         "name": "professores.py",
         "type": "file",
         "language": "Python",
-        "size": 888,
+        "size": 904,
         "extension": ".py",
         "path": "backend/app/api/routers/professores.py"
       },
@@ -693,7 +729,7 @@
         "name": "relatos_bugs.py",
         "type": "file",
         "language": "Python",
-        "size": 1392,
+        "size": 1825,
         "extension": ".py",
         "path": "backend/app/api/routers/relatos_bugs.py"
       },
@@ -701,7 +737,7 @@
         "name": "turmas.py",
         "type": "file",
         "language": "Python",
-        "size": 4034,
+        "size": 4951,
         "extension": ".py",
         "path": "backend/app/api/routers/turmas.py"
       },
@@ -723,7 +759,7 @@
         "name": "comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 3694,
+        "size": 4435,
         "extension": ".py",
         "path": "backend/app/api/schemas/comentario.py"
       },
@@ -755,7 +791,7 @@
         "name": "denuncia.py",
         "type": "file",
         "language": "Python",
-        "size": 6193,
+        "size": 6227,
         "extension": ".py",
         "path": "backend/app/api/schemas/denuncia.py"
       },
@@ -787,7 +823,7 @@
         "name": "historico.py",
         "type": "file",
         "language": "Python",
-        "size": 2858,
+        "size": 2973,
         "extension": ".py",
         "path": "backend/app/api/schemas/historico.py"
       },
@@ -795,7 +831,7 @@
         "name": "material.py",
         "type": "file",
         "language": "Python",
-        "size": 2321,
+        "size": 3476,
         "extension": ".py",
         "path": "backend/app/api/schemas/material.py"
       },
@@ -835,7 +871,7 @@
         "name": "usuario.py",
         "type": "file",
         "language": "Python",
-        "size": 7239,
+        "size": 7584,
         "extension": ".py",
         "path": "backend/app/api/schemas/usuario.py"
       },
@@ -857,7 +893,7 @@
         "name": "config.py",
         "type": "file",
         "language": "Python",
-        "size": 5658,
+        "size": 6358,
         "extension": ".py",
         "path": "backend/app/core/config.py"
       },
@@ -865,15 +901,23 @@
         "name": "database.py",
         "type": "file",
         "language": "Python",
-        "size": 460,
+        "size": 572,
         "extension": ".py",
         "path": "backend/app/core/database.py"
+      },
+      {
+        "name": "rate_limit.py",
+        "type": "file",
+        "language": "Python",
+        "size": 9715,
+        "extension": ".py",
+        "path": "backend/app/core/rate_limit.py"
       },
       {
         "name": "security.py",
         "type": "file",
         "language": "Python",
-        "size": 2178,
+        "size": 3170,
         "extension": ".py",
         "path": "backend/app/core/security.py"
       },
@@ -919,7 +963,7 @@
         "name": "moderacao.py",
         "type": "file",
         "language": "Python",
-        "size": 14533,
+        "size": 14945,
         "extension": ".py",
         "path": "backend/app/domain/moderacao.py"
       },
@@ -943,7 +987,7 @@
         "name": "main.py",
         "type": "file",
         "language": "Python",
-        "size": 1829,
+        "size": 1934,
         "extension": ".py",
         "path": "backend/app/main.py"
       },
@@ -973,7 +1017,7 @@
         "name": "comentario.py",
         "type": "file",
         "language": "Python",
-        "size": 2279,
+        "size": 2343,
         "extension": ".py",
         "path": "backend/app/models/comentario.py"
       },
@@ -1403,7 +1447,7 @@
         "name": "comentario_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 4626,
+        "size": 4910,
         "extension": ".py",
         "path": "backend/app/repositories/comentario_repo.py"
       },
@@ -1419,7 +1463,7 @@
         "name": "curadoria_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 3036,
+        "size": 3549,
         "extension": ".py",
         "path": "backend/app/repositories/curadoria_repo.py"
       },
@@ -1443,7 +1487,7 @@
         "name": "denuncia_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 4853,
+        "size": 6467,
         "extension": ".py",
         "path": "backend/app/repositories/denuncia_repo.py"
       },
@@ -1451,7 +1495,7 @@
         "name": "disciplina_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 5835,
+        "size": 6120,
         "extension": ".py",
         "path": "backend/app/repositories/disciplina_repo.py"
       },
@@ -1475,7 +1519,7 @@
         "name": "material_repo.py",
         "type": "file",
         "language": "Python",
-        "size": 2112,
+        "size": 2989,
         "extension": ".py",
         "path": "backend/app/repositories/material_repo.py"
       },
@@ -1561,7 +1605,7 @@
         "name": "auth_service.py",
         "type": "file",
         "language": "Python",
-        "size": 6169,
+        "size": 6523,
         "extension": ".py",
         "path": "backend/app/services/auth_service.py"
       },
@@ -1569,7 +1613,7 @@
         "name": "comentario_service.py",
         "type": "file",
         "language": "Python",
-        "size": 8420,
+        "size": 11097,
         "extension": ".py",
         "path": "backend/app/services/comentario_service.py"
       },
@@ -1577,7 +1621,7 @@
         "name": "curadoria_service.py",
         "type": "file",
         "language": "Python",
-        "size": 5818,
+        "size": 8660,
         "extension": ".py",
         "path": "backend/app/services/curadoria_service.py"
       },
@@ -1601,7 +1645,7 @@
         "name": "denuncia_service.py",
         "type": "file",
         "language": "Python",
-        "size": 11046,
+        "size": 13117,
         "extension": ".py",
         "path": "backend/app/services/denuncia_service.py"
       },
@@ -1609,7 +1653,7 @@
         "name": "disciplina_service.py",
         "type": "file",
         "language": "Python",
-        "size": 5770,
+        "size": 5867,
         "extension": ".py",
         "path": "backend/app/services/disciplina_service.py"
       },
@@ -1657,7 +1701,7 @@
         "name": "material_service.py",
         "type": "file",
         "language": "Python",
-        "size": 9411,
+        "size": 17471,
         "extension": ".py",
         "path": "backend/app/services/material_service.py"
       },
@@ -1665,7 +1709,7 @@
         "name": "moderacao_ia_service.py",
         "type": "file",
         "language": "Python",
-        "size": 11509,
+        "size": 11504,
         "extension": ".py",
         "path": "backend/app/services/moderacao_ia_service.py"
       },
@@ -1765,7 +1809,7 @@
         "name": "conftest.py",
         "type": "file",
         "language": "Python",
-        "size": 5084,
+        "size": 5217,
         "extension": ".py",
         "path": "backend/tests/conftest.py"
       },
@@ -1823,7 +1867,7 @@
         "name": "test_auth.py",
         "type": "file",
         "language": "Python",
-        "size": 7303,
+        "size": 8833,
         "extension": ".py",
         "path": "backend/tests/integration/test_auth.py"
       },
@@ -1839,7 +1883,7 @@
         "name": "test_conteudos_arquivos.py",
         "type": "file",
         "language": "Python",
-        "size": 5018,
+        "size": 5035,
         "extension": ".py",
         "path": "backend/tests/integration/test_conteudos_arquivos.py"
       },
@@ -1847,7 +1891,7 @@
         "name": "test_curadoria.py",
         "type": "file",
         "language": "Python",
-        "size": 13052,
+        "size": 14944,
         "extension": ".py",
         "path": "backend/tests/integration/test_curadoria.py"
       },
@@ -1855,7 +1899,7 @@
         "name": "test_denuncias.py",
         "type": "file",
         "language": "Python",
-        "size": 11100,
+        "size": 15153,
         "extension": ".py",
         "path": "backend/tests/integration/test_denuncias.py"
       },
@@ -1903,7 +1947,7 @@
         "name": "test_materiais.py",
         "type": "file",
         "language": "Python",
-        "size": 18618,
+        "size": 23567,
         "extension": ".py",
         "path": "backend/tests/integration/test_materiais.py"
       },
@@ -1927,7 +1971,7 @@
         "name": "test_migracao_material.py",
         "type": "file",
         "language": "Python",
-        "size": 6192,
+        "size": 6305,
         "extension": ".py",
         "path": "backend/tests/integration/test_migracao_material.py"
       },
@@ -1935,7 +1979,7 @@
         "name": "test_moderacao_ia.py",
         "type": "file",
         "language": "Python",
-        "size": 12284,
+        "size": 13252,
         "extension": ".py",
         "path": "backend/tests/integration/test_moderacao_ia.py"
       },
@@ -1954,6 +1998,14 @@
         "size": 8375,
         "extension": ".py",
         "path": "backend/tests/integration/test_quorum_doacoes.py"
+      },
+      {
+        "name": "test_rate_limit_security.py",
+        "type": "file",
+        "language": "Python",
+        "size": 6375,
+        "extension": ".py",
+        "path": "backend/tests/integration/test_rate_limit_security.py"
       },
       {
         "name": "test_relato_bug.py",
@@ -2005,7 +2057,7 @@
         "name": "test_comentarios.py",
         "type": "file",
         "language": "Python",
-        "size": 10837,
+        "size": 15602,
         "extension": ".py",
         "path": "backend/tests/test_comentarios.py"
       },
@@ -2043,7 +2095,7 @@
         "name": "test_comentario_vinculo.py",
         "type": "file",
         "language": "Python",
-        "size": 2515,
+        "size": 2747,
         "extension": ".py",
         "path": "backend/tests/unit/test_comentario_vinculo.py"
       },
@@ -2171,7 +2223,7 @@
         "name": "test_moderacao_domain.py",
         "type": "file",
         "language": "Python",
-        "size": 14437,
+        "size": 14902,
         "extension": ".py",
         "path": "backend/tests/unit/test_moderacao_domain.py"
       },
@@ -2243,7 +2295,7 @@
         "name": "docker-compose.prod.yml",
         "type": "file",
         "language": "YAML",
-        "size": 2707,
+        "size": 2655,
         "extension": ".yml",
         "path": "docker-compose.prod.yml"
       },
@@ -2595,7 +2647,7 @@
         "name": "index.md",
         "type": "file",
         "language": "Markdown",
-        "size": 6858,
+        "size": 6911,
         "extension": ".md",
         "path": "docs/index.md"
       },
@@ -2901,7 +2953,7 @@
         "name": "ComentariosFrontend.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 35888,
+        "size": 49299,
         "extension": ".tsx",
         "path": "frontend/components/ComentariosFrontend.tsx"
       },
@@ -2917,7 +2969,7 @@
         "name": "MateriaisApoio.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 25751,
+        "size": 39183,
         "extension": ".tsx",
         "path": "frontend/components/MateriaisApoio.tsx"
       },
@@ -2963,7 +3015,7 @@
         "name": "package-lock.json",
         "type": "file",
         "language": "JSON",
-        "size": 260631,
+        "size": 262075,
         "extension": ".json",
         "path": "frontend/package-lock.json"
       },
@@ -3063,7 +3115,7 @@
         "name": "route.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2727,
+        "size": 3330,
         "extension": ".ts",
         "path": "frontend/src/app/api/auth/esqueci-senha/route.ts"
       },
@@ -3091,7 +3143,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 16695,
+        "size": 16688,
         "extension": ".tsx",
         "path": "frontend/src/app/cadastro/page.tsx"
       },
@@ -3111,7 +3163,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 38902,
+        "size": 39805,
         "extension": ".tsx",
         "path": "frontend/src/app/cursos/[slug]/page.tsx"
       },
@@ -3139,7 +3191,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 63988,
+        "size": 63981,
         "extension": ".tsx",
         "path": "frontend/src/app/disciplinas/[slug]/page.tsx"
       },
@@ -3235,7 +3287,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 31429,
+        "size": 42501,
         "extension": ".tsx",
         "path": "frontend/src/app/moderacao/page.tsx"
       },
@@ -3257,7 +3309,7 @@
         "name": "page.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 16355,
+        "size": 16608,
         "extension": ".tsx",
         "path": "frontend/src/app/perfil/page.tsx"
       },
@@ -3341,7 +3393,7 @@
         "name": "ClassCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8985,
+        "size": 8978,
         "extension": ".tsx",
         "path": "frontend/src/components/ClassCard.tsx"
       },
@@ -3381,7 +3433,7 @@
         "name": "CommentModerationCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3946,
+        "size": 3567,
         "extension": ".tsx",
         "path": "frontend/src/components/CommentModerationCard.tsx"
       },
@@ -3405,7 +3457,7 @@
         "name": "DenunciaModerationCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4980,
+        "size": 10070,
         "extension": ".tsx",
         "path": "frontend/src/components/DenunciaModerationCard.tsx"
       },
@@ -3413,7 +3465,7 @@
         "name": "DificuldadesPanel.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 25063,
+        "size": 42913,
         "extension": ".tsx",
         "path": "frontend/src/components/DificuldadesPanel.tsx"
       },
@@ -3424,6 +3476,14 @@
         "size": 10735,
         "extension": ".tsx",
         "path": "frontend/src/components/DisciplineCard.tsx"
+      },
+      {
+        "name": "EditMaterialModal.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 7658,
+        "extension": ".tsx",
+        "path": "frontend/src/components/EditMaterialModal.tsx"
       },
       {
         "name": "Footer.tsx",
@@ -3477,7 +3537,7 @@
         "name": "MaterialModal.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 33393,
+        "size": 33379,
         "extension": ".tsx",
         "path": "frontend/src/components/MaterialModal.tsx"
       },
@@ -3485,7 +3545,7 @@
         "name": "MaterialPreviewModal.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 8462,
+        "size": 8663,
         "extension": ".tsx",
         "path": "frontend/src/components/MaterialPreviewModal.tsx"
       },
@@ -3493,15 +3553,23 @@
         "name": "MinhaGraduacaoSection.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 24814,
+        "size": 27479,
         "extension": ".tsx",
         "path": "frontend/src/components/MinhaGraduacaoSection.tsx"
+      },
+      {
+        "name": "MinhasContribuicoesSection.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 12865,
+        "extension": ".tsx",
+        "path": "frontend/src/components/MinhasContribuicoesSection.tsx"
       },
       {
         "name": "ModerationActionModal.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6304,
+        "size": 6335,
         "extension": ".tsx",
         "path": "frontend/src/components/ModerationActionModal.tsx"
       },
@@ -3509,7 +3577,7 @@
         "name": "ModerationCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6655,
+        "size": 9335,
         "extension": ".tsx",
         "path": "frontend/src/components/ModerationCard.tsx"
       },
@@ -3525,7 +3593,7 @@
         "name": "OpenDataExportBar.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4973,
+        "size": 4962,
         "extension": ".tsx",
         "path": "frontend/src/components/OpenDataExportBar.tsx"
       },
@@ -3549,7 +3617,7 @@
         "name": "PizzaModerationCard.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 13469,
+        "size": 13909,
         "extension": ".tsx",
         "path": "frontend/src/components/PizzaModerationCard.tsx"
       },
@@ -3562,10 +3630,18 @@
         "path": "frontend/src/components/PreRequisitosSection.tsx"
       },
       {
+        "name": "ReplaceMaterialFileModal.tsx",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 8169,
+        "extension": ".tsx",
+        "path": "frontend/src/components/ReplaceMaterialFileModal.tsx"
+      },
+      {
         "name": "SecurityTabContent.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3762,
+        "size": 7369,
         "extension": ".tsx",
         "path": "frontend/src/components/SecurityTabContent.tsx"
       },
@@ -3635,7 +3711,7 @@
         "name": "ClassCard.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 6797,
+        "size": 6790,
         "extension": ".tsx",
         "path": "frontend/src/components/__tests__/ClassCard.test.tsx"
       },
@@ -3691,7 +3767,7 @@
         "name": "MateriaisEDificuldadesAuth.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1893,
+        "size": 2632,
         "extension": ".ts",
         "path": "frontend/src/components/__tests__/MateriaisEDificuldadesAuth.test.ts"
       },
@@ -3699,7 +3775,7 @@
         "name": "MinhaGraduacaoSection.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 4163,
+        "size": 7742,
         "extension": ".tsx",
         "path": "frontend/src/components/__tests__/MinhaGraduacaoSection.test.tsx"
       },
@@ -3723,7 +3799,7 @@
         "name": "UIFlows.test.tsx",
         "type": "file",
         "language": "TypeScript",
-        "size": 3734,
+        "size": 9864,
         "extension": ".tsx",
         "path": "frontend/src/components/__tests__/UIFlows.test.tsx"
       },
@@ -3753,7 +3829,7 @@
         "name": "curriculos-cursos.json",
         "type": "file",
         "language": "JSON",
-        "size": 84212,
+        "size": 89867,
         "extension": ".json",
         "path": "frontend/src/data/curriculos-cursos.json"
       },
@@ -4031,9 +4107,17 @@
         "name": "useDisciplineApprovalMetrics.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2272,
+        "size": 2812,
         "extension": ".ts",
         "path": "frontend/src/hooks/useDisciplineApprovalMetrics.ts"
+      },
+      {
+        "name": "proxy.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1228,
+        "extension": ".ts",
+        "path": "frontend/src/proxy.ts"
       },
       {
         "name": "services",
@@ -4051,7 +4135,7 @@
         "name": "authService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8305,
+        "size": 9672,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/authService.test.ts"
       },
@@ -4059,7 +4143,7 @@
         "name": "difficultyService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6609,
+        "size": 6638,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/difficultyService.test.ts"
       },
@@ -4078,6 +4162,14 @@
         "size": 4057,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/historicoService.test.ts"
+      },
+      {
+        "name": "httpClient.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1335,
+        "extension": ".ts",
+        "path": "frontend/src/services/__tests__/httpClient.test.ts"
       },
       {
         "name": "materialDownload.test.ts",
@@ -4099,7 +4191,7 @@
         "name": "materialService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6768,
+        "size": 9035,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/materialService.test.ts"
       },
@@ -4107,7 +4199,7 @@
         "name": "moderacaoService.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 15141,
+        "size": 19699,
         "extension": ".ts",
         "path": "frontend/src/services/__tests__/moderacaoService.test.ts"
       },
@@ -4147,7 +4239,7 @@
         "name": "authService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 6131,
+        "size": 7333,
         "extension": ".ts",
         "path": "frontend/src/services/authService.ts"
       },
@@ -4163,7 +4255,7 @@
         "name": "difficultyService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 8611,
+        "size": 8069,
         "extension": ".ts",
         "path": "frontend/src/services/difficultyService.ts"
       },
@@ -4195,7 +4287,7 @@
         "name": "historicoService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3959,
+        "size": 4641,
         "extension": ".ts",
         "path": "frontend/src/services/historicoService.ts"
       },
@@ -4203,7 +4295,7 @@
         "name": "httpClient.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 3641,
+        "size": 4162,
         "extension": ".ts",
         "path": "frontend/src/services/httpClient.ts"
       },
@@ -4219,7 +4311,7 @@
         "name": "materialService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 7196,
+        "size": 8500,
         "extension": ".ts",
         "path": "frontend/src/services/materialService.ts"
       },
@@ -4227,7 +4319,7 @@
         "name": "moderacaoService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 12176,
+        "size": 14321,
         "extension": ".ts",
         "path": "frontend/src/services/moderacaoService.ts"
       },
@@ -4235,7 +4327,7 @@
         "name": "openDataService.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 23258,
+        "size": 23234,
         "extension": ".ts",
         "path": "frontend/src/services/openDataService.ts"
       },
@@ -4303,7 +4395,7 @@
         "name": "curso.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1815,
+        "size": 2197,
         "extension": ".ts",
         "path": "frontend/src/types/curso.ts"
       },
@@ -4311,7 +4403,7 @@
         "name": "dificuldade.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 12006,
+        "size": 12204,
         "extension": ".ts",
         "path": "frontend/src/types/dificuldade.ts"
       },
@@ -4335,7 +4427,7 @@
         "name": "material.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 1518,
+        "size": 2057,
         "extension": ".ts",
         "path": "frontend/src/types/material.ts"
       },
@@ -4343,7 +4435,7 @@
         "name": "moderacao.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 4783,
+        "size": 4891,
         "extension": ".ts",
         "path": "frontend/src/types/moderacao.ts"
       },
@@ -4427,7 +4519,7 @@
         "name": "courseCurriculum.test.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 2503,
+        "size": 4858,
         "extension": ".ts",
         "path": "frontend/src/utils/__tests__/courseCurriculum.test.ts"
       },
@@ -4552,6 +4644,14 @@
         "path": "frontend/src/utils/__tests__/search.test.ts"
       },
       {
+        "name": "serverRateLimit.test.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 1936,
+        "extension": ".ts",
+        "path": "frontend/src/utils/__tests__/serverRateLimit.test.ts"
+      },
+      {
         "name": "academicMetrics.ts",
         "type": "file",
         "language": "TypeScript",
@@ -4595,7 +4695,7 @@
         "name": "courseCurriculum.ts",
         "type": "file",
         "language": "TypeScript",
-        "size": 18521,
+        "size": 22322,
         "extension": ".ts",
         "path": "frontend/src/utils/courseCurriculum.ts"
       },
@@ -4688,6 +4788,14 @@
         "path": "frontend/src/utils/search.ts"
       },
       {
+        "name": "serverRateLimit.ts",
+        "type": "file",
+        "language": "TypeScript",
+        "size": 2915,
+        "extension": ".ts",
+        "path": "frontend/src/utils/serverRateLimit.ts"
+      },
+      {
         "name": "tsconfig.json",
         "type": "file",
         "language": "JSON",
@@ -4707,7 +4815,7 @@
         "name": "mkdocs.yml",
         "type": "file",
         "language": "YAML",
-        "size": 7521,
+        "size": 6758,
         "extension": ".yml",
         "path": "mkdocs.yml"
       },
@@ -4732,6 +4840,14 @@
         "size": 12902,
         "extension": ".py",
         "path": "scripts/extract_pas.py"
+      },
+      {
+        "name": "nginx-rate-limit.conf",
+        "type": "file",
+        "language": "Config",
+        "size": 2321,
+        "extension": ".conf",
+        "path": "scripts/nginx-rate-limit.conf"
       },
       {
         "name": "pas-sources.json",
@@ -4786,6 +4902,20 @@
         "path": "skills/tamburetei-dev/SKILL.md"
       },
       {
+        "name": "tamburetei-prevencao-regressoes",
+        "type": "directory",
+        "path": "skills/tamburetei-prevencao-regressoes",
+        "children": []
+      },
+      {
+        "name": "SKILL.md",
+        "type": "file",
+        "language": "Markdown",
+        "size": 8713,
+        "extension": ".md",
+        "path": "skills/tamburetei-prevencao-regressoes/SKILL.md"
+      },
+      {
         "name": "tamburetei-tdd",
         "type": "directory",
         "path": "skills/tamburetei-tdd",
@@ -4824,7 +4954,7 @@
     ]
   },
   "_metadata": {
-    "extracted_at": "2026-11-27T15:54:42.063296+00:00",
+    "extracted_at": "2026-11-28T14:59:36.862014+00:00",
     "file_path": "data/silver/hierarchy_2026-02-TambureteiUnB.json"
   }
 }
