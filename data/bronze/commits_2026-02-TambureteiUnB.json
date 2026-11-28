@@ -1,10 +1,613 @@
 [
   {
     "_metadata": {
-      "extracted_at": "2026-11-27T15:47:52.149879+00:00",
+      "extracted_at": "2026-11-28T14:54:26.302726+00:00",
       "file_path": "data/bronze/commits_2026-02-TambureteiUnB.json",
-      "record_count": 732
+      "record_count": 756
     }
+  },
+  {
+    "sha": "47ae9dff2931235f57d64ee7c87e081293ad2321",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T22:19:28Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-27T22:19:28Z"
+      },
+      "message": "Merge pull request #327 from unb-mds/develop\n\nrelease(main): consolidacao de seguranca, moderacao, comunidade, perfil e dependencias"
+    },
+    "parents": [
+      "eb8eb91a8c44c9062f5157c6fcae3e45d44b4c0d",
+      "5fe5313f4a87da128b1bb6b51304c868acc2105e"
+    ],
+    "additions": 7346,
+    "deletions": 1431,
+    "total_changes": 8777,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "5fe5313f4a87da128b1bb6b51304c868acc2105e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T21:52:17Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T21:52:17Z"
+      },
+      "message": "fix(ux): remove siglas internas RN e RF dos textos exibidos ao usuario final"
+    },
+    "parents": [
+      "4e85431712f8cc10b8181f47dfec5565214f5b42"
+    ],
+    "additions": 20,
+    "deletions": 20,
+    "total_changes": 40,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "4e85431712f8cc10b8181f47dfec5565214f5b42",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T21:40:09Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T21:40:09Z"
+      },
+      "message": "fix(performance): elimina flood N+1 de metricas no frontend e calibra limites de leitura publica"
+    },
+    "parents": [
+      "db6d6955514d6d93605f38611731443f142bd6d6"
+    ],
+    "additions": 67,
+    "deletions": 40,
+    "total_changes": 107,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "db6d6955514d6d93605f38611731443f142bd6d6",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T21:40:09Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T21:40:09Z"
+      },
+      "message": "chore(frontend): atualiza Next.js para 16.4.6 e zera vulnerabilidades do npm audit"
+    },
+    "parents": [
+      "86a3dc99471e4562046d73b699e7f3d476053d53"
+    ],
+    "additions": 334,
+    "deletions": 260,
+    "total_changes": 594,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "86a3dc99471e4562046d73b699e7f3d476053d53",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T02:04:28Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T02:04:28Z"
+      },
+      "message": "test(backend): alinha testes de moderacao e vinculo de comentarios ao fluxo sem triagem LLM"
+    },
+    "parents": [
+      "ce012a5d9329d0c5b3c5cf5c95830b3055fb8720"
+    ],
+    "additions": 38,
+    "deletions": 5,
+    "total_changes": 43,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "ce012a5d9329d0c5b3c5cf5c95830b3055fb8720",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:57:19Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-27T01:57:19Z"
+      },
+      "message": "Merge pull request #326 from unb-mds/docs/readme-conciso-e-guia-pratico\n\ndocs(readme): reestruturar README para formato conciso e pratico no dia a dia"
+    },
+    "parents": [
+      "be969b207fbd63ad3b433d4d251b25e67dc553c1",
+      "1fd77aab89b07f37760837a58cdf7512c25cfe56"
+    ],
+    "additions": 95,
+    "deletions": 393,
+    "total_changes": 488,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "be969b207fbd63ad3b433d4d251b25e67dc553c1",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:57:15Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "GitHub",
+        "date": "2026-11-27T01:57:15Z"
+      },
+      "message": "Merge pull request #316 from unb-mds/feat/315-suporte-grade-todos-cursos\n\nfeat(perfil): desvincula grade de software para outros cursos e conecta ao SIGAA oficial"
+    },
+    "parents": [
+      "3df5da116b69070bb6db5b79b19193c61123479d",
+      "cdb0cd9c5b0299e8ed94733426566dc74b44418b"
+    ],
+    "additions": 674,
+    "deletions": 148,
+    "total_changes": 822,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "1fd77aab89b07f37760837a58cdf7512c25cfe56",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:56:45Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:56:45Z"
+      },
+      "message": "docs(readme): corrige ancora quebrada de regras de negocio e padroniza acentuacao"
+    },
+    "parents": [
+      "9a9e5c296082255b3cfc5892517913738381d25f"
+    ],
+    "additions": 37,
+    "deletions": 37,
+    "total_changes": 74,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "cdb0cd9c5b0299e8ed94733426566dc74b44418b",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:55:41Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:55:41Z"
+      },
+      "message": "fix(curriculum): evita colisao de slugs entre engenharias/computacao e oculta filtros sem matriz"
+    },
+    "parents": [
+      "ed3864aa7c524318ffe6f8108e45aad585401c37"
+    ],
+    "additions": 132,
+    "deletions": 85,
+    "total_changes": 217,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "3df5da116b69070bb6db5b79b19193c61123479d",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:48:27Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:48:27Z"
+      },
+      "message": "feat(seguranca): adiciona rate limiting com memoria limitada no Next.js e tratamento de HTTP 429"
+    },
+    "parents": [
+      "7e5f7586f96a50dc0624d213e184ddc01cd35eac"
+    ],
+    "additions": 308,
+    "deletions": 37,
+    "total_changes": 345,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "7e5f7586f96a50dc0624d213e184ddc01cd35eac",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:48:27Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:48:27Z"
+      },
+      "message": "feat(seguranca): adiciona rate limiting global, limites de payload e hardening de backend e infra"
+    },
+    "parents": [
+      "a35a05a3c8ff2397ce6c8c414f2ee21b29ce6f0e"
+    ],
+    "additions": 976,
+    "deletions": 67,
+    "total_changes": 1043,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "a35a05a3c8ff2397ce6c8c414f2ee21b29ce6f0e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:48:26Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-27T01:48:26Z"
+      },
+      "message": "feat(perfil): permite alterar nome de exibicao em seguranca e senha"
+    },
+    "parents": [
+      "fcb89c3de072e871cb4e815789cebd768d56ecbc"
+    ],
+    "additions": 312,
+    "deletions": 10,
+    "total_changes": 322,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "fcb89c3de072e871cb4e815789cebd768d56ecbc",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:50Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:50Z"
+      },
+      "message": "feat(comunidade): adiciona edicao, exclusao, indicador de edicao, denuncia em dificuldades e minhas contribuicoes"
+    },
+    "parents": [
+      "970ef176495c51fbdd5b470b47d4062b70ac95a3"
+    ],
+    "additions": 2515,
+    "deletions": 311,
+    "total_changes": 2826,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "970ef176495c51fbdd5b470b47d4062b70ac95a3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:50Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:50Z"
+      },
+      "message": "feat(moderacao): remove triagem por LLM, adiciona denuncias de materiais, grupos por limiar e substituicao de arquivos"
+    },
+    "parents": [
+      "d0d875b11fddd92701353056367d2638ea4c0c1c"
+    ],
+    "additions": 1353,
+    "deletions": 116,
+    "total_changes": 1469,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d0d875b11fddd92701353056367d2638ea4c0c1c",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:49Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:49Z"
+      },
+      "message": "fix(frontend): corrige tratamento de HTTP 204, erros nao-JSON e fluxo de dificuldades e historico"
+    },
+    "parents": [
+      "fde57429684ca10d920f34281e932f981bb22cd5"
+    ],
+    "additions": 185,
+    "deletions": 123,
+    "total_changes": 308,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "fde57429684ca10d920f34281e932f981bb22cd5",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:49Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T22:38:49Z"
+      },
+      "message": "docs(skills): adiciona skill de prevencao de regressoes do projeto"
+    },
+    "parents": [
+      "e9d6d44597a61081ea4cdaf613140465512bd402"
+    ],
+    "additions": 246,
+    "deletions": 0,
+    "total_changes": 246,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "e9d6d44597a61081ea4cdaf613140465512bd402",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T20:32:56Z",
+        "login": "LuisGuilherme67",
+        "id": 119859574,
+        "author_email_hash": "29ea5eff6238327b8ad9aacabb898576b06874eb30942a40b3bc906c0de8c609"
+      },
+      "committer": {
+        "name": "Luis Guilherme",
+        "date": "2026-11-26T20:32:56Z"
+      },
+      "message": "feat(moderacao): adiciona polling de status em materiais, parent_id em respostas e ajuste LGPD"
+    },
+    "parents": [
+      "992fa8c69af2032e21ba6e6109406162eff110cd"
+    ],
+    "additions": 335,
+    "deletions": 13,
+    "total_changes": 348,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "9a9e5c296082255b3cfc5892517913738381d25f",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T19:09:58Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T19:09:58Z"
+      },
+      "message": "docs(mkdocs): simplifica navegacao e organiza guias praticos do dia a dia"
+    },
+    "parents": [
+      "c8c9f2de8c34cb823af7620c4a0d7aa39eebf875"
+    ],
+    "additions": 38,
+    "deletions": 51,
+    "total_changes": 89,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "c8c9f2de8c34cb823af7620c4a0d7aa39eebf875",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T19:05:16Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T19:05:16Z"
+      },
+      "message": "docs(readme): reestrutura readme para formato conciso e pratico para desenvolvedores"
+    },
+    "parents": [
+      "992fa8c69af2032e21ba6e6109406162eff110cd"
+    ],
+    "additions": 60,
+    "deletions": 345,
+    "total_changes": 405,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "ed3864aa7c524318ffe6f8108e45aad585401c37",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:51:32Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:51:32Z"
+      },
+      "message": "feat(curriculum): adiciona mapeamento direto para ciencias contabeis diurno e noturno"
+    },
+    "parents": [
+      "32920f381a37a40c81b28af300db9418da8dde01"
+    ],
+    "additions": 11,
+    "deletions": 0,
+    "total_changes": 11,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "32920f381a37a40c81b28af300db9418da8dde01",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:44:36Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:44:36Z"
+      },
+      "message": "feat(perfil): integra resolucao de curso dinamica e link oficial do SIGAA na grade curricular"
+    },
+    "parents": [
+      "541fe8473f0fcfb1a218d32632ee702e24e0a03e"
+    ],
+    "additions": 279,
+    "deletions": 124,
+    "total_changes": 403,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "541fe8473f0fcfb1a218d32632ee702e24e0a03e",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:37:04Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:37:04Z"
+      },
+      "message": "test(curriculum): adiciona testes unitarios para resolveCourseSlug"
+    },
+    "parents": [
+      "d99d2719eee9d0e2b7f7856d3eaf682628bec9a3"
+    ],
+    "additions": 19,
+    "deletions": 0,
+    "total_changes": 19,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "d99d2719eee9d0e2b7f7856d3eaf682628bec9a3",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:36:19Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:36:19Z"
+      },
+      "message": "feat(services): implementa resolucao de slugs para todos os cursos e adiciona matriz de economia"
+    },
+    "parents": [
+      "4dc98b2eb2d040c38864d8ce96ce16df236c2d92"
+    ],
+    "additions": 275,
+    "deletions": 0,
+    "total_changes": 275,
+    "repo_name": "2026-02-TambureteiUnB"
+  },
+  {
+    "sha": "4dc98b2eb2d040c38864d8ce96ce16df236c2d92",
+    "html_url": null,
+    "commit": {
+      "author": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:33:46Z",
+        "login": "thamiresellensa",
+        "id": 202857974,
+        "author_email_hash": "d8410fee4700d3f82c006f413b3e45424839ce67330ff6b1d1b50c59856d7815"
+      },
+      "committer": {
+        "name": "Thamires Ellen",
+        "date": "2026-11-26T18:33:46Z"
+      },
+      "message": "feat(types): adiciona MatrizCurricularItem e CurriculoCursoInfo em types curso"
+    },
+    "parents": [
+      "992fa8c69af2032e21ba6e6109406162eff110cd"
+    ],
+    "additions": 19,
+    "deletions": 0,
+    "total_changes": 19,
+    "repo_name": "2026-02-TambureteiUnB"
   },
   {
     "sha": "eb8eb91a8c44c9062f5157c6fcae3e45d44b4c0d",

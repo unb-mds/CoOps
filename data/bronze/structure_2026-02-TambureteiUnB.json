@@ -2,13 +2,13 @@
   "owner": "unb-mds",
   "repository": "2026-02-TambureteiUnB",
   "branch": "main",
-  "sha": "eb8eb91a8c44c9062f5157c6fcae3e45d44b4c0d",
+  "sha": "47ae9dff2931235f57d64ee7c87e081293ad2321",
   "tree": [
     {
       "name": ".agents",
       "path": ".agents",
       "type": "directory",
-      "sha": "452519481f73620d69f90b95f1d7f1bb0c983e85",
+      "sha": "dac5281944fc33564cb058117b6ea8b1ac2a1f61",
       "mode": "040000",
       "children": []
     },
@@ -16,7 +16,7 @@
       "name": "skills",
       "path": ".agents/skills",
       "type": "directory",
-      "sha": "cf01a950cfc7c897d23b970d5a38503c50480c8c",
+      "sha": "b6a4af269ea1d653883128519ca4616a10e625c1",
       "mode": "040000",
       "children": []
     },
@@ -129,6 +129,24 @@
       "is_binary": false
     },
     {
+      "name": "tamburetei-prevencao-regressoes",
+      "path": ".agents/skills/tamburetei-prevencao-regressoes",
+      "type": "directory",
+      "sha": "b0a87eb03381ccc9ab4b7e609d77510cee7277a5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".agents/skills/tamburetei-prevencao-regressoes/SKILL.md",
+      "type": "file",
+      "sha": "bb65571fedab0450630c94344d8b32c6354b678b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8713,
+      "is_binary": false
+    },
+    {
       "name": "tamburetei-sprint",
       "path": ".agents/skills/tamburetei-sprint",
       "type": "directory",
@@ -150,17 +168,17 @@
       "name": ".env.example",
       "path": ".env.example",
       "type": "file",
-      "sha": "f81ebca2cd070f0d054362b706adedd5e23d205e",
+      "sha": "2cc46694affbb9a8469aea21deef7b0503147cbc",
       "mode": "100644",
       "extension": ".example",
-      "size": 1778,
+      "size": 1964,
       "is_binary": false
     },
     {
       "name": ".gemini",
       "path": ".gemini",
       "type": "directory",
-      "sha": "04fd9a86ecd83b1beab6bc062dfc3e00099bbaa7",
+      "sha": "fa8e885d7d0163756cf25b74ee17bb97163b5eac",
       "mode": "040000",
       "children": []
     },
@@ -168,7 +186,7 @@
       "name": "skills",
       "path": ".gemini/skills",
       "type": "directory",
-      "sha": "b3bbf50d65172ad556561eccb2a01eaf428e01b1",
+      "sha": "2021d814eba196b134f3e786dc1665c129cd4074",
       "mode": "040000",
       "children": []
     },
@@ -188,6 +206,24 @@
       "mode": "100644",
       "extension": ".md",
       "size": 6350,
+      "is_binary": false
+    },
+    {
+      "name": "tamburetei-prevencao-regressoes",
+      "path": ".gemini/skills/tamburetei-prevencao-regressoes",
+      "type": "directory",
+      "sha": "b0a87eb03381ccc9ab4b7e609d77510cee7277a5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": ".gemini/skills/tamburetei-prevencao-regressoes/SKILL.md",
+      "type": "file",
+      "sha": "bb65571fedab0450630c94344d8b32c6354b678b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8713,
       "is_binary": false
     },
     {
@@ -374,10 +410,10 @@
       "name": "README.md",
       "path": "README.md",
       "type": "file",
-      "sha": "9c453e914a71a7fb263ba29cb0bebd3b467b6dd2",
+      "sha": "e6a373e9e2f8ec7f6324d0fdfff2ec624948031c",
       "mode": "100644",
       "extension": ".md",
-      "size": 28251,
+      "size": 7117,
       "is_binary": false
     },
     {
@@ -394,7 +430,7 @@
       "name": "backend",
       "path": "backend",
       "type": "directory",
-      "sha": "22b9e9d55ba6cc295e2bd623b14d0419870caa3f",
+      "sha": "90f05b9b30e8934c10fdd570212f6de4e4149037",
       "mode": "040000",
       "children": []
     },
@@ -422,7 +458,7 @@
       "name": "alembic",
       "path": "backend/alembic",
       "type": "directory",
-      "sha": "3018e31fa1207f2208063496286064fcca40bb53",
+      "sha": "2ddbab754858d3b0f4e6db7f315c16ece5eb3b16",
       "mode": "040000",
       "children": []
     },
@@ -450,7 +486,7 @@
       "name": "versions",
       "path": "backend/alembic/versions",
       "type": "directory",
-      "sha": "586934db09bac1c46cbb360ec1273440450168ae",
+      "sha": "d98b5c3fcec3827ff626e28871796992eee123bf",
       "mode": "040000",
       "children": []
     },
@@ -675,6 +711,16 @@
       "is_binary": false
     },
     {
+      "name": "023_add_comentario_updated_at.py",
+      "path": "backend/alembic/versions/023_add_comentario_updated_at.py",
+      "type": "file",
+      "sha": "ce994076490d859c52e0c4bae47d83c93f18754d",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 686,
+      "is_binary": false
+    },
+    {
       "name": "325da4c00b26_permite_reenvio_apos_recusa_e_adiciona_.py",
       "path": "backend/alembic/versions/325da4c00b26_permite_reenvio_apos_recusa_e_adiciona_.py",
       "type": "file",
@@ -688,7 +734,7 @@
       "name": "app",
       "path": "backend/app",
       "type": "directory",
-      "sha": "ea7421199ef91977ef35253482037c2fba77b80d",
+      "sha": "4d0a7a4a09ef3b1a4fd6fd4f224d0f8c91ed8c07",
       "mode": "040000",
       "children": []
     },
@@ -706,7 +752,7 @@
       "name": "api",
       "path": "backend/app/api",
       "type": "directory",
-      "sha": "bdec58acf85686a83e97814d66103fc6aa564930",
+      "sha": "c026889f0e0c7ad7cdd94b346dbd7f857a7532e1",
       "mode": "040000",
       "children": []
     },
@@ -734,7 +780,7 @@
       "name": "routers",
       "path": "backend/app/api/routers",
       "type": "directory",
-      "sha": "2fce3b22483eda5fc286d12548225aa0bae6d14d",
+      "sha": "ab2c4df803711bdb302e8ccae1199cb4cfe377c1",
       "mode": "040000",
       "children": []
     },
@@ -752,147 +798,147 @@
       "name": "auth.py",
       "path": "backend/app/api/routers/auth.py",
       "type": "file",
-      "sha": "31439b539ef08420fe5163986fc80b65ade1b910",
+      "sha": "b87c43e433682d65790af522394ab0fddc105004",
       "mode": "100644",
       "extension": ".py",
-      "size": 2663,
+      "size": 5558,
       "is_binary": false
     },
     {
       "name": "catalogo.py",
       "path": "backend/app/api/routers/catalogo.py",
       "type": "file",
-      "sha": "00cece0c47e1ec92abb2b8fc368d10621eae859f",
+      "sha": "fa0272763a41bcc25075f8f37769a421897ee086",
       "mode": "100644",
       "extension": ".py",
-      "size": 1854,
+      "size": 1901,
       "is_binary": false
     },
     {
       "name": "comentarios.py",
       "path": "backend/app/api/routers/comentarios.py",
       "type": "file",
-      "sha": "8622c1d400dfe12debbb1d8875266e6f4bea8df7",
+      "sha": "6045ac93c19b63c5bf2bcc7576e70ce5e7eab49b",
       "mode": "100644",
       "extension": ".py",
-      "size": 4063,
+      "size": 4713,
       "is_binary": false
     },
     {
       "name": "comunidade.py",
       "path": "backend/app/api/routers/comunidade.py",
       "type": "file",
-      "sha": "32afc0d9dedb99be57c89e76df406785f5877167",
+      "sha": "55803c3eb7c2c8946abc3183e90f1236dc852c3e",
       "mode": "100644",
       "extension": ".py",
-      "size": 852,
+      "size": 1266,
       "is_binary": false
     },
     {
       "name": "cursos.py",
       "path": "backend/app/api/routers/cursos.py",
       "type": "file",
-      "sha": "a260cf507853e68903a5a4603c2bf625214bc42d",
+      "sha": "8da7d69b683535a36e24bfab6f307dc592323d82",
       "mode": "100644",
       "extension": ".py",
-      "size": 1239,
+      "size": 1863,
       "is_binary": false
     },
     {
       "name": "dashboard.py",
       "path": "backend/app/api/routers/dashboard.py",
       "type": "file",
-      "sha": "61fe554b6948d420fe5c3eda7842fa97e358070a",
+      "sha": "45d98b06c5ab4d715b17626ff6678d403c685dd9",
       "mode": "100644",
       "extension": ".py",
-      "size": 1398,
+      "size": 1947,
       "is_binary": false
     },
     {
       "name": "disciplinas.py",
       "path": "backend/app/api/routers/disciplinas.py",
       "type": "file",
-      "sha": "94aa4356f9fa35a8195e473136fcc4edbdfcb7fa",
+      "sha": "32a3b213b6aef8a6773be7da3267112ec339dd33",
       "mode": "100644",
       "extension": ".py",
-      "size": 3992,
+      "size": 4722,
       "is_binary": false
     },
     {
       "name": "estatisticas_consolidadas.py",
       "path": "backend/app/api/routers/estatisticas_consolidadas.py",
       "type": "file",
-      "sha": "c059b27fc94b7aeb6fb19e872f13839a2ef98dd2",
+      "sha": "bae12b6061a2877657e87336f15f9cc40dbce190",
       "mode": "100644",
       "extension": ".py",
-      "size": 1518,
+      "size": 1682,
       "is_binary": false
     },
     {
       "name": "materiais.py",
       "path": "backend/app/api/routers/materiais.py",
       "type": "file",
-      "sha": "ce604ab3f8a6028115c957a5ee32eec02984e92e",
+      "sha": "10251579f0dd2a9ac5b782ffb42d719f4be503c4",
       "mode": "100644",
       "extension": ".py",
-      "size": 4601,
+      "size": 7682,
       "is_binary": false
     },
     {
       "name": "moderacao.py",
       "path": "backend/app/api/routers/moderacao.py",
       "type": "file",
-      "sha": "32118670bb6d5dcd1fd1ad99957053a016cef059",
+      "sha": "1de5a8149cdb8c86f0811a1d4e08a772c487033f",
       "mode": "100644",
       "extension": ".py",
-      "size": 5136,
+      "size": 6836,
       "is_binary": false
     },
     {
       "name": "perfil.py",
       "path": "backend/app/api/routers/perfil.py",
       "type": "file",
-      "sha": "f7fd9d505aa95453f0993c1b97d41a52210a0d2c",
+      "sha": "acf5370756e72d893ac489c41a8a29057b5dc506",
       "mode": "100644",
       "extension": ".py",
-      "size": 2963,
+      "size": 4169,
       "is_binary": false
     },
     {
       "name": "professores.py",
       "path": "backend/app/api/routers/professores.py",
       "type": "file",
-      "sha": "c58dc857865195469c133e44480c4b9c901a48d2",
+      "sha": "8d46d27a14b281f8b67d3347ebf00df1d30cb0a5",
       "mode": "100644",
       "extension": ".py",
-      "size": 888,
+      "size": 904,
       "is_binary": false
     },
     {
       "name": "relatos_bugs.py",
       "path": "backend/app/api/routers/relatos_bugs.py",
       "type": "file",
-      "sha": "7115048d7e43838aadd943c1af5e241752e4c9a2",
+      "sha": "2ba9792c0f1e2af4ecba567fb42b1bc8e6089e1f",
       "mode": "100644",
       "extension": ".py",
-      "size": 1392,
+      "size": 1825,
       "is_binary": false
     },
     {
       "name": "turmas.py",
       "path": "backend/app/api/routers/turmas.py",
       "type": "file",
-      "sha": "bef964a5ed439a233d1c956cb7195dbc810d5199",
+      "sha": "f36790a4b85dd01ea02cdffe4414e94a5325cf6c",
       "mode": "100644",
       "extension": ".py",
-      "size": 4034,
+      "size": 4951,
       "is_binary": false
     },
     {
       "name": "schemas",
       "path": "backend/app/api/schemas",
       "type": "directory",
-      "sha": "210fb86ae14bff780d48cf511152cc9798f066fb",
+      "sha": "17d8230e14996f16b6840fe0b9335effb77189c8",
       "mode": "040000",
       "children": []
     },
@@ -910,10 +956,10 @@
       "name": "comentario.py",
       "path": "backend/app/api/schemas/comentario.py",
       "type": "file",
-      "sha": "370e876cf3d32654fd0db2819f600244bf71e7eb",
+      "sha": "c329cc0c3f631db990598bcdebc71f40e5c4bad2",
       "mode": "100644",
       "extension": ".py",
-      "size": 3694,
+      "size": 4435,
       "is_binary": false
     },
     {
@@ -950,10 +996,10 @@
       "name": "denuncia.py",
       "path": "backend/app/api/schemas/denuncia.py",
       "type": "file",
-      "sha": "fff1e4adb1503897f2b495ffc351cd87bc0ec47c",
+      "sha": "5d5ab50903a1ff9eba7bbe401e998251d762ee89",
       "mode": "100644",
       "extension": ".py",
-      "size": 6193,
+      "size": 6227,
       "is_binary": false
     },
     {
@@ -990,20 +1036,20 @@
       "name": "historico.py",
       "path": "backend/app/api/schemas/historico.py",
       "type": "file",
-      "sha": "3509e5dc52b4c8974454e74039f0721a0fbf64ac",
+      "sha": "10f4e80dee97a59f8dab6ff01f2467858fae032d",
       "mode": "100644",
       "extension": ".py",
-      "size": 2858,
+      "size": 2973,
       "is_binary": false
     },
     {
       "name": "material.py",
       "path": "backend/app/api/schemas/material.py",
       "type": "file",
-      "sha": "1b7599d868f95b7c6c89412d3b4a396fcf5830d4",
+      "sha": "c06374b768742092e9a13460b092971ec38c95d4",
       "mode": "100644",
       "extension": ".py",
-      "size": 2321,
+      "size": 3476,
       "is_binary": false
     },
     {
@@ -1050,17 +1096,17 @@
       "name": "usuario.py",
       "path": "backend/app/api/schemas/usuario.py",
       "type": "file",
-      "sha": "2527bac256328bad6830f0d2d7ef713dfa757abd",
+      "sha": "8438bd3cecb6cff806298095d06f95cc4f91ce48",
       "mode": "100644",
       "extension": ".py",
-      "size": 7239,
+      "size": 7584,
       "is_binary": false
     },
     {
       "name": "core",
       "path": "backend/app/core",
       "type": "directory",
-      "sha": "6bf86ee985a181939daad321dc40fa95ab9533f7",
+      "sha": "c987ac3cd5b5b1fd328f211204114650ec7a161c",
       "mode": "040000",
       "children": []
     },
@@ -1078,37 +1124,47 @@
       "name": "config.py",
       "path": "backend/app/core/config.py",
       "type": "file",
-      "sha": "39fe2373ea7399ec23d6245ae2556029f94ed2b1",
+      "sha": "0cb76a7d9b45ddfce4095e627d7457bc2ff8886e",
       "mode": "100644",
       "extension": ".py",
-      "size": 5658,
+      "size": 6358,
       "is_binary": false
     },
     {
       "name": "database.py",
       "path": "backend/app/core/database.py",
       "type": "file",
-      "sha": "fd8a06eb0b9e7f61f570e5b9500b22dfbb6ec47d",
+      "sha": "3f0453bbf73e586792f815aec3ae6406a2a94d63",
       "mode": "100644",
       "extension": ".py",
-      "size": 460,
+      "size": 572,
+      "is_binary": false
+    },
+    {
+      "name": "rate_limit.py",
+      "path": "backend/app/core/rate_limit.py",
+      "type": "file",
+      "sha": "55e49744a22f7f4823620b74a8e20823e04815f8",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 9715,
       "is_binary": false
     },
     {
       "name": "security.py",
       "path": "backend/app/core/security.py",
       "type": "file",
-      "sha": "a6af352253f5f9385ac48da223995522603004db",
+      "sha": "1d77fd13369ed342b3260105eff5e8e59a606bbb",
       "mode": "100644",
       "extension": ".py",
-      "size": 2178,
+      "size": 3170,
       "is_binary": false
     },
     {
       "name": "domain",
       "path": "backend/app/domain",
       "type": "directory",
-      "sha": "76fdd5a73a4e5f6fdbb2021c79e7fc55ee759908",
+      "sha": "efdea3506f384ff5ffe5f48efeb001350e41fa78",
       "mode": "040000",
       "children": []
     },
@@ -1156,10 +1212,10 @@
       "name": "moderacao.py",
       "path": "backend/app/domain/moderacao.py",
       "type": "file",
-      "sha": "996f2f774fb2a52e3ba27c3616d98ce9e25b12ea",
+      "sha": "f398775ef908f5329e6e2fb57a33848fb7b368eb",
       "mode": "100644",
       "extension": ".py",
-      "size": 14533,
+      "size": 14945,
       "is_binary": false
     },
     {
@@ -1186,17 +1242,17 @@
       "name": "main.py",
       "path": "backend/app/main.py",
       "type": "file",
-      "sha": "13e702e5c4777a433a4840ec3d237367bda27cdc",
+      "sha": "e0704842fcf4ea82d7448994e4696c8b1ca11fc8",
       "mode": "100644",
       "extension": ".py",
-      "size": 1829,
+      "size": 1934,
       "is_binary": false
     },
     {
       "name": "models",
       "path": "backend/app/models",
       "type": "directory",
-      "sha": "10b8ec04c7918f7bacb5192fdb9b1b1333a15657",
+      "sha": "b0cab8a8c31fdf29cc353dfcda9ccd08f19006ea",
       "mode": "040000",
       "children": []
     },
@@ -1224,10 +1280,10 @@
       "name": "comentario.py",
       "path": "backend/app/models/comentario.py",
       "type": "file",
-      "sha": "b63a4b992b47936b86468dd3ac9608be1cc21852",
+      "sha": "81b3b3015524ea97f2cca6aa096ffa906769e50e",
       "mode": "100644",
       "extension": ".py",
-      "size": 2279,
+      "size": 2343,
       "is_binary": false
     },
     {
@@ -1738,7 +1794,7 @@
       "name": "repositories",
       "path": "backend/app/repositories",
       "type": "directory",
-      "sha": "4fb389f4ec9f7a6907a510f988ee9bb3b4ef4ba6",
+      "sha": "bcd700ebeddbf085f5cd6da250b041635c6fd86f",
       "mode": "040000",
       "children": []
     },
@@ -1766,10 +1822,10 @@
       "name": "comentario_repo.py",
       "path": "backend/app/repositories/comentario_repo.py",
       "type": "file",
-      "sha": "06e6b1e45b1b7da21085f6b45b0eaa841e715f74",
+      "sha": "7a4bd88dd7802bdbf4db9e3b8f4e9032458c11ed",
       "mode": "100644",
       "extension": ".py",
-      "size": 4626,
+      "size": 4910,
       "is_binary": false
     },
     {
@@ -1786,10 +1842,10 @@
       "name": "curadoria_repo.py",
       "path": "backend/app/repositories/curadoria_repo.py",
       "type": "file",
-      "sha": "dda4126ea20f1d4260c3edd0cdab2f3fc9ad96d7",
+      "sha": "338c04fadfdc86914b208639f894a6c8ce07b8b3",
       "mode": "100644",
       "extension": ".py",
-      "size": 3036,
+      "size": 3549,
       "is_binary": false
     },
     {
@@ -1816,20 +1872,20 @@
       "name": "denuncia_repo.py",
       "path": "backend/app/repositories/denuncia_repo.py",
       "type": "file",
-      "sha": "09a62ba155fa52a918b6ee13d4e70be3c45e0bea",
+      "sha": "454a27b817b8891d8231c7e76542603fdd64eca3",
       "mode": "100644",
       "extension": ".py",
-      "size": 4853,
+      "size": 6467,
       "is_binary": false
     },
     {
       "name": "disciplina_repo.py",
       "path": "backend/app/repositories/disciplina_repo.py",
       "type": "file",
-      "sha": "7d9da274932e56c501d83a6b2d1441d9e32ad8b5",
+      "sha": "af1a169e7826e4ab1860ba81dde238bfe765f99c",
       "mode": "100644",
       "extension": ".py",
-      "size": 5835,
+      "size": 6120,
       "is_binary": false
     },
     {
@@ -1856,10 +1912,10 @@
       "name": "material_repo.py",
       "path": "backend/app/repositories/material_repo.py",
       "type": "file",
-      "sha": "449e7c07f4a3259d3eec473cfadb6b7df3388e1f",
+      "sha": "4b181f76365a57087210008e075a289028c80bc5",
       "mode": "100644",
       "extension": ".py",
-      "size": 2112,
+      "size": 2989,
       "is_binary": false
     },
     {
@@ -1936,7 +1992,7 @@
       "name": "services",
       "path": "backend/app/services",
       "type": "directory",
-      "sha": "7539728e44ede5947192ce3e33a692b578c66ee0",
+      "sha": "bcb1cad3e838050e9494f92a4c46da232570425a",
       "mode": "040000",
       "children": []
     },
@@ -1964,30 +2020,30 @@
       "name": "auth_service.py",
       "path": "backend/app/services/auth_service.py",
       "type": "file",
-      "sha": "9687eb242e23d5719d3b01b154a895786c200a00",
+      "sha": "1334a79821a220518c299d405fd5be0a9f075eb8",
       "mode": "100644",
       "extension": ".py",
-      "size": 6169,
+      "size": 6523,
       "is_binary": false
     },
     {
       "name": "comentario_service.py",
       "path": "backend/app/services/comentario_service.py",
       "type": "file",
-      "sha": "871f770af0624d66f4bb1b60f01bf9fb94cc38d9",
+      "sha": "abc907b3dbbbb8148275ff991f1102c5abb162e6",
       "mode": "100644",
       "extension": ".py",
-      "size": 8420,
+      "size": 11097,
       "is_binary": false
     },
     {
       "name": "curadoria_service.py",
       "path": "backend/app/services/curadoria_service.py",
       "type": "file",
-      "sha": "c162e568eae278906f5f14e84667f2e4df9d84bc",
+      "sha": "b87ac3684ea3de493ec61f59e87f2259fe6ed7ba",
       "mode": "100644",
       "extension": ".py",
-      "size": 5818,
+      "size": 8660,
       "is_binary": false
     },
     {
@@ -2014,20 +2070,20 @@
       "name": "denuncia_service.py",
       "path": "backend/app/services/denuncia_service.py",
       "type": "file",
-      "sha": "4993a48f150b650ba91f90569be8a81668b374c9",
+      "sha": "6836da296d014c76c921d366463e078430cd7ac7",
       "mode": "100644",
       "extension": ".py",
-      "size": 11046,
+      "size": 13117,
       "is_binary": false
     },
     {
       "name": "disciplina_service.py",
       "path": "backend/app/services/disciplina_service.py",
       "type": "file",
-      "sha": "d828b5591e34807515525974ed7bdbf10b316828",
+      "sha": "18bbaf6b9378e45795ef19ba8c9792303749182b",
       "mode": "100644",
       "extension": ".py",
-      "size": 5770,
+      "size": 5867,
       "is_binary": false
     },
     {
@@ -2084,20 +2140,20 @@
       "name": "material_service.py",
       "path": "backend/app/services/material_service.py",
       "type": "file",
-      "sha": "0b3f5993b0ef2a17016c26eb11c647d63e303d27",
+      "sha": "fb50ec2a28423e60349299e4d8408d80feccc516",
       "mode": "100644",
       "extension": ".py",
-      "size": 9411,
+      "size": 17471,
       "is_binary": false
     },
     {
       "name": "moderacao_ia_service.py",
       "path": "backend/app/services/moderacao_ia_service.py",
       "type": "file",
-      "sha": "c0ebe6be223aefa398bedc5fc93e7b75734a4f98",
+      "sha": "92c4d197080424b2e24ecfddd1b610db82a1d3f1",
       "mode": "100644",
       "extension": ".py",
-      "size": 11509,
+      "size": 11504,
       "is_binary": false
     },
     {
@@ -2202,7 +2258,7 @@
       "name": "tests",
       "path": "backend/tests",
       "type": "directory",
-      "sha": "febd52852f77f77497ee46f929bf8c3b24df513f",
+      "sha": "1ab98c395c69db112b6749c778e5023356f4f720",
       "mode": "040000",
       "children": []
     },
@@ -2220,17 +2276,17 @@
       "name": "conftest.py",
       "path": "backend/tests/conftest.py",
       "type": "file",
-      "sha": "c23ee147164f394e3f6f9ae7b53ab5c473c6bdfc",
+      "sha": "c20397943c248c6d09a830767a5d4ad1e2e9e754",
       "mode": "100644",
       "extension": ".py",
-      "size": 5084,
+      "size": 5217,
       "is_binary": false
     },
     {
       "name": "integration",
       "path": "backend/tests/integration",
       "type": "directory",
-      "sha": "d8e5c91dfe09cbf27dad0be5b54cd16adff0c36d",
+      "sha": "006a78307ff96cf9a758c1eaf6d30a4e644ada92",
       "mode": "040000",
       "children": []
     },
@@ -2294,10 +2350,10 @@
       "name": "test_auth.py",
       "path": "backend/tests/integration/test_auth.py",
       "type": "file",
-      "sha": "864219bf83a09f41df46fd09f8586cd71d8b5d82",
+      "sha": "95e4c11282a58aa77b915d1580ad85adefe5f678",
       "mode": "100644",
       "extension": ".py",
-      "size": 7303,
+      "size": 8833,
       "is_binary": false
     },
     {
@@ -2314,30 +2370,30 @@
       "name": "test_conteudos_arquivos.py",
       "path": "backend/tests/integration/test_conteudos_arquivos.py",
       "type": "file",
-      "sha": "b1269b2c19a330db326bd98c3e103088a8bdf3ce",
+      "sha": "e49ebf69a0038027d49c417416ca9eda8acc5e70",
       "mode": "100644",
       "extension": ".py",
-      "size": 5018,
+      "size": 5035,
       "is_binary": false
     },
     {
       "name": "test_curadoria.py",
       "path": "backend/tests/integration/test_curadoria.py",
       "type": "file",
-      "sha": "29075678e018af6314a2a164f132ac8a6d21450f",
+      "sha": "ce5803b468fe89cf0e8a6ab83de662c0b64a9ee7",
       "mode": "100644",
       "extension": ".py",
-      "size": 13052,
+      "size": 14944,
       "is_binary": false
     },
     {
       "name": "test_denuncias.py",
       "path": "backend/tests/integration/test_denuncias.py",
       "type": "file",
-      "sha": "a32b2d9038774e83bae5dc8a7ec5495a540ea23c",
+      "sha": "7b77e34cd8b296cb5dc45ad021c46c3cf99ab16b",
       "mode": "100644",
       "extension": ".py",
-      "size": 11100,
+      "size": 15153,
       "is_binary": false
     },
     {
@@ -2394,10 +2450,10 @@
       "name": "test_materiais.py",
       "path": "backend/tests/integration/test_materiais.py",
       "type": "file",
-      "sha": "6a391fe72f346025f61e1913760dd95ced2e65b0",
+      "sha": "ef8ad70c54c672b589c95313bbf555a822283c73",
       "mode": "100644",
       "extension": ".py",
-      "size": 18618,
+      "size": 23567,
       "is_binary": false
     },
     {
@@ -2424,20 +2480,20 @@
       "name": "test_migracao_material.py",
       "path": "backend/tests/integration/test_migracao_material.py",
       "type": "file",
-      "sha": "abd286894815a5a908b2bf81342c3e06da9f8e60",
+      "sha": "d3bb1422cb5f82f8b6d003016397448b853c58c9",
       "mode": "100644",
       "extension": ".py",
-      "size": 6192,
+      "size": 6305,
       "is_binary": false
     },
     {
       "name": "test_moderacao_ia.py",
       "path": "backend/tests/integration/test_moderacao_ia.py",
       "type": "file",
-      "sha": "67e61e671bc8f4476eff0d279b01aef27fa82973",
+      "sha": "ff0c8c028df5d5d290920ec0c66dab77fbde59b5",
       "mode": "100644",
       "extension": ".py",
-      "size": 12284,
+      "size": 13252,
       "is_binary": false
     },
     {
@@ -2458,6 +2514,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 8375,
+      "is_binary": false
+    },
+    {
+      "name": "test_rate_limit_security.py",
+      "path": "backend/tests/integration/test_rate_limit_security.py",
+      "type": "file",
+      "sha": "ad08774236473240787cd3c1bd18d835e282d823",
+      "mode": "100644",
+      "extension": ".py",
+      "size": 6375,
       "is_binary": false
     },
     {
@@ -2522,17 +2588,17 @@
       "name": "test_comentarios.py",
       "path": "backend/tests/test_comentarios.py",
       "type": "file",
-      "sha": "43b4077d44c7cd2f1a9c53d6f343a937cbae5ea5",
+      "sha": "4f2fd4d39cdac6478b6547f6aadbcbb65a7f42e6",
       "mode": "100644",
       "extension": ".py",
-      "size": 10837,
+      "size": 15602,
       "is_binary": false
     },
     {
       "name": "unit",
       "path": "backend/tests/unit",
       "type": "directory",
-      "sha": "2f048a62747f07e430ef22b0fe9f21f2e11edec7",
+      "sha": "03e1693e8683f1e70cd83162adab6c200a4ee935",
       "mode": "040000",
       "children": []
     },
@@ -2570,10 +2636,10 @@
       "name": "test_comentario_vinculo.py",
       "path": "backend/tests/unit/test_comentario_vinculo.py",
       "type": "file",
-      "sha": "380828679078687720bfc0c1e34be5742dc4feb5",
+      "sha": "504ed2d0cb130a1b0fd87e1a04caebb2966b937a",
       "mode": "100644",
       "extension": ".py",
-      "size": 2515,
+      "size": 2747,
       "is_binary": false
     },
     {
@@ -2730,10 +2796,10 @@
       "name": "test_moderacao_domain.py",
       "path": "backend/tests/unit/test_moderacao_domain.py",
       "type": "file",
-      "sha": "30b0def100eb4d3bd1ab89861a91242ee3234705",
+      "sha": "fca348426cc1212c6e1d7316c96028ad4f4e3318",
       "mode": "100644",
       "extension": ".py",
-      "size": 14437,
+      "size": 14902,
       "is_binary": false
     },
     {
@@ -2820,10 +2886,10 @@
       "name": "docker-compose.prod.yml",
       "path": "docker-compose.prod.yml",
       "type": "file",
-      "sha": "25f3094b49151161eb4e6028094a9e22c43a9207",
+      "sha": "5d48a37e1f3dc62c9b2c6dd76d4b08ea0deab7b7",
       "mode": "100644",
       "extension": ".yml",
-      "size": 2707,
+      "size": 2655,
       "is_binary": false
     },
     {
@@ -2840,7 +2906,7 @@
       "name": "docs",
       "path": "docs",
       "type": "directory",
-      "sha": "c7ac2d4756385a0aa6954cb79cee5dcc3503e6ed",
+      "sha": "04b610e6faf99a3c627a0303e39d35bf72debd48",
       "mode": "040000",
       "children": []
     },
@@ -3264,10 +3330,10 @@
       "name": "index.md",
       "path": "docs/index.md",
       "type": "file",
-      "sha": "094d9ef7c6d654d44dccbea348610febed2b387d",
+      "sha": "82aadcfefe406cb8cf8cdd6d4ec7266108f36dc7",
       "mode": "100644",
       "extension": ".md",
-      "size": 6858,
+      "size": 6911,
       "is_binary": false
     },
     {
@@ -3564,7 +3630,7 @@
       "name": "frontend",
       "path": "frontend",
       "type": "directory",
-      "sha": "00e4bc2c1f01ad989da4f626452177ec04993064",
+      "sha": "93ee1c06c814f2f89959aebabdaa726704296fbd",
       "mode": "040000",
       "children": []
     },
@@ -3642,7 +3708,7 @@
       "name": "components",
       "path": "frontend/components",
       "type": "directory",
-      "sha": "8307478192625a1d5676f63740a404922a997a96",
+      "sha": "f4a3968e4d31d34c8607e55f6896b2781f61bad3",
       "mode": "040000",
       "children": []
     },
@@ -3650,10 +3716,10 @@
       "name": "ComentariosFrontend.tsx",
       "path": "frontend/components/ComentariosFrontend.tsx",
       "type": "file",
-      "sha": "72eef95a735213ca2812f09e65184393c996288b",
+      "sha": "635851cfc82b5b2a6983a645f604b74954c00ed5",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 35888,
+      "size": 49299,
       "is_binary": false
     },
     {
@@ -3670,10 +3736,10 @@
       "name": "MateriaisApoio.tsx",
       "path": "frontend/components/MateriaisApoio.tsx",
       "type": "file",
-      "sha": "db2e71b950deac290122b6343aeac8caa07a83ce",
+      "sha": "c81ea6501a27a794747413a65e4ec86144664fae",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 25751,
+      "size": 39183,
       "is_binary": false
     },
     {
@@ -3728,17 +3794,17 @@
       "name": "package-lock.json",
       "path": "frontend/package-lock.json",
       "type": "file",
-      "sha": "fd4353ea20b81348ea65e68f98c34d5f21781b3c",
+      "sha": "b518da213baaaabdd9744f67d102d1e755a1409d",
       "mode": "100644",
       "extension": ".json",
-      "size": 260631,
+      "size": 262075,
       "is_binary": false
     },
     {
       "name": "package.json",
       "path": "frontend/package.json",
       "type": "file",
-      "sha": "4f9979d549e701e128fb67fbca0a1be553d796c6",
+      "sha": "d6094caa53508ae766e868ae08aabac68ffacca1",
       "mode": "100644",
       "extension": ".json",
       "size": 784,
@@ -3816,7 +3882,7 @@
       "name": "src",
       "path": "frontend/src",
       "type": "directory",
-      "sha": "3151c87b3e50b29c8f328fb6a176b5fe99e10bac",
+      "sha": "f1fc126a873ed84d6a9c44d0d7bee112fdd5eb17",
       "mode": "040000",
       "children": []
     },
@@ -3824,7 +3890,7 @@
       "name": "app",
       "path": "frontend/src/app",
       "type": "directory",
-      "sha": "adcd2f1395cd5af3a9e072f3d30398392a77ff92",
+      "sha": "999446b0802f3b7f253f6570b50c97ba53a8222d",
       "mode": "040000",
       "children": []
     },
@@ -3832,7 +3898,7 @@
       "name": "api",
       "path": "frontend/src/app/api",
       "type": "directory",
-      "sha": "6eed937e8a4c263871bb3a41097c52e9435e7153",
+      "sha": "1d380ebf2ac2fa9f9a79bb4592ca1a61ff469cae",
       "mode": "040000",
       "children": []
     },
@@ -3840,7 +3906,7 @@
       "name": "auth",
       "path": "frontend/src/app/api/auth",
       "type": "directory",
-      "sha": "4149476bd9793399be35c7fd0452d02b348abaed",
+      "sha": "f00d0422b80e7339c8236f7de0a9242cbd70903f",
       "mode": "040000",
       "children": []
     },
@@ -3848,7 +3914,7 @@
       "name": "esqueci-senha",
       "path": "frontend/src/app/api/auth/esqueci-senha",
       "type": "directory",
-      "sha": "c7a8c7f5ee91c26d7de20669874edbf4d1002b9a",
+      "sha": "930bde40bd66ae9ed72f46f9f520b24b870b3973",
       "mode": "040000",
       "children": []
     },
@@ -3856,17 +3922,17 @@
       "name": "route.ts",
       "path": "frontend/src/app/api/auth/esqueci-senha/route.ts",
       "type": "file",
-      "sha": "48f12a046690805ec168b5b4a0c1c6a635faf84f",
+      "sha": "fb4f7c58373de439a272fe005f7f805ade2722ad",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2727,
+      "size": 3330,
       "is_binary": false
     },
     {
       "name": "cadastro",
       "path": "frontend/src/app/cadastro",
       "type": "directory",
-      "sha": "279bb00950bcb1e66aaab11c917d3227d8898e54",
+      "sha": "15d0e3f314fbabca86ddded594d18a2a118d17ef",
       "mode": "040000",
       "children": []
     },
@@ -3892,17 +3958,17 @@
       "name": "page.tsx",
       "path": "frontend/src/app/cadastro/page.tsx",
       "type": "file",
-      "sha": "6ba7b11cba792ec3fe580b4a6e5a8a9730310c79",
+      "sha": "7bb87ed41431308fa67971050218c6ea59d87040",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 16695,
+      "size": 16688,
       "is_binary": false
     },
     {
       "name": "cursos",
       "path": "frontend/src/app/cursos",
       "type": "directory",
-      "sha": "7ecff1defc7299bef8da606d960e8657c1935699",
+      "sha": "a19f1975dbfc203d6c0de4e6a1e25b75bf11aa97",
       "mode": "040000",
       "children": []
     },
@@ -3910,7 +3976,7 @@
       "name": "[slug]",
       "path": "frontend/src/app/cursos/[slug]",
       "type": "directory",
-      "sha": "a516cf8013ebd592b4382fc16ba2e281a1c70a5b",
+      "sha": "939bc93a74f690b7e52d23e3adc72b8d58bee2fb",
       "mode": "040000",
       "children": []
     },
@@ -3918,10 +3984,10 @@
       "name": "page.tsx",
       "path": "frontend/src/app/cursos/[slug]/page.tsx",
       "type": "file",
-      "sha": "8073306e5735a313e58c2152918d24fedb65d9c6",
+      "sha": "97fe9efb95f40106032a49f5eefc0603417f8030",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 38902,
+      "size": 39805,
       "is_binary": false
     },
     {
@@ -3938,7 +4004,7 @@
       "name": "disciplinas",
       "path": "frontend/src/app/disciplinas",
       "type": "directory",
-      "sha": "35dcc482b68943e7520067cfeb0245c9af25fe37",
+      "sha": "d1afc453578541ff87c3d5d32f2d88b26b47838a",
       "mode": "040000",
       "children": []
     },
@@ -3946,7 +4012,7 @@
       "name": "[slug]",
       "path": "frontend/src/app/disciplinas/[slug]",
       "type": "directory",
-      "sha": "ab3e3f994ef1dc65756ca60d3e199aa64c980c9c",
+      "sha": "5ee663c7ce54fcec4534e71cb33eae3d7455b38d",
       "mode": "040000",
       "children": []
     },
@@ -3954,10 +4020,10 @@
       "name": "page.tsx",
       "path": "frontend/src/app/disciplinas/[slug]/page.tsx",
       "type": "file",
-      "sha": "a40000127468bdae8e137ab19dddfd3ba253f800",
+      "sha": "60504a3e3607bb42f6a36e790f9e2a77c1ca1bf9",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 63988,
+      "size": 63981,
       "is_binary": false
     },
     {
@@ -4068,7 +4134,7 @@
       "name": "moderacao",
       "path": "frontend/src/app/moderacao",
       "type": "directory",
-      "sha": "3861bd54e6d95a74a5c238d2445c22373f466af8",
+      "sha": "2c11e880ec8d69b4fe084fdb6110f3fe64940cde",
       "mode": "040000",
       "children": []
     },
@@ -4076,10 +4142,10 @@
       "name": "page.tsx",
       "path": "frontend/src/app/moderacao/page.tsx",
       "type": "file",
-      "sha": "964fe2ef7040dabaf6f539e598941cf35b49bd33",
+      "sha": "65c4cf4b7bb4006b698d47537a9c95746a212da8",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 31429,
+      "size": 42501,
       "is_binary": false
     },
     {
@@ -4096,7 +4162,7 @@
       "name": "perfil",
       "path": "frontend/src/app/perfil",
       "type": "directory",
-      "sha": "8f9e89c4ef1c202fe6b203b6222d21bd1c31ea98",
+      "sha": "9d314ae2541943198dc60f9646f89ebb72571c21",
       "mode": "040000",
       "children": []
     },
@@ -4104,10 +4170,10 @@
       "name": "page.tsx",
       "path": "frontend/src/app/perfil/page.tsx",
       "type": "file",
-      "sha": "8e134ae4b30fabe5e141a3d59f9df468f7731238",
+      "sha": "5e4a53c4e20bae62e4becf8a7c95de733322aaca",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 16355,
+      "size": 16608,
       "is_binary": false
     },
     {
@@ -4132,7 +4198,7 @@
       "name": "components",
       "path": "frontend/src/components",
       "type": "directory",
-      "sha": "793c3deba782503efc18a4a3ccc40246b87e04eb",
+      "sha": "6f72bb752e7a8224c9629d7e6a5455e054f2886d",
       "mode": "040000",
       "children": []
     },
@@ -4210,10 +4276,10 @@
       "name": "ClassCard.tsx",
       "path": "frontend/src/components/ClassCard.tsx",
       "type": "file",
-      "sha": "7d9f338da72bcc69c81e71cd9c9676d2c56cd74e",
+      "sha": "894fca5d5ac6c5daaaaa742a3641e8e38563c76b",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 8985,
+      "size": 8978,
       "is_binary": false
     },
     {
@@ -4260,10 +4326,10 @@
       "name": "CommentModerationCard.tsx",
       "path": "frontend/src/components/CommentModerationCard.tsx",
       "type": "file",
-      "sha": "bc2d0f9a45e925d00f46dfd9b1f09b3c73a55474",
+      "sha": "24566bcb374622a0624952b6f770f82f82926cb9",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3946,
+      "size": 3567,
       "is_binary": false
     },
     {
@@ -4290,20 +4356,20 @@
       "name": "DenunciaModerationCard.tsx",
       "path": "frontend/src/components/DenunciaModerationCard.tsx",
       "type": "file",
-      "sha": "8b7e0e8066aceb84e07104df1e4c6a5424e3def1",
+      "sha": "e330287d21944feff3534d3c6c3e539d3040157b",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4980,
+      "size": 10070,
       "is_binary": false
     },
     {
       "name": "DificuldadesPanel.tsx",
       "path": "frontend/src/components/DificuldadesPanel.tsx",
       "type": "file",
-      "sha": "762d63297de69bdba5f69a5acad4e1c0e3ab93ee",
+      "sha": "5f6254add2c52c683514a1d200a14ee09919d96c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 25063,
+      "size": 42913,
       "is_binary": false
     },
     {
@@ -4314,6 +4380,16 @@
       "mode": "100644",
       "extension": ".tsx",
       "size": 10735,
+      "is_binary": false
+    },
+    {
+      "name": "EditMaterialModal.tsx",
+      "path": "frontend/src/components/EditMaterialModal.tsx",
+      "type": "file",
+      "sha": "b72ed42e63717b6825ee0ad9b3afffe706d2a043",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 7658,
       "is_binary": false
     },
     {
@@ -4380,50 +4456,60 @@
       "name": "MaterialModal.tsx",
       "path": "frontend/src/components/MaterialModal.tsx",
       "type": "file",
-      "sha": "73272e1c0c3eb86687b49ab195bbb5c389511258",
+      "sha": "6187491e9a16a08fe0f365b396e8edd702163c45",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 33393,
+      "size": 33379,
       "is_binary": false
     },
     {
       "name": "MaterialPreviewModal.tsx",
       "path": "frontend/src/components/MaterialPreviewModal.tsx",
       "type": "file",
-      "sha": "bc1b671a34485089cc0b724ebc71a3aff6a29644",
+      "sha": "ef2c4d373c2d65f34c7e16747e658e501061f270",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 8462,
+      "size": 8663,
       "is_binary": false
     },
     {
       "name": "MinhaGraduacaoSection.tsx",
       "path": "frontend/src/components/MinhaGraduacaoSection.tsx",
       "type": "file",
-      "sha": "cb79f919b3bf8d0a43025f9a044ea87609bca061",
+      "sha": "6fbe88eecb432d708457a858e1b6df9f19b3e3b1",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 24814,
+      "size": 27479,
+      "is_binary": false
+    },
+    {
+      "name": "MinhasContribuicoesSection.tsx",
+      "path": "frontend/src/components/MinhasContribuicoesSection.tsx",
+      "type": "file",
+      "sha": "1d97ad621fafd70864d2ed1e3c69c3c5fe4fde82",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 12865,
       "is_binary": false
     },
     {
       "name": "ModerationActionModal.tsx",
       "path": "frontend/src/components/ModerationActionModal.tsx",
       "type": "file",
-      "sha": "67e11a671a1885cab69b10f5aacc76dbc0435105",
+      "sha": "ce9cad0268de480fd639810a13f44ae0fd638d1d",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 6304,
+      "size": 6335,
       "is_binary": false
     },
     {
       "name": "ModerationCard.tsx",
       "path": "frontend/src/components/ModerationCard.tsx",
       "type": "file",
-      "sha": "70bcbfaf40b1611c75d62776a843be2ce1b82764",
+      "sha": "b77cef6cf58351dc04ad6babb79ff6253f50e3f2",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 6655,
+      "size": 9335,
       "is_binary": false
     },
     {
@@ -4440,10 +4526,10 @@
       "name": "OpenDataExportBar.tsx",
       "path": "frontend/src/components/OpenDataExportBar.tsx",
       "type": "file",
-      "sha": "3fcb188173a2b224170fa08ac3207a289672e1ca",
+      "sha": "915e9d23affc2da32da536db9a2212b63e017b9a",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4973,
+      "size": 4962,
       "is_binary": false
     },
     {
@@ -4470,10 +4556,10 @@
       "name": "PizzaModerationCard.tsx",
       "path": "frontend/src/components/PizzaModerationCard.tsx",
       "type": "file",
-      "sha": "457149ec7cc28a99185f80666bfc02d912a11001",
+      "sha": "5a107919ea70c20c7a64982b2776f0d373941dcf",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 13469,
+      "size": 13909,
       "is_binary": false
     },
     {
@@ -4487,13 +4573,23 @@
       "is_binary": false
     },
     {
+      "name": "ReplaceMaterialFileModal.tsx",
+      "path": "frontend/src/components/ReplaceMaterialFileModal.tsx",
+      "type": "file",
+      "sha": "d9ac9e3abe3269b08beab3fa303c4dcdc121a688",
+      "mode": "100644",
+      "extension": ".tsx",
+      "size": 8169,
+      "is_binary": false
+    },
+    {
       "name": "SecurityTabContent.tsx",
       "path": "frontend/src/components/SecurityTabContent.tsx",
       "type": "file",
-      "sha": "41b9111b98ac005c6c3be375831ba70508b321db",
+      "sha": "4368e34001898031e79168c385db16b01c5490fa",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3762,
+      "size": 7369,
       "is_binary": false
     },
     {
@@ -4550,7 +4646,7 @@
       "name": "__tests__",
       "path": "frontend/src/components/__tests__",
       "type": "directory",
-      "sha": "9f03f7116ec70eaa56ae6863a049e613f597c117",
+      "sha": "6de540bd58cbdbb81870169346c541557ac1281a",
       "mode": "040000",
       "children": []
     },
@@ -4578,10 +4674,10 @@
       "name": "ClassCard.test.tsx",
       "path": "frontend/src/components/__tests__/ClassCard.test.tsx",
       "type": "file",
-      "sha": "b134428b947d336acfea28376cc9282c895e71f4",
+      "sha": "c78f202da0f32cb1a055aabc2a300ab01089f8bb",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 6797,
+      "size": 6790,
       "is_binary": false
     },
     {
@@ -4648,20 +4744,20 @@
       "name": "MateriaisEDificuldadesAuth.test.ts",
       "path": "frontend/src/components/__tests__/MateriaisEDificuldadesAuth.test.ts",
       "type": "file",
-      "sha": "bf342d07320d249e4e442d822ce244d466c295ad",
+      "sha": "d58a35d2297349a180d89bd8374a94142d3f7811",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1893,
+      "size": 2632,
       "is_binary": false
     },
     {
       "name": "MinhaGraduacaoSection.test.tsx",
       "path": "frontend/src/components/__tests__/MinhaGraduacaoSection.test.tsx",
       "type": "file",
-      "sha": "8e5282cc70ed07fbce60864ee4502db71ff2b570",
+      "sha": "4086dde7b6d76c3eff4636559654d3b99ad945d5",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 4163,
+      "size": 7742,
       "is_binary": false
     },
     {
@@ -4688,10 +4784,10 @@
       "name": "UIFlows.test.tsx",
       "path": "frontend/src/components/__tests__/UIFlows.test.tsx",
       "type": "file",
-      "sha": "017efa8ef16f33978ec9a878a4e113889b3ce03a",
+      "sha": "430275b953bfb37ce6878d4ad1377a12d50dd38c",
       "mode": "100644",
       "extension": ".tsx",
-      "size": 3734,
+      "size": 9864,
       "is_binary": false
     },
     {
@@ -4708,7 +4804,7 @@
       "name": "data",
       "path": "frontend/src/data",
       "type": "directory",
-      "sha": "2c7f1b3bbdde0b22e1978d24d25771450ae01207",
+      "sha": "99cdc76206c407f1d677df2fcaae86c133bf80c3",
       "mode": "040000",
       "children": []
     },
@@ -4726,10 +4822,10 @@
       "name": "curriculos-cursos.json",
       "path": "frontend/src/data/curriculos-cursos.json",
       "type": "file",
-      "sha": "e0971fbcb4ce56eea2d2ed505d0dc253a08543c7",
+      "sha": "9a833489e8ce0b45d39b8420c40b357eb1ebbe25",
       "mode": "100644",
       "extension": ".json",
-      "size": 84212,
+      "size": 89867,
       "is_binary": false
     },
     {
@@ -5058,7 +5154,7 @@
       "name": "hooks",
       "path": "frontend/src/hooks",
       "type": "directory",
-      "sha": "eb1bdacdaeb45699ce005fd30bed40ef3fcda05d",
+      "sha": "8923abe9e66493cf205daa10487fac6394f90faa",
       "mode": "040000",
       "children": []
     },
@@ -5076,17 +5172,27 @@
       "name": "useDisciplineApprovalMetrics.ts",
       "path": "frontend/src/hooks/useDisciplineApprovalMetrics.ts",
       "type": "file",
-      "sha": "cbcd3af9d8a712f2b5fe8e53c01c372a5772bb19",
+      "sha": "a89bebf0c130342d49c2bd52ae43b328d3aca883",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2272,
+      "size": 2812,
+      "is_binary": false
+    },
+    {
+      "name": "proxy.ts",
+      "path": "frontend/src/proxy.ts",
+      "type": "file",
+      "sha": "22f6a8ab520a33dd55ae43b3baf590b304e017bb",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1228,
       "is_binary": false
     },
     {
       "name": "services",
       "path": "frontend/src/services",
       "type": "directory",
-      "sha": "2fac8b63ac43fd1706ad753f9a3671e6dbd66082",
+      "sha": "48e32fbadcbfd0450dae601017380cee8ba79434",
       "mode": "040000",
       "children": []
     },
@@ -5094,7 +5200,7 @@
       "name": "__tests__",
       "path": "frontend/src/services/__tests__",
       "type": "directory",
-      "sha": "2d7a02d9c3cabec6cf1cabac9b7661bdb0d0fa4c",
+      "sha": "57c334e15080212d549b99a16f0dc4143ec608ea",
       "mode": "040000",
       "children": []
     },
@@ -5102,20 +5208,20 @@
       "name": "authService.test.ts",
       "path": "frontend/src/services/__tests__/authService.test.ts",
       "type": "file",
-      "sha": "3e8c506f325ad48142ea45d77aac92e6ad0a4ae6",
+      "sha": "519f5b65f87bfa4a4ff5886a0ee0473e29f3bacf",
       "mode": "100644",
       "extension": ".ts",
-      "size": 8305,
+      "size": 9672,
       "is_binary": false
     },
     {
       "name": "difficultyService.test.ts",
       "path": "frontend/src/services/__tests__/difficultyService.test.ts",
       "type": "file",
-      "sha": "96c293783cfc05e383bc52fe4c04a3b7315ffa88",
+      "sha": "7531be97632326baa500699ad871e0d258bba058",
       "mode": "100644",
       "extension": ".ts",
-      "size": 6609,
+      "size": 6638,
       "is_binary": false
     },
     {
@@ -5136,6 +5242,16 @@
       "mode": "100644",
       "extension": ".ts",
       "size": 4057,
+      "is_binary": false
+    },
+    {
+      "name": "httpClient.test.ts",
+      "path": "frontend/src/services/__tests__/httpClient.test.ts",
+      "type": "file",
+      "sha": "07e8e5e48c15187916203c7fab5328b43cd5ee1f",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1335,
       "is_binary": false
     },
     {
@@ -5162,20 +5278,20 @@
       "name": "materialService.test.ts",
       "path": "frontend/src/services/__tests__/materialService.test.ts",
       "type": "file",
-      "sha": "ec822e723724749e702fd844077a18a46b57117b",
+      "sha": "eef02ffbbc6e6a348e74d2f7413d8318218e20e7",
       "mode": "100644",
       "extension": ".ts",
-      "size": 6768,
+      "size": 9035,
       "is_binary": false
     },
     {
       "name": "moderacaoService.test.ts",
       "path": "frontend/src/services/__tests__/moderacaoService.test.ts",
       "type": "file",
-      "sha": "a58a6cead5647fe448813b98fa879ee5beb02422",
+      "sha": "c67a1fcf342a2a6f94731819e55c1df5376d4391",
       "mode": "100644",
       "extension": ".ts",
-      "size": 15141,
+      "size": 19699,
       "is_binary": false
     },
     {
@@ -5222,10 +5338,10 @@
       "name": "authService.ts",
       "path": "frontend/src/services/authService.ts",
       "type": "file",
-      "sha": "780ddc490b2d4cb3c04e637e161c4377a79f0146",
+      "sha": "c7758d761c61f4aeeb800fd44bf387dca5463f4d",
       "mode": "100644",
       "extension": ".ts",
-      "size": 6131,
+      "size": 7333,
       "is_binary": false
     },
     {
@@ -5242,10 +5358,10 @@
       "name": "difficultyService.ts",
       "path": "frontend/src/services/difficultyService.ts",
       "type": "file",
-      "sha": "84711f912b7e1efa9b38b637ba02b953579f730b",
+      "sha": "83ab034d3f846913ed199a90b1607e4e2a568f30",
       "mode": "100644",
       "extension": ".ts",
-      "size": 8611,
+      "size": 8069,
       "is_binary": false
     },
     {
@@ -5282,20 +5398,20 @@
       "name": "historicoService.ts",
       "path": "frontend/src/services/historicoService.ts",
       "type": "file",
-      "sha": "11c44ba8f8626f222059bc16e6436d269ee1d48e",
+      "sha": "076486458ca2012343d402b0f0a590e7da11b881",
       "mode": "100644",
       "extension": ".ts",
-      "size": 3959,
+      "size": 4641,
       "is_binary": false
     },
     {
       "name": "httpClient.ts",
       "path": "frontend/src/services/httpClient.ts",
       "type": "file",
-      "sha": "724911bf8f24a37be4c5f90473a76e954f0a0901",
+      "sha": "8e813f086d9bac8f77b960ccffa0d1910e7a4df7",
       "mode": "100644",
       "extension": ".ts",
-      "size": 3641,
+      "size": 4162,
       "is_binary": false
     },
     {
@@ -5312,30 +5428,30 @@
       "name": "materialService.ts",
       "path": "frontend/src/services/materialService.ts",
       "type": "file",
-      "sha": "3bc10a88ff7c46641a5814965d74a9159dc98e99",
+      "sha": "7161e063401e8df8671587c9de923d7e767dad88",
       "mode": "100644",
       "extension": ".ts",
-      "size": 7196,
+      "size": 8500,
       "is_binary": false
     },
     {
       "name": "moderacaoService.ts",
       "path": "frontend/src/services/moderacaoService.ts",
       "type": "file",
-      "sha": "ac454d8f88beae83051c979a7a005a63d8fc7663",
+      "sha": "42fb6dc0079284f25eeeb6dff4879f8f79341bb7",
       "mode": "100644",
       "extension": ".ts",
-      "size": 12176,
+      "size": 14321,
       "is_binary": false
     },
     {
       "name": "openDataService.ts",
       "path": "frontend/src/services/openDataService.ts",
       "type": "file",
-      "sha": "dbac0f5da7010ed9eab3aeda747f90e2daea641b",
+      "sha": "d7a6aa6dd216ee2e7fd65e78b311468795c62876",
       "mode": "100644",
       "extension": ".ts",
-      "size": 23258,
+      "size": 23234,
       "is_binary": false
     },
     {
@@ -5372,7 +5488,7 @@
       "name": "types",
       "path": "frontend/src/types",
       "type": "directory",
-      "sha": "29b7e0a0d4d070a1f84bb3d526ac4aa73493f2e4",
+      "sha": "10c0f01fdac0c5fb7c4d79f340f1f193a68b1a6c",
       "mode": "040000",
       "children": []
     },
@@ -5418,20 +5534,20 @@
       "name": "curso.ts",
       "path": "frontend/src/types/curso.ts",
       "type": "file",
-      "sha": "e4203862b4bb8147d1177bbb661655644d18a1ed",
+      "sha": "78288110062d21b39adf471407f073a23c9487f4",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1815,
+      "size": 2197,
       "is_binary": false
     },
     {
       "name": "dificuldade.ts",
       "path": "frontend/src/types/dificuldade.ts",
       "type": "file",
-      "sha": "e5b0540a67b2b3469bc3ab363eb2c0174c59a732",
+      "sha": "18a93236ce93d7fb2e59ade1530de003a15820d5",
       "mode": "100644",
       "extension": ".ts",
-      "size": 12006,
+      "size": 12204,
       "is_binary": false
     },
     {
@@ -5458,20 +5574,20 @@
       "name": "material.ts",
       "path": "frontend/src/types/material.ts",
       "type": "file",
-      "sha": "502328e9eb7360f3a9c3416891b5920905dc426d",
+      "sha": "ce277de56f9e03ba97153afd0b48b443562cd452",
       "mode": "100644",
       "extension": ".ts",
-      "size": 1518,
+      "size": 2057,
       "is_binary": false
     },
     {
       "name": "moderacao.ts",
       "path": "frontend/src/types/moderacao.ts",
       "type": "file",
-      "sha": "d66e71e3bcc4cdd8b91cb9286849c91e3a65f1d8",
+      "sha": "d0bee79762896c3fc884cd46703247e238361d44",
       "mode": "100644",
       "extension": ".ts",
-      "size": 4783,
+      "size": 4891,
       "is_binary": false
     },
     {
@@ -5508,7 +5624,7 @@
       "name": "utils",
       "path": "frontend/src/utils",
       "type": "directory",
-      "sha": "44597cc4c959bf358ceb497c0d13891c72c94b1a",
+      "sha": "4ecbc29aa8f058d76f7e7626cd0fd068e3b0ca7d",
       "mode": "040000",
       "children": []
     },
@@ -5516,7 +5632,7 @@
       "name": "__tests__",
       "path": "frontend/src/utils/__tests__",
       "type": "directory",
-      "sha": "de839244e39031d124774d8fc063a7163214ed09",
+      "sha": "760e7e9f499fc067ee9f9e4b3f1e43c4f40677a9",
       "mode": "040000",
       "children": []
     },
@@ -5574,10 +5690,10 @@
       "name": "courseCurriculum.test.ts",
       "path": "frontend/src/utils/__tests__/courseCurriculum.test.ts",
       "type": "file",
-      "sha": "ca4dcbc7f824cd96e03e2909867215e498da5c74",
+      "sha": "37655277f1ab7a668e4d1c64b5e4ced415d8d1bc",
       "mode": "100644",
       "extension": ".ts",
-      "size": 2503,
+      "size": 4858,
       "is_binary": false
     },
     {
@@ -5731,6 +5847,16 @@
       "is_binary": false
     },
     {
+      "name": "serverRateLimit.test.ts",
+      "path": "frontend/src/utils/__tests__/serverRateLimit.test.ts",
+      "type": "file",
+      "sha": "b5355dd67a119eeb965d1552e8e3ecebba731c0c",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 1936,
+      "is_binary": false
+    },
+    {
       "name": "academicMetrics.ts",
       "path": "frontend/src/utils/academicMetrics.ts",
       "type": "file",
@@ -5784,10 +5910,10 @@
       "name": "courseCurriculum.ts",
       "path": "frontend/src/utils/courseCurriculum.ts",
       "type": "file",
-      "sha": "e81b637a5fcca3a901e84dff0f3b25fa77de276d",
+      "sha": "8321e9d35eb70129e72524d47da0ddd6c0537b57",
       "mode": "100644",
       "extension": ".ts",
-      "size": 18521,
+      "size": 22322,
       "is_binary": false
     },
     {
@@ -5901,6 +6027,16 @@
       "is_binary": false
     },
     {
+      "name": "serverRateLimit.ts",
+      "path": "frontend/src/utils/serverRateLimit.ts",
+      "type": "file",
+      "sha": "8afacc1d9222c54ffefa5bddc244b9ba510c0d15",
+      "mode": "100644",
+      "extension": ".ts",
+      "size": 2915,
+      "is_binary": false
+    },
+    {
       "name": "tsconfig.json",
       "path": "frontend/tsconfig.json",
       "type": "file",
@@ -5924,17 +6060,17 @@
       "name": "mkdocs.yml",
       "path": "mkdocs.yml",
       "type": "file",
-      "sha": "6d146a0be376fd7154737c427cd9d6b0002c2437",
+      "sha": "b364724fee90ec7901427bd294aedb917b888f2b",
       "mode": "100644",
       "extension": ".yml",
-      "size": 7521,
+      "size": 6758,
       "is_binary": false
     },
     {
       "name": "scripts",
       "path": "scripts",
       "type": "directory",
-      "sha": "fb29377872b6d26c9e4d8cd5551feebcb42f1776",
+      "sha": "0fd62beaeff9f515f5689133fd13ec17535e2614",
       "mode": "040000",
       "children": []
     },
@@ -5956,6 +6092,16 @@
       "mode": "100644",
       "extension": ".py",
       "size": 12902,
+      "is_binary": false
+    },
+    {
+      "name": "nginx-rate-limit.conf",
+      "path": "scripts/nginx-rate-limit.conf",
+      "type": "file",
+      "sha": "3f1eeb492099ce5f14a9957ab6de0e1466aa819e",
+      "mode": "100644",
+      "extension": ".conf",
+      "size": 2321,
       "is_binary": false
     },
     {
@@ -6002,7 +6148,7 @@
       "name": "skills",
       "path": "skills",
       "type": "directory",
-      "sha": "09e9e6f565491140470b7ec77f96c5e1dc06add2",
+      "sha": "6604f3d8d93207570e2909ce8a48969c76801331",
       "mode": "040000",
       "children": []
     },
@@ -6022,6 +6168,24 @@
       "mode": "100644",
       "extension": ".md",
       "size": 6727,
+      "is_binary": false
+    },
+    {
+      "name": "tamburetei-prevencao-regressoes",
+      "path": "skills/tamburetei-prevencao-regressoes",
+      "type": "directory",
+      "sha": "b0a87eb03381ccc9ab4b7e609d77510cee7277a5",
+      "mode": "040000",
+      "children": []
+    },
+    {
+      "name": "SKILL.md",
+      "path": "skills/tamburetei-prevencao-regressoes/SKILL.md",
+      "type": "file",
+      "sha": "bb65571fedab0450630c94344d8b32c6354b678b",
+      "mode": "100644",
+      "extension": ".md",
+      "size": 8713,
       "is_binary": false
     },
     {
@@ -6072,9 +6236,9 @@
     }
   ],
   "truncated": false,
-  "extracted_at": "2026-11-27T15:53:36.035579+00:00",
+  "extracted_at": "2026-11-28T14:58:22.484217+00:00",
   "method": "rest",
-  "total_items": 626,
+  "total_items": 643,
   "repository_metadata": {
     "id": 1338352116,
     "full_name": "unb-mds/2026-02-TambureteiUnB",
@@ -6082,7 +6246,7 @@
     "created_at": "2026-08-18T11:58:22Z",
     "updated_at": "2026-11-26T01:14:16Z",
     "language": "TypeScript",
-    "size": 3574,
+    "size": 3696,
     "stars": 5,
     "forks": 2,
     "open_issues": 10
